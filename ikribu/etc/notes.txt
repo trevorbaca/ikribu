@@ -1,0 +1,42 @@
+IKRIBU
+
+*   incredibly slow individuated clicks in vn, va, vc
+*   bass drum
+*   brushes on bass drum: continuous strokes, highly parameterized
+*   hands on bass drum: continuous strokes, highly parameterized
+*   grains of rice on bass drum head, moved in circles by a hand
+*   grains of rice on bass drum head, tremoloed quietly with bd mallet
+*   grains of rice on bass drum head, rhythm tapped with bd mallet
+*   fff bd strike, with or without grains of rice on bd head
+*   hands drawn silently in circles around the insides of a mortar
+*   hands with rice drawn in circles around the insides of a mortar
+*   rice ground in circles around the insides of a mortar
+
+*   stone on slate
+    * parameterized continuous circle, sometimes with direction sub. reversed
+    * stone-tremolo: quick back-and-forth of small stone on slate
+    * coups d'écriture: with use of flared hairpins on some strokes
+
+*   hand-tremolo: hands rubbed together niente < f > niente, etc.
+*   ob tremolo: bow tremoloed directly on bridge
+*   cross-fade in and out between hand-tremolo, ob tremolo, bd bristle tremolo
+
+*   cello string detuned to timbre flasque Bb0 8vb clarinet
+*   violin E5 F#4 E4 G3; viola F4 Eb4 G3 C3; A3 D3 G2 Bb0;
+*   open-string parameterized ponticello tremolo:
+    * Eb4 E4 F4 F#4
+    * Eb4 E4
+    * Eb4 F4
+    * E4 F4
+    * E4 F#4
+    * F4 F#4
+    * plus microtonal deviations
+
+* ponticello positions: 1/7P > 2/7P > ... > 6/7P > XP > 1/4 OB > ... > OB
+
+* interpolation section: ponticello positions from vn to va to vc
+* interpolation section: vibrati from vn to va to vc
+* closing section vc Bb0 + cl Bb1
+
+* cl slap tongue to initiate and terminate certain gestures in other players
+* cl slow-moving song of harmonics
