@@ -1,0 +1,204 @@
+IKRIBU
+
+[A]
+sfz cello harmonic pizzicato;
+short vn, va OB tugs in irregular rhythm with short hard stops between each;
+bcl tacet;
+
+
+[B]
+bcl dance of arpeggiated color fingerings begins all on a single pitch;
+possibly only one or two fingerings at a time with halts in between;
+after short halt bcl color fingerings rejoined by short vn, va OB tugs;
+combined bcl, vn, va cell repeats a couple of times, each time with halt;
+vc takes small stone in hand;
+bcl, vn, va halts;
+vc plays exactly one figure on slate; this slows time and then stops time;
+long fermata.
+
+
+[C]
+first bcl vigil note with some rapidly changing hairpins over relatively quiet
+dynamics which have the effect of restarting time; internal time of vigil note
+moves very quickly;
+short fermata;
+bcl repeats vigil note exactly, though is curtailed and executes only first
+third of vigil note before stopping suddenly and starting again from the
+beginning;
+at beginning of third statement of vigil note vn, va begin ppppp tremolo alla
+punta for first time in piece;
+bcl vigil note ends leaving ppppp trem. alla punta dramatically exposed; time
+has stopped again even though the internal animation of the trem. is rapid;
+time freezes for long duration of ppppp trem.;
+sfz cello harmonic pizzicato rings out clearly over ppppp trem. marking
+no-man's land between segments;
+
+
+[D]
+vn, va ppppp trem. continues into start of segment;
+bcl picks up small stone;
+after some time of ppppp trem. bcl plays exactly one figure on slate, recalling
+vc slate previously;
+trem. continues;
+bcl tries again;
+trem. continues;
+bcl tries again;
+trem. continues but va begins diminuendo al niente;
+bcl tries again;
+trem. continues and va reaches freeze;
+bcl tries again and va puts down bow while this happens;
+vn trem. continues;
+bcl tries again;
+short fermata follows this attempt which also silences vn trem. momentarily;
+vn ppppp trem resumes at same time as va BD finger tapping begins for first
+time;
+bcl tries again;
+vn trem + va finger tapping continues and vn begins dim al niente;
+bcl tries again;
+va finger tapping continues and vn freezes;
+bcl tries again;
+va finger tapping continues;
+bcl tries again;
+vn joins finger tapping and vn, va finger tapping continues;
+short fermata;
+accelerando begins;
+vn, va game of doubles cycle 1;
+vn, va game of doubles cycle 2;
+accelerando ends at end of segment.
+short fermata;
+
+
+[E]
+unaccompanied parametric vc window.
+short fermata;
+
+
+[F]
+type of recapitulation of [B];
+bcl begins dance of arpeggiated color fingerings again;
+this time no halts between fingerings;
+vc joins with short OB tugs, playing earlier vn, va material while vn, va
+remain frozen in positions over BD;
+
+
+[G]
+material of previous segment continues into start of this segment;
+vn, va unfreeze and resume game of doubles;
+vn, va game of doubles cycle 3;
+vn, va game of doubles cycle 4;
+vn, va game of doubles cycle 5;
+vn, va game of doubles cycle 6;
+accelerandi and ritardandi inflect the game of doubles;
+bcl transitions from dance of color fingerings to vigil note during game of
+doubles;
+short vc OB tugs become sparser and sparser and diminuendo al niente;
+game of doubles reaches point of suspension;
+eventually all that is left is bcl vigil;
+vn, va retake instruments during bcl vigil;
+short fermata;
+
+
+[H]
+sfz cello harmonic pizzicato initiates segment;
+vn, va parameterized window initiated by sfz cello harmonic pizzicato;
+short fermata;
+
+
+[I]
+vc plays exactly one figure on slate; this slows time and then stops time;
+long fermata;
+bcl plays exactly one figure on slate; this slows time and then stops time;
+long fermata;
+vc plays exactly one figure on slate; this slows time and then stops time;
+long fermata;
+bcl begins and continues slate circles;
+at same time vn, va pppp trem. begins again with altered pitch;
+then vc joins by gently shaking glass of rice with hairpin inflections;
+combined bcl slate + vn, va ppppp trem. + vc shaken rice continues for a very
+long time;
+layers finish in staggered diminuendo;
+vn, va finish first in order to transition to ritual positions at BD;
+vn takes small handful of rice in rh and also sponge or brush in lh;
+bcl, vc finish after;
+very long fermata;
+
+
+[J]
+great welling up of rice;
+begins with vn dropping single grain on BD skin;
+fermata;
+more vn grains of rice;
+fermata;
+more vn grains of rice;
+va then strikes BD skin firmly with BD mallter or palm of hand;
+fermata;
+more vn rice grains together with vn sponge stroke across BD skin;
+va BD strike;
+fermata;
+more vn rice grains together with vn sponge stroke across BD skin;
+va BD strike;
+
+
+[K]
+materials continue across segment boundary into start of segment;
+bcl vigil tone joins underneath at start of segment;
+halts stop and timeflow resumes;
+va mallet strikes on BD skin now slow but continuous;
+vn sponge swipes on DB skin now slow but continuous;
+combined vn BD sponge + va BD mallet + bcl vigil tone continues for a time;
+then begins ricefall;
+vc lets fall first cup of rice;
+other three players read the patterns that are exposed: faster strokes on BD
+skin, tightened tempo, noticeable crescendi against bcl vigil; and then a
+release back to previous tension, energy and motion;
+vc lets fall second cup of rice;
+other three players read the patterns that are exposed;
+vc lets fall third cup of rice;
+other three players read the patterns that are exposed;
+vc lets fall fourth cup of rice;
+other three players halt abruptly in middle of fourth ricefall;
+fourth ricefall completes in absolute stillness and absolutely silence;
+silences counted at tempo but no fermata after completion of fourth ricefall;
+bcl vigil picks dal niente after counted silences;
+bcl vigil continues to end of segment and across segment boundary;
+
+
+[L]
+sfz cello harmonic pizzicato initiates segment;
+vn, va, vc parameterized window;
+bcl vigil continues uninterrupted during entirety of window;
+bcl vigil rises very slightly during window;
+window complets at end of segment;
+attaca to following segment;
+
+
+[M]
+bcl vigil continues uninterrupted during segment;
+bcl vigil continues to rise in pitch during segment;
+apotheosis of vn, va, vc tremolo;
+entire tremolo process moves from ppppp to fffff;
+extensive process of string contact point transition;
+segment ends at maximal dynamic in bcl, vn, va, vc;
+attaca to following segment;
+
+
+[N]
+fortissimo vn, va, vc parameterized window;
+window uses complex parameter repetition six times;
+short fermata after each parameter repetition;
+bcl subito pp at start of segment;
+bcl vigil dim. al niente during entire course of segment;
+short fermata at end of segment;
+
+
+[O]
+sfz cello harmonic pizzicato initiates segment;
+ppp bcl vigil resumes but does not last for entire segment;
+vn, va, vc put down instruments deliberately during ppp bcl vigil;
+at bcl pitch change vn begins circled slate;
+at bcl pitch change vn stops circled slate and va starts circled BD skin;
+at bcl pitch change va stops circled BD skin and vc starts circled rice;
+at bcl pitch change vn, va, vc tutti circling starts;
+subito bcl, vn, va freeze;
+vc circled rice continues some measures longer;
+fermata.
