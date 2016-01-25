@@ -135,87 +135,141 @@ doubles;
 > long fermata;
 > bcl begins and continues circled slate;
 + vn, va ppppp tremolo begins again with altered pitch;
-> vc joins with shaken rice;
-hairpins shape shaken rice;
-> combined bcl slate + vn, va ppppp trem. + vc shaken rice continues long time;
-> layers finish in staggered diminuendo;
-> vn, va finish first in order to transition to ritual positions at BD;
-> vn takes small handful of rice in rh and also bristles in lh;
-> bcl, vc finish after;
+> vc joins with circle-stirred rice; hairpins shape stirred rice;
+> combined ppppp vn, va trem. + bcl slate + vc rice continues forever;
+hairpins shape all layers;
+> vn finishes first in dim. al niente;
+> bcl, vc finish second; bcl, vc finish at same time; sub. freeze;
++ vn takes very large handful of rice for next segment;
+> va finishes last in dim. al niente;
 > very long fermata;
 
 
 [L]
-(great welling up of rice);
-begins with vn dropping single grain on BD skin;
-fermata;
-more vn grains of rice;
-fermata;
-more vn grains of rice;
-va then strikes BD skin firmly with BD mallet or palm of hand;
-fermata;
-more vn rice grains together with vn bristles across BD skin;
-va BD strike;
-fermata;
-more vn rice grains together with vn bristles across BD skin;
-va BD strike;
+> vc introduces Bb0 vigil unaccompanied;
+benthic song persists for protracted period of time;
+characteristic hairpins;
+> long fermata;
 
 
 [M]
+(ricefall welling);
+(measured rests in segment);
+(no written fermatas in segment);
+> vn drops two or three grains of rice on BD skin;
+> measured rests;
+> vn drops seven or eight grains of rice on BD skin;
++ sparse vc col legno battuti (one-line staff but with note head pos. var.);
+> measured rests;
+> vn drops more grains of rice;
++ smattering va, vc col legno battuti;
+> measured rests;
+> vn begins continuous rice sprinkle;
++ continuous va, vc col legno battuti;
+(bcl tacet for entire segment);
+attaca;
+
+
+[N]
 ... previous materials continue into segment;
-+ bcl vigil tone joins underneath at start of segment;
-halts stop and timeflow resumes;
-va mallet strikes on BD skin now slow but continuous;
-vn bristles on DB skin now slow but continuous;
-combined vn BD bristles + va BD mallet + bcl vigil tone continues for a time;
-then begins ricefall;
++ bcl Bb1 vigil joins underneath at start of segment;
+> va clb dim. al niente;
+... vn rice sprinkle continues;
+... vc clb continues;
+... bcl Bb1 vigil continues;
+> bcl crescendos to draw attention towards ikribu; then vigil again;
++ va sets instrument aside;
++ va takes brush;
++ va assumes position at BD;
+... vn rice sprinkle continues;
+... vc clb continues;
+> vn rice sprinkle dim. / thin al niente;
+... va tacet;
+... vc clb continues;
+... bcl Bb1 vigil continues;
+> bcl crescendo to draw attention towards ikribu; then vigil again;
++ vn takes brush;
++ vn assumes position at BD;
+... vc clb continues;
+> vn, va bristles circle opposite sides of BD skin continuously;
+... bcl vigil continues;
+... vc clb continues;
+> vc clb dim. al niente;
+... vn, va circled bristles continue;
+... bcl vigil continues;
+> vc tacet;
+... vn, va circled bristles continue;
+... bcl vigil continues;
+> bcl crescendo to draw attention towards ikribu; then vigil again;
++ vc sets bow and instrument aside;
++ vc takes first cup of rice;
+... vn, va circled bristles continue;
+... bcl vigil continues;
 > vc ricefall (#4);
-+ other three players read the patterns that are exposed: faster strokes on BD
-skin, tightened tempo, noticeable crescendi against bcl vigil; and then a
-release back to previous tension, energy and motion;
++ other three players read the patterns that are exposed;
++ faster and then slow rate of vn, va circled bristles;
++ noticeable bcl crescendi and decrescendi;
++ tightened tempo;
++ then release back to previous tension, energy and motion;
 > vc ricefall (#5);
 + other three players read the patterns that are exposed;
 > vc ricefall (#6);
 + other three players read the patterns that are exposed;
 > vc ricefall (#7);
-+ other three players halt abruptly in middle of fourth ricefall;
-fourth ricefall completes in silence and absolute stillness;
-silences counted at tempo;
-no fermata after completion of ricefall (#7);
-> bcl vigil picks dal niente after counted silences;
-bcl vigil continues to end of segment and across segment boundary;
-
-
-[N]
-... bcl vigil;
-+ sfz cello harmonic pizzicato initiates segment;
-+ vn, va, vc parameterized window;
-bcl vigil continues uninterrupted during entirety of window;
-bcl vigil rises very slightly during window;
-window complets at end of segment;
-attaca to following segment;
++ ricefall (#7) cuts off abruptly;
++ vn, va circled bristles cut off abruptly at exactly the same time;
+... bcl vigil continues underneath and is revealed as song of harmonics;
+attaca;
 
 
 [O]
-... bcl vigil;
-bcl vigil continues to rise in pitch during segment;
-apotheosis of vn, va, vc tremolo;
-entire tremolo process moves from ppppp to fffff;
-extensive string contact point transition process;
-segment ends at maximal dynamic in bcl, vn, va, vc;
-attaca to following segment;
+> bcl falls to Bb1 at start of segment;
++ sfz cello harmonic pizzicato initiates segment;
++ vn, va parameterized window;
+> bcl begins Bb1 song of harmonics;
+... vn, va parameterized window continues;
+window completes at end of segment;
+(vc tacet for entire segment after harmonic pizzicato);
+attaca following segment;
 
 
 [P]
-> sub. bcl pp at start of segment;
-+ fortissimo vn, va, vc parameterized window;
-window uses complex parameter repetition six times;
-short fermata after each parameter repetition;
-bcl vigil dim. al niente during entire course of segment;
-> short fermata at end of segment;
+... bcl Bb1 song of harmonics continues;
++ vc Bb0 joins bcl song of harmonics;
+> vn, va begin double-stop open-string tremolo flight at ppppp XP;
+... bcl, vc Bb1/0 song continues;
+> vn, va transition from XP to P;
+... bcl, vc Bb1/O song continues;
+> vn transitions from P to pP and ppppp to ppp;
++ va transitions from P to XP and ppppp to mf; 
+... bcl, vc Bb1/O song continues;
+> vn transitions from pP to T and ppp to mf;
++ va transitions from XP to pT and mf to f;
+accents include in vn, va lines to encourage harmonics;
+apotheosis of vn, va tremolo;
+... bcl, vc Bb1/O song continues;
+> vn, va etc.
+... bcl, vc Bb1/O song continues;
+segment ends at maximal dynamic in bcl, vn, va, vc;
+> vn, va, vc sub. stop at end of segment;
+... bcl forte song continues;
+bcl attaca following segment;
 
 
 [Q]
+> sub. bcl pp B2 at start of segment;
+... vn, va, vc tacet;
+> bcl pp B2 continues long enough to mostly clear memory of previous segment;
+... vn, va, vc tacet;
+(repetition cell: x6);
+    > extremely compressed vn, va, vc parameterized window;
+    > short fermata;
+    window uses complex parameter repetition;
+... bcl B2 dim. al niente during course of entire segment;
+> short fermata;
+
+
+[R]
 > sfz cello harmonic pizzicato initiates segment;
 + ppp bcl vigil resumes but does not last for entire segment;
 > vn, va, vc put down instruments deliberately during ppp bcl vigil;
