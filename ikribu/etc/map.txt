@@ -266,17 +266,33 @@ bcl attaca following segment;
     > short fermata;
     window uses complex parameter repetition;
 ... bcl B2 dim. al niente during course of entire segment;
-> short fermata;
+> bcl ends at end of fifth repetition of vn, va, vc window;
+> bcl takes slate during sixth svn, va, vc window;
+> fermata;
 
 
 [R]
-> sfz cello harmonic pizzicato initiates segment;
-+ ppp bcl vigil resumes but does not last for entire segment;
-> vn, va, vc put down instruments deliberately during ppp bcl vigil;
-> at bcl pitch change vn begins circled slate;
-> at bcl pitch change vn stops circled slate and va starts circled BD skin;
-> at bcl pitch change va stops circled BD skin and vc starts circled rice;
-> at bcl pitch change vn, va, vc tutti circling starts;
-> subito bcl, vn, va freeze;
-> vc circled rice continues some measures longer;
-> fermata.
+(closing tempo);
+> bcl begins silence-delimited gestures of scribbled slate;
++ vn, va mechanical featherbeam clb start at exactly the same time;
++ vc tacet;
+> bcl scribbled slate continues;
+... vn, va mechanical clb continues;
+... vc tacet;
+> bcl scribbled slate continues;
+... vn, va mechanical clb continues;
+... vc tacet;
+> sfz cello harmonic pizzicato (last one);
+... bcl scribbled slate continues;
+... vn, va mechanical clb continues;
+> bcl scribbled slate continues;
+... vn, va mechanical clb continues;
+... vc tacet;
+> vn, va mechanical clb subito stop;
+... bcl scribbled slate continues;
+... vc tacet;
+> bcl scribbled slate continues;
+... vn, va, vc tacet;
+> bcl scribbled slate sub. stops;
+... vn, va, vc tacet;
+fermata;
