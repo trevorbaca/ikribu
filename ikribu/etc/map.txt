@@ -1,50 +1,47 @@
 IKRIBU
 
 
-[A] (15")
-(clarinet arpeggiation tempo)
+[A]
+(tempo of incisions)
 > sfz cello harmonic pizzicato lv
-  + vn grainfall (#1) 
+  + vn grainfall
+  (va, bcl tacet)
 > long fermata
-(va, bcl tacet)
 
 
-[B] (45")
-(clarinet arpeggiation tempo resumes)
-> sfz cello harmonic pizzicato lv
-  + va grainfall (#2)
-+ bcl arpeggiates Db3 ...
+[B]
+(tempo of night ...)
+> bcl starts arpeggiated Db3 ...
   (very fast runs with with intermittent sustained fingerings between)
   (runs through entirely of color fingerings on Db3)
   (predominantly piano dynamics with asymmetric hairpins)
   (few first loud dynamics activate the hall)
-> vc starts circled slate ...
-  ... bcl completes Db3 arpeggiation
-> ... vc stops circled slate
+> va starts circled slate ...
+  ... bcl stops Db3 arpeggiation
+. ... vc stops circled slate
   + ritardando
+  (vn, vc tacet)
 > long fermata
 
 
-[C] (45")
-(slightly slower tempo)
+[C]
+(... tempo of night ...)
 > bcl vigil at B1
 > short fermata
 > bcl vigil starts again at same pitch ...
-  + ppppp vn, va tremolo alla punta ...
+  + ppppp vn, va start tremolo alla punta ...
 > ... bcl vigil ...
   ... ppppp vn, va tremolo ...
 > ... bcl vigil diminuendo al niente
   ... ppppp vn, va tremolo diminuendo al niente
-> short counted silence
-> sfz cello harmonic pizzicato lv
-(attaca)
+> fermata
 
 
 [D]
-(slightly faster tempo)
+(... tempo of night)
 (accelerando governs segment)
 (repetition cell: x4)
-    > bcl circles slate 3/2 π and then freezes (#1)
+    > bcl circles slate 3/2 π and then freezes
     + ppppp vn, va tremolo overlaps halfway
 ... ppppp vc tremolo tasto at C1 during segment
 > short fermata
@@ -53,12 +50,12 @@ IKRIBU
 [E]
 (subito tempo of parametric window)
 > unaccompanied parametric vc window
-(vn, va, bcl tacet segment)
-(attaca)
+  (vn, va, bcl tacet segment)
+  (attaca)
 
 
 [F]
-(subito quicker tempo of game of doubles)
+(subito tempo of incisions ...)
 (accelerando governs segment)
 (repetition cell: x4)
     > vn, va cycle of game of doubles
@@ -67,51 +64,55 @@ IKRIBU
 
 
 [G]
+(... tempo of incisions ritards to tempo of night ...)
+(ritardando governs segment)
 ... bcl C3 arpeggiation transitions downward to vigil ...
 ... ppppp vc tremolo tasto continues and then ends
     [vn, va retake instruments]
 
 
 [H]
+(... tempo of night)
 (vn, va, vc tacet segment)
-> bcl vigil
-> bcl vigil louder
-> bcl vigil even louder
-> bcl vigil louder still
-> short breath
+> bcl vigil and then breath
+> bcl vigil louder and then breath
+> bcl vigil even louder and then breath
+> bcl vigil louder still and then breath
+  (attaca)
 
 
 [I]
 (subito tempo of parametric window)
 > vn, va parameterized window
-+ bcl vigil subito pianissimo again
+  + bcl vigil subito pianissimo again
   (vc tacet during segment)
 > fermata
 
 
 [J]
+(tempo of night ...)
 (bcl, vn, va tacet during segment)
 (repetition cell x4):
-    > vc circles slate 1π
+    > va circles slate 1π
     > long fermata
 
 
 [K]
+(... tempo of night)
 > bcl, vn, va circle slate ...
 > vc sings benthic B0 vigil unaccompanied ...
-  (characteristic hairpins)
   ... bcl, vn, va slate continues ...
 > ... bcl, vn, va slate crescendo ...
   ... vc B0 continues ....
 > ... bcl, vn, va slate stop
-  ... vc B0 continues for a while ...
+  ... vc B0 continues ...
 > ... vc B0 finishes
   (bcl, vn, va tacet)
 > long fermata
 
 
 [L]
-(slow tempo)
+(tempo of incisions ...)
 (bcl tacet during segment)
 (repetition cell x4):
     > vc circles hand in basket of grain 1π
@@ -121,6 +122,7 @@ IKRIBU
 
 
 [M]
+(... tempo of incisions ...)
 > vc circled grain ...
   + vn, va clb ...
   + bcl Bb1 vigil ...
@@ -155,10 +157,11 @@ IKRIBU
 
 
 [N]
-(tempo continues)
+(... tempo of incisions)
 (staged accelerandi govern segment)
 (written-out process of increasing tension: x6):
-    > vc casts grain (#4) and bcl, vn, va read what is exposed
+    > vc harmonic pizzicato + vn grainfall
+        + bcl, vn, va read what is exposed
         + bcl vigil ...
         + noticeable bcl hairpins ultimately increasing dynamic
         + faster then slower then faster rate of vn, va tremolo-then-circle
@@ -185,12 +188,13 @@ IKRIBU
 
 [O]
 (subito tempo of parameterized window)
-> vn, va, vc parameterizeds window
+> vn, va, vc parameterized window
   + bcl falls to Bb1 at start of segment and begins song of harmonics
-(attaca)
+  (attaca)
 
 
 [P]
+(subito temp of night)
 . ... bcl Bb1 song of harmonics continues ...
   (vn, va, vc tacet)
 . ... bcl Bb1 song of harmonics continues ...
@@ -212,6 +216,7 @@ IKRIBU
 
 
 [Q]
+(subito tempo of parameterized window)
 (repetition cell: x6)
     > extremely compressed vn, va, vc parameterized window
     (window uses complex parameter repetition)
