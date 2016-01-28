@@ -1,7 +1,7 @@
 IKRIBU
 
 
-[A]
+[introduction]
 (tempo of incisions)
 > sfz cello harmonic pizzicato lv
   + vn grainfall
@@ -9,7 +9,7 @@ IKRIBU
 > long fermata
 
 
-[B]
+[A]
 (tempo of night ...)
 > bcl starts arpeggiated Db3 ...
   (very fast runs with with intermittent sustained fingerings between)
@@ -24,7 +24,7 @@ IKRIBU
 > long fermata
 
 
-[C]
+[B]
 (... tempo of night ...)
 > bcl vigil at B1
 > short fermata
@@ -37,7 +37,7 @@ IKRIBU
 > fermata
 
 
-[D]
+[C]
 (... tempo of night)
 (accelerando governs segment)
 (repetition cell: x4)
@@ -47,23 +47,23 @@ IKRIBU
 > short fermata
 
 
-[E]
+[D]
 (subito tempo of parametric window)
 > unaccompanied parametric vc window
   (vn, va, bcl tacet segment)
   (attaca)
 
 
-[F]
+[E]
 (subito tempo of incisions ...)
 (accelerando governs segment)
 (repetition cell: x4)
-    > vn, va cycle of game of doubles
-... bcl C3 arpeggiation during segment ...
-... ppppp vc tremolo tasto during segment ...
+    > vn, va game of doubles
+bcl C3 arpeggiation during segment ...
+ppppp vc tremolo tasto during segment ...
 
 
-[G]
+[F]
 (... tempo of incisions ritards to tempo of night ...)
 (ritardando governs segment)
 ... bcl C3 arpeggiation transitions downward to vigil ...
@@ -71,7 +71,7 @@ IKRIBU
     [vn, va retake instruments]
 
 
-[H]
+[G]
 (... tempo of night)
 (vn, va, vc tacet segment)
 > bcl vigil and then breath
@@ -81,7 +81,7 @@ IKRIBU
   (attaca)
 
 
-[I]
+[H]
 (subito tempo of parametric window)
 > vn, va parameterized window
   + bcl vigil subito pianissimo again
@@ -89,7 +89,7 @@ IKRIBU
 > fermata
 
 
-[J]
+[I]
 (tempo of night ...)
 (bcl, vn, va tacet during segment)
 (repetition cell x4):
@@ -97,7 +97,7 @@ IKRIBU
     > long fermata
 
 
-[K]
+[J]
 (... tempo of night)
 > bcl, vn, va circle slate ...
 > vc sings benthic B0 vigil unaccompanied ...
@@ -111,7 +111,7 @@ IKRIBU
 > long fermata
 
 
-[L]
+[K]
 (tempo of incisions ...)
 (bcl tacet during segment)
 (repetition cell x4):
@@ -121,7 +121,7 @@ IKRIBU
     > fermata
 
 
-[M]
+[L]
 (... tempo of incisions ...)
 > vc circled grain ...
   + vn, va clb ...
@@ -156,7 +156,7 @@ IKRIBU
 (attaca)
 
 
-[N]
+[M]
 (... tempo of incisions)
 (staged accelerandi govern segment)
 (written-out process of increasing tension: x6):
@@ -186,14 +186,14 @@ IKRIBU
 > short fermata
 
 
-[O]
+[N]
 (subito tempo of parameterized window)
 > vn, va, vc parameterized window
   + bcl falls to Bb1 at start of segment and begins song of harmonics
   (attaca)
 
 
-[P]
+[O]
 (subito temp of night)
 . ... bcl Bb1 song of harmonics continues ...
   (vn, va, vc tacet)
@@ -215,7 +215,7 @@ IKRIBU
 > short fermata
 
 
-[Q]
+[P]
 (subito tempo of parameterized window)
 (repetition cell: x6)
     > extremely compressed vn, va, vc parameterized window
@@ -227,7 +227,7 @@ IKRIBU
 > long fermata
 
 
-[R]
+[Q]
 (closing tempo)
 > vc begins silence-delimited gestures of scribbled slate ...
   + vn, va begin mechanical clb ...
