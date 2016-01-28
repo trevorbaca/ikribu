@@ -44,7 +44,7 @@ IKRIBU
     > bcl circles slate 3/2 π and then freezes
     + ppppp vn, va tremolo overlaps halfway
 ... ppppp vc tremolo tasto at C1 during segment
-> short fermata
+(vc attaca parametric window)
 
 
 [D]
@@ -59,8 +59,8 @@ IKRIBU
 (accelerando governs segment)
 (repetition cell: x4)
     > vn, va game of doubles
+    + ppppp vc tremolo tasto enters at start of third repetition ...
 bcl C3 arpeggiation during segment ...
-ppppp vc tremolo tasto during segment ...
 
 
 [F]
