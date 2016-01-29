@@ -4,8 +4,6 @@ from abjad import *
 
 metadata = datastructuretools.TypedOrderedDict(
     [
-        ('name', 'L'),
-        ('segment_count', 18),
-        ('segment_number', 13),
+        ('output_material_class_name', 'dict'),
         ]
     )
