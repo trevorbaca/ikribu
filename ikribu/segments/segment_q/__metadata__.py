@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
-import collections
+from abjad import *
 
 
-metadata = collections.OrderedDict([
-    ('name', 'Q'),
-    ])
+metadata = datastructuretools.TypedOrderedDict(
+    [
+        ('name', 'Q'),
+        ('segment_count', 18),
+        ('segment_number', 18),
+        ]
+    )
