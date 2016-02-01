@@ -50,6 +50,18 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
+    (vn, stages(1)),
+    baca.tools.RhythmSpecifier(
+        division_expression=baca.rhythm.split_by_durations(
+            durations=[(2, 4)],
+            ),
+        rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+            division_masks=silence_except(indices=[0]),
+            ),
+        ),
+    )
+
+segment_maker.append_specifiers(
     (vc, stages(1)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
@@ -59,10 +71,28 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
+    (vn, stages(1)),
+    [
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_markup_lines([
+            'grainfall: gracefully and deliberately pour',
+            'heavy grain from cup to ground; then freeze',
+            ]),
+        baca.overrides.cross_note_heads(),
+        baca.pitch.pitches('C4'),
+        baca.spanners.one_line_staff(),
+        Clef('percussion'),
+        ],
+    )
+
+segment_maker.append_specifiers(
     (vc, stages(1)),
     [
         baca.markup.make_string_number(3),
-        baca.markup.pizz(),
+        baca.markup.make_markup_lines([
+            'pizz. + l.v. as long as possible;',
+            'do not dampen at start of following fermata',
+            ]),
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         indicatortools.LaissezVibrer(),
