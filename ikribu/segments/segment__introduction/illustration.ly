@@ -1,4 +1,4 @@
-% 2016-01-29 14:59
+% 2016-01-30 13:25
 
 \version "2.19.35"
 \language "english"
@@ -91,7 +91,6 @@
                 }
                 \tag violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
-                    \clef "treble"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
@@ -103,7 +102,45 @@
                         Vn.
                     }
                     \context ViolinMusicVoice = "Violin Music Voice" {
-                        R1 * 7/4
+                        \once \override NoteHead #'style = #'cross
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        \clef "percussion"
+                        c'2
+                            ^ \markup {
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                "grainfall: gracefully and deliberately pour"
+                                            }
+                                        \line
+                                            {
+                                                "heavy grain from cup to ground; then freeze"
+                                            }
+                                    }
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
+                        \stopStaff
+                        \startStaff
+                        \once \override NoteHead #'style = #'cross
+                        r2
+                        \once \override NoteHead #'style = #'cross
+                        r2
+                        \once \override NoteHead #'style = #'cross
+                        r4
                         R1 * 1/4
                         \bar "|"
                     }
@@ -144,8 +181,17 @@
                         \clef "treble"
                         fqf''1.. \laissezVibrer \sfz
                             ^ \markup {
-                                \upright
-                                    pizz.
+                                \column
+                                    {
+                                        \line
+                                            {
+                                                "pizz. + l.v. as long as possible;"
+                                            }
+                                        \line
+                                            {
+                                                "do not dampen at start of following fermata"
+                                            }
+                                    }
                                 }
                             _ \markup {
                                 \upright

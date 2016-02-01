@@ -1,4 +1,6 @@
-1.  Partials:
+1.  Make one-line staff spanner attach to rests in violin measure one.
+
+2.  Partials:
 
         vc      va      vn
         
