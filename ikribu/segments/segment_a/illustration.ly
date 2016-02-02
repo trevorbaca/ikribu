@@ -1,6 +1,4 @@
-% 2016-01-29 12:13
-
-\version "2.19.35"
+\version "2.19.36"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -345,7 +343,7 @@
                 }
                 \tag violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
-                    \clef "treble"
+                    \clef "percussion"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
