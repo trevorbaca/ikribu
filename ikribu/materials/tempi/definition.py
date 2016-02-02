@@ -5,7 +5,11 @@ from abjad import *
 
 tempi = collections.OrderedDict([
     (
-        58,
+        'incisions',
         Tempo(Duration(1, 4), 58),
+        ),
+    (
+        'night',
+        Tempo(Duration(1, 4), 42),
         ),
     ])
