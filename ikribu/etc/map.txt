@@ -18,7 +18,7 @@ IKRIBU
   (few first loud dynamics activate the hall)
 > va starts circled slate ...
   ... bcl stops Db3 arpeggiation
-. ... vc stops circled slate
+. ... va stops circled slate
   + ritardando
   (vn, vc tacet)
 > long fermata
