@@ -15,11 +15,12 @@ stage_specifier = baca.tools.StageSpecifier([
     ])
 
 tempo_map = baca.tools.TempoMap([
-    (1, ikribu.materials.tempi[58]),
+    (1, ikribu.materials.tempi['incisions']),
     ])
 
 maker = baca.tools.TimeSignatureMaker(
-    [TimeSignature((7, 4))],
+    ikribu.materials.time_signatures,
+    rotation=0,
     stage_specifier=stage_specifier,
     tempo_map=tempo_map,
     )
