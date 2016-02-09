@@ -41,6 +41,7 @@ segment_maker = baca.tools.SegmentMaker(
     spacing_specifier=spacing_specifier,
     tempo_map=tempo_map,
     time_signatures=time_signatures,
+    transpose_score=True,
     )
 
 segment_maker.validate_measure_count(7)
@@ -51,6 +52,47 @@ segment_maker.validate_measures_per_stage()
 #################################### TIME #####################################
 ###############################################################################
 
+segment_maker.append_specifiers(
+    (bcl, stages(1, 2)),
+    #baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(2, 3)),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    )
+
 ###############################################################################
 #################################### COLOR ####################################
 ###############################################################################
+
+segment_maker.append_specifiers(
+    (bcl, stages(1, 2)),
+    [
+        baca.pitch.pitches('D2'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(1, 2)),
+    [
+        baca.dynamics.make_repeated_hairpins(
+            ['p < f', 'f > p'],
+            span=[2],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(2, 3)),
+    [
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_markup('circle slate slowly'),
+        baca.overrides.cross_note_heads(),
+        baca.overrides.repeat_tie_up(),
+        baca.pitch.pitches('C4'),
+        baca.spanners.one_line_staff(),
+        Clef('percussion'),
+        ],
+    )
