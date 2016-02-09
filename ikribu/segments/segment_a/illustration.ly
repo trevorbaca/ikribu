@@ -191,13 +191,12 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        e\breve \< \p
+                        e1.. \f
+                        e1 \> \f
+                        e1 \p
+                        e2.
                         R1 * 2
-                        R1 * 7/4
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 7/4
-                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -239,12 +238,41 @@
                         Va.
                     }
                     \context ViolaMusicVoice = "Viola Music Voice" {
-                        R1 * 2
-                        R1 * 7/4
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 7/4
+                        R1 * 15/4
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        \clef "percussion"
+                        c'1
+                            ^ \markup {
+                                \upright
+                                    "circle slate slowly"
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        c'1 \repeatTie
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        c'2. \repeatTie
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        c'1.. \repeatTie
+                        \stopStaff
+                        \startStaff
                         R1 * 1/4
                         \bar "|"
                     }
