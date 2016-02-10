@@ -89,6 +89,7 @@
                 }
                 \tag violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
+                    \clef "treble"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
@@ -100,11 +101,11 @@
                         Vn.
                     }
                     \context ViolinMusicVoice = "Violin Music Voice" {
+                        \clef "percussion"
                         \once \override NoteHead #'style = #'cross
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
                         c'2
                             ^ \markup {
                                 \column
@@ -133,6 +134,7 @@
                                 }
                         \stopStaff
                         \startStaff
+                        \clef "treble"
                         \once \override NoteHead #'style = #'cross
                         r2
                         \once \override NoteHead #'style = #'cross

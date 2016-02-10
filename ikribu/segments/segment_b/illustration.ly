@@ -25,8 +25,30 @@
                     R1 * 3/4
                 }
                 {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ulongfermata"
+                            }
+                }
+                {
                     \time 7/4
                     R1 * 7/4
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ulongfermata"
+                            }
                 }
                 {
                     \time 8/4
@@ -41,7 +63,30 @@
                     R1 * 1
                 }
                 {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ulongfermata"
+                            }
+                }
+                {
+                    \time 4/4
                     R1 * 1
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ulongfermata"
+                            }
                 }
                 {
                     \time 2/4
@@ -50,6 +95,71 @@
                 {
                     \time 7/4
                     R1 * 7/4
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ulongfermata"
+                            }
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 2/4
+                    R1 * 1/2
+                }
+                {
+                    \time 7/4
+                    R1 * 7/4
+                }
+                {
+                    \time 8/4
+                    R1 * 2
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
@@ -110,6 +220,19 @@
                             }
                 }
                 {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B2]
+                            }
+                }
+                {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
@@ -117,7 +240,27 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'15''
+                                0'17''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B3]
+                            }
+                }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B4]
                             }
                 }
                 {
@@ -128,7 +271,14 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'25''
+                                0'28''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B5]
                             }
                 }
                 {
@@ -139,7 +289,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'37''
+                                0'40''
                             }
                 }
                 {
@@ -150,17 +300,51 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'41''
+                                0'44''
                             }
                 }
                 {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B6]
+                            }
+                }
+                {
+                    \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'47''
+                                0'51''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B7]
+                            }
+                }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B8]
                             }
                 }
                 {
@@ -171,7 +355,14 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'52''
+                                0'58''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B9]
                             }
                 }
                 {
@@ -182,7 +373,155 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'55''
+                                1'01''
+                            }
+                }
+                {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'11''
+                            }
+                }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B10]
+                            }
+                }
+                {
+                    \time 4/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'17''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B11]
+                            }
+                }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B12]
+                            }
+                }
+                {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'24''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B13]
+                            }
+                }
+                {
+                    \time 4/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'28''
+                            }
+                }
+                {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'34''
+                            }
+                }
+                {
+                    \time 2/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'38''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B14]
+                            }
+                }
+                {
+                    \time 7/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 7/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'41''
+                            }
+                }
+                {
+                    \time 8/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'51''
+                            }
+                }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [B15]
                             }
                 }
             }
@@ -211,22 +550,23 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 7/4
-                        R1 * 2
-                        R1 * 3/4
-                        R1 * 1
-                        R1 * 1
-                        R1 * 1/2
-                        R1 * 7/4
+                        R1 * 3
+                        ef1.. \ppp
+                        R1 * 17/4
+                        ef1
+                        R1 * 7/2
+                        ef1
+                        R1 * 1/4
+                        ef2.
+                        ef1 \repeatTie
+                        ef2. \repeatTie
+                        R1 * 9/2
                         \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
-                    \clef "percussion"
+                    \clef "treble"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
@@ -238,16 +578,34 @@
                         Vn.
                     }
                     \context ViolinMusicVoice = "Violin Music Voice" {
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 7/4
-                        R1 * 2
-                        R1 * 3/4
-                        R1 * 1
-                        R1 * 1
-                        R1 * 1/2
-                        R1 * 7/4
+                        e'1 :32 \< \ppp
+                            ^ \markup {
+                                \upright
+                                    "trem. flautando"
+                                }
+                            _ \markup {
+                                \upright
+                                    III
+                                }
+                        \once \override Hairpin #'circled-tip = ##t
+                        e'1 :32 \repeatTie \pp \> \pp
+                        e'2. :32 \repeatTie
+                        R1 * 9/4 \!
+                        e'\breve :32
+                        e'2. :32 \repeatTie
+                        e'1 :32 \repeatTie
+                        R1 * 3/2
+                        e'2 :32
+                        e'1.. :32 \repeatTie
+                        e'2. :32 \repeatTie
+                        R1 * 3/2
+                        e'2. :32
+                        e'1 :32 \repeatTie
+                        e'2. :32 \repeatTie
+                        e'2 :32 \repeatTie
+                        e'1.. :32 \repeatTie
+                        e'\breve :32 \repeatTie
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -268,13 +626,28 @@
                         R1 * 1
                         R1 * 1
                         R1 * 3/4
+                        R1 * 1/4
                         R1 * 7/4
+                        R1 * 1/4
                         R1 * 2
                         R1 * 3/4
                         R1 * 1
+                        R1 * 1/4
                         R1 * 1
+                        R1 * 1/4
                         R1 * 1/2
                         R1 * 7/4
+                        R1 * 3/4
+                        R1 * 1/4
+                        R1 * 1
+                        R1 * 1/4
+                        R1 * 3/4
+                        R1 * 1
+                        R1 * 3/4
+                        R1 * 1/2
+                        R1 * 7/4
+                        R1 * 2
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -295,13 +668,28 @@
                         R1 * 1
                         R1 * 1
                         R1 * 3/4
+                        R1 * 1/4
                         R1 * 7/4
+                        R1 * 1/4
                         R1 * 2
                         R1 * 3/4
                         R1 * 1
+                        R1 * 1/4
                         R1 * 1
+                        R1 * 1/4
                         R1 * 1/2
                         R1 * 7/4
+                        R1 * 3/4
+                        R1 * 1/4
+                        R1 * 1
+                        R1 * 1/4
+                        R1 * 3/4
+                        R1 * 1
+                        R1 * 3/4
+                        R1 * 1/2
+                        R1 * 7/4
+                        R1 * 2
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
