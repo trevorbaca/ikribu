@@ -12,4 +12,8 @@ tempi = collections.OrderedDict([
         'night',
         Tempo(Duration(1, 4), 42),
         ),
+    (
+        'window',
+        Tempo(Duration(1, 4), 104),
+        ),
     ])

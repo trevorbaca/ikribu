@@ -611,7 +611,7 @@
                 }
                 \tag viola
                 \context ViolaMusicStaff = "Viola Music Staff" {
-                    \clef "percussion"
+                    \clef "alto"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16

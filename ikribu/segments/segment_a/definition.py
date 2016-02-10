@@ -98,6 +98,6 @@ segment_maker.append_specifiers(
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
-        Clef('percussion'),
+        baca.spanners.percussion_staff(),
         ],
     )

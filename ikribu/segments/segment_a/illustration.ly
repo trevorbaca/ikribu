@@ -241,12 +241,12 @@
                     }
                     \context ViolaMusicVoice = "Viola Music Voice" {
                         R1 * 15/4
+                        \clef "percussion"
                         \once \override NoteHead #'style = #'cross
                         \once \override RepeatTie #'direction = #up
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
                         c'1
                             ^ \markup {
                                 \upright
@@ -275,6 +275,7 @@
                         c'1.. \repeatTie
                         \stopStaff
                         \startStaff
+                        \clef "alto"
                         R1 * 1/4
                         \bar "|"
                     }
