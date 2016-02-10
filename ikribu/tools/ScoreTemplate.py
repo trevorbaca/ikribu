@@ -112,7 +112,7 @@ class ScoreTemplate(abctools.AbjadValueObject):
             context_name='BassClarinetMusicStaff',
             name='Bass Clarinet Music Staff',
             )
-        bass_clarinet = instrumenttools.Violin(
+        bass_clarinet = instrumenttools.BassClarinet(
             instrument_name='bass clarinet',
             short_instrument_name='b. cl.',
             )
