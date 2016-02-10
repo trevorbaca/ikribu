@@ -166,6 +166,7 @@
                 }
                 \tag cello
                 \context CelloMusicStaff = "Cello Music Staff" {
+                    \clef "bass"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
@@ -177,8 +178,8 @@
                         Vc.
                     }
                     \context CelloMusicVoice = "Cello Music Voice" {
-                        \once \override NoteHead #'style = #'harmonic
                         \clef "treble"
+                        \once \override NoteHead #'style = #'harmonic
                         fqf''1.. \laissezVibrer \sfz
                             ^ \markup {
                                 \column
@@ -197,6 +198,7 @@
                                 \upright
                                     III
                                 }
+                        \clef "bass"
                         R1 * 1/4
                         \bar "|"
                     }

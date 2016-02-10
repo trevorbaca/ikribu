@@ -1,12 +1,3 @@
-\version "2.19.36"
-\language "english"
-
-#(ly:set-option 'relative-includes #t)
-
-\include "../../stylesheets/stylesheet.ily"
-\include "../../stylesheets/nonfirst-segment.ily"
-
-\score {
     \context Score = "Score" \with {
         currentBarNumber = #10
     } <<
@@ -696,4 +687,3 @@
             >>
         }
     >>
-}

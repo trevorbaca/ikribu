@@ -97,7 +97,7 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         indicatortools.LaissezVibrer(),
-        Clef('treble'),
+        spannertools.ClefSpanner(clef='treble'),
         Dynamic('sfz'),
         ],
     )

@@ -75,6 +75,11 @@ segment_maker.append_specifiers(
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
+segment_maker.append_specifiers(
+    (vc, stages(1, 15)),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    )
+
 ###############################################################################
 #################################### COLOR ####################################
 ###############################################################################

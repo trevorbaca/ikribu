@@ -9,7 +9,7 @@ metadata = datastructuretools.TypedOrderedDict(
             datastructuretools.TypedOrderedDict(
                 [
                     ('Bass Clarinet Music Staff', 'treble'),
-                    ('Cello Music Staff', 'treble'),
+                    ('Cello Music Staff', 'bass'),
                     ('Viola Music Staff', 'alto'),
                     ('Violin Music Staff', 'treble'),
                     ]
