@@ -308,7 +308,7 @@
         \override TupletBracket.padding = 2
         \override TupletBracket.staff-padding = 1.5
         \override TupletNumber.font-size = 1
-        \override TupletNumber.text = #tuplet-number::calc-fraction-text
+        %\override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
         barNumberFormatter = #format-oval-barnumbers
         markFormatter = #format-mark-box-alphabet

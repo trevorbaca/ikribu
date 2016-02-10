@@ -182,19 +182,20 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        R1 * 2
-                        R1 * 7/4
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 7/4
+                        e\breve \< \p
+                        e1..
+                        \once \override Hairpin #'circled-tip = ##t
+                        e1 \f \> \f
+                        e1
+                        e2.
+                        r1.. \!
                         R1 * 1/4
                         \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinMusicStaff = "Violin Music Staff" {
-                    \clef "percussion"
+                    \clef "treble"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
@@ -230,19 +231,49 @@
                         Va.
                     }
                     \context ViolaMusicVoice = "Viola Music Voice" {
-                        R1 * 2
-                        R1 * 7/4
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 7/4
+                        R1 * 15/4
+                        \clef "percussion"
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'1
+                            ^ \markup {
+                                \upright
+                                    "circle slate slowly"
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        c'1 \repeatTie
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        c'2. \repeatTie
+                        \once \override NoteHead #'style = #'cross
+                        \once \override RepeatTie #'direction = #up
+                        c'1.. \repeatTie
+                        \stopStaff
+                        \startStaff
+                        \clef "alto"
                         R1 * 1/4
                         \bar "|"
                     }
                 }
                 \tag cello
                 \context CelloMusicStaff = "Cello Music Staff" {
-                    \clef "treble"
+                    \clef "bass"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16

@@ -282,7 +282,7 @@
                 }
                 \tag cello
                 \context CelloMusicStaff = "Cello Music Staff" {
-                    \clef "treble"
+                    \clef "bass"
                     \set Staff.instrumentName = \markup {
                     \hcenter-in
                         #16
