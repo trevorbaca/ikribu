@@ -82,7 +82,7 @@ segment_maker.append_specifiers(
         baca.overrides.cross_note_heads(),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
-        Clef('percussion'),
+        spannertools.ClefSpanner(clef='percussion'),
         ],
     )
 
