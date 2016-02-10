@@ -53,9 +53,12 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
-    #baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
-    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    (bcl, stages(1, 3)),
+    baca.tools.RhythmSpecifier(
+        rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+            logical_tie_masks=silence_last(),
+            ),
+        ),
     )
 
 segment_maker.append_specifiers(
@@ -77,9 +80,11 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(1, 2)),
     [
-        baca.dynamics.make_repeated_hairpins(
-            ['p < f', 'f > p'],
-            span=[2],
+        baca.dynamics.make_hairpins(
+            ['p < f', 'f > niente'],
+            enchain_hairpins=True,
+            include_following_rests=True,
+            span=[3],
             ),
         ],
     )
