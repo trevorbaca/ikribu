@@ -83,7 +83,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \clef "treble"
-                    \set Staff.instrumentName = \markup {
+                    \set BassClarinetMusicStaff.instrumentName = \markup {
                     \hcenter-in
                         #16
                         \center-column
@@ -92,7 +92,7 @@
                                 clarinet
                             }
                     }
-                    \set Staff.shortInstrumentName = \markup {
+                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
                     \hcenter-in
                         #10
                         \line
@@ -109,6 +109,16 @@
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
+                    \set ViolinStaffGroup.instrumentName = \markup {
+                    \hcenter-in
+                        #16
+                        Violin
+                    }
+                    \set ViolinStaffGroup.shortInstrumentName = \markup {
+                    \hcenter-in
+                        #10
+                        Vn.
+                    }
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             R1 * 7/4
@@ -166,6 +176,16 @@
                 >>
                 \tag viola
                 \context ViolaStaffGroup = "Viola Staff Group" <<
+                    \set ViolaStaffGroup.instrumentName = \markup {
+                    \hcenter-in
+                        #16
+                        Viola
+                    }
+                    \set ViolaStaffGroup.shortInstrumentName = \markup {
+                    \hcenter-in
+                        #10
+                        Va.
+                    }
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             R1 * 7/4
@@ -184,6 +204,16 @@
                 >>
                 \tag cello
                 \context CelloStaffGroup = "Cello Staff Group" <<
+                    \set CelloStaffGroup.instrumentName = \markup {
+                    \hcenter-in
+                        #16
+                        Cello
+                    }
+                    \set CelloStaffGroup.shortInstrumentName = \markup {
+                    \hcenter-in
+                        #10
+                        Vc.
+                    }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             R1 * 7/4
