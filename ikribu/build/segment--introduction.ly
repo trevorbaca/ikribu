@@ -25,7 +25,20 @@
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4 ^ \markup {
+                    s1 * 7/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'00''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [1]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -47,6 +60,13 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [2]
+                            }
                 }
             }
         >>
@@ -80,121 +100,118 @@
                     }
                 }
                 \tag violin
-                \context ViolinMusicStaff = "Violin Music Staff" {
-                    \clef "treble"
-                    \set Staff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
+                \context ViolinStaffGroup = "Violin Staff Group" <<
+                    \context ViolinRHMusicStaff = "Violin RH Music Staff" {
+                        \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                            R1 * 7/4
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \set Staff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
-                    }
-                    \context ViolinMusicVoice = "Violin Music Voice" {
-                        \clef "percussion"
-                        \once \override NoteHead #'style = #'cross
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
-                        c'2
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                "grainfall: gracefully and deliberately pour"
-                                            }
-                                        \line
-                                            {
-                                                "heavy grain from cup to ground; then freeze"
-                                            }
-                                    }
-                                }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        mf
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \stopStaff
-                        \startStaff
+                    \context ViolinLHMusicStaff = "Violin LH Music Staff" {
                         \clef "treble"
-                        \once \override NoteHead #'style = #'cross
-                        r2
-                        \once \override NoteHead #'style = #'cross
-                        r2
-                        \once \override NoteHead #'style = #'cross
-                        r4
-                        R1 * 1/4
-                        \bar "|"
+                        \context ViolinLHMusicVoice = "Violin LH Music Voice" {
+                            \clef "percussion"
+                            \once \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            c'2
+                                ^ \markup {
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    "grainfall: gracefully and deliberately pour"
+                                                }
+                                            \line
+                                                {
+                                                    "heavy grain from cup to ground; then freeze"
+                                                }
+                                        }
+                                    }
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            mf
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
+                            \once \override NoteHead #'style = #'cross
+                            r2
+                            \once \override NoteHead #'style = #'cross
+                            r2
+                            \once \override NoteHead #'style = #'cross
+                            r4
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                }
+                >>
                 \tag viola
-                \context ViolaMusicStaff = "Viola Music Staff" {
-                    \clef "alto"
-                    \set Staff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
+                \context ViolaStaffGroup = "Viola Staff Group" <<
+                    \context ViolaRHMusicStaff = "Viola RH Music Staff" {
+                        \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                            R1 * 7/4
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \set Staff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
+                    \context ViolaLHMusicStaff = "Viola LH Music Staff" {
+                        \clef "alto"
+                        \context ViolaLHMusicVoice = "Viola LH Music Voice" {
+                            R1 * 7/4
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \context ViolaMusicVoice = "Viola Music Voice" {
-                        R1 * 7/4
-                        R1 * 1/4
-                        \bar "|"
-                    }
-                }
+                >>
                 \tag cello
-                \context CelloMusicStaff = "Cello Music Staff" {
-                    \clef "bass"
-                    \set Staff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
+                \context CelloStaffGroup = "Cello Staff Group" <<
+                    \context CelloRHMusicStaff = "Cello RH Music Staff" {
+                        \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                            R1 * 7/4
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \set Staff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
-                    }
-                    \context CelloMusicVoice = "Cello Music Voice" {
-                        \clef "treble"
-                        \once \override NoteHead #'style = #'harmonic
-                        fqf''1.. \laissezVibrer \sfz
-                            ^ \markup {
-                                \column
-                                    {
-                                        \line
-                                            {
-                                                "pizz. + l.v. as long as possible;"
-                                            }
-                                        \line
-                                            {
-                                                "do not dampen at start of following fermata"
-                                            }
-                                    }
-                                }
-                            _ \markup {
-                                \upright
-                                    III
-                                }
+                    \context CelloLHMusicStaff = "Cello LH Music Staff" {
                         \clef "bass"
-                        R1 * 1/4
-                        \bar "|"
+                        \context CelloLHMusicVoice = "Cello LH Music Voice" {
+                            \clef "treble"
+                            \once \override NoteHead #'style = #'harmonic
+                            fqf''1.. \laissezVibrer \sfz
+                                ^ \markup {
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    "pizz. + l.v. as long as possible;"
+                                                }
+                                            \line
+                                                {
+                                                    "do not dampen at start of following fermata"
+                                                }
+                                        }
+                                    }
+                                _ \markup {
+                                    \upright
+                                        III
+                                    }
+                            \clef "bass"
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                }
+                >>
             >>
         }
     >>

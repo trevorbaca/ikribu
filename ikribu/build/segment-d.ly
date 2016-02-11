@@ -1,16 +1,12 @@
     \context Score = "Score" \with {
-        currentBarNumber = #3
+        currentBarNumber = #51
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 8/4
-                    R1 * 2
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
+                    \time 3/4
+                    R1 * 3/4
                 }
                 {
                     \time 4/4
@@ -20,32 +16,40 @@
                     R1 * 1
                 }
                 {
-                    \time 3/4
-                    R1 * 3/4
+                    \time 2/4
+                    R1 * 1/2
                 }
                 {
                     \time 7/4
                     R1 * 7/4
                 }
                 {
-                    \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
-                    R1 * 1/4
-                        ^ \markup {
-                            \musicglyph
-                                #"scripts.ulongfermata"
-                            }
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 4/4
+                    R1 * 1
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
-                    \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    \mark #1
-                    s1 * 2
+                    \mark #4
+                    s1 * 3/4
                         ^ \markup {
                             \fontsize
                                 #-2
@@ -56,7 +60,7 @@
                                 #-3
                                 \with-color
                                     #blue
-                                    [A1]
+                                    [D1]
                             }
                         ^ \markup {
                         \fontsize
@@ -71,15 +75,58 @@
                         \upright
                             {
                                 =
-                                42
+                                104
                             }
                         }
+                }
+                {
+                    \time 4/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'01''
+                            }
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'04''
+                            }
+                }
+                {
+                    \time 2/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'06''
+                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'07''
+                            }
+                }
+                {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 3/4
                         ^ \markup {
                             \fontsize
                                 #-2
@@ -94,24 +141,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'21''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A2]
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'27''
+                                0'13''
                             }
                 }
                 {
@@ -122,38 +152,29 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'32''
+                                0'15''
                             }
                 }
                 {
-                    \time 7/4
+                    \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4
+                    s1 * 1
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'37''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A3]
+                                0'17''
                             }
                 }
                 {
-                    \time 1/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 1/4
-                        - \markup {
+                    s1 * 3/4
+                        ^ \markup {
                             \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A4]
+                                #-2
+                                0'19''
                             }
                 }
             }
@@ -182,14 +203,16 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        e\breve \< \p
-                        e1..
-                        \once \override Hairpin #'circled-tip = ##t
-                        e1 \f \> \f
-                        e1
-                        e2.
-                        r1.. \!
-                        R1 * 1/4
+                        R1 * 3/4
+                        R1 * 1
+                        R1 * 1
+                        R1 * 1/2
+                        R1 * 7/4
+                        R1 * 3/4
+                        R1 * 1
+                        R1 * 3/4
+                        R1 * 1
+                        R1 * 3/4
                         \bar "|"
                     }
                 }
@@ -197,25 +220,31 @@
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            R1 * 2
-                            R1 * 7/4
+                            R1 * 3/4
                             R1 * 1
+                            R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
                             R1 * 1
                             R1 * 3/4
-                            R1 * 7/4
-                            R1 * 1/4
+                            R1 * 1
+                            R1 * 3/4
                             \bar "|"
                         }
                     }
                     \context ViolinLHMusicStaff = "Violin LH Music Staff" {
                         \context ViolinLHMusicVoice = "Violin LH Music Voice" {
-                            R1 * 2
-                            R1 * 7/4
+                            R1 * 3/4
                             R1 * 1
+                            R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
                             R1 * 1
                             R1 * 3/4
-                            R1 * 7/4
-                            R1 * 1/4
+                            R1 * 1
+                            R1 * 3/4
                             \bar "|"
                         }
                     }
@@ -224,54 +253,31 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            R1 * 2
-                            R1 * 7/4
+                            R1 * 3/4
                             R1 * 1
+                            R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
                             R1 * 1
                             R1 * 3/4
-                            R1 * 7/4
-                            R1 * 1/4
+                            R1 * 1
+                            R1 * 3/4
                             \bar "|"
                         }
                     }
                     \context ViolaLHMusicStaff = "Viola LH Music Staff" {
                         \context ViolaLHMusicVoice = "Viola LH Music Voice" {
-                            R1 * 15/4
-                            \clef "percussion"
-                            \once \override NoteHead #'style = #'cross
-                            \once \override RepeatTie #'direction = #up
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'1
-                                ^ \markup {
-                                    \upright
-                                        "circle slate slowly"
-                                    }
-                                _ \markup {
-                                    \larger
-                                        \italic
-                                            “
-                                    \dynamic
-                                        \override
-                                            #'(font-name . #f)
-                                            mf
-                                    \larger
-                                        \italic
-                                            ”
-                                    }
-                            \once \override NoteHead #'style = #'cross
-                            \once \override RepeatTie #'direction = #up
-                            c'1 \repeatTie
-                            \once \override NoteHead #'style = #'cross
-                            \once \override RepeatTie #'direction = #up
-                            c'2. \repeatTie
-                            \once \override NoteHead #'style = #'cross
-                            \once \override RepeatTie #'direction = #up
-                            c'1.. \repeatTie
-                            \stopStaff
-                            \startStaff
-                            R1 * 1/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
                             \bar "|"
                         }
                     }
@@ -280,25 +286,31 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            R1 * 2
-                            R1 * 7/4
-                            R1 * 1
-                            R1 * 1
-                            R1 * 3/4
-                            R1 * 7/4
-                            R1 * 1/4
+                            c'2.
+                            c'1 \repeatTie
+                            c'1 \repeatTie
+                            c'2 \repeatTie
+                            c'1.. \repeatTie
+                            c'2. \repeatTie
+                            c'1 \repeatTie
+                            c'2. \repeatTie
+                            c'1 \repeatTie
+                            c'2. \repeatTie
                             \bar "|"
                         }
                     }
                     \context CelloLHMusicStaff = "Cello LH Music Staff" {
                         \context CelloLHMusicVoice = "Cello LH Music Voice" {
-                            R1 * 2
-                            R1 * 7/4
-                            R1 * 1
-                            R1 * 1
-                            R1 * 3/4
-                            R1 * 7/4
-                            R1 * 1/4
+                            c'2.
+                            c'1 \repeatTie
+                            c'1 \repeatTie
+                            c'2 \repeatTie
+                            c'1.. \repeatTie
+                            c'2. \repeatTie
+                            c'1 \repeatTie
+                            c'2. \repeatTie
+                            c'1 \repeatTie
+                            c'2. \repeatTie
                             \bar "|"
                         }
                     }

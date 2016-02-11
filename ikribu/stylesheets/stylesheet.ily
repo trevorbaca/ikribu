@@ -214,6 +214,51 @@
     }
     \context {
         \Voice
+        \name ViolinRHMusicVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Staff
+        \name ViolinRHMusicStaff
+        \type Engraver_group
+        \alias Staff
+        \accepts ViolinRHMusicVoice
+    }
+    \context {
+        \Voice
+        \name ViolinLHMusicVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Staff
+        \name ViolinLHMusicStaff
+        \type Engraver_group
+        \alias Staff
+        \accepts ViolinLHMusicVoice
+    }
+    \context {
+        \StaffGroup
+        \name ViolinStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts ViolinRHMusicStaff
+        \accepts ViolinLHMusicStaff
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+        instrumentName = \violinName
+        shortInstrumentName = \shortViolinName
+    }
+
+
+
+
+
+
+
+
+    \context {
+        \Voice
         \name ViolaMusicVoice
         \type Engraver_group
         \alias Voice
@@ -227,6 +272,55 @@
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
     }
+
+
+    \context {
+        \Voice
+        \name ViolaRHMusicVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Staff
+        \name ViolaRHMusicStaff
+        \type Engraver_group
+        \alias Staff
+        \accepts ViolaRHMusicVoice
+    }
+    \context {
+        \Voice
+        \name ViolaLHMusicVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Staff
+        \name ViolaLHMusicStaff
+        \type Engraver_group
+        \alias Staff
+        \accepts ViolaLHMusicVoice
+    }
+    \context {
+        \StaffGroup
+        \name ViolaStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts ViolaRHMusicStaff
+        \accepts ViolaLHMusicStaff
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+        instrumentName = \violaName
+        shortInstrumentName = \shortViolaName
+    }
+
+
+
+
+
+
+
+
+
+
     \context {
         \Voice
         \name CelloMusicVoice
@@ -242,6 +336,50 @@
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
     }
+
+
+    \context {
+        \Voice
+        \name CelloRHMusicVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Staff
+        \name CelloRHMusicStaff
+        \type Engraver_group
+        \alias Staff
+        \accepts CelloRHMusicVoice
+    }
+    \context {
+        \Voice
+        \name CelloLHMusicVoice
+        \type Engraver_group
+        \alias Voice
+    }
+    \context {
+        \Staff
+        \name CelloLHMusicStaff
+        \type Engraver_group
+        \alias Staff
+        \accepts CelloLHMusicVoice
+    }
+    \context {
+        \StaffGroup
+        \name CelloStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts CelloRHMusicStaff
+        \accepts CelloLHMusicStaff
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+        instrumentName = \celloName
+        shortInstrumentName = \shortCelloName
+    }
+
+
+
+
+
     \context {
         \StaffGroup
         \name EnsembleStaffGroup
@@ -249,8 +387,11 @@
         \alias StaffGroup
         \accepts BassClarinetMusicStaff
         \accepts ViolinMusicStaff
+        \accepts ViolinStaffGroup
         \accepts ViolaMusicStaff
+        \accepts ViolaStaffGroup
         \accepts CelloMusicStaff
+        \accepts CelloStaffGroup
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
     }
     \context {

@@ -32,11 +32,11 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    #label_clock_time=True,
-    #label_stage_numbers=True,
+    label_clock_time=True,
+    label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
-    label_stage_numbers=False,
+    score_template_name='ParametricScoreTemplate',
     spacing_specifier=spacing_specifier,
     tempo_map=tempo_map,
     time_signatures=time_signatures,
@@ -51,7 +51,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn, stages(1)),
+    (vn_lh, stages(1)),
     baca.tools.RhythmSpecifier(
         division_expression=baca.rhythm.split_by_durations(
             durations=[(2, 4)],
@@ -63,7 +63,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1)),
+    (vc_lh, stages(1)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -72,7 +72,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn, stages(1)),
+    (vn_lh, stages(1)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_markup_lines([
@@ -87,7 +87,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1)),
+    (vc_lh, stages(1)),
     [
         baca.markup.make_string_number(3),
         baca.markup.make_markup_lines([
