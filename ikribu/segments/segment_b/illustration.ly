@@ -565,134 +565,197 @@
                     }
                 }
                 \tag violin
-                \context ViolinMusicStaff = "Violin Music Staff" {
-                    \clef "treble"
-                    \set Staff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
+                \context ViolinStaffGroup = "Violin Staff Group" <<
+                    \context ViolinRHMusicStaff = "Violin RH Music Staff" {
+                        \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                            R1 * 1
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 7/4
+                            R1 * 1/4
+                            R1 * 2
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 2
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \set Staff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
+                    \context ViolinLHMusicStaff = "Violin LH Music Staff" {
+                        \context ViolinLHMusicVoice = "Violin LH Music Voice" {
+                            e'1 :32 \< \ppp
+                                ^ \markup {
+                                    \upright
+                                        "trem. flautando"
+                                    }
+                                _ \markup {
+                                    \upright
+                                        III
+                                    }
+                            \once \override Hairpin #'circled-tip = ##t
+                            e'1 :32 \repeatTie \pp \> \pp
+                            e'2. :32 \repeatTie
+                            R1 * 9/4 \!
+                            e'\breve :32
+                            e'2. :32 \repeatTie
+                            e'1 :32 \repeatTie
+                            R1 * 3/2
+                            e'2 :32
+                            e'1.. :32 \repeatTie
+                            e'2. :32 \repeatTie
+                            R1 * 3/2
+                            e'2. :32
+                            e'1 :32 \repeatTie
+                            e'2. :32 \repeatTie
+                            e'2 :32 \repeatTie
+                            e'1.. :32 \repeatTie
+                            e'\breve :32 \repeatTie
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \context ViolinMusicVoice = "Violin Music Voice" {
-                        e'1 :32 \< \ppp
-                            ^ \markup {
-                                \upright
-                                    "trem. flautando"
-                                }
-                            _ \markup {
-                                \upright
-                                    III
-                                }
-                        \once \override Hairpin #'circled-tip = ##t
-                        e'1 :32 \repeatTie \pp \> \pp
-                        e'2. :32 \repeatTie
-                        R1 * 9/4 \!
-                        e'\breve :32
-                        e'2. :32 \repeatTie
-                        e'1 :32 \repeatTie
-                        R1 * 3/2
-                        e'2 :32
-                        e'1.. :32 \repeatTie
-                        e'2. :32 \repeatTie
-                        R1 * 3/2
-                        e'2. :32
-                        e'1 :32 \repeatTie
-                        e'2. :32 \repeatTie
-                        e'2 :32 \repeatTie
-                        e'1.. :32 \repeatTie
-                        e'\breve :32 \repeatTie
-                        R1 * 1/4
-                        \bar "|"
-                    }
-                }
+                >>
                 \tag viola
-                \context ViolaMusicStaff = "Viola Music Staff" {
-                    \clef "alto"
-                    \set Staff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
+                \context ViolaStaffGroup = "Viola Staff Group" <<
+                    \context ViolaRHMusicStaff = "Viola RH Music Staff" {
+                        \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                            R1 * 1
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 7/4
+                            R1 * 1/4
+                            R1 * 2
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 2
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \set Staff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
+                    \context ViolaLHMusicStaff = "Viola LH Music Staff" {
+                        \context ViolaLHMusicVoice = "Viola LH Music Voice" {
+                            R1 * 1
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 7/4
+                            R1 * 1/4
+                            R1 * 2
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 2
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \context ViolaMusicVoice = "Viola Music Voice" {
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 1/4
-                        R1 * 7/4
-                        R1 * 1/4
-                        R1 * 2
-                        R1 * 3/4
-                        R1 * 1
-                        R1 * 1/4
-                        R1 * 1
-                        R1 * 1/4
-                        R1 * 1/2
-                        R1 * 7/4
-                        R1 * 3/4
-                        R1 * 1/4
-                        R1 * 1
-                        R1 * 1/4
-                        R1 * 3/4
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 1/2
-                        R1 * 7/4
-                        R1 * 2
-                        R1 * 1/4
-                        \bar "|"
-                    }
-                }
+                >>
                 \tag cello
-                \context CelloMusicStaff = "Cello Music Staff" {
-                    \clef "bass"
-                    \set Staff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
+                \context CelloStaffGroup = "Cello Staff Group" <<
+                    \context CelloRHMusicStaff = "Cello RH Music Staff" {
+                        \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                            R1 * 1
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 7/4
+                            R1 * 1/4
+                            R1 * 2
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 2
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \set Staff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
+                    \context CelloLHMusicStaff = "Cello LH Music Staff" {
+                        \context CelloLHMusicVoice = "Cello LH Music Voice" {
+                            R1 * 1
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 7/4
+                            R1 * 1/4
+                            R1 * 2
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
+                            R1 * 1
+                            R1 * 1/4
+                            R1 * 3/4
+                            R1 * 1
+                            R1 * 3/4
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 2
+                            R1 * 1/4
+                            \bar "|"
+                        }
                     }
-                    \context CelloMusicVoice = "Cello Music Voice" {
-                        R1 * 1
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 1/4
-                        R1 * 7/4
-                        R1 * 1/4
-                        R1 * 2
-                        R1 * 3/4
-                        R1 * 1
-                        R1 * 1/4
-                        R1 * 1
-                        R1 * 1/4
-                        R1 * 1/2
-                        R1 * 7/4
-                        R1 * 3/4
-                        R1 * 1/4
-                        R1 * 1
-                        R1 * 1/4
-                        R1 * 3/4
-                        R1 * 1
-                        R1 * 3/4
-                        R1 * 1/2
-                        R1 * 7/4
-                        R1 * 2
-                        R1 * 1/4
-                        \bar "|"
-                    }
-                }
+                >>
             >>
         }
     >>

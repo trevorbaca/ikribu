@@ -16,6 +16,12 @@ from abjad.tools.rhythmmakertools import sustain_last
 
 bcl = 'Bass Clarinet Music Voice'
 vn = 'Violin Music Voice'
+vn_rh = 'Violin RH Music Voice'
+vn_lh = 'Violin LH Music Voice'
 va = 'Viola Music Voice'
+va_rh = 'Viola RH Music Voice'
+va_lh = 'Viola LH Music Voice'
 vc = 'Cello Music Voice'
+vc_rh = 'Cello RH Music Voice'
+vc_lh = 'Cello LH Music Voice'
 tutti = [bcl, vn, va, vc]

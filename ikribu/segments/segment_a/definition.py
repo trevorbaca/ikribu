@@ -6,7 +6,7 @@ from ikribu.materials.__abbreviations__ import *
 
 
 ###############################################################################
-############################### [introduction] ################################
+##################################### [A] #####################################
 ###############################################################################
 
 stage_specifier = baca.tools.StageSpecifier([
@@ -38,6 +38,7 @@ segment_maker = baca.tools.SegmentMaker(
     label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
+    score_template_name='ParametricScoreTemplate',
     spacing_specifier=spacing_specifier,
     tempo_map=tempo_map,
     time_signatures=time_signatures,
@@ -62,7 +63,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(2, 3)),
+    (va_lh, stages(2, 3)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -90,7 +91,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(2, 3)),
+    (va_lh, stages(2, 3)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_markup('circle slate slowly'),
