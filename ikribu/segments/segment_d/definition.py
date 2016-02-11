@@ -10,7 +10,9 @@ from ikribu.materials.__abbreviations__ import *
 ###############################################################################
 
 stage_specifier = baca.tools.StageSpecifier([
-    10,
+    5,
+    5,
+    Fermata('shortfermata'),
     ])
 
 tempo_map = baca.tools.TempoMap([
@@ -50,15 +52,24 @@ segment_maker = baca.tools.SegmentMaker(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vc_rh, stages(1)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    (vc_rh, stages(1, 2)),
+    ikribu.tools.make_bow_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    (vc, stages(1, 2)),
+    ikribu.tools.make_glissando_rhythm_specifier(),
     )
 
 ###############################################################################
 #################################### COLOR ####################################
 ###############################################################################
+
+segment_maker.append_specifiers(
+    (vc_rh, stages(1, 2)),
+    [
+        baca.overrides.repeat_tie_up(),
+        baca.pitch.pitches('C4'),
+        Clef('percussion'),
+        ],
+    )
