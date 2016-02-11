@@ -206,7 +206,7 @@
         \accepts BassClarinetMusicVoice
         instrumentName = \bassClarinetName
         shortInstrumentName = \shortBassClarinetName
-        \RemoveAllEmptyStaves
+        %\RemoveAllEmptyStaves
     }
 
     % VIOLIN
@@ -248,7 +248,7 @@
         \accepts ViolinRHMusicStaff
         \accepts ViolinMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-        \RemoveAllEmptyStaves
+        %\RemoveAllEmptyStaves
         instrumentName = \violinName
         shortInstrumentName = \shortViolinName
     }
@@ -292,7 +292,7 @@
         \accepts ViolaRHMusicStaff
         \accepts ViolaMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-        \RemoveAllEmptyStaves
+        %\RemoveAllEmptyStaves
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
     }
@@ -336,7 +336,7 @@
         \accepts CelloRHMusicStaff
         \accepts CelloMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-        \RemoveAllEmptyStaves
+        %\RemoveAllEmptyStaves
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
     }

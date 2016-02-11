@@ -52,9 +52,21 @@
                     \time 3/4
                     R1 * 3/4
                 }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
+                }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
+                    \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #4
@@ -141,6 +153,13 @@
                                 #-2
                                 0'11''
                             }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D2]
+                            }
                 }
                 {
                     \time 4/4
@@ -186,6 +205,19 @@
                                 0'19''
                             }
                 }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [D3]
+                            }
+                }
             }
         >>
         \context MusicContext = "Music Context" {
@@ -222,6 +254,7 @@
                         R1 * 3/4
                         R1 * 1
                         R1 * 3/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -249,6 +282,7 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -265,6 +299,7 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -293,6 +328,7 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -309,6 +345,7 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -327,32 +364,169 @@
                     }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            c'2.
-                            c'1 \repeatTie
-                            c'1 \repeatTie
-                            c'2 \repeatTie
-                            c'1.. \repeatTie
-                            c'2. \repeatTie
-                            c'1 \repeatTie
-                            c'2. \repeatTie
-                            c'1 \repeatTie
-                            c'2. \repeatTie
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 3/2 {
+                                \once \override RepeatTie #'direction = #up
+                                \clef "percussion"
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \times 2/3 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/6 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 3/2 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 4/3 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 3/2 {
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                            }
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \clef "bass"
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            c'2.
-                            c'1 \repeatTie
-                            c'1 \repeatTie
-                            c'2 \repeatTie
-                            c'1.. \repeatTie
-                            c'2. \repeatTie
-                            c'1 \repeatTie
-                            c'2. \repeatTie
-                            c'1 \repeatTie
-                            c'2. \repeatTie
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                c'8 [
+                                c'8.
+                                c'8
+                                c'8. ]
+                                c'4
+                            }
+                            \times 4/5 {
+                                c'2
+                                c'8
+                                c'2
+                                c'8
+                            }
+                            {
+                                c'4.
+                                c'2
+                                c'8
+                            }
+                            \times 4/5 {
+                                c'4
+                                c'4.
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/8 {
+                                c'2
+                                c'8 [
+                                c'8
+                                c'8.
+                                c'8
+                                c'8. ]
+                                c'2.
+                            }
+                            {
+                                c'8
+                                c'2
+                                c'8
+                            }
+                            \times 8/9 {
+                                c'4.
+                                c'2.
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 3/4 {
+                                c'8
+                                c'2..
+                            }
+                            {
+                                c'8 [
+                                c'8
+                                c'8.
+                                c'8
+                                c'8. ]
+                                c'4
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                c'2
+                                c'8
+                                c'4
+                            }
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
