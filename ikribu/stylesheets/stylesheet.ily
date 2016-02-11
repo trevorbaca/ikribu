@@ -213,6 +213,7 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolinRHMusicVoice
+        \override StaffSymbol.line-count = 1
     }
     \context {
         \Voice
@@ -252,6 +253,7 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolaRHMusicVoice
+        \override StaffSymbol.line-count = 1
     }
     \context {
         \Voice
@@ -291,6 +293,7 @@
         \type Engraver_group
         \alias Staff
         \accepts CelloRHMusicVoice
+        \override StaffSymbol.line-count = 1
     }
     \context {
         \Voice
