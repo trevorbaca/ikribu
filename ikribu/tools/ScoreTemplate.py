@@ -46,29 +46,47 @@ class ScoreTemplate(abctools.AbjadValueObject):
                                 }
                             }
                             \tag violin
-                            \context ViolinMusicStaff = "Violin Music Staff" {
-                                \clef "treble"
-                                \set Staff.instrumentName = \markup { Violin }
-                                \set Staff.shortInstrumentName = \markup { Vn. }
-                                \context ViolinMusicVoice = "Violin Music Voice" {
+                            \context ViolinStaffGroup = "Violin Staff Group" <<
+                                \set ViolinStaffGroup.instrumentName = \markup { Violin }
+                                \set ViolinStaffGroup.shortInstrumentName = \markup { Vn. }
+                                \context ViolinRHMusicStaff = "Violin RH Music Staff" {
+                                    \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                                    }
                                 }
-                            }
+                                \context ViolinMusicStaff = "Violin Music Staff" {
+                                    \clef "treble"
+                                    \context ViolinMusicVoice = "Violin Music Voice" {
+                                    }
+                                }
+                            >>
                             \tag viola
-                            \context ViolaMusicStaff = "Viola Music Staff" {
-                                \clef "alto"
-                                \set Staff.instrumentName = \markup { Viola }
-                                \set Staff.shortInstrumentName = \markup { Va. }
-                                \context ViolaMusicVoice = "Viola Music Voice" {
+                            \context ViolaStaffGroup = "Viola Staff Group" <<
+                                \set ViolaStaffGroup.instrumentName = \markup { Viola }
+                                \set ViolaStaffGroup.shortInstrumentName = \markup { Va. }
+                                \context ViolaRHMusicStaff = "Viola RH Music Staff" {
+                                    \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                                    }
                                 }
-                            }
+                                \context ViolaMusicStaff = "Viola Music Staff" {
+                                    \clef "alto"
+                                    \context ViolaMusicVoice = "Viola Music Voice" {
+                                    }
+                                }
+                            >>
                             \tag cello
-                            \context CelloMusicStaff = "Cello Music Staff" {
-                                \clef "bass"
-                                \set Staff.instrumentName = \markup { Cello }
-                                \set Staff.shortInstrumentName = \markup { Vc. }
-                                \context CelloMusicVoice = "Cello Music Voice" {
+                            \context CelloStaffGroup = "Cello Staff Group" <<
+                                \set CelloStaffGroup.instrumentName = \markup { Cello }
+                                \set CelloStaffGroup.shortInstrumentName = \markup { Vc. }
+                                \context CelloRHMusicStaff = "Cello RH Music Staff" {
+                                    \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                                    }
                                 }
-                            }
+                                \context CelloMusicStaff = "Cello Music Staff" {
+                                    \clef "bass"
+                                    \context CelloMusicVoice = "Cello Music Voice" {
+                                    }
+                                }
+                            >>
                         >>
                     }
                 >>
@@ -119,6 +137,16 @@ class ScoreTemplate(abctools.AbjadValueObject):
         attach(bass_clarinet, bass_clarinet_music_staff)
         attach(Clef('treble'), bass_clarinet_music_staff)
         self._attach_tag('bass_clarinet', bass_clarinet_music_staff)
+        violin_rh_music_voice = scoretools.Voice(
+            [], 
+            context_name='ViolinRHMusicVoice',
+            name='Violin RH Music Voice',
+            )
+        violin_rh_music_staff = scoretools.Staff(
+            [violin_rh_music_voice], 
+            context_name='ViolinRHMusicStaff',
+            name='Violin RH Music Staff',
+            )
         violin_music_voice = scoretools.Voice(
             [], 
             context_name='ViolinMusicVoice',
@@ -129,13 +157,26 @@ class ScoreTemplate(abctools.AbjadValueObject):
             context_name='ViolinMusicStaff',
             name='Violin Music Staff',
             )
-        violin = instrumenttools.Violin(
-            instrument_name='violin',
-            short_instrument_name='vn.',
+        violin_staff_group = scoretools.StaffGroup(
+            [violin_rh_music_staff, violin_music_staff],
+            context_name='ViolinStaffGroup',
+            name='Violin Staff Group',
             )
-        attach(violin, violin_music_staff)
+        violin = instrumenttools.Violin()
+        violin._default_scope = 'ViolinStaffGroup'
+        attach(violin, violin_staff_group)
         attach(Clef('treble'), violin_music_staff)
-        self._attach_tag('violin', violin_music_staff)
+        self._attach_tag('violin', violin_staff_group)
+        viola_rh_music_voice = scoretools.Voice(
+            [], 
+            context_name='ViolaRHMusicVoice',
+            name='Viola RH Music Voice',
+            )
+        viola_rh_music_staff = scoretools.Staff(
+            [viola_rh_music_voice], 
+            context_name='ViolaRHMusicStaff',
+            name='Viola RH Music Staff',
+            )
         viola_music_voice = scoretools.Voice(
             [], 
             context_name='ViolaMusicVoice',
@@ -146,9 +187,26 @@ class ScoreTemplate(abctools.AbjadValueObject):
             context_name='ViolaMusicStaff',
             name='Viola Music Staff',
             )
-        attach(instrumenttools.Viola(), viola_music_staff)
+        viola_staff_group = scoretools.StaffGroup(
+            [viola_rh_music_staff, viola_music_staff],
+            context_name='ViolaStaffGroup',
+            name='Viola Staff Group',
+            )
+        viola = instrumenttools.Viola()
+        viola._default_scope = 'ViolaStaffGroup'
+        attach(viola, viola_staff_group)
         attach(Clef('alto'), viola_music_staff)
-        self._attach_tag('viola', viola_music_staff)
+        self._attach_tag('viola', viola_staff_group)
+        cello_rh_music_voice = scoretools.Voice(
+            [], 
+            context_name='CelloRHMusicVoice',
+            name='Cello RH Music Voice',
+            )
+        cello_rh_music_staff = scoretools.Staff(
+            [cello_rh_music_voice], 
+            context_name='CelloRHMusicStaff',
+            name='Cello RH Music Staff',
+            )
         cello_music_voice = scoretools.Voice(
             [], 
             context_name='CelloMusicVoice',
@@ -159,15 +217,22 @@ class ScoreTemplate(abctools.AbjadValueObject):
             context_name='CelloMusicStaff',
             name='Cello Music Staff',
             )
-        attach(instrumenttools.Cello(), cello_music_staff)
+        cello_staff_group = scoretools.StaffGroup(
+            [cello_rh_music_staff, cello_music_staff],
+            context_name='CelloStaffGroup',
+            name='Cello Staff Group',
+            )
+        cello = instrumenttools.Cello()
+        cello._default_scope = 'CelloStaffGroup'
+        attach(cello, cello_staff_group)
         attach(Clef('bass'), cello_music_staff)
-        self._attach_tag('cello', cello_music_staff)
+        self._attach_tag('cello', cello_staff_group)
         ensemble_staff_group = scoretools.StaffGroup(
             [
                 bass_clarinet_music_staff, 
-                violin_music_staff, 
-                viola_music_staff, 
-                cello_music_staff,
+                violin_staff_group, 
+                viola_staff_group, 
+                cello_staff_group,
                 ], 
             context_name='EnsembleStaffGroup',
             name='Ensemble Staff Group',

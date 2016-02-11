@@ -108,9 +108,9 @@
                             \bar "|"
                         }
                     }
-                    \context ViolinLHMusicStaff = "Violin LH Music Staff" {
+                    \context ViolinMusicStaff = "Violin Music Staff" {
                         \clef "treble"
-                        \context ViolinLHMusicVoice = "Violin LH Music Voice" {
+                        \context ViolinMusicVoice = "Violin Music Voice" {
                             \clef "percussion"
                             \once \override NoteHead #'style = #'cross
                             \stopStaff
@@ -165,9 +165,9 @@
                             \bar "|"
                         }
                     }
-                    \context ViolaLHMusicStaff = "Viola LH Music Staff" {
+                    \context ViolaMusicStaff = "Viola Music Staff" {
                         \clef "alto"
-                        \context ViolaLHMusicVoice = "Viola LH Music Voice" {
+                        \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 7/4
                             R1 * 1/4
                             \bar "|"
@@ -183,9 +183,9 @@
                             \bar "|"
                         }
                     }
-                    \context CelloLHMusicStaff = "Cello LH Music Staff" {
+                    \context CelloMusicStaff = "Cello Music Staff" {
                         \clef "bass"
-                        \context CelloLHMusicVoice = "Cello LH Music Voice" {
+                        \context CelloMusicVoice = "Cello Music Voice" {
                             \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
                             fqf''1.. \laissezVibrer \sfz

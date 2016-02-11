@@ -182,6 +182,8 @@
         \Voice
         \remove Forbid_line_break_engraver
     }
+
+    % BASS CLARINET
     \context {
         \Voice
         \name BassClarinetMusicVoice
@@ -197,21 +199,8 @@
         instrumentName = \bassClarinetName
         shortInstrumentName = \shortBassClarinetName
     }
-    \context {
-        \Voice
-        \name ViolinMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolinMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolinMusicVoice
-        instrumentName = \violinName
-        shortInstrumentName = \shortViolinName
-    }
+
+    % VIOLIN
     \context {
         \Voice
         \name ViolinRHMusicVoice
@@ -227,16 +216,16 @@
     }
     \context {
         \Voice
-        \name ViolinLHMusicVoice
+        \name ViolinMusicVoice
         \type Engraver_group
         \alias Voice
     }
     \context {
         \Staff
-        \name ViolinLHMusicStaff
+        \name ViolinMusicStaff
         \type Engraver_group
         \alias Staff
-        \accepts ViolinLHMusicVoice
+        \accepts ViolinMusicVoice
     }
     \context {
         \StaffGroup
@@ -244,36 +233,13 @@
         \type Engraver_group
         \alias StaffGroup
         \accepts ViolinRHMusicStaff
-        \accepts ViolinLHMusicStaff
+        \accepts ViolinMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
         instrumentName = \violinName
         shortInstrumentName = \shortViolinName
     }
 
-
-
-
-
-
-
-
-    \context {
-        \Voice
-        \name ViolaMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolaMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolaMusicVoice
-        instrumentName = \violaName
-        shortInstrumentName = \shortViolaName
-    }
-
-
+    % VIOLA
     \context {
         \Voice
         \name ViolaRHMusicVoice
@@ -289,16 +255,16 @@
     }
     \context {
         \Voice
-        \name ViolaLHMusicVoice
+        \name ViolaMusicVoice
         \type Engraver_group
         \alias Voice
     }
     \context {
         \Staff
-        \name ViolaLHMusicStaff
+        \name ViolaMusicStaff
         \type Engraver_group
         \alias Staff
-        \accepts ViolaLHMusicVoice
+        \accepts ViolaMusicVoice
     }
     \context {
         \StaffGroup
@@ -306,38 +272,13 @@
         \type Engraver_group
         \alias StaffGroup
         \accepts ViolaRHMusicStaff
-        \accepts ViolaLHMusicStaff
+        \accepts ViolaMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
     }
 
-
-
-
-
-
-
-
-
-
-    \context {
-        \Voice
-        \name CelloMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name CelloMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts CelloMusicVoice
-        instrumentName = \celloName
-        shortInstrumentName = \shortCelloName
-    }
-
-
+    % CELLO
     \context {
         \Voice
         \name CelloRHMusicVoice
@@ -353,16 +294,16 @@
     }
     \context {
         \Voice
-        \name CelloLHMusicVoice
+        \name CelloMusicVoice
         \type Engraver_group
         \alias Voice
     }
     \context {
         \Staff
-        \name CelloLHMusicStaff
+        \name CelloMusicStaff
         \type Engraver_group
         \alias Staff
-        \accepts CelloLHMusicVoice
+        \accepts CelloMusicVoice
     }
     \context {
         \StaffGroup
@@ -370,16 +311,13 @@
         \type Engraver_group
         \alias StaffGroup
         \accepts CelloRHMusicStaff
-        \accepts CelloLHMusicStaff
+        \accepts CelloMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
     }
 
-
-
-
-
+    % ENSEMBLE STAFF GROUP
     \context {
         \StaffGroup
         \name EnsembleStaffGroup
@@ -402,6 +340,8 @@
         \accepts EnsembleStaffGroup
         systemStartDelimiter = #'SystemStartBar
     }
+
+    % SCORE
     \context {
         \Score
         \accepts TimeSignatureContext

@@ -49,7 +49,6 @@ segment_maker = baca.tools.SegmentMaker(
     label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
-    score_template_name='ParametricScoreTemplate',
     spacing_specifier=spacing_specifier,
     tempo_map=tempo_map,
     time_signatures=time_signatures,
@@ -65,7 +64,7 @@ segment_maker = baca.tools.SegmentMaker(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn_lh, stages(1)),
+    (vn, stages(1)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -75,7 +74,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn_lh, stages(5)),
+    (vn, stages(5)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -85,7 +84,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn_lh, stages(9)),
+    (vn, stages(9)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -95,7 +94,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn_lh, stages(13, 14)),
+    (vn, stages(13, 14)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -109,7 +108,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn_lh, stages(1, 15)),
+    (vn, stages(1, 15)),
     [
         baca.articulations.stem_tremolo(),
         baca.markup.make_markup('trem. flautando'),
@@ -119,7 +118,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn_lh, stages(1)),
+    (vn, stages(1)),
     [
         baca.dynamics.make_hairpins(
             ['ppp < pp', 'pp > niente'],

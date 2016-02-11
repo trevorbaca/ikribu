@@ -587,8 +587,9 @@
                             \bar "|"
                         }
                     }
-                    \context ViolinLHMusicStaff = "Violin LH Music Staff" {
-                        \context ViolinLHMusicVoice = "Violin LH Music Voice" {
+                    \context ViolinMusicStaff = "Violin Music Staff" {
+                        \clef "treble"
+                        \context ViolinMusicVoice = "Violin Music Voice" {
                             e'1 :32 \< \ppp
                                 ^ \markup {
                                     \upright
@@ -653,8 +654,9 @@
                             \bar "|"
                         }
                     }
-                    \context ViolaLHMusicStaff = "Viola LH Music Staff" {
-                        \context ViolaLHMusicVoice = "Viola LH Music Voice" {
+                    \context ViolaMusicStaff = "Viola Music Staff" {
+                        \clef "alto"
+                        \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
@@ -716,8 +718,9 @@
                             \bar "|"
                         }
                     }
-                    \context CelloLHMusicStaff = "Cello LH Music Staff" {
-                        \context CelloLHMusicVoice = "Cello LH Music Voice" {
+                    \context CelloMusicStaff = "Cello Music Staff" {
+                        \clef "bass"
+                        \context CelloMusicVoice = "Cello Music Voice" {
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
