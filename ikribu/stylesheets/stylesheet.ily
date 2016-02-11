@@ -110,6 +110,8 @@
     ragged-bottom = ##t
     ragged-last = ##t
     ragged-right = ##t
+
+    % TIME SIGNATURE CONTEXT
     \context {
         \name TimeSignatureContextSkips
         \type Engraver_group
@@ -174,6 +176,12 @@
         )
         \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
+
+    % GENERIC CONTEXTS
+    \context {
+        \PianoStaff
+        \remove "Keep_alive_together_engraver" 
+    }
     \context {
         \Staff
         \remove Time_signature_engraver
@@ -198,6 +206,7 @@
         \accepts BassClarinetMusicVoice
         instrumentName = \bassClarinetName
         shortInstrumentName = \shortBassClarinetName
+        \RemoveAllEmptyStaves
     }
 
     % VIOLIN
@@ -213,7 +222,10 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolinRHMusicVoice
+        \override Clef.stencil = ##f
+        \override StaffSymbol.color = #red
         \override StaffSymbol.line-count = 1
+        \RemoveAllEmptyStaves
     }
     \context {
         \Voice
@@ -229,13 +241,14 @@
         \accepts ViolinMusicVoice
     }
     \context {
-        \StaffGroup
+        \PianoStaff
         \name ViolinStaffGroup
         \type Engraver_group
-        \alias StaffGroup
+        \alias PianoStaff
         \accepts ViolinRHMusicStaff
         \accepts ViolinMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+        \RemoveAllEmptyStaves
         instrumentName = \violinName
         shortInstrumentName = \shortViolinName
     }
@@ -253,7 +266,10 @@
         \type Engraver_group
         \alias Staff
         \accepts ViolaRHMusicVoice
+        \override Clef.stencil = ##f
+        \override StaffSymbol.color = #green
         \override StaffSymbol.line-count = 1
+        \RemoveAllEmptyStaves
     }
     \context {
         \Voice
@@ -269,13 +285,14 @@
         \accepts ViolaMusicVoice
     }
     \context {
-        \StaffGroup
+        \PianoStaff
         \name ViolaStaffGroup
         \type Engraver_group
-        \alias StaffGroup
+        \alias PianoStaff
         \accepts ViolaRHMusicStaff
         \accepts ViolaMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+        \RemoveAllEmptyStaves
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
     }
@@ -293,7 +310,10 @@
         \type Engraver_group
         \alias Staff
         \accepts CelloRHMusicVoice
+        \override Clef.stencil = ##f
+        \override StaffSymbol.color = #blue
         \override StaffSymbol.line-count = 1
+        \RemoveAllEmptyStaves
     }
     \context {
         \Voice
@@ -309,13 +329,14 @@
         \accepts CelloMusicVoice
     }
     \context {
-        \StaffGroup
+        \PianoStaff
         \name CelloStaffGroup
         \type Engraver_group
-        \alias StaffGroup
+        \alias PianoStaff
         \accepts CelloRHMusicStaff
         \accepts CelloMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+        \RemoveAllEmptyStaves
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
     }
