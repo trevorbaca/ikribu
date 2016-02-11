@@ -659,8 +659,9 @@
                             }
                         }
                     }
-                    \context ViolinLHMusicStaff = "Violin LH Music Staff" {
-                        \context ViolinLHMusicVoice = "Violin LH Music Voice" {
+                    \context ViolinMusicStaff = "Violin Music Staff" {
+                        \clef "treble"
+                        \context ViolinMusicVoice = "Violin Music Voice" {
                             R1 * 1
                             c'1
                             c'2. \repeatTie
@@ -713,8 +714,9 @@
                             }
                         }
                     }
-                    \context ViolaLHMusicStaff = "Viola LH Music Staff" {
-                        \context ViolaLHMusicVoice = "Viola LH Music Voice" {
+                    \context ViolaMusicStaff = "Viola Music Staff" {
+                        \clef "alto"
+                        \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 1
                             c'1
                             c'2. \repeatTie
@@ -767,8 +769,9 @@
                             }
                         }
                     }
-                    \context CelloLHMusicStaff = "Cello LH Music Staff" {
-                        \context CelloLHMusicVoice = "Cello LH Music Voice" {
+                    \context CelloMusicStaff = "Cello Music Staff" {
+                        \clef "bass"
+                        \context CelloMusicVoice = "Cello Music Voice" {
                             c'1
                             c'1 \repeatTie
                             c'2. \repeatTie
