@@ -6,7 +6,7 @@ from ikribu.materials.__abbreviations__ import *
 
 
 ###############################################################################
-##################################### [J] #####################################
+##################################### [K] #####################################
 ###############################################################################
 
 stage_specifier = baca.tools.StageSpecifier([
@@ -89,6 +89,26 @@ segment_maker.append_specifiers(
     (bcl, stages(1, 16)),
     [
         baca.pitch.pitches('Bb2'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1, 16)),
+    [
+        baca.articulations.staccati(),
+        baca.dynamics.make_effort_dynamic('mp'),
+        baca.markup.col_legno_battuto(),
+        ikribu.tools.make_clb_pitch_specifier(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(1, 16)),
+    [
+        baca.articulations.staccati(),
+        baca.dynamics.make_effort_dynamic('mp'),
+        baca.markup.col_legno_battuto(),
+        ikribu.tools.make_clb_pitch_specifier(),
         ],
     )
 
