@@ -523,123 +523,139 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'8 [
+                                b8 -\staccato [
+                                    ^ \markup {
+                                        \upright
+                                            "col legno battuto"
+                                        }
+                                    _ \markup {
+                                        \larger
+                                            \italic
+                                                “
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                mp
+                                        \larger
+                                            \italic
+                                                ”
+                                        }
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                c'8 -\staccato ]
                             }
                             R1 * 5/4
                             \times 16/20 {
                                 \once \override RepeatTie #'direction = #up
-                                c'8 [
+                                d'8 -\staccato [
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                d'8 -\staccato ]
                             }
                             R1 * 9/4
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/10 {
                                 \once \override RepeatTie #'direction = #up
-                                c'8 [
+                                c'8 -\staccato [
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                b8 -\staccato ]
                             }
                             R1 * 3/2
                             \times 8/12 {
                                 \once \override RepeatTie #'direction = #up
-                                c'8 [
+                                c'8 -\staccato [
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                d'8 -\staccato ]
                                 \stopStaff
                                 \startStaff
                                 \clef "treble"
@@ -693,107 +709,123 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'8 [
+                                b8 -\staccato [
+                                    ^ \markup {
+                                        \upright
+                                            "col legno battuto"
+                                        }
+                                    _ \markup {
+                                        \larger
+                                            \italic
+                                                “
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                mp
+                                        \larger
+                                            \italic
+                                                ”
+                                        }
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                b8 -\staccato ]
                             }
                             R1 * 5/4
                             \times 16/18 {
                                 \once \override RepeatTie #'direction = #up
-                                c'8 [
+                                d'8 -\staccato [
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                d'8 -\staccato ]
                             }
                             R1 * 9/4
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/8 {
                                 \once \override RepeatTie #'direction = #up
-                                c'8 [
+                                b8 -\staccato [
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                b8 -\staccato ]
                             }
                             R1 * 3/2
                             \times 8/10 {
                                 \once \override RepeatTie #'direction = #up
-                                c'8 [
+                                c'8 -\staccato [
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                b8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                d'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8
+                                c'8 -\staccato
                                 \once \override RepeatTie #'direction = #up
-                                c'8 ]
+                                c'8 -\staccato ]
                                 \stopStaff
                                 \startStaff
                                 \clef "alto"
