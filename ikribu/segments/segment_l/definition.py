@@ -18,6 +18,7 @@ stage_specifier = baca.tools.StageSpecifier([
     4,
     4,
     4,
+    Fermata('shortfermata'),
     ])
 
 tempo_map = baca.tools.TempoMap([
@@ -26,7 +27,7 @@ tempo_map = baca.tools.TempoMap([
 
 maker = baca.tools.TimeSignatureMaker(
     ikribu.materials.time_signatures,
-    rotation=-11,
+    rotation=-12,
     stage_specifier=stage_specifier,
     tempo_map=tempo_map,
     )
@@ -48,9 +49,9 @@ segment_maker = baca.tools.SegmentMaker(
     transpose_score=True,
     )
 
-#segment_maker.validate_measure_count(16)
-#segment_maker.validate_stage_count(16)
-#segment_maker.validate_measures_per_stage()
+segment_maker.validate_measure_count(33)
+segment_maker.validate_stage_count(9)
+segment_maker.validate_measures_per_stage()
 
 ###############################################################################
 #################################### TIME #####################################

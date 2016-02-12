@@ -14,17 +14,6 @@
         \context TimeSignatureContext = "Time Signature Context" <<
             \context TimeSignatureContextMultimeasureRests = "Time Signature Context Multimeasure Rests" {
                 {
-                    \time 4/4
-                    R1 * 1
-                }
-                {
-                    R1 * 1
-                }
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
                     \time 8/4
                     R1 * 2
                 }
@@ -135,14 +124,38 @@
                 }
                 {
                     R1 * 1
+                }
+                {
+                    \time 2/4
+                    R1 * 1/2
+                }
+                {
+                    \time 7/4
+                    R1 * 7/4
+                }
+                {
+                    \time 3/4
+                    R1 * 3/4
+                }
+                {
+                    \time 1/4
+                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest #'transparent = ##t
+                    \once \override Score.TimeSignature #'stencil = ##f
+                    R1 * 1/4
+                        ^ \markup {
+                            \musicglyph
+                                #"scripts.ushortfermata"
+                            }
                 }
             }
             \context TimeSignatureContextSkips = "Time Signature Context Skips" {
                 {
+                    \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #12
-                    s1 * 1
+                    s1 * 2
                         ^ \markup {
                             \fontsize
                                 #-2
@@ -173,13 +186,14 @@
                         }
                 }
                 {
+                    \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 1
+                    s1 * 7/4
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'04''
+                                0'08''
                             }
                 }
                 {
@@ -190,29 +204,28 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'08''
+                                0'15''
                             }
                 }
                 {
-                    \time 8/4
+                    \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 2
+                    s1 * 1
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'11''
+                                0'18''
                             }
                 }
                 {
-                    \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4
+                    s1 * 1
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'19''
+                                0'22''
                             }
                         - \markup {
                             \fontsize
@@ -223,6 +236,28 @@
                             }
                 }
                 {
+                    \time 2/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'26''
+                            }
+                }
+                {
+                    \time 7/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 7/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'28''
+                            }
+                }
+                {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
@@ -230,7 +265,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'26''
+                                0'36''
                             }
                 }
                 {
@@ -241,28 +276,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'30''
-                            }
-                }
-                {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'34''
-                            }
-                }
-                {
-                    \time 2/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'38''
+                                0'39''
                             }
                         - \markup {
                             \fontsize
@@ -273,17 +287,6 @@
                             }
                 }
                 {
-                    \time 7/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'40''
-                            }
-                }
-                {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
@@ -291,7 +294,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'47''
+                                0'43''
                             }
                 }
                 {
@@ -302,7 +305,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'50''
+                                0'46''
                             }
                 }
                 {
@@ -313,7 +316,18 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'54''
+                                0'50''
+                            }
+                }
+                {
+                    \time 2/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                0'53''
                             }
                         - \markup {
                             \fontsize
@@ -324,36 +338,35 @@
                             }
                 }
                 {
-                    \time 4/4
+                    \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 1
+                    s1 * 7/4
                         ^ \markup {
                             \fontsize
                                 #-2
-                                0'57''
+                                0'55''
                             }
                 }
                 {
-                    \time 3/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4
+                    s1 * 7/4
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'02''
+                                1'03''
                             }
                 }
                 {
-                    \time 2/4
+                    \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 1/2
+                    s1 * 2
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'05''
+                                1'10''
                             }
                 }
                 {
@@ -364,7 +377,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'07''
+                                1'18''
                             }
                         - \markup {
                             \fontsize
@@ -375,38 +388,6 @@
                             }
                 }
                 {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'14''
-                            }
-                }
-                {
-                    \time 8/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'21''
-                            }
-                }
-                {
-                    \time 7/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'30''
-                            }
-                }
-                {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
@@ -414,14 +395,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'37''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L6]
+                                1'25''
                             }
                 }
                 {
@@ -432,7 +406,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'40''
+                                1'28''
                             }
                 }
                 {
@@ -443,7 +417,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'42''
+                                1'31''
                             }
                 }
                 {
@@ -454,7 +428,14 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                1'50''
+                                1'39''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [L6]
                             }
                 }
                 {
@@ -462,6 +443,38 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'46''
+                            }
+                }
+                {
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'50''
+                            }
+                }
+                {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                1'54''
+                            }
+                }
+                {
+                    \time 7/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 7/4
                         ^ \markup {
                             \fontsize
                                 #-2
@@ -476,38 +489,6 @@
                             }
                 }
                 {
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'02''
-                            }
-                }
-                {
-                    \time 3/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'06''
-                            }
-                }
-                {
-                    \time 7/4
-                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'09''
-                            }
-                }
-                {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
@@ -515,14 +496,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                2'16''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L8]
+                                2'05''
                             }
                 }
                 {
@@ -533,7 +507,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                2'24''
+                                2'13''
                             }
                 }
                 {
@@ -544,7 +518,7 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                2'27''
+                                2'16''
                             }
                 }
                 {
@@ -554,7 +528,60 @@
                         ^ \markup {
                             \fontsize
                                 #-2
-                                2'32''
+                                2'20''
+                            }
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [L8]
+                            }
+                }
+                {
+                    \time 2/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 1/2
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                2'24''
+                            }
+                }
+                {
+                    \time 7/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 7/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                2'26''
+                            }
+                }
+                {
+                    \time 3/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
+                    \newSpacingSection
+                    s1 * 3/4
+                        ^ \markup {
+                            \fontsize
+                                #-2
+                                2'34''
+                            }
+                }
+                {
+                    \time 1/4
+                    \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
+                    \newSpacingSection
+                    s1 * 1/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [L9]
                             }
                 }
             }
@@ -583,10 +610,7 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        d''1
-                        d''1 \repeatTie
-                        d''2. \repeatTie
-                        d''\breve \repeatTie
+                        d''\breve
                         d''1.. \repeatTie
                         d''2. \repeatTie
                         d''1 \repeatTie
@@ -611,7 +635,10 @@
                         d''1 \repeatTie
                         d''2. \repeatTie
                         d''1.. \repeatTie
-                        R1 * 19/4
+                        d''\breve \repeatTie
+                        d''2. \repeatTie
+                        d''1 \repeatTie
+                        R1 * 17/4
                         \bar "|"
                     }
                 }
@@ -630,9 +657,6 @@
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \clef "percussion"
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            R1 * 1
-                            R1 * 1
-                            R1 * 3/4
                             R1 * 2
                             R1 * 7/4
                             R1 * 3/4
@@ -662,13 +686,17 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            \times 8/12 {
+                            \times 16/20 {
                                 \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
@@ -696,96 +724,229 @@
                                 d'8 -\staccato
                                 b8 -\staccato
                                 c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
                                 c'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 14/18 {
+                                b8 -\staccato [
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/10 {
+                                d'8 -\staccato [
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato ]
+                            }
+                            \times 8/12 {
+                                d'8 -\staccato [
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato ]
                             }
                             \times 8/12 {
                                 d'8 -\staccato [
                                 c'8 -\staccato
                                 d'8 -\staccato
                                 b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
                                 b8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato
-                                b8 -\staccato ]
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato ]
+                            }
+                            {
+                                c'8 -\staccato [
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 14/18 {
+                                c'8 -\staccato [
+                                b8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato ]
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/10 {
                                 d'8 -\staccato [
                                 d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \times 8/12 {
+                                c'8 -\staccato [
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/10 {
+                                d'8 -\staccato [
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                b8 -\staccato ]
+                            }
+                            \times 8/12 {
+                                c'8 -\staccato [
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/10 {
+                                d'8 -\staccato [
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato ]
+                            }
+                            {
+                                \once \override Hairpin #'circled-tip = ##t
+                                c'8 -\staccato \> [
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 14/18 {
+                                d'8 -\staccato [
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 14/18 {
+                                d'8 -\staccato [
+                                b8 -\staccato
                                 d'8 -\staccato
                                 c'8 -\staccato
                                 b8 -\staccato
                                 c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
                                 b8 -\staccato
                                 c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato ]
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato ]
                             }
                             \times 16/20 {
-                                d'8 -\staccato [
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 14/18 {
-                                d'8 -\staccato [
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/10 {
-                                c'8 -\staccato [
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato ]
-                            }
-                            \times 8/12 {
                                 c'8 -\staccato [
                                 d'8 -\staccato
                                 b8 -\staccato
+                                c'8 -\staccato
                                 d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
                                 c'8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato
@@ -793,143 +954,19 @@
                                 d'8 -\staccato
                                 b8 -\staccato
                                 d'8 -\staccato
-                                c'8 -\staccato ]
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato \! ]
                             }
-                            \times 8/12 {
-                                d'8 -\staccato [
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato ]
-                            }
-                            {
-                                c'8 -\staccato [
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato ]
-                            }
+                            R1 * 5
                             \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 14/18 {
-                                b8 -\staccato [
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/10 {
-                                d'8 -\staccato [
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \times 8/12 {
-                                d'8 -\staccato [
-                                b8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato ]
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/10 {
-                                \once \override Hairpin #'circled-tip = ##t
-                                b8 -\staccato \> [
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \times 8/12 {
-                                b8 -\staccato [
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato ]
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/10 {
-                                d'8 -\staccato [
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            {
-                                b8 -\staccato [
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato \! ]
-                            }
-                            R1 * 29/4
-                            {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 -\accent
-                            }
-                            \times 2/3 {
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                            }
-                            \times 2/3 {
+                            \times 7/12 {
+                                c'1 :32
                                 c'1 -\accent
                                 c'1 -\accent
-                                c'1 -\accent
-                            }
-                            \times 2/3 {
-                                c'2.. :32
-                                c'2.. -\accent
-                                c'2.. -\accent
                             }
                             \times 2/3 {
                                 c'2 -\accent
@@ -946,10 +983,11 @@
                                 c'4 -\accent
                                 c'4 -\accent
                             }
-                            \times 2/3 {
-                                c'2.. -\accent
-                                c'2.. :32
-                                c'2.. -\accent
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \times 2/3 {
                                 c'1 -\accent
@@ -970,11 +1008,28 @@
                                 c'2 -\accent
                                 c'2 -\accent
                                 c'2 -\accent
-                                \bar "|"
+                            }
+                            \times 2/3 {
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
+                            }
+                            {
+                                c'4 -\accent
+                                c'4 -\accent
+                                c'4 -\accent
                                 \stopStaff
                                 \startStaff
                                 \clef "treble"
                             }
+                            R1 * 1/4
+                            \bar "|"
                         }
                     }
                 >>
@@ -993,9 +1048,6 @@
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \clef "percussion"
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            R1 * 1
-                            R1 * 1
-                            R1 * 3/4
                             R1 * 2
                             R1 * 7/4
                             R1 * 3/4
@@ -1025,13 +1077,17 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \clef "alto"
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \times 8/10 {
+                            \times 16/18 {
                                 \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
@@ -1057,61 +1113,61 @@
                                 c'8 -\staccato
                                 d'8 -\staccato
                                 d'8 -\staccato
-                                b8 -\staccato ]
-                            }
-                            \times 8/10 {
-                                c'8 -\staccato [
+                                b8 -\staccato
+                                c'8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato
                                 b8 -\staccato
                                 c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/8 {
-                                b8 -\staccato [
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \times 16/18 {
-                                b8 -\staccato [
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
                                 d'8 -\staccato ]
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 14/16 {
+                                d'8 -\staccato [
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/8 {
+                                d'8 -\staccato [
+                                c'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \times 8/10 {
+                                b8 -\staccato [
+                                d'8 -\staccato
+                                b8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato ]
+                            }
+                            \times 8/10 {
                                 \once \override Hairpin #'circled-tip = ##t
-                                c'8 -\staccato \> [
-                                c'8 -\staccato
-                                d'8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato
-                                b8 -\staccato
-                                d'8 -\staccato
+                                d'8 -\staccato \> [
                                 c'8 -\staccato
                                 d'8 -\staccato
                                 c'8 -\staccato
@@ -1122,123 +1178,142 @@
                                 d'8 -\staccato
                                 c'8 -\staccato ]
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/8 {
+                            \times 4/6 {
                                 d'8 -\staccato [
                                 b8 -\staccato
                                 b8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato
+                                d'8 -\staccato ]
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 14/16 {
+                                c'8 -\staccato [
+                                d'8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
+                                d'8 -\staccato
+                                d'8 -\staccato
+                                c'8 -\staccato
+                                b8 -\staccato
+                                b8 -\staccato
+                                c'8 -\staccato
+                                c'8 -\staccato
                                 d'8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato ]
                             }
-                            \times 8/10 {
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/8 {
                                 b8 -\staccato [
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
-                                d'8 -\staccato
                                 d'8 -\staccato
                                 c'8 -\staccato
-                                b8 -\staccato
-                                b8 -\staccato
-                                c'8 -\staccato ]
-                            }
-                            \times 8/10 {
-                                c'8 -\staccato [
-                                d'8 -\staccato
                                 c'8 -\staccato
                                 d'8 -\staccato
                                 b8 -\staccato
-                                d'8 -\staccato
-                                c'8 -\staccato
-                                c'8 -\staccato
                                 d'8 -\staccato
                                 b8 -\staccato \! ]
                             }
-                            R1 * 4
+                            R1 * 7/2
+                            \times 2/3 {
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 :32
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            \times 2/3 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 :32
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            {
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                            }
+                            \times 2/3 {
+                                c'4 -\accent
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \times 2/3 {
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            \times 2/3 {
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            \times 2/3 {
+                                c'2 -\accent
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
                             {
                                 c'4 :32
                                 c'4 -\accent
                                 c'4 -\accent
                             }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 :32
+                            }
+                            \times 2/3 {
+                                c'1 -\accent
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            {
+                                c'4 -\accent
+                                c'4 -\accent
+                                c'4 :32
+                            }
                             \times 2/3 {
                                 c'2 -\accent
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            \times 2/3 {
                                 c'2 -\accent
                                 c'2 :32
-                            }
-                            {
-                                c'4 -\accent
-                                c'4 -\accent
-                                c'4 -\accent
-                            }
-                            \times 2/3 {
-                                c'4 -\accent
-                                c'4 -\accent
-                                c'4 :32
-                            }
-                            \times 2/3 {
-                                c'2.. -\accent
-                                c'2.. -\accent
-                                c'2.. -\accent
-                            }
-                            \times 2/3 {
-                                c'2.. -\accent
-                                c'2.. :32
-                                c'2.. -\accent
-                            }
-                            \times 2/3 {
-                                c'1 -\accent
-                                c'1 -\accent
-                                c'1 -\accent
-                            }
-                            \times 2/3 {
-                                c'2.. -\accent
-                                c'2.. :32
-                                c'2.. -\accent
-                            }
-                            {
-                                c'4 -\accent
-                                c'4 -\accent
-                                c'4 -\accent
-                            }
-                            \times 2/3 {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 -\accent
-                            }
-                            \times 2/3 {
-                                c'1 -\accent
-                                c'1 -\accent
-                                c'1 -\accent
-                            }
-                            \times 2/3 {
-                                c'2.. :32
-                                c'2.. -\accent
-                                c'2.. -\accent
-                            }
-                            \times 2/3 {
-                                c'2 -\accent
-                                c'2 -\accent
-                                c'2 :32
-                            }
-                            \times 2/3 {
-                                c'2 -\accent
-                                c'2 -\accent
                                 c'2 -\accent
                             }
-                            {
+                            \times 2/3 {
                                 c'4 -\accent
                                 c'4 -\accent
-                                c'4 :32
+                                c'4 -\accent
                             }
-                            \times 2/3 {
-                                c'2.. -\accent
-                                c'2.. -\accent
-                                c'2.. -\accent
-                            }
-                            \times 2/3 {
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
                                 c'1 -\accent
                                 c'1 :32
                                 c'1 -\accent
@@ -1247,21 +1322,12 @@
                                 c'4 -\accent
                                 c'4 -\accent
                                 c'4 -\accent
-                            }
-                            \times 2/3 {
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
-                            }
-                            \times 2/3 {
-                                c'2 -\accent
-                                c'2 -\accent
-                                c'2 -\accent
-                                \bar "|"
                                 \stopStaff
                                 \startStaff
                                 \clef "alto"
                             }
+                            R1 * 1/4
+                            \bar "|"
                         }
                     }
                 >>
@@ -1280,9 +1346,6 @@
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \clef "percussion"
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            R1 * 1
-                            R1 * 1
-                            R1 * 3/4
                             R1 * 2
                             R1 * 7/4
                             R1 * 3/4
@@ -1312,6 +1375,10 @@
                             R1 * 3/4
                             R1 * 1
                             R1 * 1
+                            R1 * 1/2
+                            R1 * 7/4
+                            R1 * 3/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -1439,7 +1506,7 @@
                             \stopStaff
                             \startStaff
                             \clef "bass"
-                            R1 * 37/4
+                            R1 * 39/4
                             \bar "|"
                         }
                     }
