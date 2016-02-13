@@ -53,12 +53,12 @@ segment_maker = baca.tools.SegmentMaker(
 
 segment_maker.append_specifiers(
     (vc_rh, stages(1, 2)),
-    ikribu.tools.make_bow_rhythm_specifier(),
+    ikribu.tools.make_bow_rhythm_specifier(rotation=0),
     )
 
 segment_maker.append_specifiers(
     (vc, stages(1, 2)),
-    ikribu.tools.make_glissando_rhythm_specifier(),
+    ikribu.tools.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
     )
 
 ###############################################################################
