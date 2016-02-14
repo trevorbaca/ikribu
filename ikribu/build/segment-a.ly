@@ -45,20 +45,7 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #1
-                    s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A1]
-                            }
-                        ^ \markup {
+                    s1 * 2 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -80,81 +67,35 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'11''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'21''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A2]
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'27''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'32''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'37''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A3]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [A4]
-                            }
                 }
             }
         >>
@@ -183,9 +124,9 @@
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         e\breve \< \p
-                        e1..
+                        e1.. \f
                         \once \override Hairpin #'circled-tip = ##t
-                        e1 \f \> \f
+                        e1 \> \f
                         e1
                         e2.
                         r1.. \!
@@ -260,15 +201,26 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 15/4
                             \clef "percussion"
-                            \once \override NoteHead #'style = #'cross
                             \once \override RepeatTie #'direction = #up
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'1
+                            c'4
                                 ^ \markup {
-                                    \upright
-                                        "circle slate slowly"
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/4 every quarter note"
+                                                        }
+                                                }
                                     }
                                 _ \markup {
                                     \larger
@@ -282,15 +234,40 @@
                                         \italic
                                             ”
                                     }
-                            \once \override NoteHead #'style = #'cross
                             \once \override RepeatTie #'direction = #up
-                            c'1 \repeatTie
-                            \once \override NoteHead #'style = #'cross
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'2. \repeatTie
-                            \once \override NoteHead #'style = #'cross
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'1.. \repeatTie
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
                             \clef "alto"
@@ -324,7 +301,7 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
+                        \clef "treble"
                         \context CelloMusicVoice = "Cello Music Voice" {
                             R1 * 2
                             R1 * 7/4
