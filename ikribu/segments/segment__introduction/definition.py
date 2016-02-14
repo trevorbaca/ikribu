@@ -75,8 +75,8 @@ segment_maker.append_specifiers(
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_markup_lines([
-            'grainfall: gracefully and deliberately pour',
-            'heavy grain from cup to ground; then freeze',
+            'grainfall: pour grain from cup to ground,',
+            'deliberately and gracefully; then freeze',
             ]),
         baca.overrides.cross_note_heads(),
         baca.pitch.pitches('C4'),
@@ -89,10 +89,7 @@ segment_maker.append_specifiers(
     (vc, stages(1)),
     [
         baca.markup.make_string_number(3),
-        baca.markup.make_markup_lines([
-            'pizz. + l.v. as long as possible;',
-            'do not dampen at start of following fermata',
-            ]),
+        baca.markup.make_markup('pizz. + l.v. as long as possible'),
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         indicatortools.LaissezVibrer(),

@@ -140,11 +140,11 @@
                                         {
                                             \line
                                                 {
-                                                    "grainfall: gracefully and deliberately pour"
+                                                    "grainfall: pour grain from cup to ground,"
                                                 }
                                             \line
                                                 {
-                                                    "heavy grain from cup to ground; then freeze"
+                                                    "deliberately and gracefully; then freeze"
                                                 }
                                         }
                                     }
@@ -228,17 +228,8 @@
                             \once \override NoteHead #'style = #'harmonic
                             fqf''1.. \laissezVibrer \sfz
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    "pizz. + l.v. as long as possible;"
-                                                }
-                                            \line
-                                                {
-                                                    "do not dampen at start of following fermata"
-                                                }
-                                        }
+                                    \upright
+                                        "pizz. + l.v. as long as possible"
                                     }
                                 _ \markup {
                                     \upright
