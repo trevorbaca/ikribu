@@ -25,20 +25,7 @@
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [1]
-                            }
-                        ^ \markup {
+                    s1 * 7/4 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -60,13 +47,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [2]
-                            }
                 }
             }
         >>
@@ -122,23 +102,13 @@
                         \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \clef "percussion"
-                            \once \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2
+                            c'1..
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    "grainfall: gracefully and deliberately pour"
-                                                }
-                                            \line
-                                                {
-                                                    "heavy grain from cup to ground; then freeze"
-                                                }
-                                        }
+                                    \upright
+                                        "grainfall (I)"
                                     }
                                 _ \markup {
                                     \larger
@@ -155,12 +125,6 @@
                             \stopStaff
                             \startStaff
                             \clef "treble"
-                            \once \override NoteHead #'style = #'cross
-                            r2
-                            \once \override NoteHead #'style = #'cross
-                            r2
-                            \once \override NoteHead #'style = #'cross
-                            r4
                             R1 * 1/4
                             \bar "|"
                         }
@@ -214,29 +178,18 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
+                            \clef "treble"
                             fqf''1.. \laissezVibrer \sfz
                                 ^ \markup {
-                                    \column
-                                        {
-                                            \line
-                                                {
-                                                    "pizz. + l.v. as long as possible;"
-                                                }
-                                            \line
-                                                {
-                                                    "do not dampen at start of following fermata"
-                                                }
-                                        }
+                                    \upright
+                                        pizz.
                                     }
                                 _ \markup {
                                     \upright
                                         III
                                     }
-                            \clef "bass"
                             R1 * 1/4
                             \bar "|"
                         }

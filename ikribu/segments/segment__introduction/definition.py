@@ -32,8 +32,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -51,14 +51,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (vn, stages(1)),
-    baca.tools.RhythmSpecifier(
-        division_expression=baca.rhythm.split_by_durations(
-            durations=[(2, 4)],
-            ),
-        rhythm_maker=rhythmmakertools.NoteRhythmMaker(
-            division_masks=silence_except(indices=[0]),
-            ),
-        ),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -74,11 +67,7 @@ segment_maker.append_specifiers(
     (vn, stages(1)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
-        baca.markup.make_markup_lines([
-            'grainfall: pour grain from cup to ground,',
-            'deliberately and gracefully; then freeze',
-            ]),
-        baca.overrides.cross_note_heads(),
+        baca.markup.make_markup('grainfall (I)'),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
         spannertools.ClefSpanner(clef='percussion'),
@@ -89,11 +78,11 @@ segment_maker.append_specifiers(
     (vc, stages(1)),
     [
         baca.markup.make_string_number(3),
-        baca.markup.make_markup('pizz. + l.v. as long as possible'),
+        baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         indicatortools.LaissezVibrer(),
-        spannertools.ClefSpanner(clef='treble'),
+        Clef('treble'),
         Dynamic('sfz'),
         ],
     )

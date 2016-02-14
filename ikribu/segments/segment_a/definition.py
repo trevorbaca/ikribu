@@ -34,8 +34,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -63,7 +63,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va, stages(2, 3)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -82,9 +82,9 @@ segment_maker.append_specifiers(
     [
         baca.dynamics.make_hairpins(
             ['p < f', 'f > niente'],
-            enchain_hairpins=True,
+            #enchain_hairpins=True,
             include_following_rests=True,
-            span=[3],
+            span=[2, 3],
             ),
         ],
     )
@@ -93,8 +93,10 @@ segment_maker.append_specifiers(
     (va, stages(2, 3)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
-        baca.markup.make_markup('circle slate slowly'),
-        baca.overrides.cross_note_heads(),
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/4 every quarter note'
+            ]),
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
