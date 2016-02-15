@@ -32,8 +32,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -51,13 +51,16 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, [stages(1), stages(2)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vn_rh, stages(1, 2)),
-    ikribu.tools.make_bow_rhythm_specifier(rotation=0),
+    ikribu.tools.make_bow_rhythm_specifier(
+        logical_tie_masks=silence_every([0, 8], period=12),
+        rotation=0,
+        ),
     )
 
 segment_maker.append_specifiers(
@@ -67,7 +70,10 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va_rh, stages(1, 2)),
-    ikribu.tools.make_bow_rhythm_specifier(rotation=-1),
+    ikribu.tools.make_bow_rhythm_specifier(
+        logical_tie_masks=silence_every([4, 14], period=16),
+        rotation=-1,
+        ),
     )
 
 segment_maker.append_specifiers(
@@ -77,7 +83,10 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc_rh, stages(1, 2)),
-    ikribu.tools.make_bow_rhythm_specifier(rotation=-2),
+    ikribu.tools.make_bow_rhythm_specifier(
+        logical_tie_masks=silence_every([8, 20], period=20),
+        rotation=-2,
+        ),
     )
 
 segment_maker.append_specifiers(
@@ -88,3 +97,89 @@ segment_maker.append_specifiers(
 ###############################################################################
 #################################### COLOR ####################################
 ###############################################################################
+
+segment_maker.append_specifiers(
+    (bcl, stages(1)),
+    [
+        baca.markup.make_markup_lines([
+            'introduce upper partials gradually;',
+            'breathe as necessary before downbeats',
+            ]),
+        baca.pitch.pitches('Bb1'),
+        Dynamic('p'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(2)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ([vn_rh, va_rh, vc_rh], stages(1, 2)),
+    [
+        baca.dynamics.make_hairpins(
+            ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
+            enchain_hairpins=True,
+            span=[3, 4],
+            ),
+        baca.markup.make_boxed_markup('1/2 clt'),
+        baca.overrides.repeat_tie_up(),
+        baca.pitch.pitches('C4'),
+        Clef('percussion'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn_rh, stages(1, 2)),
+    [
+        ikribu.tools.BowContactPointSpecifier(rotation=0),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va_rh, stages(1, 2)),
+    [
+        ikribu.tools.BowContactPointSpecifier(rotation=-1),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc_rh, stages(1, 2)),
+    [
+        ikribu.tools.BowContactPointSpecifier(rotation=-2),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1, 2)),
+    [
+        baca.spanners.glissandi(),
+        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=0),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(1, 2)),
+    [
+        baca.spanners.glissandi(),
+        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
+        Clef('treble'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1, 2)),
+    [
+        baca.spanners.glissandi(),
+        ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
+        Clef('tenor'),
+        ],
+    )
