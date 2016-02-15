@@ -69,14 +69,14 @@ segment_maker.append_specifiers(
     (vc_rh, stages(1, 2)),
     [
         baca.dynamics.make_hairpins(
-            ['p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff', 'ff > p'],
+            ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
             enchain_hairpins=True,
             span=[3, 4],
             ),
         baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('C4'),
-        ikribu.tools.BowContactPointSpecifier(rotation=0),
+        ikribu.tools.BowContactPointSpecifier(rotation=-2),
         Clef('percussion'),
         ],
     )

@@ -287,7 +287,7 @@
                             \times 3/2 {
                                 \once \override RepeatTie #'direction = #up
                                 \clef "percussion"
-                                c'4 \< \p
+                                c'4 \> \ff
                                     ^ \markup {
                                         \column
                                             {
@@ -310,14 +310,14 @@
                             }
                             {
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \f \> \f
+                                c'4 \p \< \p
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \pp
+                                c'4 \f
                                     ^ \markup {
                                         \fraction
                                             6
@@ -326,7 +326,7 @@
                                 \once \override RepeatTie #'direction = #up
                                 r4
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \< \pp
+                                c'4 \> \f
                                     ^ \markup {
                                         \fraction
                                             7
@@ -342,32 +342,32 @@
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
+                                c'4 \pp \< \pp
+                                    ^ \markup {
+                                        \fraction
+                                            7
+                                            7
+                                        }
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            0
+                                            4
+                                        }
+                                \once \override RepeatTie #'direction = #up
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            1
+                                            4
+                                        }
+                                \once \override RepeatTie #'direction = #up
                                 c'4 \p \> \p
                                     ^ \markup {
                                         \fraction
-                                            7
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
+                                            2
+                                            4
                                         }
                             }
                             {
@@ -375,11 +375,11 @@
                                 c'4
                                     ^ \markup {
                                         \fraction
-                                            7
-                                            7
+                                            1
+                                            4
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \ff \> \ff
+                                c'4 \ppp \< \ppp
                                     ^ \markup {
                                         \fraction
                                             0
@@ -403,7 +403,7 @@
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \p \< \p
+                                c'4 \ff \> \ff
                                     ^ \markup {
                                         \fraction
                                             6
@@ -417,14 +417,14 @@
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \f \> \f
+                                c'4 \p \< \p
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \pp
+                                c'4 \f
                                     ^ \markup {
                                         \fraction
                                             7
@@ -435,39 +435,39 @@
                                 \once \override RepeatTie #'direction = #up
                                 r4
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \< \pp
+                                c'4 \> \f
                                     ^ \markup {
                                         \fraction
                                             0
-                                            4
+                                            7
                                         }
                                 \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
-                                            1
-                                            4
+                                            7
+                                            7
                                         }
                             }
                             \times 4/5 {
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \p \> \p
+                                c'4 \pp \< \pp
                                     ^ \markup {
                                         \fraction
-                                            2
-                                            4
+                                            0
+                                            7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \ppp
+                                c'4 \p
                                     ^ \markup {
                                         \fraction
-                                            1
-                                            4
+                                            7
+                                            7
                                         }
                                 \once \override RepeatTie #'direction = #up
                                 r4
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \< \ppp
+                                c'4 \> \p
                                     ^ \markup {
                                         \fraction
                                             0
@@ -484,7 +484,7 @@
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \ff \> \ff
+                                c'4 \ppp \< \ppp
                                     ^ \markup {
                                         \fraction
                                             5
@@ -505,7 +505,7 @@
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \p \< \p
+                                c'4 \ff \> \ff
                                     ^ \markup {
                                         \fraction
                                             6
@@ -522,34 +522,34 @@
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \f \> \f
+                                c'4 \p \< \p
                                     ^ \markup {
                                         \fraction
                                             0
-                                            7
+                                            4
                                         }
                                 \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
-                                            7
-                                            7
+                                            1
+                                            4
                                         }
                                 \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
-                                            0
-                                            7
+                                            2
+                                            4
                                         }
                             }
                             {
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \pp \< \pp
+                                c'4 \f \> \f
                                     ^ \markup {
                                         \fraction
-                                            7
-                                            7
+                                            1
+                                            4
                                         }
                                 \once \override RepeatTie #'direction = #up
                                 c'4
@@ -559,7 +559,7 @@
                                             7
                                         }
                                 \once \override RepeatTie #'direction = #up
-                                c'4 \p
+                                c'4 \pp
                                     ^ \markup {
                                         \fraction
                                             4
