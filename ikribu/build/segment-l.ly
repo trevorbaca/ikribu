@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #142
+        currentBarNumber = #143
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -146,20 +146,7 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #12
-                    s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L1]
-                            }
-                        ^ \markup {
+                    s1 * 2 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -181,399 +168,188 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'08''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'15''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'18''
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'22''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L2]
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'26''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'28''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'36''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'39''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L3]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'43''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'46''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'50''
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'53''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L4]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'55''
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'03''
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'10''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'18''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L5]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'25''
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'28''
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'31''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'39''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L6]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'46''
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'50''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'54''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'57''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L7]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'05''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'13''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'16''
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'20''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L8]
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'24''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'26''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                2'34''
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [L9]
-                            }
                 }
             }
         >>
@@ -601,34 +377,38 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        d''\breve
-                        d''1.. \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
-                        d''1 \repeatTie
-                        d''2 \repeatTie
-                        d''1.. \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
-                        d''2. \repeatTie
-                        d''2 \repeatTie
-                        d''1.. \repeatTie
-                        d''1.. \repeatTie
-                        d''\breve \repeatTie
-                        d''1.. \repeatTie
-                        d''2. \repeatTie
-                        d''2 \repeatTie
-                        d''\breve \repeatTie
-                        d''1.. \repeatTie
-                        d''1 \repeatTie
-                        d''1 \repeatTie
-                        d''2. \repeatTie
-                        d''1.. \repeatTie
-                        d''\breve \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
+                        d\breve \ppp
+                            ^ \markup {
+                                \upright
+                                    "breathe discreetly before any downbeat as needed (but do not circular breathe)"
+                                }
+                        d1.. \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
+                        d1 \repeatTie
+                        d2 \repeatTie
+                        d1.. \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
+                        d2. \repeatTie
+                        d2 \repeatTie
+                        d1.. \repeatTie
+                        d1.. \repeatTie
+                        d\breve \repeatTie
+                        d1.. \repeatTie
+                        d2. \repeatTie
+                        d2 \repeatTie
+                        d\breve \repeatTie
+                        d1.. \repeatTie
+                        d1 \repeatTie
+                        d1 \repeatTie
+                        d2. \repeatTie
+                        d1.. \repeatTie
+                        d\breve \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
                         R1 * 17/4
                         \bar "|"
                     }
@@ -955,71 +735,71 @@
                             R1 * 5
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 :32
+                                c'1 :32 \< \mp
                                 c'1 -\accent
                                 c'1 -\accent
                             }
                             \times 2/3 {
-                                c'2 -\accent
+                                c'2 -\accent \mf \> \mf
                                 c'2 :32
                                 c'2 -\accent
                             }
                             \times 2/3 {
-                                c'2 -\accent
+                                c'2 -\accent \mp \< \mp
                                 c'2 -\accent
                                 c'2 -\accent
                             }
                             {
-                                c'4 :32
+                                c'4 :32 \f \> \f
                                 c'4 -\accent
                                 c'4 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \mf \< \mf
                                 c'1 :32
                                 c'1 -\accent
                             }
                             \times 2/3 {
-                                c'1 -\accent
+                                c'1 -\accent \f \> \f
                                 c'1 -\accent
                                 c'1 -\accent
                             }
                             {
-                                c'4 :32
+                                c'4 :32 \mf \< \mf
                                 c'4 -\accent
                                 c'4 -\accent
                             }
                             \times 2/3 {
-                                c'2 -\accent
+                                c'2 -\accent \ff \> \ff
                                 c'2 :32
                                 c'2 -\accent
                             }
                             \times 2/3 {
-                                c'2 -\accent
+                                c'2 -\accent \f \< \f
                                 c'2 -\accent
                                 c'2 -\accent
                             }
                             \times 2/3 {
-                                c'4 :32
+                                c'4 :32 \ff \> \ff
                                 c'4 -\accent
                                 c'4 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \f \< \f
                                 c'1 :32
                                 c'1 -\accent
                             }
                             {
-                                c'4 -\accent
+                                c'4 -\accent \fff \> \fff
                                 c'4 -\accent
                                 c'4 -\accent
                                 \stopStaff
                                 \startStaff
                                 \clef "treble"
                             }
-                            R1 * 1/4
+                            R1 * 1/4 \ff
                             \bar "|"
                         }
                     }
@@ -1076,7 +856,7 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
+                        \clef "treble"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \times 16/18 {
                                 \clef "percussion"
@@ -1209,115 +989,115 @@
                             }
                             R1 * 7/2
                             \times 2/3 {
-                                c'4 :32
+                                c'4 :32 \> \p
                                 c'4 -\accent
                                 c'4 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \pp \< \pp
                                 c'1 -\accent
                                 c'1 :32
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \p \> \p
                                 c'1 -\accent
                                 c'1 -\accent
                             }
                             \times 2/3 {
-                                c'1 -\accent
+                                c'1 -\accent \pp \< \pp
                                 c'1 -\accent
                                 c'1 :32
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \mp \> \mp
                                 c'1 -\accent
                                 c'1 -\accent
                             }
                             {
-                                c'4 -\accent
+                                c'4 -\accent \p \< \p
                                 c'4 :32
                                 c'4 -\accent
                             }
                             \times 2/3 {
-                                c'4 -\accent
+                                c'4 -\accent \mp \> \mp
                                 c'4 -\accent
                                 c'4 -\accent
                             }
                             \times 2/3 {
-                                c'1 -\accent
+                                c'1 -\accent \p \< \p
                                 c'1 :32
                                 c'1 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \mf \> \mf
                                 c'1 -\accent
                                 c'1 -\accent
                             }
                             \times 2/3 {
+                                c'2 :32 \mp \< \mp
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            \times 2/3 {
+                                c'2 -\accent \mf \> \mf
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            {
+                                c'4 :32 \mp \< \mp
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent \f \> \f
+                                c'1 -\accent
+                                c'1 :32
+                            }
+                            \times 2/3 {
+                                c'1 -\accent \mf \< \mf
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            {
+                                c'4 -\accent \f \> \f
+                                c'4 -\accent
+                                c'4 :32
+                            }
+                            \times 2/3 {
+                                c'2 -\accent \mf \< \mf
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            \times 2/3 {
+                                c'2 -\accent \ff \> \ff
                                 c'2 :32
                                 c'2 -\accent
-                                c'2 -\accent
                             }
                             \times 2/3 {
-                                c'2 -\accent
-                                c'2 -\accent
-                                c'2 -\accent
-                            }
-                            {
-                                c'4 :32
+                                c'4 -\accent \f \< \f
                                 c'4 -\accent
                                 c'4 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
-                                c'1 -\accent
-                                c'1 :32
-                            }
-                            \times 2/3 {
-                                c'1 -\accent
-                                c'1 -\accent
-                                c'1 -\accent
-                            }
-                            {
-                                c'4 -\accent
-                                c'4 -\accent
-                                c'4 :32
-                            }
-                            \times 2/3 {
-                                c'2 -\accent
-                                c'2 -\accent
-                                c'2 -\accent
-                            }
-                            \times 2/3 {
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
-                            }
-                            \times 2/3 {
-                                c'4 -\accent
-                                c'4 -\accent
-                                c'4 -\accent
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 7/12 {
-                                c'1 -\accent
+                                c'1 -\accent \ff \> \ff
                                 c'1 :32
                                 c'1 -\accent
                             }
                             {
-                                c'4 -\accent
+                                c'4 -\accent \f \< \f
                                 c'4 -\accent
                                 c'4 -\accent
                                 \stopStaff
                                 \startStaff
-                                \clef "alto"
+                                \clef "treble"
                             }
-                            R1 * 1/4
+                            R1 * 1/4 \fff
                             \bar "|"
                         }
                     }
@@ -1380,124 +1160,204 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
-                            c'4
+                            c'4 \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \p \< \p
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/3 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \p \< \p
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/4 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \p \< \p
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/3 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \p \< \p
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \p \< \p
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/3 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \< \p
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \> \f
+                            c'4 \repeatTie
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
                             \clef "bass"
-                            R1 * 39/4
+                            R1 * 39/4 \p
                             \bar "|"
                         }
                     }
