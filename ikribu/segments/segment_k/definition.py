@@ -34,8 +34,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -53,8 +53,8 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [stages(3), stages(7), stages(11), stages(15)]),
-    baca.rhythm.make_repeated_duration_rhythm_specifier((1, 4)),
+    (bcl, [stages(1), stages(5), stages(9), stages(13)]),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
@@ -69,7 +69,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [stages(1), stages(5), stages(9), stages(13)]),
-    baca.rhythm.make_repeated_duration_rhythm_specifier((1, 4)),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -82,6 +82,34 @@ segment_maker.append_specifiers(
         baca.overrides.repeat_tie_up(),
         baca.spanners.one_line_staff(),
         baca.spanners.percussion_staff(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(1)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(5)),
+    [
+        baca.dynamics.make_effort_dynamic('mf'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(9)),
+    [
+        baca.dynamics.make_effort_dynamic('mp'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(13)),
+    [
+        baca.dynamics.make_effort_dynamic('p'),
         ],
     )
 
@@ -115,6 +143,38 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, stages(1, 16)),
     [
+        baca.markup.make_boxed_markup_lines([
+            'graincircle:',
+            'π/2 every quarter note'
+            ]),
         baca.pitch.pitches('C4'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1)),
+    [
+        baca.dynamics.make_effort_dynamic('p'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(5)),
+    [
+        baca.dynamics.make_effort_dynamic('mp'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(9)),
+    [
+        baca.dynamics.make_effort_dynamic('mf'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(13)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
         ],
     )

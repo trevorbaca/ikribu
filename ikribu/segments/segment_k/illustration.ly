@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #126
+        currentBarNumber = #127
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -140,20 +140,7 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #11
-                    s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K1]
-                            }
-                        ^ \markup {
+                    s1 * 1 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -175,230 +162,90 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K2]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'05''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K3]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K4]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'10''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K5]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K6]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'14''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K7]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K8]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'23''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K9]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K10]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 40)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'32''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K11]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K12]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'36''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K13]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K14]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'41''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K15]
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [K16]
-                            }
                 }
             }
         >>
@@ -426,56 +273,101 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        R1 * 5/4
                         \clef "percussion"
                         \once \override RepeatTie #'direction = #up
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         c'4
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        f
+                                \larger
+                                    \italic
+                                        ”
+                                }
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
-                        R1 * 5/4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        R1 * 9/4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         R1 * 3/2
                         \once \override RepeatTie #'direction = #up
                         c'4
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        R1 * 5/2
                         \once \override RepeatTie #'direction = #up
                         c'4
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mp
+                                \larger
+                                    \italic
+                                        ”
+                                }
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        R1 * 5/4
                         \once \override RepeatTie #'direction = #up
                         c'4
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        p
+                                \larger
+                                    \italic
+                                        ”
+                                }
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
                         \stopStaff
                         \startStaff
                         \clef "treble"
-                        R1 * 1/4
+                        R1 * 3/2
                         \bar "|"
                     }
                 }
@@ -700,7 +592,7 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
+                        \clef "treble"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 5/4
                             \times 8/10 {
@@ -828,7 +720,7 @@
                                 c'8 -\staccato ]
                                 \stopStaff
                                 \startStaff
-                                \clef "alto"
+                                \clef "treble"
                             }
                             R1 * 1/4
                             \bar "|"
@@ -878,43 +770,107 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            p
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             R1 * 3/2
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            mp
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             R1 * 5/2
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            mf
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             R1 * 5/4
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            f
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
                             \clef "bass"
