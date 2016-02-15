@@ -152,7 +152,11 @@ segment_maker.append_specifiers(
     (vc, stages(9, 16)),
     [
         baca.articulations.stem_tremolo(),
-        Dynamic('p'),
+        baca.dynamics.make_hairpins(
+            ['p < mp', 'mp > p'],
+            enchain_hairpins=True,
+            span=[2],
+            ),
         ],
     )
 

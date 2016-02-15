@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #78
+        currentBarNumber = #79
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -43,20 +43,7 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #6
-                    s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F1]
-                            }
-                        ^ \markup {
+                    s1 * 1 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -78,126 +65,42 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'05''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F2]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'10''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F3]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'15''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F4]
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'20''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F5]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'22''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F6]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'32''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F7]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'44''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [F8]
-                            }
                 }
             }
         >>
@@ -225,14 +128,14 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        d''1
-                        d''2. \repeatTie
-                        d''1 \repeatTie
-                        d''2. \repeatTie
+                        gs'1
+                        gs'2. \repeatTie
+                        gs'1 \repeatTie
+                        gs'2. \repeatTie
                         R1 * 1/2
-                        d''1..
-                        d''\breve \repeatTie
-                        d''1.. \repeatTie
+                        a1.. \> \sfp
+                        a\breve \repeatTie
+                        a1.. \repeatTie \ppp
                         \bar "|"
                     }
                 }
@@ -264,14 +167,40 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            R1 * 1
-                            R1 * 3/4
-                            R1 * 1
-                            R1 * 3/4
-                            R1 * 1/2
-                            R1 * 7/4
-                            R1 * 2
-                            R1 * 7/4
+                            R1 * 4
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                "trem. flaut. XP"
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            <e' fs'>1.. \< \sfpp \startTextSpan
+                                _ \markup {
+                                    \upright
+                                        II+III
+                                    }
+                            <e' fs'>\breve \repeatTie \p \stopTextSpan \> \p ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        "trem. flaut. tast."
+                                }
+                            R1 * 7/4 \pp
                             \bar "|"
                         }
                     }
@@ -305,18 +234,39 @@
                         \clef "alto"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 4
-                            \clef "percussion"
-                            \once \override RepeatTie #'direction = #up
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'1..
-                            \once \override RepeatTie #'direction = #up
-                            c'\breve \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \clef "alto"
-                            R1 * 7/4
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                "trem. flaut. XP"
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            <ef' f'>1.. \< \sfpp \startTextSpan
+                                _ \markup {
+                                    \upright
+                                        I+II
+                                    }
+                            <ef' f'>\breve \repeatTie \p \stopTextSpan \> \p ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        "trem. flaut. tast."
+                                }
+                            R1 * 7/4 \pp
                             \bar "|"
                         }
                     }
@@ -350,13 +300,91 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \clef "bass"
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            c'1
-                            c'2. \repeatTie
-                            c'1 \repeatTie
-                            c'2. \repeatTie
-                            c'2 \repeatTie
-                            c'1.. \repeatTie
-                            R1 * 15/4
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                tasto
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            fs1 :32 \< \p \startTextSpan
+                            fs2. :32 \repeatTie
+                            fs1 :32 \repeatTie
+                            fs2. :32 \repeatTie \ff \stopTextSpan ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        "XP (non. flaut.)"
+                                }
+                            R1 * 1/2
+                            \clef "percussion"
+                            \once \override RepeatTie #'direction = #up
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            graincircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \clef "bass"
+                            R1 * 7/4
                             \bar "|"
                         }
                     }
