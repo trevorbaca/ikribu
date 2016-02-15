@@ -8,7 +8,7 @@
 
 \score {
     \context Score = "Score" \with {
-        currentBarNumber = #62
+        currentBarNumber = #63
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -116,55 +116,18 @@
                     \newSpacingSection
                     \mark #5
                     s1 * 1/2 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E1]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'02''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E2]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'12''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E3]
-                            }
-                        ^ \markup {
+                    s1 * 3/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -186,18 +149,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'15''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E4]
-                            }
                 }
                 {
                     \time 3/4
@@ -236,55 +187,18 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'20''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E5]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'23''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E6]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'27''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E7]
-                            }
-                        ^ \markup {
+                    s1 * 3/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -306,18 +220,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'31''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E8]
-                            }
                 }
                 {
                     \time 7/4
@@ -356,55 +258,18 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'34''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E9]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'44''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E10]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'55''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E11]
-                            }
-                        ^ \markup {
+                    s1 * 7/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -425,18 +290,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'03''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E12]
-                            }
                 }
                 {
                     \time 3/4
@@ -475,55 +328,18 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'10''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E13]
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'13''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E14]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'15''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E15]
-                            }
-                        ^ \markup {
+                    s1 * 7/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -545,18 +361,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'25''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [E16]
-                            }
                 }
             }
         >>
@@ -584,22 +388,22 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        d''2
-                        d''1.. \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
-                        d''2. \repeatTie
-                        d''2 \repeatTie
-                        d''1.. \repeatTie
-                        d''\breve \repeatTie
-                        d''1.. \repeatTie
-                        d''1.. \repeatTie
-                        d''2. \repeatTie
-                        d''2 \repeatTie
-                        d''1.. \repeatTie
-                        d''\breve \repeatTie
+                        fs'2 \ppp
+                        fs'1.. \repeatTie
+                        fs'2. \repeatTie
+                        fs'1 \repeatTie
+                        ftqs'2.
+                        ftqs'1 \repeatTie
+                        ftqs'2. \repeatTie
+                        ftqs'2 \repeatTie
+                        g'1..
+                        g'\breve \repeatTie
+                        g'1.. \repeatTie
+                        g'1.. \repeatTie
+                        gqs'2.
+                        gqs'2 \repeatTie
+                        gqs'1.. \repeatTie
+                        gqs'\breve \repeatTie
                         \bar "|"
                     }
                 }
@@ -639,25 +443,65 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2
-                            c'1..
-                            R1 * 7/4
-                            c'2.
-                            c'1
-                            R1 * 5/4
-                            c'1..
-                            c'\breve
-                            R1 * 7/2
-                            c'2.
-                            c'2
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
-                            R1 * 15/4
+                            \times 2/3 {
+                                \clef "percussion"
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                c'4 :32 \> \f
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
+                                        }
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent \p \< \p
+                                c'1 :32
+                                c'1 -\accent
+                            }
+                            R1 * 7/4 \f
+                            {
+                                c'4 -\accent \> \f
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \times 2/3 {
+                                c'2 :32 \p \< \p
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            R1 * 5/4 \f
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent \> \f
+                                c'1 :32
+                                c'1 -\accent
+                            }
+                            \times 2/3 {
+                                c'1 -\accent \p \< \p
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            R1 * 7/2 \f
+                            {
+                                c'4 :32 \> \f
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \times 2/3 {
+                                c'4 -\accent \p \< \p
+                                c'4 :32
+                                c'4 -\accent
+                                \stopStaff
+                                \startStaff
+                                \clef "treble"
+                            }
+                            R1 * 15/4 \f
                             \bar "|"
                         }
                     }
@@ -699,25 +543,66 @@
                         \clef "alto"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 1/2
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'1..
-                            c'2.
-                            R1 * 7/4
-                            c'1
-                            c'2.
-                            R1 * 9/4
-                            c'\breve
-                            c'1..
-                            R1 * 5/2
-                            c'2
-                            c'1..
-                            \stopStaff
-                            \startStaff
-                            \clef "alto"
-                            R1 * 2
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                \clef "percussion"
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                c'1 :32 \> \f
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
+                                        }
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            {
+                                c'4 -\accent \p \< \p
+                                c'4 :32
+                                c'4 -\accent
+                            }
+                            R1 * 7/4 \f
+                            \times 2/3 {
+                                c'2 -\accent \> \f
+                                c'2 -\accent
+                                c'2 -\accent
+                            }
+                            {
+                                c'4 :32 \p \< \p
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            R1 * 9/4 \f
+                            \times 2/3 {
+                                c'1 -\accent \> \f
+                                c'1 :32
+                                c'1 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent \p \< \p
+                                c'1 -\accent
+                                c'1 -\accent
+                            }
+                            R1 * 5/2 \f
+                            \times 2/3 {
+                                c'4 :32 \> \f
+                                c'4 -\accent
+                                c'4 -\accent
+                            }
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 7/12 {
+                                c'1 -\accent \p \< \p
+                                c'1 :32
+                                c'1 -\accent
+                                \stopStaff
+                                \startStaff
+                                \clef "alto"
+                            }
+                            R1 * 2 \f
                             \bar "|"
                         }
                     }
@@ -757,17 +642,18 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
+                        \clef "tenor"
                         \context CelloMusicVoice = "Cello Music Voice" {
                             R1 * 7
-                            c'1..
-                            c'\breve \repeatTie
-                            c'1.. \repeatTie
-                            c'1.. \repeatTie
-                            c'2. \repeatTie
-                            c'2 \repeatTie
-                            c'1.. \repeatTie
-                            c'\breve \repeatTie
+                            \clef "bass"
+                            f1.. :32 \p
+                            f\breve :32 \repeatTie
+                            f1.. :32 \repeatTie
+                            f1.. :32 \repeatTie
+                            fqs2. :32
+                            fqs2 :32 \repeatTie
+                            fqs1.. :32 \repeatTie
+                            fqs\breve :32 \repeatTie
                             \bar "|"
                         }
                     }
