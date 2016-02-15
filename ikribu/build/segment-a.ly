@@ -123,14 +123,13 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        e\breve \< \p
-                        e1.. \f
+                        e\breve \< \ppp
+                        e1.. \repeatTie \f
                         \once \override Hairpin #'circled-tip = ##t
-                        e1 \> \f
-                        e1
-                        e2.
-                        r1.. \!
-                        R1 * 1/4
+                        e1 \repeatTie \> \f
+                        e1 \repeatTie
+                        e2. \repeatTie
+                        R1 * 2 \!
                         \bar "|"
                     }
                 }

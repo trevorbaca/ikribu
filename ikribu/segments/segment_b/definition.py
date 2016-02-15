@@ -45,8 +45,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -55,79 +55,32 @@ segment_maker = baca.tools.SegmentMaker(
     transpose_score=True,
     )
 
-#segment_maker.validate_measure_count(7)
-#segment_maker.validate_stage_count(4)
-#segment_maker.validate_measures_per_stage()
+segment_maker.validate_measure_count(25)
+segment_maker.validate_stage_count(15)
+segment_maker.validate_measures_per_stage()
 
 ###############################################################################
 #################################### TIME #####################################
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn, stages(1)),
+    (bcl, [stages(3), stages(7), stages(11), stages(13)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(3)),
+    (vn, [stages(1), stages(5), stages(9)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(5)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
-    )
-
-segment_maker.append_specifiers(
-    (bcl, stages(7)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
-    )
-
-segment_maker.append_specifiers(
-    (vn, stages(9)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
-    )
-
-segment_maker.append_specifiers(
-    (bcl, stages(11)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
-    )
-
-segment_maker.append_specifiers(
-    (vn, stages(13, 14)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
-    )
-
-segment_maker.append_specifiers(
-    (bcl, stages(13)),
+    (va, stages(13, 14)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
 #################################### COLOR ####################################
 ###############################################################################
-
-segment_maker.append_specifiers(
-    (vn, stages(1, 15)),
-    [
-        baca.articulations.stem_tremolo(),
-        baca.markup.make_markup('trem. flautando'),
-        baca.markup.make_string_number(3),
-        baca.pitch.pitches('E4'),
-        ],
-    )
-
-segment_maker.append_specifiers(
-    (vn, stages(1)),
-    [
-        baca.dynamics.make_hairpins(
-            ['ppp < pp', 'pp > niente'],
-            enchain_hairpins=True,
-            include_following_rests=True,
-            span=[2],
-            ),
-        ],
-    )
 
 segment_maker.append_specifiers(
     (bcl, stages(3, 15)),
@@ -137,8 +90,79 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(3)),
+    (bcl, [stages(3), stages(7), stages(11)]),
     [
         Dynamic('ppp'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(13)),
+    [
+        baca.dynamics.make_hairpin(
+            descriptor='ppp < f',
+            stop=2,
+            ),
+        baca.dynamics.make_hairpin(
+            descriptor='f > niente',
+            include_following_rest=True,
+            start=-1,
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1, 9)),
+    [
+        baca.articulations.stem_tremolo(),
+        baca.markup.make_string_number(3),
+        baca.pitch.pitches('E4'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, [stages(1), stages(5), stages(9)]),
+    [
+        baca.dynamics.make_hairpin(
+            descriptor='ppp < p',
+            stop=2,
+            ),
+        baca.dynamics.make_hairpin(
+            descriptor='p > niente',
+            include_following_rest=True,
+            start=-1,
+            ),
+        baca.spanners.make_transition(
+            baca.markup.make_markup('trem. flaut. pont.'),
+            baca.markup.make_markup('trem. flaut. tast.'),
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(13, 14)),
+    [
+        baca.articulations.stem_tremolo(),
+        baca.markup.make_string_number(2),
+        baca.pitch.pitches('Eb4'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(13, 14)),
+    [
+        baca.dynamics.make_hairpin(
+            descriptor='ppp < mf',
+            stop=5,
+            ),
+        baca.dynamics.make_hairpin(
+            descriptor='mf > niente',
+            include_following_rest=True,
+            start=-1,
+            ),
+        baca.spanners.make_transition(
+            baca.markup.make_markup('trem. flaut. pont.'),
+            baca.markup.make_markup('trem. flaut. tast.'),
+            ),
         ],
     )
