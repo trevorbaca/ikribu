@@ -223,7 +223,7 @@
         \alias Staff
         \accepts ViolinRHMusicVoice
         \override Clef.stencil = ##f
-        \override StaffSymbol.color = #red
+        %\override StaffSymbol.color = #red
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }
@@ -267,7 +267,7 @@
         \alias Staff
         \accepts ViolaRHMusicVoice
         \override Clef.stencil = ##f
-        \override StaffSymbol.color = #green
+        %\override StaffSymbol.color = #green
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }
@@ -311,7 +311,7 @@
         \alias Staff
         \accepts CelloRHMusicVoice
         \override Clef.stencil = ##f
-        \override StaffSymbol.color = #blue
+        %\override StaffSymbol.color = #blue
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }

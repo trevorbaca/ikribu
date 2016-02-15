@@ -33,8 +33,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -43,9 +43,9 @@ segment_maker = baca.tools.SegmentMaker(
     transpose_score=True,
     )
 
-#segment_maker.validate_measure_count(16)
-#segment_maker.validate_stage_count(16)
-#segment_maker.validate_measures_per_stage()
+segment_maker.validate_measure_count(11)
+segment_maker.validate_stage_count(3)
+segment_maker.validate_measures_per_stage()
 
 ###############################################################################
 #################################### TIME #####################################
@@ -68,8 +68,24 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc_rh, stages(1, 2)),
     [
+        baca.dynamics.make_hairpins(
+            ['p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff', 'ff > p'],
+            enchain_hairpins=True,
+            span=[3, 4],
+            ),
+        baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('C4'),
+        ikribu.tools.BowContactPointSpecifier(rotation=0),
         Clef('percussion'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1, 2)),
+    [
+        baca.spanners.glissandi(),
+        ikribu.tools.make_glissando_pitch_specifier(octave=4),
+        Clef('tenor'),
         ],
     )
