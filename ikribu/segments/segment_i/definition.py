@@ -53,7 +53,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (vc, [stages(1), stages(3), stages(5), stages(7)]),
-    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -64,6 +64,10 @@ segment_maker.append_specifiers(
     (vc, stages(1, 8)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/4 every quarter note'
+            ]),
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),

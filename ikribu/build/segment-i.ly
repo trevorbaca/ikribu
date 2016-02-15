@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #107
+        currentBarNumber = #108
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -235,7 +235,7 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
+                        \clef "treble"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 3/4
                             R1 * 1/4
@@ -276,14 +276,30 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
+                        \clef "treble"
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \clef "percussion"
                             \once \override RepeatTie #'direction = #up
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2.
+                            c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/4 every quarter note"
+                                                        }
+                                                }
+                                    }
                                 _ \markup {
                                     \larger
                                         \italic
@@ -296,18 +312,34 @@
                                         \italic
                                             ”
                                     }
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             R1 * 1/4
                             \once \override RepeatTie #'direction = #up
-                            c'2.
+                            c'4
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             R1 * 1/4
                             \once \override RepeatTie #'direction = #up
-                            c'2.
+                            c'4
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             R1 * 1/4
                             \once \override RepeatTie #'direction = #up
-                            c'2.
+                            c'4
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
-                            \clef "bass"
+                            \clef "treble"
                             R1 * 1/4
                             \bar "|"
                         }
