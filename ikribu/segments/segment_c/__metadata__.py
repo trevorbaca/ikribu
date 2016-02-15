@@ -9,7 +9,7 @@ metadata = datastructuretools.TypedOrderedDict(
             datastructuretools.TypedOrderedDict(
                 [
                     ('Bass Clarinet Music Staff', 'treble'),
-                    ('Cello Music Staff', 'bass'),
+                    ('Cello Music Staff', 'treble'),
                     ('Cello RH Music Staff', None),
                     ('Viola Music Staff', 'alto'),
                     ('Viola RH Music Staff', None),
@@ -32,7 +32,7 @@ metadata = datastructuretools.TypedOrderedDict(
         ('end_tempo', 'night'),
         ('end_time_signature', '1/6'),
         ('first_bar_number', 35),
-        ('measure_count', 16),
+        ('measure_count', 17),
         ('name', 'C'),
         ('segment_count', 18),
         ('segment_number', 4),

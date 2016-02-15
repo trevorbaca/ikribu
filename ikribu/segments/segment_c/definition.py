@@ -10,6 +10,7 @@ from ikribu.materials.__abbreviations__ import *
 ###############################################################################
 
 stage_specifier = baca.tools.StageSpecifier([
+    1,
     1, 1, 1, 1,
     1, 1, 1, 1,
     1, 1, 1, 1,
@@ -17,25 +18,29 @@ stage_specifier = baca.tools.StageSpecifier([
     ])
 
 tempo_map = baca.tools.TempoMap([
-    (1, ikribu.materials.tempi['night']),
-    (1, Accelerando()),
-    (3, ikribu.materials.tempi['incisions']),
+    (1, ikribu.materials.tempi['incisions']),
+    (2, ikribu.materials.tempi['night']),
+    (2, Accelerando()),
+    (4, ikribu.materials.tempi['incisions']),
 
-    (5, ikribu.materials.tempi['incisions']),
-    (5, Ritardando()),
-    (7, ikribu.materials.tempi['night']),
+    (6, ikribu.materials.tempi['incisions']),
+    (6, Ritardando()),
+    (8, ikribu.materials.tempi['night']),
 
-    (9, ikribu.materials.tempi['night']),
-    (9, Accelerando()),
-    (11, ikribu.materials.tempi['incisions']),
+    (10, ikribu.materials.tempi['night']),
+    (10, Accelerando()),
+    (12, ikribu.materials.tempi['incisions']),
 
-    (13, ikribu.materials.tempi['incisions']),
-    (13, Ritardando()),
-    (15, ikribu.materials.tempi['night']),
+    (14, ikribu.materials.tempi['incisions']),
+    (14, Ritardando()),
+    (16, ikribu.materials.tempi['night']),
     ])
 
+time_signatures = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
+time_signatures.insert(0, (7, 4))
+time_signatures = [time_signatures]
 maker = baca.tools.TimeSignatureMaker(
-    [[(4, 4), (4, 4), (3, 4), (1, 6)]],
+    time_signatures,
     stage_specifier=stage_specifier,
     tempo_map=tempo_map,
     )
@@ -47,8 +52,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -57,8 +62,8 @@ segment_maker = baca.tools.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(16)
-segment_maker.validate_stage_count(16)
+segment_maker.validate_measure_count(17)
+segment_maker.validate_stage_count(17)
 segment_maker.validate_measures_per_stage()
 
 ###############################################################################
@@ -66,21 +71,31 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [stages(1, 2), stages(5, 6), stages(9, 10), stages(13, 14)]),
+    (bcl, [stages(2, 3), stages(6, 7), stages(10, 11), stages(14, 15)]),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (
         [vn, va],
-        [stages(2, 3), stages(6, 7), stages(10, 11), stages(14, 15)],
+        [stages(3, 4), stages(7, 8), stages(11, 12), stages(15, 16)],
         ),
+    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1, 15)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    (vc, stages(2, 16)),
+    baca.rhythm.make_messiaen_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -88,7 +103,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 16)),
+    (bcl, stages(2, 17)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.overrides.repeat_tie_up(),
@@ -99,11 +114,84 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, stages(2, 3)),
     [
-        baca.markup.make_markup_lines([
-            'circle slate at moderate speed;',
-            'faster during accelerandi and slower during ritardandi',
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/2 every quarter note'
             ]),
+        baca.overrides.repeat_tie_up(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1)),
+    [
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_markup('grainfall (II)'),
+        baca.pitch.pitches('C4'),
+        baca.spanners.one_line_staff(),
+        spannertools.ClefSpanner(clef='percussion'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(2, 16)),
+    [
+        baca.articulations.stem_tremolo(),
+        baca.dynamics.make_hairpins(
+            ['pp < p', 'p > pp'],
+            ),
+        baca.markup.trem_flaut_tast(),
+        baca.pitch.pitches('F#4 G#4 G#4 F#4'),
+        baca.spanners.glissandi(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(2, 16)),
+    [
+        baca.articulations.stem_tremolo(),
+        baca.dynamics.make_hairpins(
+            ['pp < p', 'p > pp'],
+            ),
+        baca.markup.trem_flaut_tast(),
+        baca.pitch.pitches('F4 E4 E4 F4'),
+        baca.spanners.glissandi(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1)),
+    [
+        baca.markup.make_string_number(3),
+        baca.markup.pizz(),
+        baca.overrides.natural_harmonics(),
+        baca.pitch.pitches('F~5'),
+        indicatortools.LaissezVibrer(),
+        Clef('treble'),
+        Dynamic('sfz'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(2, 16)),
+    [
+        baca.articulations.stem_tremolo(),
+        baca.dynamics.make_hairpins(
+            ['ppp < pp', 'pp > ppp'],
+            enchain_hairpins=True,
+            span=[2],
+            ),
+        baca.overrides.natural_harmonics(),
+        baca.overrides.tuplet_bracket_down(),
+        baca.pitch.fixed_pitches(
+            'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
+            ),
+        baca.spanners.glissandi(),
+        baca.spanners.make_transition(
+            baca.markup.make_markup('trem. flaut. tasto. (arco)'),
+            baca.markup.make_markup('trem. flaut. XP'),
+            ),
         ],
     )
