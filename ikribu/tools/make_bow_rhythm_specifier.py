@@ -12,6 +12,7 @@ def make_bow_rhythm_specifier(rotation=None):
     rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=[4],
         extra_counts_per_division=extra_counts_per_division,
+        logical_tie_masks=rhythmmakertools.silence_every([4, 19], period=20),
         )
     return baca.tools.RhythmSpecifier(
         rhythm_maker=rhythm_maker,
