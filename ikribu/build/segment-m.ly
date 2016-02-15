@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #175
+        currentBarNumber = #176
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -211,65 +211,23 @@
                     \newSpacingSection
                     \mark #13
                     s1 * 3/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M1]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'03''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M2]
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'07''
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 1/2 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'11''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M3]
-                            }
-                        ^ \markup {
+                    s1 * 1/2 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -291,13 +249,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M4]
-                            }
                 }
                 {
                     \time 7/4
@@ -325,37 +276,12 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'13''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M5]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'17''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M6]
-                            }
-                        ^ \markup {
+                    s1 * 3/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -377,13 +303,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M7]
-                            }
                 }
                 {
                     \time 4/4
@@ -411,66 +330,24 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'21''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M8]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'25''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M9]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'28''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'32''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M10]
-                            }
-                        ^ \markup {
+                    s1 * 3/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -492,13 +369,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M11]
-                            }
                 }
                 {
                     \time 2/4
@@ -526,65 +396,23 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'34''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M12]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'36''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M13]
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'40''
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 2 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'44''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M14]
-                            }
-                        ^ \markup {
+                    s1 * 2 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -606,13 +434,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M15]
-                            }
                 }
                 {
                     \time 7/4
@@ -640,37 +461,12 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'53''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M16]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M17]
-                            }
-                        ^ \markup {
+                    s1 * 3/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -692,13 +488,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M18]
-                            }
                 }
                 {
                     \time 2/4
@@ -726,87 +515,35 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'03''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M19]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'04''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M20]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'08''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'12''
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'15''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 3/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'17''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M21]
-                            }
-                        ^ \markup {
+                    s1 * 3/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -828,64 +565,30 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'20''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M22]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'27''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'36''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'39''
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [M23]
-                            }
                 }
             }
         >>
@@ -914,101 +617,34 @@
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         R1 * 3/4
-                        \times 4/5 {
-                            d''4
-                            d''4.
-                            d''4
-                            d''4.
-                        }
-                        \times 2/3 {
-                            d''1.
-                        }
-                        {
-                            d''4 \repeatTie
-                            d''4
-                        }
-                        R1 * 2
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            d''4
-                            d''4.
-                            d''4.
-                        }
+                        cs1 \< \p
+                        cs1 \repeatTie \fff
+                        \once \override Hairpin #'circled-tip = ##t
+                        cs2 \repeatTie \> \fff
+                        R1 * 2 \!
+                        cs2. \p
                         R1 * 5/4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            d''1
-                        }
-                        \times 2/3 {
-                            d''2. \repeatTie
-                            d''2.
-                        }
-                        {
-                            d''2. \repeatTie
-                        }
+                        cs2. \< \p
+                        cs1 \repeatTie \fff
+                        \once \override Hairpin #'circled-tip = ##t
+                        cs2. \repeatTie \> \fff
+                        R1 * 3/4 \!
+                        cs1.. \< \p
+                        cs1.. \repeatTie \fff
+                        \once \override Hairpin #'circled-tip = ##t
+                        cs\breve \repeatTie \> \fff
+                        R1 * 2 \!
+                        cs2. \p
                         R1 * 3/4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 7/8 {
-                            d''1..
-                            d''4
-                        }
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 7/9 {
-                            d''1.. \repeatTie
-                            d''4
-                            d''4
-                        }
-                        {
-                            d''8 \repeatTie
-                            d''4
-                            d''4.
-                            d''1
-                            d''4 \repeatTie
-                        }
-                        R1 * 2
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            d''4
-                            d''4.
-                            d''4
-                            d''8
-                        }
-                        R1 * 3/4
-                        \times 8/9 {
-                            d''4
-                            d''4.
-                            d''1.
-                            d''8 \repeatTie
-                        }
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 7/9 {
-                            \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                            d''8 \repeatTie
-                            \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                            d''\breve
-                            d''8
-                        }
-                        {
-                            \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                            d''1 \repeatTie
-                        }
-                        \times 4/5 {
-                            d''2 \repeatTie
-                            d''8 \repeatTie
-                            \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                            d''2
-                            d''8 \repeatTie
-                        }
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                            d''1 \repeatTie
-                            d''4 \repeatTie
-                        }
-                        d''1..
-                        d''\breve \repeatTie
-                        d''2. \repeatTie
-                        d''1 \repeatTie
+                        cs\breve \< \ppp
+                        cs1.. \repeatTie
+                        cs1 \repeatTie
+                        cs1 \repeatTie
+                        cs2. \repeatTie
+                        cs1.. \repeatTie
+                        cs\breve \repeatTie
+                        cs2. \repeatTie \fff
+                        cs1 \repeatTie
                         R1 * 1/4
                         \bar "|"
                     }
@@ -1073,7 +709,7 @@
                             c'2.
                                 ^ \markup {
                                     \upright
-                                        grainfall
+                                        "grainfall (III)"
                                     }
                                 _ \markup {
                                     \larger
@@ -1082,38 +718,63 @@
                                     \dynamic
                                         \override
                                             #'(font-name . #f)
-                                            mf
+                                            f
                                     \larger
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'2 :32 \< \mf \startTextSpan
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
+                                        }
+                                c'2 -\accent
+                                c'2 :32
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
                             }
                             R1 * 1/4
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'1..
                                 ^ \markup {
                                     \upright
-                                        grainfall
+                                        "grainfall (IV)"
                                     }
                                 _ \markup {
                                     \larger
@@ -1122,30 +783,34 @@
                                     \dynamic
                                         \override
                                             #'(font-name . #f)
-                                            mf
+                                            f
                                     \larger
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \fff
+                                    ^ \markup {
+                                        \column
+                                            {
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
+                                                \upright
+                                                    XP
+                                            }
+                                        }
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             R1 * 1/4
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'1
                                 ^ \markup {
                                     \upright
-                                        grainfall
+                                        "grainfall (V)"
                                     }
                                 _ \markup {
                                     \larger
@@ -1154,46 +819,71 @@
                                     \dynamic
                                         \override
                                             #'(font-name . #f)
-                                            mf
+                                            f
                                     \larger
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'4 :32 \< \mf \startTextSpan
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
+                                        }
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 4/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
                             }
                             R1 * 1/4
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2
                                 ^ \markup {
                                     \upright
-                                        grainfall
+                                        "grainfall (VI)"
                                     }
                                 _ \markup {
                                     \larger
@@ -1202,40 +892,65 @@
                                     \dynamic
                                         \override
                                             #'(font-name . #f)
-                                            mf
+                                            f
                                     \larger
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1
-                                c'1
-                                c'1
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'1 :32 \< \mf \startTextSpan
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
+                                        }
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1
-                                c'1
-                                c'1
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                c'1
-                                c'1
-                                c'1
+                                c'1 :32
+                                c'1 -\accent
+                                c'1 :32 \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
                             }
                             R1 * 1/4
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'1..
                                 ^ \markup {
                                     \upright
-                                        grainfall
+                                        "grainfall (VII)"
                                     }
                                 _ \markup {
                                     \larger
@@ -1244,30 +959,34 @@
                                     \dynamic
                                         \override
                                             #'(font-name . #f)
-                                            mf
+                                            f
                                     \larger
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \fff
+                                    ^ \markup {
+                                        \column
+                                            {
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
+                                                \upright
+                                                    XP
+                                            }
+                                        }
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             R1 * 1/4
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2
                                 ^ \markup {
                                     \upright
-                                        grainfall
+                                        "grainfall (VIII)"
                                     }
                                 _ \markup {
                                     \larger
@@ -1276,50 +995,82 @@
                                     \dynamic
                                         \override
                                             #'(font-name . #f)
-                                            mf
+                                            f
                                     \larger
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
                             \times 4/5 {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'2 :32 \< \mf \startTextSpan
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
+                                        }
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/10 {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 4/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 4/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
+                                \stopStaff
+                                \startStaff
+                                \clef "treble"
                             }
                             R1 * 23/4
                             \bar "|"
@@ -1377,108 +1128,227 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
+                        \clef "treble"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 3/4
                             {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                \clef "percussion"
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                c'4 :32 \< \mf \startTextSpan
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             {
-                                c'8 [
-                                c'8
-                                c'8
-                                c'8 ]
+                                c'8 :32 [
+                                c'8 -\accent
+                                c'8 :32
+                                c'8 -\accent \fff ] \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
                             }
                             R1 * 2
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \fff
+                                    ^ \markup {
+                                        \upright
+                                            XP
+                                        }
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             R1 * 5/4
                             {
-                                c'4
-                                c'4
-                                c'4
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'4 :32 \< \mf \startTextSpan
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             {
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
                             }
                             R1 * 3/4
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'2 :32 \< \mf \startTextSpan
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
                             }
                             R1 * 2
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \fff
+                                    ^ \markup {
+                                        \upright
+                                            XP
+                                        }
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             R1 * 3/4
                             \times 2/3 {
-                                c'1
-                                c'1
-                                c'1
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \override
+                                                #'(font-name . "Palatino")
+                                                \upright
+                                                    tasto
+                                            \hspace
+                                                #0.5
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 1.75
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 0.25
+                                \once \override TextSpanner.dash-period = 1.5
+                                c'1 :32 \< \mf \startTextSpan
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1
-                                c'1
-                                c'1
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             {
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff \stopTextSpan ^ \markup {
+                                    \override
+                                        #'(font-name . "Palatino")
+                                        \upright
+                                            XP
+                                    }
+                                \stopStaff
+                                \startStaff
+                                \clef "treble"
                             }
                             R1 * 23/4
                             \bar "|"
@@ -1550,9 +1420,37 @@
                                         III
                                     }
                             \clef "bass"
-                            c'1
-                            c'1 \repeatTie
-                            c'2 \repeatTie
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                tasto
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            \ottava #-1
+                            c,,1 \< \mf \startTextSpan
+                            c,,1 \repeatTie
+                            c,,2 \repeatTie \fff \stopTextSpan ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        XP
+                                }
+                            \ottava #0
                             R1 * 1/4
                             \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
@@ -1566,11 +1464,17 @@
                                         III
                                     }
                             \clef "bass"
-                            c'2.
+                            \ottava #-1
+                            c,,2. \fff
+                                ^ \markup {
+                                    \upright
+                                        XP
+                                    }
+                            \ottava #0
                             R1 * 1/4
                             \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
-                            fqf''1 \laissezVibrer \sfz
+                            fqf''1 \laissezVibrer \sffz
                                 ^ \markup {
                                     \upright
                                         pizz.
@@ -1580,13 +1484,41 @@
                                         III
                                     }
                             \clef "bass"
-                            c'2.
-                            c'1 \repeatTie
-                            c'2. \repeatTie
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                tasto
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            \ottava #-1
+                            c,,2. \< \mf \startTextSpan
+                            c,,1 \repeatTie
+                            c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        XP
+                                }
+                            \ottava #0
                             R1 * 1/4
                             \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
-                            g''2 \laissezVibrer \sfz
+                            g''2 \laissezVibrer \sffz
                                 ^ \markup {
                                     \upright
                                         pizz.
@@ -1596,13 +1528,41 @@
                                         III
                                     }
                             \clef "bass"
-                            c'1..
-                            c'1.. \repeatTie
-                            c'\breve \repeatTie
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                tasto
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            \ottava #-1
+                            c,,1.. \< \mf \startTextSpan
+                            c,,1.. \repeatTie
+                            c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        XP
+                                }
+                            \ottava #0
                             R1 * 1/4
                             \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
-                            a''1.. \laissezVibrer \sfz
+                            a''1.. \laissezVibrer \sfffz
                                 ^ \markup {
                                     \upright
                                         pizz.
@@ -1612,11 +1572,17 @@
                                         III
                                     }
                             \clef "bass"
-                            c'2.
+                            \ottava #-1
+                            c,,2. \fff
+                                ^ \markup {
+                                    \upright
+                                        XP
+                                    }
+                            \ottava #0
                             R1 * 1/4
                             \clef "treble"
                             \once \override NoteHead #'style = #'harmonic
-                            cqs'''2 \laissezVibrer \sfz
+                            cqs'''2 \laissezVibrer \sfffz
                                 ^ \markup {
                                     \upright
                                         pizz.
@@ -1626,11 +1592,39 @@
                                         III
                                     }
                             \clef "bass"
-                            c'\breve
-                            c'1.. \repeatTie
-                            c'1 \repeatTie
-                            c'1 \repeatTie
-                            c'2. \repeatTie
+                            \once \override TextSpanner.arrow-width = 0.25
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \concat
+                                    {
+                                        \override
+                                            #'(font-name . "Palatino")
+                                            \upright
+                                                tasto
+                                        \hspace
+                                            #0.5
+                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.arrow = ##f
+                            \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right.arrow = ##t
+                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.dash-fraction = 0.25
+                            \once \override TextSpanner.dash-period = 1.5
+                            \ottava #-1
+                            c,,\breve \< \mf \startTextSpan
+                            c,,1.. \repeatTie
+                            c,,1 \repeatTie
+                            c,,1 \repeatTie
+                            c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
+                                \override
+                                    #'(font-name . "Palatino")
+                                    \upright
+                                        XP
+                                }
+                            \ottava #0
                             R1 * 23/4
                             \bar "|"
                         }

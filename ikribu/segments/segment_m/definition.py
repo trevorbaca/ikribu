@@ -49,8 +49,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -69,36 +69,31 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, stages(2, 3)),
-    ikribu.tools.make_bcl_color_rhythm_specifier(),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(6)),
-    ikribu.tools.make_bcl_color_rhythm_specifier(rotation_1=-2),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(9, 10)),
-    ikribu.tools.make_bcl_color_rhythm_specifier(rotation_1=-4),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(13, 14)),
-    ikribu.tools.make_bcl_color_rhythm_specifier(rotation_1=-6),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(17)),
-    ikribu.tools.make_bcl_color_rhythm_specifier(rotation_1=-8),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(20, 21)),
-    ikribu.tools.make_bcl_color_rhythm_specifier(rotation_1=-10),
-    )
-
-segment_maker.append_specifiers(
-    (bcl, stages(22)),
+    (bcl, stages(20, 22)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -240,15 +235,144 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (
-        vn,
-        [stages(1), stages(5), stages(8), stages(12), stages(16), stages(19)]
-        ),
+    (bcl, stages(1, 23)),
     [
-        baca.dynamics.make_effort_dynamic('mf'),
-        baca.markup.make_markup('grainfall'),
+        baca.pitch.pitches('B1'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, [stages(2, 3), stages(9, 10), stages(13, 14)]),
+    [
+        baca.dynamics.make_hairpin('p < fff', stop=2),
+        baca.dynamics.make_hairpin(
+            'fff > niente',
+            include_following_rest=True,
+            start=-1
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(20, 22)),
+    [
+        baca.dynamics.make_hairpin('ppp < fff', stop=-1),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, [stages(6), stages(17)]),
+    [
+        Dynamic('p'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ([vn, va], stages(1, 23)),
+    [
         baca.spanners.one_line_staff(),
         baca.spanners.percussion_staff(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_markup('grainfall (III)'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, 
+        [stages(2, 3), stages(6), stages(9, 10), stages(13, 14), stages(17),
+        stages(20, 21)]),
+    [
+        baca.markup.make_boxed_markup('brushes on BD'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ([vn, va], 
+        [stages(2, 3), stages(6), stages(9, 10), stages(13, 14), stages(17),
+        stages(20, 21)]),
+    [
+        baca.articulations.accents(
+            pattern=patterntools.select_every([0], inverted=True, period=2),
+            ),
+        baca.articulations.stem_tremolo(
+            pattern=patterntools.select_every([0], period=2),
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(5)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_markup('grainfall (IV)'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(8)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_markup('grainfall (V)'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(12)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_markup('grainfall (VI)'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(16)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_markup('grainfall (VII)'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(19)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_markup('grainfall (VIII)'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, 
+        [stages(2, 3), stages(6), stages(9, 10), stages(13, 14), stages(17),
+        stages(20, 21)]),
+    [
+        baca.pitch.pitches('C1'),
+        baca.spanners.ottava_bassa(),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ([vn, va, vc],
+        [stages(2, 3), stages(9, 10), stages(13, 14), stages(20, 21)]),
+    [
+        baca.dynamics.make_hairpin('mf < fff'),
+        baca.spanners.make_transition(
+            baca.markup.tasto(),
+            baca.markup.XP(),
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ([vn, va, vc], [stages(6), stages(17)]),
+    [
+        baca.markup.XP(),
+        Dynamic('fff'),
         ],
     )
 
@@ -287,7 +411,7 @@ segment_maker.append_specifiers(
         baca.pitch.pitches('F~5'),
         baca.spanners.clef_spanner(clef='treble'),
         indicatortools.LaissezVibrer(),
-        Dynamic('sfz'),
+        Dynamic('sffz'),
         ],
     )
 
@@ -300,7 +424,7 @@ segment_maker.append_specifiers(
         baca.pitch.pitches('G5'),
         baca.spanners.clef_spanner(clef='treble'),
         indicatortools.LaissezVibrer(),
-        Dynamic('sfz'),
+        Dynamic('sffz'),
         ],
     )
 
@@ -313,7 +437,7 @@ segment_maker.append_specifiers(
         baca.pitch.pitches('A5'),
         baca.spanners.clef_spanner(clef='treble'),
         indicatortools.LaissezVibrer(),
-        Dynamic('sfz'),
+        Dynamic('sfffz'),
         ],
     )
 
@@ -326,6 +450,6 @@ segment_maker.append_specifiers(
         baca.pitch.pitches('C+6'),
         baca.spanners.clef_spanner(clef='treble'),
         indicatortools.LaissezVibrer(),
-        Dynamic('sfz'),
+        Dynamic('sfffz'),
         ],
     )
