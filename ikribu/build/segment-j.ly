@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #115
+        currentBarNumber = #116
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -68,20 +68,7 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     \mark #10
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J1]
-                            }
-                        ^ \markup {
+                    s1 * 7/4 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -103,129 +90,53 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'10''
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'21''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J2]
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'27''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'32''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J3]
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'37''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'48''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J4]
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'58''
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J5]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                1'04''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J6]
-                            }
-                        ^ \markup {
+                    s1 * 1 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -247,13 +158,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [J7]
-                            }
                 }
             }
         >>
@@ -287,6 +191,22 @@
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         c'4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        \column
+                                            {
+                                                \line
+                                                    {
+                                                        stonecircle:
+                                                    }
+                                                \line
+                                                    {
+                                                        "π/4 every quarter note"
+                                                    }
+                                            }
+                                }
                             _ \markup {
                                 \larger
                                     \italic
@@ -300,80 +220,124 @@
                                         ”
                                 }
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
+                        \once \override RepeatTie #'direction = #up
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
                         c'4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        \column
+                                            {
+                                                \line
+                                                    {
+                                                        stonecircle:
+                                                    }
+                                                \line
+                                                    {
+                                                        "π/3 every quarter note"
+                                                    }
+                                            }
+                                }
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         R1 * 11/4
                         \once \override RepeatTie #'direction = #up
                         c'4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        \column
+                                            {
+                                                \line
+                                                    {
+                                                        stonecircle:
+                                                    }
+                                                \line
+                                                    {
+                                                        "π/2 every quarter note"
+                                                    }
+                                            }
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        f
+                                \larger
+                                    \italic
+                                        ”
+                                }
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \once \override RepeatTie #'direction = #up
-                        c'4
+                        c'4 \repeatTie
                         \stopStaff
                         \startStaff
                         \clef "treble"
@@ -419,6 +383,22 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
                                 _ \markup {
                                     \larger
                                         \italic
@@ -432,80 +412,124 @@
                                             ”
                                     }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π every quarter note"
+                                                        }
+                                                }
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             R1 * 11/4
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            f
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
                             \clef "treble"
@@ -544,7 +568,7 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
+                        \clef "treble"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \clef "percussion"
                             \once \override RepeatTie #'direction = #up
@@ -552,6 +576,22 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/3 every quarter note"
+                                                        }
+                                                }
+                                    }
                                 _ \markup {
                                     \larger
                                         \italic
@@ -565,83 +605,143 @@
                                             ”
                                     }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/4 every quarter note"
+                                                        }
+                                                }
+                                    }
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
+                            \once \override RepeatTie #'direction = #up
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
-                            \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             R1 * 11/4
                             \once \override RepeatTie #'direction = #up
                             c'4
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    \line
+                                                        {
+                                                            stonecircle:
+                                                        }
+                                                    \line
+                                                        {
+                                                            "π/2 every quarter note"
+                                                        }
+                                                }
+                                    }
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            f
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \once \override RepeatTie #'direction = #up
-                            c'4
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
-                            \clef "alto"
+                            \clef "treble"
                             R1 * 1/4
                             \bar "|"
                         }
@@ -677,16 +777,23 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
+                        \clef "treble"
                         \context CelloMusicVoice = "Cello Music Voice" {
                             R1 * 15/4
-                            c'1
-                            c'1 \repeatTie
-                            c'2. \repeatTie
-                            c'\breve \repeatTie
-                            c'1.. \repeatTie
-                            c'2. \repeatTie
-                            R1 * 3/2
+                            \ottava #-1
+                            \clef "bass"
+                            d,,1 \p
+                                ^ \markup {
+                                    \upright
+                                        "vib. poco."
+                                    }
+                            d,,1 \repeatTie
+                            d,,2. \repeatTie
+                            d,,\breve \repeatTie
+                            d,,1.. \repeatTie
+                            d,,2. \repeatTie \< \p
+                            \ottava #0
+                            R1 * 3/2 \mf
                             \bar "|"
                         }
                     }
