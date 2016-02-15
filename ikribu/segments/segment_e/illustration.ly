@@ -646,14 +646,14 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             R1 * 7
                             \clef "bass"
-                            f1.. :32 \p
-                            f\breve :32 \repeatTie
-                            f1.. :32 \repeatTie
-                            f1.. :32 \repeatTie
-                            fqs2. :32
-                            fqs2 :32 \repeatTie
-                            fqs1.. :32 \repeatTie
-                            fqs\breve :32 \repeatTie
+                            f1.. :32 \< \p
+                            f\breve :32 \repeatTie \mp \> \mp
+                            f1.. :32 \repeatTie \p \< \p
+                            f1.. :32 \repeatTie \mp \> \mp
+                            fqs2. :32 \p \< \p
+                            fqs2 :32 \repeatTie \mp \> \mp
+                            fqs1.. :32 \repeatTie \p \< \p
+                            fqs\breve :32 \repeatTie \mp
                             \bar "|"
                         }
                     }
