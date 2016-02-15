@@ -526,53 +526,53 @@
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \times 16/17 {
                                 c''8 \glissando [
-                                d'8. \glissando
-                                e''8 \glissando
-                                d''8. ] \glissando
-                                f''2.. \glissando
-                                f'2 \glissando
+                                b''8. \glissando
                                 a'8 \glissando
+                                b'8. ] \glissando
+                                g'2.. \glissando
+                                g''2 \glissando
+                                e''8 \glissando
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                g4. \glissando
-                                a2.. \glissando
-                                b'2. \glissando
+                                f'''4. \glissando
+                                e'''2.. \glissando
+                                d''2. \glissando
                             }
                             {
-                                a4 \glissando
-                                g8 \glissando [
-                                a'8. \glissando
-                                f'8 \glissando
+                                c''4 \glissando
+                                d'8 \glissando [
+                                e''8. \glissando
+                                d''8 \glissando
                                 f''8. ] \glissando
-                                d''2.. \glissando
+                                f'2.. \glissando
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                e''2.. \glissando
+                                a'2.. \glissando
                             }
                             \times 2/3 {
-                                d'8 \glissando
-                                c''2 \glissando
-                                d''8 \glissando
+                                g8 \glissando
+                                a2 \glissando
+                                b'8 \glissando
                             }
                             {
-                                e'''4 \glissando
-                                f'''1 \glissando
-                                e''8 \glissando [
-                                g''8. \glissando
-                                g'8 \glissando
-                                b'16 ] \glissando
+                                a4 \glissando
+                                g1 \glissando
+                                a'8 \glissando [
+                                f'8. \glissando
+                                f''8 \glissando
+                                d''16 ] \glissando
                             }
                             \times 16/17 {
-                                a'8 \glissando
-                                b''2.. \glissando
+                                e''8 \glissando
+                                d'2.. \glissando
                                 c''1 \glissando
-                                b''8 \glissando
+                                d''8 \glissando
                             }
                             \times 4/5 {
-                                a'2. \glissando
-                                b'2
+                                e'''2. \glissando
+                                f'''2
                             }
                             R1 * 1/4
                             \bar "|"
@@ -950,51 +950,51 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \times 8/9 {
                                 \clef "treble"
-                                a2.. \glissando
-                                g1 \glissando
-                                a'4. \glissando
+                                c''2.. \glissando
+                                d'1 \glissando
+                                e''4. \glissando
                             }
                             {
-                                f'2 \glissando
+                                d''2 \glissando
                                 f''1 \glissando
-                                d''8 \glissando [
-                                e''8 ] \glissando
+                                f'8 \glissando [
+                                a'8 ] \glissando
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 14/15 {
-                                d'16 \glissando [
-                                c''8 \glissando
-                                d''8. ] \glissando
-                                e'''2.. \glissando
-                                f'''2 \glissando
-                                e''8 \glissando
+                                g16 \glissando [
+                                a8 \glissando
+                                b'8. ] \glissando
+                                a2.. \glissando
+                                g2 \glissando
+                                a'8 \glissando
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                g''4. \glissando
-                                g'2 \glissando
-                                b'8 \glissando
+                                f'4. \glissando
+                                f''2 \glissando
+                                d''8 \glissando
                             }
                             {
-                                a'4 \glissando
-                                b''4 \glissando
+                                e''4 \glissando
+                                d'4 \glissando
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 c''2. \glissando
-                                b''8 \glissando [
-                                a'8. \glissando
-                                b'8 \glissando
-                                g'8. ] \glissando
+                                d''8 \glissando [
+                                e'''8. \glissando
+                                f'''8 \glissando
+                                e''8. ] \glissando
                                 g''2 \glissando
                             }
                             \times 8/9 {
-                                e''4. \glissando
-                                f'''1 \glissando
-                                e'''2.. \glissando
+                                g'4. \glissando
+                                b'1 \glissando
+                                a'2.. \glissando
                             }
                             {
-                                d''1
+                                b''1
                             }
                             R1 * 1/4
                             \bar "|"

@@ -53,7 +53,10 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (vc_rh, stages(1, 2)),
-    ikribu.tools.make_bow_rhythm_specifier(rotation=0),
+    ikribu.tools.make_bow_rhythm_specifier(
+        logical_tie_masks=silence_every([8, 20], period=20),
+        rotation=-2,
+        ),
     )
 
 segment_maker.append_specifiers(
@@ -85,7 +88,7 @@ segment_maker.append_specifiers(
     (vc, stages(1, 2)),
     [
         baca.spanners.glissandi(),
-        ikribu.tools.make_glissando_pitch_specifier(octave=4),
+        ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
         Clef('tenor'),
         ],
     )

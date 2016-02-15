@@ -127,7 +127,7 @@ segment_maker.append_specifiers(
     (vn, stages(1, 2)),
     [
         baca.spanners.glissandi(),
-        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
+        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=0),
         ],
     )
 
@@ -135,7 +135,7 @@ segment_maker.append_specifiers(
     (va, stages(1, 2)),
     [
         baca.spanners.glissandi(),
-        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-20),
+        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
         Clef('treble'),
         ],
     )
