@@ -10,12 +10,12 @@ from ikribu.materials.__abbreviations__ import *
 ###############################################################################
 
 stage_specifier = baca.tools.StageSpecifier([
-    4,
-    4,
-    4,
-    4,
-    4,
-    Fermata('shortfermata'),
+    1, 1, 1, 1,
+    1, 1, 1, 1,
+    1, 1, 1, 1,
+    1, 1, 1, 1,
+    1, 1, 1, 1,
+    Fermata('fermata'),
     ])
 
 tempo_map = baca.tools.TempoMap([
@@ -36,8 +36,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -47,7 +47,7 @@ segment_maker = baca.tools.SegmentMaker(
     )
 
 segment_maker.validate_measure_count(21)
-segment_maker.validate_stage_count(6)
+segment_maker.validate_stage_count(21)
 segment_maker.validate_measures_per_stage()
 
 ###############################################################################
@@ -55,25 +55,278 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 5)),
-    ikribu.tools.make_vigil_rhythm_specifier(),
+    (bcl,
+        [stages(1, 2), stages(3, 6), stages(7), stages(8), stages(9), 
+        stages(10), stages(11, 12), stages(13), stages(14), stages(15),
+        stages(16), stages(17), stages(18), stages(19, 20)]
+        ),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(3, 5)),
-    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    (vn, stages(9, 20)),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (va, stages(3, 5)),
-    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    (va, stages(9, 20)),
+    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(2, 5)),
+    (vc, [stages(5, 8), stages(9, 12), stages(13, 16), stages(17, 20)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
 #################################### COLOR ####################################
 ###############################################################################
+
+segment_maker.append_specifiers(
+    (bcl, stages(1, 2)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(3, 6)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(7)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(8)),
+    [
+        baca.pitch.pitches('Bb1'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(9)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(10)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(11, 12)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('Ab~4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(13)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(14)),
+    [
+        baca.pitch.pitches('Bb1'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(15, 16)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(17)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(18)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(19, 20)),
+    [
+        baca.pitch.pitches('Bb1'),
+        baca.dynamics.make_hairpin(
+            descriptor='p > niente',
+            start=-2,
+            include_following_rest=True,
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(9, 20)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('E4'), NamedPitch('F#4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        baca.articulations.stem_tremolo(),
+        baca.dynamics.make_hairpin(
+            descriptor='ppppp > niente',
+            start=-2,
+            include_following_rest=True,
+            ),
+        baca.markup.make_string_numbers([2, 3]),
+        baca.spanners.make_transition(
+            baca.markup.make_markup('trem. flaut. XP'),
+            baca.markup.make_markup('trem. flaut. nut'),
+            ),
+        Dynamic('ppppp'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(9, 20)),
+    [
+        baca.tools.PitchSpecifier(
+            source=[pitchtools.PitchSegment(
+                items=[NamedPitch('Eb4'), NamedPitch('F4')], 
+                item_class=NamedPitch,
+                )],
+            ),
+        baca.articulations.stem_tremolo(),
+        baca.dynamics.make_hairpin(
+            descriptor='ppppp > niente',
+            start=-2,
+            include_following_rest=True,
+            ),
+        baca.markup.make_string_numbers([2, 3]),
+        baca.spanners.make_transition(
+            baca.markup.make_markup('trem. flaut. XP'),
+            baca.markup.make_markup('trem. flaut. nut'),
+            ),
+        Dynamic('ppppp'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1, 20)),
+    [
+        baca.dynamics.make_hairpins(
+            ['mp > p', 'p < mp'],
+            enchain_hairpins=True,
+            include_following_rests=True,
+            span=[2],
+            ),
+        baca.pitch.pitches('Bb0'),
+        baca.spanners.ottava_bassa(),
+        Clef('bass'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(5, 8)),
+    [
+        baca.spanners.make_transition(
+            baca.markup.make_markup('nut'),
+            baca.markup.make_markup('string midpoint'),
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(9, 12)),
+    [
+        baca.spanners.make_transition(
+            baca.markup.make_markup('string midpoint'),
+            baca.markup.XP(),
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(13, 16)),
+    [
+        baca.spanners.make_transition(
+            baca.markup.XP(),
+            baca.markup.make_markup('string midpoint'),
+            ),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(17, 20)),
+    [
+        baca.spanners.make_transition(
+            baca.markup.make_markup('string midpoint'),
+            baca.markup.make_markup('nut'),
+            ),
+        ],
+    )
