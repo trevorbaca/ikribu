@@ -38,8 +38,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -48,22 +48,32 @@ segment_maker = baca.tools.SegmentMaker(
     transpose_score=True,
     )
 
-#segment_maker.validate_measure_count(8)
-#segment_maker.validate_stage_count(8)
-#segment_maker.validate_measures_per_stage()
+segment_maker.validate_measure_count(11)
+segment_maker.validate_stage_count(7)
+segment_maker.validate_measures_per_stage()
 
 ###############################################################################
 #################################### TIME #####################################
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], stages(1, 3)),
-    baca.rhythm.make_repeated_duration_rhythm_specifier((1, 4)),
+    (bcl, [stages(1), stages(2, 3)]),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    )
+
+segment_maker.append_specifiers(
+    (vn, [stages(1, 2), stages(3)]),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    )
+
+segment_maker.append_specifiers(
+    (va, [stages(1), stages(2), stages(3)]),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     ([bcl, vn, va], stages(6)),
-    baca.rhythm.make_repeated_duration_rhythm_specifier((1, 4)),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
@@ -93,8 +103,105 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
+    (bcl, stages(1)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/4 every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (bcl, stages(2)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/3 every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
     ([vn, va], stages(1, 7)),
     [
         baca.pitch.pitches('C4'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(1, 2)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/2 every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vn, stages(3)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(1)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/3 every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(2)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/4 every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (va, stages(3)),
+    [
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/2 every quarter note'
+            ]),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(2, 4)),
+    [
+        baca.dynamics.make_hairpin(
+            'p < mf',
+            start=-1,
+            include_following_rest=True,
+            ),
+        baca.markup.vib_poco(),
+        baca.pitch.pitches('D1'),
+        baca.spanners.ottava_bassa(),
+        Clef('bass'),
+        Dynamic('p'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    ([bcl, vn, va], stages(6)),
+    [
+        baca.dynamics.make_effort_dynamic('f'),
+        baca.markup.make_boxed_markup_lines([
+            'stonecircle:',
+            'π/2 every quarter note'
+            ]),
         ],
     )
