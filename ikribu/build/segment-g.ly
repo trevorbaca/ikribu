@@ -1,5 +1,5 @@
     \context Score = "Score" \with {
-        currentBarNumber = #86
+        currentBarNumber = #87
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context TimeSignatureContext = "Time Signature Context" <<
@@ -92,199 +92,66 @@
                     \newSpacingSection
                     \mark #7
                     s1 * 7/4 \startTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G1]
-                            }
                 }
                 {
                     \time 1/6
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/6
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'10''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G2]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'10''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G3]
-                            }
                 }
                 {
                     \time 1/6
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/6
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'20''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G4]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'21''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G5]
-                            }
                 }
                 {
                     \time 1/6
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/6
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'31''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G6]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'32''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G7]
-                            }
                 }
                 {
                     \time 1/6
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/6
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'42''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G8]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'43''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G9]
-                            }
                 }
                 {
                     \time 1/6
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/6
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'53''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G10]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
-                    s1 * 7/4 \stopTextSpan
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'54''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G11]
-                            }
-                        ^ \markup {
+                    s1 * 7/4 \stopTextSpan ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -306,18 +173,6 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/6
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'58''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [G12]
-                            }
                 }
             }
         >>
@@ -345,18 +200,18 @@
                             }
                     }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        d''1.. \ppp
-                        R1 * 1/6
-                        d''1.. \pp
-                        R1 * 1/6
-                        d''1.. \p
-                        R1 * 1/6
-                        d''1.. \f
-                        R1 * 1/6
-                        d''1.. \ff
-                        R1 * 1/6
-                        d''1.. \fff
-                        R1 * 1/6
+                        a1.. \< \ppp
+                        R1 * 1/6 \mp
+                        af1.. \< \pp
+                        R1 * 1/6 \mf
+                        g1.. \< \p
+                        R1 * 1/6 \f
+                        fs1.. \< \mf
+                        R1 * 1/6 \ff
+                        f1.. \< \f
+                        R1 * 1/6 \fff
+                        e1.. \< \ff
+                        R1 * 1/6 \ffff
                         \bar "|"
                     }
                 }
@@ -577,34 +432,56 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            c'1..
+                            \once \override NoteHead #'style = #'harmonic
+                            \once \override TupletBracket #'direction = #down
+                            \clef "treble"
+                            d''1.. :32 \glissando \< \ppp
                             \tweak #'edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                c'4 \repeatTie
+                                \once \override NoteHead #'style = #'harmonic
+                                \once \override TupletBracket #'direction = #down
+                                fqf''4 :32 \pp \glissando \> \pp
                             }
-                            c'1.. \repeatTie
+                            \once \override NoteHead #'style = #'harmonic
+                            \once \override TupletBracket #'direction = #down
+                            d''1.. :32 \ppp \glissando \< \ppp
                             \tweak #'edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                c'4 \repeatTie
+                                \once \override NoteHead #'style = #'harmonic
+                                \once \override TupletBracket #'direction = #down
+                                b'4 :32 \pp \glissando \> \pp
                             }
-                            c'1.. \repeatTie
+                            \once \override NoteHead #'style = #'harmonic
+                            \once \override TupletBracket #'direction = #down
+                            d''1.. :32 \ppp \glissando \< \ppp
                             \tweak #'edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                c'4 \repeatTie
+                                \once \override NoteHead #'style = #'harmonic
+                                \once \override TupletBracket #'direction = #down
+                                b'4 :32 \pp \glissando \> \pp
                             }
-                            c'1.. \repeatTie
+                            \once \override NoteHead #'style = #'harmonic
+                            \once \override TupletBracket #'direction = #down
+                            g'1.. :32 \ppp \glissando \< \ppp
                             \tweak #'edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                c'4 \repeatTie
+                                \once \override NoteHead #'style = #'harmonic
+                                \once \override TupletBracket #'direction = #down
+                                b'4 :32 \pp \glissando \> \pp
                             }
-                            c'1.. \repeatTie
+                            \once \override NoteHead #'style = #'harmonic
+                            \once \override TupletBracket #'direction = #down
+                            g'1.. :32 \ppp \glissando \< \ppp
                             \tweak #'edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                c'4 \repeatTie
+                                \once \override NoteHead #'style = #'harmonic
+                                \once \override TupletBracket #'direction = #down
+                                d'4 :32 \pp \glissando \> \pp
                             }
-                            c'1.. \repeatTie
+                            \once \override NoteHead #'style = #'harmonic
+                            \once \override TupletBracket #'direction = #down
+                            g'1.. :32 \ppp
                             R1 * 1/6
                             \bar "|"
                         }

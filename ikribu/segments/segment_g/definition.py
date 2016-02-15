@@ -37,8 +37,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -64,7 +64,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, stages(1, 11)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.rhythm.make_messiaen_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -74,41 +74,66 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(1)),
     [
-        Dynamic('ppp'),
+        baca.dynamics.make_hairpin('ppp < mp', include_following_rest=True),
+        baca.pitch.pitches('G2'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(3)),
     [
-        Dynamic('pp'),
+        baca.dynamics.make_hairpin('pp < mf', include_following_rest=True),
+        baca.pitch.pitches('Gb2'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(5)),
     [
-        Dynamic('p'),
+        baca.dynamics.make_hairpin('p < f', include_following_rest=True),
+        baca.pitch.pitches('F2'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(7)),
     [
-        Dynamic('f'),
+        baca.dynamics.make_hairpin('mf < ff', include_following_rest=True),
+        baca.pitch.pitches('E2'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(9)),
     [
-        Dynamic('ff'),
+        baca.dynamics.make_hairpin('f < fff', include_following_rest=True),
+        baca.pitch.pitches('Eb2'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, stages(11)),
     [
-        Dynamic('fff'),
+        baca.dynamics.make_hairpin('ff < ffff', include_following_rest=True),
+        baca.pitch.pitches('D2'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, stages(1, 12)),
+    [
+        baca.articulations.stem_tremolo(),
+        baca.dynamics.make_hairpins(
+            ['ppp < pp', 'pp > ppp'],
+            enchain_hairpins=True,
+            span=[2],
+            ),
+        baca.overrides.natural_harmonics(),
+        baca.overrides.tuplet_bracket_down(),
+        baca.pitch.pitches(
+            'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
+            ),
+        baca.spanners.glissandi(),
+        Clef('treble'),
         ],
     )
