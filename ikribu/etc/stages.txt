@@ -252,3 +252,25 @@ bcl C3 arpeggiation during segment ...
 . vc scribbled slate subito stops
   (bcl, vn, va tacet)
 > fermata
+
+
+[intro] 15"
+[A]     55"
+[B]     150"
+[C]     64"
+[D]     22"
+[E]     93"
+[F]     54"
+[G]     36"
+[H]     27"
+[I]     43"
+[J]     74"
+[K]     59"
+[L]     158"
+[M]     104"
+[N]     24"
+[O]     141"
+[P]     43"
+[Q]     58"
+==============
+        20'20"
