@@ -309,7 +309,7 @@
                                         \override
                                             #'(font-name . "Palatino")
                                             \upright
-                                                tasto
+                                                "(trem. flaut. tast.)"
                                         \hspace
                                             #0.5
                                     }
@@ -328,7 +328,7 @@
                                 \override
                                     #'(font-name . "Palatino")
                                     \upright
-                                        "XP (non. flaut.)"
+                                        "trem. XP (non. flaut.)"
                                 }
                             R1 * 1/2
                             \clef "percussion"

@@ -361,6 +361,13 @@ segment_maker.append_specifiers(
         [stages(2, 3), stages(9, 10), stages(13, 14), stages(20, 21)]),
     [
         baca.dynamics.make_hairpin('mf < fff'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc,
+        [stages(2, 3), stages(9, 10), stages(13, 14), stages(20, 21)]),
+    [
         baca.spanners.make_transition(
             baca.markup.tasto(),
             baca.markup.XP(),
@@ -371,8 +378,14 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([vn, va, vc], [stages(6), stages(17)]),
     [
-        baca.markup.XP(),
         Dynamic('fff'),
+        ],
+    )
+
+segment_maker.append_specifiers(
+    (vc, [stages(6), stages(17)]),
+    [
+        baca.markup.XP(),
         ],
     )
 

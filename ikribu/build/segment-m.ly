@@ -724,28 +724,7 @@
                                             ”
                                     }
                             \times 2/3 {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'2 :32 \< \mf \startTextSpan
+                                c'2 :32 \< \mf
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.5)
@@ -763,12 +742,7 @@
                             \times 2/3 {
                                 c'4 :32
                                 c'4 -\accent
-                                c'4 :32 \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'4 :32 \fff
                             }
                             R1 * 1/4
                             c'1..
@@ -792,15 +766,10 @@
                             \times 3/4 {
                                 c'4 :32 \fff
                                     ^ \markup {
-                                        \column
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.5)
-                                                    \box
-                                                        "brushes on BD"
-                                                \upright
-                                                    XP
-                                            }
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
                                         }
                                 c'4 -\accent
                                 c'4 :32
@@ -826,28 +795,7 @@
                                     }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'4 :32 \< \mf \startTextSpan
+                                c'4 :32 \< \mf
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.5)
@@ -872,12 +820,7 @@
                                 c'4 -\accent
                                 c'4 :32
                                 c'4 -\accent
-                                c'4 :32 \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'4 :32 \fff
                             }
                             R1 * 1/4
                             c'2
@@ -899,28 +842,7 @@
                                     }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'1 :32 \< \mf \startTextSpan
+                                c'1 :32 \< \mf
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.5)
@@ -939,12 +861,7 @@
                             \times 2/3 {
                                 c'1 :32
                                 c'1 -\accent
-                                c'1 :32 \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'1 :32 \fff
                             }
                             R1 * 1/4
                             c'1..
@@ -968,15 +885,10 @@
                             \times 3/4 {
                                 c'4 :32 \fff
                                     ^ \markup {
-                                        \column
-                                            {
-                                                \override
-                                                    #'(box-padding . 0.5)
-                                                    \box
-                                                        "brushes on BD"
-                                                \upright
-                                                    XP
-                                            }
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "brushes on BD"
                                         }
                                 c'4 -\accent
                                 c'4 :32
@@ -1001,28 +913,7 @@
                                             ”
                                     }
                             \times 4/5 {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'2 :32 \< \mf \startTextSpan
+                                c'2 :32 \< \mf
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.5)
@@ -1062,12 +953,7 @@
                                 c'4 -\accent
                                 c'4 :32
                                 c'4 -\accent
-                                c'4 :32 \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'4 :32 \fff
                                 \stopStaff
                                 \startStaff
                                 \clef "treble"
@@ -1133,31 +1019,10 @@
                             R1 * 3/4
                             {
                                 \clef "percussion"
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'4 :32 \< \mf \startTextSpan
+                                c'4 :32 \< \mf
                                 c'4 -\accent
                                 c'4 :32
                                 c'4 -\accent
@@ -1172,21 +1037,12 @@
                                 c'8 :32 [
                                 c'8 -\accent
                                 c'8 :32
-                                c'8 -\accent \fff ] \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'8 -\accent \fff ]
                             }
                             R1 * 2
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 c'4 :32 \fff
-                                    ^ \markup {
-                                        \upright
-                                            XP
-                                        }
                                 c'4 -\accent
                                 c'4 :32
                                 c'4 -\accent
@@ -1194,28 +1050,7 @@
                             }
                             R1 * 5/4
                             {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'4 :32 \< \mf \startTextSpan
+                                c'4 :32 \< \mf
                                 c'4 -\accent
                                 c'4 :32
                             }
@@ -1227,38 +1062,12 @@
                             {
                                 c'4 :32
                                 c'4 -\accent
-                                c'4 :32 \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'4 :32 \fff
                             }
                             R1 * 3/4
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'2 :32 \< \mf \startTextSpan
+                                c'2 :32 \< \mf
                                 c'2 -\accent
                                 c'2 :32
                                 c'2 -\accent
@@ -1274,21 +1083,12 @@
                                 c'2 :32
                                 c'2 -\accent
                                 c'2 :32
-                                c'2 -\accent \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'2 -\accent \fff
                             }
                             R1 * 2
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 c'4 :32 \fff
-                                    ^ \markup {
-                                        \upright
-                                            XP
-                                        }
                                 c'4 -\accent
                                 c'4 :32
                                 c'4 -\accent
@@ -1296,28 +1096,7 @@
                             }
                             R1 * 3/4
                             \times 2/3 {
-                                \once \override TextSpanner.arrow-width = 0.25
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \concat
-                                        {
-                                            \override
-                                                #'(font-name . "Palatino")
-                                                \upright
-                                                    tasto
-                                            \hspace
-                                                #0.5
-                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                                \once \override TextSpanner.bound-details.right.arrow = ##t
-                                \once \override TextSpanner.bound-details.right.padding = 1.75
-                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-                                \once \override TextSpanner.dash-fraction = 0.25
-                                \once \override TextSpanner.dash-period = 1.5
-                                c'1 :32 \< \mf \startTextSpan
+                                c'1 :32 \< \mf
                                 c'1 -\accent
                                 c'1 :32
                             }
@@ -1340,12 +1119,7 @@
                             {
                                 c'4 :32
                                 c'4 -\accent
-                                c'4 :32 \fff \stopTextSpan ^ \markup {
-                                    \override
-                                        #'(font-name . "Palatino")
-                                        \upright
-                                            XP
-                                    }
+                                c'4 :32 \fff
                                 \stopStaff
                                 \startStaff
                                 \clef "treble"
@@ -1627,6 +1401,7 @@
                             \ottava #0
                             R1 * 23/4
                             \bar "|"
+                            \break
                         }
                     }
                 >>
