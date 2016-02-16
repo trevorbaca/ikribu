@@ -175,6 +175,7 @@
                         R1 * 3/4
                         R1 * 1/4
                         \bar "|"
+                        \pageBreak
                     }
                 }
                 \tag violin
@@ -670,6 +671,7 @@
                             }
                             R1 * 1/4
                             \bar "|"
+                            \pageBreak
                         }
                     }
                 >>
