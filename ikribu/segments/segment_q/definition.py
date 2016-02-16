@@ -35,8 +35,8 @@ spacing_specifier = baca.tools.SpacingSpecifier(
     )
 
 segment_maker = baca.tools.SegmentMaker(
-    label_clock_time=True,
-    label_stage_numbers=True,
+    #label_clock_time=True,
+    #label_stage_numbers=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -55,7 +55,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, stages(1, 2)),
-    baca.rhythm.make_repeated_duration_rhythm_specifier((1, 4)),
+    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
@@ -79,7 +79,9 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, stages(1, 4)),
-    [
+    [ 
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_boxed_markup('graincircle: π/3 every quarter note'),
         baca.pitch.pitches('Bb2'),
         baca.spanners.one_line_staff(),
         Clef('percussion'),
@@ -89,12 +91,14 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, stages(1, 4)),
     [
-        baca.articulations.staccati(),
-        baca.markup.col_legno_battuto(),
+        baca.articulations.double_tonguing(),
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_markup(
+            'col legno battuto meccanico: strike each note twice'
+            ),
         baca.pitch.pitches('B3 C4 D4'),
         baca.spanners.one_line_staff(),
         Clef('percussion'),
-        Dynamic('p'),
         ],
     )
 
@@ -102,17 +106,24 @@ segment_maker.append_specifiers(
     (va, stages(1, 4)),
     [
         baca.articulations.staccati(),
-        baca.markup.col_legno_battuto(),
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_markup(
+            'col legno battuto meccanico: strike each note twice'
+            ),
         baca.pitch.pitches('C4 B3 D4'),
         baca.spanners.one_line_staff(),
         Clef('percussion'),
-        Dynamic('p'),
         ],
     )
 
 segment_maker.append_specifiers(
     (vc, stages(1, 4)),
     [
+        baca.articulations.accents(),
+        baca.dynamics.make_effort_dynamic('mf'),
+        baca.markup.make_boxed_markup(
+            'stonescratch: one short stroke for each attack'
+            ),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
         Clef('percussion'),
