@@ -634,6 +634,7 @@
                         \once \override Hairpin #'circled-tip = ##t
                         cs\breve \repeatTie \> \fff
                         R1 * 2 \!
+                        \pageBreak
                         cs2. \p
                         R1 * 3/4
                         cs\breve \< \ppp

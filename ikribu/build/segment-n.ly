@@ -552,6 +552,7 @@
                                 d''1 \glissando
                                 e'''2
                                 \bar "|"
+                            \pageBreak
                             }
                         }
                     }
@@ -909,6 +910,7 @@
                                             7
                                         }
                                 \bar "|"
+                                \pageBreak
                             }
                         }
                     }
