@@ -65,20 +65,7 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 7 120)
                     \newSpacingSection
                     \mark #17
-                    s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'00''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [Q1]
-                            }
-                        ^ \markup {
+                    s1 * 7/4 ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -100,143 +87,65 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 18)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'06''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'13''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 56)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'20''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [Q2]
-                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)
                     \newSpacingSection
                     s1 * 1/2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'22''
-                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                     \newSpacingSection
                     s1 * 2
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'24''
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 7 120)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'31''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [Q3]
-                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 20)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'38''
-                            }
                 }
                 {
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                     \newSpacingSection
                     s1 * 1
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'41''
-                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 3 56)
                     \newSpacingSection
                     s1 * 3/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'45''
-                            }
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [Q4]
-                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 7 128)
                     \newSpacingSection
                     s1 * 7/4
-                        ^ \markup {
-                            \fontsize
-                                #-2
-                                0'48''
-                            }
                 }
                 {
                     \time 1/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                     \newSpacingSection
                     s1 * 1/4
-                        - \markup {
-                            \fontsize
-                                #-3
-                                \with-color
-                                    #blue
-                                    [Q5]
-                            }
                 }
             }
         >>
@@ -268,40 +177,58 @@
                         \startStaff
                         \clef "percussion"
                         c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
-                        c'4
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        "graincircle: π/3 every quarter note"
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         \stopStaff
                         \startStaff
                         R1 * 13/2
@@ -344,60 +271,72 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            b4 -\staccato \p
+                            b4 -\tongue #2
                                 ^ \markup {
                                     \upright
-                                        "col legno battuto"
+                                        "col legno battuto meccanico: strike each note twice"
                                     }
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
-                            d'4 -\staccato
-                            b4 -\staccato
-                            c'4 -\staccato
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            mf
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
+                            d'4 -\tongue #2
+                            b4 -\tongue #2
+                            c'4 -\tongue #2
                             \stopStaff
                             \startStaff
                             R1 * 11/4
@@ -441,10 +380,22 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            c'4 -\staccato \p
+                            c'4 -\staccato
                                 ^ \markup {
                                     \upright
-                                        "col legno battuto"
+                                        "col legno battuto meccanico: strike each note twice"
+                                    }
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            mf
+                                    \larger
+                                        \italic
+                                            ”
                                     }
                             b4 -\staccato
                             d'4 -\staccato
@@ -540,84 +491,102 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "percussion"
-                                c'8 [
+                                c'8 -\accent [
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "stonescratch: one short stroke for each attack"
+                                        }
+                                    _ \markup {
+                                        \larger
+                                            \italic
+                                                “
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                mf
+                                        \larger
+                                            \italic
+                                                ”
+                                        }
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8
+                                c'8 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                                 r16
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8.
+                                c'8. -\accent
                                 r1
                                 r8
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 [
+                                c'16 -\accent [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16
+                                c'16 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                             }
                             \times 8/9 {
                                 r8
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8 [
+                                c'8 -\accent [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8. ]
+                                c'8. -\accent ]
                                 r2
                                 r8
                                 r1
                                 r8
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16
+                                c'16 -\accent
                             }
                             {
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16
+                                c'16 -\accent
                                 r8
-                                c'8 [
-                                c'8.
-                                c'16 ]
+                                c'8 -\accent [
+                                c'8. -\accent
+                                c'16 -\accent ]
                                 r2
                                 r8
-                                c'8 [
-                                c'16 ]
+                                c'8 -\accent [
+                                c'16 -\accent ]
                                 r16
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8. [
-                                c'8 ]
+                                c'8. -\accent [
+                                c'8 -\accent ]
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                c'16 [
+                                c'16 -\accent [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16
+                                c'16 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8
+                                c'8 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8.
-                                c'16 ]
+                                c'8. -\accent
+                                c'16 -\accent ]
                                 r8
                                 r4
                             }
                             \times 2/3 {
                                 r4.
-                                c'16
+                                c'16 -\accent
                                 r16
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8. [
-                                c'16 ]
+                                c'8. -\accent [
+                                c'16 -\accent ]
                             }
                             {
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
                                 c'16 \repeatTie [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8 ]
+                                c'8 -\accent ]
                                 r1
                                 r8
-                                c'8. [
-                                c'16 ]
+                                c'8. -\accent [
+                                c'16 -\accent ]
                                 r8
-                                c'8
+                                c'8 -\accent
                                 r8.
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
@@ -625,31 +594,31 @@
                                 r4..
                                 r16
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8. [
-                                c'8
+                                c'8. -\accent [
+                                c'8 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8
+                                c'8 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                                 r2..
                             }
                             \times 4/5 {
                                 r4
-                                c'16 [
+                                c'16 -\accent [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                                 r2
                                 r8
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8. [
-                                c'16 ]
+                                c'8. -\accent [
+                                c'16 -\accent ]
                             }
                             {
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
                                 c'16 \repeatTie [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8
-                                c'16 ]
+                                c'8 -\accent
+                                c'16 -\accent ]
                                 r16
                                 r2
                                 r8.
@@ -657,33 +626,33 @@
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 r4..
-                                c'16 [
+                                c'16 -\accent [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16
+                                c'16 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                                 r8
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8
+                                c'8 -\accent
                             }
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8. [
-                                c'8
+                                c'8. -\accent [
+                                c'8 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8
+                                c'8 -\accent
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                                 r16
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'8.
+                                c'8. -\accent
                                 r1
                                 r8
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 [
+                                c'16 -\accent [
                                 \shape #'((0 . 0) (0 . 0) (0 . 0) (0 . 0)) RepeatTie
-                                c'16 ]
+                                c'16 -\accent ]
                                 \stopStaff
                                 \startStaff
                             }
