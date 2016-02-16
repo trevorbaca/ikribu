@@ -437,6 +437,10 @@
                             \once \override TupletBracket #'direction = #down
                             \clef "treble"
                             d''1.. :32 \glissando \< \ppp
+                                _ \markup {
+                                    \upright
+                                        III
+                                    }
                             \tweak #'edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 \once \override NoteHead #'style = #'harmonic

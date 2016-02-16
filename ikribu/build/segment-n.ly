@@ -1399,6 +1399,7 @@
                                 e'1 \glissando
                                 d'4.
                                 \bar "|"
+                                \break
                             }
                         }
                     }

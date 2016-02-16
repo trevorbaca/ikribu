@@ -43,7 +43,7 @@
     right-margin = 5\mm
     markup-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 60)
+        (minimum-distance . 90)
         (padding . 0)
         (stretchability . 0)
     )

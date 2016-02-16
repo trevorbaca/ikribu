@@ -636,6 +636,7 @@
                             \ottava #0
                             R1 * 1/4 \p
                             \bar "|"
+                            \break
                         }
                     }
                 >>

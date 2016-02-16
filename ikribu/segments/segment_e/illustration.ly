@@ -647,6 +647,10 @@
                             R1 * 7
                             \clef "bass"
                             f1.. :32 \< \p
+                                ^ \markup {
+                                    \upright
+                                        "trem. flaut. tast."
+                                    }
                             f\breve :32 \repeatTie \mp \> \mp
                             f1.. :32 \repeatTie \p \< \p
                             f1.. :32 \repeatTie \mp \> \mp

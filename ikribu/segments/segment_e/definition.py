@@ -157,6 +157,7 @@ segment_maker.append_specifiers(
             enchain_hairpins=True,
             span=[2],
             ),
+        baca.markup.trem_flaut_tast(),
         ],
     )
 

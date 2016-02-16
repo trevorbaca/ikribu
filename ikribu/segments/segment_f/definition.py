@@ -142,8 +142,8 @@ segment_maker.append_specifiers(
         baca.articulations.stem_tremolo(),
         baca.dynamics.make_hairpin(descriptor='p < ff'),
         baca.spanners.make_transition(
-            baca.markup.tasto(),
-            baca.markup.make_markup('XP (non. flaut.)'),
+            baca.markup.make_markup('(trem. flaut. tast.)'),
+            baca.markup.make_markup('trem. XP (non. flaut.)'),
             ),
         baca.pitch.pitches('F#3'),
         ],
