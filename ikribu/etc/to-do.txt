@@ -1,11 +1,4 @@
-1.  Make one-line staff spanner attach to rests in violin measure one.
-
-2.  Figure out a way to include effort dynamics in hairpin chains.
-
-3.  Sound a bell if (long-running) interpretation ends without rendering
-    output.
-
-4.  Partials:
+1.  Partials:
 
         bcl     vc      va      vn
         
