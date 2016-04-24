@@ -27,7 +27,7 @@ stage_specifier = baca.tools.StageSpecifier([
     Fermata('shortfermata'),
     ])
 
-tempo_map = baca.tools.TempoMap([
+tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['night']),
     ])
 
@@ -35,9 +35,9 @@ maker = baca.tools.TimeSignatureMaker(
     ikribu.materials.time_signatures,
     rotation=-2,
     stage_specifier=stage_specifier,
-    tempo_map=tempo_map,
+    tempo_specifier=tempo_specifier,
     )
-measures_per_stage, tempo_map, time_signatures = maker()
+measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
     fermata_measure_width=Duration(1, 4),
@@ -50,7 +50,7 @@ segment_maker = baca.tools.SegmentMaker(
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
-    tempo_map=tempo_map,
+    tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
     transpose_score=True,
     )
