@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
-metadata = datastructuretools.TypedOrderedDict(
+metadata = abjad.datastructuretools.TypedOrderedDict(
     [
         (
             'end_clefs_by_staff',
-            datastructuretools.TypedOrderedDict(
+            abjad.datastructuretools.TypedOrderedDict(
                 [
                     ('Bass Clarinet Music Staff', 'percussion'),
                     ('Cello Music Staff', 'percussion'),
@@ -20,7 +20,7 @@ metadata = datastructuretools.TypedOrderedDict(
             ),
         (
             'end_instruments_by_context',
-            datastructuretools.TypedOrderedDict(
+            abjad.datastructuretools.TypedOrderedDict(
                 [
                     ('Bass Clarinet Music Staff', 'bass clarinet'),
                     ('Cello Staff Group', 'cello'),
