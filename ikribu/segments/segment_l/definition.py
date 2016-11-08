@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -18,7 +18,7 @@ stage_specifier = baca.tools.StageSpecifier([
     4,
     4,
     4,
-    Fermata('shortfermata'),
+    abjad.Fermata('shortfermata'),
     ])
 
 tempo_specifier = baca.tools.TempoSpecifier([
@@ -34,8 +34,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -99,7 +99,7 @@ segment_maker.append_specifiers(
             ' (but do not circular breathe)'
             ),
         baca.pitch.pitches('C2'),
-        Dynamic('ppp'),
+        abjad.Dynamic('ppp'),
         ],
     )
 
@@ -235,7 +235,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, stages(4)),
     [
-        Hairpin('> niente'),
+        abjad.Hairpin('> niente'),
         baca.spanners.percussion_staff(),
         ],
     )
@@ -264,7 +264,7 @@ segment_maker.append_specifiers(
     (va, stages(2)),
     [
         baca.spanners.percussion_staff(),
-        Hairpin('> niente'),
+        abjad.Hairpin('> niente'),
         ],
     )
 

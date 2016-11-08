@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -10,28 +10,28 @@ from ikribu.materials.__abbreviations__ import *
 ###############################################################################
 
 stage_specifier = baca.tools.StageSpecifier([
-    1, 2, 1, Fermata('shortfermata'),
-    1, 1, Fermata('shortfermata'),
-    1, 2, 1, Fermata('shortfermata'),
-    1, 2, 1, Fermata('shortfermata'),
-    1, 1, Fermata('shortfermata'),
+    1, 2, 1, abjad.Fermata('shortfermata'),
+    1, 1, abjad.Fermata('shortfermata'),
+    1, 2, 1, abjad.Fermata('shortfermata'),
+    1, 2, 1, abjad.Fermata('shortfermata'),
+    1, 1, abjad.Fermata('shortfermata'),
     1, 4, 1,
-    4, Fermata('shortfermata'),
+    4, abjad.Fermata('shortfermata'),
     ])
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['incisions']),
-    (1, Accelerando()),
+    (1, abjad.Accelerando()),
     (3, ikribu.materials.tempi['windows']),
-    (5, Ritardando()),
+    (5, abjad.Ritardando()),
     (6, ikribu.materials.tempi['incisions']),
-    (8, Accelerando()),
+    (8, abjad.Accelerando()),
     (10, ikribu.materials.tempi['windows']),
-    (12, Ritardando()),
+    (12, abjad.Ritardando()),
     (14, ikribu.materials.tempi['incisions']),
-    (16, Accelerando()),
+    (16, abjad.Accelerando()),
     (17, ikribu.materials.tempi['windows']),
-    (19, Ritardando()),
+    (19, abjad.Ritardando()),
     (21, ikribu.materials.tempi['incisions']),
     ])
 
@@ -44,8 +44,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -263,7 +263,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, [stages(6), stages(17)]),
     [
-        Dynamic('p'),
+        abjad.Dynamic('p'),
         ],
     )
 
@@ -378,7 +378,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([vn, va, vc], [stages(6), stages(17)]),
     [
-        Dynamic('fff'),
+        abjad.Dynamic('fff'),
         ],
     )
 
@@ -397,8 +397,8 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         baca.spanners.clef_spanner(clef='treble'),
-        indicatortools.LaissezVibrer(),
-        Dynamic('sfz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Dynamic('sfz'),
         ],
     )
 
@@ -410,8 +410,8 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('G5'),
         baca.spanners.clef_spanner(clef='treble'),
-        indicatortools.LaissezVibrer(),
-        Dynamic('sfz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Dynamic('sfz'),
         ],
     )
 
@@ -423,8 +423,8 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         baca.spanners.clef_spanner(clef='treble'),
-        indicatortools.LaissezVibrer(),
-        Dynamic('sffz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Dynamic('sffz'),
         ],
     )
 
@@ -436,8 +436,8 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('G5'),
         baca.spanners.clef_spanner(clef='treble'),
-        indicatortools.LaissezVibrer(),
-        Dynamic('sffz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Dynamic('sffz'),
         ],
     )
 
@@ -449,8 +449,8 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('A5'),
         baca.spanners.clef_spanner(clef='treble'),
-        indicatortools.LaissezVibrer(),
-        Dynamic('sfffz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Dynamic('sfffz'),
         ],
     )
 
@@ -462,7 +462,7 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('C+6'),
         baca.spanners.clef_spanner(clef='treble'),
-        indicatortools.LaissezVibrer(),
-        Dynamic('sfffz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Dynamic('sfffz'),
         ],
     )

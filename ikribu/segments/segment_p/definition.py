@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -15,12 +15,12 @@ stage_specifier = baca.tools.StageSpecifier([
     1,
     1,
     1,
-    Fermata('longfermata'),
+    abjad.Fermata('longfermata'),
     ])
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['windows']),
-    (1, Ritardando()),
+    (1, jab.adRitardando()),
     (4, ikribu.materials.tempi['night']),
     ])
 
@@ -33,8 +33,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -164,7 +164,7 @@ segment_maker.append_specifiers(
         baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('C4'),
-        Clef('percussion'),
+        abjad.Clef('percussion'),
         ],
     )
 
@@ -202,7 +202,7 @@ segment_maker.append_specifiers(
     [
         baca.spanners.glissandi(),
         ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
-        Clef('treble'),
+        abjad.Clef('treble'),
         ],
     )
 
@@ -211,6 +211,6 @@ segment_maker.append_specifiers(
     [
         baca.spanners.glissandi(),
         ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
-        Clef('tenor'),
+        abjad.Clef('tenor'),
         ],
     )

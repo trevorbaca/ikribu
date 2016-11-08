@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -11,7 +11,7 @@ from ikribu.materials.__abbreviations__ import *
 
 stage_specifier = baca.tools.StageSpecifier([
     1,
-    Fermata('longfermata'),
+    abjad.Fermata('longfermata'),
     ])
 
 tempo_specifier = baca.tools.TempoSpecifier([
@@ -27,8 +27,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -70,7 +70,7 @@ segment_maker.append_specifiers(
         baca.markup.make_markup('grainfall (I)'),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
-        spannertools.ClefSpanner(clef='percussion'),
+        abjad.spannertools.ClefSpanner(clef='percussion'),
         ],
     )
 
@@ -81,8 +81,8 @@ segment_maker.append_specifiers(
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
-        indicatortools.LaissezVibrer(),
-        Clef('treble'),
-        Dynamic('sfz'),
+        abjad.indicatortools.LaissezVibrer(),
+        abjad.Clef('treble'),
+        abjad.Dynamic('sfz'),
         ],
     )

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -16,21 +16,21 @@ stage_specifier = baca.tools.StageSpecifier([
     1, 1, 1, 1,
     ])
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.tools.abjad.TempoSpecifier([
     (1, ikribu.materials.tempi['night']),
-    (1, Accelerando()),
+    (1, abjad.Accelerando()),
     (3, ikribu.materials.tempi['incisions']),
 
     (5, ikribu.materials.tempi['incisions']),
-    (5, Ritardando()),
+    (5, abjad.Ritardando()),
     (7, ikribu.materials.tempi['night']),
 
     (9, ikribu.materials.tempi['night']),
-    (9, Accelerando()),
+    (9, abjad.Accelerando()),
     (11, ikribu.materials.tempi['incisions']),
 
     (13, ikribu.materials.tempi['incisions']),
-    (13, Ritardando()),
+    (13, abjad.Ritardando()),
     (15, ikribu.materials.tempi['night']),
     ])
 
@@ -44,8 +44,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -95,7 +95,7 @@ segment_maker.append_specifiers(
     (bcl, stages(1, 4)),
     [
         baca.pitch.pitches('E3'),
-        Dynamic('ppp'),
+        abjad.Dynamic('ppp'),
         ],
     )
 
@@ -144,7 +144,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, stages(1, 16)),
     [
-        Clef('bass'),
+        abjad.Clef('bass'),
         ],
     )
 

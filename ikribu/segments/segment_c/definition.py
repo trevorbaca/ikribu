@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -20,19 +20,19 @@ stage_specifier = baca.tools.StageSpecifier([
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['incisions']),
     (2, ikribu.materials.tempi['night']),
-    (2, Accelerando()),
+    (2, abjad.Accelerando()),
     (4, ikribu.materials.tempi['incisions']),
 
     (6, ikribu.materials.tempi['incisions']),
-    (6, Ritardando()),
+    (6, abjad.Ritardando()),
     (8, ikribu.materials.tempi['night']),
 
     (10, ikribu.materials.tempi['night']),
-    (10, Accelerando()),
+    (10, abjad.Accelerando()),
     (12, ikribu.materials.tempi['incisions']),
 
     (14, ikribu.materials.tempi['incisions']),
-    (14, Ritardando()),
+    (14, abjad.Ritardando()),
     (16, ikribu.materials.tempi['night']),
     ])
 
@@ -47,8 +47,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -109,7 +109,7 @@ segment_maker.append_specifiers(
         baca.overrides.repeat_tie_up(),
         baca.pitch.pitches('Bb2'),
         baca.spanners.one_line_staff(),
-        spannertools.ClefSpanner(clef='percussion'),
+        abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
         ],
     )
 
@@ -131,7 +131,7 @@ segment_maker.append_specifiers(
         baca.markup.make_markup('grainfall (II)'),
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
-        spannertools.ClefSpanner(clef='percussion'),
+        abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
         ],
     )
 
@@ -169,8 +169,8 @@ segment_maker.append_specifiers(
         baca.overrides.natural_harmonics(),
         baca.pitch.pitches('F~5'),
         indicatortools.LaissezVibrer(),
-        Clef('treble'),
-        Dynamic('sfz'),
+        abjad.Clef('treble'),
+        abjad.Dynamic('sfz'),
         ],
     )
 
