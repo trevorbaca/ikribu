@@ -40,8 +40,8 @@ class ScoreTemplate(abctools.AbjadValueObject):
                             \tag bass_clarinet
                             \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                                 \clef "treble"
-                                \set Staff.instrumentName = \markup { Bass clarinet }
-                                \set Staff.shortInstrumentName = \markup { B. cl. }
+                                \set Staff.instrumentName = \markup { "Bass clarinet" }
+                                \set Staff.shortInstrumentName = \markup { "B. cl." }
                                 \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                                 }
                             }
