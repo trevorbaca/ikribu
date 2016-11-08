@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from abjad import *
+import abjad
 
 
 class BowContactPointSpecifier(object):
-    r'''
+    r'''Bow contact point specifier.
     '''
 
     ### CLASS VARIABLES ###
@@ -29,16 +29,17 @@ class BowContactPointSpecifier(object):
     ### SPECIAL METHODS ###
 
     def __call__(self, logical_ties=None):
-        bow_contact_points = sequencetools.Sequence(self._bow_contact_points)
+        bow_contact_points = abjad.sequencetools.Sequence(
+            self._bow_contact_points)
         bow_contact_points = bow_contact_points.rotate(index=self.rotation)
         bow_contact_points = bow_contact_points.flatten(depth=1)
-        bow_contact_points = datastructuretools.CyclicTuple(
+        bow_contact_points = abjad.datastructuretools.CyclicTuple(
             bow_contact_points
             )
         for i, logical_tie in enumerate(logical_ties):
             bow_contact_point = bow_contact_points[i]
             numerator, denominator = bow_contact_point
-            markup = Markup.fraction(numerator, denominator)
+            markup = abjad.Markup.fraction(numerator, denominator)
             markup = new(markup, direction=Up)
             attach(markup, logical_tie.head)
 

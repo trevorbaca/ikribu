@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import collections
-from abjad import *
+import abjad
 
 
 view_inventory = collections.OrderedDict([])

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
 import ikribu
-from abjad import *
 from ikribu.materials.__abbreviations__ import *
 
 
@@ -31,8 +31,8 @@ maker = baca.tools.TimeSignatureMaker(
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
 spacing_specifier = baca.tools.SpacingSpecifier(
-    fermata_measure_width=Duration(1, 4),
-    minimum_width=Duration(1, 12),
+    fermata_measure_width=abjad.Duration(1, 4),
+    minimum_width=abjad.Duration(1, 12),
     )
 
 segment_maker = baca.tools.SegmentMaker(
@@ -87,8 +87,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -99,8 +99,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -111,8 +111,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -130,8 +130,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -142,8 +142,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -154,8 +154,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('Ab~4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -166,8 +166,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -185,8 +185,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -197,8 +197,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('F4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -209,8 +209,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         ],
@@ -233,8 +233,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('E4'), NamedPitch('F#4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         baca.articulations.stem_tremolo(),
@@ -257,8 +257,8 @@ segment_maker.append_specifiers(
     [
         baca.tools.PitchSpecifier(
             source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Eb4'), NamedPitch('F4')], 
-                item_class=NamedPitch,
+                items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
+                item_class=abjad.NamedPitch,
                 )],
             ),
         baca.articulations.stem_tremolo(),
@@ -287,7 +287,7 @@ segment_maker.append_specifiers(
             ),
         baca.pitch.pitches('Bb0'),
         baca.spanners.ottava_bassa(),
-        Clef('bass'),
+        abjad.Clef('bass'),
         ],
     )
 
