@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from baca.__abbreviations__ import stages
 from abjad.tools.rhythmmakertools import silence
 from abjad.tools.rhythmmakertools import silence_all
 from abjad.tools.rhythmmakertools import silence_every
@@ -11,6 +10,7 @@ from abjad.tools.rhythmmakertools import sustain_all
 from abjad.tools.rhythmmakertools import sustain_every
 from abjad.tools.rhythmmakertools import sustain_first
 from abjad.tools.rhythmmakertools import sustain_last
+from baca.tools.stages import stages
 
 
 bcl = 'Bass Clarinet Music Voice'
