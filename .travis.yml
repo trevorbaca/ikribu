@@ -2,15 +2,18 @@ language: python
 
 python:
     - 2.7
-    - 3.4
+    - 3.5
 
 before_install:
-    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.29-1.linux-64.sh
-    - sudo sh lilypond-2.19.29-1.linux-64.sh --batch
+    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.50-1.linux-64.sh
+    - sudo sh lilypond-2.19.50-1.linux-64.sh --batch
+    - git clone https://github.com/Abjad/abjad.git; cd abjad; git checkout trevor/dev; pip install -e .[development]
+    - echo `git branch`
+    - cd ..
     - pip install --upgrade pip
 
 install:
-    - pip install --allow-external abjad --allow-unverified abjad -e git://github.com/Abjad/abjad.git#egg=abjad
+    #- pip install --allow-external abjad --allow-unverified abjad -e git://github.com/Abjad/abjad.git#egg=abjad
     - pip install --allow-external ide --allow-unverified ide -e git://github.com/Abjad/ide.git#egg=ide
     - pip install --allow-external baca --allow-unverified baca -e git://github.com/trevorbaca/baca.git#egg=baca
     - pip install -e .
