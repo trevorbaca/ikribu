@@ -14,7 +14,7 @@ before_install:
 
 install:
     #- pip install --allow-external abjad --allow-unverified abjad -e git://github.com/Abjad/abjad.git#egg=abjad
-    #- pip install --allow-external ide --allow-unverified ide -e git://github.com/Abjad/ide.git#egg=ide
+    - pip install --allow-external ide --allow-unverified ide -e git://github.com/Abjad/ide.git#egg=ide
     - pip install --allow-external baca --allow-unverified baca -e git://github.com/trevorbaca/baca.git#egg=baca
     - pip install -r requirements.txt
     - pip install -e .
