@@ -21,6 +21,7 @@ install:
 script:
     - ajv doctest ./ikribu -x
     - py.test -rf ./ikribu -x
+    - python ./ikribu/test/test_segments.py
 
 notifications:
     email: false
