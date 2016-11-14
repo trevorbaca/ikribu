@@ -20,8 +20,8 @@ install:
     - pip install -e .
 
 script:
-    - ajv doctest ./ikribu -x
-    - py.test -rf ./ikribu -x
+    - ajv doctest -x ./ikribu
+    - py.test -xrf ./ikribu
     - python ./ikribu/test/test_segments.py
 
 notifications:
