@@ -12,6 +12,6 @@ def make_glissando_pitch_specifier(octave=4, rotation=None):
     transposition = 12 * (octave - 4)
     pitches = [_ + transposition for _ in pitches]
     pitches = sequencetools.Sequence(pitches)
-    pitches = pitches.rotate(index=rotation)
+    pitches = pitches.rotate(n=rotation)
     specifier = baca.pitch.pitches(pitches)
     return specifier
