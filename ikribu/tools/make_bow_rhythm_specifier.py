@@ -10,7 +10,7 @@ def make_bow_rhythm_specifier(
     ):
     extra_counts_per_division = sequencetools.Sequence([-1, 0, 1, 2])
     extra_counts_per_division = extra_counts_per_division.rotate(
-        index=rotation
+        n=rotation
         )
     rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=[4],
