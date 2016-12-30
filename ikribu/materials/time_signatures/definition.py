@@ -4,7 +4,7 @@ import baca
 
 
 numerators = [[7, 3, 2], [8, 7], [4, 4, 3]]
-numerator_groups = baca.tools.helianthate(numerators, -1, 1)
+numerator_groups = baca.transforms.helianthate(numerators, -1, 1)
 assert len(numerator_groups) == 18, repr(len(numerator_groups))
 lengths = [len(_) for _ in numerator_groups]
 numerators = abjad.sequencetools.flatten_sequence(numerator_groups)
