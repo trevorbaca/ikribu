@@ -18,7 +18,7 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
 
         ..  container:: example
 
-            **Example.** Calls score template:
+            Calls score template:
 
             ::
 
