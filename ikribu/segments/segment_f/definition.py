@@ -105,7 +105,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, stages(6, 7)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[NamedPitch('E4'), NamedPitch('F#4')], 
                 item_class=NamedPitch,
@@ -122,7 +122,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, stages(6, 7)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[NamedPitch('Eb4'), NamedPitch('F4')], 
                 item_class=NamedPitch,

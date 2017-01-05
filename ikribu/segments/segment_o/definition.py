@@ -85,7 +85,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(1, 2)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
                 item_class=abjad.NamedPitch,
@@ -97,7 +97,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(3, 6)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
                 item_class=abjad.NamedPitch,
@@ -109,7 +109,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(7)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
                 item_class=abjad.NamedPitch,
@@ -128,7 +128,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(9)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
                 item_class=abjad.NamedPitch,
@@ -140,7 +140,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(10)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
                 item_class=abjad.NamedPitch,
@@ -152,7 +152,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(11, 12)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
                 item_class=abjad.NamedPitch,
@@ -164,7 +164,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(13)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
                 item_class=abjad.NamedPitch,
@@ -183,7 +183,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(15, 16)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
                 item_class=abjad.NamedPitch,
@@ -195,7 +195,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(17)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
                 item_class=abjad.NamedPitch,
@@ -207,7 +207,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, stages(18)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
                 item_class=abjad.NamedPitch,
@@ -231,7 +231,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, stages(9, 20)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
                 item_class=abjad.NamedPitch,
@@ -255,7 +255,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, stages(9, 20)),
     [
-        baca.tools.PitchSpecifier(
+        baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
                 items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
                 item_class=abjad.NamedPitch,
