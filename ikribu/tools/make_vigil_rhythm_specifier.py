@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad.tools import rhythmmakertools
-from abjad.tools import sequencetools
 
 
 def make_vigil_rhythm_specifier():
-    counts = sequencetools.Sequence([16, -1])
-    rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
-        talea=rhythmmakertools.Talea(
+    counts = abjad.sequencetools.Sequence([16, -1])
+    rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
+        talea=abjad.rhythmmakertools.Talea(
             counts=counts,
             denominator=4,
             ),
-        tie_specifier=rhythmmakertools.TieSpecifier(
+        tie_specifier=abjad.rhythmmakertools.TieSpecifier(
             use_messiaen_style_ties=True,
             ),
         )
