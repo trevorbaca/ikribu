@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
+import abjad
 import baca
-from abjad.tools import rhythmmakertools
-from abjad.tools import sequencetools
 
 
 def make_glissando_rhythm_specifier(rotation_1=None, rotation_2=None):
-    counts = sequencetools.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
+    counts = abjad.sequencetools.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
     counts = counts.rotate(n=rotation_1)
-    extra_counts_per_division = sequencetools.Sequence([2, 4, 0])
+    extra_counts_per_division = abjad.sequencetools.Sequence([2, 4, 0])
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation_2,
         )
-    rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
+    rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
-        talea=rhythmmakertools.Talea(
+        talea=abjad.rhythmmakertools.Talea(
             counts=counts,
             denominator=16,
             ),
-        tie_specifier=rhythmmakertools.TieSpecifier(
+        tie_specifier=abjad.rhythmmakertools.TieSpecifier(
             strip_ties=True,
             ),
         )
