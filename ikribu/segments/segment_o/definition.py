@@ -37,7 +37,7 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_stages=True,
+    #label_baca.select.stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -56,25 +56,25 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl,
-        [stages(1, 2), stages(3, 6), stages(7), stages(8), stages(9), 
-        stages(10), stages(11, 12), stages(13), stages(14), stages(15),
-        stages(16), stages(17), stages(18), stages(19, 20)]
+        [baca.select.stages(1, 2), baca.select.stages(3, 6), baca.select.stages(7), baca.select.stages(8), baca.select.stages(9), 
+        baca.select.stages(10), baca.select.stages(11, 12), baca.select.stages(13), baca.select.stages(14), baca.select.stages(15),
+        baca.select.stages(16), baca.select.stages(17), baca.select.stages(18), baca.select.stages(19, 20)]
         ),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(9, 20)),
+    (vn, baca.select.stages(9, 20)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (va, stages(9, 20)),
+    (va, baca.select.stages(9, 20)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, [stages(5, 8), stages(9, 12), stages(13, 16), stages(17, 20)]),
+    (vc, [baca.select.stages(5, 8), baca.select.stages(9, 12), baca.select.stages(13, 16), baca.select.stages(17, 20)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -83,7 +83,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, baca.select.stages(1, 2)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -95,7 +95,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(3, 6)),
+    (bcl, baca.select.stages(3, 6)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -107,7 +107,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(7)),
+    (bcl, baca.select.stages(7)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -119,14 +119,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(8)),
+    (bcl, baca.select.stages(8)),
     [
         baca.pitch.pitches('Bb1'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(9)),
+    (bcl, baca.select.stages(9)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -138,7 +138,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(10)),
+    (bcl, baca.select.stages(10)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -150,7 +150,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(11, 12)),
+    (bcl, baca.select.stages(11, 12)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -162,7 +162,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(13)),
+    (bcl, baca.select.stages(13)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -174,14 +174,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(14)),
+    (bcl, baca.select.stages(14)),
     [
         baca.pitch.pitches('Bb1'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(15, 16)),
+    (bcl, baca.select.stages(15, 16)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -193,7 +193,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(17)),
+    (bcl, baca.select.stages(17)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -205,7 +205,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(18)),
+    (bcl, baca.select.stages(18)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -217,7 +217,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(19, 20)),
+    (bcl, baca.select.stages(19, 20)),
     [
         baca.pitch.pitches('Bb1'),
         baca.dynamics.make_hairpin(
@@ -229,7 +229,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(9, 20)),
+    (vn, baca.select.stages(9, 20)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -253,7 +253,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(9, 20)),
+    (va, baca.select.stages(9, 20)),
     [
         baca.tools.ScorePitchSpecifier(
             source=[pitchtools.PitchSegment(
@@ -277,7 +277,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1, 20)),
+    (vc, baca.select.stages(1, 20)),
     [
         baca.dynamics.make_hairpins(
             ['mp > p', 'p < mp'],
@@ -292,7 +292,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(5, 8)),
+    (vc, baca.select.stages(5, 8)),
     [
         baca.spanners.make_transition(
             baca.markup.make_markup('nut'),
@@ -302,7 +302,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(9, 12)),
+    (vc, baca.select.stages(9, 12)),
     [
         baca.spanners.make_transition(
             baca.markup.make_markup('string midpoint'),
@@ -312,7 +312,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(13, 16)),
+    (vc, baca.select.stages(13, 16)),
     [
         baca.spanners.make_transition(
             baca.markup.XP(),
@@ -322,7 +322,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(17, 20)),
+    (vc, baca.select.stages(17, 20)),
     [
         baca.spanners.make_transition(
             baca.markup.make_markup('string midpoint'),

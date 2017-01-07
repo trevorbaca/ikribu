@@ -40,7 +40,7 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_stages=True,
+    #label_baca.select.stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -58,32 +58,32 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 7)),
+    (bcl, baca.select.stages(1, 7)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(1, 4)),
+    (vn, baca.select.stages(1, 4)),
     ikribu.tools.make_clb_rhythm_specifier([4]),
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(6, 8)),
+    (vn, baca.select.stages(6, 8)),
     ikribu.tools.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (va, stages(1, 2)),
+    (va, baca.select.stages(1, 2)),
     ikribu.tools.make_clb_rhythm_specifier([2]),
     )
 
 segment_maker.append_specifiers(
-    (va, stages(4, 8)),
+    (va, baca.select.stages(4, 8)),
     ikribu.tools.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, [stages(1), stages(2), stages(3), stages(4), stages(5), stages(6)]),
+    (vc, [baca.select.stages(1), baca.select.stages(2), baca.select.stages(3), baca.select.stages(4), baca.select.stages(5), baca.select.stages(6)]),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
@@ -92,7 +92,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 7)),
+    (bcl, baca.select.stages(1, 7)),
     [
         baca.markup.make_markup(
             'breathe discreetly before any downbeat as needed'
@@ -104,7 +104,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], stages(1, 8)),
+    ([vn, va], baca.select.stages(1, 8)),
     [
         baca.dynamics.make_effort_dynamic('mp'),
         baca.spanners.one_line_staff(),
@@ -113,7 +113,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(6, 8)),
+    (vn, baca.select.stages(6, 8)),
     [
         baca.dynamics.make_hairpins(
             [
@@ -129,7 +129,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(4, 8)),
+    (va, baca.select.stages(4, 8)),
     [
         baca.dynamics.make_hairpins(
             [
@@ -147,7 +147,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1, 8)),
+    (vc, baca.select.stages(1, 8)),
     [
         baca.pitch.pitches('C4'),
         baca.spanners.one_line_staff(),
@@ -156,7 +156,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1, 6)),
+    (vc, baca.select.stages(1, 6)),
     [
         baca.dynamics.make_hairpins(
             ['p < f', 'f > p'],
@@ -175,7 +175,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(2)),
+    (vc, baca.select.stages(2)),
     [
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
@@ -185,7 +185,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(3)),
+    (vc, baca.select.stages(3)),
     [
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
@@ -195,7 +195,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(4)),
+    (vc, baca.select.stages(4)),
     [
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
@@ -205,7 +205,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(5)),
+    (vc, baca.select.stages(5)),
     [
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
@@ -215,7 +215,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(6)),
+    (vc, baca.select.stages(6)),
     [
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
@@ -225,7 +225,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(1, 4)),
+    (vn, baca.select.stages(1, 4)),
     [
         baca.articulations.staccati(),
         ikribu.tools.make_clb_pitch_specifier(rotation=-1),
@@ -233,7 +233,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(4)),
+    (vn, baca.select.stages(4)),
     [
         abjad.Hairpin('> niente'),
         baca.spanners.percussion_staff(),
@@ -241,7 +241,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(5, 8)),
+    (vn, baca.select.stages(5, 8)),
     [
         baca.articulations.accents(
             pattern=patterntools.select_every([0, 4], inverted=True, period=9),
@@ -253,7 +253,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(1, 2)),
+    (va, baca.select.stages(1, 2)),
     [
         baca.articulations.staccati(),
         ikribu.tools.make_clb_pitch_specifier(rotation=-1),
@@ -261,7 +261,7 @@ segment_maker.append_specifiers(
     )
     
 segment_maker.append_specifiers(
-    (va, stages(2)),
+    (va, baca.select.stages(2)),
     [
         baca.spanners.percussion_staff(),
         abjad.Hairpin('> niente'),
@@ -269,7 +269,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(4, 8)),
+    (va, baca.select.stages(4, 8)),
     [
         baca.articulations.accents(
             pattern=patterntools.select_every(

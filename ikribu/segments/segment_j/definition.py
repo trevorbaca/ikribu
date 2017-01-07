@@ -39,7 +39,7 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_stages=True,
+    #label_baca.select.stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -57,27 +57,27 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [stages(1), stages(2, 3)]),
+    (bcl, [baca.select.stages(1), baca.select.stages(2, 3)]),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (vn, [stages(1, 2), stages(3)]),
+    (vn, [baca.select.stages(1, 2), baca.select.stages(3)]),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (va, [stages(1), stages(2), stages(3)]),
+    (va, [baca.select.stages(1), baca.select.stages(2), baca.select.stages(3)]),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], stages(6)),
+    ([bcl, vn, va], baca.select.stages(6)),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(2, 4)),
+    (vc, baca.select.stages(2, 4)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -86,7 +86,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], stages(1, 7)),
+    ([bcl, vn, va], baca.select.stages(1, 7)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.overrides.repeat_tie_up(),
@@ -96,14 +96,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 7)),
+    (bcl, baca.select.stages(1, 7)),
     [
         baca.pitch.pitches('Bb2'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1)),
+    (bcl, baca.select.stages(1)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -113,7 +113,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(2)),
+    (bcl, baca.select.stages(2)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -123,14 +123,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], stages(1, 7)),
+    ([vn, va], baca.select.stages(1, 7)),
     [
         baca.pitch.pitches('C4'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(1, 2)),
+    (vn, baca.select.stages(1, 2)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -140,7 +140,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(3)),
+    (vn, baca.select.stages(3)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -150,7 +150,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(1)),
+    (va, baca.select.stages(1)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -160,7 +160,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(2)),
+    (va, baca.select.stages(2)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -170,7 +170,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(3)),
+    (va, baca.select.stages(3)),
     [
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
@@ -180,7 +180,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(2, 4)),
+    (vc, baca.select.stages(2, 4)),
     [
         baca.dynamics.make_hairpin(
             'p < mf',
@@ -196,7 +196,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], stages(6)),
+    ([bcl, vn, va], baca.select.stages(6)),
     [
         baca.dynamics.make_effort_dynamic('f'),
         baca.markup.make_boxed_markup_lines([
