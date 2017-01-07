@@ -35,7 +35,7 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_stages=True,
+    #label_baca.select.stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -53,12 +53,12 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, baca.select.stages(1, 2)),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (va, stages(2, 3)),
+    (va, baca.select.stages(2, 3)),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
@@ -67,14 +67,14 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, baca.select.stages(1, 2)),
     [
         baca.pitch.pitches('D2'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, baca.select.stages(1, 2)),
     [
         baca.dynamics.make_hairpin(
             descriptor='ppp < f',
@@ -84,7 +84,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 2)),
+    (bcl, baca.select.stages(1, 2)),
     [
         baca.dynamics.make_hairpin(
             descriptor='f > niente',
@@ -95,7 +95,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(2, 3)),
+    (va, baca.select.stages(2, 3)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_boxed_markup_lines([

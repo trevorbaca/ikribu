@@ -50,7 +50,7 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_stages=True,
+    #label_baca.select.stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -68,22 +68,22 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [stages(1, 4), stages(5, 8), stages(9, 12), stages(13, 16)]),
+    (bcl, [baca.select.stages(1, 4), baca.select.stages(5, 8), baca.select.stages(9, 12), baca.select.stages(13, 16)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn, [stages(1, 2), stages(5, 6), stages(9, 10), stages(13, 14)]),
+    (vn, [baca.select.stages(1, 2), baca.select.stages(5, 6), baca.select.stages(9, 10), baca.select.stages(13, 14)]),
     ikribu.tools.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (va, [stages(2, 3), stages(6, 7), stages(10, 11), stages(14, 15)]),
+    (va, [baca.select.stages(2, 3), baca.select.stages(6, 7), baca.select.stages(10, 11), baca.select.stages(14, 15)]),
     ikribu.tools.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, [stages(9, 12), stages(13, 16)]),
+    (vc, [baca.select.stages(9, 12), baca.select.stages(13, 16)]),
     baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -92,7 +92,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 4)),
+    (bcl, baca.select.stages(1, 4)),
     [
         baca.pitch.pitches('E3'),
         abjad.Dynamic('ppp'),
@@ -100,28 +100,28 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(5, 8)),
+    (bcl, baca.select.stages(5, 8)),
     [
         baca.pitch.pitches('E+3'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(9, 12)),
+    (bcl, baca.select.stages(9, 12)),
     [
         baca.pitch.pitches('F3'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(13, 16)),
+    (bcl, baca.select.stages(13, 16)),
     [
         baca.pitch.pitches('F+3'),
         ],
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], stages(1, 16)),
+    ([vn, va], baca.select.stages(1, 16)),
     [
         baca.articulations.accents(
             pattern=patterntools.select_every([0, 4], inverted=True, period=9),
@@ -142,14 +142,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1, 16)),
+    (vc, baca.select.stages(1, 16)),
     [
         abjad.Clef('bass'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(9, 16)),
+    (vc, baca.select.stages(9, 16)),
     [
         baca.articulations.stem_tremolo(),
         baca.dynamics.make_hairpins(
@@ -162,14 +162,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(9, 12)),
+    (vc, baca.select.stages(9, 12)),
     [
         baca.pitch.pitches('F3'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(13, 16)),
+    (vc, baca.select.stages(13, 16)),
     [
         baca.pitch.pitches('F+3'),
         ],

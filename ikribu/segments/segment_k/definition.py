@@ -35,7 +35,7 @@ spacing_specifier = baca.tools.SpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_stages=True,
+    #label_baca.select.stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -53,22 +53,22 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [stages(1), stages(5), stages(9), stages(13)]),
+    (bcl, [baca.select.stages(1), baca.select.stages(5), baca.select.stages(9), baca.select.stages(13)]),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (vn, [stages(3), stages(7), stages(11), stages(15)]),
+    (vn, [baca.select.stages(3), baca.select.stages(7), baca.select.stages(11), baca.select.stages(15)]),
     ikribu.tools.make_clb_rhythm_specifier([4]),
     )
 
 segment_maker.append_specifiers(
-    (va, [stages(3), stages(7), stages(11), stages(15)]),
+    (va, [baca.select.stages(3), baca.select.stages(7), baca.select.stages(11), baca.select.stages(15)]),
     ikribu.tools.make_clb_rhythm_specifier([2]),
     )
 
 segment_maker.append_specifiers(
-    (vc, [stages(1), stages(5), stages(9), stages(13)]),
+    (vc, [baca.select.stages(1), baca.select.stages(5), baca.select.stages(9), baca.select.stages(13)]),
     baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
@@ -77,7 +77,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (tutti, stages(1, 16)),
+    (tutti, baca.select.stages(1, 16)),
     [
         baca.overrides.repeat_tie_up(),
         baca.spanners.one_line_staff(),
@@ -86,42 +86,42 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1)),
+    (bcl, baca.select.stages(1)),
     [
         baca.dynamics.make_effort_dynamic('f'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(5)),
+    (bcl, baca.select.stages(5)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(9)),
+    (bcl, baca.select.stages(9)),
     [
         baca.dynamics.make_effort_dynamic('mp'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(13)),
+    (bcl, baca.select.stages(13)),
     [
         baca.dynamics.make_effort_dynamic('p'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (bcl, stages(1, 16)),
+    (bcl, baca.select.stages(1, 16)),
     [
         baca.pitch.pitches('Bb2'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vn, stages(1, 16)),
+    (vn, baca.select.stages(1, 16)),
     [
         baca.articulations.staccati(),
         baca.dynamics.make_effort_dynamic('mp'),
@@ -131,7 +131,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, stages(1, 16)),
+    (va, baca.select.stages(1, 16)),
     [
         baca.articulations.staccati(),
         baca.dynamics.make_effort_dynamic('mp'),
@@ -141,7 +141,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1, 16)),
+    (vc, baca.select.stages(1, 16)),
     [
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
@@ -152,28 +152,28 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(1)),
+    (vc, baca.select.stages(1)),
     [
         baca.dynamics.make_effort_dynamic('p'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(5)),
+    (vc, baca.select.stages(5)),
     [
         baca.dynamics.make_effort_dynamic('mp'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(9)),
+    (vc, baca.select.stages(9)),
     [
         baca.dynamics.make_effort_dynamic('mf'),
         ],
     )
 
 segment_maker.append_specifiers(
-    (vc, stages(13)),
+    (vc, baca.select.stages(13)),
     [
         baca.dynamics.make_effort_dynamic('f'),
         ],
