@@ -106,7 +106,7 @@ segment_maker.append_specifiers(
     (vn, baca.select.stages(6, 7)),
     [
         baca.tools.ScorePitchSpecifier(
-            source=[pitchtools.PitchSegment(
+            source=[abjad.PitchSegment(
                 items=[NamedPitch('E4'), NamedPitch('F#4')], 
                 item_class=NamedPitch,
                 )],
@@ -123,7 +123,7 @@ segment_maker.append_specifiers(
     (va, baca.select.stages(6, 7)),
     [
         baca.tools.ScorePitchSpecifier(
-            source=[pitchtools.PitchSegment(
+            source=[abjad.PitchSegment(
                 items=[NamedPitch('Eb4'), NamedPitch('F4')], 
                 item_class=NamedPitch,
                 )],

@@ -114,8 +114,8 @@ segment_maker.append_specifiers(
     (bcl, baca.select.stages(2)),
     [
         baca.tools.ScorePitchSpecifier(
-            source=[pitchtools.PitchSegment(
-                items=[NamedPitch('Bb1'), NamedPitch('D4')], 
+            source=[abjad.PitchSegment(
+                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
                 item_class=NamedPitch,
                 )],
             ),
