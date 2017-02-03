@@ -71,13 +71,13 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc_rh, baca.select.stages(1, 2)),
     [
-        baca.dynamics.make_hairpins(
+        baca.make_hairpins(
             ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
             enchain_hairpins=True,
             span=[3, 4],
             ),
         baca.markup.make_boxed_markup('1/2 clt'),
-        baca.overrides.repeat_tie_up(),
+        baca.repeat_tie_up(),
         baca.pitches('C4'),
         ikribu.tools.BowContactPointSpecifier(rotation=-2),
         abjad.Clef('percussion'),
@@ -87,7 +87,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 2)),
     [
-        baca.spanners.glissandi(),
+        baca.glissandi(),
         ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
         abjad.Clef('tenor'),
         ],

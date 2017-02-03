@@ -59,7 +59,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 7)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -84,7 +84,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [baca.select.stages(1), baca.select.stages(2), baca.select.stages(3), baca.select.stages(4), baca.select.stages(5), baca.select.stages(6)]),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -106,16 +106,16 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(1, 8)),
     [
-        baca.dynamics.make_effort_dynamic('mp'),
-        baca.spanners.one_line_staff(),
-        baca.spanners.percussion_staff(),
+        baca.make_effort_dynamic('mp'),
+        baca.one_line_staff(),
+        baca.percussion_staff(),
         ],
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(6, 8)),
     [
-        baca.dynamics.make_hairpins(
+        baca.make_hairpins(
             [
                 'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
                 'mf < f', 'f > mf', 'mf < ff', 'ff > f',
@@ -131,7 +131,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select.stages(4, 8)),
     [
-        baca.dynamics.make_hairpins(
+        baca.make_hairpins(
             [
                 'p > pp', 'pp < p', 'p > pp', 'pp < mp',
                 'mp > p', 'p < mp', 'mp > p', 'p < mf',
@@ -150,15 +150,15 @@ segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 8)),
     [
         baca.pitches('C4'),
-        baca.spanners.one_line_staff(),
-        baca.spanners.percussion_staff(),
+        baca.one_line_staff(),
+        baca.percussion_staff(),
         ],
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 6)),
     [
-        baca.dynamics.make_hairpins(
+        baca.make_hairpins(
             ['p < f', 'f > p'],
             enchain_hairpins=True,
             include_following_rests=True,
@@ -227,7 +227,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1, 4)),
     [
-        baca.articulations.staccati(),
+        baca.staccati(),
         ikribu.tools.make_clb_pitch_specifier(rotation=-1),
         ],
     )
@@ -236,17 +236,17 @@ segment_maker.append_specifiers(
     (vn, baca.select.stages(4)),
     [
         abjad.Hairpin('> niente'),
-        baca.spanners.percussion_staff(),
+        baca.percussion_staff(),
         ],
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(5, 8)),
     [
-        baca.articulations.accents(
+        baca.accents(
             pattern=patterntools.select_every([0, 4], inverted=True, period=9),
             ),
-        baca.articulations.stem_tremolo(
+        baca.stem_tremolo(
             pattern=patterntools.select_every([0, 4], period=9),
             ),
         ],
@@ -255,7 +255,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select.stages(1, 2)),
     [
-        baca.articulations.staccati(),
+        baca.staccati(),
         ikribu.tools.make_clb_pitch_specifier(rotation=-1),
         ],
     )
@@ -263,7 +263,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select.stages(2)),
     [
-        baca.spanners.percussion_staff(),
+        baca.percussion_staff(),
         abjad.Hairpin('> niente'),
         ],
     )
@@ -271,14 +271,14 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select.stages(4, 8)),
     [
-        baca.articulations.accents(
+        baca.accents(
             pattern=patterntools.select_every(
                 [0, 5],
                 inverted=True,
                 period=11,
                 ),
             ),
-        baca.articulations.stem_tremolo(
+        baca.stem_tremolo(
             pattern=patterntools.select_every([0, 5], period=11),
             ),
         ],
