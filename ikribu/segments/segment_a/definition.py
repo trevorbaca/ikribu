@@ -69,7 +69,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
     [
-        baca.pitch.pitches('D2'),
+        baca.pitches('D2'),
         ],
     )
 
@@ -103,7 +103,7 @@ segment_maker.append_specifiers(
             'π/4 every quarter note'
             ]),
         baca.overrides.repeat_tie_up(),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         baca.spanners.one_line_staff(),
         baca.spanners.percussion_staff(),
         ],

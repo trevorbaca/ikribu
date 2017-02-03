@@ -77,7 +77,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 4)),
     [
-        baca.pitch.pitches('F#3'),
+        baca.pitches('F#3'),
         ],
     )
 
@@ -85,7 +85,7 @@ segment_maker.append_specifiers(
     (bcl, baca.select.stages(6, 8)),
     [
         baca.dynamics.make_hairpin(descriptor='sfp > ppp'),
-        baca.pitch.pitches('G2'),
+        baca.pitches('G2'),
         ],
     )
 
@@ -145,7 +145,7 @@ segment_maker.append_specifiers(
             baca.markup.make_markup('(trem. flaut. tast.)'),
             baca.markup.make_markup('trem. XP (non. flaut.)'),
             ),
-        baca.pitch.pitches('F#3'),
+        baca.pitches('F#3'),
         ],
     )
 

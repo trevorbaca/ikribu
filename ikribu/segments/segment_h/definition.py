@@ -89,7 +89,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
     [
-        baca.pitch.pitches('Db2'),
+        baca.pitches('Db2'),
         abjad.Dynamic('ppp'),
         ],
     )
@@ -104,7 +104,7 @@ segment_maker.append_specifiers(
             ),
         baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         abjad.Clef('percussion'),
         ],
     )

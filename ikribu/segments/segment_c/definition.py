@@ -107,7 +107,7 @@ segment_maker.append_specifiers(
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.overrides.repeat_tie_up(),
-        baca.pitch.pitches('Bb2'),
+        baca.pitches('Bb2'),
         baca.spanners.one_line_staff(),
         abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
         ],
@@ -129,7 +129,7 @@ segment_maker.append_specifiers(
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_markup('grainfall (II)'),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         baca.spanners.one_line_staff(),
         abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
         ],
@@ -143,7 +143,7 @@ segment_maker.append_specifiers(
             ['pp < p', 'p > pp'],
             ),
         baca.markup.trem_flaut_tast(),
-        baca.pitch.pitches('F#4 G#4 G#4 F#4'),
+        baca.pitches('F#4 G#4 G#4 F#4'),
         baca.spanners.glissandi(),
         ],
     )
@@ -156,7 +156,7 @@ segment_maker.append_specifiers(
             ['pp < p', 'p > pp'],
             ),
         baca.markup.trem_flaut_tast(),
-        baca.pitch.pitches('F4 E4 E4 F4'),
+        baca.pitches('F4 E4 E4 F4'),
         baca.spanners.glissandi(),
         ],
     )
@@ -167,7 +167,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('F~5'),
+        baca.pitches('F~5'),
         indicatortools.LaissezVibrer(),
         abjad.Clef('treble'),
         abjad.Dynamic('sfz'),
@@ -185,7 +185,7 @@ segment_maker.append_specifiers(
             ),
         baca.overrides.natural_harmonics(),
         baca.overrides.tuplet_bracket_down(),
-        baca.pitch.fixed_pitches(
+        baca.fixed_pitches(
             'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
             ),
         baca.spanners.glissandi(),

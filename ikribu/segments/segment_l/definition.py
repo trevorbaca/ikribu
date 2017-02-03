@@ -98,7 +98,7 @@ segment_maker.append_specifiers(
             'breathe discreetly before any downbeat as needed'
             ' (but do not circular breathe)'
             ),
-        baca.pitch.pitches('C2'),
+        baca.pitches('C2'),
         abjad.Dynamic('ppp'),
         ],
     )
@@ -149,7 +149,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 8)),
     [
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         baca.spanners.one_line_staff(),
         baca.spanners.percussion_staff(),
         ],

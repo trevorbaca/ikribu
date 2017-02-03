@@ -120,14 +120,14 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
     [
-        baca.pitch.pitches('Bb4'),
+        baca.pitches('Bb4'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(3, 4)),
     [
-        baca.pitch.fixed_pitches(
+        baca.fixed_pitches(
             'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1'
             ),
         baca.spanners.glissandi(),
@@ -137,7 +137,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(5)),
     [
-        baca.pitch.pitches('B1'),
+        baca.pitches('B1'),
         ],
     )
 
@@ -163,7 +163,7 @@ segment_maker.append_specifiers(
             ),
         baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         abjad.Clef('percussion'),
         ],
     )

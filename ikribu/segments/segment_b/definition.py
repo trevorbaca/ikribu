@@ -85,7 +85,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(3, 15)),
     [
-        baca.pitch.pitches('Db2'),
+        baca.pitches('Db2'),
         ],
     )
 
@@ -116,7 +116,7 @@ segment_maker.append_specifiers(
     [
         baca.articulations.stem_tremolo(),
         baca.markup.make_string_number(3),
-        baca.pitch.pitches('E4'),
+        baca.pitches('E4'),
         ],
     )
 
@@ -144,7 +144,7 @@ segment_maker.append_specifiers(
     [
         baca.articulations.stem_tremolo(),
         baca.markup.make_string_number(2),
-        baca.pitch.pitches('Eb4'),
+        baca.pitches('Eb4'),
         ],
     )
 

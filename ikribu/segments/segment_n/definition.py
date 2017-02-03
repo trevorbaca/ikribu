@@ -105,7 +105,7 @@ segment_maker.append_specifiers(
             'introduce upper partials gradually;',
             'breathe as necessary before downbeats',
             ]),
-        baca.pitch.pitches('Bb1'),
+        baca.pitches('Bb1'),
         abjad.Dynamic('p'),
         ],
     )
@@ -132,7 +132,7 @@ segment_maker.append_specifiers(
             ),
         baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         abjad.Clef('percussion'),
         ],
     )
