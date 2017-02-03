@@ -121,7 +121,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(8)),
     [
-        baca.pitch.pitches('Bb1'),
+        baca.pitches('Bb1'),
         ],
     )
 
@@ -176,7 +176,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(14)),
     [
-        baca.pitch.pitches('Bb1'),
+        baca.pitches('Bb1'),
         ],
     )
 
@@ -219,7 +219,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(19, 20)),
     [
-        baca.pitch.pitches('Bb1'),
+        baca.pitches('Bb1'),
         baca.dynamics.make_hairpin(
             descriptor='p > niente',
             start=-2,
@@ -285,7 +285,7 @@ segment_maker.append_specifiers(
             include_following_rests=True,
             span=[2],
             ),
-        baca.pitch.pitches('Bb0'),
+        baca.pitches('Bb0'),
         baca.spanners.ottava_bassa(),
         abjad.Clef('bass'),
         ],

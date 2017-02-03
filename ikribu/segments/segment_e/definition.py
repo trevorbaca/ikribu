@@ -94,7 +94,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 4)),
     [
-        baca.pitch.pitches('E3'),
+        baca.pitches('E3'),
         abjad.Dynamic('ppp'),
         ],
     )
@@ -102,21 +102,21 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(5, 8)),
     [
-        baca.pitch.pitches('E+3'),
+        baca.pitches('E+3'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(9, 12)),
     [
-        baca.pitch.pitches('F3'),
+        baca.pitches('F3'),
         ],
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(13, 16)),
     [
-        baca.pitch.pitches('F+3'),
+        baca.pitches('F+3'),
         ],
     )
 
@@ -164,13 +164,13 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(9, 12)),
     [
-        baca.pitch.pitches('F3'),
+        baca.pitches('F3'),
         ],
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(13, 16)),
     [
-        baca.pitch.pitches('F+3'),
+        baca.pitches('F+3'),
         ],
     )

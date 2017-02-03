@@ -116,7 +116,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 16)),
     [
-        baca.pitch.pitches('Bb2'),
+        baca.pitches('Bb2'),
         ],
     )
 
@@ -147,7 +147,7 @@ segment_maker.append_specifiers(
             'graincircle:',
             'π/2 every quarter note'
             ]),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         ],
     )
 

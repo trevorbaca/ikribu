@@ -237,7 +237,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 23)),
     [
-        baca.pitch.pitches('B1'),
+        baca.pitches('B1'),
         ],
     )
 
@@ -351,7 +351,7 @@ segment_maker.append_specifiers(
         [baca.select.stages(2, 3), baca.select.stages(6), baca.select.stages(9, 10), baca.select.stages(13, 14), baca.select.stages(17),
         baca.select.stages(20, 21)]),
     [
-        baca.pitch.pitches('C1'),
+        baca.pitches('C1'),
         baca.spanners.ottava_bassa(),
         ],
     )
@@ -395,7 +395,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('F~5'),
+        baca.pitches('F~5'),
         baca.spanners.clef_spanner(clef='treble'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Dynamic('sfz'),
@@ -408,7 +408,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('G5'),
+        baca.pitches('G5'),
         baca.spanners.clef_spanner(clef='treble'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Dynamic('sfz'),
@@ -421,7 +421,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('F~5'),
+        baca.pitches('F~5'),
         baca.spanners.clef_spanner(clef='treble'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Dynamic('sffz'),
@@ -434,7 +434,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('G5'),
+        baca.pitches('G5'),
         baca.spanners.clef_spanner(clef='treble'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Dynamic('sffz'),
@@ -447,7 +447,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('A5'),
+        baca.pitches('A5'),
         baca.spanners.clef_spanner(clef='treble'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Dynamic('sfffz'),
@@ -460,7 +460,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('C+6'),
+        baca.pitches('C+6'),
         baca.spanners.clef_spanner(clef='treble'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Dynamic('sfffz'),

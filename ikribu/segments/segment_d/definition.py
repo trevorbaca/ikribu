@@ -78,7 +78,7 @@ segment_maker.append_specifiers(
             ),
         baca.markup.make_boxed_markup('1/2 clt'),
         baca.overrides.repeat_tie_up(),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         ikribu.tools.BowContactPointSpecifier(rotation=-2),
         abjad.Clef('percussion'),
         ],

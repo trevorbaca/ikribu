@@ -98,7 +98,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 7)),
     [
-        baca.pitch.pitches('Bb2'),
+        baca.pitches('Bb2'),
         ],
     )
 
@@ -125,7 +125,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(1, 7)),
     [
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         ],
     )
 
@@ -188,7 +188,7 @@ segment_maker.append_specifiers(
             include_following_rest=True,
             ),
         baca.markup.vib_poco(),
-        baca.pitch.pitches('D1'),
+        baca.pitches('D1'),
         baca.spanners.ottava_bassa(),
         abjad.Clef('bass'),
         abjad.Dynamic('p'),

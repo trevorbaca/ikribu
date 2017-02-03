@@ -9,5 +9,5 @@ def make_clb_pitch_specifier(rotation=None):
     pitches = abjad.sequencetools.Sequence(pitches)
     pitches = pitches.rotate(n=rotation)
     pitches = pitches.flatten()
-    specifier = baca.pitch.pitches(pitches)
+    specifier = baca.pitches(pitches)
     return specifier

@@ -68,7 +68,7 @@ segment_maker.append_specifiers(
     [
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_markup('grainfall (I)'),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         baca.spanners.one_line_staff(),
         abjad.spannertools.ClefSpanner(clef='percussion'),
         ],
@@ -80,7 +80,7 @@ segment_maker.append_specifiers(
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
         baca.overrides.natural_harmonics(),
-        baca.pitch.pitches('F~5'),
+        baca.pitches('F~5'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Clef('treble'),
         abjad.Dynamic('sfz'),

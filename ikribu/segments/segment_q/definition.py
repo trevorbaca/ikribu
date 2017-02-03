@@ -82,7 +82,7 @@ segment_maker.append_specifiers(
     [ 
         baca.dynamics.make_effort_dynamic('mf'),
         baca.markup.make_boxed_markup('graincircle: π/3 every quarter note'),
-        baca.pitch.pitches('Bb2'),
+        baca.pitches('Bb2'),
         baca.spanners.one_line_staff(),
         abjad.Clef('percussion'),
         ],
@@ -96,7 +96,7 @@ segment_maker.append_specifiers(
         baca.markup.make_markup(
             'col legno battuto meccanico: strike each note twice'
             ),
-        baca.pitch.pitches('B3 C4 D4'),
+        baca.pitches('B3 C4 D4'),
         baca.spanners.one_line_staff(),
         abjad.Clef('percussion'),
         ],
@@ -110,7 +110,7 @@ segment_maker.append_specifiers(
         baca.markup.make_markup(
             'col legno battuto meccanico: strike each note twice'
             ),
-        baca.pitch.pitches('C4 B3 D4'),
+        baca.pitches('C4 B3 D4'),
         baca.spanners.one_line_staff(),
         abjad.Clef('percussion'),
         ],
@@ -124,7 +124,7 @@ segment_maker.append_specifiers(
         baca.markup.make_boxed_markup(
             'stonescratch: one short stroke for each attack'
             ),
-        baca.pitch.pitches('C4'),
+        baca.pitches('C4'),
         baca.spanners.one_line_staff(),
         abjad.Clef('percussion'),
         ],
