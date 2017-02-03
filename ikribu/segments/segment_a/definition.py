@@ -54,12 +54,12 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(2, 3)),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -76,7 +76,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
     [
-        baca.dynamics.make_hairpin(
+        baca.make_hairpin(
             descriptor='ppp < f',
             stop=2,
             ),
@@ -86,7 +86,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
     [
-        baca.dynamics.make_hairpin(
+        baca.make_hairpin(
             descriptor='f > niente',
             start=-3,
             include_following_rest=True,
@@ -97,14 +97,14 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select.stages(2, 3)),
     [
-        baca.dynamics.make_effort_dynamic('mf'),
+        baca.make_effort_dynamic('mf'),
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
             'π/4 every quarter note'
             ]),
-        baca.overrides.repeat_tie_up(),
+        baca.repeat_tie_up(),
         baca.pitches('C4'),
-        baca.spanners.one_line_staff(),
-        baca.spanners.percussion_staff(),
+        baca.one_line_staff(),
+        baca.percussion_staff(),
         ],
     )

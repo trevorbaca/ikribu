@@ -52,22 +52,22 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select.stages(1, 4), baca.select.stages(6, 8)]),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(6, 7)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 4)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(6, 7)),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -84,7 +84,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(6, 8)),
     [
-        baca.dynamics.make_hairpin(descriptor='sfp > ppp'),
+        baca.make_hairpin(descriptor='sfp > ppp'),
         baca.pitches('G2'),
         ],
     )
@@ -92,9 +92,9 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(6, 7)),
     [
-        baca.articulations.stem_tremolo(),
-        baca.dynamics.make_hairpin('sfpp < p', stop=2),
-        baca.dynamics.make_hairpin(
+        baca.stem_tremolo(),
+        baca.make_hairpin('sfpp < p', stop=2),
+        baca.make_hairpin(
             descriptor='p > pp',
             start=-1,
             include_following_rest=True,
@@ -111,7 +111,7 @@ segment_maker.append_specifiers(
                 item_class=NamedPitch,
                 )],
             ),
-        baca.spanners.make_transition(
+        baca.make_transition(
             baca.markup.make_markup('trem. flaut. XP'),
             baca.markup.make_markup('trem. flaut. tast.'),
             ),
@@ -128,7 +128,7 @@ segment_maker.append_specifiers(
                 item_class=NamedPitch,
                 )],
             ),
-        baca.spanners.make_transition(
+        baca.make_transition(
             baca.markup.make_markup('trem. flaut. XP'),
             baca.markup.make_markup('trem. flaut. tast.'),
             ),
@@ -139,9 +139,9 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 4)),
     [
-        baca.articulations.stem_tremolo(),
-        baca.dynamics.make_hairpin(descriptor='p < ff'),
-        baca.spanners.make_transition(
+        baca.stem_tremolo(),
+        baca.make_hairpin(descriptor='p < ff'),
+        baca.make_transition(
             baca.markup.make_markup('(trem. flaut. tast.)'),
             baca.markup.make_markup('trem. XP (non. flaut.)'),
             ),
@@ -152,12 +152,12 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(6, 7)),
     [
-        baca.overrides.repeat_tie_up(),
+        baca.repeat_tie_up(),
         baca.markup.make_boxed_markup_lines([
             'graincircle:',
             'π/2 every quarter note',
             ]),
-        baca.spanners.percussion_staff(),
-        baca.spanners.one_line_staff(),
+        baca.percussion_staff(),
+        baca.one_line_staff(),
         ],
     )

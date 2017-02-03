@@ -69,7 +69,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select.stages(1, 4), baca.select.stages(5, 8), baca.select.stages(9, 12), baca.select.stages(13, 16)]),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -84,7 +84,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [baca.select.stages(9, 12), baca.select.stages(13, 16)]),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -123,21 +123,21 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(1, 16)),
     [
-        baca.articulations.accents(
+        baca.accents(
             pattern=patterntools.select_every([0, 4], inverted=True, period=9),
             ),
-        baca.articulations.stem_tremolo(
+        baca.stem_tremolo(
             pattern=patterntools.select_every([0, 4], period=9),
             ),
-        baca.dynamics.make_hairpins(
+        baca.make_hairpins(
             ['f > p', 'p < f'],
             enchain_hairpins=True,
             include_following_rests=True,
             span=[4, 3],
             ),
         baca.markup.make_boxed_markup('brushes on BD'),
-        baca.spanners.percussion_staff(),
-        baca.spanners.one_line_staff(),
+        baca.percussion_staff(),
+        baca.one_line_staff(),
         ],
     )
 
@@ -151,8 +151,8 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(9, 16)),
     [
-        baca.articulations.stem_tremolo(),
-        baca.dynamics.make_hairpins(
+        baca.stem_tremolo(),
+        baca.make_hairpins(
             ['p < mp', 'mp > p'],
             enchain_hairpins=True,
             span=[2],

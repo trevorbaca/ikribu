@@ -58,27 +58,27 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select.stages(1), baca.select.stages(2, 3)]),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vn, [baca.select.stages(1, 2), baca.select.stages(3)]),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (va, [baca.select.stages(1), baca.select.stages(2), baca.select.stages(3)]),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select.stages(6)),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(2, 4)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -88,10 +88,10 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select.stages(1, 7)),
     [
-        baca.dynamics.make_effort_dynamic('mf'),
-        baca.overrides.repeat_tie_up(),
-        baca.spanners.one_line_staff(),
-        baca.spanners.percussion_staff(),
+        baca.make_effort_dynamic('mf'),
+        baca.repeat_tie_up(),
+        baca.one_line_staff(),
+        baca.percussion_staff(),
         ],
     )
 
@@ -182,14 +182,14 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(2, 4)),
     [
-        baca.dynamics.make_hairpin(
+        baca.make_hairpin(
             'p < mf',
             start=-1,
             include_following_rest=True,
             ),
         baca.markup.vib_poco(),
         baca.pitches('D1'),
-        baca.spanners.ottava_bassa(),
+        baca.ottava_bassa(),
         abjad.Clef('bass'),
         abjad.Dynamic('p'),
         ],
@@ -198,7 +198,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select.stages(6)),
     [
-        baca.dynamics.make_effort_dynamic('f'),
+        baca.make_effort_dynamic('f'),
         baca.markup.make_boxed_markup_lines([
             'stonecircle:',
             'π/2 every quarter note'

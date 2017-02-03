@@ -72,12 +72,12 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select.stages(2, 3), baca.select.stages(6, 7), baca.select.stages(10, 11), baca.select.stages(14, 15)]),
-    baca.rhythm.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -85,17 +85,17 @@ segment_maker.append_specifiers(
         [vn, va],
         [baca.select.stages(3, 4), baca.select.stages(7, 8), baca.select.stages(11, 12), baca.select.stages(15, 16)],
         ),
-    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    baca.make_messiaen_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(2, 16)),
-    baca.rhythm.make_messiaen_note_rhythm_specifier(),
+    baca.make_messiaen_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -105,10 +105,10 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(2, 17)),
     [
-        baca.dynamics.make_effort_dynamic('mf'),
-        baca.overrides.repeat_tie_up(),
+        baca.make_effort_dynamic('mf'),
+        baca.repeat_tie_up(),
         baca.pitches('Bb2'),
-        baca.spanners.one_line_staff(),
+        baca.one_line_staff(),
         abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
         ],
     )
@@ -120,17 +120,17 @@ segment_maker.append_specifiers(
             'stonecircle:',
             'π/2 every quarter note'
             ]),
-        baca.overrides.repeat_tie_up(),
+        baca.repeat_tie_up(),
         ],
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1)),
     [
-        baca.dynamics.make_effort_dynamic('mf'),
+        baca.make_effort_dynamic('mf'),
         baca.markup.make_markup('grainfall (II)'),
         baca.pitches('C4'),
-        baca.spanners.one_line_staff(),
+        baca.one_line_staff(),
         abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
         ],
     )
@@ -138,26 +138,26 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select.stages(2, 16)),
     [
-        baca.articulations.stem_tremolo(),
-        baca.dynamics.make_hairpins(
+        baca.stem_tremolo(),
+        baca.make_hairpins(
             ['pp < p', 'p > pp'],
             ),
         baca.markup.trem_flaut_tast(),
         baca.pitches('F#4 G#4 G#4 F#4'),
-        baca.spanners.glissandi(),
+        baca.glissandi(),
         ],
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(2, 16)),
     [
-        baca.articulations.stem_tremolo(),
-        baca.dynamics.make_hairpins(
+        baca.stem_tremolo(),
+        baca.make_hairpins(
             ['pp < p', 'p > pp'],
             ),
         baca.markup.trem_flaut_tast(),
         baca.pitches('F4 E4 E4 F4'),
-        baca.spanners.glissandi(),
+        baca.glissandi(),
         ],
     )
 
@@ -166,7 +166,7 @@ segment_maker.append_specifiers(
     [
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
-        baca.overrides.natural_harmonics(),
+        baca.natural_harmonics(),
         baca.pitches('F~5'),
         indicatortools.LaissezVibrer(),
         abjad.Clef('treble'),
@@ -177,19 +177,19 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select.stages(2, 16)),
     [
-        baca.articulations.stem_tremolo(),
-        baca.dynamics.make_hairpins(
+        baca.stem_tremolo(),
+        baca.make_hairpins(
             ['ppp < pp', 'pp > ppp'],
             enchain_hairpins=True,
             span=[2],
             ),
-        baca.overrides.natural_harmonics(),
-        baca.overrides.tuplet_bracket_down(),
+        baca.natural_harmonics(),
+        baca.tuplet_bracket_down(),
         baca.fixed_pitches(
             'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
             ),
-        baca.spanners.glissandi(),
-        baca.spanners.make_transition(
+        baca.glissandi(),
+        baca.make_transition(
             baca.markup.make_markup('trem. flaut. tasto. (arco)'),
             baca.markup.make_markup('trem. flaut. XP'),
             ),

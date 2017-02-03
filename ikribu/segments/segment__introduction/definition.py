@@ -51,12 +51,12 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1)),
-    baca.rhythm.make_messiaen_tied_note_rhythm_specifier(),
+    baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -66,10 +66,10 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1)),
     [
-        baca.dynamics.make_effort_dynamic('mf'),
+        baca.make_effort_dynamic('mf'),
         baca.markup.make_markup('grainfall (I)'),
         baca.pitches('C4'),
-        baca.spanners.one_line_staff(),
+        baca.one_line_staff(),
         abjad.spannertools.ClefSpanner(clef='percussion'),
         ],
     )
@@ -79,7 +79,7 @@ segment_maker.append_specifiers(
     [
         baca.markup.make_string_number(3),
         baca.markup.pizz(),
-        baca.overrides.natural_harmonics(),
+        baca.natural_harmonics(),
         baca.pitches('F~5'),
         abjad.indicatortools.LaissezVibrer(),
         abjad.Clef('treble'),
