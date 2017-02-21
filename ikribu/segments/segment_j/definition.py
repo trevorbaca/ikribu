@@ -87,121 +87,97 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select.stages(1, 7)),
-    [
-        baca.make_effort_dynamic('mf'),
-        baca.repeat_tie_up(),
-        baca.one_line_staff(),
-        baca.percussion_staff(),
-        ],
+    baca.make_effort_dynamic('mf'),
+    baca.repeat_tie_up(),
+    baca.one_line_staff(),
+    baca.percussion_staff(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 7)),
-    [
-        baca.pitches('Bb2'),
-        ],
+    baca.pitches('Bb2'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/4 every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/4 every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(2)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/3 every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/3 every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(1, 7)),
-    [
-        baca.pitches('C4'),
-        ],
+    baca.pitches('C4'),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1, 2)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/2 every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/2 every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(3)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(1)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/3 every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/3 every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(2)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/4 every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/4 every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(3)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/2 every quarter note'
-            ]),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/2 every quarter note'
+        ]),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(2, 4)),
-    [
-        baca.make_hairpin(
-            'p < mf',
-            start=-1,
-            include_following_rest=True,
-            ),
-        baca.markup.vib_poco(),
-        baca.pitches('D1'),
-        baca.ottava_bassa(),
-        abjad.Clef('bass'),
-        abjad.Dynamic('p'),
-        ],
+    baca.make_hairpin(
+        'p < mf',
+        start=-1,
+        include_following_rest=True,
+        ),
+    baca.markup.vib_poco(),
+    baca.pitches('D1'),
+    baca.ottava_bassa(),
+    abjad.Clef('bass'),
+    abjad.Dynamic('p'),
     )
 
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select.stages(6)),
-    [
-        baca.make_effort_dynamic('f'),
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/2 every quarter note'
-            ]),
-        ],
+    baca.make_effort_dynamic('f'),
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/2 every quarter note'
+        ]),
     )

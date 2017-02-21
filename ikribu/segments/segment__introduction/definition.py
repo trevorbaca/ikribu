@@ -65,24 +65,20 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1)),
-    [
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_markup('grainfall (I)'),
-        baca.pitches('C4'),
-        baca.one_line_staff(),
-        abjad.spannertools.ClefSpanner(clef='percussion'),
-        ],
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_markup('grainfall (I)'),
+    baca.pitches('C4'),
+    baca.one_line_staff(),
+    abjad.spannertools.ClefSpanner(clef='percussion'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1)),
-    [
-        baca.markup.make_string_number(3),
-        baca.markup.pizz(),
-        baca.natural_harmonics(),
-        baca.pitches('F~5'),
-        abjad.indicatortools.LaissezVibrer(),
-        abjad.Clef('treble'),
-        abjad.Dynamic('sfz'),
-        ],
+    baca.markup.make_string_number(3),
+    baca.markup.pizz(),
+    baca.natural_harmonics(),
+    baca.pitches('F~5'),
+    abjad.indicatortools.LaissezVibrer(),
+    abjad.Clef('treble'),
+    abjad.Dynamic('sfz'),
     )

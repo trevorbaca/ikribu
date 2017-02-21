@@ -88,54 +88,42 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
-    [
-        baca.pitches('Db2'),
-        abjad.Dynamic('ppp'),
-        ],
+    baca.pitches('Db2'),
+    abjad.Dynamic('ppp'),
     )
 
 segment_maker.append_specifiers(
     ([vn_rh, va_rh], baca.select.stages(1, 2)),
-    [
-        baca.make_hairpins(
-            ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
-            enchain_hairpins=True,
-            span=[3, 4],
-            ),
-        baca.markup.make_boxed_markup('1/2 clt'),
-        baca.repeat_tie_up(),
-        baca.pitches('C4'),
-        abjad.Clef('percussion'),
-        ],
+    baca.make_hairpins(
+        ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
+        enchain_hairpins=True,
+        span=[3, 4],
+        ),
+    baca.markup.make_boxed_markup('1/2 clt'),
+    baca.repeat_tie_up(),
+    baca.pitches('C4'),
+    abjad.Clef('percussion'),
     )
 
 segment_maker.append_specifiers(
     (vn_rh, baca.select.stages(1, 2)),
-    [
-        ikribu.tools.BowContactPointSpecifier(rotation=0),
-        ],
+    ikribu.tools.BowContactPointSpecifier(rotation=0),
     )
 
 segment_maker.append_specifiers(
     (va_rh, baca.select.stages(1, 2)),
-    [
-        ikribu.tools.BowContactPointSpecifier(rotation=-1),
-        ],
+    ikribu.tools.BowContactPointSpecifier(rotation=-1),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1, 2)),
-    [
-        baca.glissandi(),
-        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=0),
-        ],
+    baca.glissandi(),
+    ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=0),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(1, 2)),
-    [
-        baca.glissandi(),
-        ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
-        abjad.Clef('treble'),
-        ],
+    baca.glissandi(),
+    ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
+    abjad.Clef('treble'),
     )

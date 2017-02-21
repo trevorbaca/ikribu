@@ -104,94 +104,80 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(2, 17)),
-    [
-        baca.make_effort_dynamic('mf'),
-        baca.repeat_tie_up(),
-        baca.pitches('Bb2'),
-        baca.one_line_staff(),
-        abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
-        ],
+    baca.make_effort_dynamic('mf'),
+    baca.repeat_tie_up(),
+    baca.pitches('Bb2'),
+    baca.one_line_staff(),
+    abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(2, 3)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/2 every quarter note'
-            ]),
-        baca.repeat_tie_up(),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/2 every quarter note'
+        ]),
+    baca.repeat_tie_up(),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1)),
-    [
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_markup('grainfall (II)'),
-        baca.pitches('C4'),
-        baca.one_line_staff(),
-        abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
-        ],
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_markup('grainfall (II)'),
+    baca.pitches('C4'),
+    baca.one_line_staff(),
+    abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(2, 16)),
-    [
-        baca.stem_tremolo(),
-        baca.make_hairpins(
-            ['pp < p', 'p > pp'],
-            ),
-        baca.markup.trem_flaut_tast(),
-        baca.pitches('F#4 G#4 G#4 F#4'),
-        baca.glissandi(),
-        ],
+    baca.stem_tremolo(),
+    baca.make_hairpins(
+        ['pp < p', 'p > pp'],
+        ),
+    baca.markup.trem_flaut_tast(),
+    baca.pitches('F#4 G#4 G#4 F#4'),
+    baca.glissandi(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(2, 16)),
-    [
-        baca.stem_tremolo(),
-        baca.make_hairpins(
-            ['pp < p', 'p > pp'],
-            ),
-        baca.markup.trem_flaut_tast(),
-        baca.pitches('F4 E4 E4 F4'),
-        baca.glissandi(),
-        ],
+    baca.stem_tremolo(),
+    baca.make_hairpins(
+        ['pp < p', 'p > pp'],
+        ),
+    baca.markup.trem_flaut_tast(),
+    baca.pitches('F4 E4 E4 F4'),
+    baca.glissandi(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1)),
-    [
-        baca.markup.make_string_number(3),
-        baca.markup.pizz(),
-        baca.natural_harmonics(),
-        baca.pitches('F~5'),
-        indicatortools.LaissezVibrer(),
-        abjad.Clef('treble'),
-        abjad.Dynamic('sfz'),
-        ],
+    baca.markup.make_string_number(3),
+    baca.markup.pizz(),
+    baca.natural_harmonics(),
+    baca.pitches('F~5'),
+    indicatortools.LaissezVibrer(),
+    abjad.Clef('treble'),
+    abjad.Dynamic('sfz'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(2, 16)),
-    [
-        baca.stem_tremolo(),
-        baca.make_hairpins(
-            ['ppp < pp', 'pp > ppp'],
-            enchain_hairpins=True,
-            span=[2],
-            ),
-        baca.natural_harmonics(),
-        baca.tuplet_bracket_down(),
-        baca.fixed_pitches(
-            'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
-            ),
-        baca.glissandi(),
-        baca.make_transition(
-            baca.markup.make_markup('trem. flaut. tasto. (arco)'),
-            baca.markup.make_markup('trem. flaut. XP'),
-            ),
-        ],
+    baca.stem_tremolo(),
+    baca.make_hairpins(
+        ['ppp < pp', 'pp > ppp'],
+        enchain_hairpins=True,
+        span=[2],
+        ),
+    baca.natural_harmonics(),
+    baca.tuplet_bracket_down(),
+    baca.fixed_pitches(
+        'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
+        ),
+    baca.glissandi(),
+    baca.make_transition(
+        baca.markup.make_markup('trem. flaut. tasto. (arco)'),
+        baca.markup.make_markup('trem. flaut. XP'),
+        ),
     )

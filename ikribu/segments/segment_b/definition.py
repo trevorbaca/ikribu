@@ -84,85 +84,71 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(3, 15)),
-    [
-        baca.pitches('Db2'),
-        ],
+    baca.pitches('Db2'),
     )
 
 segment_maker.append_specifiers(
     (bcl, [baca.select.stages(3), baca.select.stages(7), baca.select.stages(11)]),
-    [
-        abjad.Dynamic('ppp'),
-        ],
+    abjad.Dynamic('ppp'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(13)),
-    [
-        baca.make_hairpin(
-            descriptor='ppp < f',
-            stop=2,
-            ),
-        baca.make_hairpin(
-            descriptor='f > niente',
-            include_following_rest=True,
-            start=-1,
-            ),
-        ],
+    baca.make_hairpin(
+        descriptor='ppp < f',
+        stop=2,
+        ),
+    baca.make_hairpin(
+        descriptor='f > niente',
+        include_following_rest=True,
+        start=-1,
+        ),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1, 9)),
-    [
-        baca.stem_tremolo(),
-        baca.markup.make_string_number(3),
-        baca.pitches('E4'),
-        ],
+    baca.stem_tremolo(),
+    baca.markup.make_string_number(3),
+    baca.pitches('E4'),
     )
 
 segment_maker.append_specifiers(
     (vn, [baca.select.stages(1), baca.select.stages(5), baca.select.stages(9)]),
-    [
-        baca.make_hairpin(
-            descriptor='ppp < p',
-            stop=2,
-            ),
-        baca.make_hairpin(
-            descriptor='p > niente',
-            include_following_rest=True,
-            start=-1,
-            ),
-        baca.make_transition(
-            baca.markup.make_markup('trem. flaut. pont.'),
-            baca.markup.make_markup('trem. flaut. tast.'),
-            ),
-        ],
+    baca.make_hairpin(
+        descriptor='ppp < p',
+        stop=2,
+        ),
+    baca.make_hairpin(
+        descriptor='p > niente',
+        include_following_rest=True,
+        start=-1,
+        ),
+    baca.make_transition(
+        baca.markup.make_markup('trem. flaut. pont.'),
+        baca.markup.make_markup('trem. flaut. tast.'),
+        ),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(13, 14)),
-    [
-        baca.stem_tremolo(),
-        baca.markup.make_string_number(2),
-        baca.pitches('Eb4'),
-        ],
+    baca.stem_tremolo(),
+    baca.markup.make_string_number(2),
+    baca.pitches('Eb4'),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(13, 14)),
-    [
-        baca.make_hairpin(
-            descriptor='ppp < mf',
-            stop=5,
-            ),
-        baca.make_hairpin(
-            descriptor='mf > niente',
-            include_following_rest=True,
-            start=-1,
-            ),
-        baca.make_transition(
-            baca.markup.make_markup('trem. flaut. pont.'),
-            baca.markup.make_markup('trem. flaut. tast.'),
-            ),
-        ],
+    baca.make_hairpin(
+        descriptor='ppp < mf',
+        stop=5,
+        ),
+    baca.make_hairpin(
+        descriptor='mf > niente',
+        include_following_rest=True,
+        start=-1,
+        ),
+    baca.make_transition(
+        baca.markup.make_markup('trem. flaut. pont.'),
+        baca.markup.make_markup('trem. flaut. tast.'),
+        ),
     )
