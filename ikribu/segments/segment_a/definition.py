@@ -68,43 +68,35 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
-    [
-        baca.pitches('D2'),
-        ],
+    baca.pitches('D2'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
-    [
-        baca.make_hairpin(
-            descriptor='ppp < f',
-            stop=2,
-            ),
-        ],
+    baca.make_hairpin(
+        descriptor='ppp < f',
+        stop=2,
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
-    [
-        baca.make_hairpin(
-            descriptor='f > niente',
-            start=-3,
-            include_following_rest=True,
-            ),
-        ],
+    baca.make_hairpin(
+        descriptor='f > niente',
+        start=-3,
+        include_following_rest=True,
+        ),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(2, 3)),
-    [
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_boxed_markup_lines([
-            'stonecircle:',
-            'π/4 every quarter note'
-            ]),
-        baca.repeat_tie_up(),
-        baca.pitches('C4'),
-        baca.one_line_staff(),
-        baca.percussion_staff(),
-        ],
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_boxed_markup_lines([
+        'stonecircle:',
+        'π/4 every quarter note'
+        ]),
+    baca.repeat_tie_up(),
+    baca.pitches('C4'),
+    baca.one_line_staff(),
+    baca.percussion_staff(),
     )

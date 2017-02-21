@@ -78,103 +78,77 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (tutti, baca.select.stages(1, 16)),
-    [
-        baca.repeat_tie_up(),
-        baca.one_line_staff(),
-        baca.percussion_staff(),
-        ],
+    baca.repeat_tie_up(),
+    baca.one_line_staff(),
+    baca.percussion_staff(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1)),
-    [
-        baca.make_effort_dynamic('f'),
-        ],
+    baca.make_effort_dynamic('f'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(5)),
-    [
-        baca.make_effort_dynamic('mf'),
-        ],
+    baca.make_effort_dynamic('mf'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(9)),
-    [
-        baca.make_effort_dynamic('mp'),
-        ],
+    baca.make_effort_dynamic('mp'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(13)),
-    [
-        baca.make_effort_dynamic('p'),
-        ],
+    baca.make_effort_dynamic('p'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 16)),
-    [
-        baca.pitches('Bb2'),
-        ],
+    baca.pitches('Bb2'),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1, 16)),
-    [
-        baca.staccati(),
-        baca.make_effort_dynamic('mp'),
-        baca.markup.col_legno_battuto(),
-        ikribu.tools.make_clb_pitch_specifier(),
-        ],
+    baca.staccati(),
+    baca.make_effort_dynamic('mp'),
+    baca.markup.col_legno_battuto(),
+    ikribu.tools.make_clb_pitch_specifier(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(1, 16)),
-    [
-        baca.staccati(),
-        baca.make_effort_dynamic('mp'),
-        baca.markup.col_legno_battuto(),
-        ikribu.tools.make_clb_pitch_specifier(),
-        ],
+    baca.staccati(),
+    baca.make_effort_dynamic('mp'),
+    baca.markup.col_legno_battuto(),
+    ikribu.tools.make_clb_pitch_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 16)),
-    [
-        baca.markup.make_boxed_markup_lines([
-            'graincircle:',
-            'π/2 every quarter note'
-            ]),
-        baca.pitches('C4'),
-        ],
+    baca.markup.make_boxed_markup_lines([
+        'graincircle:',
+        'π/2 every quarter note'
+        ]),
+    baca.pitches('C4'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1)),
-    [
-        baca.make_effort_dynamic('p'),
-        ],
+    baca.make_effort_dynamic('p'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(5)),
-    [
-        baca.make_effort_dynamic('mp'),
-        ],
+    baca.make_effort_dynamic('mp'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(9)),
-    [
-        baca.make_effort_dynamic('mf'),
-        ],
+    baca.make_effort_dynamic('mf'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(13)),
-    [
-        baca.make_effort_dynamic('f'),
-        ],
+    baca.make_effort_dynamic('f'),
     )

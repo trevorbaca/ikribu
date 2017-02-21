@@ -79,53 +79,45 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 4)),
-    [ 
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_boxed_markup('graincircle: π/3 every quarter note'),
-        baca.pitches('Bb2'),
-        baca.one_line_staff(),
-        abjad.Clef('percussion'),
-        ],
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_boxed_markup('graincircle: π/3 every quarter note'),
+    baca.pitches('Bb2'),
+    baca.one_line_staff(),
+    abjad.Clef('percussion'),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(1, 4)),
-    [
-        baca.double_tonguing(),
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_markup(
-            'col legno battuto meccanico: strike each note twice'
-            ),
-        baca.pitches('B3 C4 D4'),
-        baca.one_line_staff(),
-        abjad.Clef('percussion'),
-        ],
+    baca.double_tonguing(),
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_markup(
+        'col legno battuto meccanico: strike each note twice'
+        ),
+    baca.pitches('B3 C4 D4'),
+    baca.one_line_staff(),
+    abjad.Clef('percussion'),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(1, 4)),
-    [
-        baca.staccati(),
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_markup(
-            'col legno battuto meccanico: strike each note twice'
-            ),
-        baca.pitches('C4 B3 D4'),
-        baca.one_line_staff(),
-        abjad.Clef('percussion'),
-        ],
+    baca.staccati(),
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_markup(
+        'col legno battuto meccanico: strike each note twice'
+        ),
+    baca.pitches('C4 B3 D4'),
+    baca.one_line_staff(),
+    abjad.Clef('percussion'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 4)),
-    [
-        baca.accents(),
-        baca.make_effort_dynamic('mf'),
-        baca.markup.make_boxed_markup(
-            'stonescratch: one short stroke for each attack'
-            ),
-        baca.pitches('C4'),
-        baca.one_line_staff(),
-        abjad.Clef('percussion'),
-        ],
+    baca.accents(),
+    baca.make_effort_dynamic('mf'),
+    baca.markup.make_boxed_markup(
+        'stonescratch: one short stroke for each attack'
+        ),
+    baca.pitches('C4'),
+    baca.one_line_staff(),
+    abjad.Clef('percussion'),
     )

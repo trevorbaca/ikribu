@@ -93,84 +93,66 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 4)),
-    [
-        baca.pitches('E3'),
-        abjad.Dynamic('ppp'),
-        ],
+    baca.pitches('E3'),
+    abjad.Dynamic('ppp'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(5, 8)),
-    [
-        baca.pitches('E+3'),
-        ],
+    baca.pitches('E+3'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(9, 12)),
-    [
-        baca.pitches('F3'),
-        ],
+    baca.pitches('F3'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(13, 16)),
-    [
-        baca.pitches('F+3'),
-        ],
+    baca.pitches('F+3'),
     )
 
 segment_maker.append_specifiers(
     ([vn, va], baca.select.stages(1, 16)),
-    [
-        baca.accents(
-            pattern=patterntools.select_every([0, 4], inverted=True, period=9),
-            ),
-        baca.stem_tremolo(
-            pattern=patterntools.select_every([0, 4], period=9),
-            ),
-        baca.make_hairpins(
-            ['f > p', 'p < f'],
-            enchain_hairpins=True,
-            include_following_rests=True,
-            span=[4, 3],
-            ),
-        baca.markup.make_boxed_markup('brushes on BD'),
-        baca.percussion_staff(),
-        baca.one_line_staff(),
-        ],
+    baca.accents(
+        pattern=patterntools.select_every([0, 4], inverted=True, period=9),
+        ),
+    baca.stem_tremolo(
+        pattern=patterntools.select_every([0, 4], period=9),
+        ),
+    baca.make_hairpins(
+        ['f > p', 'p < f'],
+        enchain_hairpins=True,
+        include_following_rests=True,
+        span=[4, 3],
+        ),
+    baca.markup.make_boxed_markup('brushes on BD'),
+    baca.percussion_staff(),
+    baca.one_line_staff(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 16)),
-    [
-        abjad.Clef('bass'),
-        ],
+    abjad.Clef('bass'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(9, 16)),
-    [
-        baca.stem_tremolo(),
-        baca.make_hairpins(
-            ['p < mp', 'mp > p'],
-            enchain_hairpins=True,
-            span=[2],
-            ),
-        baca.markup.trem_flaut_tast(),
-        ],
+    baca.stem_tremolo(),
+    baca.make_hairpins(
+        ['p < mp', 'mp > p'],
+        enchain_hairpins=True,
+        span=[2],
+        ),
+    baca.markup.trem_flaut_tast(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(9, 12)),
-    [
-        baca.pitches('F3'),
-        ],
+    baca.pitches('F3'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(13, 16)),
-    [
-        baca.pitches('F+3'),
-        ],
+    baca.pitches('F+3'),
     )

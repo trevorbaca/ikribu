@@ -84,249 +84,209 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(1, 2)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(3, 6)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(7)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(8)),
-    [
-        baca.pitches('Bb1'),
-        ],
+    baca.pitches('Bb1'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(9)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(10)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(11, 12)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(13)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(14)),
-    [
-        baca.pitches('Bb1'),
-        ],
+    baca.pitches('Bb1'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(15, 16)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(17)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(18)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select.stages(19, 20)),
-    [
-        baca.pitches('Bb1'),
-        baca.make_hairpin(
-            descriptor='p > niente',
-            start=-2,
-            include_following_rest=True,
-            ),
-        ],
+    baca.pitches('Bb1'),
+    baca.make_hairpin(
+        descriptor='p > niente',
+        start=-2,
+        include_following_rest=True,
+        ),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select.stages(9, 20)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        baca.stem_tremolo(),
-        baca.make_hairpin(
-            descriptor='ppppp > niente',
-            start=-2,
-            include_following_rest=True,
-            ),
-        baca.markup.make_string_numbers([2, 3]),
-        baca.make_transition(
-            baca.markup.make_markup('trem. flaut. XP'),
-            baca.markup.make_markup('trem. flaut. nut'),
-            ),
-        Dynamic('ppppp'),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
+    baca.stem_tremolo(),
+    baca.make_hairpin(
+        descriptor='ppppp > niente',
+        start=-2,
+        include_following_rest=True,
+        ),
+    baca.markup.make_string_numbers([2, 3]),
+    baca.make_transition(
+        baca.markup.make_markup('trem. flaut. XP'),
+        baca.markup.make_markup('trem. flaut. nut'),
+        ),
+    Dynamic('ppppp'),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select.stages(9, 20)),
-    [
-        baca.tools.ScorePitchSpecifier(
-            source=[abjad.PitchSegment(
-                items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
-                item_class=abjad.NamedPitch,
-                )],
-            ),
-        baca.stem_tremolo(),
-        baca.make_hairpin(
-            descriptor='ppppp > niente',
-            start=-2,
-            include_following_rest=True,
-            ),
-        baca.markup.make_string_numbers([2, 3]),
-        baca.make_transition(
-            baca.markup.make_markup('trem. flaut. XP'),
-            baca.markup.make_markup('trem. flaut. nut'),
-            ),
-        Dynamic('ppppp'),
-        ],
+    baca.tools.ScorePitchSpecifier(
+        source=[abjad.PitchSegment(
+            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
+            item_class=abjad.NamedPitch,
+            )],
+        ),
+    baca.stem_tremolo(),
+    baca.make_hairpin(
+        descriptor='ppppp > niente',
+        start=-2,
+        include_following_rest=True,
+        ),
+    baca.markup.make_string_numbers([2, 3]),
+    baca.make_transition(
+        baca.markup.make_markup('trem. flaut. XP'),
+        baca.markup.make_markup('trem. flaut. nut'),
+        ),
+    Dynamic('ppppp'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(1, 20)),
-    [
-        baca.make_hairpins(
-            ['mp > p', 'p < mp'],
-            enchain_hairpins=True,
-            include_following_rests=True,
-            span=[2],
-            ),
-        baca.pitches('Bb0'),
-        baca.ottava_bassa(),
-        abjad.Clef('bass'),
-        ],
+    baca.make_hairpins(
+        ['mp > p', 'p < mp'],
+        enchain_hairpins=True,
+        include_following_rests=True,
+        span=[2],
+        ),
+    baca.pitches('Bb0'),
+    baca.ottava_bassa(),
+    abjad.Clef('bass'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(5, 8)),
-    [
-        baca.make_transition(
-            baca.markup.make_markup('nut'),
-            baca.markup.make_markup('string midpoint'),
-            ),
-        ],
+    baca.make_transition(
+        baca.markup.make_markup('nut'),
+        baca.markup.make_markup('string midpoint'),
+        ),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(9, 12)),
-    [
-        baca.make_transition(
-            baca.markup.make_markup('string midpoint'),
-            baca.markup.XP(),
-            ),
-        ],
+    baca.make_transition(
+        baca.markup.make_markup('string midpoint'),
+        baca.markup.XP(),
+        ),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(13, 16)),
-    [
-        baca.make_transition(
-            baca.markup.XP(),
-            baca.markup.make_markup('string midpoint'),
-            ),
-        ],
+    baca.make_transition(
+        baca.markup.XP(),
+        baca.markup.make_markup('string midpoint'),
+        ),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select.stages(17, 20)),
-    [
-        baca.make_transition(
-            baca.markup.make_markup('string midpoint'),
-            baca.markup.make_markup('nut'),
-            ),
-        ],
+    baca.make_transition(
+        baca.markup.make_markup('string midpoint'),
+        baca.markup.make_markup('nut'),
+        ),
     )
