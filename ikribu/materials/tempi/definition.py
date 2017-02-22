@@ -2,7 +2,7 @@
 import abjad
 
 
-tempi = abjad.datastructuretools.TypedOrderedDict([
+tempi = abjad.TypedOrderedDict([
     (
         'incisions',
         abjad.Tempo(abjad.Duration(1, 4), 58),

@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-instruments = abjad.datastructuretools.TypedOrderedDict([
+instruments = abjad.TypedOrderedDict([
     (
         'bass clarinet', 
         abjad.instrumenttools.BassClarinet(
