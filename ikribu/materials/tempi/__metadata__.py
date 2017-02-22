@@ -2,4 +2,4 @@
 import abjad
 
 
-metadata = abjad.datastructuretools.TypedOrderedDict()
+metadata = abjad.TypedOrderedDict()
