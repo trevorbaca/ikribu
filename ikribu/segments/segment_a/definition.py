@@ -91,7 +91,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select_stages(2, 3)),
     baca.effort_dynamic('mf'),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/4 every quarter note'
         ]),

@@ -108,7 +108,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1, 9)),
     baca.stem_tremolo(),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.pitches('E4'),
     )
 
@@ -132,7 +132,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select_stages(13, 14)),
     baca.stem_tremolo(),
-    baca.markup.make_string_number(2),
+    baca.markup.string_number(2),
     baca.pitches('Eb4'),
     )
 

@@ -115,7 +115,7 @@ segment_maker.append_specifiers(
         enchain_hairpins=True,
         span=[2],
         ),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.tuplet_bracket_down(),
     baca.pitches(

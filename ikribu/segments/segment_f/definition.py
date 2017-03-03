@@ -108,7 +108,7 @@ segment_maker.append_specifiers(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
-    baca.markup.make_string_numbers([2, 3]),
+    baca.markup.string_numbers([2, 3]),
     )
 
 segment_maker.append_specifiers(
@@ -123,7 +123,7 @@ segment_maker.append_specifiers(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
-    baca.markup.make_string_numbers([1, 2]),
+    baca.markup.string_numbers([1, 2]),
     )
 
 segment_maker.append_specifiers(
@@ -140,7 +140,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select_stages(6, 7)),
     baca.repeat_tie_up(),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note',
         ]),

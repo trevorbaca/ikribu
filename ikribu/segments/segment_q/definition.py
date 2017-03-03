@@ -80,7 +80,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1, 4)),
     baca.effort_dynamic('mf'),
-    baca.markup.make_boxed_markup('graincircle: π/3 every quarter note'),
+    baca.markup.boxed('graincircle: π/3 every quarter note'),
     baca.pitches('Bb2'),
     baca.one_line_staff(),
     abjad.Clef('percussion'),
@@ -114,7 +114,7 @@ segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 4)),
     baca.accents(),
     baca.effort_dynamic('mf'),
-    baca.markup.make_boxed_markup(
+    baca.markup.boxed(
         'stonescratch: one short stroke for each attack'
         ),
     baca.pitches('C4'),

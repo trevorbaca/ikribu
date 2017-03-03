@@ -216,7 +216,7 @@ segment_maker.append_specifiers(
         start=-2,
         include_following_rest=True,
         ),
-    baca.markup.make_string_numbers([2, 3]),
+    baca.markup.string_numbers([2, 3]),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
@@ -238,7 +238,7 @@ segment_maker.append_specifiers(
         start=-2,
         include_following_rest=True,
         ),
-    baca.markup.make_string_numbers([2, 3]),
+    baca.markup.string_numbers([2, 3]),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),

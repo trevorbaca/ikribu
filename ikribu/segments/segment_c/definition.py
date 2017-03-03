@@ -113,7 +113,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(2, 3)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/2 every quarter note'
         ]),
@@ -153,7 +153,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('F~5'),

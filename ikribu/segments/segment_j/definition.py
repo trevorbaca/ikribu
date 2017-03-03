@@ -100,7 +100,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/4 every quarter note'
         ]),
@@ -108,7 +108,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(2)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/3 every quarter note'
         ]),
@@ -121,7 +121,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1, 2)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/2 every quarter note'
         ]),
@@ -129,7 +129,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(3)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π every quarter note'
         ]),
@@ -137,7 +137,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(1)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/3 every quarter note'
         ]),
@@ -145,7 +145,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(2)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/4 every quarter note'
         ]),
@@ -153,7 +153,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(3)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/2 every quarter note'
         ]),
@@ -176,7 +176,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select_stages(6)),
     baca.effort_dynamic('f'),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'stonecircle:',
         'π/2 every quarter note'
         ]),
