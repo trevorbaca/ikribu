@@ -55,17 +55,17 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1, 2)),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1, 3)),
-    baca.make_repeated_duration_rhythm_specifier((1, 4)),
+    baca.repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(1, 3)),
-    baca.make_repeated_duration_rhythm_specifier((1, 4)),
+    baca.repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
@@ -79,7 +79,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1, 4)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_boxed_markup('graincircle: π/3 every quarter note'),
     baca.pitches('Bb2'),
     baca.one_line_staff(),
@@ -89,7 +89,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1, 4)),
     baca.double_tonguing(),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_markup(
         'col legno battuto meccanico: strike each note twice'
         ),
@@ -101,7 +101,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select_stages(1, 4)),
     baca.staccati(),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_markup(
         'col legno battuto meccanico: strike each note twice'
         ),
@@ -113,7 +113,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 4)),
     baca.accents(),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_boxed_markup(
         'stonescratch: one short stroke for each attack'
         ),

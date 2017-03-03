@@ -60,22 +60,22 @@ segment_maker.append_specifiers(
         baca.select_stages(10), baca.select_stages(11, 12), baca.select_stages(13), baca.select_stages(14), baca.select_stages(15),
         baca.select_stages(16), baca.select_stages(17), baca.select_stages(18), baca.select_stages(19, 20)]
         ),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(9, 20)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(9, 20)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, [baca.select_stages(5, 8), baca.select_stages(9, 12), baca.select_stages(13, 16), baca.select_stages(17, 20)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -217,7 +217,7 @@ segment_maker.append_specifiers(
         include_following_rest=True,
         ),
     baca.markup.make_string_numbers([2, 3]),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
@@ -239,7 +239,7 @@ segment_maker.append_specifiers(
         include_following_rest=True,
         ),
     baca.markup.make_string_numbers([2, 3]),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
@@ -248,7 +248,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 20)),
-    baca.make_hairpins(
+    baca.hairpins(
         ['mp > p', 'p < mp'],
         enchain_hairpins=True,
         include_following_rests=True,
@@ -261,7 +261,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(5, 8)),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('nut'),
         baca.markup.make_markup('string midpoint'),
         ),
@@ -269,7 +269,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(9, 12)),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('string midpoint'),
         baca.markup.XP(),
         ),
@@ -277,7 +277,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(13, 16)),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.XP(),
         baca.markup.make_markup('string midpoint'),
         ),
@@ -285,7 +285,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(17, 20)),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('string midpoint'),
         baca.markup.make_markup('nut'),
         ),

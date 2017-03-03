@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9), baca.select_stages(13)]),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
@@ -69,7 +69,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9), baca.select_stages(13)]),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -85,22 +85,22 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1)),
-    baca.make_effort_dynamic('f'),
+    baca.effort_dynamic('f'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(5)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(9)),
-    baca.make_effort_dynamic('mp'),
+    baca.effort_dynamic('mp'),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(13)),
-    baca.make_effort_dynamic('p'),
+    baca.effort_dynamic('p'),
     )
 
 segment_maker.append_specifiers(
@@ -111,7 +111,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1, 16)),
     baca.staccati(),
-    baca.make_effort_dynamic('mp'),
+    baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     ikribu.tools.make_clb_pitch_specifier(),
     )
@@ -119,7 +119,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select_stages(1, 16)),
     baca.staccati(),
-    baca.make_effort_dynamic('mp'),
+    baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     ikribu.tools.make_clb_pitch_specifier(),
     )
@@ -135,20 +135,20 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.make_effort_dynamic('p'),
+    baca.effort_dynamic('p'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(5)),
-    baca.make_effort_dynamic('mp'),
+    baca.effort_dynamic('mp'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(9)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(13)),
-    baca.make_effort_dynamic('f'),
+    baca.effort_dynamic('f'),
     )

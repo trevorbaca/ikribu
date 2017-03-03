@@ -59,12 +59,12 @@ segment_maker.append_specifiers(
     (bcl, 
         [baca.select_stages(1), baca.select_stages(3), baca.select_stages(5), baca.select_stages(7), baca.select_stages(9), baca.select_stages(11)],
         ),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 11)),
-    baca.make_messiaen_note_rhythm_specifier(),
+    baca.messiaen_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -110,7 +110,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 12)),
     baca.stem_tremolo(),
-    baca.make_hairpins(
+    baca.hairpins(
         ['ppp < pp', 'pp > ppp'],
         enchain_hairpins=True,
         span=[2],

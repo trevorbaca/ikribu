@@ -59,7 +59,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1, 7)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -84,7 +84,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [baca.select_stages(1), baca.select_stages(2), baca.select_stages(3), baca.select_stages(4), baca.select_stages(5), baca.select_stages(6)]),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -103,14 +103,14 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ([vn, va], baca.select_stages(1, 8)),
-    baca.make_effort_dynamic('mp'),
+    baca.effort_dynamic('mp'),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(6, 8)),
-    baca.make_hairpins(
+    baca.hairpins(
         [
             'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
             'mf < f', 'f > mf', 'mf < ff', 'ff > f',
@@ -124,7 +124,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(4, 8)),
-    baca.make_hairpins(
+    baca.hairpins(
         [
             'p > pp', 'pp < p', 'p > pp', 'pp < mp',
             'mp > p', 'p < mp', 'mp > p', 'p < mf',
@@ -147,7 +147,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 6)),
-    baca.make_hairpins(
+    baca.hairpins(
         ['p < f', 'f > p'],
         enchain_hairpins=True,
         include_following_rests=True,

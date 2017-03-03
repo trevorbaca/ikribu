@@ -65,17 +65,17 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(3), baca.select_stages(7), baca.select_stages(11), baca.select_stages(13)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vn, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(13, 14)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -123,7 +123,7 @@ segment_maker.append_specifiers(
         include_following_rest=True,
         start=-1,
         ),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
@@ -147,7 +147,7 @@ segment_maker.append_specifiers(
         include_following_rest=True,
         start=-1,
         ),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),

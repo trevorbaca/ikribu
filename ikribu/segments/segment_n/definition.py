@@ -52,7 +52,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(1), baca.select_stages(2)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -100,7 +100,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1)),
-    baca.markup.make_markup_lines([
+    baca.markup.lines([
         'introduce upper partials gradually;',
         'breathe as necessary before downbeats',
         ]),
@@ -120,7 +120,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ([vn_rh, va_rh, vc_rh], baca.select_stages(1, 2)),
-    baca.make_hairpins(
+    baca.hairpins(
         ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
         enchain_hairpins=True,
         span=[3, 4],
