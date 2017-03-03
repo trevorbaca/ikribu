@@ -33,7 +33,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_baca.select.stages=True,
+    #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -51,22 +51,22 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [baca.select.stages(1, 4), baca.select.stages(6, 8)]),
+    (bcl, [baca.select_stages(1, 4), baca.select_stages(6, 8)]),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], baca.select.stages(6, 7)),
+    ([vn, va], baca.select_stages(6, 7)),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 4)),
+    (vc, baca.select_stages(1, 4)),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(6, 7)),
+    (vc, baca.select_stages(6, 7)),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
@@ -75,18 +75,18 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(1, 4)),
+    (bcl, baca.select_stages(1, 4)),
     baca.pitches('F#3'),
     )
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(6, 8)),
+    (bcl, baca.select_stages(6, 8)),
     baca.make_hairpin(descriptor='sfp > ppp'),
     baca.pitches('G2'),
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], baca.select.stages(6, 7)),
+    ([vn, va], baca.select_stages(6, 7)),
     baca.stem_tremolo(),
     baca.make_hairpin('sfpp < p', stop=2),
     baca.make_hairpin(
@@ -97,7 +97,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(6, 7)),
+    (vn, baca.select_stages(6, 7)),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[NamedPitch('E4'), NamedPitch('F#4')], 
@@ -112,7 +112,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(6, 7)),
+    (va, baca.select_stages(6, 7)),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[NamedPitch('Eb4'), NamedPitch('F4')], 
@@ -127,7 +127,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 4)),
+    (vc, baca.select_stages(1, 4)),
     baca.stem_tremolo(),
     baca.make_hairpin(descriptor='p < ff'),
     baca.make_transition(
@@ -138,7 +138,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(6, 7)),
+    (vc, baca.select_stages(6, 7)),
     baca.repeat_tie_up(),
     baca.markup.make_boxed_markup_lines([
         'graincircle:',

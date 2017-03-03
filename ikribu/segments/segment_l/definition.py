@@ -40,7 +40,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_baca.select.stages=True,
+    #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -58,32 +58,32 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(1, 7)),
+    (bcl, baca.select_stages(1, 7)),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1, 4)),
+    (vn, baca.select_stages(1, 4)),
     ikribu.tools.make_clb_rhythm_specifier([4]),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(6, 8)),
+    (vn, baca.select_stages(6, 8)),
     ikribu.tools.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(1, 2)),
+    (va, baca.select_stages(1, 2)),
     ikribu.tools.make_clb_rhythm_specifier([2]),
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(4, 8)),
+    (va, baca.select_stages(4, 8)),
     ikribu.tools.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, [baca.select.stages(1), baca.select.stages(2), baca.select.stages(3), baca.select.stages(4), baca.select.stages(5), baca.select.stages(6)]),
+    (vc, [baca.select_stages(1), baca.select_stages(2), baca.select_stages(3), baca.select_stages(4), baca.select_stages(5), baca.select_stages(6)]),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
@@ -92,7 +92,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(1, 7)),
+    (bcl, baca.select_stages(1, 7)),
     baca.markup.make_markup(
         'breathe discreetly before any downbeat as needed'
         ' (but do not circular breathe)'
@@ -102,14 +102,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], baca.select.stages(1, 8)),
+    ([vn, va], baca.select_stages(1, 8)),
     baca.make_effort_dynamic('mp'),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(6, 8)),
+    (vn, baca.select_stages(6, 8)),
     baca.make_hairpins(
         [
             'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
@@ -123,7 +123,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(4, 8)),
+    (va, baca.select_stages(4, 8)),
     baca.make_hairpins(
         [
             'p > pp', 'pp < p', 'p > pp', 'pp < mp',
@@ -139,14 +139,14 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 8)),
+    (vc, baca.select_stages(1, 8)),
     baca.pitches('C4'),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 6)),
+    (vc, baca.select_stages(1, 6)),
     baca.make_hairpins(
         ['p < f', 'f > p'],
         enchain_hairpins=True,
@@ -163,7 +163,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(2)),
+    (vc, baca.select_stages(2)),
     baca.markup.make_boxed_markup_lines([
         'graincircle:',
         'π/3 every quarter note'
@@ -171,7 +171,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(3)),
+    (vc, baca.select_stages(3)),
     baca.markup.make_boxed_markup_lines([
         'graincircle:',
         'π/4 every quarter note'
@@ -179,7 +179,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(4)),
+    (vc, baca.select_stages(4)),
     baca.markup.make_boxed_markup_lines([
         'graincircle:',
         'π/3 every quarter note'
@@ -187,7 +187,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(5)),
+    (vc, baca.select_stages(5)),
     baca.markup.make_boxed_markup_lines([
         'graincircle:',
         'π/2 every quarter note'
@@ -195,7 +195,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(6)),
+    (vc, baca.select_stages(6)),
     baca.markup.make_boxed_markup_lines([
         'graincircle:',
         'π/3 every quarter note'
@@ -203,19 +203,19 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1, 4)),
+    (vn, baca.select_stages(1, 4)),
     baca.staccati(),
     ikribu.tools.make_clb_pitch_specifier(rotation=-1),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(4)),
+    (vn, baca.select_stages(4)),
     abjad.Hairpin('> niente'),
     baca.percussion_staff(),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(5, 8)),
+    (vn, baca.select_stages(5, 8)),
     baca.accents(
         pattern=patterntools.select_every([0, 4], inverted=True, period=9),
         ),
@@ -225,19 +225,19 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(1, 2)),
+    (va, baca.select_stages(1, 2)),
     baca.staccati(),
     ikribu.tools.make_clb_pitch_specifier(rotation=-1),
     )
     
 segment_maker.append_specifiers(
-    (va, baca.select.stages(2)),
+    (va, baca.select_stages(2)),
     baca.percussion_staff(),
     abjad.Hairpin('> niente'),
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(4, 8)),
+    (va, baca.select_stages(4, 8)),
     baca.accents(
         pattern=patterntools.select_every(
             [0, 5],
