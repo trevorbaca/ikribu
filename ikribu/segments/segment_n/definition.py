@@ -33,7 +33,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_baca.select.stages=True,
+    #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -51,12 +51,12 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [baca.select.stages(1), baca.select.stages(2)]),
+    (bcl, [baca.select_stages(1), baca.select_stages(2)]),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vn_rh, baca.select.stages(1, 2)),
+    (vn_rh, baca.select_stages(1, 2)),
     ikribu.tools.make_bow_rhythm_specifier(
         logical_tie_masks=silence_every([0, 8], period=12),
         rotation=0,
@@ -64,12 +64,12 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1, 2)),
+    (vn, baca.select_stages(1, 2)),
     ikribu.tools.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
     )
 
 segment_maker.append_specifiers(
-    (va_rh, baca.select.stages(1, 2)),
+    (va_rh, baca.select_stages(1, 2)),
     ikribu.tools.make_bow_rhythm_specifier(
         logical_tie_masks=silence_every([4, 14], period=16),
         rotation=-1,
@@ -77,12 +77,12 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(1, 2)),
+    (va, baca.select_stages(1, 2)),
     ikribu.tools.make_glissando_rhythm_specifier(rotation_1=-4, rotation_2=-1),
     )
 
 segment_maker.append_specifiers(
-    (vc_rh, baca.select.stages(1, 2)),
+    (vc_rh, baca.select_stages(1, 2)),
     ikribu.tools.make_bow_rhythm_specifier(
         logical_tie_masks=silence_every([8, 20], period=20),
         rotation=-2,
@@ -90,7 +90,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 2)),
+    (vc, baca.select_stages(1, 2)),
     ikribu.tools.make_glissando_rhythm_specifier(rotation_1=-8, rotation_2=-2),
     )
 
@@ -99,7 +99,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(1)),
+    (bcl, baca.select_stages(1)),
     baca.markup.make_markup_lines([
         'introduce upper partials gradually;',
         'breathe as necessary before downbeats',
@@ -109,7 +109,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(2)),
+    (bcl, baca.select_stages(2)),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
@@ -119,7 +119,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([vn_rh, va_rh, vc_rh], baca.select.stages(1, 2)),
+    ([vn_rh, va_rh, vc_rh], baca.select_stages(1, 2)),
     baca.make_hairpins(
         ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
         enchain_hairpins=True,
@@ -132,35 +132,35 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn_rh, baca.select.stages(1, 2)),
+    (vn_rh, baca.select_stages(1, 2)),
     ikribu.tools.BowContactPointSpecifier(rotation=0),
     )
 
 segment_maker.append_specifiers(
-    (va_rh, baca.select.stages(1, 2)),
+    (va_rh, baca.select_stages(1, 2)),
     ikribu.tools.BowContactPointSpecifier(rotation=-1),
     )
 
 segment_maker.append_specifiers(
-    (vc_rh, baca.select.stages(1, 2)),
+    (vc_rh, baca.select_stages(1, 2)),
     ikribu.tools.BowContactPointSpecifier(rotation=-2),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1, 2)),
+    (vn, baca.select_stages(1, 2)),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=0),
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(1, 2)),
+    (va, baca.select_stages(1, 2)),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
     abjad.Clef('treble'),
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 2)),
+    (vc, baca.select_stages(1, 2)),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
     abjad.Clef('tenor'),

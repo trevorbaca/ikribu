@@ -33,7 +33,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_baca.select.stages=True,
+    #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -50,12 +50,12 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1)),
+    (vn, baca.select_stages(1)),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1)),
+    (vc, baca.select_stages(1)),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -64,7 +64,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1)),
+    (vn, baca.select_stages(1)),
     baca.make_effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
     baca.pitches('C4'),
@@ -73,7 +73,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1)),
+    (vc, baca.select_stages(1)),
     baca.markup.make_string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),

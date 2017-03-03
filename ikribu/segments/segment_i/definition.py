@@ -34,7 +34,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_baca.select.stages=True,
+    #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -52,7 +52,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vc, [baca.select.stages(1), baca.select.stages(3), baca.select.stages(5), baca.select.stages(7)]),
+    (vc, [baca.select_stages(1), baca.select_stages(3), baca.select_stages(5), baca.select_stages(7)]),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
@@ -61,7 +61,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(1, 8)),
+    (vc, baca.select_stages(1, 8)),
     [
         baca.make_effort_dynamic('mf'),
         baca.markup.make_boxed_markup_lines([

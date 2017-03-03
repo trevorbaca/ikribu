@@ -39,7 +39,7 @@ spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
 
 segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
-    #label_baca.select.stages=True,
+    #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
     spacing_specifier=spacing_specifier,
@@ -57,27 +57,27 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_specifiers(
-    (bcl, [baca.select.stages(1), baca.select.stages(2, 3)]),
+    (bcl, [baca.select_stages(1), baca.select_stages(2, 3)]),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (vn, [baca.select.stages(1, 2), baca.select.stages(3)]),
+    (vn, [baca.select_stages(1, 2), baca.select_stages(3)]),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (va, [baca.select.stages(1), baca.select.stages(2), baca.select.stages(3)]),
+    (va, [baca.select_stages(1), baca.select_stages(2), baca.select_stages(3)]),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], baca.select.stages(6)),
+    ([bcl, vn, va], baca.select_stages(6)),
     baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(2, 4)),
+    (vc, baca.select_stages(2, 4)),
     baca.make_messiaen_tied_note_rhythm_specifier(),
     )
 
@@ -86,7 +86,7 @@ segment_maker.append_specifiers(
 ###############################################################################
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], baca.select.stages(1, 7)),
+    ([bcl, vn, va], baca.select_stages(1, 7)),
     baca.make_effort_dynamic('mf'),
     baca.repeat_tie_up(),
     baca.one_line_staff(),
@@ -94,12 +94,12 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(1, 7)),
+    (bcl, baca.select_stages(1, 7)),
     baca.pitches('Bb2'),
     )
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(1)),
+    (bcl, baca.select_stages(1)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/4 every quarter note'
@@ -107,7 +107,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (bcl, baca.select.stages(2)),
+    (bcl, baca.select_stages(2)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/3 every quarter note'
@@ -115,12 +115,12 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([vn, va], baca.select.stages(1, 7)),
+    ([vn, va], baca.select_stages(1, 7)),
     baca.pitches('C4'),
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(1, 2)),
+    (vn, baca.select_stages(1, 2)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/2 every quarter note'
@@ -128,7 +128,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vn, baca.select.stages(3)),
+    (vn, baca.select_stages(3)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π every quarter note'
@@ -136,7 +136,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(1)),
+    (va, baca.select_stages(1)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/3 every quarter note'
@@ -144,7 +144,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(2)),
+    (va, baca.select_stages(2)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/4 every quarter note'
@@ -152,7 +152,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (va, baca.select.stages(3)),
+    (va, baca.select_stages(3)),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/2 every quarter note'
@@ -160,7 +160,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    (vc, baca.select.stages(2, 4)),
+    (vc, baca.select_stages(2, 4)),
     baca.make_hairpin(
         'p < mf',
         start=-1,
@@ -174,7 +174,7 @@ segment_maker.append_specifiers(
     )
 
 segment_maker.append_specifiers(
-    ([bcl, vn, va], baca.select.stages(6)),
+    ([bcl, vn, va], baca.select_stages(6)),
     baca.make_effort_dynamic('f'),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
