@@ -74,7 +74,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('F~5'),

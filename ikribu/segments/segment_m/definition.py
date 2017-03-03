@@ -275,7 +275,7 @@ segment_maker.append_specifiers(
     (vn, 
         [baca.select_stages(2, 3), baca.select_stages(6), baca.select_stages(9, 10), baca.select_stages(13, 14), baca.select_stages(17),
         baca.select_stages(20, 21)]),
-    baca.markup.make_boxed_markup('brushes on BD'),
+    baca.markup.boxed('brushes on BD'),
     )
 
 segment_maker.append_specifiers(
@@ -355,7 +355,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
@@ -366,7 +366,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(5)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('G5'),
@@ -377,7 +377,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(8)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
@@ -388,7 +388,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(12)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('G5'),
@@ -399,7 +399,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(16)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('A5'),
@@ -410,7 +410,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(19)),
-    baca.markup.make_string_number(3),
+    baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
     baca.pitches('C+6'),

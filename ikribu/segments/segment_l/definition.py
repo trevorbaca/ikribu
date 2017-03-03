@@ -164,7 +164,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(2)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/3 every quarter note'
         ]),
@@ -172,7 +172,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(3)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/4 every quarter note'
         ]),
@@ -180,7 +180,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(4)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/3 every quarter note'
         ]),
@@ -188,7 +188,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(5)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note'
         ]),
@@ -196,7 +196,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(6)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/3 every quarter note'
         ]),

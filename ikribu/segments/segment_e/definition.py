@@ -126,7 +126,7 @@ segment_maker.append_specifiers(
         include_following_rests=True,
         span=[4, 3],
         ),
-    baca.markup.make_boxed_markup('brushes on BD'),
+    baca.markup.boxed('brushes on BD'),
     baca.percussion_staff(),
     baca.one_line_staff(),
     )

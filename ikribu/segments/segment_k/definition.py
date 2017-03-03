@@ -126,7 +126,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 16)),
-    baca.markup.make_boxed_markup_lines([
+    baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note'
         ]),

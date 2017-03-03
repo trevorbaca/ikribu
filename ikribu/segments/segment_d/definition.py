@@ -75,7 +75,7 @@ segment_maker.append_specifiers(
         enchain_hairpins=True,
         span=[3, 4],
         ),
-    baca.markup.make_boxed_markup('1/2 clt'),
+    baca.markup.boxed('1/2 clt'),
     baca.repeat_tie_up(),
     baca.pitches('C4'),
     ikribu.tools.BowContactPointSpecifier(rotation=-2),
