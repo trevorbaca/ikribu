@@ -8,12 +8,12 @@ instruments = abjad.TypedOrderedDict([
         'bass clarinet', 
         abjad.instrumenttools.BassClarinet(
             instrument_name='bass clarinet',
-            instrument_name_markup=baca.markup.make_instrument_name_markup(
+            instrument_name_markup=baca.markup.instrument_name(
                 'Bass clarinet',
                 ),
             short_instrument_name='b. cl.',
             short_instrument_name_markup=\
-                baca.markup.make_short_instrument_name_markup(
+                baca.markup.short_instrument_name(
                 'B. cl.',
                 column=False,
                 ),
@@ -22,28 +22,28 @@ instruments = abjad.TypedOrderedDict([
     (
         'violin', 
         abjad.instrumenttools.Violin(
-            instrument_name_markup=baca.markup.make_instrument_name_markup(
+            instrument_name_markup=baca.markup.instrument_name(
                 'Violin'),
             short_instrument_name_markup=\
-                baca.markup.make_short_instrument_name_markup('Vn.'),
+                baca.markup.short_instrument_name('Vn.'),
             ),
         ),
     (
         'viola', 
         abjad.instrumenttools.Viola(
-            instrument_name_markup=baca.markup.make_instrument_name_markup(
+            instrument_name_markup=baca.markup.instrument_name(
                 'Viola'),
             short_instrument_name_markup=\
-                baca.markup.make_short_instrument_name_markup('Va.'),
+                baca.markup.short_instrument_name('Va.'),
             ),
         ),
     (
         'cello', 
         abjad.instrumenttools.Cello(
-            instrument_name_markup=baca.markup.make_instrument_name_markup(
+            instrument_name_markup=baca.markup.instrument_name(
                 'Cello'),
             short_instrument_name_markup=\
-                baca.markup.make_short_instrument_name_markup('Vc.'),
+                baca.markup.short_instrument_name('Vc.'),
             ),
         ),
     ])

@@ -69,7 +69,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(1, 4), baca.select_stages(5, 8), baca.select_stages(9, 12), baca.select_stages(13, 16)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -84,7 +84,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [baca.select_stages(9, 12), baca.select_stages(13, 16)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -120,7 +120,7 @@ segment_maker.append_specifiers(
     baca.stem_tremolo(
         pattern=patterntools.select_every([0, 4], period=9),
         ),
-    baca.make_hairpins(
+    baca.hairpins(
         ['f > p', 'p < f'],
         enchain_hairpins=True,
         include_following_rests=True,
@@ -139,7 +139,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select_stages(9, 16)),
     baca.stem_tremolo(),
-    baca.make_hairpins(
+    baca.hairpins(
         ['p < mp', 'mp > p'],
         enchain_hairpins=True,
         span=[2],

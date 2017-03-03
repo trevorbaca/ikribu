@@ -51,12 +51,12 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -65,7 +65,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
     baca.pitches('C4'),
     baca.one_line_staff(),

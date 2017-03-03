@@ -72,12 +72,12 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(2, 3), baca.select_stages(6, 7), baca.select_stages(10, 11), baca.select_stages(14, 15)]),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -85,17 +85,17 @@ segment_maker.append_specifiers(
         [vn, va],
         [baca.select_stages(3, 4), baca.select_stages(7, 8), baca.select_stages(11, 12), baca.select_stages(15, 16)],
         ),
-    baca.make_messiaen_note_rhythm_specifier(),
+    baca.messiaen_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(2, 16)),
-    baca.make_messiaen_note_rhythm_specifier(),
+    baca.messiaen_note_rhythm_specifier(),
     )
 
 ###############################################################################
@@ -104,7 +104,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(2, 17)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.repeat_tie_up(),
     baca.pitches('Bb2'),
     baca.one_line_staff(),
@@ -122,7 +122,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vn, baca.select_stages(1)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (II)'),
     baca.pitches('C4'),
     baca.one_line_staff(),
@@ -132,7 +132,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vn, baca.select_stages(2, 16)),
     baca.stem_tremolo(),
-    baca.make_hairpins(
+    baca.hairpins(
         ['pp < p', 'p > pp'],
         ),
     baca.markup.trem_flaut_tast(),
@@ -143,7 +143,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (va, baca.select_stages(2, 16)),
     baca.stem_tremolo(),
-    baca.make_hairpins(
+    baca.hairpins(
         ['pp < p', 'p > pp'],
         ),
     baca.markup.trem_flaut_tast(),
@@ -165,7 +165,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (vc, baca.select_stages(2, 16)),
     baca.stem_tremolo(),
-    baca.make_hairpins(
+    baca.hairpins(
         ['ppp < pp', 'pp > ppp'],
         enchain_hairpins=True,
         span=[2],
@@ -176,7 +176,7 @@ segment_maker.append_specifiers(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         ),
     baca.glissandi(),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. tasto. (arco)'),
         baca.markup.make_markup('trem. flaut. XP'),
         ),

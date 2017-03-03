@@ -70,7 +70,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc_rh, baca.select_stages(1, 2)),
-    baca.make_hairpins(
+    baca.hairpins(
         ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
         enchain_hairpins=True,
         span=[3, 4],

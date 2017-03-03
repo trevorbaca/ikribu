@@ -54,12 +54,12 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1, 2)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(2, 3)),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -90,7 +90,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(2, 3)),
-    baca.make_effort_dynamic('mf'),
+    baca.effort_dynamic('mf'),
     baca.markup.make_boxed_markup_lines([
         'stonecircle:',
         'π/4 every quarter note'

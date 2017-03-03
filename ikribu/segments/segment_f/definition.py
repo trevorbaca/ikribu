@@ -52,22 +52,22 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(1, 4), baca.select_stages(6, 8)]),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     ([vn, va], baca.select_stages(6, 7)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 4)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(6, 7)),
-    baca.make_tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
     )
 
 ###############################################################################
@@ -104,7 +104,7 @@ segment_maker.append_specifiers(
             item_class=NamedPitch,
             )],
         ),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
@@ -119,7 +119,7 @@ segment_maker.append_specifiers(
             item_class=NamedPitch,
             )],
         ),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
@@ -130,7 +130,7 @@ segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 4)),
     baca.stem_tremolo(),
     baca.make_hairpin(descriptor='p < ff'),
-    baca.make_transition(
+    baca.transition_spanner(
         baca.markup.make_markup('(trem. flaut. tast.)'),
         baca.markup.make_markup('trem. XP (non. flaut.)'),
         ),

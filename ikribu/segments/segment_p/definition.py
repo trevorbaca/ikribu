@@ -58,20 +58,20 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(1, 2)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(3, 4)),
     new(
-        baca.make_repeated_duration_rhythm_specifier((1, 4)),
+        baca.repeated_duration_rhythm_specifier((1, 4)),
         tie_last=True,
         ),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(5)),
-    baca.make_messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_note_rhythm_specifier(),
     )
 
 segment_maker.append_specifiers(
@@ -147,7 +147,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     ([vn_rh, va_rh, vc_rh], baca.select_stages(1, 3)),
-    baca.make_hairpins(
+    baca.hairpins(
         ['p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 'pp > ppp', 'ppp < p'],
         enchain_hairpins=True,
         span=[3, 4],
