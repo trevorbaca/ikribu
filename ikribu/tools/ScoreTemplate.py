@@ -94,15 +94,15 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
 
         Returns score.
         '''
-        time_signature_context_multimeasure_rests = abjad.scoretools.Context(
+        time_signature_context_multimeasure_rests = abjad.Context(
             context_name='TimeSignatureContextMultimeasureRests',
             name='Time Signature Context Multimeasure Rests',
             )
-        time_signature_context_skips = abjad.scoretools.Context(
+        time_signature_context_skips = abjad.Context(
             context_name='TimeSignatureContextSkips',
             name='Time Signature Context Skips',
             )
-        time_signature_context = abjad.scoretools.Context(
+        time_signature_context = abjad.Context(
             [
                 time_signature_context_multimeasure_rests,
                 time_signature_context_skips,
@@ -238,7 +238,7 @@ class ScoreTemplate(abjad.abctools.AbjadValueObject):
             context_name='EnsembleStaffGroup',
             name='Ensemble Staff Group',
             )
-        music_context = abjad.scoretools.Context(
+        music_context = abjad.Context(
             [
                 ensemble_staff_group,
             ],
