@@ -105,7 +105,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(2, 17)),
     baca.effort_dynamic('mf'),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     baca.pitches('Bb2'),
     baca.one_line_staff(),
     abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
@@ -117,7 +117,7 @@ segment_maker.append_specifiers(
         'stonecircle:',
         'π/2 every quarter note'
         ]),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     )
 
 segment_maker.append_specifiers(
@@ -171,7 +171,7 @@ segment_maker.append_specifiers(
         span=[2],
         ),
     baca.natural_harmonics(),
-    baca.tuplet_bracket_down(),
+    baca.tuplet_brackets_down(),
     baca.fixed_pitches(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         ),

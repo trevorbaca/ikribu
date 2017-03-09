@@ -139,7 +139,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(6, 7)),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note',

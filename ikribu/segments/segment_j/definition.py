@@ -88,7 +88,7 @@ segment_maker.append_specifiers(
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select_stages(1, 7)),
     baca.effort_dynamic('mf'),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
