@@ -95,7 +95,7 @@ segment_maker.append_specifiers(
         'stonecircle:',
         'π/4 every quarter note'
         ]),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     baca.pitches('C4'),
     baca.one_line_staff(),
     baca.percussion_staff(),

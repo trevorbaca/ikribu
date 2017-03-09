@@ -126,7 +126,7 @@ segment_maker.append_specifiers(
         span=[3, 4],
         ),
     baca.markup.boxed('1/2 clt'),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     baca.pitches('C4'),
     abjad.Clef('percussion'),
     )

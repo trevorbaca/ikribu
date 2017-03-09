@@ -78,7 +78,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (tutti, baca.select_stages(1, 16)),
-    baca.repeat_tie_up(),
+    baca.repeat_ties_up(),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
