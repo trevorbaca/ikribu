@@ -69,32 +69,32 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(2, 3)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(6)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(9, 10)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(13, 14)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(17)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (bcl, baca.select_stages(20, 22)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 # violin #
@@ -103,7 +103,7 @@ segment_maker.append_specifiers(
     (vn, 
         [baca.select_stages(1), baca.select_stages(5), baca.select_stages(8), baca.select_stages(12), baca.select_stages(16), baca.select_stages(19)]
         ),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
@@ -172,62 +172,62 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(2, 3)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(5)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(6)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(8)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(9, 10)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(12)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(13, 14)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(16)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(17)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(19)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(20, 21)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 ###############################################################################

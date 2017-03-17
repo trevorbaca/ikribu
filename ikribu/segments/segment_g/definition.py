@@ -59,12 +59,12 @@ segment_maker.append_specifiers(
     (bcl, 
         [baca.select_stages(1), baca.select_stages(3), baca.select_stages(5), baca.select_stages(7), baca.select_stages(9), baca.select_stages(11)],
         ),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(1, 11)),
-    baca.messiaen_note_rhythm_specifier(),
+    baca.messiaen_notes(),
     )
 
 ###############################################################################
