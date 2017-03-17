@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9), baca.select_stages(13)]),
-    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_specifiers(
@@ -69,7 +69,7 @@ segment_maker.append_specifiers(
 
 segment_maker.append_specifiers(
     (vc, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9), baca.select_stages(13)]),
-    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_durations((1, 4)),
     )
 
 ###############################################################################

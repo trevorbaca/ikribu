@@ -65,17 +65,17 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(3), baca.select_stages(7), baca.select_stages(11), baca.select_stages(13)]),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (vn, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9)]),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_specifiers(
     (va, baca.select_stages(13, 14)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 ###############################################################################

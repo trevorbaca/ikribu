@@ -58,27 +58,27 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_specifiers(
     (bcl, [baca.select_stages(1), baca.select_stages(2, 3)]),
-    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vn, [baca.select_stages(1, 2), baca.select_stages(3)]),
-    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (va, [baca.select_stages(1), baca.select_stages(2), baca.select_stages(3)]),
-    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_specifiers(
     ([bcl, vn, va], baca.select_stages(6)),
-    baca.tied_repeated_duration_rhythm_specifier((1, 4)),
+    baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_specifiers(
     (vc, baca.select_stages(2, 4)),
-    baca.messiaen_tied_note_rhythm_specifier(),
+    baca.messiaen_tied_notes(),
     )
 
 ###############################################################################
