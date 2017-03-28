@@ -63,18 +63,29 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, [baca.select_stages(3), baca.select_stages(7), baca.select_stages(11), baca.select_stages(13)]),
+segment_maker.append_commands(
+    bcl,
+    [baca.select_stages(3),
+        baca.select_stages(7),
+        baca.select_stages(11),
+        baca.select_stages(13)
+        ],
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (vn, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9)]),
+segment_maker.append_commands(
+    vn,
+    [
+        baca.select_stages(1),
+        baca.select_stages(5),
+        baca.select_stages(9),
+        ],
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(13, 14)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(13, 14),
     baca.messiaen_tied_notes(),
     )
 
@@ -82,18 +93,25 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(3, 15)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(3, 15),
     baca.pitches('Db2'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, [baca.select_stages(3), baca.select_stages(7), baca.select_stages(11)]),
+segment_maker.append_commands(
+    bcl,
+    [
+        baca.select_stages(3),
+        baca.select_stages(7),
+        baca.select_stages(11),
+        ],
     abjad.Dynamic('ppp'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(13)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(13),
     baca.make_hairpin(
         descriptor='ppp < f',
         stop=2,
@@ -105,15 +123,21 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1, 9)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1, 9),
     baca.stem_tremolo(),
     baca.markup.string_number(3),
     baca.pitches('E4'),
     )
 
-segment_maker.append_specifiers(
-    (vn, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9)]),
+segment_maker.append_commands(
+    vn,
+    [
+        baca.select_stages(1),
+        baca.select_stages(5),
+        baca.select_stages(9),
+        ],
     baca.make_hairpin(
         descriptor='ppp < p',
         stop=2,
@@ -129,15 +153,17 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(13, 14)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(13, 14),
     baca.stem_tremolo(),
     baca.markup.string_number(2),
     baca.pitches('Eb4'),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(13, 14)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(13, 14),
     baca.make_hairpin(
         descriptor='ppp < mf',
         stop=5,

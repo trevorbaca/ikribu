@@ -49,13 +49,15 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1),
     baca.messiaen_tied_notes(),
     )
 
@@ -63,8 +65,9 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
     baca.pitches('C4'),
@@ -72,8 +75,9 @@ segment_maker.append_specifiers(
     abjad.spannertools.ClefSpanner(clef='percussion'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1),
     baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),

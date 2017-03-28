@@ -52,23 +52,47 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9), baca.select_stages(13)]),
+segment_maker.append_commands(
+    bcl,
+    [
+        baca.select_stages(1),
+        baca.select_stages(5),
+        baca.select_stages(9),
+        baca.select_stages(13),
+        ],
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.append_specifiers(
-    (vn, [baca.select_stages(3), baca.select_stages(7), baca.select_stages(11), baca.select_stages(15)]),
+segment_maker.append_commands(
+    vn,
+    [
+        baca.select_stages(3),
+        baca.select_stages(7),
+        baca.select_stages(11),
+        baca.select_stages(15),
+        ],
     ikribu.tools.make_clb_rhythm_specifier([4]),
     )
 
-segment_maker.append_specifiers(
-    (va, [baca.select_stages(3), baca.select_stages(7), baca.select_stages(11), baca.select_stages(15)]),
+segment_maker.append_commands(
+    va,
+    [
+        baca.select_stages(3),
+        baca.select_stages(7),
+        baca.select_stages(11),
+        baca.select_stages(15),
+        ],
     ikribu.tools.make_clb_rhythm_specifier([2]),
     )
 
-segment_maker.append_specifiers(
-    (vc, [baca.select_stages(1), baca.select_stages(5), baca.select_stages(9), baca.select_stages(13)]),
+segment_maker.append_commands(
+    vc,
+    [
+        baca.select_stages(1),
+        baca.select_stages(5),
+        baca.select_stages(9),
+        baca.select_stages(13),
+        ],
     baca.tied_repeated_durations((1, 4)),
     )
 
@@ -76,56 +100,65 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (tutti, baca.select_stages(1, 16)),
+segment_maker.append_commands(
+    tutti,
+    baca.select_stages(1, 16),
     baca.repeat_ties_up(),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(1)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(1),
     baca.effort_dynamic('f'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(5)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(5),
     baca.effort_dynamic('mf'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(9)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(9),
     baca.effort_dynamic('mp'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(13)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(13),
     baca.effort_dynamic('p'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(1, 16)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(1, 16),
     baca.pitches('Bb2'),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1, 16)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1, 16),
     baca.staccati(),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     ikribu.tools.make_clb_pitch_specifier(),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(1, 16)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(1, 16),
     baca.staccati(),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     ikribu.tools.make_clb_pitch_specifier(),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 16)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 16),
     baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note'
@@ -133,22 +166,26 @@ segment_maker.append_specifiers(
     baca.pitches('C4'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1),
     baca.effort_dynamic('p'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(5)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(5),
     baca.effort_dynamic('mp'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(9)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(9),
     baca.effort_dynamic('mf'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(13)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(13),
     baca.effort_dynamic('f'),
     )

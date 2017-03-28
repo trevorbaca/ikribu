@@ -54,27 +54,47 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl,
-        [baca.select_stages(1, 2), baca.select_stages(3, 6), baca.select_stages(7), baca.select_stages(8), baca.select_stages(9), 
-        baca.select_stages(10), baca.select_stages(11, 12), baca.select_stages(13), baca.select_stages(14), baca.select_stages(15),
-        baca.select_stages(16), baca.select_stages(17), baca.select_stages(18), baca.select_stages(19, 20)]
-        ),
+segment_maker.append_commands(
+    bcl,
+    [
+        baca.select_stages(1, 2),
+        baca.select_stages(3, 6),
+        baca.select_stages(7),
+        baca.select_stages(8),
+        baca.select_stages(9), 
+        baca.select_stages(10),
+        baca.select_stages(11, 12),
+        baca.select_stages(13),
+        baca.select_stages(14),
+        baca.select_stages(15),
+        baca.select_stages(16),
+        baca.select_stages(17),
+        baca.select_stages(18),
+        baca.select_stages(19, 20),
+        ]
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(9, 20)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(9, 20),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(9, 20)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(9, 20),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (vc, [baca.select_stages(5, 8), baca.select_stages(9, 12), baca.select_stages(13, 16), baca.select_stages(17, 20)]),
+segment_maker.append_commands(
+    vc,
+    [
+        baca.select_stages(5, 8),
+        baca.select_stages(9, 12),
+        baca.select_stages(13, 16),
+        baca.select_stages(17, 20),
+        ],
     baca.messiaen_tied_notes(),
     )
 
@@ -82,8 +102,9 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(1, 2)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(1, 2),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
@@ -92,8 +113,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(3, 6)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(3, 6),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
@@ -102,8 +124,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(7)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(7),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
@@ -112,13 +135,15 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(8)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(8),
     baca.pitches('Bb1'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(9)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(9),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
@@ -127,8 +152,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(10)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(10),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
@@ -137,8 +163,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(11, 12)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(11, 12),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
@@ -147,8 +174,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(13)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(13),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
@@ -157,13 +185,15 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(14)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(14),
     baca.pitches('Bb1'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(15, 16)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(15, 16),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
@@ -172,8 +202,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(17)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(17),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
@@ -182,8 +213,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(18)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(18),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
@@ -192,8 +224,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(19, 20)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(19, 20),
     baca.pitches('Bb1'),
     baca.make_hairpin(
         descriptor='p > niente',
@@ -202,8 +235,9 @@ segment_maker.append_specifiers(
         ),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(9, 20)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(9, 20),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
@@ -224,8 +258,9 @@ segment_maker.append_specifiers(
     Dynamic('ppppp'),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(9, 20)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(9, 20),
     baca.tools.ScorePitchSpecifier(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
@@ -246,8 +281,9 @@ segment_maker.append_specifiers(
     Dynamic('ppppp'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 20)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 20),
     baca.hairpins(
         ['mp > p', 'p < mp'],
         enchain_hairpins=True,
@@ -259,32 +295,36 @@ segment_maker.append_specifiers(
     abjad.Clef('bass'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(5, 8)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(5, 8),
     baca.transition_spanner(
         baca.markup.make_markup('nut'),
         baca.markup.make_markup('string midpoint'),
         ),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(9, 12)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(9, 12),
     baca.transition_spanner(
         baca.markup.make_markup('string midpoint'),
         baca.markup.XP(),
         ),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(13, 16)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(13, 16),
     baca.transition_spanner(
         baca.markup.XP(),
         baca.markup.make_markup('string midpoint'),
         ),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(17, 20)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(17, 20),
     baca.transition_spanner(
         baca.markup.make_markup('string midpoint'),
         baca.markup.make_markup('nut'),
