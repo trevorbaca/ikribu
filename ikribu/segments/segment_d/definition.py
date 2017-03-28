@@ -51,16 +51,18 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (vc_rh, baca.select_stages(1, 2)),
+segment_maker.append_commands(
+    vc_rh,
+    baca.select_stages(1, 2),
     ikribu.tools.make_bow_rhythm_specifier(
         logical_tie_masks=silence_every([8, 20], period=20),
         rotation=-2,
         ),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 2)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 2),
     ikribu.tools.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
     )
 
@@ -68,8 +70,9 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (vc_rh, baca.select_stages(1, 2)),
+segment_maker.append_commands(
+    vc_rh,
+    baca.select_stages(1, 2),
     baca.hairpins(
         ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
         enchain_hairpins=True,
@@ -82,8 +85,9 @@ segment_maker.append_specifiers(
     abjad.Clef('percussion'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 2)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 2),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
     abjad.Clef('tenor'),

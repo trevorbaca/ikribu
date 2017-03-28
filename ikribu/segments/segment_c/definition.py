@@ -70,31 +70,45 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, [baca.select_stages(2, 3), baca.select_stages(6, 7), baca.select_stages(10, 11), baca.select_stages(14, 15)]),
+segment_maker.append_commands(
+    bcl,
+    [
+        baca.select_stages(2, 3),
+        baca.select_stages(6, 7),
+        baca.select_stages(10, 11),
+        baca.select_stages(14, 15),
+        ],
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
+segment_maker.append_commands(
     (
         [vn, va],
-        [baca.select_stages(3, 4), baca.select_stages(7, 8), baca.select_stages(11, 12), baca.select_stages(15, 16)],
+        [
+            baca.select_stages(3, 4),
+            baca.select_stages(7, 8),
+            baca.select_stages(11, 12),
+            baca.select_stages(15, 16),
+            ],
         ),
     baca.messiaen_notes(),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(2, 16)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(2, 16),
     baca.messiaen_notes(),
     )
 
@@ -102,8 +116,9 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(2, 17)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(2, 17),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
     baca.pitches('Bb2'),
@@ -111,8 +126,9 @@ segment_maker.append_specifiers(
     abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
     )
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(2, 3)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(2, 3),
     baca.markup.boxed_lines([
         'stonecircle:',
         'π/2 every quarter note'
@@ -120,8 +136,9 @@ segment_maker.append_specifiers(
     baca.repeat_ties_up(),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (II)'),
     baca.pitches('C4'),
@@ -129,8 +146,9 @@ segment_maker.append_specifiers(
     abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(2, 16)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(2, 16),
     baca.stem_tremolo(),
     baca.hairpins(
         ['pp < p', 'p > pp'],
@@ -140,8 +158,9 @@ segment_maker.append_specifiers(
     baca.glissandi(),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(2, 16)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(2, 16),
     baca.stem_tremolo(),
     baca.hairpins(
         ['pp < p', 'p > pp'],
@@ -151,8 +170,9 @@ segment_maker.append_specifiers(
     baca.glissandi(),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1),
     baca.markup.string_number(3),
     baca.markup.pizz(),
     baca.natural_harmonics(),
@@ -162,8 +182,9 @@ segment_maker.append_specifiers(
     abjad.Dynamic('sfz'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(2, 16)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(2, 16),
     baca.stem_tremolo(),
     baca.hairpins(
         ['ppp < pp', 'pp > ppp'],

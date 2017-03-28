@@ -51,8 +51,14 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (vc, [baca.select_stages(1), baca.select_stages(3), baca.select_stages(5), baca.select_stages(7)]),
+segment_maker.append_commands(
+    vc,
+    [
+        baca.select_stages(1),
+        baca.select_stages(3),
+        baca.select_stages(5),
+        baca.select_stages(7),
+        ],
     baca.tied_repeated_durations((1, 4)),
     )
 
@@ -60,8 +66,9 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 8)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 8),
     [
         baca.effort_dynamic('mf'),
         baca.markup.boxed_lines([

@@ -53,23 +53,27 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(1, 2)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(1, 2),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1, 3)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1, 3),
     baca.repeated_durations((1, 4)),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(1, 3)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(1, 3),
     baca.repeated_durations((1, 4)),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 4)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 4),
     ikribu.tools.make_inscription_rhythm_specifier(),
     )
 
@@ -77,8 +81,9 @@ segment_maker.append_specifiers(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_specifiers(
-    (bcl, baca.select_stages(1, 4)),
+segment_maker.append_commands(
+    bcl,
+    baca.select_stages(1, 4),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
     baca.pitches('Bb2'),
@@ -86,8 +91,9 @@ segment_maker.append_specifiers(
     abjad.Clef('percussion'),
     )
 
-segment_maker.append_specifiers(
-    (vn, baca.select_stages(1, 4)),
+segment_maker.append_commands(
+    vn,
+    baca.select_stages(1, 4),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup(
@@ -98,8 +104,9 @@ segment_maker.append_specifiers(
     abjad.Clef('percussion'),
     )
 
-segment_maker.append_specifiers(
-    (va, baca.select_stages(1, 4)),
+segment_maker.append_commands(
+    va,
+    baca.select_stages(1, 4),
     baca.staccati(),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup(
@@ -110,8 +117,9 @@ segment_maker.append_specifiers(
     abjad.Clef('percussion'),
     )
 
-segment_maker.append_specifiers(
-    (vc, baca.select_stages(1, 4)),
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(1, 4),
     baca.accents(),
     baca.effort_dynamic('mf'),
     baca.markup.boxed(
