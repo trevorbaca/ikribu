@@ -26,7 +26,7 @@ maker = baca.tools.TimeSignatureMaker(
     )
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
-spacing_specifier = baca.tools.HorizontalSpacingSpecifier(
+spacing_specifier = baca.tools.HorizontalSpacingCommand(
     fermata_measure_width=abjad.Duration(1, 4),
     minimum_width=abjad.Duration(1, 12),
     )
@@ -109,7 +109,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(6, 7),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[NamedPitch('E4'), NamedPitch('F#4')], 
             item_class=NamedPitch,
@@ -125,7 +125,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(6, 7),
-    baca.tools.ScorePitchSpecifier(
+    baca.tools.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[NamedPitch('Eb4'), NamedPitch('F4')], 
             item_class=NamedPitch,
