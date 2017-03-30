@@ -35,8 +35,8 @@ if __name__ == '__main__':
             sys.exit(1)
         try:
             current_directory = os.path.dirname(__file__)
-            dummy_session = ide.idetools.Session()
-            abjad_ide = ide.idetools.AbjadIDE(
+            dummy_session = ide.tools.idetools.Session()
+            abjad_ide = ide.tools.idetools.AbjadIDE(
                 session=dummy_session, 
                 )
             abjad_ide._write_metadata_py(
@@ -46,11 +46,11 @@ if __name__ == '__main__':
         except:
             traceback.print_exc()
             sys.exit(1)
-        message = 'Abjad runtime {} {} ...'
-        total_time = int(timer.elapsed_time)
-        identifier = abjad.stringtools.pluralize('second', total_time)
-        message = message.format(total_time, identifier)
-        print(message)
+        #message = 'Abjad runtime {} {} ...'
+        #total_time = int(timer.elapsed_time)
+        #identifier = abjad.stringtools.pluralize('second', total_time)
+        #message = message.format(total_time, identifier)
+        #print(message)
     try:
         current_directory = os.path.dirname(__file__)
         ly_path = os.path.join(
@@ -64,16 +64,16 @@ if __name__ == '__main__':
         output_paths = (ly_path, pdf_path)
         with abjad.systemtools.Timer() as timer:
             abjad.persist(lilypond_file).as_pdf(pdf_path)
-        message = 'LilyPond runtime {} {} ...'
-        total_time = int(timer.elapsed_time)
-        identifier = abjad.stringtools.pluralize('second', total_time)
-        message = message.format(total_time, identifier)
-        print(message)
-        for output_path in output_paths:
-            message = 'writing {} ...'
-            path = ide.idetools.AbjadIDE._trim_path(output_path)
-            message = message.format(path)
-            print(message)
+        #message = 'LilyPond runtime {} {} ...'
+        #total_time = int(timer.elapsed_time)
+        #identifier = abjad.stringtools.pluralize('second', total_time)
+        #message = message.format(total_time, identifier)
+        #print(message)
+        #for output_path in output_paths:
+        #    message = 'writing {} ...'
+        #    path = ide.tools.idetools.AbjadIDE._trim_path(output_path)
+        #    message = message.format(path)
+        #    print(message)
     except:
         traceback.print_exc()
         sys.exit(1)

@@ -32,10 +32,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -90,74 +91,79 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(6, 8),
-    baca.make_hairpin(descriptor='sfp > ppp'),
+    baca.hairpins(['sfp > ppp']),
     baca.pitches('G2'),
     )
 
 segment_maker.append_commands(
     [vn, va],
     baca.select_stages(6, 7),
-    baca.stem_tremolo(),
-    baca.make_hairpin('sfpp < p', stop=2),
-    baca.make_hairpin(
-        descriptor='p > pp',
-        start=-1,
-        include_following_rest=True,
+    baca.hairpins(['sfpp < p'], selector=baca.select_leaves(stop=2)),
+#    baca.make_hairpin(
+#        descriptor='p > pp',
+#        start=-1,
+#        include_following_rest=True,
+#        ),
+    baca.hairpins(
+        ['p > pp'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-1),
         ),
+    baca.stem_tremolo(),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(6, 7),
+    baca.markup.string_numbers([2, 3]),
     baca.tools.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[NamedPitch('E4'), NamedPitch('F#4')], 
-            item_class=NamedPitch,
+            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
+            item_class=abjad.NamedPitch,
             )],
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
-    baca.markup.string_numbers([2, 3]),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(6, 7),
+    baca.markup.string_numbers([1, 2]),
     baca.tools.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[NamedPitch('Eb4'), NamedPitch('F4')], 
-            item_class=NamedPitch,
+            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
+            item_class=abjad.NamedPitch,
             )],
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
-    baca.markup.string_numbers([1, 2]),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 4),
+    baca.hairpins(['p < ff']),
+    baca.pitches('F#3'),
     baca.stem_tremolo(),
-    baca.make_hairpin(descriptor='p < ff'),
     baca.transition_spanner(
         baca.markup.make_markup('(trem. flaut. tast.)'),
         baca.markup.make_markup('trem. XP (non. flaut.)'),
         ),
-    baca.pitches('F#3'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(6, 7),
-    baca.repeat_ties_up(),
     baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note',
         ]),
-    baca.percussion_staff(),
     baca.one_line_staff(),
+    baca.percussion_staff(),
+    baca.repeat_ties_up(),
     )

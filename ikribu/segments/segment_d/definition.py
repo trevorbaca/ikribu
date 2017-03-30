@@ -15,7 +15,7 @@ stage_specifier = baca.tools.StageSpecifier([
     abjad.Fermata('shortfermata'),
     ])
 
-tempo_specifier = baca.tools.abjad.TempoSpecifier([
+tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['windows']),
     ])
 
@@ -33,10 +33,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -73,22 +74,23 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vc_rh,
     baca.select_stages(1, 2),
-    baca.hairpins(
-        ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
-        enchain_hairpins=True,
-        span=[3, 4],
-        ),
+    baca.clef('percussion'),
+    # TODO: make this work again:
+#    baca.hairpins(
+#        ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
+#        enchain_hairpins=True,
+#        span=[3, 4],
+#        ),
     baca.markup.boxed('1/2 clt'),
-    baca.repeat_ties_up(),
     baca.pitches('C4'),
+    baca.repeat_ties_up(),
     ikribu.tools.BowContactPointSpecifier(rotation=-2),
-    abjad.Clef('percussion'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 2),
+    baca.clef('tenor'),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
-    abjad.Clef('tenor'),
     )
