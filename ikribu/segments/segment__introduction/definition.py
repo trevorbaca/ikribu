@@ -35,7 +35,7 @@ segment_maker = baca.tools.SegmentMaker(
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -68,21 +68,21 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(1),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
+    baca.one_line_staff(selector=baca.select_leaves(leak=Right)),
     baca.pitches('C4'),
-    baca.one_line_staff(),
-    abjad.spannertools.ClefSpanner(clef='percussion'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1),
-    baca.markup.string_number(3),
+    baca.clef('treble'),
+    baca.dynamic('sfz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Clef('treble'),
-    abjad.Dynamic('sfz'),
     )
