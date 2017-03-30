@@ -8,12 +8,12 @@ metadata = abjad.datastructuretools.TypedOrderedDict(
             'end_clefs_by_staff',
             abjad.datastructuretools.TypedOrderedDict(
                 [
-                    ('Bass Clarinet Music Staff', 'treble'),
+                    ('Bass Clarinet Music Staff', None),
                     ('Cello Music Staff', 'bass'),
-                    ('Cello RH Music Staff', 'percussion'),
-                    ('Viola Music Staff', 'alto'),
+                    ('Cello RH Music Staff', None),
+                    ('Viola Music Staff', None),
                     ('Viola RH Music Staff', None),
-                    ('Violin Music Staff', 'treble'),
+                    ('Violin Music Staff', None),
                     ('Violin RH Music Staff', None),
                     ]
                 ),
@@ -21,15 +21,10 @@ metadata = abjad.datastructuretools.TypedOrderedDict(
         (
             'end_instruments_by_context',
             abjad.datastructuretools.TypedOrderedDict(
-                [
-                    ('Bass Clarinet Music Staff', 'bass clarinet'),
-                    ('Cello Staff Group', 'cello'),
-                    ('Viola Staff Group', 'viola'),
-                    ('Violin Staff Group', 'violin'),
-                    ]
+                []
                 ),
             ),
-        ('end_tempo', 'night'),
+        ('end_tempo', None),
         ('end_time_signature', '8/4'),
         ('first_bar_number', 63),
         ('measure_count', 16),

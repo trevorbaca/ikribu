@@ -16,7 +16,7 @@ stage_specifier = baca.tools.StageSpecifier([
     1, 1, 1, 1,
     ])
 
-tempo_specifier = baca.tools.abjad.TempoSpecifier([
+tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['night']),
     (1, abjad.Accelerando()),
     (3, ikribu.materials.tempi['incisions']),
@@ -49,10 +49,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -116,8 +117,8 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 4),
+    baca.dynamic('ppp'),
     baca.pitches('E3'),
-    abjad.Dynamic('ppp'),
     )
 
 segment_maker.append_commands(
@@ -141,39 +142,43 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     [vn, va],
     baca.select_stages(1, 16),
-    baca.accents(
-        pattern=patterntools.select_every([0, 4], inverted=True, period=9),
-        ),
-    baca.stem_tremolo(
-        pattern=patterntools.select_every([0, 4], period=9),
-        ),
-    baca.hairpins(
-        ['f > p', 'p < f'],
-        enchain_hairpins=True,
-        include_following_rests=True,
-        span=[4, 3],
-        ),
+    # TODO: decide how to model with selectors:
+    #baca.accents(
+    #    pattern=patterntools.select_every([0, 4], inverted=True, period=9),
+    #    ),
+    # TODO: decide how to model with selectors:
+    #baca.stem_tremolo(
+    #    pattern=patterntools.select_every([0, 4], period=9),
+    #    ),
+    # TODO: make work with selectors:
+    #baca.hairpins(
+    #    ['f > p', 'p < f'],
+    #    enchain_hairpins=True,
+    #    include_following_rests=True,
+    #    span=[4, 3],
+    #    ),
     baca.markup.boxed('brushes on BD'),
-    baca.percussion_staff(),
     baca.one_line_staff(),
+    baca.percussion_staff(),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 16),
-    abjad.Clef('bass'),
+    baca.clef('bass'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(9, 16),
-    baca.stem_tremolo(),
-    baca.hairpins(
-        ['p < mp', 'mp > p'],
-        enchain_hairpins=True,
-        span=[2],
-        ),
+    # TODO: make work with selectors:
+    #baca.hairpins(
+    #    ['p < mp', 'mp > p'],
+    #    enchain_hairpins=True,
+    #    span=[2],
+    #    ),
     baca.markup.trem_flaut_tast(),
+    baca.stem_tremolo(),
     )
 
 segment_maker.append_commands(
