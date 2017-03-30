@@ -1,4 +1,4 @@
-\version "2.19.36"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -38,11 +38,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ulongfermata"
                             }
@@ -112,48 +112,19 @@
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \clef "treble"
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        \center-column
-                            {
-                                Bass
-                                clarinet
-                            }
-                    }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        \line
-                            {
-                                B.
-                                cl.
-                            }
-                    }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        e\breve \< \ppp
-                        e1.. \repeatTie \f
-                        \once \override Hairpin #'circled-tip = ##t
-                        e1 \repeatTie \> \f
-                        e1 \repeatTie
-                        e2. \repeatTie
-                        R1 * 2 \!
+                        d,\breve \< \ppp
+                        d,1.. \repeatTie \f
+                        \once \override Hairpin.circled-tip = ##t
+                        d,1 \repeatTie \> \f
+                        d,1 \repeatTie
+                        d,2. \repeatTie \!
+                        s1 * 2
                         \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \set ViolinStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
-                    }
-                    \set ViolinStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
-                    }
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             R1 * 2
@@ -167,7 +138,6 @@
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
-                        \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             R1 * 2
                             R1 * 7/4
@@ -182,16 +152,6 @@
                 >>
                 \tag viola
                 \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \set ViolaStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
-                    }
-                    \set ViolaStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
-                    }
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             R1 * 2
@@ -205,30 +165,24 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            R1 * 15/4
+                            s1 * 15/4
                             \clef "percussion"
-                            \once \override RepeatTie #'direction = #up
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            \column
-                                                {
-                                                    \line
-                                                        {
-                                                            stonecircle:
-                                                        }
-                                                    \line
-                                                        {
-                                                            "π/4 every quarter note"
-                                                        }
-                                                }
+                                    \whiteout
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                \column
+                                                    {
+                                                        stonecircle:
+                                                        "π/4 every quarter note"
+                                                    }
                                     }
                                 _ \markup {
                                     \larger
@@ -242,60 +196,33 @@
                                         \italic
                                             ”
                                     }
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
-                            \once \override RepeatTie #'direction = #up
                             c'4 \repeatTie
                             \stopStaff
                             \startStaff
-                            \clef "alto"
-                            R1 * 1/4
+                            \revert RepeatTie.direction
+                            s1 * 1/4
                             \bar "|"
                         }
                     }
                 >>
                 \tag cello
                 \context CelloStaffGroup = "Cello Staff Group" <<
-                    \set CelloStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
-                    }
-                    \set CelloStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
-                    }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             R1 * 2
@@ -309,7 +236,6 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "treble"
                         \context CelloMusicVoice = "Cello Music Voice" {
                             R1 * 2
                             R1 * 7/4

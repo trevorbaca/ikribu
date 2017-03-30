@@ -1,4 +1,4 @@
-\version "2.19.36"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -387,48 +387,24 @@
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \clef "treble"
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        \center-column
-                            {
-                                Bass
-                                clarinet
-                            }
-                    }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        \line
-                            {
-                                B.
-                                cl.
-                            }
-                    }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        R1 * 7/4
-                        \clef "percussion"
-                        \once \override RepeatTie #'direction = #up
+                        s1 * 7/4
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        c'4
+                        \clef "percussion"
+                        \override RepeatTie.direction = #up
+                        bf,4
                             ^ \markup {
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \box
-                                        \column
-                                            {
-                                                \line
-                                                    {
-                                                        stonecircle:
-                                                    }
-                                                \line
-                                                    {
-                                                        "π/2 every quarter note"
-                                                    }
-                                            }
+                                \whiteout
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            \column
+                                                {
+                                                    stonecircle:
+                                                    "π/2 every quarter note"
+                                                }
                                 }
                             _ \markup {
                                 \larger
@@ -442,118 +418,78 @@
                                     \italic
                                         ”
                                 }
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        R1 * 11/12
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        R1 * 11/12
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        R1 * 11/12
-                        \once \override RepeatTie #'direction = #up
-                        c'4
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
-                        \once \override RepeatTie #'direction = #up
-                        c'4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        \revert RepeatTie.direction
+                        s1 * 11/12
+                        bf,4
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        s1 * 11/12
+                        bf,4
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        s1 * 11/12
+                        bf,4
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        bf,4 \repeatTie
+                        \revert RepeatTie.direction
+                        s1 * 11/12
+                        \bar "|"
                         \stopStaff
                         \startStaff
-                        \clef "treble"
-                        R1 * 11/12
-                        \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \set ViolinStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
-                    }
-                    \set ViolinStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
-                    }
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             R1 * 7/4
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -561,16 +497,13 @@
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
-                        \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'1..
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (II)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (II)"
                                     }
                                 _ \markup {
                                     \larger
@@ -584,70 +517,58 @@
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \startStaff
-                            \clef "treble"
-                            R1 * 1
+                            s1 * 1
                             fs'1 :32 \glissando \< \pp
                                 ^ \markup {
-                                    \upright
-                                        "trem. flaut. tast."
+                                    \whiteout
+                                        \upright
+                                            "trem. flaut. tast."
                                     }
-                            gs'2. :32 \p
-                            R1 * 7/6
-                            gs'1 :32 \glissando \> \p
-                            fs'2. :32 \pp
-                            R1 * 7/6
-                            fs'1 :32 \glissando \< \pp
-                            gs'2. :32 \p
-                            R1 * 7/6
-                            gs'1 :32 \glissando \> \p
-                            fs'2. :32 \pp
-                            R1 * 1/6
+                            gs'2. :32
+                            s1 * 7/6
+                            gs'1 :32 \glissando
+                            fs'2. :32
+                            s1 * 7/6
+                            fs'1 :32 \glissando
+                            gs'2. :32
+                            s1 * 7/6
+                            gs'1 :32 \glissando
+                            fs'2. :32 \p
+                            s1 * 1/6
                             \bar "|"
                         }
                     }
                 >>
                 \tag viola
                 \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \set ViolaStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
-                    }
-                    \set ViolaStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
-                    }
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             R1 * 7/4
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -655,69 +576,59 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            R1 * 11/4
+                            s1 * 11/4
                             f'1 :32 \glissando \< \pp
                                 ^ \markup {
-                                    \upright
-                                        "trem. flaut. tast."
+                                    \whiteout
+                                        \upright
+                                            "trem. flaut. tast."
                                     }
-                            e'2. :32 \p
-                            R1 * 7/6
-                            e'1 :32 \glissando \> \p
-                            f'2. :32 \pp
-                            R1 * 7/6
-                            f'1 :32 \glissando \< \pp
-                            e'2. :32 \p
-                            R1 * 7/6
-                            e'1 :32 \glissando \> \p
-                            f'2. :32 \pp
-                            R1 * 1/6
+                            e'2. :32
+                            s1 * 7/6
+                            e'1 :32 \glissando
+                            f'2. :32
+                            s1 * 7/6
+                            f'1 :32 \glissando
+                            e'2. :32
+                            s1 * 7/6
+                            e'1 :32 \glissando
+                            f'2. :32 \p
+                            s1 * 1/6
                             \bar "|"
                         }
                     }
                 >>
                 \tag cello
                 \context CelloStaffGroup = "Cello Staff Group" <<
-                    \set CelloStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
-                    }
-                    \set CelloStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
-                    }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             R1 * 7/4
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 1
                             R1 * 1
                             R1 * 3/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -726,18 +637,20 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            \once \override NoteHead #'style = #'harmonic
                             \clef "treble"
-                            fqf''1.. \laissezVibrer \sfz
+                            \override NoteHead.style = #'harmonic
+                            fqf''1.. -\laissezVibrer \sfz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \once \override NoteHead #'style = #'harmonic
+                            \revert NoteHead.style
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -746,8 +659,9 @@
                                     {
                                         \override
                                             #'(font-name . "Palatino")
-                                            \upright
-                                                "trem. flaut. tasto. (arco)"
+                                            \whiteout
+                                                \upright
+                                                    "trem. flaut. tasto. (arco)"
                                         \hspace
                                             #0.5
                                     }
@@ -759,65 +673,41 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \once \override TupletBracket #'direction = #down
-                            d''1 :32 \glissando \< \ppp \startTextSpan
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            fqf''1 :32 \pp \glissando \> \pp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            d''2. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \override NoteHead.style = #'harmonic
+                            \override TupletBracket.direction = #down
+                            d''1 :32 \glissando \startTextSpan
+                            fqf''1 :32 \glissando
+                            d''2. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            d''1 :32 \ppp \glissando \< \ppp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            b'1 :32 \pp \glissando \> \pp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g'2. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            d''1 :32 \glissando
+                            b'1 :32 \glissando
+                            g'2. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g'1 :32 \ppp \glissando \< \ppp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            d'1 :32 \pp \glissando \> \pp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g'2. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            g'1 :32 \glissando
+                            d'1 :32 \glissando
+                            g'2. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                d'4 :32 \pp \glissando \> \pp
+                                d'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g1 :32 \ppp \glissando \< \ppp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            d'1 :32 \pp \glissando \> \pp
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g2. :32 \ppp \stopTextSpan ^ \markup {
+                            g1 :32 \glissando
+                            d'1 :32 \glissando
+                            g2. :32 \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
-                                    \upright
-                                        "trem. flaut. XP"
+                                    \whiteout
+                                        \upright
+                                            "trem. flaut. XP"
                                 }
-                            R1 * 1/6
+                            \revert NoteHead.style
+                            \revert TupletBracket.direction
+                            s1 * 1/6
                             \bar "|"
                         }
                     }

@@ -45,10 +45,12 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
     score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -106,29 +108,35 @@ segment_maker.append_commands(
         baca.select_stages(7),
         baca.select_stages(11),
         ],
-    abjad.Dynamic('ppp'),
+    baca.dynamic('ppp'),
     )
 
 segment_maker.append_commands(
     bcl,
     baca.select_stages(13),
-    baca.make_hairpin(
-        descriptor='ppp < f',
-        stop=2,
-        ),
-    baca.make_hairpin(
-        descriptor='f > niente',
-        include_following_rest=True,
-        start=-1,
+#    baca.make_hairpin(
+#        descriptor='ppp < f',
+#        stop=2,
+#        ),
+    baca.hairpins(['ppp < f'], selector=baca.select_leaves(stop=2)),
+#    baca.make_hairpin(
+#        descriptor='f > niente',
+#        include_following_rest=True,
+#        start=-1,
+#        ),
+    baca.hairpins(
+        ['f > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-1, leak=Right),
         ),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(1, 9),
-    baca.stem_tremolo(),
     baca.markup.string_number(3),
     baca.pitches('E4'),
+    baca.stem_tremolo(),
     )
 
 segment_maker.append_commands(
@@ -138,14 +146,20 @@ segment_maker.append_commands(
         baca.select_stages(5),
         baca.select_stages(9),
         ],
-    baca.make_hairpin(
-        descriptor='ppp < p',
-        stop=2,
-        ),
-    baca.make_hairpin(
-        descriptor='p > niente',
-        include_following_rest=True,
-        start=-1,
+#    baca.make_hairpin(
+#        descriptor='ppp < p',
+#        stop=2,
+#        ),
+    baca.hairpins(['ppp < p'], selector=baca.select_leaves(stop=2)),
+#    baca.make_hairpin(
+#        descriptor='p > niente',
+#        include_following_rest=True,
+#        start=-1,
+#        ),
+    baca.hairpins(
+        ['p > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-1, leak=Right),
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),
@@ -156,22 +170,31 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(13, 14),
-    baca.stem_tremolo(),
     baca.markup.string_number(2),
     baca.pitches('Eb4'),
+    baca.stem_tremolo(),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(13, 14),
-    baca.make_hairpin(
-        descriptor='ppp < mf',
-        stop=5,
+#    baca.make_hairpin(
+#        descriptor='ppp < mf',
+#        stop=5,
+#        ),
+    baca.hairpins(
+        ['ppp < mf'],
+        selector=baca.select_leaves(stop=5),
         ),
-    baca.make_hairpin(
-        descriptor='mf > niente',
-        include_following_rest=True,
-        start=-1,
+#    baca.make_hairpin(
+#        descriptor='mf > niente',
+#        include_following_rest=True,
+#        start=-1,
+#        ),
+    baca.hairpins(
+        ['mf > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-1, leak=Right),
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),
