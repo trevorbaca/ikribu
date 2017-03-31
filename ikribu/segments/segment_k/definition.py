@@ -34,10 +34,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -103,9 +104,9 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     tutti,
     baca.select_stages(1, 16),
-    baca.repeat_ties_up(),
     baca.one_line_staff(),
     baca.percussion_staff(),
+    baca.repeat_ties_up(),
     )
 
 segment_maker.append_commands(
@@ -141,18 +142,18 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(1, 16),
-    baca.staccati(),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
+    baca.staccati(),
     ikribu.tools.make_clb_pitch_specifier(),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 16),
-    baca.staccati(),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
+    baca.staccati(),
     ikribu.tools.make_clb_pitch_specifier(),
     )
 

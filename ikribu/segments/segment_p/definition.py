@@ -20,7 +20,7 @@ stage_specifier = baca.tools.StageSpecifier([
 
 tempo_specifier = baca.tools.TempoSpecifier([
     (1, ikribu.materials.tempi['windows']),
-    (1, jab.adRitardando()),
+    (1, abjad.Ritardando()),
     (4, ikribu.materials.tempi['night']),
     ])
 
@@ -38,10 +38,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -65,7 +66,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(3, 4),
-    new(
+    abjad.new(
         baca.repeated_durations((1, 4)),
         tie_last=True,
         ),
@@ -143,33 +144,33 @@ segment_maker.append_commands(
 
 segment_maker.append_commands(
     bcl,
-    baca.select_stages(5),
-    baca.pitches('B1'),
-    )
-
-segment_maker.append_commands(
-    bcl,
     baca.select_stages(1, 5),
-    baca.make_hairpin('pp < mf', stop=5),
-    baca.make_hairpin(
-        descriptor='mf > niente',
-        start=4,
-        include_following_rest=True,
+    baca.hairpins(['pp < mf'], selector=baca.select_leaves(stop=5)),
+#    baca.make_hairpin(
+#        descriptor='mf > niente',
+#        start=4,
+#        include_following_rest=True,
+#        ),
+    baca.hairpins(
+        ['mf > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=4, leak=Right),
         ),
     )
 
 segment_maker.append_commands(
     [vn_rh, va_rh, vc_rh],
     baca.select_stages(1, 3),
-    baca.hairpins(
-        ['p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 'pp > ppp', 'ppp < p'],
-        enchain_hairpins=True,
-        span=[3, 4],
-        ),
+    baca.clef('percussion'),
+    # TODO: make work again after extending baca.hairpins():
+#    baca.hairpins(
+#        ['p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 'pp > ppp', 'ppp < p'],
+#        enchain_hairpins=True,
+#        span=[3, 4],
+#        ),
     baca.markup.boxed('1/2 clt'),
-    baca.repeat_ties_up(),
     baca.pitches('C4'),
-    abjad.Clef('percussion'),
+    baca.repeat_ties_up(),
     )
 
 segment_maker.append_commands(
@@ -200,15 +201,15 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 3),
+    baca.clef('treble'),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
-    abjad.Clef('treble'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 3),
+    baca.clef('tenor'),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=4, rotation=-20),
-    abjad.Clef('tenor'),
     )

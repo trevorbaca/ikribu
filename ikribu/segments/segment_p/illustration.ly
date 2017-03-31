@@ -1,4 +1,4 @@
-\version "2.19.36"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -42,11 +42,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ulongfermata"
                             }
@@ -154,266 +154,217 @@
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \clef "treble"
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        \center-column
-                            {
-                                Bass
-                                clarinet
-                            }
-                    }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        \line
-                            {
-                                B.
-                                cl.
-                            }
-                    }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        c'''2. \< \pp
-                        c'''2 \repeatTie
-                        c'''1.. \repeatTie
-                        c'''1.. \repeatTie
-                        \once \override Hairpin #'circled-tip = ##t
-                        c'''4 \mf \glissando \> \mf
-                        a''4 \glissando
-                        f''4 \glissando
-                        d''4 \glissando
-                        b'4 \glissando
+                        bf'2. \< \pp
+                        bf'2 \repeatTie
+                        bf'1.. \repeatTie
+                        bf'1.. \repeatTie
+                        \once \override Hairpin.circled-tip = ##t
+                        bf'4 \mf \glissando \> \mf
                         g'4 \glissando
-                        e'4 \glissando
+                        ef'4 \glissando
                         c'4 \glissando
-                        b4 \glissando
                         a4 \glissando
-                        g4 \glissando
                         f4 \glissando
-                        e4 \glissando
                         d4 \glissando
-                        cs4
-                        cs2. \repeatTie
-                        R1 * 1/4 \!
+                        bf,4 \glissando
+                        a,4 \glissando
+                        g,4 \glissando
+                        f,4 \glissando
+                        ef,4 \glissando
+                        d,4 \glissando
+                        c,4 \glissando
+                        b,,4
+                        b,,2. \repeatTie
+                        s1 * 1/4 \!
                         \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \set ViolinStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
-                    }
-                    \set ViolinStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
-                    }
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
-                                \once \override RepeatTie #'direction = #up
                                 \clef "percussion"
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \p
+                                \override RepeatTie.direction = #up
+                                c'4
                                     ^ \markup {
                                         \column
                                             {
-                                                \override
-                                                    #'(box-padding . 0.5)
-                                                    \box
-                                                        "1/2 clt"
-                                                \fraction
-                                                    0
-                                                    7
+                                                \line
+                                                    {
+                                                        \whiteout
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    "1/2 clt"
+                                                    }
+                                                \line
+                                                    {
+                                                        \fraction
+                                                            0
+                                                            7
+                                                    }
                                             }
                                         }
                             }
                             {
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \< \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \< \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/9 {
-                                \once \override RepeatTie #'direction = #up
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \< \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             2
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                \revert RepeatTie.direction
                             }
-                            R1 * 11/4
+                            s1 * 11/4
                             \bar "|"
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
-                        \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 c''8 \glissando [
                                 b''8. \glissando
@@ -430,7 +381,7 @@
                                 e'''2.. \glissando
                                 d''2.. \glissando
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 c''1 \glissando
                                 d'8 \glissando [
@@ -446,50 +397,45 @@
                                 b'2 \glissando
                                 a8
                             }
-                            R1 * 11/4
+                            s1 * 11/4
                             \bar "|"
                         }
                     }
                 >>
                 \tag viola
                 \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \set ViolaStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
-                    }
-                    \set ViolaStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
-                    }
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             {
-                                \once \override RepeatTie #'direction = #up
                                 \clef "percussion"
-                                c'4 \> \p
+                                \override RepeatTie.direction = #up
+                                c'4
                                     ^ \markup {
                                         \column
                                             {
-                                                \override
-                                                    #'(box-padding . 0.5)
-                                                    \box
-                                                        "1/2 clt"
-                                                \fraction
-                                                    7
-                                                    7
+                                                \line
+                                                    {
+                                                        \whiteout
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    "1/2 clt"
+                                                    }
+                                                \line
+                                                    {
+                                                        \fraction
+                                                            7
+                                                            7
+                                                    }
                                             }
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \< \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
@@ -497,189 +443,164 @@
                                         }
                             }
                             \times 2/3 {
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \p
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
-                            }
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 7/9 {
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
+                                r4
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            7
+                                            7
+                                        }
+                            }
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 7/9 {
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            0
+                                            7
+                                        }
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \> \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             2
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \< \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
                             }
                             {
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \> \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                \revert RepeatTie.direction
                             }
-                            R1 * 11/4
+                            s1 * 11/4
                             \bar "|"
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 \clef "treble"
                                 c''2.. \glissando
@@ -688,14 +609,14 @@
                             {
                                 e''2 \glissando
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 d''4. \glissando
                                 f''2.. \glissando
                                 f'2 \glissando
                                 a'8 \glissando
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 g4. \glissando
                                 a8 \glissando [
@@ -710,53 +631,47 @@
                                 d''2.. \glissando
                                 e''4
                             }
-                            R1 * 11/4
+                            s1 * 11/4
                             \bar "|"
                         }
                     }
                 >>
                 \tag cello
                 \context CelloStaffGroup = "Cello Staff Group" <<
-                    \set CelloStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
-                    }
-                    \set CelloStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
-                    }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                \once \override RepeatTie #'direction = #up
                                 \clef "percussion"
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \> \p
+                                \override RepeatTie.direction = #up
+                                c'4
                                     ^ \markup {
                                         \column
                                             {
-                                                \override
-                                                    #'(box-padding . 0.5)
-                                                    \box
-                                                        "1/2 clt"
-                                                \fraction
-                                                    0
-                                                    7
+                                                \line
+                                                    {
+                                                        \whiteout
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    "1/2 clt"
+                                                    }
+                                                \line
+                                                    {
+                                                        \fraction
+                                                            0
+                                                            7
+                                                    }
                                             }
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \< \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             5
@@ -764,14 +679,12 @@
                                         }
                             }
                             {
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -779,40 +692,34 @@
                                             7
                                         }
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \< \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp \> \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             2
@@ -820,49 +727,42 @@
                                         }
                             }
                             {
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p \> \p
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -871,66 +771,58 @@
                                         }
                             }
                             \times 8/9 {
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
                                 r4
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \< \pp
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \p \> \p
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
-                                c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
-                                \once \override RepeatTie #'direction = #up
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \ppp \< \ppp
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            7
+                                            7
+                                        }
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            0
+                                            7
+                                        }
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            7
+                                            7
+                                        }
+                                c'4
+                                    ^ \markup {
+                                        \fraction
+                                            0
+                                            7
+                                        }
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                \once \override RepeatTie #'direction = #up
-                                c'4 \pp
+                                c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
+                                \revert RepeatTie.direction
                             }
-                            R1 * 11/4
+                            s1 * 11/4
                             \bar "|"
                         }
                     }
@@ -948,7 +840,7 @@
                                 d'2 \glissando
                                 e'8 \glissando
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 d8 \glissando
                                 c'1 \glissando
@@ -967,7 +859,7 @@
                                 b'1 \glissando
                                 c'4.
                             }
-                            R1 * 11/4
+                            s1 * 11/4
                             \bar "|"
                         }
                     }

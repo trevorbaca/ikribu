@@ -15,7 +15,7 @@ stage_specifier = baca.tools.StageSpecifier([
     1, 1, 1, 1,
     1, 1, 1, 1,
     1, 1, 1, 1,
-    Fermata('fermata'),
+    abjad.Fermata('fermata'),
     ])
 
 tempo_specifier = baca.tools.TempoSpecifier([
@@ -36,10 +36,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -71,7 +72,7 @@ segment_maker.append_commands(
         baca.select_stages(17),
         baca.select_stages(18),
         baca.select_stages(19, 20),
-        ]
+        ],
     baca.messiaen_tied_notes(),
     )
 
@@ -228,71 +229,87 @@ segment_maker.append_commands(
     bcl,
     baca.select_stages(19, 20),
     baca.pitches('Bb1'),
-    baca.make_hairpin(
-        descriptor='p > niente',
-        start=-2,
-        include_following_rest=True,
+#    baca.make_hairpin(
+#        descriptor='p > niente',
+#        start=-2,
+#        include_following_rest=True,
+#        ),
+    baca.hairpins(
+        ['p > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-2, leak=Right),
         ),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(9, 20),
+    baca.dynamic('ppppp'),
+#    baca.make_hairpin(
+#        descriptor='ppppp > niente',
+#        start=-2,
+#        include_following_rest=True,
+#        ),
+    baca.hairpins(
+        ['ppppp > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-2, leak=Right),
+        ),
+    baca.markup.string_numbers([2, 3]),
+    baca.stem_tremolo(),
     baca.tools.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
             item_class=abjad.NamedPitch,
             )],
         ),
-    baca.stem_tremolo(),
-    baca.make_hairpin(
-        descriptor='ppppp > niente',
-        start=-2,
-        include_following_rest=True,
-        ),
-    baca.markup.string_numbers([2, 3]),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
-    Dynamic('ppppp'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(9, 20),
+    baca.dynamic('ppppp'),
+#    baca.make_hairpin(
+#        descriptor='ppppp > niente',
+#        start=-2,
+#        include_following_rest=True,
+#        ),
+    baca.hairpins(
+        ['ppppp > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-2, leak=Right),
+        ),
+    baca.markup.string_numbers([2, 3]),
+    baca.stem_tremolo(),
     baca.tools.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,
             )],
         ),
-    baca.stem_tremolo(),
-    baca.make_hairpin(
-        descriptor='ppppp > niente',
-        start=-2,
-        include_following_rest=True,
-        ),
-    baca.markup.string_numbers([2, 3]),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
-    Dynamic('ppppp'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 20),
-    baca.hairpins(
-        ['mp > p', 'p < mp'],
-        enchain_hairpins=True,
-        include_following_rests=True,
-        span=[2],
-        ),
-    baca.pitches('Bb0'),
+    baca.clef('bass'),
+    # TODO: make work again after extending baca.hairpins():
+#    baca.hairpins(
+#        ['mp > p', 'p < mp'],
+#        enchain_hairpins=True,
+#        include_following_rests=True,
+#        span=[2],
+#        ),
     baca.ottava_bassa(),
-    abjad.Clef('bass'),
+    baca.pitches('Bb0'),
     )
 
 segment_maker.append_commands(

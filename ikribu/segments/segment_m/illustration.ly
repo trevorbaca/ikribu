@@ -1,4 +1,4 @@
-\version "2.19.36"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -30,11 +30,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ushortfermata"
                             }
@@ -49,11 +49,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ushortfermata"
                             }
@@ -76,11 +76,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ushortfermata"
                             }
@@ -102,11 +102,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ushortfermata"
                             }
@@ -121,11 +121,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ushortfermata"
                             }
@@ -171,11 +171,11 @@
                 }
                 {
                     \time 1/4
-                    \once \override MultiMeasureRestText #'extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest #'transparent = ##t
-                    \once \override Score.TimeSignature #'stencil = ##f
+                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                    \once \override Score.MultiMeasureRest.transparent = ##t
+                    \once \override Score.TimeSignature.stencil = ##f
                     R1 * 1/4
-                        ^ \markup {
+                        - \markup {
                             \musicglyph
                                 #"scripts.ushortfermata"
                             }
@@ -605,73 +605,43 @@
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \clef "treble"
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        \center-column
-                            {
-                                Bass
-                                clarinet
-                            }
-                    }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        \line
-                            {
-                                B.
-                                cl.
-                            }
-                    }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        R1 * 3/4
-                        cs1 \< \p
-                        cs1 \repeatTie \fff
-                        \once \override Hairpin #'circled-tip = ##t
-                        cs2 \repeatTie \> \fff
-                        R1 * 2 \!
-                        cs2. \p
-                        R1 * 5/4
-                        cs2. \< \p
-                        cs1 \repeatTie \fff
-                        \once \override Hairpin #'circled-tip = ##t
-                        cs2. \repeatTie \> \fff
-                        R1 * 3/4 \!
-                        cs1.. \< \p
-                        cs1.. \repeatTie \fff
-                        \once \override Hairpin #'circled-tip = ##t
-                        cs\breve \repeatTie \> \fff
-                        R1 * 2 \!
-                        cs2. \p
-                        R1 * 3/4
-                        cs\breve \< \ppp
-                        cs1.. \repeatTie
-                        cs1 \repeatTie
-                        cs1 \repeatTie
-                        cs2. \repeatTie
-                        cs1.. \repeatTie
-                        cs\breve \repeatTie
-                        cs2. \repeatTie \fff
-                        cs1 \repeatTie
-                        R1 * 1/4
+                        s1 * 3/4
+                        b,,1 \< \p
+                        b,,1 \repeatTie \fff
+                        \once \override Hairpin.circled-tip = ##t
+                        b,,2 \repeatTie \> \fff
+                        s1 * 2 \!
+                        b,,2. \p
+                        s1 * 5/4
+                        b,,2. \< \p
+                        b,,1 \repeatTie \fff
+                        \once \override Hairpin.circled-tip = ##t
+                        b,,2. \repeatTie \> \fff
+                        s1 * 3/4 \!
+                        b,,1.. \< \p
+                        b,,1.. \repeatTie \fff
+                        \once \override Hairpin.circled-tip = ##t
+                        b,,\breve \repeatTie \> \fff
+                        s1 * 2 \!
+                        b,,2. \p
+                        s1 * 3/4
+                        b,,\breve \< \ppp
+                        b,,1.. \repeatTie
+                        b,,1 \repeatTie
+                        b,,1 \repeatTie
+                        b,,2. \repeatTie
+                        b,,1.. \repeatTie
+                        b,,\breve \repeatTie
+                        b,,2. \repeatTie \fff
+                        b,,1 \repeatTie
+                        s1 * 1/4
                         \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \set ViolinStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
-                    }
-                    \set ViolinStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
-                    }
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
-                        \clef "percussion"
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             R1 * 3/4
                             R1 * 1
@@ -709,16 +679,21 @@
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
-                        \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \clef "percussion"
+                            \once \override Beam.color = #blue
+                            \once \override Dots.color = #blue
+                            \once \override Flag.color = #blue
+                            \once \override NoteHead.color = #blue
+                            \once \override Stem.color = #blue
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             c'2.
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (III)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (III)"
                                     }
                                 _ \markup {
                                     \larger
@@ -733,31 +708,83 @@
                                             ”
                                     }
                             \times 2/3 {
-                                c'2 :32 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2 \< \mf
                                     ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "brushes on BD"
+                                        \whiteout
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "brushes on BD"
                                         }
-                                c'2 -\accent
-                                c'2 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             \times 2/3 {
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             \times 2/3 {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                             }
-                            R1 * 1/4
+                            s1 * 1/4
+                            \once \override Beam.color = #blue
+                            \once \override Dots.color = #blue
+                            \once \override Flag.color = #blue
+                            \once \override NoteHead.color = #blue
+                            \once \override Stem.color = #blue
                             c'1..
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (IV)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (IV)"
                                     }
                                 _ \markup {
                                     \larger
@@ -771,24 +798,51 @@
                                         \italic
                                             ”
                                     }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                c'4 :32 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                                     ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "brushes on BD"
+                                        \whiteout
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "brushes on BD"
                                         }
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
-                            R1 * 1/4
+                            s1 * 1/4
+                            \once \override Beam.color = #blue
+                            \once \override Dots.color = #blue
+                            \once \override Flag.color = #blue
+                            \once \override NoteHead.color = #blue
+                            \once \override Stem.color = #blue
                             c'1
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (V)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (V)"
                                     }
                                 _ \markup {
                                     \larger
@@ -802,40 +856,122 @@
                                         \italic
                                             ”
                                     }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 :32 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \< \mf
                                     ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "brushes on BD"
+                                        \whiteout
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "brushes on BD"
                                         }
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
                             \times 4/5 {
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                             }
-                            R1 * 1/4
+                            s1 * 1/4
+                            \once \override Beam.color = #blue
+                            \once \override Dots.color = #blue
+                            \once \override Flag.color = #blue
+                            \once \override NoteHead.color = #blue
+                            \once \override Stem.color = #blue
                             c'2
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (VI)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (VI)"
                                     }
                                 _ \markup {
                                     \larger
@@ -849,34 +985,86 @@
                                         \italic
                                             ”
                                     }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 :32 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1 \< \mf
                                     ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "brushes on BD"
+                                        \whiteout
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "brushes on BD"
                                         }
-                                c'1 -\accent
-                                c'1 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
-                                c'1 :32
-                                c'1 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
                             }
                             \times 2/3 {
-                                c'1 :32
-                                c'1 -\accent
-                                c'1 :32 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1 \fff
                             }
-                            R1 * 1/4
+                            s1 * 1/4
+                            \once \override Beam.color = #blue
+                            \once \override Dots.color = #blue
+                            \once \override Flag.color = #blue
+                            \once \override NoteHead.color = #blue
+                            \once \override Stem.color = #blue
                             c'1..
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (VII)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (VII)"
                                     }
                                 _ \markup {
                                     \larger
@@ -890,24 +1078,51 @@
                                         \italic
                                             ”
                                     }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                c'4 :32 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                                     ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "brushes on BD"
+                                        \whiteout
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "brushes on BD"
                                         }
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
-                            R1 * 1/4
+                            s1 * 1/4
+                            \once \override Beam.color = #blue
+                            \once \override Dots.color = #blue
+                            \once \override Flag.color = #blue
+                            \once \override NoteHead.color = #blue
+                            \once \override Stem.color = #blue
                             c'2
                                 ^ \markup {
-                                    \upright
-                                        "grainfall (VIII)"
+                                    \whiteout
+                                        \upright
+                                            "grainfall (VIII)"
                                     }
                                 _ \markup {
                                     \larger
@@ -922,70 +1137,184 @@
                                             ”
                                     }
                             \times 4/5 {
-                                c'2 :32 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2 \< \mf
                                     ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "brushes on BD"
+                                        \whiteout
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "brushes on BD"
                                         }
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
-                                c'2 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/10 {
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             \times 4/5 {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
                             \times 4/5 {
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32 \fff
-                                \stopStaff
-                                \startStaff
-                                \clef "treble"
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                             }
-                            R1 * 23/4
+                            s1 * 23/4
                             \bar "|"
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 >>
                 \tag viola
                 \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \set ViolaStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
-                    }
-                    \set ViolaStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
-                    }
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
-                        \clef "percussion"
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             R1 * 3/4
                             R1 * 1
@@ -1023,135 +1352,412 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "treble"
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            R1 * 3/4
+                            \clef "percussion"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            s1 * 3/4
                             {
-                                \clef "percussion"
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                c'4 :32 \< \mf
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
                             {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
                             {
-                                c'8 :32 [
-                                c'8 -\accent
-                                c'8 :32
-                                c'8 -\accent \fff ]
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'8 [
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'8
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'8
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'8 \fff ]
                             }
-                            R1 * 2
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            s1 * 2
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 :32 \fff
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
-                            R1 * 5/4
+                            s1 * 5/4
                             {
-                                c'4 :32 \< \mf
-                                c'4 -\accent
-                                c'4 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
                             \times 2/3 {
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                             }
-                            R1 * 3/4
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            s1 * 3/4
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                c'2 :32 \< \mf
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                c'2 :32
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             {
-                                c'2 :32
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2 \fff
                             }
-                            R1 * 2
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            s1 * 2
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 :32 \fff
-                                c'4 -\accent
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
                             }
-                            R1 * 3/4
+                            s1 * 3/4
                             \times 2/3 {
-                                c'1 :32 \< \mf
-                                c'1 -\accent
-                                c'1 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1 \< \mf
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
                             }
-                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 -\accent
-                                c'1 :32
-                                c'1 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'1
                             }
                             \times 2/3 {
-                                c'2 :32
-                                c'2 -\accent
-                                c'2 :32
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             \times 2/3 {
-                                c'2 -\accent
-                                c'2 :32
-                                c'2 -\accent
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'2
                             }
                             {
-                                c'4 :32
-                                c'4 -\accent
-                                c'4 :32 \fff
-                                \stopStaff
-                                \startStaff
-                                \clef "treble"
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4
+                                \once \override Beam.color = #blue
+                                \once \override Dots.color = #blue
+                                \once \override Flag.color = #blue
+                                \once \override NoteHead.color = #blue
+                                \once \override Stem.color = #blue
+                                c'4 \fff
                             }
-                            R1 * 23/4
+                            s1 * 23/4
                             \bar "|"
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 >>
                 \tag cello
                 \context CelloStaffGroup = "Cello Staff Group" <<
-                    \set CelloStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
-                    }
-                    \set CelloStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
-                    }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
-                        \clef "percussion"
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             R1 * 3/4
                             R1 * 1
@@ -1189,20 +1795,20 @@
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \clef "bass"
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            \clef "treble"
-                            \once \override NoteHead #'style = #'harmonic
-                            fqf''2. \laissezVibrer \sfz
+                            \override NoteHead.style = #'harmonic
+                            fqf''2. -\laissezVibrer \sfz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \clef "bass"
+                            \revert NoteHead.style
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1211,8 +1817,9 @@
                                     {
                                         \override
                                             #'(font-name . "Palatino")
-                                            \upright
-                                                tasto
+                                            \whiteout
+                                                \upright
+                                                    tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1225,48 +1832,51 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \ottava #-1
+                            \clef "bass"
                             c,,1 \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2 \repeatTie \fff \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
-                                    \upright
-                                        XP
+                                    \whiteout
+                                        \upright
+                                            XP
                                 }
                             \ottava #0
-                            R1 * 1/4
-                            \clef "treble"
-                            \once \override NoteHead #'style = #'harmonic
-                            g''1.. \laissezVibrer \sfz
+                            s1 * 1/4
+                            \override NoteHead.style = #'harmonic
+                            g''1.. -\laissezVibrer \sfz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \clef "bass"
-                            \ottava #-1
+                            \revert NoteHead.style
                             c,,2. \fff
                                 ^ \markup {
-                                    \upright
-                                        XP
+                                    \whiteout
+                                        \upright
+                                            XP
                                     }
-                            \ottava #0
-                            R1 * 1/4
-                            \clef "treble"
-                            \once \override NoteHead #'style = #'harmonic
-                            fqf''1 \laissezVibrer \sffz
+                            s1 * 1/4
+                            \override NoteHead.style = #'harmonic
+                            fqf''1 -\laissezVibrer \sffz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \clef "bass"
+                            \revert NoteHead.style
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1275,8 +1885,9 @@
                                     {
                                         \override
                                             #'(font-name . "Palatino")
-                                            \upright
-                                                tasto
+                                            \whiteout
+                                                \upright
+                                                    tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1294,23 +1905,25 @@
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
-                                    \upright
-                                        XP
+                                    \whiteout
+                                        \upright
+                                            XP
                                 }
                             \ottava #0
-                            R1 * 1/4
-                            \clef "treble"
-                            \once \override NoteHead #'style = #'harmonic
-                            g''2 \laissezVibrer \sffz
+                            s1 * 1/4
+                            \override NoteHead.style = #'harmonic
+                            g''2 -\laissezVibrer \sffz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \clef "bass"
+                            \revert NoteHead.style
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1319,8 +1932,9 @@
                                     {
                                         \override
                                             #'(font-name . "Palatino")
-                                            \upright
-                                                tasto
+                                            \whiteout
+                                                \upright
+                                                    tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1338,43 +1952,45 @@
                             c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
-                                    \upright
-                                        XP
+                                    \whiteout
+                                        \upright
+                                            XP
                                 }
                             \ottava #0
-                            R1 * 1/4
-                            \clef "treble"
-                            \once \override NoteHead #'style = #'harmonic
-                            a''1.. \laissezVibrer \sfffz
+                            s1 * 1/4
+                            \override NoteHead.style = #'harmonic
+                            a''1.. -\laissezVibrer \sfffz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \clef "bass"
-                            \ottava #-1
+                            \revert NoteHead.style
                             c,,2. \fff
                                 ^ \markup {
-                                    \upright
-                                        XP
+                                    \whiteout
+                                        \upright
+                                            XP
                                     }
-                            \ottava #0
-                            R1 * 1/4
-                            \clef "treble"
-                            \once \override NoteHead #'style = #'harmonic
-                            cqs'''2 \laissezVibrer \sfffz
+                            s1 * 1/4
+                            \override NoteHead.style = #'harmonic
+                            cqs'''2 -\laissezVibrer \sfffz
                                 ^ \markup {
-                                    \upright
-                                        pizz.
+                                    \whiteout
+                                        \upright
+                                            pizz.
                                     }
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \clef "bass"
+                            \revert NoteHead.style
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1383,8 +1999,9 @@
                                     {
                                         \override
                                             #'(font-name . "Palatino")
-                                            \upright
-                                                tasto
+                                            \whiteout
+                                                \upright
+                                                    tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1404,11 +2021,12 @@
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
-                                    \upright
-                                        XP
+                                    \whiteout
+                                        \upright
+                                            XP
                                 }
                             \ottava #0
-                            R1 * 23/4
+                            s1 * 23/4
                             \bar "|"
                         }
                     }

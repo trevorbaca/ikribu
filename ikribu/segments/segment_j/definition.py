@@ -38,10 +38,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -187,16 +188,21 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vc,
     baca.select_stages(2, 4),
-    baca.make_hairpin(
-        'p < mf',
-        start=-1,
-        include_following_rest=True,
+    baca.clef('bass'),
+    baca.dynamic('p'),
+#    baca.make_hairpin(
+#        'p < mf',
+#        start=-1,
+#        include_following_rest=True,
+#        ),
+    baca.hairpins(
+        ['p < mf'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-1, leak=Right)
         ),
     baca.markup.vib_poco(),
-    baca.pitches('D1'),
     baca.ottava_bassa(),
-    abjad.Clef('bass'),
-    abjad.Dynamic('p'),
+    baca.pitches('D1'),
     )
 
 segment_maker.append_commands(
