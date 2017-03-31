@@ -33,10 +33,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -94,22 +95,23 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 2),
+    baca.dynamic('ppp'),
     baca.pitches('Db2'),
-    abjad.Dynamic('ppp'),
     )
 
 segment_maker.append_commands(
     [vn_rh, va_rh],
     baca.select_stages(1, 2),
-    baca.hairpins(
-        ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
-        enchain_hairpins=True,
-        span=[3, 4],
-        ),
+    baca.clef('percussion'),
+    # TODO: make work again after extending baca.hairpins():
+#    baca.hairpins(
+#        ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
+#        enchain_hairpins=True,
+#        span=[3, 4],
+#        ),
     baca.markup.boxed('1/2 clt'),
-    baca.repeat_ties_up(),
     baca.pitches('C4'),
-    abjad.Clef('percussion'),
+    baca.repeat_ties_up(),
     )
 
 segment_maker.append_commands(
@@ -134,7 +136,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 2),
+    baca.clef('treble'),
     baca.glissandi(),
     ikribu.tools.make_glissando_pitch_specifier(octave=5, rotation=-10),
-    abjad.Clef('treble'),
     )
