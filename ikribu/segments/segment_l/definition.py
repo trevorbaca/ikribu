@@ -39,10 +39,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -107,12 +108,12 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 7),
+    baca.dynamic('ppp'),
     baca.markup.make_markup(
         'breathe discreetly before any downbeat as needed'
         ' (but do not circular breathe)'
         ),
     baca.pitches('C2'),
-    abjad.Dynamic('ppp'),
     )
 
 segment_maker.append_commands(
@@ -126,59 +127,62 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(6, 8),
-    baca.hairpins(
-        [
-            'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
-            'mf < f', 'f > mf', 'mf < ff', 'ff > f',
-            'f < ff', 'ff > f', 'f < fff', 'fff > ff',
-            ],
-        enchain_hairpins=True,
-        include_following_rests=True,
-        span=[4],
-        ),
+    # TODO: make work again after extending baca.hairpins():
+#    baca.hairpins(
+#        [
+#            'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
+#            'mf < f', 'f > mf', 'mf < ff', 'ff > f',
+#            'f < ff', 'ff > f', 'f < fff', 'fff > ff',
+#            ],
+#        enchain_hairpins=True,
+#        include_following_rests=True,
+#        span=[4],
+#        ),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(4, 8),
-    baca.hairpins(
-        [
-            'p > pp', 'pp < p', 'p > pp', 'pp < mp',
-            'mp > p', 'p < mp', 'mp > p', 'p < mf',
-            'mf > mp', 'mp < mf', 'mf > mp', 'mp < f',
-            'f > mf', 'mf < f', 'f > mf', 'mf < ff',
-            'ff > f', 'f < ff', 'ff > f', 'f < fff',
-            ],
-        enchain_hairpins=True,
-        include_following_rests=True,
-        span=[4],
-        ),
+    # TODO: make work again after extending baca.hairpins():
+#    baca.hairpins(
+#        [
+#            'p > pp', 'pp < p', 'p > pp', 'pp < mp',
+#            'mp > p', 'p < mp', 'mp > p', 'p < mf',
+#            'mf > mp', 'mp < mf', 'mf > mp', 'mp < f',
+#            'f > mf', 'mf < f', 'f > mf', 'mf < ff',
+#            'ff > f', 'f < ff', 'ff > f', 'f < fff',
+#            ],
+#        enchain_hairpins=True,
+#        include_following_rests=True,
+#        span=[4],
+#        ),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 8),
-    baca.pitches('C4'),
     baca.one_line_staff(),
     baca.percussion_staff(),
+    baca.pitches('C4'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(1, 6),
-    baca.hairpins(
-        ['p < f', 'f > p'],
-        enchain_hairpins=True,
-        include_following_rests=True,
-        span=[
-            9, 8, 4, 5,
-            5, 3, 8, 4,
-            5, 4, 5, 4,
-            3, 8, 8, 9,
-            8, 4, 3, 9,
-            8, 5, 5, 4,
-            ],
-        ),
+    # TODO: make work again after extending baca.hairpins():
+#    baca.hairpins(
+#        ['p < f', 'f > p'],
+#        enchain_hairpins=True,
+#        include_following_rests=True,
+#        span=[
+#            9, 8, 4, 5,
+#            5, 3, 8, 4,
+#            5, 4, 5, 4,
+#            3, 8, 8, 9,
+#            8, 4, 3, 9,
+#            8, 5, 5, 4,
+#            ],
+#        ),
     )
 
 segment_maker.append_commands(
@@ -236,19 +240,22 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(4),
-    abjad.Hairpin('> niente'),
+    #abjad.Hairpin('> niente'),
+    baca.hairpins(['> niente']),
     baca.percussion_staff(),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(5, 8),
-    baca.accents(
-        pattern=patterntools.select_every([0, 4], inverted=True, period=9),
-        ),
-    baca.stem_tremolo(
-        pattern=patterntools.select_every([0, 4], period=9),
-        ),
+    # TODO: make work again after extending selectors with patterns:
+#    baca.accents(
+#        pattern=patterntools.select_every([0, 4], inverted=True, period=9),
+#        ),
+    # TODO: make work again after extending selectors with patterns:
+#    baca.stem_tremolo(
+#        pattern=patterntools.select_every([0, 4], period=9),
+#        ),
     )
 
 segment_maker.append_commands(
@@ -261,21 +268,24 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(2),
+    #abjad.Hairpin('> niente'),
+    baca.hairpins(['> niente']),
     baca.percussion_staff(),
-    abjad.Hairpin('> niente'),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(4, 8),
-    baca.accents(
-        pattern=patterntools.select_every(
-            [0, 5],
-            inverted=True,
-            period=11,
-            ),
-        ),
-    baca.stem_tremolo(
-        pattern=patterntools.select_every([0, 5], period=11),
-        ),
+    # TODO: make work again after extending selectors with patterns:
+#    baca.accents(
+#        pattern=patterntools.select_every(
+#            [0, 5],
+#            inverted=True,
+#            period=11,
+#            ),
+#        ),
+    # TODO: make work again after extending selectors with patterns:
+#    baca.stem_tremolo(
+#        pattern=patterntools.select_every([0, 5], period=11),
+#        ),
     )

@@ -49,10 +49,11 @@ spacing_specifier = baca.tools.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.tools.SegmentMaker(
+    ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    score_package=ikribu,
+    score_template=ikribu.tools.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -114,7 +115,7 @@ segment_maker.append_commands(
         baca.select_stages(12),
         baca.select_stages(16),
         baca.select_stages(19),
-        ]
+        ],
     baca.messiaen_tied_notes(),
     )
 
@@ -283,18 +284,24 @@ segment_maker.append_commands(
         baca.select_stages(9, 10),
         baca.select_stages(13, 14),
         ],
-    baca.make_hairpin('p < fff', stop=2),
-    baca.make_hairpin(
-        'fff > niente',
-        include_following_rest=True,
-        start=-1
+    baca.hairpins(['p < fff'], selector=baca.select_leaves(stop=2)),
+#    baca.make_hairpin(
+#        'fff > niente',
+#        include_following_rest=True,
+#        start=-1
+#        ),
+    baca.hairpins(
+        ['fff > niente'],
+        include_rests=True,
+        selector=baca.select_leaves(start=-1, leak=Right),
         ),
     )
 
 segment_maker.append_commands(
     bcl,
     baca.select_stages(20, 22),
-    baca.make_hairpin('ppp < fff', stop=-1),
+    #baca.make_hairpin('ppp < fff', stop=-1),
+    baca.hairpins(['ppp < fff'], selector=baca.select_leaves(stop=-1)),
     )
 
 segment_maker.append_commands(
@@ -303,7 +310,7 @@ segment_maker.append_commands(
         baca.select_stages(6),
         baca.select_stages(17),
         ],
-    abjad.Dynamic('p'),
+    baca.dynamic('p'),
     )
 
 segment_maker.append_commands(
@@ -343,12 +350,14 @@ segment_maker.append_commands(
         baca.select_stages(17),
         baca.select_stages(20, 21),
         ],
-    baca.accents(
-        pattern=patterntools.select_every([0], inverted=True, period=2),
-        ),
-    baca.stem_tremolo(
-        pattern=patterntools.select_every([0], period=2),
-        ),
+    # TODO: make work again after extending selectors with patterns:
+#    baca.accents(
+#        pattern=patterntools.select_every([0], inverted=True, period=2),
+#        ),
+    # TODO: make work again after extending selectors with patterns:
+#    baca.stem_tremolo(
+#        pattern=patterntools.select_every([0], period=2),
+#        ),
     )
 
 segment_maker.append_commands(
@@ -396,8 +405,8 @@ segment_maker.append_commands(
         baca.select_stages(17),
         baca.select_stages(20, 21),
         ],
-    baca.pitches('C1'),
     baca.ottava_bassa(),
+    baca.pitches('C1'),
     )
 
 segment_maker.append_commands(
@@ -408,7 +417,7 @@ segment_maker.append_commands(
         baca.select_stages(13, 14),
         baca.select_stages(20, 21),
         ],
-    baca.make_hairpin('mf < fff'),
+    baca.hairpins(['mf < fff']),
     )
 
 segment_maker.append_commands(
@@ -431,7 +440,7 @@ segment_maker.append_commands(
         baca.select_stages(6),
         baca.select_stages(17),
         ],
-    abjad.Dynamic('fff'),
+    baca.dynamic('fff'),
     )
 
 segment_maker.append_commands(
@@ -446,71 +455,77 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vc,
     baca.select_stages(1),
-    baca.markup.string_number(3),
+    baca.clef_spanner(clef='treble'),
+    baca.dynamic('sfz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
-    baca.clef_spanner(clef='treble'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Dynamic('sfz'),
+    )
+
+segment_maker.append_commands(
+    vc,
+    baca.select_stages(2, 4),
+    baca.clef('bass'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(5),
-    baca.markup.string_number(3),
+    baca.clef_spanner(clef='treble'),
+    baca.dynamic('sfz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('G5'),
-    baca.clef_spanner(clef='treble'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Dynamic('sfz'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(8),
-    baca.markup.string_number(3),
+    baca.clef_spanner(clef='treble'),
+    baca.dynamic('sffz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
-    baca.clef_spanner(clef='treble'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Dynamic('sffz'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(12),
-    baca.markup.string_number(3),
+    baca.clef_spanner(clef='treble'),
+    baca.dynamic('sffz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('G5'),
-    baca.clef_spanner(clef='treble'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Dynamic('sffz'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(16),
-    baca.markup.string_number(3),
+    baca.clef_spanner(clef='treble'),
+    baca.dynamic('sfffz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('A5'),
-    baca.clef_spanner(clef='treble'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Dynamic('sfffz'),
     )
 
 segment_maker.append_commands(
     vc,
     baca.select_stages(19),
-    baca.markup.string_number(3),
+    baca.clef_spanner(clef='treble'),
+    baca.dynamic('sfffz'),
+    baca.laissez_vibrer(),
     baca.markup.pizz(),
+    baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('C+6'),
-    baca.clef_spanner(clef='treble'),
-    abjad.indicatortools.LaissezVibrer(),
-    abjad.Dynamic('sfffz'),
     )
