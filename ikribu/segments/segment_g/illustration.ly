@@ -1,4 +1,4 @@
-\version "2.19.36"
+\version "2.19.58"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -189,82 +189,53 @@
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \clef "treble"
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        \center-column
-                            {
-                                Bass
-                                clarinet
-                            }
-                    }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        \line
-                            {
-                                B.
-                                cl.
-                            }
-                    }
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        a1.. \< \ppp
-                        R1 * 1/6 \mp
-                        af1.. \< \pp
-                        R1 * 1/6 \mf
-                        g1.. \< \p
-                        R1 * 1/6 \f
-                        fs1.. \< \mf
-                        R1 * 1/6 \ff
-                        f1.. \< \f
-                        R1 * 1/6 \fff
-                        e1.. \< \ff
-                        R1 * 1/6 \ffff
+                        g,1.. \< \ppp
+                        s1 * 1/6 \mp
+                        gf,1.. \< \pp
+                        s1 * 1/6 \mf
+                        f,1.. \< \p
+                        s1 * 1/6 \f
+                        e,1.. \< \mf
+                        s1 * 1/6 \ff
+                        ef,1.. \< \f
+                        s1 * 1/6 \fff
+                        d,1.. \< \ff
+                        s1 * 1/6 \ffff
                         \bar "|"
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \set ViolinStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Violin
-                    }
-                    \set ViolinStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vn.
-                    }
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -272,35 +243,34 @@
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
-                        \clef "treble"
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -310,45 +280,35 @@
                 >>
                 \tag viola
                 \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \set ViolaStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Viola
-                    }
-                    \set ViolaStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Va.
-                    }
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -356,35 +316,34 @@
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \clef "alto"
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -394,46 +353,35 @@
                 >>
                 \tag cello
                 \context CelloStaffGroup = "Cello Staff Group" <<
-                    \set CelloStaffGroup.instrumentName = \markup {
-                    \hcenter-in
-                        #16
-                        Cello
-                    }
-                    \set CelloStaffGroup.shortInstrumentName = \markup {
-                    \hcenter-in
-                        #10
-                        Vc.
-                    }
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
-                        \clef "percussion"
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                             }
                             R1 * 7/4
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 R1 * 1/4
                                 \bar "|"
@@ -442,61 +390,44 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
                             \clef "treble"
-                            d''1.. :32 \glissando \< \ppp
+                            \override NoteHead.style = #'harmonic
+                            \override TupletBracket.direction = #down
+                            d''1.. :32 \glissando
                                 _ \markup {
-                                    \upright
-                                        III
+                                    \whiteout
+                                        \upright
+                                            III
                                     }
-                            \tweak #'edge-height #'(0.7 . 0)
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                fqf''4 :32 \pp \glissando \> \pp
+                                fqf''4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            d''1.. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            d''1.. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            d''1.. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            d''1.. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g'1.. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            g'1.. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g'1.. :32 \ppp \glissando \< \ppp
-                            \tweak #'edge-height #'(0.7 . 0)
+                            g'1.. :32 \glissando
+                            \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                \once \override NoteHead #'style = #'harmonic
-                                \once \override TupletBracket #'direction = #down
-                                d'4 :32 \pp \glissando \> \pp
+                                d'4 :32 \glissando
                             }
-                            \once \override NoteHead #'style = #'harmonic
-                            \once \override TupletBracket #'direction = #down
-                            g'1.. :32 \ppp
-                            R1 * 1/6
+                            g'1.. :32
+                            \revert NoteHead.style
+                            s1 * 1/6
                             \bar "|"
+                            \revert TupletBracket.direction
                         }
                     }
                 >>
