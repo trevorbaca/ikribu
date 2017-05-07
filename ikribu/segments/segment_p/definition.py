@@ -9,7 +9,7 @@ from ikribu.materials.__abbreviations__ import *
 ##################################### [P] #####################################
 ###############################################################################
 
-stage_specifier = baca.tools.StageSpecifier([
+stage_specifier = baca.StageSpecifier([
     3,
     1,
     1,
@@ -18,13 +18,13 @@ stage_specifier = baca.tools.StageSpecifier([
     abjad.Fermata('longfermata'),
     ])
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.TempoSpecifier([
     (1, ikribu.materials.tempi['windows']),
     (1, abjad.Ritardando()),
     (4, ikribu.materials.tempi['night']),
     ])
 
-maker = baca.tools.TimeSignatureMaker(
+maker = baca.TimeSignatureMaker(
     ikribu.materials.time_signatures,
     rotation=-16,
     stage_specifier=stage_specifier,
@@ -32,12 +32,12 @@ maker = baca.tools.TimeSignatureMaker(
     )
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
-spacing_specifier = baca.tools.HorizontalSpacingCommand(
+spacing_specifier = baca.HorizontalSpacingCommand(
     fermata_measure_width=abjad.Duration(1, 4),
     minimum_width=abjad.Duration(1, 12),
     )
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,

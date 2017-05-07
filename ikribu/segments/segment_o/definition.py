@@ -9,7 +9,7 @@ from ikribu.materials.__abbreviations__ import *
 ##################################### [O] #####################################
 ###############################################################################
 
-stage_specifier = baca.tools.StageSpecifier([
+stage_specifier = baca.StageSpecifier([
     1, 1, 1, 1,
     1, 1, 1, 1,
     1, 1, 1, 1,
@@ -18,11 +18,11 @@ stage_specifier = baca.tools.StageSpecifier([
     abjad.Fermata('fermata'),
     ])
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.TempoSpecifier([
     (1, ikribu.materials.tempi['night']),
     ])
 
-maker = baca.tools.TimeSignatureMaker(
+maker = baca.TimeSignatureMaker(
     ikribu.materials.time_signatures,
     rotation=-15,
     stage_specifier=stage_specifier,
@@ -30,12 +30,12 @@ maker = baca.tools.TimeSignatureMaker(
     )
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
-spacing_specifier = baca.tools.HorizontalSpacingCommand(
+spacing_specifier = baca.HorizontalSpacingCommand(
     fermata_measure_width=abjad.Duration(1, 4),
     minimum_width=abjad.Duration(1, 12),
     )
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
@@ -106,7 +106,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 2),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
             item_class=abjad.NamedPitch,
@@ -117,7 +117,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(3, 6),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,
@@ -128,7 +128,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(7),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
             item_class=abjad.NamedPitch,
@@ -145,7 +145,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(9),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
             item_class=abjad.NamedPitch,
@@ -156,7 +156,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(10),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,
@@ -167,7 +167,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(11, 12),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
             item_class=abjad.NamedPitch,
@@ -178,7 +178,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(13),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,
@@ -195,7 +195,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(15, 16),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
             item_class=abjad.NamedPitch,
@@ -206,7 +206,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(17),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,
@@ -217,7 +217,7 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(18),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
             item_class=abjad.NamedPitch,
@@ -257,7 +257,7 @@ segment_maker.append_commands(
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
             item_class=abjad.NamedPitch,
@@ -285,7 +285,7 @@ segment_maker.append_commands(
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,

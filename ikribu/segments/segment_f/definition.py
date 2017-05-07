@@ -9,16 +9,16 @@ from ikribu.materials.__abbreviations__ import *
 ##################################### [F] #####################################
 ###############################################################################
 
-stage_specifier = baca.tools.StageSpecifier([
+stage_specifier = baca.StageSpecifier([
     1, 1, 1, 1,
     1, 1, 1, 1,
     ])
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.TempoSpecifier([
     (1, ikribu.materials.tempi['night']),
     ])
 
-maker = baca.tools.TimeSignatureMaker(
+maker = baca.TimeSignatureMaker(
     ikribu.materials.time_signatures,
     rotation=-6,
     stage_specifier=stage_specifier,
@@ -26,12 +26,12 @@ maker = baca.tools.TimeSignatureMaker(
     )
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
-spacing_specifier = baca.tools.HorizontalSpacingCommand(
+spacing_specifier = baca.HorizontalSpacingCommand(
     fermata_measure_width=abjad.Duration(1, 4),
     minimum_width=abjad.Duration(1, 12),
     )
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,
@@ -116,7 +116,7 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(6, 7),
     baca.markup.string_numbers([2, 3]),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
             item_class=abjad.NamedPitch,
@@ -132,7 +132,7 @@ segment_maker.append_commands(
     va,
     baca.select_stages(6, 7),
     baca.markup.string_numbers([1, 2]),
-    baca.tools.ScorePitchCommand(
+    baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
             items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
             item_class=abjad.NamedPitch,
