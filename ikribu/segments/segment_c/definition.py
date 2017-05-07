@@ -9,7 +9,7 @@ from ikribu.materials.__abbreviations__ import *
 ##################################### [C] #####################################
 ###############################################################################
 
-stage_specifier = baca.tools.StageSpecifier([
+stage_specifier = baca.StageSpecifier([
     1,
     1, 1, 1, 1,
     1, 1, 1, 1,
@@ -17,7 +17,7 @@ stage_specifier = baca.tools.StageSpecifier([
     1, 1, 1, 1,
     ])
 
-tempo_specifier = baca.tools.TempoSpecifier([
+tempo_specifier = baca.TempoSpecifier([
     (1, ikribu.materials.tempi['incisions']),
     (2, ikribu.materials.tempi['night']),
     (2, abjad.Accelerando()),
@@ -39,19 +39,19 @@ tempo_specifier = baca.tools.TempoSpecifier([
 time_signatures = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
 time_signatures.insert(0, (7, 4))
 time_signatures = [time_signatures]
-maker = baca.tools.TimeSignatureMaker(
+maker = baca.TimeSignatureMaker(
     time_signatures,
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
     )
 measures_per_stage, tempo_specifier, time_signatures = maker()
 
-spacing_specifier = baca.tools.HorizontalSpacingCommand(
+spacing_specifier = baca.HorizontalSpacingCommand(
     fermata_measure_width=abjad.Duration(1, 4),
     minimum_width=abjad.Duration(1, 12),
     )
 
-segment_maker = baca.tools.SegmentMaker(
+segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     #label_clock_time=True,
     #label_baca.select_stages=True,

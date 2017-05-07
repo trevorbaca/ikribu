@@ -11,6 +11,6 @@ def make_color_rhythm_specifier(n):
             avoid_dots=True,
             ),
         )
-    return baca.tools.RhythmSpecifier(
+    return baca.RhythmSpecifier(
         rhythm_maker=rhythm_maker,
         )

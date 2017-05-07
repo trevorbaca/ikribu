@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class ScoreTemplate(baca.tools.ScoreTemplate):
+class ScoreTemplate(baca.ScoreTemplate):
     r'''Score template.
 
     ::
