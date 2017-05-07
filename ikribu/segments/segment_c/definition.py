@@ -181,7 +181,6 @@ segment_maker.append_commands(
     baca.laissez_vibrer(),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
-    #indicatortools.LaissezVibrer(),
     )
 
 segment_maker.append_commands(
