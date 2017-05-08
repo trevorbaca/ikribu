@@ -2,8 +2,17 @@
 import abjad
 import baca
 import ikribu
-from ikribu.materials.__abbreviations__ import *
 
+### CONTEXT NAMES ###
+
+bcl = 'Bass Clarinet Music Voice'
+vn = 'Violin Music Voice'
+vn_rh = 'Violin RH Music Voice'
+va = 'Viola Music Voice'
+va_rh = 'Viola RH Music Voice'
+vc = 'Cello Music Voice'
+vc_rh = 'Cello RH Music Voice'
+tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [A] #####################################
