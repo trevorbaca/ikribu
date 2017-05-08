@@ -2,8 +2,17 @@
 import abjad
 import baca
 import ikribu
-from ikribu.materials.__abbreviations__ import *
 
+### CONTEXT NAMES ###
+
+bcl = 'Bass Clarinet Music Voice'
+vn = 'Violin Music Voice'
+vn_rh = 'Violin RH Music Voice'
+va = 'Viola Music Voice'
+va_rh = 'Viola RH Music Voice'
+vc = 'Cello Music Voice'
+vc_rh = 'Cello RH Music Voice'
+tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [P] #####################################
@@ -82,7 +91,7 @@ segment_maker.append_commands(
     vn_rh,
     baca.select_stages(1, 3),
     ikribu.tools.make_bow_rhythm_specifier(
-        logical_tie_masks=silence_every([0, 8], period=12),
+        logical_tie_masks=abjad.silence_every([0, 8], period=12),
         rotation=0,
         ),
     )
@@ -97,7 +106,7 @@ segment_maker.append_commands(
     va_rh,
     baca.select_stages(1, 3),
     ikribu.tools.make_bow_rhythm_specifier(
-        logical_tie_masks=silence_every([4, 14], period=16),
+        logical_tie_masks=abjad.silence_every([4, 14], period=16),
         rotation=-1,
         ),
     )
@@ -112,7 +121,7 @@ segment_maker.append_commands(
     vc_rh,
     baca.select_stages(1, 3),
     ikribu.tools.make_bow_rhythm_specifier(
-        logical_tie_masks=silence_every([8, 20], period=20),
+        logical_tie_masks=abjad.silence_every([8, 20], period=20),
         rotation=-2,
         ),
     )
