@@ -259,11 +259,11 @@ segment_maker.append_commands(
     baca.select_stages(5, 8),
     # TODO: make work again after extending selectors with patterns:
 #    baca.accents(
-#        pattern=patterntools.select_every([0, 4], inverted=True, period=9),
+#        pattern=abjad.index_every([0, 4], inverted=True, period=9),
 #        ),
     # TODO: make work again after extending selectors with patterns:
 #    baca.stem_tremolo(
-#        pattern=patterntools.select_every([0, 4], period=9),
+#        pattern=abjad.index_every([0, 4], period=9),
 #        ),
     )
 
@@ -287,7 +287,7 @@ segment_maker.append_commands(
     baca.select_stages(4, 8),
     # TODO: make work again after extending selectors with patterns:
 #    baca.accents(
-#        pattern=patterntools.select_every(
+#        pattern=abjad.index_every(
 #            [0, 5],
 #            inverted=True,
 #            period=11,
@@ -295,6 +295,6 @@ segment_maker.append_commands(
 #        ),
     # TODO: make work again after extending selectors with patterns:
 #    baca.stem_tremolo(
-#        pattern=patterntools.select_every([0, 5], period=11),
+#        pattern=abjad.index_every([0, 5], period=11),
 #        ),
     )

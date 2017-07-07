@@ -153,11 +153,11 @@ segment_maker.append_commands(
     baca.select_stages(1, 16),
     # TODO: decide how to model with selectors:
     #baca.accents(
-    #    pattern=patterntools.select_every([0, 4], inverted=True, period=9),
+    #    pattern=abjad.index_every([0, 4], inverted=True, period=9),
     #    ),
     # TODO: decide how to model with selectors:
     #baca.stem_tremolo(
-    #    pattern=patterntools.select_every([0, 4], period=9),
+    #    pattern=abjad.index_every([0, 4], period=9),
     #    ),
     # TODO: make work with selectors:
     #baca.hairpins(
