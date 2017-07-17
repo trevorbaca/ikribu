@@ -137,8 +137,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             instrument_name='bass clarinet',
             short_instrument_name='b. cl.',
             )
-        abjad.attach(bass_clarinet, bass_clarinet_music_staff)
-        abjad.attach(abjad.Clef('treble'), bass_clarinet_music_staff)
+        #abjad.attach(bass_clarinet, bass_clarinet_music_staff)
+        #abjad.attach(abjad.Clef('treble'), bass_clarinet_music_staff)
         self._attach_tag('bass_clarinet', bass_clarinet_music_staff)
         violin_rh_music_voice = abjad.Voice(
             [], 
@@ -167,8 +167,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         violin = abjad.instrumenttools.Violin()
         violin._default_scope = 'ViolinStaffGroup'
-        abjad.attach(violin, violin_staff_group)
-        abjad.attach(abjad.Clef('treble'), violin_music_staff)
+        #abjad.attach(violin, violin_staff_group)
+        #abjad.attach(abjad.Clef('treble'), violin_music_staff)
         self._attach_tag('violin', violin_staff_group)
         viola_rh_music_voice = abjad.Voice(
             [], 
@@ -197,8 +197,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         viola = abjad.instrumenttools.Viola()
         viola._default_scope = 'ViolaStaffGroup'
-        abjad.attach(viola, viola_staff_group)
-        abjad.attach(abjad.Clef('alto'), viola_music_staff)
+        #abjad.attach(viola, viola_staff_group)
+        #abjad.attach(abjad.Clef('alto'), viola_music_staff)
         self._attach_tag('viola', viola_staff_group)
         cello_rh_music_voice = abjad.Voice(
             [], 
@@ -227,8 +227,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         cello = abjad.instrumenttools.Cello()
         cello._default_scope = 'CelloStaffGroup'
-        abjad.attach(cello, cello_staff_group)
-        abjad.attach(abjad.Clef('bass'), cello_music_staff)
+        #abjad.attach(cello, cello_staff_group)
+        #abjad.attach(abjad.Clef('bass'), cello_music_staff)
         self._attach_tag('cello', cello_staff_group)
         ensemble_staff_group = abjad.StaffGroup(
             [
