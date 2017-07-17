@@ -42,9 +42,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                         \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                             \tag bass_clarinet
                             \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                                \clef "treble"
-                                \set Staff.instrumentName = \markup { "Bass clarinet" }
-                                \set Staff.shortInstrumentName = \markup { "B. cl." }
                                 \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                                 }
                             }
@@ -57,7 +54,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     }
                                 }
                                 \context ViolinMusicStaff = "Violin Music Staff" {
-                                    \clef "treble"
                                     \context ViolinMusicVoice = "Violin Music Voice" {
                                     }
                                 }
@@ -71,7 +67,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     }
                                 }
                                 \context ViolaMusicStaff = "Viola Music Staff" {
-                                    \clef "alto"
                                     \context ViolaMusicVoice = "Viola Music Voice" {
                                     }
                                 }
@@ -85,7 +80,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                     }
                                 }
                                 \context CelloMusicStaff = "Cello Music Staff" {
-                                    \clef "bass"
                                     \context CelloMusicVoice = "Cello Music Voice" {
                                     }
                                 }
