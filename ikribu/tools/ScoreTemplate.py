@@ -47,8 +47,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                             \tag violin
                             \context ViolinStaffGroup = "Violin Staff Group" <<
-                                \set ViolinStaffGroup.instrumentName = \markup { Violin }
-                                \set ViolinStaffGroup.shortInstrumentName = \markup { Vn. }
                                 \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                                     \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                                     }
@@ -60,8 +58,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                             >>
                             \tag viola
                             \context ViolaStaffGroup = "Viola Staff Group" <<
-                                \set ViolaStaffGroup.instrumentName = \markup { Viola }
-                                \set ViolaStaffGroup.shortInstrumentName = \markup { Va. }
                                 \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                                     \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                                     }
@@ -73,8 +69,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                             >>
                             \tag cello
                             \context CelloStaffGroup = "Cello Staff Group" <<
-                                \set CelloStaffGroup.instrumentName = \markup { Cello }
-                                \set CelloStaffGroup.shortInstrumentName = \markup { Vc. }
                                 \context CelloRHMusicStaff = "Cello RH Music Staff" {
                                     \context CelloRHMusicVoice = "Cello RH Music Voice" {
                                     }
