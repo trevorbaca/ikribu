@@ -4,7 +4,7 @@ import baca
 
 
 def make_vigil_rhythm_specifier():
-    counts = abjad.sequencetools.Sequence([16, -1])
+    counts = abjad.Sequence([16, -1])
     rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
         talea=abjad.rhythmmakertools.Talea(
             counts=counts,

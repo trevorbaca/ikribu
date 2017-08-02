@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -72,8 +72,8 @@
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 7 120)
-                    \newSpacingSection
                     \mark #17
+                    \newSpacingSection
                     s1 * 7/4 ^ \markup {
                         \fontsize
                             #-6
@@ -163,10 +163,10 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
                         bf,4
                             ^ \markup {
                                 \whiteout
@@ -248,10 +248,10 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
                             b4 -\tongue #2
                                 ^ \markup {
                                     \whiteout
@@ -347,10 +347,10 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
                             c'4 -\staccato
                                 ^ \markup {
                                     \whiteout
@@ -448,10 +448,10 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
+                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                \clef "percussion"
                                 c'8 -\accent [
                                     ^ \markup {
                                         \whiteout
