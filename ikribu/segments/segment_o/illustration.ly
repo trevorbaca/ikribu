@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -107,8 +107,8 @@
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
                     \mark #15
+                    \newSpacingSection
                     s1 * 1 ^ \markup {
                         \fontsize
                             #-6
@@ -462,6 +462,7 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \clef "bass"
                             s1 * 7/2
+                            \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -484,7 +485,6 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \ottava #-1
                             bf,,,2 \startTextSpan
                             bf,,,1.. \repeatTie
                             bf,,,1.. \repeatTie

@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -75,8 +75,8 @@
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
                     \mark #10
+                    \newSpacingSection
                     s1 * 7/4 ^ \markup {
                         \fontsize
                             #-6
@@ -175,10 +175,10 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        \clef "percussion"
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
+                        \clef "percussion"
                         \override RepeatTie.direction = #up
                         bf,4
                             ^ \markup {
@@ -303,10 +303,10 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \clef "percussion"
                             \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
@@ -432,10 +432,10 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \clef "percussion"
                             \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
@@ -573,8 +573,8 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             s1 * 15/4
-                            \ottava #-1
                             \clef "bass"
+                            \ottava #-1
                             d,,1 \p
                                 ^ \markup {
                                     \whiteout

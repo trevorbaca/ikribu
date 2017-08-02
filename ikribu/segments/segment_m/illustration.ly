@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -217,8 +217,8 @@
                     \once \override TextSpanner.dash-fraction = 0.25
                     \once \override TextSpanner.dash-period = 1.5
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
                     \mark #13
+                    \newSpacingSection
                     s1 * 3/4 \startTextSpan
                 }
                 {
@@ -680,15 +680,15 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'2.
                                 ^ \markup {
                                     \whiteout
@@ -1353,10 +1353,10 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \clef "percussion"
                             s1 * 3/4
                             {
                                 \once \override Beam.color = #blue
@@ -1809,6 +1809,8 @@
                                             III
                                     }
                             \revert NoteHead.style
+                            \clef "bass"
+                            \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1831,8 +1833,6 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \ottava #-1
-                            \clef "bass"
                             c,,1 \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2 \repeatTie \fff \stopTextSpan ^ \markup {
@@ -1877,6 +1877,7 @@
                                             III
                                     }
                             \revert NoteHead.style
+                            \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1899,7 +1900,6 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \ottava #-1
                             c,,2. \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
@@ -1924,6 +1924,7 @@
                                             III
                                     }
                             \revert NoteHead.style
+                            \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1946,7 +1947,6 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \ottava #-1
                             c,,1.. \< \mf \startTextSpan
                             c,,1.. \repeatTie
                             c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
@@ -1991,6 +1991,7 @@
                                             III
                                     }
                             \revert NoteHead.style
+                            \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -2013,7 +2014,6 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \ottava #-1
                             c,,\breve \< \mf \startTextSpan
                             c,,1.. \repeatTie
                             c,,1 \repeatTie

@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -82,8 +82,8 @@
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
                     \mark #3
+                    \newSpacingSection
                     s1 * 7/4 ^ \markup {
                         \fontsize
                             #-6
@@ -389,10 +389,10 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         s1 * 7/4
+                        \clef "percussion"
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
                         \override RepeatTie.direction = #up
                         bf,4
                             ^ \markup {

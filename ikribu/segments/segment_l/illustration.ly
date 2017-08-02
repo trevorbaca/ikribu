@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -153,8 +153,8 @@
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
                     \mark #12
+                    \newSpacingSection
                     s1 * 2 ^ \markup {
                         \fontsize
                             #-6
@@ -447,10 +447,10 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \times 16/20 {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                \clef "percussion"
                                 c'8 -\staccato [
                                     _ \markup {
                                         \larger
@@ -1005,10 +1005,10 @@
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \times 16/18 {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                \clef "percussion"
                                 c'8 -\staccato [
                                     _ \markup {
                                         \larger
@@ -1589,10 +1589,10 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \clef "percussion"
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie

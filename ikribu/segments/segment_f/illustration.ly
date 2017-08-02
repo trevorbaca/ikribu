@@ -1,4 +1,4 @@
-\version "2.19.59"
+\version "2.19.64"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -50,8 +50,8 @@
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
-                    \newSpacingSection
                     \mark #6
+                    \newSpacingSection
                     s1 * 1 ^ \markup {
                         \fontsize
                             #-6
@@ -285,15 +285,15 @@
                                             "trem. XP (non. flaut.)"
                                 }
                             s1 * 1/2
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             \once \override Beam.color = #blue
                             \once \override Dots.color = #blue
                             \once \override Flag.color = #blue
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
@@ -391,9 +391,9 @@
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
                             c'4 \repeatTie
+                            \revert RepeatTie.direction
                             \stopStaff
                             \startStaff
-                            \revert RepeatTie.direction
                             s1 * 7/4
                             \bar "|"
                         }

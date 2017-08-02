@@ -7,7 +7,7 @@ def make_bow_rhythm_specifier(
     logical_tie_masks=abjad.silence_every([4, 19], period=20),
     rotation=None,
     ):
-    extra_counts_per_division = abjad.sequencetools.Sequence([-1, 0, 1, 2])
+    extra_counts_per_division = abjad.Sequence([-1, 0, 1, 2])
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation
         )
