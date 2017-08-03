@@ -11,7 +11,7 @@ def make_glissando_pitch_specifier(octave=4, rotation=None):
     pitches = left[:] + right[1:-1]
     transposition = 12 * (octave - 4)
     pitches = [_ + transposition for _ in pitches]
-    pitches = abjad.Sequence(pitches)
+    pitches = abjad.sequence(pitches)
     pitches = pitches.rotate(n=rotation)
     specifier = baca.pitches(pitches)
     return specifier

@@ -4,9 +4,9 @@ import baca
 
 
 def make_glissando_rhythm_specifier(rotation_1=None, rotation_2=None):
-    counts = abjad.Sequence([2, 3, 2, 3, 14, 16, 14, 16])
+    counts = abjad.sequence([2, 3, 2, 3, 14, 16, 14, 16])
     counts = counts.rotate(n=rotation_1)
-    extra_counts_per_division = abjad.Sequence([2, 4, 0])
+    extra_counts_per_division = abjad.sequence([2, 4, 0])
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation_2,
         )
