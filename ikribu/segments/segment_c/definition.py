@@ -132,7 +132,7 @@ segment_maker.append_commands(
     baca.one_line_staff(),
     baca.pitches('Bb2'),
     baca.repeat_ties_up(),
-    #abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
+    #abjad.ClefSpanner(clef='percussion'),
     )
 
 segment_maker.append_commands(
@@ -153,7 +153,7 @@ segment_maker.append_commands(
     baca.markup.make_markup('grainfall (II)'),
     baca.one_line_staff(),
     baca.pitches('C4'),
-    #abjad.spanenrtools.abjad.ClefSpanner(clef='percussion'),
+    #abjad.ClefSpanner(clef='percussion'),
     )
 
 segment_maker.append_commands(

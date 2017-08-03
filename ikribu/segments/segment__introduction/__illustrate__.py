@@ -8,7 +8,7 @@ import traceback
 
 
 if __name__ == '__main__':
-    with abjad.systemtools.Timer() as timer:
+    with abjad.Timer() as timer:
         try:
             from definition import segment_maker
         except ImportError:
@@ -62,7 +62,7 @@ if __name__ == '__main__':
             'illustration.pdf',
             )
         output_paths = (ly_path, pdf_path)
-        with abjad.systemtools.Timer() as timer:
+        with abjad.Timer() as timer:
             abjad.persist(lilypond_file).as_pdf(pdf_path)
         #message = 'LilyPond runtime {} {} ...'
         #total_time = int(timer.elapsed_time)
