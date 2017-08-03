@@ -30,7 +30,7 @@ class BowContactPointSpecifier(abjad.AbjadValueObject):
     ### SPECIAL METHODS ###
 
     def __call__(self, logical_ties=None):
-        bow_contact_points = baca.Sequence(self._bow_contact_points)
+        bow_contact_points = baca.sequence(self._bow_contact_points)
         bow_contact_points = bow_contact_points.rotate(n=self.rotation)
         bow_contact_points = bow_contact_points.flatten(depth=1)
         bow_contact_points = abjad.CyclicTuple(bow_contact_points)
