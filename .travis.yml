@@ -6,7 +6,7 @@ python:
     - 3.5
 
 before_install:
-    - LILYPOND_SCRIPT=lilypond-2.19.59-1.linux-64.sh
+    - LILYPOND_SCRIPT=lilypond-2.19.64-1.linux-64.sh
     - LILYPOND_URL=http://download.linuxaudio.org/lilypond/binaries/linux-64
     - LILYPOND_URL=$LILYPOND_URL/$LILYPOND_SCRIPT
     - wget -q $LILYPOND_URL
@@ -22,12 +22,11 @@ install:
     - pip install -e git://github.com/trevorbaca/baca.git#egg=baca
     - pip install -r requirements.txt
     - pip install -e .
+    - PACKAGE=ikribu
 
 script:
-    - PACKAGE=ikribu
-    - ajv doctest -x ./$PACKAGE
-    - py.test -xrf ./$PACKAGE
-    - python ./$PACKAGE/test/test_segments.py
+    - ajv doctest ./$PACKAGE
+    - py.test -rf ./$PACKAGE
 
 notifications:
     email: false
