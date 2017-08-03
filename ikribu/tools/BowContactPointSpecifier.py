@@ -3,7 +3,7 @@ import abjad
 import baca
 
 
-class BowContactPointSpecifier(abjad.abctools.AbjadValueObject):
+class BowContactPointSpecifier(abjad.AbjadValueObject):
     r'''Bow contact point specifier.
     '''
 
