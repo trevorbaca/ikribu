@@ -1,4 +1,4 @@
-#(set-default-paper-size "11x17" 'landscape)
+#(set-default-paper-size "11x17landscape")
 #(set-global-staff-size 12)
 
 \include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
