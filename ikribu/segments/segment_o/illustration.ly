@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -251,27 +251,27 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        <bf,, d'>1
-                        <bf,, d'>2. \repeatTie
-                        <bf,, f'>1
-                        <bf,, f'>2. \repeatTie
-                        <bf,, f'>2 \repeatTie
-                        <bf,, f'>1.. \repeatTie
-                        <bf,, d'>1..
-                        bf,,\breve
-                        <bf,, d'>1..
-                        <bf,, f'>2.
-                        <bf,, atqf'>2
-                        <bf,, atqf'>\breve \repeatTie
-                        <bf,, f'>1..
-                        bf,,1
-                        <bf,, d'>1
-                        <bf,, d'>2.
-                        <bf,, f'>1..
-                        <bf,, d'>\breve
+                        <c e''>1
+                        <c e''>2. \repeatTie
+                        <c g''>1
+                        <c g''>2. \repeatTie
+                        <c g''>2 \repeatTie
+                        <c g''>1.. \repeatTie
+                        <c e''>1..
+                        c\breve
+                        <c e''>1..
+                        <c g''>2.
+                        <c btqf''>2
+                        <c btqf''>\breve \repeatTie
+                        <c g''>1..
+                        c1
+                        <c e''>1
+                        <c e''>2.
+                        <c g''>1..
+                        <c e''>\breve
                         \once \override Hairpin.circled-tip = ##t
-                        bf,,2. \> \p
-                        bf,,1 \repeatTie
+                        c2. \> \p
+                        c1 \repeatTie
                         s1 * 1/4 \!
                         \bar "|"
                     }

@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -277,6 +277,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 1/4
+                            \clef "bass"
                             \bar "|"
                             \stopStaff
                             \startStaff

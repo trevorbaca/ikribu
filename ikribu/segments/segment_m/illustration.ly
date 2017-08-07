@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -607,34 +607,34 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         s1 * 3/4
-                        b,,1 \< \p
-                        b,,1 \repeatTie \fff
+                        cs1 \< \p
+                        cs1 \repeatTie \fff
                         \once \override Hairpin.circled-tip = ##t
-                        b,,2 \repeatTie \> \fff
+                        cs2 \repeatTie \> \fff
                         s1 * 2 \!
-                        b,,2. \p
+                        cs2. \p
                         s1 * 5/4
-                        b,,2. \< \p
-                        b,,1 \repeatTie \fff
+                        cs2. \< \p
+                        cs1 \repeatTie \fff
                         \once \override Hairpin.circled-tip = ##t
-                        b,,2. \repeatTie \> \fff
+                        cs2. \repeatTie \> \fff
                         s1 * 3/4 \!
-                        b,,1.. \< \p
-                        b,,1.. \repeatTie \fff
+                        cs1.. \< \p
+                        cs1.. \repeatTie \fff
                         \once \override Hairpin.circled-tip = ##t
-                        b,,\breve \repeatTie \> \fff
+                        cs\breve \repeatTie \> \fff
                         s1 * 2 \!
-                        b,,2. \p
+                        cs2. \p
                         s1 * 3/4
-                        b,,\breve \< \ppp
-                        b,,1.. \repeatTie
-                        b,,1 \repeatTie
-                        b,,1 \repeatTie
-                        b,,2. \repeatTie
-                        b,,1.. \repeatTie
-                        b,,\breve \repeatTie
-                        b,,2. \repeatTie \fff
-                        b,,1 \repeatTie
+                        cs\breve \< \ppp
+                        cs1.. \repeatTie
+                        cs1 \repeatTie
+                        cs1 \repeatTie
+                        cs2. \repeatTie
+                        cs1.. \repeatTie
+                        cs\breve \repeatTie
+                        cs2. \repeatTie \fff
+                        cs1 \repeatTie
                         s1 * 1/4
                         \bar "|"
                     }
@@ -1306,6 +1306,7 @@
                                 c'4 \fff
                             }
                             s1 * 23/4
+                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -1749,6 +1750,7 @@
                                 c'4 \fff
                             }
                             s1 * 23/4
+                            \clef "alto"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -1809,7 +1811,6 @@
                                             III
                                     }
                             \revert NoteHead.style
-                            \clef "bass"
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1833,6 +1834,7 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \clef "bass"
                             c,,1 \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2 \repeatTie \fff \stopTextSpan ^ \markup {

@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -91,12 +91,12 @@
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            \set Staff.instrumentName = \markup {
+                            \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     Violin
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set ViolinStaffGroup.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     Vn.
@@ -141,12 +141,12 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            \set Staff.instrumentName = \markup {
+                            \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     Viola
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set ViolaStaffGroup.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     Va.
@@ -169,12 +169,12 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            \set Staff.instrumentName = \markup {
+                            \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
                                     Cello
                                 }
-                            \set Staff.shortInstrumentName = \markup {
+                            \set CelloStaffGroup.shortInstrumentName = \markup {
                                 \hcenter-in
                                     #10
                                     Vc.

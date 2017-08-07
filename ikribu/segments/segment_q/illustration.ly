@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -163,11 +163,11 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        \clef "percussion"
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        bf,4
+                        \clef "percussion"
+                        c'4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -187,40 +187,40 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 13/2
                         \bar "|."
                         \stopStaff
@@ -248,10 +248,10 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \clef "percussion"
                             b4 -\tongue #2
                                 ^ \markup {
                                     \whiteout
@@ -347,10 +347,10 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \clef "percussion"
                             c'4 -\staccato
                                 ^ \markup {
                                     \whiteout
@@ -448,10 +448,10 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                \clef "percussion"
                                 c'8 -\accent [
                                     ^ \markup {
                                         \whiteout

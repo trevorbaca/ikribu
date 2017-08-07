@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -190,17 +190,17 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        g,1.. \< \ppp
+                        a1.. \< \ppp
                         s1 * 1/6 \mp
-                        gf,1.. \< \pp
+                        af1.. \< \pp
                         s1 * 1/6 \mf
-                        f,1.. \< \p
+                        g1.. \< \p
                         s1 * 1/6 \f
-                        e,1.. \< \mf
+                        fs1.. \< \mf
                         s1 * 1/6 \ff
-                        ef,1.. \< \f
+                        f1.. \< \f
                         s1 * 1/6 \fff
-                        d,1.. \< \ff
+                        e1.. \< \ff
                         s1 * 1/6 \ffff
                         \bar "|"
                     }

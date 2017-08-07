@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -369,22 +369,22 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        e2 \ppp
-                        e1.. \repeatTie
-                        e2. \repeatTie
-                        e1 \repeatTie
-                        eqs2.
-                        eqs1 \repeatTie
-                        eqs2. \repeatTie
-                        eqs2 \repeatTie
-                        f1..
-                        f\breve \repeatTie
-                        f1.. \repeatTie
-                        f1.. \repeatTie
-                        fqs2.
-                        fqs2 \repeatTie
-                        fqs1.. \repeatTie
-                        fqs\breve \repeatTie
+                        fs'2 \ppp
+                        fs'1.. \repeatTie
+                        fs'2. \repeatTie
+                        fs'1 \repeatTie
+                        ftqs'2.
+                        ftqs'1 \repeatTie
+                        ftqs'2. \repeatTie
+                        ftqs'2 \repeatTie
+                        g'1..
+                        g'\breve \repeatTie
+                        g'1.. \repeatTie
+                        g'1.. \repeatTie
+                        gqs'2.
+                        gqs'2 \repeatTie
+                        gqs'1.. \repeatTie
+                        gqs'\breve \repeatTie
                         \bar "|"
                     }
                 }
@@ -590,6 +590,7 @@
                                 c'4
                             }
                             s1 * 15/4
+                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -800,6 +801,7 @@
                                 c'1
                             }
                             s1 * 2
+                            \clef "alto"
                             \bar "|"
                             \stopStaff
                             \startStaff

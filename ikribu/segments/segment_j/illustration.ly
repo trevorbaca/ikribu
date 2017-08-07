@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -180,7 +180,7 @@
                         \startStaff
                         \clef "percussion"
                         \override RepeatTie.direction = #up
-                        bf,4
+                        c'4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -204,21 +204,21 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -230,26 +230,26 @@
                                                     "π/3 every quarter note"
                                                 }
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 11/4
-                        bf,4
+                        c'4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -273,11 +273,12 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         \revert RepeatTie.direction
                         s1 * 1/4
+                        \clef "treble"
                         \bar "|"
                         \stopStaff
                         \startStaff
@@ -406,6 +407,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 1/4
+                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -546,6 +548,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 1/4
+                            \clef "alto"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -573,8 +576,8 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             s1 * 15/4
-                            \clef "bass"
                             \ottava #-1
+                            \clef "bass"
                             d,,1 \p
                                 ^ \markup {
                                     \whiteout
