@@ -113,12 +113,12 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        d,\breve \< \ppp
-                        d,1.. \repeatTie \f
+                        e\breve \< \ppp
+                        e1.. \repeatTie \f
                         \once \override Hairpin.circled-tip = ##t
-                        d,1 \repeatTie \> \f
-                        d,1 \repeatTie
-                        d,2. \repeatTie \!
+                        e1 \repeatTie \> \f
+                        e1 \repeatTie
+                        e2. \repeatTie \!
                         s1 * 2
                         \bar "|"
                     }
@@ -213,6 +213,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            \clef "alto"
                             \revert RepeatTie.direction
                             \stopStaff
                             \startStaff
