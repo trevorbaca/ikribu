@@ -23,7 +23,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> path += '/stylesheets/context-definitions.ily'
             >>> lilypond_file = abjad.new(
             ...     lilypond_file,
-            ...     global_staff_size=14,
+            ...     global_staff_size=16,
             ...     includes=[path],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
@@ -70,12 +70,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                         \context ViolinStaffGroup = "Violin Staff Group" <<
                             \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                                 \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                                    \set Staff.instrumentName = \markup {
+                                    \set ViolinStaffGroup.instrumentName = \markup {
                                         \hcenter-in
                                             #16
                                             Violin
                                         }
-                                    \set Staff.shortInstrumentName = \markup {
+                                    \set ViolinStaffGroup.shortInstrumentName = \markup {
                                         \hcenter-in
                                             #10
                                             Vn.
@@ -94,12 +94,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                         \context ViolaStaffGroup = "Viola Staff Group" <<
                             \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                                 \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                                    \set Staff.instrumentName = \markup {
+                                    \set ViolaStaffGroup.instrumentName = \markup {
                                         \hcenter-in
                                             #16
                                             Viola
                                         }
-                                    \set Staff.shortInstrumentName = \markup {
+                                    \set ViolaStaffGroup.shortInstrumentName = \markup {
                                         \hcenter-in
                                             #10
                                             Va.
@@ -118,12 +118,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                         \context CelloStaffGroup = "Cello Staff Group" <<
                             \context CelloRHMusicStaff = "Cello RH Music Staff" {
                                 \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                                    \set Staff.instrumentName = \markup {
+                                    \set CelloStaffGroup.instrumentName = \markup {
                                         \hcenter-in
                                             #16
                                             Cello
                                         }
-                                    \set Staff.shortInstrumentName = \markup {
+                                    \set CelloStaffGroup.shortInstrumentName = \markup {
                                         \hcenter-in
                                             #10
                                             Vc.

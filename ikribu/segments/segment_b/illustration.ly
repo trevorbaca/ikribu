@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -336,16 +336,16 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         s1 * 3
-                        df,1.. \ppp
+                        ef1.. \ppp
                         s1 * 17/4
-                        df,1 \ppp
+                        ef1 \ppp
                         s1 * 7/2
-                        df,1 \ppp
+                        ef1 \ppp
                         s1 * 1/4
-                        df,2. \< \ppp
-                        df,1 \repeatTie \f
+                        ef2. \< \ppp
+                        ef1 \repeatTie \f
                         \once \override Hairpin.circled-tip = ##t
-                        df,2. \repeatTie \> \f
+                        ef2. \repeatTie \> \f
                         s1 * 9/2 \!
                         \bar "|"
                     }

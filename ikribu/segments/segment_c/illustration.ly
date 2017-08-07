@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -389,12 +389,12 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         s1 * 7/4
-                        \clef "percussion"
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
+                        \clef "percussion"
                         \override RepeatTie.direction = #up
-                        bf,4
+                        c'4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -418,41 +418,41 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         \revert RepeatTie.direction
                         s1 * 11/12
-                        bf,4
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 11/12
-                        bf,4
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 11/12
-                        bf,4
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         \revert RepeatTie.direction
                         s1 * 11/12
                         \bar "|"

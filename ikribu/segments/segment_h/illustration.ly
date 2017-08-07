@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -133,14 +133,14 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        df,\breve \ppp
-                        df,1.. \repeatTie
-                        df,1.. \repeatTie
-                        df,2. \repeatTie
-                        df,2 \repeatTie
-                        df,1.. \repeatTie
-                        df,\breve \repeatTie
-                        df,1 \repeatTie
+                        ef\breve \ppp
+                        ef1.. \repeatTie
+                        ef1.. \repeatTie
+                        ef2. \repeatTie
+                        ef2 \repeatTie
+                        ef1.. \repeatTie
+                        ef\breve \repeatTie
+                        ef1 \repeatTie
                         s1 * 1/4
                         \bar "|"
                     }

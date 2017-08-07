@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -259,7 +259,7 @@
                         \startStaff
                         \clef "percussion"
                         \override RepeatTie.direction = #up
-                        bf,4
+                        c'4
                             _ \markup {
                                 \larger
                                     \italic
@@ -272,11 +272,11 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 3/2
-                        bf,4
+                        c'4
                             _ \markup {
                                 \larger
                                     \italic
@@ -289,10 +289,10 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 5/2
-                        bf,4
+                        c'4
                             _ \markup {
                                 \larger
                                     \italic
@@ -305,14 +305,14 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         s1 * 5/4
-                        bf,4
+                        c'4
                             _ \markup {
                                 \larger
                                     \italic
@@ -325,11 +325,12 @@
                                     \italic
                                         ”
                                 }
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
-                        bf,4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
+                        c'4 \repeatTie
                         \revert RepeatTie.direction
                         s1 * 3/2
+                        \clef "treble"
                         \bar "|"
                         \stopStaff
                         \startStaff
@@ -451,6 +452,7 @@
                                 \revert RepeatTie.direction
                             }
                             s1 * 1/4
+                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -565,6 +567,7 @@
                                 \revert RepeatTie.direction
                             }
                             s1 * 1/4
+                            \clef "alto"
                             \bar "|"
                             \stopStaff
                             \startStaff
@@ -683,6 +686,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 3/2
+                            \clef "bass"
                             \bar "|"
                             \stopStaff
                             \startStaff

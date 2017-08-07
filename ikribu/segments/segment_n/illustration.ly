@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -136,7 +136,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        bf,,2 \p
+                        c2 \p
                             ^ \markup {
                                 \column
                                     {
@@ -144,15 +144,15 @@
                                         "breathe as necessary before downbeats"
                                     }
                                 }
-                        bf,,1.. \repeatTie
-                        bf,,2. \repeatTie
-                        bf,,1 \repeatTie
-                        bf,,2. \repeatTie
-                        <bf,, d'>1
-                        <bf,, d'>2. \repeatTie
-                        <bf,, d'>2 \repeatTie
-                        <bf,, d'>1.. \repeatTie
-                        <bf,, d'>1.. \repeatTie
+                        c1.. \repeatTie
+                        c2. \repeatTie
+                        c1 \repeatTie
+                        c2. \repeatTie
+                        <c e''>1
+                        <c e''>2. \repeatTie
+                        <c e''>2 \repeatTie
+                        <c e''>1.. \repeatTie
+                        <c e''>1.. \repeatTie
                         \bar "|"
                     }
                 }

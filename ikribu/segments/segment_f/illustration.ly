@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -118,14 +118,14 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        fs1
-                        fs2. \repeatTie
-                        fs1 \repeatTie
-                        fs2. \repeatTie
+                        gs'1
+                        gs'2. \repeatTie
+                        gs'1 \repeatTie
+                        gs'2. \repeatTie
                         s1 * 1/2
-                        g,1.. \> \sfp
-                        g,\breve \repeatTie
-                        g,1.. \repeatTie \ppp
+                        a1.. \> \sfp
+                        a\breve \repeatTie
+                        a1.. \repeatTie \ppp
                         \bar "|"
                     }
                 }
@@ -391,6 +391,7 @@
                             \once \override NoteHead.color = #blue
                             \once \override Stem.color = #blue
                             c'4 \repeatTie
+                            \clef "bass"
                             \revert RepeatTie.direction
                             \stopStaff
                             \startStaff

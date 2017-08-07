@@ -1,4 +1,4 @@
-\version "2.19.64"
+\version "2.19.65"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -367,39 +367,39 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        c,\breve \ppp
+                        d\breve \ppp
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         "breathe discreetly before any downbeat as needed (but do not circular breathe)"
                                 }
-                        c,1.. \repeatTie
-                        c,2. \repeatTie
-                        c,1 \repeatTie
-                        c,1 \repeatTie
-                        c,2 \repeatTie
-                        c,1.. \repeatTie
-                        c,2. \repeatTie
-                        c,1 \repeatTie
-                        c,2. \repeatTie
-                        c,1 \repeatTie
-                        c,2. \repeatTie
-                        c,2 \repeatTie
-                        c,1.. \repeatTie
-                        c,1.. \repeatTie
-                        c,\breve \repeatTie
-                        c,1.. \repeatTie
-                        c,2. \repeatTie
-                        c,2 \repeatTie
-                        c,\breve \repeatTie
-                        c,1.. \repeatTie
-                        c,1 \repeatTie
-                        c,1 \repeatTie
-                        c,2. \repeatTie
-                        c,1.. \repeatTie
-                        c,\breve \repeatTie
-                        c,2. \repeatTie
-                        c,1 \repeatTie
+                        d1.. \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
+                        d1 \repeatTie
+                        d2 \repeatTie
+                        d1.. \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
+                        d2. \repeatTie
+                        d2 \repeatTie
+                        d1.. \repeatTie
+                        d1.. \repeatTie
+                        d\breve \repeatTie
+                        d1.. \repeatTie
+                        d2. \repeatTie
+                        d2 \repeatTie
+                        d\breve \repeatTie
+                        d1.. \repeatTie
+                        d1 \repeatTie
+                        d1 \repeatTie
+                        d2. \repeatTie
+                        d1.. \repeatTie
+                        d\breve \repeatTie
+                        d2. \repeatTie
+                        d1 \repeatTie
                         s1 * 17/4
                         \bar "|"
                     }
@@ -954,6 +954,7 @@
                                 \once \override NoteHead.color = #blue
                                 \once \override Stem.color = #blue
                                 c'4
+                                \clef "treble"
                                 \stopStaff
                                 \startStaff
                             }
@@ -1539,6 +1540,7 @@
                                 \once \override NoteHead.color = #blue
                                 \once \override Stem.color = #blue
                                 c'4
+                                \clef "alto"
                                 \stopStaff
                                 \startStaff
                             }
@@ -1763,6 +1765,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             s1 * 39/4
+                            \clef "bass"
                             \bar "|"
                             \stopStaff
                             \startStaff
