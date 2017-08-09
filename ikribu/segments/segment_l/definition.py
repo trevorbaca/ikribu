@@ -31,11 +31,11 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, ikribu.materials.tempi['incisions']),
+    (1, ikribu.tempi['incisions']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    ikribu.materials.time_signatures,
+    ikribu.time_signatures,
     rotation=-12,
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
@@ -49,12 +49,12 @@ spacing_specifier = baca.HorizontalSpacingCommand(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=ikribu.materials.instruments,
+    instruments=ikribu.instruments,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.materials.tempi,
-    score_template=ikribu.tools.ScoreTemplate(),
+    metronome_marks=ikribu.tempi,
+    score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -78,25 +78,25 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(1, 4),
-    ikribu.tools.make_clb_rhythm_specifier([4]),
+    ikribu.make_clb_rhythm_specifier([4]),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(6, 8),
-    ikribu.tools.make_triplet_rhythm_specifier(),
+    ikribu.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(1, 2),
-    ikribu.tools.make_clb_rhythm_specifier([2]),
+    ikribu.make_clb_rhythm_specifier([2]),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(4, 8),
-    ikribu.tools.make_triplet_rhythm_specifier(),
+    ikribu.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_commands(
@@ -245,7 +245,7 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(1, 4),
     baca.staccati(),
-    ikribu.tools.make_clb_pitch_specifier(rotation=-1),
+    ikribu.make_clb_pitch_specifier(rotation=-1),
     )
 
 segment_maker.append_commands(
@@ -273,7 +273,7 @@ segment_maker.append_commands(
     va,
     baca.select_stages(1, 2),
     baca.staccati(),
-    ikribu.tools.make_clb_pitch_specifier(rotation=-1),
+    ikribu.make_clb_pitch_specifier(rotation=-1),
     )
     
 segment_maker.append_commands(

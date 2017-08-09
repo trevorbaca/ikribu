@@ -17,7 +17,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         ::
 
-            >>> template = ikribu.tools.ScoreTemplate()
+            >>> template = ikribu.ScoreTemplate()
             >>> lilypond_file = template.__illustrate__()
             >>> path = '/Users/trevorbaca/Scores/ikribu/ikribu'
             >>> path += '/stylesheets/context-definitions.ily'
@@ -191,7 +191,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             bass_clarinet_music_staff,
             'default_instrument',
-            ikribu.materials.instruments['bass clarinet'],
+            ikribu.instruments['bass clarinet'],
             )
         abjad.annotate(
             bass_clarinet_music_staff,
@@ -229,7 +229,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             violin_staff_group,
             'default_instrument',
-            ikribu.materials.instruments['violin'],
+            ikribu.instruments['violin'],
             )
         abjad.annotate(
             violin_music_staff,
@@ -267,7 +267,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             viola_staff_group,
             'default_instrument',
-            ikribu.materials.instruments['viola'],
+            ikribu.instruments['viola'],
             )
         abjad.annotate(
             viola_music_staff,
@@ -305,7 +305,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             cello_staff_group,
             'default_instrument',
-            ikribu.materials.instruments['cello'],
+            ikribu.instruments['cello'],
             )
         abjad.annotate(
             cello_music_staff,

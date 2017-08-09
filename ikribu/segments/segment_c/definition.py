@@ -27,22 +27,22 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, ikribu.materials.tempi['incisions']),
-    (2, ikribu.materials.tempi['night']),
+    (1, ikribu.tempi['incisions']),
+    (2, ikribu.tempi['night']),
     (2, abjad.Accelerando()),
-    (4, ikribu.materials.tempi['incisions']),
+    (4, ikribu.tempi['incisions']),
 
-    (6, ikribu.materials.tempi['incisions']),
+    (6, ikribu.tempi['incisions']),
     (6, abjad.Ritardando()),
-    (8, ikribu.materials.tempi['night']),
+    (8, ikribu.tempi['night']),
 
-    (10, ikribu.materials.tempi['night']),
+    (10, ikribu.tempi['night']),
     (10, abjad.Accelerando()),
-    (12, ikribu.materials.tempi['incisions']),
+    (12, ikribu.tempi['incisions']),
 
-    (14, ikribu.materials.tempi['incisions']),
+    (14, ikribu.tempi['incisions']),
     (14, abjad.Ritardando()),
-    (16, ikribu.materials.tempi['night']),
+    (16, ikribu.tempi['night']),
     ])
 
 time_signatures = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
@@ -62,12 +62,12 @@ spacing_specifier = baca.HorizontalSpacingCommand(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=ikribu.materials.instruments,
+    instruments=ikribu.instruments,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.materials.tempi,
-    score_template=ikribu.tools.ScoreTemplate(),
+    metronome_marks=ikribu.tempi,
+    score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
