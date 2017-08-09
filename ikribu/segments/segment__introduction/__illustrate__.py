@@ -15,21 +15,21 @@ if __name__ == '__main__':
             traceback.print_exc()
             sys.exit(1)
         try:
-            from __metadata__ import metadata as segment_metadata
+            from __metadata__ import metadata as metadata
         except ImportError:
             traceback.print_exc()
             sys.exit(1)
         try:
-            previous_segment_metadata = None
+            previous_metadata = None
         except ImportError:
             traceback.print_exc()
             sys.exit(1)
         try:
             result = segment_maker(
-                segment_metadata=segment_metadata,
-                previous_segment_metadata=previous_segment_metadata,
+                metadata=metadata,
+                previous_metadata=previous_metadata,
                 )
-            lilypond_file, segment_metadata = result
+            lilypond_file, metadata = result
         except:
             traceback.print_exc()
             sys.exit(1)
@@ -41,7 +41,7 @@ if __name__ == '__main__':
                 )
             abjad_ide._write_metadata_py(
                 current_directory,
-                segment_metadata, 
+                metadata, 
                 )
         except:
             traceback.print_exc()
