@@ -29,12 +29,12 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, ikribu.materials.tempi['night']),
-    (6, ikribu.materials.tempi['incisions']),
+    (1, ikribu.tempi['night']),
+    (6, ikribu.tempi['incisions']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    ikribu.materials.time_signatures,
+    ikribu.time_signatures,
     rotation=-10,
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
@@ -48,12 +48,12 @@ spacing_specifier = baca.HorizontalSpacingCommand(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=ikribu.materials.instruments,
+    instruments=ikribu.instruments,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.materials.tempi,
-    score_template=ikribu.tools.ScoreTemplate(),
+    metronome_marks=ikribu.tempi,
+    score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,

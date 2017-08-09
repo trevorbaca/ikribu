@@ -29,23 +29,23 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, ikribu.materials.tempi['incisions']),
+    (1, ikribu.tempi['incisions']),
     (1, abjad.Accelerando()),
-    (3, ikribu.materials.tempi['windows']),
+    (3, ikribu.tempi['windows']),
     (5, abjad.Ritardando()),
-    (6, ikribu.materials.tempi['incisions']),
+    (6, ikribu.tempi['incisions']),
     (8, abjad.Accelerando()),
-    (10, ikribu.materials.tempi['windows']),
+    (10, ikribu.tempi['windows']),
     (12, abjad.Ritardando()),
-    (14, ikribu.materials.tempi['incisions']),
+    (14, ikribu.tempi['incisions']),
     (16, abjad.Accelerando()),
-    (17, ikribu.materials.tempi['windows']),
+    (17, ikribu.tempi['windows']),
     (19, abjad.Ritardando()),
-    (21, ikribu.materials.tempi['incisions']),
+    (21, ikribu.tempi['incisions']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    ikribu.materials.time_signatures,
+    ikribu.time_signatures,
     rotation=-13,
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
@@ -59,12 +59,12 @@ spacing_specifier = baca.HorizontalSpacingCommand(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=ikribu.materials.instruments,
+    instruments=ikribu.instruments,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.materials.tempi,
-    score_template=ikribu.tools.ScoreTemplate(),
+    metronome_marks=ikribu.tempi,
+    score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -133,37 +133,37 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     vn,
     baca.select_stages(2, 3),
-    ikribu.tools.make_color_rhythm_specifier(3),
+    ikribu.make_color_rhythm_specifier(3),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(6),
-    ikribu.tools.make_color_rhythm_specifier(4),
+    ikribu.make_color_rhythm_specifier(4),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(9, 10),
-    ikribu.tools.make_color_rhythm_specifier(5),
+    ikribu.make_color_rhythm_specifier(5),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(13, 14),
-    ikribu.tools.make_color_rhythm_specifier(3),
+    ikribu.make_color_rhythm_specifier(3),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(17),
-    ikribu.tools.make_color_rhythm_specifier(4),
+    ikribu.make_color_rhythm_specifier(4),
     )
 
 segment_maker.append_commands(
     vn,
     baca.select_stages(20, 21),
-    ikribu.tools.make_color_rhythm_specifier(5),
+    ikribu.make_color_rhythm_specifier(5),
     )
 
 # viola #
@@ -171,37 +171,37 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(2, 3),
-    ikribu.tools.make_color_rhythm_specifier(4),
+    ikribu.make_color_rhythm_specifier(4),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(6),
-    ikribu.tools.make_color_rhythm_specifier(5),
+    ikribu.make_color_rhythm_specifier(5),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(9, 10),
-    ikribu.tools.make_color_rhythm_specifier(3),
+    ikribu.make_color_rhythm_specifier(3),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(13, 14),
-    ikribu.tools.make_color_rhythm_specifier(4),
+    ikribu.make_color_rhythm_specifier(4),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(17),
-    ikribu.tools.make_color_rhythm_specifier(5),
+    ikribu.make_color_rhythm_specifier(5),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(20, 21),
-    ikribu.tools.make_color_rhythm_specifier(3),
+    ikribu.make_color_rhythm_specifier(3),
     )
 
 # cello #

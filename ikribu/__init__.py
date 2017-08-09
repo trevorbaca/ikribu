@@ -8,6 +8,7 @@ if not (
     raise ImportError('Requires Python 3.5.')
 del distutils
 del platform
-from ikribu import tools
-from ikribu import materials
+
+from ikribu.tools import *
+from ikribu.materials import *
 from ikribu import segments

@@ -26,26 +26,26 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, ikribu.materials.tempi['night']),
+    (1, ikribu.tempi['night']),
     (1, abjad.Accelerando()),
-    (3, ikribu.materials.tempi['incisions']),
+    (3, ikribu.tempi['incisions']),
 
-    (5, ikribu.materials.tempi['incisions']),
+    (5, ikribu.tempi['incisions']),
     (5, abjad.Ritardando()),
-    (7, ikribu.materials.tempi['night']),
+    (7, ikribu.tempi['night']),
 
-    (9, ikribu.materials.tempi['night']),
+    (9, ikribu.tempi['night']),
     (9, abjad.Accelerando()),
-    (11, ikribu.materials.tempi['incisions']),
+    (11, ikribu.tempi['incisions']),
 
-    (13, ikribu.materials.tempi['incisions']),
+    (13, ikribu.tempi['incisions']),
     (13, abjad.Ritardando()),
-    (15, ikribu.materials.tempi['night']),
+    (15, ikribu.tempi['night']),
     ])
 
 maker = baca.TimeSignatureMaker(
     #[[(4, 4), (4, 4), (3, 4), (1, 6)]],
-    ikribu.materials.time_signatures,
+    ikribu.time_signatures,
     rotation=-5,
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
@@ -59,12 +59,12 @@ spacing_specifier = baca.HorizontalSpacingCommand(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=ikribu.materials.instruments,
+    instruments=ikribu.instruments,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.materials.tempi,
-    score_template=ikribu.tools.ScoreTemplate(),
+    metronome_marks=ikribu.tempi,
+    score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -98,7 +98,7 @@ segment_maker.append_commands(
         baca.select_stages(9, 10),
         baca.select_stages(13, 14),
         ],
-    ikribu.tools.make_triplet_rhythm_specifier(),
+    ikribu.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_commands(
@@ -109,7 +109,7 @@ segment_maker.append_commands(
         baca.select_stages(10, 11),
         baca.select_stages(14, 15),
         ],
-    ikribu.tools.make_triplet_rhythm_specifier(),
+    ikribu.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_commands(

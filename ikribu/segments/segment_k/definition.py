@@ -26,11 +26,11 @@ stage_specifier = baca.StageSpecifier([
     ])
 
 tempo_specifier = baca.TempoSpecifier([
-    (1, ikribu.materials.tempi['incisions']),
+    (1, ikribu.tempi['incisions']),
     ])
 
 maker = baca.TimeSignatureMaker(
-    ikribu.materials.time_signatures,
+    ikribu.time_signatures,
     rotation=-11,
     stage_specifier=stage_specifier,
     tempo_specifier=tempo_specifier,
@@ -44,12 +44,12 @@ spacing_specifier = baca.HorizontalSpacingCommand(
 
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
-    instruments=ikribu.materials.instruments,
+    instruments=ikribu.instruments,
     #label_clock_time=True,
     #label_baca.select_stages=True,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.materials.tempi,
-    score_template=ikribu.tools.ScoreTemplate(),
+    metronome_marks=ikribu.tempi,
+    score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
     tempo_specifier=tempo_specifier,
     time_signatures=time_signatures,
@@ -83,7 +83,7 @@ segment_maker.append_commands(
         baca.select_stages(11),
         baca.select_stages(15),
         ],
-    ikribu.tools.make_clb_rhythm_specifier([4]),
+    ikribu.make_clb_rhythm_specifier([4]),
     )
 
 segment_maker.append_commands(
@@ -94,7 +94,7 @@ segment_maker.append_commands(
         baca.select_stages(11),
         baca.select_stages(15),
         ],
-    ikribu.tools.make_clb_rhythm_specifier([2]),
+    ikribu.make_clb_rhythm_specifier([2]),
     )
 
 segment_maker.append_commands(
@@ -156,7 +156,7 @@ segment_maker.append_commands(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
-    ikribu.tools.make_clb_pitch_specifier(),
+    ikribu.make_clb_pitch_specifier(),
     )
 
 segment_maker.append_commands(
@@ -165,7 +165,7 @@ segment_maker.append_commands(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
-    ikribu.tools.make_clb_pitch_specifier(),
+    ikribu.make_clb_pitch_specifier(),
     )
 
 segment_maker.append_commands(
