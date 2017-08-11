@@ -4,49 +4,46 @@ import baca
 
 
 viola = abjad.instrumenttools.Viola(
-    instrument_name_markup=baca.markup.instrument_name('Viola'),
-    short_instrument_name_markup=baca.markup.short_instrument_name('Va.'),
+    name_markup=baca.markup.instrument('Viola'),
+    short_name_markup=baca.markup.short_instrument('Va.'),
     )
 viola._default_scope = 'ViolaStaffGroup'
 
 violin = abjad.instrumenttools.Violin(
-    instrument_name_markup=baca.markup.instrument_name('Violin'),
-    short_instrument_name_markup=baca.markup.short_instrument_name('Vn.'),
+    name_markup=baca.markup.instrument('Violin'),
+    short_name_markup=baca.markup.short_instrument('Vn.'),
     )
 violin._default_scope = 'ViolinStaffGroup'
 
 cello = abjad.instrumenttools.Cello(
-    instrument_name_markup=baca.markup.instrument_name('Cello'),
-    short_instrument_name_markup=baca.markup.short_instrument_name('Vc.'),
+    name_markup=baca.markup.instrument('Cello'),
+    short_name_markup=baca.markup.short_instrument('Vc.'),
     )
 cello._default_scope = 'CelloStaffGroup'
 
 instruments = abjad.TypedOrderedDict([
     (
-        'bass clarinet', 
+        'bass clarinet',
         abjad.instrumenttools.BassClarinet(
-            instrument_name='bass clarinet',
-            instrument_name_markup=baca.markup.instrument_name(
-                'Bass clarinet',
-                ),
-            short_instrument_name='b. cl.',
-            short_instrument_name_markup=\
-                baca.markup.short_instrument_name(
+            name='bass clarinet',
+            name_markup=baca.markup.instrument('Bass clarinet'),
+            short_name='b. cl.',
+            short_name_markup=baca.markup.short_instrument(
                 'B. cl.',
                 column=False,
                 ),
             ),
         ),
     (
-        'violin', 
+        'violin',
         violin,
         ),
     (
-        'viola', 
+        'viola',
         viola,
         ),
     (
-        'cello', 
+        'cello',
         cello,
         ),
     ])
