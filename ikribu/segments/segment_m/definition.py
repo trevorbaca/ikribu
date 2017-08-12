@@ -118,7 +118,7 @@ segment_maker.append_commands(
 # violin #
 
 segment_maker.append_commands(
-    vn, 
+    vn,
     [
         baca.select_stages(1),
         baca.select_stages(5),
@@ -296,11 +296,11 @@ segment_maker.append_commands(
         baca.select_stages(13, 14),
         ],
     baca.hairpins(['p < fff'], selector=baca.select_leaves(stop=2)),
-#    baca.make_hairpin(
-#        'fff > niente',
-#        include_following_rest=True,
-#        start=-1
-#        ),
+    #baca.make_hairpin(
+    #    'fff > niente',
+    #    include_following_rest=True,
+    #    start=-1
+    #    ),
     baca.hairpins(
         ['fff > niente'],
         include_rests=True,
@@ -339,7 +339,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn, 
+    vn,
     [
         baca.select_stages(2, 3),
         baca.select_stages(6),
@@ -352,7 +352,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [vn, va], 
+    [vn, va],
     [
         baca.select_stages(2, 3),
         baca.select_stages(6),
@@ -362,13 +362,13 @@ segment_maker.append_commands(
         baca.select_stages(20, 21),
         ],
     # TODO: make work again after extending selectors with patterns:
-#    baca.accents(
-#        pattern=abjad.index_every([0], inverted=True, period=2),
-#        ),
+    #baca.accents(
+    #    pattern=abjad.index_every([0], inverted=True, period=2),
+    #    ),
     # TODO: make work again after extending selectors with patterns:
-#    baca.stem_tremolo(
-#        pattern=abjad.index_every([0], period=2),
-#        ),
+    #baca.stem_tremolo(
+    #    pattern=abjad.index_every([0], period=2),
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -407,7 +407,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc, 
+    vc,
     [
         baca.select_stages(2, 3),
         baca.select_stages(6),

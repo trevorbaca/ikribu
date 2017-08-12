@@ -157,11 +157,11 @@ segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 5),
     baca.hairpins(['pp < mf'], selector=baca.select_leaves(stop=5)),
-#    baca.make_hairpin(
-#        descriptor='mf > niente',
-#        start=4,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='mf > niente',
+    #    start=4,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['mf > niente'],
         include_rests=True,
@@ -174,11 +174,11 @@ segment_maker.append_commands(
     baca.select_stages(1, 3),
     baca.clef('percussion'),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 'pp > ppp', 'ppp < p'],
-#        enchain_hairpins=True,
-#        span=[3, 4],
-#        ),
+    #baca.hairpins(
+    #    ['p > pp', 'pp < p', 'p > ppp', 'ppp < pp', 'pp > ppp', 'ppp < p'],
+    #    enchain_hairpins=True,
+    #    span=[3, 4],
+    #    ),
     baca.markup.boxed('1/2 clt'),
     baca.pitches('C4'),
     baca.repeat_ties_up(),

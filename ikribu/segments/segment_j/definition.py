@@ -201,11 +201,11 @@ segment_maker.append_commands(
     baca.select_stages(2, 4),
     baca.clef('bass'),
     baca.dynamic('p'),
-#    baca.make_hairpin(
-#        'p < mf',
-#        start=-1,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    'p < mf',
+    #    start=-1,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['p < mf'],
         include_rests=True,

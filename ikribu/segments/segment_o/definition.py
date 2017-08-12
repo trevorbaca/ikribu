@@ -73,7 +73,7 @@ segment_maker.append_commands(
         baca.select_stages(3, 6),
         baca.select_stages(7),
         baca.select_stages(8),
-        baca.select_stages(9), 
+        baca.select_stages(9),
         baca.select_stages(10),
         baca.select_stages(11, 12),
         baca.select_stages(13),
@@ -119,7 +119,7 @@ segment_maker.append_commands(
     baca.select_stages(1, 2),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -130,7 +130,7 @@ segment_maker.append_commands(
     baca.select_stages(3, 6),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -141,7 +141,7 @@ segment_maker.append_commands(
     baca.select_stages(7),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -158,7 +158,7 @@ segment_maker.append_commands(
     baca.select_stages(9),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -169,7 +169,7 @@ segment_maker.append_commands(
     baca.select_stages(10),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -180,7 +180,7 @@ segment_maker.append_commands(
     baca.select_stages(11, 12),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -191,7 +191,7 @@ segment_maker.append_commands(
     baca.select_stages(13),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -208,7 +208,7 @@ segment_maker.append_commands(
     baca.select_stages(15, 16),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -219,7 +219,7 @@ segment_maker.append_commands(
     baca.select_stages(17),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -230,7 +230,7 @@ segment_maker.append_commands(
     baca.select_stages(18),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -240,11 +240,11 @@ segment_maker.append_commands(
     bcl,
     baca.select_stages(19, 20),
     baca.pitches('Bb1'),
-#    baca.make_hairpin(
-#        descriptor='p > niente',
-#        start=-2,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='p > niente',
+    #    start=-2,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['p > niente'],
         include_rests=True,
@@ -256,11 +256,11 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(9, 20),
     baca.dynamic('ppppp'),
-#    baca.make_hairpin(
-#        descriptor='ppppp > niente',
-#        start=-2,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='ppppp > niente',
+    #    start=-2,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['ppppp > niente'],
         include_rests=True,
@@ -270,7 +270,7 @@ segment_maker.append_commands(
     baca.stem_tremolo(),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
+            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -284,11 +284,11 @@ segment_maker.append_commands(
     va,
     baca.select_stages(9, 20),
     baca.dynamic('ppppp'),
-#    baca.make_hairpin(
-#        descriptor='ppppp > niente',
-#        start=-2,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='ppppp > niente',
+    #    start=-2,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['ppppp > niente'],
         include_rests=True,
@@ -298,7 +298,7 @@ segment_maker.append_commands(
     baca.stem_tremolo(),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
+            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -313,12 +313,12 @@ segment_maker.append_commands(
     baca.select_stages(1, 20),
     baca.clef('bass'),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['mp > p', 'p < mp'],
-#        enchain_hairpins=True,
-#        include_following_rests=True,
-#        span=[2],
-#        ),
+    #baca.hairpins(
+    #    ['mp > p', 'p < mp'],
+    #    enchain_hairpins=True,
+    #    include_following_rests=True,
+    #    span=[2],
+    #    ),
     baca.ottava_bassa(),
     baca.pitches('Bb0'),
     )

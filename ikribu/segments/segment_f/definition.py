@@ -110,11 +110,11 @@ segment_maker.append_commands(
     [vn, va],
     baca.select_stages(6, 7),
     baca.hairpins(['sfpp < p'], selector=baca.select_leaves(stop=2)),
-#    baca.make_hairpin(
-#        descriptor='p > pp',
-#        start=-1,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='p > pp',
+    #    start=-1,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['p > pp'],
         include_rests=True,
@@ -129,7 +129,7 @@ segment_maker.append_commands(
     baca.markup.string_numbers([2, 3]),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')], 
+            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -145,7 +145,7 @@ segment_maker.append_commands(
     baca.markup.string_numbers([1, 2]),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')], 
+            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')],
             item_class=abjad.NamedPitch,
             )],
         ),

@@ -136,7 +136,7 @@ segment_maker.append_commands(
     baca.select_stages(2),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')], 
+            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
             item_class=abjad.NamedPitch,
             )],
         ),
@@ -147,11 +147,11 @@ segment_maker.append_commands(
     baca.select_stages(1, 2),
     baca.clef('percussion'),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
-#        enchain_hairpins=True,
-#        span=[3, 4],
-#        ),
+    #baca.hairpins(
+    #    ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
+    #    enchain_hairpins=True,
+    #    span=[3, 4],
+    #    ),
     baca.markup.boxed('1/2 clt'),
     baca.repeat_ties_up(),
     baca.pitches('C4'),
