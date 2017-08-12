@@ -139,34 +139,34 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(6, 8),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        [
-#            'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
-#            'mf < f', 'f > mf', 'mf < ff', 'ff > f',
-#            'f < ff', 'ff > f', 'f < fff', 'fff > ff',
-#            ],
-#        enchain_hairpins=True,
-#        include_following_rests=True,
-#        span=[4],
-#        ),
+    #baca.hairpins(
+    #    [
+    #        'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
+    #        'mf < f', 'f > mf', 'mf < ff', 'ff > f',
+    #        'f < ff', 'ff > f', 'f < fff', 'fff > ff',
+    #        ],
+    #    enchain_hairpins=True,
+    #    include_following_rests=True,
+    #    span=[4],
+    #    ),
     )
 
 segment_maker.append_commands(
     va,
     baca.select_stages(4, 8),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        [
-#            'p > pp', 'pp < p', 'p > pp', 'pp < mp',
-#            'mp > p', 'p < mp', 'mp > p', 'p < mf',
-#            'mf > mp', 'mp < mf', 'mf > mp', 'mp < f',
-#            'f > mf', 'mf < f', 'f > mf', 'mf < ff',
-#            'ff > f', 'f < ff', 'ff > f', 'f < fff',
-#            ],
-#        enchain_hairpins=True,
-#        include_following_rests=True,
-#        span=[4],
-#        ),
+    #baca.hairpins(
+    #    [
+    #        'p > pp', 'pp < p', 'p > pp', 'pp < mp',
+    #        'mp > p', 'p < mp', 'mp > p', 'p < mf',
+    #        'mf > mp', 'mp < mf', 'mf > mp', 'mp < f',
+    #        'f > mf', 'mf < f', 'f > mf', 'mf < ff',
+    #        'ff > f', 'f < ff', 'ff > f', 'f < fff',
+    #        ],
+    #    enchain_hairpins=True,
+    #    include_following_rests=True,
+    #    span=[4],
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -181,19 +181,19 @@ segment_maker.append_commands(
     vc,
     baca.select_stages(1, 6),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['p < f', 'f > p'],
-#        enchain_hairpins=True,
-#        include_following_rests=True,
-#        span=[
-#            9, 8, 4, 5,
-#            5, 3, 8, 4,
-#            5, 4, 5, 4,
-#            3, 8, 8, 9,
-#            8, 4, 3, 9,
-#            8, 5, 5, 4,
-#            ],
-#        ),
+    #baca.hairpins(
+    #    ['p < f', 'f > p'],
+    #    enchain_hairpins=True,
+    #    include_following_rests=True,
+    #    span=[
+    #        9, 8, 4, 5,
+    #        5, 3, 8, 4,
+    #        5, 4, 5, 4,
+    #        3, 8, 8, 9,
+    #        8, 4, 3, 9,
+    #        8, 5, 5, 4,
+    #        ],
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -260,13 +260,13 @@ segment_maker.append_commands(
     vn,
     baca.select_stages(5, 8),
     # TODO: make work again after extending selectors with patterns:
-#    baca.accents(
-#        pattern=abjad.index_every([0, 4], inverted=True, period=9),
-#        ),
+    #baca.accents(
+    #    pattern=abjad.index_every([0, 4], inverted=True, period=9),
+    #    ),
     # TODO: make work again after extending selectors with patterns:
-#    baca.stem_tremolo(
-#        pattern=abjad.index_every([0, 4], period=9),
-#        ),
+    #baca.stem_tremolo(
+    #    pattern=abjad.index_every([0, 4], period=9),
+    #    ),
     )
 
 segment_maker.append_commands(
@@ -275,7 +275,7 @@ segment_maker.append_commands(
     baca.staccati(),
     ikribu.make_clb_pitch_specifier(rotation=-1),
     )
-    
+
 segment_maker.append_commands(
     va,
     baca.select_stages(2),
@@ -288,15 +288,15 @@ segment_maker.append_commands(
     va,
     baca.select_stages(4, 8),
     # TODO: make work again after extending selectors with patterns:
-#    baca.accents(
-#        pattern=abjad.index_every(
-#            [0, 5],
-#            inverted=True,
-#            period=11,
-#            ),
-#        ),
+    #baca.accents(
+    #    pattern=abjad.index_every(
+    #        [0, 5],
+    #        inverted=True,
+    #        period=11,
+    #        ),
+    #    ),
     # TODO: make work again after extending selectors with patterns:
-#    baca.stem_tremolo(
-#        pattern=abjad.index_every([0, 5], period=11),
-#        ),
+    #baca.stem_tremolo(
+    #    pattern=abjad.index_every([0, 5], period=11),
+    #    ),
     )

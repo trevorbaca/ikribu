@@ -68,7 +68,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl, 
+    bcl,
     [
         baca.select_stages(1),
         baca.select_stages(3),
@@ -168,11 +168,11 @@ segment_maker.append_commands(
     baca.clef('treble'),
     baca.glissandi(),
     # TODO: make work again after extending baca.hairpins():
-#    baca.hairpins(
-#        ['ppp < pp', 'pp > ppp'],
-#        enchain_hairpins=True,
-#        span=[2],
-#        ),
+    #baca.hairpins(
+    #    ['ppp < pp', 'pp > ppp'],
+    #    enchain_hairpins=True,
+    #    span=[2],
+    #    ),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches(
