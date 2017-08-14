@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import ide
 import os
 import pytest

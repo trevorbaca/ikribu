@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import distutils.version
 import platform
 if not (
