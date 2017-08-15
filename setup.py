@@ -6,6 +6,7 @@ install_requires = (
     'abjad',
     )
 
+
 def main():
     setup(
         author='Trevor Bača',
@@ -17,6 +18,7 @@ def main():
         version='0.1',
         zip_safe=False,
         )
+
 
 if __name__ == '__main__':
     main()
