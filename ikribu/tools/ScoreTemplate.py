@@ -10,7 +10,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         >>> import baca
         >>> import ikribu
-
+        >>> import pathlib
 
     ..  container:: example
 
