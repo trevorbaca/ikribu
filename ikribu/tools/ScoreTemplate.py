@@ -23,7 +23,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> lilypond_file = abjad.new(
             ...     lilypond_file,
             ...     global_staff_size=16,
-            ...     includes=[path],
+            ...     includes=[str(path)],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
