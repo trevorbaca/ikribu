@@ -18,8 +18,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
             >>> template = ikribu.ScoreTemplate()
             >>> lilypond_file = template.__illustrate__()
-            >>> path = '/Users/trevorbaca/Scores/ikribu/ikribu'
-            >>> path += '/stylesheets/context-definitions.ily'
+            >>> path = pathlib.Path(ikribu.__path__[0], 'stylesheets')
+            >>> path = path.joinpath('context-definitions.ily')
             >>> lilypond_file = abjad.new(
             ...     lilypond_file,
             ...     global_staff_size=16,
@@ -177,13 +177,15 @@ class ScoreTemplate(baca.ScoreTemplate):
         tag_string = 'tag {}'.format(tag_string)
         tag_command = abjad.LilyPondCommand(tag_string, 'before')
         abjad.attach(tag_command, time_signature_context)
+
+        # BASS CLARINET
         bass_clarinet_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='BassClarinetMusicVoice',
             name='Bass Clarinet Music Voice',
             )
         bass_clarinet_music_staff = abjad.Staff(
-            [bass_clarinet_music_voice], 
+            [bass_clarinet_music_voice],
             context_name='BassClarinetMusicStaff',
             name='Bass Clarinet Music Staff',
             )
@@ -200,22 +202,22 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._attach_tag('bass_clarinet', bass_clarinet_music_staff)
 
         violin_rh_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='ViolinRHMusicVoice',
             name='Violin RH Music Voice',
             )
         violin_rh_music_staff = abjad.Staff(
-            [violin_rh_music_voice], 
+            [violin_rh_music_voice],
             context_name='ViolinRHMusicStaff',
             name='Violin RH Music Staff',
             )
         violin_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='ViolinMusicVoice',
             name='Violin Music Voice',
             )
         violin_music_staff = abjad.Staff(
-            [violin_music_voice], 
+            [violin_music_voice],
             context_name='ViolinMusicStaff',
             name='Violin Music Staff',
             )
@@ -224,7 +226,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ViolinStaffGroup',
             name='Violin Staff Group',
             )
-        #violin._default_scope = 'ViolinStaffGroup'
         abjad.annotate(
             violin_staff_group,
             'default_instrument',
@@ -238,22 +239,22 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._attach_tag('violin', violin_staff_group)
 
         viola_rh_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='ViolaRHMusicVoice',
             name='Viola RH Music Voice',
             )
         viola_rh_music_staff = abjad.Staff(
-            [viola_rh_music_voice], 
+            [viola_rh_music_voice],
             context_name='ViolaRHMusicStaff',
             name='Viola RH Music Staff',
             )
         viola_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='ViolaMusicVoice',
             name='Viola Music Voice',
             )
         viola_music_staff = abjad.Staff(
-            [viola_music_voice], 
+            [viola_music_voice],
             context_name='ViolaMusicStaff',
             name='Viola Music Staff',
             )
@@ -262,7 +263,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ViolaStaffGroup',
             name='Viola Staff Group',
             )
-        #viola._default_scope = 'ViolaStaffGroup'
         abjad.annotate(
             viola_staff_group,
             'default_instrument',
@@ -276,22 +276,22 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._attach_tag('viola', viola_staff_group)
 
         cello_rh_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='CelloRHMusicVoice',
             name='Cello RH Music Voice',
             )
         cello_rh_music_staff = abjad.Staff(
-            [cello_rh_music_voice], 
+            [cello_rh_music_voice],
             context_name='CelloRHMusicStaff',
             name='Cello RH Music Staff',
             )
         cello_music_voice = abjad.Voice(
-            [], 
+            [],
             context_name='CelloMusicVoice',
             name='Cello Music Voice',
             )
         cello_music_staff = abjad.Staff(
-            [cello_music_voice], 
+            [cello_music_voice],
             context_name='CelloMusicStaff',
             name='Cello Music Staff',
             )
@@ -300,7 +300,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='CelloStaffGroup',
             name='Cello Staff Group',
             )
-        #cello._default_scope = 'CelloStaffGroup'
         abjad.annotate(
             cello_staff_group,
             'default_instrument',
@@ -313,13 +312,12 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         self._attach_tag('cello', cello_staff_group)
 
-        ensemble_staff_group = abjad.StaffGroup(
-            [
-                bass_clarinet_music_staff, 
-                violin_staff_group, 
-                viola_staff_group, 
-                cello_staff_group,
-                ], 
+        ensemble_staff_group = abjad.StaffGroup([
+            bass_clarinet_music_staff,
+            violin_staff_group,
+            viola_staff_group,
+            cello_staff_group,
+            ],
             context_name='EnsembleStaffGroup',
             name='Ensemble Staff Group',
             )
@@ -330,19 +328,10 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='MusicContext',
             name='Music Context',
             )
-        score = abjad.Score(
-            [
+        score = abjad.Score([
             time_signature_context,
             music_context,
             ],
             name='Score',
             )
         return score
-
-    ### PRIVATE METHODS ###
-
-#    def _attach_tag(self, instrument_tag, context):
-#        assert isinstance(instrument_tag, str), repr(str)
-#        tag_string = 'tag {}'.format(instrument_tag)
-#        tag_command = abjad.LilyPondCommand(tag_string, 'before')
-#        abjad.attach(tag_command, context)
