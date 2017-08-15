@@ -8,6 +8,7 @@ abjad_ide = ide.tools.idetools.AbjadIDE()
 directories = abjad_ide._configure_travis_tests(os.path.abspath(__file__))
 material_directories, segment_directories = directories
 
+
 @pytest.mark.parametrize('material_directory', material_directories)
 def test_materials_01(material_directory):
     exit_code_ = abjad_ide.check_definition_file(material_directory)
