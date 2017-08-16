@@ -1,24 +1,15 @@
-#! /usr/bin/env python
-from distutils.core import setup
+#!/usr/bin/env python
+import setuptools
 
 
-install_requires = (
-    'abjad',
-    )
-
-
-def main():
-    setup(
+if __name__ == '__main__':
+    setuptools.setup(
         author='Trevor Bača',
         author_email='trevor.baca@gmail.com',
-        install_requires=install_requires,
+        install_requires=('abjad',),
         name='ikribu',
         packages=('ikribu',),
         url='https://github.com/trevorbaca/ikribu',
         version='0.1',
         zip_safe=False,
         )
-
-
-if __name__ == '__main__':
-    main()
