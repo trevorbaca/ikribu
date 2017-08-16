@@ -87,21 +87,21 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 2),
-#    baca.make_hairpin(
-#        descriptor='ppp < f',
-#        stop=2,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='ppp < f',
+    #    stop=2,
+    #    ),
     baca.hairpins(['ppp < f'], selector=baca.select_leaves(stop=2)),
     )
 
 segment_maker.append_commands(
     bcl,
     baca.select_stages(1, 2),
-#    baca.make_hairpin(
-#        descriptor='f > niente',
-#        start=-3,
-#        include_following_rest=True,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='f > niente',
+    #    start=-3,
+    #    include_following_rest=True,
+    #    ),
     baca.hairpins(
         ['f > niente'],
         selector=baca.select_leaves(start=-3, leak=Right),
