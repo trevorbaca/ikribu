@@ -76,7 +76,8 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker.append_commands(
     bcl,
-    [baca.select_stages(3),
+    [
+        baca.select_stages(3),
         baca.select_stages(7),
         baca.select_stages(11),
         baca.select_stages(13)
@@ -123,16 +124,16 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     bcl,
     baca.select_stages(13),
-#    baca.make_hairpin(
-#        descriptor='ppp < f',
-#        stop=2,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='ppp < f',
+    #    stop=2,
+    #    ),
     baca.hairpins(['ppp < f'], selector=baca.select_leaves(stop=2)),
-#    baca.make_hairpin(
-#        descriptor='f > niente',
-#        include_following_rest=True,
-#        start=-1,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='f > niente',
+    #    include_following_rest=True,
+    #    start=-1,
+    #    ),
     baca.hairpins(
         ['f > niente'],
         include_rests=True,
@@ -155,16 +156,16 @@ segment_maker.append_commands(
         baca.select_stages(5),
         baca.select_stages(9),
         ],
-#    baca.make_hairpin(
-#        descriptor='ppp < p',
-#        stop=2,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='ppp < p',
+    #    stop=2,
+    #    ),
     baca.hairpins(['ppp < p'], selector=baca.select_leaves(stop=2)),
-#    baca.make_hairpin(
-#        descriptor='p > niente',
-#        include_following_rest=True,
-#        start=-1,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='p > niente',
+    #    include_following_rest=True,
+    #    start=-1,
+    #    ),
     baca.hairpins(
         ['p > niente'],
         include_rests=True,
@@ -187,19 +188,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     va,
     baca.select_stages(13, 14),
-#    baca.make_hairpin(
-#        descriptor='ppp < mf',
-#        stop=5,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='ppp < mf',
+    #    stop=5,
+    #    ),
     baca.hairpins(
         ['ppp < mf'],
         selector=baca.select_leaves(stop=5),
         ),
-#    baca.make_hairpin(
-#        descriptor='mf > niente',
-#        include_following_rest=True,
-#        start=-1,
-#        ),
+    #baca.make_hairpin(
+    #    descriptor='mf > niente',
+    #    include_following_rest=True,
+    #    start=-1,
+    #    ),
     baca.hairpins(
         ['mf > niente'],
         include_rests=True,

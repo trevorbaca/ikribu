@@ -201,11 +201,11 @@ segment_maker.append_commands(
         ),
     baca.glissandi(),
     # TODO: make this work again:
-#    baca.hairpins(
-#        ['ppp < pp', 'pp > ppp'],
-#        enchain_hairpins=True,
-#        span=[2],
-#        ),
+    #baca.hairpins(
+    #    ['ppp < pp', 'pp > ppp'],
+    #    enchain_hairpins=True,
+    #    span=[2],
+    #    ),
     baca.natural_harmonics(),
     baca.stem_tremolo(),
     baca.transition_spanner(
