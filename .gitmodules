@@ -1,0 +1,3 @@
+[submodule "ikribu/test"]
+	path = ikribu/test
+	url = https://github.com/trevorbaca/test.git
