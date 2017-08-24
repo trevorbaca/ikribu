@@ -6,7 +6,7 @@ def make_color_rhythm_specifier(n):
     tuplet_ratio = tuple(n * [1])
     rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
         tuplet_ratios=[tuplet_ratio],
-        tuplet_spelling_specifier=abjad.rhythmmakertools.TupletSpellingSpecifier(
+        tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
             avoid_dots=True,
             ),
         )
