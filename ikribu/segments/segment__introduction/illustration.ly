@@ -101,6 +101,7 @@
                                     #10
                                     Vn.
                                 }
+                            \clef "percussion"
                             R1 * 7/4
                             R1 * 1/4
                             \bar "|"
@@ -151,6 +152,7 @@
                                     #10
                                     Va.
                                 }
+                            \clef "alto"
                             R1 * 7/4
                             R1 * 1/4
                             \bar "|"
@@ -179,6 +181,7 @@
                                     #10
                                     Vc.
                                 }
+                            \clef "bass"
                             R1 * 7/4
                             R1 * 1/4
                             \bar "|"
