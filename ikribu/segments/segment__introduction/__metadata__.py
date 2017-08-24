@@ -9,11 +9,11 @@ metadata = abjad.TypedOrderedDict(
                 [
                     ('Bass Clarinet Music Staff', 'treble'),
                     ('Cello Music Staff', 'treble'),
-                    ('Cello RH Music Staff', None),
+                    ('Cello RH Music Staff', 'bass'),
                     ('Viola Music Staff', 'alto'),
-                    ('Viola RH Music Staff', None),
+                    ('Viola RH Music Staff', 'alto'),
                     ('Violin Music Staff', 'percussion'),
-                    ('Violin RH Music Staff', None),
+                    ('Violin RH Music Staff', 'percussion'),
                     ]
                 ),
             ),

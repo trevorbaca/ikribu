@@ -8,7 +8,6 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     ::
 
-        >>> import baca
         >>> import ikribu
         >>> import pathlib
 
@@ -17,13 +16,11 @@ class ScoreTemplate(baca.ScoreTemplate):
         ::
 
             >>> template = ikribu.ScoreTemplate()
-            >>> lilypond_file = template.__illustrate__()
-            >>> path = pathlib.Path(ikribu.__path__[0], 'stylesheets')
-            >>> path = path.joinpath('context-definitions.ily')
-            >>> lilypond_file = abjad.new(
-            ...     lilypond_file,
-            ...     global_staff_size=16,
-            ...     includes=[str(path)],
+            >>> path = pathlib.Path(ikribu.__path__[0])
+            >>> path = path / 'stylesheets' / 'context-definitions.ily'
+            >>> lilypond_file = template.__illustrate__(
+            ...     global_staff_size=15,
+            ...     includes=[path],
             ...     )
             >>> show(lilypond_file) # doctest: +SKIP
 
@@ -79,6 +76,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                             #10
                                             Vn.
                                         }
+                                    \clef "percussion"
                                     s1
                                 }
                             }
@@ -103,6 +101,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                             #10
                                             Va.
                                         }
+                                    \clef "percussion"
                                     s1
                                 }
                             }
@@ -127,6 +126,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                             #10
                                             Vc.
                                         }
+                                    \clef "percussion"
                                     s1
                                 }
                             }
@@ -150,23 +150,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        time_signature_context_multimeasure_rests = abjad.Context(
-            context_name='GlobalRests',
-            name='Global Rests',
-            )
-        time_signature_context_skips = abjad.Context(
-            context_name='GlobalSkips',
-            name='Global Skips',
-            )
-        time_signature_context = abjad.Context(
-            [
-                time_signature_context_multimeasure_rests,
-                time_signature_context_skips,
-            ],
-            context_name='GlobalContext',
-            is_simultaneous=True,
-            name='Global Context',
-            )
+        time_signature_context = self._make_time_signature_context()
         instrument_tags = (
             'bass_clarinet',
             'violin',
@@ -174,10 +158,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'cello',
             )
         tag_string = '.'.join(instrument_tags)
-        tag_string = 'tag {}'.format(tag_string)
-        tag_command = abjad.LilyPondCommand(tag_string, 'before')
-        abjad.attach(tag_command, time_signature_context)
-
+        self._attach_tag(tag_string, time_signature_context)
         # BASS CLARINET
         bass_clarinet_music_voice = abjad.Voice(
             [],
@@ -194,13 +175,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['bass clarinet'],
             )
-        abjad.annotate(
-            bass_clarinet_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
         self._attach_tag('bass_clarinet', bass_clarinet_music_staff)
-
+        # VIOLIN
         violin_rh_music_voice = abjad.Voice(
             [],
             context_name='ViolinRHMusicVoice',
@@ -210,6 +186,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             [violin_rh_music_voice],
             context_name='ViolinRHMusicStaff',
             name='Violin RH Music Staff',
+            )
+        abjad.annotate(
+            violin_rh_music_staff,
+            'default_clef',
+            abjad.Clef('percussion'),
             )
         violin_music_voice = abjad.Voice(
             [],
@@ -231,13 +212,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['violin'],
             )
-        abjad.annotate(
-            violin_music_staff,
-            'default_clef',
-            abjad.Clef('treble'),
-            )
         self._attach_tag('violin', violin_staff_group)
-
+        # VIOLA
         viola_rh_music_voice = abjad.Voice(
             [],
             context_name='ViolaRHMusicVoice',
@@ -247,6 +223,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             [viola_rh_music_voice],
             context_name='ViolaRHMusicStaff',
             name='Viola RH Music Staff',
+            )
+        abjad.annotate(
+            viola_rh_music_staff,
+            'default_clef',
+            abjad.Clef('percussion'),
             )
         viola_music_voice = abjad.Voice(
             [],
@@ -268,13 +249,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['viola'],
             )
-        abjad.annotate(
-            viola_music_staff,
-            'default_clef',
-            abjad.Clef('alto'),
-            )
         self._attach_tag('viola', viola_staff_group)
-
+        # CELLO
         cello_rh_music_voice = abjad.Voice(
             [],
             context_name='CelloRHMusicVoice',
@@ -284,6 +260,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             [cello_rh_music_voice],
             context_name='CelloRHMusicStaff',
             name='Cello RH Music Staff',
+            )
+        abjad.annotate(
+            cello_rh_music_staff,
+            'default_clef',
+            abjad.Clef('percussion'),
             )
         cello_music_voice = abjad.Voice(
             [],
@@ -305,13 +286,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['cello'],
             )
-        abjad.annotate(
-            cello_music_staff,
-            'default_clef',
-            abjad.Clef('bass'),
-            )
         self._attach_tag('cello', cello_staff_group)
-
+        # SCORE
         ensemble_staff_group = abjad.StaffGroup([
             bass_clarinet_music_staff,
             violin_staff_group,
