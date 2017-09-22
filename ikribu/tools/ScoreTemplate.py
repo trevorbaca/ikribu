@@ -17,7 +17,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
             >>> template = ikribu.ScoreTemplate()
             >>> path = pathlib.Path(ikribu.__path__[0])
-            >>> path = path / 'stylesheets' / 'context-definitions.ily'
+            >>> path = path / 'stylesheets' / 'contexts.ily'
             >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
             ...     includes=[path],

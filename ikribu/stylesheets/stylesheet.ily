@@ -2,7 +2,7 @@
 #(set-global-staff-size 12)
 
 \include "/Users/trevorbaca/baca/baca/stylesheets/scheme.ily"
-\include "context-definitions.ily"
+\include "contexts.ily"
 
 \paper {
     %bottom-margin = 10\mm
