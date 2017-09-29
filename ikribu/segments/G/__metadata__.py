@@ -28,7 +28,7 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
-        ('end_tempo', 'windows'),
+        ('end_metronome_mark', 'windows'),
         ('end_time_signature', '1/6'),
         ('first_bar_number', 87),
         ('measure_count', 12),
