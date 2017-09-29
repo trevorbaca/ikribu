@@ -9,15 +9,13 @@ class ScoreTemplate(baca.ScoreTemplate):
     ::
 
         >>> import ikribu
-        >>> import pathlib
 
     ..  container:: example
 
         ::
 
             >>> template = ikribu.ScoreTemplate()
-            >>> path = pathlib.Path(ikribu.__path__[0])
-            >>> path = path / 'stylesheets' / 'contexts.ily'
+            >>> path = abjad.Path('ikribu', 'stylesheets', 'contexts.ily')
             >>> lilypond_file = template.__illustrate__(
             ...     global_staff_size=15,
             ...     includes=[path],
@@ -40,7 +38,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                         \tag bass_clarinet
                         \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                             \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                                \set Staff.instrumentName = \markup {
+                                \set BassClarinetMusicStaff.instrumentName = \markup {
                                     \hcenter-in
                                         #16
                                         \center-column
@@ -49,7 +47,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                                 clarinet
                                             }
                                     }
-                                \set Staff.shortInstrumentName = \markup {
+                                \set BassClarinetMusicStaff.shortInstrumentName = \markup {
                                     \hcenter-in
                                         #10
                                         \line
