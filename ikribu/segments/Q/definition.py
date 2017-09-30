@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [Q] #####################################
@@ -65,25 +55,25 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 2),
     baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 3),
     baca.repeated_durations((1, 4)),
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1, 3),
     baca.repeated_durations((1, 4)),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 4),
     ikribu.make_inscription_rhythm_specifier(),
     )
@@ -93,7 +83,7 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -103,7 +93,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 4),
     baca.clef('percussion'),
     baca.double_tonguing(),
@@ -116,7 +106,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -129,7 +119,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 4),
     baca.accents(),
     baca.clef('percussion'),

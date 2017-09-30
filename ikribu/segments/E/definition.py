@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [E] #####################################
@@ -79,7 +69,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     [
         baca.select_stages(1, 4),
         baca.select_stages(5, 8),
@@ -90,7 +80,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     [
         baca.select_stages(1, 2),
         baca.select_stages(5, 6),
@@ -101,7 +91,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     [
         baca.select_stages(2, 3),
         baca.select_stages(6, 7),
@@ -112,7 +102,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     [
         baca.select_stages(9, 12),
         baca.select_stages(13, 16),
@@ -125,32 +115,32 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 4),
     baca.dynamic('ppp'),
     baca.pitches('E3'),
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(5, 8),
     baca.pitches('E+3'),
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(9, 12),
     baca.pitches('F3'),
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(13, 16),
     baca.pitches('F+3'),
     )
 
 segment_maker.append_commands(
-    [vn, va],
+    ['Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(1, 16),
     # TODO: decide how to model with selectors:
     #baca.accents(
@@ -173,13 +163,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 16),
     baca.clef('bass'),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(9, 16),
     # TODO: make work with selectors:
     #baca.hairpins(
@@ -192,13 +182,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(9, 12),
     baca.pitches('F3'),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(13, 16),
     baca.pitches('F+3'),
     )

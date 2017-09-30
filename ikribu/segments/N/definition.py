@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [N] #####################################
@@ -62,7 +52,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     [
         baca.select_stages(1),
         baca.select_stages(2),
@@ -71,7 +61,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn_rh,
+    'Violin RH Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_bow_rhythm_specifier(
         logical_tie_masks=abjad.silence_every([0, 8], period=12),
@@ -80,13 +70,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
     )
 
 segment_maker.append_commands(
-    va_rh,
+    'Viola RH Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_bow_rhythm_specifier(
         logical_tie_masks=abjad.silence_every([4, 14], period=16),
@@ -95,13 +85,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_glissando_rhythm_specifier(rotation_1=-4, rotation_2=-1),
     )
 
 segment_maker.append_commands(
-    vc_rh,
+    'Cello RH Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_bow_rhythm_specifier(
         logical_tie_masks=abjad.silence_every([8, 20], period=20),
@@ -110,7 +100,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_glissando_rhythm_specifier(rotation_1=-8, rotation_2=-2),
     )
@@ -120,7 +110,7 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1),
     baca.dynamic('p'),
     baca.markup.lines([
@@ -131,7 +121,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(2),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -142,7 +132,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [vn_rh, va_rh, vc_rh],
+    ['Violin RH Music Voice', 'Viola RH Music Voice', 'Cello RH Music Voice'],
     baca.select_stages(1, 2),
     baca.clef('percussion'),
     # TODO: make work again after extending baca.hairpins():
@@ -157,32 +147,32 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn_rh,
+    'Violin RH Music Voice',
     baca.select_stages(1, 2),
     ikribu.BowContactPointSpecifier(rotation=0),
     )
 
 segment_maker.append_commands(
-    va_rh,
+    'Viola RH Music Voice',
     baca.select_stages(1, 2),
     ikribu.BowContactPointSpecifier(rotation=-1),
     )
 
 segment_maker.append_commands(
-    vc_rh,
+    'Cello RH Music Voice',
     baca.select_stages(1, 2),
     ikribu.BowContactPointSpecifier(rotation=-2),
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 2),
     baca.glissandi(),
     ikribu.make_glissando_pitch_specifier(octave=5, rotation=0),
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1, 2),
     baca.clef('treble'),
     baca.glissandi(),
@@ -190,7 +180,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 2),
     baca.clef('tenor'),
     baca.glissandi(),

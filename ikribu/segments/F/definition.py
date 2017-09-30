@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [F] #####################################
@@ -62,7 +52,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     [
         baca.select_stages(1, 4),
         baca.select_stages(6, 8),
@@ -71,19 +61,19 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [vn, va],
+    ['Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(6, 7),
     baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 4),
     baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(6, 7),
     baca.tied_repeated_durations((1, 4)),
     )
@@ -93,20 +83,20 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 4),
     baca.pitches('F#3'),
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(6, 8),
     baca.hairpins(['sfp > ppp']),
     baca.pitches('G2'),
     )
 
 segment_maker.append_commands(
-    [vn, va],
+    ['Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(6, 7),
     baca.hairpins(['sfpp < p'], selector=baca.select_leaves(stop=2)),
     #baca.make_hairpin(
@@ -123,7 +113,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(6, 7),
     baca.markup.string_numbers([2, 3]),
     baca.ScorePitchCommand(
@@ -139,7 +129,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(6, 7),
     baca.markup.string_numbers([1, 2]),
     baca.ScorePitchCommand(
@@ -155,7 +145,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 4),
     baca.hairpins(['p < ff']),
     baca.pitches('F#3'),
@@ -167,7 +157,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(6, 7),
     baca.markup.boxed_lines([
         'graincircle:',
