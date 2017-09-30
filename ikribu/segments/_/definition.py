@@ -2,19 +2,9 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
-################################ [introduction] ###############################
+##################################### [_] #####################################
 ###############################################################################
 
 stage_specifier = baca.StageSpecifier([
@@ -60,13 +50,13 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1),
     baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1),
     baca.messiaen_tied_notes(),
     )
@@ -76,7 +66,7 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -86,7 +76,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1),
     baca.clef('treble'),
     baca.dynamic('sfz'),

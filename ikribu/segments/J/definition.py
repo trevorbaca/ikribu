@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [J] #####################################
@@ -68,7 +58,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     [
         baca.select_stages(1),
         baca.select_stages(2, 3),
@@ -77,7 +67,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     [
         baca.select_stages(1, 2),
         baca.select_stages(3),
@@ -86,7 +76,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     [
         baca.select_stages(1),
         baca.select_stages(2),
@@ -96,13 +86,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [bcl, vn, va],
+    ['Bass Clarinet Music Voice', 'Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(6),
     baca.tied_repeated_durations((1, 4)),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(2, 4),
     baca.messiaen_tied_notes(),
     )
@@ -112,7 +102,7 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    [bcl, vn, va],
+    ['Bass Clarinet Music Voice', 'Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(1, 7),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
@@ -121,13 +111,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 7),
     baca.pitches('Bb2'),
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -136,7 +126,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(2),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -145,13 +135,13 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [vn, va],
+    ['Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(1, 7),
     baca.pitches('C4'),
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 2),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -160,7 +150,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(3),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -169,7 +159,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -178,7 +168,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(2),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -187,7 +177,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(3),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -196,7 +186,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(2, 4),
     baca.clef('bass'),
     baca.dynamic('p'),
@@ -216,7 +206,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [bcl, vn, va],
+    ['Bass Clarinet Music Voice', 'Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(6),
     baca.effort_dynamic('f'),
     baca.markup.boxed_lines([

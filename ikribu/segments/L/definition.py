@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [L] #####################################
@@ -69,37 +59,37 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 7),
     baca.messiaen_tied_notes(),
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 4),
     ikribu.make_clb_rhythm_specifier([4]),
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(6, 8),
     ikribu.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1, 2),
     ikribu.make_clb_rhythm_specifier([2]),
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(4, 8),
     ikribu.make_triplet_rhythm_specifier(),
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     [
         baca.select_stages(1),
         baca.select_stages(2),
@@ -116,7 +106,7 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1, 7),
     baca.dynamic('ppp'),
     baca.markup.make_markup(
@@ -127,7 +117,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    [vn, va],
+    ['Violin Music Voice', 'Viola Music Voice'],
     baca.select_stages(1, 8),
     baca.effort_dynamic('mp'),
     baca.one_line_staff(),
@@ -135,7 +125,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(6, 8),
     # TODO: make work again after extending baca.hairpins():
     #baca.hairpins(
@@ -151,7 +141,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(4, 8),
     # TODO: make work again after extending baca.hairpins():
     #baca.hairpins(
@@ -169,7 +159,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 8),
     baca.one_line_staff(),
     baca.percussion_staff(),
@@ -177,7 +167,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 6),
     # TODO: make work again after extending baca.hairpins():
     #baca.hairpins(
@@ -196,7 +186,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(2),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -205,7 +195,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(3),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -214,7 +204,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(4),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -223,7 +213,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(5),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -232,7 +222,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(6),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -241,14 +231,14 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(1, 4),
     baca.staccati(),
     ikribu.make_clb_pitch_specifier(rotation=-1),
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(4),
     #abjad.Hairpin('> niente'),
     baca.hairpins(['> niente']),
@@ -256,7 +246,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vn,
+    'Violin Music Voice',
     baca.select_stages(5, 8),
     # TODO: make work again after extending selectors with patterns:
     #baca.accents(
@@ -269,14 +259,14 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(1, 2),
     baca.staccati(),
     ikribu.make_clb_pitch_specifier(rotation=-1),
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(2),
     #abjad.Hairpin('> niente'),
     baca.hairpins(['> niente']),
@@ -284,7 +274,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    va,
+    'Viola Music Voice',
     baca.select_stages(4, 8),
     # TODO: make work again after extending selectors with patterns:
     #baca.accents(

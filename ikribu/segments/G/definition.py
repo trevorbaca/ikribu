@@ -2,16 +2,6 @@ import abjad
 import baca
 import ikribu
 
-### CONTEXT NAMES ###
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va = 'Viola Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc = 'Cello Music Voice'
-vc_rh = 'Cello RH Music Voice'
-tutti = [bcl, vn, va, vc]
 
 ###############################################################################
 ##################################### [G] #####################################
@@ -67,7 +57,7 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     [
         baca.select_stages(1),
         baca.select_stages(3),
@@ -80,7 +70,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 11),
     baca.messiaen_notes(),
     )
@@ -90,7 +80,7 @@ segment_maker.append_commands(
 ###############################################################################
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(1),
     #baca.make_hairpin('ppp < mp', include_following_rest=True),
     baca.hairpins(
@@ -102,7 +92,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(3),
     #baca.make_hairpin('pp < mf', include_following_rest=True),
     baca.hairpins(
@@ -114,7 +104,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(5),
     #baca.make_hairpin('p < f', include_following_rest=True),
     baca.hairpins(
@@ -126,7 +116,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(7),
     #baca.make_hairpin('mf < ff', include_following_rest=True),
     baca.hairpins(
@@ -138,7 +128,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(9),
     #baca.make_hairpin('f < fff', include_following_rest=True),
     baca.hairpins(
@@ -150,7 +140,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    bcl,
+    'Bass Clarinet Music Voice',
     baca.select_stages(11),
     #baca.make_hairpin('ff < ffff', include_following_rest=True),
     baca.hairpins(
@@ -162,7 +152,7 @@ segment_maker.append_commands(
     )
 
 segment_maker.append_commands(
-    vc,
+    'Cello Music Voice',
     baca.select_stages(1, 12),
     baca.clef('treble'),
     baca.glissandi(),
