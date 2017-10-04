@@ -33,6 +33,8 @@ spacing_specifier = baca.HorizontalSpacingCommand(
     )
 
 segment_maker = baca.SegmentMaker(
+    final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
+    final_markup_extra_offset=(-18, -4),
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     #label_clock_time=True,

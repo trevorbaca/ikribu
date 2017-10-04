@@ -609,7 +609,32 @@
                             \stopStaff
                             \startStaff
                         }
+                        \once \override TextScript.extra-offset = #'(-18 . -4)
                         s1 * 1/4
+                            _ \markup {
+                                \whiteout
+                                    \upright
+                                        \with-color
+                                            #black
+                                            \right-column
+                                                {
+                                                    \line
+                                                        {
+                                                            "Madison, WI."
+                                                        }
+                                                    \line
+                                                        {
+                                                            January
+                                                            \hspace
+                                                                #0.75
+                                                            –
+                                                            \hspace
+                                                                #0.75
+                                                            March
+                                                            2016.
+                                                        }
+                                                }
+                                }
                         \bar "|."
                     }
                 }
