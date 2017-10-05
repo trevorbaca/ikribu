@@ -7,7 +7,7 @@ import ikribu
 ##################################### [G] #####################################
 ###############################################################################
 
-stage_specifier = baca.StageSpecifier([
+stage_measure_map = baca.StageMeasureMap([
     1, 1,
     1, 1,
     1, 1,
@@ -16,7 +16,7 @@ stage_specifier = baca.StageSpecifier([
     1, 1,
     ])
 
-tempo_specifier = baca.TempoSpecifier([
+metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, ikribu.metronome_marks['night']),
     (1, abjad.Accelerando()),
     (11, ikribu.metronome_marks['windows']),
@@ -24,10 +24,10 @@ tempo_specifier = baca.TempoSpecifier([
 
 maker = baca.TimeSignatureMaker(
     [[(7, 4), (1, 6)]],
-    stage_specifier=stage_specifier,
-    tempo_specifier=tempo_specifier,
+    stage_measure_map=stage_measure_map,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     )
-measures_per_stage, tempo_specifier, time_signatures = maker()
+measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingCommand(
     fermata_measure_width=abjad.Duration(1, 4),
@@ -43,7 +43,7 @@ segment_maker = baca.SegmentMaker(
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
-    tempo_specifier=tempo_specifier,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
     )
