@@ -7,6 +7,6 @@ def make_clb_rhythm_specifier(extra_counts_per_division):
         denominators=[8],
         extra_counts_per_division=extra_counts_per_division,
         )
-    return baca.RhythmSpecifier(
+    return baca.RhythmCommand(
         rhythm_maker=rhythm_maker,
         )
