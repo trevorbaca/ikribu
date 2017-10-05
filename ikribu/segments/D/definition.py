@@ -84,7 +84,7 @@ segment_maker.append_commands(
     baca.markup.boxed('1/2 clt'),
     baca.pitches('C4'),
     baca.repeat_ties_up(),
-    ikribu.BowContactPointSpecifier(rotation=-2),
+    ikribu.BowContactPointCommand(rotation=-2),
     )
 
 segment_maker.append_commands(

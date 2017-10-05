@@ -149,19 +149,19 @@ segment_maker.append_commands(
 segment_maker.append_commands(
     'Violin RH Music Voice',
     baca.select_stages(1, 2),
-    ikribu.BowContactPointSpecifier(rotation=0),
+    ikribu.BowContactPointCommand(rotation=0),
     )
 
 segment_maker.append_commands(
     'Viola RH Music Voice',
     baca.select_stages(1, 2),
-    ikribu.BowContactPointSpecifier(rotation=-1),
+    ikribu.BowContactPointCommand(rotation=-1),
     )
 
 segment_maker.append_commands(
     'Cello RH Music Voice',
     baca.select_stages(1, 2),
-    ikribu.BowContactPointSpecifier(rotation=-2),
+    ikribu.BowContactPointCommand(rotation=-2),
     )
 
 segment_maker.append_commands(
