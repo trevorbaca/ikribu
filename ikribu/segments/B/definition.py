@@ -64,17 +64,17 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [3, 7, 11, 13]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice'], [1, 5, 9]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
     baca.messiaen_tied_notes(),
     )
@@ -83,17 +83,17 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3, 15),
     baca.pitches('Db2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [3, 7, 11]),
     baca.dynamic('ppp'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13),
     #baca.make_hairpin(
     #    descriptor='ppp < f',
@@ -112,14 +112,14 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1, 9),
     baca.markup.string_number(3),
     baca.pitches('E4'),
     baca.stem_tremolo(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice'], [1, 5, 9]),
     #baca.make_hairpin(
     #    descriptor='ppp < p',
@@ -142,14 +142,14 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
     baca.markup.string_number(2),
     baca.pitches('Eb4'),
     baca.stem_tremolo(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
     #baca.make_hairpin(
     #    descriptor='ppp < mf',

@@ -62,27 +62,27 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [1, (2, 3)]),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice'], [(1, 2), 3]),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Viola Music Voice'], [1, 2, 3]),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([bcl, vn, va], [6]),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
     baca.messiaen_tied_notes(),
     )
@@ -91,7 +91,7 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([bcl, vn, va], [(1, 7)]),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
@@ -99,12 +99,12 @@ segment_maker.scope(
     baca.percussion_staff(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
     baca.pitches('Bb2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -112,7 +112,7 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 2),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -120,12 +120,12 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 7)]),
     baca.pitches('C4'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -133,7 +133,7 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 3),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -141,7 +141,7 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 1),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -149,7 +149,7 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 2),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -157,7 +157,7 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 3),
     baca.markup.boxed_lines([
         'stonecircle:',
@@ -165,7 +165,7 @@ segment_maker.scope(
         ]),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
     baca.clef('bass'),
     baca.dynamic('p'),
@@ -184,7 +184,7 @@ segment_maker.scope(
     baca.pitches('D1'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([bcl, vn, va], [6]),
     baca.effort_dynamic('f'),
     baca.markup.boxed_lines([

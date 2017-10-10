@@ -56,22 +56,22 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([bcl], [(1, 4), (6, 8)]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn, va], [(6, 7)]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 4),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 6, 7),
     baca.tied_repeated_durations((1, 4)),
     )
@@ -80,18 +80,18 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
     baca.pitches('F#3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 6, 8),
     baca.hairpins(['sfp > ppp']),
     baca.pitches('G2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn, va], [(6, 7)]),
     baca.hairpins(['sfpp < p'], selector=baca.select_leaves(stop=2)),
     #baca.make_hairpin(
@@ -107,7 +107,7 @@ segment_maker.scope(
     baca.stem_tremolo(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 6, 7),
     baca.markup.string_numbers([2, 3]),
     baca.ScorePitchCommand(
@@ -122,7 +122,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 6, 7),
     baca.markup.string_numbers([1, 2]),
     baca.ScorePitchCommand(
@@ -137,7 +137,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 4),
     baca.hairpins(['p < ff']),
     baca.pitches('F#3'),
@@ -148,7 +148,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 6, 7),
     baca.markup.boxed_lines([
         'graincircle:',
