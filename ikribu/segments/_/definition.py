@@ -49,15 +49,13 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1),
     baca.messiaen_tied_notes(),
     )
 
@@ -65,9 +63,8 @@ segment_maker.append_commands(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
@@ -75,9 +72,8 @@ segment_maker.append_commands(
     baca.pitches('C4'),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),

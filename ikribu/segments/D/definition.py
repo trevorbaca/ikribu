@@ -52,18 +52,16 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Cello RH Music Voice',
-    baca.select_stages(1, 2),
+segment_maker.scope(
+    baca.scope('Cello RH Music Voice', 1, 2),
     ikribu.make_bow_rhythm_specifier(
         logical_tie_masks=abjad.silence_every([8, 20], period=20),
         rotation=-2,
         ),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1, 2),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1, 2),
     ikribu.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
     )
 
@@ -71,9 +69,8 @@ segment_maker.append_commands(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Cello RH Music Voice',
-    baca.select_stages(1, 2),
+segment_maker.scope(
+    baca.scope('Cello RH Music Voice', 1, 2),
     baca.clef('percussion'),
     # TODO: make this work again:
     #baca.hairpins(
@@ -87,9 +84,8 @@ segment_maker.append_commands(
     ikribu.BowContactPointCommand(rotation=-2),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1, 2),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1, 2),
     baca.clef('tenor'),
     baca.glissandi(),
     ikribu.make_glissando_pitch_specifier(octave=4, rotation=-20),

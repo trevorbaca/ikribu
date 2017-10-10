@@ -56,22 +56,18 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    [
-        baca.select_stages(1),
-        baca.select_stages(3),
-        baca.select_stages(5),
-        baca.select_stages(7),
-        baca.select_stages(9),
-        baca.select_stages(11),
-        ],
+bcl = 'Bass Clarinet Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
+
+segment_maker.scope(
+    baca.scopes([bcl], [1, 3, 5, 7, 9, 11]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1, 11),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1, 11),
     baca.messiaen_notes(),
     )
 
@@ -79,9 +75,8 @@ segment_maker.append_commands(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 1),
     #baca.make_hairpin('ppp < mp', include_following_rest=True),
     baca.hairpins(
         ['ppp < mp'],
@@ -91,9 +86,8 @@ segment_maker.append_commands(
     baca.pitches('G2'),
     )
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(3),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 3),
     #baca.make_hairpin('pp < mf', include_following_rest=True),
     baca.hairpins(
         ['pp < mf'],
@@ -103,9 +97,8 @@ segment_maker.append_commands(
     baca.pitches('Gb2'),
     )
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(5),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 5),
     #baca.make_hairpin('p < f', include_following_rest=True),
     baca.hairpins(
         ['p < f'],
@@ -115,9 +108,8 @@ segment_maker.append_commands(
     baca.pitches('F2'),
     )
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(7),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 7),
     #baca.make_hairpin('mf < ff', include_following_rest=True),
     baca.hairpins(
         ['mf < ff'],
@@ -127,9 +119,8 @@ segment_maker.append_commands(
     baca.pitches('E2'),
     )
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(9),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 9),
     #baca.make_hairpin('f < fff', include_following_rest=True),
     baca.hairpins(
         ['f < fff'],
@@ -139,9 +130,8 @@ segment_maker.append_commands(
     baca.pitches('Eb2'),
     )
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(11),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 11),
     #baca.make_hairpin('ff < ffff', include_following_rest=True),
     baca.hairpins(
         ['ff < ffff'],
@@ -151,9 +141,8 @@ segment_maker.append_commands(
     baca.pitches('D2'),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1, 12),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1, 12),
     baca.clef('treble'),
     baca.glissandi(),
     # TODO: make work again after extending baca.hairpins():
