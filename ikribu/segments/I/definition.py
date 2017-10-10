@@ -52,7 +52,7 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Cello Music Voice'], [1, 3, 5, 7]),
     baca.tied_repeated_durations((1, 4)),
     )
@@ -61,7 +61,7 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 8),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines([

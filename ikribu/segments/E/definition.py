@@ -73,22 +73,22 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([bcl], [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn], [(1, 2), (5, 6), (9, 10), (13, 14)]),
     ikribu.make_triplet_rhythm_specifier(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([va], [(2, 3), (6, 7), (10, 11), (14, 15)]),
     ikribu.make_triplet_rhythm_specifier(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vc], [(9, 12), (13, 16)]),
     baca.messiaen_tied_notes(),
     )
@@ -97,28 +97,28 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
     baca.dynamic('ppp'),
     baca.pitches('E3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 5, 8),
     baca.pitches('E+3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9, 12),
     baca.pitches('F3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13, 16),
     baca.pitches('F+3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn, va], [(1, 16)]),
     # TODO: decide how to model with selectors:
     #baca.accents(
@@ -140,12 +140,12 @@ segment_maker.scope(
     baca.percussion_staff(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 16),
     baca.clef('bass'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 9, 16),
     # TODO: make work with selectors:
     #baca.hairpins(
@@ -157,12 +157,12 @@ segment_maker.scope(
     baca.stem_tremolo(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 9, 12),
     baca.pitches('F3'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 13, 16),
     baca.pitches('F+3'),
     )

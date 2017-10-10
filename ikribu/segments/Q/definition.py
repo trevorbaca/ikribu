@@ -56,22 +56,22 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1, 3),
     baca.repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 1, 3),
     baca.repeated_durations((1, 4)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 4),
     ikribu.make_inscription_rhythm_specifier(),
     )
@@ -80,7 +80,7 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -89,7 +89,7 @@ segment_maker.scope(
     baca.pitches('Bb2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.double_tonguing(),
@@ -101,7 +101,7 @@ segment_maker.scope(
     baca.pitches('B3 C4 D4'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -113,7 +113,7 @@ segment_maker.scope(
     baca.staccati(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 4),
     baca.accents(),
     baca.clef('percussion'),

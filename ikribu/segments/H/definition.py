@@ -52,12 +52,12 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin RH Music Voice', 1, 2),
     ikribu.make_bow_rhythm_specifier(
         logical_tie_masks=abjad.silence_every([0, 8], period=12),
@@ -65,12 +65,12 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
     ikribu.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola RH Music Voice', 1, 2),
     ikribu.make_bow_rhythm_specifier(
         logical_tie_masks=abjad.silence_every([4, 14], period=16),
@@ -78,7 +78,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     ikribu.make_glissando_rhythm_specifier(rotation_1=-4, rotation_2=-1),
     )
@@ -87,13 +87,13 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.dynamic('ppp'),
     baca.pitches('Db2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin RH Music Voice', 'Viola RH Music Voice'], [(1, 2)]),
     baca.clef('percussion'),
     # TODO: make work again after extending baca.hairpins():
@@ -107,23 +107,23 @@ segment_maker.scope(
     baca.repeat_ties_up(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin RH Music Voice', 1, 2),
     ikribu.BowContactPointCommand(rotation=0),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola RH Music Voice', 1, 2),
     ikribu.BowContactPointCommand(rotation=-1),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
     baca.glissandi(),
     ikribu.make_glissando_pitch_specifier(octave=5, rotation=0),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.clef('treble'),
     baca.glissandi(),

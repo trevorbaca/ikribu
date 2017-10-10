@@ -61,12 +61,12 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([bcl], [1, 3, 5, 7, 9, 11]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 11),
     baca.messiaen_notes(),
     )
@@ -75,7 +75,7 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1),
     #baca.make_hairpin('ppp < mp', include_following_rest=True),
     baca.hairpins(
@@ -86,7 +86,7 @@ segment_maker.scope(
     baca.pitches('G2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3),
     #baca.make_hairpin('pp < mf', include_following_rest=True),
     baca.hairpins(
@@ -97,7 +97,7 @@ segment_maker.scope(
     baca.pitches('Gb2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 5),
     #baca.make_hairpin('p < f', include_following_rest=True),
     baca.hairpins(
@@ -108,7 +108,7 @@ segment_maker.scope(
     baca.pitches('F2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 7),
     #baca.make_hairpin('mf < ff', include_following_rest=True),
     baca.hairpins(
@@ -119,7 +119,7 @@ segment_maker.scope(
     baca.pitches('E2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9),
     #baca.make_hairpin('f < fff', include_following_rest=True),
     baca.hairpins(
@@ -130,7 +130,7 @@ segment_maker.scope(
     baca.pitches('Eb2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 11),
     #baca.make_hairpin('ff < ffff', include_following_rest=True),
     baca.hairpins(
@@ -141,7 +141,7 @@ segment_maker.scope(
     baca.pitches('D2'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 12),
     baca.clef('treble'),
     baca.glissandi(),

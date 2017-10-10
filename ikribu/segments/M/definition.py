@@ -73,163 +73,163 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 2, 3),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 6),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9, 10),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13, 14),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 17),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 20, 22),
     baca.messiaen_tied_notes(),
     )
 
 # violin #
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice'], [1, 5, 8, 12, 16, 19]),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 2, 3),
     ikribu.make_color_rhythm_specifier(3),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 6),
     ikribu.make_color_rhythm_specifier(4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 9, 10),
     ikribu.make_color_rhythm_specifier(5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 13, 14),
     ikribu.make_color_rhythm_specifier(3),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 17),
     ikribu.make_color_rhythm_specifier(4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 20, 21),
     ikribu.make_color_rhythm_specifier(5),
     )
 
 # viola #
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 2, 3),
     ikribu.make_color_rhythm_specifier(4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 6),
     ikribu.make_color_rhythm_specifier(5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 9, 10),
     ikribu.make_color_rhythm_specifier(3),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
     ikribu.make_color_rhythm_specifier(4),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 17),
     ikribu.make_color_rhythm_specifier(5),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 20, 21),
     ikribu.make_color_rhythm_specifier(3),
     )
 
 # cello #
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 2, 3),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 5),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 6),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 8),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 9, 10),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 12),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 13, 14),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 16),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 17),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 19),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 20, 21),
     baca.messiaen_tied_notes(),
     )
@@ -238,12 +238,12 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 23),
     baca.pitches('B1'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
     baca.hairpins(['p < fff'], selector=baca.select_leaves(stop=2)),
     #baca.make_hairpin(
@@ -258,35 +258,35 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 20, 22),
     #baca.make_hairpin('ppp < fff', stop=-1),
     baca.hairpins(['ppp < fff'], selector=baca.select_leaves(stop=-1)),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [6, 17]),
     baca.dynamic('p'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 1),
     baca.effort_dynamic('f'),
     baca.markup.make_markup('grainfall (III)'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.markup.boxed('brushes on BD'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn, va], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     # TODO: make work again after extending selectors with patterns:
     #baca.accents(
@@ -298,48 +298,48 @@ segment_maker.scope(
     #    ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 5),
     baca.effort_dynamic('f'),
     baca.markup.make_markup('grainfall (IV)'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 8),
     baca.effort_dynamic('f'),
     baca.markup.make_markup('grainfall (V)'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 12),
     baca.effort_dynamic('f'),
     baca.markup.make_markup('grainfall (VI)'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 16),
     baca.effort_dynamic('f'),
     baca.markup.make_markup('grainfall (VII)'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 19),
     baca.effort_dynamic('f'),
     baca.markup.make_markup('grainfall (VIII)'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vc], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.ottava_bassa(),
     baca.pitches('C1'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn, va, vc], [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.hairpins(['mf < fff']),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vc], [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.transition_spanner(
         baca.markup.tasto(),
@@ -347,17 +347,17 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vn, va, vc], [6, 17]),
     baca.dynamic('fff'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vc], [6, 17]),
     baca.markup.XP(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1),
     baca.clef_spanner(clef='treble'),
     baca.dynamic('sfz'),
@@ -368,12 +368,12 @@ segment_maker.scope(
     baca.pitches('F~5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
     baca.clef('bass'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 5),
     baca.clef_spanner(clef='treble'),
     baca.dynamic('sfz'),
@@ -384,7 +384,7 @@ segment_maker.scope(
     baca.pitches('G5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 8),
     baca.clef_spanner(clef='treble'),
     baca.dynamic('sffz'),
@@ -395,7 +395,7 @@ segment_maker.scope(
     baca.pitches('F~5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 12),
     baca.clef_spanner(clef='treble'),
     baca.dynamic('sffz'),
@@ -406,7 +406,7 @@ segment_maker.scope(
     baca.pitches('G5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 16),
     baca.clef_spanner(clef='treble'),
     baca.dynamic('sfffz'),
@@ -417,7 +417,7 @@ segment_maker.scope(
     baca.pitches('A5'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 19),
     baca.clef_spanner(clef='treble'),
     baca.dynamic('sfffz'),

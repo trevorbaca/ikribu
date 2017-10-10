@@ -63,7 +63,7 @@ vn_rh = 'Violin RH Music Voice'
 va_rh = 'Viola RH Music Voice'
 vc_rh = 'Cello RH Music Voice'
 
-segment_maker.scope(
+segment_maker(
     baca.scopes(
         [bcl],
         [(1, 2), (3, 6), 7, 8, 9, 10,
@@ -72,17 +72,17 @@ segment_maker.scope(
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 9, 20),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 9, 20),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scopes([vc], [(5, 8), (9, 12), (13, 16), (17, 20)]),
     baca.messiaen_tied_notes(),
     )
@@ -91,7 +91,7 @@ segment_maker.scope(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -101,7 +101,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3, 6),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -111,7 +111,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 7),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -121,12 +121,12 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 8),
     baca.pitches('Bb1'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -136,7 +136,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 10),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -146,7 +146,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 11, 12),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -156,7 +156,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -166,12 +166,12 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 14),
     baca.pitches('Bb1'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 15, 16),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -181,7 +181,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 17),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -191,7 +191,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 18),
     baca.ScorePitchCommand(
         source=[abjad.PitchSegment(
@@ -201,7 +201,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 19, 20),
     baca.pitches('Bb1'),
     #baca.make_hairpin(
@@ -216,7 +216,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Violin Music Voice', 9, 20),
     baca.dynamic('ppppp'),
     #baca.make_hairpin(
@@ -243,7 +243,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Viola Music Voice', 9, 20),
     baca.dynamic('ppppp'),
     #baca.make_hairpin(
@@ -270,7 +270,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 1, 20),
     baca.clef('bass'),
     # TODO: make work again after extending baca.hairpins():
@@ -284,7 +284,7 @@ segment_maker.scope(
     baca.pitches('Bb0'),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 5, 8),
     baca.transition_spanner(
         baca.markup.make_markup('nut'),
@@ -292,7 +292,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 9, 12),
     baca.transition_spanner(
         baca.markup.make_markup('string midpoint'),
@@ -300,7 +300,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 13, 16),
     baca.transition_spanner(
         baca.markup.XP(),
@@ -308,7 +308,7 @@ segment_maker.scope(
         ),
     )
 
-segment_maker.scope(
+segment_maker(
     baca.scope('Cello Music Voice', 17, 20),
     baca.transition_spanner(
         baca.markup.make_markup('string midpoint'),
