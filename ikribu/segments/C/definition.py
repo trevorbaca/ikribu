@@ -71,43 +71,33 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    [
-        baca.select_stages(2, 3),
-        baca.select_stages(6, 7),
-        baca.select_stages(10, 11),
-        baca.select_stages(14, 15),
-        ],
+bcl = 'Bass Clarinet Music Voice'
+vn = 'Violin Music Voice'
+va = 'Viola Music Voice'
+vc = 'Cello Music Voice'
+
+segment_maker.scope(
+    baca.scopes([bcl], [(2, 3), (6, 7), (10, 11), (14, 15)]),
     baca.tied_repeated_durations((1, 4)),
     )
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_commands(
-    ['Violin Music Voice', 'Viola Music Voice'],
-    [
-        baca.select_stages(3, 4),
-        baca.select_stages(7, 8),
-        baca.select_stages(11, 12),
-        baca.select_stages(15, 16),
-        ],
+segment_maker.scope(
+    baca.scopes([vn, va], [(3, 4), (7, 8), (11, 12), (15, 16)]),
     baca.messiaen_notes(),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1),
     baca.messiaen_tied_notes(),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(2, 16),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 2, 16),
     baca.messiaen_notes(),
     )
 
@@ -115,9 +105,8 @@ segment_maker.append_commands(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(2, 17),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 2, 17),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.one_line_staff(),
@@ -126,9 +115,8 @@ segment_maker.append_commands(
     #abjad.ClefSpanner(clef='percussion'),
     )
 
-segment_maker.append_commands(
-    'Bass Clarinet Music Voice',
-    baca.select_stages(2, 3),
+segment_maker.scope(
+    baca.scope('Bass Clarinet Music Voice', 2, 3),
     baca.markup.boxed_lines([
         'stonecircle:',
         'π/2 every quarter note'
@@ -136,20 +124,17 @@ segment_maker.append_commands(
     baca.repeat_ties_up(),
     )
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (II)'),
     baca.one_line_staff(),
     baca.pitches('C4'),
-    #abjad.ClefSpanner(clef='percussion'),
     )
 
-segment_maker.append_commands(
-    'Violin Music Voice',
-    baca.select_stages(2, 16),
+segment_maker.scope(
+    baca.scope('Violin Music Voice', 2, 16),
     baca.glissandi(),
     baca.hairpins(
         ['pp < p', 'p > pp'],
@@ -159,9 +144,8 @@ segment_maker.append_commands(
     baca.stem_tremolo(),
     )
 
-segment_maker.append_commands(
-    'Viola Music Voice',
-    baca.select_stages(2, 16),
+segment_maker.scope(
+    baca.scope('Viola Music Voice', 2, 16),
     baca.glissandi(),
     baca.hairpins(
         ['pp < p', 'p > pp'],
@@ -171,9 +155,8 @@ segment_maker.append_commands(
     baca.stem_tremolo(),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(1),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 1),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.markup.pizz(),
@@ -183,9 +166,8 @@ segment_maker.append_commands(
     baca.pitches('F~5'),
     )
 
-segment_maker.append_commands(
-    'Cello Music Voice',
-    baca.select_stages(2, 16),
+segment_maker.scope(
+    baca.scope('Cello Music Voice', 2, 16),
     baca.fixed_pitches(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         ),
