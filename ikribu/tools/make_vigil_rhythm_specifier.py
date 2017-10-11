@@ -13,6 +13,6 @@ def make_vigil_rhythm_specifier():
             use_messiaen_style_ties=True,
             ),
         )
-    return baca.RhythmCommand(
+    return baca.RhythmBuilder(
         rhythm_maker=rhythm_maker,
         )

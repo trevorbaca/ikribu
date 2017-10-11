@@ -9,6 +9,6 @@ def make_triplet_rhythm_specifier():
             avoid_dots=True,
             ),
         )
-    return baca.RhythmCommand(
+    return baca.RhythmBuilder(
         rhythm_maker=rhythm_maker,
         )

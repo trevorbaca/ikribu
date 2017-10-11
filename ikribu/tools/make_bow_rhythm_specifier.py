@@ -15,6 +15,6 @@ def make_bow_rhythm_specifier(
         extra_counts_per_division=extra_counts_per_division,
         logical_tie_masks=logical_tie_masks,
         )
-    return baca.RhythmCommand(
+    return baca.RhythmBuilder(
         rhythm_maker=rhythm_maker,
         )
