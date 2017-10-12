@@ -246,21 +246,16 @@ segment_maker(
 segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
     baca.hairpins(['p < fff'], selector=baca.select_leaves(stop=2)),
-    #baca.make_hairpin(
-    #    'fff > niente',
-    #    include_following_rest=True,
-    #    start=-1
-    #    ),
     baca.hairpins(
         ['fff > niente'],
         include_rests=True,
         selector=baca.select_leaves(start=-1, leak=Right),
+        target=baca.select_leaves(),
         ),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 20, 22),
-    #baca.make_hairpin('ppp < fff', stop=-1),
     baca.hairpins(['ppp < fff'], selector=baca.select_leaves(stop=-1)),
     )
 
