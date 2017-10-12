@@ -214,7 +214,6 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 4),
-    #abjad.Hairpin('> niente'),
     baca.hairpins(['> niente']),
     baca.percussion_staff(),
     )
@@ -239,7 +238,6 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 2),
-    #abjad.Hairpin('> niente'),
     baca.hairpins(['> niente']),
     baca.percussion_staff(),
     )
