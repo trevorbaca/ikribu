@@ -95,7 +95,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13),
-    baca.hairpins(['ppp < f'], selector=baca.select_leaves(stop=2)),
+    baca.hairpins(['ppp < f'], selector=baca.select_leaves()[:2]),
     baca.hairpins(
         ['f > niente'],
         include_rests=True,
@@ -113,7 +113,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Violin Music Voice'], [1, 5, 9]),
-    baca.hairpins(['ppp < p'], selector=baca.select_leaves(stop=2)),
+    baca.hairpins(['ppp < p'], selector=baca.select_leaves()[:2]),
     baca.hairpins(
         ['p > niente'],
         include_rests=True,
@@ -137,7 +137,7 @@ segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
     baca.hairpins(
         ['ppp < mf'],
-        selector=baca.select_leaves(stop=5),
+        selector=baca.select_leaves()[:5],
         ),
     baca.hairpins(
         ['mf > niente'],
