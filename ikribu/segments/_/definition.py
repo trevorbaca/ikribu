@@ -32,7 +32,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 segment_maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -68,7 +68,7 @@ segment_maker(
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
-    baca.one_line_staff(selector=baca.select_leaves(leak=Right)),
+    baca.one_line_staff(selector=baca.select().leaves(leak=Right)),
     baca.pitches('C4'),
     )
 

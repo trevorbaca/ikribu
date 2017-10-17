@@ -50,7 +50,7 @@ segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -245,18 +245,18 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
-    baca.hairpins(['p < fff'], selector=baca.select_leaves()[:2]),
+    baca.hairpins(['p < fff'], selector=baca.select().leaves()[:2]),
     baca.hairpins(
         ['fff > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-1, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-1, leak=Right),
+        target=baca.select().leaves(),
         ),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 20, 22),
-    baca.hairpins(['ppp < fff'], selector=baca.select_leaves()[:-1]),
+    baca.hairpins(['ppp < fff'], selector=baca.select().leaves()[:-1]),
     )
 
 segment_maker(

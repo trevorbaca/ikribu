@@ -38,7 +38,7 @@ segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -81,8 +81,8 @@ segment_maker(
     baca.hairpins(
         ['ppp < mp'],
         include_rests=True,
-        selector=baca.select_leaves(leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.pitches('G2'),
     )
@@ -93,8 +93,8 @@ segment_maker(
     baca.hairpins(
         ['pp < mf'],
         include_rests=True,
-        selector=baca.select_leaves(leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.pitches('Gb2'),
     )
@@ -105,8 +105,8 @@ segment_maker(
     baca.hairpins(
         ['p < f'],
         include_rests=True,
-        selector=baca.select_leaves(leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.pitches('F2'),
     )
@@ -117,8 +117,8 @@ segment_maker(
     baca.hairpins(
         ['mf < ff'],
         include_rests=True,
-        selector=baca.select_leaves(leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.pitches('E2'),
     )
@@ -129,8 +129,8 @@ segment_maker(
     baca.hairpins(
         ['f < fff'],
         include_rests=True,
-        selector=baca.select_leaves(leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.pitches('Eb2'),
     )
@@ -141,8 +141,8 @@ segment_maker(
     baca.hairpins(
         ['ff < ffff'],
         include_rests=True,
-        selector=baca.select_leaves(leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.pitches('D2'),
     )

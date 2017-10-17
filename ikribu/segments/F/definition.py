@@ -33,7 +33,7 @@ segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -93,7 +93,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(6, 7)]),
-    baca.hairpins(['sfpp < p'], selector=baca.select_leaves()[:2]),
+    baca.hairpins(['sfpp < p'], selector=baca.select().leaves()[:2]),
     #baca.make_hairpin(
     #    descriptor='p > pp',
     #    start=-1,
@@ -102,8 +102,8 @@ segment_maker(
     baca.hairpins(
         ['p > pp'],
         include_rests=True,
-        selector=baca.select_leaves()[-1:],
-        target=baca.select_leaves(),
+        selector=baca.select().leaves()[-1:],
+        target=baca.select().leaves(),
         ),
     baca.stem_tremolo(),
     )
