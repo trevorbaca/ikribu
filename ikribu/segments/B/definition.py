@@ -46,7 +46,7 @@ segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -95,12 +95,12 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13),
-    baca.hairpins(['ppp < f'], selector=baca.select_leaves()[:2]),
+    baca.hairpins(['ppp < f'], selector=baca.select().leaves()[:2]),
     baca.hairpins(
         ['f > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-1, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-1, leak=Right),
+        target=baca.select().leaves(),
         ),
     )
 
@@ -113,12 +113,12 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Violin Music Voice'], [1, 5, 9]),
-    baca.hairpins(['ppp < p'], selector=baca.select_leaves()[:2]),
+    baca.hairpins(['ppp < p'], selector=baca.select().leaves()[:2]),
     baca.hairpins(
         ['p > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-1, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-1, leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),
@@ -137,13 +137,13 @@ segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
     baca.hairpins(
         ['ppp < mf'],
-        selector=baca.select_leaves()[:5],
+        selector=baca.select().leaves()[:5],
         ),
     baca.hairpins(
         ['mf > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-1, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-1, leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),

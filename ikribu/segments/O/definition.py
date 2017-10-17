@@ -37,7 +37,7 @@ segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -207,8 +207,8 @@ segment_maker(
     baca.hairpins(
         ['p > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-2, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-2, leak=Right),
+        target=baca.select().leaves(),
         ),
     )
 
@@ -218,8 +218,8 @@ segment_maker(
     baca.hairpins(
         ['ppppp > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-2, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-2, leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
@@ -241,8 +241,8 @@ segment_maker(
     baca.hairpins(
         ['ppppp > niente'],
         include_rests=True,
-        selector=baca.select_leaves(start=-2, leak=Right),
-        target=baca.select_leaves(),
+        selector=baca.select().leaves(start=-2, leak=Right),
+        target=baca.select().leaves(),
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),

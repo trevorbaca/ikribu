@@ -34,7 +34,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 segment_maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     #label_clock_time=True,
-    #label_baca.select_stages=True,
+    #label_baca.select().stages=True,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -73,14 +73,14 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
-    baca.hairpins(['ppp < f'], selector=baca.select_leaves()[:2]),
+    baca.hairpins(['ppp < f'], selector=baca.select().leaves()[:2]),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.hairpins(
         ['f > niente'],
-        selector=baca.select_leaves(start=-3, leak=Right),
+        selector=baca.select().leaves(start=-3, leak=Right),
         ),
     )
 
