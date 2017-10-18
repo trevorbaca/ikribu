@@ -68,7 +68,7 @@ segment_maker(
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
-    baca.one_line_staff(selector=baca.select().leaves(leak=Right)),
+    baca.one_line_staff(baca.select().leaves(leak=Right).wrap()),
     baca.pitches('C4'),
     )
 
