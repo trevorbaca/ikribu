@@ -176,7 +176,7 @@ segment_maker(
     #    ),
     baca.hairpins(
         ['p < mf'],
-        selector=baca.select().leaves(start=-1, leak=Right).wrap(),
+        selector=baca.select().rleaves()[-2:].wrap(),
         ),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),

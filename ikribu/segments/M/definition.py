@@ -248,7 +248,7 @@ segment_maker(
     baca.hairpins(['p < fff'], selector=baca.select().leaves()[:2].wrap()),
     baca.hairpins(
         ['fff > niente'],
-        selector=baca.select().leaves(start=-1, leak=Right).wrap(),
+        selector=baca.select().rleaves()[-2:].wrap(),
         ),
     )
 
