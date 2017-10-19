@@ -144,7 +144,6 @@ segment_maker(
     baca.hairpins(['pp < mf'], selector=baca.select().leaves()[:5].wrap()),
     baca.hairpins(
         ['mf > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=4, leak=Right).wrap(),
         ),
     )

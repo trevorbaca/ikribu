@@ -98,7 +98,6 @@ segment_maker(
     baca.hairpins(['ppp < f'], selector=baca.select().leaves()[:2].wrap()),
     baca.hairpins(
         ['f > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right).wrap(),
         ),
     )
@@ -115,7 +114,6 @@ segment_maker(
     baca.hairpins(['ppp < p'], selector=baca.select().leaves()[:2].wrap()),
     baca.hairpins(
         ['p > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right).wrap(),
         ),
     baca.transition_spanner(
@@ -139,7 +137,6 @@ segment_maker(
         ),
     baca.hairpins(
         ['mf > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right).wrap(),
         ),
     baca.transition_spanner(
