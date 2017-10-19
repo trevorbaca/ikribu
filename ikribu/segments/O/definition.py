@@ -206,7 +206,6 @@ segment_maker(
     baca.pitches('Bb1'),
     baca.hairpins(
         ['p > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=-2, leak=Right).wrap(),
         ),
     )
@@ -216,7 +215,6 @@ segment_maker(
     baca.dynamic('ppppp'),
     baca.hairpins(
         ['ppppp > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=-2, leak=Right).wrap(),
         ),
     baca.markup.string_numbers([2, 3]),
@@ -238,7 +236,6 @@ segment_maker(
     baca.dynamic('ppppp'),
     baca.hairpins(
         ['ppppp > niente'],
-        include_rests=True,
         selector=baca.select().leaves(start=-2, leak=Right).wrap(),
         ),
     baca.markup.string_numbers([2, 3]),

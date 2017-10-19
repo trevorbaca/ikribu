@@ -101,7 +101,6 @@ segment_maker(
     #    ),
     baca.hairpins(
         ['p > pp'],
-        include_rests=True,
         selector=baca.select().leaves()[-1:].wrap(),
         ),
     baca.stem_tremolo(),

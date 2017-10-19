@@ -118,8 +118,8 @@
                         \once \override Hairpin.circled-tip = ##t
                         e1 \repeatTie \> \f
                         e1 \repeatTie
-                        e2. \repeatTie \!
-                        s1 * 2
+                        e2. \repeatTie
+                        s1 * 2 \!
                         \bar "|"
                     }
                 }
