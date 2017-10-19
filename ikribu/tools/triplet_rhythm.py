@@ -2,10 +2,9 @@ import abjad
 import baca
 
 
-def make_color_rhythm_specifier(n):
-    tuplet_ratio = tuple(n * [1])
+def triplet_rhythm():
     rhythm_maker = abjad.rhythmmakertools.TupletRhythmMaker(
-        tuplet_ratios=[tuplet_ratio],
+        tuplet_ratios=[(1, 1, 1)],
         tuplet_specifier=abjad.rhythmmakertools.TupletSpecifier(
             avoid_dots=True,
             ),

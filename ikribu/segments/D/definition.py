@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.scope('Cello RH Music Voice', 1, 2),
-    ikribu.make_bow_rhythm_specifier(
+    ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence_every([8, 20], period=20),
         rotation=-2,
         ),
@@ -62,7 +62,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 2),
-    ikribu.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
+    ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 ###############################################################################
@@ -88,5 +88,5 @@ segment_maker(
     baca.scope('Cello Music Voice', 1, 2),
     baca.clef('tenor'),
     baca.glissandi(),
-    ikribu.make_glissando_pitch_specifier(octave=4, rotation=-20),
+    ikribu.glissando_pitches(octave=4, rotation=-20),
     )

@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def make_glissando_pitch_specifier(octave=4, rotation=None):
+def glissando_pitches(octave=4, rotation=None):
     segment = [0, 11, -3, -1, -5, 7, 4, 17, 16, 2]
     inversion = [0, -10, 4, 2, 5, -7, -3, -17, -15, -1]
     left = segment[:] + inversion[:]

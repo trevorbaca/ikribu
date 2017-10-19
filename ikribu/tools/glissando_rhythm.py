@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def make_bcl_color_rhythm_specifier(rotation_1=None, rotation_2=None):
+def glissando_rhythm(rotation_1=None, rotation_2=None):
     counts = abjad.sequence([2, 3, 2, 3, 14, 16, 14, 16])
     counts = counts.rotate(n=rotation_1)
     extra_counts_per_division = abjad.sequence([2, 4, 0])
@@ -13,10 +13,10 @@ def make_bcl_color_rhythm_specifier(rotation_1=None, rotation_2=None):
         extra_counts_per_division=extra_counts_per_division,
         talea=abjad.rhythmmakertools.Talea(
             counts=counts,
-            denominator=8,
+            denominator=16,
             ),
         tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-            use_messiaen_style_ties=True,
+            strip_ties=True,
             ),
         )
     return baca.RhythmBuilder(
