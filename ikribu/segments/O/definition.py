@@ -207,7 +207,7 @@ segment_maker(
     baca.hairpins(
         ['p > niente'],
         include_rests=True,
-        selector=baca.select().leaves(start=-2, leak=Right),
+        selector=baca.select().leaves(start=-2, leak=Right).wrap(),
         ),
     )
 
@@ -217,7 +217,7 @@ segment_maker(
     baca.hairpins(
         ['ppppp > niente'],
         include_rests=True,
-        selector=baca.select().leaves(start=-2, leak=Right),
+        selector=baca.select().leaves(start=-2, leak=Right).wrap(),
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
@@ -239,7 +239,7 @@ segment_maker(
     baca.hairpins(
         ['ppppp > niente'],
         include_rests=True,
-        selector=baca.select().leaves(start=-2, leak=Right),
+        selector=baca.select().leaves(start=-2, leak=Right).wrap(),
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
