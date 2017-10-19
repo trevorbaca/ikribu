@@ -178,7 +178,6 @@ segment_maker(
         ['p < mf'],
         include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),

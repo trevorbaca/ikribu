@@ -100,7 +100,6 @@ segment_maker(
         ['f > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right),
-        target=baca.select().leaves(),
         ),
     )
 
@@ -118,7 +117,6 @@ segment_maker(
         ['p > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),
@@ -143,7 +141,6 @@ segment_maker(
         ['mf > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=-1, leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. pont.'),

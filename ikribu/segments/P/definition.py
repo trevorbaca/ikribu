@@ -146,7 +146,6 @@ segment_maker(
         ['mf > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=4, leak=Right),
-        target=baca.select().leaves(),
         ),
     )
 
