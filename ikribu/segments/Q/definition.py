@@ -73,7 +73,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 4),
-    ikribu.make_inscription_rhythm_specifier(),
+    ikribu.inscription_rhythm(),
     )
 
 ###############################################################################

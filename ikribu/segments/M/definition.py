@@ -112,64 +112,64 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 2, 3),
-    ikribu.make_color_rhythm_specifier(3),
+    ikribu.color_rhythm(3),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 6),
-    ikribu.make_color_rhythm_specifier(4),
+    ikribu.color_rhythm(4),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 9, 10),
-    ikribu.make_color_rhythm_specifier(5),
+    ikribu.color_rhythm(5),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 13, 14),
-    ikribu.make_color_rhythm_specifier(3),
+    ikribu.color_rhythm(3),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 17),
-    ikribu.make_color_rhythm_specifier(4),
+    ikribu.color_rhythm(4),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 20, 21),
-    ikribu.make_color_rhythm_specifier(5),
+    ikribu.color_rhythm(5),
     )
 
 # viola #
 
 segment_maker(
     baca.scope('Viola Music Voice', 2, 3),
-    ikribu.make_color_rhythm_specifier(4),
+    ikribu.color_rhythm(4),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 6),
-    ikribu.make_color_rhythm_specifier(5),
+    ikribu.color_rhythm(5),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 9, 10),
-    ikribu.make_color_rhythm_specifier(3),
+    ikribu.color_rhythm(3),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
-    ikribu.make_color_rhythm_specifier(4),
+    ikribu.color_rhythm(4),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 17),
-    ikribu.make_color_rhythm_specifier(5),
+    ikribu.color_rhythm(5),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 20, 21),
-    ikribu.make_color_rhythm_specifier(3),
+    ikribu.color_rhythm(3),
     )
 
 # cello #

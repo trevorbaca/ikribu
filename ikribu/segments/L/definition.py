@@ -65,22 +65,22 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 4),
-    ikribu.make_clb_rhythm_specifier([4]),
+    ikribu.clb_rhythm([4]),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 6, 8),
-    ikribu.make_triplet_rhythm_specifier(),
+    ikribu.triplet_rhythm(),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
-    ikribu.make_clb_rhythm_specifier([2]),
+    ikribu.clb_rhythm([2]),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 4, 8),
-    ikribu.make_triplet_rhythm_specifier(),
+    ikribu.triplet_rhythm(),
     )
 
 segment_maker(
@@ -209,7 +209,7 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 1, 4),
     baca.staccati(),
-    ikribu.make_clb_pitch_specifier(rotation=-1),
+    ikribu.clb_pitches(rotation=-1),
     )
 
 segment_maker(
@@ -233,7 +233,7 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.staccati(),
-    ikribu.make_clb_pitch_specifier(rotation=-1),
+    ikribu.clb_pitches(rotation=-1),
     )
 
 segment_maker(

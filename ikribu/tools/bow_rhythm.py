@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def make_bow_rhythm_specifier(
+def bow_rhythm(
     logical_tie_masks=abjad.silence_every([4, 19], period=20),
     rotation=None,
     ):

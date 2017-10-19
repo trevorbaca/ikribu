@@ -66,7 +66,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin RH Music Voice', 1, 2),
-    ikribu.make_bow_rhythm_specifier(
+    ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence_every([0, 8], period=12),
         rotation=0,
         ),
@@ -74,12 +74,12 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
-    ikribu.make_glissando_rhythm_specifier(rotation_1=0, rotation_2=0),
+    ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 segment_maker(
     baca.scope('Viola RH Music Voice', 1, 2),
-    ikribu.make_bow_rhythm_specifier(
+    ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence_every([4, 14], period=16),
         rotation=-1,
         ),
@@ -87,12 +87,12 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
-    ikribu.make_glissando_rhythm_specifier(rotation_1=-4, rotation_2=-1),
+    ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 
 segment_maker(
     baca.scope('Cello RH Music Voice', 1, 2),
-    ikribu.make_bow_rhythm_specifier(
+    ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence_every([8, 20], period=20),
         rotation=-2,
         ),
@@ -100,7 +100,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 2),
-    ikribu.make_glissando_rhythm_specifier(rotation_1=-8, rotation_2=-2),
+    ikribu.glissando_rhythm(rotation_1=-8, rotation_2=-2),
     )
 
 ###############################################################################
@@ -159,19 +159,19 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
     baca.glissandi(),
-    ikribu.make_glissando_pitch_specifier(octave=5, rotation=0),
+    ikribu.glissando_pitches(octave=5, rotation=0),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.clef('treble'),
     baca.glissandi(),
-    ikribu.make_glissando_pitch_specifier(octave=5, rotation=-10),
+    ikribu.glissando_pitches(octave=5, rotation=-10),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 2),
     baca.clef('tenor'),
     baca.glissandi(),
-    ikribu.make_glissando_pitch_specifier(octave=4, rotation=-20),
+    ikribu.glissando_pitches(octave=4, rotation=-20),
     )

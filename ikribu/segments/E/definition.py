@@ -80,12 +80,12 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn], [(1, 2), (5, 6), (9, 10), (13, 14)]),
-    ikribu.make_triplet_rhythm_specifier(),
+    ikribu.triplet_rhythm(),
     )
 
 segment_maker(
     baca.scopes([va], [(2, 3), (6, 7), (10, 11), (14, 15)]),
-    ikribu.make_triplet_rhythm_specifier(),
+    ikribu.triplet_rhythm(),
     )
 
 segment_maker(

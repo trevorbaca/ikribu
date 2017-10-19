@@ -65,12 +65,12 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn], [3, 7, 11, 15]),
-    ikribu.make_clb_rhythm_specifier([4]),
+    ikribu.clb_rhythm([4]),
     )
 
 segment_maker(
     baca.scopes([va], [3, 7, 11, 15]),
-    ikribu.make_clb_rhythm_specifier([2]),
+    ikribu.clb_rhythm([2]),
     )
 
 segment_maker(
@@ -119,7 +119,7 @@ segment_maker(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
-    ikribu.make_clb_pitch_specifier(),
+    ikribu.clb_pitches(),
     )
 
 segment_maker(
@@ -127,7 +127,7 @@ segment_maker(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
-    ikribu.make_clb_pitch_specifier(),
+    ikribu.clb_pitches(),
     )
 
 segment_maker(
