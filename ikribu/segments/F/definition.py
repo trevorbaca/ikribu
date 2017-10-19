@@ -103,7 +103,6 @@ segment_maker(
         ['p > pp'],
         include_rests=True,
         selector=baca.select().leaves()[-1:],
-        target=baca.select().leaves(),
         ),
     baca.stem_tremolo(),
     )

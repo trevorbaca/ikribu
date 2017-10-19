@@ -82,7 +82,6 @@ segment_maker(
         ['ppp < mp'],
         include_rests=True,
         selector=baca.select().leaves(leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.pitches('G2'),
     )
@@ -94,7 +93,6 @@ segment_maker(
         ['pp < mf'],
         include_rests=True,
         selector=baca.select().leaves(leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.pitches('Gb2'),
     )
@@ -106,7 +104,6 @@ segment_maker(
         ['p < f'],
         include_rests=True,
         selector=baca.select().leaves(leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.pitches('F2'),
     )
@@ -118,7 +115,6 @@ segment_maker(
         ['mf < ff'],
         include_rests=True,
         selector=baca.select().leaves(leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.pitches('E2'),
     )
@@ -130,7 +126,6 @@ segment_maker(
         ['f < fff'],
         include_rests=True,
         selector=baca.select().leaves(leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.pitches('Eb2'),
     )
@@ -142,7 +137,6 @@ segment_maker(
         ['ff < ffff'],
         include_rests=True,
         selector=baca.select().leaves(leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.pitches('D2'),
     )

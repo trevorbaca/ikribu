@@ -208,7 +208,6 @@ segment_maker(
         ['p > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=-2, leak=Right),
-        target=baca.select().leaves(),
         ),
     )
 
@@ -219,7 +218,6 @@ segment_maker(
         ['ppppp > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=-2, leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
@@ -242,7 +240,6 @@ segment_maker(
         ['ppppp > niente'],
         include_rests=True,
         selector=baca.select().leaves(start=-2, leak=Right),
-        target=baca.select().leaves(),
         ),
     baca.markup.string_numbers([2, 3]),
     baca.stem_tremolo(),
