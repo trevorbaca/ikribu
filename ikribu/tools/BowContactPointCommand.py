@@ -42,7 +42,7 @@ class BowContactPointCommand(baca.Command):
         bow_contact_points = bow_contact_points.rotate(n=self.rotation)
         bow_contact_points = bow_contact_points.flatten(depth=1)
         bow_contact_points = abjad.CyclicTuple(bow_contact_points)
-        plts = abjad.iterate(selections).by_logical_tie(pitched=True)
+        plts = abjad.iterate(selections).logical_ties(pitched=True)
         for i, plt in enumerate(plts):
             bow_contact_point = bow_contact_points[i]
             numerator, denominator = bow_contact_point
