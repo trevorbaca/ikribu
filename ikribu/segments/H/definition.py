@@ -33,8 +33,8 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
-    #label_clock_time=True,
-    #label_baca.select().stages=True,
+    label_clock_time=False,
+    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -119,13 +119,13 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
-    baca.glissandi(),
+    baca.glissando(baca.select().tleaves()),
     ikribu.glissando_pitches(octave=5, rotation=0),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.clef('treble'),
-    baca.glissandi(),
+    baca.glissando(baca.select().tleaves()),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     )

@@ -37,8 +37,8 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
-    #label_clock_time=True,
-    #label_baca.select().stages=True,
+    label_clock_time=False,
+    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -138,7 +138,7 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 1, 12),
     baca.clef('treble'),
-    baca.glissandi(),
+    baca.glissando(baca.select().tleaves()),
     # TODO: make work again after extending baca.hairpins():
     #baca.hairpins(
     #    ['ppp < pp', 'pp > ppp'],

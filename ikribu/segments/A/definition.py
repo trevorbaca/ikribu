@@ -33,8 +33,8 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 
 segment_maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
-    #label_clock_time=True,
-    #label_baca.select().stages=True,
+    label_clock_time=False,
+    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
