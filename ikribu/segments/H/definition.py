@@ -119,13 +119,13 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 2),
-    baca.glissando(baca.select().tleaves()),
+    baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.clef('treble'),
-    baca.glissando(baca.select().tleaves()),
+    baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     )

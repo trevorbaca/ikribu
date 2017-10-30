@@ -138,7 +138,7 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 1, 12),
     baca.clef('treble'),
-    baca.glissando(baca.select().tleaves()),
+    baca.glissando(),
     # TODO: make work again after extending baca.hairpins():
     #baca.hairpins(
     #    ['ppp < pp', 'pp > ppp'],
