@@ -52,8 +52,8 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
-    #label_clock_time=True,
-    #label_baca.select().stages=True,
+    label_clock_time=False,
+    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -135,10 +135,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 2, 16),
-    baca.glissandi(),
-    baca.hairpins(
-        ['pp < p', 'p > pp'],
-        ),
+    baca.map(baca.glissando(), baca.select().runs()),
+    baca.hairpins(['pp < p', 'p > pp']),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
     baca.stem_tremolo(),
@@ -146,10 +144,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 2, 16),
-    baca.glissandi(),
-    baca.hairpins(
-        ['pp < p', 'p > pp'],
-        ),
+    baca.map(baca.glissando(), baca.select().runs()),
+    baca.hairpins(['pp < p', 'p > pp']),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
     baca.stem_tremolo(),
@@ -168,10 +164,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 2, 16),
-    baca.fixed_pitches(
-        'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
-        ),
-    baca.glissandi(),
+    baca.fixed_pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
+    baca.glissando(),
     # TODO: make this work again:
     #baca.hairpins(
     #    ['ppp < pp', 'pp > ppp'],

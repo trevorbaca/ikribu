@@ -33,8 +33,8 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
-    #label_clock_time=True,
-    #label_baca.select().stages=True,
+    label_clock_time=False,
+    label_stages=False,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -87,6 +87,6 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 1, 2),
     baca.clef('tenor'),
-    baca.glissandi(),
+    baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     )
