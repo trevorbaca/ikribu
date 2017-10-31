@@ -61,7 +61,7 @@ vc_rh = 'Cello RH Music Voice'
 
 segment_maker(
     baca.scopes([bcl], [1, 2]),
-    baca.messiaen_tied_notes(),
+    baca.tied_notes(repeat_ties=True),
     )
 
 segment_maker(

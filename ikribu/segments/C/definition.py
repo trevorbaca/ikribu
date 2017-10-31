@@ -83,22 +83,22 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1),
-    baca.messiaen_tied_notes(),
+    baca.tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scopes([vn, va], [(3, 4), (7, 8), (11, 12), (15, 16)]),
-    baca.messiaen_notes(),
+    baca.notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 1),
-    baca.messiaen_tied_notes(),
+    baca.tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 2, 16),
-    baca.messiaen_notes(),
+    baca.notes(repeat_ties=True),
     )
 
 ###############################################################################
