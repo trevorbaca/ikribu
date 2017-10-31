@@ -93,16 +93,13 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(6, 7)]),
-    baca.hairpins(['sfpp < p'], selector=baca.select().leaves()[:2].group()),
+    baca.hairpin('sfpp < p', baca.select().leaves()[:2]),
     #baca.make_hairpin(
     #    descriptor='p > pp',
     #    start=-1,
     #    include_following_rest=True,
     #    ),
-    baca.hairpins(
-        ['p > pp'],
-        selector=baca.select().leaves()[-1:].group(),
-        ),
+    baca.hairpin('p > pp', baca.select().leaves()[-1:]),
     baca.stem_tremolo(),
     )
 
@@ -138,7 +135,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 4),
-    baca.hairpins(['p < ff']),
+    baca.hairpin('p < ff'),
     baca.pitches('F#3'),
     baca.stem_tremolo(),
     baca.transition_spanner(
