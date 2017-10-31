@@ -174,10 +174,7 @@ segment_maker(
     #    start=-1,
     #    include_following_rest=True,
     #    ),
-    baca.hairpins(
-        ['p < mf'],
-        selector=baca.select().rleaves()[-2:].group(),
-        ),
+    baca.hairpin('p < mf', baca.select().rleaves()[-2:]),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),
     baca.pitches('D1'),

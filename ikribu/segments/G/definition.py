@@ -78,60 +78,42 @@ segment_maker(
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1),
     #baca.make_hairpin('ppp < mp', include_following_rest=True),
-    baca.hairpins(
-        ['ppp < mp'],
-        selector=baca.select().rleaves().group(),
-        ),
+    baca.hairpin('ppp < mp', baca.select().rleaves()),
     baca.pitches('G2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3),
     #baca.make_hairpin('pp < mf', include_following_rest=True),
-    baca.hairpins(
-        ['pp < mf'],
-        selector=baca.select().rleaves().group(),
-        ),
+    baca.hairpin('pp < mf', baca.select().rleaves()),
     baca.pitches('Gb2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 5),
     #baca.make_hairpin('p < f', include_following_rest=True),
-    baca.hairpins(
-        ['p < f'],
-        selector=baca.select().rleaves().group(),
-        ),
+    baca.hairpin('p < f', baca.select().rleaves()),
     baca.pitches('F2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 7),
     #baca.make_hairpin('mf < ff', include_following_rest=True),
-    baca.hairpins(
-        ['mf < ff'],
-        selector=baca.select().rleaves().group(),
-        ),
+    baca.hairpin('mf < ff', baca.select().rleaves()),
     baca.pitches('E2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9),
     #baca.make_hairpin('f < fff', include_following_rest=True),
-    baca.hairpins(
-        ['f < fff'],
-        selector=baca.select().rleaves().group(),
-        ),
+    baca.hairpin('f < fff', baca.select().rleaves()),
     baca.pitches('Eb2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 11),
     #baca.make_hairpin('ff < ffff', include_following_rest=True),
-    baca.hairpins(
-        ['ff < ffff'],
-        selector=baca.select().rleaves().group(),
-        ),
+    baca.hairpin('ff < ffff', baca.select().rleaves()),
     baca.pitches('D2'),
     )
 
