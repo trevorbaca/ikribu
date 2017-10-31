@@ -14,7 +14,7 @@ def inscription_rhythm():
             denominator=16,
             ),
         tie_specifier=abjad.rhythmmakertools.TieSpecifier(
-            use_messiaen_style_ties=True,
+            repeat_ties=True,
             ),
         )
     return baca.RhythmBuilder(
