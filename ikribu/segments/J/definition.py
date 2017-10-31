@@ -84,7 +84,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
-    baca.messiaen_tied_notes(),
+    baca.tied_notes(repeat_ties=True),
     )
 
 ###############################################################################
