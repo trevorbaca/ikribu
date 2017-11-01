@@ -72,25 +72,20 @@ segment_maker(
 partition = baca.select().partition_by_counts(
     [3, 4],
     cyclic=True,
-    #enchain=True,
+    enchain=True,
     overhang=True,
     )
 segment_maker(
     baca.scope('Cello RH Music Voice', 1, 2),
     baca.clef('percussion'),
-    # TODO: make this work again:
-    #baca.hairpins(
-    #    ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
-    #    enchain_hairpins=True,
-    #    span=[3, 4],
-    #    ),
-    #baca.piecewise(
-    #    baca.map(baca.hairpin(), baca.select().runs()),
-    #    baca.bookend(
-    #        baca.dynamics('ff p f pp p ppp'),
-    #        baca.select().runs().map(partition).flatten(),
-    #        ),
-    #    ),
+    baca.piecewise(
+        baca.map(baca.hairpin(), baca.select().runs()),
+        baca.bookend(
+            [abjad.Dynamic(_) for _ in 'ff p f pp p ppp'.split()],
+            baca.select().runs().map(partition).flatten(),
+            abjad.Hairpin,
+            ),
+        ),
     baca.markup.boxed('1/2 clt'),
     baca.pitches('C4'),
     baca.repeat_ties_up(),
