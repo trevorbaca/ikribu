@@ -246,7 +246,7 @@
                                 \clef "percussion"
                                 r4
                                 \override RepeatTie.direction = #up
-                                c'4
+                                c'4 \> \ff
                                     ^ \markup {
                                         \column
                                             {
@@ -272,7 +272,7 @@
                                             4
                                             7
                                         }
-                                c'4
+                                c'4 \p \<
                                     ^ \markup {
                                         \fraction
                                             5
@@ -292,20 +292,20 @@
                                             7
                                             7
                                         }
-                                c'4
+                                c'4 \f \>
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
-                                c'4
+                                c'4 \pp
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
                                 r4
-                                c'4
+                                c'4 \< \pp
                                     ^ \markup {
                                         \fraction
                                             0
@@ -320,7 +320,7 @@
                                             1
                                             4
                                         }
-                                c'4
+                                c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             2
@@ -340,7 +340,7 @@
                                             0
                                             7
                                         }
-                                c'4
+                                c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             4
@@ -355,7 +355,7 @@
                                             5
                                             7
                                         }
-                                c'4
+                                c'4 \ff \>
                                     ^ \markup {
                                         \fraction
                                             6
@@ -373,14 +373,14 @@
                                             6
                                             7
                                         }
-                                c'4
+                                c'4 \p
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
                                 r4
-                                c'4
+                                c'4 \< \p
                                     ^ \markup {
                                         \fraction
                                             0
@@ -395,7 +395,7 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
+                                c'4 \f \>
                                     ^ \markup {
                                         \fraction
                                             0
@@ -413,13 +413,13 @@
                                             0
                                             7
                                         }
-                                c'4
+                                c'4 \pp \<
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
-                                c'4
+                                c'4 \p
                                     ^ \markup {
                                         \fraction
                                             5
@@ -429,7 +429,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 r4
-                                c'4
+                                c'4 \> \p
                                     ^ \markup {
                                         \fraction
                                             6
@@ -443,7 +443,7 @@
                                         }
                             }
                             {
-                                c'4
+                                c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             6
@@ -463,7 +463,7 @@
                                         }
                             }
                             \times 4/5 {
-                                c'4
+                                c'4 \ff \>
                                     ^ \markup {
                                         \fraction
                                             1
@@ -475,7 +475,7 @@
                                             2
                                             4
                                         }
-                                c'4
+                                c'4 \p \<
                                     ^ \markup {
                                         \fraction
                                             1
@@ -496,14 +496,14 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
+                                c'4 \f
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
                                 r4
-                                c'4
+                                c'4 \> \f
                                     ^ \markup {
                                         \fraction
                                             6
@@ -515,7 +515,7 @@
                                             7
                                             7
                                         }
-                                c'4
+                                c'4 \pp
                                     ^ \markup {
                                         \fraction
                                             6
