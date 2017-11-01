@@ -166,12 +166,15 @@ segment_maker(
     baca.scope('Cello Music Voice', 2, 16),
     baca.fixed_pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
     baca.glissando(),
-    # TODO: make this work again:
-    #baca.hairpins(
-    #    ['ppp < pp', 'pp > ppp'],
-    #    enchain_hairpins=True,
-    #    span=[2],
-    #    ),
+    # TODO: combine:
+    baca.map(
+        baca.hairpin('ppp < pp'),
+        baca.select().leaves().partition_by_counts([2], cyclic=True),
+        ),
+    baca.map(
+        baca.hairpin('pp > ppp'),
+        baca.select().leaves()[1:].partition_by_counts([2], cyclic=True),
+        ),
     baca.natural_harmonics(),
     baca.stem_tremolo(),
     baca.transition_spanner(
