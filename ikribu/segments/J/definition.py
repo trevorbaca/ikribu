@@ -122,7 +122,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 7)]),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     )
 
 segment_maker(
@@ -169,11 +169,6 @@ segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
     baca.clef('bass'),
     baca.dynamic('p'),
-    #baca.make_hairpin(
-    #    'p < mf',
-    #    start=-1,
-    #    include_following_rest=True,
-    #    ),
     baca.hairpin('p < mf', baca.select().rleaves()[-2:]),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),

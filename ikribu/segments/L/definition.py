@@ -192,7 +192,7 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 1, 4),
     baca.staccati(),
-    ikribu.clb_pitches(rotation=-1),
+    ikribu.clb_staff_positions(rotation=-1),
     )
 
 segment_maker(
@@ -210,7 +210,7 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.staccati(),
-    ikribu.clb_pitches(rotation=-1),
+    ikribu.clb_staff_positions(rotation=-1),
     )
 
 segment_maker(

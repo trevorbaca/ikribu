@@ -155,8 +155,8 @@ segment_maker(
     #    span=[3, 4],
     #    ),
     baca.markup.boxed('1/2 clt'),
-    baca.pitches('C4'),
     baca.repeat_ties_up(),
+    baca.staff_positions([0]),
     )
 
 segment_maker(

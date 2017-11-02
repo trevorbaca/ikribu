@@ -123,9 +123,7 @@ segment_maker(
         ),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches(
-        'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
-        ),
+    baca.pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
     baca.stem_tremolo(),
     baca.tuplet_brackets_down(),
     )

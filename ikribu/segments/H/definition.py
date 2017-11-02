@@ -103,8 +103,8 @@ segment_maker(
         baca.select().runs().map(baca.select().enchain([3, 4])).flatten(),
         bookend=True,
         ),
-    baca.pitches('C4'),
     baca.repeat_ties_up(),
+    baca.staff_positions([0]),
     )
 
 segment_maker(

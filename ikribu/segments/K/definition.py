@@ -119,7 +119,7 @@ segment_maker(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
-    ikribu.clb_pitches(),
+    ikribu.clb_staff_positions(),
     )
 
 segment_maker(
@@ -127,7 +127,7 @@ segment_maker(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
-    ikribu.clb_pitches(),
+    ikribu.clb_staff_positions(),
     )
 
 segment_maker(
@@ -136,7 +136,7 @@ segment_maker(
         'graincircle:',
         'π/2 every quarter note'
         ]),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     )
 
 segment_maker(
