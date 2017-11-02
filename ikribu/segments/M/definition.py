@@ -272,6 +272,11 @@ segment_maker(
     )
 
 segment_maker(
+    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 21)]),
+    baca.staff_positions([0]),
+    )
+
+segment_maker(
     baca.scopes([vn], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.markup.boxed('brushes on BD'),
     )
