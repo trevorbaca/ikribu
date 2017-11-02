@@ -3,10 +3,6 @@ import baca
 
 
 def clb_pitches(rotation=None):
-    pitches = [[-1, 0, 2, 2, 0], [0, 2, -1, 0], [-1, 2, 0, 2]]
-    pitches = baca.helianthate(pitches, -1, -1)
-    pitches = abjad.sequence(pitches)
-    pitches = pitches.rotate(n=rotation)
-    pitches = pitches.flatten()
-    specifier = baca.pitches(pitches)
-    return specifier
+    pitches = baca.sequence([[-1, 0, 2, 2, 0], [0, 2, -1, 0], [-1, 2, 0, 2]])
+    pitches = pitches.helianthate(-1, -1).rotate(rotation).flatten()
+    return baca.pitches(pitches)

@@ -111,59 +111,42 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 6, 8),
-    # TODO: make work again after extending baca.hairpins():
-    #baca.hairpins(
-    #    [
-    #        'mp < mf', 'mf > mp', 'mp < f', 'f > mf',
-    #        'mf < f', 'f > mf', 'mf < ff', 'ff > f',
-    #        'f < ff', 'ff > f', 'f < fff', 'fff > ff',
-    #        ],
-    #    enchain_hairpins=True,
-    #    include_following_rests=True,
-    #    span=[4],
-    #    ),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
+        baca.select().tleaves().enchain([4]),
+        bookend=True,
+        ),
+    baca.staff_positions([0]),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 4, 8),
-    # TODO: make work again after extending baca.hairpins():
-    #baca.hairpins(
-    #    [
-    #        'p > pp', 'pp < p', 'p > pp', 'pp < mp',
-    #        'mp > p', 'p < mp', 'mp > p', 'p < mf',
-    #        'mf > mp', 'mp < mf', 'mf > mp', 'mp < f',
-    #        'f > mf', 'mf < f', 'f > mf', 'mf < ff',
-    #        'ff > f', 'f < ff', 'ff > f', 'f < fff',
-    #        ],
-    #    enchain_hairpins=True,
-    #    include_following_rests=True,
-    #    span=[4],
-    #    ),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics(
+            'p pp p pp mp p mp p mf mp mf mp f mf f mf ff f ff f fff',
+            ),
+        baca.select().tleaves().enchain([4]),
+        bookend=True,
+        ),
+    baca.staff_positions([0]),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 8),
     baca.one_line_staff(),
     baca.percussion_staff(),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 6),
-    # TODO: make work again after extending baca.hairpins():
-    #baca.hairpins(
-    #    ['p < f', 'f > p'],
-    #    enchain_hairpins=True,
-    #    include_following_rests=True,
-    #    span=[
-    #        9, 8, 4, 5,
-    #        5, 3, 8, 4,
-    #        5, 4, 5, 4,
-    #        3, 8, 8, 9,
-    #        8, 4, 3, 9,
-    #        8, 5, 5, 4,
-    #        ],
-    #    ),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('p f'),
+        baca.select().logical_measures(),
+        ),
     )
 
 segment_maker(
@@ -220,14 +203,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 5, 8),
-    # TODO: make work again after extending selectors with patterns:
-    #baca.accents(
-    #    pattern=abjad.index_every([0, 4], inverted=True, period=9),
-    #    ),
-    # TODO: make work again after extending selectors with patterns:
-    #baca.stem_tremolo(
-    #    pattern=abjad.index_every([0, 4], period=9),
-    #    ),
+    baca.accents(baca.select().pheads()[~abjad.index_every([0, 4], 9)]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index_every([0, 4], 9)]),
     )
 
 segment_maker(
@@ -238,22 +215,12 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 2),
-    baca.hairpin('> niente'),
+    baca.hairpin('> niente', baca.select().tleaves().with_next_leaf()),
     baca.percussion_staff(),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 4, 8),
-    # TODO: make work again after extending selectors with patterns:
-    #baca.accents(
-    #    pattern=abjad.index_every(
-    #        [0, 5],
-    #        inverted=True,
-    #        period=11,
-    #        ),
-    #    ),
-    # TODO: make work again after extending selectors with patterns:
-    #baca.stem_tremolo(
-    #    pattern=abjad.index_every([0, 5], period=11),
-    #    ),
+    baca.accents(baca.select().pheads()[~abjad.index_every([0, 5], 11)]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index_every([0, 5], 11)]),
     )

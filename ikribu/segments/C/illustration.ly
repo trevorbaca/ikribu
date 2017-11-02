@@ -676,28 +676,28 @@
                             \override NoteHead.style = #'harmonic
                             \override TupletBracket.direction = #down
                             d''1 :32 \glissando \< \ppp \startTextSpan
-                            fqf''1 :32 \pp \glissando \> \pp
-                            d''2. :32 \ppp \glissando \< \ppp
+                            fqf''1 :32 \pp \glissando \>
+                            d''2. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \pp \glissando \>
                             }
-                            d''1 :32 \ppp \glissando \< \ppp
-                            b'1 :32 \pp \glissando \> \pp
-                            g'2. :32 \ppp \glissando \< \ppp
+                            d''1 :32 \ppp \glissando \<
+                            b'1 :32 \pp \glissando \>
+                            g'2. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                b'4 :32 \pp \glissando \> \pp
+                                b'4 :32 \pp \glissando \>
                             }
-                            g'1 :32 \ppp \glissando \< \ppp
-                            d'1 :32 \pp \glissando \> \pp
-                            g'2. :32 \ppp \glissando \< \ppp
+                            g'1 :32 \ppp \glissando \<
+                            d'1 :32 \pp \glissando \>
+                            g'2. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                d'4 :32 \pp \glissando \> \pp
+                                d'4 :32 \pp \glissando \>
                             }
-                            g1 :32 \ppp \glissando \< \ppp
-                            d'1 :32 \pp \glissando \> \pp
+                            g1 :32 \ppp \glissando \<
+                            d'1 :32 \pp \glissando \>
                             g2. :32 \ppp \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")

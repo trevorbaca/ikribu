@@ -714,246 +714,66 @@
                             s1 * 5
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 :32 \< \mp
+                                c'1 -\accent
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \mf \>
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \mp \<
+                                c'2 -\accent
+                                c'2 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 :32 \f \>
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \mf \<
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \f \>
+                                c'1 -\accent
+                                c'1 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 :32 \mf \<
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \ff \>
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \f \<
+                                c'2 -\accent
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 :32 \ff \>
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \f \<
+                                c'1 :32
+                                c'1 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 -\accent \fff \>
+                                c'4 -\accent
+                                c'4 -\accent \ff
                                 \stopStaff
                                 \startStaff
                             }
@@ -1131,414 +951,114 @@
                                 d'8 -\staccato
                                 b8 -\staccato
                                 d'8 -\staccato
-                                b8 -\staccato \! ]
+                                b8 -\staccato ]
                             }
-                            s1 * 7/2
+                            s1 * 7/2 \!
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 :32 \> \p
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \pp \<
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \p \>
+                                c'1 -\accent
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \pp \<
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \mp \>
+                                c'1 -\accent
+                                c'1 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 -\accent \p \<
+                                c'4 :32
+                                c'4 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 -\accent \mp \>
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \p \<
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \mf \>
+                                c'1 -\accent
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 :32 \mp \<
+                                c'2 -\accent
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \mf \>
+                                c'2 -\accent
+                                c'2 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 :32 \mp \<
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \f \>
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \mf \<
+                                c'1 -\accent
+                                c'1 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 -\accent \f \>
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \mf \<
+                                c'2 -\accent
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'2
+                                c'2 -\accent \ff \>
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 -\accent \f \<
+                                c'4 -\accent
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'1
+                                c'1 -\accent \ff \>
+                                c'1 :32
+                                c'1 -\accent
                             }
                             {
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
-                                \once \override Beam.color = #blue
-                                \once \override Dots.color = #blue
-                                \once \override Flag.color = #blue
-                                \once \override NoteHead.color = #blue
-                                \once \override Stem.color = #blue
-                                c'4
+                                c'4 -\accent \f \<
+                                c'4 -\accent
+                                c'4 -\accent \fff
                                 \stopStaff
                                 \startStaff
                             }
@@ -1593,7 +1113,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            c'4
+                            c'4 \< \p
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1601,21 +1121,21 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \p \<
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4
+                            c'4 \p \<
                                 ^ \markup {
                                     \whiteout
                                         \override
@@ -1630,19 +1150,19 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \<
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4
+                            c'4 \p \<
                                 ^ \markup {
                                     \whiteout
                                         \override
@@ -1657,17 +1177,17 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \<
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4
+                            c'4 \p \<
                                 ^ \markup {
                                     \whiteout
                                         \override
@@ -1680,6 +1200,21 @@
                                                     }
                                     }
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \<
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1687,22 +1222,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4
+                            c'4 \p \<
                                 ^ \markup {
                                     \whiteout
                                         \override
@@ -1720,6 +1240,12 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
+                            c'4 \repeatTie
+                            c'4 \repeatTie
+                            c'4 \repeatTie \p \<
+                            c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1727,13 +1253,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4
+                            c'4 \p \<
                                 ^ \markup {
                                     \whiteout
                                         \override
@@ -1751,15 +1271,15 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \f \>
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            c'4 \repeatTie \p \<
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
-                            c'4 \repeatTie
+                            c'4 \repeatTie \f
                             c'4 \repeatTie
                             c'4 \repeatTie
                             s1 * 39/4
