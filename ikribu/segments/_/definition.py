@@ -69,7 +69,7 @@ segment_maker(
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
     baca.one_line_staff(baca.select().rleaves().group()),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     )
 
 segment_maker(

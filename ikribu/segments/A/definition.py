@@ -89,7 +89,7 @@ segment_maker(
         'π/4 every quarter note'
         ]),
     baca.repeat_ties_up(),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     baca.one_line_staff(),
     baca.percussion_staff(),
     )

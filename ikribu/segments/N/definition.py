@@ -138,7 +138,7 @@ segment_maker(
     #    ),
     baca.markup.boxed('1/2 clt'),
     baca.repeat_ties_up(),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     )
 
 segment_maker(

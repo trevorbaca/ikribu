@@ -70,6 +70,6 @@ segment_maker(
         ]),
     baca.one_line_staff(),
     baca.percussion_staff(),
-    baca.pitches('C4'),
+    baca.staff_positions([0]),
     baca.repeat_ties_up(),
     )

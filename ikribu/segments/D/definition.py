@@ -79,8 +79,8 @@ segment_maker(
         bookend=True,
         ),
     baca.markup.boxed('1/2 clt'),
-    baca.pitches('C4'),
     baca.repeat_ties_up(),
+    baca.staff_positions([0]),
     ikribu.BowContactPointCommand(rotation=-2),
     )
 
