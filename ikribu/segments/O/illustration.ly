@@ -485,10 +485,10 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,2 \startTextSpan
-                            bf,,,1.. \repeatTie
-                            bf,,,1.. \repeatTie
-                            bf,,,\breve \repeatTie \stopTextSpan ^ \markup {
+                            bf,,,2 \> \mp \startTextSpan
+                            bf,,,1.. \repeatTie \p \<
+                            bf,,,1.. \repeatTie \mp \>
+                            bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
                                     \whiteout
@@ -517,10 +517,10 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,1.. \startTextSpan
-                            bf,,,2. \repeatTie
-                            bf,,,2 \repeatTie
-                            bf,,,\breve \repeatTie \stopTextSpan ^ \markup {
+                            bf,,,1.. \mp \> \startTextSpan
+                            bf,,,2. \repeatTie \p \<
+                            bf,,,2 \repeatTie \mp \>
+                            bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
                                     \whiteout
@@ -549,10 +549,10 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,1.. \startTextSpan
-                            bf,,,1 \repeatTie
-                            bf,,,1 \repeatTie
-                            bf,,,2. \repeatTie \stopTextSpan ^ \markup {
+                            bf,,,1.. \mp \> \startTextSpan
+                            bf,,,1 \repeatTie \p \<
+                            bf,,,1 \repeatTie \mp \>
+                            bf,,,2. \repeatTie \p \stopTextSpan \< ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
                                     \whiteout
@@ -581,10 +581,10 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,1.. \startTextSpan
-                            bf,,,\breve \repeatTie
-                            bf,,,2. \repeatTie
-                            bf,,,1 \repeatTie \stopTextSpan ^ \markup {
+                            bf,,,1.. \mp \> \startTextSpan
+                            bf,,,\breve \repeatTie \p \<
+                            bf,,,2. \repeatTie \mp \>
+                            bf,,,1 \repeatTie \p \stopTextSpan ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
                                     \whiteout

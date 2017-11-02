@@ -703,7 +703,7 @@
                                             ”
                                     }
                             \times 2/3 {
-                                c'2 \< \mf
+                                c'2 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
                                             \override
@@ -711,18 +711,18 @@
                                                 \box
                                                     "brushes on BD"
                                         }
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 2/3 {
-                                c'4
-                                c'4
-                                c'4 \fff
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff
                             }
                             s1 * 1/4
                             c'1..
@@ -745,7 +745,7 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                c'4 \fff
+                                c'4 :32 \fff
                                     ^ \markup {
                                         \whiteout
                                             \override
@@ -753,9 +753,9 @@
                                                 \box
                                                     "brushes on BD"
                                         }
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             s1 * 1/4
                             c'1
@@ -778,7 +778,7 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 \< \mf
+                                c'4 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
                                             \override
@@ -786,25 +786,25 @@
                                                 \box
                                                     "brushes on BD"
                                         }
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 4/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4 \fff
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff
                             }
                             s1 * 1/4
                             c'2
@@ -827,7 +827,7 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1 \< \mf
+                                c'1 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
                                             \override
@@ -835,19 +835,19 @@
                                                 \box
                                                     "brushes on BD"
                                         }
-                                c'1
-                                c'1
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1
-                                c'1
-                                c'1
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                c'1
-                                c'1
-                                c'1 \fff
+                                c'1 :32
+                                c'1 -\accent
+                                c'1 :32 \fff
                             }
                             s1 * 1/4
                             c'1..
@@ -870,7 +870,7 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                c'4 \fff
+                                c'4 :32 \fff
                                     ^ \markup {
                                         \whiteout
                                             \override
@@ -878,9 +878,9 @@
                                                 \box
                                                     "brushes on BD"
                                         }
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             s1 * 1/4
                             c'2
@@ -902,7 +902,7 @@
                                             ”
                                     }
                             \times 4/5 {
-                                c'2 \< \mf
+                                c'2 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
                                             \override
@@ -910,40 +910,40 @@
                                                 \box
                                                     "brushes on BD"
                                         }
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/10 {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \times 4/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 4/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
-                                c'4 \fff
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff
                             }
                             s1 * 23/4
                             \bar "|"
@@ -999,104 +999,104 @@
                             \clef "percussion"
                             s1 * 3/4
                             {
-                                c'4 \< \mf
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \< \mf
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             {
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
                             }
                             {
-                                c'8 [
-                                c'8
-                                c'8
-                                c'8 \fff ]
+                                c'8 :32 [
+                                c'8 -\accent
+                                c'8 :32
+                                c'8 -\accent \fff ]
                             }
                             s1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 \fff
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \fff
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             s1 * 5/4
                             {
-                                c'4 \< \mf
-                                c'4
-                                c'4
+                                c'4 :32 \< \mf
+                                c'4 -\accent
+                                c'4 :32
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             {
-                                c'4
-                                c'4
-                                c'4 \fff
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff
                             }
                             s1 * 3/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                c'2 \< \mf
-                                c'2
-                                c'2
-                                c'2
+                                c'2 :32 \< \mf
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                c'2
-                                c'2
-                                c'2
-                                c'2
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             {
-                                c'2
-                                c'2
-                                c'2
-                                c'2 \fff
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent \fff
                             }
                             s1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                c'4 \fff
-                                c'4
-                                c'4
-                                c'4
-                                c'4
+                                c'4 :32 \fff
+                                c'4 -\accent
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32
                             }
                             s1 * 3/4
                             \times 2/3 {
-                                c'1 \< \mf
-                                c'1
-                                c'1
+                                c'1 :32 \< \mf
+                                c'1 -\accent
+                                c'1 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                c'1
-                                c'1
-                                c'1
+                                c'1 -\accent
+                                c'1 :32
+                                c'1 -\accent
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 :32
+                                c'2 -\accent
+                                c'2 :32
                             }
                             \times 2/3 {
-                                c'2
-                                c'2
-                                c'2
+                                c'2 -\accent
+                                c'2 :32
+                                c'2 -\accent
                             }
                             {
-                                c'4
-                                c'4
-                                c'4 \fff
+                                c'4 :32
+                                c'4 -\accent
+                                c'4 :32 \fff
                             }
                             s1 * 23/4
                             \bar "|"

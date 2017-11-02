@@ -130,13 +130,13 @@ segment_maker(
 segment_maker(
     baca.scopes([vn_rh, va_rh, vc_rh], [(1, 2)]),
     baca.clef('percussion'),
-    # TODO: make work again after extending baca.hairpins():
-    #baca.hairpins(
-    #    ['ff > p', 'p < f', 'f > pp', 'pp < p', 'p > ppp', 'ppp < ff'],
-    #    enchain_hairpins=True,
-    #    span=[3, 4],
-    #    ),
     baca.markup.boxed('1/2 clt'),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('ff p f pp p ppp'),
+        baca.select().runs().map(baca.select().enchain([3, 4])).flatten(),
+        bookend=True,
+        ),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
     )

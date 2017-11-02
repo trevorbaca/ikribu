@@ -283,14 +283,8 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
-    # TODO: make work again after extending selectors with patterns:
-    #baca.accents(
-    #    pattern=abjad.index_every([0], inverted=True, period=2),
-    #    ),
-    # TODO: make work again after extending selectors with patterns:
-    #baca.stem_tremolo(
-    #    pattern=abjad.index_every([0], period=2),
-    #    ),
+    baca.accents(baca.select().pheads()[~abjad.index([0], 2)]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index([0], 2)]),
     )
 
 segment_maker(

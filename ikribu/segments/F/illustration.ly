@@ -52,7 +52,15 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \mark #6
                     \newSpacingSection
-                    s1 * 1 ^ \markup {
+                    s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.1]
+                            }
+                        ^ \markup {
                         \fontsize
                             #-6
                             \general-align
@@ -74,42 +82,91 @@
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.2]
+                            }
                 }
                 {
                     \time 4/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.3]
+                            }
                 }
                 {
                     \time 3/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 3/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.4]
+                            }
                 }
                 {
                     \time 2/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 1/2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.5]
+                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.6]
+                            }
                 }
                 {
                     \time 8/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 2
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.7]
+                            }
                 }
                 {
                     \time 7/4
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4
+                        - \markup {
+                            \fontsize
+                                #-3
+                                \with-color
+                                    #blue
+                                    [F.8]
+                            }
                 }
             }
         >>
@@ -170,14 +227,15 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             <e' fs'>1.. \< \sfpp \startTextSpan
-                            <e' fs'>\breve \repeatTie \p \stopTextSpan ^ \markup {
+                            \once \override Hairpin.circled-tip = ##t
+                            <e' fs'>\breve \repeatTie \p \stopTextSpan \> \p ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
                                     \whiteout
                                         \upright
                                             "trem. flaut. tast."
                                 }
-                            s1 * 7/4
+                            s1 * 7/4 \!
                             \bar "|"
                         }
                     }
@@ -223,14 +281,15 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             <ef' f'>1.. \< \sfpp \startTextSpan
-                            <ef' f'>\breve \repeatTie \p \stopTextSpan ^ \markup {
+                            \once \override Hairpin.circled-tip = ##t
+                            <ef' f'>\breve \repeatTie \p \stopTextSpan \> \p ^ \markup {
                                 \override
                                     #'(font-name . "Palatino")
                                     \whiteout
                                         \upright
                                             "trem. flaut. tast."
                                 }
-                            s1 * 7/4
+                            s1 * 7/4 \!
                             \bar "|"
                         }
                     }
