@@ -335,6 +335,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "treble"
                         s1 * 3
                         ef1.. \ppp
                         s1 * 17/4
@@ -406,6 +407,7 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \clef "percussion"
                             e'1 :32 \< \ppp \startTextSpan
                                 _ \markup {
                                     \whiteout
@@ -526,6 +528,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            \clef "alto"
                             s1 * 59/4
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -606,6 +609,7 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
+                            \clef "treble"
                             R1 * 1
                             R1 * 1
                             R1 * 3/4

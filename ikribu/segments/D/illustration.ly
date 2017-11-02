@@ -153,6 +153,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         R1 * 3/4
                         R1 * 1
                         R1 * 1
@@ -187,6 +188,7 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            \clef "percussion"
                             R1 * 3/4
                             R1 * 1
                             R1 * 1
@@ -222,6 +224,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            \clef "alto"
                             R1 * 3/4
                             R1 * 1
                             R1 * 1

@@ -369,6 +369,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         fs'2 \ppp
                         fs'1.. \repeatTie
                         fs'2. \repeatTie
@@ -505,6 +506,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
+                            \clef "alto"
                             s1 * 1/2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
@@ -560,6 +562,7 @@
                                 c'1 -\accent \f
                             }
                             s1 * 2
+                            \clef "alto"
                             \bar "|"
                             \stopStaff
                             \startStaff

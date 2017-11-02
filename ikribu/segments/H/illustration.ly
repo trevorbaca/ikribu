@@ -133,6 +133,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         ef\breve \ppp
                         ef1.. \repeatTie
                         ef1.. \repeatTie
@@ -453,6 +454,7 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \times 16/17 {
+                                \clef "percussion"
                                 c''8 \glissando [
                                 b''8. \glissando
                                 a'8 \glissando
@@ -896,6 +898,7 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
+                            \clef "treble"
                             R1 * 2
                             R1 * 7/4
                             R1 * 7/4

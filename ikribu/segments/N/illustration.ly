@@ -136,6 +136,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         c2 \p
                             ^ \markup {
                                 \column
@@ -436,6 +437,7 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \times 4/5 {
+                                \clef "percussion"
                                 c''8 \glissando [
                                 b''8. \glissando
                                 a'8 \glissando

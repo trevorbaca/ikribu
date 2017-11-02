@@ -388,6 +388,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "treble"
                         s1 * 7/4
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
@@ -577,6 +578,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            \clef "alto"
                             s1 * 11/4
                             f'1 :32 \glissando \< \pp
                                 ^ \markup {
