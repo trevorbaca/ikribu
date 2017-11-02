@@ -79,12 +79,10 @@ segment_maker(
     baca.scope('Cello RH Music Voice', 1, 2),
     baca.clef('percussion'),
     baca.piecewise(
-        baca.map(baca.hairpin(), baca.select().runs()),
-        baca.bookend(
-            [abjad.Dynamic(_) for _ in 'ff p f pp p ppp'.split()],
-            baca.select().runs().map(partition).flatten(),
-            abjad.Hairpin,
-            ),
+        baca.hairpin(),
+        baca.dynamics('ff p f pp p ppp'),
+        baca.select().runs().map(partition).flatten(),
+        bookend=True,
         ),
     baca.markup.boxed('1/2 clt'),
     baca.pitches('C4'),

@@ -305,7 +305,7 @@
                                             7
                                         }
                                 r4
-                                c'4 \< \pp
+                                c'4 \pp \<
                                     ^ \markup {
                                         \fraction
                                             0
@@ -380,7 +380,7 @@
                                             7
                                         }
                                 r4
-                                c'4 \< \p
+                                c'4 \p \<
                                     ^ \markup {
                                         \fraction
                                             0
@@ -429,7 +429,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 r4
-                                c'4 \> \p
+                                c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             6
@@ -503,7 +503,7 @@
                                             7
                                         }
                                 r4
-                                c'4 \> \f
+                                c'4 \f \>
                                     ^ \markup {
                                         \fraction
                                             6
