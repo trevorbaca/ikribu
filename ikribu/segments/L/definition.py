@@ -203,8 +203,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 5, 8),
-    baca.accents(baca.select().pheads()[~abjad.index_every([0, 4], 9)]),
-    baca.stem_tremolo(baca.select().pheads()[abjad.index_every([0, 4], 9)]),
+    baca.accents(baca.select().pheads()[~abjad.index([0, 4], 9)]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index([0, 4], 9)]),
     )
 
 segment_maker(
@@ -221,6 +221,6 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 4, 8),
-    baca.accents(baca.select().pheads()[~abjad.index_every([0, 5], 11)]),
-    baca.stem_tremolo(baca.select().pheads()[abjad.index_every([0, 5], 11)]),
+    baca.accents(baca.select().pheads()[~abjad.index([0, 5], 11)]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index([0, 5], 11)]),
     )
