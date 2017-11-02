@@ -112,7 +112,6 @@ segment_maker(
     baca.one_line_staff(),
     baca.pitches('Bb2'),
     baca.repeat_ties_up(),
-    #abjad.ClefSpanner(clef='percussion'),
     )
 
 segment_maker(
@@ -135,8 +134,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 2, 16),
-    baca.map(baca.glissando(), baca.select().runs()),
     baca.hairpins(['pp < p', 'p > pp']),
+    baca.map(baca.glissando(), baca.select().runs()),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
     baca.stem_tremolo(),
@@ -144,8 +143,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 2, 16),
-    baca.map(baca.glissando(), baca.select().runs()),
     baca.hairpins(['pp < p', 'p > pp']),
+    baca.map(baca.glissando(), baca.select().runs()),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
     baca.stem_tremolo(),
@@ -166,16 +165,13 @@ segment_maker(
     baca.scope('Cello Music Voice', 2, 16),
     baca.fixed_pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
     baca.glissando(),
-    # TODO: combine:
-    baca.map(
-        baca.hairpin('ppp < pp'),
-        baca.select().leaves().partition_by_counts([2], cyclic=True),
-        ),
-    baca.map(
-        baca.hairpin('pp > ppp'),
-        baca.select().leaves()[1:].partition_by_counts([2], cyclic=True),
-        ),
     baca.natural_harmonics(),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('ppp pp'),
+        baca.select().tleaves().enchain([2]),
+        bookend=True,
+        ),
     baca.stem_tremolo(),
     baca.transition_spanner(
         baca.markup.make_markup('trem. flaut. tasto. (arco)'),
