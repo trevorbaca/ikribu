@@ -246,14 +246,13 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 1, 20),
     baca.clef('bass'),
-    # TODO: make work again after extending baca.hairpins():
-    #baca.hairpins(
-    #    ['mp > p', 'p < mp'],
-    #    enchain_hairpins=True,
-    #    include_following_rests=True,
-    #    span=[2],
-    #    ),
     baca.ottava_bassa(),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('mp p'),
+        baca.select().runs().tleaves().enchain([2]),
+        bookend=True,
+        ),
     baca.pitches('Bb0'),
     )
 
