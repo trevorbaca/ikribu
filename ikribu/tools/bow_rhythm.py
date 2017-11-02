@@ -3,7 +3,7 @@ import baca
 
 
 def bow_rhythm(
-    logical_tie_masks=abjad.silence_every([4, 19], period=20),
+    logical_tie_masks=abjad.silence([4, 19], 20),
     rotation=None,
     ):
     extra_counts_per_division = abjad.sequence([-1, 0, 1, 2])
