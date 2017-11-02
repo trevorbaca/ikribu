@@ -55,7 +55,7 @@ segment_maker.validate_measures_per_stage()
 segment_maker(
     baca.scope('Cello RH Music Voice', 1, 2),
     ikribu.bow_rhythm(
-        logical_tie_masks=abjad.silence_every([8, 20], period=20),
+        logical_tie_masks=abjad.silence([8, 20], 20),
         rotation=-2,
         ),
     )
