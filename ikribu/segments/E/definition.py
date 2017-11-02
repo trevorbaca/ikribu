@@ -120,24 +120,18 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(1, 16)]),
-    # TODO: decide how to model with selectors:
-    #baca.accents(
-    #    pattern=abjad.index_every([0, 4], inverted=True, period=9),
-    #    ),
-    # TODO: decide how to model with selectors:
-    #baca.stem_tremolo(
-    #    pattern=abjad.index_every([0, 4], period=9),
-    #    ),
-    # TODO: make work with selectors:
-    #baca.hairpins(
-    #    ['f > p', 'p < f'],
-    #    enchain_hairpins=True,
-    #    include_following_rests=True,
-    #    span=[4, 3],
-    #    ),
+    baca.accents(baca.select().pheads()[~abjad.index_every([0, 4], 9)]),
     baca.markup.boxed('brushes on BD'),
     baca.one_line_staff(),
     baca.percussion_staff(),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('f p'),
+        baca.select().runs().map(baca.select().enchain([4, 3])).flatten(),
+        bookend=True,
+        ),
+    baca.staff_positions([0]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index_every([0, 4], 9)]),
     )
 
 segment_maker(
@@ -147,13 +141,14 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 9, 16),
-    # TODO: make work with selectors:
-    #baca.hairpins(
-    #    ['p < mp', 'mp > p'],
-    #    enchain_hairpins=True,
-    #    span=[2],
-    #    ),
     baca.markup.trem_flaut_tast(),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('p mp'),
+        baca.select().tleaves().enchain([2]),
+        bookend=True,
+        ),
+    baca.staff_positions([0]),
     baca.stem_tremolo(),
     )
 

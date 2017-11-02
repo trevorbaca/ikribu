@@ -393,7 +393,7 @@
                             \clef "treble"
                             \override NoteHead.style = #'harmonic
                             \override TupletBracket.direction = #down
-                            d''1.. :32 \glissando
+                            d''1.. :32 \glissando \< \ppp
                                 _ \markup {
                                     \whiteout
                                         \upright
@@ -401,29 +401,29 @@
                                     }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                fqf''4 :32 \glissando
+                                fqf''4 :32 \pp \glissando \>
                             }
-                            d''1.. :32 \glissando
+                            d''1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                b'4 :32 \glissando
+                                b'4 :32 \pp \glissando \>
                             }
-                            d''1.. :32 \glissando
+                            d''1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                b'4 :32 \glissando
+                                b'4 :32 \pp \glissando \>
                             }
-                            g'1.. :32 \glissando
+                            g'1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                b'4 :32 \glissando
+                                b'4 :32 \pp \glissando \>
                             }
-                            g'1.. :32 \glissando
+                            g'1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                d'4 :32 \glissando
+                                d'4 :32 \pp \glissando \>
                             }
-                            g'1.. :32
+                            g'1.. :32 \ppp
                             \revert NoteHead.style
                             s1 * 1/6
                             \bar "|"
