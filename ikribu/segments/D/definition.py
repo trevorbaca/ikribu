@@ -69,19 +69,13 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-partition = baca.select().partition_by_counts(
-    [3, 4],
-    cyclic=True,
-    enchain=True,
-    overhang=True,
-    )
 segment_maker(
     baca.scope('Cello RH Music Voice', 1, 2),
     baca.clef('percussion'),
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('ff p f pp p ppp'),
-        baca.select().runs().map(partition).flatten(),
+        baca.select().runs().map(baca.select().enchain([3, 4])).flatten(),
         bookend=True,
         ),
     baca.markup.boxed('1/2 clt'),

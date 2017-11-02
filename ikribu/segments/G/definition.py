@@ -77,42 +77,36 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1),
-    #baca.make_hairpin('ppp < mp', include_following_rest=True),
     baca.hairpin('ppp < mp', baca.select().rleaves()),
     baca.pitches('G2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3),
-    #baca.make_hairpin('pp < mf', include_following_rest=True),
     baca.hairpin('pp < mf', baca.select().rleaves()),
     baca.pitches('Gb2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 5),
-    #baca.make_hairpin('p < f', include_following_rest=True),
     baca.hairpin('p < f', baca.select().rleaves()),
     baca.pitches('F2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 7),
-    #baca.make_hairpin('mf < ff', include_following_rest=True),
     baca.hairpin('mf < ff', baca.select().rleaves()),
     baca.pitches('E2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9),
-    #baca.make_hairpin('f < fff', include_following_rest=True),
     baca.hairpin('f < fff', baca.select().rleaves()),
     baca.pitches('Eb2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 11),
-    #baca.make_hairpin('ff < ffff', include_following_rest=True),
     baca.hairpin('ff < ffff', baca.select().rleaves()),
     baca.pitches('D2'),
     )
@@ -121,17 +115,17 @@ segment_maker(
     baca.scope('Cello Music Voice', 1, 12),
     baca.clef('treble'),
     baca.glissando(),
-    # TODO: make work again after extending baca.hairpins():
-    #baca.hairpins(
-    #    ['ppp < pp', 'pp > ppp'],
-    #    enchain_hairpins=True,
-    #    span=[2],
-    #    ),
+    baca.piecewise(
+        baca.hairpin(),
+        baca.dynamics('ppp pp'),
+        baca.select().tleaves().enchain([2]),
+        bookend=True,
+        ),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         ),
-    baca.tuplet_brackets_down(),
     baca.stem_tremolo(),
+    baca.tuplet_brackets_down(),
     )
