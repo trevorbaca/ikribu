@@ -149,4 +149,5 @@ segment_maker(
     baca.one_line_staff(),
     baca.percussion_staff(),
     baca.repeat_ties_up(),
+    baca.staff_positions([0]),
     )
