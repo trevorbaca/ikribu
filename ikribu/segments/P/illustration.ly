@@ -155,6 +155,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         c'''2. \< \pp
                         c'''2 \repeatTie
                         c'''1.. \repeatTie
@@ -366,6 +367,7 @@
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
+                                \clef "percussion"
                                 c''8 \glissando [
                                 b''8. \glissando
                                 a'8 \glissando

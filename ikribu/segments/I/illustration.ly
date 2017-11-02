@@ -146,6 +146,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \clef "percussion"
                         R1 * 3/4
                         R1 * 1/4
                         R1 * 3/4
@@ -174,6 +175,7 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            \clef "percussion"
                             R1 * 3/4
                             R1 * 1/4
                             R1 * 3/4
@@ -203,6 +205,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            \clef "treble"
                             R1 * 3/4
                             R1 * 1/4
                             R1 * 3/4
@@ -236,6 +239,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
+                            \clef "treble"
                             \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
@@ -277,6 +281,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 1/4
+                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff
