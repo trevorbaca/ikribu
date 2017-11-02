@@ -120,7 +120,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(1, 16)]),
-    baca.accents(baca.select().pheads()[~abjad.index_every([0, 4], 9)]),
+    baca.accents(baca.select().pheads()[~abjad.index([0, 4], 9)]),
     baca.markup.boxed('brushes on BD'),
     baca.one_line_staff(),
     baca.percussion_staff(),
@@ -131,7 +131,7 @@ segment_maker(
         bookend=True,
         ),
     baca.staff_positions([0]),
-    baca.stem_tremolo(baca.select().pheads()[abjad.index_every([0, 4], 9)]),
+    baca.stem_tremolo(baca.select().pheads()[abjad.index([0, 4], 9)]),
     )
 
 segment_maker(
