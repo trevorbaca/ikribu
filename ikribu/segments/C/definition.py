@@ -179,7 +179,7 @@ segment_maker(
         bookend=True,
         ),
     baca.stem_tremolo(),
-    baca.transition(
+    baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. tasto. (arco)'),
         baca.markup.make_markup('trem. flaut. XP'),
         ),

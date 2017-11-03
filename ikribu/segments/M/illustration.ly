@@ -1172,11 +1172,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    tasto
+                                        \whiteout
+                                            \upright
+                                                tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1192,11 +1190,9 @@
                             c,,1 \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2 \repeatTie \fff \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            XP
+                                \whiteout
+                                    \upright
+                                        XP
                                 }
                             \ottava #0
                             s1 * 1/4
@@ -1246,11 +1242,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    tasto
+                                        \whiteout
+                                            \upright
+                                                tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1265,11 +1259,9 @@
                             c,,2. \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            XP
+                                \whiteout
+                                    \upright
+                                        XP
                                 }
                             \ottava #0
                             s1 * 1/4
@@ -1295,11 +1287,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    tasto
+                                        \whiteout
+                                            \upright
+                                                tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1314,11 +1304,9 @@
                             c,,1.. \< \mf \startTextSpan
                             c,,1.. \repeatTie
                             c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            XP
+                                \whiteout
+                                    \upright
+                                        XP
                                 }
                             \ottava #0
                             s1 * 1/4
@@ -1368,11 +1356,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    tasto
+                                        \whiteout
+                                            \upright
+                                                tasto
                                         \hspace
                                             #0.5
                                     }
@@ -1389,11 +1375,9 @@
                             c,,1 \repeatTie
                             c,,1 \repeatTie
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            XP
+                                \whiteout
+                                    \upright
+                                        XP
                                 }
                             \ottava #0
                             s1 * 23/4

@@ -315,11 +315,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. XP"
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. XP"
                                         \hspace
                                             #0.5
                                     }
@@ -344,11 +342,9 @@
                             \once \override Hairpin.circled-tip = ##t
                             <e' fs'>2. \repeatTie \> \ppppp
                             <e' fs'>1 \repeatTie \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. nut"
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. nut"
                                 }
                             s1 * 1/4 \!
                             \bar "|"
@@ -393,11 +389,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. XP"
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. XP"
                                         \hspace
                                             #0.5
                                     }
@@ -422,11 +416,9 @@
                             \once \override Hairpin.circled-tip = ##t
                             <ef' f'>2. \repeatTie \> \ppppp
                             <ef' f'>1 \repeatTie \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. nut"
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. nut"
                                 }
                             s1 * 1/4 \!
                             \bar "|"
@@ -472,11 +464,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    nut
+                                        \whiteout
+                                            \upright
+                                                nut
                                         \hspace
                                             #0.5
                                     }
@@ -492,11 +482,9 @@
                             bf,,,1.. \repeatTie \p \<
                             bf,,,1.. \repeatTie \mp \>
                             bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "string midpoint"
+                                \whiteout
+                                    \upright
+                                        "string midpoint"
                                 }
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -504,11 +492,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "string midpoint"
+                                        \whiteout
+                                            \upright
+                                                "string midpoint"
                                         \hspace
                                             #0.5
                                     }
@@ -524,11 +510,9 @@
                             bf,,,2. \repeatTie \p \<
                             bf,,,2 \repeatTie \mp \>
                             bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            XP
+                                \whiteout
+                                    \upright
+                                        XP
                                 }
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -536,11 +520,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    XP
+                                        \whiteout
+                                            \upright
+                                                XP
                                         \hspace
                                             #0.5
                                     }
@@ -556,11 +538,9 @@
                             bf,,,1 \repeatTie \p \<
                             bf,,,1 \repeatTie \mp \>
                             bf,,,2. \repeatTie \p \stopTextSpan \< ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "string midpoint"
+                                \whiteout
+                                    \upright
+                                        "string midpoint"
                                 }
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -568,11 +548,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "string midpoint"
+                                        \whiteout
+                                            \upright
+                                                "string midpoint"
                                         \hspace
                                             #0.5
                                     }
@@ -588,11 +566,9 @@
                             bf,,,\breve \repeatTie \p \<
                             bf,,,2. \repeatTie \mp \>
                             bf,,,1 \repeatTie \p \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            nut
+                                \whiteout
+                                    \upright
+                                        nut
                                 }
                             \ottava #0
                             s1 * 1/4
