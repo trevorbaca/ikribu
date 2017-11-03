@@ -101,6 +101,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 9),
+    baca.clef('treble'),
     baca.markup.string_number(3),
     baca.pitches('E4'),
     baca.stem_tremolo(),
@@ -108,9 +109,10 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Violin Music Voice'], [1, 5, 9]),
+    # TODO: join in single baca.swell() command:
     baca.hairpin('ppp < p', baca.select().leaves()[:2]),
     baca.hairpin('p > niente', baca.select().rleaves()[-2:]),
-    baca.transition(
+    baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. pont.'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
@@ -125,9 +127,10 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 13, 14),
+    # TODO: join in single baca.swell() command:
     baca.hairpin('ppp < mf', baca.select().leaves()[:5]),
     baca.hairpin('mf > niente', baca.select().rleaves()[-2:]),
-    baca.transition(
+    baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. pont.'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),

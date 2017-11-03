@@ -391,11 +391,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. pont."
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. pont."
                                         \hspace
                                             #0.5
                                     }
@@ -407,7 +405,7 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \clef "percussion"
+                            \clef "treble"
                             e'1 :32 \< \ppp \startTextSpan
                                 _ \markup {
                                     \whiteout
@@ -417,11 +415,9 @@
                             e'1 :32 \repeatTie \p
                             \once \override Hairpin.circled-tip = ##t
                             e'2. :32 \repeatTie \stopTextSpan \> \p ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. tast."
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. tast."
                                 }
                             s1 * 9/4 \!
                             \once \override TextSpanner.arrow-width = 0.25
@@ -430,11 +426,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. pont."
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. pont."
                                         \hspace
                                             #0.5
                                     }
@@ -450,11 +444,9 @@
                             e'2. :32 \repeatTie \p
                             \once \override Hairpin.circled-tip = ##t
                             e'1 :32 \repeatTie \stopTextSpan \> \p ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. tast."
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. tast."
                                 }
                             s1 * 3/2 \!
                             \once \override TextSpanner.arrow-width = 0.25
@@ -463,11 +455,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. pont."
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. pont."
                                         \hspace
                                             #0.5
                                     }
@@ -483,11 +473,9 @@
                             e'1.. :32 \repeatTie \p
                             \once \override Hairpin.circled-tip = ##t
                             e'2. :32 \repeatTie \stopTextSpan \> \p ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. tast."
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. tast."
                                 }
                             s1 * 17/2 \!
                             \bar "|"
@@ -536,11 +524,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. pont."
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. pont."
                                         \hspace
                                             #0.5
                                     }
@@ -564,11 +550,9 @@
                             ef'1.. :32 \repeatTie \mf
                             \once \override Hairpin.circled-tip = ##t
                             ef'\breve :32 \repeatTie \stopTextSpan \> \mf ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. tast."
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. tast."
                                 }
                             s1 * 1/4 \!
                             \bar "|"

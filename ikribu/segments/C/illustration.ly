@@ -664,11 +664,9 @@
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \concat
                                     {
-                                        \override
-                                            #'(font-name . "Palatino")
-                                            \whiteout
-                                                \upright
-                                                    "trem. flaut. tasto. (arco)"
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. tasto. (arco)"
                                         \hspace
                                             #0.5
                                     }
@@ -706,11 +704,9 @@
                             g1 :32 \ppp \glissando \<
                             d'1 :32 \pp \glissando \>
                             g2. :32 \ppp \stopTextSpan ^ \markup {
-                                \override
-                                    #'(font-name . "Palatino")
-                                    \whiteout
-                                        \upright
-                                            "trem. flaut. XP"
+                                \whiteout
+                                    \upright
+                                        "trem. flaut. XP"
                                 }
                             \revert NoteHead.style
                             \revert TupletBracket.direction
