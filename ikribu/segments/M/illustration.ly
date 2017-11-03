@@ -1149,6 +1149,7 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
+                            \clef "treble"
                             \clef "bass"
                             \override NoteHead.style = #'harmonic
                             fqf''2. -\laissezVibrer \sfz
@@ -1162,6 +1163,7 @@
                                         \upright
                                             III
                                     }
+                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1198,6 +1200,7 @@
                                 }
                             \ottava #0
                             s1 * 1/4
+                            \clef "treble"
                             \override NoteHead.style = #'harmonic
                             g''1.. -\laissezVibrer \sfz
                                 ^ \markup {
@@ -1210,14 +1213,18 @@
                                         \upright
                                             III
                                     }
+                            \clef "bass"
                             \revert NoteHead.style
+                            \ottava #-1
                             c,,2. \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             XP
                                     }
+                            \ottava #0
                             s1 * 1/4
+                            \clef "treble"
                             \override NoteHead.style = #'harmonic
                             fqf''1 -\laissezVibrer \sffz
                                 ^ \markup {
@@ -1230,6 +1237,7 @@
                                         \upright
                                             III
                                     }
+                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1265,6 +1273,7 @@
                                 }
                             \ottava #0
                             s1 * 1/4
+                            \clef "treble"
                             \override NoteHead.style = #'harmonic
                             g''2 -\laissezVibrer \sffz
                                 ^ \markup {
@@ -1277,6 +1286,7 @@
                                         \upright
                                             III
                                     }
+                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1312,6 +1322,7 @@
                                 }
                             \ottava #0
                             s1 * 1/4
+                            \clef "treble"
                             \override NoteHead.style = #'harmonic
                             a''1.. -\laissezVibrer \sfffz
                                 ^ \markup {
@@ -1324,14 +1335,18 @@
                                         \upright
                                             III
                                     }
+                            \clef "bass"
                             \revert NoteHead.style
+                            \ottava #-1
                             c,,2. \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
                                             XP
                                     }
+                            \ottava #0
                             s1 * 1/4
+                            \clef "treble"
                             \override NoteHead.style = #'harmonic
                             cqs'''2 -\laissezVibrer \sfffz
                                 ^ \markup {
@@ -1344,6 +1359,7 @@
                                         \upright
                                             III
                                     }
+                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
