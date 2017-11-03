@@ -107,7 +107,7 @@ segment_maker(
             item_class=abjad.NamedPitch,
             )],
         ),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
@@ -122,7 +122,7 @@ segment_maker(
             item_class=abjad.NamedPitch,
             )],
         ),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
         ),
@@ -133,7 +133,7 @@ segment_maker(
     baca.hairpin('p < ff'),
     baca.pitches('F#3'),
     baca.stem_tremolo(),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('(trem. flaut. tast.)'),
         baca.markup.make_markup('trem. XP (non. flaut.)'),
         ),
