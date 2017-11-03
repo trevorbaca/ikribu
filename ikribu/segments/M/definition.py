@@ -330,7 +330,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vc], [(2, 3), (9, 10), (13, 14), (20, 21)]),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.tasto(),
         baca.markup.XP(),
         ),

@@ -219,7 +219,7 @@ segment_maker(
             item_class=abjad.NamedPitch,
             )],
         ),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
@@ -237,7 +237,7 @@ segment_maker(
             item_class=abjad.NamedPitch,
             )],
         ),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
@@ -258,7 +258,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 5, 8),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('nut'),
         baca.markup.make_markup('string midpoint'),
         ),
@@ -266,7 +266,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 9, 12),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('string midpoint'),
         baca.markup.XP(),
         ),
@@ -274,7 +274,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 13, 16),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.XP(),
         baca.markup.make_markup('string midpoint'),
         ),
@@ -282,7 +282,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 17, 20),
-    baca.transition_spanner(
+    baca.transition(
         baca.markup.make_markup('string midpoint'),
         baca.markup.make_markup('nut'),
         ),
