@@ -525,16 +525,16 @@
                                         \upright
                                             "trem. flaut. tast."
                                     }
-                            gs'2. :32
+                            gs'2. :32 \p
                             s1 * 7/6
-                            gs'1 :32 \glissando
-                            fs'2. :32
+                            gs'1 :32 \glissando \> \p
+                            fs'2. :32 \pp
                             s1 * 7/6
-                            fs'1 :32 \glissando
-                            gs'2. :32
+                            fs'1 :32 \glissando \< \pp
+                            gs'2. :32 \p
                             s1 * 7/6
-                            gs'1 :32 \glissando
-                            fs'2. :32 \p
+                            gs'1 :32 \glissando \> \p
+                            fs'2. :32 \pp
                             s1 * 1/6
                             \bar "|"
                         }
@@ -586,16 +586,16 @@
                                         \upright
                                             "trem. flaut. tast."
                                     }
-                            e'2. :32
+                            e'2. :32 \p
                             s1 * 7/6
-                            e'1 :32 \glissando
-                            f'2. :32
+                            e'1 :32 \glissando \> \p
+                            f'2. :32 \pp
                             s1 * 7/6
-                            f'1 :32 \glissando
-                            e'2. :32
+                            f'1 :32 \glissando \< \pp
+                            e'2. :32 \p
                             s1 * 7/6
-                            e'1 :32 \glissando
-                            f'2. :32 \p
+                            e'1 :32 \glissando \> \p
+                            f'2. :32 \pp
                             s1 * 1/6
                             \bar "|"
                         }

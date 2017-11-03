@@ -134,8 +134,11 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 2, 16),
-    baca.hairpins(['pp < p', 'p > pp']),
     baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(
+        [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
+        baca.select().runs(),
+        ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
     baca.stem_tremolo(),
@@ -143,8 +146,11 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 2, 16),
-    baca.hairpins(['pp < p', 'p > pp']),
     baca.map(baca.glissando(), baca.select().runs()),
+    baca.map(
+        [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
+        baca.select().runs(),
+        ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
     baca.stem_tremolo(),
