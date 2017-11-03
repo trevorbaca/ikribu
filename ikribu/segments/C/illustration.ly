@@ -499,6 +499,9 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             c'1..
                                 ^ \markup {
@@ -518,6 +521,8 @@
                                         \italic
                                             ”
                                     }
+                            \stopStaff
+                            \startStaff
                             s1 * 1
                             fs'1 :32 \glissando \< \pp
                                 ^ \markup {
