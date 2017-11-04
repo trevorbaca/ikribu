@@ -245,13 +245,13 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
-    baca.hairpin('p < fff', baca.select().leaves()[:2]),
-    baca.hairpin('fff > niente', baca.select().rleaves()[-2:]),
+    baca.hairpin('p < fff', baca.leaves()[:2]),
+    baca.hairpin('fff > niente', baca.rleaves()[-2:]),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 20, 22),
-    baca.hairpin('ppp < fff', baca.select().leaves()[:-1]),
+    baca.hairpin('ppp < fff', baca.leaves()[:-1]),
     )
 
 segment_maker(
@@ -283,8 +283,8 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
-    baca.accents(baca.select().pheads()[~abjad.index([0], 2)]),
-    baca.stem_tremolo(baca.select().pheads()[abjad.index([0], 2)]),
+    baca.accents(baca.pheads()[~abjad.index([0], 2)]),
+    baca.stem_tremolo(baca.pheads()[abjad.index([0], 2)]),
     )
 
 segment_maker(

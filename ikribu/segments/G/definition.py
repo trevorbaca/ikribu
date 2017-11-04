@@ -77,37 +77,37 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1),
-    baca.hairpin('ppp < mp', baca.select().rleaves()),
+    baca.hairpin('ppp < mp', baca.rleaves()),
     baca.pitches('G2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3),
-    baca.hairpin('pp < mf', baca.select().rleaves()),
+    baca.hairpin('pp < mf', baca.rleaves()),
     baca.pitches('Gb2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 5),
-    baca.hairpin('p < f', baca.select().rleaves()),
+    baca.hairpin('p < f', baca.rleaves()),
     baca.pitches('F2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 7),
-    baca.hairpin('mf < ff', baca.select().rleaves()),
+    baca.hairpin('mf < ff', baca.rleaves()),
     baca.pitches('E2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9),
-    baca.hairpin('f < fff', baca.select().rleaves()),
+    baca.hairpin('f < fff', baca.rleaves()),
     baca.pitches('Eb2'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 11),
-    baca.hairpin('ff < ffff', baca.select().rleaves()),
+    baca.hairpin('ff < ffff', baca.rleaves()),
     baca.pitches('D2'),
     )
 
@@ -118,7 +118,7 @@ segment_maker(
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('ppp pp'),
-        baca.select().tleaves().enchain([2]),
+        baca.tleaves().enchain([2]),
         bookend=True,
         ),
     baca.markup.string_number(3),
