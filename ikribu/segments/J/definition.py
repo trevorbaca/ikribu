@@ -169,7 +169,7 @@ segment_maker(
     baca.scope('Cello Music Voice', 2, 4),
     baca.clef('bass'),
     baca.dynamic('p'),
-    baca.hairpin('p < mf', baca.select().rleaves()[-2:]),
+    baca.hairpin('p < mf', baca.rleaves()[-2:]),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),
     baca.pitches('D1'),

@@ -75,7 +75,7 @@ segment_maker(
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('ff p f pp p ppp'),
-        baca.select().runs().map(baca.select().enchain([3, 4])).flatten(),
+        baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,
         ),
     baca.markup.boxed('1/2 clt'),

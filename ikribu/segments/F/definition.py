@@ -93,8 +93,8 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(6, 7)]),
-    baca.hairpin('sfpp < p', baca.select().leaves()[:2]),
-    baca.hairpin('p > niente', baca.select().leaves()[-1:].rleak()),
+    baca.hairpin('sfpp < p', baca.leaves()[:2]),
+    baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
     baca.stem_tremolo(),
     )
 

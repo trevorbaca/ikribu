@@ -114,7 +114,7 @@ segment_maker(
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
-        baca.select().tleaves().enchain([4]),
+        baca.tleaves().enchain([4]),
         bookend=True,
         ),
     baca.staff_positions([0]),
@@ -127,7 +127,7 @@ segment_maker(
         baca.dynamics(
             'p pp p pp mp p mp p mf mp mf mp f mf f mf ff f ff f fff',
             ),
-        baca.select().tleaves().enchain([4]),
+        baca.tleaves().enchain([4]),
         bookend=True,
         ),
     baca.staff_positions([0]),
@@ -145,7 +145,7 @@ segment_maker(
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('p f'),
-        baca.select().logical_measures(),
+        baca.logical_measures(),
         ),
     )
 
@@ -203,8 +203,8 @@ segment_maker(
 
 segment_maker(
     baca.scope('Violin Music Voice', 5, 8),
-    baca.accents(baca.select().pheads()[~abjad.index([0, 4], 9)]),
-    baca.stem_tremolo(baca.select().pheads()[abjad.index([0, 4], 9)]),
+    baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
     )
 
 segment_maker(
@@ -215,12 +215,12 @@ segment_maker(
 
 segment_maker(
     baca.scope('Viola Music Voice', 2),
-    baca.hairpin('> niente', baca.select().tleaves().with_next_leaf()),
+    baca.hairpin('> niente', baca.tleaves().with_next_leaf()),
     baca.percussion_staff(),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 4, 8),
-    baca.accents(baca.select().pheads()[~abjad.index([0, 5], 11)]),
-    baca.stem_tremolo(baca.select().pheads()[abjad.index([0, 5], 11)]),
+    baca.accents(baca.pheads()[~abjad.index([0, 5], 11)]),
+    baca.stem_tremolo(baca.pheads()[abjad.index([0, 5], 11)]),
     )
