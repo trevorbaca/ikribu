@@ -88,7 +88,7 @@ segment_maker(
 
 segment_maker(
     baca.scopes([vn, va], [(3, 4), (7, 8), (11, 12), (15, 16)]),
-    baca.notes(repeat_ties=True),
+    baca.make_notes(repeat_ties=True),
     )
 
 segment_maker(
@@ -98,7 +98,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 2, 16),
-    baca.notes(repeat_ties=True),
+    baca.make_notes(repeat_ties=True),
     )
 
 ###############################################################################

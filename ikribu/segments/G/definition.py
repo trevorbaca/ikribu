@@ -68,7 +68,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 11),
-    baca.notes(repeat_ties=True),
+    baca.make_notes(repeat_ties=True),
     )
 
 ###############################################################################
