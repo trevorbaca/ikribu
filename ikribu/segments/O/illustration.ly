@@ -329,19 +329,19 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            <e' fs'>1.. \startTextSpan
-                            <e' fs'>2. \repeatTie
-                            <e' fs'>2 \repeatTie
-                            <e' fs'>\breve \repeatTie
-                            <e' fs'>1.. \repeatTie
-                            <e' fs'>1 \repeatTie
-                            <e' fs'>1 \repeatTie
-                            <e' fs'>2. \repeatTie
-                            <e' fs'>1.. \repeatTie
-                            <e' fs'>\breve \repeatTie
+                            <e' fs'>1.. :32 \startTextSpan
+                            <e' fs'>2. :32 \repeatTie
+                            <e' fs'>2 :32 \repeatTie
+                            <e' fs'>\breve :32 \repeatTie
+                            <e' fs'>1.. :32 \repeatTie
+                            <e' fs'>1 :32 \repeatTie
+                            <e' fs'>1 :32 \repeatTie
+                            <e' fs'>2. :32 \repeatTie
+                            <e' fs'>1.. :32 \repeatTie
+                            <e' fs'>\breve :32 \repeatTie
                             \once \override Hairpin.circled-tip = ##t
-                            <e' fs'>2. \repeatTie \> \ppppp
-                            <e' fs'>1 \repeatTie \stopTextSpan ^ \markup {
+                            <e' fs'>2. :32 \repeatTie \> \ppppp
+                            <e' fs'>1 :32 \repeatTie \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. nut"
@@ -403,19 +403,19 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            <ef' f'>1.. \startTextSpan
-                            <ef' f'>2. \repeatTie
-                            <ef' f'>2 \repeatTie
-                            <ef' f'>\breve \repeatTie
-                            <ef' f'>1.. \repeatTie
-                            <ef' f'>1 \repeatTie
-                            <ef' f'>1 \repeatTie
-                            <ef' f'>2. \repeatTie
-                            <ef' f'>1.. \repeatTie
-                            <ef' f'>\breve \repeatTie
+                            <ef' f'>1.. :32 \startTextSpan
+                            <ef' f'>2. :32 \repeatTie
+                            <ef' f'>2 :32 \repeatTie
+                            <ef' f'>\breve :32 \repeatTie
+                            <ef' f'>1.. :32 \repeatTie
+                            <ef' f'>1 :32 \repeatTie
+                            <ef' f'>1 :32 \repeatTie
+                            <ef' f'>2. :32 \repeatTie
+                            <ef' f'>1.. :32 \repeatTie
+                            <ef' f'>\breve :32 \repeatTie
                             \once \override Hairpin.circled-tip = ##t
-                            <ef' f'>2. \repeatTie \> \ppppp
-                            <ef' f'>1 \repeatTie \stopTextSpan ^ \markup {
+                            <ef' f'>2. :32 \repeatTie \> \ppppp
+                            <ef' f'>1 :32 \repeatTie \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. nut"
@@ -466,7 +466,7 @@
                                     {
                                         \whiteout
                                             \upright
-                                                nut
+                                                "tasto poss."
                                         \hspace
                                             #0.5
                                     }
@@ -484,7 +484,7 @@
                             bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
                                 \whiteout
                                     \upright
-                                        "string midpoint"
+                                        "pos. ord."
                                 }
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -494,7 +494,7 @@
                                     {
                                         \whiteout
                                             \upright
-                                                "string midpoint"
+                                                "pos. ord."
                                         \hspace
                                             #0.5
                                     }
@@ -540,7 +540,7 @@
                             bf,,,2. \repeatTie \p \stopTextSpan \< ^ \markup {
                                 \whiteout
                                     \upright
-                                        "string midpoint"
+                                        "pos. ord."
                                 }
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -550,7 +550,7 @@
                                     {
                                         \whiteout
                                             \upright
-                                                "string midpoint"
+                                                "pos. ord."
                                         \hspace
                                             #0.5
                                     }
@@ -568,7 +568,7 @@
                             bf,,,1 \repeatTie \p \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
-                                        nut
+                                        "tasto poss."
                                 }
                             \ottava #0
                             s1 * 1/4
