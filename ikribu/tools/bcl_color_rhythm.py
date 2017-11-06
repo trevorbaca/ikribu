@@ -1,5 +1,6 @@
 import abjad
 import baca
+from abjad import rhythmmakertools as rhythmos
 
 
 def bcl_color_rhythm(rotation_1=None, rotation_2=None):
@@ -9,16 +10,14 @@ def bcl_color_rhythm(rotation_1=None, rotation_2=None):
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation_2,
         )
-    rhythm_maker = abjad.rhythmmakertools.TaleaRhythmMaker(
+    rhythm_maker = rhythmos.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
-        talea=abjad.rhythmmakertools.Talea(
+        talea=rhythmos.Talea(
             counts=counts,
             denominator=8,
             ),
-        tie_specifier=abjad.rhythmmakertools.TieSpecifier(
+        tie_specifier=rhythmos.TieSpecifier(
             repeat_ties=True,
             ),
         )
-    return baca.RhythmBuilder(
-        rhythm_maker=rhythm_maker,
-        )
+    return baca.RhythmBuilder(rhythm_maker=rhythm_maker)

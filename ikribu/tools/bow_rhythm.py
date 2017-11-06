@@ -1,5 +1,6 @@
 import abjad
 import baca
+from abjad import rhythmmakertools as rhythmos
 
 
 def bow_rhythm(
@@ -10,11 +11,9 @@ def bow_rhythm(
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation
         )
-    rhythm_maker = abjad.rhythmmakertools.EvenDivisionRhythmMaker(
+    rhythm_maker = rhythmos.EvenDivisionRhythmMaker(
         denominators=[4],
         extra_counts_per_division=extra_counts_per_division,
         logical_tie_masks=logical_tie_masks,
         )
-    return baca.RhythmBuilder(
-        rhythm_maker=rhythm_maker,
-        )
+    return baca.RhythmBuilder(rhythm_maker=rhythm_maker)
