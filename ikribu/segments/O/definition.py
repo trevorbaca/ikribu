@@ -29,8 +29,8 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=abjad.Duration(1, 4),
-    minimum_width=abjad.Duration(1, 12),
+    fermata_measure_width=(1, 4),
+    minimum_width=(1, 12),
     )
 
 segment_maker = baca.SegmentMaker(
@@ -93,32 +93,19 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    # TODO: remove after clef metadata work again:
+    baca.clef('treble'),
+    baca.pitches('<Bb1 D4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3, 6),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 F4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 7),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 D4>'),
     )
 
 segment_maker(
@@ -128,42 +115,22 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 D4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 10),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 F4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 11, 12),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('Ab~4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 Ab~4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 F4>'),
     )
 
 segment_maker(
@@ -173,32 +140,17 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 15, 16),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 D4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 17),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('F4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 F4>'),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 18),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 D4>'),
     )
 
 segment_maker(
@@ -212,17 +164,12 @@ segment_maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
-    baca.stem_tremolo(),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
+    baca.stem_tremolo(),
     )
 
 segment_maker(
@@ -230,17 +177,12 @@ segment_maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
-    baca.stem_tremolo(),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Eb4 F4>'),
     baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. nut'),
         ),
+    baca.stem_tremolo(),
     )
 
 segment_maker(
@@ -259,15 +201,15 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 5, 8),
     baca.single_segment_transition(
-        baca.markup.make_markup('nut'),
-        baca.markup.make_markup('string midpoint'),
+        baca.markup.make_markup('tasto poss.'),
+        baca.markup.make_markup('pos. ord.'),
         ),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 9, 12),
     baca.single_segment_transition(
-        baca.markup.make_markup('string midpoint'),
+        baca.markup.make_markup('pos. ord.'),
         baca.markup.XP(),
         ),
     )
@@ -276,14 +218,14 @@ segment_maker(
     baca.scope('Cello Music Voice', 13, 16),
     baca.single_segment_transition(
         baca.markup.XP(),
-        baca.markup.make_markup('string midpoint'),
+        baca.markup.make_markup('pos. ord.'),
         ),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 17, 20),
     baca.single_segment_transition(
-        baca.markup.make_markup('string midpoint'),
-        baca.markup.make_markup('nut'),
+        baca.markup.make_markup('pos. ord.'),
+        baca.markup.make_markup('tasto poss.'),
         ),
     )

@@ -119,12 +119,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 2),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Bb1'), abjad.NamedPitch('D4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Bb1 D4>'),
     )
 
 segment_maker(

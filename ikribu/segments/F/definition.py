@@ -101,12 +101,7 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 6, 7),
     baca.markup.string_numbers([2, 3]),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('E4'), abjad.NamedPitch('F#4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
@@ -116,12 +111,7 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 6, 7),
     baca.markup.string_numbers([1, 2]),
-    baca.ScorePitchCommand(
-        source=[abjad.PitchSegment(
-            items=[abjad.NamedPitch('Eb4'), abjad.NamedPitch('F4')],
-            item_class=abjad.NamedPitch,
-            )],
-        ),
+    baca.pitches('<Eb4 F4>'),
     baca.single_segment_transition(
         baca.markup.make_markup('trem. flaut. XP'),
         baca.markup.make_markup('trem. flaut. tast.'),
