@@ -136,24 +136,102 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         \clef "percussion"
                         c2 \p
                             ^ \markup {
                                 \column
                                     {
-                                        "introduce upper partials gradually;"
-                                        "breathe as necessary before downbeats"
+                                        \line
+                                            {
+                                                \column
+                                                    {
+                                                        "introduce upper partials gradually;"
+                                                        "breathe as necessary before downbeats"
+                                                    }
+                                            }
+                                        \line
+                                            {
+                                                @
+                                            }
                                     }
                                 }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c1.. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c2. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c1 \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c2. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>1
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>2. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>2 \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>1.. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>1.. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
                         \bar "|"
                     }
                 }

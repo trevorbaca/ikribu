@@ -155,13 +155,48 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         \clef "percussion"
                         c'''2. \< \pp
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c'''2 \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c'''1.. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c'''1.. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
                         \once \override Hairpin.circled-tip = ##t
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c'''4 \mf \glissando \> \mf
+                            - \tweak color #red
+                            ^ \markup { @ }
                         a''4 \glissando
                         f''4 \glissando
                         d''4 \glissando

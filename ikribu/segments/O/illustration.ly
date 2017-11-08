@@ -251,28 +251,168 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         \clef "percussion"
                         <c e''>1
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>2. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>1
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>2. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>2 \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>1.. \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>1..
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c\breve
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>1..
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>2.
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c btqf''>2
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c btqf''>\breve \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>1..
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c1
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>1
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>2.
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c g''>1..
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         <c e''>\breve
+                            - \tweak color #red
+                            ^ \markup { @ }
                         \once \override Hairpin.circled-tip = ##t
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c2. \> \p
+                            - \tweak color #red
+                            ^ \markup { @ }
+                        \once \override Accidental.color = #red
+                        \once \override Beam.color = #red
+                        \once \override Dots.color = #red
+                        \once \override NoteHead.color = #red
+                        \once \override Stem.color = #red
                         c1 \repeatTie
+                            - \tweak color #red
+                            ^ \markup { @ }
                         s1 * 1/4 \!
                         \bar "|"
                     }
@@ -458,6 +598,11 @@
                             \clef "bass"
                             s1 * 7/2
                             \ottava #-1
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -479,13 +624,42 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             bf,,,2 \> \mp \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,1.. \repeatTie \p \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,1.. \repeatTie \mp \>
-                            bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            bf,,,\breve \repeatTie \p \stopTextSpan \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                                ^ \markup {
                                 \whiteout
                                     \upright
                                         "pos. ord."
                                 }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -507,13 +681,42 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             bf,,,1.. \mp \> \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,2. \repeatTie \p \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,2 \repeatTie \mp \>
-                            bf,,,\breve \repeatTie \p \stopTextSpan \< ^ \markup {
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            bf,,,\breve \repeatTie \p \stopTextSpan \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                                ^ \markup {
                                 \whiteout
                                     \upright
                                         XP
                                 }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -535,13 +738,42 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             bf,,,1.. \mp \> \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,1 \repeatTie \p \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,1 \repeatTie \mp \>
-                            bf,,,2. \repeatTie \p \stopTextSpan \< ^ \markup {
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            bf,,,2. \repeatTie \p \stopTextSpan \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                                ^ \markup {
                                 \whiteout
                                     \upright
                                         "pos. ord."
                                 }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -563,9 +795,33 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             bf,,,1.. \mp \> \startTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,\breve \repeatTie \p \<
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
                             bf,,,2. \repeatTie \mp \>
-                            bf,,,1 \repeatTie \p \stopTextSpan ^ \markup {
+                                - \tweak color #red
+                                ^ \markup { @ }
+                            \once \override Accidental.color = #red
+                            \once \override Beam.color = #red
+                            \once \override Dots.color = #red
+                            \once \override NoteHead.color = #red
+                            \once \override Stem.color = #red
+                            bf,,,1 \repeatTie \p \stopTextSpan
+                                - \tweak color #red
+                                ^ \markup { @ }
+                                ^ \markup {
                                 \whiteout
                                     \upright
                                         "tasto poss."

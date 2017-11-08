@@ -93,15 +93,11 @@ segment_maker(
 
 segment_maker(
     baca.scopes([bcl, vn, va], [(1, 7)]),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.repeat_ties_up(),
     baca.one_line_staff(),
-    baca.percussion_staff(),
-    )
-
-segment_maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 7),
-    baca.pitches('Bb2'),
+    baca.repeat_ties_up(),
+    baca.staff_positions([0]),
     )
 
 segment_maker(

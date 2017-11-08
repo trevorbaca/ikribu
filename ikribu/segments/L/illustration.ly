@@ -830,7 +830,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "percussion"
-                                \clef "treble"
                                 c'8 -\staccato [
                                     _ \markup {
                                         \larger
@@ -1061,7 +1060,6 @@
                                 c'4 -\accent \f \<
                                 c'4 -\accent
                                 c'4 -\accent \fff
-                                \clef "treble"
                                 \stopStaff
                                 \startStaff
                             }
