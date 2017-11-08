@@ -46,16 +46,25 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=abjad.Duration(1, 12),
     )
 
+layout_measure_map = baca.LayoutMeasureMap([
+    baca.lbsd(20, [15, 20, 20], baca.measure(0)),
+    baca.line_break(baca.measure(12)), 
+    baca.lbsd(140, [15, 20, 20], baca.measure(13)),
+    baca.line_break(baca.measure(22)), 
+    baca.lbsd(20, [15, 20, 20], baca.measure(23)),
+    ])
+
 segment_maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
+    layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
+    metronome_mark_measure_map=metronome_mark_measure_map,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
     spacing_specifier=spacing_specifier,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
     )
