@@ -133,8 +133,9 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3, 4),
-    baca.fixed_pitches(
-        'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1'
+    baca.pitches(
+        'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1',
+        exact=True,
         ),
     baca.glissando(),
     )
