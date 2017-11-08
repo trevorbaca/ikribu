@@ -180,7 +180,7 @@
                         \startStaff
                         \clef "percussion"
                         \override RepeatTie.direction = #up
-                        c'4
+                        d''4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -204,21 +204,21 @@
                                     \italic
                                         ”
                                 }
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -230,26 +230,26 @@
                                                     "π/3 every quarter note"
                                                 }
                                 }
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
                         s1 * 11/4
-                        c'4
+                        d''4
                             ^ \markup {
                                 \whiteout
                                     \override
@@ -273,9 +273,9 @@
                                     \italic
                                         ”
                                 }
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
                         \revert RepeatTie.direction
                         s1 * 1/4
                         \bar "|"
@@ -436,7 +436,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \clef "treble"
                             \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
@@ -547,7 +546,6 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 1/4
-                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff

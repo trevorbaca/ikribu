@@ -998,7 +998,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \clef "treble"
                             s1 * 3/4
                             {
                                 c'4 :32 \< \mf
@@ -1101,7 +1100,6 @@
                                 c'4 :32 \fff
                             }
                             s1 * 23/4
-                            \clef "treble"
                             \bar "|"
                             \stopStaff
                             \startStaff
