@@ -85,7 +85,7 @@ segment_maker(
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.pitches('Bb2'),
     )
 
@@ -97,7 +97,7 @@ segment_maker(
     baca.markup.make_markup(
         'col legno battuto meccanico: strike each note twice'
         ),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.pitches('B3 C4 D4'),
     )
 
@@ -108,7 +108,7 @@ segment_maker(
     baca.markup.make_markup(
         'col legno battuto meccanico: strike each note twice'
         ),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.pitches('C4 B3 D4'),
     baca.staccati(),
     )
@@ -119,6 +119,6 @@ segment_maker(
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     )

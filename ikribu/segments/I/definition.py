@@ -69,7 +69,7 @@ segment_maker(
         'stonecircle:',
         'π/4 every quarter note'
         ]),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.repeat_ties_up(),
     )

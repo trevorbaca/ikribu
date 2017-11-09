@@ -123,13 +123,13 @@ segment_maker(
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.clef('percussion'),
     baca.markup.boxed('brushes on BD'),
-    baca.one_line_staff(),
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('f p'),
         baca.runs().map(baca.enchain([4, 3])).flatten(),
         bookend=True,
         ),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
     )

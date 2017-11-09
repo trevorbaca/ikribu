@@ -267,7 +267,7 @@ segment_maker(
 segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
     baca.clef('percussion'),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     )
 
 segment_maker(
@@ -428,6 +428,6 @@ segment_maker(
         ['Bass Clarinet Music Voice', 'Cello Music Voice'],
         [4],
         ),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     )
 
