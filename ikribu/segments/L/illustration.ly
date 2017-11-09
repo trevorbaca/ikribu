@@ -367,7 +367,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        \clef "percussion"
+                        \clef "treble"
                         d\breve \ppp
                             ^ \markup {
                                 \whiteout
@@ -1114,7 +1114,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \clef "bass"
                             c'4 \< \p
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1285,7 +1284,6 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             s1 * 39/4
-                            \clef "bass"
                             \bar "|"
                             \stopStaff
                             \startStaff

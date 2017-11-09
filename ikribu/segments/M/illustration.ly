@@ -614,13 +614,18 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        \clef "percussion"
+                        \clef "treble"
                         s1 * 3/4
                         cs1 \< \p
                         cs1 \repeatTie \fff
                         \once \override Hairpin.circled-tip = ##t
                         cs2 \repeatTie \> \fff
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         s1 * 2 \!
+                        \stopStaff
+                        \startStaff
                         cs2. \p
                         s1 * 5/4
                         cs2. \< \p
@@ -1156,7 +1161,6 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \clef "treble"
-                            \clef "bass"
                             \override NoteHead.style = #'harmonic
                             fqf''2. -\laissezVibrer \sfz
                                 ^ \markup {
@@ -1169,7 +1173,6 @@
                                         \upright
                                             III
                                     }
-                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1201,7 +1204,12 @@
                                         XP
                                 }
                             \ottava #0
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             s1 * 1/4
+                            \stopStaff
+                            \startStaff
                             \clef "treble"
                             \override NoteHead.style = #'harmonic
                             g''1.. -\laissezVibrer \sfz
@@ -1215,9 +1223,9 @@
                                         \upright
                                             III
                                     }
-                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
+                            \clef "bass"
                             c,,2. \fff
                                 ^ \markup {
                                     \whiteout
@@ -1239,7 +1247,6 @@
                                         \upright
                                             III
                                     }
-                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1262,6 +1269,7 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \clef "bass"
                             c,,2. \< \mf \startTextSpan
                             c,,1 \repeatTie
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
@@ -1284,7 +1292,6 @@
                                         \upright
                                             III
                                     }
-                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1307,6 +1314,7 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \clef "bass"
                             c,,1.. \< \mf \startTextSpan
                             c,,1.. \repeatTie
                             c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
@@ -1329,9 +1337,9 @@
                                         \upright
                                             III
                                     }
-                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
+                            \clef "bass"
                             c,,2. \fff
                                 ^ \markup {
                                     \whiteout
@@ -1353,7 +1361,6 @@
                                         \upright
                                             III
                                     }
-                            \clef "bass"
                             \revert NoteHead.style
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
@@ -1376,6 +1383,7 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \clef "bass"
                             c,,\breve \< \mf \startTextSpan
                             c,,1.. \repeatTie
                             c,,1 \repeatTie

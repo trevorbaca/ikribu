@@ -63,13 +63,13 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1, 8),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines([
         'stonecircle:',
         'π/4 every quarter note'
         ]),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     baca.staff_positions([0]),
     baca.repeat_ties_up(),
     )

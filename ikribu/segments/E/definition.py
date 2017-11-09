@@ -121,9 +121,9 @@ segment_maker(
 segment_maker(
     baca.scopes([vn, va], [(1, 16)]),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.clef('percussion'),
     baca.markup.boxed('brushes on BD'),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('f p'),

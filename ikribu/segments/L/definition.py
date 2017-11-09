@@ -60,6 +60,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
+
     baca.tied_notes(repeat_ties=True),
     )
 
@@ -94,6 +95,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
+    baca.clef('treble'),
     baca.dynamic('ppp'),
     baca.markup.make_markup(
         'breathe discreetly before any downbeat as needed'
@@ -106,7 +108,6 @@ segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 8)]),
     baca.effort_dynamic('mp'),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     )
 
 segment_maker(
@@ -136,7 +137,6 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 1, 8),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     baca.staff_positions([0]),
     )
 
@@ -198,7 +198,6 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 4),
     baca.hairpin('> niente'),
-    baca.percussion_staff(),
     )
 
 segment_maker(
@@ -216,7 +215,6 @@ segment_maker(
 segment_maker(
     baca.scope('Viola Music Voice', 2),
     baca.hairpin('> niente', baca.tleaves().with_next_leaf()),
-    baca.percussion_staff(),
     )
 
 segment_maker(

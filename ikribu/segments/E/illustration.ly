@@ -506,7 +506,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \clef "alto"
                             s1 * 1/2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
@@ -562,7 +561,6 @@
                                 c'1 -\accent \f
                             }
                             s1 * 2
-                            \clef "alto"
                             \bar "|"
                             \stopStaff
                             \startStaff
