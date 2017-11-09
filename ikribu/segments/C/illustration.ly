@@ -583,7 +583,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "alto"
+                            \clef "percussion"
                             s1 * 11/4
                             f'1 :32 \glissando \< \pp
                                 ^ \markup {
