@@ -140,7 +140,7 @@
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            \clef "percussion"
+                            \clef "treble"
                             R1 * 2
                             R1 * 7/4
                             R1 * 1
@@ -216,12 +216,11 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            \clef "alto"
                             \revert RepeatTie.direction
-                            \stopStaff
-                            \startStaff
                             s1 * 1/4
                             \bar "|"
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 >>

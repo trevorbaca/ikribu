@@ -84,8 +84,8 @@ segment_maker(
 
 segment_maker(
     baca.scopes([bcl, vn, va, vc], [(1, 16)]),
+    baca.clef('percussion'),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     baca.repeat_ties_up(),
     )
 

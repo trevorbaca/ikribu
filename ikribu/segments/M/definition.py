@@ -77,11 +77,6 @@ segment_maker.validate_measures_per_stage()
 ##################################### TIME ####################################
 ###############################################################################
 
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 2, 3),
     baca.tied_notes(repeat_ties=True),
@@ -249,6 +244,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 23),
+    baca.clef('treble'),
     baca.pitches('B1'),
     )
 
@@ -270,8 +266,8 @@ segment_maker(
 
 segment_maker(
     baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
+    baca.clef('percussion'),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     )
 
 segment_maker(
@@ -286,12 +282,12 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vn], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.scopes(['Violin Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.markup.boxed('brushes on BD'),
     )
 
 segment_maker(
-    baca.scopes([vn, va], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.accents(baca.pheads()[~abjad.index([0], 2)]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0], 2)]),
     )
@@ -327,18 +323,19 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vc], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.scopes(['Cello Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.clef('bass'),
     baca.ottava_bassa(),
     baca.pitches('C1'),
     )
 
 segment_maker(
-    baca.scopes([vn, va, vc], [(2, 3), (9, 10), (13, 14), (20, 21)]),
+    baca.scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.hairpin('mf < fff'),
     )
 
 segment_maker(
-    baca.scopes([vc], [(2, 3), (9, 10), (13, 14), (20, 21)]),
+    baca.scopes(['Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.single_segment_transition(
         baca.markup.tasto(),
         baca.markup.XP(),
@@ -346,18 +343,18 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vn, va, vc], [6, 17]),
+    baca.scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [6, 17]),
     baca.dynamic('fff'),
     )
 
 segment_maker(
-    baca.scopes([vc], [6, 17]),
+    baca.scopes(['Cello Music Voice'], [6, 17]),
     baca.markup.XP(),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 1),
-    baca.clef_spanner(clef='treble'),
+    baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -367,13 +364,13 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scope('Cello Music Voice', 2, 4),
+    baca.scope('Cello Music Voice', 2, 3),
     baca.clef('bass'),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 5),
-    baca.clef_spanner(clef='treble'),
+    baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -384,7 +381,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 8),
-    baca.clef_spanner(clef='treble'),
+    baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -395,7 +392,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 12),
-    baca.clef_spanner(clef='treble'),
+    baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -406,7 +403,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 16),
-    baca.clef_spanner(clef='treble'),
+    baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -417,7 +414,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 19),
-    baca.clef_spanner(clef='treble'),
+    baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -425,3 +422,12 @@ segment_maker(
     baca.natural_harmonics(),
     baca.pitches('C+6'),
     )
+
+segment_maker(
+    baca.scopes(
+        ['Bass Clarinet Music Voice', 'Cello Music Voice'],
+        [4],
+        ),
+    baca.one_line_staff(),
+    )
+

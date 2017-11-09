@@ -67,6 +67,11 @@ segment_maker(
 ###############################################################################
 
 segment_maker(
+    baca.scope('Violin Music Voice', 1),
+    baca.clef('treble'),
+    )
+
+segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.pitches('D2'),
     )
@@ -82,14 +87,14 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scope('Viola Music Voice', 2, 3),
+    baca.scope('Viola Music Voice', 2, 4),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines([
         'stonecircle:',
         'π/4 every quarter note'
         ]),
+    baca.one_line_staff(),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
-    baca.one_line_staff(),
-    baca.percussion_staff(),
     )

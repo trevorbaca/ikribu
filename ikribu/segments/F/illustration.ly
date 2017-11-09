@@ -198,7 +198,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "alto"
+                            \clef "percussion"
                             s1 * 4
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -310,10 +310,10 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
-                            \clef "bass"
                             \revert RepeatTie.direction
                             \stopStaff
                             \startStaff
+                            \clef "treble"
                             s1 * 7/4
                             \bar "|"
                         }

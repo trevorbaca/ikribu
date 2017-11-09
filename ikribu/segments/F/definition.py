@@ -131,12 +131,17 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 6, 7),
+    baca.clef('percussion'),
     baca.markup.boxed_lines([
         'graincircle:',
         'π/2 every quarter note',
         ]),
     baca.one_line_staff(),
-    baca.percussion_staff(),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
+    )
+
+segment_maker(
+    baca.scope('Cello Music Voice', 8),
+    baca.clef('treble'),
     )

@@ -600,7 +600,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \clef "bass"
                             \override RepeatTie.direction = #up
                             c'4
                                 ^ \markup {
@@ -684,7 +683,6 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             s1 * 3/2
-                            \clef "bass"
                             \bar "|"
                             \stopStaff
                             \startStaff
