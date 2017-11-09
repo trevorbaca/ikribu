@@ -94,7 +94,7 @@ segment_maker(
     baca.clef('percussion'),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
-    baca.make_markup(
+    baca.markup(
         'col legno battuto meccanico: strike each note twice'
         ),
     baca.staff_lines(1),
@@ -105,7 +105,7 @@ segment_maker(
     baca.scope('Viola Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.make_markup(
+    baca.markup(
         'col legno battuto meccanico: strike each note twice'
         ),
     baca.staff_lines(1),

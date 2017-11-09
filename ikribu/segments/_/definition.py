@@ -53,7 +53,7 @@ segment_maker(
     baca.make_tied_notes(repeat_ties=True),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.make_markup('grainfall (I)'),
+    baca.markup('grainfall (I)'),
     baca.staff_lines(1, baca.rleaves().group()),
     baca.staff_positions([0]),
     )
