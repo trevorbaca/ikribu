@@ -720,10 +720,11 @@
                                 c'2 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
                                         }
                                 c'2 -\accent
                                 c'2 :32
@@ -762,10 +763,11 @@
                                 c'4 :32 \fff
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
                                         }
                                 c'4 -\accent
                                 c'4 :32
@@ -795,10 +797,11 @@
                                 c'4 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
                                         }
                                 c'4 -\accent
                                 c'4 :32
@@ -844,10 +847,11 @@
                                 c'1 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
                                         }
                                 c'1 -\accent
                                 c'1 :32
@@ -887,10 +891,11 @@
                                 c'4 :32 \fff
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
                                         }
                                 c'4 -\accent
                                 c'4 :32
@@ -919,10 +924,11 @@
                                 c'2 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "brushes on BD"
                                         }
                                 c'2 -\accent
                                 c'2 :32

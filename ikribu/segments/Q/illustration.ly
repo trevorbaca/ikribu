@@ -170,10 +170,11 @@
                         c'4
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "graincircle: π/3 every quarter note"
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                "graincircle: π/3 every quarter note"
                                 }
                             _ \markup {
                                 \larger
@@ -455,10 +456,11 @@
                                 c'8 -\accent [
                                     ^ \markup {
                                         \whiteout
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "stonescratch: one short stroke for each attack"
+                                            \upright
+                                                \override
+                                                    #'(box-padding . 0.5)
+                                                    \box
+                                                        "stonescratch: one short stroke for each attack"
                                         }
                                     _ \markup {
                                         \larger
