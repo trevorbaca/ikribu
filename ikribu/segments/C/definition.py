@@ -127,7 +127,7 @@ segment_maker(
     baca.scope('Violin Music Voice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.markup.make_markup('grainfall (II)'),
+    baca.make_markup('grainfall (II)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
     )
@@ -183,8 +183,8 @@ segment_maker(
         ),
     baca.stem_tremolo(),
     baca.single_segment_transition(
-        baca.markup.make_markup('trem. flaut. tasto. (arco)'),
-        baca.markup.make_markup('trem. flaut. XP'),
+        baca.make_markup('trem. flaut. tasto. (arco)'),
+        baca.make_markup('trem. flaut. XP'),
         ),
     baca.tuplet_brackets_down(),
     )
