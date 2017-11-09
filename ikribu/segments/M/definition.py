@@ -268,12 +268,13 @@ segment_maker(
     baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
     baca.clef('percussion'),
     baca.staff_lines(1),
+    baca.text_script_staff_padding(4.5),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 1),
     baca.effort_dynamic('f'),
-    baca.markup('grainfall (III)'),
+    baca.markup.boxed('grainfall (III)'),
     )
 
 segment_maker(
@@ -295,31 +296,31 @@ segment_maker(
 segment_maker(
     baca.scope('Violin Music Voice', 5),
     baca.effort_dynamic('f'),
-    baca.markup('grainfall (IV)'),
+    baca.markup.boxed('grainfall (IV)'),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 8),
     baca.effort_dynamic('f'),
-    baca.markup('grainfall (V)'),
+    baca.markup.boxed('grainfall (V)'),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 12),
     baca.effort_dynamic('f'),
-    baca.markup('grainfall (VI)'),
+    baca.markup.boxed('grainfall (VI)'),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 16),
     baca.effort_dynamic('f'),
-    baca.markup('grainfall (VII)'),
+    baca.markup.boxed('grainfall (VII)'),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 19),
     baca.effort_dynamic('f'),
-    baca.markup('grainfall (VIII)'),
+    baca.markup.boxed('grainfall (VIII)'),
     )
 
 segment_maker(

@@ -118,11 +118,15 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
+                            \override TextScript.staff-padding = #4.5
                             c'1..
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (I)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (I)"
                                     }
                                 _ \markup {
                                     \larger
@@ -136,6 +140,7 @@
                                         \italic
                                             ”
                                     }
+                            \revert TextScript.staff-padding
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
