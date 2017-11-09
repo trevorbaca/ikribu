@@ -94,7 +94,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin RH Music Voice', 'Viola RH Music Voice'], [(1, 2)]),
+    baca.make_scopes(['Violin RH Music Voice', 'Viola RH Music Voice'], [(1, 2)]),
     baca.clef('percussion'),
     baca.markup.boxed('1/2 clt'),
     baca.piecewise(

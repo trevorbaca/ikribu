@@ -72,7 +72,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(
+    baca.make_scopes(
         [
         'Bass Clarinet Music Voice',
         'Violin Music Voice',

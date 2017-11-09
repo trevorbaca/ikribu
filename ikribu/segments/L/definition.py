@@ -85,7 +85,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Cello Music Voice'], [1, 2, 3, 4, 5, 6]),
+    baca.make_scopes(['Cello Music Voice'], [1, 2, 3, 4, 5, 6]),
     baca.tied_repeated_durations((1, 4)),
     )
 
@@ -105,7 +105,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 8)]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 8)]),
     baca.effort_dynamic('mp'),
     baca.staff_lines(1),
     )

@@ -77,7 +77,7 @@ va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
 segment_maker(
-    baca.scopes([bcl], [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    baca.make_scopes([bcl], [(2, 3), (6, 7), (10, 11), (14, 15)]),
     baca.tied_repeated_durations((1, 4)),
     )
 
@@ -87,7 +87,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vn, va], [(3, 4), (7, 8), (11, 12), (15, 16)]),
+    baca.make_scopes([vn, va], [(3, 4), (7, 8), (11, 12), (15, 16)]),
     baca.make_notes(repeat_ties=True),
     )
 

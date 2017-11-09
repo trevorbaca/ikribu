@@ -110,7 +110,7 @@ segment_maker(
 # violin #
 
 segment_maker(
-    baca.scopes(['Violin Music Voice'], [1, 5, 8, 12, 16, 19]),
+    baca.make_scopes(['Violin Music Voice'], [1, 5, 8, 12, 16, 19]),
     baca.tied_notes(repeat_ties=True),
     )
 
@@ -249,7 +249,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
+    baca.make_scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
     baca.hairpin('p < fff', baca.leaves()[:2]),
     baca.hairpin('fff > niente', baca.rleaves()[-2:]),
     )
@@ -260,12 +260,12 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Bass Clarinet Music Voice'], [6, 17]),
+    baca.make_scopes(['Bass Clarinet Music Voice'], [6, 17]),
     baca.dynamic('p'),
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
     baca.clef('percussion'),
     baca.staff_lines(1),
     )
@@ -277,17 +277,17 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 21)]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 21)]),
     baca.staff_positions([0]),
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.make_scopes(['Violin Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.markup.boxed('brushes on BD'),
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.accents(baca.pheads()[~abjad.index([0], 2)]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0], 2)]),
     )
@@ -323,19 +323,19 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Cello Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.make_scopes(['Cello Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.pitches('C1'),
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.hairpin('mf < fff'),
     )
 
 segment_maker(
-    baca.scopes(['Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
+    baca.make_scopes(['Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.single_segment_transition(
         baca.markup.tasto(),
         baca.markup.XP(),
@@ -343,12 +343,12 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [6, 17]),
+    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [6, 17]),
     baca.dynamic('fff'),
     )
 
 segment_maker(
-    baca.scopes(['Cello Music Voice'], [6, 17]),
+    baca.make_scopes(['Cello Music Voice'], [6, 17]),
     baca.markup.XP(),
     )
 
@@ -424,7 +424,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(
+    baca.make_scopes(
         ['Bass Clarinet Music Voice', 'Cello Music Voice'],
         [4],
         ),
