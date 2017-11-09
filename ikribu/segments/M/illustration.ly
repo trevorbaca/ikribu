@@ -698,11 +698,15 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
+                            \override TextScript.staff-padding = #4.5
                             c'2.
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (III)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (III)"
                                     }
                                 _ \markup {
                                     \larger
@@ -744,7 +748,10 @@
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (IV)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (IV)"
                                     }
                                 _ \markup {
                                     \larger
@@ -778,7 +785,10 @@
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (V)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (V)"
                                     }
                                 _ \markup {
                                     \larger
@@ -828,7 +838,10 @@
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (VI)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (VI)"
                                     }
                                 _ \markup {
                                     \larger
@@ -872,7 +885,10 @@
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (VII)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (VII)"
                                     }
                                 _ \markup {
                                     \larger
@@ -906,7 +922,10 @@
                                 ^ \markup {
                                     \whiteout
                                         \upright
-                                            "grainfall (VIII)"
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "grainfall (VIII)"
                                     }
                                 _ \markup {
                                     \larger
@@ -967,6 +986,7 @@
                             }
                             s1 * 23/4
                             \bar "|"
+                            \revert TextScript.staff-padding
                             \stopStaff
                             \startStaff
                         }
@@ -1017,6 +1037,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
+                            \override TextScript.staff-padding = #4.5
                             s1 * 3/4
                             {
                                 c'4 :32 \< \mf
@@ -1120,6 +1141,7 @@
                             }
                             s1 * 23/4
                             \bar "|"
+                            \revert TextScript.staff-padding
                             \stopStaff
                             \startStaff
                         }

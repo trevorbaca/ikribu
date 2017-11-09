@@ -127,9 +127,10 @@ segment_maker(
     baca.scope('Violin Music Voice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.markup('grainfall (II)'),
+    baca.markup.boxed('grainfall (II)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
+    baca.text_script_staff_padding(4.5),
     )
 
 segment_maker(
