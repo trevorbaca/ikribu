@@ -74,22 +74,22 @@ va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
 segment_maker(
-    baca.scopes([bcl], [(1, 4), (5, 8), (9, 12), (13, 16)]),
+    baca.make_scopes([bcl], [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.tied_notes(repeat_ties=True),
     )
 
 segment_maker(
-    baca.scopes([vn], [(1, 2), (5, 6), (9, 10), (13, 14)]),
+    baca.make_scopes([vn], [(1, 2), (5, 6), (9, 10), (13, 14)]),
     ikribu.triplet_rhythm(),
     )
 
 segment_maker(
-    baca.scopes([va], [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    baca.make_scopes([va], [(2, 3), (6, 7), (10, 11), (14, 15)]),
     ikribu.triplet_rhythm(),
     )
 
 segment_maker(
-    baca.scopes([vc], [(9, 12), (13, 16)]),
+    baca.make_scopes([vc], [(9, 12), (13, 16)]),
     baca.tied_notes(repeat_ties=True),
     )
 
@@ -119,7 +119,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vn, va], [(1, 16)]),
+    baca.make_scopes([vn, va], [(1, 16)]),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.clef('percussion'),
     baca.markup.boxed('brushes on BD'),

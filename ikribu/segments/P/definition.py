@@ -147,7 +147,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vn_rh, va_rh, vc_rh], [(1, 3)]),
+    baca.make_scopes([vn_rh, va_rh, vc_rh], [(1, 3)]),
     baca.clef('percussion'),
     baca.markup.boxed('1/2 clt'),
     baca.piecewise(

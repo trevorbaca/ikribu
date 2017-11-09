@@ -60,7 +60,7 @@ va_rh = 'Viola RH Music Voice'
 vc_rh = 'Cello RH Music Voice'
 
 segment_maker(
-    baca.scopes([bcl], [1, 2]),
+    baca.make_scopes([bcl], [1, 2]),
     baca.tied_notes(repeat_ties=True),
     )
 
@@ -123,7 +123,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes([vn_rh, va_rh, vc_rh], [(1, 2)]),
+    baca.make_scopes([vn_rh, va_rh, vc_rh], [(1, 2)]),
     baca.clef('percussion'),
     baca.markup.boxed('1/2 clt'),
     baca.piecewise(

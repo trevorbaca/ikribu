@@ -65,12 +65,12 @@ segment_maker.validate_measures_per_stage()
 ###############################################################################
 
 segment_maker(
-    baca.scopes(['Bass Clarinet Music Voice'], [3, 7, 11, 13]),
+    baca.make_scopes(['Bass Clarinet Music Voice'], [3, 7, 11, 13]),
     baca.tied_notes(repeat_ties=True),
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice'], [1, 5, 9]),
+    baca.make_scopes(['Violin Music Voice'], [1, 5, 9]),
     baca.tied_notes(repeat_ties=True),
     )
 
@@ -89,7 +89,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Bass Clarinet Music Voice'], [3, 7, 11]),
+    baca.make_scopes(['Bass Clarinet Music Voice'], [3, 7, 11]),
     baca.dynamic('ppp'),
     )
 
@@ -108,7 +108,7 @@ segment_maker(
     )
 
 segment_maker(
-    baca.scopes(['Violin Music Voice'], [1, 5, 9]),
+    baca.make_scopes(['Violin Music Voice'], [1, 5, 9]),
     # TODO: join in single baca.swell() command:
     baca.hairpin('ppp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.rleaves()[-2:]),
