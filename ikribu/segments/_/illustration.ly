@@ -31,6 +31,8 @@
             \context GlobalSkips = "Global Skips" {
                 {
                     \time 7/4
+                    \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+                    #'((Y-offset . 60) (alignment-distances . (15 20 20)))
                     \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                     \newSpacingSection
                     s1 * 7/4 ^ \markup {
@@ -88,8 +90,6 @@
                         \startStaff
                         R1 * 1/4
                         \bar "|"
-                        \stopStaff
-                        \startStaff
                     }
                 }
                 \tag violin
@@ -146,10 +146,6 @@
                             \startStaff
                             s1 * 1/4
                             \bar "|"
-                            \stopStaff
-                            \startStaff
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 >>
@@ -182,8 +178,6 @@
                             \startStaff
                             R1 * 1/4
                             \bar "|"
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 >>
@@ -228,8 +222,6 @@
                             \startStaff
                             s1 * 1/4
                             \bar "|"
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 >>

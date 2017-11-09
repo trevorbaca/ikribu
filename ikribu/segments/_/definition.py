@@ -28,10 +28,15 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
+layout_measure_map = baca.LayoutMeasureMap([
+    baca.lbsd(60, [15, 20, 20], baca.measure(0)),
+    ])
+
 segment_maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
+    layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
@@ -54,7 +59,7 @@ segment_maker(
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('grainfall (I)'),
-    baca.staff_lines(1, baca.rleaves().group()),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.text_script_staff_padding(4.5),
     )
