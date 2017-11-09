@@ -166,8 +166,8 @@ segment_maker(
     baca.markup.string_numbers([2, 3]),
     baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
-        baca.markup.make_markup('trem. flaut. XP'),
-        baca.markup.make_markup('trem. flaut. nut'),
+        baca.make_markup('trem. flaut. XP'),
+        baca.make_markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(),
     )
@@ -179,8 +179,8 @@ segment_maker(
     baca.markup.string_numbers([2, 3]),
     baca.pitches('<Eb4 F4>'),
     baca.single_segment_transition(
-        baca.markup.make_markup('trem. flaut. XP'),
-        baca.markup.make_markup('trem. flaut. nut'),
+        baca.make_markup('trem. flaut. XP'),
+        baca.make_markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(),
     )
@@ -201,15 +201,15 @@ segment_maker(
 segment_maker(
     baca.scope('Cello Music Voice', 5, 8),
     baca.single_segment_transition(
-        baca.markup.make_markup('tasto poss.'),
-        baca.markup.make_markup('pos. ord.'),
+        baca.make_markup('tasto poss.'),
+        baca.make_markup('pos. ord.'),
         ),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 9, 12),
     baca.single_segment_transition(
-        baca.markup.make_markup('pos. ord.'),
+        baca.make_markup('pos. ord.'),
         baca.markup.XP(),
         ),
     )
@@ -218,14 +218,14 @@ segment_maker(
     baca.scope('Cello Music Voice', 13, 16),
     baca.single_segment_transition(
         baca.markup.XP(),
-        baca.markup.make_markup('pos. ord.'),
+        baca.make_markup('pos. ord.'),
         ),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 17, 20),
     baca.single_segment_transition(
-        baca.markup.make_markup('pos. ord.'),
-        baca.markup.make_markup('tasto poss.'),
+        baca.make_markup('pos. ord.'),
+        baca.make_markup('tasto poss.'),
         ),
     )

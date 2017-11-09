@@ -113,8 +113,8 @@ segment_maker(
     baca.hairpin('ppp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.rleaves()[-2:]),
     baca.single_segment_transition(
-        baca.markup.make_markup('trem. flaut. pont.'),
-        baca.markup.make_markup('trem. flaut. tast.'),
+        baca.make_markup('trem. flaut. pont.'),
+        baca.make_markup('trem. flaut. tast.'),
         ),
     )
 
@@ -131,7 +131,7 @@ segment_maker(
     baca.hairpin('ppp < mf', baca.leaves()[:5]),
     baca.hairpin('mf > niente', baca.rleaves()[-2:]),
     baca.single_segment_transition(
-        baca.markup.make_markup('trem. flaut. pont.'),
-        baca.markup.make_markup('trem. flaut. tast.'),
+        baca.make_markup('trem. flaut. pont.'),
+        baca.make_markup('trem. flaut. tast.'),
         ),
     )

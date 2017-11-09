@@ -97,7 +97,7 @@ segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
     baca.clef('treble'),
     baca.dynamic('ppp'),
-    baca.markup.make_markup(
+    baca.make_markup(
         'breathe discreetly before any downbeat as needed'
         ' (but do not circular breathe)'
         ),
