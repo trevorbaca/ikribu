@@ -420,46 +420,149 @@
                                     \italic
                                         ”
                                 }
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
-                        c'4 \repeatTie
-                        \revert RepeatTie.direction
-                        s1 * 11/12
-                        c'4
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        s1 * 11/12
-                        c'4
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        s1 * 11/12
-                        c'4
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
-                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         c'4 \repeatTie
                         \revert RepeatTie.direction
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        s1 * 11/12
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        s1 * 11/12
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        s1 * 11/12
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        c'4 \repeatTie
+                        \revert RepeatTie.direction
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         s1 * 11/12
                         \bar "|"
-                        \stopStaff
-                        \startStaff
                     }
                 }
                 \tag violin
@@ -527,8 +630,6 @@
                                             ”
                                     }
                             \revert TextScript.staff-padding
-                            \stopStaff
-                            \startStaff
                             s1 * 1
                             fs'1 :32 \glissando \< \pp
                                 ^ \markup {
