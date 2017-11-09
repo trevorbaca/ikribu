@@ -1139,14 +1139,15 @@
                             c'4 \p \<
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        graincircle:
-                                                        "π/3 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            graincircle:
+                                                            "π/3 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1166,14 +1167,15 @@
                             c'4 \p \<
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        graincircle:
-                                                        "π/4 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            graincircle:
+                                                            "π/4 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1191,14 +1193,15 @@
                             c'4 \p \<
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        graincircle:
-                                                        "π/3 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            graincircle:
+                                                            "π/3 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie \f \>
@@ -1226,14 +1229,15 @@
                             c'4 \p \<
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        graincircle:
-                                                        "π/2 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            graincircle:
+                                                            "π/2 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -1257,14 +1261,15 @@
                             c'4 \p \<
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        graincircle:
-                                                        "π/3 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            graincircle:
+                                                            "π/3 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie

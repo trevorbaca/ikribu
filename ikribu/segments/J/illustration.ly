@@ -183,14 +183,15 @@
                         d''4
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            \column
-                                                {
-                                                    stonecircle:
-                                                    "π/4 every quarter note"
-                                                }
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                \column
+                                                    {
+                                                        stonecircle:
+                                                        "π/4 every quarter note"
+                                                    }
                                 }
                             _ \markup {
                                 \larger
@@ -221,14 +222,15 @@
                         d''4
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            \column
-                                                {
-                                                    stonecircle:
-                                                    "π/3 every quarter note"
-                                                }
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                \column
+                                                    {
+                                                        stonecircle:
+                                                        "π/3 every quarter note"
+                                                    }
                                 }
                         d''4 \repeatTie
                         d''4 \repeatTie
@@ -252,14 +254,15 @@
                         d''4
                             ^ \markup {
                                 \whiteout
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            \column
-                                                {
-                                                    stonecircle:
-                                                    "π/2 every quarter note"
-                                                }
+                                    \upright
+                                        \override
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                \column
+                                                    {
+                                                        stonecircle:
+                                                        "π/2 every quarter note"
+                                                    }
                                 }
                             _ \markup {
                                 \larger
@@ -311,14 +314,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π/2 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π/2 every quarter note"
+                                                        }
                                     }
                                 _ \markup {
                                     \larger
@@ -357,14 +361,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -380,14 +385,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π/2 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π/2 every quarter note"
+                                                        }
                                     }
                                 _ \markup {
                                     \larger
@@ -440,14 +446,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π/3 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π/3 every quarter note"
+                                                        }
                                     }
                                 _ \markup {
                                     \larger
@@ -478,14 +485,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π/4 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π/4 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -497,14 +505,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π/2 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π/2 every quarter note"
+                                                        }
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -520,14 +529,15 @@
                             c'4
                                 ^ \markup {
                                     \whiteout
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                \column
-                                                    {
-                                                        stonecircle:
-                                                        "π/2 every quarter note"
-                                                    }
+                                        \upright
+                                            \override
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    \column
+                                                        {
+                                                            stonecircle:
+                                                            "π/2 every quarter note"
+                                                        }
                                     }
                                 _ \markup {
                                     \larger

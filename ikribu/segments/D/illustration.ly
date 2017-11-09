@@ -256,10 +256,11 @@
                                                 \line
                                                     {
                                                         \whiteout
-                                                            \override
-                                                                #'(box-padding . 0.5)
-                                                                \box
-                                                                    "1/2 clt"
+                                                            \upright
+                                                                \override
+                                                                    #'(box-padding . 0.5)
+                                                                    \box
+                                                                        "1/2 clt"
                                                     }
                                                 \line
                                                     {
