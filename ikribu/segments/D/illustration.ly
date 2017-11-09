@@ -224,7 +224,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "alto"
+                            \clef "percussion"
                             R1 * 3/4
                             R1 * 1
                             R1 * 1

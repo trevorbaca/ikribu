@@ -160,7 +160,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \clef "percussion"
+                        \clef "treble"
                         c'''2. \< \pp
                             - \tweak color #red
                             ^ \markup { @ }

@@ -319,7 +319,7 @@
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            \clef "alto"
+                            \clef "percussion"
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {

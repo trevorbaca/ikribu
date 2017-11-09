@@ -572,7 +572,7 @@
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            \clef "treble"
+                            \clef "percussion"
                             s1 * 15/4
                             \ottava #-1
                             \clef "bass"
