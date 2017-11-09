@@ -95,8 +95,8 @@ segment_maker(
     baca.scopes([bcl, vn, va], [(1, 7)]),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.one_line_staff(),
     baca.repeat_ties_up(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 

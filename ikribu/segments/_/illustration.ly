@@ -83,8 +83,13 @@
                             }
                         \clef "treble"
                         R1 * 7/4
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1/4
                         \bar "|"
+                        \stopStaff
+                        \startStaff
                     }
                 }
                 \tag violin
@@ -131,8 +136,13 @@
                                         \italic
                                             ”
                                     }
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             s1 * 1/4
                             \bar "|"
+                            \stopStaff
+                            \startStaff
                             \stopStaff
                             \startStaff
                         }
@@ -162,8 +172,13 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \clef "alto"
                             R1 * 7/4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 >>
@@ -203,8 +218,13 @@
                                             III
                                     }
                             \revert NoteHead.style
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             s1 * 1/4
                             \bar "|"
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 >>

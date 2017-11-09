@@ -109,9 +109,9 @@ segment_maker(
     baca.scope('Bass Clarinet Music Voice', 2, 17),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.one_line_staff(),
     baca.pitches('Bb2'),
     baca.repeat_ties_up(),
+    baca.staff_lines(1),
     )
 
 segment_maker(
@@ -128,7 +128,7 @@ segment_maker(
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (II)'),
-    baca.one_line_staff(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 

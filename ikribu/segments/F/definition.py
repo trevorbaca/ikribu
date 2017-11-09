@@ -136,8 +136,8 @@ segment_maker(
         'graincircle:',
         'π/2 every quarter note',
         ]),
-    baca.one_line_staff(),
     baca.repeat_ties_up(),
+    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 
