@@ -63,7 +63,7 @@ vc = 'Cello Music Voice'
 
 segment_maker(
     baca.make_scopes([bcl], [1, 3, 5, 7, 9, 11]),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(

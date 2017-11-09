@@ -79,39 +79,39 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 2, 3),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 6),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 9, 10),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 13, 14),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 17),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 20, 22),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 # violin #
 
 segment_maker(
     baca.make_scopes(['Violin Music Voice'], [1, 5, 8, 12, 16, 19]),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
@@ -180,62 +180,62 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 2, 3),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 5),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 6),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 8),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 9, 10),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 12),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 13, 14),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 16),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 17),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 19),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Cello Music Voice', 20, 21),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 ###############################################################################

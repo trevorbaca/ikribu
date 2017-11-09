@@ -58,17 +58,17 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
-    baca.tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations((1, 4)),
     )
 
 segment_maker(
     baca.scope('Violin Music Voice', 1, 3),
-    baca.repeated_durations((1, 4)),
+    baca.make_repeated_durations((1, 4)),
     )
 
 segment_maker(
     baca.scope('Viola Music Voice', 1, 3),
-    baca.repeated_durations((1, 4)),
+    baca.make_repeated_durations((1, 4)),
     )
 
 segment_maker(

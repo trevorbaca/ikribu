@@ -67,20 +67,20 @@ vc_rh = 'Cello RH Music Voice'
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 3, 4),
     abjad.new(
-        baca.repeated_durations((1, 4)),
+        baca.make_repeated_durations((1, 4)),
         tie_last=True,
         ),
     )
 
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 5),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
