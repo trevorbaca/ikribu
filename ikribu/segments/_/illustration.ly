@@ -89,7 +89,7 @@
                         R1 * 1/4
                         \bar "|"
                         \stopStaff
-                        \startStaff
+                        %%%\startStaff
                     }
                 }
                 \tag violin
@@ -142,9 +142,9 @@
                             s1 * 1/4
                             \bar "|"
                             \stopStaff
-                            \startStaff
+                            %%%\startStaff
                             \stopStaff
-                            \startStaff
+                            %%%\startStaff
                         }
                     }
                 >>
@@ -178,7 +178,7 @@
                             R1 * 1/4
                             \bar "|"
                             \stopStaff
-                            \startStaff
+                            %%%\startStaff
                         }
                     }
                 >>
@@ -224,7 +224,7 @@
                             s1 * 1/4
                             \bar "|"
                             \stopStaff
-                            \startStaff
+                            %%%\startStaff
                         }
                     }
                 >>
