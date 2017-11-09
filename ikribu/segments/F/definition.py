@@ -103,8 +103,8 @@ segment_maker(
     baca.markup.string_numbers([2, 3]),
     baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
-        baca.make_markup('trem. flaut. XP'),
-        baca.make_markup('trem. flaut. tast.'),
+        baca.markup('trem. flaut. XP'),
+        baca.markup('trem. flaut. tast.'),
         ),
     )
 
@@ -113,8 +113,8 @@ segment_maker(
     baca.markup.string_numbers([1, 2]),
     baca.pitches('<Eb4 F4>'),
     baca.single_segment_transition(
-        baca.make_markup('trem. flaut. XP'),
-        baca.make_markup('trem. flaut. tast.'),
+        baca.markup('trem. flaut. XP'),
+        baca.markup('trem. flaut. tast.'),
         ),
     )
 
@@ -124,8 +124,8 @@ segment_maker(
     baca.pitches('F#3'),
     baca.stem_tremolo(),
     baca.single_segment_transition(
-        baca.make_markup('(trem. flaut. tast.)'),
-        baca.make_markup('trem. XP (non. flaut.)'),
+        baca.markup('(trem. flaut. tast.)'),
+        baca.markup('trem. XP (non. flaut.)'),
         ),
     )
 
