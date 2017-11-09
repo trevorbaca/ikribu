@@ -54,7 +54,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.make_scopes(['Cello Music Voice'], [1, 3, 5, 7]),
-    baca.tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations((1, 4)),
     )
 
 ###############################################################################

@@ -61,7 +61,7 @@ segment_maker.validate_measures_per_stage()
 segment_maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
 
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 segment_maker(
@@ -86,7 +86,7 @@ segment_maker(
 
 segment_maker(
     baca.make_scopes(['Cello Music Voice'], [1, 2, 3, 4, 5, 6]),
-    baca.tied_repeated_durations((1, 4)),
+    baca.make_tied_repeated_durations((1, 4)),
     )
 
 ###############################################################################

@@ -51,7 +51,7 @@ segment_maker.validate_measures_per_stage()
 
 segment_maker(
     baca.scope('Violin Music Voice', 1),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.make_markup('grainfall (I)'),
@@ -61,7 +61,7 @@ segment_maker(
 
 segment_maker(
     baca.scope('Cello Music Voice', 1),
-    baca.tied_notes(repeat_ties=True),
+    baca.make_tied_notes(repeat_ties=True),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -72,14 +72,11 @@ segment_maker(
     )
 
 segment_maker(
-    baca.make_scopes(
-        [
-        'Bass Clarinet Music Voice',
-        'Violin Music Voice',
-        'Viola Music Voice',
-        'Cello Music Voice',
-        ],
-        [2],
+    baca.scopes(
+        ('Bass Clarinet Music Voice', 2),
+        ('Violin Music Voice', 2),
+        ('Viola Music Voice', 2),
+        ('Cello Music Voice', 2),
         ),
     baca.staff_lines(1),
     )
