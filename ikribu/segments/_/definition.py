@@ -83,5 +83,6 @@ segment_maker(
         ('Viola Music Voice', 2),
         ('Cello Music Voice', 2),
         ),
+    baca.bar_extent((-2, 2)),
     baca.staff_lines(1),
     )
