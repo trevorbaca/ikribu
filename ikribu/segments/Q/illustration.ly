@@ -188,145 +188,40 @@
                                     \italic
                                         ”
                                 }
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         c'4 \repeatTie
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         s1 * 13/2
                         \bar "|."
                     }
@@ -374,205 +269,55 @@
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\tongue #2
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             s1 * 11/4
                             \bar "|."
                         }
@@ -621,205 +366,55 @@
                                         \italic
                                             ”
                                     }
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             d'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             c'4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             b4 -\staccato
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             s1 * 11/4
                             \bar "|."
                         }
@@ -873,405 +468,147 @@
                                             \italic
                                                 ”
                                         }
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r16
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
                             }
                             \times 8/9 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r2
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent
                             }
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8. -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r2
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r16
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 -\accent ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r4
                             }
                             \times 2/3 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r4.
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r16
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
                             }
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 \repeatTie [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8. -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8.
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r4..
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r16
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r2..
                             }
                             \times 4/5 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r4
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r2
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
                             }
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 \repeatTie [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r16
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r2
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8.
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r4..
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'16 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8 -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r16
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'8. -\accent
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 r8
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent [
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
                                 c'16 -\accent ]
                             }
