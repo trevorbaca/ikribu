@@ -88,10 +88,9 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \override Staff.BarLine.bar-extent = #'(-2 . 2)
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
-                        \revert Staff.BarLine.bar-extent
                     }
                 }
                 \tag violin
@@ -120,7 +119,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \override TextScript.staff-padding = #4.5
+                            \once \override TextScript.staff-padding = #4.5
                             c'1..
                                 ^ \markup {
                                     \whiteout
@@ -142,14 +141,12 @@
                                         \italic
                                             ”
                                     }
-                            \revert TextScript.staff-padding
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             s1 * 1/4
                             \bar "|"
-                            \revert Staff.BarLine.bar-extent
                         }
                     }
                 >>
@@ -180,10 +177,9 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \bar "|"
-                            \revert Staff.BarLine.bar-extent
                         }
                     }
                 >>
@@ -210,7 +206,7 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \clef "treble"
-                            \override NoteHead.style = #'harmonic
+                            \once \override NoteHead.style = #'harmonic
                             fqf''1.. -\laissezVibrer \sfz
                                 ^ \markup {
                                     \whiteout
@@ -222,14 +218,12 @@
                                         \upright
                                             III
                                     }
-                            \revert NoteHead.style
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \override Staff.BarLine.bar-extent = #'(-2 . 2)
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             s1 * 1/4
                             \bar "|"
-                            \revert Staff.BarLine.bar-extent
                         }
                     }
                 >>
