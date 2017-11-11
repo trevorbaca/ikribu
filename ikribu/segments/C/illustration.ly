@@ -502,7 +502,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            \override TextScript.staff-padding = #4.5
+                            \once \override TextScript.staff-padding = #4.5
                             c'1..
                                 ^ \markup {
                                     \whiteout
@@ -524,7 +524,6 @@
                                         \italic
                                             ”
                                     }
-                            \revert TextScript.staff-padding
                             s1 * 1
                             fs'1 :32 \glissando \< \pp
                                 ^ \markup {
@@ -647,7 +646,7 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             \clef "treble"
-                            \override NoteHead.style = #'harmonic
+                            \once \override NoteHead.style = #'harmonic
                             fqf''1.. -\laissezVibrer \sfz
                                 ^ \markup {
                                     \whiteout
@@ -659,7 +658,6 @@
                                         \upright
                                             III
                                     }
-                            \revert NoteHead.style
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
