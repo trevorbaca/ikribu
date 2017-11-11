@@ -18,7 +18,7 @@ instruments = abjad.InstrumentDictionary([
     (
         'violin',
         abjad.Violin(
-            default_scope='StaffGroup',
+            context='StaffGroup',
             name_markup=baca.markup.instrument('Violin'),
             short_name_markup=baca.markup.short_instrument('Vn.'),
             )
@@ -26,7 +26,7 @@ instruments = abjad.InstrumentDictionary([
     (
         'viola',
         abjad.Viola(
-            default_scope='StaffGroup',
+            context='StaffGroup',
             name_markup=baca.markup.instrument('Viola'),
             short_name_markup=baca.markup.short_instrument('Va.'),
             ),
@@ -34,7 +34,7 @@ instruments = abjad.InstrumentDictionary([
     (
         'cello',
         abjad.Cello(
-            default_scope='StaffGroup',
+            context='StaffGroup',
             name_markup=baca.markup.instrument('Cello'),
             short_name_markup=baca.markup.short_instrument('Vc.'),
             ),
