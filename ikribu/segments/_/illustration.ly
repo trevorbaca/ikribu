@@ -88,8 +88,10 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
+                        \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
+                        \revert Staff.BarLine.bar-extent
                     }
                 }
                 \tag violin
@@ -144,8 +146,10 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             s1 * 1/4
                             \bar "|"
+                            \revert Staff.BarLine.bar-extent
                         }
                     }
                 >>
@@ -176,8 +180,10 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \bar "|"
+                            \revert Staff.BarLine.bar-extent
                         }
                     }
                 >>
@@ -220,8 +226,10 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             s1 * 1/4
                             \bar "|"
+                            \revert Staff.BarLine.bar-extent
                         }
                     }
                 >>
