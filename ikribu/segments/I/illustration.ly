@@ -13,66 +13,42 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ulongfermata"
-                            }
-                }
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ulongfermata"
-                            }
-                }
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ulongfermata"
-                            }
-                }
-                {
-                    \time 3/4
-                    R1 * 3/4
-                }
-                {
-                    \time 1/4
-                    \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
-                    \once \override Score.MultiMeasureRest.transparent = ##t
-                    \once \override Score.TimeSignature.stencil = ##f
-                    R1 * 1/4
-                        - \markup {
-                            \musicglyph
-                                #"scripts.ulongfermata"
-                            }
-                }
+                R1 * 3/4
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ulongfermata"
+                        }
+                R1 * 3/4
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ulongfermata"
+                        }
+                R1 * 3/4
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ulongfermata"
+                        }
+                R1 * 3/4
+                \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
+                \once \override Score.MultiMeasureRest.transparent = ##t
+                \once \override Score.TimeSignature.stencil = ##f
+                R1 * 1/4
+                    - \markup {
+                        \musicglyph
+                            #"scripts.ulongfermata"
+                        }
             }
             \context GlobalSkips = "Global Skips" {
                 {
