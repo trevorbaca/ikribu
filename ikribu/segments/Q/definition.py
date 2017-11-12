@@ -32,7 +32,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-18, -4),
     ignore_repeat_pitch_classes=True,
@@ -48,30 +48,30 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(12)
-segment_maker.validate_stage_count(5)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(12)
+maker.validate_stage_count(5)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 1, 3),
     baca.make_repeated_durations((1, 4)),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 1, 3),
     baca.make_repeated_durations((1, 4)),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 4),
     ikribu.inscription_rhythm(),
     )
@@ -80,7 +80,7 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -89,7 +89,7 @@ segment_maker(
     baca.pitches('Bb2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.double_tonguing(),
@@ -101,7 +101,7 @@ segment_maker(
     baca.pitches('B3 C4 D4'),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -113,7 +113,7 @@ segment_maker(
     baca.staccati(),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 4),
     baca.accents(),
     baca.clef('percussion'),

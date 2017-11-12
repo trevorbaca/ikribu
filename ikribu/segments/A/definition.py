@@ -32,7 +32,7 @@ layout_measure_map = baca.LayoutMeasureMap([
     baca.lbsd(20, [15, 20, 20], baca.measure(0)),
     ])
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
@@ -46,20 +46,20 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(7)
-segment_maker.validate_stage_count(4)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(7)
+maker.validate_stage_count(4)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 2, 3),
     baca.make_tied_repeated_durations((1, 4)),
     )
@@ -68,27 +68,27 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 1),
     baca.clef('treble'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.pitches('D2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.hairpin('ppp < f', baca.leaves()[:2]),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.hairpin('f > niente', baca.rleaves()[-4:]),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 2, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
