@@ -12,56 +12,6 @@
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalRests = "Global Rests" {
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 1/6
-                    R1 * 1/6
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 1/6
-                    R1 * 1/6
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 1/6
-                    R1 * 1/6
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 1/6
-                    R1 * 1/6
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 1/6
-                    R1 * 1/6
-                }
-                {
-                    \time 7/4
-                    R1 * 7/4
-                }
-                {
-                    \time 1/6
-                    R1 * 1/6
-                }
-            }
             \context GlobalSkips = "Global Skips" {
                 {
                     \time 7/4
