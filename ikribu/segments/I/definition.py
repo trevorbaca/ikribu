@@ -30,7 +30,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -44,15 +44,15 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(8)
-segment_maker.validate_stage_count(8)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(8)
+maker.validate_stage_count(8)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.make_scopes(['Cello Music Voice'], [1, 3, 5, 7]),
     baca.make_tied_repeated_durations((1, 4)),
     )
@@ -61,7 +61,7 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 8),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),

@@ -36,7 +36,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -50,41 +50,41 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(33)
-segment_maker.validate_stage_count(9)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(33)
+maker.validate_stage_count(9)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
 
     baca.make_tied_notes(repeat_ties=True),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 1, 4),
     ikribu.clb_rhythm([4]),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 6, 8),
     ikribu.triplet_rhythm(),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 1, 2),
     ikribu.clb_rhythm([2]),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 4, 8),
     ikribu.triplet_rhythm(),
     )
 
-segment_maker(
+maker(
     baca.make_scopes(['Cello Music Voice'], [1, 2, 3, 4, 5, 6]),
     baca.make_tied_repeated_durations((1, 4)),
     )
@@ -93,7 +93,7 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 7),
     baca.clef('treble'),
     baca.dynamic('ppp'),
@@ -104,13 +104,13 @@ segment_maker(
     baca.pitches('C2'),
     )
 
-segment_maker(
+maker(
     baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 8)]),
     baca.effort_dynamic('mp'),
     baca.staff_lines(1),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 6, 8),
     baca.piecewise(
         baca.hairpin(),
@@ -121,7 +121,7 @@ segment_maker(
     baca.staff_positions([0]),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 4, 8),
     baca.piecewise(
         baca.hairpin(),
@@ -134,13 +134,13 @@ segment_maker(
     baca.staff_positions([0]),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 8),
     baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 6),
     baca.piecewise(
         baca.hairpin(),
@@ -149,7 +149,7 @@ segment_maker(
         ),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 2),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -157,7 +157,7 @@ segment_maker(
         ]),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 3),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -165,7 +165,7 @@ segment_maker(
         ]),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 4),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -173,7 +173,7 @@ segment_maker(
         ]),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 5),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -181,7 +181,7 @@ segment_maker(
         ]),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 6),
     baca.markup.boxed_lines([
         'graincircle:',
@@ -189,35 +189,35 @@ segment_maker(
         ]),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 1, 4),
     baca.staccati(),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 4),
     baca.hairpin('> niente'),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 5, 8),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 1, 2),
     baca.staccati(),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 2),
     baca.hairpin('> niente', baca.tleaves().with_next_leaf()),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 4, 8),
     baca.accents(baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 5], 11)]),

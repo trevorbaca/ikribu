@@ -33,7 +33,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -47,9 +47,9 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(21)
-segment_maker.validate_stage_count(21)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(21)
+maker.validate_stage_count(21)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
@@ -63,7 +63,7 @@ vn_rh = 'Violin RH Music Voice'
 va_rh = 'Viola RH Music Voice'
 vc_rh = 'Cello RH Music Voice'
 
-segment_maker(
+maker(
     baca.make_scopes(
         [bcl],
         [(1, 2), (3, 6), 7, 8, 9, 10,
@@ -72,17 +72,17 @@ segment_maker(
     baca.make_tied_notes(repeat_ties=True),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 9, 20),
     baca.make_tied_notes(repeat_ties=True),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 9, 20),
     baca.make_tied_notes(repeat_ties=True),
     )
 
-segment_maker(
+maker(
     baca.make_scopes([vc], [(5, 8), (9, 12), (13, 16), (17, 20)]),
     baca.make_tied_notes(repeat_ties=True),
     )
@@ -91,75 +91,75 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     # TODO: remove after clef metadata work again:
     baca.clef('treble'),
     baca.pitches('<Bb1 D4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 3, 6),
     baca.pitches('<Bb1 F4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 7),
     baca.pitches('<Bb1 D4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 8),
     baca.pitches('Bb1'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 9),
     baca.pitches('<Bb1 D4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 10),
     baca.pitches('<Bb1 F4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 11, 12),
     baca.pitches('<Bb1 Ab~4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 13),
     baca.pitches('<Bb1 F4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 14),
     baca.pitches('Bb1'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 15, 16),
     baca.pitches('<Bb1 D4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 17),
     baca.pitches('<Bb1 F4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 18),
     baca.pitches('<Bb1 D4>'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 19, 20),
     baca.pitches('Bb1'),
     baca.hairpin('p > niente', baca.rleaves()[-3:]),
     )
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 9, 20),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
@@ -172,7 +172,7 @@ segment_maker(
     baca.stem_tremolo(),
     )
 
-segment_maker(
+maker(
     baca.scope('Viola Music Voice', 9, 20),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
@@ -185,7 +185,7 @@ segment_maker(
     baca.stem_tremolo(),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 20),
     baca.clef('bass'),
     baca.ottava_bassa(),
@@ -198,7 +198,7 @@ segment_maker(
     baca.pitches('Bb0'),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 5, 8),
     baca.single_segment_transition(
         baca.markup('tasto poss.'),
@@ -206,7 +206,7 @@ segment_maker(
         ),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 9, 12),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
@@ -214,7 +214,7 @@ segment_maker(
         ),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 13, 16),
     baca.single_segment_transition(
         baca.markup.XP(),
@@ -222,7 +222,7 @@ segment_maker(
         ),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 17, 20),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),

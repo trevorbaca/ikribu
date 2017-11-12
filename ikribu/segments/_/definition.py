@@ -32,7 +32,7 @@ layout_measure_map = baca.LayoutMeasureMap([
     baca.lbsd(60, [15, 20, 20], baca.measure(0)),
     ])
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
@@ -45,15 +45,15 @@ segment_maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     )
 
-segment_maker.validate_measure_count(2)
-segment_maker.validate_stage_count(2)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(2)
+maker.validate_stage_count(2)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ################################### COMMANDS ##################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Violin Music Voice', 1),
     baca.make_tied_notes(repeat_ties=True),
     baca.clef('percussion'),
@@ -64,7 +64,7 @@ segment_maker(
     baca.text_script_staff_padding(4.5),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1),
     baca.make_tied_notes(repeat_ties=True),
     baca.clef('treble'),
@@ -76,7 +76,7 @@ segment_maker(
     baca.pitches('F~5'),
     )
 
-segment_maker(
+maker(
     baca.scopes(
         ('Bass Clarinet Music Voice', 2),
         ('Violin Music Voice', 2),

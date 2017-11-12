@@ -34,7 +34,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -48,9 +48,9 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(12)
-segment_maker.validate_stage_count(12)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(12)
+maker.validate_stage_count(12)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
@@ -61,12 +61,12 @@ vn = 'Violin Music Voice'
 va = 'Viola Music Voice'
 vc = 'Cello Music Voice'
 
-segment_maker(
+maker(
     baca.make_scopes([bcl], [1, 3, 5, 7, 9, 11]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 11),
     baca.make_notes(repeat_ties=True),
     )
@@ -75,43 +75,43 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 1),
     baca.hairpin('ppp < mp', baca.rleaves()),
     baca.pitches('G2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 3),
     baca.hairpin('pp < mf', baca.rleaves()),
     baca.pitches('Gb2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 5),
     baca.hairpin('p < f', baca.rleaves()),
     baca.pitches('F2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 7),
     baca.hairpin('mf < ff', baca.rleaves()),
     baca.pitches('E2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 9),
     baca.hairpin('f < fff', baca.rleaves()),
     baca.pitches('Eb2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Bass Clarinet Music Voice', 11),
     baca.hairpin('ff < ffff', baca.rleaves()),
     baca.pitches('D2'),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 12),
     baca.clef('treble'),
     baca.glissando(),

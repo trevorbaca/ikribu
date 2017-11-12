@@ -30,7 +30,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-segment_maker = baca.SegmentMaker(
+maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -44,15 +44,15 @@ segment_maker = baca.SegmentMaker(
     transpose_score=True,
     )
 
-segment_maker.validate_measure_count(11)
-segment_maker.validate_stage_count(3)
-segment_maker.validate_measures_per_stage()
+maker.validate_measure_count(11)
+maker.validate_stage_count(3)
+maker.validate_measures_per_stage()
 
 ###############################################################################
 ##################################### TIME ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Cello RH Music Voice', 1, 2),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([8, 20], 20),
@@ -60,7 +60,7 @@ segment_maker(
         ),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 2),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
@@ -69,7 +69,7 @@ segment_maker(
 #################################### COLOR ####################################
 ###############################################################################
 
-segment_maker(
+maker(
     baca.scope('Cello RH Music Voice', 1, 2),
     baca.clef('percussion'),
     baca.piecewise(
@@ -84,7 +84,7 @@ segment_maker(
     ikribu.BowContactPointCommand(rotation=-2),
     )
 
-segment_maker(
+maker(
     baca.scope('Cello Music Voice', 1, 2),
     baca.clef('tenor'),
     baca.glissando(),
