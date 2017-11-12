@@ -8,10 +8,7 @@ import ikribu
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    2,
-    3,
-    1,
-    abjad.Fermata('longfermata'),
+    2, 3, 1, abjad.Fermata('longfermata'),
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -31,10 +28,15 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
+layout_measure_map = baca.LayoutMeasureMap([
+    baca.lbsd(20, [15, 20, 20], baca.measure(0)),
+    ])
+
 segment_maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
+    layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),

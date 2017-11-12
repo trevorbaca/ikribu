@@ -91,6 +91,7 @@
                         \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
+                        \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                     }
                 }
                 \tag violin
@@ -147,6 +148,7 @@
                             \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             s1 * 1/4
                             \bar "|"
+                            \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         }
                     }
                 >>
@@ -180,6 +182,7 @@
                             \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \bar "|"
+                            \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         }
                     }
                 >>
@@ -224,6 +227,7 @@
                             \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             s1 * 1/4
                             \bar "|"
+                            \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         }
                     }
                 >>
