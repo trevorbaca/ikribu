@@ -13,7 +13,9 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
+                % measure 108
                 R1 * 3/4
+                % measure 109
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -22,7 +24,9 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
+                % measure 110
                 R1 * 3/4
+                % measure 111
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -31,7 +35,9 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
+                % measure 112
                 R1 * 3/4
+                % measure 113
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -40,7 +46,9 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
+                % measure 114
                 R1 * 3/4
+                % measure 115
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -51,6 +59,7 @@
                         }
             }
             \context GlobalSkips = "Global Skips" {
+                % measure 108
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \mark #9
@@ -71,30 +80,37 @@
                             42
                         }
                     }
+                % measure 109
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                % measure 110
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                % measure 111
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                % measure 112
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                % measure 113
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                % measure 114
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                % measure 115
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
@@ -106,14 +122,22 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        % measure 108
                         \clef "percussion"
                         R1 * 3/4
+                        % measure 109
                         R1 * 1/4
+                        % measure 110
                         R1 * 3/4
+                        % measure 111
                         R1 * 1/4
+                        % measure 112
                         R1 * 3/4
+                        % measure 113
                         R1 * 1/4
+                        % measure 114
                         R1 * 3/4
+                        % measure 115
                         R1 * 1/4
                         \bar "|"
                     }
@@ -122,27 +146,43 @@
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                            % measure 108
                             R1 * 3/4
+                            % measure 109
                             R1 * 1/4
+                            % measure 110
                             R1 * 3/4
+                            % measure 111
                             R1 * 1/4
+                            % measure 112
                             R1 * 3/4
+                            % measure 113
                             R1 * 1/4
+                            % measure 114
                             R1 * 3/4
+                            % measure 115
                             R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            % measure 108
                             \clef "percussion"
                             R1 * 3/4
+                            % measure 109
                             R1 * 1/4
+                            % measure 110
                             R1 * 3/4
+                            % measure 111
                             R1 * 1/4
+                            % measure 112
                             R1 * 3/4
+                            % measure 113
                             R1 * 1/4
+                            % measure 114
                             R1 * 3/4
+                            % measure 115
                             R1 * 1/4
                             \bar "|"
                         }
@@ -152,27 +192,43 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                            % measure 108
                             R1 * 3/4
+                            % measure 109
                             R1 * 1/4
+                            % measure 110
                             R1 * 3/4
+                            % measure 111
                             R1 * 1/4
+                            % measure 112
                             R1 * 3/4
+                            % measure 113
                             R1 * 1/4
+                            % measure 114
                             R1 * 3/4
+                            % measure 115
                             R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            % measure 108
                             \clef "treble"
                             R1 * 3/4
+                            % measure 109
                             R1 * 1/4
+                            % measure 110
                             R1 * 3/4
+                            % measure 111
                             R1 * 1/4
+                            % measure 112
                             R1 * 3/4
+                            % measure 113
                             R1 * 1/4
+                            % measure 114
                             R1 * 3/4
+                            % measure 115
                             R1 * 1/4
                             \bar "|"
                         }
@@ -182,19 +238,28 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                            % measure 108
                             R1 * 3/4
+                            % measure 109
                             R1 * 1/4
+                            % measure 110
                             R1 * 3/4
+                            % measure 111
                             R1 * 1/4
+                            % measure 112
                             R1 * 3/4
+                            % measure 113
                             R1 * 1/4
+                            % measure 114
                             R1 * 3/4
+                            % measure 115
                             R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
+                            % measure 108
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -227,19 +292,26 @@
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 109
                             s1 * 1/4
+                            % measure 110
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 111
                             s1 * 1/4
+                            % measure 112
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 113
                             s1 * 1/4
+                            % measure 114
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie
                             \revert RepeatTie.direction
+                            % measure 115
                             s1 * 1/4
                             \bar "|"
                         }
