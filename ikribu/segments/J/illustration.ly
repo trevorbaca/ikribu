@@ -13,14 +13,23 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
+                % measure 116
                 R1 * 7/4
+                % measure 117
                 R1 * 2
+                % measure 118
                 R1 * 1
+                % measure 119
                 R1 * 1
+                % measure 120
                 R1 * 3/4
+                % measure 121
                 R1 * 2
+                % measure 122
                 R1 * 7/4
+                % measure 123
                 R1 * 3/4
+                % measure 124
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -29,7 +38,9 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
+                % measure 125
                 R1 * 1
+                % measure 126
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -40,6 +51,7 @@
                         }
             }
             \context GlobalSkips = "Global Skips" {
+                % measure 116
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \mark #10
@@ -60,38 +72,47 @@
                             42
                         }
                     }
+                % measure 117
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
+                % measure 118
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
+                % measure 119
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
+                % measure 120
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                % measure 121
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
+                % measure 122
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
+                % measure 123
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                % measure 124
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                % measure 125
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
@@ -111,6 +132,7 @@
                             58
                         }
                     }
+                % measure 126
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
@@ -122,6 +144,7 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                        % measure 116
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -158,6 +181,7 @@
                         d''4 \repeatTie
                         d''4 \repeatTie
                         d''4 \repeatTie
+                        % measure 117
                         d''4 \repeatTie
                         d''4 \repeatTie
                         d''4 \repeatTie
@@ -166,6 +190,7 @@
                         d''4 \repeatTie
                         d''4 \repeatTie
                         d''4 \repeatTie
+                        % measure 118
                         d''4
                             ^ \markup {
                                 \whiteout
@@ -182,6 +207,16 @@
                         d''4 \repeatTie
                         d''4 \repeatTie
                         d''4 \repeatTie
+                        % measure 119
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        % measure 120
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        d''4 \repeatTie
+                        % measure 121
                         d''4 \repeatTie
                         d''4 \repeatTie
                         d''4 \repeatTie
@@ -190,14 +225,9 @@
                         d''4 \repeatTie
                         d''4 \repeatTie
                         d''4 \repeatTie
-                        d''4 \repeatTie
-                        d''4 \repeatTie
-                        d''4 \repeatTie
-                        d''4 \repeatTie
-                        d''4 \repeatTie
-                        d''4 \repeatTie
-                        d''4 \repeatTie
+                        % measure 122
                         s1 * 11/4
+                        % measure 125
                         d''4
                             ^ \markup {
                                 \whiteout
@@ -227,6 +257,7 @@
                         d''4 \repeatTie
                         d''4 \repeatTie
                         \revert RepeatTie.direction
+                        % measure 126
                         s1 * 1/4
                         \bar "|"
                     }
@@ -235,22 +266,34 @@
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                            % measure 116
                             R1 * 7/4
+                            % measure 117
                             R1 * 2
+                            % measure 118
                             R1 * 1
+                            % measure 119
                             R1 * 1
+                            % measure 120
                             R1 * 3/4
+                            % measure 121
                             R1 * 2
+                            % measure 122
                             R1 * 7/4
+                            % measure 123
                             R1 * 3/4
+                            % measure 124
                             R1 * 1/4
+                            % measure 125
                             R1 * 1
+                            % measure 126
                             R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
+                            % measure 116
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -287,6 +330,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 117
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -295,14 +339,17 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 118
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 119
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 120
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -318,6 +365,7 @@
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 121
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -326,7 +374,9 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 122
                             s1 * 11/4
+                            % measure 125
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -356,6 +406,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             \revert RepeatTie.direction
+                            % measure 126
                             s1 * 1/4
                             \bar "|"
                         }
@@ -365,22 +416,34 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                            % measure 116
                             R1 * 7/4
+                            % measure 117
                             R1 * 2
+                            % measure 118
                             R1 * 1
+                            % measure 119
                             R1 * 1
+                            % measure 120
                             R1 * 3/4
+                            % measure 121
                             R1 * 2
+                            % measure 122
                             R1 * 7/4
+                            % measure 123
                             R1 * 3/4
+                            % measure 124
                             R1 * 1/4
+                            % measure 125
                             R1 * 1
+                            % measure 126
                             R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
+                            % measure 116
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -417,6 +480,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 117
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -425,6 +489,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 118
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -441,10 +506,12 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 119
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 120
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -460,6 +527,7 @@
                                     }
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 121
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
@@ -468,7 +536,9 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             c'4 \repeatTie
+                            % measure 122
                             s1 * 11/4
+                            % measure 125
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -498,6 +568,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             \revert RepeatTie.direction
+                            % measure 126
                             s1 * 1/4
                             \bar "|"
                         }
@@ -507,24 +578,37 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                            % measure 116
                             R1 * 7/4
+                            % measure 117
                             R1 * 2
+                            % measure 118
                             R1 * 1
+                            % measure 119
                             R1 * 1
+                            % measure 120
                             R1 * 3/4
+                            % measure 121
                             R1 * 2
+                            % measure 122
                             R1 * 7/4
+                            % measure 123
                             R1 * 3/4
+                            % measure 124
                             R1 * 1/4
+                            % measure 125
                             R1 * 1
+                            % measure 126
                             R1 * 1/4
                             \bar "|"
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
+                            % measure 116
                             \clef "percussion"
                             s1 * 15/4
+                            % measure 118
                             \ottava #-1
                             \clef "bass"
                             d,,1 \p
@@ -533,12 +617,18 @@
                                         \upright
                                             "vib. poco."
                                     }
+                            % measure 119
                             d,,1 \repeatTie
+                            % measure 120
                             d,,2. \repeatTie
+                            % measure 121
                             d,,\breve \repeatTie
+                            % measure 122
                             d,,1.. \repeatTie
+                            % measure 123
                             d,,2. \repeatTie \< \p
                             \ottava #0
+                            % measure 124
                             s1 * 3/2 \mf
                             \bar "|"
                         }
