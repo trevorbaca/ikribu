@@ -14,6 +14,8 @@
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
                 % measure 87
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+                #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {

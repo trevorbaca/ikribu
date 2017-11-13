@@ -32,13 +32,20 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
+layout_measure_map = baca.LayoutMeasureMap([
+    baca.lbsd(20, [15, 20, 20], baca.skip(0)),
+    baca.line_break(baca.skip(4)), 
+    baca.lbsd(140, [15, 20, 20], baca.skip(5)),
+    ])
+
 maker = baca.SegmentMaker(
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
-    final_markup_extra_offset=(-18, -4),
+    final_markup_extra_offset=(-18, -6),
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
+    layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),

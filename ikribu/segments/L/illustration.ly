@@ -89,6 +89,8 @@
             }
             \context GlobalSkips = "Global Skips" {
                 % measure 143
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+                #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \mark #12
@@ -154,7 +156,10 @@
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                \break
                 % measure 153
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+                #'((Y-offset . 140) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
@@ -199,7 +204,10 @@
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
+                \break
                 % measure 162
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+                #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
@@ -244,7 +252,10 @@
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
+                \break
                 % measure 171
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+                #'((Y-offset . 140) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection

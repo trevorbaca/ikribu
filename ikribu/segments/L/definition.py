@@ -36,11 +36,22 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
+layout_measure_map = baca.LayoutMeasureMap([
+    baca.lbsd(20, [15, 20, 20], baca.skip(0)),
+    baca.line_break(baca.skip(9)), 
+    baca.lbsd(140, [15, 20, 20], baca.skip(10)),
+    baca.line_break(baca.skip(18)), 
+    baca.lbsd(20, [15, 20, 20], baca.skip(19)),
+    baca.line_break(baca.skip(27)), 
+    baca.lbsd(140, [15, 20, 20], baca.skip(28)),
+    ])
+
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
+    layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
