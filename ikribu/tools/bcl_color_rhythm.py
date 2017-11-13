@@ -20,4 +20,4 @@ def bcl_color_rhythm(rotation_1=None, rotation_2=None):
             repeat_ties=True,
             ),
         )
-    return baca.RhythmBuilder(rhythm_maker=rhythm_maker)
+    return baca.RhythmCommand(rhythm_maker=rhythm_maker)
