@@ -10,6 +10,6 @@ def triplet_rhythm():
             avoid_dots=True,
             ),
         )
-    return baca.RhythmBuilder(
+    return baca.RhythmCommand(
         rhythm_maker=rhythm_maker,
         )
