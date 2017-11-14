@@ -156,7 +156,7 @@ maker(
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('p f'),
-        baca.logical_measures(),
+        baca.group_by_measure(),
         ),
     )
 
