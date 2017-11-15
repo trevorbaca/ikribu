@@ -383,7 +383,7 @@
                             - \tweak color #red
                             ^ \markup { @ }
                         % measure 238
-                        s1 * 1/4 \!
+                        R1 * 1/4 \!
                         \bar "|"
                     }
                 }
@@ -440,7 +440,7 @@
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             % measure 218
                             \clef "percussion"
-                            s1 * 19/2
+                            R1 * 19/2
                             % measure 226
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -491,7 +491,7 @@
                                         "trem. flaut. nut"
                                 }
                             % measure 238
-                            s1 * 1/4 \!
+                            R1 * 1/4 \!
                             \bar "|"
                         }
                     }
@@ -549,7 +549,7 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 218
                             \clef "treble"
-                            s1 * 19/2
+                            R1 * 19/2
                             % measure 226
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -600,7 +600,7 @@
                                         "trem. flaut. nut"
                                 }
                             % measure 238
-                            s1 * 1/4 \!
+                            R1 * 1/4 \!
                             \bar "|"
                         }
                     }
@@ -658,7 +658,7 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 218
                             \clef "bass"
-                            s1 * 7/2
+                            R1 * 7/2
                             % measure 222
                             \ottava #-1
                             \once \override Accidental.color = #red
@@ -906,7 +906,7 @@
                                 }
                             \ottava #0
                             % measure 238
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }

@@ -146,7 +146,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                             \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         }
@@ -233,7 +233,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                             \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         }

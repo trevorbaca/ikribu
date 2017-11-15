@@ -200,7 +200,7 @@
                         % measure 245
                         cs2. \repeatTie
                         % measure 246
-                        s1 * 1/4 \!
+                        R1 * 1/4 \!
                         \bar "|"
                     }
                 }
@@ -389,7 +389,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 244
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|"
                         }
                     }
@@ -435,7 +435,7 @@
                                 a8
                             }
                             % measure 244
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|"
                         }
                     }
@@ -639,7 +639,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 244
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|"
                         }
                     }
@@ -682,7 +682,7 @@
                                 e''4
                             }
                             % measure 244
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|"
                         }
                     }
@@ -880,7 +880,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 244
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|"
                         }
                     }
@@ -923,7 +923,7 @@
                                 c'4.
                             }
                             % measure 244
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|"
                         }
                     }

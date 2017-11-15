@@ -397,7 +397,7 @@
                                 c'1 -\accent \f
                             }
                             % measure 65
-                            s1 * 7/4
+                            R1 * 7/4
                             {
                                 % measure 67
                                 c'4 -\accent \f \>
@@ -411,7 +411,7 @@
                                 c'2 -\accent \f
                             }
                             % measure 69
-                            s1 * 5/4
+                            R1 * 5/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 % measure 71
@@ -426,7 +426,7 @@
                                 c'1 -\accent \f
                             }
                             % measure 73
-                            s1 * 7/2
+                            R1 * 7/2
                             {
                                 % measure 75
                                 c'4 :32 \f \>
@@ -440,7 +440,7 @@
                                 c'4 -\accent \f
                             }
                             % measure 77
-                            s1 * 15/4
+                            R1 * 15/4
                             \bar "|"
                         }
                     }
@@ -491,7 +491,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            s1 * 1/2
+                            R1 * 1/2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 % measure 64
@@ -514,7 +514,7 @@
                                 c'4 -\accent \f
                             }
                             % measure 66
-                            s1 * 7/4
+                            R1 * 7/4
                             \times 2/3 {
                                 % measure 68
                                 c'2 -\accent \f \>
@@ -528,7 +528,7 @@
                                 c'4 -\accent \f
                             }
                             % measure 70
-                            s1 * 9/4
+                            R1 * 9/4
                             \times 2/3 {
                                 % measure 72
                                 c'1 -\accent \f \>
@@ -543,7 +543,7 @@
                                 c'1 -\accent \f
                             }
                             % measure 74
-                            s1 * 5/2
+                            R1 * 5/2
                             \times 2/3 {
                                 % measure 76
                                 c'4 :32 \f \>
@@ -558,7 +558,7 @@
                                 c'1 -\accent \f
                             }
                             % measure 78
-                            s1 * 2
+                            R1 * 2
                             \bar "|"
                         }
                     }
@@ -606,7 +606,7 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 63
                             \clef "bass"
-                            s1 * 7
+                            R1 * 7
                             % measure 71
                             f1.. :32 \< \p
                                 ^ \markup {

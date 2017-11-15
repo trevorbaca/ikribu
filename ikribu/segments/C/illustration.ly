@@ -316,7 +316,7 @@
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 35
                         \clef "treble"
-                        s1 * 7/4
+                        R1 * 7/4
                         % measure 36
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
@@ -358,7 +358,7 @@
                         c'4 \repeatTie
                         \revert RepeatTie.direction
                         % measure 38
-                        s1 * 11/12
+                        R1 * 11/12
                         % measure 40
                         c'4
                         c'4 \repeatTie
@@ -370,7 +370,7 @@
                         c'4 \repeatTie
                         c'4 \repeatTie
                         % measure 42
-                        s1 * 11/12
+                        R1 * 11/12
                         % measure 44
                         c'4
                         c'4 \repeatTie
@@ -382,7 +382,7 @@
                         c'4 \repeatTie
                         c'4 \repeatTie
                         % measure 46
-                        s1 * 11/12
+                        R1 * 11/12
                         % measure 48
                         c'4
                         c'4 \repeatTie
@@ -395,7 +395,7 @@
                         c'4 \repeatTie
                         \revert RepeatTie.direction
                         % measure 50
-                        s1 * 11/12
+                        R1 * 11/12
                         \bar "|"
                     }
                 }
@@ -482,7 +482,7 @@
                                             ”
                                     }
                             % measure 36
-                            s1 * 1
+                            R1 * 1
                             % measure 37
                             fs'1 :32 \glissando \< \pp
                                 ^ \markup {
@@ -493,25 +493,25 @@
                             % measure 38
                             gs'2. :32 \p
                             % measure 39
-                            s1 * 7/6
+                            R1 * 7/6
                             % measure 41
                             gs'1 :32 \glissando \> \p
                             % measure 42
                             fs'2. :32 \pp
                             % measure 43
-                            s1 * 7/6
+                            R1 * 7/6
                             % measure 45
                             fs'1 :32 \glissando \< \pp
                             % measure 46
                             gs'2. :32 \p
                             % measure 47
-                            s1 * 7/6
+                            R1 * 7/6
                             % measure 49
                             gs'1 :32 \glissando \> \p
                             % measure 50
                             fs'2. :32 \pp
                             % measure 51
-                            s1 * 1/6
+                            R1 * 1/6
                             \bar "|"
                         }
                     }
@@ -573,7 +573,7 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 35
                             \clef "percussion"
-                            s1 * 11/4
+                            R1 * 11/4
                             % measure 37
                             f'1 :32 \glissando \< \pp
                                 ^ \markup {
@@ -584,25 +584,25 @@
                             % measure 38
                             e'2. :32 \p
                             % measure 39
-                            s1 * 7/6
+                            R1 * 7/6
                             % measure 41
                             e'1 :32 \glissando \> \p
                             % measure 42
                             f'2. :32 \pp
                             % measure 43
-                            s1 * 7/6
+                            R1 * 7/6
                             % measure 45
                             f'1 :32 \glissando \< \pp
                             % measure 46
                             e'2. :32 \p
                             % measure 47
-                            s1 * 7/6
+                            R1 * 7/6
                             % measure 49
                             e'1 :32 \glissando \> \p
                             % measure 50
                             f'2. :32 \pp
                             % measure 51
-                            s1 * 1/6
+                            R1 * 1/6
                             \bar "|"
                         }
                     }
@@ -744,7 +744,7 @@
                             \revert NoteHead.style
                             \revert TupletBracket.direction
                             % measure 51
-                            s1 * 1/6
+                            R1 * 1/6
                             \bar "|"
                         }
                     }

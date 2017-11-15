@@ -109,7 +109,7 @@
                         % measure 7
                         e2. \repeatTie
                         % measure 8
-                        s1 * 2 \!
+                        R1 * 2 \!
                         \bar "|"
                     }
                 }
@@ -180,7 +180,7 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 3
                             \clef "alto"
-                            s1 * 15/4
+                            R1 * 15/4
                             % measure 5
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -234,7 +234,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             % measure 9
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }

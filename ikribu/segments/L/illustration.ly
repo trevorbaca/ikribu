@@ -350,7 +350,7 @@
                         % measure 170
                         d1 \repeatTie
                         % measure 171
-                        s1 * 17/4
+                        R1 * 17/4
                         \bar "|"
                     }
                 }
@@ -711,7 +711,7 @@
                                 b8 -\staccato \! ]
                             }
                             % measure 159
-                            s1 * 5
+                            R1 * 5
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 % measure 163
@@ -788,7 +788,7 @@
                                 c'4 -\accent \ff
                             }
                             % measure 175
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -1006,7 +1006,7 @@
                                 b8 -\staccato ]
                             }
                             % measure 151
-                            s1 * 7/2 \!
+                            R1 * 7/2 \!
                             \times 2/3 {
                                 % measure 155
                                 c'4 :32 \> \p
@@ -1134,7 +1134,7 @@
                                 c'4 -\accent \fff
                             }
                             % measure 175
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -1417,7 +1417,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 167
-                            s1 * 39/4
+                            R1 * 39/4
                             \bar "|"
                         }
                     }
