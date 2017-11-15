@@ -526,7 +526,7 @@
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 176
                         \clef "treble"
-                        s1 * 3/4
+                        R1 * 3/4
                         % measure 177
                         cs1 \< \p
                         % measure 178
@@ -538,11 +538,11 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        s1 * 2 \!
+                        R1 * 2 \!
                         % measure 182
                         cs2. \p
                         % measure 183
-                        s1 * 5/4
+                        R1 * 5/4
                         % measure 185
                         cs2. \< \p
                         % measure 186
@@ -551,7 +551,7 @@
                         \once \override Hairpin.circled-tip = ##t
                         cs2. \repeatTie \> \fff
                         % measure 188
-                        s1 * 3/4 \!
+                        R1 * 3/4 \!
                         % measure 190
                         cs1.. \< \p
                         % measure 191
@@ -560,11 +560,11 @@
                         \once \override Hairpin.circled-tip = ##t
                         cs\breve \repeatTie \> \fff
                         % measure 193
-                        s1 * 2 \!
+                        R1 * 2 \!
                         % measure 195
                         cs2. \p
                         % measure 196
-                        s1 * 3/4
+                        R1 * 3/4
                         % measure 198
                         cs\breve \< \ppp
                         % measure 199
@@ -584,7 +584,7 @@
                         % measure 206
                         cs1 \repeatTie
                         % measure 207
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -715,7 +715,7 @@
                                 c'4 :32 \fff
                             }
                             % measure 180
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 181
                             c'1..
                                 ^ \markup {
@@ -755,7 +755,7 @@
                                 c'4 -\accent
                             }
                             % measure 183
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 184
                             c'1
                                 ^ \markup {
@@ -813,7 +813,7 @@
                                 c'4 :32 \fff
                             }
                             % measure 188
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 189
                             c'2
                                 ^ \markup {
@@ -865,7 +865,7 @@
                                 c'1 :32 \fff
                             }
                             % measure 193
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 194
                             c'1..
                                 ^ \markup {
@@ -905,7 +905,7 @@
                                 c'4 -\accent
                             }
                             % measure 196
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 197
                             c'2
                                 ^ \markup {
@@ -979,7 +979,7 @@
                                 c'4 :32 \fff
                             }
                             % measure 203
-                            s1 * 23/4
+                            R1 * 23/4
                             \bar "|"
                             \revert TextScript.staff-padding
                         }
@@ -1064,7 +1064,7 @@
                             \startStaff
                             \clef "percussion"
                             \override TextScript.staff-padding = #4.5
-                            s1 * 3/4
+                            R1 * 3/4
                             {
                                 % measure 177
                                 c'4 :32 \< \mf
@@ -1087,7 +1087,7 @@
                                 c'8 -\accent \fff ]
                             }
                             % measure 180
-                            s1 * 2
+                            R1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 % measure 182
@@ -1098,7 +1098,7 @@
                                 c'4 :32
                             }
                             % measure 183
-                            s1 * 5/4
+                            R1 * 5/4
                             {
                                 % measure 185
                                 c'4 :32 \< \mf
@@ -1118,7 +1118,7 @@
                                 c'4 :32 \fff
                             }
                             % measure 188
-                            s1 * 3/4
+                            R1 * 3/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 % measure 190
@@ -1143,7 +1143,7 @@
                                 c'2 -\accent \fff
                             }
                             % measure 193
-                            s1 * 2
+                            R1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 % measure 195
@@ -1154,7 +1154,7 @@
                                 c'4 :32
                             }
                             % measure 196
-                            s1 * 3/4
+                            R1 * 3/4
                             \times 2/3 {
                                 % measure 198
                                 c'1 :32 \< \mf
@@ -1187,7 +1187,7 @@
                                 c'4 :32 \fff
                             }
                             % measure 203
-                            s1 * 23/4
+                            R1 * 23/4
                             \bar "|"
                             \revert TextScript.staff-padding
                         }
@@ -1317,7 +1317,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 181
                             \clef "treble"
                             \once \override NoteHead.style = #'harmonic
@@ -1343,7 +1343,7 @@
                                     }
                             \ottava #0
                             % measure 183
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 184
                             \clef "treble"
                             \once \override NoteHead.style = #'harmonic
@@ -1392,7 +1392,7 @@
                                 }
                             \ottava #0
                             % measure 188
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 189
                             \clef "treble"
                             \once \override NoteHead.style = #'harmonic
@@ -1441,7 +1441,7 @@
                                 }
                             \ottava #0
                             % measure 193
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 194
                             \clef "treble"
                             \once \override NoteHead.style = #'harmonic
@@ -1467,7 +1467,7 @@
                                     }
                             \ottava #0
                             % measure 196
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 197
                             \clef "treble"
                             \once \override NoteHead.style = #'harmonic
@@ -1520,7 +1520,7 @@
                                 }
                             \ottava #0
                             % measure 203
-                            s1 * 23/4
+                            R1 * 23/4
                             \bar "|"
                         }
                     }

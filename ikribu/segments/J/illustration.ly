@@ -228,7 +228,7 @@
                         d''4 \repeatTie
                         d''4 \repeatTie
                         % measure 122
-                        s1 * 11/4
+                        R1 * 11/4
                         % measure 125
                         d''4
                             ^ \markup {
@@ -260,7 +260,7 @@
                         d''4 \repeatTie
                         \revert RepeatTie.direction
                         % measure 126
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -377,7 +377,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 122
-                            s1 * 11/4
+                            R1 * 11/4
                             % measure 125
                             c'4
                                 ^ \markup {
@@ -409,7 +409,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             % measure 126
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -539,7 +539,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 122
-                            s1 * 11/4
+                            R1 * 11/4
                             % measure 125
                             c'4
                                 ^ \markup {
@@ -571,7 +571,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             % measure 126
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -609,7 +609,7 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 116
                             \clef "percussion"
-                            s1 * 15/4
+                            R1 * 15/4
                             % measure 118
                             \ottava #-1
                             \clef "bass"
@@ -631,7 +631,7 @@
                             d,,2. \repeatTie \< \p
                             \ottava #0
                             % measure 124
-                            s1 * 3/2 \mf
+                            R1 * 3/2 \mf
                             \bar "|"
                         }
                     }

@@ -131,7 +131,7 @@
                         % measure 106
                         ef1 \repeatTie
                         % measure 107
-                        s1 * 1/4
+                        R1 * 1/4
                         \bar "|"
                     }
                 }
@@ -446,7 +446,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 107
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -512,7 +512,7 @@
                                 f'''2
                             }
                             % measure 107
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -839,7 +839,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 107
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -902,7 +902,7 @@
                                 b''1
                             }
                             % measure 107
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }

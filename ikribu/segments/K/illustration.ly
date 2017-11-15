@@ -231,7 +231,7 @@
                         c'4 \repeatTie
                         c'4 \repeatTie
                         % measure 128
-                        s1 * 3/2
+                        R1 * 3/2
                         % measure 131
                         c'4
                             _ \markup {
@@ -249,7 +249,7 @@
                         c'4 \repeatTie
                         c'4 \repeatTie
                         % measure 132
-                        s1 * 5/2
+                        R1 * 5/2
                         % measure 135
                         c'4
                             _ \markup {
@@ -271,7 +271,7 @@
                         c'4 \repeatTie
                         c'4 \repeatTie
                         % measure 136
-                        s1 * 5/4
+                        R1 * 5/4
                         % measure 139
                         c'4
                             _ \markup {
@@ -291,7 +291,7 @@
                         c'4 \repeatTie
                         \revert RepeatTie.direction
                         % measure 140
-                        s1 * 3/2
+                        R1 * 3/2
                         \bar "|"
                     }
                 }
@@ -341,7 +341,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            s1 * 5/4
+                            R1 * 5/4
                             \times 8/12 {
                                 % measure 129
                                 \override RepeatTie.direction = #up
@@ -376,7 +376,7 @@
                                 c'8 -\staccato ]
                             }
                             % measure 130
-                            s1 * 5/4
+                            R1 * 5/4
                             \times 16/20 {
                                 % measure 133
                                 d'8 -\staccato [
@@ -401,7 +401,7 @@
                                 d'8 -\staccato ]
                             }
                             % measure 134
-                            s1 * 9/4
+                            R1 * 9/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/10 {
                                 % measure 137
@@ -417,7 +417,7 @@
                                 b8 -\staccato ]
                             }
                             % measure 138
-                            s1 * 3/2
+                            R1 * 3/2
                             \times 8/12 {
                                 % measure 141
                                 c'8 -\staccato [
@@ -435,7 +435,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 142
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -486,7 +486,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            s1 * 5/4
+                            R1 * 5/4
                             \times 8/10 {
                                 % measure 129
                                 \override RepeatTie.direction = #up
@@ -519,7 +519,7 @@
                                 b8 -\staccato ]
                             }
                             % measure 130
-                            s1 * 5/4
+                            R1 * 5/4
                             \times 16/18 {
                                 % measure 133
                                 d'8 -\staccato [
@@ -542,7 +542,7 @@
                                 d'8 -\staccato ]
                             }
                             % measure 134
-                            s1 * 9/4
+                            R1 * 9/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/8 {
                                 % measure 137
@@ -556,7 +556,7 @@
                                 b8 -\staccato ]
                             }
                             % measure 138
-                            s1 * 3/2
+                            R1 * 3/2
                             \times 8/10 {
                                 % measure 141
                                 c'8 -\staccato [
@@ -572,7 +572,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 142
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -653,7 +653,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 128
-                            s1 * 3/2
+                            R1 * 3/2
                             % measure 131
                             c'4
                                 _ \markup {
@@ -671,7 +671,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 132
-                            s1 * 5/2
+                            R1 * 5/2
                             % measure 135
                             c'4
                                 _ \markup {
@@ -693,7 +693,7 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 136
-                            s1 * 5/4
+                            R1 * 5/4
                             % measure 139
                             c'4
                                 _ \markup {
@@ -713,7 +713,7 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             % measure 140
-                            s1 * 3/2
+                            R1 * 3/2
                             \bar "|"
                         }
                     }

@@ -134,27 +134,27 @@
                         \clef "percussion"
                         a1.. \< \ppp
                         % measure 88
-                        s1 * 1/6 \mp
+                        R1 * 1/6 \mp
                         % measure 89
                         af1.. \< \pp
                         % measure 90
-                        s1 * 1/6 \mf
+                        R1 * 1/6 \mf
                         % measure 91
                         g1.. \< \p
                         % measure 92
-                        s1 * 1/6 \f
+                        R1 * 1/6 \f
                         % measure 93
                         fs1.. \< \mf
                         % measure 94
-                        s1 * 1/6 \ff
+                        R1 * 1/6 \ff
                         % measure 95
                         f1.. \< \f
                         % measure 96
-                        s1 * 1/6 \fff
+                        R1 * 1/6 \fff
                         % measure 97
                         e1.. \< \ff
                         % measure 98
-                        s1 * 1/6 \ffff
+                        R1 * 1/6 \ffff
                         \bar "|"
                     }
                 }
@@ -452,7 +452,7 @@
                             g'1.. :32 \ppp
                             \revert NoteHead.style
                             % measure 98
-                            s1 * 1/6
+                            R1 * 1/6
                             \bar "|"
                             \revert TupletBracket.direction
                         }

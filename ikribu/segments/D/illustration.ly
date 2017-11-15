@@ -564,7 +564,7 @@
                                 \revert RepeatTie.direction
                             }
                             % measure 62
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }
@@ -643,7 +643,7 @@
                                 a,4
                             }
                             % measure 62
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }

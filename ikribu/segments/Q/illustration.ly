@@ -200,7 +200,7 @@
                         c'4 \repeatTie
                         c'4 \repeatTie
                         % measure 253
-                        s1 * 13/2
+                        R1 * 13/2
                         \bar "|."
                     }
                 }
@@ -318,7 +318,7 @@
                             b4 -\tongue #2
                             c'4 -\tongue #2
                             % measure 256
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|."
                         }
                     }
@@ -437,7 +437,7 @@
                             c'4 -\staccato
                             b4 -\staccato
                             % measure 256
-                            s1 * 11/4
+                            R1 * 11/4
                             \bar "|."
                         }
                     }
@@ -658,8 +658,8 @@
                                 c'16 -\accent ]
                             }
                             % measure 258
-                            \once \override TextScript.extra-offset = #'(-18 . -6)
-                            s1 * 1/4
+                            \once \override MultiMeasureRestText.extra-offset = #'(-18 . -6)
+                            R1 * 1/4
                                 _ \markup {
                                     \whiteout
                                         \upright

@@ -88,7 +88,7 @@
                         % measure 82
                         gs'2. \repeatTie
                         % measure 83
-                        s1 * 1/2
+                        R1 * 1/2
                         % measure 84
                         a1.. \> \sfp
                         % measure 85
@@ -125,7 +125,7 @@
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             % measure 79
                             \clef "percussion"
-                            s1 * 4
+                            R1 * 4
                             % measure 84
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -156,7 +156,7 @@
                                         "trem. flaut. tast."
                                 }
                             % measure 86
-                            s1 * 7/4 \!
+                            R1 * 7/4 \!
                             \bar "|"
                         }
                     }
@@ -188,7 +188,7 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 79
                             \clef "percussion"
-                            s1 * 4
+                            R1 * 4
                             % measure 84
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -219,7 +219,7 @@
                                         "trem. flaut. tast."
                                 }
                             % measure 86
-                            s1 * 7/4 \!
+                            R1 * 7/4 \!
                             \bar "|"
                         }
                     }
@@ -283,7 +283,7 @@
                                         "trem. XP (non. flaut.)"
                                 }
                             % measure 83
-                            s1 * 1/2
+                            R1 * 1/2
                             % measure 84
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -321,7 +321,7 @@
                             \revert RepeatTie.direction
                             % measure 86
                             \clef "treble"
-                            s1 * 7/4
+                            R1 * 7/4
                             \bar "|"
                         }
                     }

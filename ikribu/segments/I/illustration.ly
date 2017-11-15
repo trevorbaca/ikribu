@@ -295,26 +295,26 @@
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 109
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 110
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 111
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 112
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie
                             % measure 113
-                            s1 * 1/4
+                            R1 * 1/4
                             % measure 114
                             c'4
                             c'4 \repeatTie
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             % measure 115
-                            s1 * 1/4
+                            R1 * 1/4
                             \bar "|"
                         }
                     }

@@ -269,19 +269,19 @@
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 10
                         \clef "treble"
-                        s1 * 3
+                        R1 * 3
                         % measure 14
                         ef1.. \ppp
                         % measure 15
-                        s1 * 17/4
+                        R1 * 17/4
                         % measure 20
                         ef1 \ppp
                         % measure 21
-                        s1 * 7/2
+                        R1 * 7/2
                         % measure 26
                         ef1 \ppp
                         % measure 27
-                        s1 * 1/4
+                        R1 * 1/4
                         % measure 28
                         ef2. \< \ppp
                         % measure 29
@@ -290,7 +290,7 @@
                         \once \override Hairpin.circled-tip = ##t
                         ef2. \repeatTie \> \f
                         % measure 31
-                        s1 * 9/2 \!
+                        R1 * 9/2 \!
                         \bar "|"
                     }
                 }
@@ -391,7 +391,7 @@
                                         "trem. flaut. tast."
                                 }
                             % measure 13
-                            s1 * 9/4 \!
+                            R1 * 9/4 \!
                             % measure 16
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -424,7 +424,7 @@
                                         "trem. flaut. tast."
                                 }
                             % measure 19
-                            s1 * 3/2 \!
+                            R1 * 3/2 \!
                             % measure 22
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -457,7 +457,7 @@
                                         "trem. flaut. tast."
                                 }
                             % measure 25
-                            s1 * 17/2 \!
+                            R1 * 17/2 \!
                             \bar "|"
                         }
                     }
@@ -523,7 +523,7 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 10
                             \clef "percussion"
-                            s1 * 59/4
+                            R1 * 59/4
                             % measure 28
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -567,7 +567,7 @@
                                         "trem. flaut. tast."
                                 }
                             % measure 34
-                            s1 * 1/4 \!
+                            R1 * 1/4 \!
                             \bar "|"
                         }
                     }
