@@ -142,7 +142,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-        time_signature_context = self._make_time_signature_context()
+        global_context = self._make_global_context()
         instrument_tags = (
             'bass_clarinet',
             'violin',
@@ -150,7 +150,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'cello',
             )
         tag_string = '.'.join(instrument_tags)
-        self._attach_tag(tag_string, time_signature_context)
+        self._attach_tag(tag_string, global_context)
         # BASS CLARINET
         bass_clarinet_music_voice = abjad.Voice(
             [],
@@ -297,7 +297,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name='Music Context',
             )
         score = abjad.Score([
-            time_signature_context,
+            global_context,
             music_context,
             ],
             name='Score',
