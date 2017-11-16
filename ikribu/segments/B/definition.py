@@ -18,7 +18,7 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, ikribu.metronome_marks['night']),
+    #(1, ikribu.metronome_marks['night']),
     ])
 
 maker = baca.TimeSignatureMaker(
