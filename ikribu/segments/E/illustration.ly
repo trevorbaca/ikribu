@@ -295,6 +295,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 63
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
                         fs'2 \ppp
                         % measure 64
@@ -605,6 +608,9 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 63
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \clef "bass"
                             R1 * 7
                             % measure 71

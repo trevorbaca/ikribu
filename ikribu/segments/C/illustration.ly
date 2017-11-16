@@ -315,6 +315,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 35
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \clef "treble"
                         R1 * 7/4
                         % measure 36
@@ -572,6 +575,9 @@
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 35
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             R1 * 11/4
                             % measure 37
@@ -663,6 +669,9 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 35
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \clef "treble"
                             \once \override NoteHead.style = #'harmonic
                             fqf''1.. -\laissezVibrer \sfz

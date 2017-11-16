@@ -288,6 +288,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 143
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "treble"
                         d\breve \ppp
                             ^ \markup {

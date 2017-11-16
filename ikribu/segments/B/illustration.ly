@@ -268,6 +268,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 10
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \clef "treble"
                         R1 * 3
                         % measure 14
@@ -354,6 +357,9 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             % measure 10
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -522,6 +528,9 @@
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 10
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             R1 * 59/4
                             % measure 28
@@ -632,6 +641,9 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 10
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \clef "treble"
                             R1 * 1
                             % measure 11

@@ -79,6 +79,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 79
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
                         gs'1
                         % measure 80
@@ -124,6 +127,9 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             % measure 79
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             R1 * 4
                             % measure 84
@@ -187,6 +193,9 @@
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 79
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             R1 * 4
                             % measure 84
@@ -250,6 +259,9 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 79
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center

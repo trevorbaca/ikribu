@@ -136,6 +136,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 239
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -398,6 +401,9 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 % measure 239
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "percussion"
                                 c''8 \glissando [
                                 b''8. \glissando
@@ -648,6 +654,9 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 % measure 239
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "treble"
                                 c''2.. \glissando
                                 d'8 \glissando
@@ -888,6 +897,9 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             {
                                 % measure 239
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "tenor"
                                 a,8 \glissando [
                                 g,8. \glissando

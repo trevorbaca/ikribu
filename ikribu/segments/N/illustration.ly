@@ -89,6 +89,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 208
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -491,6 +494,9 @@
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \times 4/5 {
                                 % measure 208
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "percussion"
                                 c''8 \glissando [
                                 b''8. \glissando
@@ -881,6 +887,9 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \times 2/3 {
                                 % measure 208
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "treble"
                                 c''2. \glissando
                             }
@@ -1280,6 +1289,9 @@
                         \context CelloMusicVoice = "Cello Music Voice" {
                             {
                                 % measure 208
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "tenor"
                                 a,8 \glissando [
                                 g,8. \glissando
