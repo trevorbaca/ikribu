@@ -54,7 +54,7 @@ maker.validate_stage_count(8)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 maker(
@@ -62,18 +62,11 @@ maker(
     baca.make_tied_repeated_durations((1, 4)),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
 maker(
     baca.scope('Cello Music Voice', 1, 8),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.markup.boxed_lines([
-        'stonecircle:',
-        'π/4 every quarter note'
-        ]),
+    baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.repeat_ties_up(),

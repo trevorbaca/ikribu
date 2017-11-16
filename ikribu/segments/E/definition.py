@@ -72,37 +72,37 @@ maker.validate_stage_count(16)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-
 maker(
-    baca.make_scopes([bcl], [(1, 4), (5, 8), (9, 12), (13, 16)]),
+    baca.make_scopes(
+        ['Bass Clarinet Music Voice'],
+        [(1, 4), (5, 8), (9, 12), (13, 16)],
+        ),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.make_scopes([vn], [(1, 2), (5, 6), (9, 10), (13, 14)]),
+    baca.make_scopes(
+        ['Violin Music Voice'],
+        [(1, 2), (5, 6), (9, 10), (13, 14)],
+        ),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    baca.make_scopes([va], [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    baca.make_scopes(
+        ['Viola Music Voice'],
+        [(2, 3), (6, 7), (10, 11), (14, 15)],
+        ),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    baca.make_scopes([vc], [(9, 12), (13, 16)]),
+    baca.make_scopes(['Cello Music Voice'], [(9, 12), (13, 16)]),
     baca.make_tied_notes(repeat_ties=True),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
@@ -126,7 +126,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes([vn, va], [(1, 16)]),
+    baca.scopes(
+        ('Violin Music Voice', 1, 16),
+        ('Viola Music Voice', 1, 16),
+        ),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.clef('percussion'),
     baca.markup.boxed('brushes on BD', baca.pleaf(0)),

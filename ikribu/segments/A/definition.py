@@ -51,7 +51,7 @@ maker.validate_stage_count(4)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 maker(
@@ -63,10 +63,6 @@ maker(
     baca.scope('Viola Music Voice', 2, 3),
     baca.make_tied_repeated_durations((1, 4)),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 maker(
     baca.scope('Violin Music Voice', 1),
@@ -92,10 +88,7 @@ maker(
     baca.scope('Viola Music Voice', 2, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.markup.boxed_lines([
-        'stonecircle:',
-        'π/4 every quarter note'
-        ]),
+    baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),

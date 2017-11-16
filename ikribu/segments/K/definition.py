@@ -55,40 +55,36 @@ maker.validate_stage_count(16)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-
 maker(
-    baca.make_scopes([bcl], [1, 5, 9, 13]),
+    baca.make_scopes(['Bass Clarinet Music Voice'], [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.make_scopes([vn], [3, 7, 11, 15]),
+    baca.make_scopes(['Violin Music Voice'], [3, 7, 11, 15]),
     ikribu.clb_rhythm([4]),
     )
 
 maker(
-    baca.make_scopes([va], [3, 7, 11, 15]),
+    baca.make_scopes(['Viola Music Voice'], [3, 7, 11, 15]),
     ikribu.clb_rhythm([2]),
     )
 
 maker(
-    baca.make_scopes([vc], [1, 5, 9, 13]),
+    baca.make_scopes(['Cello Music Voice'], [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
 maker(
-    baca.make_scopes([bcl, vn, va, vc], [(1, 16)]),
+    baca.scopes(
+        ('Bass Clarinet Music Voice', 1, 16),
+        ('Violin Music Voice', 1, 16),
+        ('Viola Music Voice', 1, 16),
+        ('Cello Music Voice', 1, 16),
+        ),
     baca.clef('percussion'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
@@ -137,10 +133,7 @@ maker(
 
 maker(
     baca.scope('Cello Music Voice', 1, 16),
-    baca.markup.boxed_lines([
-        'graincircle:',
-        'π/2 every quarter note'
-        ]),
+    baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.staff_positions([0]),
     )
 

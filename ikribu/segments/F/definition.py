@@ -53,51 +53,28 @@ maker.validate_stage_count(8)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
-###############################################################################
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-
-maker(
-    baca.make_scopes([bcl], [(1, 4), (6, 8)]),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.make_scopes([vn, va], [(6, 7)]),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('Cello Music Voice', 1, 4),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('Cello Music Voice', 6, 7),
-    baca.make_tied_repeated_durations((1, 4)),
-    )
-
-###############################################################################
-#################################### COLOR ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
+    baca.make_tied_notes(repeat_ties=True),
     baca.pitches('F#3'),
     )
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 6, 8),
+    baca.make_tied_notes(repeat_ties=True),
     baca.hairpin('sfp > ppp'),
     baca.pitches('G2'),
     )
 
 maker(
-    baca.make_scopes([vn, va], [(6, 7)]),
+    baca.scopes(
+        ('Violin Music Voice', 6, 7),
+        ('Viola Music Voice', 6, 7),
+        ),
+    baca.make_tied_notes(repeat_ties=True),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
     baca.stem_tremolo(),
@@ -125,6 +102,7 @@ maker(
 
 maker(
     baca.scope('Cello Music Voice', 1, 4),
+    baca.make_tied_notes(repeat_ties=True),
     baca.hairpin('p < ff'),
     baca.pitches('F#3'),
     baca.stem_tremolo(),
@@ -136,11 +114,9 @@ maker(
 
 maker(
     baca.scope('Cello Music Voice', 6, 7),
+    baca.make_tied_repeated_durations((1, 4)),
     baca.clef('percussion'),
-    baca.markup.boxed_lines([
-        'graincircle:',
-        'π/2 every quarter note',
-        ]),
+    baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
@@ -149,4 +125,5 @@ maker(
 maker(
     baca.scope('Cello Music Voice', 8),
     baca.clef('treble'),
+    baca.staff_lines(5),
     )

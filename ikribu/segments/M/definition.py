@@ -74,7 +74,7 @@ maker.validate_stage_count(23)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 maker(
@@ -238,10 +238,6 @@ maker(
     baca.make_tied_notes(repeat_ties=True),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 23),
     baca.clef('treble'),
@@ -249,7 +245,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['Bass Clarinet Music Voice'], [(2, 3), (9, 10), (13, 14)]),
+    baca.make_scopes(
+        ['Bass Clarinet Music Voice'],
+        [(2, 3), (9, 10), (13, 14)],
+        ),
     baca.hairpin('p < fff', baca.leaves()[:2]),
     baca.hairpin('fff > niente', baca.rleaves()[-2:]),
     )
@@ -265,7 +264,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 23)]),
+    baca.scopes(
+        ('Violin Music Voice', 1, 23),
+        ('Viola Music Voice', 1, 23),
+        ),
     baca.clef('percussion'),
     baca.staff_lines(1),
     baca.text_script_staff_padding(4.5),
@@ -278,17 +280,26 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(1, 21)]),
+    baca.scopes(
+        ('Violin Music Voice', 1, 21),
+        ('Viola Music Voice', 1, 21),
+        ),
     baca.staff_positions([0]),
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.make_scopes(
+        ['Violin Music Voice'],
+        [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
+        ),
     baca.markup.boxed('brushes on BD'),
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.make_scopes(
+        ['Violin Music Voice', 'Viola Music Voice'], 
+        [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
+        ),
     baca.accents(baca.pheads()[~abjad.index([0], 2)]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0], 2)]),
     )
@@ -324,19 +335,28 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['Cello Music Voice'], [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
+    baca.make_scopes(
+        ['Cello Music Voice'],
+        [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
+        ),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.pitches('C1'),
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
+    baca.make_scopes(
+        ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], 
+        [(2, 3), (9, 10), (13, 14), (20, 21)],
+        ),
     baca.hairpin('mf < fff'),
     )
 
 maker(
-    baca.make_scopes(['Cello Music Voice'], [(2, 3), (9, 10), (13, 14), (20, 21)]),
+    baca.make_scopes(
+        ['Cello Music Voice'],
+        [(2, 3), (9, 10), (13, 14), (20, 21)],
+        ),
     baca.single_segment_transition(
         baca.markup.tasto(),
         baca.markup.XP(),
@@ -344,7 +364,14 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], [6, 17]),
+    baca.scopes(
+        ('Violin Music Voice', 6),
+        ('Violin Music Voice', 17),
+        ('Viola Music Voice', 6),
+        ('Viola Music Voice', 17),
+        ('Cello Music Voice', 6),
+        ('Cello Music Voice', 17),
+        ),
     baca.dynamic('fff'),
     )
 
@@ -425,9 +452,9 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
-        ['Bass Clarinet Music Voice', 'Cello Music Voice'],
-        [4],
+    baca.scopes(
+        ('Bass Clarinet Music Voice', 4),
+        ('Cello Music Voice', 4),
         ),
     baca.staff_lines(1),
     )
