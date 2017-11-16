@@ -8,11 +8,7 @@ import ikribu
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    3,
-    3,
-    3,
-    2,
-    abjad.Fermata('fermata'),
+    3, 3, 3, 2, abjad.Fermata('fermata'),
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -60,7 +56,7 @@ maker.validate_stage_count(5)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 maker(
@@ -83,10 +79,6 @@ maker(
     ikribu.inscription_rhythm(),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 4),
     baca.clef('percussion'),
@@ -101,9 +93,7 @@ maker(
     baca.clef('percussion'),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
-    baca.markup(
-        'col legno battuto meccanico: strike each note twice'
-        ),
+    baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_lines(1),
     baca.pitches('B3 C4 D4'),
     )
@@ -112,9 +102,7 @@ maker(
     baca.scope('Viola Music Voice', 1, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.markup(
-        'col legno battuto meccanico: strike each note twice'
-        ),
+    baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_lines(1),
     baca.pitches('C4 B3 D4'),
     baca.staccati(),

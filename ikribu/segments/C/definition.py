@@ -75,16 +75,14 @@ maker.validate_stage_count(17)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-
 maker(
-    baca.make_scopes([bcl], [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    baca.make_scopes(
+        ['Bass Clarinet Music Voice'],
+        [(2, 3), (6, 7), (10, 11), (14, 15)],
+        ),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
@@ -94,7 +92,10 @@ maker(
     )
 
 maker(
-    baca.make_scopes([vn, va], [(3, 4), (7, 8), (11, 12), (15, 16)]),
+    baca.make_scopes(
+        ['Violin Music Voice', 'Viola Music Voice'],
+        [(3, 4), (7, 8), (11, 12), (15, 16)],
+        ),
     baca.make_notes(repeat_ties=True),
     )
 
@@ -108,10 +109,6 @@ maker(
     baca.make_notes(repeat_ties=True),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
 maker(
     baca.scope('Bass Clarinet Music Voice', 2, 17),
     baca.clef('percussion'),
@@ -123,10 +120,7 @@ maker(
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 2, 3),
-    baca.markup.boxed_lines([
-        'stonecircle:',
-        'π/2 every quarter note'
-        ]),
+    baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
     )
 

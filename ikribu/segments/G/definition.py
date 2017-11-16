@@ -58,16 +58,11 @@ maker.validate_stage_count(12)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-
 maker(
-    baca.make_scopes([bcl], [1, 3, 5, 7, 9, 11]),
+    baca.make_scopes(['Bass Clarinet Music Voice'], [1, 3, 5, 7, 9, 11]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
@@ -75,10 +70,6 @@ maker(
     baca.scope('Cello Music Voice', 1, 11),
     baca.make_notes(repeat_ties=True),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 1),

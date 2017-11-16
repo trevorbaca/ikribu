@@ -8,21 +8,13 @@ import ikribu
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    3,
-    abjad.Fermata('longfermata'),
-    1,
-    abjad.Fermata('longfermata'),
-    3,
-    abjad.Fermata('longfermata'),
-    1,
-    abjad.Fermata('longfermata'),
-    3,
-    abjad.Fermata('longfermata'),
-    1,
-    abjad.Fermata('shortfermata'),
-    3,
-    3,
-    abjad.Fermata('shortfermata'),
+    3, abjad.Fermata('longfermata'),
+    1, abjad.Fermata('longfermata'),
+    3, abjad.Fermata('longfermata'),
+    1, abjad.Fermata('longfermata'),
+    3, abjad.Fermata('longfermata'),
+    1, abjad.Fermata('shortfermata'),
+    3, 3, abjad.Fermata('shortfermata'),
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -68,7 +60,7 @@ maker.validate_stage_count(15)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
 
 maker(
@@ -85,10 +77,6 @@ maker(
     baca.scope('Viola Music Voice', 13, 14),
     baca.make_tied_notes(repeat_ties=True),
     )
-
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 3, 15),
@@ -116,9 +104,10 @@ maker(
 
 maker(
     baca.make_scopes(['Violin Music Voice'], [1, 5, 9]),
-    # TODO: join in single baca.swell() command:
-    baca.hairpin('ppp < p', baca.leaves()[:2]),
-    baca.hairpin('p > niente', baca.rleaves()[-2:]),
+    baca.suite([
+        baca.hairpin('ppp < p', baca.leaves()[:2]),
+        baca.hairpin('p > niente', baca.rleaves()[-2:]),
+        ]),
     baca.single_segment_transition(
         baca.markup('trem. flaut. pont.'),
         baca.markup('trem. flaut. tast.'),
@@ -134,9 +123,10 @@ maker(
 
 maker(
     baca.scope('Viola Music Voice', 13, 14),
-    # TODO: join in single baca.swell() command:
-    baca.hairpin('ppp < mf', baca.leaves()[:5]),
-    baca.hairpin('mf > niente', baca.rleaves()[-2:]),
+    baca.suite([
+        baca.hairpin('ppp < mf', baca.leaves()[:5]),
+        baca.hairpin('mf > niente', baca.rleaves()[-2:]),
+        ]),
     baca.single_segment_transition(
         baca.markup('trem. flaut. pont.'),
         baca.markup('trem. flaut. tast.'),

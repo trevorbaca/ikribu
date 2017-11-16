@@ -179,7 +179,7 @@
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 3
-                            \clef "alto"
+                            \clef "percussion"
                             R1 * 15/4
                             % measure 5
                             \stopStaff

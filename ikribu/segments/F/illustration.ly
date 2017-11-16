@@ -320,6 +320,9 @@
                             c'4 \repeatTie
                             \revert RepeatTie.direction
                             % measure 86
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \clef "treble"
                             R1 * 7/4
                             \bar "|"

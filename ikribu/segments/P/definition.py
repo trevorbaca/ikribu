@@ -8,12 +8,7 @@ import ikribu
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    3,
-    1,
-    1,
-    1,
-    1,
-    abjad.Fermata('longfermata'),
+    3, 1, 1, 1, 1, abjad.Fermata('longfermata'),
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -59,16 +54,8 @@ maker.validate_stage_count(6)
 maker.validate_measures_per_stage()
 
 ###############################################################################
-##################################### TIME ####################################
+################################### COMMANDS ##################################
 ###############################################################################
-
-bcl = 'Bass Clarinet Music Voice'
-vn = 'Violin Music Voice'
-va = 'Viola Music Voice'
-vc = 'Cello Music Voice'
-vn_rh = 'Violin RH Music Voice'
-va_rh = 'Viola RH Music Voice'
-vc_rh = 'Cello RH Music Voice'
 
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
@@ -127,10 +114,6 @@ maker(
     ikribu.glissando_rhythm(rotation_1=-8, rotation_2=-2),
     )
 
-###############################################################################
-#################################### COLOR ####################################
-###############################################################################
-
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.pitches('Bb4'),
@@ -152,7 +135,11 @@ maker(
     )
 
 maker(
-    baca.make_scopes([vn_rh, va_rh, vc_rh], [(1, 3)]),
+    baca.scopes(
+        ('Violin RH Music Voice', 1, 3),
+        ('Viola RH Music Voice', 1, 3),
+        ('Cello RH Music Voice', 1, 3),
+        ),
     baca.clef('percussion'),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
