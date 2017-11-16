@@ -65,11 +65,6 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1),
-    baca.clef('treble'),
-    )
-
-maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.pitches('D2'),
     )
