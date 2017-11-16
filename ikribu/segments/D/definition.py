@@ -83,7 +83,7 @@ maker(
         baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,
         ),
-    baca.markup.boxed('1/2 clt'),
+    baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
     ikribu.BowContactPointCommand(rotation=-2),
