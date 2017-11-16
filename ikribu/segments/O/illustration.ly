@@ -229,6 +229,7 @@
                             }
                         \clef "treble"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         <c e''>1
                             - \tweak color #red
                             ^ \markup { @ }
@@ -424,7 +425,9 @@
                                     #10
                                     Vn.
                                 }
+                            \clef "percussion"
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
                                 ^ \markup {
                                     \override
@@ -482,6 +485,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 19/2
                             % measure 226
                             \once \override TextSpanner.arrow-width = 0.25
@@ -553,7 +557,9 @@
                                     #10
                                     Va.
                                 }
+                            \clef "percussion"
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
                                 ^ \markup {
                                     \override
@@ -611,6 +617,7 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "treble"
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 19/2
                             % measure 226
                             \once \override TextSpanner.arrow-width = 0.25
@@ -682,7 +689,9 @@
                                     #10
                                     Vc.
                                 }
+                            \clef "percussion"
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
                                 ^ \markup {
                                     \override

@@ -92,6 +92,5 @@ maker(
 
 maker(
     baca.scope('Cello Music Voice', 1),
-    baca.clef('treble'),
     baca.staff_lines(5),
     )
