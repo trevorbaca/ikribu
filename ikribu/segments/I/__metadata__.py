@@ -29,6 +29,14 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         ('end_metronome_mark', 'night'),
+        (
+            'end_staff_lines_by_staff',
+            abjad.TypedOrderedDict(
+                [
+                    ('Cello Music Staff', 1),
+                    ]
+                ),
+            ),
         ('end_time_signature', '1/4'),
         ('first_bar_number', 108),
         ('measure_count', 8),

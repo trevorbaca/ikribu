@@ -29,6 +29,15 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         ('end_metronome_mark', 'night'),
+        (
+            'end_staff_lines_by_staff',
+            abjad.TypedOrderedDict(
+                [
+                    ('Bass Clarinet Music Staff', 1),
+                    ('Violin Music Staff', 1),
+                    ]
+                ),
+            ),
         ('end_time_signature', '1/6'),
         ('first_bar_number', 35),
         ('measure_count', 17),
