@@ -129,7 +129,7 @@ maker(
     baca.make_scopes([vn, va], [(1, 16)]),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.clef('percussion'),
-    baca.markup.boxed('brushes on BD'),
+    baca.markup.boxed('brushes on BD', baca.pleaf(0)),
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('f p'),

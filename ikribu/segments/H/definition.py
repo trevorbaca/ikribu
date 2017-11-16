@@ -103,7 +103,7 @@ maker(
 maker(
     baca.make_scopes(['Violin RH Music Voice', 'Viola RH Music Voice'], [(1, 2)]),
     baca.clef('percussion'),
-    baca.markup.boxed('1/2 clt'),
+    baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('ff p f pp p ppp'),
