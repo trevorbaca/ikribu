@@ -137,7 +137,7 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             % measure 3
-                            \clef "treble"
+                            \clef "percussion"
                             R1 * 2
                             % measure 4
                             R1 * 7/4

@@ -12,7 +12,7 @@ metadata = abjad.TypedOrderedDict(
                     ('Cello RH Music Staff', 'percussion'),
                     ('Viola Music Staff', 'percussion'),
                     ('Viola RH Music Staff', 'percussion'),
-                    ('Violin Music Staff', 'treble'),
+                    ('Violin Music Staff', 'percussion'),
                     ('Violin RH Music Staff', 'percussion'),
                     ]
                 ),
