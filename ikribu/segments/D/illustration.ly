@@ -125,6 +125,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 52
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
                         R1 * 3/4
                         % measure 53
@@ -182,6 +185,9 @@
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             % measure 52
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             R1 * 3/4
                             % measure 53
@@ -240,6 +246,9 @@
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             % measure 52
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \clef "percussion"
                             R1 * 3/4
                             % measure 53
@@ -573,6 +582,9 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 % measure 52
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 5
+                                \startStaff
                                 \clef "tenor"
                                 a,8 \glissando [
                                 g,8. \glissando

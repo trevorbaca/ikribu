@@ -114,6 +114,9 @@
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
                         % measure 99
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \clef "percussion"
                         ef\breve \ppp
                         % measure 100
@@ -454,6 +457,9 @@
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \times 16/17 {
                                 % measure 99
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "percussion"
                                 c''8 \glissando [
                                 b''8. \glissando
@@ -847,6 +853,9 @@
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \times 8/9 {
                                 % measure 99
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 \clef "treble"
                                 c''2.. \glissando
                                 d'1 \glissando
@@ -935,6 +944,9 @@
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             % measure 99
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
                             \clef "treble"
                             R1 * 2
                             % measure 100

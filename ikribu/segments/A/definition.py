@@ -57,6 +57,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('Bass Clarinet Music Voice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
+    baca.staff_lines(5),
     )
 
 maker(
@@ -87,4 +88,10 @@ maker(
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
+    )
+
+maker(
+    baca.scope('Cello Music Voice', 1),
+    baca.clef('treble'),
+    baca.staff_lines(5),
     )
