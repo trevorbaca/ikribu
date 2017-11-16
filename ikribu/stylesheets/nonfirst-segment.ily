@@ -8,5 +8,12 @@
 }
 
 \layout {
+    \context {
+        \Score
+        \override InstrumentName.after-line-breaking =
+            #(lambda (grob)
+            (ly:grob-set-property! grob 'long-text 
+            (ly:grob-property grob 'text)))
+    }
     indent = 0
 }

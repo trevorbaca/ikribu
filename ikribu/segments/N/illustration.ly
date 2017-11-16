@@ -97,7 +97,26 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \set BassClarinetMusicStaff.instrumentName = \markup {
+                            \hcenter-in
+                                #16
+                                \center-column
+                                    {
+                                        Bass
+                                        clarinet
+                                    }
+                            }
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {
+                            \hcenter-in
+                                #10
+                                \line
+                                    {
+                                        B.
+                                        cl.
+                                    }
+                            }
                         \clef "treble"
+                        \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         c2 \p
                             ^ \markup {
                                 \column
@@ -208,8 +227,25 @@
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             {
                                 % measure 208
+                                \set ViolinStaffGroup.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Violin
+                                    }
+                                \set ViolinStaffGroup.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Vn.
+                                    }
                                 \clef "percussion"
+                                \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 r4
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.75)
+                                            \box
+                                                "to violin"
+                                        }
                                 \override RepeatTie.direction = #up
                                 c'4 \> \ff
                                     ^ \markup {
@@ -571,8 +607,19 @@
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             {
                                 % measure 208
+                                \set ViolaStaffGroup.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Viola
+                                    }
+                                \set ViolaStaffGroup.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Va.
+                                    }
                                 \clef "percussion"
                                 \override RepeatTie.direction = #up
+                                \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 c'4 \> \ff
                                     ^ \markup {
                                         \column
@@ -591,6 +638,13 @@
                                                         \fraction
                                                             7
                                                             7
+                                                    }
+                                                \line
+                                                    {
+                                                        \override
+                                                            #'(box-padding . 0.75)
+                                                            \box
+                                                                "to viola"
                                                     }
                                             }
                                         }
@@ -966,8 +1020,25 @@
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             \times 2/3 {
                                 % measure 208
+                                \set CelloStaffGroup.instrumentName = \markup {
+                                    \hcenter-in
+                                        #16
+                                        Cello
+                                    }
+                                \set CelloStaffGroup.shortInstrumentName = \markup {
+                                    \hcenter-in
+                                        #10
+                                        Vc.
+                                    }
                                 \clef "percussion"
+                                \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 r4
+                                    ^ \markup {
+                                        \override
+                                            #'(box-padding . 0.75)
+                                            \box
+                                                "to cello"
+                                        }
                                 \override RepeatTie.direction = #up
                                 c'4 \> \ff
                                     ^ \markup {
