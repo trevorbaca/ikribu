@@ -128,6 +128,7 @@
                             }
                         \clef "treble"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         c2 \p
                             ^ \markup {
@@ -602,6 +603,7 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "percussion"
+                                \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 c''8 \glissando [
                                 
@@ -1095,6 +1097,7 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "treble"
+                                \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 c''2. \glissando
                             }
                             {
@@ -1598,6 +1601,7 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "tenor"
+                                \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 a,8 \glissando [
                                 
                                 g,8. \glissando
