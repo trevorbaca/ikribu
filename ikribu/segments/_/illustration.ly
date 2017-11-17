@@ -10,7 +10,7 @@
         currentBarNumber = #1
     } <<
         \tag bass_clarinet.violin.viola.cello
-        \context GlobalContext = "Global Context" <<
+        \context GlobalContext = "GlobalContext" <<
             \context GlobalRests = "GlobalRests" {
                 
                 %%% GlobalRests [measure 1] %%%
