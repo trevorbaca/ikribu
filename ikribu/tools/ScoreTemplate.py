@@ -22,9 +22,9 @@ class ScoreTemplate(baca.ScoreTemplate):
         \context Score = "Score" <<
             \tag bass_clarinet.violin.viola.cello
             \context GlobalContext = "Global Context" <<
-                \context GlobalRests = "Global Rests" {
+                \context GlobalRests = "GlobalRests" {
                 }
-                \context GlobalSkips = "Global Skips" {
+                \context GlobalSkips = "GlobalSkips" {
                 }
             >>
             \context MusicContext = "MusicContext" {
