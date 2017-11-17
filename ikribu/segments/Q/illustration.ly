@@ -61,8 +61,7 @@
             \context GlobalSkips = "Global Skips" {
                 
                 %%% Global Skips [measure 247] %%%
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
-                #'((Y-offset . 20) (alignment-distances . (15 20 20)))
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
                 \set Score.proportionalNotationDuration = #(ly:make-moment 7 120)
                 \time 7/4
                 \mark #17
@@ -107,11 +106,10 @@
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
-                \break
+                \break % SEGMENT
                 
                 %%% Global Skips [measure 252] %%%
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
-                #'((Y-offset . 140) (alignment-distances . (15 20 20)))
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)
                 \time 8/4
                 \newSpacingSection
