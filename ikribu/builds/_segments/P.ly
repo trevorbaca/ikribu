@@ -589,7 +589,7 @@
                         \bar "|"
                     }
                 }
-                \context ViolaMusicStaff = "Viola Music Staff" {
+                \context ViolaMusicStaff = "ViolaMusicStaff" {
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/4 {
@@ -817,7 +817,7 @@
                         \bar "|"
                     }
                 }
-                \context CelloMusicStaff = "Cello Music Staff" {
+                \context CelloMusicStaff = "CelloMusicStaff" {
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         {
                             \clef "tenor"

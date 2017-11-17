@@ -8,9 +8,9 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('BassClarinetMusicStaff', 'percussion'),
-                    ('Cello Music Staff', 'percussion'),
+                    ('CelloMusicStaff', 'percussion'),
                     ('CelloRHMusicStaff', 'percussion'),
-                    ('Viola Music Staff', 'treble'),
+                    ('ViolaMusicStaff', 'treble'),
                     ('ViolaRHMusicStaff', 'percussion'),
                     ('ViolinMusicStaff', 'percussion'),
                     ('ViolinRHMusicStaff', 'percussion'),
@@ -34,8 +34,8 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('BassClarinetMusicStaff', 1),
-                    ('Cello Music Staff', 1),
-                    ('Viola Music Staff', 1),
+                    ('CelloMusicStaff', 1),
+                    ('ViolaMusicStaff', 1),
                     ('ViolinMusicStaff', 1),
                     ]
                 ),

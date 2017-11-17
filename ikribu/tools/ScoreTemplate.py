@@ -97,7 +97,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                 s1
                             }
                         }
-                        \context ViolaMusicStaff = "Viola Music Staff" {
+                        \context ViolaMusicStaff = "ViolaMusicStaff" {
                             \context ViolaMusicVoice = "ViolaMusicVoice" {
                                 \clef "alto"
                                 s1
@@ -122,7 +122,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                 s1
                             }
                         }
-                        \context CelloMusicStaff = "Cello Music Staff" {
+                        \context CelloMusicStaff = "CelloMusicStaff" {
                             \context CelloMusicVoice = "CelloMusicVoice" {
                                 \clef "bass"
                                 s1
@@ -229,7 +229,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         viola_music_staff = abjad.Staff(
             [viola_music_voice],
             context_name='ViolaMusicStaff',
-            name='Viola Music Staff',
+            name='ViolaMusicStaff',
             )
         viola_staff_group = abjad.StaffGroup(
             [viola_rh_music_staff, viola_music_staff],
@@ -266,7 +266,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         cello_music_staff = abjad.Staff(
             [cello_music_voice],
             context_name='CelloMusicStaff',
-            name='Cello Music Staff',
+            name='CelloMusicStaff',
             )
         cello_staff_group = abjad.StaffGroup(
             [cello_rh_music_staff, cello_music_staff],

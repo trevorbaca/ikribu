@@ -372,7 +372,7 @@
                         \bar "|"
                     }
                 }
-                \context ViolaMusicStaff = "Viola Music Staff" {
+                \context ViolaMusicStaff = "ViolaMusicStaff" {
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         s1 * 19/2
                         \once \override TextSpanner.arrow-width = 0.25
@@ -449,7 +449,7 @@
                         \bar "|"
                     }
                 }
-                \context CelloMusicStaff = "Cello Music Staff" {
+                \context CelloMusicStaff = "CelloMusicStaff" {
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         \clef "bass"
                         s1 * 7/2

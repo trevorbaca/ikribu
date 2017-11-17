@@ -188,7 +188,7 @@
                         \bar "|"
                     }
                 }
-                \context ViolaMusicStaff = "Viola Music Staff" {
+                \context ViolaMusicStaff = "ViolaMusicStaff" {
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         s1 * 4
                         \once \override TextSpanner.arrow-width = 0.25
@@ -241,7 +241,7 @@
                         \bar "|"
                     }
                 }
-                \context CelloMusicStaff = "Cello Music Staff" {
+                \context CelloMusicStaff = "CelloMusicStaff" {
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f

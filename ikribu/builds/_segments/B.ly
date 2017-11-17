@@ -515,7 +515,7 @@
                         \bar "|"
                     }
                 }
-                \context ViolaMusicStaff = "Viola Music Staff" {
+                \context ViolaMusicStaff = "ViolaMusicStaff" {
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         s1 * 59/4
                         \once \override TextSpanner.arrow-width = 0.25
@@ -595,7 +595,7 @@
                         \bar "|"
                     }
                 }
-                \context CelloMusicStaff = "Cello Music Staff" {
+                \context CelloMusicStaff = "CelloMusicStaff" {
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         R1 * 1
                         R1 * 1

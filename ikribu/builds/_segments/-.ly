@@ -150,7 +150,7 @@
                         \bar "|"
                     }
                 }
-                \context ViolaMusicStaff = "Viola Music Staff" {
+                \context ViolaMusicStaff = "ViolaMusicStaff" {
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         \clef "alto"
                         R1 * 7/4
@@ -179,7 +179,7 @@
                         \bar "|"
                     }
                 }
-                \context CelloMusicStaff = "Cello Music Staff" {
+                \context CelloMusicStaff = "CelloMusicStaff" {
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         \clef "treble"
                         \override NoteHead.style = #'harmonic

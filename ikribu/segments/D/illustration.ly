@@ -375,7 +375,7 @@
                             
                         }
                     }
-                    \context ViolaMusicStaff = "Viola Music Staff" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff" {
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             %%% ViolaMusicVoice [measure 52] %%%
@@ -786,7 +786,7 @@
                             
                         }
                     }
-                    \context CelloMusicStaff = "Cello Music Staff" {
+                    \context CelloMusicStaff = "CelloMusicStaff" {
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
