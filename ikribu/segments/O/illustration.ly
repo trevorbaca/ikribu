@@ -273,7 +273,8 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        <c e''>1
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        <c e''>1 \p
                             - \tweak color #red
                             ^ \markup { @ }
                         
@@ -493,7 +494,8 @@
                             \clef "percussion"
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1
+                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 1 \pp
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -574,7 +576,8 @@
                             \clef "percussion"
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 19/2
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 19/2 \fff
                             
                             %%% ViolinMusicVoice [measure 226] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -663,7 +666,8 @@
                             \clef "percussion"
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1
+                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 1 \ff
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -744,7 +748,8 @@
                             \clef "treble"
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 19/2
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 19/2 \fff
                             
                             %%% ViolaMusicVoice [measure 226] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -833,7 +838,8 @@
                             \clef "percussion"
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1
+                            \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 1 \ppp
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -913,7 +919,8 @@
                             \startStaff
                             \clef "bass"
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/2
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 7/2 \sfffz
                             
                             %%% CelloMusicVoice [measure 222] %%%
                             \ottava #-1

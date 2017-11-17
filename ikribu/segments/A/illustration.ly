@@ -434,7 +434,8 @@
                             \startStaff
                             \clef "treble"
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 2
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 2 \sfz
                             
                             %%% CelloMusicVoice [measure 4] %%%
                             R1 * 7/4
