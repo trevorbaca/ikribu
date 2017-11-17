@@ -183,7 +183,8 @@
                             }
                         \clef "percussion"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        c'4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        c'4 \p
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -303,7 +304,8 @@
                             \clef "percussion"
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4
+                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 7/4 \ppp
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -355,7 +357,8 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            b4 -\tongue #2
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            b4 -\tongue #2 \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -506,7 +509,8 @@
                             \clef "percussion"
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4
+                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 7/4 \ppp
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -558,7 +562,8 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
-                            c'4 -\staccato
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            c'4 -\staccato \fff
                                 ^ \markup {
                                     \whiteout
                                         \upright
@@ -709,7 +714,8 @@
                             \clef "percussion"
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4
+                            \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                            R1 * 7/4 \pp
                                 ^ \markup {
                                     \override
                                         #'(box-padding . 0.75)
@@ -763,7 +769,8 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "percussion"
-                                c'8 -\accent [
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                c'8 -\accent \p [
                                     ^ \markup {
                                         \whiteout
                                             \upright

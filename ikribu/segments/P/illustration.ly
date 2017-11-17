@@ -184,7 +184,8 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        c'''2. \< \pp
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        c'''2. \p \< \pp
                             - \tweak color #red
                             ^ \markup { @ }
                         
@@ -287,7 +288,8 @@
                                     }
                                 \clef "percussion"
                                 \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                r4
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                r4 \pp
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.75)
@@ -515,7 +517,8 @@
                                 \clef "percussion"
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                c''8 \glissando [
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                c''8 \fff \glissando [
                                 
                                 b''8. \glissando
                                 
@@ -841,7 +844,8 @@
                                 \startStaff
                                 \clef "treble"
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                c''2.. \glissando
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                c''2.. \fff \glissando
                                 
                                 d'8 \glissando
                             }
@@ -917,7 +921,8 @@
                                     }
                                 \clef "percussion"
                                 \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                r4
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                r4 \ppp
                                     ^ \markup {
                                         \override
                                             #'(box-padding . 0.75)
@@ -1151,7 +1156,8 @@
                                 \startStaff
                                 \clef "tenor"
                                 \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                a,8 \glissando [
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                                a,8 \p \glissando [
                                 
                                 g,8. \glissando
                                 
