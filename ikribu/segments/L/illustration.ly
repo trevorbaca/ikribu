@@ -376,6 +376,7 @@
                             }
                         \clef "treble"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         d\breve \ppp
                             ^ \markup {
                                 \whiteout

@@ -334,6 +334,7 @@
                             }
                         \clef "percussion"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         fs'2 \ppp
                         
@@ -832,6 +833,7 @@
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \clef "bass"
+                            \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 7
                             
                             %%% CelloMusicVoice [measure 71] %%%

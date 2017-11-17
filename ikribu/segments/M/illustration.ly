@@ -612,6 +612,7 @@
                             }
                         \clef "treble"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 3/4
                         
                         %%% BassClarinetMusicVoice [measure 177] %%%
@@ -1687,6 +1688,7 @@
                             \startStaff
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble"
+                            \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             fqf''2. -\laissezVibrer \sfz
                                 ^ \markup {
                                     \whiteout
