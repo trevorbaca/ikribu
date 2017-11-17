@@ -13,15 +13,20 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                % measure 176
+                
+                %%% Global Rests [measure 176] %%%
                 R1 * 3/4
-                % measure 177
+                
+                %%% Global Rests [measure 177] %%%
                 R1 * 1
-                % measure 178
+                
+                %%% Global Rests [measure 178] %%%
                 R1 * 1
-                % measure 179
+                
+                %%% Global Rests [measure 179] %%%
                 R1 * 1/2
-                % measure 180
+                
+                %%% Global Rests [measure 180] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -30,11 +35,14 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 181
+                
+                %%% Global Rests [measure 181] %%%
                 R1 * 7/4
-                % measure 182
+                
+                %%% Global Rests [measure 182] %%%
                 R1 * 3/4
-                % measure 183
+                
+                %%% Global Rests [measure 183] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -43,15 +51,20 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 184
+                
+                %%% Global Rests [measure 184] %%%
                 R1 * 1
-                % measure 185
+                
+                %%% Global Rests [measure 185] %%%
                 R1 * 3/4
-                % measure 186
+                
+                %%% Global Rests [measure 186] %%%
                 R1 * 1
-                % measure 187
+                
+                %%% Global Rests [measure 187] %%%
                 R1 * 3/4
-                % measure 188
+                
+                %%% Global Rests [measure 188] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -60,15 +73,20 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 189
+                
+                %%% Global Rests [measure 189] %%%
                 R1 * 1/2
-                % measure 190
+                
+                %%% Global Rests [measure 190] %%%
                 R1 * 7/4
-                % measure 191
+                
+                %%% Global Rests [measure 191] %%%
                 R1 * 7/4
-                % measure 192
+                
+                %%% Global Rests [measure 192] %%%
                 R1 * 2
-                % measure 193
+                
+                %%% Global Rests [measure 193] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -77,11 +95,14 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 194
+                
+                %%% Global Rests [measure 194] %%%
                 R1 * 7/4
-                % measure 195
+                
+                %%% Global Rests [measure 195] %%%
                 R1 * 3/4
-                % measure 196
+                
+                %%% Global Rests [measure 196] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -90,27 +111,38 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
-                % measure 197
+                
+                %%% Global Rests [measure 197] %%%
                 R1 * 1/2
-                % measure 198
+                
+                %%% Global Rests [measure 198] %%%
                 R1 * 2
-                % measure 199
+                
+                %%% Global Rests [measure 199] %%%
                 R1 * 7/4
-                % measure 200
+                
+                %%% Global Rests [measure 200] %%%
                 R1 * 1
-                % measure 201
+                
+                %%% Global Rests [measure 201] %%%
                 R1 * 1
-                % measure 202
+                
+                %%% Global Rests [measure 202] %%%
                 R1 * 3/4
-                % measure 203
+                
+                %%% Global Rests [measure 203] %%%
                 R1 * 7/4
-                % measure 204
+                
+                %%% Global Rests [measure 204] %%%
                 R1 * 2
-                % measure 205
+                
+                %%% Global Rests [measure 205] %%%
                 R1 * 3/4
-                % measure 206
+                
+                %%% Global Rests [measure 206] %%%
                 R1 * 1
-                % measure 207
+                
+                %%% Global Rests [measure 207] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -119,9 +151,11 @@
                         \musicglyph
                             #"scripts.ushortfermata"
                         }
+                
             }
             \context GlobalSkips = "Global Skips" {
-                % measure 176
+                
+                %%% Global Skips [measure 176] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \once \override TextSpanner.arrow-width = 0.25
@@ -161,17 +195,20 @@
                 \mark #13
                 \newSpacingSection
                 s1 * 3/4 \startTextSpan
-                % measure 177
+                
+                %%% Global Skips [measure 177] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 178
+                
+                %%% Global Skips [measure 178] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 179
+                
+                %%% Global Skips [measure 179] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 2/4
                 \newSpacingSection
@@ -191,12 +228,14 @@
                             104
                         }
                     }
-                % measure 180
+                
+                %%% Global Skips [measure 180] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
-                % measure 181
+                
+                %%% Global Skips [measure 181] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -222,7 +261,8 @@
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4 \startTextSpan
-                % measure 182
+                
+                %%% Global Skips [measure 182] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -242,12 +282,14 @@
                             58
                         }
                     }
-                % measure 183
+                
+                %%% Global Skips [measure 183] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
-                % measure 184
+                
+                %%% Global Skips [measure 184] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -273,17 +315,20 @@
                 \time 4/4
                 \newSpacingSection
                 s1 * 1 \startTextSpan
-                % measure 185
+                
+                %%% Global Skips [measure 185] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 186
+                
+                %%% Global Skips [measure 186] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 187
+                
+                %%% Global Skips [measure 187] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -303,13 +348,15 @@
                             104
                         }
                     }
-                % measure 188
+                
+                %%% Global Skips [measure 188] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
                 \break
-                % measure 189
+                
+                %%% Global Skips [measure 189] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 140) (alignment-distances . (15 20 20)))
                 \once \override TextSpanner.arrow-width = 0.25
@@ -337,17 +384,20 @@
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2 \startTextSpan
-                % measure 190
+                
+                %%% Global Skips [measure 190] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 191
+                
+                %%% Global Skips [measure 191] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 192
+                
+                %%% Global Skips [measure 192] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
@@ -367,12 +417,14 @@
                             58
                         }
                     }
-                % measure 193
+                
+                %%% Global Skips [measure 193] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
-                % measure 194
+                
+                %%% Global Skips [measure 194] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -398,7 +450,8 @@
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4 \startTextSpan
-                % measure 195
+                
+                %%% Global Skips [measure 195] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -418,12 +471,14 @@
                             104
                         }
                     }
-                % measure 196
+                
+                %%% Global Skips [measure 196] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
-                % measure 197
+                
+                %%% Global Skips [measure 197] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -449,30 +504,35 @@
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2 \startTextSpan
-                % measure 198
+                
+                %%% Global Skips [measure 198] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
                 \break
-                % measure 199
+                
+                %%% Global Skips [measure 199] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 200
+                
+                %%% Global Skips [measure 200] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 201
+                
+                %%% Global Skips [measure 201] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 202
+                
+                %%% Global Skips [measure 202] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -492,31 +552,37 @@
                             58
                         }
                     }
-                % measure 203
+                
+                %%% Global Skips [measure 203] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 204
+                
+                %%% Global Skips [measure 204] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 205
+                
+                %%% Global Skips [measure 205] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 206
+                
+                %%% Global Skips [measure 206] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 207
+                
+                %%% Global Skips [measure 207] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                
             }
         >>
         \context MusicContext = "Music Context" {
@@ -524,7 +590,8 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        % measure 176
+                        
+                        %%% Bass Clarinet Music Voice [measure 176] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -549,72 +616,100 @@
                         \clef "treble"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 3/4
-                        % measure 177
+                        
+                        %%% Bass Clarinet Music Voice [measure 177] %%%
                         cs1 \< \p
-                        % measure 178
+                        
+                        %%% Bass Clarinet Music Voice [measure 178] %%%
                         cs1 \repeatTie \fff
-                        % measure 179
+                        
+                        %%% Bass Clarinet Music Voice [measure 179] %%%
                         \once \override Hairpin.circled-tip = ##t
                         cs2 \repeatTie \> \fff
-                        % measure 180
+                        
+                        %%% Bass Clarinet Music Voice [measure 180] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         R1 * 2 \!
-                        % measure 182
+                        
+                        %%% Bass Clarinet Music Voice [measure 182] %%%
                         cs2. \p
-                        % measure 183
+                        
+                        %%% Bass Clarinet Music Voice [measure 183] %%%
                         R1 * 5/4
-                        % measure 185
+                        
+                        %%% Bass Clarinet Music Voice [measure 185] %%%
                         cs2. \< \p
-                        % measure 186
+                        
+                        %%% Bass Clarinet Music Voice [measure 186] %%%
                         cs1 \repeatTie \fff
-                        % measure 187
+                        
+                        %%% Bass Clarinet Music Voice [measure 187] %%%
                         \once \override Hairpin.circled-tip = ##t
                         cs2. \repeatTie \> \fff
-                        % measure 188
+                        
+                        %%% Bass Clarinet Music Voice [measure 188] %%%
                         R1 * 3/4 \!
-                        % measure 190
+                        
+                        %%% Bass Clarinet Music Voice [measure 190] %%%
                         cs1.. \< \p
-                        % measure 191
+                        
+                        %%% Bass Clarinet Music Voice [measure 191] %%%
                         cs1.. \repeatTie \fff
-                        % measure 192
+                        
+                        %%% Bass Clarinet Music Voice [measure 192] %%%
                         \once \override Hairpin.circled-tip = ##t
                         cs\breve \repeatTie \> \fff
-                        % measure 193
+                        
+                        %%% Bass Clarinet Music Voice [measure 193] %%%
                         R1 * 2 \!
-                        % measure 195
+                        
+                        %%% Bass Clarinet Music Voice [measure 195] %%%
                         cs2. \p
-                        % measure 196
+                        
+                        %%% Bass Clarinet Music Voice [measure 196] %%%
                         R1 * 3/4
-                        % measure 198
+                        
+                        %%% Bass Clarinet Music Voice [measure 198] %%%
                         cs\breve \< \ppp
-                        % measure 199
+                        
+                        %%% Bass Clarinet Music Voice [measure 199] %%%
                         cs1.. \repeatTie
-                        % measure 200
+                        
+                        %%% Bass Clarinet Music Voice [measure 200] %%%
                         cs1 \repeatTie
-                        % measure 201
+                        
+                        %%% Bass Clarinet Music Voice [measure 201] %%%
                         cs1 \repeatTie
-                        % measure 202
+                        
+                        %%% Bass Clarinet Music Voice [measure 202] %%%
                         cs2. \repeatTie
-                        % measure 203
+                        
+                        %%% Bass Clarinet Music Voice [measure 203] %%%
                         cs1.. \repeatTie
-                        % measure 204
+                        
+                        %%% Bass Clarinet Music Voice [measure 204] %%%
                         cs\breve \repeatTie
-                        % measure 205
+                        
+                        %%% Bass Clarinet Music Voice [measure 205] %%%
                         cs2. \repeatTie \fff
-                        % measure 206
+                        
+                        %%% Bass Clarinet Music Voice [measure 206] %%%
                         cs1 \repeatTie
-                        % measure 207
+                        
+                        %%% Bass Clarinet Music Voice [measure 207] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            % measure 176
+                            
+                            %%% Violin RH Music Voice [measure 176] %%%
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -635,79 +730,112 @@
                                         \box
                                             "to violin"
                                     }
-                            % measure 177
+                            
+                            %%% Violin RH Music Voice [measure 177] %%%
                             R1 * 1
-                            % measure 178
+                            
+                            %%% Violin RH Music Voice [measure 178] %%%
                             R1 * 1
-                            % measure 179
+                            
+                            %%% Violin RH Music Voice [measure 179] %%%
                             R1 * 1/2
-                            % measure 180
+                            
+                            %%% Violin RH Music Voice [measure 180] %%%
                             R1 * 1/4
-                            % measure 181
+                            
+                            %%% Violin RH Music Voice [measure 181] %%%
                             R1 * 7/4
-                            % measure 182
+                            
+                            %%% Violin RH Music Voice [measure 182] %%%
                             R1 * 3/4
-                            % measure 183
+                            
+                            %%% Violin RH Music Voice [measure 183] %%%
                             R1 * 1/4
-                            % measure 184
+                            
+                            %%% Violin RH Music Voice [measure 184] %%%
                             R1 * 1
-                            % measure 185
+                            
+                            %%% Violin RH Music Voice [measure 185] %%%
                             R1 * 3/4
-                            % measure 186
+                            
+                            %%% Violin RH Music Voice [measure 186] %%%
                             R1 * 1
-                            % measure 187
+                            
+                            %%% Violin RH Music Voice [measure 187] %%%
                             R1 * 3/4
-                            % measure 188
+                            
+                            %%% Violin RH Music Voice [measure 188] %%%
                             R1 * 1/4
-                            % measure 189
+                            
+                            %%% Violin RH Music Voice [measure 189] %%%
                             R1 * 1/2
-                            % measure 190
+                            
+                            %%% Violin RH Music Voice [measure 190] %%%
                             R1 * 7/4
-                            % measure 191
+                            
+                            %%% Violin RH Music Voice [measure 191] %%%
                             R1 * 7/4
-                            % measure 192
+                            
+                            %%% Violin RH Music Voice [measure 192] %%%
                             R1 * 2
-                            % measure 193
+                            
+                            %%% Violin RH Music Voice [measure 193] %%%
                             R1 * 1/4
-                            % measure 194
+                            
+                            %%% Violin RH Music Voice [measure 194] %%%
                             R1 * 7/4
-                            % measure 195
+                            
+                            %%% Violin RH Music Voice [measure 195] %%%
                             R1 * 3/4
-                            % measure 196
+                            
+                            %%% Violin RH Music Voice [measure 196] %%%
                             R1 * 1/4
-                            % measure 197
+                            
+                            %%% Violin RH Music Voice [measure 197] %%%
                             R1 * 1/2
-                            % measure 198
+                            
+                            %%% Violin RH Music Voice [measure 198] %%%
                             R1 * 2
-                            % measure 199
+                            
+                            %%% Violin RH Music Voice [measure 199] %%%
                             R1 * 7/4
-                            % measure 200
+                            
+                            %%% Violin RH Music Voice [measure 200] %%%
                             R1 * 1
-                            % measure 201
+                            
+                            %%% Violin RH Music Voice [measure 201] %%%
                             R1 * 1
-                            % measure 202
+                            
+                            %%% Violin RH Music Voice [measure 202] %%%
                             R1 * 3/4
-                            % measure 203
+                            
+                            %%% Violin RH Music Voice [measure 203] %%%
                             R1 * 7/4
-                            % measure 204
+                            
+                            %%% Violin RH Music Voice [measure 204] %%%
                             R1 * 2
-                            % measure 205
+                            
+                            %%% Violin RH Music Voice [measure 205] %%%
                             R1 * 3/4
-                            % measure 206
+                            
+                            %%% Violin RH Music Voice [measure 206] %%%
                             R1 * 1
-                            % measure 207
+                            
+                            %%% Violin RH Music Voice [measure 207] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            % measure 176
+                            
+                            %%% Violin Music Voice [measure 176] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
                             \override TextScript.staff-padding = #4.5
+                            \clef "percussion"
                             c'2.
                                 ^ \markup {
                                     \whiteout
@@ -730,7 +858,8 @@
                                             ”
                                     }
                             \times 2/3 {
-                                % measure 177
+                                
+                                %%% Violin Music Voice [measure 177] %%%
                                 c'2 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
@@ -740,24 +869,34 @@
                                                     \box
                                                         "brushes on BD"
                                         }
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
                             }
                             \times 2/3 {
-                                % measure 178
+                                
+                                %%% Violin Music Voice [measure 178] %%%
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
                             }
                             \times 2/3 {
-                                % measure 179
+                                
+                                %%% Violin Music Voice [measure 179] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32 \fff
                             }
-                            % measure 180
+                            
+                            %%% Violin Music Voice [measure 180] %%%
                             R1 * 1/4
-                            % measure 181
+                            
+                            %%% Violin Music Voice [measure 181] %%%
                             c'1..
                                 ^ \markup {
                                     \whiteout
@@ -781,7 +920,8 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                % measure 182
+                                
+                                %%% Violin Music Voice [measure 182] %%%
                                 c'4 :32 \fff
                                     ^ \markup {
                                         \whiteout
@@ -791,13 +931,18 @@
                                                     \box
                                                         "brushes on BD"
                                         }
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
                             }
-                            % measure 183
+                            
+                            %%% Violin Music Voice [measure 183] %%%
                             R1 * 1/4
-                            % measure 184
+                            
+                            %%% Violin Music Voice [measure 184] %%%
                             c'1
                                 ^ \markup {
                                     \whiteout
@@ -821,7 +966,8 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                % measure 185
+                                
+                                %%% Violin Music Voice [measure 185] %%%
                                 c'4 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
@@ -831,31 +977,47 @@
                                                     \box
                                                         "brushes on BD"
                                         }
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
                             }
                             \times 4/5 {
-                                % measure 186
+                                
+                                %%% Violin Music Voice [measure 186] %%%
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                % measure 187
+                                
+                                %%% Violin Music Voice [measure 187] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32 \fff
                             }
-                            % measure 188
+                            
+                            %%% Violin Music Voice [measure 188] %%%
                             R1 * 1/4
-                            % measure 189
+                            
+                            %%% Violin Music Voice [measure 189] %%%
                             c'2
                                 ^ \markup {
                                     \whiteout
@@ -879,7 +1041,8 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                % measure 190
+                                
+                                %%% Violin Music Voice [measure 190] %%%
                                 c'1 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
@@ -889,25 +1052,35 @@
                                                     \box
                                                         "brushes on BD"
                                         }
+                                
                                 c'1 -\accent
+                                
                                 c'1 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                % measure 191
+                                
+                                %%% Violin Music Voice [measure 191] %%%
                                 c'1 -\accent
+                                
                                 c'1 :32
+                                
                                 c'1 -\accent
                             }
                             \times 2/3 {
-                                % measure 192
+                                
+                                %%% Violin Music Voice [measure 192] %%%
                                 c'1 :32
+                                
                                 c'1 -\accent
+                                
                                 c'1 :32 \fff
                             }
-                            % measure 193
+                            
+                            %%% Violin Music Voice [measure 193] %%%
                             R1 * 1/4
-                            % measure 194
+                            
+                            %%% Violin Music Voice [measure 194] %%%
                             c'1..
                                 ^ \markup {
                                     \whiteout
@@ -931,7 +1104,8 @@
                                     }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                % measure 195
+                                
+                                %%% Violin Music Voice [measure 195] %%%
                                 c'4 :32 \fff
                                     ^ \markup {
                                         \whiteout
@@ -941,13 +1115,18 @@
                                                     \box
                                                         "brushes on BD"
                                         }
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
                             }
-                            % measure 196
+                            
+                            %%% Violin Music Voice [measure 196] %%%
                             R1 * 1/4
-                            % measure 197
+                            
+                            %%% Violin Music Voice [measure 197] %%%
                             c'2
                                 ^ \markup {
                                     \whiteout
@@ -970,7 +1149,8 @@
                                             ”
                                     }
                             \times 4/5 {
-                                % measure 198
+                                
+                                %%% Violin Music Voice [measure 198] %%%
                                 c'2 :32 \< \mf
                                     ^ \markup {
                                         \whiteout
@@ -980,49 +1160,75 @@
                                                     \box
                                                         "brushes on BD"
                                         }
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/10 {
-                                % measure 199
+                                
+                                %%% Violin Music Voice [measure 199] %%%
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
                             }
                             \times 4/5 {
-                                % measure 200
+                                
+                                %%% Violin Music Voice [measure 200] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
                             }
                             \times 4/5 {
-                                % measure 201
+                                
+                                %%% Violin Music Voice [measure 201] %%%
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                % measure 202
+                                
+                                %%% Violin Music Voice [measure 202] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32 \fff
                             }
-                            % measure 203
+                            
+                            %%% Violin Music Voice [measure 203] %%%
                             R1 * 23/4
                             \bar "|"
                             \revert TextScript.staff-padding
+                            
                         }
                     }
                 >>
@@ -1030,7 +1236,8 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            % measure 176
+                            
+                            %%% Viola RH Music Voice [measure 176] %%%
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -1051,205 +1258,303 @@
                                         \box
                                             "to viola"
                                     }
-                            % measure 177
+                            
+                            %%% Viola RH Music Voice [measure 177] %%%
                             R1 * 1
-                            % measure 178
+                            
+                            %%% Viola RH Music Voice [measure 178] %%%
                             R1 * 1
-                            % measure 179
+                            
+                            %%% Viola RH Music Voice [measure 179] %%%
                             R1 * 1/2
-                            % measure 180
+                            
+                            %%% Viola RH Music Voice [measure 180] %%%
                             R1 * 1/4
-                            % measure 181
+                            
+                            %%% Viola RH Music Voice [measure 181] %%%
                             R1 * 7/4
-                            % measure 182
+                            
+                            %%% Viola RH Music Voice [measure 182] %%%
                             R1 * 3/4
-                            % measure 183
+                            
+                            %%% Viola RH Music Voice [measure 183] %%%
                             R1 * 1/4
-                            % measure 184
+                            
+                            %%% Viola RH Music Voice [measure 184] %%%
                             R1 * 1
-                            % measure 185
+                            
+                            %%% Viola RH Music Voice [measure 185] %%%
                             R1 * 3/4
-                            % measure 186
+                            
+                            %%% Viola RH Music Voice [measure 186] %%%
                             R1 * 1
-                            % measure 187
+                            
+                            %%% Viola RH Music Voice [measure 187] %%%
                             R1 * 3/4
-                            % measure 188
+                            
+                            %%% Viola RH Music Voice [measure 188] %%%
                             R1 * 1/4
-                            % measure 189
+                            
+                            %%% Viola RH Music Voice [measure 189] %%%
                             R1 * 1/2
-                            % measure 190
+                            
+                            %%% Viola RH Music Voice [measure 190] %%%
                             R1 * 7/4
-                            % measure 191
+                            
+                            %%% Viola RH Music Voice [measure 191] %%%
                             R1 * 7/4
-                            % measure 192
+                            
+                            %%% Viola RH Music Voice [measure 192] %%%
                             R1 * 2
-                            % measure 193
+                            
+                            %%% Viola RH Music Voice [measure 193] %%%
                             R1 * 1/4
-                            % measure 194
+                            
+                            %%% Viola RH Music Voice [measure 194] %%%
                             R1 * 7/4
-                            % measure 195
+                            
+                            %%% Viola RH Music Voice [measure 195] %%%
                             R1 * 3/4
-                            % measure 196
+                            
+                            %%% Viola RH Music Voice [measure 196] %%%
                             R1 * 1/4
-                            % measure 197
+                            
+                            %%% Viola RH Music Voice [measure 197] %%%
                             R1 * 1/2
-                            % measure 198
+                            
+                            %%% Viola RH Music Voice [measure 198] %%%
                             R1 * 2
-                            % measure 199
+                            
+                            %%% Viola RH Music Voice [measure 199] %%%
                             R1 * 7/4
-                            % measure 200
+                            
+                            %%% Viola RH Music Voice [measure 200] %%%
                             R1 * 1
-                            % measure 201
+                            
+                            %%% Viola RH Music Voice [measure 201] %%%
                             R1 * 1
-                            % measure 202
+                            
+                            %%% Viola RH Music Voice [measure 202] %%%
                             R1 * 3/4
-                            % measure 203
+                            
+                            %%% Viola RH Music Voice [measure 203] %%%
                             R1 * 7/4
-                            % measure 204
+                            
+                            %%% Viola RH Music Voice [measure 204] %%%
                             R1 * 2
-                            % measure 205
+                            
+                            %%% Viola RH Music Voice [measure 205] %%%
                             R1 * 3/4
-                            % measure 206
+                            
+                            %%% Viola RH Music Voice [measure 206] %%%
                             R1 * 1
-                            % measure 207
+                            
+                            %%% Viola RH Music Voice [measure 207] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            % measure 176
+                            
+                            %%% Viola Music Voice [measure 176] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
                             \override TextScript.staff-padding = #4.5
+                            \clef "percussion"
                             R1 * 3/4
                             {
-                                % measure 177
+                                
+                                %%% Viola Music Voice [measure 177] %%%
                                 c'4 :32 \< \mf
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
                             }
                             {
-                                % measure 178
+                                
+                                %%% Viola Music Voice [measure 178] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
                             }
                             {
-                                % measure 179
+                                
+                                %%% Viola Music Voice [measure 179] %%%
                                 c'8 :32 [
+                                
                                 c'8 -\accent
+                                
                                 c'8 :32
+                                
                                 c'8 -\accent \fff ]
                             }
-                            % measure 180
+                            
+                            %%% Viola Music Voice [measure 180] %%%
                             R1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                % measure 182
+                                
+                                %%% Viola Music Voice [measure 182] %%%
                                 c'4 :32 \fff
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
                             }
-                            % measure 183
+                            
+                            %%% Viola Music Voice [measure 183] %%%
                             R1 * 5/4
                             {
-                                % measure 185
+                                
+                                %%% Viola Music Voice [measure 185] %%%
                                 c'4 :32 \< \mf
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
                             }
                             \times 2/3 {
-                                % measure 186
+                                
+                                %%% Viola Music Voice [measure 186] %%%
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
                             }
                             {
-                                % measure 187
+                                
+                                %%% Viola Music Voice [measure 187] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32 \fff
                             }
-                            % measure 188
+                            
+                            %%% Viola Music Voice [measure 188] %%%
                             R1 * 3/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                % measure 190
+                                
+                                %%% Viola Music Voice [measure 190] %%%
                                 c'2 :32 \< \mf
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                % measure 191
+                                
+                                %%% Viola Music Voice [measure 191] %%%
                                 c'2 :32
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
                             }
                             {
-                                % measure 192
+                                
+                                %%% Viola Music Voice [measure 192] %%%
                                 c'2 :32
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent \fff
                             }
-                            % measure 193
+                            
+                            %%% Viola Music Voice [measure 193] %%%
                             R1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
-                                % measure 195
+                                
+                                %%% Viola Music Voice [measure 195] %%%
                                 c'4 :32 \fff
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32
                             }
-                            % measure 196
+                            
+                            %%% Viola Music Voice [measure 196] %%%
                             R1 * 3/4
                             \times 2/3 {
-                                % measure 198
+                                
+                                %%% Viola Music Voice [measure 198] %%%
                                 c'1 :32 \< \mf
+                                
                                 c'1 -\accent
+                                
                                 c'1 :32
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
-                                % measure 199
+                                
+                                %%% Viola Music Voice [measure 199] %%%
                                 c'1 -\accent
+                                
                                 c'1 :32
+                                
                                 c'1 -\accent
                             }
                             \times 2/3 {
-                                % measure 200
+                                
+                                %%% Viola Music Voice [measure 200] %%%
                                 c'2 :32
+                                
                                 c'2 -\accent
+                                
                                 c'2 :32
                             }
                             \times 2/3 {
-                                % measure 201
+                                
+                                %%% Viola Music Voice [measure 201] %%%
                                 c'2 -\accent
+                                
                                 c'2 :32
+                                
                                 c'2 -\accent
                             }
                             {
-                                % measure 202
+                                
+                                %%% Viola Music Voice [measure 202] %%%
                                 c'4 :32
+                                
                                 c'4 -\accent
+                                
                                 c'4 :32 \fff
                             }
-                            % measure 203
+                            
+                            %%% Viola Music Voice [measure 203] %%%
                             R1 * 23/4
                             \bar "|"
                             \revert TextScript.staff-padding
+                            
                         }
                     }
                 >>
@@ -1257,7 +1562,8 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            % measure 176
+                            
+                            %%% Cello RH Music Voice [measure 176] %%%
                             \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -1278,79 +1584,112 @@
                                         \box
                                             "to cello"
                                     }
-                            % measure 177
+                            
+                            %%% Cello RH Music Voice [measure 177] %%%
                             R1 * 1
-                            % measure 178
+                            
+                            %%% Cello RH Music Voice [measure 178] %%%
                             R1 * 1
-                            % measure 179
+                            
+                            %%% Cello RH Music Voice [measure 179] %%%
                             R1 * 1/2
-                            % measure 180
+                            
+                            %%% Cello RH Music Voice [measure 180] %%%
                             R1 * 1/4
-                            % measure 181
+                            
+                            %%% Cello RH Music Voice [measure 181] %%%
                             R1 * 7/4
-                            % measure 182
+                            
+                            %%% Cello RH Music Voice [measure 182] %%%
                             R1 * 3/4
-                            % measure 183
+                            
+                            %%% Cello RH Music Voice [measure 183] %%%
                             R1 * 1/4
-                            % measure 184
+                            
+                            %%% Cello RH Music Voice [measure 184] %%%
                             R1 * 1
-                            % measure 185
+                            
+                            %%% Cello RH Music Voice [measure 185] %%%
                             R1 * 3/4
-                            % measure 186
+                            
+                            %%% Cello RH Music Voice [measure 186] %%%
                             R1 * 1
-                            % measure 187
+                            
+                            %%% Cello RH Music Voice [measure 187] %%%
                             R1 * 3/4
-                            % measure 188
+                            
+                            %%% Cello RH Music Voice [measure 188] %%%
                             R1 * 1/4
-                            % measure 189
+                            
+                            %%% Cello RH Music Voice [measure 189] %%%
                             R1 * 1/2
-                            % measure 190
+                            
+                            %%% Cello RH Music Voice [measure 190] %%%
                             R1 * 7/4
-                            % measure 191
+                            
+                            %%% Cello RH Music Voice [measure 191] %%%
                             R1 * 7/4
-                            % measure 192
+                            
+                            %%% Cello RH Music Voice [measure 192] %%%
                             R1 * 2
-                            % measure 193
+                            
+                            %%% Cello RH Music Voice [measure 193] %%%
                             R1 * 1/4
-                            % measure 194
+                            
+                            %%% Cello RH Music Voice [measure 194] %%%
                             R1 * 7/4
-                            % measure 195
+                            
+                            %%% Cello RH Music Voice [measure 195] %%%
                             R1 * 3/4
-                            % measure 196
+                            
+                            %%% Cello RH Music Voice [measure 196] %%%
                             R1 * 1/4
-                            % measure 197
+                            
+                            %%% Cello RH Music Voice [measure 197] %%%
                             R1 * 1/2
-                            % measure 198
+                            
+                            %%% Cello RH Music Voice [measure 198] %%%
                             R1 * 2
-                            % measure 199
+                            
+                            %%% Cello RH Music Voice [measure 199] %%%
                             R1 * 7/4
-                            % measure 200
+                            
+                            %%% Cello RH Music Voice [measure 200] %%%
                             R1 * 1
-                            % measure 201
+                            
+                            %%% Cello RH Music Voice [measure 201] %%%
                             R1 * 1
-                            % measure 202
+                            
+                            %%% Cello RH Music Voice [measure 202] %%%
                             R1 * 3/4
-                            % measure 203
+                            
+                            %%% Cello RH Music Voice [measure 203] %%%
                             R1 * 7/4
-                            % measure 204
+                            
+                            %%% Cello RH Music Voice [measure 204] %%%
                             R1 * 2
-                            % measure 205
+                            
+                            %%% Cello RH Music Voice [measure 205] %%%
                             R1 * 3/4
-                            % measure 206
+                            
+                            %%% Cello RH Music Voice [measure 206] %%%
                             R1 * 1
-                            % measure 207
+                            
+                            %%% Cello RH Music Voice [measure 207] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            % measure 176
+                            
+                            %%% Cello Music Voice [measure 176] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "treble"
                             \once \override NoteHead.style = #'harmonic
+                            \clef "treble"
                             fqf''2. -\laissezVibrer \sfz
                                 ^ \markup {
                                     \whiteout
@@ -1362,7 +1701,8 @@
                                         \upright
                                             III
                                     }
-                            % measure 177
+                            
+                            %%% Cello Music Voice [measure 177] %%%
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1386,23 +1726,27 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass"
                             c,,1 \< \mf \startTextSpan
-                            % measure 178
+                            
+                            %%% Cello Music Voice [measure 178] %%%
                             c,,1 \repeatTie
-                            % measure 179
+                            
+                            %%% Cello Music Voice [measure 179] %%%
                             c,,2 \repeatTie \fff \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         XP
                                 }
                             \ottava #0
-                            % measure 180
+                            
+                            %%% Cello Music Voice [measure 180] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/4
-                            % measure 181
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 181] %%%
                             \once \override NoteHead.style = #'harmonic
+                            \clef "treble"
                             g''1.. -\laissezVibrer \sfz
                                 ^ \markup {
                                     \whiteout
@@ -1414,7 +1758,8 @@
                                         \upright
                                             III
                                     }
-                            % measure 182
+                            
+                            %%% Cello Music Voice [measure 182] %%%
                             \ottava #-1
                             \clef "bass"
                             c,,2. \fff
@@ -1424,11 +1769,13 @@
                                             XP
                                     }
                             \ottava #0
-                            % measure 183
+                            
+                            %%% Cello Music Voice [measure 183] %%%
                             R1 * 1/4
-                            % measure 184
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 184] %%%
                             \once \override NoteHead.style = #'harmonic
+                            \clef "treble"
                             fqf''1 -\laissezVibrer \sffz
                                 ^ \markup {
                                     \whiteout
@@ -1440,7 +1787,8 @@
                                         \upright
                                             III
                                     }
-                            % measure 185
+                            
+                            %%% Cello Music Voice [measure 185] %%%
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1464,20 +1812,24 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass"
                             c,,2. \< \mf \startTextSpan
-                            % measure 186
+                            
+                            %%% Cello Music Voice [measure 186] %%%
                             c,,1 \repeatTie
-                            % measure 187
+                            
+                            %%% Cello Music Voice [measure 187] %%%
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         XP
                                 }
                             \ottava #0
-                            % measure 188
+                            
+                            %%% Cello Music Voice [measure 188] %%%
                             R1 * 1/4
-                            % measure 189
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 189] %%%
                             \once \override NoteHead.style = #'harmonic
+                            \clef "treble"
                             g''2 -\laissezVibrer \sffz
                                 ^ \markup {
                                     \whiteout
@@ -1489,7 +1841,8 @@
                                         \upright
                                             III
                                     }
-                            % measure 190
+                            
+                            %%% Cello Music Voice [measure 190] %%%
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1513,20 +1866,24 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass"
                             c,,1.. \< \mf \startTextSpan
-                            % measure 191
+                            
+                            %%% Cello Music Voice [measure 191] %%%
                             c,,1.. \repeatTie
-                            % measure 192
+                            
+                            %%% Cello Music Voice [measure 192] %%%
                             c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         XP
                                 }
                             \ottava #0
-                            % measure 193
+                            
+                            %%% Cello Music Voice [measure 193] %%%
                             R1 * 1/4
-                            % measure 194
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 194] %%%
                             \once \override NoteHead.style = #'harmonic
+                            \clef "treble"
                             a''1.. -\laissezVibrer \sfffz
                                 ^ \markup {
                                     \whiteout
@@ -1538,7 +1895,8 @@
                                         \upright
                                             III
                                     }
-                            % measure 195
+                            
+                            %%% Cello Music Voice [measure 195] %%%
                             \ottava #-1
                             \clef "bass"
                             c,,2. \fff
@@ -1548,11 +1906,13 @@
                                             XP
                                     }
                             \ottava #0
-                            % measure 196
+                            
+                            %%% Cello Music Voice [measure 196] %%%
                             R1 * 1/4
-                            % measure 197
-                            \clef "treble"
+                            
+                            %%% Cello Music Voice [measure 197] %%%
                             \once \override NoteHead.style = #'harmonic
+                            \clef "treble"
                             cqs'''2 -\laissezVibrer \sfffz
                                 ^ \markup {
                                     \whiteout
@@ -1564,7 +1924,8 @@
                                         \upright
                                             III
                                     }
-                            % measure 198
+                            
+                            %%% Cello Music Voice [measure 198] %%%
                             \ottava #-1
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1588,22 +1949,28 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass"
                             c,,\breve \< \mf \startTextSpan
-                            % measure 199
+                            
+                            %%% Cello Music Voice [measure 199] %%%
                             c,,1.. \repeatTie
-                            % measure 200
+                            
+                            %%% Cello Music Voice [measure 200] %%%
                             c,,1 \repeatTie
-                            % measure 201
+                            
+                            %%% Cello Music Voice [measure 201] %%%
                             c,,1 \repeatTie
-                            % measure 202
+                            
+                            %%% Cello Music Voice [measure 202] %%%
                             c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         XP
                                 }
                             \ottava #0
-                            % measure 203
+                            
+                            %%% Cello Music Voice [measure 203] %%%
                             R1 * 23/4
                             \bar "|"
+                            
                         }
                     }
                 >>

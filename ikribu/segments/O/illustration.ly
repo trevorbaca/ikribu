@@ -13,47 +13,68 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                % measure 218
+                
+                %%% Global Rests [measure 218] %%%
                 R1 * 1
-                % measure 219
+                
+                %%% Global Rests [measure 219] %%%
                 R1 * 3/4
-                % measure 220
+                
+                %%% Global Rests [measure 220] %%%
                 R1 * 1
-                % measure 221
+                
+                %%% Global Rests [measure 221] %%%
                 R1 * 3/4
-                % measure 222
+                
+                %%% Global Rests [measure 222] %%%
                 R1 * 1/2
-                % measure 223
+                
+                %%% Global Rests [measure 223] %%%
                 R1 * 7/4
-                % measure 224
+                
+                %%% Global Rests [measure 224] %%%
                 R1 * 7/4
-                % measure 225
+                
+                %%% Global Rests [measure 225] %%%
                 R1 * 2
-                % measure 226
+                
+                %%% Global Rests [measure 226] %%%
                 R1 * 7/4
-                % measure 227
+                
+                %%% Global Rests [measure 227] %%%
                 R1 * 3/4
-                % measure 228
+                
+                %%% Global Rests [measure 228] %%%
                 R1 * 1/2
-                % measure 229
+                
+                %%% Global Rests [measure 229] %%%
                 R1 * 2
-                % measure 230
+                
+                %%% Global Rests [measure 230] %%%
                 R1 * 7/4
-                % measure 231
+                
+                %%% Global Rests [measure 231] %%%
                 R1 * 1
-                % measure 232
+                
+                %%% Global Rests [measure 232] %%%
                 R1 * 1
-                % measure 233
+                
+                %%% Global Rests [measure 233] %%%
                 R1 * 3/4
-                % measure 234
+                
+                %%% Global Rests [measure 234] %%%
                 R1 * 7/4
-                % measure 235
+                
+                %%% Global Rests [measure 235] %%%
                 R1 * 2
-                % measure 236
+                
+                %%% Global Rests [measure 236] %%%
                 R1 * 3/4
-                % measure 237
+                
+                %%% Global Rests [measure 237] %%%
                 R1 * 1
-                % measure 238
+                
+                %%% Global Rests [measure 238] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -62,9 +83,11 @@
                         \musicglyph
                             #"scripts.ufermata"
                         }
+                
             }
             \context GlobalSkips = "Global Skips" {
-                % measure 218
+                
+                %%% Global Skips [measure 218] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -87,112 +110,133 @@
                             42
                         }
                     }
-                % measure 219
+                
+                %%% Global Skips [measure 219] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 220
+                
+                %%% Global Skips [measure 220] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 221
+                
+                %%% Global Skips [measure 221] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 222
+                
+                %%% Global Skips [measure 222] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
-                % measure 223
+                
+                %%% Global Skips [measure 223] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 224
+                
+                %%% Global Skips [measure 224] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 225
+                
+                %%% Global Skips [measure 225] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 226
+                
+                %%% Global Skips [measure 226] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
                 \break
-                % measure 227
+                
+                %%% Global Skips [measure 227] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 140) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 228
+                
+                %%% Global Skips [measure 228] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
-                % measure 229
+                
+                %%% Global Skips [measure 229] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 230
+                
+                %%% Global Skips [measure 230] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 231
+                
+                %%% Global Skips [measure 231] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 232
+                
+                %%% Global Skips [measure 232] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 233
+                
+                %%% Global Skips [measure 233] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 234
+                
+                %%% Global Skips [measure 234] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
                 \break
-                % measure 235
+                
+                %%% Global Skips [measure 235] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 236
+                
+                %%% Global Skips [measure 236] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 237
+                
+                %%% Global Skips [measure 237] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 238
+                
+                %%% Global Skips [measure 238] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                
             }
         >>
         \context MusicContext = "Music Context" {
@@ -200,7 +244,8 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        % measure 218
+                        
+                        %%% Bass Clarinet Music Voice [measure 218] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -233,7 +278,8 @@
                         <c e''>1
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 219
+                        
+                        %%% Bass Clarinet Music Voice [measure 219] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -242,7 +288,8 @@
                         <c e''>2. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 220
+                        
+                        %%% Bass Clarinet Music Voice [measure 220] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -251,7 +298,8 @@
                         <c g''>1
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 221
+                        
+                        %%% Bass Clarinet Music Voice [measure 221] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -260,7 +308,8 @@
                         <c g''>2. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 222
+                        
+                        %%% Bass Clarinet Music Voice [measure 222] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -269,7 +318,8 @@
                         <c g''>2 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 223
+                        
+                        %%% Bass Clarinet Music Voice [measure 223] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -278,7 +328,8 @@
                         <c g''>1.. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 224
+                        
+                        %%% Bass Clarinet Music Voice [measure 224] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -287,7 +338,8 @@
                         <c e''>1..
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 225
+                        
+                        %%% Bass Clarinet Music Voice [measure 225] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -296,7 +348,8 @@
                         c\breve
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 226
+                        
+                        %%% Bass Clarinet Music Voice [measure 226] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -305,7 +358,8 @@
                         <c e''>1..
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 227
+                        
+                        %%% Bass Clarinet Music Voice [measure 227] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -314,7 +368,8 @@
                         <c g''>2.
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 228
+                        
+                        %%% Bass Clarinet Music Voice [measure 228] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -323,7 +378,8 @@
                         <c btqf''>2
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 229
+                        
+                        %%% Bass Clarinet Music Voice [measure 229] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -332,7 +388,8 @@
                         <c btqf''>\breve \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 230
+                        
+                        %%% Bass Clarinet Music Voice [measure 230] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -341,7 +398,8 @@
                         <c g''>1..
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 231
+                        
+                        %%% Bass Clarinet Music Voice [measure 231] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -350,7 +408,8 @@
                         c1
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 232
+                        
+                        %%% Bass Clarinet Music Voice [measure 232] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -359,7 +418,8 @@
                         <c e''>1
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 233
+                        
+                        %%% Bass Clarinet Music Voice [measure 233] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -368,7 +428,8 @@
                         <c e''>2.
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 234
+                        
+                        %%% Bass Clarinet Music Voice [measure 234] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -377,7 +438,8 @@
                         <c g''>1..
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 235
+                        
+                        %%% Bass Clarinet Music Voice [measure 235] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -386,7 +448,8 @@
                         <c e''>\breve
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 236
+                        
+                        %%% Bass Clarinet Music Voice [measure 236] %%%
                         \once \override Hairpin.circled-tip = ##t
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -396,7 +459,8 @@
                         c2. \> \p
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 237
+                        
+                        %%% Bass Clarinet Music Voice [measure 237] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -405,16 +469,19 @@
                         c1 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 238
+                        
+                        %%% Bass Clarinet Music Voice [measure 238] %%%
                         R1 * 1/4 \!
                         \bar "|"
+                        
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            % measure 218
+                            
+                            %%% Violin RH Music Voice [measure 218] %%%
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -435,59 +502,82 @@
                                         \box
                                             "to violin"
                                     }
-                            % measure 219
+                            
+                            %%% Violin RH Music Voice [measure 219] %%%
                             R1 * 3/4
-                            % measure 220
+                            
+                            %%% Violin RH Music Voice [measure 220] %%%
                             R1 * 1
-                            % measure 221
+                            
+                            %%% Violin RH Music Voice [measure 221] %%%
                             R1 * 3/4
-                            % measure 222
+                            
+                            %%% Violin RH Music Voice [measure 222] %%%
                             R1 * 1/2
-                            % measure 223
+                            
+                            %%% Violin RH Music Voice [measure 223] %%%
                             R1 * 7/4
-                            % measure 224
+                            
+                            %%% Violin RH Music Voice [measure 224] %%%
                             R1 * 7/4
-                            % measure 225
+                            
+                            %%% Violin RH Music Voice [measure 225] %%%
                             R1 * 2
-                            % measure 226
+                            
+                            %%% Violin RH Music Voice [measure 226] %%%
                             R1 * 7/4
-                            % measure 227
+                            
+                            %%% Violin RH Music Voice [measure 227] %%%
                             R1 * 3/4
-                            % measure 228
+                            
+                            %%% Violin RH Music Voice [measure 228] %%%
                             R1 * 1/2
-                            % measure 229
+                            
+                            %%% Violin RH Music Voice [measure 229] %%%
                             R1 * 2
-                            % measure 230
+                            
+                            %%% Violin RH Music Voice [measure 230] %%%
                             R1 * 7/4
-                            % measure 231
+                            
+                            %%% Violin RH Music Voice [measure 231] %%%
                             R1 * 1
-                            % measure 232
+                            
+                            %%% Violin RH Music Voice [measure 232] %%%
                             R1 * 1
-                            % measure 233
+                            
+                            %%% Violin RH Music Voice [measure 233] %%%
                             R1 * 3/4
-                            % measure 234
+                            
+                            %%% Violin RH Music Voice [measure 234] %%%
                             R1 * 7/4
-                            % measure 235
+                            
+                            %%% Violin RH Music Voice [measure 235] %%%
                             R1 * 2
-                            % measure 236
+                            
+                            %%% Violin RH Music Voice [measure 236] %%%
                             R1 * 3/4
-                            % measure 237
+                            
+                            %%% Violin RH Music Voice [measure 237] %%%
                             R1 * 1
-                            % measure 238
+                            
+                            %%% Violin RH Music Voice [measure 238] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            % measure 218
+                            
+                            %%% Violin Music Voice [measure 218] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 19/2
-                            % measure 226
+                            
+                            %%% Violin Music Voice [measure 226] %%%
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -509,36 +599,49 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             <e' fs'>1.. :32 \startTextSpan
-                            % measure 227
+                            
+                            %%% Violin Music Voice [measure 227] %%%
                             <e' fs'>2. :32 \repeatTie
-                            % measure 228
+                            
+                            %%% Violin Music Voice [measure 228] %%%
                             <e' fs'>2 :32 \repeatTie
-                            % measure 229
+                            
+                            %%% Violin Music Voice [measure 229] %%%
                             <e' fs'>\breve :32 \repeatTie
-                            % measure 230
+                            
+                            %%% Violin Music Voice [measure 230] %%%
                             <e' fs'>1.. :32 \repeatTie
-                            % measure 231
+                            
+                            %%% Violin Music Voice [measure 231] %%%
                             <e' fs'>1 :32 \repeatTie
-                            % measure 232
+                            
+                            %%% Violin Music Voice [measure 232] %%%
                             <e' fs'>1 :32 \repeatTie
-                            % measure 233
+                            
+                            %%% Violin Music Voice [measure 233] %%%
                             <e' fs'>2. :32 \repeatTie
-                            % measure 234
+                            
+                            %%% Violin Music Voice [measure 234] %%%
                             <e' fs'>1.. :32 \repeatTie
-                            % measure 235
+                            
+                            %%% Violin Music Voice [measure 235] %%%
                             <e' fs'>\breve :32 \repeatTie
-                            % measure 236
+                            
+                            %%% Violin Music Voice [measure 236] %%%
                             \once \override Hairpin.circled-tip = ##t
                             <e' fs'>2. :32 \repeatTie \> \ppppp
-                            % measure 237
+                            
+                            %%% Violin Music Voice [measure 237] %%%
                             <e' fs'>1 :32 \repeatTie \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. nut"
                                 }
-                            % measure 238
+                            
+                            %%% Violin Music Voice [measure 238] %%%
                             R1 * 1/4 \!
                             \bar "|"
+                            
                         }
                     }
                 >>
@@ -546,7 +649,8 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            % measure 218
+                            
+                            %%% Viola RH Music Voice [measure 218] %%%
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -567,59 +671,82 @@
                                         \box
                                             "to viola"
                                     }
-                            % measure 219
+                            
+                            %%% Viola RH Music Voice [measure 219] %%%
                             R1 * 3/4
-                            % measure 220
+                            
+                            %%% Viola RH Music Voice [measure 220] %%%
                             R1 * 1
-                            % measure 221
+                            
+                            %%% Viola RH Music Voice [measure 221] %%%
                             R1 * 3/4
-                            % measure 222
+                            
+                            %%% Viola RH Music Voice [measure 222] %%%
                             R1 * 1/2
-                            % measure 223
+                            
+                            %%% Viola RH Music Voice [measure 223] %%%
                             R1 * 7/4
-                            % measure 224
+                            
+                            %%% Viola RH Music Voice [measure 224] %%%
                             R1 * 7/4
-                            % measure 225
+                            
+                            %%% Viola RH Music Voice [measure 225] %%%
                             R1 * 2
-                            % measure 226
+                            
+                            %%% Viola RH Music Voice [measure 226] %%%
                             R1 * 7/4
-                            % measure 227
+                            
+                            %%% Viola RH Music Voice [measure 227] %%%
                             R1 * 3/4
-                            % measure 228
+                            
+                            %%% Viola RH Music Voice [measure 228] %%%
                             R1 * 1/2
-                            % measure 229
+                            
+                            %%% Viola RH Music Voice [measure 229] %%%
                             R1 * 2
-                            % measure 230
+                            
+                            %%% Viola RH Music Voice [measure 230] %%%
                             R1 * 7/4
-                            % measure 231
+                            
+                            %%% Viola RH Music Voice [measure 231] %%%
                             R1 * 1
-                            % measure 232
+                            
+                            %%% Viola RH Music Voice [measure 232] %%%
                             R1 * 1
-                            % measure 233
+                            
+                            %%% Viola RH Music Voice [measure 233] %%%
                             R1 * 3/4
-                            % measure 234
+                            
+                            %%% Viola RH Music Voice [measure 234] %%%
                             R1 * 7/4
-                            % measure 235
+                            
+                            %%% Viola RH Music Voice [measure 235] %%%
                             R1 * 2
-                            % measure 236
+                            
+                            %%% Viola RH Music Voice [measure 236] %%%
                             R1 * 3/4
-                            % measure 237
+                            
+                            %%% Viola RH Music Voice [measure 237] %%%
                             R1 * 1
-                            % measure 238
+                            
+                            %%% Viola RH Music Voice [measure 238] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            % measure 218
+                            
+                            %%% Viola Music Voice [measure 218] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "treble"
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 19/2
-                            % measure 226
+                            
+                            %%% Viola Music Voice [measure 226] %%%
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -641,36 +768,49 @@
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             <ef' f'>1.. :32 \startTextSpan
-                            % measure 227
+                            
+                            %%% Viola Music Voice [measure 227] %%%
                             <ef' f'>2. :32 \repeatTie
-                            % measure 228
+                            
+                            %%% Viola Music Voice [measure 228] %%%
                             <ef' f'>2 :32 \repeatTie
-                            % measure 229
+                            
+                            %%% Viola Music Voice [measure 229] %%%
                             <ef' f'>\breve :32 \repeatTie
-                            % measure 230
+                            
+                            %%% Viola Music Voice [measure 230] %%%
                             <ef' f'>1.. :32 \repeatTie
-                            % measure 231
+                            
+                            %%% Viola Music Voice [measure 231] %%%
                             <ef' f'>1 :32 \repeatTie
-                            % measure 232
+                            
+                            %%% Viola Music Voice [measure 232] %%%
                             <ef' f'>1 :32 \repeatTie
-                            % measure 233
+                            
+                            %%% Viola Music Voice [measure 233] %%%
                             <ef' f'>2. :32 \repeatTie
-                            % measure 234
+                            
+                            %%% Viola Music Voice [measure 234] %%%
                             <ef' f'>1.. :32 \repeatTie
-                            % measure 235
+                            
+                            %%% Viola Music Voice [measure 235] %%%
                             <ef' f'>\breve :32 \repeatTie
-                            % measure 236
+                            
+                            %%% Viola Music Voice [measure 236] %%%
                             \once \override Hairpin.circled-tip = ##t
                             <ef' f'>2. :32 \repeatTie \> \ppppp
-                            % measure 237
+                            
+                            %%% Viola Music Voice [measure 237] %%%
                             <ef' f'>1 :32 \repeatTie \stopTextSpan ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. nut"
                                 }
-                            % measure 238
+                            
+                            %%% Viola Music Voice [measure 238] %%%
                             R1 * 1/4 \!
                             \bar "|"
+                            
                         }
                     }
                 >>
@@ -678,7 +818,8 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            % measure 218
+                            
+                            %%% Cello RH Music Voice [measure 218] %%%
                             \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -699,58 +840,81 @@
                                         \box
                                             "to cello"
                                     }
-                            % measure 219
+                            
+                            %%% Cello RH Music Voice [measure 219] %%%
                             R1 * 3/4
-                            % measure 220
+                            
+                            %%% Cello RH Music Voice [measure 220] %%%
                             R1 * 1
-                            % measure 221
+                            
+                            %%% Cello RH Music Voice [measure 221] %%%
                             R1 * 3/4
-                            % measure 222
+                            
+                            %%% Cello RH Music Voice [measure 222] %%%
                             R1 * 1/2
-                            % measure 223
+                            
+                            %%% Cello RH Music Voice [measure 223] %%%
                             R1 * 7/4
-                            % measure 224
+                            
+                            %%% Cello RH Music Voice [measure 224] %%%
                             R1 * 7/4
-                            % measure 225
+                            
+                            %%% Cello RH Music Voice [measure 225] %%%
                             R1 * 2
-                            % measure 226
+                            
+                            %%% Cello RH Music Voice [measure 226] %%%
                             R1 * 7/4
-                            % measure 227
+                            
+                            %%% Cello RH Music Voice [measure 227] %%%
                             R1 * 3/4
-                            % measure 228
+                            
+                            %%% Cello RH Music Voice [measure 228] %%%
                             R1 * 1/2
-                            % measure 229
+                            
+                            %%% Cello RH Music Voice [measure 229] %%%
                             R1 * 2
-                            % measure 230
+                            
+                            %%% Cello RH Music Voice [measure 230] %%%
                             R1 * 7/4
-                            % measure 231
+                            
+                            %%% Cello RH Music Voice [measure 231] %%%
                             R1 * 1
-                            % measure 232
+                            
+                            %%% Cello RH Music Voice [measure 232] %%%
                             R1 * 1
-                            % measure 233
+                            
+                            %%% Cello RH Music Voice [measure 233] %%%
                             R1 * 3/4
-                            % measure 234
+                            
+                            %%% Cello RH Music Voice [measure 234] %%%
                             R1 * 7/4
-                            % measure 235
+                            
+                            %%% Cello RH Music Voice [measure 235] %%%
                             R1 * 2
-                            % measure 236
+                            
+                            %%% Cello RH Music Voice [measure 236] %%%
                             R1 * 3/4
-                            % measure 237
+                            
+                            %%% Cello RH Music Voice [measure 237] %%%
                             R1 * 1
-                            % measure 238
+                            
+                            %%% Cello RH Music Voice [measure 238] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            % measure 218
+                            
+                            %%% Cello Music Voice [measure 218] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "bass"
                             R1 * 7/2
-                            % measure 222
+                            
+                            %%% Cello Music Voice [measure 222] %%%
                             \ottava #-1
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
@@ -780,7 +944,8 @@
                             bf,,,2 \> \mp \startTextSpan
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 223
+                            
+                            %%% Cello Music Voice [measure 223] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -789,7 +954,8 @@
                             bf,,,1.. \repeatTie \p \<
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 224
+                            
+                            %%% Cello Music Voice [measure 224] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -798,7 +964,8 @@
                             bf,,,1.. \repeatTie \mp \>
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 225
+                            
+                            %%% Cello Music Voice [measure 225] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -812,7 +979,8 @@
                                     \upright
                                         "pos. ord."
                                 }
-                            % measure 226
+                            
+                            %%% Cello Music Voice [measure 226] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -841,7 +1009,8 @@
                             bf,,,1.. \mp \> \startTextSpan
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 227
+                            
+                            %%% Cello Music Voice [measure 227] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -850,7 +1019,8 @@
                             bf,,,2. \repeatTie \p \<
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 228
+                            
+                            %%% Cello Music Voice [measure 228] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -859,7 +1029,8 @@
                             bf,,,2 \repeatTie \mp \>
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 229
+                            
+                            %%% Cello Music Voice [measure 229] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -873,7 +1044,8 @@
                                     \upright
                                         XP
                                 }
-                            % measure 230
+                            
+                            %%% Cello Music Voice [measure 230] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -902,7 +1074,8 @@
                             bf,,,1.. \mp \> \startTextSpan
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 231
+                            
+                            %%% Cello Music Voice [measure 231] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -911,7 +1084,8 @@
                             bf,,,1 \repeatTie \p \<
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 232
+                            
+                            %%% Cello Music Voice [measure 232] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -920,7 +1094,8 @@
                             bf,,,1 \repeatTie \mp \>
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 233
+                            
+                            %%% Cello Music Voice [measure 233] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -934,7 +1109,8 @@
                                     \upright
                                         "pos. ord."
                                 }
-                            % measure 234
+                            
+                            %%% Cello Music Voice [measure 234] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -963,7 +1139,8 @@
                             bf,,,1.. \mp \> \startTextSpan
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 235
+                            
+                            %%% Cello Music Voice [measure 235] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -972,7 +1149,8 @@
                             bf,,,\breve \repeatTie \p \<
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 236
+                            
+                            %%% Cello Music Voice [measure 236] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -981,7 +1159,8 @@
                             bf,,,2. \repeatTie \mp \>
                                 - \tweak color #red
                                 ^ \markup { @ }
-                            % measure 237
+                            
+                            %%% Cello Music Voice [measure 237] %%%
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -996,9 +1175,11 @@
                                         "tasto poss."
                                 }
                             \ottava #0
-                            % measure 238
+                            
+                            %%% Cello Music Voice [measure 238] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                 >>

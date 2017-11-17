@@ -13,23 +13,32 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                % measure 116
+                
+                %%% Global Rests [measure 116] %%%
                 R1 * 7/4
-                % measure 117
+                
+                %%% Global Rests [measure 117] %%%
                 R1 * 2
-                % measure 118
+                
+                %%% Global Rests [measure 118] %%%
                 R1 * 1
-                % measure 119
+                
+                %%% Global Rests [measure 119] %%%
                 R1 * 1
-                % measure 120
+                
+                %%% Global Rests [measure 120] %%%
                 R1 * 3/4
-                % measure 121
+                
+                %%% Global Rests [measure 121] %%%
                 R1 * 2
-                % measure 122
+                
+                %%% Global Rests [measure 122] %%%
                 R1 * 7/4
-                % measure 123
+                
+                %%% Global Rests [measure 123] %%%
                 R1 * 3/4
-                % measure 124
+                
+                %%% Global Rests [measure 124] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -38,9 +47,11 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
-                % measure 125
+                
+                %%% Global Rests [measure 125] %%%
                 R1 * 1
-                % measure 126
+                
+                %%% Global Rests [measure 126] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -49,9 +60,11 @@
                         \musicglyph
                             #"scripts.ufermata"
                         }
+                
             }
             \context GlobalSkips = "Global Skips" {
-                % measure 116
+                
+                %%% Global Skips [measure 116] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -74,47 +87,56 @@
                             42
                         }
                     }
-                % measure 117
+                
+                %%% Global Skips [measure 117] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 118
+                
+                %%% Global Skips [measure 118] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 119
+                
+                %%% Global Skips [measure 119] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
-                % measure 120
+                
+                %%% Global Skips [measure 120] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 121
+                
+                %%% Global Skips [measure 121] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 122
+                
+                %%% Global Skips [measure 122] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 123
+                
+                %%% Global Skips [measure 123] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 124
+                
+                %%% Global Skips [measure 124] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
-                % measure 125
+                
+                %%% Global Skips [measure 125] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
@@ -134,11 +156,13 @@
                             58
                         }
                     }
-                % measure 126
+                
+                %%% Global Skips [measure 126] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                
             }
         >>
         \context MusicContext = "Music Context" {
@@ -146,10 +170,12 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        % measure 116
+                        
+                        %%% Bass Clarinet Music Voice [measure 116] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
+                        \override RepeatTie.direction = #up
                         \set BassClarinetMusicStaff.instrumentName = \markup {
                             \hcenter-in
                                 #16
@@ -169,7 +195,6 @@
                                     }
                             }
                         \clef "percussion"
-                        \override RepeatTie.direction = #up
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         d''4
                             ^ \markup {
@@ -196,22 +221,37 @@
                                     \italic
                                         ”
                                 }
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
-                        % measure 117
+                        
+                        %%% Bass Clarinet Music Voice [measure 117] %%%
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
-                        % measure 118
+                        
+                        %%% Bass Clarinet Music Voice [measure 118] %%%
                         d''4
                             ^ \markup {
                                 \whiteout
@@ -225,30 +265,50 @@
                                                         "π/3 every quarter note"
                                                     }
                                 }
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
-                        % measure 119
+                        
+                        %%% Bass Clarinet Music Voice [measure 119] %%%
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
-                        % measure 120
+                        
+                        %%% Bass Clarinet Music Voice [measure 120] %%%
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
-                        % measure 121
+                        
+                        %%% Bass Clarinet Music Voice [measure 121] %%%
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
-                        % measure 122
+                        
+                        %%% Bass Clarinet Music Voice [measure 122] %%%
                         R1 * 11/4
-                        % measure 125
+                        
+                        %%% Bass Clarinet Music Voice [measure 125] %%%
                         d''4
                             ^ \markup {
                                 \whiteout
@@ -274,20 +334,26 @@
                                     \italic
                                         ”
                                 }
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
+                        
                         d''4 \repeatTie
                         \revert RepeatTie.direction
-                        % measure 126
+                        
+                        %%% Bass Clarinet Music Voice [measure 126] %%%
                         R1 * 1/4
                         \bar "|"
+                        
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            % measure 116
+                            
+                            %%% Violin RH Music Voice [measure 116] %%%
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -308,37 +374,49 @@
                                         \box
                                             "to violin"
                                     }
-                            % measure 117
+                            
+                            %%% Violin RH Music Voice [measure 117] %%%
                             R1 * 2
-                            % measure 118
+                            
+                            %%% Violin RH Music Voice [measure 118] %%%
                             R1 * 1
-                            % measure 119
+                            
+                            %%% Violin RH Music Voice [measure 119] %%%
                             R1 * 1
-                            % measure 120
+                            
+                            %%% Violin RH Music Voice [measure 120] %%%
                             R1 * 3/4
-                            % measure 121
+                            
+                            %%% Violin RH Music Voice [measure 121] %%%
                             R1 * 2
-                            % measure 122
+                            
+                            %%% Violin RH Music Voice [measure 122] %%%
                             R1 * 7/4
-                            % measure 123
+                            
+                            %%% Violin RH Music Voice [measure 123] %%%
                             R1 * 3/4
-                            % measure 124
+                            
+                            %%% Violin RH Music Voice [measure 124] %%%
                             R1 * 1/4
-                            % measure 125
+                            
+                            %%% Violin RH Music Voice [measure 125] %%%
                             R1 * 1
-                            % measure 126
+                            
+                            %%% Violin RH Music Voice [measure 126] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            % measure 116
+                            
+                            %%% Violin Music Voice [measure 116] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
                             \override RepeatTie.direction = #up
+                            \clef "percussion"
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -364,32 +442,55 @@
                                         \italic
                                             ”
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 117
+                            
+                            %%% Violin Music Voice [measure 117] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 118
+                            
+                            %%% Violin Music Voice [measure 118] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 119
+                            
+                            %%% Violin Music Voice [measure 119] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 120
+                            
+                            %%% Violin Music Voice [measure 120] %%%
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -403,20 +504,32 @@
                                                             "π every quarter note"
                                                         }
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 121
+                            
+                            %%% Violin Music Voice [measure 121] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 122
+                            
+                            %%% Violin Music Voice [measure 122] %%%
                             R1 * 11/4
-                            % measure 125
+                            
+                            %%% Violin Music Voice [measure 125] %%%
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -442,13 +555,18 @@
                                         \italic
                                             ”
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
                             \revert RepeatTie.direction
-                            % measure 126
+                            
+                            %%% Violin Music Voice [measure 126] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                 >>
@@ -456,7 +574,8 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            % measure 116
+                            
+                            %%% Viola RH Music Voice [measure 116] %%%
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -477,37 +596,49 @@
                                         \box
                                             "to viola"
                                     }
-                            % measure 117
+                            
+                            %%% Viola RH Music Voice [measure 117] %%%
                             R1 * 2
-                            % measure 118
+                            
+                            %%% Viola RH Music Voice [measure 118] %%%
                             R1 * 1
-                            % measure 119
+                            
+                            %%% Viola RH Music Voice [measure 119] %%%
                             R1 * 1
-                            % measure 120
+                            
+                            %%% Viola RH Music Voice [measure 120] %%%
                             R1 * 3/4
-                            % measure 121
+                            
+                            %%% Viola RH Music Voice [measure 121] %%%
                             R1 * 2
-                            % measure 122
+                            
+                            %%% Viola RH Music Voice [measure 122] %%%
                             R1 * 7/4
-                            % measure 123
+                            
+                            %%% Viola RH Music Voice [measure 123] %%%
                             R1 * 3/4
-                            % measure 124
+                            
+                            %%% Viola RH Music Voice [measure 124] %%%
                             R1 * 1/4
-                            % measure 125
+                            
+                            %%% Viola RH Music Voice [measure 125] %%%
                             R1 * 1
-                            % measure 126
+                            
+                            %%% Viola RH Music Voice [measure 126] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            % measure 116
+                            
+                            %%% Viola Music Voice [measure 116] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
                             \override RepeatTie.direction = #up
+                            \clef "percussion"
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -533,22 +664,37 @@
                                         \italic
                                             ”
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 117
+                            
+                            %%% Viola Music Voice [measure 117] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 118
+                            
+                            %%% Viola Music Voice [measure 118] %%%
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -562,15 +708,23 @@
                                                             "π/4 every quarter note"
                                                         }
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 119
+                            
+                            %%% Viola Music Voice [measure 119] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 120
+                            
+                            %%% Viola Music Voice [measure 120] %%%
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -584,20 +738,32 @@
                                                             "π/2 every quarter note"
                                                         }
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 121
+                            
+                            %%% Viola Music Voice [measure 121] %%%
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
-                            % measure 122
+                            
+                            %%% Viola Music Voice [measure 122] %%%
                             R1 * 11/4
-                            % measure 125
+                            
+                            %%% Viola Music Voice [measure 125] %%%
                             c'4
                                 ^ \markup {
                                     \whiteout
@@ -623,13 +789,18 @@
                                         \italic
                                             ”
                                     }
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
+                            
                             c'4 \repeatTie
                             \revert RepeatTie.direction
-                            % measure 126
+                            
+                            %%% Viola Music Voice [measure 126] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                 >>
@@ -637,7 +808,8 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            % measure 116
+                            
+                            %%% Cello RH Music Voice [measure 116] %%%
                             \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -658,39 +830,52 @@
                                         \box
                                             "to cello"
                                     }
-                            % measure 117
+                            
+                            %%% Cello RH Music Voice [measure 117] %%%
                             R1 * 2
-                            % measure 118
+                            
+                            %%% Cello RH Music Voice [measure 118] %%%
                             R1 * 1
-                            % measure 119
+                            
+                            %%% Cello RH Music Voice [measure 119] %%%
                             R1 * 1
-                            % measure 120
+                            
+                            %%% Cello RH Music Voice [measure 120] %%%
                             R1 * 3/4
-                            % measure 121
+                            
+                            %%% Cello RH Music Voice [measure 121] %%%
                             R1 * 2
-                            % measure 122
+                            
+                            %%% Cello RH Music Voice [measure 122] %%%
                             R1 * 7/4
-                            % measure 123
+                            
+                            %%% Cello RH Music Voice [measure 123] %%%
                             R1 * 3/4
-                            % measure 124
+                            
+                            %%% Cello RH Music Voice [measure 124] %%%
                             R1 * 1/4
-                            % measure 125
+                            
+                            %%% Cello RH Music Voice [measure 125] %%%
                             R1 * 1
-                            % measure 126
+                            
+                            %%% Cello RH Music Voice [measure 126] %%%
                             R1 * 1/4
                             \bar "|"
+                            
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            % measure 116
+                            
+                            %%% Cello Music Voice [measure 116] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \clef "percussion"
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 15/4
-                            % measure 118
+                            
+                            %%% Cello Music Voice [measure 118] %%%
                             \ottava #-1
                             \clef "bass"
                             d,,1 \p
@@ -699,20 +884,27 @@
                                         \upright
                                             "vib. poco."
                                     }
-                            % measure 119
+                            
+                            %%% Cello Music Voice [measure 119] %%%
                             d,,1 \repeatTie
-                            % measure 120
+                            
+                            %%% Cello Music Voice [measure 120] %%%
                             d,,2. \repeatTie
-                            % measure 121
+                            
+                            %%% Cello Music Voice [measure 121] %%%
                             d,,\breve \repeatTie
-                            % measure 122
+                            
+                            %%% Cello Music Voice [measure 122] %%%
                             d,,1.. \repeatTie
-                            % measure 123
+                            
+                            %%% Cello Music Voice [measure 123] %%%
                             d,,2. \repeatTie \< \p
                             \ottava #0
-                            % measure 124
+                            
+                            %%% Cello Music Voice [measure 124] %%%
                             R1 * 3/2 \mf
                             \bar "|"
+                            
                         }
                     }
                 >>
