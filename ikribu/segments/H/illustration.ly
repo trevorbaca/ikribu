@@ -1074,7 +1074,7 @@
                             
                         }
                     }
-                    \context ViolaMusicStaff = "Viola Music Staff" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff" {
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             \times 8/9 {
                                 
@@ -1226,7 +1226,7 @@
                             
                         }
                     }
-                    \context CelloMusicStaff = "Cello Music Staff" {
+                    \context CelloMusicStaff = "CelloMusicStaff" {
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             %%% CelloMusicVoice [measure 99] %%%

@@ -736,7 +736,7 @@
                             }
                         }
                     }
-                    \context ViolaMusicStaff = "Viola Music Staff" {
+                    \context ViolaMusicStaff = "ViolaMusicStaff" {
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             %%% ViolaMusicVoice [measure 35] %%%
@@ -883,7 +883,7 @@
                             }
                         }
                     }
-                    \context CelloMusicStaff = "Cello Music Staff" {
+                    \context CelloMusicStaff = "CelloMusicStaff" {
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             %%% CelloMusicVoice [measure 35] %%%
