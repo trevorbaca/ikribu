@@ -52,7 +52,8 @@ layout_measure_map = baca.LayoutMeasureMap([
     baca.lbsd(140, [15, 20, 20], baca.skip(13)),
     baca.line_break(baca.skip(22)), 
     baca.lbsd(20, [15, 20, 20], baca.skip(23)),
-    ])
+    ], tag='SEGMENT',
+    )
 
 maker = baca.SegmentMaker(
     ignore_repeat_pitch_classes=True,
