@@ -57,7 +57,7 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.scope('Cello RH Music Voice', 1, 2),
+    baca.scope('CelloRHMusicVoice', 1, 2),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([8, 20], 20),
         rotation=-2,
@@ -65,12 +65,12 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 2),
+    baca.scope('CelloMusicVoice', 1, 2),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    baca.scope('Cello RH Music Voice', 1, 2),
+    baca.scope('CelloRHMusicVoice', 1, 2),
     baca.clef('percussion'),
     baca.piecewise(
         baca.hairpin(),
@@ -85,7 +85,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 2),
+    baca.scope('CelloMusicVoice', 1, 2),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),

@@ -59,12 +59,12 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.make_scopes(['Cello Music Voice'], [1, 3, 5, 7]),
+    baca.make_scopes(['CelloMusicVoice'], [1, 3, 5, 7]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 8),
+    baca.scope('CelloMusicVoice', 1, 8),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),

@@ -60,31 +60,31 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.make_scopes(['Bass Clarinet Music Voice'], [1, 5, 9, 13]),
+    baca.make_scopes(['BassClarinetMusicVoice'], [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice'], [3, 7, 11, 15]),
+    baca.make_scopes(['ViolinMusicVoice'], [3, 7, 11, 15]),
     ikribu.clb_rhythm([4]),
     )
 
 maker(
-    baca.make_scopes(['Viola Music Voice'], [3, 7, 11, 15]),
+    baca.make_scopes(['ViolaMusicVoice'], [3, 7, 11, 15]),
     ikribu.clb_rhythm([2]),
     )
 
 maker(
-    baca.make_scopes(['Cello Music Voice'], [1, 5, 9, 13]),
+    baca.make_scopes(['CelloMusicVoice'], [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
     baca.scopes(
-        ('Bass Clarinet Music Voice', 1, 16),
-        ('Violin Music Voice', 1, 16),
-        ('Viola Music Voice', 1, 16),
-        ('Cello Music Voice', 1, 16),
+        ('BassClarinetMusicVoice', 1, 16),
+        ('ViolinMusicVoice', 1, 16),
+        ('ViolaMusicVoice', 1, 16),
+        ('CelloMusicVoice', 1, 16),
         ),
     baca.clef('percussion'),
     baca.repeat_ties_up(),
@@ -92,32 +92,32 @@ maker(
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1),
+    baca.scope('BassClarinetMusicVoice', 1),
     baca.effort_dynamic('f'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 5),
+    baca.scope('BassClarinetMusicVoice', 5),
     baca.effort_dynamic('mf'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 9),
+    baca.scope('BassClarinetMusicVoice', 9),
     baca.effort_dynamic('mp'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 13),
+    baca.scope('BassClarinetMusicVoice', 13),
     baca.effort_dynamic('p'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 16),
+    baca.scope('BassClarinetMusicVoice', 1, 16),
     baca.pitches('Bb2'),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1, 16),
+    baca.scope('ViolinMusicVoice', 1, 16),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
@@ -125,7 +125,7 @@ maker(
     )
 
 maker(
-    baca.scope('Viola Music Voice', 1, 16),
+    baca.scope('ViolaMusicVoice', 1, 16),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
@@ -133,27 +133,27 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 16),
+    baca.scope('CelloMusicVoice', 1, 16),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.staff_positions([0]),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('CelloMusicVoice', 1),
     baca.effort_dynamic('p'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 5),
+    baca.scope('CelloMusicVoice', 5),
     baca.effort_dynamic('mp'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 9),
+    baca.scope('CelloMusicVoice', 9),
     baca.effort_dynamic('mf'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 13),
+    baca.scope('CelloMusicVoice', 13),
     baca.effort_dynamic('f'),
     )

@@ -78,7 +78,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.make_scopes(
-        ['Bass Clarinet Music Voice'],
+        ['BassClarinetMusicVoice'],
         [(1, 4), (5, 8), (9, 12), (13, 16)],
         ),
     baca.make_tied_notes(repeat_ties=True),
@@ -86,7 +86,7 @@ maker(
 
 maker(
     baca.make_scopes(
-        ['Violin Music Voice'],
+        ['ViolinMusicVoice'],
         [(1, 2), (5, 6), (9, 10), (13, 14)],
         ),
     ikribu.triplet_rhythm(),
@@ -94,42 +94,42 @@ maker(
 
 maker(
     baca.make_scopes(
-        ['Viola Music Voice'],
+        ['ViolaMusicVoice'],
         [(2, 3), (6, 7), (10, 11), (14, 15)],
         ),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    baca.make_scopes(['Cello Music Voice'], [(9, 12), (13, 16)]),
+    baca.make_scopes(['CelloMusicVoice'], [(9, 12), (13, 16)]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 4),
+    baca.scope('BassClarinetMusicVoice', 1, 4),
     baca.dynamic('ppp'),
     baca.pitches('E3'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 5, 8),
+    baca.scope('BassClarinetMusicVoice', 5, 8),
     baca.pitches('E+3'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 9, 12),
+    baca.scope('BassClarinetMusicVoice', 9, 12),
     baca.pitches('F3'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 13, 16),
+    baca.scope('BassClarinetMusicVoice', 13, 16),
     baca.pitches('F+3'),
     )
 
 maker(
     baca.scopes(
-        ('Violin Music Voice', 1, 16),
-        ('Viola Music Voice', 1, 16),
+        ('ViolinMusicVoice', 1, 16),
+        ('ViolaMusicVoice', 1, 16),
         ),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.clef('percussion'),
@@ -146,12 +146,12 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 16),
+    baca.scope('CelloMusicVoice', 1, 16),
     baca.clef('bass'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 9, 16),
+    baca.scope('CelloMusicVoice', 9, 16),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
         baca.hairpin(),
@@ -164,11 +164,11 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 9, 12),
+    baca.scope('CelloMusicVoice', 9, 12),
     baca.pitches('F3'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 13, 16),
+    baca.scope('CelloMusicVoice', 13, 16),
     baca.pitches('F+3'),
     )
