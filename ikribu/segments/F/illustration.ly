@@ -12,9 +12,9 @@
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 79] %%%
+                %%% GlobalSkips [measure 79] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
@@ -37,43 +37,43 @@
                         }
                     }
                 
-                %%% Global Skips [measure 80] %%%
+                %%% GlobalSkips [measure 80] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
                 
-                %%% Global Skips [measure 81] %%%
+                %%% GlobalSkips [measure 81] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
                 
-                %%% Global Skips [measure 82] %%%
+                %%% GlobalSkips [measure 82] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
                 
-                %%% Global Skips [measure 83] %%%
+                %%% GlobalSkips [measure 83] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
                 
-                %%% Global Skips [measure 84] %%%
+                %%% GlobalSkips [measure 84] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
                 
-                %%% Global Skips [measure 85] %%%
+                %%% GlobalSkips [measure 85] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
                 
-                %%% Global Skips [measure 86] %%%
+                %%% GlobalSkips [measure 86] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection

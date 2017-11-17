@@ -3,7 +3,7 @@
 } <<
     \tag bass_clarinet.violin.viola.cello
     \context GlobalContext = "Global Context" <<
-        \context GlobalRests = "Global Rests" {
+        \context GlobalRests = "GlobalRests" {
             {
                 \time 2/4
                 R1 * 1/2
@@ -68,7 +68,7 @@
                 R1 * 2
             }
         }
-        \context GlobalSkips = "Global Skips" {
+        \context GlobalSkips = "GlobalSkips" {
             {
                 \time 2/4
                 \once \override TextSpanner.arrow-width = 0.25

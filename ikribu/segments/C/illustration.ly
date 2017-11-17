@@ -12,9 +12,9 @@
     } <<
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
-            \context GlobalSkips = "Global Skips" {
+            \context GlobalSkips = "GlobalSkips" {
                 
-                %%% Global Skips [measure 35] %%%
+                %%% GlobalSkips [measure 35] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
@@ -37,7 +37,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 36] %%%
+                %%% GlobalSkips [measure 36] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -75,13 +75,13 @@
                 \newSpacingSection
                 s1 * 1 \startTextSpan
                 
-                %%% Global Skips [measure 37] %%%
+                %%% GlobalSkips [measure 37] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
                 
-                %%% Global Skips [measure 38] %%%
+                %%% GlobalSkips [measure 38] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -102,13 +102,13 @@
                         }
                     }
                 
-                %%% Global Skips [measure 39] %%%
+                %%% GlobalSkips [measure 39] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
                 
-                %%% Global Skips [measure 40] %%%
+                %%% GlobalSkips [measure 40] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -146,13 +146,13 @@
                 \newSpacingSection
                 s1 * 1 \startTextSpan
                 
-                %%% Global Skips [measure 41] %%%
+                %%% GlobalSkips [measure 41] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
                 
-                %%% Global Skips [measure 42] %%%
+                %%% GlobalSkips [measure 42] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -173,13 +173,13 @@
                         }
                     }
                 
-                %%% Global Skips [measure 43] %%%
+                %%% GlobalSkips [measure 43] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
                 
-                %%% Global Skips [measure 44] %%%
+                %%% GlobalSkips [measure 44] %%%
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -217,13 +217,13 @@
                 \newSpacingSection
                 s1 * 1 \startTextSpan
                 
-                %%% Global Skips [measure 45] %%%
+                %%% GlobalSkips [measure 45] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
                 
-                %%% Global Skips [measure 46] %%%
+                %%% GlobalSkips [measure 46] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -244,14 +244,14 @@
                         }
                     }
                 
-                %%% Global Skips [measure 47] %%%
+                %%% GlobalSkips [measure 47] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
                 \break % SEGMENT
                 
-                %%% Global Skips [measure 48] %%%
+                %%% GlobalSkips [measure 48] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
@@ -290,13 +290,13 @@
                 \newSpacingSection
                 s1 * 1 \startTextSpan
                 
-                %%% Global Skips [measure 49] %%%
+                %%% GlobalSkips [measure 49] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
                 
-                %%% Global Skips [measure 50] %%%
+                %%% GlobalSkips [measure 50] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
@@ -317,7 +317,7 @@
                         }
                     }
                 
-                %%% Global Skips [measure 51] %%%
+                %%% GlobalSkips [measure 51] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
