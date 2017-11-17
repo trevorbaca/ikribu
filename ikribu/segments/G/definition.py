@@ -63,53 +63,53 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.make_scopes(['Bass Clarinet Music Voice'], [1, 3, 5, 7, 9, 11]),
+    baca.make_scopes(['BassClarinetMusicVoice'], [1, 3, 5, 7, 9, 11]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 11),
+    baca.scope('CelloMusicVoice', 1, 11),
     baca.make_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1),
+    baca.scope('BassClarinetMusicVoice', 1),
     baca.hairpin('ppp < mp', baca.rleaves()),
     baca.pitches('G2'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 3),
+    baca.scope('BassClarinetMusicVoice', 3),
     baca.hairpin('pp < mf', baca.rleaves()),
     baca.pitches('Gb2'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 5),
+    baca.scope('BassClarinetMusicVoice', 5),
     baca.hairpin('p < f', baca.rleaves()),
     baca.pitches('F2'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 7),
+    baca.scope('BassClarinetMusicVoice', 7),
     baca.hairpin('mf < ff', baca.rleaves()),
     baca.pitches('E2'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 9),
+    baca.scope('BassClarinetMusicVoice', 9),
     baca.hairpin('f < fff', baca.rleaves()),
     baca.pitches('Eb2'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 11),
+    baca.scope('BassClarinetMusicVoice', 11),
     baca.hairpin('ff < ffff', baca.rleaves()),
     baca.pitches('D2'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 12),
+    baca.scope('CelloMusicVoice', 1, 12),
     baca.clef('treble'),
     baca.glissando(),
     baca.piecewise(

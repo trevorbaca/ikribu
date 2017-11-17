@@ -58,13 +58,13 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 4),
+    baca.scope('BassClarinetMusicVoice', 1, 4),
     baca.make_tied_notes(repeat_ties=True),
     baca.pitches('F#3'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 6, 8),
+    baca.scope('BassClarinetMusicVoice', 6, 8),
     baca.make_tied_notes(repeat_ties=True),
     baca.hairpin('sfp > ppp'),
     baca.pitches('G2'),
@@ -72,8 +72,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('Violin Music Voice', 6, 7),
-        ('Viola Music Voice', 6, 7),
+        ('ViolinMusicVoice', 6, 7),
+        ('ViolaMusicVoice', 6, 7),
         ),
     baca.make_tied_notes(repeat_ties=True),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
@@ -82,7 +82,7 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 6, 7),
+    baca.scope('ViolinMusicVoice', 6, 7),
     baca.markup.string_numbers([2, 3]),
     baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
@@ -92,7 +92,7 @@ maker(
     )
 
 maker(
-    baca.scope('Viola Music Voice', 6, 7),
+    baca.scope('ViolaMusicVoice', 6, 7),
     baca.markup.string_numbers([1, 2]),
     baca.pitches('<Eb4 F4>'),
     baca.single_segment_transition(
@@ -102,7 +102,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1, 4),
+    baca.scope('CelloMusicVoice', 1, 4),
     baca.make_tied_notes(repeat_ties=True),
     baca.hairpin('p < ff'),
     baca.pitches('F#3'),
@@ -114,7 +114,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 6, 7),
+    baca.scope('CelloMusicVoice', 6, 7),
     baca.make_tied_repeated_durations((1, 4)),
     baca.clef('percussion'),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
@@ -124,7 +124,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 8),
+    baca.scope('CelloMusicVoice', 8),
     baca.clef('treble'),
     baca.staff_lines(5),
     )

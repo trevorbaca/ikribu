@@ -79,175 +79,175 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 2, 3),
+    baca.scope('BassClarinetMusicVoice', 2, 3),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 6),
+    baca.scope('BassClarinetMusicVoice', 6),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 9, 10),
+    baca.scope('BassClarinetMusicVoice', 9, 10),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 13, 14),
+    baca.scope('BassClarinetMusicVoice', 13, 14),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 17),
+    baca.scope('BassClarinetMusicVoice', 17),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 20, 22),
+    baca.scope('BassClarinetMusicVoice', 20, 22),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 # violin #
 
 maker(
-    baca.make_scopes(['Violin Music Voice'], [1, 5, 8, 12, 16, 19]),
+    baca.make_scopes(['ViolinMusicVoice'], [1, 5, 8, 12, 16, 19]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 2, 3),
+    baca.scope('ViolinMusicVoice', 2, 3),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 6),
+    baca.scope('ViolinMusicVoice', 6),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 9, 10),
+    baca.scope('ViolinMusicVoice', 9, 10),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 13, 14),
+    baca.scope('ViolinMusicVoice', 13, 14),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 17),
+    baca.scope('ViolinMusicVoice', 17),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 20, 21),
+    baca.scope('ViolinMusicVoice', 20, 21),
     ikribu.color_rhythm(5),
     )
 
 # viola #
 
 maker(
-    baca.scope('Viola Music Voice', 2, 3),
+    baca.scope('ViolaMusicVoice', 2, 3),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 6),
+    baca.scope('ViolaMusicVoice', 6),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 9, 10),
+    baca.scope('ViolaMusicVoice', 9, 10),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 13, 14),
+    baca.scope('ViolaMusicVoice', 13, 14),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 17),
+    baca.scope('ViolaMusicVoice', 17),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 20, 21),
+    baca.scope('ViolaMusicVoice', 20, 21),
     ikribu.color_rhythm(3),
     )
 
 # cello #
 
 maker(
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('CelloMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 2, 3),
+    baca.scope('CelloMusicVoice', 2, 3),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 5),
+    baca.scope('CelloMusicVoice', 5),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 6),
+    baca.scope('CelloMusicVoice', 6),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 8),
+    baca.scope('CelloMusicVoice', 8),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 9, 10),
+    baca.scope('CelloMusicVoice', 9, 10),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 12),
+    baca.scope('CelloMusicVoice', 12),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 13, 14),
+    baca.scope('CelloMusicVoice', 13, 14),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 16),
+    baca.scope('CelloMusicVoice', 16),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 17),
+    baca.scope('CelloMusicVoice', 17),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 19),
+    baca.scope('CelloMusicVoice', 19),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 20, 21),
+    baca.scope('CelloMusicVoice', 20, 21),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 23),
+    baca.scope('BassClarinetMusicVoice', 1, 23),
     baca.clef('treble'),
     baca.pitches('B1'),
     )
 
 maker(
     baca.make_scopes(
-        ['Bass Clarinet Music Voice'],
+        ['BassClarinetMusicVoice'],
         [(2, 3), (9, 10), (13, 14)],
         ),
     baca.hairpin('p < fff', baca.leaves()[:2]),
@@ -255,19 +255,19 @@ maker(
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 20, 22),
+    baca.scope('BassClarinetMusicVoice', 20, 22),
     baca.hairpin('ppp < fff', baca.leaves()[:-1]),
     )
 
 maker(
-    baca.make_scopes(['Bass Clarinet Music Voice'], [6, 17]),
+    baca.make_scopes(['BassClarinetMusicVoice'], [6, 17]),
     baca.dynamic('p'),
     )
 
 maker(
     baca.scopes(
-        ('Violin Music Voice', 1, 23),
-        ('Viola Music Voice', 1, 23),
+        ('ViolinMusicVoice', 1, 23),
+        ('ViolaMusicVoice', 1, 23),
         ),
     baca.clef('percussion'),
     baca.staff_lines(1),
@@ -275,22 +275,22 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1),
+    baca.scope('ViolinMusicVoice', 1),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (III)'),
     )
 
 maker(
     baca.scopes(
-        ('Violin Music Voice', 1, 21),
-        ('Viola Music Voice', 1, 21),
+        ('ViolinMusicVoice', 1, 21),
+        ('ViolaMusicVoice', 1, 21),
         ),
     baca.staff_positions([0]),
     )
 
 maker(
     baca.make_scopes(
-        ['Violin Music Voice'],
+        ['ViolinMusicVoice'],
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
     baca.markup.boxed('brushes on BD'),
@@ -298,7 +298,7 @@ maker(
 
 maker(
     baca.make_scopes(
-        ['Violin Music Voice', 'Viola Music Voice'], 
+        ['ViolinMusicVoice', 'ViolaMusicVoice'], 
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
     baca.accents(baca.pheads()[~abjad.index([0], 2)]),
@@ -306,38 +306,38 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 5),
+    baca.scope('ViolinMusicVoice', 5),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (IV)'),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 8),
+    baca.scope('ViolinMusicVoice', 8),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (V)'),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 12),
+    baca.scope('ViolinMusicVoice', 12),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (VI)'),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 16),
+    baca.scope('ViolinMusicVoice', 16),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (VII)'),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 19),
+    baca.scope('ViolinMusicVoice', 19),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (VIII)'),
     )
 
 maker(
     baca.make_scopes(
-        ['Cello Music Voice'],
+        ['CelloMusicVoice'],
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
     baca.clef('bass'),
@@ -347,7 +347,7 @@ maker(
 
 maker(
     baca.make_scopes(
-        ['Violin Music Voice', 'Viola Music Voice', 'Cello Music Voice'], 
+        ['ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'], 
         [(2, 3), (9, 10), (13, 14), (20, 21)],
         ),
     baca.hairpin('mf < fff'),
@@ -355,7 +355,7 @@ maker(
 
 maker(
     baca.make_scopes(
-        ['Cello Music Voice'],
+        ['CelloMusicVoice'],
         [(2, 3), (9, 10), (13, 14), (20, 21)],
         ),
     baca.single_segment_transition(
@@ -366,23 +366,23 @@ maker(
 
 maker(
     baca.scopes(
-        ('Violin Music Voice', 6),
-        ('Violin Music Voice', 17),
-        ('Viola Music Voice', 6),
-        ('Viola Music Voice', 17),
-        ('Cello Music Voice', 6),
-        ('Cello Music Voice', 17),
+        ('ViolinMusicVoice', 6),
+        ('ViolinMusicVoice', 17),
+        ('ViolaMusicVoice', 6),
+        ('ViolaMusicVoice', 17),
+        ('CelloMusicVoice', 6),
+        ('CelloMusicVoice', 17),
         ),
     baca.dynamic('fff'),
     )
 
 maker(
-    baca.make_scopes(['Cello Music Voice'], [6, 17]),
+    baca.make_scopes(['CelloMusicVoice'], [6, 17]),
     baca.markup.XP(),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('CelloMusicVoice', 1),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -393,12 +393,12 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 2, 3),
+    baca.scope('CelloMusicVoice', 2, 3),
     baca.clef('bass'),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 5),
+    baca.scope('CelloMusicVoice', 5),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -409,7 +409,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 8),
+    baca.scope('CelloMusicVoice', 8),
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
@@ -420,7 +420,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 12),
+    baca.scope('CelloMusicVoice', 12),
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
@@ -431,7 +431,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 16),
+    baca.scope('CelloMusicVoice', 16),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
@@ -442,7 +442,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 19),
+    baca.scope('CelloMusicVoice', 19),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
@@ -454,8 +454,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('Bass Clarinet Music Voice', 4),
-        ('Cello Music Voice', 4),
+        ('BassClarinetMusicVoice', 4),
+        ('CelloMusicVoice', 4),
         ),
     baca.staff_lines(1),
     )

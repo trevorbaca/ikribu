@@ -104,11 +104,11 @@
             }
         }
     >>
-    \context MusicContext = "Music Context" {
+    \context MusicContext = "MusicContext" {
         \context EnsembleStaffGroup = "Ensemble Staff Group" <<
             \tag bass_clarinet
-            \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+            \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
+                \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                     gs'1
                     gs'2. \repeatTie
                     gs'1 \repeatTie
@@ -121,9 +121,9 @@
                 }
             }
             \tag violin
-            \context ViolinStaffGroup = "Violin Staff Group" <<
-                \context ViolinRHMusicStaff = "Violin RH Music Staff" {
-                    \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+            \context ViolinStaffGroup = "ViolinStaffGroup" <<
+                \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
+                    \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                         R1 * 1
                         R1 * 3/4
                         R1 * 1
@@ -135,8 +135,8 @@
                         \bar "|"
                     }
                 }
-                \context ViolinMusicStaff = "Violin Music Staff" {
-                    \context ViolinMusicVoice = "Violin Music Voice" {
+                \context ViolinMusicStaff = "ViolinMusicStaff" {
+                    \context ViolinMusicVoice = "ViolinMusicVoice" {
                         s1 * 4
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -174,9 +174,9 @@
                 }
             >>
             \tag viola
-            \context ViolaStaffGroup = "Viola Staff Group" <<
-                \context ViolaRHMusicStaff = "Viola RH Music Staff" {
-                    \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+            \context ViolaStaffGroup = "ViolaStaffGroup" <<
+                \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
+                    \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                         R1 * 1
                         R1 * 3/4
                         R1 * 1
@@ -189,7 +189,7 @@
                     }
                 }
                 \context ViolaMusicStaff = "Viola Music Staff" {
-                    \context ViolaMusicVoice = "Viola Music Voice" {
+                    \context ViolaMusicVoice = "ViolaMusicVoice" {
                         s1 * 4
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -227,9 +227,9 @@
                 }
             >>
             \tag cello
-            \context CelloStaffGroup = "Cello Staff Group" <<
-                \context CelloRHMusicStaff = "Cello RH Music Staff" {
-                    \context CelloRHMusicVoice = "Cello RH Music Voice" {
+            \context CelloStaffGroup = "CelloStaffGroup" <<
+                \context CelloRHMusicStaff = "CelloRHMusicStaff" {
+                    \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                         R1 * 1
                         R1 * 3/4
                         R1 * 1
@@ -242,7 +242,7 @@
                     }
                 }
                 \context CelloMusicStaff = "Cello Music Staff" {
-                    \context CelloMusicVoice = "Cello Music Voice" {
+                    \context CelloMusicVoice = "CelloMusicVoice" {
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
                         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center

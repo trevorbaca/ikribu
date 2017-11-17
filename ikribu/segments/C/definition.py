@@ -81,37 +81,37 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.make_scopes(
-        ['Bass Clarinet Music Voice'],
+        ['BassClarinetMusicVoice'],
         [(2, 3), (6, 7), (10, 11), (14, 15)],
         ),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1),
+    baca.scope('ViolinMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
     baca.make_scopes(
-        ['Violin Music Voice', 'Viola Music Voice'],
+        ['ViolinMusicVoice', 'ViolaMusicVoice'],
         [(3, 4), (7, 8), (11, 12), (15, 16)],
         ),
     baca.make_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('CelloMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Cello Music Voice', 2, 16),
+    baca.scope('CelloMusicVoice', 2, 16),
     baca.make_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 2, 17),
+    baca.scope('BassClarinetMusicVoice', 2, 17),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.pitches('Bb2'),
@@ -120,13 +120,13 @@ maker(
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 2, 3),
+    baca.scope('BassClarinetMusicVoice', 2, 3),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1),
+    baca.scope('ViolinMusicVoice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('grainfall (II)'),
@@ -136,7 +136,7 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 2, 16),
+    baca.scope('ViolinMusicVoice', 2, 16),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -148,7 +148,7 @@ maker(
     )
 
 maker(
-    baca.scope('Viola Music Voice', 2, 16),
+    baca.scope('ViolaMusicVoice', 2, 16),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -160,7 +160,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('CelloMusicVoice', 1),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.markup.pizz(),
@@ -171,7 +171,7 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 2, 16),
+    baca.scope('CelloMusicVoice', 2, 16),
     baca.pitches(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,

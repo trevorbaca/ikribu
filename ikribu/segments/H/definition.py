@@ -59,12 +59,12 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Violin RH Music Voice', 1, 2),
+    baca.scope('ViolinRHMusicVoice', 1, 2),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
@@ -72,12 +72,12 @@ maker(
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1, 2),
+    baca.scope('ViolinMusicVoice', 1, 2),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    baca.scope('Viola RH Music Voice', 1, 2),
+    baca.scope('ViolaRHMusicVoice', 1, 2),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([4, 14], 16),
         rotation=-1,
@@ -85,20 +85,20 @@ maker(
     )
 
 maker(
-    baca.scope('Viola Music Voice', 1, 2),
+    baca.scope('ViolaMusicVoice', 1, 2),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.dynamic('ppp'),
     baca.pitches('Db2'),
     )
 
 maker(
     baca.scopes(
-        ('Violin RH Music Voice', 1, 2),
-        ('Viola RH Music Voice', 1, 2),
+        ('ViolinRHMusicVoice', 1, 2),
+        ('ViolaRHMusicVoice', 1, 2),
         ),
     baca.clef('percussion'),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
@@ -113,23 +113,23 @@ maker(
     )
 
 maker(
-    baca.scope('Violin RH Music Voice', 1, 2),
+    baca.scope('ViolinRHMusicVoice', 1, 2),
     ikribu.BowContactPointCommand(rotation=0),
     )
 
 maker(
-    baca.scope('Viola RH Music Voice', 1, 2),
+    baca.scope('ViolaRHMusicVoice', 1, 2),
     ikribu.BowContactPointCommand(rotation=-1),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1, 2),
+    baca.scope('ViolinMusicVoice', 1, 2),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 1, 2),
+    baca.scope('ViolaMusicVoice', 1, 2),
     baca.clef('treble'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),

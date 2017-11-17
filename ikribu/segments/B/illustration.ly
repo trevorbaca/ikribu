@@ -313,13 +313,13 @@
                 
             }
         >>
-        \context MusicContext = "Music Context" {
+        \context MusicContext = "MusicContext" {
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
-                \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
+                    \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
-                        %%% Bass Clarinet Music Voice [measure 10] %%%
+                        %%% BassClarinetMusicVoice [measure 10] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
@@ -346,46 +346,46 @@
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 3
                         
-                        %%% Bass Clarinet Music Voice [measure 14] %%%
+                        %%% BassClarinetMusicVoice [measure 14] %%%
                         ef1.. \ppp
                         
-                        %%% Bass Clarinet Music Voice [measure 15] %%%
+                        %%% BassClarinetMusicVoice [measure 15] %%%
                         R1 * 17/4
                         
-                        %%% Bass Clarinet Music Voice [measure 20] %%%
+                        %%% BassClarinetMusicVoice [measure 20] %%%
                         ef1 \ppp
                         
-                        %%% Bass Clarinet Music Voice [measure 21] %%%
+                        %%% BassClarinetMusicVoice [measure 21] %%%
                         R1 * 7/2
                         
-                        %%% Bass Clarinet Music Voice [measure 26] %%%
+                        %%% BassClarinetMusicVoice [measure 26] %%%
                         ef1 \ppp
                         
-                        %%% Bass Clarinet Music Voice [measure 27] %%%
+                        %%% BassClarinetMusicVoice [measure 27] %%%
                         R1 * 1/4
                         
-                        %%% Bass Clarinet Music Voice [measure 28] %%%
+                        %%% BassClarinetMusicVoice [measure 28] %%%
                         ef2. \< \ppp
                         
-                        %%% Bass Clarinet Music Voice [measure 29] %%%
+                        %%% BassClarinetMusicVoice [measure 29] %%%
                         ef1 \repeatTie \f
                         
-                        %%% Bass Clarinet Music Voice [measure 30] %%%
+                        %%% BassClarinetMusicVoice [measure 30] %%%
                         \once \override Hairpin.circled-tip = ##t
                         ef2. \repeatTie \> \f
                         
-                        %%% Bass Clarinet Music Voice [measure 31] %%%
+                        %%% BassClarinetMusicVoice [measure 31] %%%
                         R1 * 9/2 \!
                         \bar "|"
                         
                     }
                 }
                 \tag violin
-                \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \context ViolinRHMusicStaff = "Violin RH Music Staff" {
-                        \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                \context ViolinStaffGroup = "ViolinStaffGroup" <<
+                    \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
+                        \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                             
-                            %%% Violin RH Music Voice [measure 10] %%%
+                            %%% ViolinRHMusicVoice [measure 10] %%%
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -407,85 +407,85 @@
                                             "to violin"
                                     }
                             
-                            %%% Violin RH Music Voice [measure 11] %%%
+                            %%% ViolinRHMusicVoice [measure 11] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 12] %%%
+                            %%% ViolinRHMusicVoice [measure 12] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 13] %%%
+                            %%% ViolinRHMusicVoice [measure 13] %%%
                             R1 * 1/4
                             
-                            %%% Violin RH Music Voice [measure 14] %%%
+                            %%% ViolinRHMusicVoice [measure 14] %%%
                             R1 * 7/4
                             
-                            %%% Violin RH Music Voice [measure 15] %%%
+                            %%% ViolinRHMusicVoice [measure 15] %%%
                             R1 * 1/4
                             
-                            %%% Violin RH Music Voice [measure 16] %%%
+                            %%% ViolinRHMusicVoice [measure 16] %%%
                             R1 * 2
                             
-                            %%% Violin RH Music Voice [measure 17] %%%
+                            %%% ViolinRHMusicVoice [measure 17] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 18] %%%
+                            %%% ViolinRHMusicVoice [measure 18] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 19] %%%
+                            %%% ViolinRHMusicVoice [measure 19] %%%
                             R1 * 1/4
                             
-                            %%% Violin RH Music Voice [measure 20] %%%
+                            %%% ViolinRHMusicVoice [measure 20] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 21] %%%
+                            %%% ViolinRHMusicVoice [measure 21] %%%
                             R1 * 1/4
                             
-                            %%% Violin RH Music Voice [measure 22] %%%
+                            %%% ViolinRHMusicVoice [measure 22] %%%
                             R1 * 1/2
                             
-                            %%% Violin RH Music Voice [measure 23] %%%
+                            %%% ViolinRHMusicVoice [measure 23] %%%
                             R1 * 7/4
                             
-                            %%% Violin RH Music Voice [measure 24] %%%
+                            %%% ViolinRHMusicVoice [measure 24] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 25] %%%
+                            %%% ViolinRHMusicVoice [measure 25] %%%
                             R1 * 1/4
                             
-                            %%% Violin RH Music Voice [measure 26] %%%
+                            %%% ViolinRHMusicVoice [measure 26] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 27] %%%
+                            %%% ViolinRHMusicVoice [measure 27] %%%
                             R1 * 1/4
                             
-                            %%% Violin RH Music Voice [measure 28] %%%
+                            %%% ViolinRHMusicVoice [measure 28] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 29] %%%
+                            %%% ViolinRHMusicVoice [measure 29] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 30] %%%
+                            %%% ViolinRHMusicVoice [measure 30] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 31] %%%
+                            %%% ViolinRHMusicVoice [measure 31] %%%
                             R1 * 1/2
                             
-                            %%% Violin RH Music Voice [measure 32] %%%
+                            %%% ViolinRHMusicVoice [measure 32] %%%
                             R1 * 7/4
                             
-                            %%% Violin RH Music Voice [measure 33] %%%
+                            %%% ViolinRHMusicVoice [measure 33] %%%
                             R1 * 2
                             
-                            %%% Violin RH Music Voice [measure 34] %%%
+                            %%% ViolinRHMusicVoice [measure 34] %%%
                             R1 * 1/4
                             \bar "|"
                             
                         }
                     }
-                    \context ViolinMusicStaff = "Violin Music Staff" {
-                        \context ViolinMusicVoice = "Violin Music Voice" {
+                    \context ViolinMusicStaff = "ViolinMusicStaff" {
+                        \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
-                            %%% Violin Music Voice [measure 10] %%%
+                            %%% ViolinMusicVoice [measure 10] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -517,10 +517,10 @@
                                             III
                                     }
                             
-                            %%% Violin Music Voice [measure 11] %%%
+                            %%% ViolinMusicVoice [measure 11] %%%
                             e'1 :32 \repeatTie \p
                             
-                            %%% Violin Music Voice [measure 12] %%%
+                            %%% ViolinMusicVoice [measure 12] %%%
                             \once \override Hairpin.circled-tip = ##t
                             e'2. :32 \repeatTie \stopTextSpan \> \p ^ \markup {
                                 \whiteout
@@ -528,10 +528,10 @@
                                         "trem. flaut. tast."
                                 }
                             
-                            %%% Violin Music Voice [measure 13] %%%
+                            %%% ViolinMusicVoice [measure 13] %%%
                             R1 * 9/4 \!
                             
-                            %%% Violin Music Voice [measure 16] %%%
+                            %%% ViolinMusicVoice [measure 16] %%%
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -554,10 +554,10 @@
                             \once \override TextSpanner.dash-period = 1.5
                             e'\breve :32 \< \ppp \startTextSpan
                             
-                            %%% Violin Music Voice [measure 17] %%%
+                            %%% ViolinMusicVoice [measure 17] %%%
                             e'2. :32 \repeatTie \p
                             
-                            %%% Violin Music Voice [measure 18] %%%
+                            %%% ViolinMusicVoice [measure 18] %%%
                             \once \override Hairpin.circled-tip = ##t
                             e'1 :32 \repeatTie \stopTextSpan \> \p ^ \markup {
                                 \whiteout
@@ -565,10 +565,10 @@
                                         "trem. flaut. tast."
                                 }
                             
-                            %%% Violin Music Voice [measure 19] %%%
+                            %%% ViolinMusicVoice [measure 19] %%%
                             R1 * 3/2 \!
                             
-                            %%% Violin Music Voice [measure 22] %%%
+                            %%% ViolinMusicVoice [measure 22] %%%
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -591,10 +591,10 @@
                             \once \override TextSpanner.dash-period = 1.5
                             e'2 :32 \< \ppp \startTextSpan
                             
-                            %%% Violin Music Voice [measure 23] %%%
+                            %%% ViolinMusicVoice [measure 23] %%%
                             e'1.. :32 \repeatTie \p
                             
-                            %%% Violin Music Voice [measure 24] %%%
+                            %%% ViolinMusicVoice [measure 24] %%%
                             \once \override Hairpin.circled-tip = ##t
                             e'2. :32 \repeatTie \stopTextSpan \> \p ^ \markup {
                                 \whiteout
@@ -602,7 +602,7 @@
                                         "trem. flaut. tast."
                                 }
                             
-                            %%% Violin Music Voice [measure 25] %%%
+                            %%% ViolinMusicVoice [measure 25] %%%
                             R1 * 17/2 \!
                             \bar "|"
                             
@@ -610,11 +610,11 @@
                     }
                 >>
                 \tag viola
-                \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \context ViolaRHMusicStaff = "Viola RH Music Staff" {
-                        \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                \context ViolaStaffGroup = "ViolaStaffGroup" <<
+                    \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
+                        \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                             
-                            %%% Viola RH Music Voice [measure 10] %%%
+                            %%% ViolaRHMusicVoice [measure 10] %%%
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -636,85 +636,85 @@
                                             "to viola"
                                     }
                             
-                            %%% Viola RH Music Voice [measure 11] %%%
+                            %%% ViolaRHMusicVoice [measure 11] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 12] %%%
+                            %%% ViolaRHMusicVoice [measure 12] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 13] %%%
+                            %%% ViolaRHMusicVoice [measure 13] %%%
                             R1 * 1/4
                             
-                            %%% Viola RH Music Voice [measure 14] %%%
+                            %%% ViolaRHMusicVoice [measure 14] %%%
                             R1 * 7/4
                             
-                            %%% Viola RH Music Voice [measure 15] %%%
+                            %%% ViolaRHMusicVoice [measure 15] %%%
                             R1 * 1/4
                             
-                            %%% Viola RH Music Voice [measure 16] %%%
+                            %%% ViolaRHMusicVoice [measure 16] %%%
                             R1 * 2
                             
-                            %%% Viola RH Music Voice [measure 17] %%%
+                            %%% ViolaRHMusicVoice [measure 17] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 18] %%%
+                            %%% ViolaRHMusicVoice [measure 18] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 19] %%%
+                            %%% ViolaRHMusicVoice [measure 19] %%%
                             R1 * 1/4
                             
-                            %%% Viola RH Music Voice [measure 20] %%%
+                            %%% ViolaRHMusicVoice [measure 20] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 21] %%%
+                            %%% ViolaRHMusicVoice [measure 21] %%%
                             R1 * 1/4
                             
-                            %%% Viola RH Music Voice [measure 22] %%%
+                            %%% ViolaRHMusicVoice [measure 22] %%%
                             R1 * 1/2
                             
-                            %%% Viola RH Music Voice [measure 23] %%%
+                            %%% ViolaRHMusicVoice [measure 23] %%%
                             R1 * 7/4
                             
-                            %%% Viola RH Music Voice [measure 24] %%%
+                            %%% ViolaRHMusicVoice [measure 24] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 25] %%%
+                            %%% ViolaRHMusicVoice [measure 25] %%%
                             R1 * 1/4
                             
-                            %%% Viola RH Music Voice [measure 26] %%%
+                            %%% ViolaRHMusicVoice [measure 26] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 27] %%%
+                            %%% ViolaRHMusicVoice [measure 27] %%%
                             R1 * 1/4
                             
-                            %%% Viola RH Music Voice [measure 28] %%%
+                            %%% ViolaRHMusicVoice [measure 28] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 29] %%%
+                            %%% ViolaRHMusicVoice [measure 29] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 30] %%%
+                            %%% ViolaRHMusicVoice [measure 30] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 31] %%%
+                            %%% ViolaRHMusicVoice [measure 31] %%%
                             R1 * 1/2
                             
-                            %%% Viola RH Music Voice [measure 32] %%%
+                            %%% ViolaRHMusicVoice [measure 32] %%%
                             R1 * 7/4
                             
-                            %%% Viola RH Music Voice [measure 33] %%%
+                            %%% ViolaRHMusicVoice [measure 33] %%%
                             R1 * 2
                             
-                            %%% Viola RH Music Voice [measure 34] %%%
+                            %%% ViolaRHMusicVoice [measure 34] %%%
                             R1 * 1/4
                             \bar "|"
                             
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \context ViolaMusicVoice = "Viola Music Voice" {
+                        \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
-                            %%% Viola Music Voice [measure 10] %%%
+                            %%% ViolaMusicVoice [measure 10] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -722,7 +722,7 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 59/4
                             
-                            %%% Viola Music Voice [measure 28] %%%
+                            %%% ViolaMusicVoice [measure 28] %%%
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -750,19 +750,19 @@
                                             II
                                     }
                             
-                            %%% Viola Music Voice [measure 29] %%%
+                            %%% ViolaMusicVoice [measure 29] %%%
                             ef'1 :32 \repeatTie
                             
-                            %%% Viola Music Voice [measure 30] %%%
+                            %%% ViolaMusicVoice [measure 30] %%%
                             ef'2. :32 \repeatTie
                             
-                            %%% Viola Music Voice [measure 31] %%%
+                            %%% ViolaMusicVoice [measure 31] %%%
                             ef'2 :32 \repeatTie
                             
-                            %%% Viola Music Voice [measure 32] %%%
+                            %%% ViolaMusicVoice [measure 32] %%%
                             ef'1.. :32 \repeatTie \mf
                             
-                            %%% Viola Music Voice [measure 33] %%%
+                            %%% ViolaMusicVoice [measure 33] %%%
                             \once \override Hairpin.circled-tip = ##t
                             ef'\breve :32 \repeatTie \stopTextSpan \> \mf ^ \markup {
                                 \whiteout
@@ -770,7 +770,7 @@
                                         "trem. flaut. tast."
                                 }
                             
-                            %%% Viola Music Voice [measure 34] %%%
+                            %%% ViolaMusicVoice [measure 34] %%%
                             R1 * 1/4 \!
                             \bar "|"
                             
@@ -778,11 +778,11 @@
                     }
                 >>
                 \tag cello
-                \context CelloStaffGroup = "Cello Staff Group" <<
-                    \context CelloRHMusicStaff = "Cello RH Music Staff" {
-                        \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                \context CelloStaffGroup = "CelloStaffGroup" <<
+                    \context CelloRHMusicStaff = "CelloRHMusicStaff" {
+                        \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                             
-                            %%% Cello RH Music Voice [measure 10] %%%
+                            %%% CelloRHMusicVoice [measure 10] %%%
                             \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -804,85 +804,85 @@
                                             "to cello"
                                     }
                             
-                            %%% Cello RH Music Voice [measure 11] %%%
+                            %%% CelloRHMusicVoice [measure 11] %%%
                             R1 * 1
                             
-                            %%% Cello RH Music Voice [measure 12] %%%
+                            %%% CelloRHMusicVoice [measure 12] %%%
                             R1 * 3/4
                             
-                            %%% Cello RH Music Voice [measure 13] %%%
+                            %%% CelloRHMusicVoice [measure 13] %%%
                             R1 * 1/4
                             
-                            %%% Cello RH Music Voice [measure 14] %%%
+                            %%% CelloRHMusicVoice [measure 14] %%%
                             R1 * 7/4
                             
-                            %%% Cello RH Music Voice [measure 15] %%%
+                            %%% CelloRHMusicVoice [measure 15] %%%
                             R1 * 1/4
                             
-                            %%% Cello RH Music Voice [measure 16] %%%
+                            %%% CelloRHMusicVoice [measure 16] %%%
                             R1 * 2
                             
-                            %%% Cello RH Music Voice [measure 17] %%%
+                            %%% CelloRHMusicVoice [measure 17] %%%
                             R1 * 3/4
                             
-                            %%% Cello RH Music Voice [measure 18] %%%
+                            %%% CelloRHMusicVoice [measure 18] %%%
                             R1 * 1
                             
-                            %%% Cello RH Music Voice [measure 19] %%%
+                            %%% CelloRHMusicVoice [measure 19] %%%
                             R1 * 1/4
                             
-                            %%% Cello RH Music Voice [measure 20] %%%
+                            %%% CelloRHMusicVoice [measure 20] %%%
                             R1 * 1
                             
-                            %%% Cello RH Music Voice [measure 21] %%%
+                            %%% CelloRHMusicVoice [measure 21] %%%
                             R1 * 1/4
                             
-                            %%% Cello RH Music Voice [measure 22] %%%
+                            %%% CelloRHMusicVoice [measure 22] %%%
                             R1 * 1/2
                             
-                            %%% Cello RH Music Voice [measure 23] %%%
+                            %%% CelloRHMusicVoice [measure 23] %%%
                             R1 * 7/4
                             
-                            %%% Cello RH Music Voice [measure 24] %%%
+                            %%% CelloRHMusicVoice [measure 24] %%%
                             R1 * 3/4
                             
-                            %%% Cello RH Music Voice [measure 25] %%%
+                            %%% CelloRHMusicVoice [measure 25] %%%
                             R1 * 1/4
                             
-                            %%% Cello RH Music Voice [measure 26] %%%
+                            %%% CelloRHMusicVoice [measure 26] %%%
                             R1 * 1
                             
-                            %%% Cello RH Music Voice [measure 27] %%%
+                            %%% CelloRHMusicVoice [measure 27] %%%
                             R1 * 1/4
                             
-                            %%% Cello RH Music Voice [measure 28] %%%
+                            %%% CelloRHMusicVoice [measure 28] %%%
                             R1 * 3/4
                             
-                            %%% Cello RH Music Voice [measure 29] %%%
+                            %%% CelloRHMusicVoice [measure 29] %%%
                             R1 * 1
                             
-                            %%% Cello RH Music Voice [measure 30] %%%
+                            %%% CelloRHMusicVoice [measure 30] %%%
                             R1 * 3/4
                             
-                            %%% Cello RH Music Voice [measure 31] %%%
+                            %%% CelloRHMusicVoice [measure 31] %%%
                             R1 * 1/2
                             
-                            %%% Cello RH Music Voice [measure 32] %%%
+                            %%% CelloRHMusicVoice [measure 32] %%%
                             R1 * 7/4
                             
-                            %%% Cello RH Music Voice [measure 33] %%%
+                            %%% CelloRHMusicVoice [measure 33] %%%
                             R1 * 2
                             
-                            %%% Cello RH Music Voice [measure 34] %%%
+                            %%% CelloRHMusicVoice [measure 34] %%%
                             R1 * 1/4
                             \bar "|"
                             
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \context CelloMusicVoice = "Cello Music Voice" {
+                        \context CelloMusicVoice = "CelloMusicVoice" {
                             
-                            %%% Cello Music Voice [measure 10] %%%
+                            %%% CelloMusicVoice [measure 10] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
@@ -890,76 +890,76 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
                             
-                            %%% Cello Music Voice [measure 11] %%%
+                            %%% CelloMusicVoice [measure 11] %%%
                             R1 * 1
                             
-                            %%% Cello Music Voice [measure 12] %%%
+                            %%% CelloMusicVoice [measure 12] %%%
                             R1 * 3/4
                             
-                            %%% Cello Music Voice [measure 13] %%%
+                            %%% CelloMusicVoice [measure 13] %%%
                             R1 * 1/4
                             
-                            %%% Cello Music Voice [measure 14] %%%
+                            %%% CelloMusicVoice [measure 14] %%%
                             R1 * 7/4
                             
-                            %%% Cello Music Voice [measure 15] %%%
+                            %%% CelloMusicVoice [measure 15] %%%
                             R1 * 1/4
                             
-                            %%% Cello Music Voice [measure 16] %%%
+                            %%% CelloMusicVoice [measure 16] %%%
                             R1 * 2
                             
-                            %%% Cello Music Voice [measure 17] %%%
+                            %%% CelloMusicVoice [measure 17] %%%
                             R1 * 3/4
                             
-                            %%% Cello Music Voice [measure 18] %%%
+                            %%% CelloMusicVoice [measure 18] %%%
                             R1 * 1
                             
-                            %%% Cello Music Voice [measure 19] %%%
+                            %%% CelloMusicVoice [measure 19] %%%
                             R1 * 1/4
                             
-                            %%% Cello Music Voice [measure 20] %%%
+                            %%% CelloMusicVoice [measure 20] %%%
                             R1 * 1
                             
-                            %%% Cello Music Voice [measure 21] %%%
+                            %%% CelloMusicVoice [measure 21] %%%
                             R1 * 1/4
                             
-                            %%% Cello Music Voice [measure 22] %%%
+                            %%% CelloMusicVoice [measure 22] %%%
                             R1 * 1/2
                             
-                            %%% Cello Music Voice [measure 23] %%%
+                            %%% CelloMusicVoice [measure 23] %%%
                             R1 * 7/4
                             
-                            %%% Cello Music Voice [measure 24] %%%
+                            %%% CelloMusicVoice [measure 24] %%%
                             R1 * 3/4
                             
-                            %%% Cello Music Voice [measure 25] %%%
+                            %%% CelloMusicVoice [measure 25] %%%
                             R1 * 1/4
                             
-                            %%% Cello Music Voice [measure 26] %%%
+                            %%% CelloMusicVoice [measure 26] %%%
                             R1 * 1
                             
-                            %%% Cello Music Voice [measure 27] %%%
+                            %%% CelloMusicVoice [measure 27] %%%
                             R1 * 1/4
                             
-                            %%% Cello Music Voice [measure 28] %%%
+                            %%% CelloMusicVoice [measure 28] %%%
                             R1 * 3/4
                             
-                            %%% Cello Music Voice [measure 29] %%%
+                            %%% CelloMusicVoice [measure 29] %%%
                             R1 * 1
                             
-                            %%% Cello Music Voice [measure 30] %%%
+                            %%% CelloMusicVoice [measure 30] %%%
                             R1 * 3/4
                             
-                            %%% Cello Music Voice [measure 31] %%%
+                            %%% CelloMusicVoice [measure 31] %%%
                             R1 * 1/2
                             
-                            %%% Cello Music Voice [measure 32] %%%
+                            %%% CelloMusicVoice [measure 32] %%%
                             R1 * 7/4
                             
-                            %%% Cello Music Voice [measure 33] %%%
+                            %%% CelloMusicVoice [measure 33] %%%
                             R1 * 2
                             
-                            %%% Cello Music Voice [measure 34] %%%
+                            %%% CelloMusicVoice [measure 34] %%%
                             R1 * 1/4
                             \bar "|"
                             

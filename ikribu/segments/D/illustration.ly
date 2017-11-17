@@ -142,13 +142,13 @@
                 
             }
         >>
-        \context MusicContext = "Music Context" {
+        \context MusicContext = "MusicContext" {
             \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                 \tag bass_clarinet
-                \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                    \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
+                    \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
-                        %%% Bass Clarinet Music Voice [measure 52] %%%
+                        %%% BassClarinetMusicVoice [measure 52] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -175,45 +175,45 @@
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         R1 * 3/4
                         
-                        %%% Bass Clarinet Music Voice [measure 53] %%%
+                        %%% BassClarinetMusicVoice [measure 53] %%%
                         R1 * 1
                         
-                        %%% Bass Clarinet Music Voice [measure 54] %%%
+                        %%% BassClarinetMusicVoice [measure 54] %%%
                         R1 * 1
                         
-                        %%% Bass Clarinet Music Voice [measure 55] %%%
+                        %%% BassClarinetMusicVoice [measure 55] %%%
                         R1 * 1/2
                         
-                        %%% Bass Clarinet Music Voice [measure 56] %%%
+                        %%% BassClarinetMusicVoice [measure 56] %%%
                         R1 * 7/4
                         
-                        %%% Bass Clarinet Music Voice [measure 57] %%%
+                        %%% BassClarinetMusicVoice [measure 57] %%%
                         R1 * 3/4
                         
-                        %%% Bass Clarinet Music Voice [measure 58] %%%
+                        %%% BassClarinetMusicVoice [measure 58] %%%
                         R1 * 1
                         
-                        %%% Bass Clarinet Music Voice [measure 59] %%%
+                        %%% BassClarinetMusicVoice [measure 59] %%%
                         R1 * 3/4
                         
-                        %%% Bass Clarinet Music Voice [measure 60] %%%
+                        %%% BassClarinetMusicVoice [measure 60] %%%
                         R1 * 1
                         
-                        %%% Bass Clarinet Music Voice [measure 61] %%%
+                        %%% BassClarinetMusicVoice [measure 61] %%%
                         R1 * 3/4
                         
-                        %%% Bass Clarinet Music Voice [measure 62] %%%
+                        %%% BassClarinetMusicVoice [measure 62] %%%
                         R1 * 1/4
                         \bar "|"
                         
                     }
                 }
                 \tag violin
-                \context ViolinStaffGroup = "Violin Staff Group" <<
-                    \context ViolinRHMusicStaff = "Violin RH Music Staff" {
-                        \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                \context ViolinStaffGroup = "ViolinStaffGroup" <<
+                    \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
+                        \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                             
-                            %%% Violin RH Music Voice [measure 52] %%%
+                            %%% ViolinRHMusicVoice [measure 52] %%%
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -235,43 +235,43 @@
                                             "to violin"
                                     }
                             
-                            %%% Violin RH Music Voice [measure 53] %%%
+                            %%% ViolinRHMusicVoice [measure 53] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 54] %%%
+                            %%% ViolinRHMusicVoice [measure 54] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 55] %%%
+                            %%% ViolinRHMusicVoice [measure 55] %%%
                             R1 * 1/2
                             
-                            %%% Violin RH Music Voice [measure 56] %%%
+                            %%% ViolinRHMusicVoice [measure 56] %%%
                             R1 * 7/4
                             
-                            %%% Violin RH Music Voice [measure 57] %%%
+                            %%% ViolinRHMusicVoice [measure 57] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 58] %%%
+                            %%% ViolinRHMusicVoice [measure 58] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 59] %%%
+                            %%% ViolinRHMusicVoice [measure 59] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 60] %%%
+                            %%% ViolinRHMusicVoice [measure 60] %%%
                             R1 * 1
                             
-                            %%% Violin RH Music Voice [measure 61] %%%
+                            %%% ViolinRHMusicVoice [measure 61] %%%
                             R1 * 3/4
                             
-                            %%% Violin RH Music Voice [measure 62] %%%
+                            %%% ViolinRHMusicVoice [measure 62] %%%
                             R1 * 1/4
                             \bar "|"
                             
                         }
                     }
-                    \context ViolinMusicStaff = "Violin Music Staff" {
-                        \context ViolinMusicVoice = "Violin Music Voice" {
+                    \context ViolinMusicStaff = "ViolinMusicStaff" {
+                        \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
-                            %%% Violin Music Voice [measure 52] %%%
+                            %%% ViolinMusicVoice [measure 52] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -279,34 +279,34 @@
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 3/4
                             
-                            %%% Violin Music Voice [measure 53] %%%
+                            %%% ViolinMusicVoice [measure 53] %%%
                             R1 * 1
                             
-                            %%% Violin Music Voice [measure 54] %%%
+                            %%% ViolinMusicVoice [measure 54] %%%
                             R1 * 1
                             
-                            %%% Violin Music Voice [measure 55] %%%
+                            %%% ViolinMusicVoice [measure 55] %%%
                             R1 * 1/2
                             
-                            %%% Violin Music Voice [measure 56] %%%
+                            %%% ViolinMusicVoice [measure 56] %%%
                             R1 * 7/4
                             
-                            %%% Violin Music Voice [measure 57] %%%
+                            %%% ViolinMusicVoice [measure 57] %%%
                             R1 * 3/4
                             
-                            %%% Violin Music Voice [measure 58] %%%
+                            %%% ViolinMusicVoice [measure 58] %%%
                             R1 * 1
                             
-                            %%% Violin Music Voice [measure 59] %%%
+                            %%% ViolinMusicVoice [measure 59] %%%
                             R1 * 3/4
                             
-                            %%% Violin Music Voice [measure 60] %%%
+                            %%% ViolinMusicVoice [measure 60] %%%
                             R1 * 1
                             
-                            %%% Violin Music Voice [measure 61] %%%
+                            %%% ViolinMusicVoice [measure 61] %%%
                             R1 * 3/4
                             
-                            %%% Violin Music Voice [measure 62] %%%
+                            %%% ViolinMusicVoice [measure 62] %%%
                             R1 * 1/4
                             \bar "|"
                             
@@ -314,11 +314,11 @@
                     }
                 >>
                 \tag viola
-                \context ViolaStaffGroup = "Viola Staff Group" <<
-                    \context ViolaRHMusicStaff = "Viola RH Music Staff" {
-                        \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                \context ViolaStaffGroup = "ViolaStaffGroup" <<
+                    \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
+                        \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                             
-                            %%% Viola RH Music Voice [measure 52] %%%
+                            %%% ViolaRHMusicVoice [measure 52] %%%
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -340,43 +340,43 @@
                                             "to viola"
                                     }
                             
-                            %%% Viola RH Music Voice [measure 53] %%%
+                            %%% ViolaRHMusicVoice [measure 53] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 54] %%%
+                            %%% ViolaRHMusicVoice [measure 54] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 55] %%%
+                            %%% ViolaRHMusicVoice [measure 55] %%%
                             R1 * 1/2
                             
-                            %%% Viola RH Music Voice [measure 56] %%%
+                            %%% ViolaRHMusicVoice [measure 56] %%%
                             R1 * 7/4
                             
-                            %%% Viola RH Music Voice [measure 57] %%%
+                            %%% ViolaRHMusicVoice [measure 57] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 58] %%%
+                            %%% ViolaRHMusicVoice [measure 58] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 59] %%%
+                            %%% ViolaRHMusicVoice [measure 59] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 60] %%%
+                            %%% ViolaRHMusicVoice [measure 60] %%%
                             R1 * 1
                             
-                            %%% Viola RH Music Voice [measure 61] %%%
+                            %%% ViolaRHMusicVoice [measure 61] %%%
                             R1 * 3/4
                             
-                            %%% Viola RH Music Voice [measure 62] %%%
+                            %%% ViolaRHMusicVoice [measure 62] %%%
                             R1 * 1/4
                             \bar "|"
                             
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
-                        \context ViolaMusicVoice = "Viola Music Voice" {
+                        \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
-                            %%% Viola Music Voice [measure 52] %%%
+                            %%% ViolaMusicVoice [measure 52] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -384,34 +384,34 @@
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 3/4
                             
-                            %%% Viola Music Voice [measure 53] %%%
+                            %%% ViolaMusicVoice [measure 53] %%%
                             R1 * 1
                             
-                            %%% Viola Music Voice [measure 54] %%%
+                            %%% ViolaMusicVoice [measure 54] %%%
                             R1 * 1
                             
-                            %%% Viola Music Voice [measure 55] %%%
+                            %%% ViolaMusicVoice [measure 55] %%%
                             R1 * 1/2
                             
-                            %%% Viola Music Voice [measure 56] %%%
+                            %%% ViolaMusicVoice [measure 56] %%%
                             R1 * 7/4
                             
-                            %%% Viola Music Voice [measure 57] %%%
+                            %%% ViolaMusicVoice [measure 57] %%%
                             R1 * 3/4
                             
-                            %%% Viola Music Voice [measure 58] %%%
+                            %%% ViolaMusicVoice [measure 58] %%%
                             R1 * 1
                             
-                            %%% Viola Music Voice [measure 59] %%%
+                            %%% ViolaMusicVoice [measure 59] %%%
                             R1 * 3/4
                             
-                            %%% Viola Music Voice [measure 60] %%%
+                            %%% ViolaMusicVoice [measure 60] %%%
                             R1 * 1
                             
-                            %%% Viola Music Voice [measure 61] %%%
+                            %%% ViolaMusicVoice [measure 61] %%%
                             R1 * 3/4
                             
-                            %%% Viola Music Voice [measure 62] %%%
+                            %%% ViolaMusicVoice [measure 62] %%%
                             R1 * 1/4
                             \bar "|"
                             
@@ -419,13 +419,13 @@
                     }
                 >>
                 \tag cello
-                \context CelloStaffGroup = "Cello Staff Group" <<
-                    \context CelloRHMusicStaff = "Cello RH Music Staff" {
-                        \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                \context CelloStaffGroup = "CelloStaffGroup" <<
+                    \context CelloRHMusicStaff = "CelloRHMusicStaff" {
+                        \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
-                                %%% Cello RH Music Voice [measure 52] %%%
+                                %%% CelloRHMusicVoice [measure 52] %%%
                                 \set CelloStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -485,7 +485,7 @@
                             }
                             \times 4/6 {
                                 
-                                %%% Cello RH Music Voice [measure 53] %%%
+                                %%% CelloRHMusicVoice [measure 53] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -526,7 +526,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 
-                                %%% Cello RH Music Voice [measure 54] %%%
+                                %%% CelloRHMusicVoice [measure 54] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -550,7 +550,7 @@
                             }
                             {
                                 
-                                %%% Cello RH Music Voice [measure 55] %%%
+                                %%% CelloRHMusicVoice [measure 55] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -568,7 +568,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
-                                %%% Cello RH Music Voice [measure 56] %%%
+                                %%% CelloRHMusicVoice [measure 56] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -623,7 +623,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
-                                %%% Cello RH Music Voice [measure 57] %%%
+                                %%% CelloRHMusicVoice [measure 57] %%%
                                 c'4 \f \>
                                     ^ \markup {
                                         \fraction
@@ -662,7 +662,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 
-                                %%% Cello RH Music Voice [measure 58] %%%
+                                %%% CelloRHMusicVoice [measure 58] %%%
                                 r4
                                 
                                 c'4 \p \>
@@ -681,7 +681,7 @@
                             }
                             {
                                 
-                                %%% Cello RH Music Voice [measure 59] %%%
+                                %%% CelloRHMusicVoice [measure 59] %%%
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
@@ -705,7 +705,7 @@
                             }
                             \times 4/5 {
                                 
-                                %%% Cello RH Music Voice [measure 60] %%%
+                                %%% CelloRHMusicVoice [measure 60] %%%
                                 c'4 \ff \>
                                     ^ \markup {
                                         \fraction
@@ -744,7 +744,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
-                                %%% Cello RH Music Voice [measure 61] %%%
+                                %%% CelloRHMusicVoice [measure 61] %%%
                                 c'4 \f
                                     ^ \markup {
                                         \fraction
@@ -777,18 +777,18 @@
                                 \revert RepeatTie.direction
                             }
                             
-                            %%% Cello RH Music Voice [measure 62] %%%
+                            %%% CelloRHMusicVoice [measure 62] %%%
                             R1 * 1/4
                             \bar "|"
                             
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
-                        \context CelloMusicVoice = "Cello Music Voice" {
+                        \context CelloMusicVoice = "CelloMusicVoice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 
-                                %%% Cello Music Voice [measure 52] %%%
+                                %%% CelloMusicVoice [measure 52] %%%
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 5
                                 \startStaff
@@ -805,7 +805,7 @@
                             }
                             \times 4/5 {
                                 
-                                %%% Cello Music Voice [measure 53] %%%
+                                %%% CelloMusicVoice [measure 53] %%%
                                 d'2 \glissando
                                 
                                 e'8 \glissando
@@ -816,7 +816,7 @@
                             }
                             {
                                 
-                                %%% Cello Music Voice [measure 54] %%%
+                                %%% CelloMusicVoice [measure 54] %%%
                                 d'4. \glissando
                                 
                                 e''2 \glissando
@@ -825,7 +825,7 @@
                             }
                             \times 4/5 {
                                 
-                                %%% Cello Music Voice [measure 55] %%%
+                                %%% CelloMusicVoice [measure 55] %%%
                                 e'4 \glissando
                                 
                                 g'4. \glissando
@@ -833,7 +833,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
-                                %%% Cello Music Voice [measure 56] %%%
+                                %%% CelloMusicVoice [measure 56] %%%
                                 g2 \glissando
                                 
                                 b8 \glissando [
@@ -850,7 +850,7 @@
                             }
                             {
                                 
-                                %%% Cello Music Voice [measure 57] %%%
+                                %%% CelloMusicVoice [measure 57] %%%
                                 b8 \glissando
                                 
                                 g2 \glissando
@@ -859,7 +859,7 @@
                             }
                             \times 8/9 {
                                 
-                                %%% Cello Music Voice [measure 58] %%%
+                                %%% CelloMusicVoice [measure 58] %%%
                                 e'4. \glissando
                                 
                                 f''2. \glissando
@@ -867,14 +867,14 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
-                                %%% Cello Music Voice [measure 59] %%%
+                                %%% CelloMusicVoice [measure 59] %%%
                                 e''8 \glissando
                                 
                                 d'2.. \glissando
                             }
                             {
                                 
-                                %%% Cello Music Voice [measure 60] %%%
+                                %%% CelloMusicVoice [measure 60] %%%
                                 c'8 \glissando [
                                 
                                 d8 \glissando
@@ -890,7 +890,7 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 
-                                %%% Cello Music Voice [measure 61] %%%
+                                %%% CelloMusicVoice [measure 61] %%%
                                 a2 \glissando
                                 
                                 g,8 \glissando
@@ -898,7 +898,7 @@
                                 a,4
                             }
                             
-                            %%% Cello Music Voice [measure 62] %%%
+                            %%% CelloMusicVoice [measure 62] %%%
                             R1 * 1/4
                             \bar "|"
                             

@@ -27,11 +27,11 @@ class ScoreTemplate(baca.ScoreTemplate):
                 \context GlobalSkips = "Global Skips" {
                 }
             >>
-            \context MusicContext = "Music Context" {
+            \context MusicContext = "MusicContext" {
                 \context EnsembleStaffGroup = "Ensemble Staff Group" <<
                     \tag bass_clarinet
-                    \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
-                        \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
+                    \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
+                        \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                             \set BassClarinetMusicStaff.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -55,9 +55,9 @@ class ScoreTemplate(baca.ScoreTemplate):
                         }
                     }
                     \tag violin
-                    \context ViolinStaffGroup = "Violin Staff Group" <<
-                        \context ViolinRHMusicStaff = "Violin RH Music Staff" {
-                            \context ViolinRHMusicVoice = "Violin RH Music Voice" {
+                    \context ViolinStaffGroup = "ViolinStaffGroup" <<
+                        \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
+                            \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                                 \set ViolinStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -72,17 +72,17 @@ class ScoreTemplate(baca.ScoreTemplate):
                                 s1
                             }
                         }
-                        \context ViolinMusicStaff = "Violin Music Staff" {
-                            \context ViolinMusicVoice = "Violin Music Voice" {
+                        \context ViolinMusicStaff = "ViolinMusicStaff" {
+                            \context ViolinMusicVoice = "ViolinMusicVoice" {
                                 \clef "treble"
                                 s1
                             }
                         }
                     >>
                     \tag viola
-                    \context ViolaStaffGroup = "Viola Staff Group" <<
-                        \context ViolaRHMusicStaff = "Viola RH Music Staff" {
-                            \context ViolaRHMusicVoice = "Viola RH Music Voice" {
+                    \context ViolaStaffGroup = "ViolaStaffGroup" <<
+                        \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
+                            \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                                 \set ViolaStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -98,16 +98,16 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                         }
                         \context ViolaMusicStaff = "Viola Music Staff" {
-                            \context ViolaMusicVoice = "Viola Music Voice" {
+                            \context ViolaMusicVoice = "ViolaMusicVoice" {
                                 \clef "alto"
                                 s1
                             }
                         }
                     >>
                     \tag cello
-                    \context CelloStaffGroup = "Cello Staff Group" <<
-                        \context CelloRHMusicStaff = "Cello RH Music Staff" {
-                            \context CelloRHMusicVoice = "Cello RH Music Voice" {
+                    \context CelloStaffGroup = "CelloStaffGroup" <<
+                        \context CelloRHMusicStaff = "CelloRHMusicStaff" {
+                            \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                                 \set CelloStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -123,7 +123,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                         }
                         \context CelloMusicStaff = "Cello Music Staff" {
-                            \context CelloMusicVoice = "Cello Music Voice" {
+                            \context CelloMusicVoice = "CelloMusicVoice" {
                                 \clef "bass"
                                 s1
                             }
@@ -155,12 +155,12 @@ class ScoreTemplate(baca.ScoreTemplate):
         bass_clarinet_music_voice = abjad.Voice(
             [],
             context_name='BassClarinetMusicVoice',
-            name='Bass Clarinet Music Voice',
+            name='BassClarinetMusicVoice',
             )
         bass_clarinet_music_staff = abjad.Staff(
             [bass_clarinet_music_voice],
             context_name='BassClarinetMusicStaff',
-            name='Bass Clarinet Music Staff',
+            name='BassClarinetMusicStaff',
             )
         abjad.annotate(
             bass_clarinet_music_staff,
@@ -172,12 +172,12 @@ class ScoreTemplate(baca.ScoreTemplate):
         violin_rh_music_voice = abjad.Voice(
             [],
             context_name='ViolinRHMusicVoice',
-            name='Violin RH Music Voice',
+            name='ViolinRHMusicVoice',
             )
         violin_rh_music_staff = abjad.Staff(
             [violin_rh_music_voice],
             context_name='ViolinRHMusicStaff',
-            name='Violin RH Music Staff',
+            name='ViolinRHMusicStaff',
             )
         abjad.annotate(
             violin_rh_music_staff,
@@ -187,17 +187,17 @@ class ScoreTemplate(baca.ScoreTemplate):
         violin_music_voice = abjad.Voice(
             [],
             context_name='ViolinMusicVoice',
-            name='Violin Music Voice',
+            name='ViolinMusicVoice',
             )
         violin_music_staff = abjad.Staff(
             [violin_music_voice],
             context_name='ViolinMusicStaff',
-            name='Violin Music Staff',
+            name='ViolinMusicStaff',
             )
         violin_staff_group = abjad.StaffGroup(
             [violin_rh_music_staff, violin_music_staff],
             context_name='ViolinStaffGroup',
-            name='Violin Staff Group',
+            name='ViolinStaffGroup',
             )
         abjad.annotate(
             violin_staff_group,
@@ -209,12 +209,12 @@ class ScoreTemplate(baca.ScoreTemplate):
         viola_rh_music_voice = abjad.Voice(
             [],
             context_name='ViolaRHMusicVoice',
-            name='Viola RH Music Voice',
+            name='ViolaRHMusicVoice',
             )
         viola_rh_music_staff = abjad.Staff(
             [viola_rh_music_voice],
             context_name='ViolaRHMusicStaff',
-            name='Viola RH Music Staff',
+            name='ViolaRHMusicStaff',
             )
         abjad.annotate(
             viola_rh_music_staff,
@@ -224,7 +224,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         viola_music_voice = abjad.Voice(
             [],
             context_name='ViolaMusicVoice',
-            name='Viola Music Voice',
+            name='ViolaMusicVoice',
             )
         viola_music_staff = abjad.Staff(
             [viola_music_voice],
@@ -234,7 +234,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         viola_staff_group = abjad.StaffGroup(
             [viola_rh_music_staff, viola_music_staff],
             context_name='ViolaStaffGroup',
-            name='Viola Staff Group',
+            name='ViolaStaffGroup',
             )
         abjad.annotate(
             viola_staff_group,
@@ -246,12 +246,12 @@ class ScoreTemplate(baca.ScoreTemplate):
         cello_rh_music_voice = abjad.Voice(
             [],
             context_name='CelloRHMusicVoice',
-            name='Cello RH Music Voice',
+            name='CelloRHMusicVoice',
             )
         cello_rh_music_staff = abjad.Staff(
             [cello_rh_music_voice],
             context_name='CelloRHMusicStaff',
-            name='Cello RH Music Staff',
+            name='CelloRHMusicStaff',
             )
         abjad.annotate(
             cello_rh_music_staff,
@@ -261,7 +261,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         cello_music_voice = abjad.Voice(
             [],
             context_name='CelloMusicVoice',
-            name='Cello Music Voice',
+            name='CelloMusicVoice',
             )
         cello_music_staff = abjad.Staff(
             [cello_music_voice],
@@ -271,7 +271,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         cello_staff_group = abjad.StaffGroup(
             [cello_rh_music_staff, cello_music_staff],
             context_name='CelloStaffGroup',
-            name='Cello Staff Group',
+            name='CelloStaffGroup',
             )
         abjad.annotate(
             cello_staff_group,
@@ -294,7 +294,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 ensemble_staff_group,
             ],
             context_name='MusicContext',
-            name='Music Context',
+            name='MusicContext',
             )
         score = abjad.Score([
             global_context,

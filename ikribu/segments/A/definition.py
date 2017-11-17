@@ -56,33 +56,33 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
     baca.staff_lines(5),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 2, 3),
+    baca.scope('ViolaMusicVoice', 2, 3),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.pitches('D2'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.hairpin('ppp < f', baca.leaves()[:2]),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.hairpin('f > niente', baca.rleaves()[-4:]),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 2, 4),
+    baca.scope('ViolaMusicVoice', 2, 4),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
@@ -92,6 +92,6 @@ maker(
     )
 
 maker(
-    baca.scope('Cello Music Voice', 1),
+    baca.scope('CelloMusicVoice', 1),
     baca.staff_lines(5),
     )

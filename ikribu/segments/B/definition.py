@@ -65,38 +65,38 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
-    baca.make_scopes(['Bass Clarinet Music Voice'], [3, 7, 11, 13]),
+    baca.make_scopes(['BassClarinetMusicVoice'], [3, 7, 11, 13]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice'], [1, 5, 9]),
+    baca.make_scopes(['ViolinMusicVoice'], [1, 5, 9]),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 13, 14),
+    baca.scope('ViolaMusicVoice', 13, 14),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 3, 15),
+    baca.scope('BassClarinetMusicVoice', 3, 15),
     baca.pitches('Db2'),
     )
 
 maker(
-    baca.make_scopes(['Bass Clarinet Music Voice'], [3, 7, 11]),
+    baca.make_scopes(['BassClarinetMusicVoice'], [3, 7, 11]),
     baca.dynamic('ppp'),
     )
 
 maker(
-    baca.scope('Bass Clarinet Music Voice', 13),
+    baca.scope('BassClarinetMusicVoice', 13),
     baca.hairpin('ppp < f', baca.leaves()[:2]),
     baca.hairpin('f > niente', baca.rleaves()[-2:]),
     )
 
 maker(
-    baca.scope('Violin Music Voice', 1, 9),
+    baca.scope('ViolinMusicVoice', 1, 9),
     baca.clef('treble'),
     baca.markup.string_number(3),
     baca.pitches('E4'),
@@ -104,7 +104,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['Violin Music Voice'], [1, 5, 9]),
+    baca.make_scopes(['ViolinMusicVoice'], [1, 5, 9]),
     baca.suite([
         baca.hairpin('ppp < p', baca.leaves()[:2]),
         baca.hairpin('p > niente', baca.rleaves()[-2:]),
@@ -116,14 +116,14 @@ maker(
     )
 
 maker(
-    baca.scope('Viola Music Voice', 13, 14),
+    baca.scope('ViolaMusicVoice', 13, 14),
     baca.markup.string_number(2),
     baca.pitches('Eb4'),
     baca.stem_tremolo(),
     )
 
 maker(
-    baca.scope('Viola Music Voice', 13, 14),
+    baca.scope('ViolaMusicVoice', 13, 14),
     baca.suite([
         baca.hairpin('ppp < mf', baca.leaves()[:5]),
         baca.hairpin('mf > niente', baca.rleaves()[-2:]),
