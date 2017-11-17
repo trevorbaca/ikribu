@@ -13,21 +13,29 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalRests = "Global Rests" {
-                % measure 239
+                
+                %%% Global Rests [measure 239] %%%
                 R1 * 3/4
-                % measure 240
+                
+                %%% Global Rests [measure 240] %%%
                 R1 * 1/2
-                % measure 241
+                
+                %%% Global Rests [measure 241] %%%
                 R1 * 7/4
-                % measure 242
+                
+                %%% Global Rests [measure 242] %%%
                 R1 * 7/4
-                % measure 243
+                
+                %%% Global Rests [measure 243] %%%
                 R1 * 2
-                % measure 244
+                
+                %%% Global Rests [measure 244] %%%
                 R1 * 7/4
-                % measure 245
+                
+                %%% Global Rests [measure 245] %%%
                 R1 * 3/4
-                % measure 246
+                
+                %%% Global Rests [measure 246] %%%
                 \once \override MultiMeasureRestText.extra-offset = #'(0 . -7)
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
@@ -36,9 +44,11 @@
                         \musicglyph
                             #"scripts.ulongfermata"
                         }
+                
             }
             \context GlobalSkips = "Global Skips" {
-                % measure 239
+                
+                %%% Global Skips [measure 239] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \once \override TextSpanner.arrow-width = 0.25
@@ -78,27 +88,32 @@
                 \mark #16
                 \newSpacingSection
                 s1 * 3/4 \startTextSpan
-                % measure 240
+                
+                %%% Global Skips [measure 240] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
-                % measure 241
+                
+                %%% Global Skips [measure 241] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 242
+                
+                %%% Global Skips [measure 242] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 243
+                
+                %%% Global Skips [measure 243] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
-                % measure 244
+                
+                %%% Global Skips [measure 244] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
@@ -118,16 +133,19 @@
                             42
                         }
                     }
-                % measure 245
+                
+                %%% Global Skips [measure 245] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
-                % measure 246
+                
+                %%% Global Skips [measure 246] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)
                 \time 1/4
                 \newSpacingSection
                 s1 * 1/4
+                
             }
         >>
         \context MusicContext = "Music Context" {
@@ -135,7 +153,8 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        % measure 239
+                        
+                        %%% Bass Clarinet Music Voice [measure 239] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -168,7 +187,8 @@
                         c'''2. \< \pp
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 240
+                        
+                        %%% Bass Clarinet Music Voice [measure 240] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -177,7 +197,8 @@
                         c'''2 \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 241
+                        
+                        %%% Bass Clarinet Music Voice [measure 241] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -186,7 +207,8 @@
                         c'''1.. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 242
+                        
+                        %%% Bass Clarinet Music Voice [measure 242] %%%
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
@@ -195,7 +217,8 @@
                         c'''1.. \repeatTie
                             - \tweak color #red
                             ^ \markup { @ }
-                        % measure 243
+                        
+                        %%% Bass Clarinet Music Voice [measure 243] %%%
                         \once \override Hairpin.circled-tip = ##t
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
@@ -205,26 +228,43 @@
                         c'''4 \mf \glissando \> \mf
                             - \tweak color #red
                             ^ \markup { @ }
+                        
                         a''4 \glissando
+                        
                         f''4 \glissando
+                        
                         d''4 \glissando
+                        
                         b'4 \glissando
+                        
                         g'4 \glissando
+                        
                         e'4 \glissando
+                        
                         c'4 \glissando
-                        % measure 244
+                        
+                        %%% Bass Clarinet Music Voice [measure 244] %%%
                         b4 \glissando
+                        
                         a4 \glissando
+                        
                         g4 \glissando
+                        
                         f4 \glissando
+                        
                         e4 \glissando
+                        
                         d4 \glissando
+                        
                         cs4
-                        % measure 245
+                        
+                        %%% Bass Clarinet Music Voice [measure 245] %%%
                         cs2. \repeatTie
-                        % measure 246
+                        
+                        %%% Bass Clarinet Music Voice [measure 246] %%%
                         R1 * 1/4 \!
                         \bar "|"
+                        
                     }
                 }
                 \tag violin
@@ -233,7 +273,8 @@
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
-                                % measure 239
+                                
+                                %%% Violin RH Music Voice [measure 239] %%%
                                 \set ViolinStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -253,6 +294,7 @@
                                             \box
                                                 "to violin"
                                         }
+                                
                                 \override RepeatTie.direction = #up
                                 c'4 \> \p
                                     ^ \markup {
@@ -277,13 +319,15 @@
                                         }
                             }
                             {
-                                % measure 240
+                                
+                                %%% Violin RH Music Voice [measure 240] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 c'4 \pp \<
                                     ^ \markup {
                                         \fraction
@@ -293,44 +337,52 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                % measure 241
+                                
+                                %%% Violin RH Music Voice [measure 241] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4 \ppp
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 r4
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \pp
                                     ^ \markup {
                                         \fraction
@@ -340,86 +392,102 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/9 {
-                                % measure 242
+                                
+                                %%% Violin RH Music Voice [measure 242] %%%
                                 r4
+                                
                                 c'4 \pp \>
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \pp
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 r4
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 8/7 {
-                                % measure 243
+                                
+                                %%% Violin RH Music Voice [measure 243] %%%
                                 c'4 \pp \<
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             4
                                         }
+                                
                                 c'4 \p
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
+                                
                                 r4
+                                
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             2
                                             4
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
+                                
                                 c'4 \ppp
                                     ^ \markup {
                                         \fraction
@@ -428,59 +496,84 @@
                                         }
                                 \revert RepeatTie.direction
                             }
-                            % measure 244
+                            
+                            %%% Violin RH Music Voice [measure 244] %%%
                             R1 * 11/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
-                                % measure 239
+                                
+                                %%% Violin Music Voice [measure 239] %%%
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "percussion"
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 c''8 \glissando [
+                                
                                 b''8. \glissando
+                                
                                 a'8 \glissando
+                                
                                 b'8. ] \glissando
+                                
                                 g'4 \glissando
                             }
                             \times 2/3 {
-                                % measure 240
+                                
+                                %%% Violin Music Voice [measure 240] %%%
                                 g''2 \glissando
+                                
                                 e''8 \glissando [
+                                
                                 f'''8 ] \glissando
                             }
                             {
-                                % measure 241
+                                
+                                %%% Violin Music Voice [measure 241] %%%
                                 e'''2.. \glissando
+                                
                                 d''2.. \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
-                                % measure 242
+                                
+                                %%% Violin Music Voice [measure 242] %%%
                                 c''1 \glissando
+                                
                                 d'8 \glissando [
+                                
                                 e''8. \glissando
+                                
                                 d''8 \glissando
+                                
                                 f''8. ] \glissando
+                                
                                 f'4 \glissando
                             }
                             \times 8/9 {
-                                % measure 243
+                                
+                                %%% Violin Music Voice [measure 243] %%%
                                 a'2 \glissando
+                                
                                 g8 \glissando
+                                
                                 a1 \glissando
+                                
                                 b'2 \glissando
+                                
                                 a8
                             }
-                            % measure 244
+                            
+                            %%% Violin Music Voice [measure 244] %%%
                             R1 * 11/4
                             \bar "|"
+                            
                         }
                     }
                 >>
@@ -489,7 +582,9 @@
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
                             {
-                                % measure 239
+                                
+                                %%% Viola RH Music Voice [measure 239] %%%
+                                \override RepeatTie.direction = #up
                                 \set ViolaStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -501,7 +596,6 @@
                                         Va.
                                     }
                                 \clef "percussion"
-                                \override RepeatTie.direction = #up
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 c'4 \> \p
                                     ^ \markup {
@@ -531,12 +625,14 @@
                                                     }
                                             }
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4 \pp \<
                                     ^ \markup {
                                         \fraction
@@ -545,14 +641,17 @@
                                         }
                             }
                             \times 2/3 {
-                                % measure 240
+                                
+                                %%% Viola RH Music Voice [measure 240] %%%
                                 c'4 \p
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 r4
+                                
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
@@ -562,136 +661,159 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/9 {
-                                % measure 241
+                                
+                                %%% Viola RH Music Voice [measure 241] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4 \pp \>
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \p
                                     ^ \markup {
                                         \fraction
                                             0
                                             4
                                         }
+                                
                                 r4
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
-                                % measure 242
+                                
+                                %%% Viola RH Music Voice [measure 242] %%%
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             2
                                             4
                                         }
+                                
                                 c'4 \pp \<
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4 \p
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 r4
                             }
                             {
-                                % measure 243
+                                
+                                %%% Viola RH Music Voice [measure 243] %%%
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \pp \>
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \ppp
                                     ^ \markup {
                                         \fraction
@@ -700,55 +822,76 @@
                                         }
                                 \revert RepeatTie.direction
                             }
-                            % measure 244
+                            
+                            %%% Viola RH Music Voice [measure 244] %%%
                             R1 * 11/4
                             \bar "|"
+                            
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                % measure 239
+                                
+                                %%% Viola Music Voice [measure 239] %%%
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "treble"
                                 c''2.. \glissando
+                                
                                 d'8 \glissando
                             }
                             {
-                                % measure 240
+                                
+                                %%% Viola Music Voice [measure 240] %%%
                                 e''2 \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
-                                % measure 241
+                                
+                                %%% Viola Music Voice [measure 241] %%%
                                 d''4. \glissando
+                                
                                 f''2.. \glissando
+                                
                                 f'2 \glissando
+                                
                                 a'8 \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                % measure 242
+                                
+                                %%% Viola Music Voice [measure 242] %%%
                                 g4. \glissando
+                                
                                 a8 \glissando [
+                                
                                 b'8. \glissando
+                                
                                 a8 \glissando
+                                
                                 g8. ] \glissando
+                                
                                 a'2.. \glissando
+                                
                                 f'8 \glissando
                             }
                             {
-                                % measure 243
+                                
+                                %%% Viola Music Voice [measure 243] %%%
                                 f''2.. \glissando
+                                
                                 d''2.. \glissando
+                                
                                 e''4
                             }
-                            % measure 244
+                            
+                            %%% Viola Music Voice [measure 244] %%%
                             R1 * 11/4
                             \bar "|"
+                            
                         }
                     }
                 >>
@@ -758,7 +901,8 @@
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                % measure 239
+                                
+                                %%% Cello RH Music Voice [measure 239] %%%
                                 \set CelloStaffGroup.instrumentName = \markup {
                                     \hcenter-in
                                         #16
@@ -778,6 +922,7 @@
                                             \box
                                                 "to cello"
                                         }
+                                
                                 \override RepeatTie.direction = #up
                                 c'4 \> \p
                                     ^ \markup {
@@ -800,12 +945,14 @@
                                                     }
                                             }
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 c'4 \pp \<
                                     ^ \markup {
                                         \fraction
@@ -814,13 +961,15 @@
                                         }
                             }
                             {
-                                % measure 240
+                                
+                                %%% Cello RH Music Voice [measure 240] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -830,32 +979,38 @@
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
-                                % measure 241
+                                
+                                %%% Cello RH Music Voice [measure 241] %%%
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4 \ppp
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 r4
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             0
                                             4
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
+                                
                                 c'4 \pp \>
                                     ^ \markup {
                                         \fraction
@@ -864,43 +1019,50 @@
                                         }
                             }
                             {
-                                % measure 242
+                                
+                                %%% Cello RH Music Voice [measure 242] %%%
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             1
                                             4
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             5
                                             7
                                         }
+                                
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             6
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
@@ -909,50 +1071,59 @@
                                         }
                             }
                             \times 8/9 {
-                                % measure 243
+                                
+                                %%% Cello RH Music Voice [measure 243] %%%
                                 c'4 \pp
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 r4
+                                
                                 c'4 \pp \<
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4 \p \>
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             7
                                             7
                                         }
+                                
                                 c'4
                                     ^ \markup {
                                         \fraction
                                             0
                                             7
                                         }
+                                
                                 c'4 \ppp \<
                                     ^ \markup {
                                         \fraction
                                             4
                                             7
                                         }
+                                
                                 c'4 \pp
                                     ^ \markup {
                                         \fraction
@@ -961,55 +1132,78 @@
                                         }
                                 \revert RepeatTie.direction
                             }
-                            % measure 244
+                            
+                            %%% Cello RH Music Voice [measure 244] %%%
                             R1 * 11/4
                             \bar "|"
+                            
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
                             {
-                                % measure 239
+                                
+                                %%% Cello Music Voice [measure 239] %%%
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 \clef "tenor"
                                 a,8 \glissando [
+                                
                                 g,8. \glissando
+                                
                                 a8 \glissando
+                                
                                 f8. \glissando
+                                
                                 f'8 ] \glissando
                             }
                             \times 4/5 {
-                                % measure 240
+                                
+                                %%% Cello Music Voice [measure 240] %%%
                                 d'2 \glissando
+                                
                                 e'8 \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
-                                % measure 241
+                                
+                                %%% Cello Music Voice [measure 241] %%%
                                 d8 \glissando
+                                
                                 c'1 \glissando
+                                
                                 d'2.. \glissando
                             }
                             {
-                                % measure 242
+                                
+                                %%% Cello Music Voice [measure 242] %%%
                                 e''1 \glissando
+                                
                                 f''8 \glissando [
+                                
                                 e'8. \glissando
+                                
                                 g'8 \glissando
+                                
                                 g8. \glissando
+                                
                                 b8 ] \glissando
                             }
                             \times 16/17 {
-                                % measure 243
+                                
+                                %%% Cello Music Voice [measure 243] %%%
                                 a2. \glissando
+                                
                                 b'1 \glissando
+                                
                                 c'4.
                             }
-                            % measure 244
+                            
+                            %%% Cello Music Voice [measure 244] %%%
                             R1 * 11/4
                             \bar "|"
+                            
                         }
                     }
                 >>

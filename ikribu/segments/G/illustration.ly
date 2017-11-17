@@ -13,7 +13,8 @@
         \tag bass_clarinet.violin.viola.cello
         \context GlobalContext = "Global Context" <<
             \context GlobalSkips = "Global Skips" {
-                % measure 87
+                
+                %%% Global Skips [measure 87] %%%
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
                 #'((Y-offset . 20) (alignment-distances . (15 20 20)))
                 \once \override TextSpanner.arrow-width = 0.25
@@ -53,52 +54,62 @@
                 \mark #7
                 \newSpacingSection
                 s1 * 7/4 \startTextSpan
-                % measure 88
+                
+                %%% Global Skips [measure 88] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
-                % measure 89
+                
+                %%% Global Skips [measure 89] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 90
+                
+                %%% Global Skips [measure 90] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
-                % measure 91
+                
+                %%% Global Skips [measure 91] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 92
+                
+                %%% Global Skips [measure 92] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
-                % measure 93
+                
+                %%% Global Skips [measure 93] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 94
+                
+                %%% Global Skips [measure 94] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
-                % measure 95
+                
+                %%% Global Skips [measure 95] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
-                % measure 96
+                
+                %%% Global Skips [measure 96] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
-                % measure 97
+                
+                %%% Global Skips [measure 97] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
@@ -118,11 +129,13 @@
                             104
                         }
                     }
-                % measure 98
+                
+                %%% Global Skips [measure 98] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
+                
             }
         >>
         \context MusicContext = "Music Context" {
@@ -130,7 +143,8 @@
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "Bass Clarinet Music Staff" {
                     \context BassClarinetMusicVoice = "Bass Clarinet Music Voice" {
-                        % measure 87
+                        
+                        %%% Bass Clarinet Music Voice [measure 87] %%%
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
@@ -156,36 +170,49 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         a1.. \< \ppp
-                        % measure 88
+                        
+                        %%% Bass Clarinet Music Voice [measure 88] %%%
                         R1 * 1/6 \mp
-                        % measure 89
+                        
+                        %%% Bass Clarinet Music Voice [measure 89] %%%
                         af1.. \< \pp
-                        % measure 90
+                        
+                        %%% Bass Clarinet Music Voice [measure 90] %%%
                         R1 * 1/6 \mf
-                        % measure 91
+                        
+                        %%% Bass Clarinet Music Voice [measure 91] %%%
                         g1.. \< \p
-                        % measure 92
+                        
+                        %%% Bass Clarinet Music Voice [measure 92] %%%
                         R1 * 1/6 \f
-                        % measure 93
+                        
+                        %%% Bass Clarinet Music Voice [measure 93] %%%
                         fs1.. \< \mf
-                        % measure 94
+                        
+                        %%% Bass Clarinet Music Voice [measure 94] %%%
                         R1 * 1/6 \ff
-                        % measure 95
+                        
+                        %%% Bass Clarinet Music Voice [measure 95] %%%
                         f1.. \< \f
-                        % measure 96
+                        
+                        %%% Bass Clarinet Music Voice [measure 96] %%%
                         R1 * 1/6 \fff
-                        % measure 97
+                        
+                        %%% Bass Clarinet Music Voice [measure 97] %%%
                         e1.. \< \ff
-                        % measure 98
+                        
+                        %%% Bass Clarinet Music Voice [measure 98] %%%
                         R1 * 1/6 \ffff
                         \bar "|"
+                        
                     }
                 }
                 \tag violin
                 \context ViolinStaffGroup = "Violin Staff Group" <<
                     \context ViolinRHMusicStaff = "Violin RH Music Staff" {
                         \context ViolinRHMusicVoice = "Violin RH Music Voice" {
-                            % measure 87
+                            
+                            %%% Violin RH Music Voice [measure 87] %%%
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -208,50 +235,63 @@
                                     }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 88
+                                
+                                %%% Violin RH Music Voice [measure 88] %%%
                                 R1 * 1/4
                             }
-                            % measure 89
+                            
+                            %%% Violin RH Music Voice [measure 89] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 90
+                                
+                                %%% Violin RH Music Voice [measure 90] %%%
                                 R1 * 1/4
                             }
-                            % measure 91
+                            
+                            %%% Violin RH Music Voice [measure 91] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 92
+                                
+                                %%% Violin RH Music Voice [measure 92] %%%
                                 R1 * 1/4
                             }
-                            % measure 93
+                            
+                            %%% Violin RH Music Voice [measure 93] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 94
+                                
+                                %%% Violin RH Music Voice [measure 94] %%%
                                 R1 * 1/4
                             }
-                            % measure 95
+                            
+                            %%% Violin RH Music Voice [measure 95] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 96
+                                
+                                %%% Violin RH Music Voice [measure 96] %%%
                                 R1 * 1/4
                             }
-                            % measure 97
+                            
+                            %%% Violin RH Music Voice [measure 97] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 98
+                                
+                                %%% Violin RH Music Voice [measure 98] %%%
                                 R1 * 1/4
                                 \bar "|"
+                                
                             }
                         }
                     }
                     \context ViolinMusicStaff = "Violin Music Staff" {
                         \context ViolinMusicVoice = "Violin Music Voice" {
-                            % measure 87
+                            
+                            %%% Violin Music Voice [measure 87] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -260,44 +300,56 @@
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 88
+                                
+                                %%% Violin Music Voice [measure 88] %%%
                                 R1 * 1/4
                             }
-                            % measure 89
+                            
+                            %%% Violin Music Voice [measure 89] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 90
+                                
+                                %%% Violin Music Voice [measure 90] %%%
                                 R1 * 1/4
                             }
-                            % measure 91
+                            
+                            %%% Violin Music Voice [measure 91] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 92
+                                
+                                %%% Violin Music Voice [measure 92] %%%
                                 R1 * 1/4
                             }
-                            % measure 93
+                            
+                            %%% Violin Music Voice [measure 93] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 94
+                                
+                                %%% Violin Music Voice [measure 94] %%%
                                 R1 * 1/4
                             }
-                            % measure 95
+                            
+                            %%% Violin Music Voice [measure 95] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 96
+                                
+                                %%% Violin Music Voice [measure 96] %%%
                                 R1 * 1/4
                             }
-                            % measure 97
+                            
+                            %%% Violin Music Voice [measure 97] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 98
+                                
+                                %%% Violin Music Voice [measure 98] %%%
                                 R1 * 1/4
                                 \bar "|"
+                                
                             }
                         }
                     }
@@ -306,7 +358,8 @@
                 \context ViolaStaffGroup = "Viola Staff Group" <<
                     \context ViolaRHMusicStaff = "Viola RH Music Staff" {
                         \context ViolaRHMusicVoice = "Viola RH Music Voice" {
-                            % measure 87
+                            
+                            %%% Viola RH Music Voice [measure 87] %%%
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -329,50 +382,63 @@
                                     }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 88
+                                
+                                %%% Viola RH Music Voice [measure 88] %%%
                                 R1 * 1/4
                             }
-                            % measure 89
+                            
+                            %%% Viola RH Music Voice [measure 89] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 90
+                                
+                                %%% Viola RH Music Voice [measure 90] %%%
                                 R1 * 1/4
                             }
-                            % measure 91
+                            
+                            %%% Viola RH Music Voice [measure 91] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 92
+                                
+                                %%% Viola RH Music Voice [measure 92] %%%
                                 R1 * 1/4
                             }
-                            % measure 93
+                            
+                            %%% Viola RH Music Voice [measure 93] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 94
+                                
+                                %%% Viola RH Music Voice [measure 94] %%%
                                 R1 * 1/4
                             }
-                            % measure 95
+                            
+                            %%% Viola RH Music Voice [measure 95] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 96
+                                
+                                %%% Viola RH Music Voice [measure 96] %%%
                                 R1 * 1/4
                             }
-                            % measure 97
+                            
+                            %%% Viola RH Music Voice [measure 97] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 98
+                                
+                                %%% Viola RH Music Voice [measure 98] %%%
                                 R1 * 1/4
                                 \bar "|"
+                                
                             }
                         }
                     }
                     \context ViolaMusicStaff = "Viola Music Staff" {
                         \context ViolaMusicVoice = "Viola Music Voice" {
-                            % measure 87
+                            
+                            %%% Viola Music Voice [measure 87] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -381,44 +447,56 @@
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 88
+                                
+                                %%% Viola Music Voice [measure 88] %%%
                                 R1 * 1/4
                             }
-                            % measure 89
+                            
+                            %%% Viola Music Voice [measure 89] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 90
+                                
+                                %%% Viola Music Voice [measure 90] %%%
                                 R1 * 1/4
                             }
-                            % measure 91
+                            
+                            %%% Viola Music Voice [measure 91] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 92
+                                
+                                %%% Viola Music Voice [measure 92] %%%
                                 R1 * 1/4
                             }
-                            % measure 93
+                            
+                            %%% Viola Music Voice [measure 93] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 94
+                                
+                                %%% Viola Music Voice [measure 94] %%%
                                 R1 * 1/4
                             }
-                            % measure 95
+                            
+                            %%% Viola Music Voice [measure 95] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 96
+                                
+                                %%% Viola Music Voice [measure 96] %%%
                                 R1 * 1/4
                             }
-                            % measure 97
+                            
+                            %%% Viola Music Voice [measure 97] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 98
+                                
+                                %%% Viola Music Voice [measure 98] %%%
                                 R1 * 1/4
                                 \bar "|"
+                                
                             }
                         }
                     }
@@ -427,7 +505,8 @@
                 \context CelloStaffGroup = "Cello Staff Group" <<
                     \context CelloRHMusicStaff = "Cello RH Music Staff" {
                         \context CelloRHMusicVoice = "Cello RH Music Voice" {
-                            % measure 87
+                            
+                            %%% Cello RH Music Voice [measure 87] %%%
                             \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -450,56 +529,69 @@
                                     }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 88
+                                
+                                %%% Cello RH Music Voice [measure 88] %%%
                                 R1 * 1/4
                             }
-                            % measure 89
+                            
+                            %%% Cello RH Music Voice [measure 89] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 90
+                                
+                                %%% Cello RH Music Voice [measure 90] %%%
                                 R1 * 1/4
                             }
-                            % measure 91
+                            
+                            %%% Cello RH Music Voice [measure 91] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 92
+                                
+                                %%% Cello RH Music Voice [measure 92] %%%
                                 R1 * 1/4
                             }
-                            % measure 93
+                            
+                            %%% Cello RH Music Voice [measure 93] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 94
+                                
+                                %%% Cello RH Music Voice [measure 94] %%%
                                 R1 * 1/4
                             }
-                            % measure 95
+                            
+                            %%% Cello RH Music Voice [measure 95] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 96
+                                
+                                %%% Cello RH Music Voice [measure 96] %%%
                                 R1 * 1/4
                             }
-                            % measure 97
+                            
+                            %%% Cello RH Music Voice [measure 97] %%%
                             R1 * 7/4
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 98
+                                
+                                %%% Cello RH Music Voice [measure 98] %%%
                                 R1 * 1/4
                                 \bar "|"
+                                
                             }
                         }
                     }
                     \context CelloMusicStaff = "Cello Music Staff" {
                         \context CelloMusicVoice = "Cello Music Voice" {
-                            % measure 87
+                            
+                            %%% Cello Music Voice [measure 87] %%%
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
-                            \clef "treble"
                             \override NoteHead.style = #'harmonic
                             \override TupletBracket.direction = #down
+                            \clef "treble"
                             d''1.. :32 \glissando \< \ppp
                                 _ \markup {
                                     \whiteout
@@ -508,44 +600,56 @@
                                     }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 88
+                                
+                                %%% Cello Music Voice [measure 88] %%%
                                 fqf''4 :32 \pp \glissando \>
                             }
-                            % measure 89
+                            
+                            %%% Cello Music Voice [measure 89] %%%
                             d''1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 90
+                                
+                                %%% Cello Music Voice [measure 90] %%%
                                 b'4 :32 \pp \glissando \>
                             }
-                            % measure 91
+                            
+                            %%% Cello Music Voice [measure 91] %%%
                             d''1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 92
+                                
+                                %%% Cello Music Voice [measure 92] %%%
                                 b'4 :32 \pp \glissando \>
                             }
-                            % measure 93
+                            
+                            %%% Cello Music Voice [measure 93] %%%
                             g'1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 94
+                                
+                                %%% Cello Music Voice [measure 94] %%%
                                 b'4 :32 \pp \glissando \>
                             }
-                            % measure 95
+                            
+                            %%% Cello Music Voice [measure 95] %%%
                             g'1.. :32 \ppp \glissando \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
-                                % measure 96
+                                
+                                %%% Cello Music Voice [measure 96] %%%
                                 d'4 :32 \pp \glissando \>
                             }
-                            % measure 97
+                            
+                            %%% Cello Music Voice [measure 97] %%%
                             g'1.. :32 \ppp
                             \revert NoteHead.style
-                            % measure 98
+                            
+                            %%% Cello Music Voice [measure 98] %%%
                             R1 * 1/6
                             \bar "|"
                             \revert TupletBracket.direction
+                            
                         }
                     }
                 >>
