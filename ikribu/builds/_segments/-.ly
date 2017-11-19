@@ -13,20 +13,21 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ulongfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ulongfermata"
+                }
             
         }
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 1] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20 20))) % SEGMENT
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \newSpacingSection
-            s1 * 7/4 ^ \markup {
+            s1 * 7/4
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -125,26 +126,26 @@
                         \once \override TextScript.staff-padding = #4.5
                         \clef "percussion"
                         c'1..
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "grainfall (I)"
-                                }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
+                        ^ \markup {
+                            \whiteout
+                                \upright
                                     \override
-                                        #'(font-name . #f)
-                                        mf
-                                \larger
-                                    \italic
-                                        ”
-                                }
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (I)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    mf
+                            \larger
+                                \italic
+                                    ”
+                            }
                         
                         %%% ViolinMusicVoice [measure 2] %%%
                         \stopStaff
@@ -234,17 +235,19 @@
                         %%% CelloMusicVoice [measure 1] %%%
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        fqf''1.. -\laissezVibrer \sfz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+                        fqf''1..
+                        -\laissezVibrer
+                        \sfz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 2] %%%
                         \stopStaff

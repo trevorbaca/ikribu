@@ -22,10 +22,10 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ushortfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ushortfermata"
+                }
             
             %%% GlobalRests [measure 181] %%%
             R1 * 7/4
@@ -38,10 +38,10 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ushortfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ushortfermata"
+                }
             
             %%% GlobalRests [measure 184] %%%
             R1 * 1
@@ -60,10 +60,10 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ushortfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ushortfermata"
+                }
             
             %%% GlobalRests [measure 189] %%%
             R1 * 1/2
@@ -82,10 +82,10 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ushortfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ushortfermata"
+                }
             
             %%% GlobalRests [measure 194] %%%
             R1 * 7/4
@@ -98,10 +98,10 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ushortfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ushortfermata"
+                }
             
             %%% GlobalRests [measure 197] %%%
             R1 * 1/2
@@ -138,16 +138,16 @@
             \once \override Score.MultiMeasureRest.transparent = ##t
             \once \override Score.TimeSignature.stencil = ##f
             R1 * 1/4
-                - \markup {
-                    \musicglyph
-                        #"scripts.ushortfermata"
-                    }
+            - \markup {
+                \musicglyph
+                    #"scripts.ushortfermata"
+                }
             
         }
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 176] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
             \once \override TextSpanner.arrow-width = 0.25
             \once \override TextSpanner.bound-details.left-broken.padding = 0
             \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -184,7 +184,8 @@
             \time 3/4
             \mark #13
             \newSpacingSection
-            s1 * 3/4 \startTextSpan
+            s1 * 3/4
+            \startTextSpan
             
             %%% GlobalSkips [measure 177] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -202,7 +203,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 2/4
             \newSpacingSection
-            s1 * 1/2 \stopTextSpan ^ \markup {
+            s1 * 1/2
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -250,13 +253,16 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \newSpacingSection
-            s1 * 7/4 \startTextSpan
+            s1 * 7/4
+            \startTextSpan
             
             %%% GlobalSkips [measure 182] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -304,7 +310,8 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
-            s1 * 1 \startTextSpan
+            s1 * 1
+            \startTextSpan
             
             %%% GlobalSkips [measure 185] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -322,7 +329,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -344,10 +353,10 @@
             \time 1/4
             \newSpacingSection
             s1 * 1/4
-            \break % SEGMENT
+%           \break % SEGMENT
             
             %%% GlobalSkips [measure 189] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
             \once \override TextSpanner.arrow-width = 0.25
             \once \override TextSpanner.bound-details.left-broken.padding = 0
             \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -372,7 +381,8 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 2/4
             \newSpacingSection
-            s1 * 1/2 \startTextSpan
+            s1 * 1/2
+            \startTextSpan
             
             %%% GlobalSkips [measure 190] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -390,7 +400,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \newSpacingSection
-            s1 * 2 \stopTextSpan ^ \markup {
+            s1 * 2
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -438,13 +450,16 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \newSpacingSection
-            s1 * 7/4 \startTextSpan
+            s1 * 7/4
+            \startTextSpan
             
             %%% GlobalSkips [measure 195] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -492,17 +507,18 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 2/4
             \newSpacingSection
-            s1 * 1/2 \startTextSpan
+            s1 * 1/2
+            \startTextSpan
             
             %%% GlobalSkips [measure 198] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \newSpacingSection
             s1 * 2
-            \break % SEGMENT
+%           \break % SEGMENT
             
             %%% GlobalSkips [measure 199] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \newSpacingSection
@@ -524,7 +540,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -580,113 +598,151 @@
                 \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                     
                     %%% BassClarinetMusicVoice [measure 176] %%%
-                    \stopStaff
-                    \once \override Staff.StaffSymbol.line-count = 1
-                    \startStaff
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \line
-                                {
-                                    B.
-                                    cl.
-                                }
-                        }
+%                   \stopStaff % SEGMENT-ONLY
+%                   \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
+%                   \startStaff % SEGMENT-ONLY
+%                   \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
+%                       \hcenter-in % SEGMENT-ONLY
+%                           #16 % SEGMENT-ONLY
+%                           \center-column % SEGMENT-ONLY
+%                               { % SEGMENT-ONLY
+%                                   Bass % SEGMENT-ONLY
+%                                   clarinet % SEGMENT-ONLY
+%                               } % SEGMENT-ONLY
+%                       } % SEGMENT-ONLY
+%                   \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                       \hcenter-in % SEGMENT-ONLY
+%                           #10 % SEGMENT-ONLY
+%                           \line % SEGMENT-ONLY
+%                               { % SEGMENT-ONLY
+%                                   B. % SEGMENT-ONLY
+%                                   cl. % SEGMENT-ONLY
+%                               } % SEGMENT-ONLY
+%                       } % SEGMENT-ONLY
                     \clef "treble"
-                    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    R1 * 3/4 \ppp
+%                   \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                   \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                   \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    R1 * 3/4
+%                   \ppp % SEGMENT-ONLY
                     
                     %%% BassClarinetMusicVoice [measure 177] %%%
-                    cs1 \< \p
+                    cs1
+                    \<
+                    \p
                     
                     %%% BassClarinetMusicVoice [measure 178] %%%
-                    cs1 \repeatTie \fff
+                    cs1
+                    \repeatTie
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 179] %%%
                     \once \override Hairpin.circled-tip = ##t
-                    cs2 \repeatTie \> \fff
+                    cs2
+                    \repeatTie
+                    \>
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 180] %%%
                     \stopStaff
                     \once \override Staff.StaffSymbol.line-count = 1
                     \startStaff
-                    R1 * 2 \!
+                    R1 * 2
+                    \!
                     
                     %%% BassClarinetMusicVoice [measure 182] %%%
-                    cs2. \p
+                    cs2.
+                    \p
                     
                     %%% BassClarinetMusicVoice [measure 183] %%%
                     R1 * 5/4
                     
                     %%% BassClarinetMusicVoice [measure 185] %%%
-                    cs2. \< \p
+                    cs2.
+                    \<
+                    \p
                     
                     %%% BassClarinetMusicVoice [measure 186] %%%
-                    cs1 \repeatTie \fff
+                    cs1
+                    \repeatTie
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 187] %%%
                     \once \override Hairpin.circled-tip = ##t
-                    cs2. \repeatTie \> \fff
+                    cs2.
+                    \repeatTie
+                    \>
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 188] %%%
-                    R1 * 3/4 \!
+                    R1 * 3/4
+                    \!
                     
                     %%% BassClarinetMusicVoice [measure 190] %%%
-                    cs1.. \< \p
+                    cs1..
+                    \<
+                    \p
                     
                     %%% BassClarinetMusicVoice [measure 191] %%%
-                    cs1.. \repeatTie \fff
+                    cs1..
+                    \repeatTie
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 192] %%%
                     \once \override Hairpin.circled-tip = ##t
-                    cs\breve \repeatTie \> \fff
+                    cs\breve
+                    \repeatTie
+                    \>
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 193] %%%
-                    R1 * 2 \!
+                    R1 * 2
+                    \!
                     
                     %%% BassClarinetMusicVoice [measure 195] %%%
-                    cs2. \p
+                    cs2.
+                    \p
                     
                     %%% BassClarinetMusicVoice [measure 196] %%%
                     R1 * 3/4
                     
                     %%% BassClarinetMusicVoice [measure 198] %%%
-                    cs\breve \< \ppp
+                    cs\breve
+                    \<
+                    \ppp
                     
                     %%% BassClarinetMusicVoice [measure 199] %%%
-                    cs1.. \repeatTie
+                    cs1..
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 200] %%%
-                    cs1 \repeatTie
+                    cs1
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 201] %%%
-                    cs1 \repeatTie
+                    cs1
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 202] %%%
-                    cs2. \repeatTie
+                    cs2.
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 203] %%%
-                    cs1.. \repeatTie
+                    cs1..
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 204] %%%
-                    cs\breve \repeatTie
+                    cs\breve
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 205] %%%
-                    cs2. \repeatTie \fff
+                    cs2.
+                    \repeatTie
+                    \fff
                     
                     %%% BassClarinetMusicVoice [measure 206] %%%
-                    cs1 \repeatTie
+                    cs1
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 207] %%%
                     R1 * 1/4
@@ -700,27 +756,28 @@
                     \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                         
                         %%% ViolinRHMusicVoice [measure 176] %%%
-                        \set ViolinStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Violin
+%                       \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #16 % SEGMENT-ONLY
+%                               Violin % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #10 % SEGMENT-ONLY
+%                               Vn. % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        R1 * 3/4
+%                       \ppp % SEGMENT-ONLY
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to violin"
                             }
-                        \set ViolinStaffGroup.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vn.
-                            }
-                        \clef "percussion"
-                        \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 3/4 \ppp
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
                         
                         %%% ViolinRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -827,62 +884,75 @@
                         \startStaff
                         \override TextScript.staff-padding = #4.5
                         \clef "percussion"
-                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        c'2. \ff
+%                       \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        c'2.
+%                       \ff % SEGMENT-ONLY
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (III)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    f
+                            \larger
+                                \italic
+                                    ”
+                            }
+                        \times 2/3 {
+                            
+                            %%% ViolinMusicVoice [measure 177] %%%
+                            c'2
+                            :32
+                            \<
+                            \mf
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         \override
                                             #'(box-padding . 0.5)
                                             \box
-                                                "grainfall (III)"
+                                                "brushes on BD"
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        f
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \times 2/3 {
                             
-                            %%% ViolinMusicVoice [measure 177] %%%
-                            c'2 :32 \< \mf
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
-                                    }
+                            c'2
+                            -\accent
                             
-                            c'2 -\accent
-                            
-                            c'2 :32
+                            c'2
+                            :32
                         }
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 178] %%%
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                         }
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 179] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                         }
                         
                         %%% ViolinMusicVoice [measure 180] %%%
@@ -890,45 +960,50 @@
                         
                         %%% ViolinMusicVoice [measure 181] %%%
                         c'1..
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (IV)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    f
+                            \larger
+                                \italic
+                                    ”
+                            }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            
+                            %%% ViolinMusicVoice [measure 182] %%%
+                            c'4
+                            :32
+                            \fff
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         \override
                                             #'(box-padding . 0.5)
                                             \box
-                                                "grainfall (IV)"
+                                                "brushes on BD"
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        f
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
                             
-                            %%% ViolinMusicVoice [measure 182] %%%
-                            c'4 :32 \fff
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
-                                    }
+                            c'4
+                            -\accent
                             
-                            c'4 -\accent
+                            c'4
+                            :32
                             
-                            c'4 :32
-                            
-                            c'4 -\accent
+                            c'4
+                            -\accent
                         }
                         
                         %%% ViolinMusicVoice [measure 183] %%%
@@ -936,74 +1011,92 @@
                         
                         %%% ViolinMusicVoice [measure 184] %%%
                         c'1
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (V)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    f
+                            \larger
+                                \italic
+                                    ”
+                            }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            
+                            %%% ViolinMusicVoice [measure 185] %%%
+                            c'4
+                            :32
+                            \<
+                            \mf
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         \override
                                             #'(box-padding . 0.5)
                                             \box
-                                                "grainfall (V)"
+                                                "brushes on BD"
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        f
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
                             
-                            %%% ViolinMusicVoice [measure 185] %%%
-                            c'4 :32 \< \mf
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
-                                    }
+                            c'4
+                            -\accent
                             
-                            c'4 -\accent
+                            c'4
+                            :32
                             
-                            c'4 :32
+                            c'4
+                            -\accent
                             
-                            c'4 -\accent
-                            
-                            c'4 :32
+                            c'4
+                            :32
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 186] %%%
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
                             %%% ViolinMusicVoice [measure 187] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                         }
                         
                         %%% ViolinMusicVoice [measure 188] %%%
@@ -1011,62 +1104,74 @@
                         
                         %%% ViolinMusicVoice [measure 189] %%%
                         c'2
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (VI)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    f
+                            \larger
+                                \italic
+                                    ”
+                            }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 7/12 {
+                            
+                            %%% ViolinMusicVoice [measure 190] %%%
+                            c'1
+                            :32
+                            \<
+                            \mf
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         \override
                                             #'(box-padding . 0.5)
                                             \box
-                                                "grainfall (VI)"
+                                                "brushes on BD"
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        f
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 7/12 {
                             
-                            %%% ViolinMusicVoice [measure 190] %%%
-                            c'1 :32 \< \mf
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
-                                    }
+                            c'1
+                            -\accent
                             
-                            c'1 -\accent
-                            
-                            c'1 :32
+                            c'1
+                            :32
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/12 {
                             
                             %%% ViolinMusicVoice [measure 191] %%%
-                            c'1 -\accent
+                            c'1
+                            -\accent
                             
-                            c'1 :32
+                            c'1
+                            :32
                             
-                            c'1 -\accent
+                            c'1
+                            -\accent
                         }
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 192] %%%
-                            c'1 :32
+                            c'1
+                            :32
                             
-                            c'1 -\accent
+                            c'1
+                            -\accent
                             
-                            c'1 :32 \fff
+                            c'1
+                            :32
+                            \fff
                         }
                         
                         %%% ViolinMusicVoice [measure 193] %%%
@@ -1074,45 +1179,50 @@
                         
                         %%% ViolinMusicVoice [measure 194] %%%
                         c'1..
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (VII)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    f
+                            \larger
+                                \italic
+                                    ”
+                            }
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            
+                            %%% ViolinMusicVoice [measure 195] %%%
+                            c'4
+                            :32
+                            \fff
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         \override
                                             #'(box-padding . 0.5)
                                             \box
-                                                "grainfall (VII)"
+                                                "brushes on BD"
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        f
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
                             
-                            %%% ViolinMusicVoice [measure 195] %%%
-                            c'4 :32 \fff
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
-                                    }
+                            c'4
+                            -\accent
                             
-                            c'4 -\accent
+                            c'4
+                            :32
                             
-                            c'4 :32
-                            
-                            c'4 -\accent
+                            c'4
+                            -\accent
                         }
                         
                         %%% ViolinMusicVoice [measure 196] %%%
@@ -1120,100 +1230,128 @@
                         
                         %%% ViolinMusicVoice [measure 197] %%%
                         c'2
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    \override
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (VIII)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    f
+                            \larger
+                                \italic
+                                    ”
+                            }
+                        \times 4/5 {
+                            
+                            %%% ViolinMusicVoice [measure 198] %%%
+                            c'2
+                            :32
+                            \<
+                            \mf
                             ^ \markup {
                                 \whiteout
                                     \upright
                                         \override
                                             #'(box-padding . 0.5)
                                             \box
-                                                "grainfall (VIII)"
+                                                "brushes on BD"
                                 }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
-                                    \override
-                                        #'(font-name . #f)
-                                        f
-                                \larger
-                                    \italic
-                                        ”
-                                }
-                        \times 4/5 {
                             
-                            %%% ViolinMusicVoice [measure 198] %%%
-                            c'2 :32 \< \mf
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    "brushes on BD"
-                                    }
+                            c'2
+                            -\accent
                             
-                            c'2 -\accent
+                            c'2
+                            :32
                             
-                            c'2 :32
+                            c'2
+                            -\accent
                             
-                            c'2 -\accent
-                            
-                            c'2 :32
+                            c'2
+                            :32
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/10 {
                             
                             %%% ViolinMusicVoice [measure 199] %%%
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 200] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                         }
                         \times 4/5 {
                             
                             %%% ViolinMusicVoice [measure 201] %%%
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             
                             %%% ViolinMusicVoice [measure 202] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                         }
                         
                         %%% ViolinMusicVoice [measure 203] %%%
@@ -1230,27 +1368,28 @@
                     \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                         
                         %%% ViolaRHMusicVoice [measure 176] %%%
-                        \set ViolaStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Viola
+%                       \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #16 % SEGMENT-ONLY
+%                               Viola % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #10 % SEGMENT-ONLY
+%                               Va. % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        R1 * 3/4
+%                       \p % SEGMENT-ONLY
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to viola"
                             }
-                        \set ViolaStaffGroup.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Va.
-                            }
-                        \clef "percussion"
-                        \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 3/4 \p
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
                         
                         %%% ViolaRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -1357,40 +1496,58 @@
                         \startStaff
                         \override TextScript.staff-padding = #4.5
                         \clef "percussion"
-                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 3/4 \fff
+%                       \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        R1 * 3/4
+%                       \fff % SEGMENT-ONLY
                         {
                             
                             %%% ViolaMusicVoice [measure 177] %%%
-                            c'4 :32 \< \mf
+                            c'4
+                            :32
+                            \<
+                            \mf
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 178] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 179] %%%
-                            c'8 :32 [
+                            c'8
+                            :32
+                            [
                             
-                            c'8 -\accent
+                            c'8
+                            -\accent
                             
-                            c'8 :32
+                            c'8
+                            :32
                             
-                            c'8 -\accent \fff ]
+                            c'8
+                            -\accent
+                            \fff
+                            ]
                         }
                         
                         %%% ViolaMusicVoice [measure 180] %%%
@@ -1399,15 +1556,21 @@
                         \times 3/5 {
                             
                             %%% ViolaMusicVoice [measure 182] %%%
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                         }
                         
                         %%% ViolaMusicVoice [measure 183] %%%
@@ -1415,29 +1578,41 @@
                         {
                             
                             %%% ViolaMusicVoice [measure 185] %%%
-                            c'4 :32 \< \mf
+                            c'4
+                            :32
+                            \<
+                            \mf
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                         }
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 186] %%%
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 187] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                         }
                         
                         %%% ViolaMusicVoice [measure 188] %%%
@@ -1446,36 +1621,51 @@
                         \times 7/8 {
                             
                             %%% ViolaMusicVoice [measure 190] %%%
-                            c'2 :32 \< \mf
+                            c'2
+                            :32
+                            \<
+                            \mf
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/8 {
                             
                             %%% ViolaMusicVoice [measure 191] %%%
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 192] %%%
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent \fff
+                            c'2
+                            -\accent
+                            \fff
                         }
                         
                         %%% ViolaMusicVoice [measure 193] %%%
@@ -1484,15 +1674,21 @@
                         \times 3/5 {
                             
                             %%% ViolaMusicVoice [measure 195] %%%
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32
+                            c'4
+                            :32
                         }
                         
                         %%% ViolaMusicVoice [measure 196] %%%
@@ -1500,48 +1696,66 @@
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 198] %%%
-                            c'1 :32 \< \mf
+                            c'1
+                            :32
+                            \<
+                            \mf
                             
-                            c'1 -\accent
+                            c'1
+                            -\accent
                             
-                            c'1 :32
+                            c'1
+                            :32
                         }
                         \tweak text #tuplet-number::calc-fraction-text
                         \times 7/12 {
                             
                             %%% ViolaMusicVoice [measure 199] %%%
-                            c'1 -\accent
+                            c'1
+                            -\accent
                             
-                            c'1 :32
+                            c'1
+                            :32
                             
-                            c'1 -\accent
+                            c'1
+                            -\accent
                         }
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 200] %%%
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                         }
                         \times 2/3 {
                             
                             %%% ViolaMusicVoice [measure 201] %%%
-                            c'2 -\accent
+                            c'2
+                            -\accent
                             
-                            c'2 :32
+                            c'2
+                            :32
                             
-                            c'2 -\accent
+                            c'2
+                            -\accent
                         }
                         {
                             
                             %%% ViolaMusicVoice [measure 202] %%%
-                            c'4 :32
+                            c'4
+                            :32
                             
-                            c'4 -\accent
+                            c'4
+                            -\accent
                             
-                            c'4 :32 \fff
+                            c'4
+                            :32
+                            \fff
                         }
                         
                         %%% ViolaMusicVoice [measure 203] %%%
@@ -1558,27 +1772,28 @@
                     \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                         
                         %%% CelloRHMusicVoice [measure 176] %%%
-                        \set CelloStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Cello
+%                       \set CelloStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #16 % SEGMENT-ONLY
+%                               Cello % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #10 % SEGMENT-ONLY
+%                               Vc. % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        R1 * 3/4
+%                       \pp % SEGMENT-ONLY
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to cello"
                             }
-                        \set CelloStaffGroup.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vc.
-                            }
-                        \clef "percussion"
-                        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        R1 * 3/4 \pp
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
                         
                         %%% CelloRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -1680,23 +1895,25 @@
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         
                         %%% CelloMusicVoice [measure 176] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
+%                       \stopStaff % SEGMENT-ONLY
+%                       \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
+%                       \startStaff % SEGMENT-ONLY
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        fqf''2. -\laissezVibrer \sfz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+%                       \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        fqf''2.
+                        -\laissezVibrer
+                        \sfz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 177] %%%
                         \ottava #-1
@@ -1721,13 +1938,21 @@
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
                         \clef "bass"
-                        c,,1 \< \mf \startTextSpan
+                        c,,1
+                        \<
+                        \mf
+                        \startTextSpan
                         
                         %%% CelloMusicVoice [measure 178] %%%
-                        c,,1 \repeatTie
+                        c,,1
+                        \repeatTie
                         
                         %%% CelloMusicVoice [measure 179] %%%
-                        c,,2 \repeatTie \fff \stopTextSpan ^ \markup {
+                        c,,2
+                        \repeatTie
+                        \fff
+                        \stopTextSpan
+                        ^ \markup {
                             \whiteout
                                 \upright
                                     XP
@@ -1743,27 +1968,30 @@
                         %%% CelloMusicVoice [measure 181] %%%
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        g''1.. -\laissezVibrer \sfz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+                        g''1..
+                        -\laissezVibrer
+                        \sfz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 182] %%%
                         \ottava #-1
                         \clef "bass"
-                        c,,2. \fff
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        XP
-                                }
+                        c,,2.
+                        \fff
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    XP
+                            }
                         \ottava #0
                         
                         %%% CelloMusicVoice [measure 183] %%%
@@ -1772,17 +2000,19 @@
                         %%% CelloMusicVoice [measure 184] %%%
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        fqf''1 -\laissezVibrer \sffz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+                        fqf''1
+                        -\laissezVibrer
+                        \sffz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 185] %%%
                         \ottava #-1
@@ -1807,13 +2037,21 @@
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
                         \clef "bass"
-                        c,,2. \< \mf \startTextSpan
+                        c,,2.
+                        \<
+                        \mf
+                        \startTextSpan
                         
                         %%% CelloMusicVoice [measure 186] %%%
-                        c,,1 \repeatTie
+                        c,,1
+                        \repeatTie
                         
                         %%% CelloMusicVoice [measure 187] %%%
-                        c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
+                        c,,2.
+                        \repeatTie
+                        \fff
+                        \stopTextSpan
+                        ^ \markup {
                             \whiteout
                                 \upright
                                     XP
@@ -1826,17 +2064,19 @@
                         %%% CelloMusicVoice [measure 189] %%%
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        g''2 -\laissezVibrer \sffz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+                        g''2
+                        -\laissezVibrer
+                        \sffz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 190] %%%
                         \ottava #-1
@@ -1861,13 +2101,21 @@
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
                         \clef "bass"
-                        c,,1.. \< \mf \startTextSpan
+                        c,,1..
+                        \<
+                        \mf
+                        \startTextSpan
                         
                         %%% CelloMusicVoice [measure 191] %%%
-                        c,,1.. \repeatTie
+                        c,,1..
+                        \repeatTie
                         
                         %%% CelloMusicVoice [measure 192] %%%
-                        c,,\breve \repeatTie \fff \stopTextSpan ^ \markup {
+                        c,,\breve
+                        \repeatTie
+                        \fff
+                        \stopTextSpan
+                        ^ \markup {
                             \whiteout
                                 \upright
                                     XP
@@ -1880,27 +2128,30 @@
                         %%% CelloMusicVoice [measure 194] %%%
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        a''1.. -\laissezVibrer \sfffz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+                        a''1..
+                        -\laissezVibrer
+                        \sfffz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 195] %%%
                         \ottava #-1
                         \clef "bass"
-                        c,,2. \fff
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        XP
-                                }
+                        c,,2.
+                        \fff
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    XP
+                            }
                         \ottava #0
                         
                         %%% CelloMusicVoice [measure 196] %%%
@@ -1909,17 +2160,19 @@
                         %%% CelloMusicVoice [measure 197] %%%
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        cqs'''2 -\laissezVibrer \sfffz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+                        cqs'''2
+                        -\laissezVibrer
+                        \sfffz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 198] %%%
                         \ottava #-1
@@ -1944,19 +2197,29 @@
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
                         \clef "bass"
-                        c,,\breve \< \mf \startTextSpan
+                        c,,\breve
+                        \<
+                        \mf
+                        \startTextSpan
                         
                         %%% CelloMusicVoice [measure 199] %%%
-                        c,,1.. \repeatTie
+                        c,,1..
+                        \repeatTie
                         
                         %%% CelloMusicVoice [measure 200] %%%
-                        c,,1 \repeatTie
+                        c,,1
+                        \repeatTie
                         
                         %%% CelloMusicVoice [measure 201] %%%
-                        c,,1 \repeatTie
+                        c,,1
+                        \repeatTie
                         
                         %%% CelloMusicVoice [measure 202] %%%
-                        c,,2. \repeatTie \fff \stopTextSpan ^ \markup {
+                        c,,2.
+                        \repeatTie
+                        \fff
+                        \stopTextSpan
+                        ^ \markup {
                             \whiteout
                                 \upright
                                     XP
