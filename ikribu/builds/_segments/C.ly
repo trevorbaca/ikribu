@@ -6,12 +6,13 @@
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 35] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \mark #3
             \newSpacingSection
-            s1 * 7/4 ^ \markup {
+            s1 * 7/4
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -64,7 +65,8 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
-            s1 * 1 \startTextSpan
+            s1 * 1
+            \startTextSpan
             
             %%% GlobalSkips [measure 37] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -76,7 +78,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -135,7 +139,8 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
-            s1 * 1 \startTextSpan
+            s1 * 1
+            \startTextSpan
             
             %%% GlobalSkips [measure 41] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -147,7 +152,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -206,7 +213,8 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
-            s1 * 1 \startTextSpan
+            s1 * 1
+            \startTextSpan
             
             %%% GlobalSkips [measure 45] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -218,7 +226,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -240,10 +250,10 @@
             \time 1/6
             \newSpacingSection
             s1 * 1/6
-            \break % SEGMENT
+%           \break % SEGMENT
             
             %%% GlobalSkips [measure 48] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
             \once \override TextSpanner.arrow-width = 0.25
             \once \override TextSpanner.bound-details.left-broken.padding = 0
             \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -279,7 +289,8 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
-            s1 * 1 \startTextSpan
+            s1 * 1
+            \startTextSpan
             
             %%% GlobalSkips [measure 49] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -291,7 +302,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
-            s1 * 3/4 \stopTextSpan ^ \markup {
+            s1 * 3/4
+            \stopTextSpan
+            ^ \markup {
                 \fontsize
                     #-6
                     \general-align
@@ -323,33 +336,34 @@
                 \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                     
                     %%% BassClarinetMusicVoice [measure 35] %%%
-                    \stopStaff
-                    \once \override Staff.StaffSymbol.line-count = 5
-                    \startStaff
-                    \set BassClarinetMusicStaff.instrumentName = \markup {
-                        \hcenter-in
-                            #16
-                            \center-column
-                                {
-                                    Bass
-                                    clarinet
-                                }
-                        }
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                        \hcenter-in
-                            #10
-                            \line
-                                {
-                                    B.
-                                    cl.
-                                }
-                        }
-                    \clef "treble"
-                    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                    R1 * 7/4 \ppp
+%                   \stopStaff % SEGMENT-ONLY
+%                   \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+%                   \startStaff % SEGMENT-ONLY
+%                   \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
+%                       \hcenter-in % SEGMENT-ONLY
+%                           #16 % SEGMENT-ONLY
+%                           \center-column % SEGMENT-ONLY
+%                               { % SEGMENT-ONLY
+%                                   Bass % SEGMENT-ONLY
+%                                   clarinet % SEGMENT-ONLY
+%                               } % SEGMENT-ONLY
+%                       } % SEGMENT-ONLY
+%                   \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                       \hcenter-in % SEGMENT-ONLY
+%                           #10 % SEGMENT-ONLY
+%                           \line % SEGMENT-ONLY
+%                               { % SEGMENT-ONLY
+%                                   B. % SEGMENT-ONLY
+%                                   cl. % SEGMENT-ONLY
+%                               } % SEGMENT-ONLY
+%                       } % SEGMENT-ONLY
+%                   \clef "treble" % SEGMENT-ONLY
+%                   \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                   \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                   \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                   \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    R1 * 7/4
+%                   \ppp % SEGMENT-ONLY
                     
                     %%% BassClarinetMusicVoice [measure 36] %%%
                     \stopStaff
@@ -358,45 +372,52 @@
                     \override RepeatTie.direction = #up
                     \clef "percussion"
                     c'4
-                        ^ \markup {
-                            \whiteout
-                                \upright
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            \column
-                                                {
-                                                    stonecircle:
-                                                    "π/2 every quarter note"
-                                                }
-                            }
-                        _ \markup {
-                            \larger
-                                \italic
-                                    “
-                            \dynamic
+                    ^ \markup {
+                        \whiteout
+                            \upright
                                 \override
-                                    #'(font-name . #f)
-                                    mf
-                            \larger
-                                \italic
-                                    ”
-                            }
+                                    #'(box-padding . 0.5)
+                                    \box
+                                        \column
+                                            {
+                                                stonecircle:
+                                                "π/2 every quarter note"
+                                            }
+                        }
+                    _ \markup {
+                        \larger
+                            \italic
+                                “
+                        \dynamic
+                            \override
+                                #'(font-name . #f)
+                                mf
+                        \larger
+                            \italic
+                                ”
+                        }
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 37] %%%
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     \revert RepeatTie.direction
                     
                     %%% BassClarinetMusicVoice [measure 38] %%%
@@ -405,20 +426,27 @@
                     %%% BassClarinetMusicVoice [measure 40] %%%
                     c'4
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 41] %%%
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 42] %%%
                     R1 * 11/12
@@ -426,20 +454,27 @@
                     %%% BassClarinetMusicVoice [measure 44] %%%
                     c'4
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 45] %%%
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 46] %%%
                     R1 * 11/12
@@ -447,20 +482,27 @@
                     %%% BassClarinetMusicVoice [measure 48] %%%
                     c'4
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
                     %%% BassClarinetMusicVoice [measure 49] %%%
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     
-                    c'4 \repeatTie
+                    c'4
+                    \repeatTie
                     \revert RepeatTie.direction
                     
                     %%% BassClarinetMusicVoice [measure 50] %%%
@@ -475,26 +517,26 @@
                     \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                         
                         %%% ViolinRHMusicVoice [measure 35] %%%
-                        \set ViolinStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Violin
-                            }
-                        \set ViolinStaffGroup.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vn.
-                            }
-                        \clef "percussion"
-                        \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+%                       \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #16 % SEGMENT-ONLY
+%                               Violin % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #10 % SEGMENT-ONLY
+%                               Vn. % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 7/4
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to violin"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to violin"
+                            }
                         
                         %%% ViolinRHMusicVoice [measure 36] %%%
                         R1 * 1
@@ -569,67 +611,91 @@
                         \once \override TextScript.staff-padding = #4.5
                         \clef "percussion"
                         c'1..
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "grainfall (II)"
-                                }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
+                        ^ \markup {
+                            \whiteout
+                                \upright
                                     \override
-                                        #'(font-name . #f)
-                                        mf
-                                \larger
-                                    \italic
-                                        ”
-                                }
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "grainfall (II)"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    mf
+                            \larger
+                                \italic
+                                    ”
+                            }
                         
                         %%% ViolinMusicVoice [measure 36] %%%
                         R1 * 1
                         
                         %%% ViolinMusicVoice [measure 37] %%%
-                        fs'1 :32 \glissando \< \pp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "trem. flaut. tast."
-                                }
+                        fs'1
+                        :32
+                        \glissando
+                        \<
+                        \pp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    "trem. flaut. tast."
+                            }
                         
                         %%% ViolinMusicVoice [measure 38] %%%
-                        gs'2. :32 \p
+                        gs'2.
+                        :32
+                        \p
                         
                         %%% ViolinMusicVoice [measure 39] %%%
                         R1 * 7/6
                         
                         %%% ViolinMusicVoice [measure 41] %%%
-                        gs'1 :32 \glissando \> \p
+                        gs'1
+                        :32
+                        \glissando
+                        \>
+                        \p
                         
                         %%% ViolinMusicVoice [measure 42] %%%
-                        fs'2. :32 \pp
+                        fs'2.
+                        :32
+                        \pp
                         
                         %%% ViolinMusicVoice [measure 43] %%%
                         R1 * 7/6
                         
                         %%% ViolinMusicVoice [measure 45] %%%
-                        fs'1 :32 \glissando \< \pp
+                        fs'1
+                        :32
+                        \glissando
+                        \<
+                        \pp
                         
                         %%% ViolinMusicVoice [measure 46] %%%
-                        gs'2. :32 \p
+                        gs'2.
+                        :32
+                        \p
                         
                         %%% ViolinMusicVoice [measure 47] %%%
                         R1 * 7/6
                         
                         %%% ViolinMusicVoice [measure 49] %%%
-                        gs'1 :32 \glissando \> \p
+                        gs'1
+                        :32
+                        \glissando
+                        \>
+                        \p
                         
                         %%% ViolinMusicVoice [measure 50] %%%
-                        fs'2. :32 \pp
+                        fs'2.
+                        :32
+                        \pp
                         
                         %%% ViolinMusicVoice [measure 51] %%%
                         R1 * 1/6
@@ -644,26 +710,26 @@
                     \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                         
                         %%% ViolaRHMusicVoice [measure 35] %%%
-                        \set ViolaStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Viola
-                            }
-                        \set ViolaStaffGroup.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Va.
-                            }
-                        \clef "percussion"
-                        \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+%                       \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #16 % SEGMENT-ONLY
+%                               Viola % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #10 % SEGMENT-ONLY
+%                               Va. % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 7/4
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to viola"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to viola"
+                            }
                         
                         %%% ViolaRHMusicVoice [measure 36] %%%
                         R1 * 1
@@ -732,51 +798,75 @@
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         
                         %%% ViolaMusicVoice [measure 35] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
-                        \clef "percussion"
-                        \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+%                       \stopStaff % SEGMENT-ONLY
+%                       \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
+%                       \startStaff % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 11/4
                         
                         %%% ViolaMusicVoice [measure 37] %%%
-                        f'1 :32 \glissando \< \pp
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "trem. flaut. tast."
-                                }
+                        f'1
+                        :32
+                        \glissando
+                        \<
+                        \pp
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    "trem. flaut. tast."
+                            }
                         
                         %%% ViolaMusicVoice [measure 38] %%%
-                        e'2. :32 \p
+                        e'2.
+                        :32
+                        \p
                         
                         %%% ViolaMusicVoice [measure 39] %%%
                         R1 * 7/6
                         
                         %%% ViolaMusicVoice [measure 41] %%%
-                        e'1 :32 \glissando \> \p
+                        e'1
+                        :32
+                        \glissando
+                        \>
+                        \p
                         
                         %%% ViolaMusicVoice [measure 42] %%%
-                        f'2. :32 \pp
+                        f'2.
+                        :32
+                        \pp
                         
                         %%% ViolaMusicVoice [measure 43] %%%
                         R1 * 7/6
                         
                         %%% ViolaMusicVoice [measure 45] %%%
-                        f'1 :32 \glissando \< \pp
+                        f'1
+                        :32
+                        \glissando
+                        \<
+                        \pp
                         
                         %%% ViolaMusicVoice [measure 46] %%%
-                        e'2. :32 \p
+                        e'2.
+                        :32
+                        \p
                         
                         %%% ViolaMusicVoice [measure 47] %%%
                         R1 * 7/6
                         
                         %%% ViolaMusicVoice [measure 49] %%%
-                        e'1 :32 \glissando \> \p
+                        e'1
+                        :32
+                        \glissando
+                        \>
+                        \p
                         
                         %%% ViolaMusicVoice [measure 50] %%%
-                        f'2. :32 \pp
+                        f'2.
+                        :32
+                        \pp
                         
                         %%% ViolaMusicVoice [measure 51] %%%
                         R1 * 1/6
@@ -791,26 +881,26 @@
                     \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                         
                         %%% CelloRHMusicVoice [measure 35] %%%
-                        \set CelloStaffGroup.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                Cello
-                            }
-                        \set CelloStaffGroup.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                Vc.
-                            }
-                        \clef "percussion"
-                        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
+%                       \set CelloStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #16 % SEGMENT-ONLY
+%                               Cello % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+%                           \hcenter-in % SEGMENT-ONLY
+%                               #10 % SEGMENT-ONLY
+%                               Vc. % SEGMENT-ONLY
+%                           } % SEGMENT-ONLY
+%                       \clef "percussion" % SEGMENT-ONLY
+%                       \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+%                       \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 7/4
-                            ^ \markup {
-                                \override
-                                    #'(box-padding . 0.75)
-                                    \box
-                                        "to cello"
-                                }
+                        ^ \markup {
+                            \override
+                                #'(box-padding . 0.75)
+                                \box
+                                    "to cello"
+                            }
                         
                         %%% CelloRHMusicVoice [measure 36] %%%
                         R1 * 1
@@ -879,23 +969,25 @@
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         
                         %%% CelloMusicVoice [measure 35] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 5
-                        \startStaff
+%                       \stopStaff % SEGMENT-ONLY
+%                       \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+%                       \startStaff % SEGMENT-ONLY
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-                        \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        fqf''1.. -\laissezVibrer \sfz
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        pizz.
-                                }
-                            _ \markup {
-                                \whiteout
-                                    \upright
-                                        III
-                                }
+%                       \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        fqf''1..
+                        -\laissezVibrer
+                        \sfz
+                        ^ \markup {
+                            \whiteout
+                                \upright
+                                    pizz.
+                            }
+                        _ \markup {
+                            \whiteout
+                                \upright
+                                    III
+                            }
                         
                         %%% CelloMusicVoice [measure 36] %%%
                         \override NoteHead.style = #'harmonic
@@ -920,58 +1012,119 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        d''1 :32 \glissando \< \ppp \startTextSpan
+                        d''1
+                        :32
+                        \glissando
+                        \<
+                        \ppp
+                        \startTextSpan
                         
                         %%% CelloMusicVoice [measure 37] %%%
-                        fqf''1 :32 \pp \glissando \>
+                        fqf''1
+                        :32
+                        \pp
+                        \glissando
+                        \>
                         
                         %%% CelloMusicVoice [measure 38] %%%
-                        d''2. :32 \ppp \glissando \<
+                        d''2.
+                        :32
+                        \ppp
+                        \glissando
+                        \<
                         \tweak edge-height #'(0.7 . 0)
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 39] %%%
-                            b'4 :32 \pp \glissando \>
+                            b'4
+                            :32
+                            \pp
+                            \glissando
+                            \>
                         }
                         
                         %%% CelloMusicVoice [measure 40] %%%
-                        d''1 :32 \ppp \glissando \<
+                        d''1
+                        :32
+                        \ppp
+                        \glissando
+                        \<
                         
                         %%% CelloMusicVoice [measure 41] %%%
-                        b'1 :32 \pp \glissando \>
+                        b'1
+                        :32
+                        \pp
+                        \glissando
+                        \>
                         
                         %%% CelloMusicVoice [measure 42] %%%
-                        g'2. :32 \ppp \glissando \<
+                        g'2.
+                        :32
+                        \ppp
+                        \glissando
+                        \<
                         \tweak edge-height #'(0.7 . 0)
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 43] %%%
-                            b'4 :32 \pp \glissando \>
+                            b'4
+                            :32
+                            \pp
+                            \glissando
+                            \>
                         }
                         
                         %%% CelloMusicVoice [measure 44] %%%
-                        g'1 :32 \ppp \glissando \<
+                        g'1
+                        :32
+                        \ppp
+                        \glissando
+                        \<
                         
                         %%% CelloMusicVoice [measure 45] %%%
-                        d'1 :32 \pp \glissando \>
+                        d'1
+                        :32
+                        \pp
+                        \glissando
+                        \>
                         
                         %%% CelloMusicVoice [measure 46] %%%
-                        g'2. :32 \ppp \glissando \<
+                        g'2.
+                        :32
+                        \ppp
+                        \glissando
+                        \<
                         \tweak edge-height #'(0.7 . 0)
                         \times 2/3 {
                             
                             %%% CelloMusicVoice [measure 47] %%%
-                            d'4 :32 \pp \glissando \>
+                            d'4
+                            :32
+                            \pp
+                            \glissando
+                            \>
                         }
                         
                         %%% CelloMusicVoice [measure 48] %%%
-                        g1 :32 \ppp \glissando \<
+                        g1
+                        :32
+                        \ppp
+                        \glissando
+                        \<
                         
                         %%% CelloMusicVoice [measure 49] %%%
-                        d'1 :32 \pp \glissando \>
+                        d'1
+                        :32
+                        \pp
+                        \glissando
+                        \>
                         
                         %%% CelloMusicVoice [measure 50] %%%
-                        g2. :32 \ppp \stopTextSpan ^ \markup {
+                        g2.
+                        :32
+                        \ppp
+                        \stopTextSpan
+                        ^ \markup {
                             \whiteout
                                 \upright
                                     "trem. flaut. XP"
