@@ -52,10 +52,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ufermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ufermata"
+                    }
                 
             }
             \context GlobalSkips = "GlobalSkips" {
@@ -66,7 +66,8 @@
                 \time 7/4
                 \mark #17
                 \newSpacingSection
-                s1 * 7/4 ^ \markup {
+                s1 * 7/4
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -184,100 +185,135 @@
                         \clef "percussion"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        c'4 \p
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        \override
-                                            #'(box-padding . 0.5)
-                                            \box
-                                                "graincircle: π/3 every quarter note"
-                                }
-                            _ \markup {
-                                \larger
-                                    \italic
-                                        “
-                                \dynamic
+                        c'4
+                        \p
+                        ^ \markup {
+                            \whiteout
+                                \upright
                                     \override
-                                        #'(font-name . #f)
-                                        mf
-                                \larger
-                                    \italic
-                                        ”
-                                }
+                                        #'(box-padding . 0.5)
+                                        \box
+                                            "graincircle: π/3 every quarter note"
+                            }
+                        _ \markup {
+                            \larger
+                                \italic
+                                    “
+                            \dynamic
+                                \override
+                                    #'(font-name . #f)
+                                    mf
+                            \larger
+                                \italic
+                                    ”
+                            }
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 248] %%%
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 249] %%%
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 250] %%%
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 251] %%%
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 252] %%%
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
-                        c'4 \repeatTie
+                        c'4
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 253] %%%
                         R1 * 13/2
@@ -305,13 +341,14 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4 \ppp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
+                            R1 * 7/4
+                            \ppp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                             
                             %%% ViolinRHMusicVoice [measure 248] %%%
                             R1 * 2
@@ -358,130 +395,181 @@
                             \startStaff
                             \clef "percussion"
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            b4 -\tongue #2 \fff
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "col legno battuto meccanico: strike each note twice"
-                                    }
-                                _ \markup {
-                                    \larger
-                                        \italic
-                                            “
-                                    \dynamic
-                                        \override
-                                            #'(font-name . #f)
-                                            mf
-                                    \larger
-                                        \italic
-                                            ”
-                                    }
+                            b4
+                            -\tongue #2
+                            \fff
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "col legno battuto meccanico: strike each note twice"
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 248] %%%
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 249] %%%
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 250] %%%
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 251] %%%
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 252] %%%
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 253] %%%
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 254] %%%
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 255] %%%
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
-                            d'4 -\tongue #2
+                            d'4
+                            -\tongue #2
                             
-                            b4 -\tongue #2
+                            b4
+                            -\tongue #2
                             
-                            c'4 -\tongue #2
+                            c'4
+                            -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 256] %%%
                             R1 * 11/4
@@ -510,13 +598,14 @@
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4 \ppp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
+                            R1 * 7/4
+                            \ppp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                             
                             %%% ViolaRHMusicVoice [measure 248] %%%
                             R1 * 2
@@ -563,130 +652,181 @@
                             \startStaff
                             \clef "percussion"
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            c'4 -\staccato \fff
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            "col legno battuto meccanico: strike each note twice"
-                                    }
-                                _ \markup {
-                                    \larger
-                                        \italic
-                                            “
-                                    \dynamic
-                                        \override
-                                            #'(font-name . #f)
-                                            mf
-                                    \larger
-                                        \italic
-                                            ”
-                                    }
+                            c'4
+                            -\staccato
+                            \fff
+                            ^ \markup {
+                                \whiteout
+                                    \upright
+                                        "col legno battuto meccanico: strike each note twice"
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 248] %%%
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 249] %%%
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 250] %%%
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 251] %%%
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 252] %%%
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 253] %%%
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 254] %%%
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 255] %%%
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
-                            d'4 -\staccato
+                            d'4
+                            -\staccato
                             
-                            c'4 -\staccato
+                            c'4
+                            -\staccato
                             
-                            b4 -\staccato
+                            b4
+                            -\staccato
                             
                             %%% ViolaMusicVoice [measure 256] %%%
                             R1 * 11/4
@@ -715,13 +855,14 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4 \pp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
+                            R1 * 7/4
+                            \pp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             
                             %%% CelloRHMusicVoice [measure 248] %%%
                             R1 * 2
@@ -770,51 +911,63 @@
                                 \startStaff
                                 \clef "percussion"
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                c'8 -\accent \p [
-                                    ^ \markup {
-                                        \whiteout
-                                            \upright
-                                                \override
-                                                    #'(box-padding . 0.5)
-                                                    \box
-                                                        "stonescratch: one short stroke for each attack"
-                                        }
-                                    _ \markup {
-                                        \larger
-                                            \italic
-                                                “
-                                        \dynamic
+                                c'8
+                                -\accent
+                                \p
+                                [
+                                ^ \markup {
+                                    \whiteout
+                                        \upright
                                             \override
-                                                #'(font-name . #f)
-                                                mf
-                                        \larger
-                                            \italic
-                                                ”
-                                        }
+                                                #'(box-padding . 0.5)
+                                                \box
+                                                    "stonescratch: one short stroke for each attack"
+                                    }
+                                _ \markup {
+                                    \larger
+                                        \italic
+                                            “
+                                    \dynamic
+                                        \override
+                                            #'(font-name . #f)
+                                            mf
+                                    \larger
+                                        \italic
+                                            ”
+                                    }
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent
+                                c'8.
+                                -\accent
                                 
                                 r1
                                 
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent [
+                                c'16
+                                -\accent
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent
+                                c'16
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                             }
                             \times 8/9 {
                                 
@@ -822,10 +975,14 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent [
+                                c'8
+                                -\accent
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent ]
+                                c'8.
+                                -\accent
+                                ]
                                 
                                 r2
                                 
@@ -836,53 +993,75 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent
+                                c'16
+                                -\accent
                             }
                             {
                                 
                                 %%% CelloMusicVoice [measure 249] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent
+                                c'16
+                                -\accent
                                 
                                 r8
                                 
-                                c'8 -\accent [
+                                c'8
+                                -\accent
+                                [
                                 
-                                c'8. -\accent
+                                c'8.
+                                -\accent
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r2
                                 
                                 r8
                                 
-                                c'8 -\accent [
+                                c'8
+                                -\accent
+                                [
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent [
+                                c'8.
+                                -\accent
+                                [
                                 
-                                c'8 -\accent ]
+                                c'8
+                                -\accent
+                                ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 
                                 %%% CelloMusicVoice [measure 250] %%%
-                                c'16 -\accent [
+                                c'16
+                                -\accent
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent
+                                c'16
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent
+                                c'8.
+                                -\accent
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r8
                                 
@@ -893,35 +1072,49 @@
                                 %%% CelloMusicVoice [measure 251] %%%
                                 r4.
                                 
-                                c'16 -\accent
+                                c'16
+                                -\accent
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent [
+                                c'8.
+                                -\accent
+                                [
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                             }
                             {
                                 
                                 %%% CelloMusicVoice [measure 252] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 \repeatTie [
+                                c'16
+                                \repeatTie
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent ]
+                                c'8
+                                -\accent
+                                ]
                                 
                                 r1
                                 
                                 r8
                                 
-                                c'8. -\accent [
+                                c'8.
+                                -\accent
+                                [
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r8
                                 
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 r8.
                             }
@@ -934,15 +1127,21 @@
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent [
+                                c'8.
+                                -\accent
+                                [
                                 
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r2..
                             }
@@ -951,30 +1150,43 @@
                                 %%% CelloMusicVoice [measure 254] %%%
                                 r4
                                 
-                                c'16 -\accent [
+                                c'16
+                                -\accent
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r2
                                 
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent [
+                                c'8.
+                                -\accent
+                                [
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                             }
                             {
                                 
                                 %%% CelloMusicVoice [measure 255] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 \repeatTie [
+                                c'16
+                                \repeatTie
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r16
                                 
@@ -988,77 +1200,94 @@
                                 %%% CelloMusicVoice [measure 256] %%%
                                 r4..
                                 
-                                c'16 -\accent [
+                                c'16
+                                -\accent
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent
+                                c'16
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent
+                                c'8
+                                -\accent
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 %%% CelloMusicVoice [measure 257] %%%
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent [
+                                c'8.
+                                -\accent
+                                [
                                 
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8 -\accent
+                                c'8
+                                -\accent
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'8. -\accent
+                                c'8.
+                                -\accent
                                 
                                 r1
                                 
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent [
+                                c'16
+                                -\accent
+                                [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie
-                                c'16 -\accent ]
+                                c'16
+                                -\accent
+                                ]
                             }
                             
                             %%% CelloMusicVoice [measure 258] %%%
                             \once \override MultiMeasureRestText.extra-offset = #'(-18 . -6)
                             R1 * 1/4
-                                _ \markup {
-                                    \whiteout
-                                        \upright
-                                            \with-color
-                                                #black
-                                                \right-column
-                                                    {
-                                                        \line
-                                                            {
-                                                                "Madison, WI."
-                                                            }
-                                                        \line
-                                                            {
-                                                                January
-                                                                \hspace
-                                                                    #0.75
-                                                                –
-                                                                \hspace
-                                                                    #0.75
-                                                                March
-                                                                2016.
-                                                            }
-                                                    }
-                                    }
+                            _ \markup {
+                                \whiteout
+                                    \upright
+                                        \with-color
+                                            #black
+                                            \right-column
+                                                {
+                                                    \line
+                                                        {
+                                                            "Madison, WI."
+                                                        }
+                                                    \line
+                                                        {
+                                                            January
+                                                            \hspace
+                                                                #0.75
+                                                            –
+                                                            \hspace
+                                                                #0.75
+                                                            March
+                                                            2016.
+                                                        }
+                                                }
+                                }
                             \bar "|."
                             
                         }

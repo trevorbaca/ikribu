@@ -28,10 +28,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ulongfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ulongfermata"
+                    }
                 
                 %%% GlobalRests [measure 14] %%%
                 R1 * 7/4
@@ -41,10 +41,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ulongfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ulongfermata"
+                    }
                 
                 %%% GlobalRests [measure 16] %%%
                 R1 * 2
@@ -60,10 +60,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ulongfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ulongfermata"
+                    }
                 
                 %%% GlobalRests [measure 20] %%%
                 R1 * 1
@@ -73,10 +73,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ulongfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ulongfermata"
+                    }
                 
                 %%% GlobalRests [measure 22] %%%
                 R1 * 1/2
@@ -92,10 +92,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ulongfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ulongfermata"
+                    }
                 
                 %%% GlobalRests [measure 26] %%%
                 R1 * 1
@@ -105,10 +105,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ushortfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ushortfermata"
+                    }
                 
                 %%% GlobalRests [measure 28] %%%
                 R1 * 3/4
@@ -133,10 +133,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ushortfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ushortfermata"
+                    }
                 
             }
             \context GlobalSkips = "GlobalSkips" {
@@ -148,7 +148,8 @@
                 \mark #2
                 \once \override TextScript.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                 \newSpacingSection
-                s1 * 1 ^ \markup {
+                s1 * 1
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -348,35 +349,46 @@
                         R1 * 3
                         
                         %%% BassClarinetMusicVoice [measure 14] %%%
-                        ef1.. \ppp
+                        ef1..
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 15] %%%
                         R1 * 17/4
                         
                         %%% BassClarinetMusicVoice [measure 20] %%%
-                        ef1 \ppp
+                        ef1
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 21] %%%
                         R1 * 7/2
                         
                         %%% BassClarinetMusicVoice [measure 26] %%%
-                        ef1 \ppp
+                        ef1
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 27] %%%
                         R1 * 1/4
                         
                         %%% BassClarinetMusicVoice [measure 28] %%%
-                        ef2. \< \ppp
+                        ef2.
+                        \<
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 29] %%%
-                        ef1 \repeatTie \f
+                        ef1
+                        \repeatTie
+                        \f
                         
                         %%% BassClarinetMusicVoice [measure 30] %%%
                         \once \override Hairpin.circled-tip = ##t
-                        ef2. \repeatTie \> \f
+                        ef2.
+                        \repeatTie
+                        \>
+                        \f
                         
                         %%% BassClarinetMusicVoice [measure 31] %%%
-                        R1 * 9/2 \!
+                        R1 * 9/2
+                        \!
                         \bar "|"
                         
                     }
@@ -401,12 +413,12 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                             
                             %%% ViolinRHMusicVoice [measure 11] %%%
                             R1 * 1
@@ -512,26 +524,40 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "treble"
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            e'1 :32 \< \ppp \startTextSpan
-                                _ \markup {
-                                    \whiteout
-                                        \upright
-                                            III
-                                    }
+                            e'1
+                            :32
+                            \<
+                            \ppp
+                            \startTextSpan
+                            _ \markup {
+                                \whiteout
+                                    \upright
+                                        III
+                                }
                             
                             %%% ViolinMusicVoice [measure 11] %%%
-                            e'1 :32 \repeatTie \p
+                            e'1
+                            :32
+                            \repeatTie
+                            \p
                             
                             %%% ViolinMusicVoice [measure 12] %%%
                             \once \override Hairpin.circled-tip = ##t
-                            e'2. :32 \repeatTie \stopTextSpan \> \p ^ \markup {
+                            e'2.
+                            :32
+                            \repeatTie
+                            \stopTextSpan
+                            \>
+                            \p
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. tast."
                                 }
                             
                             %%% ViolinMusicVoice [measure 13] %%%
-                            R1 * 9/4 \!
+                            R1 * 9/4
+                            \!
                             
                             %%% ViolinMusicVoice [measure 16] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -554,21 +580,35 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            e'\breve :32 \< \ppp \startTextSpan
+                            e'\breve
+                            :32
+                            \<
+                            \ppp
+                            \startTextSpan
                             
                             %%% ViolinMusicVoice [measure 17] %%%
-                            e'2. :32 \repeatTie \p
+                            e'2.
+                            :32
+                            \repeatTie
+                            \p
                             
                             %%% ViolinMusicVoice [measure 18] %%%
                             \once \override Hairpin.circled-tip = ##t
-                            e'1 :32 \repeatTie \stopTextSpan \> \p ^ \markup {
+                            e'1
+                            :32
+                            \repeatTie
+                            \stopTextSpan
+                            \>
+                            \p
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. tast."
                                 }
                             
                             %%% ViolinMusicVoice [measure 19] %%%
-                            R1 * 3/2 \!
+                            R1 * 3/2
+                            \!
                             
                             %%% ViolinMusicVoice [measure 22] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -591,21 +631,35 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            e'2 :32 \< \ppp \startTextSpan
+                            e'2
+                            :32
+                            \<
+                            \ppp
+                            \startTextSpan
                             
                             %%% ViolinMusicVoice [measure 23] %%%
-                            e'1.. :32 \repeatTie \p
+                            e'1..
+                            :32
+                            \repeatTie
+                            \p
                             
                             %%% ViolinMusicVoice [measure 24] %%%
                             \once \override Hairpin.circled-tip = ##t
-                            e'2. :32 \repeatTie \stopTextSpan \> \p ^ \markup {
+                            e'2.
+                            :32
+                            \repeatTie
+                            \stopTextSpan
+                            \>
+                            \p
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. tast."
                                 }
                             
                             %%% ViolinMusicVoice [measure 25] %%%
-                            R1 * 17/2 \!
+                            R1 * 17/2
+                            \!
                             \bar "|"
                             
                         }
@@ -631,12 +685,12 @@
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                             
                             %%% ViolaRHMusicVoice [measure 11] %%%
                             R1 * 1
@@ -746,35 +800,55 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            ef'2. :32 \< \ppp \startTextSpan
-                                _ \markup {
-                                    \whiteout
-                                        \upright
-                                            II
-                                    }
+                            ef'2.
+                            :32
+                            \<
+                            \ppp
+                            \startTextSpan
+                            _ \markup {
+                                \whiteout
+                                    \upright
+                                        II
+                                }
                             
                             %%% ViolaMusicVoice [measure 29] %%%
-                            ef'1 :32 \repeatTie
+                            ef'1
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 30] %%%
-                            ef'2. :32 \repeatTie
+                            ef'2.
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 31] %%%
-                            ef'2 :32 \repeatTie
+                            ef'2
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 32] %%%
-                            ef'1.. :32 \repeatTie \mf
+                            ef'1..
+                            :32
+                            \repeatTie
+                            \mf
                             
                             %%% ViolaMusicVoice [measure 33] %%%
                             \once \override Hairpin.circled-tip = ##t
-                            ef'\breve :32 \repeatTie \stopTextSpan \> \mf ^ \markup {
+                            ef'\breve
+                            :32
+                            \repeatTie
+                            \stopTextSpan
+                            \>
+                            \mf
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. tast."
                                 }
                             
                             %%% ViolaMusicVoice [measure 34] %%%
-                            R1 * 1/4 \!
+                            R1 * 1/4
+                            \!
                             \bar "|"
                             
                         }
@@ -800,12 +874,12 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 1
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             
                             %%% CelloRHMusicVoice [measure 11] %%%
                             R1 * 1
@@ -893,7 +967,8 @@
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1 \sfz
+                            R1 * 1
+                            \sfz
                             
                             %%% CelloMusicVoice [measure 11] %%%
                             R1 * 1

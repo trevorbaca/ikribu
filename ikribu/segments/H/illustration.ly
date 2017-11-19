@@ -43,10 +43,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ufermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ufermata"
+                    }
                 
             }
             \context GlobalSkips = "GlobalSkips" {
@@ -57,7 +57,8 @@
                 \time 8/4
                 \mark #8
                 \newSpacingSection
-                s1 * 2 ^ \markup {
+                s1 * 2
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -158,28 +159,36 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        ef\breve \ppp
+                        ef\breve
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 100] %%%
-                        ef1.. \repeatTie
+                        ef1..
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 101] %%%
-                        ef1.. \repeatTie
+                        ef1..
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 102] %%%
-                        ef2. \repeatTie
+                        ef2.
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 103] %%%
-                        ef2 \repeatTie
+                        ef2
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 104] %%%
-                        ef1.. \repeatTie
+                        ef1..
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 105] %%%
-                        ef\breve \repeatTie
+                        ef\breve
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 106] %%%
-                        ef1 \repeatTie
+                        ef1
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 107] %%%
                         R1 * 1/4
@@ -208,361 +217,404 @@
                                 \clef "percussion"
                                 \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 r4
-                                    ^ \markup {
-                                        \override
-                                            #'(box-padding . 0.75)
-                                            \box
-                                                "to violin"
-                                        }
+                                ^ \markup {
+                                    \override
+                                        #'(box-padding . 0.75)
+                                        \box
+                                            "to violin"
+                                    }
                                 
                                 \override RepeatTie.direction = #up
-                                c'4 \> \ff
-                                    ^ \markup {
-                                        \column
-                                            {
-                                                \line
-                                                    {
-                                                        \whiteout
-                                                            \upright
-                                                                \override
-                                                                    #'(box-padding . 0.5)
-                                                                    \box
-                                                                        "1/2 clt"
-                                                    }
-                                                \line
-                                                    {
-                                                        \fraction
-                                                            0
-                                                            7
-                                                    }
-                                            }
+                                c'4
+                                \>
+                                \ff
+                                ^ \markup {
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    "1/2 clt"
+                                                }
+                                            \line
+                                                {
+                                                    \fraction
+                                                        0
+                                                        7
+                                                }
                                         }
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
-                                
-                                c'4 \p \<
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                \p
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
-                                c'4 \f \>
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
+                                
+                                c'4
+                                \f
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                             }
                             {
                                 
                                 %%% ViolinRHMusicVoice [measure 100] %%%
-                                c'4 \pp
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \pp
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 r4
-                                
-                                c'4 \pp \<
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                \pp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
-                                c'4 \p
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
+                                
+                                c'4
+                                \p
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \p \>
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \p
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 %%% ViolinRHMusicVoice [measure 101] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
-                                
-                                c'4 \ppp \<
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                \ppp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
-                                c'4 \ff \>
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
-                                c'4 \p
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \ff
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
+                                
+                                c'4
+                                \p
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \p \<
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \p
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 %%% ViolinRHMusicVoice [measure 102] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            4
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        4
+                                    }
                                 
-                                c'4 \f
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                c'4
+                                \f
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                                 
                                 r4
                                 
-                                c'4 \f \>
-                                    ^ \markup {
-                                        \fraction
-                                            2
-                                            4
-                                        }
+                                c'4
+                                \f
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        2
+                                        4
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                             }
                             {
                                 
                                 %%% ViolinRHMusicVoice [measure 103] %%%
-                                c'4 \pp \<
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                \pp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                             }
                             {
                                 
                                 %%% ViolinRHMusicVoice [measure 104] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
-                                c'4 \p \>
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \p
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
-                                c'4 \ppp
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \ppp
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \ppp \<
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \ppp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
-                                c'4 \ff
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                \ff
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                             }
                             \times 8/9 {
                                 
                                 %%% ViolinRHMusicVoice [measure 105] %%%
                                 r4
                                 
-                                c'4 \ff \>
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \ff
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
-                                
-                                c'4 \p \<
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                \p
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
-                                c'4 \f \>
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                                 
-                                c'4 \pp
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \f
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
+                                
+                                c'4
+                                \pp
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 r4
                             }
                             \times 4/6 {
                                 
                                 %%% ViolinRHMusicVoice [measure 106] %%%
-                                c'4 \pp \<
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \pp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
-                                c'4 \p
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \p
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \p \>
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            4
-                                        }
+                                c'4
+                                \p
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        4
+                                    }
                                 
-                                c'4 \ppp
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                c'4
+                                \ppp
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                                 \revert RepeatTie.direction
                             }
                             
@@ -584,90 +636,128 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                c''8 \f \glissando [
+                                c''8
+                                \f
+                                \glissando
+                                [
                                 
-                                b''8. \glissando
+                                b''8.
+                                \glissando
                                 
-                                a'8 \glissando
+                                a'8
+                                \glissando
                                 
-                                b'8. ] \glissando
+                                b'8.
+                                ]
+                                \glissando
                                 
-                                g'2.. \glissando
+                                g'2..
+                                \glissando
                                 
-                                g''2 \glissando
+                                g''2
+                                \glissando
                                 
-                                e''8 \glissando
+                                e''8
+                                \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 %%% ViolinMusicVoice [measure 100] %%%
-                                f'''4. \glissando
+                                f'''4.
+                                \glissando
                                 
-                                e'''2.. \glissando
+                                e'''2..
+                                \glissando
                                 
-                                d''2. \glissando
+                                d''2.
+                                \glissando
                             }
                             {
                                 
                                 %%% ViolinMusicVoice [measure 101] %%%
-                                c''4 \glissando
+                                c''4
+                                \glissando
                                 
-                                d'8 \glissando [
+                                d'8
+                                \glissando
+                                [
                                 
-                                e''8. \glissando
+                                e''8.
+                                \glissando
                                 
-                                d''8 \glissando
+                                d''8
+                                \glissando
                                 
-                                f''8. ] \glissando
+                                f''8.
+                                ]
+                                \glissando
                                 
-                                f'2.. \glissando
+                                f'2..
+                                \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 
                                 %%% ViolinMusicVoice [measure 102] %%%
-                                a'2.. \glissando
+                                a'2..
+                                \glissando
                             }
                             \times 2/3 {
                                 
                                 %%% ViolinMusicVoice [measure 103] %%%
-                                g8 \glissando
+                                g8
+                                \glissando
                                 
-                                a2 \glissando
+                                a2
+                                \glissando
                                 
-                                b'8 \glissando
+                                b'8
+                                \glissando
                             }
                             {
                                 
                                 %%% ViolinMusicVoice [measure 104] %%%
-                                a4 \glissando
+                                a4
+                                \glissando
                                 
-                                g1 \glissando
+                                g1
+                                \glissando
                                 
-                                a'8 \glissando [
+                                a'8
+                                \glissando
+                                [
                                 
-                                f'8. \glissando
+                                f'8.
+                                \glissando
                                 
-                                f''8 \glissando
+                                f''8
+                                \glissando
                                 
-                                d''16 ] \glissando
+                                d''16
+                                ]
+                                \glissando
                             }
                             \times 16/17 {
                                 
                                 %%% ViolinMusicVoice [measure 105] %%%
-                                e''8 \glissando
+                                e''8
+                                \glissando
                                 
-                                d'2.. \glissando
+                                d'2..
+                                \glissando
                                 
-                                c''1 \glissando
+                                c''1
+                                \glissando
                                 
-                                d''8 \glissando
+                                d''8
+                                \glissando
                             }
                             \times 4/5 {
                                 
                                 %%% ViolinMusicVoice [measure 106] %%%
-                                e'''2. \glissando
+                                e'''2.
+                                \glissando
                                 
                                 f'''2
                             }
@@ -699,346 +789,388 @@
                                     }
                                 \clef "percussion"
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                c'4 \> \ff
-                                    ^ \markup {
-                                        \column
-                                            {
-                                                \line
-                                                    {
-                                                        \whiteout
-                                                            \upright
-                                                                \override
-                                                                    #'(box-padding . 0.5)
-                                                                    \box
-                                                                        "1/2 clt"
-                                                    }
-                                                \line
-                                                    {
-                                                        \fraction
-                                                            7
-                                                            7
-                                                    }
-                                                \line
-                                                    {
-                                                        \override
-                                                            #'(box-padding . 0.75)
-                                                            \box
-                                                                "to viola"
-                                                    }
-                                            }
+                                c'4
+                                \>
+                                \ff
+                                ^ \markup {
+                                    \column
+                                        {
+                                            \line
+                                                {
+                                                    \whiteout
+                                                        \upright
+                                                            \override
+                                                                #'(box-padding . 0.5)
+                                                                \box
+                                                                    "1/2 clt"
+                                                }
+                                            \line
+                                                {
+                                                    \fraction
+                                                        7
+                                                        7
+                                                }
+                                            \line
+                                                {
+                                                    \override
+                                                        #'(box-padding . 0.75)
+                                                        \box
+                                                            "to viola"
+                                                }
                                         }
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
-                                c'4 \p \<
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \p
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
-                                c'4 \f
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                \f
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \f \>
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \f
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
-                                c'4 \pp \<
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
+                                c'4
+                                \pp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 %%% ViolaRHMusicVoice [measure 100] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
-                                
-                                c'4 \p \>
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                \p
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
-                                c'4 \ppp \<
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
-                                c'4 \ff
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            4
-                                        }
+                                c'4
+                                \ppp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
+                                
+                                c'4
+                                \ff
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        4
+                                    }
                                 
                                 r4
                                 
-                                c'4 \ff \>
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                c'4
+                                \ff
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/9 {
                                 
                                 %%% ViolaRHMusicVoice [measure 101] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            2
-                                            4
-                                        }
-                                
-                                c'4 \p \<
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        2
+                                        4
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                \p
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                                 
-                                c'4 \f
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
+                                
+                                c'4
+                                \f
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \f \>
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                c'4
+                                \f
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
-                                
-                                c'4 \pp \<
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                \pp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
+                                
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
                                 
                                 %%% ViolaRHMusicVoice [measure 102] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
-                                c'4 \p \>
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                \p
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                             }
                             {
                                 
                                 %%% ViolaRHMusicVoice [measure 103] %%%
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
-                                c'4 \ppp \<
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                \ppp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 %%% ViolaRHMusicVoice [measure 104] %%%
-                                c'4 \ff
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                \ff
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 r4
                                 
-                                c'4 \ff \>
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                c'4
+                                \ff
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
-                                
-                                c'4 \p \<
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                \p
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
-                                c'4 \f
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
+                                
+                                c'4
+                                \f
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 r4
                             }
                             \times 8/10 {
                                 
                                 %%% ViolaRHMusicVoice [measure 105] %%%
-                                c'4 \f \>
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \f
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
-                                
-                                c'4 \pp \<
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            4
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                \pp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        4
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            2
-                                            4
-                                        }
-                                
-                                c'4 \p \>
-                                    ^ \markup {
-                                        \fraction
-                                            1
-                                            4
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            0
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        2
+                                        4
+                                    }
                                 
-                                c'4 \ppp \<
-                                    ^ \markup {
-                                        \fraction
-                                            4
-                                            7
-                                        }
+                                c'4
+                                \p
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        1
+                                        4
+                                    }
                                 
-                                c'4 \ff
-                                    ^ \markup {
-                                        \fraction
-                                            5
-                                            7
-                                        }
+                                c'4
+                                ^ \markup {
+                                    \fraction
+                                        0
+                                        7
+                                    }
+                                
+                                c'4
+                                \ppp
+                                \<
+                                ^ \markup {
+                                    \fraction
+                                        4
+                                        7
+                                    }
+                                
+                                c'4
+                                \ff
+                                ^ \markup {
+                                    \fraction
+                                        5
+                                        7
+                                    }
                                 
                                 r4
                             }
@@ -1046,26 +1178,29 @@
                             \times 4/3 {
                                 
                                 %%% ViolaRHMusicVoice [measure 106] %%%
-                                c'4 \ff \>
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \ff
+                                \>
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 
                                 c'4
-                                    ^ \markup {
-                                        \fraction
-                                            7
-                                            7
-                                        }
+                                ^ \markup {
+                                    \fraction
+                                        7
+                                        7
+                                    }
                                 
-                                c'4 \p
-                                    ^ \markup {
-                                        \fraction
-                                            6
-                                            7
-                                        }
+                                c'4
+                                \p
+                                ^ \markup {
+                                    \fraction
+                                        6
+                                        7
+                                    }
                                 \revert RepeatTie.direction
                             }
                             
@@ -1086,80 +1221,114 @@
                                 \clef "treble"
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                                c''2.. \f \glissando
+                                c''2..
+                                \f
+                                \glissando
                                 
-                                d'1 \glissando
+                                d'1
+                                \glissando
                                 
-                                e''4. \glissando
+                                e''4.
+                                \glissando
                             }
                             {
                                 
                                 %%% ViolaMusicVoice [measure 100] %%%
-                                d''2 \glissando
+                                d''2
+                                \glissando
                                 
-                                f''1 \glissando
+                                f''1
+                                \glissando
                                 
-                                f'8 \glissando [
+                                f'8
+                                \glissando
+                                [
                                 
-                                a'8 ] \glissando
+                                a'8
+                                ]
+                                \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 
                                 %%% ViolaMusicVoice [measure 101] %%%
-                                g16 \glissando [
+                                g16
+                                \glissando
+                                [
                                 
-                                a8 \glissando
+                                a8
+                                \glissando
                                 
-                                b'8. ] \glissando
+                                b'8.
+                                ]
+                                \glissando
                                 
-                                a2.. \glissando
+                                a2..
+                                \glissando
                                 
-                                g2 \glissando
+                                g2
+                                \glissando
                                 
-                                a'8 \glissando
+                                a'8
+                                \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 %%% ViolaMusicVoice [measure 102] %%%
-                                f'4. \glissando
+                                f'4.
+                                \glissando
                                 
-                                f''2 \glissando
+                                f''2
+                                \glissando
                                 
-                                d''8 \glissando
+                                d''8
+                                \glissando
                             }
                             {
                                 
                                 %%% ViolaMusicVoice [measure 103] %%%
-                                e''4 \glissando
+                                e''4
+                                \glissando
                                 
-                                d'4 \glissando
+                                d'4
+                                \glissando
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 
                                 %%% ViolaMusicVoice [measure 104] %%%
-                                c''2. \glissando
+                                c''2.
+                                \glissando
                                 
-                                d''8 \glissando [
+                                d''8
+                                \glissando
+                                [
                                 
-                                e'''8. \glissando
+                                e'''8.
+                                \glissando
                                 
-                                f'''8 \glissando
+                                f'''8
+                                \glissando
                                 
-                                e''8. ] \glissando
+                                e''8.
+                                ]
+                                \glissando
                                 
-                                g''2 \glissando
+                                g''2
+                                \glissando
                             }
                             \times 8/9 {
                                 
                                 %%% ViolaMusicVoice [measure 105] %%%
-                                g'4. \glissando
+                                g'4.
+                                \glissando
                                 
-                                b'1 \glissando
+                                b'1
+                                \glissando
                                 
-                                a'2.. \glissando
+                                a'2..
+                                \glissando
                             }
                             {
                                 
@@ -1194,13 +1363,14 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 2 \pp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
+                            R1 * 2
+                            \pp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             
                             %%% CelloRHMusicVoice [measure 100] %%%
                             R1 * 7/4
@@ -1240,7 +1410,8 @@
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 2 \ppp
+                            R1 * 2
+                            \ppp
                             
                             %%% CelloMusicVoice [measure 100] %%%
                             R1 * 7/4

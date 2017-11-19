@@ -37,10 +37,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ulongfermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ulongfermata"
+                    }
                 
             }
             \context GlobalSkips = "GlobalSkips" {
@@ -51,7 +51,8 @@
                 \time 8/4
                 \mark #1
                 \newSpacingSection
-                s1 * 2 ^ \markup {
+                s1 * 2
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -137,23 +138,33 @@
                         \clef "treble"
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        e\breve \< \ppp
+                        e\breve
+                        \<
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 4] %%%
-                        e1.. \repeatTie \f
+                        e1..
+                        \repeatTie
+                        \f
                         
                         %%% BassClarinetMusicVoice [measure 5] %%%
                         \once \override Hairpin.circled-tip = ##t
-                        e1 \repeatTie \> \f
+                        e1
+                        \repeatTie
+                        \>
+                        \f
                         
                         %%% BassClarinetMusicVoice [measure 6] %%%
-                        e1 \repeatTie
+                        e1
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 7] %%%
-                        e2. \repeatTie
+                        e2.
+                        \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 8] %%%
-                        R1 * 2 \!
+                        R1 * 2
+                        \!
                         \bar "|"
                         
                     }
@@ -178,12 +189,12 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 2
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                             
                             %%% ViolinRHMusicVoice [measure 4] %%%
                             R1 * 7/4
@@ -260,12 +271,12 @@
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 2
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                             
                             %%% ViolaRHMusicVoice [measure 4] %%%
                             R1 * 7/4
@@ -307,67 +318,84 @@
                             \override RepeatTie.direction = #up
                             \clef "percussion"
                             c'4
-                                ^ \markup {
-                                    \whiteout
-                                        \upright
-                                            \override
-                                                #'(box-padding . 0.5)
-                                                \box
-                                                    \column
-                                                        {
-                                                            stonecircle:
-                                                            "π/4 every quarter note"
-                                                        }
-                                    }
-                                _ \markup {
-                                    \larger
-                                        \italic
-                                            “
-                                    \dynamic
+                            ^ \markup {
+                                \whiteout
+                                    \upright
                                         \override
-                                            #'(font-name . #f)
-                                            mf
-                                    \larger
-                                        \italic
-                                            ”
-                                    }
+                                            #'(box-padding . 0.5)
+                                            \box
+                                                \column
+                                                    {
+                                                        stonecircle:
+                                                        "π/4 every quarter note"
+                                                    }
+                                }
+                            _ \markup {
+                                \larger
+                                    \italic
+                                        “
+                                \dynamic
+                                    \override
+                                        #'(font-name . #f)
+                                        mf
+                                \larger
+                                    \italic
+                                        ”
+                                }
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 6] %%%
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 7] %%%
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 8] %%%
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             
-                            c'4 \repeatTie
+                            c'4
+                            \repeatTie
                             \revert RepeatTie.direction
                             
                             %%% ViolaMusicVoice [measure 9] %%%
@@ -397,12 +425,12 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 2
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             
                             %%% CelloRHMusicVoice [measure 4] %%%
                             R1 * 7/4
@@ -435,7 +463,8 @@
                             \clef "treble"
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 2 \sfz
+                            R1 * 2
+                            \sfz
                             
                             %%% CelloMusicVoice [measure 4] %%%
                             R1 * 7/4
