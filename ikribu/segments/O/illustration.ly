@@ -79,10 +79,10 @@
                 \once \override Score.MultiMeasureRest.transparent = ##t
                 \once \override Score.TimeSignature.stencil = ##f
                 R1 * 1/4
-                    - \markup {
-                        \musicglyph
-                            #"scripts.ufermata"
-                        }
+                - \markup {
+                    \musicglyph
+                        #"scripts.ufermata"
+                    }
                 
             }
             \context GlobalSkips = "GlobalSkips" {
@@ -93,7 +93,8 @@
                 \time 4/4
                 \mark #15
                 \newSpacingSection
-                s1 * 1 ^ \markup {
+                s1 * 1
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -274,9 +275,10 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        <c e''>1 \p
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        <c e''>1
+                        \p
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 219] %%%
                         \once \override Accidental.color = #red
@@ -284,9 +286,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <c e''>2. \repeatTie
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        <c e''>2.
+                        \repeatTie
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 220] %%%
                         \once \override Accidental.color = #red
@@ -295,8 +298,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c g''>1
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 221] %%%
                         \once \override Accidental.color = #red
@@ -304,9 +307,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <c g''>2. \repeatTie
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        <c g''>2.
+                        \repeatTie
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 222] %%%
                         \once \override Accidental.color = #red
@@ -314,9 +318,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <c g''>2 \repeatTie
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        <c g''>2
+                        \repeatTie
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 223] %%%
                         \once \override Accidental.color = #red
@@ -324,9 +329,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <c g''>1.. \repeatTie
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        <c g''>1..
+                        \repeatTie
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 224] %%%
                         \once \override Accidental.color = #red
@@ -335,8 +341,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c e''>1..
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 225] %%%
                         \once \override Accidental.color = #red
@@ -345,8 +351,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c\breve
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 226] %%%
                         \once \override Accidental.color = #red
@@ -355,8 +361,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c e''>1..
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 227] %%%
                         \once \override Accidental.color = #red
@@ -365,8 +371,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c g''>2.
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 228] %%%
                         \once \override Accidental.color = #red
@@ -375,8 +381,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c btqf''>2
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 229] %%%
                         \once \override Accidental.color = #red
@@ -384,9 +390,10 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <c btqf''>\breve \repeatTie
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        <c btqf''>\breve
+                        \repeatTie
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 230] %%%
                         \once \override Accidental.color = #red
@@ -395,8 +402,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c g''>1..
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 231] %%%
                         \once \override Accidental.color = #red
@@ -405,8 +412,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         c1
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 232] %%%
                         \once \override Accidental.color = #red
@@ -415,8 +422,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c e''>1
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 233] %%%
                         \once \override Accidental.color = #red
@@ -425,8 +432,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c e''>2.
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 234] %%%
                         \once \override Accidental.color = #red
@@ -435,8 +442,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c g''>1..
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 235] %%%
                         \once \override Accidental.color = #red
@@ -445,8 +452,8 @@
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
                         <c e''>\breve
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 236] %%%
                         \once \override Hairpin.circled-tip = ##t
@@ -455,9 +462,11 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c2. \> \p
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c2.
+                        \>
+                        \p
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 237] %%%
                         \once \override Accidental.color = #red
@@ -465,12 +474,14 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        c1 \repeatTie
-                            - \tweak color #red
-                            ^ \markup { @ }
+                        c1
+                        \repeatTie
+                        - \tweak color #red
+                        ^ \markup { @ }
                         
                         %%% BassClarinetMusicVoice [measure 238] %%%
-                        R1 * 1/4 \!
+                        R1 * 1/4
+                        \!
                         \bar "|"
                         
                     }
@@ -495,13 +506,14 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1 \pp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
+                            R1 * 1
+                            \pp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                             
                             %%% ViolinRHMusicVoice [measure 219] %%%
                             R1 * 3/4
@@ -577,7 +589,8 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 19/2 \fff
+                            R1 * 19/2
+                            \fff
                             
                             %%% ViolinMusicVoice [measure 226] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -600,48 +613,77 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            <e' fs'>1.. :32 \startTextSpan
+                            <e' fs'>1..
+                            :32
+                            \startTextSpan
                             
                             %%% ViolinMusicVoice [measure 227] %%%
-                            <e' fs'>2. :32 \repeatTie
+                            <e' fs'>2.
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 228] %%%
-                            <e' fs'>2 :32 \repeatTie
+                            <e' fs'>2
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 229] %%%
-                            <e' fs'>\breve :32 \repeatTie
+                            <e' fs'>\breve
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 230] %%%
-                            <e' fs'>1.. :32 \repeatTie
+                            <e' fs'>1..
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 231] %%%
-                            <e' fs'>1 :32 \repeatTie
+                            <e' fs'>1
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 232] %%%
-                            <e' fs'>1 :32 \repeatTie
+                            <e' fs'>1
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 233] %%%
-                            <e' fs'>2. :32 \repeatTie
+                            <e' fs'>2.
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 234] %%%
-                            <e' fs'>1.. :32 \repeatTie
+                            <e' fs'>1..
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 235] %%%
-                            <e' fs'>\breve :32 \repeatTie
+                            <e' fs'>\breve
+                            :32
+                            \repeatTie
                             
                             %%% ViolinMusicVoice [measure 236] %%%
                             \once \override Hairpin.circled-tip = ##t
-                            <e' fs'>2. :32 \repeatTie \> \ppppp
+                            <e' fs'>2.
+                            :32
+                            \repeatTie
+                            \>
+                            \ppppp
                             
                             %%% ViolinMusicVoice [measure 237] %%%
-                            <e' fs'>1 :32 \repeatTie \stopTextSpan ^ \markup {
+                            <e' fs'>1
+                            :32
+                            \repeatTie
+                            \stopTextSpan
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. nut"
                                 }
                             
                             %%% ViolinMusicVoice [measure 238] %%%
-                            R1 * 1/4 \!
+                            R1 * 1/4
+                            \!
                             \bar "|"
                             
                         }
@@ -667,13 +709,14 @@
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1 \ff
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
+                            R1 * 1
+                            \ff
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                             
                             %%% ViolaRHMusicVoice [measure 219] %%%
                             R1 * 3/4
@@ -749,7 +792,8 @@
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 19/2 \fff
+                            R1 * 19/2
+                            \fff
                             
                             %%% ViolaMusicVoice [measure 226] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -772,48 +816,77 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            <ef' f'>1.. :32 \startTextSpan
+                            <ef' f'>1..
+                            :32
+                            \startTextSpan
                             
                             %%% ViolaMusicVoice [measure 227] %%%
-                            <ef' f'>2. :32 \repeatTie
+                            <ef' f'>2.
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 228] %%%
-                            <ef' f'>2 :32 \repeatTie
+                            <ef' f'>2
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 229] %%%
-                            <ef' f'>\breve :32 \repeatTie
+                            <ef' f'>\breve
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 230] %%%
-                            <ef' f'>1.. :32 \repeatTie
+                            <ef' f'>1..
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 231] %%%
-                            <ef' f'>1 :32 \repeatTie
+                            <ef' f'>1
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 232] %%%
-                            <ef' f'>1 :32 \repeatTie
+                            <ef' f'>1
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 233] %%%
-                            <ef' f'>2. :32 \repeatTie
+                            <ef' f'>2.
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 234] %%%
-                            <ef' f'>1.. :32 \repeatTie
+                            <ef' f'>1..
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 235] %%%
-                            <ef' f'>\breve :32 \repeatTie
+                            <ef' f'>\breve
+                            :32
+                            \repeatTie
                             
                             %%% ViolaMusicVoice [measure 236] %%%
                             \once \override Hairpin.circled-tip = ##t
-                            <ef' f'>2. :32 \repeatTie \> \ppppp
+                            <ef' f'>2.
+                            :32
+                            \repeatTie
+                            \>
+                            \ppppp
                             
                             %%% ViolaMusicVoice [measure 237] %%%
-                            <ef' f'>1 :32 \repeatTie \stopTextSpan ^ \markup {
+                            <ef' f'>1
+                            :32
+                            \repeatTie
+                            \stopTextSpan
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "trem. flaut. nut"
                                 }
                             
                             %%% ViolaMusicVoice [measure 238] %%%
-                            R1 * 1/4 \!
+                            R1 * 1/4
+                            \!
                             \bar "|"
                             
                         }
@@ -839,13 +912,14 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 1 \ppp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
+                            R1 * 1
+                            \ppp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             
                             %%% CelloRHMusicVoice [measure 219] %%%
                             R1 * 3/4
@@ -920,7 +994,8 @@
                             \clef "bass"
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/2 \sfffz
+                            R1 * 7/2
+                            \sfffz
                             
                             %%% CelloMusicVoice [measure 222] %%%
                             \ottava #-1
@@ -949,9 +1024,12 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,2 \> \mp \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,2
+                            \>
+                            \mp
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 223] %%%
                             \once \override Accidental.color = #red
@@ -959,9 +1037,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,1.. \repeatTie \p \<
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1..
+                            \repeatTie
+                            \p
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 224] %%%
                             \once \override Accidental.color = #red
@@ -969,9 +1050,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,1.. \repeatTie \mp \>
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1..
+                            \repeatTie
+                            \mp
+                            \>
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 225] %%%
                             \once \override Accidental.color = #red
@@ -979,10 +1063,14 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,\breve \repeatTie \p \stopTextSpan \<
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
+                            bf,,,\breve
+                            \repeatTie
+                            \p
+                            \stopTextSpan
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "pos. ord."
@@ -1014,9 +1102,12 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,1.. \mp \> \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1..
+                            \mp
+                            \>
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 227] %%%
                             \once \override Accidental.color = #red
@@ -1024,9 +1115,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,2. \repeatTie \p \<
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,2.
+                            \repeatTie
+                            \p
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 228] %%%
                             \once \override Accidental.color = #red
@@ -1034,9 +1128,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,2 \repeatTie \mp \>
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,2
+                            \repeatTie
+                            \mp
+                            \>
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 229] %%%
                             \once \override Accidental.color = #red
@@ -1044,10 +1141,14 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,\breve \repeatTie \p \stopTextSpan \<
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
+                            bf,,,\breve
+                            \repeatTie
+                            \p
+                            \stopTextSpan
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         XP
@@ -1079,9 +1180,12 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,1.. \mp \> \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1..
+                            \mp
+                            \>
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 231] %%%
                             \once \override Accidental.color = #red
@@ -1089,9 +1193,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,1 \repeatTie \p \<
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1
+                            \repeatTie
+                            \p
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 232] %%%
                             \once \override Accidental.color = #red
@@ -1099,9 +1206,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,1 \repeatTie \mp \>
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1
+                            \repeatTie
+                            \mp
+                            \>
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 233] %%%
                             \once \override Accidental.color = #red
@@ -1109,10 +1219,14 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,2. \repeatTie \p \stopTextSpan \<
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
+                            bf,,,2.
+                            \repeatTie
+                            \p
+                            \stopTextSpan
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "pos. ord."
@@ -1144,9 +1258,12 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            bf,,,1.. \mp \> \startTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,1..
+                            \mp
+                            \>
+                            \startTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 235] %%%
                             \once \override Accidental.color = #red
@@ -1154,9 +1271,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,\breve \repeatTie \p \<
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,\breve
+                            \repeatTie
+                            \p
+                            \<
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 236] %%%
                             \once \override Accidental.color = #red
@@ -1164,9 +1284,12 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,2. \repeatTie \mp \>
-                                - \tweak color #red
-                                ^ \markup { @ }
+                            bf,,,2.
+                            \repeatTie
+                            \mp
+                            \>
+                            - \tweak color #red
+                            ^ \markup { @ }
                             
                             %%% CelloMusicVoice [measure 237] %%%
                             \once \override Accidental.color = #red
@@ -1174,10 +1297,13 @@
                             \once \override Dots.color = #red
                             \once \override NoteHead.color = #red
                             \once \override Stem.color = #red
-                            bf,,,1 \repeatTie \p \stopTextSpan
-                                - \tweak color #red
-                                ^ \markup { @ }
-                                ^ \markup {
+                            bf,,,1
+                            \repeatTie
+                            \p
+                            \stopTextSpan
+                            - \tweak color #red
+                            ^ \markup { @ }
+                            ^ \markup {
                                 \whiteout
                                     \upright
                                         "tasto poss."

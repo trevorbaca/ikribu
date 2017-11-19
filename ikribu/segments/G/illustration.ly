@@ -53,7 +53,8 @@
                 \mark #7
                 \once \override GlobalContext.TimeSignature.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                 \newSpacingSection
-                s1 * 7/4 \startTextSpan
+                s1 * 7/4
+                \startTextSpan
                 
                 %%% GlobalSkips [measure 88] %%%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -113,7 +114,9 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
-                s1 * 7/4 \stopTextSpan ^ \markup {
+                s1 * 7/4
+                \stopTextSpan
+                ^ \markup {
                     \fontsize
                         #-6
                         \general-align
@@ -171,40 +174,59 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                        a1.. \ppp \< \ppp
+                        a1..
+                        \ppp
+                        \<
+                        \ppp
                         
                         %%% BassClarinetMusicVoice [measure 88] %%%
-                        R1 * 1/6 \mp
+                        R1 * 1/6
+                        \mp
                         
                         %%% BassClarinetMusicVoice [measure 89] %%%
-                        af1.. \< \pp
+                        af1..
+                        \<
+                        \pp
                         
                         %%% BassClarinetMusicVoice [measure 90] %%%
-                        R1 * 1/6 \mf
+                        R1 * 1/6
+                        \mf
                         
                         %%% BassClarinetMusicVoice [measure 91] %%%
-                        g1.. \< \p
+                        g1..
+                        \<
+                        \p
                         
                         %%% BassClarinetMusicVoice [measure 92] %%%
-                        R1 * 1/6 \f
+                        R1 * 1/6
+                        \f
                         
                         %%% BassClarinetMusicVoice [measure 93] %%%
-                        fs1.. \< \mf
+                        fs1..
+                        \<
+                        \mf
                         
                         %%% BassClarinetMusicVoice [measure 94] %%%
-                        R1 * 1/6 \ff
+                        R1 * 1/6
+                        \ff
                         
                         %%% BassClarinetMusicVoice [measure 95] %%%
-                        f1.. \< \f
+                        f1..
+                        \<
+                        \f
                         
                         %%% BassClarinetMusicVoice [measure 96] %%%
-                        R1 * 1/6 \fff
+                        R1 * 1/6
+                        \fff
                         
                         %%% BassClarinetMusicVoice [measure 97] %%%
-                        e1.. \< \ff
+                        e1..
+                        \<
+                        \ff
                         
                         %%% BassClarinetMusicVoice [measure 98] %%%
-                        R1 * 1/6 \ffff
+                        R1 * 1/6
+                        \ffff
                         \bar "|"
                         
                     }
@@ -229,12 +251,12 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 7/4
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to violin"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to violin"
+                                }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
@@ -301,7 +323,8 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4 \f
+                            R1 * 7/4
+                            \f
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
@@ -378,12 +401,12 @@
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             R1 * 7/4
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to viola"
-                                    }
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to viola"
+                                }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
@@ -450,7 +473,8 @@
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4 \f
+                            R1 * 7/4
+                            \f
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
@@ -527,13 +551,14 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            R1 * 7/4 \pp
-                                ^ \markup {
-                                    \override
-                                        #'(box-padding . 0.75)
-                                        \box
-                                            "to cello"
-                                    }
+                            R1 * 7/4
+                            \pp
+                            ^ \markup {
+                                \override
+                                    #'(box-padding . 0.75)
+                                    \box
+                                        "to cello"
+                                }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
@@ -600,57 +625,99 @@
                             \override TupletBracket.direction = #down
                             \clef "treble"
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % FROM PREVIOUS SEGMENT
-                            d''1.. :32 \glissando \< \ppp
-                                _ \markup {
-                                    \whiteout
-                                        \upright
-                                            III
-                                    }
+                            d''1..
+                            :32
+                            \glissando
+                            \<
+                            \ppp
+                            _ \markup {
+                                \whiteout
+                                    \upright
+                                        III
+                                }
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
                                 %%% CelloMusicVoice [measure 88] %%%
-                                fqf''4 :32 \pp \glissando \>
+                                fqf''4
+                                :32
+                                \pp
+                                \glissando
+                                \>
                             }
                             
                             %%% CelloMusicVoice [measure 89] %%%
-                            d''1.. :32 \ppp \glissando \<
+                            d''1..
+                            :32
+                            \ppp
+                            \glissando
+                            \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
                                 %%% CelloMusicVoice [measure 90] %%%
-                                b'4 :32 \pp \glissando \>
+                                b'4
+                                :32
+                                \pp
+                                \glissando
+                                \>
                             }
                             
                             %%% CelloMusicVoice [measure 91] %%%
-                            d''1.. :32 \ppp \glissando \<
+                            d''1..
+                            :32
+                            \ppp
+                            \glissando
+                            \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
                                 %%% CelloMusicVoice [measure 92] %%%
-                                b'4 :32 \pp \glissando \>
+                                b'4
+                                :32
+                                \pp
+                                \glissando
+                                \>
                             }
                             
                             %%% CelloMusicVoice [measure 93] %%%
-                            g'1.. :32 \ppp \glissando \<
+                            g'1..
+                            :32
+                            \ppp
+                            \glissando
+                            \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
                                 %%% CelloMusicVoice [measure 94] %%%
-                                b'4 :32 \pp \glissando \>
+                                b'4
+                                :32
+                                \pp
+                                \glissando
+                                \>
                             }
                             
                             %%% CelloMusicVoice [measure 95] %%%
-                            g'1.. :32 \ppp \glissando \<
+                            g'1..
+                            :32
+                            \ppp
+                            \glissando
+                            \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
                                 %%% CelloMusicVoice [measure 96] %%%
-                                d'4 :32 \pp \glissando \>
+                                d'4
+                                :32
+                                \pp
+                                \glissando
+                                \>
                             }
                             
                             %%% CelloMusicVoice [measure 97] %%%
-                            g'1.. :32 \ppp
+                            g'1..
+                            :32
+                            \ppp
                             \revert NoteHead.style
                             
                             %%% CelloMusicVoice [measure 98] %%%
