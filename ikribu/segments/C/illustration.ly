@@ -259,9 +259,9 @@
                 \time 1/6
                 \newSpacingSection
                 s1 * 1/6
-                \break % SEGMENT
                 
                 %%% GlobalSkips [measure 48] %%%
+                \break % SEGMENT
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
