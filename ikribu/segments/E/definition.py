@@ -46,11 +46,9 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-layout_measure_map = baca.LayoutMeasureMap([
-    baca.lbsd(20, [15, 20, 20], baca.skip(0)),
-    baca.line_break(baca.skip(9)), 
-    baca.lbsd(140, [15, 20, 20], baca.skip(10)),
-    ], tag='SEGMENT',
+layout_measure_map = baca.layout(
+    (1, 20, [15, 20, 20]),
+    (11, 140, [15, 20, 20]),
     )
 
 maker = baca.SegmentMaker(
