@@ -230,14 +230,14 @@
             s1 * 1/2
             
             %%% GlobalSkips [measure 23] %%%
+%           \break % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \newSpacingSection
             s1 * 7/4
-%           \break % SEGMENT
             
             %%% GlobalSkips [measure 24] %%%
-%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 3/4
             \newSpacingSection
