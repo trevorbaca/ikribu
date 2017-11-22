@@ -2,7 +2,7 @@
 
 
 \layout {
-    % TIME SIGNATURE CONTEXT
+    % GLOBAL CONTEXT
     \context {
         \name GlobalSkips
         \type Engraver_group
@@ -28,6 +28,10 @@
         \override MultiMeasureRestText.padding = 0
         }
     \context {
+        \name PageLayout
+        \type Engraver_group
+        }
+    \context {
         \name GlobalContext
         \type Engraver_group
         \consists Axis_group_engraver
@@ -37,6 +41,7 @@
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
+        \accepts PageLayout
         \override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
         \override MetronomeMark.X-extent = #'(0 . 0)
