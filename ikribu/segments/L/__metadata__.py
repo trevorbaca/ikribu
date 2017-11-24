@@ -8,11 +8,11 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('BassClarinetMusicStaff', 'treble'),
-                    ('CelloMusicStaff', 'percussion'),
+                    ('CelloMusicStaff', 'bass'),
                     ('CelloRHMusicStaff', 'percussion'),
-                    ('ViolaMusicStaff', 'percussion'),
+                    ('ViolaMusicStaff', 'treble'),
                     ('ViolaRHMusicStaff', 'percussion'),
-                    ('ViolinMusicStaff', 'percussion'),
+                    ('ViolinMusicStaff', 'treble'),
                     ('ViolinRHMusicStaff', 'percussion'),
                     ]
                 ),

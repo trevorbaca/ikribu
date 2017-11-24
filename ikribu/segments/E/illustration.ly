@@ -344,7 +344,7 @@
                                         cl. % SEGMENT-ONLY
                                     } % SEGMENT-ONLY
                             } % SEGMENT-ONLY
-                        \clef "percussion" % SEGMENT-ONLY
+                        \clef "treble" % SEGMENT-ONLY
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
@@ -494,7 +494,8 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                \clef "percussion"
+                                \clef "treble" % SEGMENT-ONLY
+                                \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 c'4
                                 :32
                                 \>
@@ -717,7 +718,8 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion"
+                            \clef "alto" % SEGMENT-ONLY
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             R1 * 1/2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {

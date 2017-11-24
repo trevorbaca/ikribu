@@ -64,7 +64,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 8),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.staff_lines(1),

@@ -110,7 +110,6 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 2, 17),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.pitches('Bb2'),
     baca.repeat_ties_up(),
@@ -125,7 +124,6 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('grainfall (II)'),
     baca.staff_lines(1),

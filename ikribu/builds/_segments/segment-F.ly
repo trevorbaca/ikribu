@@ -101,7 +101,7 @@
                                     cl. % SEGMENT-ONLY
                                 } % SEGMENT-ONLY
                         } % SEGMENT-ONLY
-                    \clef "percussion" % SEGMENT-ONLY
+                    \clef "treble" % SEGMENT-ONLY
                     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
@@ -199,7 +199,7 @@
                         \stopStaff % SEGMENT-ONLY
                         \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                         \startStaff % SEGMENT-ONLY
-                        \clef "percussion" % SEGMENT-ONLY
+                        \clef "treble" % SEGMENT-ONLY
                         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
@@ -312,7 +312,7 @@
                         \stopStaff % SEGMENT-ONLY
                         \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                         \startStaff % SEGMENT-ONLY
-                        \clef "percussion" % SEGMENT-ONLY
+                        \clef "alto" % SEGMENT-ONLY
                         \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
@@ -488,7 +488,6 @@
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         \override RepeatTie.direction = #up
-                        \clef "percussion"
                         c'4
                         ^ \markup {
                             \whiteout

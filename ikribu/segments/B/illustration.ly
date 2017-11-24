@@ -500,7 +500,7 @@
                             
                             %%% ViolinMusicVoice [measure 10] %%%
                             \stopStaff % SEGMENT-ONLY
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
                             \startStaff % SEGMENT-ONLY
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -774,7 +774,7 @@
                             \stopStaff % SEGMENT-ONLY
                             \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                             \startStaff % SEGMENT-ONLY
-                            \clef "percussion" % SEGMENT-ONLY
+                            \clef "alto" % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             R1 * 59/4

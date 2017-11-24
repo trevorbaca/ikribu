@@ -80,7 +80,6 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 4),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
     baca.staff_lines(1),
@@ -89,7 +88,6 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 4),
-    baca.clef('percussion'),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
@@ -99,7 +97,6 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 4),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_lines(1),
@@ -110,7 +107,6 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 1, 4),
     baca.accents(),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
     baca.staff_lines(1),

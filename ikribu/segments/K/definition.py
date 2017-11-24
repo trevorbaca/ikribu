@@ -85,7 +85,6 @@ maker(
         ('ViolaMusicVoice', 1, 16),
         ('CelloMusicVoice', 1, 16),
         ),
-    baca.clef('percussion'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     )

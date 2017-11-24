@@ -314,8 +314,9 @@
                                         #10 % SEGMENT-ONLY
                                         Vn. % SEGMENT-ONLY
                                     } % SEGMENT-ONLY
-                                \clef "percussion"
+                                \clef "percussion" % SEGMENT-ONLY
                                 \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                                \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 r4
                                 \pp % SEGMENT-ONLY
@@ -566,7 +567,7 @@
                                 \stopStaff % SEGMENT-ONLY
                                 \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                                 \startStaff % SEGMENT-ONLY
-                                \clef "percussion" % SEGMENT-ONLY
+                                \clef "treble" % SEGMENT-ONLY
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
@@ -678,8 +679,9 @@
                                         #10 % SEGMENT-ONLY
                                         Va. % SEGMENT-ONLY
                                     } % SEGMENT-ONLY
-                                \clef "percussion"
+                                \clef "percussion" % SEGMENT-ONLY
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                                \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 c'4
                                 \>
                                 \p
@@ -1043,8 +1045,9 @@
                                         #10 % SEGMENT-ONLY
                                         Vc. % SEGMENT-ONLY
                                     } % SEGMENT-ONLY
-                                \clef "percussion"
+                                \clef "percussion" % SEGMENT-ONLY
                                 \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                                \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                                 r4
                                 \ppp % SEGMENT-ONLY

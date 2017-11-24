@@ -266,7 +266,6 @@ maker(
         ('ViolinMusicVoice', 1, 23),
         ('ViolaMusicVoice', 1, 23),
         ),
-    baca.clef('percussion'),
     baca.staff_lines(1),
     baca.text_script_staff_padding(4.5),
     )

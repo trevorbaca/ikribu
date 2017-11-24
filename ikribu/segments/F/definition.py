@@ -115,7 +115,6 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 6, 7),
     baca.make_tied_repeated_durations((1, 4)),
-    baca.clef('percussion'),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
