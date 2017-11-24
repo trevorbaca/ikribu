@@ -627,7 +627,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion" % SEGMENT-ONLY
+                            \clef "treble" % SEGMENT-ONLY
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             c'8
@@ -1674,7 +1674,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \clef "percussion" % SEGMENT-ONLY
+                            \clef "treble" % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             c'8
@@ -2443,7 +2443,7 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion" % SEGMENT-ONLY
+                        \clef "bass" % SEGMENT-ONLY
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         c'4
                         \<

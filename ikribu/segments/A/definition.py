@@ -61,6 +61,11 @@ maker(
     )
 
 maker(
+    baca.scope('ViolinMusicVoice', 1),
+    baca.staff_lines(5),
+    )
+    
+maker(
     baca.scope('ViolaMusicVoice', 2, 3),
     baca.make_tied_repeated_durations((1, 4)),
     )
@@ -82,11 +87,9 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 2, 4),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.repeat_ties_up(),
-    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 

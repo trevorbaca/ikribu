@@ -140,7 +140,6 @@ maker(
         ('ViolaRHMusicVoice', 1, 3),
         ('CelloRHMusicVoice', 1, 3),
         ),
-    baca.clef('percussion'),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         baca.hairpin(),

@@ -221,11 +221,10 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             %%% ViolinMusicVoice [measure 3] %%%
-                            \stopStaff % SEGMENT-ONLY
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
-                            \startStaff % SEGMENT-ONLY
-                            \clef "percussion" % SEGMENT-ONLY
-                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 5
+                            \startStaff
+                            \clef "treble" % SEGMENT-ONLY
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             R1 * 2
                             
@@ -306,17 +305,13 @@
                             \stopStaff % SEGMENT-ONLY
                             \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                             \startStaff % SEGMENT-ONLY
-                            \clef "percussion" % SEGMENT-ONLY
+                            \clef "alto" % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             R1 * 15/4
                             
                             %%% ViolaMusicVoice [measure 5] %%%
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             \override RepeatTie.direction = #up
-                            \clef "percussion"
                             c'4
                             ^ \markup {
                                 \whiteout

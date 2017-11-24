@@ -70,7 +70,6 @@ maker(
 
 maker(
     baca.scope('CelloRHMusicVoice', 1, 2),
-    baca.clef('percussion'),
     baca.piecewise(
         baca.hairpin(),
         baca.dynamics('ff p f pp p ppp'),

@@ -257,8 +257,9 @@
                                     cl. % SEGMENT-ONLY
                                 } % SEGMENT-ONLY
                         } % SEGMENT-ONLY
-                    \clef "percussion"
+                    \clef "treble" % SEGMENT-ONLY
                     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     c'4
                     \ppp % SEGMENT-ONLY
@@ -462,7 +463,8 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
+                        \clef "treble" % SEGMENT-ONLY
+                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 5/4
                         \f % SEGMENT-ONLY
@@ -769,7 +771,8 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        \clef "percussion"
+                        \clef "treble" % SEGMENT-ONLY
+                        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 5/4
                         \f % SEGMENT-ONLY
@@ -1053,7 +1056,8 @@
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         \override RepeatTie.direction = #up
-                        \clef "percussion"
+                        \clef "bass" % SEGMENT-ONLY
+                        \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         c'4
                         \p % SEGMENT-ONLY

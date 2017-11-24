@@ -56,7 +56,6 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('ViolinMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
-    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('grainfall (I)'),
     baca.staff_lines(1),
@@ -66,8 +65,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 2),
-    baca.clef('percussion'),
-    baca.staff_lines(1),
+    #baca.staff_lines(1),
     )
 
 maker(
@@ -89,7 +87,6 @@ maker(
         ('ViolaMusicVoice', 2),
         ('CelloMusicVoice', 2),
         ),
-    baca.bar_extent((0, 0), baca.leaf(-1), after=True),
     baca.staff_lines(1),
     )
 
@@ -99,4 +96,7 @@ maker(
         ('CelloMusicVoice', 2),
         ),
     baca.bar_extent((-2, 2)),
+    baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT'),
+    baca.staff_symbol_extra_offset(
+        (1, 0), baca.leaf(-1), after=True, tag='SCORE')
     )

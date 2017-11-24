@@ -379,7 +379,6 @@
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         \override RepeatTie.direction = #up
-                        \clef "percussion"
                         c'4
                         ^ \markup {
                             \whiteout
@@ -618,7 +617,8 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override TextScript.staff-padding = #4.5
-                            \clef "percussion"
+                            \clef "treble" % SEGMENT-ONLY
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             c'1..
                             ^ \markup {
                                 \whiteout
@@ -810,7 +810,7 @@
                             \stopStaff % SEGMENT-ONLY
                             \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                             \startStaff % SEGMENT-ONLY
-                            \clef "percussion" % SEGMENT-ONLY
+                            \clef "alto" % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                             R1 * 11/4

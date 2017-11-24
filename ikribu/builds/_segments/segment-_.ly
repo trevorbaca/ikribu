@@ -87,7 +87,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    %%%\once \override Staff.BarLine.bar-extent = #'(0 . 0)
+                    \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
+                    \once \override Staff.StaffSymbol.extra-offset = #'(1 . 0) % SCORE
                     
                 }
             }
@@ -124,7 +125,7 @@
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         \once \override TextScript.staff-padding = #4.5
-                        \clef "percussion"
+                        \clef "treble"
                         c'1..
                         ^ \markup {
                             \whiteout
@@ -153,7 +154,6 @@
                         \startStaff
                         R1 * 1/4
                         \bar "|"
-                        \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         
                     }
                 }
@@ -187,10 +187,7 @@
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         
                         %%% ViolaMusicVoice [measure 1] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
-                        \clef "percussion"
+                        \clef "alto"
                         R1 * 7/4
                         
                         %%% ViolaMusicVoice [measure 2] %%%
@@ -199,7 +196,6 @@
                         \startStaff
                         R1 * 1/4
                         \bar "|"
-                        \once \override Staff.BarLine.bar-extent = #'(0 . 0)
                         
                     }
                 }
@@ -256,7 +252,8 @@
                         \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
-                        \once \override Staff.BarLine.bar-extent = #'(0 . 0)
+                        \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
+                        \once \override Staff.StaffSymbol.extra-offset = #'(1 . 0) % SCORE
                         
                     }
                 }
