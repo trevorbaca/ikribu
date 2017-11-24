@@ -15,10 +15,6 @@
             \override #'(font-name . "Palatino")
             \concat {
                 Ikribu
-                \hspace #1
-                /
-                \hspace #0.5
-                Ikribu
                 \hspace #3
                 —
                 \hspace #3
@@ -102,7 +98,7 @@
 
 \layout {
     \accidentalStyle forget
-    indent = 5
+    indent = 10
     ragged-bottom = ##t
     ragged-last = ##t
     ragged-right = ##t

@@ -147,7 +147,7 @@
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 176] %%%
-%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT:LINE-BREAKING
             \once \override TextSpanner.arrow-width = 0.25
             \once \override TextSpanner.bound-details.left-broken.padding = 0
             \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -355,8 +355,8 @@
             s1 * 1/4
             
             %%% GlobalSkips [measure 189] %%%
-%           \break % SEGMENT
-%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT
+%           \break % SEGMENT:LINE-BREAKING
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT:LINE-BREAKING
             \once \override TextSpanner.arrow-width = 0.25
             \once \override TextSpanner.bound-details.left-broken.padding = 0
             \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -517,8 +517,8 @@
             s1 * 2
             
             %%% GlobalSkips [measure 199] %%%
-%           \pageBreak % SEGMENT
-%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT
+%           \pageBreak % SEGMENT:LINE-BREAKING
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT:LINE-BREAKING
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \newSpacingSection
@@ -598,33 +598,33 @@
                 \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                     
                     %%% BassClarinetMusicVoice [measure 176] %%%
-%                   \stopStaff % SEGMENT-ONLY
-%                   \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
-%                   \startStaff % SEGMENT-ONLY
-%                   \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
-%                       \hcenter-in % SEGMENT-ONLY
-%                           #16 % SEGMENT-ONLY
-%                           \center-column % SEGMENT-ONLY
-%                               { % SEGMENT-ONLY
-%                                   Bass % SEGMENT-ONLY
-%                                   clarinet % SEGMENT-ONLY
-%                               } % SEGMENT-ONLY
-%                       } % SEGMENT-ONLY
-%                   \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
-%                       \hcenter-in % SEGMENT-ONLY
-%                           #10 % SEGMENT-ONLY
-%                           \line % SEGMENT-ONLY
-%                               { % SEGMENT-ONLY
-%                                   B. % SEGMENT-ONLY
-%                                   cl. % SEGMENT-ONLY
-%                               } % SEGMENT-ONLY
-%                       } % SEGMENT-ONLY
+                    \stopStaff % SEGMENT-ONLY
+                    \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
+                    \startStaff % SEGMENT-ONLY
+                    \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT-ONLY
+                        \hcenter-in % SEGMENT-ONLY
+                            #16 % SEGMENT-ONLY
+                            \center-column % SEGMENT-ONLY
+                                { % SEGMENT-ONLY
+                                    Bass % SEGMENT-ONLY
+                                    clarinet % SEGMENT-ONLY
+                                } % SEGMENT-ONLY
+                        } % SEGMENT-ONLY
+                    \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT-ONLY
+                        \hcenter-in % SEGMENT-ONLY
+                            #10 % SEGMENT-ONLY
+                            \line % SEGMENT-ONLY
+                                { % SEGMENT-ONLY
+                                    B. % SEGMENT-ONLY
+                                    cl. % SEGMENT-ONLY
+                                } % SEGMENT-ONLY
+                        } % SEGMENT-ONLY
                     \clef "treble"
-%                   \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                   \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                   \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                     R1 * 3/4
-%                   \ppp % SEGMENT-ONLY
+                    \ppp % SEGMENT-ONLY
                     
                     %%% BassClarinetMusicVoice [measure 177] %%%
                     cs1
@@ -756,22 +756,22 @@
                     \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                         
                         %%% ViolinRHMusicVoice [measure 176] %%%
-%                       \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
-%                           \hcenter-in % SEGMENT-ONLY
-%                               #16 % SEGMENT-ONLY
-%                               Violin % SEGMENT-ONLY
-%                           } % SEGMENT-ONLY
-%                       \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
-%                           \hcenter-in % SEGMENT-ONLY
-%                               #10 % SEGMENT-ONLY
-%                               Vn. % SEGMENT-ONLY
-%                           } % SEGMENT-ONLY
-%                       \clef "percussion" % SEGMENT-ONLY
-%                       \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                       \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                       \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #16 % SEGMENT-ONLY
+                                Violin % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #10 % SEGMENT-ONLY
+                                Vn. % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \clef "percussion" % SEGMENT-ONLY
+                        \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 3/4
-%                       \ppp % SEGMENT-ONLY
+                        \ppp % SEGMENT-ONLY
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
@@ -884,9 +884,9 @@
                         \startStaff
                         \override TextScript.staff-padding = #4.5
                         \clef "percussion"
-%                       \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         c'2.
-%                       \ff % SEGMENT-ONLY
+                        \ff % SEGMENT-ONLY
                         ^ \markup {
                             \whiteout
                                 \upright
@@ -1368,22 +1368,22 @@
                     \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                         
                         %%% ViolaRHMusicVoice [measure 176] %%%
-%                       \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
-%                           \hcenter-in % SEGMENT-ONLY
-%                               #16 % SEGMENT-ONLY
-%                               Viola % SEGMENT-ONLY
-%                           } % SEGMENT-ONLY
-%                       \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
-%                           \hcenter-in % SEGMENT-ONLY
-%                               #10 % SEGMENT-ONLY
-%                               Va. % SEGMENT-ONLY
-%                           } % SEGMENT-ONLY
-%                       \clef "percussion" % SEGMENT-ONLY
-%                       \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                       \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                       \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #16 % SEGMENT-ONLY
+                                Viola % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #10 % SEGMENT-ONLY
+                                Va. % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \clef "percussion" % SEGMENT-ONLY
+                        \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 3/4
-%                       \p % SEGMENT-ONLY
+                        \p % SEGMENT-ONLY
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
@@ -1496,9 +1496,9 @@
                         \startStaff
                         \override TextScript.staff-padding = #4.5
                         \clef "percussion"
-%                       \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 3/4
-%                       \fff % SEGMENT-ONLY
+                        \fff % SEGMENT-ONLY
                         {
                             
                             %%% ViolaMusicVoice [measure 177] %%%
@@ -1772,22 +1772,22 @@
                     \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                         
                         %%% CelloRHMusicVoice [measure 176] %%%
-%                       \set CelloStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
-%                           \hcenter-in % SEGMENT-ONLY
-%                               #16 % SEGMENT-ONLY
-%                               Cello % SEGMENT-ONLY
-%                           } % SEGMENT-ONLY
-%                       \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
-%                           \hcenter-in % SEGMENT-ONLY
-%                               #10 % SEGMENT-ONLY
-%                               Vc. % SEGMENT-ONLY
-%                           } % SEGMENT-ONLY
-%                       \clef "percussion" % SEGMENT-ONLY
-%                       \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                       \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
-%                       \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \set CelloStaffGroup.instrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #16 % SEGMENT-ONLY
+                                Cello % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT-ONLY
+                            \hcenter-in % SEGMENT-ONLY
+                                #10 % SEGMENT-ONLY
+                                Vc. % SEGMENT-ONLY
+                            } % SEGMENT-ONLY
+                        \clef "percussion" % SEGMENT-ONLY
+                        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         R1 * 3/4
-%                       \pp % SEGMENT-ONLY
+                        \pp % SEGMENT-ONLY
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
@@ -1895,12 +1895,12 @@
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         
                         %%% CelloMusicVoice [measure 176] %%%
-%                       \stopStaff % SEGMENT-ONLY
-%                       \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
-%                       \startStaff % SEGMENT-ONLY
+                        \stopStaff % SEGMENT-ONLY
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
+                        \startStaff % SEGMENT-ONLY
                         \once \override NoteHead.style = #'harmonic
                         \clef "treble"
-%                       \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
+                        \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
                         fqf''2.
                         -\laissezVibrer
                         \sfz
