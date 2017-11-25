@@ -97,3 +97,13 @@ maker(
     baca.scope('CelloMusicVoice', 1),
     baca.staff_lines(5),
     )
+
+maker(
+    baca.scopes(
+        #('BassClarinetMusicVoice', 4),
+        ('ViolinMusicVoice', 4),
+        ('ViolaMusicVoice', 4),
+        ('CelloMusicVoice', 4),
+        ),
+    baca.staff_lines(1),
+    )

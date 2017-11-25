@@ -97,6 +97,5 @@ maker(
         ),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT'),
-    baca.staff_symbol_extra_offset(
-        (1, 0), baca.leaf(-1), after=True, tag='SCORE')
+    #baca.staff_symbol_extra_offset( (1, 0), baca.leaf(-1), after=True, tag='SCORE')
     )

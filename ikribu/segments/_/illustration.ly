@@ -33,6 +33,7 @@
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20 20))) % SEGMENT:LINE-BREAKING
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
+                \bar "" % SEGMENT
                 \newSpacingSection
                 s1 * 7/4
                 ^ \markup {
@@ -96,7 +97,6 @@
                         R1 * 1/4
                         \bar "|"
                         \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
-                        \once \override Staff.StaffSymbol.extra-offset = #'(1 . 0) % SCORE
                         
                     }
                 }
@@ -261,7 +261,6 @@
                             R1 * 1/4
                             \bar "|"
                             \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
-                            \once \override Staff.StaffSymbol.extra-offset = #'(1 . 0) % SCORE
                             
                         }
                     }
