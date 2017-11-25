@@ -192,7 +192,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \mark #13
-                \bar "" % SEGMENT
+                \bar "" % SEGMENT:EMPTY-BAR
                 \newSpacingSection
                 s1 * 3/4
                 \startTextSpan
