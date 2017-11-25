@@ -83,12 +83,12 @@
                     
                     %%% BassClarinetMusicVoice [measure 2] %%%
                     \stopStaff
-                    \once \override Staff.StaffSymbol.line-count = 1
+                    \once \override Staff.StaffSymbol.line-count = 0
                     \startStaff
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
+                    \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
                     
                 }
             }
@@ -150,7 +150,7 @@
                         
                         %%% ViolinMusicVoice [measure 2] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
+                        \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
                         R1 * 1/4
                         \bar "|"
@@ -192,7 +192,7 @@
                         
                         %%% ViolaMusicVoice [measure 2] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
+                        \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
                         R1 * 1/4
                         \bar "|"
@@ -247,12 +247,12 @@
                         
                         %%% CelloMusicVoice [measure 2] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
+                        \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
                         \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
-                        \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
+                        \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
                         
                     }
                 }

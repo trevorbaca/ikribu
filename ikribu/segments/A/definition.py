@@ -105,5 +105,14 @@ maker(
         ('ViolaMusicVoice', 4),
         ('CelloMusicVoice', 4),
         ),
-    baca.staff_lines(1),
+    baca.staff_lines(0),
+    )
+
+maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 4),
+        ('CelloMusicVoice', 4),
+        ),
+    baca.bar_extent((-2, 2)),
+    baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT:REMINDER'),
     )

@@ -87,7 +87,7 @@ maker(
         ('ViolaMusicVoice', 2),
         ('CelloMusicVoice', 2),
         ),
-    baca.staff_lines(1),
+    baca.staff_lines(0),
     )
 
 maker(
@@ -96,6 +96,5 @@ maker(
         ('CelloMusicVoice', 2),
         ),
     baca.bar_extent((-2, 2)),
-    baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT'),
-    #baca.staff_symbol_extra_offset( (1, 0), baca.leaf(-1), after=True, tag='SCORE')
+    baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT:REMINDER'),
     )
