@@ -100,7 +100,7 @@ maker(
 
 maker(
     baca.scopes(
-        #('BassClarinetMusicVoice', 4),
+        ('BassClarinetMusicVoice', 4),
         ('ViolinMusicVoice', 4),
         ('ViolaMusicVoice', 4),
         ('CelloMusicVoice', 4),

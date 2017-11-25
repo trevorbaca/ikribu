@@ -534,7 +534,10 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 65] %%%
-                            R1 * 7/4
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 66] %%%
+                            R1 * 1
                             {
                                 
                                 %%% ViolinMusicVoice [measure 67] %%%
@@ -566,7 +569,10 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 69] %%%
-                            R1 * 5/4
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 70] %%%
+                            R1 * 1/2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
@@ -599,7 +605,10 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 73] %%%
-                            R1 * 7/2
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 74] %%%
+                            R1 * 7/4
                             {
                                 
                                 %%% ViolinMusicVoice [measure 75] %%%
@@ -631,7 +640,10 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 77] %%%
-                            R1 * 15/4
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 78] %%%
+                            R1 * 2
                             \bar "|"
                             
                         }
@@ -762,7 +774,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 66] %%%
-                            R1 * 7/4
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 67] %%%
+                            R1 * 3/4
                             \times 2/3 {
                                 
                                 %%% ViolaMusicVoice [measure 68] %%%
@@ -794,7 +809,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 70] %%%
-                            R1 * 9/4
+                            R1 * 1/2
+                            
+                            %%% ViolaMusicVoice [measure 71] %%%
+                            R1 * 7/4
                             \times 2/3 {
                                 
                                 %%% ViolaMusicVoice [measure 72] %%%
@@ -827,7 +845,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 74] %%%
-                            R1 * 5/2
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 75] %%%
+                            R1 * 3/4
                             \times 2/3 {
                                 
                                 %%% ViolaMusicVoice [measure 76] %%%
@@ -953,8 +974,29 @@
                             \clef "bass"
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                            R1 * 7
+                            R1 * 1/2
                             \ppp % SEGMENT:REMINDER-DYNAMIC
+                            
+                            %%% CelloMusicVoice [measure 64] %%%
+                            R1 * 7/4
+                            
+                            %%% CelloMusicVoice [measure 65] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 66] %%%
+                            R1 * 1
+                            
+                            %%% CelloMusicVoice [measure 67] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 68] %%%
+                            R1 * 1
+                            
+                            %%% CelloMusicVoice [measure 69] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 70] %%%
+                            R1 * 1/2
                             
                             %%% CelloMusicVoice [measure 71] %%%
                             f1..

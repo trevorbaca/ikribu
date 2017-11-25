@@ -657,15 +657,21 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
-                        R1 * 2
+                        R1 * 1/4
                         \!
+                        
+                        %%% BassClarinetMusicVoice [measure 181] %%%
+                        R1 * 7/4
                         
                         %%% BassClarinetMusicVoice [measure 182] %%%
                         cs2.
                         \p
                         
                         %%% BassClarinetMusicVoice [measure 183] %%%
-                        R1 * 5/4
+                        R1 * 1/4
+                        
+                        %%% BassClarinetMusicVoice [measure 184] %%%
+                        R1 * 1
                         
                         %%% BassClarinetMusicVoice [measure 185] %%%
                         cs2.
@@ -685,8 +691,11 @@
                         \fff
                         
                         %%% BassClarinetMusicVoice [measure 188] %%%
-                        R1 * 3/4
+                        R1 * 1/4
                         \!
+                        
+                        %%% BassClarinetMusicVoice [measure 189] %%%
+                        R1 * 1/2
                         
                         %%% BassClarinetMusicVoice [measure 190] %%%
                         cs1..
@@ -706,15 +715,21 @@
                         \fff
                         
                         %%% BassClarinetMusicVoice [measure 193] %%%
-                        R1 * 2
+                        R1 * 1/4
                         \!
+                        
+                        %%% BassClarinetMusicVoice [measure 194] %%%
+                        R1 * 7/4
                         
                         %%% BassClarinetMusicVoice [measure 195] %%%
                         cs2.
                         \p
                         
                         %%% BassClarinetMusicVoice [measure 196] %%%
-                        R1 * 3/4
+                        R1 * 1/4
+                        
+                        %%% BassClarinetMusicVoice [measure 197] %%%
+                        R1 * 1/2
                         
                         %%% BassClarinetMusicVoice [measure 198] %%%
                         cs\breve
@@ -1366,7 +1381,19 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 203] %%%
-                            R1 * 23/4
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 204] %%%
+                            R1 * 2
+                            
+                            %%% ViolinMusicVoice [measure 205] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 206] %%%
+                            R1 * 1
+                            
+                            %%% ViolinMusicVoice [measure 207] %%%
+                            R1 * 1/4
                             \bar "|"
                             \revert TextScript.staff-padding
                             
@@ -1563,7 +1590,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 180] %%%
-                            R1 * 2
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 181] %%%
+                            R1 * 7/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
@@ -1586,7 +1616,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 183] %%%
-                            R1 * 5/4
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 184] %%%
+                            R1 * 1
                             {
                                 
                                 %%% ViolaMusicVoice [measure 185] %%%
@@ -1628,7 +1661,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 188] %%%
-                            R1 * 3/4
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 189] %%%
+                            R1 * 1/2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
@@ -1681,7 +1717,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 193] %%%
-                            R1 * 2
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 194] %%%
+                            R1 * 7/4
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
@@ -1704,7 +1743,10 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 196] %%%
-                            R1 * 3/4
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 197] %%%
+                            R1 * 1/2
                             \times 2/3 {
                                 
                                 %%% ViolaMusicVoice [measure 198] %%%
@@ -1771,7 +1813,19 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 203] %%%
-                            R1 * 23/4
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 204] %%%
+                            R1 * 2
+                            
+                            %%% ViolaMusicVoice [measure 205] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 206] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 207] %%%
+                            R1 * 1/4
                             \bar "|"
                             \revert TextScript.staff-padding
                             
@@ -2239,7 +2293,19 @@
                             \ottava #0
                             
                             %%% CelloMusicVoice [measure 203] %%%
-                            R1 * 23/4
+                            R1 * 7/4
+                            
+                            %%% CelloMusicVoice [measure 204] %%%
+                            R1 * 2
+                            
+                            %%% CelloMusicVoice [measure 205] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 206] %%%
+                            R1 * 1
+                            
+                            %%% CelloMusicVoice [measure 207] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }

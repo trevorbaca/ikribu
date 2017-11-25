@@ -164,8 +164,14 @@
                         \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 8] %%%
-                        R1 * 2
+                        R1 * 7/4
                         \!
+                        
+                        %%% BassClarinetMusicVoice [measure 9] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
+                        R1 * 1/4
                         \bar "|"
                         
                     }
@@ -312,7 +318,10 @@
                             \clef "alto" % SEGMENT:REMINDER-CLEF
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
-                            R1 * 15/4
+                            R1 * 2
+                            
+                            %%% ViolaMusicVoice [measure 4] %%%
+                            R1 * 7/4
                             
                             %%% ViolaMusicVoice [measure 5] %%%
                             \override RepeatTie.direction = #up

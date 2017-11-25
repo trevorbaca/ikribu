@@ -496,7 +496,19 @@
                         \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 171] %%%
-                        R1 * 17/4
+                        R1 * 1
+                        
+                        %%% BassClarinetMusicVoice [measure 172] %%%
+                        R1 * 1/2
+                        
+                        %%% BassClarinetMusicVoice [measure 173] %%%
+                        R1 * 7/4
+                        
+                        %%% BassClarinetMusicVoice [measure 174] %%%
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 175] %%%
+                        R1 * 1/4
                         \bar "|"
                         
                     }
@@ -1367,7 +1379,16 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 159] %%%
-                            R1 * 5
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 160] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 161] %%%
+                            R1 * 1/2
+                            
+                            %%% ViolinMusicVoice [measure 162] %%%
+                            R1 * 2
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
@@ -2021,8 +2042,17 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 151] %%%
-                            R1 * 7/2
+                            R1 * 1
                             \!
+                            
+                            %%% ViolaMusicVoice [measure 152] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 153] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 154] %%%
+                            R1 * 3/4
                             \times 2/3 {
                                 
                                 %%% ViolaMusicVoice [measure 155] %%%
@@ -2922,7 +2952,31 @@
                             \repeatTie
                             
                             %%% CelloMusicVoice [measure 167] %%%
-                            R1 * 39/4
+                            R1 * 7/4
+                            
+                            %%% CelloMusicVoice [measure 168] %%%
+                            R1 * 2
+                            
+                            %%% CelloMusicVoice [measure 169] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 170] %%%
+                            R1 * 1
+                            
+                            %%% CelloMusicVoice [measure 171] %%%
+                            R1 * 1
+                            
+                            %%% CelloMusicVoice [measure 172] %%%
+                            R1 * 1/2
+                            
+                            %%% CelloMusicVoice [measure 173] %%%
+                            R1 * 7/4
+                            
+                            %%% CelloMusicVoice [measure 174] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 175] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
