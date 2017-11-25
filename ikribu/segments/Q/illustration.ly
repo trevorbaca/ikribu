@@ -318,7 +318,22 @@
                         \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 253] %%%
-                        R1 * 13/2
+                        R1 * 7/4
+                        
+                        %%% BassClarinetMusicVoice [measure 254] %%%
+                        R1 * 1
+                        
+                        %%% BassClarinetMusicVoice [measure 255] %%%
+                        R1 * 1
+                        
+                        %%% BassClarinetMusicVoice [measure 256] %%%
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 257] %%%
+                        R1 * 7/4
+                        
+                        %%% BassClarinetMusicVoice [measure 258] %%%
+                        R1 * 1/4
                         \bar "|."
                         
                     }
@@ -575,7 +590,13 @@
                             -\tongue #2
                             
                             %%% ViolinMusicVoice [measure 256] %%%
-                            R1 * 11/4
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 257] %%%
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 258] %%%
+                            R1 * 1/4
                             \bar "|."
                             
                         }
@@ -833,7 +854,13 @@
                             -\staccato
                             
                             %%% ViolaMusicVoice [measure 256] %%%
-                            R1 * 11/4
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 257] %%%
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 258] %%%
+                            R1 * 1/4
                             \bar "|."
                             
                         }

@@ -347,7 +347,7 @@
                         
                         %%% BassClarinetMusicVoice [measure 35] %%%
                         \stopStaff % SEGMENT:REMINDER-STAFF-LINES
-                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
                         \startStaff % SEGMENT:REMINDER-STAFF-LINES
                         \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
                             \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
@@ -430,7 +430,10 @@
                         \revert RepeatTie.direction
                         
                         %%% BassClarinetMusicVoice [measure 38] %%%
-                        R1 * 11/12
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 39] %%%
+                        R1 * 1/6
                         
                         %%% BassClarinetMusicVoice [measure 40] %%%
                         c'4
@@ -458,7 +461,10 @@
                         \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 42] %%%
-                        R1 * 11/12
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 43] %%%
+                        R1 * 1/6
                         
                         %%% BassClarinetMusicVoice [measure 44] %%%
                         c'4
@@ -486,7 +492,10 @@
                         \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 46] %%%
-                        R1 * 11/12
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 47] %%%
+                        R1 * 1/6
                         
                         %%% BassClarinetMusicVoice [measure 48] %%%
                         c'4
@@ -515,7 +524,10 @@
                         \revert RepeatTie.direction
                         
                         %%% BassClarinetMusicVoice [measure 50] %%%
-                        R1 * 11/12
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 51] %%%
+                        R1 * 1/6
                         \bar "|"
                         
                     }
@@ -663,7 +675,10 @@
                             \p
                             
                             %%% ViolinMusicVoice [measure 39] %%%
-                            R1 * 7/6
+                            R1 * 1/6
+                            
+                            %%% ViolinMusicVoice [measure 40] %%%
+                            R1 * 1
                             
                             %%% ViolinMusicVoice [measure 41] %%%
                             gs'1
@@ -678,7 +693,10 @@
                             \pp
                             
                             %%% ViolinMusicVoice [measure 43] %%%
-                            R1 * 7/6
+                            R1 * 1/6
+                            
+                            %%% ViolinMusicVoice [measure 44] %%%
+                            R1 * 1
                             
                             %%% ViolinMusicVoice [measure 45] %%%
                             fs'1
@@ -693,7 +711,10 @@
                             \p
                             
                             %%% ViolinMusicVoice [measure 47] %%%
-                            R1 * 7/6
+                            R1 * 1/6
+                            
+                            %%% ViolinMusicVoice [measure 48] %%%
+                            R1 * 1
                             
                             %%% ViolinMusicVoice [measure 49] %%%
                             gs'1
@@ -814,7 +835,10 @@
                             \clef "alto" % SEGMENT:REMINDER-CLEF
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 36] %%%
+                            R1 * 1
                             
                             %%% ViolaMusicVoice [measure 37] %%%
                             f'1
@@ -834,7 +858,10 @@
                             \p
                             
                             %%% ViolaMusicVoice [measure 39] %%%
-                            R1 * 7/6
+                            R1 * 1/6
+                            
+                            %%% ViolaMusicVoice [measure 40] %%%
+                            R1 * 1
                             
                             %%% ViolaMusicVoice [measure 41] %%%
                             e'1
@@ -849,7 +876,10 @@
                             \pp
                             
                             %%% ViolaMusicVoice [measure 43] %%%
-                            R1 * 7/6
+                            R1 * 1/6
+                            
+                            %%% ViolaMusicVoice [measure 44] %%%
+                            R1 * 1
                             
                             %%% ViolaMusicVoice [measure 45] %%%
                             f'1
@@ -864,7 +894,10 @@
                             \p
                             
                             %%% ViolaMusicVoice [measure 47] %%%
-                            R1 * 7/6
+                            R1 * 1/6
+                            
+                            %%% ViolaMusicVoice [measure 48] %%%
+                            R1 * 1
                             
                             %%% ViolaMusicVoice [measure 49] %%%
                             e'1

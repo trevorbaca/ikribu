@@ -343,7 +343,13 @@
                         \repeatTie
                         
                         %%% BassClarinetMusicVoice [measure 122] %%%
-                        R1 * 11/4
+                        R1 * 7/4
+                        
+                        %%% BassClarinetMusicVoice [measure 123] %%%
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 124] %%%
+                        R1 * 1/4
                         
                         %%% BassClarinetMusicVoice [measure 125] %%%
                         d''4
@@ -604,7 +610,13 @@
                             \repeatTie
                             
                             %%% ViolinMusicVoice [measure 122] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 123] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 124] %%%
+                            R1 * 1/4
                             
                             %%% ViolinMusicVoice [measure 125] %%%
                             c'4
@@ -877,7 +889,13 @@
                             \repeatTie
                             
                             %%% ViolaMusicVoice [measure 122] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 123] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 124] %%%
+                            R1 * 1/4
                             
                             %%% ViolaMusicVoice [measure 125] %%%
                             c'4
@@ -996,8 +1014,11 @@
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                            R1 * 15/4
+                            R1 * 7/4
                             \ppp % SEGMENT:REMINDER-DYNAMIC
+                            
+                            %%% CelloMusicVoice [measure 117] %%%
+                            R1 * 2
                             
                             %%% CelloMusicVoice [measure 118] %%%
                             \ottava #-1
@@ -1034,8 +1055,14 @@
                             \ottava #0
                             
                             %%% CelloMusicVoice [measure 124] %%%
-                            R1 * 3/2
+                            R1 * 1/4
                             \mf
+                            
+                            %%% CelloMusicVoice [measure 125] %%%
+                            R1 * 1
+                            
+                            %%% CelloMusicVoice [measure 126] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }

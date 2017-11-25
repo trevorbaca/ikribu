@@ -213,8 +213,20 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                            R1 * 4
+                            R1 * 1
                             \f % SEGMENT:REMINDER-DYNAMIC
+                            
+                            %%% ViolinMusicVoice [measure 80] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 81] %%%
+                            R1 * 1
+                            
+                            %%% ViolinMusicVoice [measure 82] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 83] %%%
+                            R1 * 1/2
                             
                             %%% ViolinMusicVoice [measure 84] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -326,8 +338,20 @@
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
-                            R1 * 4
+                            R1 * 1
                             \f % SEGMENT:REMINDER-DYNAMIC
+                            
+                            %%% ViolaMusicVoice [measure 80] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 81] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 82] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 83] %%%
+                            R1 * 1/2
                             
                             %%% ViolaMusicVoice [measure 84] %%%
                             \once \override TextSpanner.arrow-width = 0.25

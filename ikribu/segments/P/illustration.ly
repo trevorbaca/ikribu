@@ -554,7 +554,13 @@
                             }
                             
                             %%% ViolinRHMusicVoice [measure 244] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolinRHMusicVoice [measure 245] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinRHMusicVoice [measure 246] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
@@ -656,7 +662,13 @@
                             }
                             
                             %%% ViolinMusicVoice [measure 244] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 245] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 246] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
@@ -936,7 +948,13 @@
                             }
                             
                             %%% ViolaRHMusicVoice [measure 244] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolaRHMusicVoice [measure 245] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaRHMusicVoice [measure 246] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
@@ -1022,7 +1040,13 @@
                             }
                             
                             %%% ViolaMusicVoice [measure 244] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 245] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 246] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
@@ -1293,7 +1317,13 @@
                             }
                             
                             %%% CelloRHMusicVoice [measure 244] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% CelloRHMusicVoice [measure 245] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloRHMusicVoice [measure 246] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
@@ -1385,7 +1415,13 @@
                             }
                             
                             %%% CelloMusicVoice [measure 244] %%%
-                            R1 * 11/4
+                            R1 * 7/4
+                            
+                            %%% CelloMusicVoice [measure 245] %%%
+                            R1 * 3/4
+                            
+                            %%% CelloMusicVoice [measure 246] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }

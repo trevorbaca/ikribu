@@ -323,7 +323,7 @@
                         
                         %%% BassClarinetMusicVoice [measure 10] %%%
                         \stopStaff % SEGMENT:REMINDER-STAFF-LINES
-                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
                         \startStaff % SEGMENT:REMINDER-STAFF-LINES
                         \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
                             \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
@@ -347,21 +347,54 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
-                        R1 * 3
+                        R1 * 1
+                        
+                        %%% BassClarinetMusicVoice [measure 11] %%%
+                        R1 * 1
+                        
+                        %%% BassClarinetMusicVoice [measure 12] %%%
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 13] %%%
+                        R1 * 1/4
                         
                         %%% BassClarinetMusicVoice [measure 14] %%%
                         ef1..
                         \ppp
                         
                         %%% BassClarinetMusicVoice [measure 15] %%%
-                        R1 * 17/4
+                        R1 * 1/4
+                        
+                        %%% BassClarinetMusicVoice [measure 16] %%%
+                        R1 * 2
+                        
+                        %%% BassClarinetMusicVoice [measure 17] %%%
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 18] %%%
+                        R1 * 1
+                        
+                        %%% BassClarinetMusicVoice [measure 19] %%%
+                        R1 * 1/4
                         
                         %%% BassClarinetMusicVoice [measure 20] %%%
                         ef1
                         \ppp
                         
                         %%% BassClarinetMusicVoice [measure 21] %%%
-                        R1 * 7/2
+                        R1 * 1/4
+                        
+                        %%% BassClarinetMusicVoice [measure 22] %%%
+                        R1 * 1/2
+                        
+                        %%% BassClarinetMusicVoice [measure 23] %%%
+                        R1 * 7/4
+                        
+                        %%% BassClarinetMusicVoice [measure 24] %%%
+                        R1 * 3/4
+                        
+                        %%% BassClarinetMusicVoice [measure 25] %%%
+                        R1 * 1/4
                         
                         %%% BassClarinetMusicVoice [measure 26] %%%
                         ef1
@@ -388,8 +421,17 @@
                         \f
                         
                         %%% BassClarinetMusicVoice [measure 31] %%%
-                        R1 * 9/2
+                        R1 * 1/2
                         \!
+                        
+                        %%% BassClarinetMusicVoice [measure 32] %%%
+                        R1 * 7/4
+                        
+                        %%% BassClarinetMusicVoice [measure 33] %%%
+                        R1 * 2
+                        
+                        %%% BassClarinetMusicVoice [measure 34] %%%
+                        R1 * 1/4
                         \bar "|"
                         
                     }
@@ -557,8 +599,14 @@
                                 }
                             
                             %%% ViolinMusicVoice [measure 13] %%%
-                            R1 * 9/4
+                            R1 * 1/4
                             \!
+                            
+                            %%% ViolinMusicVoice [measure 14] %%%
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 15] %%%
+                            R1 * 1/4
                             
                             %%% ViolinMusicVoice [measure 16] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -608,8 +656,14 @@
                                 }
                             
                             %%% ViolinMusicVoice [measure 19] %%%
-                            R1 * 3/2
+                            R1 * 1/4
                             \!
+                            
+                            %%% ViolinMusicVoice [measure 20] %%%
+                            R1 * 1
+                            
+                            %%% ViolinMusicVoice [measure 21] %%%
+                            R1 * 1/4
                             
                             %%% ViolinMusicVoice [measure 22] %%%
                             \once \override TextSpanner.arrow-width = 0.25
@@ -659,8 +713,35 @@
                                 }
                             
                             %%% ViolinMusicVoice [measure 25] %%%
-                            R1 * 17/2
+                            R1 * 1/4
                             \!
+                            
+                            %%% ViolinMusicVoice [measure 26] %%%
+                            R1 * 1
+                            
+                            %%% ViolinMusicVoice [measure 27] %%%
+                            R1 * 1/4
+                            
+                            %%% ViolinMusicVoice [measure 28] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 29] %%%
+                            R1 * 1
+                            
+                            %%% ViolinMusicVoice [measure 30] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolinMusicVoice [measure 31] %%%
+                            R1 * 1/2
+                            
+                            %%% ViolinMusicVoice [measure 32] %%%
+                            R1 * 7/4
+                            
+                            %%% ViolinMusicVoice [measure 33] %%%
+                            R1 * 2
+                            
+                            %%% ViolinMusicVoice [measure 34] %%%
+                            R1 * 1/4
                             \bar "|"
                             
                         }
@@ -778,7 +859,58 @@
                             \clef "alto" % SEGMENT:REMINDER-CLEF
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
-                            R1 * 59/4
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 11] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 12] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 13] %%%
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 14] %%%
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 15] %%%
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 16] %%%
+                            R1 * 2
+                            
+                            %%% ViolaMusicVoice [measure 17] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 18] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 19] %%%
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 20] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 21] %%%
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 22] %%%
+                            R1 * 1/2
+                            
+                            %%% ViolaMusicVoice [measure 23] %%%
+                            R1 * 7/4
+                            
+                            %%% ViolaMusicVoice [measure 24] %%%
+                            R1 * 3/4
+                            
+                            %%% ViolaMusicVoice [measure 25] %%%
+                            R1 * 1/4
+                            
+                            %%% ViolaMusicVoice [measure 26] %%%
+                            R1 * 1
+                            
+                            %%% ViolaMusicVoice [measure 27] %%%
+                            R1 * 1/4
                             
                             %%% ViolaMusicVoice [measure 28] %%%
                             \once \override TextSpanner.arrow-width = 0.25
