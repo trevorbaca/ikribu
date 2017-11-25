@@ -63,6 +63,36 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 1),
+        ('ViolinMusicVoice', 1),
+        ('ViolaMusicVoice', 1),
+        ('CelloMusicVoice', 1),
+        ),
+    baca.staff_lines(5),
+    )
+
+maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 2),
+        ('ViolinMusicVoice', 2),
+        ('ViolaMusicVoice', 2),
+        ('CelloMusicVoice', 2),
+        ),
+    baca.staff_lines(1),
+    )
+
+maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 3),
+        ('ViolinMusicVoice', 3),
+        ('ViolaMusicVoice', 3),
+        ('CelloMusicVoice', 3),
+        ),
+    baca.staff_lines(5),
+    )
+
+maker(
     baca.make_scopes(['BassClarinetMusicVoice'], [3, 7, 11, 13]),
     baca.make_tied_notes(repeat_ties=True),
     )
