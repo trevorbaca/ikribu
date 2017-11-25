@@ -50,6 +50,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 8/4
                 \mark #1
+                \bar "" % SEGMENT
                 \newSpacingSection
                 s1 * 2
                 ^ \markup {
@@ -244,6 +245,9 @@
                             R1 * 7/4
                             
                             %%% ViolinMusicVoice [measure 9] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
                             
@@ -394,6 +398,9 @@
                             \revert RepeatTie.direction
                             
                             %%% ViolaMusicVoice [measure 9] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
                             
@@ -477,6 +484,9 @@
                             R1 * 7/4
                             
                             %%% CelloMusicVoice [measure 9] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
                             

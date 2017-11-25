@@ -62,6 +62,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \mark #4
+                \bar "" % SEGMENT
                 \newSpacingSection
                 s1 * 3/4
                 ^ \markup {
@@ -832,7 +833,7 @@
                                 
                                 %%% CelloMusicVoice [measure 52] %%%
                                 \stopStaff % SEGMENT-ONLY
-                                \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+                                \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                                 \startStaff % SEGMENT-ONLY
                                 \clef "tenor"
                                 \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY

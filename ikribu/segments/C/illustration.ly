@@ -19,6 +19,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \mark #3
+                \bar "" % SEGMENT
                 \newSpacingSection
                 s1 * 7/4
                 ^ \markup {
@@ -979,7 +980,7 @@
                             
                             %%% CelloMusicVoice [measure 35] %%%
                             \stopStaff % SEGMENT-ONLY
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                             \startStaff % SEGMENT-ONLY
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble"

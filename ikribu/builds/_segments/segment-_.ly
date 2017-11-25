@@ -88,7 +88,6 @@
                     R1 * 1/4
                     \bar "|"
                     \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
-                    \once \override Staff.StaffSymbol.extra-offset = #'(1 . 0) % SCORE
                     
                 }
             }
@@ -253,7 +252,6 @@
                         R1 * 1/4
                         \bar "|"
                         \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT
-                        \once \override Staff.StaffSymbol.extra-offset = #'(1 . 0) % SCORE
                         
                     }
                 }

@@ -51,6 +51,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 2/4
                 \mark #5
+                \bar "" % SEGMENT
                 \newSpacingSection
                 s1 * 1/2
                 \startTextSpan
@@ -947,7 +948,7 @@
                             
                             %%% CelloMusicVoice [measure 63] %%%
                             \stopStaff % SEGMENT-ONLY
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                             \startStaff % SEGMENT-ONLY
                             \clef "bass"
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
