@@ -459,7 +459,7 @@
                             
                             %%% CelloMusicVoice [measure 79] %%%
                             \stopStaff % SEGMENT:REMINDER-STAFF-LINES
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
                             \startStaff % SEGMENT:REMINDER-STAFF-LINES
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f

@@ -969,7 +969,7 @@
                             
                             %%% CelloMusicVoice [measure 63] %%%
                             \stopStaff % SEGMENT:REMINDER-STAFF-LINES
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
                             \startStaff % SEGMENT:REMINDER-STAFF-LINES
                             \clef "bass"
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
