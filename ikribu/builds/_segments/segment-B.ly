@@ -137,6 +137,7 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \mark #2
+%           \bar "" % SEGMENT:EMPTY-BAR
             \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
             \newSpacingSection
             s1 * 1
@@ -491,7 +492,7 @@
                         
                         %%% ViolinMusicVoice [measure 10] %%%
                         \stopStaff % SEGMENT-ONLY
-                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                         \startStaff % SEGMENT-ONLY
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -952,7 +953,7 @@
                         
                         %%% CelloMusicVoice [measure 10] %%%
                         \stopStaff % SEGMENT-ONLY
-                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT-ONLY
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT-ONLY
                         \startStaff % SEGMENT-ONLY
                         \clef "treble" % SEGMENT-ONLY
                         \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT-ONLY
