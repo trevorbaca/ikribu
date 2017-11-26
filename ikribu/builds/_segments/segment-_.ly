@@ -88,7 +88,7 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
+%                   \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
                     
                 }
             }
@@ -252,7 +252,7 @@
                         \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
-                        \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
+%                       \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
                         
                     }
                 }
