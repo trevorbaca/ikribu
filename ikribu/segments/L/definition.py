@@ -29,10 +29,10 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    (1, 20, [15, 20, 20]),
-    (11, 140, [15, 20, 20]),
-    (20, 20, [15, 20, 20], True),
-    (29, 140, [15, 20, 20]),
+    (143, 20, [15, 20], True),
+    (153, 140, [15, 20]),
+    (162, 20, [15, 20], True),
+    (171, 140, [15, 20]),
     )
 
 maker = baca.SegmentMaker(
