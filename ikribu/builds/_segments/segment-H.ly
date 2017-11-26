@@ -43,7 +43,7 @@
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 99] %%%
-%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT:BREAK
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \mark #8
@@ -98,8 +98,8 @@
             s1 * 7/4
             
             %%% GlobalSkips [measure 105] %%%
-%           \break % SEGMENT:BREAK
-%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT:BREAK
+%           \pageBreak % SEGMENT:BREAK
+%           \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \newSpacingSection

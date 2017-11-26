@@ -142,7 +142,7 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 10] %%%
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20 20))) % SEGMENT:BREAK
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 4/4
                 \mark #2
@@ -241,7 +241,7 @@
                 
                 %%% GlobalSkips [measure 23] %%%
                 \break % SEGMENT:BREAK
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20 20))) % SEGMENT:BREAK
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:BREAK
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
@@ -634,7 +634,7 @@
                             
                             %%% ViolinMusicVoice [measure 10] %%%
                             \stopStaff % SEGMENT:REMINDER-STAFF-LINES
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
                             \startStaff % SEGMENT:REMINDER-STAFF-LINES
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -693,12 +693,13 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \!
                             
                             %%% ViolinMusicVoice [measure 14] %%%
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             R1 * 7/4
                             
@@ -706,11 +707,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             
                             %%% ViolinMusicVoice [measure 16] %%%
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -762,12 +764,13 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \!
                             
                             %%% ViolinMusicVoice [measure 20] %%%
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             R1 * 1
                             
@@ -775,11 +778,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             
                             %%% ViolinMusicVoice [measure 22] %%%
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -831,12 +835,13 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \!
                             
                             %%% ViolinMusicVoice [measure 26] %%%
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             R1 * 1
                             
@@ -844,11 +849,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             
                             %%% ViolinMusicVoice [measure 28] %%%
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
+                            \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             R1 * 3/4
                             
@@ -871,6 +877,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \bar "|"
                             
