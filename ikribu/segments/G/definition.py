@@ -39,6 +39,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,

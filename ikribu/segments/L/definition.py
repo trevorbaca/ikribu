@@ -36,6 +36,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -61,6 +62,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 7),
     baca.make_tied_notes(repeat_ties=True),
+    baca.staff_lines(5),
     )
 
 maker(

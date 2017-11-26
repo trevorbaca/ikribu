@@ -33,6 +33,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
@@ -57,12 +58,10 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
-    baca.staff_lines(5),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
-    baca.staff_lines(5),
     )
     
 maker(
@@ -91,28 +90,4 @@ maker(
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 1),
-    baca.staff_lines(5),
-    )
-
-maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', 4),
-        ('ViolinMusicVoice', 4),
-        ('ViolaMusicVoice', 4),
-        ('CelloMusicVoice', 4),
-        ),
-    baca.staff_lines(0),
-    )
-
-maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', 4),
-        ('CelloMusicVoice', 4),
-        ),
-    baca.bar_extent((-2, 2)),
-    baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT:REMINDER'),
     )

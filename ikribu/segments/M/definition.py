@@ -53,6 +53,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -179,6 +180,7 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
+    baca.staff_lines(5),
     )
 
 maker(
@@ -396,6 +398,8 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 5),
     baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -407,6 +411,8 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 8),
     baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -429,6 +435,8 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 16),
     baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -440,6 +448,8 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 19),
     baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -447,12 +457,3 @@ maker(
     baca.natural_harmonics(),
     baca.pitches('C+6'),
     )
-
-maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', 4),
-        ('CelloMusicVoice', 4),
-        ),
-    baca.staff_lines(1),
-    )
-

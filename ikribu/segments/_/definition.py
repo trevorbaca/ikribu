@@ -33,6 +33,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
     label_clock_time=False,
     label_stages=False,
@@ -54,6 +55,15 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
+    baca.scopes(
+        ('ViolinRHMusicVoice', 1),
+        ('ViolaRHMusicVoice', 1),
+        ('CelloRHMusicVoice', 1),
+        ),
+    baca.staff_lines(1),
+    )
+
+maker(
     baca.scope('ViolinMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
     baca.effort_dynamic('mf'),
@@ -61,11 +71,6 @@ maker(
     baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.text_script_staff_padding(4.5),
-    )
-
-maker(
-    baca.scope('ViolaMusicVoice', 1, 2),
-    #baca.staff_lines(1),
     )
 
 maker(
@@ -78,23 +83,4 @@ maker(
     baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
-    )
-
-maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', 2),
-        ('ViolinMusicVoice', 2),
-        ('ViolaMusicVoice', 2),
-        ('CelloMusicVoice', 2),
-        ),
-    baca.staff_lines(0),
-    )
-
-maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', 2),
-        ('CelloMusicVoice', 2),
-        ),
-    baca.bar_extent((-2, 2)),
-    baca.bar_extent((0, 0), baca.leaf(-1), after=True, tag='SEGMENT:REMINDER'),
     )

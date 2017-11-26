@@ -34,6 +34,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-18, -6),
     ignore_repeat_pitch_classes=True,
@@ -59,6 +60,16 @@ maker.validate_measures_per_stage()
 ###############################################################################
 
 maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 1),
+        ('ViolinMusicVoice', 1),
+        ('ViolaMusicVoice', 1),
+        ('CelloMusicVoice', 1),
+        ),
+    baca.staff_lines(1),
+    )
+
+maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_repeated_durations((1, 4)),
     )
@@ -82,7 +93,6 @@ maker(
     baca.scope('BassClarinetMusicVoice', 1, 4),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
-    baca.staff_lines(1),
     baca.pitches('Bb2'),
     )
 
@@ -91,7 +101,6 @@ maker(
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
-    baca.staff_lines(1),
     baca.pitches('B3 C4 D4'),
     )
 
@@ -99,7 +108,6 @@ maker(
     baca.scope('ViolaMusicVoice', 1, 4),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
-    baca.staff_lines(1),
     baca.pitches('C4 B3 D4'),
     baca.staccati(),
     )
@@ -109,6 +117,5 @@ maker(
     baca.accents(),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
-    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
