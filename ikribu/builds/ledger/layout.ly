@@ -3,8 +3,9 @@
         \context PageLayout = "PageLayout" {
             
             %%% PageLayout [measure 1] %%%
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 70) (alignment-distances . (15 20)))
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 70) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             \autoPageBreaksOff
+            \bar "" % SEGMENT:EMPTY-BAR
             s1 * 7/4
             
             %%% PageLayout [measure 2] %%%
@@ -64,8 +65,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 16] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 2
             
             %%% PageLayout [measure 17] %%%
@@ -133,8 +134,8 @@
             s1 * 7/4
             
             %%% PageLayout [measure 33] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 2
             
             %%% PageLayout [measure 34] %%%
@@ -198,8 +199,8 @@
             s1 * 1
             
             %%% PageLayout [measure 49] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 130) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 130) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 1
             
             %%% PageLayout [measure 50] %%%
@@ -255,8 +256,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 63] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 1/2
             
             %%% PageLayout [measure 64] %%%
@@ -304,8 +305,8 @@
             s1 * 7/4
             
             %%% PageLayout [measure 75] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 3/4
             
             %%% PageLayout [measure 76] %%%
@@ -353,8 +354,8 @@
             s1 * 7/4
             
             %%% PageLayout [measure 87] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 7/4
             
             %%% PageLayout [measure 88] %%%
@@ -402,8 +403,8 @@
             s1 * 1/6
             
             %%% PageLayout [measure 99] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 120) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 120) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 2
             
             %%% PageLayout [measure 100] %%%
@@ -439,8 +440,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 108] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 3/4
             
             %%% PageLayout [measure 109] %%%
@@ -508,8 +509,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 125] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 1
             
             %%% PageLayout [measure 126] %%%
@@ -581,8 +582,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 143] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 2
             
             %%% PageLayout [measure 144] %%%
@@ -634,8 +635,8 @@
             s1 * 1/2
             
             %%% PageLayout [measure 156] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 7/4
             
             %%% PageLayout [measure 157] %%%
@@ -675,8 +676,8 @@
             s1 * 1
             
             %%% PageLayout [measure 166] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 3/4
             
             %%% PageLayout [measure 167] %%%
@@ -736,8 +737,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 181] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 7/4
             
             %%% PageLayout [measure 182] %%%
@@ -789,8 +790,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 194] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 7/4
             
             %%% PageLayout [measure 195] %%%
@@ -846,8 +847,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 208] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 105) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 105) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 1/2
             
             %%% PageLayout [measure 209] %%%
@@ -887,8 +888,8 @@
             s1 * 7/4
             
             %%% PageLayout [measure 218] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 1
             
             %%% PageLayout [measure 219] %%%
@@ -932,8 +933,8 @@
             s1 * 1/2
             
             %%% PageLayout [measure 229] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 2
             
             %%% PageLayout [measure 230] %%%
@@ -973,8 +974,8 @@
             s1 * 1/4
             
             %%% PageLayout [measure 239] %%%
-            \pageBreak
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20)))
+            \pageBreak % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 3/4
             
             %%% PageLayout [measure 240] %%%
@@ -1014,8 +1015,8 @@
             s1 * 2
             
             %%% PageLayout [measure 249] %%%
-            \break
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20)))
+            \break % LEDGER-SCORE:BREAK
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             s1 * 7/4
             
             %%% PageLayout [measure 250] %%%
