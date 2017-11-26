@@ -651,6 +651,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \!
+                    \once \override Score.BarLine.transparent = ##t % LEDGER:FERMATA-MEASURE-TREATMENT
+                    \once \override Score.SpanBar.transparent = ##t % LEDGER:FERMATA-MEASURE-TREATMENT
                     
                     %%% BassClarinetMusicVoice [measure 181] %%%
                     \stopStaff
@@ -732,6 +734,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \!
+                    \once \override Score.BarLine.transparent = ##t % LEDGER:FERMATA-MEASURE-TREATMENT
+                    \once \override Score.SpanBar.transparent = ##t % LEDGER:FERMATA-MEASURE-TREATMENT
                     
                     %%% BassClarinetMusicVoice [measure 194] %%%
                     \stopStaff
