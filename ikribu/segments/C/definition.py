@@ -55,6 +55,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -140,6 +141,7 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
+    baca.staff_lines(5),
     baca.stem_tremolo(),
     )
 

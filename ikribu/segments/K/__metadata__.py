@@ -48,9 +48,12 @@ metadata = abjad.TypedOrderedDict(
             abjad.TypedOrderedDict(
                 [
                     ('BassClarinetMusicStaff', 1),
-                    ('CelloMusicStaff', 1),
-                    ('ViolaMusicStaff', 1),
+                    ('ViolinRHMusicStaff', 1),
                     ('ViolinMusicStaff', 1),
+                    ('ViolaRHMusicStaff', 1),
+                    ('ViolaMusicStaff', 1),
+                    ('CelloRHMusicStaff', 1),
+                    ('CelloMusicStaff', 1),
                     ]
                 ),
             ),

@@ -35,6 +35,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -56,6 +57,12 @@ maker.validate_measures_per_stage()
 ###############################################################################
 ################################### COMMANDS ##################################
 ###############################################################################
+
+maker(
+    baca.scope('CelloMusicVoice', 1),
+    baca.clef('bass'),
+    baca.staff_lines(5),
+    )
 
 maker(
     baca.make_scopes(['BassClarinetMusicVoice'], [1, (2, 3)]),
@@ -143,7 +150,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 2, 4),
-    baca.clef('bass'),
     baca.dynamic('p'),
     baca.hairpin('p < mf', baca.rleaves()[-2:]),
     baca.markup.vib_poco(),

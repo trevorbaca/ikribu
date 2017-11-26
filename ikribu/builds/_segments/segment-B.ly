@@ -138,25 +138,25 @@
             \time 4/4
             \mark #2
 %           \bar "" % SEGMENT:EMPTY-BAR
-%           \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-METRONOME-MARK
+            \once \override TextScript.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-METRONOME-MARK
             \newSpacingSection
             s1 * 1
-%           ^ \markup { % SEGMENT:REMINDER-METRONOME-MARK
-%               \fontsize % SEGMENT:REMINDER-METRONOME-MARK
-%                   #-6 % SEGMENT:REMINDER-METRONOME-MARK
-%                   \general-align % SEGMENT:REMINDER-METRONOME-MARK
-%                       #Y % SEGMENT:REMINDER-METRONOME-MARK
-%                       #DOWN % SEGMENT:REMINDER-METRONOME-MARK
-%                       \note-by-number % SEGMENT:REMINDER-METRONOME-MARK
-%                           #2 % SEGMENT:REMINDER-METRONOME-MARK
-%                           #0 % SEGMENT:REMINDER-METRONOME-MARK
-%                           #1 % SEGMENT:REMINDER-METRONOME-MARK
-%               \upright % SEGMENT:REMINDER-METRONOME-MARK
-%                   { % SEGMENT:REMINDER-METRONOME-MARK
-%                       = % SEGMENT:REMINDER-METRONOME-MARK
-%                       42 % SEGMENT:REMINDER-METRONOME-MARK
-%                   } % SEGMENT:REMINDER-METRONOME-MARK
-%               } % SEGMENT:REMINDER-METRONOME-MARK
+            ^ \markup { % SEGMENT:REMINDER-METRONOME-MARK
+                \fontsize % SEGMENT:REMINDER-METRONOME-MARK
+                    #-6 % SEGMENT:REMINDER-METRONOME-MARK
+                    \general-align % SEGMENT:REMINDER-METRONOME-MARK
+                        #Y % SEGMENT:REMINDER-METRONOME-MARK
+                        #DOWN % SEGMENT:REMINDER-METRONOME-MARK
+                        \note-by-number % SEGMENT:REMINDER-METRONOME-MARK
+                            #2 % SEGMENT:REMINDER-METRONOME-MARK
+                            #0 % SEGMENT:REMINDER-METRONOME-MARK
+                            #1 % SEGMENT:REMINDER-METRONOME-MARK
+                \upright % SEGMENT:REMINDER-METRONOME-MARK
+                    { % SEGMENT:REMINDER-METRONOME-MARK
+                        = % SEGMENT:REMINDER-METRONOME-MARK
+                        42 % SEGMENT:REMINDER-METRONOME-MARK
+                    } % SEGMENT:REMINDER-METRONOME-MARK
+                } % SEGMENT:REMINDER-METRONOME-MARK
             
             %%% GlobalSkips [measure 11] %%%
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
@@ -313,30 +313,31 @@
                 \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                     
                     %%% BassClarinetMusicVoice [measure 10] %%%
-                    \stopStaff
-                    \once \override Staff.StaffSymbol.line-count = 5
-                    \startStaff
-%                   \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                       \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                           #16 % SEGMENT:REMINDER-INSTRUMENT
-%                           \center-column % SEGMENT:REMINDER-INSTRUMENT
-%                               { % SEGMENT:REMINDER-INSTRUMENT
-%                                   Bass % SEGMENT:REMINDER-INSTRUMENT
-%                                   clarinet % SEGMENT:REMINDER-INSTRUMENT
-%                               } % SEGMENT:REMINDER-INSTRUMENT
-%                       } % SEGMENT:REMINDER-INSTRUMENT
-%                   \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                       \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                           #10 % SEGMENT:REMINDER-INSTRUMENT
-%                           \line % SEGMENT:REMINDER-INSTRUMENT
-%                               { % SEGMENT:REMINDER-INSTRUMENT
-%                                   B. % SEGMENT:REMINDER-INSTRUMENT
-%                                   cl. % SEGMENT:REMINDER-INSTRUMENT
-%                               } % SEGMENT:REMINDER-INSTRUMENT
-%                       } % SEGMENT:REMINDER-INSTRUMENT
-%                   \clef "treble" % SEGMENT:REMINDER-CLEF
-%                   \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
-%                   \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                    \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                    \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                    \startStaff % SEGMENT:REMINDER-STAFF-LINES
+                    \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                        \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                            #16 % SEGMENT:REMINDER-INSTRUMENT
+                            \center-column % SEGMENT:REMINDER-INSTRUMENT
+                                { % SEGMENT:REMINDER-INSTRUMENT
+                                    Bass % SEGMENT:REMINDER-INSTRUMENT
+                                    clarinet % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                        } % SEGMENT:REMINDER-INSTRUMENT
+                    \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                        \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                            #10 % SEGMENT:REMINDER-INSTRUMENT
+                            \line % SEGMENT:REMINDER-INSTRUMENT
+                                { % SEGMENT:REMINDER-INSTRUMENT
+                                    B. % SEGMENT:REMINDER-INSTRUMENT
+                                    cl. % SEGMENT:REMINDER-INSTRUMENT
+                                } % SEGMENT:REMINDER-INSTRUMENT
+                        } % SEGMENT:REMINDER-INSTRUMENT
+                    \clef "treble" % SEGMENT:REMINDER-CLEF
+                    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                     R1 * 1
                     
                     %%% BassClarinetMusicVoice [measure 11] %%%
@@ -347,8 +348,9 @@
                     
                     %%% BassClarinetMusicVoice [measure 13] %%%
                     \stopStaff
-                    \once \override Staff.StaffSymbol.line-count = 1
+                    \once \override Staff.StaffSymbol.line-count = 0
                     \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     
                     %%% BassClarinetMusicVoice [measure 14] %%%
@@ -359,9 +361,16 @@
                     \ppp
                     
                     %%% BassClarinetMusicVoice [measure 15] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 0
+                    \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     
                     %%% BassClarinetMusicVoice [measure 16] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 5
+                    \startStaff
                     R1 * 2
                     
                     %%% BassClarinetMusicVoice [measure 17] %%%
@@ -371,16 +380,30 @@
                     R1 * 1
                     
                     %%% BassClarinetMusicVoice [measure 19] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 0
+                    \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     
                     %%% BassClarinetMusicVoice [measure 20] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 5
+                    \startStaff
                     ef1
                     \ppp
                     
                     %%% BassClarinetMusicVoice [measure 21] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 0
+                    \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     
                     %%% BassClarinetMusicVoice [measure 22] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 5
+                    \startStaff
                     R1 * 1/2
                     
                     %%% BassClarinetMusicVoice [measure 23] %%%
@@ -390,16 +413,30 @@
                     R1 * 3/4
                     
                     %%% BassClarinetMusicVoice [measure 25] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 0
+                    \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     
                     %%% BassClarinetMusicVoice [measure 26] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 5
+                    \startStaff
                     ef1
                     \ppp
                     
                     %%% BassClarinetMusicVoice [measure 27] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 0
+                    \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     
                     %%% BassClarinetMusicVoice [measure 28] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 5
+                    \startStaff
                     ef2.
                     \<
                     \ppp
@@ -427,8 +464,14 @@
                     R1 * 2
                     
                     %%% BassClarinetMusicVoice [measure 34] %%%
+                    \stopStaff
+                    \once \override Staff.StaffSymbol.line-count = 0
+                    \startStaff
+                    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
+                    \once \override Score.BarLine.transparent = ##t % SEGMENT:FINAL-BAR-LINE
+                    \once \override Score.SpanBar.transparent = ##t % SEGMENT:FINAL-BAR-LINE
                     
                 }
             }
@@ -438,19 +481,23 @@
                     \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                         
                         %%% ViolinRHMusicVoice [measure 10] %%%
-%                       \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                           \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                               #16 % SEGMENT:REMINDER-INSTRUMENT
-%                               Violin % SEGMENT:REMINDER-INSTRUMENT
-%                           } % SEGMENT:REMINDER-INSTRUMENT
-%                       \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                           \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                               #10 % SEGMENT:REMINDER-INSTRUMENT
-%                               Vn. % SEGMENT:REMINDER-INSTRUMENT
-%                           } % SEGMENT:REMINDER-INSTRUMENT
-%                       \clef "percussion" % SEGMENT:REMINDER-CLEF
-%                       \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
-%                       \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                        \startStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                #16 % SEGMENT:REMINDER-INSTRUMENT
+                                Violin % SEGMENT:REMINDER-INSTRUMENT
+                            } % SEGMENT:REMINDER-INSTRUMENT
+                        \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                #10 % SEGMENT:REMINDER-INSTRUMENT
+                                Vn. % SEGMENT:REMINDER-INSTRUMENT
+                            } % SEGMENT:REMINDER-INSTRUMENT
+                        \clef "percussion" % SEGMENT:REMINDER-CLEF
+                        \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                        \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         R1 * 1
                         ^ \markup {
                             \override
@@ -466,15 +513,27 @@
                         R1 * 3/4
                         
                         %%% ViolinRHMusicVoice [measure 13] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 14] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 7/4
                         
                         %%% ViolinRHMusicVoice [measure 15] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 16] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 2
                         
                         %%% ViolinRHMusicVoice [measure 17] %%%
@@ -484,15 +543,27 @@
                         R1 * 1
                         
                         %%% ViolinRHMusicVoice [measure 19] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 20] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolinRHMusicVoice [measure 21] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 22] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolinRHMusicVoice [measure 23] %%%
@@ -502,15 +573,27 @@
                         R1 * 3/4
                         
                         %%% ViolinRHMusicVoice [measure 25] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 26] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolinRHMusicVoice [measure 27] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 28] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 3/4
                         
                         %%% ViolinRHMusicVoice [measure 29] %%%
@@ -529,6 +612,9 @@
                         R1 * 2
                         
                         %%% ViolinRHMusicVoice [measure 34] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -538,9 +624,9 @@
                     \context ViolinMusicVoice = "ViolinMusicVoice" {
                         
                         %%% ViolinMusicVoice [measure 10] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 5
-                        \startStaff
+                        \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                        \startStaff % SEGMENT:REMINDER-STAFF-LINES
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
                         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -562,6 +648,7 @@
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
                         \clef "treble"
+                        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
                         e'1
                         :32
                         \<
@@ -595,21 +682,27 @@
                         
                         %%% ViolinMusicVoice [measure 13] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
+                        \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
                         R1 * 1/4
                         \!
                         
                         %%% ViolinMusicVoice [measure 14] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 5
+                        \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         R1 * 7/4
                         
                         %%% ViolinMusicVoice [measure 15] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinMusicVoice [measure 16] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
                         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -657,16 +750,28 @@
                             }
                         
                         %%% ViolinMusicVoice [measure 19] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         \!
                         
                         %%% ViolinMusicVoice [measure 20] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolinMusicVoice [measure 21] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinMusicVoice [measure 22] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
                         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -714,16 +819,28 @@
                             }
                         
                         %%% ViolinMusicVoice [measure 25] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         \!
                         
                         %%% ViolinMusicVoice [measure 26] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolinMusicVoice [measure 27] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinMusicVoice [measure 28] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 3/4
                         
                         %%% ViolinMusicVoice [measure 29] %%%
@@ -742,6 +859,9 @@
                         R1 * 2
                         
                         %%% ViolinMusicVoice [measure 34] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -754,19 +874,23 @@
                     \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                         
                         %%% ViolaRHMusicVoice [measure 10] %%%
-%                       \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                           \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                               #16 % SEGMENT:REMINDER-INSTRUMENT
-%                               Viola % SEGMENT:REMINDER-INSTRUMENT
-%                           } % SEGMENT:REMINDER-INSTRUMENT
-%                       \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                           \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                               #10 % SEGMENT:REMINDER-INSTRUMENT
-%                               Va. % SEGMENT:REMINDER-INSTRUMENT
-%                           } % SEGMENT:REMINDER-INSTRUMENT
-%                       \clef "percussion" % SEGMENT:REMINDER-CLEF
-%                       \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
-%                       \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                        \startStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                #16 % SEGMENT:REMINDER-INSTRUMENT
+                                Viola % SEGMENT:REMINDER-INSTRUMENT
+                            } % SEGMENT:REMINDER-INSTRUMENT
+                        \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                #10 % SEGMENT:REMINDER-INSTRUMENT
+                                Va. % SEGMENT:REMINDER-INSTRUMENT
+                            } % SEGMENT:REMINDER-INSTRUMENT
+                        \clef "percussion" % SEGMENT:REMINDER-CLEF
+                        \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                        \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         R1 * 1
                         ^ \markup {
                             \override
@@ -782,15 +906,27 @@
                         R1 * 3/4
                         
                         %%% ViolaRHMusicVoice [measure 13] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 14] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 7/4
                         
                         %%% ViolaRHMusicVoice [measure 15] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 16] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 2
                         
                         %%% ViolaRHMusicVoice [measure 17] %%%
@@ -800,15 +936,27 @@
                         R1 * 1
                         
                         %%% ViolaRHMusicVoice [measure 19] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 20] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolaRHMusicVoice [measure 21] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 22] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolaRHMusicVoice [measure 23] %%%
@@ -818,15 +966,27 @@
                         R1 * 3/4
                         
                         %%% ViolaRHMusicVoice [measure 25] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 26] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolaRHMusicVoice [measure 27] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 28] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 3/4
                         
                         %%% ViolaRHMusicVoice [measure 29] %%%
@@ -845,6 +1005,9 @@
                         R1 * 2
                         
                         %%% ViolaRHMusicVoice [measure 34] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -854,11 +1017,12 @@
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         
                         %%% ViolaMusicVoice [measure 10] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 5
-                        \startStaff
-%                       \clef "alto" % SEGMENT:REMINDER-CLEF
-%                       \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                        \startStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \clef "alto" % SEGMENT:REMINDER-CLEF
+                        \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         R1 * 1
                         
                         %%% ViolaMusicVoice [measure 11] %%%
@@ -869,8 +1033,9 @@
                         
                         %%% ViolaMusicVoice [measure 13] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
+                        \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaMusicVoice [measure 14] %%%
@@ -880,9 +1045,16 @@
                         R1 * 7/4
                         
                         %%% ViolaMusicVoice [measure 15] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaMusicVoice [measure 16] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 2
                         
                         %%% ViolaMusicVoice [measure 17] %%%
@@ -892,15 +1064,29 @@
                         R1 * 1
                         
                         %%% ViolaMusicVoice [measure 19] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaMusicVoice [measure 20] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolaMusicVoice [measure 21] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaMusicVoice [measure 22] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolaMusicVoice [measure 23] %%%
@@ -910,15 +1096,29 @@
                         R1 * 3/4
                         
                         %%% ViolaMusicVoice [measure 25] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaMusicVoice [measure 26] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 1
                         
                         %%% ViolaMusicVoice [measure 27] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaMusicVoice [measure 28] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         \once \override TextSpanner.arrow-width = 0.25
                         \once \override TextSpanner.bound-details.left-broken.text = ##f
                         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -986,6 +1186,10 @@
                             }
                         
                         %%% ViolaMusicVoice [measure 34] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \!
                         \bar "|"
@@ -999,19 +1203,23 @@
                     \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                         
                         %%% CelloRHMusicVoice [measure 10] %%%
-%                       \set CelloStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                           \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                               #16 % SEGMENT:REMINDER-INSTRUMENT
-%                               Cello % SEGMENT:REMINDER-INSTRUMENT
-%                           } % SEGMENT:REMINDER-INSTRUMENT
-%                       \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
-%                           \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
-%                               #10 % SEGMENT:REMINDER-INSTRUMENT
-%                               Vc. % SEGMENT:REMINDER-INSTRUMENT
-%                           } % SEGMENT:REMINDER-INSTRUMENT
-%                       \clef "percussion" % SEGMENT:REMINDER-CLEF
-%                       \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
-%                       \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REMINDER-STAFF-LINES
+                        \startStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \set CelloStaffGroup.instrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                #16 % SEGMENT:REMINDER-INSTRUMENT
+                                Cello % SEGMENT:REMINDER-INSTRUMENT
+                            } % SEGMENT:REMINDER-INSTRUMENT
+                        \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT:REMINDER-INSTRUMENT
+                            \hcenter-in % SEGMENT:REMINDER-INSTRUMENT
+                                #10 % SEGMENT:REMINDER-INSTRUMENT
+                                Vc. % SEGMENT:REMINDER-INSTRUMENT
+                            } % SEGMENT:REMINDER-INSTRUMENT
+                        \clef "percussion" % SEGMENT:REMINDER-CLEF
+                        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-INSTRUMENT
+                        \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
                         R1 * 1
                         ^ \markup {
                             \override
@@ -1027,15 +1235,27 @@
                         R1 * 3/4
                         
                         %%% CelloRHMusicVoice [measure 13] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 14] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 7/4
                         
                         %%% CelloRHMusicVoice [measure 15] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 16] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 2
                         
                         %%% CelloRHMusicVoice [measure 17] %%%
@@ -1045,15 +1265,27 @@
                         R1 * 1
                         
                         %%% CelloRHMusicVoice [measure 19] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 20] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% CelloRHMusicVoice [measure 21] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 22] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1/2
                         
                         %%% CelloRHMusicVoice [measure 23] %%%
@@ -1063,15 +1295,27 @@
                         R1 * 3/4
                         
                         %%% CelloRHMusicVoice [measure 25] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 26] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 1
                         
                         %%% CelloRHMusicVoice [measure 27] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 28] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 1
+                        \startStaff
                         R1 * 3/4
                         
                         %%% CelloRHMusicVoice [measure 29] %%%
@@ -1090,6 +1334,9 @@
                         R1 * 2
                         
                         %%% CelloRHMusicVoice [measure 34] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -1099,14 +1346,15 @@
                     \context CelloMusicVoice = "CelloMusicVoice" {
                         
                         %%% CelloMusicVoice [measure 10] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 5
-                        \startStaff
-%                       \clef "treble" % SEGMENT:REMINDER-CLEF
-%                       \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
-%                       \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
+                        \stopStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REMINDER-STAFF-LINES
+                        \startStaff % SEGMENT:REMINDER-STAFF-LINES
+                        \clef "treble" % SEGMENT:REMINDER-CLEF
+                        \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-STAFF-LINES
+                        \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-CLEF
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) % SEGMENT:REMINDER-DYNAMIC
                         R1 * 1
-%                       \sfz % SEGMENT:REMINDER-DYNAMIC
+                        \sfz % SEGMENT:REMINDER-DYNAMIC
                         
                         %%% CelloMusicVoice [measure 11] %%%
                         R1 * 1
@@ -1116,8 +1364,9 @@
                         
                         %%% CelloMusicVoice [measure 13] %%%
                         \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
+                        \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloMusicVoice [measure 14] %%%
@@ -1127,9 +1376,16 @@
                         R1 * 7/4
                         
                         %%% CelloMusicVoice [measure 15] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloMusicVoice [measure 16] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 2
                         
                         %%% CelloMusicVoice [measure 17] %%%
@@ -1139,15 +1395,29 @@
                         R1 * 1
                         
                         %%% CelloMusicVoice [measure 19] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloMusicVoice [measure 20] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 1
                         
                         %%% CelloMusicVoice [measure 21] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloMusicVoice [measure 22] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 1/2
                         
                         %%% CelloMusicVoice [measure 23] %%%
@@ -1157,15 +1427,29 @@
                         R1 * 3/4
                         
                         %%% CelloMusicVoice [measure 25] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloMusicVoice [measure 26] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 1
                         
                         %%% CelloMusicVoice [measure 27] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloMusicVoice [measure 28] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 5
+                        \startStaff
                         R1 * 3/4
                         
                         %%% CelloMusicVoice [measure 29] %%%
@@ -1184,6 +1468,10 @@
                         R1 * 2
                         
                         %%% CelloMusicVoice [measure 34] %%%
+                        \stopStaff
+                        \once \override Staff.StaffSymbol.line-count = 0
+                        \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
                         

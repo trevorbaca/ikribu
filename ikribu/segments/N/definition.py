@@ -33,6 +33,7 @@ layout_measure_map = baca.layout(
     )
 
 maker = baca.SegmentMaker(
+    fermata_measure_staff_line_count=0,
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     label_clock_time=False,
@@ -70,6 +71,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 2),
+    baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
@@ -83,6 +85,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 2),
+    baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 

@@ -96,7 +96,8 @@
                         \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         \bar "|"
-                        \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
+                        \once \override Score.BarLine.transparent = ##t % SEGMENT:FINAL-BAR-LINE
+                        \once \override Score.SpanBar.transparent = ##t % SEGMENT:FINAL-BAR-LINE
                         
                     }
                 }
@@ -106,6 +107,9 @@
                         \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                             
                             %%% ViolinRHMusicVoice [measure 1] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \set ViolinStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -120,6 +124,9 @@
                             R1 * 7/4
                             
                             %%% ViolinRHMusicVoice [measure 2] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 0
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
                             
@@ -172,6 +179,9 @@
                         \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                             
                             %%% ViolaRHMusicVoice [measure 1] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \set ViolaStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -186,6 +196,9 @@
                             R1 * 7/4
                             
                             %%% ViolaRHMusicVoice [measure 2] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 0
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
                             
@@ -202,6 +215,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 0
                             \startStaff
+                            \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \bar "|"
                             
@@ -214,6 +228,9 @@
                         \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                             
                             %%% CelloRHMusicVoice [measure 1] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             \set CelloStaffGroup.instrumentName = \markup {
                                 \hcenter-in
                                     #16
@@ -228,6 +245,9 @@
                             R1 * 7/4
                             
                             %%% CelloRHMusicVoice [measure 2] %%%
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 0
+                            \startStaff
                             R1 * 1/4
                             \bar "|"
                             
@@ -260,7 +280,6 @@
                             \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                             R1 * 1/4
                             \bar "|"
-                            \once \override Staff.BarLine.bar-extent = #'(0 . 0) % SEGMENT:REMINDER
                             
                         }
                     }
