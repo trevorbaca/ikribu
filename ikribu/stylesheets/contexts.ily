@@ -307,6 +307,7 @@
         autoBeaming = ##f
         barNumberFormatter = #format-oval-barnumbers
         explicitClefVisibility = #end-of-line-invisible
+        forceClef = ##t
         markFormatter = #format-mark-box-alphabet
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
