@@ -353,8 +353,8 @@
                         \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
                         R1 * 1/4
-                        \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT
-                        \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT
+%                       \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT
+%                       \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT
                         
                         %%% BassClarinetMusicVoice [measure 125] %%%
                         \stopStaff
