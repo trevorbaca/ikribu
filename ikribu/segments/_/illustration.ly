@@ -86,7 +86,8 @@
                                         cl.
                                     }
                             }
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         R1 * 7/4
                         
                         %%% BassClarinetMusicVoice [measure 2] %%%
@@ -120,7 +121,8 @@
                                     #10
                                     Vn.
                                 }
-                            \clef "percussion"
+                            \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             R1 * 7/4
                             
                             %%% ViolinRHMusicVoice [measure 2] %%%
@@ -140,7 +142,8 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override TextScript.staff-padding = #4.5
-                            \clef "treble"
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             c'1..
                             ^ \markup {
                                 \whiteout
@@ -192,7 +195,8 @@
                                     #10
                                     Va.
                                 }
-                            \clef "percussion"
+                            \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             R1 * 7/4
                             
                             %%% ViolaRHMusicVoice [measure 2] %%%
@@ -208,7 +212,8 @@
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             %%% ViolaMusicVoice [measure 1] %%%
-                            \clef "alto"
+                            \clef "alto" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             R1 * 7/4
                             
                             %%% ViolaMusicVoice [measure 2] %%%
@@ -241,7 +246,8 @@
                                     #10
                                     Vc.
                                 }
-                            \clef "percussion"
+                            \clef "percussion" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             R1 * 7/4
                             
                             %%% CelloRHMusicVoice [measure 2] %%%
@@ -258,7 +264,8 @@
                             
                             %%% CelloMusicVoice [measure 1] %%%
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble"
+                            \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             fqf''1..
                             -\laissezVibrer
                             \sfz

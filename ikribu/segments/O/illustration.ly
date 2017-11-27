@@ -274,7 +274,8 @@
                         \clef "treble" % SEGMENT:RESTATED-CLEF
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set BassClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         <c e''>1
                         \p % SEGMENT:REMINDER-DYNAMIC
@@ -517,7 +518,8 @@
                             \clef "percussion" % SEGMENT:RESTATED-CLEF
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                             \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                            \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \set ViolinRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                             \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                             R1 * 1
                             \pp % SEGMENT:REMINDER-DYNAMIC
@@ -603,7 +605,8 @@
                             \startStaff % SEGMENT:REAPPLIED-STAFF-LINES
                             \clef "treble" % SEGMENT:RESTATED-CLEF
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \set ViolinMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                             R1 * 1
                             \fff % SEGMENT:REMINDER-DYNAMIC
@@ -752,7 +755,8 @@
                             \clef "percussion" % SEGMENT:RESTATED-CLEF
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                             \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                            \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \set ViolaRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                             \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                             R1 * 1
                             \ff % SEGMENT:REMINDER-DYNAMIC
@@ -838,7 +842,8 @@
                             \startStaff % SEGMENT:REAPPLIED-STAFF-LINES
                             \clef "treble" % SEGMENT:RESTATED-CLEF
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \override ViolaMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \set ViolaMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                             R1 * 1
                             \fff % SEGMENT:REMINDER-DYNAMIC
@@ -987,7 +992,8 @@
                             \clef "percussion" % SEGMENT:RESTATED-CLEF
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                             \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                            \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \override CelloRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                            \set CelloRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                             R1 * 1
                             \ppp % SEGMENT:REMINDER-DYNAMIC
@@ -1071,9 +1077,10 @@
                             \stopStaff % SEGMENT:REAPPLIED-STAFF-LINES
                             \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED-STAFF-LINES
                             \startStaff % SEGMENT:REAPPLIED-STAFF-LINES
-                            \clef "bass"
+                            \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                             R1 * 1
                             \sfffz % SEGMENT:REMINDER-DYNAMIC
                             

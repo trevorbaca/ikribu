@@ -620,9 +620,11 @@
                                     cl. % SEGMENT:RESTATED-INSTRUMENT
                                 } % SEGMENT:RESTATED-INSTRUMENT
                         } % SEGMENT:RESTATED-INSTRUMENT
-                    \clef "treble"
+                    \clef "treble" % SEGMENT:DUPLICATE-CLEF
                     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                     \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
+                    \override Staff.Clef.color = #(x11-color 'DeepPink1) % SEGMENT:DUPLICATE-CLEF
+                    \set Staff.forceClef = ##t % SEGMENT:DUPLICATE-CLEF
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                     R1 * 3/4
                     \ppp % SEGMENT:REMINDER-DYNAMIC
@@ -834,7 +836,8 @@
                         \clef "percussion" % SEGMENT:RESTATED-CLEF
                         \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                         \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \override ViolinRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set ViolinRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         R1 * 3/4
                         \ppp % SEGMENT:REMINDER-DYNAMIC
@@ -984,7 +987,8 @@
                         \override TextScript.staff-padding = #4.5
                         \clef "treble" % SEGMENT:RESTATED-CLEF
                         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \override ViolinMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set ViolinMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         c'2.
                         \ff % SEGMENT:REMINDER-DYNAMIC
@@ -1530,7 +1534,8 @@
                         \clef "percussion" % SEGMENT:RESTATED-CLEF
                         \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                         \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \override ViolaRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set ViolaRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         R1 * 3/4
                         \p % SEGMENT:REMINDER-DYNAMIC
@@ -1680,7 +1685,8 @@
                         \override TextScript.staff-padding = #4.5
                         \clef "treble" % SEGMENT:RESTATED-CLEF
                         \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \override ViolaMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set ViolaMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         R1 * 3/4
                         \fff % SEGMENT:REMINDER-DYNAMIC
@@ -2033,7 +2039,8 @@
                         \clef "percussion" % SEGMENT:RESTATED-CLEF
                         \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-INSTRUMENT
                         \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES
-                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \override CelloRHMusicStaff.Clef.color = #(x11-color 'ForestGreen) % SEGMENT:RESTATED-CLEF
+                        \set CelloRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED-CLEF
                         \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC
                         R1 * 3/4
                         \pp % SEGMENT:REMINDER-DYNAMIC
@@ -2181,7 +2188,8 @@
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         fqf''2.
                         -\laissezVibrer
                         \sfz
@@ -2218,7 +2226,8 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass"
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         c,,1
                         \<
                         \mf
@@ -2254,7 +2263,8 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         g''1..
                         -\laissezVibrer
                         \sfz
@@ -2271,7 +2281,8 @@
                         
                         %%% CelloMusicVoice [measure 182] %%%
                         \ottava #-1
-                        \clef "bass"
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         c,,2.
                         \fff
                         ^ \markup {
@@ -2295,7 +2306,8 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         fqf''1
                         -\laissezVibrer
                         \sffz
@@ -2332,7 +2344,8 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass"
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         c,,2.
                         \<
                         \mf
@@ -2366,7 +2379,8 @@
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         g''2
                         -\laissezVibrer
                         \sffz
@@ -2403,7 +2417,8 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass"
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         c,,1..
                         \<
                         \mf
@@ -2439,7 +2454,8 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         a''1..
                         -\laissezVibrer
                         \sfffz
@@ -2456,7 +2472,8 @@
                         
                         %%% CelloMusicVoice [measure 195] %%%
                         \ottava #-1
-                        \clef "bass"
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         c,,2.
                         \fff
                         ^ \markup {
@@ -2480,7 +2497,8 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble"
+                        \clef "treble" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         cqs'''2
                         -\laissezVibrer
                         \sfffz
@@ -2517,7 +2535,8 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass"
+                        \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
+                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR
                         c,,\breve
                         \<
                         \mf
