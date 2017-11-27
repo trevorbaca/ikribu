@@ -107,7 +107,6 @@ maker(
         ('ViolaMusicVoice', 1, 8),
         ),
     baca.effort_dynamic('mp'),
-    baca.staff_lines(1),
     )
 
 maker(
@@ -136,7 +135,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 8),
-    baca.staff_lines(1),
     baca.staff_positions([0]),
     )
 

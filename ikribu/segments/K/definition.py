@@ -87,6 +87,10 @@ maker(
         ('CelloMusicVoice', 1, 16),
         ),
     baca.repeat_ties_up(),
+    )
+
+maker(
+    baca.scope('CelloMusicVoice', 1),
     baca.staff_lines(1),
     )
 
