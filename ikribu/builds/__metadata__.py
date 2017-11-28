@@ -10,6 +10,7 @@ metadata = abjad.TypedOrderedDict(
                     (
                         'break_measures',
                         [
+                            1,
                             16,
                             33,
                             49,
