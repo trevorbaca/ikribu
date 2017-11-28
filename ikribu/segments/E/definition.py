@@ -47,8 +47,10 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    (63, 20, [15, 20], True),
-    (73, 140, [15, 20]),
+    baca.page(
+        [63, 20, (15, 20)],
+        [73, 140, (15, 20)],
+        ),
     )
 
 maker = baca.SegmentMaker(

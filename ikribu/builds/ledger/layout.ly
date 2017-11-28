@@ -3,6 +3,7 @@
         \context PageLayout = "PageLayout" {
             
             %%% PageLayout [measure 1] %%%
+            \pageBreak % LEDGER-SCORE:BREAK
             \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 70) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
             \autoPageBreaksOff
             \bar "" % SEGMENT:EMPTY-BAR
