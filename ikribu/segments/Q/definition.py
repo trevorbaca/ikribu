@@ -41,7 +41,6 @@ maker = baca.SegmentMaker(
     final_markup_extra_offset=(-18, -6),
     ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
-    label_clock_time=False,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
