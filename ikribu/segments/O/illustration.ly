@@ -1078,10 +1078,10 @@
                             \stopStaff % SEGMENT:REAPPLIED-STAFF-LINES:2
                             \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED-STAFF-LINES:2
                             \startStaff % SEGMENT:REAPPLIED-STAFF-LINES:2
-                            \clef "bass" % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:6
+                            \clef "bass" % SEGMENT:EXPLICIT-CLEF:6
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED-STAFF-LINES:1
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-DYNAMIC:3
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CONTEXTED-INDICATOR:5
+                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT-CLEF:COLOR:5
                             R1 * 1
                             \sfffz % SEGMENT:REMINDER-DYNAMIC:4
                             
