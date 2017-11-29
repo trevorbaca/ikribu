@@ -36,7 +36,6 @@ maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
     label_clock_time=False,
-    label_stages=False,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
