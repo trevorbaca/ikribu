@@ -17,6 +17,7 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
+        ('end_clock_time', "15'14''"),
         (
             'end_dynamics_by_context',
             abjad.TypedOrderedDict(

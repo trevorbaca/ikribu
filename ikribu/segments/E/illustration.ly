@@ -15,8 +15,8 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 63] %%%
-                \pageBreak % SEGMENT:BREAK:3
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:4
+                \pageBreak % SEGMENT:BREAK:4
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:5
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -56,6 +56,11 @@
                 \newSpacingSection
                 s1 * 1/2
                 \startTextSpan
+                %%% ^ \markup { % CLOCK-TIME:3
+                    %%% \fontsize % CLOCK-TIME:3
+                        %%% #-2 % CLOCK-TIME:3
+                        %%% 4'21'' % CLOCK-TIME:3
+                    %%% } % CLOCK-TIME:3
                 %%% - \markup { % STAGE-NUMBER:2
                     %%% \fontsize % STAGE-NUMBER:2
                         %%% #-3 % STAGE-NUMBER:2
@@ -69,6 +74,11 @@
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'23'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -83,6 +93,11 @@
                 \newSpacingSection
                 s1 * 3/4
                 \stopTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'33'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -112,6 +127,11 @@
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'36'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -158,6 +178,11 @@
                 \newSpacingSection
                 s1 * 3/4
                 \startTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'41'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -171,6 +196,11 @@
                 \time 4/4
                 \newSpacingSection
                 s1 * 1
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'44'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -185,6 +215,11 @@
                 \newSpacingSection
                 s1 * 3/4
                 \stopTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'48'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -214,6 +249,11 @@
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'52'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -260,6 +300,11 @@
                 \newSpacingSection
                 s1 * 7/4
                 \startTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 4'55'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -273,6 +318,11 @@
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'05'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -282,13 +332,18 @@
                     %%% } % STAGE-NUMBER:1
                 
                 %%% GlobalSkips [measure 73] %%%
-                \break % SEGMENT:BREAK:2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:BREAK:3
+                \break % SEGMENT:BREAK:3
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:BREAK:4
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
                 \stopTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'16'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -318,6 +373,11 @@
                 \time 7/4
                 \newSpacingSection
                 s1 * 7/4
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'24'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -364,6 +424,11 @@
                 \newSpacingSection
                 s1 * 3/4
                 \startTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'31'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -377,6 +442,11 @@
                 \time 2/4
                 \newSpacingSection
                 s1 * 1/2
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'34'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -391,6 +461,11 @@
                 \newSpacingSection
                 s1 * 7/4
                 \stopTextSpan
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'36'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -420,6 +495,11 @@
                 \time 8/4
                 \newSpacingSection
                 s1 * 2
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 5'46'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1

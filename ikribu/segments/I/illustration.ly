@@ -70,14 +70,19 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 108] %%%
-                \pageBreak % SEGMENT:BREAK:3
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:4
+                \pageBreak % SEGMENT:BREAK:4
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:5
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
                 \time 3/4
                 \mark #9
                 \bar "" % SEGMENT:EMPTY-BAR:1
                 \newSpacingSection
                 s1 * 3/4
+                %%% ^ \markup { % CLOCK-TIME:3
+                    %%% \fontsize % CLOCK-TIME:3
+                        %%% #-2 % CLOCK-TIME:3
+                        %%% 8'16'' % CLOCK-TIME:3
+                    %%% } % CLOCK-TIME:3
                 %%% - \markup { % STAGE-NUMBER:2
                     %%% \fontsize % STAGE-NUMBER:2
                         %%% #-3 % STAGE-NUMBER:2
@@ -120,6 +125,11 @@
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 8'21'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -146,6 +156,11 @@
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 8'27'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
@@ -172,6 +187,11 @@
                 \time 3/4
                 \newSpacingSection
                 s1 * 3/4
+                %%% ^ \markup { % CLOCK-TIME:2
+                    %%% \fontsize % CLOCK-TIME:2
+                        %%% #-2 % CLOCK-TIME:2
+                        %%% 8'33'' % CLOCK-TIME:2
+                    %%% } % CLOCK-TIME:2
                 %%% - \markup { % STAGE-NUMBER:1
                     %%% \fontsize % STAGE-NUMBER:1
                         %%% #-3 % STAGE-NUMBER:1
