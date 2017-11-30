@@ -61,7 +61,7 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 7/4
             \mark #10
-            %%% \bar "" % SEGMENT:EMPTY-BAR:1
+            %%% \bar "" % SEGMENT:EMPTY_BAR:1
             \newSpacingSection
             s1 * 7/4
             ^ \markup {
@@ -346,8 +346,8 @@
                     \once \override Staff.StaffSymbol.line-count = 0
                     \startStaff
                     R1 * 1/4
-                    \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT:1
-                    \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT:2
+                    \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA_MEASURE:1
+                    \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA_MEASURE:2
                     
                     %%% BassClarinetMusicVoice [measure 125] %%%
                     \stopStaff
@@ -395,8 +395,8 @@
                     \startStaff
                     R1 * 1/4
                     \bar "|"
-                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA-MEASURE-TREATMENT:1
-                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA-MEASURE-TREATMENT:2
+                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_MEASURE:1
+                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_MEASURE:2
                     
                 }
             }
