@@ -30,9 +30,9 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 1] %%%
-                \pageBreak % SEGMENT:BREAK:6
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20))) % SEGMENT:BREAK:7
-                \autoPageBreaksOff % SEGMENT:BREAK:8
+                \pageBreak % SEGMENT:LAYOUT:6
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:7
+                \autoPageBreaksOff % SEGMENT:LAYOUT:8
                 \time 7/4
                 \bar "" % SEGMENT:EMPTY_START_BAR:1
                 \newSpacingSection
@@ -82,7 +82,7 @@
                     }
                 
                 %%% GlobalSkips [measure 2] %%%
-                \noBreak % SEGMENT:BREAK:4
+                \noBreak % SEGMENT:LAYOUT:4
                 \time 1/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4) % SEGMENT:SPACING:COMMAND:2
