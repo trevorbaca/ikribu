@@ -6,8 +6,8 @@
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 87] %%%
-            %%% \pageBreak % SEGMENT:BREAK:4
-            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:5
+            %%% \pageBreak % SEGMENT:LAYOUT:4
+            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:5
             \once \override TextSpanner.arrow-width = 0.25
             \once \override TextSpanner.bound-details.left-broken.padding = 0
             \once \override TextSpanner.bound-details.left-broken.text = \markup {

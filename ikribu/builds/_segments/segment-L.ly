@@ -115,8 +115,8 @@
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 143] %%%
-            %%% \pageBreak % SEGMENT:BREAK:2
-            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:3
+            %%% \pageBreak % SEGMENT:LAYOUT:2
+            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:3
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \mark #12
@@ -195,8 +195,8 @@
             s1 * 3/4
             
             %%% GlobalSkips [measure 153] %%%
-            %%% \break % SEGMENT:BREAK:1
-            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:BREAK:2
+            %%% \break % SEGMENT:LAYOUT:1
+            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
@@ -251,8 +251,8 @@
             s1 * 1/2
             
             %%% GlobalSkips [measure 162] %%%
-            %%% \pageBreak % SEGMENT:BREAK:1
-            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:2
+            %%% \pageBreak % SEGMENT:LAYOUT:1
+            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \newSpacingSection
@@ -307,8 +307,8 @@
             s1 * 1
             
             %%% GlobalSkips [measure 171] %%%
-            %%% \break % SEGMENT:BREAK:1
-            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:BREAK:2
+            %%% \break % SEGMENT:LAYOUT:1
+            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:2
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \newSpacingSection
