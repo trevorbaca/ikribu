@@ -138,7 +138,7 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \mark #2
-            %%% \bar "" % SEGMENT:EMPTY-BAR:1
+            %%% \bar "" % SEGMENT:EMPTY_BAR:1
             \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-METRONOME-MARK:2
             \newSpacingSection
             s1 * 1
@@ -368,8 +368,8 @@
                     \startStaff
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
-                    \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT:1
-                    \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA-MEASURE-TREATMENT:2
+                    \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA_MEASURE:1
+                    \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA_MEASURE:2
                     
                     %%% BassClarinetMusicVoice [measure 16] %%%
                     \stopStaff
@@ -474,8 +474,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA-MEASURE-TREATMENT:1
-                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA-MEASURE-TREATMENT:2
+                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_MEASURE:1
+                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_MEASURE:2
                     
                 }
             }

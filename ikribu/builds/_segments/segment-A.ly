@@ -42,7 +42,7 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 8/4
             \mark #1
-            %%% \bar "" % SEGMENT:EMPTY-BAR:1
+            %%% \bar "" % SEGMENT:EMPTY_BAR:1
             \newSpacingSection
             s1 * 2
             ^ \markup {
@@ -168,8 +168,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA-MEASURE-TREATMENT:1
-                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA-MEASURE-TREATMENT:2
+                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_MEASURE:1
+                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_MEASURE:2
                     
                 }
             }
