@@ -560,8 +560,8 @@
                         \startStaff
                         R1 * 1/4
                         \bar "|."
-                        \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_MEASURE:1
-                        \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_MEASURE:2
+                        \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_BAR_LINE:1
+                        \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_BAR_LINE:2
                         
                     }
                 }

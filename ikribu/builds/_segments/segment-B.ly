@@ -368,8 +368,8 @@
                     \startStaff
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
-                    \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA_MEASURE:1
-                    \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA_MEASURE:2
+                    \once \override Score.BarLine.transparent = ##t % BUILD:LEDGER:FERMATA_BAR_LINE:1
+                    \once \override Score.SpanBar.transparent = ##t % BUILD:LEDGER:FERMATA_BAR_LINE:2
                     
                     %%% BassClarinetMusicVoice [measure 16] %%%
                     \stopStaff
@@ -474,8 +474,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_MEASURE:1
-                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_MEASURE:2
+                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_BAR_LINE:1
+                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_BAR_LINE:2
                     
                 }
             }
