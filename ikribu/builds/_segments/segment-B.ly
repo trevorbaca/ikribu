@@ -138,7 +138,7 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)
             \time 4/4
             \mark #2
-            %%% \bar "" % SEGMENT:EMPTY_BAR:1
+            %%% \bar "" % SEGMENT:EMPTY_START_BAR:1
             \once \override TextScript.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER-METRONOME-MARK:2
             \newSpacingSection
             s1 * 1

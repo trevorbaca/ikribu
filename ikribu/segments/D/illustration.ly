@@ -62,7 +62,7 @@
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:7
                 \time 3/4
                 \mark #4
-                \bar "" % SEGMENT:EMPTY_BAR:1
+                \bar "" % SEGMENT:EMPTY_START_BAR:1
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:3
                 s1 * 3/4
