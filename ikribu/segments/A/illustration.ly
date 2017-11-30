@@ -70,14 +70,14 @@
                                             %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:2
                                             %%% [A.1] % STAGE-NUMBER:2
                                 %%% } % STAGE-NUMBER:2
-                            \line % SEGMENT:SPACING:MARKUP:4
-                                { % SEGMENT:SPACING:MARKUP:4
-                                    \with-color % SEGMENT:SPACING:MARKUP:4
-                                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:4
-                                        \fontsize % SEGMENT:SPACING:MARKUP:4
-                                            #-3 % SEGMENT:SPACING:MARKUP:4
-                                            (1/12) % SEGMENT:SPACING:MARKUP:4
-                                } % SEGMENT:SPACING:MARKUP:4
+                            %%% \line % SEGMENT:SPACING:MARKUP:4
+                                %%% { % SEGMENT:SPACING:MARKUP:4
+                                    %%% \with-color % SEGMENT:SPACING:MARKUP:4
+                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:4
+                                        %%% \fontsize % SEGMENT:SPACING:MARKUP:4
+                                            %%% #-3 % SEGMENT:SPACING:MARKUP:4
+                                            %%% (1/12) % SEGMENT:SPACING:MARKUP:4
+                                %%% } % SEGMENT:SPACING:MARKUP:4
                         }
                     }
                 ^ \markup {
@@ -107,13 +107,13 @@
                         %%% #-2 % CLOCK-TIME:3
                         %%% 0'18'' % CLOCK-TIME:3
                     %%% } % CLOCK-TIME:3
-                - \markup { % SEGMENT:SPACING:MARKUP:2
-                    \with-color % SEGMENT:SPACING:MARKUP:2
-                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:2
-                        \fontsize % SEGMENT:SPACING:MARKUP:2
-                            #-3 % SEGMENT:SPACING:MARKUP:2
-                            (1/12) % SEGMENT:SPACING:MARKUP:2
-                    } % SEGMENT:SPACING:MARKUP:2
+                %%% - \markup { % SEGMENT:SPACING:MARKUP:2
+                    %%% \with-color % SEGMENT:SPACING:MARKUP:2
+                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:2
+                        %%% \fontsize % SEGMENT:SPACING:MARKUP:2
+                            %%% #-3 % SEGMENT:SPACING:MARKUP:2
+                            %%% (1/12) % SEGMENT:SPACING:MARKUP:2
+                    %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 5] %%%
                 \time 4/4
@@ -136,14 +136,14 @@
                                             %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
                                             %%% [A.2] % STAGE-NUMBER:1
                                 %%% } % STAGE-NUMBER:1
-                            \line % SEGMENT:SPACING:MARKUP:3
-                                { % SEGMENT:SPACING:MARKUP:3
-                                    \with-color % SEGMENT:SPACING:MARKUP:3
-                                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:3
-                                        \fontsize % SEGMENT:SPACING:MARKUP:3
-                                            #-3 % SEGMENT:SPACING:MARKUP:3
-                                            (1/12) % SEGMENT:SPACING:MARKUP:3
-                                } % SEGMENT:SPACING:MARKUP:3
+                            %%% \line % SEGMENT:SPACING:MARKUP:3
+                                %%% { % SEGMENT:SPACING:MARKUP:3
+                                    %%% \with-color % SEGMENT:SPACING:MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:3
+                                        %%% \fontsize % SEGMENT:SPACING:MARKUP:3
+                                            %%% #-3 % SEGMENT:SPACING:MARKUP:3
+                                            %%% (1/12) % SEGMENT:SPACING:MARKUP:3
+                                %%% } % SEGMENT:SPACING:MARKUP:3
                         }
                     }
                 
@@ -157,13 +157,13 @@
                         %%% #-2 % CLOCK-TIME:3
                         %%% 0'34'' % CLOCK-TIME:3
                     %%% } % CLOCK-TIME:3
-                - \markup { % SEGMENT:SPACING:MARKUP:2
-                    \with-color % SEGMENT:SPACING:MARKUP:2
-                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:2
-                        \fontsize % SEGMENT:SPACING:MARKUP:2
-                            #-3 % SEGMENT:SPACING:MARKUP:2
-                            (1/12) % SEGMENT:SPACING:MARKUP:2
-                    } % SEGMENT:SPACING:MARKUP:2
+                %%% - \markup { % SEGMENT:SPACING:MARKUP:2
+                    %%% \with-color % SEGMENT:SPACING:MARKUP:2
+                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:2
+                        %%% \fontsize % SEGMENT:SPACING:MARKUP:2
+                            %%% #-3 % SEGMENT:SPACING:MARKUP:2
+                            %%% (1/12) % SEGMENT:SPACING:MARKUP:2
+                    %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 7] %%%
                 \time 3/4
@@ -175,13 +175,13 @@
                         %%% #-2 % CLOCK-TIME:3
                         %%% 0'39'' % CLOCK-TIME:3
                     %%% } % CLOCK-TIME:3
-                - \markup { % SEGMENT:SPACING:MARKUP:2
-                    \with-color % SEGMENT:SPACING:MARKUP:2
-                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:2
-                        \fontsize % SEGMENT:SPACING:MARKUP:2
-                            #-3 % SEGMENT:SPACING:MARKUP:2
-                            (1/12) % SEGMENT:SPACING:MARKUP:2
-                    } % SEGMENT:SPACING:MARKUP:2
+                %%% - \markup { % SEGMENT:SPACING:MARKUP:2
+                    %%% \with-color % SEGMENT:SPACING:MARKUP:2
+                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:2
+                        %%% \fontsize % SEGMENT:SPACING:MARKUP:2
+                            %%% #-3 % SEGMENT:SPACING:MARKUP:2
+                            %%% (1/12) % SEGMENT:SPACING:MARKUP:2
+                    %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 8] %%%
                 \time 7/4
@@ -204,14 +204,14 @@
                                             %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
                                             %%% [A.3] % STAGE-NUMBER:1
                                 %%% } % STAGE-NUMBER:1
-                            \line % SEGMENT:SPACING:MARKUP:3
-                                { % SEGMENT:SPACING:MARKUP:3
-                                    \with-color % SEGMENT:SPACING:MARKUP:3
-                                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:3
-                                        \fontsize % SEGMENT:SPACING:MARKUP:3
-                                            #-3 % SEGMENT:SPACING:MARKUP:3
-                                            (1/12) % SEGMENT:SPACING:MARKUP:3
-                                } % SEGMENT:SPACING:MARKUP:3
+                            %%% \line % SEGMENT:SPACING:MARKUP:3
+                                %%% { % SEGMENT:SPACING:MARKUP:3
+                                    %%% \with-color % SEGMENT:SPACING:MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:3
+                                        %%% \fontsize % SEGMENT:SPACING:MARKUP:3
+                                            %%% #-3 % SEGMENT:SPACING:MARKUP:3
+                                            %%% (1/12) % SEGMENT:SPACING:MARKUP:3
+                                %%% } % SEGMENT:SPACING:MARKUP:3
                         }
                     }
                 
@@ -231,14 +231,14 @@
                                             %%% #(x11-color 'DarkCyan) % STAGE-NUMBER:1
                                             %%% [A.4] % STAGE-NUMBER:1
                                 %%% } % STAGE-NUMBER:1
-                            \line % SEGMENT:SPACING:MARKUP:3
-                                { % SEGMENT:SPACING:MARKUP:3
-                                    \with-color % SEGMENT:SPACING:MARKUP:3
-                                        #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:3
-                                        \fontsize % SEGMENT:SPACING:MARKUP:3
-                                            #-3 % SEGMENT:SPACING:MARKUP:3
-                                            (1/4) % SEGMENT:SPACING:MARKUP:3
-                                } % SEGMENT:SPACING:MARKUP:3
+                            %%% \line % SEGMENT:SPACING:MARKUP:3
+                                %%% { % SEGMENT:SPACING:MARKUP:3
+                                    %%% \with-color % SEGMENT:SPACING:MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING:MARKUP:3
+                                        %%% \fontsize % SEGMENT:SPACING:MARKUP:3
+                                            %%% #-3 % SEGMENT:SPACING:MARKUP:3
+                                            %%% (1/4) % SEGMENT:SPACING:MARKUP:3
+                                %%% } % SEGMENT:SPACING:MARKUP:3
                         }
                     }
                 
