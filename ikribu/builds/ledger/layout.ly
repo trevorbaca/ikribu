@@ -3,1057 +3,1056 @@
         \context PageLayout = "PageLayout" {
             
             %%% PageLayout [measure 1] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 70) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
-            \autoPageBreaksOff
-            \bar "" % SEGMENT:EMPTY_START_BAR
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 70) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
+            \autoPageBreaksOff % BUILD:LEDGER:BREAK:3
             s1 * 7/4
             
             %%% PageLayout [measure 2] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 3] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 4] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 5] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 6] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 7] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 8] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 9] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 10] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 11] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 12] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 13] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 14] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 15] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 16] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 2
             
             %%% PageLayout [measure 17] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 18] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 19] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 20] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 21] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 22] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 23] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 24] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 25] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 26] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 27] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 28] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 29] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 30] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 31] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 32] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 33] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 2
             
             %%% PageLayout [measure 34] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 35] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 36] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 37] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 38] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 39] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 40] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 41] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 42] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 43] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 44] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 45] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 46] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 47] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 48] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 49] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 130) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 130) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 1
             
             %%% PageLayout [measure 50] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 51] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 52] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 53] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 54] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 55] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 56] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 57] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 58] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 59] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 60] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 61] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 62] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 63] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 1/2
             
             %%% PageLayout [measure 64] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 65] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 66] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 67] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 68] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 69] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 70] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 71] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 72] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 73] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 74] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 75] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 3/4
             
             %%% PageLayout [measure 76] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 77] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 78] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 79] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 80] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 81] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 82] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 83] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 84] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 85] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 86] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 87] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 7/4
             
             %%% PageLayout [measure 88] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 89] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 90] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 91] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 92] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 93] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 94] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 95] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 96] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 97] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 98] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/6
             
             %%% PageLayout [measure 99] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 120) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 120) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 2
             
             %%% PageLayout [measure 100] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 101] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 102] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 103] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 104] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 105] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 106] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 107] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 108] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 3/4
             
             %%% PageLayout [measure 109] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 110] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 111] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 112] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 113] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 114] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 115] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 116] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 117] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 118] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 119] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 120] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 121] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 122] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 123] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 124] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 125] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 1
             
             %%% PageLayout [measure 126] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 127] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 128] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 129] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 130] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 131] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 132] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 133] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 134] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 135] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 136] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 137] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 138] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 139] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 140] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 141] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 142] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 143] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 2
             
             %%% PageLayout [measure 144] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 145] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 146] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 147] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 148] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 149] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 150] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 151] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 152] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 153] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 154] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 155] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 156] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 7/4
             
             %%% PageLayout [measure 157] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 158] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 159] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 160] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 161] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 162] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 163] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 164] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 165] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 166] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 3/4
             
             %%% PageLayout [measure 167] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 168] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 169] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 170] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 171] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 172] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 173] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 174] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 175] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 176] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 177] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 178] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 179] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 180] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 181] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 7/4
             
             %%% PageLayout [measure 182] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 183] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 184] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 185] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 186] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 187] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 188] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 189] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 190] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 191] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 192] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 193] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 194] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 10) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 7/4
             
             %%% PageLayout [measure 195] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 196] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 197] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 198] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 199] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 200] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 201] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 202] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 203] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 204] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 205] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 206] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 207] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 208] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 105) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 105) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 1/2
             
             %%% PageLayout [measure 209] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 210] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 211] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 212] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 213] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 214] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 215] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 216] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 217] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 218] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 1
             
             %%% PageLayout [measure 219] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 220] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 221] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 222] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 223] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 224] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 225] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 226] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 227] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 228] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 229] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 2
             
             %%% PageLayout [measure 230] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 231] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 232] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 233] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 234] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 235] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 236] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 237] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 238] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 239] %%%
-            \pageBreak % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \pageBreak % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 3/4
             
             %%% PageLayout [measure 240] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 241] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 242] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 243] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 244] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 245] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 246] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
             %%% PageLayout [measure 247] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 248] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 249] %%%
-            \break % LEDGER-SCORE:BREAK
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20))) % LEDGER-SCORE:BREAK
+            \break % BUILD:LEDGER:BREAK:1
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 160) (alignment-distances . (15 20))) % BUILD:LEDGER:BREAK:2
             s1 * 7/4
             
             %%% PageLayout [measure 250] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 251] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/2
             
             %%% PageLayout [measure 252] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 2
             
             %%% PageLayout [measure 253] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 254] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 255] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1
             
             %%% PageLayout [measure 256] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 3/4
             
             %%% PageLayout [measure 257] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 7/4
             
             %%% PageLayout [measure 258] %%%
-            \noBreak
+            \noBreak % BUILD:LEDGER:BREAK:1
             s1 * 1/4
             
         }

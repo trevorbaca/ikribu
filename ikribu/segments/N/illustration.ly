@@ -17,6 +17,7 @@
                 %%% GlobalSkips [measure 208] %%%
                 \pageBreak % SEGMENT:BREAK:6
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:BREAK:7
+                \autoPageBreaksOff % SEGMENT:BREAK:8
                 \time 2/4
                 \mark #14
                 \bar "" % SEGMENT:EMPTY_START_BAR:1
@@ -67,6 +68,7 @@
                     }
                 
                 %%% GlobalSkips [measure 209] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 7/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -85,6 +87,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 210] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 3/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -103,6 +106,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 211] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 4/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -121,6 +125,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 212] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 3/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -139,6 +144,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 213] %%%
+                \noBreak % SEGMENT:BREAK:5
                 \time 4/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:2
@@ -171,6 +177,7 @@
                     }
                 
                 %%% GlobalSkips [measure 214] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 3/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -189,6 +196,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 215] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 2/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -207,6 +215,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 216] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 7/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1
@@ -225,6 +234,7 @@
                     %%% } % SEGMENT:SPACING:MARKUP:2
                 
                 %%% GlobalSkips [measure 217] %%%
+                \noBreak % SEGMENT:BREAK:4
                 \time 7/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING:COMMAND:1

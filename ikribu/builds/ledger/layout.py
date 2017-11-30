@@ -42,5 +42,5 @@ layout = baca.layout(
         [239, 20, (15, 20)],
         [249, 160, (15, 20)],
         ),
-    build='LEDGER-SCORE',
+    build='LEDGER',
     )
