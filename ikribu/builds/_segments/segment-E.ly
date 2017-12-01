@@ -48,11 +48,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:3
             s1 * 1/2
             \startTextSpan
-            %%% ^ \markup { % CLOCK_TIME:5
-                %%% \fontsize % CLOCK_TIME:5
-                    %%% #-2 % CLOCK_TIME:5
-                    %%% 4'21'' % CLOCK_TIME:5
-                %%% } % CLOCK_TIME:5
+            ^ \markup { % CLOCK_TIME:5
+                \fontsize % CLOCK_TIME:5
+                    #-2 % CLOCK_TIME:5
+                    4'21'' % CLOCK_TIME:5
+                } % CLOCK_TIME:5
             - \markup {
                 \column
                     {
@@ -81,11 +81,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 7/4
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'23'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'23'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -115,11 +115,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 3/4
             \stopTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'33'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'33'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -164,11 +164,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 1
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'36'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'36'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -230,11 +230,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 3/4
             \startTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'41'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'41'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -263,11 +263,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 1
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'44'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'44'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -297,11 +297,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 3/4
             \stopTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'48'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'48'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -346,11 +346,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 1/2
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'52'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'52'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -412,11 +412,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 7/4
             \startTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 4'55'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    4'55'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -445,11 +445,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 2
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'05'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'05'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -480,11 +480,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 7/4
             \stopTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'16'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'16'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -529,11 +529,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 7/4
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'24'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'24'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -595,11 +595,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 3/4
             \startTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'31'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'31'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -628,11 +628,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 1/2
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'34'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'34'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -662,11 +662,11 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 7/4
             \stopTextSpan
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'36'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'36'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {
@@ -711,11 +711,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
             s1 * 2
-            %%% ^ \markup { % CLOCK_TIME:4
-                %%% \fontsize % CLOCK_TIME:4
-                    %%% #-2 % CLOCK_TIME:4
-                    %%% 5'46'' % CLOCK_TIME:4
-                %%% } % CLOCK_TIME:4
+            ^ \markup { % CLOCK_TIME:4
+                \fontsize % CLOCK_TIME:4
+                    #-2 % CLOCK_TIME:4
+                    5'46'' % CLOCK_TIME:4
+                } % CLOCK_TIME:4
             - \markup {
                 \column
                     {

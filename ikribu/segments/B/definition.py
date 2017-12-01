@@ -96,7 +96,6 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 9),
-    baca.clef('treble'),
     baca.markup.string_number(3),
     baca.pitches('E4'),
     baca.stem_tremolo(),

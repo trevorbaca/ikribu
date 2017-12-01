@@ -30,11 +30,11 @@
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:3
             s1 * 7/4
-            %%% ^ \markup { % CLOCK_TIME:5
-                %%% \fontsize % CLOCK_TIME:5
-                    %%% #-2 % CLOCK_TIME:5
-                    %%% 0'00'' % CLOCK_TIME:5
-                %%% } % CLOCK_TIME:5
+            ^ \markup { % CLOCK_TIME:5
+                \fontsize % CLOCK_TIME:5
+                    #-2 % CLOCK_TIME:5
+                    0'00'' % CLOCK_TIME:5
+                } % CLOCK_TIME:5
             - \markup {
                 \column
                     {
