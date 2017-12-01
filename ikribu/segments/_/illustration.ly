@@ -136,9 +136,10 @@
                                         cl.
                                     }
                             }
-                        \clef "treble" % SEGMENT:EXPLICIT_CLEF:2
-                        \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                        \clef "treble" % EXPLICIT_CLEF_COMMAND:2
+                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                         R1 * 7/4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                         
                         %%% BassClarinetMusicVoice [measure 2] %%%
                         \stopStaff
@@ -171,9 +172,10 @@
                                     #10
                                     Vn.
                                 }
-                            \clef "percussion" % SEGMENT:EXPLICIT_CLEF:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                            \clef "percussion" % EXPLICIT_CLEF_COMMAND:2
+                            \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                             R1 * 7/4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                             
                             %%% ViolinRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -192,8 +194,8 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override TextScript.staff-padding = #4.5
-                            \clef "treble" % SEGMENT:EXPLICIT_CLEF:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                            \clef "treble" % EXPLICIT_CLEF_COMMAND:2
+                            \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                             c'1..
                             ^ \markup {
                                 \whiteout
@@ -215,6 +217,7 @@
                                     \italic
                                         ”
                                 }
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                             
                             %%% ViolinMusicVoice [measure 2] %%%
                             \stopStaff
@@ -245,9 +248,10 @@
                                     #10
                                     Va.
                                 }
-                            \clef "percussion" % SEGMENT:EXPLICIT_CLEF:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                            \clef "percussion" % EXPLICIT_CLEF_COMMAND:2
+                            \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                             R1 * 7/4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                             
                             %%% ViolaRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -262,9 +266,10 @@
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             %%% ViolaMusicVoice [measure 1] %%%
-                            \clef "alto" % SEGMENT:EXPLICIT_CLEF:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                            \clef "alto" % EXPLICIT_CLEF_COMMAND:2
+                            \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                             R1 * 7/4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                             
                             %%% ViolaMusicVoice [measure 2] %%%
                             \stopStaff
@@ -296,9 +301,10 @@
                                     #10
                                     Vc.
                                 }
-                            \clef "percussion" % SEGMENT:EXPLICIT_CLEF:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                            \clef "percussion" % EXPLICIT_CLEF_COMMAND:2
+                            \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                             R1 * 7/4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                             
                             %%% CelloRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -314,8 +320,8 @@
                             
                             %%% CelloMusicVoice [measure 1] %%%
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" % SEGMENT:EXPLICIT_CLEF:2
-                            \override Staff.Clef.color = #(x11-color 'black) % SEGMENT:EXPLICIT_CLEF:COLOR:1
+                            \clef "treble" % EXPLICIT_CLEF_COMMAND:2
+                            \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
                             fqf''1..
                             -\laissezVibrer
                             \sfz
@@ -329,6 +335,7 @@
                                     \upright
                                         III
                                 }
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
                             
                             %%% CelloMusicVoice [measure 2] %%%
                             \stopStaff
