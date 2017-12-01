@@ -1340,7 +1340,7 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:3
                         \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:5
-                        \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:6
+                        %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:6
                         \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:8
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                         R1 * 3/4
@@ -1555,7 +1555,7 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                             \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:3
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:5
-                            \override ViolinRHMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:6
+                            %%% \override ViolinRHMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:6
                             \set ViolinRHMusicStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:8
                             \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                             R1 * 3/4
@@ -1708,7 +1708,7 @@
                             \clef "treble" %! SEGMENT:REAPPLIED_CLEF_COMMAND:5
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:1
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:3
-                            \override ViolinMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
+                            %%% \override ViolinMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
                             \set ViolinMusicStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
                             c'2.
@@ -2257,7 +2257,7 @@
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                             \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:3
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:5
-                            \override ViolaRHMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:6
+                            %%% \override ViolaRHMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:6
                             \set ViolaRHMusicStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:8
                             \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                             R1 * 3/4
@@ -2410,7 +2410,7 @@
                             \clef "treble" %! SEGMENT:REAPPLIED_CLEF_COMMAND:5
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:1
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:3
-                            \override ViolaMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
+                            %%% \override ViolaMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:4
                             \set ViolaMusicStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:6
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
                             R1 * 3/4
@@ -2766,7 +2766,7 @@
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                             \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:3
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_CLEF_COLOR:5
-                            \override CelloRHMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:6
+                            %%% \override CelloRHMusicStaff.Clef.color = ##f %! SEGMENT:REAPPLIED_CLEF_UNCOLOR:6
                             \set CelloRHMusicStaff.forceClef = ##t %! SEGMENT:REAPPLIED_CLEF_COMMAND:8
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                             R1 * 3/4
@@ -2918,7 +2918,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             fqf''2.
                             -\laissezVibrer
                             \sfz
@@ -2958,7 +2958,7 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c,,1
                             \<
                             \mf
@@ -2997,7 +2997,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             g''1..
                             -\laissezVibrer
                             \sfz
@@ -3017,7 +3017,7 @@
                             \ottava #-1
                             \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c,,2.
                             \fff
                             ^ \markup {
@@ -3044,7 +3044,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             fqf''1
                             -\laissezVibrer
                             \sffz
@@ -3084,7 +3084,7 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c,,2.
                             \<
                             \mf
@@ -3121,7 +3121,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             g''2
                             -\laissezVibrer
                             \sffz
@@ -3161,7 +3161,7 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c,,1..
                             \<
                             \mf
@@ -3200,7 +3200,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             a''1..
                             -\laissezVibrer
                             \sfffz
@@ -3220,7 +3220,7 @@
                             \ottava #-1
                             \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c,,2.
                             \fff
                             ^ \markup {
@@ -3247,7 +3247,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             cqs'''2
                             -\laissezVibrer
                             \sfffz
@@ -3287,7 +3287,7 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c,,\breve
                             \<
                             \mf
