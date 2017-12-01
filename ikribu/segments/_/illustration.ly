@@ -138,7 +138,7 @@
                             }
                         \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         R1 * 7/4
                         \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
@@ -175,7 +175,7 @@
                                 }
                             \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             R1 * 7/4
                             \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                             
@@ -198,7 +198,7 @@
                             \once \override TextScript.staff-padding = #4.5
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             c'1..
                             ^ \markup {
                                 \whiteout
@@ -253,7 +253,7 @@
                                 }
                             \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             R1 * 7/4
                             \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                             
@@ -272,7 +272,7 @@
                             %%% ViolaMusicVoice [measure 1] %%%
                             \clef "alto" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             R1 * 7/4
                             \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                             
@@ -308,7 +308,7 @@
                                 }
                             \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             R1 * 7/4
                             \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                             
@@ -328,7 +328,7 @@
                             \once \override NoteHead.style = #'harmonic
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             fqf''1..
                             -\laissezVibrer
                             \sfz
