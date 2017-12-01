@@ -15,31 +15,31 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 35] %%%
-                \pageBreak % SEGMENT:LAYOUT:6
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:7
-                \autoPageBreaksOff % SEGMENT:LAYOUT:8
+                \pageBreak %! SEGMENT:LAYOUT:6
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:7
+                \autoPageBreaksOff %! SEGMENT:LAYOUT:8
                 \time 7/4
                 \mark #3
-                \bar "" % SEGMENT:EMPTY_START_BAR:1
+                \bar "" %! SEGMENT:EMPTY_START_BAR:1
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:3
                 s1 * 7/4
-                %%% ^ \markup { % CLOCK_TIME:5
-                    %%% \fontsize % CLOCK_TIME:5
-                        %%% #-2 % CLOCK_TIME:5
-                        %%% 2'56'' % CLOCK_TIME:5
-                    %%% } % CLOCK_TIME:5
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:5
+                        %%% #-2 %! CLOCK_TIME_MARKUP:5
+                        %%% 2'56'' %! CLOCK_TIME_MARKUP:5
+                    %%% } %! CLOCK_TIME_MARKUP:5
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:2
-                                %%% { % STAGE_NUMBER:2
-                                    %%% \fontsize % STAGE_NUMBER:2
-                                        %%% #-3 % STAGE_NUMBER:2
-                                        %%% \with-color % STAGE_NUMBER:2
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
-                                            %%% [C.1] % STAGE_NUMBER:2
-                                %%% } % STAGE_NUMBER:2
+                            %%% \line % STAGE_NUMBER_MARKUP:2
+                                %%% { % STAGE_NUMBER_MARKUP:2
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:2
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:2
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:2
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:2
+                                            %%% [C.1] % STAGE_NUMBER_MARKUP:2
+                                %%% } % STAGE_NUMBER_MARKUP:2
                             %%% \line % SEGMENT:SPACING_MARKUP:4
                                 %%% { % SEGMENT:SPACING_MARKUP:4
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:4
@@ -68,7 +68,7 @@
                     }
                 
                 %%% GlobalSkips [measure 36] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -103,25 +103,25 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
                 \startTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'03'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'03'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.2] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.2] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -134,27 +134,27 @@
                     }
                 
                 %%% GlobalSkips [measure 37] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'08'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'08'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.3] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.3] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -167,28 +167,28 @@
                     }
                 
                 %%% GlobalSkips [measure 38] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 3/4
                 \stopTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'14'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'14'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.4] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.4] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -217,27 +217,27 @@
                     }
                 
                 %%% GlobalSkips [measure 39] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 1/6
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1/6
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'17'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'17'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.5] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.5] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -250,7 +250,7 @@
                     }
                 
                 %%% GlobalSkips [measure 40] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -285,25 +285,25 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
                 \startTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'18'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'18'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.6] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.6] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -316,27 +316,27 @@
                     }
                 
                 %%% GlobalSkips [measure 41] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'22'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'22'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.7] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.7] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -349,28 +349,28 @@
                     }
                 
                 %%% GlobalSkips [measure 42] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 3/4
                 \stopTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'26'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'26'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.8] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.8] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -399,27 +399,27 @@
                     }
                 
                 %%% GlobalSkips [measure 43] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 1/6
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1/6
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'31'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'31'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.9] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.9] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -432,7 +432,7 @@
                     }
                 
                 %%% GlobalSkips [measure 44] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -467,25 +467,25 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
                 \startTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'31'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'31'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.10] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.10] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -498,27 +498,27 @@
                     }
                 
                 %%% GlobalSkips [measure 45] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'37'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'37'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.11] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.11] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -531,28 +531,28 @@
                     }
                 
                 %%% GlobalSkips [measure 46] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 3/4
                 \stopTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'43'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'43'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.12] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.12] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -581,27 +581,27 @@
                     }
                 
                 %%% GlobalSkips [measure 47] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 1/6
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1/6
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'46'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'46'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.13] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.13] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -614,8 +614,8 @@
                     }
                 
                 %%% GlobalSkips [measure 48] %%%
-                \break % SEGMENT:LAYOUT:5
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:6
+                \break %! SEGMENT:LAYOUT:5
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:6
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -650,25 +650,25 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
                 \startTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'47'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'47'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.14] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.14] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -681,27 +681,27 @@
                     }
                 
                 %%% GlobalSkips [measure 49] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 4/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'51'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'51'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.15] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.15] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -714,28 +714,28 @@
                     }
                 
                 %%% GlobalSkips [measure 50] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 3/4
                 \stopTextSpan
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'55'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'55'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.16] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.16] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -764,27 +764,27 @@
                     }
                 
                 %%% GlobalSkips [measure 51] %%%
-                \noBreak % SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:5
                 \time 1/6
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:2
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:2
                 s1 * 1/6
-                %%% ^ \markup { % CLOCK_TIME:4
-                    %%% \fontsize % CLOCK_TIME:4
-                        %%% #-2 % CLOCK_TIME:4
-                        %%% 3'59'' % CLOCK_TIME:4
-                    %%% } % CLOCK_TIME:4
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:4
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                        %%% 3'59'' %! CLOCK_TIME_MARKUP:4
+                    %%% } %! CLOCK_TIME_MARKUP:4
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER:1
-                                %%% { % STAGE_NUMBER:1
-                                    %%% \fontsize % STAGE_NUMBER:1
-                                        %%% #-3 % STAGE_NUMBER:1
-                                        %%% \with-color % STAGE_NUMBER:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                            %%% [C.17] % STAGE_NUMBER:1
-                                %%% } % STAGE_NUMBER:1
+                            %%% \line % STAGE_NUMBER_MARKUP:1
+                                %%% { % STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                            %%% [C.17] % STAGE_NUMBER_MARKUP:1
+                                %%% } % STAGE_NUMBER_MARKUP:1
                             %%% \line % SEGMENT:SPACING_MARKUP:3
                                 %%% { % SEGMENT:SPACING_MARKUP:3
                                     %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -805,36 +805,37 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         %%% BassClarinetMusicVoice [measure 35] %%%
-                        \stopStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                        \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED_STAFF_LINES:4
-                        \startStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                        \set BassClarinetMusicStaff.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                            \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                #16 % SEGMENT:RESTATED_INSTRUMENT:2
-                                \center-column % SEGMENT:RESTATED_INSTRUMENT:2
-                                    { % SEGMENT:RESTATED_INSTRUMENT:2
-                                        Bass % SEGMENT:RESTATED_INSTRUMENT:2
-                                        clarinet % SEGMENT:RESTATED_INSTRUMENT:2
-                                    } % SEGMENT:RESTATED_INSTRUMENT:2
-                            } % SEGMENT:RESTATED_INSTRUMENT:2
-                        \set BassClarinetMusicStaff.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                            \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                #10 % SEGMENT:RESTATED_INSTRUMENT:2
-                                \line % SEGMENT:RESTATED_INSTRUMENT:2
-                                    { % SEGMENT:RESTATED_INSTRUMENT:2
-                                        B. % SEGMENT:RESTATED_INSTRUMENT:2
-                                        cl. % SEGMENT:RESTATED_INSTRUMENT:2
-                                    } % SEGMENT:RESTATED_INSTRUMENT:2
-                            } % SEGMENT:RESTATED_INSTRUMENT:2
-                        \clef "treble" % SEGMENT:RESTATED_CLEF_COMMAND:6
-                        \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
-                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED_STAFF_LINES:3
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:5
-                        \set BassClarinetMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:7
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) % SEGMENT:REMINDER_DYNAMIC:9
+                        \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                        \once \override Staff.StaffSymbol.line-count = 5 %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                        \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                        \set BassClarinetMusicStaff.instrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                #16 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \center-column %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                        Bass %! SEGMENT:RESTATED_INSTRUMENT:2
+                                        clarinet %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            } %! SEGMENT:RESTATED_INSTRUMENT:2
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                #10 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \line %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                        B. %! SEGMENT:RESTATED_INSTRUMENT:2
+                                        cl. %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            } %! SEGMENT:RESTATED_INSTRUMENT:2
+                        %%% \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:7
+                        \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) %! SEGMENT:REAPPLIED_STAFF_LINES:3
+                        %%% \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:5
+                        \override BassClarinetMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:6
+                        %%% \set BassClarinetMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:8
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                         R1 * 7/4
-                        \ppp % SEGMENT:REMINDER_DYNAMIC:10
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:8
+                        \ppp %! SEGMENT:REMINDER_DYNAMIC:11
+                        %%% \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:9
                         
                         %%% BassClarinetMusicVoice [measure 36] %%%
                         \stopStaff
@@ -999,24 +1000,25 @@
                         \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                             
                             %%% ViolinRHMusicVoice [measure 35] %%%
-                            \stopStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \startStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \set ViolinStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                                \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                    #16 % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Violin % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                            \set ViolinStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                                \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                    #10 % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Vn. % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                            \clef "percussion" % SEGMENT:RESTATED_CLEF_COMMAND:6
-                            \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
-                            \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED_STAFF_LINES:3
-                            \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:5
-                            \set ViolinRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:7
+                            \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \once \override Staff.StaffSymbol.line-count = 1 %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \set ViolinStaffGroup.instrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    #16 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Violin %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \set ViolinStaffGroup.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    #10 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Vn. %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            %%% \clef "percussion" %! SEGMENT:RESTATED_CLEF_COMMAND:7
+                            \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
+                            \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) %! SEGMENT:REAPPLIED_STAFF_LINES:3
+                            %%% \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:5
+                            \override ViolinRHMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:6
+                            %%% \set ViolinRHMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:8
                             R1 * 7/4
                             ^ \markup {
                                 \override
@@ -1024,7 +1026,7 @@
                                     \box
                                         "to violin"
                                 }
-                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:8
+                            %%% \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:9
                             
                             %%% ViolinRHMusicVoice [measure 36] %%%
                             R1 * 1
@@ -1097,9 +1099,10 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override TextScript.staff-padding = #4.5
-                            \clef "treble" % SEGMENT:RESTATED_CLEF_COMMAND:2
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:1
-                            \set ViolinMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:3
+                            %%% \clef "treble" %! SEGMENT:RESTATED_CLEF_COMMAND:3
+                            %%% \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:1
+                            \override ViolinMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:2
+                            %%% \set ViolinMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:4
                             c'1..
                             ^ \markup {
                                 \whiteout
@@ -1121,7 +1124,7 @@
                                     \italic
                                         ”
                                 }
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:4
+                            %%% \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:5
                             
                             %%% ViolinMusicVoice [measure 36] %%%
                             \stopStaff
@@ -1213,24 +1216,25 @@
                         \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                             
                             %%% ViolaRHMusicVoice [measure 35] %%%
-                            \stopStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \startStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \set ViolaStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                                \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                    #16 % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Viola % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                            \set ViolaStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                                \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                    #10 % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Va. % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                            \clef "percussion" % SEGMENT:RESTATED_CLEF_COMMAND:6
-                            \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
-                            \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED_STAFF_LINES:3
-                            \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:5
-                            \set ViolaRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:7
+                            \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \once \override Staff.StaffSymbol.line-count = 1 %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \set ViolaStaffGroup.instrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    #16 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Viola %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \set ViolaStaffGroup.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    #10 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Va. %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            %%% \clef "percussion" %! SEGMENT:RESTATED_CLEF_COMMAND:7
+                            \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
+                            \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) %! SEGMENT:REAPPLIED_STAFF_LINES:3
+                            %%% \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:5
+                            \override ViolaRHMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:6
+                            %%% \set ViolaRHMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:8
                             R1 * 7/4
                             ^ \markup {
                                 \override
@@ -1238,7 +1242,7 @@
                                     \box
                                         "to viola"
                                 }
-                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:8
+                            %%% \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:9
                             
                             %%% ViolaRHMusicVoice [measure 36] %%%
                             R1 * 1
@@ -1307,15 +1311,16 @@
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             %%% ViolaMusicVoice [measure 35] %%%
-                            \stopStaff % SEGMENT:REAPPLIED_STAFF_LINES:2
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED_STAFF_LINES:2
-                            \startStaff % SEGMENT:REAPPLIED_STAFF_LINES:2
-                            \clef "alto" % SEGMENT:RESTATED_CLEF_COMMAND:4
-                            \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED_STAFF_LINES:1
-                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:3
-                            \set ViolaMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:5
+                            \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
+                            \once \override Staff.StaffSymbol.line-count = 5 %! SEGMENT:REAPPLIED_STAFF_LINES:2
+                            \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
+                            %%% \clef "alto" %! SEGMENT:RESTATED_CLEF_COMMAND:5
+                            \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) %! SEGMENT:REAPPLIED_STAFF_LINES:1
+                            %%% \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:3
+                            \override ViolaMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:4
+                            %%% \set ViolaMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:6
                             R1 * 7/4
-                            \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:6
+                            %%% \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:7
                             
                             %%% ViolaMusicVoice [measure 36] %%%
                             R1 * 1
@@ -1404,24 +1409,25 @@
                         \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                             
                             %%% CelloRHMusicVoice [measure 35] %%%
-                            \stopStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \once \override Staff.StaffSymbol.line-count = 1 % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \startStaff % SEGMENT:REAPPLIED_STAFF_LINES:4
-                            \set CelloStaffGroup.instrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                                \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                    #16 % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Cello % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                            \set CelloStaffGroup.shortInstrumentName = \markup { % SEGMENT:RESTATED_INSTRUMENT:2
-                                \hcenter-in % SEGMENT:RESTATED_INSTRUMENT:2
-                                    #10 % SEGMENT:RESTATED_INSTRUMENT:2
-                                    Vc. % SEGMENT:RESTATED_INSTRUMENT:2
-                                } % SEGMENT:RESTATED_INSTRUMENT:2
-                            \clef "percussion" % SEGMENT:RESTATED_CLEF_COMMAND:6
-                            \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) % SEGMENT:RESTATED_INSTRUMENT:1
-                            \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED_STAFF_LINES:3
-                            \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green) % SEGMENT:RESTATED_CLEF_COLOR:5
-                            \set CelloRHMusicStaff.forceClef = ##t % SEGMENT:RESTATED_CLEF_COMMAND:7
+                            \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \once \override Staff.StaffSymbol.line-count = 1 %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:4
+                            \set CelloStaffGroup.instrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    #16 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Cello %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            \set CelloStaffGroup.shortInstrumentName = \markup { %! SEGMENT:RESTATED_INSTRUMENT:2
+                                \hcenter-in %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    #10 %! SEGMENT:RESTATED_INSTRUMENT:2
+                                    Vc. %! SEGMENT:RESTATED_INSTRUMENT:2
+                                } %! SEGMENT:RESTATED_INSTRUMENT:2
+                            %%% \clef "percussion" %! SEGMENT:RESTATED_CLEF_COMMAND:7
+                            \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! SEGMENT:RESTATED_INSTRUMENT:1
+                            \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) %! SEGMENT:REAPPLIED_STAFF_LINES:3
+                            %%% \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green) %! SEGMENT:RESTATED_CLEF_COLOR:5
+                            \override CelloRHMusicStaff.Clef.color = ##f %! SEGMENT:RESTATED_CLEF_UNCOLOR:6
+                            %%% \set CelloRHMusicStaff.forceClef = ##t %! SEGMENT:RESTATED_CLEF_COMMAND:8
                             R1 * 7/4
                             ^ \markup {
                                 \override
@@ -1429,7 +1435,7 @@
                                     \box
                                         "to cello"
                                 }
-                            \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) % SEGMENT:RESTATED_CLEF_SHADOW:8
+                            %%% \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! SEGMENT:RESTATED_CLEF_SHADOW:9
                             
                             %%% CelloRHMusicVoice [measure 36] %%%
                             R1 * 1
@@ -1498,14 +1504,15 @@
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             %%% CelloMusicVoice [measure 35] %%%
-                            \stopStaff % SEGMENT:REAPPLIED_STAFF_LINES:2
-                            \once \override Staff.StaffSymbol.line-count = 5 % SEGMENT:REAPPLIED_STAFF_LINES:2
-                            \startStaff % SEGMENT:REAPPLIED_STAFF_LINES:2
+                            \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
+                            \once \override Staff.StaffSymbol.line-count = 5 %! SEGMENT:REAPPLIED_STAFF_LINES:2
+                            \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" % DUPLICATE_CLEF_COMMAND:4
-                            \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) % SEGMENT:REAPPLIED_STAFF_LINES:1
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) % DUPLICATE_CLEF_COLOR:3
-                            \set Staff.forceClef = ##t % DUPLICATE_CLEF_COMMAND:5
+                            \clef "treble" %! DUPLICATE_CLEF_COMMAND:5
+                            \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'DarkBlue) %! SEGMENT:REAPPLIED_STAFF_LINES:1
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:3
+                            %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:4
+                            \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:6
                             fqf''1..
                             -\laissezVibrer
                             \sfz
@@ -1519,7 +1526,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) % DUPLICATE_CLEF_SHADOW:6
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:7
                             
                             %%% CelloMusicVoice [measure 36] %%%
                             \override NoteHead.style = #'harmonic

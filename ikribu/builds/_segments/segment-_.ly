@@ -22,30 +22,30 @@
         \context GlobalSkips = "GlobalSkips" {
             
             %%% GlobalSkips [measure 1] %%%
-            %%% \pageBreak % SEGMENT:LAYOUT:6
-            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20))) % SEGMENT:LAYOUT:7
-            %%% \autoPageBreaksOff % SEGMENT:LAYOUT:8
+            %%% \pageBreak %! SEGMENT:LAYOUT:6
+            %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 60) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:7
+            %%% \autoPageBreaksOff %! SEGMENT:LAYOUT:8
             \time 7/4
-            %%% \bar "" % SEGMENT:EMPTY_START_BAR:1
+            %%% \bar "" %! SEGMENT:EMPTY_START_BAR:1
             \newSpacingSection
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) % SEGMENT:SPACING_COMMAND:3
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:3
             s1 * 7/4
-            ^ \markup { % CLOCK_TIME:5
-                \fontsize % CLOCK_TIME:5
-                    #-2 % CLOCK_TIME:5
-                    0'00'' % CLOCK_TIME:5
-                } % CLOCK_TIME:5
+            %%% ^ \markup { %! CLOCK_TIME_MARKUP:5
+                %%% \fontsize %! CLOCK_TIME_MARKUP:5
+                    %%% #-2 %! CLOCK_TIME_MARKUP:5
+                    %%% 0'00'' %! CLOCK_TIME_MARKUP:5
+                %%% } %! CLOCK_TIME_MARKUP:5
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER:2
-                            %%% { % STAGE_NUMBER:2
-                                %%% \fontsize % STAGE_NUMBER:2
-                                    %%% #-3 % STAGE_NUMBER:2
-                                    %%% \with-color % STAGE_NUMBER:2
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:2
-                                        %%% [1] % STAGE_NUMBER:2
-                            %%% } % STAGE_NUMBER:2
+                        %%% \line % STAGE_NUMBER_MARKUP:2
+                            %%% { % STAGE_NUMBER_MARKUP:2
+                                %%% \fontsize % STAGE_NUMBER_MARKUP:2
+                                    %%% #-3 % STAGE_NUMBER_MARKUP:2
+                                    %%% \with-color % STAGE_NUMBER_MARKUP:2
+                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:2
+                                        %%% [1] % STAGE_NUMBER_MARKUP:2
+                            %%% } % STAGE_NUMBER_MARKUP:2
                         %%% \line % SEGMENT:SPACING_MARKUP:4
                             %%% { % SEGMENT:SPACING_MARKUP:4
                                 %%% \with-color % SEGMENT:SPACING_MARKUP:4
@@ -74,22 +74,22 @@
                 }
             
             %%% GlobalSkips [measure 2] %%%
-            %%% \noBreak % SEGMENT:LAYOUT:4
+            %%% \noBreak %! SEGMENT:LAYOUT:4
             \time 1/4
             \newSpacingSection
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4) % SEGMENT:SPACING_COMMAND:2
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4) %! SEGMENT:SPACING_COMMAND:2
             s1 * 1/4
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER:1
-                            %%% { % STAGE_NUMBER:1
-                                %%% \fontsize % STAGE_NUMBER:1
-                                    %%% #-3 % STAGE_NUMBER:1
-                                    %%% \with-color % STAGE_NUMBER:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER:1
-                                        %%% [2] % STAGE_NUMBER:1
-                            %%% } % STAGE_NUMBER:1
+                        %%% \line % STAGE_NUMBER_MARKUP:1
+                            %%% { % STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
+                                        %%% [2] % STAGE_NUMBER_MARKUP:1
+                            %%% } % STAGE_NUMBER_MARKUP:1
                         %%% \line % SEGMENT:SPACING_MARKUP:3
                             %%% { % SEGMENT:SPACING_MARKUP:3
                                 %%% \with-color % SEGMENT:SPACING_MARKUP:3
@@ -128,10 +128,11 @@
                                     cl.
                                 }
                         }
-                    \clef "treble" % EXPLICIT_CLEF_COMMAND:2
-                    \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                    \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                    \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                    %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                     R1 * 7/4
-                    \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                    \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                     
                     %%% BassClarinetMusicVoice [measure 2] %%%
                     \stopStaff
@@ -140,8 +141,8 @@
                     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                     R1 * 1/4
                     \bar "|"
-                    %%% \once \override Score.BarLine.transparent = ##t % SEGMENT:FERMATA_BAR_LINE:1
-                    %%% \once \override Score.SpanBar.transparent = ##t % SEGMENT:FERMATA_BAR_LINE:2
+                    %%% \once \override Score.BarLine.transparent = ##t %! SEGMENT:FERMATA_BAR_LINE:1
+                    %%% \once \override Score.SpanBar.transparent = ##t %! SEGMENT:FERMATA_BAR_LINE:2
                     
                 }
             }
@@ -164,10 +165,11 @@
                                 #10
                                 Vn.
                             }
-                        \clef "percussion" % EXPLICIT_CLEF_COMMAND:2
-                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         R1 * 7/4
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
                         %%% ViolinRHMusicVoice [measure 2] %%%
                         \stopStaff
@@ -186,8 +188,9 @@
                         \once \override Staff.StaffSymbol.line-count = 1
                         \startStaff
                         \once \override TextScript.staff-padding = #4.5
-                        \clef "treble" % EXPLICIT_CLEF_COMMAND:2
-                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         c'1..
                         ^ \markup {
                             \whiteout
@@ -209,7 +212,7 @@
                                 \italic
                                     ”
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
                         %%% ViolinMusicVoice [measure 2] %%%
                         \stopStaff
@@ -240,10 +243,11 @@
                                 #10
                                 Va.
                             }
-                        \clef "percussion" % EXPLICIT_CLEF_COMMAND:2
-                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         R1 * 7/4
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
                         %%% ViolaRHMusicVoice [measure 2] %%%
                         \stopStaff
@@ -258,10 +262,11 @@
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         
                         %%% ViolaMusicVoice [measure 1] %%%
-                        \clef "alto" % EXPLICIT_CLEF_COMMAND:2
-                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                        \clef "alto" %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         R1 * 7/4
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
                         %%% ViolaMusicVoice [measure 2] %%%
                         \stopStaff
@@ -293,10 +298,11 @@
                                 #10
                                 Vc.
                             }
-                        \clef "percussion" % EXPLICIT_CLEF_COMMAND:2
-                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                        \clef "percussion" %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         R1 * 7/4
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
                         %%% CelloRHMusicVoice [measure 2] %%%
                         \stopStaff
@@ -312,8 +318,9 @@
                         
                         %%% CelloMusicVoice [measure 1] %%%
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" % EXPLICIT_CLEF_COMMAND:2
-                        \once \override Staff.Clef.color = #(x11-color 'blue) % EXPLICIT_CLEF_COLOR:1
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                         fqf''1..
                         -\laissezVibrer
                         \sfz
@@ -327,7 +334,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) % EXPLICIT_CLEF_SHADOW:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
                         
                         %%% CelloMusicVoice [measure 2] %%%
                         \stopStaff
