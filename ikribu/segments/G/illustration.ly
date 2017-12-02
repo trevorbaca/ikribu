@@ -50,10 +50,10 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 7/4 %! SEGMENT:DUPLICATE_TIME_SIGNATURE:4
+                \time 7/4 %! SEGMENT:REDUNDANT_TIME_SIGNATURE:4
                 \mark #7
                 \bar "" %! SEGMENT:EMPTY_START_BAR:1
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:DUPLICATE_TIME_SIGNATURE:3
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! SEGMENT:REDUNDANT_TIME_SIGNATURE:3
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:5
                 s1 * 7/4
@@ -979,11 +979,11 @@
                             \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
                             \override NoteHead.style = #'harmonic
                             \override TupletBracket.direction = #down
-                            \clef "treble" %! DUPLICATE_CLEF_COMMAND:5
+                            \clef "treble" %! REDUNDANT_CLEF_COMMAND:5
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:1
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:3
-                            %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:4
-                            \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:6
+                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:6
                             d''1..
                             :32
                             \glissando
@@ -994,7 +994,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:7
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 

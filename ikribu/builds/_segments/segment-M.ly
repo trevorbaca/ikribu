@@ -1327,16 +1327,16 @@
                                     cl. %! SEGMENT:REAPPLIED_INSTRUMENT:2
                                 } %! SEGMENT:REAPPLIED_INSTRUMENT:2
                         } %! SEGMENT:REAPPLIED_INSTRUMENT:2
-                    \clef "treble" %! DUPLICATE_CLEF_COMMAND:7
+                    \clef "treble" %! REDUNDANT_CLEF_COMMAND:7
                     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_INSTRUMENT:1
                     \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:3
-                    \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:5
-                    %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:6
-                    \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:8
+                    \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:5
+                    %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:6
+                    \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:8
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
                     R1 * 3/4
                     \ppp %! SEGMENT:REMINDER_DYNAMIC:11
-                    \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:9
+                    \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:9
                     
                     %%% BassClarinetMusicVoice [measure 177] %%%
                     cs1
