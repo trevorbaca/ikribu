@@ -1188,16 +1188,16 @@
                                 \stopStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
                                 \once \override Staff.StaffSymbol.line-count = 5 %! SEGMENT:REAPPLIED_STAFF_LINES:2
                                 \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
-                                \clef "treble" %! DUPLICATE_CLEF_COMMAND:5
+                                \clef "treble" %! REDUNDANT_CLEF_COMMAND:5
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:1
-                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:3
-                                %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:4
-                                \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:6
+                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                                %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:6
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
                                 c''2..
                                 \fff %! SEGMENT:REMINDER_DYNAMIC:9
                                 \glissando
-                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:7
+                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                                 
                                 d'8
                                 \glissando

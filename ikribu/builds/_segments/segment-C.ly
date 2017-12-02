@@ -1499,11 +1499,11 @@
                         \once \override Staff.StaffSymbol.line-count = 5 %! SEGMENT:REAPPLIED_STAFF_LINES:2
                         \startStaff %! SEGMENT:REAPPLIED_STAFF_LINES:2
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! DUPLICATE_CLEF_COMMAND:5
+                        \clef "treble" %! REDUNDANT_CLEF_COMMAND:5
                         \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! SEGMENT:REAPPLIED_STAFF_LINES:1
-                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! DUPLICATE_CLEF_COLOR:3
-                        %%% \override Staff.Clef.color = ##f %! DUPLICATE_CLEF_UNCOLOR:4
-                        \set Staff.forceClef = ##t %! DUPLICATE_CLEF_COMMAND:6
+                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:6
                         fqf''1..
                         -\laissezVibrer
                         \sfz
@@ -1517,7 +1517,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! DUPLICATE_CLEF_SHADOW:7
+                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                         
                         %%% CelloMusicVoice [measure 36] %%%
                         \override NoteHead.style = #'harmonic
