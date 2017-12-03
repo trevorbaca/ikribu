@@ -206,22 +206,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:2
-                                %%% { % STAGE_NUMBER_MARKUP:2
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:2
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:2
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:2
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:2
-                                            %%% [M.1] % STAGE_NUMBER_MARKUP:2
-                                %%% } % STAGE_NUMBER_MARKUP:2
-                            %%% \line % SEGMENT:SPACING_MARKUP:4
-                                %%% { % SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:4
-                                %%% } % SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! STAGE_NUMBER_MARKUP:2
+                                %%% { %! STAGE_NUMBER_MARKUP:2
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:2
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:2
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:2
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
+                                            %%% [M.1] %! STAGE_NUMBER_MARKUP:2
+                                %%% } %! STAGE_NUMBER_MARKUP:2
+                            %%% \line %! SEGMENT:SPACING_MARKUP:4
+                                %%% { %! SEGMENT:SPACING_MARKUP:4
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
+                                %%% } %! SEGMENT:SPACING_MARKUP:4
                         }
                     }
                 
@@ -239,22 +239,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.2] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.2] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -292,22 +292,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.3] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.3] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 ^ \markup {
@@ -336,22 +336,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.4] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.4] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -391,22 +391,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.5] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.5] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -425,22 +425,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.6] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.6] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 ^ \markup {
@@ -469,22 +469,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.7] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.7] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -524,22 +524,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.8] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.8] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -557,22 +557,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.9] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.9] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -610,22 +610,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.10] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.10] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 ^ \markup {
@@ -654,22 +654,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.11] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.11] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -710,22 +710,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.12] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.12] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -743,22 +743,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.13] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.13] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -796,22 +796,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.14] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.14] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 ^ \markup {
@@ -840,22 +840,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.15] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.15] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -895,22 +895,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.16] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.16] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -929,22 +929,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.17] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.17] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 ^ \markup {
@@ -973,22 +973,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.18] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.18] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -1028,22 +1028,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.19] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.19] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -1061,22 +1061,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.20] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.20] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -1153,22 +1153,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.21] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.21] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 ^ \markup {
@@ -1202,22 +1202,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.22] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.22] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
@@ -1287,22 +1287,22 @@
                 - \markup {
                     \column
                         {
-                            %%% \line % STAGE_NUMBER_MARKUP:1
-                                %%% { % STAGE_NUMBER_MARKUP:1
-                                    %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                        %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                        %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                            %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                            %%% [M.23] % STAGE_NUMBER_MARKUP:1
-                                %%% } % STAGE_NUMBER_MARKUP:1
-                            %%% \line % SEGMENT:SPACING_MARKUP:3
-                                %%% { % SEGMENT:SPACING_MARKUP:3
-                                    %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                        %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                        %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                            %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                            %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                                %%% } % SEGMENT:SPACING_MARKUP:3
+                            %%% \line %! STAGE_NUMBER_MARKUP:1
+                                %%% { %! STAGE_NUMBER_MARKUP:1
+                                    %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                        %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                        %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                            %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                            %%% [M.23] %! STAGE_NUMBER_MARKUP:1
+                                %%% } %! STAGE_NUMBER_MARKUP:1
+                            %%% \line %! SEGMENT:SPACING_MARKUP:3
+                                %%% { %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                            %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                                %%% } %! SEGMENT:SPACING_MARKUP:3
                         }
                     }
                 
