@@ -1330,13 +1330,14 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:5
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:1
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:3
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:4
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                             R1 * 7/4
                             \ppp %! REMINDER_DYNAMIC_COMMAND:2
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:6
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
                             
                             %%% CelloMusicVoice [measure 117] %%%
                             R1 * 2

@@ -2002,16 +2002,17 @@
                                 \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
-                                \clef "tenor" %! EXPLICIT_CLEF_COMMAND:7
+                                \clef "tenor" %! EXPLICIT_CLEF_COMMAND:8
                                 \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:1
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:3
                                 \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:5
                                 %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:6
+                                \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:7
                                 a,8
                                 \sfffz %! REMINDER_DYNAMIC_COMMAND:4
                                 \glissando
                                 [
-                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:8
+                                \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:9
                                 
                                 g,8.
                                 \glissando

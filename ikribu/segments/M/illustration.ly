@@ -2916,9 +2916,10 @@
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             fqf''2.
                             -\laissezVibrer
                             \sfz
@@ -2932,7 +2933,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 177] %%%
                             \ottava #-1
@@ -2956,14 +2957,15 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             c,,1
                             \<
                             \mf
                             \startTextSpan
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 178] %%%
                             c,,1
@@ -2995,9 +2997,10 @@
                             \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                             \once \override Staff.Clef.X-extent = ##f
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             g''1..
                             -\laissezVibrer
                             \sfz
@@ -3011,13 +3014,14 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 182] %%%
                             \ottava #-1
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             c,,2.
                             \fff
                             ^ \markup {
@@ -3025,7 +3029,7 @@
                                     \upright
                                         XP
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             \ottava #0
                             
                             %%% CelloMusicVoice [measure 183] %%%
@@ -3042,9 +3046,10 @@
                             \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                             \once \override Staff.Clef.X-extent = ##f
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             fqf''1
                             -\laissezVibrer
                             \sffz
@@ -3058,7 +3063,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 185] %%%
                             \ottava #-1
@@ -3082,14 +3087,15 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             c,,2.
                             \<
                             \mf
                             \startTextSpan
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 186] %%%
                             c,,1
@@ -3119,9 +3125,10 @@
                             \once \override Staff.StaffSymbol.line-count = 5
                             \startStaff
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             g''2
                             -\laissezVibrer
                             \sffz
@@ -3135,7 +3142,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 190] %%%
                             \ottava #-1
@@ -3159,14 +3166,15 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             c,,1..
                             \<
                             \mf
                             \startTextSpan
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 191] %%%
                             c,,1..
@@ -3198,9 +3206,10 @@
                             \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                             \once \override Staff.Clef.X-extent = ##f
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             a''1..
                             -\laissezVibrer
                             \sfffz
@@ -3214,13 +3223,14 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 195] %%%
                             \ottava #-1
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             c,,2.
                             \fff
                             ^ \markup {
@@ -3228,7 +3238,7 @@
                                     \upright
                                         XP
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             \ottava #0
                             
                             %%% CelloMusicVoice [measure 196] %%%
@@ -3245,9 +3255,10 @@
                             \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                             \once \override Staff.Clef.X-extent = ##f
                             \once \override NoteHead.style = #'harmonic
-                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             cqs'''2
                             -\laissezVibrer
                             \sfffz
@@ -3261,7 +3272,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 198] %%%
                             \ottava #-1
@@ -3285,14 +3296,15 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
-                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                            \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             c,,\breve
                             \<
                             \mf
                             \startTextSpan
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
                             
                             %%% CelloMusicVoice [measure 199] %%%
                             c,,1..
