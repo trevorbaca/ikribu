@@ -139,7 +139,7 @@
             \time 4/4
             \mark #2
             %%% \bar "" %! SEGMENT:EMPTY_START_BAR:1
-            \once \override TextScript.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_METRONOME_MARK:3
+            \once \override TextScript.color = #(x11-color 'DarkCyan) %! REMINDER_METRONOME_MARK:3
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:5
             s1 * 1
@@ -169,22 +169,22 @@
                             %%% } % SEGMENT:SPACING_MARKUP:6
                     }
                 }
-            ^ \markup { % SEGMENT:REMINDER_METRONOME_MARK:4
-                \fontsize % SEGMENT:REMINDER_METRONOME_MARK:4
-                    #-6 % SEGMENT:REMINDER_METRONOME_MARK:4
-                    \general-align % SEGMENT:REMINDER_METRONOME_MARK:4
-                        #Y % SEGMENT:REMINDER_METRONOME_MARK:4
-                        #DOWN % SEGMENT:REMINDER_METRONOME_MARK:4
-                        \note-by-number % SEGMENT:REMINDER_METRONOME_MARK:4
-                            #2 % SEGMENT:REMINDER_METRONOME_MARK:4
-                            #0 % SEGMENT:REMINDER_METRONOME_MARK:4
-                            #1 % SEGMENT:REMINDER_METRONOME_MARK:4
-                \upright % SEGMENT:REMINDER_METRONOME_MARK:4
-                    { % SEGMENT:REMINDER_METRONOME_MARK:4
-                        = % SEGMENT:REMINDER_METRONOME_MARK:4
-                        42 % SEGMENT:REMINDER_METRONOME_MARK:4
-                    } % SEGMENT:REMINDER_METRONOME_MARK:4
-                } % SEGMENT:REMINDER_METRONOME_MARK:4
+            ^ \markup { % REMINDER_METRONOME_MARK:4
+                \fontsize % REMINDER_METRONOME_MARK:4
+                    #-6 % REMINDER_METRONOME_MARK:4
+                    \general-align % REMINDER_METRONOME_MARK:4
+                        #Y % REMINDER_METRONOME_MARK:4
+                        #DOWN % REMINDER_METRONOME_MARK:4
+                        \note-by-number % REMINDER_METRONOME_MARK:4
+                            #2 % REMINDER_METRONOME_MARK:4
+                            #0 % REMINDER_METRONOME_MARK:4
+                            #1 % REMINDER_METRONOME_MARK:4
+                \upright % REMINDER_METRONOME_MARK:4
+                    { % REMINDER_METRONOME_MARK:4
+                        = % REMINDER_METRONOME_MARK:4
+                        42 % REMINDER_METRONOME_MARK:4
+                    } % REMINDER_METRONOME_MARK:4
+                } % REMINDER_METRONOME_MARK:4
             
             %%% GlobalSkips [measure 11] %%%
             %%% \noBreak %! SEGMENT:LAYOUT:4
@@ -1882,9 +1882,9 @@
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                         %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
                         \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:8
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
                         R1 * 1
-                        \sfz %! SEGMENT:REMINDER_DYNAMIC:9
+                        \sfz %! REMINDER_DYNAMIC:9
                         \override CelloMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
                         
                         %%% CelloMusicVoice [measure 11] %%%

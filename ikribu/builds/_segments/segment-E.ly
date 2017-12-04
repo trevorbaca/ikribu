@@ -1358,9 +1358,9 @@
                         \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                         %%% \override CelloRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
                         \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
-                        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:10
+                        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                         R1 * 1/2
-                        \pp %! SEGMENT:REMINDER_DYNAMIC:11
+                        \pp %! REMINDER_DYNAMIC:11
                         ^ \markup {
                             \override
                                 #'(box-padding . 0.75)
@@ -1426,11 +1426,11 @@
                         \startStaff %! REAPPLIED_STAFF_LINES:2
                         \clef "bass" %! EXPLICIT_CLEF_COMMAND:7
                         \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:1
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! SEGMENT:REMINDER_DYNAMIC:3
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:3
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:5
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:6
                         R1 * 1/2
-                        \ppp %! SEGMENT:REMINDER_DYNAMIC:4
+                        \ppp %! REMINDER_DYNAMIC:4
                         \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:8
                         
                         %%% CelloMusicVoice [measure 64] %%%
