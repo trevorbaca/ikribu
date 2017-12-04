@@ -368,12 +368,12 @@
                                         cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                     } %! REAPPLIED_INSTRUMENT_COMMAND:2
                             } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:7
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:3
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                        \set BassClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
+                        \set BassClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:10
                         c'''2.
                         \p %! REMINDER_DYNAMIC_COMMAND:11
@@ -511,12 +511,12 @@
                                         #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
                                         Vn. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                     } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                                \clef "percussion" %! REAPPLIED_CLEF_COMMAND:7
+                                \clef "percussion" %! REAPPLIED_CLEF_COMMAND:8
                                 \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                                 \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:3
                                 \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                                 %%% \override ViolinRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                                \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
+                                \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:10
                                 r4
                                 \pp %! REMINDER_DYNAMIC_COMMAND:11
@@ -777,11 +777,11 @@
                                 \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
-                                \clef "treble" %! REAPPLIED_CLEF_COMMAND:5
+                                \clef "treble" %! REAPPLIED_CLEF_COMMAND:6
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:1
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
                                 %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
-                                \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
+                                \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:5
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:8
                                 c''8
                                 \fff %! REMINDER_DYNAMIC_COMMAND:9
@@ -905,12 +905,12 @@
                                         #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
                                         Va. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                     } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                                \clef "percussion" %! REAPPLIED_CLEF_COMMAND:7
+                                \clef "percussion" %! REAPPLIED_CLEF_COMMAND:8
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                                 \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:3
                                 \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                                 %%% \override ViolaRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                                \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
+                                \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
                                 c'4
                                 \>
                                 \p
@@ -1188,11 +1188,11 @@
                                 \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
-                                \clef "treble" %! REDUNDANT_CLEF_COMMAND:5
+                                \clef "treble" %! REDUNDANT_CLEF_COMMAND:6
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:1
                                 \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
                                 %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
-                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:6
+                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:8
                                 c''2..
                                 \fff %! REMINDER_DYNAMIC_COMMAND:9
@@ -1301,12 +1301,12 @@
                                         #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
                                         Vc. %! REAPPLIED_INSTRUMENT_COMMAND:2
                                     } %! REAPPLIED_INSTRUMENT_COMMAND:2
-                                \clef "percussion" %! REAPPLIED_CLEF_COMMAND:7
+                                \clef "percussion" %! REAPPLIED_CLEF_COMMAND:8
                                 \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                                 \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:3
                                 \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
                                 %%% \override CelloRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                                \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
+                                \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:7
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:10
                                 r4
                                 \ppp %! REMINDER_DYNAMIC_COMMAND:11
