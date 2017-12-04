@@ -52,7 +52,7 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/4 %! REDUNDANT_TIME_SIGNATURE_COMMAND:4
                 \mark #7
-                \bar "" %! SEGMENT:EMPTY_START_BAR:1
+                \bar "" %! EMPTY_START_BAR:1
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! REDUNDANT_TIME_SIGNATURE_COLOR:3
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:5
