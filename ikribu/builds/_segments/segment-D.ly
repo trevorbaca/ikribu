@@ -54,7 +54,7 @@
             %%% \autoPageBreaksOff %! SEGMENT:LAYOUT:8
             \time 3/4
             \mark #4
-            %%% \bar "" %! SEGMENT:EMPTY_START_BAR:1
+            %%% \bar "" %! EMPTY_START_BAR:1
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:3
             s1 * 3/4
