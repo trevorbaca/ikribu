@@ -926,9 +926,9 @@
                             } %! REAPPLIED_INSTRUMENT_COMMAND:2
                         \clef "treble" %! REDUNDANT_CLEF_COMMAND:6
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
-                        \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
-                        %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
-                        \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                        %%% \override BassClarinetMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                        \set BassClarinetMusicStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
                         d\breve
                         \ppp
                         ^ \markup {
@@ -936,7 +936,7 @@
                                 \upright
                                     "breathe discreetly before any downbeat as needed (but do not circular breathe)"
                             }
-                        \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                         
                         %%% BassClarinetMusicVoice [measure 144] %%%
                         d1..

@@ -981,9 +981,9 @@
                             \override TupletBracket.direction = #down
                             \clef "treble" %! REDUNDANT_CLEF_COMMAND:6
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:1
-                            \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
-                            %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
-                            \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
+                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                            %%% \override CelloMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                            \set CelloMusicStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
                             d''1..
                             :32
                             \glissando
@@ -994,7 +994,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
+                            \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 

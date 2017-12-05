@@ -1407,14 +1407,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 5
                                 \startStaff
                                 \clef "treble" %! REDUNDANT_CLEF_COMMAND:4
-                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
-                                %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
-                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
+                                \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:1
+                                %%% \override ViolaMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:2
+                                \set ViolaMusicStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:3
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:6
                                 c''2.
                                 \fff %! REMINDER_DYNAMIC_COMMAND:7
                                 \glissando
-                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
+                                \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
                             }
                             {
                                 
