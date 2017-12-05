@@ -160,8 +160,8 @@
                                         cl. %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                     } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                             } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
-                        \override Staff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:3
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:9
+                        \override Staff.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                         
                         %%% BassClarinetMusicVoice [measure 2] %%%
                         \stopStaff
@@ -210,8 +210,8 @@
                                     #10 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                     Vn. %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
-                            \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:3
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:9
+                            \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                             
                             %%% ViolinRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -255,7 +255,7 @@
                                     \italic
                                         ”
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                             
                             %%% ViolinMusicVoice [measure 2] %%%
                             \stopStaff
@@ -302,8 +302,8 @@
                                     #10 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                     Va. %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
-                            \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:3
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:9
+                            \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                             
                             %%% ViolaRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -323,7 +323,7 @@
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
                             \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                             R1 * 7/4
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                             
                             %%% ViolaMusicVoice [measure 2] %%%
                             \stopStaff
@@ -371,8 +371,8 @@
                                     #10 %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                     Vc. %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! EXPLICIT_INSTRUMENT_SHADOW_COMMAND:4
-                            \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW:3
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:9
+                            \override StaffGroup.InstrumentName.color = #(x11-color 'DarkCyan) %! EXPLICIT_INSTRUMENT_SHADOW_COLOR:3
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:9
                             
                             %%% CelloRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -405,7 +405,7 @@
                                     \upright
                                         III
                                 }
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                             
                             %%% CelloMusicVoice [measure 2] %%%
                             \stopStaff

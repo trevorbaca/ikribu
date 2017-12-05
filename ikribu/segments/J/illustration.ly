@@ -500,8 +500,8 @@
                                         cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                     } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                             } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
-                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW:3
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:11
+                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:11
                         
                         d''4
                         \repeatTie
@@ -742,8 +742,8 @@
                                     #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                     Vn. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
-                            \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW:3
-                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:13
+                            \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:13
                             
                             %%% ViolinRHMusicVoice [measure 117] %%%
                             R1 * 2
@@ -826,7 +826,7 @@
                                     \italic
                                         ”
                                 }
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                             
                             c'4
                             \repeatTie
@@ -1064,8 +1064,8 @@
                                     #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                     Va. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
-                            \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW:3
-                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:13
+                            \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:13
                             
                             %%% ViolaRHMusicVoice [measure 117] %%%
                             R1 * 2
@@ -1148,7 +1148,7 @@
                                     \italic
                                         ”
                                 }
-                            \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
+                            \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                             
                             c'4
                             \repeatTie
@@ -1397,8 +1397,8 @@
                                     #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                     Vc. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
                                 } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
-                            \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW:3
-                            \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:13
+                            \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                            \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:13
                             
                             %%% CelloRHMusicVoice [measure 117] %%%
                             R1 * 2
@@ -1456,7 +1456,7 @@
                             \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                             R1 * 7/4
                             \ppp %! REMINDER_DYNAMIC_COMMAND:2
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:7
                             
                             %%% CelloMusicVoice [measure 117] %%%
                             R1 * 2

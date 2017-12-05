@@ -305,7 +305,7 @@
                                     }
                             }
                         }
-                    \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                    \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                     
                     %%% BassClarinetMusicVoice [measure 209] %%%
                     \once \override Accidental.color = #red
@@ -443,7 +443,7 @@
                                     \box
                                         "to violin"
                                 }
-                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                             
                             \override RepeatTie.direction = #up
                             c'4
@@ -822,7 +822,7 @@
                             \fff %! REMINDER_DYNAMIC:7
                             \glissando
                             [
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:5
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:5
                             
                             b''8.
                             \glissando
@@ -1011,7 +1011,7 @@
                                             }
                                     }
                                 }
-                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                             
                             c'4
                             ^ \markup {
@@ -1405,7 +1405,7 @@
                             c''2.
                             \fff %! REMINDER_DYNAMIC:7
                             \glissando
-                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:5
                         }
                         {
                             
@@ -1579,7 +1579,7 @@
                                     \box
                                         "to cello"
                                 }
-                            \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                            \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                             
                             \override RepeatTie.direction = #up
                             c'4
@@ -2002,7 +2002,7 @@
                             \sfffz %! REMINDER_DYNAMIC:4
                             \glissando
                             [
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:8
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:8
                             
                             g,8.
                             \glissando

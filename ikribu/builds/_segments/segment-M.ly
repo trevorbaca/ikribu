@@ -1336,7 +1336,7 @@
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                     R1 * 3/4
                     \ppp %! REMINDER_DYNAMIC:11
-                    \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:9
+                    \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:9
                     
                     %%% BassClarinetMusicVoice [measure 177] %%%
                     cs1
@@ -1557,7 +1557,7 @@
                                 \box
                                     "to violin"
                             }
-                        \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                        \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                         
                         %%% ViolinRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -1724,7 +1724,7 @@
                                 \italic
                                     ”
                             }
-                        \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
+                        \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:7
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 177] %%%
@@ -2259,7 +2259,7 @@
                                 \box
                                     "to viola"
                             }
-                        \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                        \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                         
                         %%% ViolaRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -2406,7 +2406,7 @@
                         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
                         R1 * 3/4
                         \fff %! REMINDER_DYNAMIC:9
-                        \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:7
+                        \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:7
                         {
                             
                             %%% ViolaMusicVoice [measure 177] %%%
@@ -2768,7 +2768,7 @@
                                 \box
                                     "to cello"
                             }
-                        \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW:9
+                        \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                         
                         %%% CelloRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -2923,7 +2923,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 177] %%%
                         \ottava #-1
@@ -2954,7 +2954,7 @@
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 178] %%%
                         c,,1
@@ -3002,7 +3002,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 182] %%%
                         \ottava #-1
@@ -3016,7 +3016,7 @@
                                 \upright
                                     XP
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         \ottava #0
                         
                         %%% CelloMusicVoice [measure 183] %%%
@@ -3049,7 +3049,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 185] %%%
                         \ottava #-1
@@ -3080,7 +3080,7 @@
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 186] %%%
                         c,,1
@@ -3126,7 +3126,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 190] %%%
                         \ottava #-1
@@ -3157,7 +3157,7 @@
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 191] %%%
                         c,,1..
@@ -3205,7 +3205,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 195] %%%
                         \ottava #-1
@@ -3219,7 +3219,7 @@
                                 \upright
                                     XP
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         \ottava #0
                         
                         %%% CelloMusicVoice [measure 196] %%%
@@ -3252,7 +3252,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 198] %%%
                         \ottava #-1
@@ -3283,7 +3283,7 @@
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
                         
                         %%% CelloMusicVoice [measure 199] %%%
                         c,,1..
