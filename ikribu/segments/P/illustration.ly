@@ -1190,14 +1190,14 @@
                                 \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:2
                                 \clef "treble" %! REDUNDANT_CLEF_COMMAND:6
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:1
-                                \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
-                                %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
-                                \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
+                                \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:3
+                                %%% \override ViolaMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:4
+                                \set ViolaMusicStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:5
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:8
                                 c''2..
                                 \fff %! REMINDER_DYNAMIC_COMMAND:9
                                 \glissando
-                                \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
+                                \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW:7
                                 
                                 d'8
                                 \glissando
