@@ -118,30 +118,31 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         %%% BassClarinetMusicVoice [measure 1] %%%
-                        \set BassClarinetMusicStaff.instrumentName = \markup {
-                            \hcenter-in
-                                #16
-                                \center-column
-                                    {
-                                        Bass
-                                        clarinet
-                                    }
-                            }
-                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {
-                            \hcenter-in
-                                #10
-                                \line
-                                    {
-                                        B.
-                                        cl.
-                                    }
-                            }
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                        \set BassClarinetMusicStaff.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                #16 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \center-column %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                        Bass %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                        clarinet %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                #10 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \line %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                        B. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                        cl. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:6
+                        \once \override Staff.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:3
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:4
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                         R1 * 7/4
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
                         
                         %%% BassClarinetMusicVoice [measure 2] %%%
                         \stopStaff
@@ -164,22 +165,23 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \set ViolinStaffGroup.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Violin
-                                }
-                            \set ViolinStaffGroup.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Vn.
-                                }
-                            \clef "percussion" %! EXPLICIT_CLEF_COMMAND:4
-                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                            \set ViolinStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    #16 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Violin %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \set ViolinStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    #10 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Vn. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \clef "percussion" %! EXPLICIT_CLEF_COMMAND:6
+                            \once \override StaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
+                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:3
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:4
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                             R1 * 7/4
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
                             
                             %%% ViolinRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -244,22 +246,23 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \set ViolaStaffGroup.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Viola
-                                }
-                            \set ViolaStaffGroup.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Va.
-                                }
-                            \clef "percussion" %! EXPLICIT_CLEF_COMMAND:4
-                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                            \set ViolaStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    #16 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Viola %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \set ViolaStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    #10 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Va. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \clef "percussion" %! EXPLICIT_CLEF_COMMAND:6
+                            \once \override StaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
+                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:3
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:4
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                             R1 * 7/4
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
                             
                             %%% ViolaRHMusicVoice [measure 2] %%%
                             \stopStaff
@@ -301,22 +304,23 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            \set CelloStaffGroup.instrumentName = \markup {
-                                \hcenter-in
-                                    #16
-                                    Cello
-                                }
-                            \set CelloStaffGroup.shortInstrumentName = \markup {
-                                \hcenter-in
-                                    #10
-                                    Vc.
-                                }
-                            \clef "percussion" %! EXPLICIT_CLEF_COMMAND:4
-                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
-                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
+                            \set CelloStaffGroup.instrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    #16 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Cello %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \set CelloStaffGroup.shortInstrumentName = \markup { %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                \hcenter-in %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    #10 %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                    Vc. %! EXPLICIT_INSTRUMENT_COMMAND:2
+                                } %! EXPLICIT_INSTRUMENT_COMMAND:2
+                            \clef "percussion" %! EXPLICIT_CLEF_COMMAND:6
+                            \once \override StaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_INSTRUMENT_COLOR:1
+                            \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:3
+                            %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:4
+                            \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:5
                             R1 * 7/4
-                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:5
+                            \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW:7
                             
                             %%% CelloRHMusicVoice [measure 2] %%%
                             \stopStaff
