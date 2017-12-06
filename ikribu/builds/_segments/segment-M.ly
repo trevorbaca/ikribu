@@ -197,22 +197,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:2
-                            %%% { % STAGE_NUMBER_MARKUP:2
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:2
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:2
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:2
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:2
-                                        %%% [M.1] % STAGE_NUMBER_MARKUP:2
-                            %%% } % STAGE_NUMBER_MARKUP:2
-                        %%% \line % SEGMENT:SPACING_MARKUP:4
-                            %%% { % SEGMENT:SPACING_MARKUP:4
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:4
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:4
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:4
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:4
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:4
-                            %%% } % SEGMENT:SPACING_MARKUP:4
+                        %%% \line %! STAGE_NUMBER_MARKUP:2
+                            %%% { %! STAGE_NUMBER_MARKUP:2
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:2
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:2
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:2
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
+                                        %%% [M.1] %! STAGE_NUMBER_MARKUP:2
+                            %%% } %! STAGE_NUMBER_MARKUP:2
+                        %%% \line %! SEGMENT:SPACING_MARKUP:4
+                            %%% { %! SEGMENT:SPACING_MARKUP:4
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:4
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:4
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
+                            %%% } %! SEGMENT:SPACING_MARKUP:4
                     }
                 }
             
@@ -230,22 +230,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.2] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.2] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -283,22 +283,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.3] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.3] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             ^ \markup {
@@ -327,22 +327,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.4] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.4] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -382,22 +382,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.5] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.5] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -416,22 +416,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.6] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.6] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             ^ \markup {
@@ -460,22 +460,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.7] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.7] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -515,22 +515,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.8] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.8] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -548,22 +548,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.9] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.9] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -601,22 +601,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.10] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.10] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             ^ \markup {
@@ -645,22 +645,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.11] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.11] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -701,22 +701,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.12] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.12] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -734,22 +734,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.13] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.13] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -787,22 +787,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.14] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.14] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             ^ \markup {
@@ -831,22 +831,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.15] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.15] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -886,22 +886,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.16] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.16] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -920,22 +920,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.17] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.17] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             ^ \markup {
@@ -964,22 +964,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.18] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.18] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -1019,22 +1019,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.19] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.19] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -1052,22 +1052,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.20] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.20] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -1144,22 +1144,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.21] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.21] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             ^ \markup {
@@ -1193,22 +1193,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.22] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/12) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.22] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/12) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -1278,22 +1278,22 @@
             - \markup {
                 \column
                     {
-                        %%% \line % STAGE_NUMBER_MARKUP:1
-                            %%% { % STAGE_NUMBER_MARKUP:1
-                                %%% \fontsize % STAGE_NUMBER_MARKUP:1
-                                    %%% #-3 % STAGE_NUMBER_MARKUP:1
-                                    %%% \with-color % STAGE_NUMBER_MARKUP:1
-                                        %%% #(x11-color 'DarkCyan) % STAGE_NUMBER_MARKUP:1
-                                        %%% [M.23] % STAGE_NUMBER_MARKUP:1
-                            %%% } % STAGE_NUMBER_MARKUP:1
-                        %%% \line % SEGMENT:SPACING_MARKUP:3
-                            %%% { % SEGMENT:SPACING_MARKUP:3
-                                %%% \with-color % SEGMENT:SPACING_MARKUP:3
-                                    %%% #(x11-color 'DarkCyan) % SEGMENT:SPACING_MARKUP:3
-                                    %%% \fontsize % SEGMENT:SPACING_MARKUP:3
-                                        %%% #-3 % SEGMENT:SPACING_MARKUP:3
-                                        %%% (1/4) % SEGMENT:SPACING_MARKUP:3
-                            %%% } % SEGMENT:SPACING_MARKUP:3
+                        %%% \line %! STAGE_NUMBER_MARKUP:1
+                            %%% { %! STAGE_NUMBER_MARKUP:1
+                                %%% \fontsize %! STAGE_NUMBER_MARKUP:1
+                                    %%% #-3 %! STAGE_NUMBER_MARKUP:1
+                                    %%% \with-color %! STAGE_NUMBER_MARKUP:1
+                                        %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
+                                        %%% [M.23] %! STAGE_NUMBER_MARKUP:1
+                            %%% } %! STAGE_NUMBER_MARKUP:1
+                        %%% \line %! SEGMENT:SPACING_MARKUP:3
+                            %%% { %! SEGMENT:SPACING_MARKUP:3
+                                %%% \with-color %! SEGMENT:SPACING_MARKUP:3
+                                    %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:3
+                                    %%% \fontsize %! SEGMENT:SPACING_MARKUP:3
+                                        %%% #-3 %! SEGMENT:SPACING_MARKUP:3
+                                        %%% (1/4) %! SEGMENT:SPACING_MARKUP:3
+                            %%% } %! SEGMENT:SPACING_MARKUP:3
                     }
                 }
             
@@ -1306,37 +1306,77 @@
                 \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                     
                     %%% BassClarinetMusicVoice [measure 176] %%%
-                    \stopStaff %! REAPPLIED_STAFF_LINES:4
-                    \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:4
-                    \startStaff %! REAPPLIED_STAFF_LINES:4
-                    \set BassClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                            #16 %! REAPPLIED_INSTRUMENT:2
-                            \center-column %! REAPPLIED_INSTRUMENT:2
-                                { %! REAPPLIED_INSTRUMENT:2
-                                    Bass %! REAPPLIED_INSTRUMENT:2
-                                    clarinet %! REAPPLIED_INSTRUMENT:2
-                                } %! REAPPLIED_INSTRUMENT:2
-                        } %! REAPPLIED_INSTRUMENT:2
-                    \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                        \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                            #10 %! REAPPLIED_INSTRUMENT:2
-                            \line %! REAPPLIED_INSTRUMENT:2
-                                { %! REAPPLIED_INSTRUMENT:2
-                                    B. %! REAPPLIED_INSTRUMENT:2
-                                    cl. %! REAPPLIED_INSTRUMENT:2
-                                } %! REAPPLIED_INSTRUMENT:2
-                        } %! REAPPLIED_INSTRUMENT:2
-                    \clef "treble" %! REDUNDANT_CLEF_COMMAND:7
-                    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
-                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:3
-                    \once \override Staff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:5
-                    %%% \override Staff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:6
-                    \set Staff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:8
-                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
+                    \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:8
+                    \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES_COMMAND:8
+                    \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:8
+                    %%% \set BassClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \center-column %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    %%% Bass %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    %%% clarinet %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                    %%% \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \line %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    %%% B. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                    %%% cl. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                    \clef "treble" %! REDUNDANT_CLEF_COMMAND:12
+                    %%% \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:7
+                    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:9
+                    %%% \override BassClarinetMusicStaff.Clef.color = ##f %! REDUNDANT_CLEF_UNCOLOR:10
+                    \set BassClarinetMusicStaff.forceClef = ##t %! REDUNDANT_CLEF_COMMAND:11
+                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
                     R1 * 3/4
-                    \ppp %! REMINDER_DYNAMIC:11
-                    \override Staff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:9
+                    \ppp %! REMINDER_DYNAMIC_COMMAND:15
+                    ^ \markup {
+                        \column
+                            {
+                                %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%% { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                            %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                            %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% "bass clarinet" %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%% } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                    %%% { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            %%% #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% "bass clarinet" %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                    %%% } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                            }
+                        }
+                    %%% \set BassClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \center-column %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    %%% Bass %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    %%% clarinet %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                    %%% \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \line %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    %%% B. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                    %%% cl. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                    %%% \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                    \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_SHADOW_COLOR:13
                     
                     %%% BassClarinetMusicVoice [measure 177] %%%
                     cs1
@@ -1529,35 +1569,7 @@
                     \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                         
                         %%% ViolinRHMusicVoice [measure 176] %%%
-                        \stopStaff %! REAPPLIED_STAFF_LINES:4
-                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:4
-                        \startStaff %! REAPPLIED_STAFF_LINES:4
-                        \set ViolinStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                            \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                                #16 %! REAPPLIED_INSTRUMENT:2
-                                Violin %! REAPPLIED_INSTRUMENT:2
-                            } %! REAPPLIED_INSTRUMENT:2
-                        \set ViolinStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                            \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                                #10 %! REAPPLIED_INSTRUMENT:2
-                                Vn. %! REAPPLIED_INSTRUMENT:2
-                            } %! REAPPLIED_INSTRUMENT:2
-                        \clef "percussion" %! REAPPLIED_CLEF_COMMAND:7
-                        \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
-                        \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:3
-                        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
-                        %%% \override ViolinRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                        \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
-                        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                         R1 * 3/4
-                        \ppp %! REMINDER_DYNAMIC:11
-                        ^ \markup {
-                            \override
-                                #'(box-padding . 0.75)
-                                \box
-                                    "to violin"
-                            }
-                        \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                         
                         %%% ViolinRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -1572,27 +1584,19 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 181] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 7/4
                         
                         %%% ViolinRHMusicVoice [measure 182] %%%
                         R1 * 3/4
                         
                         %%% ViolinRHMusicVoice [measure 183] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 184] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1
                         
                         %%% ViolinRHMusicVoice [measure 185] %%%
@@ -1605,15 +1609,9 @@
                         R1 * 3/4
                         
                         %%% ViolinRHMusicVoice [measure 188] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 189] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolinRHMusicVoice [measure 190] %%%
@@ -1626,30 +1624,18 @@
                         R1 * 2
                         
                         %%% ViolinRHMusicVoice [measure 193] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 194] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 7/4
                         
                         %%% ViolinRHMusicVoice [measure 195] %%%
                         R1 * 3/4
                         
                         %%% ViolinRHMusicVoice [measure 196] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolinRHMusicVoice [measure 197] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolinRHMusicVoice [measure 198] %%%
@@ -1680,9 +1666,6 @@
                         R1 * 1
                         
                         %%% ViolinRHMusicVoice [measure 207] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -1692,25 +1675,58 @@
                     \context ViolinMusicVoice = "ViolinMusicVoice" {
                         
                         %%% ViolinMusicVoice [measure 176] %%%
-                        \stopStaff %! REAPPLIED_STAFF_LINES:2
-                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:2
-                        \startStaff %! REAPPLIED_STAFF_LINES:2
+                        \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:8
+                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES_COMMAND:8
+                        \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:8
                         \override TextScript.staff-padding = #4.5
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:5
-                        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:1
-                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
-                        %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
-                        \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
+                        %%% \set ViolinStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% Violin %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% \set ViolinStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% Vn. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:12
+                        %%% \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:7
+                        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
+                        %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
+                        \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
                         c'2.
-                        \ff %! REMINDER_DYNAMIC:9
+                        \ff %! REMINDER_DYNAMIC_COMMAND:15
                         ^ \markup {
-                            \whiteout
-                                \upright
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \box
-                                            "grainfall (III)"
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    \override
+                                                        #'(box-padding . 0.5)
+                                                        \box
+                                                            "grainfall (III)"
+                                        }
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                            %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                    %%% violin %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            %%% \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        %%% violin %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
                             }
                         _ \markup {
                             \larger
@@ -1724,7 +1740,18 @@
                                 \italic
                                     ”
                             }
-                        \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:7
+                        %%% \set ViolinStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% Violin %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \set ViolinStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% Vn. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:13
                         \times 2/3 {
                             
                             %%% ViolinMusicVoice [measure 177] %%%
@@ -2231,35 +2258,7 @@
                     \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                         
                         %%% ViolaRHMusicVoice [measure 176] %%%
-                        \stopStaff %! REAPPLIED_STAFF_LINES:4
-                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:4
-                        \startStaff %! REAPPLIED_STAFF_LINES:4
-                        \set ViolaStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                            \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                                #16 %! REAPPLIED_INSTRUMENT:2
-                                Viola %! REAPPLIED_INSTRUMENT:2
-                            } %! REAPPLIED_INSTRUMENT:2
-                        \set ViolaStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                            \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                                #10 %! REAPPLIED_INSTRUMENT:2
-                                Va. %! REAPPLIED_INSTRUMENT:2
-                            } %! REAPPLIED_INSTRUMENT:2
-                        \clef "percussion" %! REAPPLIED_CLEF_COMMAND:7
-                        \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
-                        \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:3
-                        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
-                        %%% \override ViolaRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                        \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
-                        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                         R1 * 3/4
-                        \p %! REMINDER_DYNAMIC:11
-                        ^ \markup {
-                            \override
-                                #'(box-padding . 0.75)
-                                \box
-                                    "to viola"
-                            }
-                        \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                         
                         %%% ViolaRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -2274,27 +2273,19 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 181] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 7/4
                         
                         %%% ViolaRHMusicVoice [measure 182] %%%
                         R1 * 3/4
                         
                         %%% ViolaRHMusicVoice [measure 183] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 184] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1
                         
                         %%% ViolaRHMusicVoice [measure 185] %%%
@@ -2307,15 +2298,9 @@
                         R1 * 3/4
                         
                         %%% ViolaRHMusicVoice [measure 188] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 189] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolaRHMusicVoice [measure 190] %%%
@@ -2328,30 +2313,18 @@
                         R1 * 2
                         
                         %%% ViolaRHMusicVoice [measure 193] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 194] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 7/4
                         
                         %%% ViolaRHMusicVoice [measure 195] %%%
                         R1 * 3/4
                         
                         %%% ViolaRHMusicVoice [measure 196] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% ViolaRHMusicVoice [measure 197] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1/2
                         
                         %%% ViolaRHMusicVoice [measure 198] %%%
@@ -2382,9 +2355,6 @@
                         R1 * 1
                         
                         %%% ViolaRHMusicVoice [measure 207] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -2394,19 +2364,62 @@
                     \context ViolaMusicVoice = "ViolaMusicVoice" {
                         
                         %%% ViolaMusicVoice [measure 176] %%%
-                        \stopStaff %! REAPPLIED_STAFF_LINES:2
-                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:2
-                        \startStaff %! REAPPLIED_STAFF_LINES:2
+                        \stopStaff %! REAPPLIED_STAFF_LINES_COMMAND:8
+                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES_COMMAND:8
+                        \startStaff %! REAPPLIED_STAFF_LINES_COMMAND:8
                         \override TextScript.staff-padding = #4.5
-                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:5
-                        \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:1
-                        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:3
-                        %%% \override ViolaMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:4
-                        \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:6
-                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:8
+                        %%% \set ViolaStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% Viola %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% \set ViolaStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% Va. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! REAPPLIED_CLEF_COMMAND:12
+                        %%% \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:7
+                        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
+                        %%% \override ViolaMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
+                        \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
                         R1 * 3/4
-                        \fff %! REMINDER_DYNAMIC:9
-                        \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:7
+                        \fff %! REMINDER_DYNAMIC_COMMAND:15
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                            %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                    %%% viola %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            %%% \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        %%% viola %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
+                            }
+                        %%% \set ViolaStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% Viola %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \set ViolaStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% Va. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:13
                         {
                             
                             %%% ViolaMusicVoice [measure 177] %%%
@@ -2740,35 +2753,7 @@
                     \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                         
                         %%% CelloRHMusicVoice [measure 176] %%%
-                        \stopStaff %! REAPPLIED_STAFF_LINES:4
-                        \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:4
-                        \startStaff %! REAPPLIED_STAFF_LINES:4
-                        \set CelloStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                            \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                                #16 %! REAPPLIED_INSTRUMENT:2
-                                Cello %! REAPPLIED_INSTRUMENT:2
-                            } %! REAPPLIED_INSTRUMENT:2
-                        \set CelloStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT:2
-                            \hcenter-in %! REAPPLIED_INSTRUMENT:2
-                                #10 %! REAPPLIED_INSTRUMENT:2
-                                Vc. %! REAPPLIED_INSTRUMENT:2
-                            } %! REAPPLIED_INSTRUMENT:2
-                        \clef "percussion" %! REAPPLIED_CLEF_COMMAND:7
-                        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT:1
-                        \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES:3
-                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:5
-                        %%% \override CelloRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:6
-                        \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:8
-                        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC:10
                         R1 * 3/4
-                        \pp %! REMINDER_DYNAMIC:11
-                        ^ \markup {
-                            \override
-                                #'(box-padding . 0.75)
-                                \box
-                                    "to cello"
-                            }
-                        \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_SHADOW_COLOR:9
                         
                         %%% CelloRHMusicVoice [measure 177] %%%
                         R1 * 1
@@ -2783,27 +2768,19 @@
                         \stopStaff
                         \once \override Staff.StaffSymbol.line-count = 0
                         \startStaff
+                        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 181] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 7/4
                         
                         %%% CelloRHMusicVoice [measure 182] %%%
                         R1 * 3/4
                         
                         %%% CelloRHMusicVoice [measure 183] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 184] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1
                         
                         %%% CelloRHMusicVoice [measure 185] %%%
@@ -2816,15 +2793,9 @@
                         R1 * 3/4
                         
                         %%% CelloRHMusicVoice [measure 188] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 189] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1/2
                         
                         %%% CelloRHMusicVoice [measure 190] %%%
@@ -2837,30 +2808,18 @@
                         R1 * 2
                         
                         %%% CelloRHMusicVoice [measure 193] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 194] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 7/4
                         
                         %%% CelloRHMusicVoice [measure 195] %%%
                         R1 * 3/4
                         
                         %%% CelloRHMusicVoice [measure 196] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         
                         %%% CelloRHMusicVoice [measure 197] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 1
-                        \startStaff
                         R1 * 1/2
                         
                         %%% CelloRHMusicVoice [measure 198] %%%
@@ -2891,9 +2850,6 @@
                         R1 * 1
                         
                         %%% CelloRHMusicVoice [measure 207] %%%
-                        \stopStaff
-                        \once \override Staff.StaffSymbol.line-count = 0
-                        \startStaff
                         R1 * 1/4
                         \bar "|"
                         
@@ -2907,23 +2863,68 @@
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
-                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
-                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        %%% \set CelloStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% #16 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% Cello %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        %%% \set CelloStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% #10 %! REAPPLIED_INSTRUMENT_COMMAND:2
+                                %%% Vc. %! REAPPLIED_INSTRUMENT_COMMAND:2
+                            %%% } %! REAPPLIED_INSTRUMENT_COMMAND:2
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:10
+                        %%% \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
+                        \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:7
+                        %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:8
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:9
                         fqf''2.
                         -\laissezVibrer
                         \sfz
                         ^ \markup {
-                            \whiteout
-                                \upright
-                                    pizz.
+                            \column
+                                {
+                                    \line
+                                        {
+                                            \whiteout
+                                                \upright
+                                                    pizz.
+                                        }
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% { %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                            %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                                    %%% cello %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                        %%% } %! REAPPLIED_INSTRUMENT_CHANGE_MARKUP:5
+                                    %%% \line %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% { %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                            %%% \with-color %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% #(x11-color 'green) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                %%% \override %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% #'(box-padding . 0.75) %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                    %%% \box %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                                        %%% cello %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                        %%% } %! REAPPLIED_INSTRUMENT_CHANGE_COLORED_MARKUP:6
+                                }
                             }
                         _ \markup {
                             \whiteout
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        %%% \set CelloStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% #16 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% Cello %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \set CelloStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% \hcenter-in %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% #10 %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                                %%% Vc. %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                            %%% } %! REAPPLIED_INSTRUMENT_SHADOW_COMMAND:4
+                        %%% \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_SHADOW_COLOR:3
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:11
                         
                         %%% CelloMusicVoice [measure 177] %%%
                         \ottava #-1
@@ -2947,14 +2948,15 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c,,1
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 178] %%%
                         c,,1
@@ -2986,9 +2988,10 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         g''1..
                         -\laissezVibrer
                         \sfz
@@ -3002,13 +3005,14 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 182] %%%
                         \ottava #-1
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c,,2.
                         \fff
                         ^ \markup {
@@ -3016,7 +3020,7 @@
                                 \upright
                                     XP
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         \ottava #0
                         
                         %%% CelloMusicVoice [measure 183] %%%
@@ -3033,9 +3037,10 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         fqf''1
                         -\laissezVibrer
                         \sffz
@@ -3049,7 +3054,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 185] %%%
                         \ottava #-1
@@ -3073,14 +3078,15 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c,,2.
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 186] %%%
                         c,,1
@@ -3110,9 +3116,10 @@
                         \once \override Staff.StaffSymbol.line-count = 5
                         \startStaff
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         g''2
                         -\laissezVibrer
                         \sffz
@@ -3126,7 +3133,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 190] %%%
                         \ottava #-1
@@ -3150,14 +3157,15 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c,,1..
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 191] %%%
                         c,,1..
@@ -3189,9 +3197,10 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         a''1..
                         -\laissezVibrer
                         \sfffz
@@ -3205,13 +3214,14 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 195] %%%
                         \ottava #-1
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c,,2.
                         \fff
                         ^ \markup {
@@ -3219,7 +3229,7 @@
                                 \upright
                                     XP
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         \ottava #0
                         
                         %%% CelloMusicVoice [measure 196] %%%
@@ -3236,9 +3246,10 @@
                         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
                         \once \override Staff.Clef.X-extent = ##f
                         \once \override NoteHead.style = #'harmonic
-                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "treble" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         cqs'''2
                         -\laissezVibrer
                         \sfffz
@@ -3252,7 +3263,7 @@
                                 \upright
                                     III
                             }
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 198] %%%
                         \ottava #-1
@@ -3276,14 +3287,15 @@
                         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                         \once \override TextSpanner.dash-fraction = 0.25
                         \once \override TextSpanner.dash-period = 1.5
-                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:3
+                        \clef "bass" %! EXPLICIT_CLEF_COMMAND:4
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:1
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:2
+                        \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:3
                         c,,\breve
                         \<
                         \mf
                         \startTextSpan
-                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:4
+                        \override Staff.Clef.color = #(x11-color 'DarkCyan) %! EXPLICIT_CLEF_SHADOW_COLOR:5
                         
                         %%% CelloMusicVoice [measure 199] %%%
                         c,,1..

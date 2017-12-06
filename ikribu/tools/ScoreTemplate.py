@@ -174,6 +174,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ViolinRHMusicVoice',
             name='ViolinRHMusicVoice',
             )
+        abjad.annotate(
+            violin_rh_music_voice,
+            'transient',
+            True,
+            )
         violin_rh_music_staff = abjad.Staff(
             [violin_rh_music_voice],
             context_name='ViolinRHMusicStaff',
@@ -211,6 +216,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ViolaRHMusicVoice',
             name='ViolaRHMusicVoice',
             )
+        abjad.annotate(
+            viola_rh_music_voice,
+            'transient',
+            True,
+            )
         viola_rh_music_staff = abjad.Staff(
             [viola_rh_music_voice],
             context_name='ViolaRHMusicStaff',
@@ -247,6 +257,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             [],
             context_name='CelloRHMusicVoice',
             name='CelloRHMusicVoice',
+            )
+        abjad.annotate(
+            cello_rh_music_voice,
+            'transient',
+            True,
             )
         cello_rh_music_staff = abjad.Staff(
             [cello_rh_music_voice],
