@@ -135,6 +135,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     '''
 
+    ### CLASS VARIABLES ###
+
+    __documentation_section__ = None
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
@@ -142,6 +146,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
+
+        # GLOBAL CONTEXT
         global_context = self._make_global_context()
         instrument_tags = (
             'bass_clarinet',
@@ -151,9 +157,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         tag_string = '.'.join(instrument_tags)
         self._attach_tag(tag_string, global_context)
+
         # BASS CLARINET
         bass_clarinet_music_voice = abjad.Voice(
-            [],
             context_name='BassClarinetMusicVoice',
             name='BassClarinetMusicVoice',
             )
@@ -168,9 +174,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             ikribu.instruments['bass clarinet'],
             )
         self._attach_tag('bass_clarinet', bass_clarinet_music_staff)
+
         # VIOLIN
         violin_rh_music_voice = abjad.Voice(
-            [],
             context_name='ViolinRHMusicVoice',
             name='ViolinRHMusicVoice',
             )
@@ -190,7 +196,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             abjad.Clef('percussion'),
             )
         violin_music_voice = abjad.Voice(
-            [],
             context_name='ViolinMusicVoice',
             name='ViolinMusicVoice',
             )
@@ -210,9 +215,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             ikribu.instruments['violin'],
             )
         self._attach_tag('violin', violin_staff_group)
+
         # VIOLA
         viola_rh_music_voice = abjad.Voice(
-            [],
             context_name='ViolaRHMusicVoice',
             name='ViolaRHMusicVoice',
             )
@@ -232,7 +237,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             abjad.Clef('percussion'),
             )
         viola_music_voice = abjad.Voice(
-            [],
             context_name='ViolaMusicVoice',
             name='ViolaMusicVoice',
             )
@@ -252,9 +256,9 @@ class ScoreTemplate(baca.ScoreTemplate):
             ikribu.instruments['viola'],
             )
         self._attach_tag('viola', viola_staff_group)
+
         # CELLO
         cello_rh_music_voice = abjad.Voice(
-            [],
             context_name='CelloRHMusicVoice',
             name='CelloRHMusicVoice',
             )
@@ -274,7 +278,6 @@ class ScoreTemplate(baca.ScoreTemplate):
             abjad.Clef('percussion'),
             )
         cello_music_voice = abjad.Voice(
-            [],
             context_name='CelloMusicVoice',
             name='CelloMusicVoice',
             )
@@ -294,27 +297,31 @@ class ScoreTemplate(baca.ScoreTemplate):
             ikribu.instruments['cello'],
             )
         self._attach_tag('cello', cello_staff_group)
+
         # SCORE
-        ensemble_staff_group = abjad.StaffGroup([
-            bass_clarinet_music_staff,
-            violin_staff_group,
-            viola_staff_group,
-            cello_staff_group,
-            ],
+        ensemble_staff_group = abjad.StaffGroup(
+            [
+                bass_clarinet_music_staff,
+                violin_staff_group,
+                viola_staff_group,
+                cello_staff_group,
+                ],
             context_name='EnsembleStaffGroup',
-            name='Ensemble Staff Group',
+            name='EnsembleStaffGroup',
             )
         music_context = abjad.Context(
             [
                 ensemble_staff_group,
-            ],
+                ],
             context_name='MusicContext',
             name='MusicContext',
             )
-        score = abjad.Score([
-            global_context,
-            music_context,
-            ],
+        score = abjad.Score(
+            [
+                global_context,
+                music_context,
+                ],
             name='Score',
             )
+
         return score
