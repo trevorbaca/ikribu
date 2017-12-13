@@ -4,18 +4,18 @@ import abjad
 metronome_marks = abjad.MetronomeMarkDictionary([
     (
         'incisions',
-        abjad.MetronomeMark(abjad.Duration(1, 4), 58),
+        abjad.MetronomeMark((1, 4), 58),
         ),
     (
         'inscription',
-        abjad.MetronomeMark(abjad.Duration(1, 4), 66),
+        abjad.MetronomeMark((1, 4), 66),
         ),
     (
         'night',
-        abjad.MetronomeMark(abjad.Duration(1, 4), 42),
+        abjad.MetronomeMark((1, 4), 42),
         ),
     (
         'windows',
-        abjad.MetronomeMark(abjad.Duration(1, 4), 104),
+        abjad.MetronomeMark((1, 4), 104),
         ),
     ])
