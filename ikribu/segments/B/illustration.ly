@@ -816,7 +816,7 @@
             }
         >>
         \context MusicContext = "MusicContext" {
-            \context EnsembleStaffGroup = "Ensemble Staff Group" <<
+            \context EnsembleStaffGroup = "EnsembleStaffGroup" <<
                 \tag bass_clarinet
                 \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
