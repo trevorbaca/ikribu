@@ -4,7 +4,7 @@ import abjad
 metadata = abjad.TypedOrderedDict(
     [
         (
-            'end_clefs_by_staff',
+            'end_clefs_by_context',
             abjad.TypedOrderedDict(
                 [
                     ('BassClarinetMusicStaff', 'treble'),
