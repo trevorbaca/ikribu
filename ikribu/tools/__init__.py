@@ -1,7 +1,12 @@
-import abjad
-
-
-abjad.ImportManager.import_structured_package(
-    __path__[0],
-    globals(),
-    )
+from .BowContactPointCommand import BowContactPointCommand
+from .ScoreTemplate import ScoreTemplate
+from .bcl_color_rhythm import bcl_color_rhythm
+from .bow_rhythm import bow_rhythm
+from .clb_rhythm import clb_rhythm
+from .clb_staff_positions import clb_staff_positions
+from .color_rhythm import color_rhythm
+from .glissando_pitches import glissando_pitches
+from .glissando_rhythm import glissando_rhythm
+from .inscription_rhythm import inscription_rhythm
+from .triplet_rhythm import triplet_rhythm
+from .vigil_rhythm import vigil_rhythm
