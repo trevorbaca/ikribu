@@ -10,7 +10,7 @@
     \context Score = "Score" \with {
         currentBarNumber = #3
     } <<
-        \tag bass_clarinet.violin.viola.cello
+        \tag BassClarinet.Violin.Viola.Cello
         \context GlobalContext = "GlobalContext" <<
             \context GlobalRests = "GlobalRests" {
                 
@@ -253,7 +253,7 @@
         >>
         \context MusicContext = "MusicContext" {
             \context EnsembleStaffGroup = "EnsembleStaffGroup" <<
-                \tag bass_clarinet
+                \tag BassClarinet
                 \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
@@ -366,7 +366,7 @@
                         
                     }
                 }
-                \tag violin
+                \tag Violin
                 \context ViolinStaffGroup = "ViolinStaffGroup" <<
                     \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
                         \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
@@ -482,7 +482,7 @@
                         }
                     }
                 >>
-                \tag viola
+                \tag Viola
                 \context ViolaStaffGroup = "ViolaStaffGroup" <<
                     \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
                         \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
@@ -670,7 +670,7 @@
                         }
                     }
                 >>
-                \tag cello
+                \tag Cello
                 \context CelloStaffGroup = "CelloStaffGroup" <<
                     \context CelloRHMusicStaff = "CelloRHMusicStaff" {
                         \context CelloRHMusicVoice = "CelloRHMusicVoice" {

@@ -20,7 +20,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score" <<
-            \tag bass_clarinet.violin.viola.cello
+            \tag BassClarinet.Violin.Viola.Cello
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                 }
@@ -29,7 +29,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>
             \context MusicContext = "MusicContext" {
                 \context EnsembleStaffGroup = "EnsembleStaffGroup" <<
-                    \tag bass_clarinet
+                    \tag BassClarinet
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                             \set BassClarinetMusicStaff.instrumentName = \markup {
@@ -54,7 +54,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             s1
                         }
                     }
-                    \tag violin
+                    \tag Violin
                     \context ViolinStaffGroup = "ViolinStaffGroup" <<
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
@@ -79,7 +79,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                         }
                     >>
-                    \tag viola
+                    \tag Viola
                     \context ViolaStaffGroup = "ViolaStaffGroup" <<
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
@@ -104,7 +104,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                         }
                     >>
-                    \tag cello
+                    \tag Cello
                     \context CelloStaffGroup = "CelloStaffGroup" <<
                         \context CelloRHMusicStaff = "CelloRHMusicStaff" {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice" {
@@ -150,10 +150,10 @@ class ScoreTemplate(baca.ScoreTemplate):
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
         instrument_tags = (
-            'bass_clarinet',
-            'violin',
-            'viola',
-            'cello',
+            'BassClarinet',
+            'Violin',
+            'Viola',
+            'Cello',
             )
         tag_string = '.'.join(instrument_tags)
         self._attach_tag(tag_string, global_context)
@@ -173,7 +173,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['bass clarinet'],
             )
-        self._attach_tag('bass_clarinet', bass_clarinet_music_staff)
+        self._attach_tag('BassClarinet', bass_clarinet_music_staff)
 
         # VIOLIN
         violin_rh_music_voice = abjad.Voice(
@@ -214,7 +214,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['violin'],
             )
-        self._attach_tag('violin', violin_staff_group)
+        self._attach_tag('Violin', violin_staff_group)
 
         # VIOLA
         viola_rh_music_voice = abjad.Voice(
@@ -255,7 +255,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['viola'],
             )
-        self._attach_tag('viola', viola_staff_group)
+        self._attach_tag('Viola', viola_staff_group)
 
         # CELLO
         cello_rh_music_voice = abjad.Voice(
@@ -296,7 +296,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['cello'],
             )
-        self._attach_tag('cello', cello_staff_group)
+        self._attach_tag('Cello', cello_staff_group)
 
         # SCORE
         ensemble_staff_group = abjad.StaffGroup(
@@ -323,5 +323,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 ],
             name='Score',
             )
-
+        self._assert_lilypond_identifiers(score)
+        self._assert_unique_context_names(score)
+        self._assert_matching_custom_context_names(score)
         return score
