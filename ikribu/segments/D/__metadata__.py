@@ -53,26 +53,69 @@ metadata = abjad.TypedOrderedDict(
             'end_instruments',
             abjad.TypedOrderedDict(
                 [
-                    ('BassClarinetMusicStaff', 'bass clarinet'),
-                    ('CelloStaffGroup', 'cello'),
-                    ('ViolaStaffGroup', 'viola'),
-                    ('ViolinStaffGroup', 'violin'),
+                    (
+                        'BassClarinetMusicStaff',
+                        ('bass clarinet', 'BassClarinetMusicVoice'),
+                        ),
+                    (
+                        'CelloStaffGroup',
+                        ('cello', 'CelloRHMusicVoice'),
+                        ),
+                    (
+                        'ViolaStaffGroup',
+                        ('viola', 'ViolaRHMusicVoice'),
+                        ),
+                    (
+                        'ViolinStaffGroup',
+                        ('violin', 'ViolinRHMusicVoice'),
+                        ),
                     ]
                 ),
             ),
         ('end_margin_markup', None),
-        ('end_metronome_mark', 'windows'),
+        (
+            'end_metronome_marks',
+            abjad.TypedOrderedDict(
+                [
+                    (
+                        'Score',
+                        ('windows', 'GlobalSkips'),
+                        ),
+                    ]
+                ),
+            ),
         (
             'end_staff_lines',
             abjad.TypedOrderedDict(
                 [
-                    ('BassClarinetMusicStaff', 5),
-                    ('ViolinRHMusicStaff', 1),
-                    ('ViolinMusicStaff', 5),
-                    ('ViolaRHMusicStaff', 1),
-                    ('ViolaMusicStaff', 5),
-                    ('CelloRHMusicStaff', 1),
-                    ('CelloMusicStaff', 5),
+                    (
+                        'BassClarinetMusicStaff',
+                        (5, 'BassClarinetMusicVoice'),
+                        ),
+                    (
+                        'ViolinRHMusicStaff',
+                        (1, 'ViolinRHMusicVoice'),
+                        ),
+                    (
+                        'ViolinMusicStaff',
+                        (5, 'ViolinMusicVoice'),
+                        ),
+                    (
+                        'ViolaRHMusicStaff',
+                        (1, 'ViolaRHMusicVoice'),
+                        ),
+                    (
+                        'ViolaMusicStaff',
+                        (5, 'ViolaMusicVoice'),
+                        ),
+                    (
+                        'CelloRHMusicStaff',
+                        (1, 'CelloRHMusicVoice'),
+                        ),
+                    (
+                        'CelloMusicStaff',
+                        (5, 'CelloMusicVoice'),
+                        ),
                     ]
                 ),
             ),
