@@ -64,18 +64,19 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
+        ('end_margin_markup', None),
         ('end_metronome_mark', 'night'),
         (
             'end_staff_lines',
             abjad.TypedOrderedDict(
                 [
                     ('BassClarinetMusicStaff', 5),
-                    ('ViolinMusicStaff', 5),
-                    ('ViolaMusicStaff', 5),
-                    ('CelloMusicStaff', 1),
                     ('ViolinRHMusicStaff', 1),
+                    ('ViolinMusicStaff', 5),
                     ('ViolaRHMusicStaff', 1),
+                    ('ViolaMusicStaff', 5),
                     ('CelloRHMusicStaff', 1),
+                    ('CelloMusicStaff', 1),
                     ]
                 ),
             ),
