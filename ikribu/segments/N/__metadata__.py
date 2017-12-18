@@ -119,9 +119,8 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         ('baca.MarginMarkup', None),
-        ('duration', "0'24''"),
         (
-            'end_staff_lines',
+            'baca.StaffLines',
             abjad.TypedOrderedDict(
                 [
                     (
@@ -155,6 +154,7 @@ metadata = abjad.TypedOrderedDict(
                     ]
                 ),
             ),
+        ('duration', "0'24''"),
         ('first_measure_number', 208),
         ('segment_number', 15),
         ('start_clock_time', "14'50''"),
