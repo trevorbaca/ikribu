@@ -49,7 +49,7 @@ class BowContactPointCommand(baca.Command):
             bow_contact_point = bow_contact_points[i]
             numerator, denominator = bow_contact_point
             markup = abjad.Markup.fraction(numerator, denominator)
-            markup = abjad.new(markup, direction=Up)
+            markup = abjad.new(markup, direction=abjad.Up)
             abjad.attach(markup, plt.head)
 
     ### PUBLIC PROPERTIES ###
