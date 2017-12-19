@@ -828,9 +828,9 @@
                     \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                     %%% \override BassClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                     \set BassClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
+                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
                     <c e''>1
-                    \p %! REMINDER_DYNAMIC_COMMAND:15
+                    \p %! PERSISTENT_DYNAMIC_COMMAND:15
                     ^ \markup {
                         \column
                             {
@@ -1189,9 +1189,9 @@
                         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                         %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                         \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
+                        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
                         R1 * 1
-                        \fff %! REMINDER_DYNAMIC_COMMAND:15
+                        \fff %! PERSISTENT_DYNAMIC_COMMAND:15
                         ^ \markup {
                             \column
                                 {
@@ -1446,9 +1446,9 @@
                         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                         %%% \override ViolaMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                         \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
+                        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
                         R1 * 1
-                        \fff %! REMINDER_DYNAMIC_COMMAND:15
+                        \fff %! PERSISTENT_DYNAMIC_COMMAND:15
                         ^ \markup {
                             \column
                                 {
@@ -1700,12 +1700,12 @@
                         \clef "bass" %! EXPLICIT_CLEF_COMMAND:14
                         %%% \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                         \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:7
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:9
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:9
                         \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:11
                         %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:12
                         \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:13
                         R1 * 1
-                        \sfffz %! REMINDER_DYNAMIC_COMMAND:10
+                        \sfffz %! PERSISTENT_DYNAMIC_COMMAND:10
                         ^ \markup {
                             \column
                                 {
