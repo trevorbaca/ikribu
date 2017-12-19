@@ -50,11 +50,11 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 7/4 %! REDUNDANT_TIME_SIGNATURE_COMMAND:6
+                \time 7/4 %! REMINDER_TIME_SIGNATURE_COMMAND:6
                 \mark #7
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1) %! REDUNDANT_TIME_SIGNATURE_COLOR:5
+                \once \override Score.TimeSignature.color = #(x11-color 'green) %! REMINDER_TIME_SIGNATURE_COLOR:5
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:7
                 s1 * 7/4
