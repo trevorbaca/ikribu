@@ -171,7 +171,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             bass_clarinet_music_staff,
             'default_instrument',
-            ikribu.instruments['bass clarinet'],
+            ikribu.instruments['BassClarinet'],
             )
         self._attach_tag('BassClarinet', bass_clarinet_music_staff)
 
@@ -212,7 +212,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             violin_staff_group,
             'default_instrument',
-            ikribu.instruments['violin'],
+            ikribu.instruments['Violin'],
             )
         self._attach_tag('Violin', violin_staff_group)
 
@@ -253,7 +253,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             viola_staff_group,
             'default_instrument',
-            ikribu.instruments['viola'],
+            ikribu.instruments['Viola'],
             )
         self._attach_tag('Viola', viola_staff_group)
 
@@ -294,7 +294,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(
             cello_staff_group,
             'default_instrument',
-            ikribu.instruments['cello'],
+            ikribu.instruments['Cello'],
             )
         self._attach_tag('Cello', cello_staff_group)
 
