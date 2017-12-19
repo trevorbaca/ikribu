@@ -4,7 +4,7 @@ import baca
 
 instruments = abjad.InstrumentDictionary([
     (
-        'bass clarinet',
+        'BassClarinet',
         abjad.BassClarinet(
             name='bass clarinet',
             name_markup=baca.markup.instrument('Bass clarinet'),
@@ -16,7 +16,7 @@ instruments = abjad.InstrumentDictionary([
             ),
         ),
     (
-        'violin',
+        'Violin',
         abjad.Violin(
             context='StaffGroup',
             name_markup=baca.markup.instrument('Violin'),
@@ -24,7 +24,7 @@ instruments = abjad.InstrumentDictionary([
             )
         ),
     (
-        'viola',
+        'Viola',
         abjad.Viola(
             context='StaffGroup',
             name_markup=baca.markup.instrument('Viola'),
@@ -32,7 +32,7 @@ instruments = abjad.InstrumentDictionary([
             ),
         ),
     (
-        'cello',
+        'Cello',
         abjad.Cello(
             context='StaffGroup',
             name_markup=baca.markup.instrument('Cello'),
