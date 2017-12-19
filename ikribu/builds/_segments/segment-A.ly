@@ -717,9 +717,9 @@
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                         %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                         \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REMINDER_DYNAMIC_COLOR:14
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
                         R1 * 2
-                        \sfz %! REMINDER_DYNAMIC_COMMAND:15
+                        \sfz %! PERSISTENT_DYNAMIC_COMMAND:15
                         ^ \markup {
                             \column
                                 {
