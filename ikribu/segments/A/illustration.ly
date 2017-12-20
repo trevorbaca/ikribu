@@ -309,26 +309,26 @@
                                         } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:8
                                 }
                             }
-                        \set BassClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                #16 %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                \center-column %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                    { %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                        Bass %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                        clarinet %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                    } %! REAPPLIED_INSTRUMENT_REDRAW:11
-                            } %! REAPPLIED_INSTRUMENT_REDRAW:11
-                        \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:11
-                            \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                #10 %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                \line %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                    { %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                        B. %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                        cl. %! REAPPLIED_INSTRUMENT_REDRAW:11
-                                    } %! REAPPLIED_INSTRUMENT_REDRAW:11
-                            } %! REAPPLIED_INSTRUMENT_REDRAW:11
+                        \set BassClarinetMusicStaff.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                #16 %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                \center-column %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                    { %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                        Bass %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                        clarinet %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                    } %! REAPPLIED_REDRAW_INSTRUMENT:11
+                            } %! REAPPLIED_REDRAW_INSTRUMENT:11
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:11
+                            \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                #10 %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                \line %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                    { %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                        B. %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                        cl. %! REAPPLIED_REDRAW_INSTRUMENT:11
+                                    } %! REAPPLIED_REDRAW_INSTRUMENT:11
+                            } %! REAPPLIED_REDRAW_INSTRUMENT:11
                         \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:5
-                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:10
+                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:10
                         
                         %%% BassClarinetMusicVoice [measure 4] %%%
                         e1..
@@ -413,17 +413,17 @@
                                             } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                     }
                                 }
-                            \set ViolinStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    #16 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    Violin %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \set ViolinStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    #10 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    Vn. %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:5
+                            \set ViolinStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #16 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Violin %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \set ViolinStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #10 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Vn. %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
                             \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:11
                             
                             %%% ViolinRHMusicVoice [measure 4] %%%
@@ -537,17 +537,17 @@
                                             } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                     }
                                 }
-                            \set ViolaStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    #16 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    Viola %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \set ViolaStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    #10 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    Va. %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:5
+                            \set ViolaStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #16 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Viola %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \set ViolaStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #10 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Va. %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
                             \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:11
                             
                             %%% ViolaRHMusicVoice [measure 4] %%%
@@ -733,17 +733,17 @@
                                             } %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:3
                                     }
                                 }
-                            \set CelloStaffGroup.instrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    #16 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    Cello %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \set CelloStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                \hcenter-in %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    #10 %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                    Vc. %! REAPPLIED_INSTRUMENT_REDRAW:6
-                                } %! REAPPLIED_INSTRUMENT_REDRAW:6
-                            \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_INSTRUMENT_COLOR_REDRAW:5
+                            \set CelloStaffGroup.instrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #16 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Cello %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \set CelloStaffGroup.shortInstrumentName = \markup { %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                \hcenter-in %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    #10 %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                    Vc. %! REAPPLIED_REDRAW_INSTRUMENT:6
+                                } %! REAPPLIED_REDRAW_INSTRUMENT:6
+                            \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DarkGreen) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:5
                             \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkGreen) %! REAPPLIED_CLEF_COLOR_REDRAW:11
                             
                             %%% CelloRHMusicVoice [measure 4] %%%
