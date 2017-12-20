@@ -349,9 +349,9 @@
                     \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:7
                     %%% \override BassClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
                     \set BassClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:9
-                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:12
+                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REAPPLIED_DYNAMIC_COLOR:12
                     R1 * 3/4
-                    \ppp %! PERSISTENT_DYNAMIC_COMMAND:13
+                    \ppp %! REAPPLIED_DYNAMIC_COMMAND:13
                     ^ \markup {
                         \column
                             {
@@ -1133,12 +1133,12 @@
                             \clef "tenor" %! EXPLICIT_CLEF_COMMAND:14
                             %%% \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:7
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:9
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REAPPLIED_DYNAMIC_COLOR:9
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:11
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:12
                             \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:13
                             a,8
-                            \ppp %! PERSISTENT_DYNAMIC_COMMAND:10
+                            \ppp %! REAPPLIED_DYNAMIC_COMMAND:10
                             \glissando
                             [
                             ^ \markup {
