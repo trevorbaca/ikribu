@@ -139,7 +139,7 @@
             \time 4/4
             \mark #2
             %%% \bar "" %! EMPTY_START_BAR:1
-            \once \override TextScript.color = #(x11-color 'DarkCyan) %! PERSISTENT_METRONOME_MARK_COLOR:3
+            \once \override TextScript.color = #(x11-color 'DarkCyan) %! REAPPLIED_METRONOME_MARK_COLOR:3
             \newSpacingSection
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:5
             s1 * 1
@@ -169,22 +169,22 @@
                             %%% } %! SEGMENT:SPACING_MARKUP:6
                     }
                 }
-            ^ \markup { % PERSISTENT_METRONOME_MARK_COMMAND:4
-                \fontsize % PERSISTENT_METRONOME_MARK_COMMAND:4
-                    #-6 % PERSISTENT_METRONOME_MARK_COMMAND:4
-                    \general-align % PERSISTENT_METRONOME_MARK_COMMAND:4
-                        #Y % PERSISTENT_METRONOME_MARK_COMMAND:4
-                        #DOWN % PERSISTENT_METRONOME_MARK_COMMAND:4
-                        \note-by-number % PERSISTENT_METRONOME_MARK_COMMAND:4
-                            #2 % PERSISTENT_METRONOME_MARK_COMMAND:4
-                            #0 % PERSISTENT_METRONOME_MARK_COMMAND:4
-                            #1 % PERSISTENT_METRONOME_MARK_COMMAND:4
-                \upright % PERSISTENT_METRONOME_MARK_COMMAND:4
-                    { % PERSISTENT_METRONOME_MARK_COMMAND:4
-                        = % PERSISTENT_METRONOME_MARK_COMMAND:4
-                        42 % PERSISTENT_METRONOME_MARK_COMMAND:4
-                    } % PERSISTENT_METRONOME_MARK_COMMAND:4
-                } % PERSISTENT_METRONOME_MARK_COMMAND:4
+            ^ \markup { % REAPPLIED_METRONOME_MARK_COMMAND:4
+                \fontsize % REAPPLIED_METRONOME_MARK_COMMAND:4
+                    #-6 % REAPPLIED_METRONOME_MARK_COMMAND:4
+                    \general-align % REAPPLIED_METRONOME_MARK_COMMAND:4
+                        #Y % REAPPLIED_METRONOME_MARK_COMMAND:4
+                        #DOWN % REAPPLIED_METRONOME_MARK_COMMAND:4
+                        \note-by-number % REAPPLIED_METRONOME_MARK_COMMAND:4
+                            #2 % REAPPLIED_METRONOME_MARK_COMMAND:4
+                            #0 % REAPPLIED_METRONOME_MARK_COMMAND:4
+                            #1 % REAPPLIED_METRONOME_MARK_COMMAND:4
+                \upright % REAPPLIED_METRONOME_MARK_COMMAND:4
+                    { % REAPPLIED_METRONOME_MARK_COMMAND:4
+                        = % REAPPLIED_METRONOME_MARK_COMMAND:4
+                        42 % REAPPLIED_METRONOME_MARK_COMMAND:4
+                    } % REAPPLIED_METRONOME_MARK_COMMAND:4
+                } % REAPPLIED_METRONOME_MARK_COMMAND:4
             
             %%% GlobalSkips [measure 11] %%%
             %%% \noBreak %! SEGMENT:LAYOUT:4
@@ -1836,9 +1836,9 @@
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                         %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                         \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REAPPLIED_DYNAMIC_COLOR:14
                         R1 * 1
-                        \sfz %! PERSISTENT_DYNAMIC_COMMAND:15
+                        \sfz %! REAPPLIED_DYNAMIC_COMMAND:15
                         ^ \markup {
                             \column
                                 {

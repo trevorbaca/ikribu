@@ -838,9 +838,9 @@
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                             %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                             \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REAPPLIED_DYNAMIC_COLOR:14
                             c''8
-                            \f %! PERSISTENT_DYNAMIC_COMMAND:15
+                            \f %! REAPPLIED_DYNAMIC_COMMAND:15
                             \glissando
                             [
                             ^ \markup {
@@ -1464,12 +1464,12 @@
                             \clef "treble" %! EXPLICIT_CLEF_COMMAND:14
                             %%% \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green) %! REAPPLIED_STAFF_LINES_COLOR:7
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:9
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REAPPLIED_DYNAMIC_COLOR:9
                             \once \override Staff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:11
                             %%% \override Staff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:12
                             \set Staff.forceClef = ##t %! EXPLICIT_CLEF_COMMAND:13
                             c''2..
-                            \f %! PERSISTENT_DYNAMIC_COMMAND:10
+                            \f %! REAPPLIED_DYNAMIC_COMMAND:10
                             \glissando
                             ^ \markup {
                                 \column
@@ -1689,9 +1689,9 @@
                         \once \override CelloMusicStaff.Clef.color = #(x11-color 'green) %! REAPPLIED_CLEF_COLOR:9
                         %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:10
                         \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF_COMMAND:11
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! PERSISTENT_DYNAMIC_COLOR:14
+                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DarkCyan) %! REAPPLIED_DYNAMIC_COLOR:14
                         R1 * 2
-                        \ppp %! PERSISTENT_DYNAMIC_COMMAND:15
+                        \ppp %! REAPPLIED_DYNAMIC_COMMAND:15
                         ^ \markup {
                             \column
                                 {
