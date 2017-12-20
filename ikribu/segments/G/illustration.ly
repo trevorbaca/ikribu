@@ -15,9 +15,9 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 87] %%%
-                \pageBreak %! SEGMENT:LAYOUT:10
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:11
-                \autoPageBreaksOff %! SEGMENT:LAYOUT:12
+                \pageBreak %! SEGMENT:LAYOUT:12
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:13
+                \autoPageBreaksOff %! SEGMENT:LAYOUT:14
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -50,20 +50,21 @@
                 \once \override TextSpanner.bound-details.right.text = ##f
                 \once \override TextSpanner.dash-fraction = 0.25
                 \once \override TextSpanner.dash-period = 1.5
-                \time 7/4 %! PERSISTENT_TIME_SIGNATURE_COMMAND:6
+                \time 7/4 %! PERSISTENT_TIME_SIGNATURE_COMMAND:7
                 \mark #7
                 \bar "" %! EMPTY_START_BAR:1
                 \once \override TextScript.color = #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_COLOR:3
                 \once \override Score.TimeSignature.color = #(x11-color 'green) %! PERSISTENT_TIME_SIGNATURE_COLOR:5
+                %%% \override Score.TimeSignature.color = ##f %! PERSISTENT_TIME_SIGNATURE_UNCOLOR:6
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:7
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING_COMMAND:9
                 s1 * 7/4
                 \startTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:9
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:9
-                        %%% #-2 %! CLOCK_TIME_MARKUP:9
-                        %%% 6'51'' %! CLOCK_TIME_MARKUP:9
-                    %%% } %! CLOCK_TIME_MARKUP:9
+                %%% ^ \markup { %! CLOCK_TIME_MARKUP:11
+                    %%% \fontsize %! CLOCK_TIME_MARKUP:11
+                        %%% #-2 %! CLOCK_TIME_MARKUP:11
+                        %%% 6'51'' %! CLOCK_TIME_MARKUP:11
+                    %%% } %! CLOCK_TIME_MARKUP:11
                 - \markup {
                     \column
                         {
@@ -75,16 +76,17 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                                             %%% [G.1] %! STAGE_NUMBER_MARKUP:2
                                 %%% } %! STAGE_NUMBER_MARKUP:2
-                            %%% \line %! SEGMENT:SPACING_MARKUP:8
-                                %%% { %! SEGMENT:SPACING_MARKUP:8
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:8
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:8
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:8
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:8
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:8
-                                %%% } %! SEGMENT:SPACING_MARKUP:8
+                            %%% \line %! SEGMENT:SPACING_MARKUP:10
+                                %%% { %! SEGMENT:SPACING_MARKUP:10
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:10
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:10
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:10
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:10
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:10
+                                %%% } %! SEGMENT:SPACING_MARKUP:10
                         }
                     }
+                \override Score.TimeSignature.color = #(x11-color 'DarkGreen) %! PERSISTENT_TIME_SIGNATURE_SHADOW_COLOR:8
                 
                 %%% GlobalSkips [measure 88] %%%
                 \noBreak %! SEGMENT:LAYOUT:5
