@@ -277,7 +277,6 @@
                 
                 %%% GlobalSkips [measure 255] %%%
                 \noBreak %! SEGMENT:LAYOUT:4
-                \time 4/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16) %! SEGMENT:SPACING:2
                 s1 * 1

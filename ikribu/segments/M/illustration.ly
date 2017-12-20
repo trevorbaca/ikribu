@@ -261,7 +261,6 @@
                 
                 %%% GlobalSkips [measure 178] %%%
                 \noBreak %! SEGMENT:LAYOUT:4
-                \time 4/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:2
                 s1 * 1
@@ -765,7 +764,6 @@
                 
                 %%% GlobalSkips [measure 191] %%%
                 \noBreak %! SEGMENT:LAYOUT:4
-                \time 7/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:2
                 s1 * 7/4
@@ -1122,7 +1120,6 @@
                 
                 %%% GlobalSkips [measure 201] %%%
                 \noBreak %! SEGMENT:LAYOUT:4
-                \time 4/4
                 \newSpacingSection
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:2
                 s1 * 1
