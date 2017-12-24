@@ -134,11 +134,7 @@
                                         cl. %! TEMPLATE_INSTRUMENT:4
                                     } %! TEMPLATE_INSTRUMENT:4
                             } %! TEMPLATE_INSTRUMENT:4
-                        \clef "treble" %! TEMPLATE_CLEF:10
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! TEMPLATE_INSTRUMENT_COLOR:1
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:7
-                        %%% \override BassClarinetMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:8
-                        \set BassClarinetMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:9
                         R1 * 7/4
                         ^ \markup {
                             \column
@@ -220,7 +216,6 @@
                                     } %! TEMPLATE_REDRAW_INSTRUMENT:6
                             } %! TEMPLATE_REDRAW_INSTRUMENT:6
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! TEMPLATE_REDRAW_INSTRUMENT_COLOR:5
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:11
                         
                         %%% BassClarinetMusicVoice [measure 2] %%%
                         \stopStaff
@@ -334,10 +329,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             \once \override TextScript.staff-padding = #4.5
-                            \clef "treble" %! TEMPLATE_CLEF:4
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! TEMPLATE_CLEF_COLOR:1
-                            %%% \override ViolinMusicStaff.Clef.color = ##f %! TEMPLATE_CLEF_UNCOLOR:2
-                            \set ViolinMusicStaff.forceClef = ##t %! TEMPLATE_CLEF:3
                             c'1..
                             ^ \markup {
                                 \whiteout
@@ -359,7 +350,6 @@
                                     \italic
                                         ”
                                 }
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'violet) %! TEMPLATE_CLEF_COLOR_REDRAW:5
                             
                             %%% ViolinMusicVoice [measure 2] %%%
                             \stopStaff

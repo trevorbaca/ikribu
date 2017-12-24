@@ -946,16 +946,11 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 5
                                 \startStaff
-                                \clef "treble" %! REAPPLIED_CLEF:4
-                                \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
-                                %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                                \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:1
                                 c''8
-                                \fff %! REAPPLIED_DYNAMIC:7
+                                \fff %! REAPPLIED_DYNAMIC:2
                                 \glissando
                                 [
-                                \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:5
                                 
                                 b''8.
                                 \glissando

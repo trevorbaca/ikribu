@@ -1829,18 +1829,14 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             %%% ViolinMusicVoice [measure 176] %%%
-                            \stopStaff %! REAPPLIED_STAFF_LINES:7
-                            \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:7
-                            \startStaff %! REAPPLIED_STAFF_LINES:7
+                            \stopStaff %! REAPPLIED_STAFF_LINES:2
+                            \once \override Staff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:2
+                            \startStaff %! REAPPLIED_STAFF_LINES:2
                             \override TextScript.staff-padding = #4.5
-                            \clef "treble" %! REAPPLIED_CLEF:4
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
-                            %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
-                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:6
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:8
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:1
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:3
                             c'2.
-                            \ff %! REAPPLIED_DYNAMIC:9
+                            \ff %! REAPPLIED_DYNAMIC:4
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -1861,7 +1857,6 @@
                                     \italic
                                         ”
                                 }
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:5
                             \times 2/3 {
                                 
                                 %%% ViolinMusicVoice [measure 177] %%%
