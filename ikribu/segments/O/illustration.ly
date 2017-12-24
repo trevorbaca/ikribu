@@ -1294,18 +1294,13 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             %%% ViolinMusicVoice [measure 218] %%%
-                            \stopStaff %! REAPPLIED_STAFF_LINES:7
-                            \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:7
-                            \startStaff %! REAPPLIED_STAFF_LINES:7
-                            \clef "treble" %! REAPPLIED_CLEF:4
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
-                            %%% \override ViolinMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set ViolinMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
-                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:6
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:8
+                            \stopStaff %! REAPPLIED_STAFF_LINES:2
+                            \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:2
+                            \startStaff %! REAPPLIED_STAFF_LINES:2
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:1
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:3
                             R1 * 1
-                            \fff %! REAPPLIED_DYNAMIC:9
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:5
+                            \fff %! REAPPLIED_DYNAMIC:4
                             
                             %%% ViolinMusicVoice [measure 219] %%%
                             R1 * 3/4

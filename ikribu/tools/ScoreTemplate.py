@@ -50,7 +50,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                             cl.
                                         }
                                 }
-                            \clef "treble"
                             s1
                         }
                     }
@@ -74,7 +73,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff" {
                             \context ViolinMusicVoice = "ViolinMusicVoice" {
-                                \clef "treble"
                                 s1
                             }
                         }
@@ -124,7 +122,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                         }
                         \context CelloMusicStaff = "CelloMusicStaff" {
                             \context CelloMusicVoice = "CelloMusicVoice" {
-                                \clef "bass"
                                 s1
                             }
                         }
@@ -245,6 +242,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='ViolaMusicStaff',
             name='ViolaMusicStaff',
             )
+        abjad.annotate(
+            viola_music_staff,
+            'default_clef',
+            abjad.Clef('alto'),
+            )
         viola_staff_group = abjad.StaffGroup(
             [viola_rh_music_staff, viola_music_staff],
             context_name='ViolaStaffGroup',
@@ -296,9 +298,14 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['Cello'],
             )
+        abjad.annotate(
+            cello_staff_group,
+            'default_clef',
+            abjad.Clef('bass'),
+            )
         self._attach_tag('Cello', cello_staff_group)
 
-        # SCORE
+        # ENSEMBLE STAFF GROUP
         ensemble_staff_group = abjad.StaffGroup(
             [
                 bass_clarinet_music_staff,
@@ -309,18 +316,17 @@ class ScoreTemplate(baca.ScoreTemplate):
             context_name='EnsembleStaffGroup',
             name='EnsembleStaffGroup',
             )
+
+        # MUSIC CONTEXT
         music_context = abjad.Context(
-            [
-                ensemble_staff_group,
-                ],
+            [ensemble_staff_group],
             context_name='MusicContext',
             name='MusicContext',
             )
+
+        # SCORE
         score = abjad.Score(
-            [
-                global_context,
-                music_context,
-                ],
+            [global_context, music_context],
             name='Score',
             )
         self._assert_lilypond_identifiers(score)
