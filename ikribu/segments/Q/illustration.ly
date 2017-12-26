@@ -403,10 +403,10 @@
                                         cl. %! REAPPLIED_INSTRUMENT:9
                                     } %! REAPPLIED_INSTRUMENT:9
                             } %! REAPPLIED_INSTRUMENT:9
+                        \set BassClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                         \clef "treble" %! REAPPLIED_CLEF:4
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                        \set BassClarinetMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:12
                         c'4
@@ -666,11 +666,11 @@
                                     #10 %! REAPPLIED_INSTRUMENT:4
                                     Vn. %! REAPPLIED_INSTRUMENT:4
                                 } %! REAPPLIED_INSTRUMENT:4
+                            \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \clef "percussion" %! REAPPLIED_CLEF:10
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
                             %%% \override ViolinRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                            \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                             \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:14
                             R1 * 7/4
@@ -991,11 +991,11 @@
                                     #10 %! REAPPLIED_INSTRUMENT:4
                                     Va. %! REAPPLIED_INSTRUMENT:4
                                 } %! REAPPLIED_INSTRUMENT:4
+                            \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \clef "percussion" %! REAPPLIED_CLEF:10
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
                             %%% \override ViolaRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                            \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                             \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:14
                             R1 * 7/4
@@ -1104,10 +1104,10 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "treble" %! REAPPLIED_CLEF:4
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override ViolaMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set ViolaMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:6
                             c'4
                             -\staccato
@@ -1321,11 +1321,11 @@
                                     #10 %! REAPPLIED_INSTRUMENT:4
                                     Vc. %! REAPPLIED_INSTRUMENT:4
                                 } %! REAPPLIED_INSTRUMENT:4
+                            \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \clef "percussion" %! REAPPLIED_CLEF:10
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
                             %%% \override CelloRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                            \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:14
                             R1 * 7/4
@@ -1436,10 +1436,10 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                                 \clef "tenor" %! REAPPLIED_CLEF:4
                                 \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                                 %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                                \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:6
                                 c'8
                                 -\accent
