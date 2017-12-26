@@ -457,11 +457,11 @@
                                         #10 %! REAPPLIED_INSTRUMENT:4
                                         Vn. %! REAPPLIED_INSTRUMENT:4
                                     } %! REAPPLIED_INSTRUMENT:4
+                                \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                                 \clef "percussion" %! REAPPLIED_CLEF:10
                                 \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                                 \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
                                 %%% \override ViolinRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                                \set ViolinRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                                 \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                                 r4
                                 ^ \markup {
@@ -1093,11 +1093,11 @@
                                         #10 %! REAPPLIED_INSTRUMENT:4
                                         Va. %! REAPPLIED_INSTRUMENT:4
                                     } %! REAPPLIED_INSTRUMENT:4
+                                \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                                 \clef "percussion" %! REAPPLIED_CLEF:10
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                                 \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
                                 %%% \override ViolaRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                                \set ViolaRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                                 \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                                 c'4
                                 \>
@@ -1576,12 +1576,12 @@
                                 \stopStaff %! REAPPLIED_STAFF_LINES:2
                                 \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:2
                                 \startStaff %! REAPPLIED_STAFF_LINES:2
+                                \set ViolaMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:7
                                 \clef "treble" %! EXPLICIT_CLEF:8
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:1
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:3
                                 \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:5
                                 %%% \override ViolaMusicStaff.Clef.color = ##f %! EXPLICIT_CLEF_UNCOLOR:6
-                                \set ViolaMusicStaff.forceClef = ##t %! EXPLICIT_CLEF:7
                                 c''2..
                                 \f %! REAPPLIED_DYNAMIC:4
                                 \glissando
@@ -1728,11 +1728,11 @@
                                     #10 %! REAPPLIED_INSTRUMENT:4
                                     Vc. %! REAPPLIED_INSTRUMENT:4
                                 } %! REAPPLIED_INSTRUMENT:4
+                            \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \clef "percussion" %! REAPPLIED_CLEF:10
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:1
                             \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:7
                             %%% \override CelloRHMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:8
-                            \set CelloRHMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:9
                             \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:12
                             \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:14
                             R1 * 2
@@ -1832,10 +1832,10 @@
                             \stopStaff %! REAPPLIED_STAFF_LINES:7
                             \once \override Staff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:7
                             \startStaff %! REAPPLIED_STAFF_LINES:7
+                            \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \clef "treble" %! REAPPLIED_CLEF:4
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:1
                             %%% \override CelloMusicStaff.Clef.color = ##f %! REAPPLIED_CLEF_UNCOLOR:2
-                            \set CelloMusicStaff.forceClef = ##t %! REAPPLIED_CLEF:3
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:8
                             R1 * 2
