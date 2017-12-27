@@ -15,9 +15,9 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 %%% GlobalSkips [measure 63] %%%
-                \pageBreak %! SEGMENT:LAYOUT:6
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:7
-                \autoPageBreaksOff %! SEGMENT:LAYOUT:8
+                \pageBreak %! SEGMENT:LAYOUT:8
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 20) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:9
+                \autoPageBreaksOff %! SEGMENT:LAYOUT:10
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -54,14 +54,41 @@
                 \mark #5
                 \bar "" %! EMPTY_START_BAR:1
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:4
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:6
                 s1 * 1/2
                 \startTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:3
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:3
-                        %%% #-2 %! CLOCK_TIME_MARKUP:3
-                        %%% 4'21'' %! CLOCK_TIME_MARKUP:3
-                    %%% } %! CLOCK_TIME_MARKUP:3
+                ^ \markup {
+                    \column
+                        {
+                            \line %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                    \with-color %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                        #(x11-color 'blue) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                        { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                            \fontsize %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                #-6 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                \general-align %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    #Y %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    #DOWN %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    \note-by-number %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                        #2 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                        #0 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                        #1 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                            \upright %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    = %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                    42 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                        } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:3
+                            %%% \line %! CLOCK_TIME_MARKUP:5
+                                %%% { %! CLOCK_TIME_MARKUP:5
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:5
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:5
+                                        %%% 4'21'' %! CLOCK_TIME_MARKUP:5
+                                %%% } %! CLOCK_TIME_MARKUP:5
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -73,14 +100,14 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:2
                                             %%% [E.1] %! STAGE_NUMBER_MARKUP:2
                                 %%% } %! STAGE_NUMBER_MARKUP:2
-                            %%% \line %! SEGMENT:SPACING_MARKUP:5
-                                %%% { %! SEGMENT:SPACING_MARKUP:5
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:5
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:5
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:5
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:5
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:5
-                                %%% } %! SEGMENT:SPACING_MARKUP:5
+                            %%% \line %! SEGMENT:SPACING_MARKUP:7
+                                %%% { %! SEGMENT:SPACING_MARKUP:7
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:7
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:7
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:7
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:7
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:7
+                                %%% } %! SEGMENT:SPACING_MARKUP:7
                         }
                     }
                 
@@ -118,17 +145,44 @@
                     }
                 
                 %%% GlobalSkips [measure 65] %%%
-                \noBreak %! SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:7
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 3/4
                 \stopTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 4'33'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'blue) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    58 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 4'33'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -140,32 +194,32 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.3] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
-                ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            58
-                        }
-                    }
+                %%% ^ \markup { %! EXPLICIT_METRONOME_MARK:3
+                %%%     \fontsize %! EXPLICIT_METRONOME_MARK:3
+                %%%         #-6 %! EXPLICIT_METRONOME_MARK:3
+                %%%         \general-align %! EXPLICIT_METRONOME_MARK:3
+                %%%             #Y %! EXPLICIT_METRONOME_MARK:3
+                %%%             #DOWN %! EXPLICIT_METRONOME_MARK:3
+                %%%             \note-by-number %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #2 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #0 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #1 %! EXPLICIT_METRONOME_MARK:3
+                %%%     \upright %! EXPLICIT_METRONOME_MARK:3
+                %%%         { %! EXPLICIT_METRONOME_MARK:3
+                %%%             = %! EXPLICIT_METRONOME_MARK:3
+                %%%             58 %! EXPLICIT_METRONOME_MARK:3
+                %%%         } %! EXPLICIT_METRONOME_MARK:3
+                %%%     } %! EXPLICIT_METRONOME_MARK:3
                 
                 %%% GlobalSkips [measure 66] %%%
                 \noBreak %! SEGMENT:LAYOUT:5
@@ -201,7 +255,7 @@
                     }
                 
                 %%% GlobalSkips [measure 67] %%%
-                \noBreak %! SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:7
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -236,14 +290,41 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 3/4
                 \startTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 4'41'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    58 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 4'41'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -255,14 +336,14 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.5] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
                 
@@ -300,17 +381,44 @@
                     }
                 
                 %%% GlobalSkips [measure 69] %%%
-                \noBreak %! SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:7
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 3/4
                 \stopTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 4'48'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'blue) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    42 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 4'48'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -322,32 +430,32 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.7] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
-                ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            42
-                        }
-                    }
+                %%% ^ \markup { %! EXPLICIT_METRONOME_MARK:3
+                %%%     \fontsize %! EXPLICIT_METRONOME_MARK:3
+                %%%         #-6 %! EXPLICIT_METRONOME_MARK:3
+                %%%         \general-align %! EXPLICIT_METRONOME_MARK:3
+                %%%             #Y %! EXPLICIT_METRONOME_MARK:3
+                %%%             #DOWN %! EXPLICIT_METRONOME_MARK:3
+                %%%             \note-by-number %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #2 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #0 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #1 %! EXPLICIT_METRONOME_MARK:3
+                %%%     \upright %! EXPLICIT_METRONOME_MARK:3
+                %%%         { %! EXPLICIT_METRONOME_MARK:3
+                %%%             = %! EXPLICIT_METRONOME_MARK:3
+                %%%             42 %! EXPLICIT_METRONOME_MARK:3
+                %%%         } %! EXPLICIT_METRONOME_MARK:3
+                %%%     } %! EXPLICIT_METRONOME_MARK:3
                 
                 %%% GlobalSkips [measure 70] %%%
                 \noBreak %! SEGMENT:LAYOUT:5
@@ -383,7 +491,7 @@
                     }
                 
                 %%% GlobalSkips [measure 71] %%%
-                \noBreak %! SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:7
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -418,14 +526,41 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 7/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 7/4
                 \startTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 4'55'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    42 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 4'55'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -437,14 +572,14 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.9] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
                 
@@ -482,18 +617,45 @@
                     }
                 
                 %%% GlobalSkips [measure 73] %%%
-                \break %! SEGMENT:LAYOUT:5
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:6
+                \break %! SEGMENT:LAYOUT:7
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset . 140) (alignment-distances . (15 20))) %! SEGMENT:LAYOUT:8
                 \time 7/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 7/4
                 \stopTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 5'16'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'blue) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    58 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 5'16'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -505,32 +667,32 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.11] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
-                ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            58
-                        }
-                    }
+                %%% ^ \markup { %! EXPLICIT_METRONOME_MARK:3
+                %%%     \fontsize %! EXPLICIT_METRONOME_MARK:3
+                %%%         #-6 %! EXPLICIT_METRONOME_MARK:3
+                %%%         \general-align %! EXPLICIT_METRONOME_MARK:3
+                %%%             #Y %! EXPLICIT_METRONOME_MARK:3
+                %%%             #DOWN %! EXPLICIT_METRONOME_MARK:3
+                %%%             \note-by-number %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #2 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #0 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #1 %! EXPLICIT_METRONOME_MARK:3
+                %%%     \upright %! EXPLICIT_METRONOME_MARK:3
+                %%%         { %! EXPLICIT_METRONOME_MARK:3
+                %%%             = %! EXPLICIT_METRONOME_MARK:3
+                %%%             58 %! EXPLICIT_METRONOME_MARK:3
+                %%%         } %! EXPLICIT_METRONOME_MARK:3
+                %%%     } %! EXPLICIT_METRONOME_MARK:3
                 
                 %%% GlobalSkips [measure 74] %%%
                 \noBreak %! SEGMENT:LAYOUT:5
@@ -565,7 +727,7 @@
                     }
                 
                 %%% GlobalSkips [measure 75] %%%
-                \noBreak %! SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:7
                 \once \override TextSpanner.arrow-width = 0.25
                 \once \override TextSpanner.bound-details.left-broken.padding = 0
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
@@ -600,14 +762,41 @@
                 \once \override TextSpanner.dash-period = 1.5
                 \time 3/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 3/4
                 \startTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 5'31'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'DeepPink1) %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                    58 %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                                } %! REDUNDANT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 5'31'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -619,14 +808,14 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.13] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
                 
@@ -664,17 +853,44 @@
                     }
                 
                 %%% GlobalSkips [measure 77] %%%
-                \noBreak %! SEGMENT:LAYOUT:5
+                \noBreak %! SEGMENT:LAYOUT:7
                 \time 7/4
                 \newSpacingSection
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:3
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12) %! SEGMENT:SPACING:5
                 s1 * 7/4
                 \stopTextSpan
-                %%% ^ \markup { %! CLOCK_TIME_MARKUP:2
-                    %%% \fontsize %! CLOCK_TIME_MARKUP:2
-                        %%% #-2 %! CLOCK_TIME_MARKUP:2
-                        %%% 5'36'' %! CLOCK_TIME_MARKUP:2
-                    %%% } %! CLOCK_TIME_MARKUP:2
+                ^ \markup {
+                    \column
+                        {
+                            \line %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                    \with-color %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        #(x11-color 'blue) %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \fontsize %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                #-6 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                \general-align %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #Y %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    #DOWN %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    \note-by-number %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #2 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #0 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                        #1 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                            \upright %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                { %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    = %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                    42 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                        } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                                } %! EXPLICIT_METRONOME_MARK_WITH_COLOR:2
+                            %%% \line %! CLOCK_TIME_MARKUP:4
+                                %%% { %! CLOCK_TIME_MARKUP:4
+                                    %%% \fontsize %! CLOCK_TIME_MARKUP:4
+                                        %%% #-2 %! CLOCK_TIME_MARKUP:4
+                                        %%% 5'36'' %! CLOCK_TIME_MARKUP:4
+                                %%% } %! CLOCK_TIME_MARKUP:4
+                        }
+                    }
                 - \markup {
                     \column
                         {
@@ -686,32 +902,32 @@
                                             %%% #(x11-color 'DarkCyan) %! STAGE_NUMBER_MARKUP:1
                                             %%% [E.15] %! STAGE_NUMBER_MARKUP:1
                                 %%% } %! STAGE_NUMBER_MARKUP:1
-                            %%% \line %! SEGMENT:SPACING_MARKUP:4
-                                %%% { %! SEGMENT:SPACING_MARKUP:4
-                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:4
-                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:4
-                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:4
-                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:4
-                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:4
-                                %%% } %! SEGMENT:SPACING_MARKUP:4
+                            %%% \line %! SEGMENT:SPACING_MARKUP:6
+                                %%% { %! SEGMENT:SPACING_MARKUP:6
+                                    %%% \with-color %! SEGMENT:SPACING_MARKUP:6
+                                        %%% #(x11-color 'DarkCyan) %! SEGMENT:SPACING_MARKUP:6
+                                        %%% \fontsize %! SEGMENT:SPACING_MARKUP:6
+                                            %%% #-3 %! SEGMENT:SPACING_MARKUP:6
+                                            %%% (1/12) %! SEGMENT:SPACING_MARKUP:6
+                                %%% } %! SEGMENT:SPACING_MARKUP:6
                         }
                     }
-                ^ \markup {
-                    \fontsize
-                        #-6
-                        \general-align
-                            #Y
-                            #DOWN
-                            \note-by-number
-                                #2
-                                #0
-                                #1
-                    \upright
-                        {
-                            =
-                            42
-                        }
-                    }
+                %%% ^ \markup { %! EXPLICIT_METRONOME_MARK:3
+                %%%     \fontsize %! EXPLICIT_METRONOME_MARK:3
+                %%%         #-6 %! EXPLICIT_METRONOME_MARK:3
+                %%%         \general-align %! EXPLICIT_METRONOME_MARK:3
+                %%%             #Y %! EXPLICIT_METRONOME_MARK:3
+                %%%             #DOWN %! EXPLICIT_METRONOME_MARK:3
+                %%%             \note-by-number %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #2 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #0 %! EXPLICIT_METRONOME_MARK:3
+                %%%                 #1 %! EXPLICIT_METRONOME_MARK:3
+                %%%     \upright %! EXPLICIT_METRONOME_MARK:3
+                %%%         { %! EXPLICIT_METRONOME_MARK:3
+                %%%             = %! EXPLICIT_METRONOME_MARK:3
+                %%%             42 %! EXPLICIT_METRONOME_MARK:3
+                %%%         } %! EXPLICIT_METRONOME_MARK:3
+                %%%     } %! EXPLICIT_METRONOME_MARK:3
                 
                 %%% GlobalSkips [measure 78] %%%
                 \noBreak %! SEGMENT:LAYOUT:5
