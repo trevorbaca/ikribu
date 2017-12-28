@@ -20,7 +20,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score" <<
-            \tag BassClarinet.Violin.Viola.Cello
+            \tag BassClarinet.Violin.Viola.Cello %! ST4
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                 }
@@ -29,7 +29,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>
             \context MusicContext = "MusicContext" {
                 \context EnsembleStaffGroup = "EnsembleStaffGroup" <<
-                    \tag BassClarinet
+                    \tag BassClarinet %! ST4
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                             \set BassClarinetMusicStaff.instrumentName = \markup {      %! ST1
@@ -53,7 +53,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             s1
                         }
                     }
-                    \tag Violin
+                    \tag Violin %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup" <<
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
@@ -77,7 +77,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                         }
                     >>
-                    \tag Viola
+                    \tag Viola %! ST4
                     \context ViolaStaffGroup = "ViolaStaffGroup" <<
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
@@ -102,7 +102,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                             }
                         }
                     >>
-                    \tag Cello
+                    \tag Cello %! ST4
                     \context CelloStaffGroup = "CelloStaffGroup" <<
                         \context CelloRHMusicStaff = "CelloRHMusicStaff" {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice" {
