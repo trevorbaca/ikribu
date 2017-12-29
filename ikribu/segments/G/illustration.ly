@@ -92,6 +92,14 @@
                                                 }                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                         }                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                 }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                            \line                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                    \with-color                                          %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #(x11-color 'blue)                               %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                        \large                                           %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                            \upright                                     %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                                accel.                                   %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15
                             %%% \line                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%     {                                                    %! CLOCK_TIME_MARKUP:SM28
                             %%%         \fontsize                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1267,6 +1275,7 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''1..
                             :32                                                          %! IC
                             \glissando
@@ -1282,6 +1291,7 @@
                             \times 2/3 {
                                 
                                 % CelloMusicVoice [measure 88]                           %! SM4
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 fqf''4
                                 :32                                                      %! IC
                                 \pp
@@ -1290,6 +1300,7 @@
                             }
                             
                             % CelloMusicVoice [measure 89]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''1..
                             :32                                                          %! IC
                             \ppp
@@ -1299,6 +1310,7 @@
                             \times 2/3 {
                                 
                                 % CelloMusicVoice [measure 90]                           %! SM4
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \pp
@@ -1307,6 +1319,7 @@
                             }
                             
                             % CelloMusicVoice [measure 91]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''1..
                             :32                                                          %! IC
                             \ppp
@@ -1316,6 +1329,7 @@
                             \times 2/3 {
                                 
                                 % CelloMusicVoice [measure 92]                           %! SM4
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \pp
@@ -1324,6 +1338,7 @@
                             }
                             
                             % CelloMusicVoice [measure 93]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g'1..
                             :32                                                          %! IC
                             \ppp
@@ -1333,6 +1348,7 @@
                             \times 2/3 {
                                 
                                 % CelloMusicVoice [measure 94]                           %! SM4
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \pp
@@ -1341,6 +1357,7 @@
                             }
                             
                             % CelloMusicVoice [measure 95]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g'1..
                             :32                                                          %! IC
                             \ppp
@@ -1350,6 +1367,7 @@
                             \times 2/3 {
                                 
                                 % CelloMusicVoice [measure 96]                           %! SM4
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 d'4
                                 :32                                                      %! IC
                                 \pp
@@ -1358,6 +1376,7 @@
                             }
                             
                             % CelloMusicVoice [measure 97]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             g'1..
                             :32                                                          %! IC
                             \ppp

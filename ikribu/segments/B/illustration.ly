@@ -1070,11 +1070,12 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 14]                            %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
                         ef1..
-                        \ppp                                                             %! IC
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         
                         % BassClarinetMusicVoice [measure 15]                            %! SM4
                         \stopStaff                                                       %! SM20
@@ -1107,11 +1108,12 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 20]                            %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
                         ef1
-                        \ppp                                                             %! IC
+                        \ppp                                                             %! REDUNDANT_DYNAMIC:SM8
                         
                         % BassClarinetMusicVoice [measure 21]                            %! SM4
                         \stopStaff                                                       %! SM20
@@ -1142,11 +1144,12 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 26]                            %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
                         ef1
-                        \ppp                                                             %! IC
+                        \ppp                                                             %! REDUNDANT_DYNAMIC:SM8
                         
                         % BassClarinetMusicVoice [measure 27]                            %! SM4
                         \stopStaff                                                       %! SM20
