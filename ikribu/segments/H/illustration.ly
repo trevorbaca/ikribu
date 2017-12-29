@@ -388,8 +388,9 @@
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         ef\breve
-                        \ppp                                                             %! IC
+                        \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -600,6 +601,7 @@
                                 \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 \override RepeatTie.direction = #up                      %! OC
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \>
                                 \ff
@@ -631,6 +633,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -654,6 +657,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -666,6 +670,7 @@
                             {
                                 
                                 % ViolinRHMusicVoice [measure 100]                       %! SM4
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 ^ \markup {
@@ -676,6 +681,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -692,6 +698,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 ^ \markup {
@@ -702,6 +709,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -722,6 +730,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -745,6 +754,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -754,6 +764,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 ^ \markup {
@@ -764,6 +775,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -784,6 +796,7 @@
                                         4
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 ^ \markup {
@@ -794,6 +807,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -813,6 +827,7 @@
                             {
                                 
                                 % ViolinRHMusicVoice [measure 103]                       %! SM4
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -839,6 +854,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -848,6 +864,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 ^ \markup {
@@ -858,6 +875,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -874,6 +892,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 ^ \markup {
@@ -887,6 +906,7 @@
                                 % ViolinRHMusicVoice [measure 105]                       %! SM4
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -903,6 +923,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -926,6 +947,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -935,6 +957,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 ^ \markup {
@@ -948,6 +971,7 @@
                             \times 4/6 {
                                 
                                 % ViolinRHMusicVoice [measure 106]                       %! SM4
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -964,6 +988,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 ^ \markup {
@@ -974,6 +999,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -983,6 +1009,7 @@
                                         4
                                     }
                                 
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 ^ \markup {
@@ -1175,6 +1202,7 @@
                                 \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override ViolaRHMusicStaff.Clef.color = ##f         %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \>
                                 \ff
@@ -1258,6 +1286,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -1267,6 +1296,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 ^ \markup {
@@ -1277,6 +1307,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -1293,6 +1324,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -1320,6 +1352,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -1336,6 +1369,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -1345,6 +1379,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 ^ \markup {
@@ -1355,6 +1390,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -1375,6 +1411,7 @@
                                         4
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -1391,6 +1428,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 ^ \markup {
@@ -1401,6 +1439,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -1417,6 +1456,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -1444,6 +1484,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -1463,6 +1504,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -1476,6 +1518,7 @@
                             \times 7/8 {
                                 
                                 % ViolaRHMusicVoice [measure 104]                        %! SM4
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 ^ \markup {
@@ -1486,6 +1529,7 @@
                                 
                                 r4
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -1502,6 +1546,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -1518,6 +1563,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 ^ \markup {
@@ -1531,6 +1577,7 @@
                             \times 8/10 {
                                 
                                 % ViolaRHMusicVoice [measure 105]                        %! SM4
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -1547,6 +1594,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -1570,6 +1618,7 @@
                                         4
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -1586,6 +1635,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -1595,6 +1645,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 ^ \markup {
@@ -1609,6 +1660,7 @@
                             \times 4/3 {
                                 
                                 % ViolaRHMusicVoice [measure 106]                        %! SM4
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -1625,6 +1677,7 @@
                                         7
                                     }
                                 
+                                \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 ^ \markup {

@@ -474,9 +474,9 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         % BassClarinetMusicVoice [measure 247]                           %! SM4
-                        \stopStaff                                                       %! IC
-                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! IC
-                        \startStaff                                                      %! IC
+                        \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
+                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
+                        \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -501,6 +501,7 @@
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         c'4
                         \p                                                               %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
@@ -866,10 +867,11 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             % ViolinMusicVoice [measure 247]                             %! SM4
-                            \stopStaff                                                   %! IC
-                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! IC
-                            \startStaff                                                  %! IC
+                            \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
+                            \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             b4
                             -\tongue #2                                                  %! IC
                             \fff                                                         %! REAPPLIED_DYNAMIC:SM8
@@ -1189,14 +1191,15 @@
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             % ViolaMusicVoice [measure 247]                              %! SM4
-                            \stopStaff                                                   %! IC
-                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! IC
-                            \startStaff                                                  %! IC
+                            \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
+                            \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \set ViolaMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'4
                             -\staccato                                                   %! IC
                             \fff                                                         %! REAPPLIED_DYNAMIC:SM8
@@ -1519,14 +1522,15 @@
                             \times 14/15 {
                                 
                                 % CelloMusicVoice [measure 247]                          %! SM4
-                                \stopStaff                                               %! IC
-                                \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! IC
-                                \startStaff                                              %! IC
+                                \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
+                                \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
+                                \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
                                 \set CelloMusicStaff.forceClef = ##t                     %! REAPPLIED_CLEF:SM8
                                 \clef "tenor"                                            %! REAPPLIED_CLEF:SM8
                                 \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                                \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 c'8
                                 -\accent                                                 %! IC
                                 \p                                                       %! REAPPLIED_DYNAMIC:SM8

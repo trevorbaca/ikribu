@@ -425,9 +425,9 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         % BassClarinetMusicVoice [measure 52]                            %! SM4
-                        \stopStaff                                                       %! IC
-                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC
-                        \startStaff                                                      %! IC
+                        \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
+                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! EXPLICIT_STAFF_LINES:SM8
+                        \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -448,6 +448,7 @@
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         R1 * 3/4
                         \ppp                                                             %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
@@ -998,6 +999,7 @@
                                 \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 \override RepeatTie.direction = #up                      %! OC
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \>
                                 \ff
@@ -1029,6 +1031,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -1055,6 +1058,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -1064,6 +1068,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 ^ \markup {
@@ -1074,6 +1079,7 @@
                                 
                                 r4
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -1094,6 +1100,7 @@
                                         4
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -1120,6 +1127,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -1140,6 +1148,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -1163,6 +1172,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 ^ \markup {
@@ -1173,6 +1183,7 @@
                                 
                                 r4
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -1193,6 +1204,7 @@
                             \times 3/5 {
                                 
                                 % CelloRHMusicVoice [measure 57]                         %! SM4
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -1216,6 +1228,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 \<
@@ -1225,6 +1238,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 ^ \markup {
@@ -1239,6 +1253,7 @@
                                 % CelloRHMusicVoice [measure 58]                         %! SM4
                                 r4
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \>
@@ -1258,6 +1273,7 @@
                             {
                                 
                                 % CelloRHMusicVoice [measure 59]                         %! SM4
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
                                 \<
@@ -1284,6 +1300,7 @@
                             \times 4/5 {
                                 
                                 % CelloRHMusicVoice [measure 60]                         %! SM4
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
                                 \>
@@ -1300,6 +1317,7 @@
                                         4
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
                                 \<
@@ -1327,6 +1345,7 @@
                             \times 3/5 {
                                 
                                 % CelloRHMusicVoice [measure 61]                         %! SM4
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 ^ \markup {
@@ -1337,6 +1356,7 @@
                                 
                                 r4
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
                                 \>
@@ -1353,6 +1373,7 @@
                                         7
                                     }
                                 
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
                                 ^ \markup {

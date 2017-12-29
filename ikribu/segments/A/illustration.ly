@@ -566,9 +566,10 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             % ViolinMusicVoice [measure 3]                               %! SM4
-                            \stopStaff                                                   %! IC
-                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC
-                            \startStaff                                                  %! IC
+                            \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! EXPLICIT_STAFF_LINES:SM8
+                            \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             R1 * 2
                             
                             % ViolinMusicVoice [measure 4]                               %! SM4
