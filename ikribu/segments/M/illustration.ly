@@ -1695,7 +1695,7 @@
                         
                         % BassClarinetMusicVoice [measure 182]                           %! SM4
                         cs2.
-                        \p                                                               %! IC1
+                        \p                                                               %! IC
                         
                         % BassClarinetMusicVoice [measure 183]                           %! SM4
                         \stopStaff                                                       %! SM20
@@ -1781,7 +1781,7 @@
                         
                         % BassClarinetMusicVoice [measure 195]                           %! SM4
                         cs2.
-                        \p                                                               %! IC1
+                        \p                                                               %! IC
                         
                         % BassClarinetMusicVoice [measure 196]                           %! SM4
                         \stopStaff                                                       %! SM20
@@ -2070,76 +2070,76 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                            \override TextScript.staff-padding = #4.5
+                            \override TextScript.staff-padding = #4.5                    %! OC
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c'2.
                             \ff                                                          %! REAPPLIED_DYNAMIC:SM8
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (III)"                        %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (III)"                        %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 177]                         %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 178]                         %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 179]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \fff
                             }
                             
@@ -2154,50 +2154,50 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'1..
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (IV)"                         %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (IV)"                         %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % ViolinMusicVoice [measure 182]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
-                                \fff                                                     %! IC1
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                :32                                                      %! IC
+                                \fff                                                     %! IC
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             
                             % ViolinMusicVoice [measure 183]                             %! SM4
@@ -2211,91 +2211,91 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (V)"                          %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (V)"                          %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 185]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 186]                         %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 187]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \fff
                             }
                             
@@ -2310,73 +2310,73 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'2
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (VI)"                         %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (VI)"                         %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 190]                         %! SM4
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 191]                         %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 192]                         %! SM4
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \fff
                             }
                             
@@ -2391,50 +2391,50 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'1..
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (VII)"                        %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (VII)"                        %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % ViolinMusicVoice [measure 195]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
-                                \fff                                                     %! IC1
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                :32                                                      %! IC
+                                \fff                                                     %! IC
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             
                             % ViolinMusicVoice [measure 196]                             %! SM4
@@ -2448,127 +2448,127 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'2
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (VIII)"                       %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (VIII)"                       %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 198]                         %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/10 {
                                 
                                 % ViolinMusicVoice [measure 199]                         %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 200]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 201]                         %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 202]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \fff
                             }
                             
@@ -2589,7 +2589,7 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 0  %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
-                            \revert TextScript.staff-padding
+                            \revert TextScript.staff-padding                             %! OC
                             
                         }
                     }
@@ -2815,7 +2815,7 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                            \override TextScript.staff-padding = #4.5
+                            \override TextScript.staff-padding = #4.5                    %! OC
                             \set ViolaMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -2829,49 +2829,49 @@
                                 
                                 % ViolaMusicVoice [measure 177]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 178]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 179]                          %! SM4
                                 c'8
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 [
                                 
                                 c'8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'8
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'8
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \fff
                                 ]
                             }
@@ -2892,20 +2892,20 @@
                                 
                                 % ViolaMusicVoice [measure 182]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
-                                \fff                                                     %! IC1
+                                :32                                                      %! IC
+                                \fff                                                     %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             
                             % ViolaMusicVoice [measure 183]                              %! SM4
@@ -2923,39 +2923,39 @@
                                 
                                 % ViolaMusicVoice [measure 185]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 186]                          %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 187]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \fff
                             }
                             
@@ -2975,49 +2975,49 @@
                                 
                                 % ViolaMusicVoice [measure 190]                          %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % ViolaMusicVoice [measure 191]                          %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 192]                          %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \fff
                             }
                             
@@ -3037,20 +3037,20 @@
                                 
                                 % ViolaMusicVoice [measure 195]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
-                                \fff                                                     %! IC1
+                                :32                                                      %! IC
+                                \fff                                                     %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             
                             % ViolaMusicVoice [measure 196]                              %! SM4
@@ -3068,64 +3068,64 @@
                                 
                                 % ViolaMusicVoice [measure 198]                          %! SM4
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mf
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 199]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 200]                          %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 201]                          %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 202]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \fff
                             }
                             
@@ -3146,7 +3146,7 @@
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
-                            \revert TextScript.staff-padding
+                            \revert TextScript.staff-padding                             %! OC
                             
                         }
                     }
@@ -3369,27 +3369,27 @@
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             % CelloMusicVoice [measure 176]                              %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! IC1
-                            \startStaff                                                  %! IC1
-                            \once \override NoteHead.style = #'harmonic
+                            \stopStaff                                                   %! IC
+                            \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! IC
+                            \startStaff                                                  %! IC
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             fqf''2.
-                            -\laissezVibrer                                              %! IC1
-                            \sfz                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sfz                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 177]                              %! SM4
@@ -3449,9 +3449,9 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 181]                              %! SM4
-                            \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-                            \once \override Staff.Clef.X-extent = ##f
-                            \once \override NoteHead.style = #'harmonic
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -3460,18 +3460,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             g''1..
-                            -\laissezVibrer                                              %! IC1
-                            \sfz                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sfz                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 182]                              %! SM4
@@ -3481,12 +3481,12 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             c,,2.
-                            \fff                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        XP                                               %! IC1
-                                }                                                        %! IC1
+                            \fff                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        XP                                               %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             \ottava #0
                             
@@ -3499,9 +3499,9 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 184]                              %! SM4
-                            \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-                            \once \override Staff.Clef.X-extent = ##f
-                            \once \override NoteHead.style = #'harmonic
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -3510,18 +3510,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             fqf''1
-                            -\laissezVibrer                                              %! IC1
-                            \sffz                                                        %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sffz                                                        %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 185]                              %! SM4
@@ -3581,7 +3581,7 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 189]                              %! SM4
-                            \once \override NoteHead.style = #'harmonic
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -3590,18 +3590,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             g''2
-                            -\laissezVibrer                                              %! IC1
-                            \sffz                                                        %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sffz                                                        %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 190]                              %! SM4
@@ -3661,9 +3661,9 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 194]                              %! SM4
-                            \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-                            \once \override Staff.Clef.X-extent = ##f
-                            \once \override NoteHead.style = #'harmonic
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -3672,18 +3672,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             a''1..
-                            -\laissezVibrer                                              %! IC1
-                            \sfffz                                                       %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sfffz                                                       %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 195]                              %! SM4
@@ -3693,12 +3693,12 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             c,,2.
-                            \fff                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        XP                                               %! IC1
-                                }                                                        %! IC1
+                            \fff                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        XP                                               %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             \ottava #0
                             
@@ -3711,9 +3711,9 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 197]                              %! SM4
-                            \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-                            \once \override Staff.Clef.X-extent = ##f
-                            \once \override NoteHead.style = #'harmonic
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -3722,18 +3722,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             cqs'''2
-                            -\laissezVibrer                                              %! IC1
-                            \sfffz                                                       %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sfffz                                                       %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 198]                              %! SM4
