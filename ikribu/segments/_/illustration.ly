@@ -260,9 +260,9 @@
                         \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
                             
                             % ViolinRHMusicVoice [measure 1]                             %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! IC
+                            \startStaff                                                  %! IC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -349,31 +349,31 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             % ViolinMusicVoice [measure 1]                               %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! IC1
-                            \startStaff                                                  %! IC1
-                            \once \override TextScript.staff-padding = #4.5
+                            \stopStaff                                                   %! IC
+                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! IC
+                            \startStaff                                                  %! IC
+                            \once \override TextScript.staff-padding = #4.5              %! OC
                             c'1..
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                "grainfall (I)"                          %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        mf                                               %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                "grainfall (I)"                          %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        mf                                               %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 2]                               %! SM4
                             \stopStaff                                                   %! SM20
@@ -390,9 +390,9 @@
                         \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
                             
                             % ViolaRHMusicVoice [measure 1]                              %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! IC
+                            \startStaff                                                  %! IC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -502,9 +502,9 @@
                         \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                             
                             % CelloRHMusicVoice [measure 1]                              %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! IC
+                            \startStaff                                                  %! IC
                             \set CelloStaffGroup.instrumentName = \markup {              %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -591,24 +591,24 @@
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             % CelloMusicVoice [measure 1]                                %! SM4
-                            \once \override NoteHead.style = #'harmonic
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_UNCOLOR:SM7
                             fqf''1..
-                            -\laissezVibrer                                              %! IC1
-                            \sfz                                                         %! IC1
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        pizz.                                            %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            -\laissezVibrer                                              %! IC
+                            \sfz                                                         %! IC
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        pizz.                                            %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_COLOR_REDRAW:SM6
                             
                             % CelloMusicVoice [measure 2]                                %! SM4

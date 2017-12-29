@@ -674,7 +674,7 @@
                         \stopStaff                                                       %! REAPPLIED_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                         \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
-                        \override RepeatTie.direction = #up
+                        \override RepeatTie.direction = #up                              %! OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -759,18 +759,18 @@
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
-                        _ \markup {                                                      %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    “                                                    %! IC1
-                            \dynamic                                                     %! IC1
-                                \override                                                %! IC1
-                                    #'(font-name . #f)                                   %! IC1
-                                    f                                                    %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    ”                                                    %! IC1
-                            }                                                            %! IC1
+                        _ \markup {                                                      %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    “                                                    %! IC
+                            \dynamic                                                     %! IC
+                                \override                                                %! IC
+                                    #'(font-name . #f)                                   %! IC
+                                    f                                                    %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    ”                                                    %! IC
+                            }                                                            %! IC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_REDRAW_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_REDRAW_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_REDRAW_INSTRUMENT:SM8
@@ -823,18 +823,18 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         c'4
-                        _ \markup {                                                      %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    “                                                    %! IC1
-                            \dynamic                                                     %! IC1
-                                \override                                                %! IC1
-                                    #'(font-name . #f)                                   %! IC1
-                                    mf                                                   %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    ”                                                    %! IC1
-                            }                                                            %! IC1
+                        _ \markup {                                                      %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    “                                                    %! IC
+                            \dynamic                                                     %! IC
+                                \override                                                %! IC
+                                    #'(font-name . #f)                                   %! IC
+                                    mf                                                   %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    ”                                                    %! IC
+                            }                                                            %! IC
                         
                         c'4
                         \repeatTie
@@ -865,18 +865,18 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         c'4
-                        _ \markup {                                                      %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    “                                                    %! IC1
-                            \dynamic                                                     %! IC1
-                                \override                                                %! IC1
-                                    #'(font-name . #f)                                   %! IC1
-                                    mp                                                   %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    ”                                                    %! IC1
-                            }                                                            %! IC1
+                        _ \markup {                                                      %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    “                                                    %! IC
+                            \dynamic                                                     %! IC
+                                \override                                                %! IC
+                                    #'(font-name . #f)                                   %! IC
+                                    mp                                                   %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    ”                                                    %! IC
+                            }                                                            %! IC
                         
                         c'4
                         \repeatTie
@@ -919,18 +919,18 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         c'4
-                        _ \markup {                                                      %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    “                                                    %! IC1
-                            \dynamic                                                     %! IC1
-                                \override                                                %! IC1
-                                    #'(font-name . #f)                                   %! IC1
-                                    p                                                    %! IC1
-                            \larger                                                      %! IC1
-                                \italic                                                  %! IC1
-                                    ”                                                    %! IC1
-                            }                                                            %! IC1
+                        _ \markup {                                                      %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    “                                                    %! IC
+                            \dynamic                                                     %! IC
+                                \override                                                %! IC
+                                    #'(font-name . #f)                                   %! IC
+                                    p                                                    %! IC
+                            \larger                                                      %! IC
+                                \italic                                                  %! IC
+                                    ”                                                    %! IC
+                            }                                                            %! IC
                         
                         c'4
                         \repeatTie
@@ -940,7 +940,7 @@
                         
                         c'4
                         \repeatTie
-                        \revert RepeatTie.direction
+                        \revert RepeatTie.direction                                      %! OC
                         
                         % BassClarinetMusicVoice [measure 140]                           %! SM4
                         \stopStaff                                                       %! SM20
@@ -1164,63 +1164,63 @@
                             \times 8/12 {
                                 
                                 % ViolinMusicVoice [measure 129]                         %! SM4
-                                \override RepeatTie.direction = #up
+                                \override RepeatTie.direction = #up                      %! OC
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            "col legno battuto"                          %! IC1
-                                    }                                                    %! IC1
-                                _ \markup {                                              %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            “                                            %! IC1
-                                    \dynamic                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(font-name . #f)                           %! IC1
-                                            mp                                           %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            ”                                            %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            "col legno battuto"                          %! IC
+                                    }                                                    %! IC
+                                _ \markup {                                              %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            “                                            %! IC
+                                    \dynamic                                             %! IC
+                                        \override                                        %! IC
+                                            #'(font-name . #f)                           %! IC
+                                            mp                                           %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            ”                                            %! IC
+                                    }                                                    %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -1248,65 +1248,65 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -1335,35 +1335,35 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -1391,43 +1391,43 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
-                                \revert RepeatTie.direction
+                                \revert RepeatTie.direction                              %! OC
                             }
                             
                             % ViolinMusicVoice [measure 142]                             %! SM4
@@ -1642,57 +1642,57 @@
                             \times 8/10 {
                                 
                                 % ViolaMusicVoice [measure 129]                          %! SM4
-                                \override RepeatTie.direction = #up
+                                \override RepeatTie.direction = #up                      %! OC
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            "col legno battuto"                          %! IC1
-                                    }                                                    %! IC1
-                                _ \markup {                                              %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            “                                            %! IC1
-                                    \dynamic                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(font-name . #f)                           %! IC1
-                                            mp                                           %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            ”                                            %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            "col legno battuto"                          %! IC
+                                    }                                                    %! IC
+                                _ \markup {                                              %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            “                                            %! IC
+                                    \dynamic                                             %! IC
+                                        \override                                        %! IC
+                                            #'(font-name . #f)                           %! IC
+                                            mp                                           %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            ”                                            %! IC
+                                    }                                                    %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -1720,59 +1720,59 @@
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -1801,29 +1801,29 @@
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -1851,37 +1851,37 @@
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
-                                \revert RepeatTie.direction
+                                \revert RepeatTie.direction                              %! OC
                             }
                             
                             % ViolaMusicVoice [measure 142]                              %! SM4
@@ -2075,10 +2075,10 @@
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             % CelloMusicVoice [measure 127]                              %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! IC1
-                            \startStaff                                                  %! IC1
-                            \override RepeatTie.direction = #up
+                            \stopStaff                                                   %! IC
+                            \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! IC
+                            \startStaff                                                  %! IC
+                            \override RepeatTie.direction = #up                          %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
                             \clef "bass"                                                 %! REAPPLIED_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -2086,30 +2086,30 @@
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c'4
                             \p                                                           %! REAPPLIED_DYNAMIC:SM8
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/2 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        p                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/2 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        p                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                             
                             c'4
@@ -2144,18 +2144,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        mp                                               %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        mp                                               %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -2186,18 +2186,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        mf                                               %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        mf                                               %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -2240,18 +2240,18 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        f                                                %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        f                                                %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -2261,7 +2261,7 @@
                             
                             c'4
                             \repeatTie
-                            \revert RepeatTie.direction
+                            \revert RepeatTie.direction                                  %! OC
                             
                             % CelloMusicVoice [measure 140]                              %! SM4
                             \stopStaff                                                   %! SM20

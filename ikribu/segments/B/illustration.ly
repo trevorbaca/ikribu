@@ -1049,7 +1049,7 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
                         ef1..
-                        \ppp                                                             %! IC1
+                        \ppp                                                             %! IC
                         
                         % BassClarinetMusicVoice [measure 15]                            %! SM4
                         \stopStaff                                                       %! SM20
@@ -1086,7 +1086,7 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
                         ef1
-                        \ppp                                                             %! IC1
+                        \ppp                                                             %! IC
                         
                         % BassClarinetMusicVoice [measure 21]                            %! SM4
                         \stopStaff                                                       %! SM20
@@ -1121,7 +1121,7 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
                         ef1
-                        \ppp                                                             %! IC1
+                        \ppp                                                             %! IC
                         
                         % BassClarinetMusicVoice [measure 27]                            %! SM4
                         \stopStaff                                                       %! SM20
@@ -1399,26 +1399,26 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             e'1
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \<
                             \ppp
                             \startTextSpan
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 11]                              %! SM4
                             e'1
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             
                             % ViolinMusicVoice [measure 12]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
                             e'2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \stopTextSpan
                             \>
@@ -1477,21 +1477,21 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! SM21
                             \startStaff                                                  %! SM21
                             e'\breve
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \<
                             \ppp
                             \startTextSpan
                             
                             % ViolinMusicVoice [measure 17]                              %! SM4
                             e'2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             
                             % ViolinMusicVoice [measure 18]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
                             e'1
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \stopTextSpan
                             \>
@@ -1550,21 +1550,21 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! SM21
                             \startStaff                                                  %! SM21
                             e'2
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \<
                             \ppp
                             \startTextSpan
                             
                             % ViolinMusicVoice [measure 23]                              %! SM4
                             e'1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             
                             % ViolinMusicVoice [measure 24]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
                             e'2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \stopTextSpan
                             \>
@@ -1963,41 +1963,41 @@
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             ef'2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \<
                             \ppp
                             \startTextSpan
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        II                                               %! IC1
-                                }                                                        %! IC1
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        II                                               %! IC
+                                }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 29]                               %! SM4
                             ef'1
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 30]                               %! SM4
                             ef'2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 31]                               %! SM4
                             ef'2
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 32]                               %! SM4
                             ef'1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \mf
                             
                             % ViolaMusicVoice [measure 33]                               %! SM4
                             \once \override Hairpin.circled-tip = ##t
                             ef'\breve
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \stopTextSpan
                             \>

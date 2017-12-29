@@ -380,7 +380,7 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         ef\breve
-                        \ppp                                                             %! IC1
+                        \ppp                                                             %! IC
                         ^ \markup {
                             \column
                                 {
@@ -590,22 +590,22 @@
                                 \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                                 \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                                 
-                                \override RepeatTie.direction = #up
+                                \override RepeatTie.direction = #up                      %! OC
                                 c'4
                                 \>
                                 \ff
                                 ^ \markup {
                                     \column
                                         {
-                                            \line                                        %! IC1
-                                                {                                        %! IC1
-                                                    \whiteout                            %! IC1
-                                                        \upright                         %! IC1
-                                                            \override                    %! IC1
-                                                                #'(box-padding . 0.5)    %! IC1
-                                                                \box                     %! IC1
-                                                                    "1/2 clt"            %! IC1
-                                                }                                        %! IC1
+                                            \line                                        %! IC
+                                                {                                        %! IC
+                                                    \whiteout                            %! IC
+                                                        \upright                         %! IC
+                                                            \override                    %! IC
+                                                                #'(box-padding . 0.5)    %! IC
+                                                                \box                     %! IC
+                                                                    "1/2 clt"            %! IC
+                                                }                                        %! IC
                                             \line
                                                 {
                                                     \fraction
@@ -981,7 +981,7 @@
                                         1
                                         4
                                     }
-                                \revert RepeatTie.direction
+                                \revert RepeatTie.direction                              %! OC
                             }
                             
                             % ViolinRHMusicVoice [measure 107]                           %! SM4
@@ -1149,7 +1149,7 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
-                                \override RepeatTie.direction = #up
+                                \override RepeatTie.direction = #up                      %! OC
                                 \set ViolaStaffGroup.instrumentName = \markup {          %! REAPPLIED_INSTRUMENT:SM8
                                     \hcenter-in                                          %! REAPPLIED_INSTRUMENT:SM8
                                         #16                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -1172,15 +1172,15 @@
                                 ^ \markup {
                                     \column
                                         {
-                                            \line                                        %! IC1
-                                                {                                        %! IC1
-                                                    \whiteout                            %! IC1
-                                                        \upright                         %! IC1
-                                                            \override                    %! IC1
-                                                                #'(box-padding . 0.5)    %! IC1
-                                                                \box                     %! IC1
-                                                                    "1/2 clt"            %! IC1
-                                                }                                        %! IC1
+                                            \line                                        %! IC
+                                                {                                        %! IC
+                                                    \whiteout                            %! IC
+                                                        \upright                         %! IC
+                                                            \override                    %! IC
+                                                                #'(box-padding . 0.5)    %! IC
+                                                                \box                     %! IC
+                                                                    "1/2 clt"            %! IC
+                                                }                                        %! IC
                                             \line
                                                 {
                                                     \fraction
@@ -1623,7 +1623,7 @@
                                         6
                                         7
                                     }
-                                \revert RepeatTie.direction
+                                \revert RepeatTie.direction                              %! OC
                             }
                             
                             % ViolaRHMusicVoice [measure 107]                            %! SM4

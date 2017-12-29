@@ -1049,10 +1049,10 @@
                         \context CelloMusicVoice = "CelloMusicVoice" {
                             
                             % CelloMusicVoice [measure 108]                              %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! IC1
-                            \startStaff                                                  %! IC1
-                            \override RepeatTie.direction = #up
+                            \stopStaff                                                   %! IC
+                            \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! IC
+                            \startStaff                                                  %! IC
+                            \override RepeatTie.direction = #up                          %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1060,30 +1060,30 @@
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        stonecircle:                     %! IC1
-                                                        "π/4 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        mf                                               %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        stonecircle:                     %! IC
+                                                        "π/4 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        mf                                               %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                             
                             c'4
@@ -1145,7 +1145,7 @@
                             
                             c'4
                             \repeatTie
-                            \revert RepeatTie.direction
+                            \revert RepeatTie.direction                                  %! OC
                             
                             % CelloMusicVoice [measure 115]                              %! SM4
                             \stopStaff                                                   %! SM20

@@ -559,9 +559,9 @@
                         \context ViolinMusicVoice = "ViolinMusicVoice" {
                             
                             % ViolinMusicVoice [measure 3]                               %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC
+                            \startStaff                                                  %! IC
                             R1 * 2
                             
                             % ViolinMusicVoice [measure 4]                               %! SM4
@@ -715,32 +715,32 @@
                             R1 * 7/4
                             
                             % ViolaMusicVoice [measure 5]                                %! SM4
-                            \override RepeatTie.direction = #up
+                            \override RepeatTie.direction = #up                          %! OC
                             c'4
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        stonecircle:                     %! IC1
-                                                        "π/4 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
-                            _ \markup {                                                  %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        “                                                %! IC1
-                                \dynamic                                                 %! IC1
-                                    \override                                            %! IC1
-                                        #'(font-name . #f)                               %! IC1
-                                        mf                                               %! IC1
-                                \larger                                                  %! IC1
-                                    \italic                                              %! IC1
-                                        ”                                                %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        stonecircle:                     %! IC
+                                                        "π/4 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
+                            _ \markup {                                                  %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        “                                                %! IC
+                                \dynamic                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(font-name . #f)                               %! IC
+                                        mf                                               %! IC
+                                \larger                                                  %! IC
+                                    \italic                                              %! IC
+                                        ”                                                %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -795,7 +795,7 @@
                             
                             c'4
                             \repeatTie
-                            \revert RepeatTie.direction
+                            \revert RepeatTie.direction                                  %! OC
                             
                             % ViolaMusicVoice [measure 9]                                %! SM4
                             \stopStaff                                                   %! SM20

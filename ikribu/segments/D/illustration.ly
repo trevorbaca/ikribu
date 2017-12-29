@@ -414,9 +414,9 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         % BassClarinetMusicVoice [measure 52]                            %! SM4
-                        \stopStaff                                                       %! IC1
-                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC1
-                        \startStaff                                                      %! IC1
+                        \stopStaff                                                       %! IC
+                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC
+                        \startStaff                                                      %! IC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -986,22 +986,22 @@
                                 \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REAPPLIED_REDRAW_INSTRUMENT_COLOR:SM6
                                 \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                                 
-                                \override RepeatTie.direction = #up
+                                \override RepeatTie.direction = #up                      %! OC
                                 c'4
                                 \>
                                 \ff
                                 ^ \markup {
                                     \column
                                         {
-                                            \line                                        %! IC1
-                                                {                                        %! IC1
-                                                    \whiteout                            %! IC1
-                                                        \upright                         %! IC1
-                                                            \override                    %! IC1
-                                                                #'(box-padding . 0.5)    %! IC1
-                                                                \box                     %! IC1
-                                                                    "1/2 clt"            %! IC1
-                                                }                                        %! IC1
+                                            \line                                        %! IC
+                                                {                                        %! IC
+                                                    \whiteout                            %! IC
+                                                        \upright                         %! IC
+                                                            \override                    %! IC
+                                                                #'(box-padding . 0.5)    %! IC
+                                                                \box                     %! IC
+                                                                    "1/2 clt"            %! IC
+                                                }                                        %! IC
                                             \line
                                                 {
                                                     \fraction
@@ -1349,7 +1349,7 @@
                                         6
                                         7
                                     }
-                                \revert RepeatTie.direction
+                                \revert RepeatTie.direction                              %! OC
                             }
                             
                             % CelloRHMusicVoice [measure 62]                             %! SM4

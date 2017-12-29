@@ -610,9 +610,9 @@
                             R1 * 1/2
                             
                             % ViolinMusicVoice [measure 84]                              %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! IC
+                            \startStaff                                                  %! IC
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -796,9 +796,9 @@
                             R1 * 1/2
                             
                             % ViolaMusicVoice [measure 84]                               %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 5   %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 5   %! IC
+                            \startStaff                                                  %! IC
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -988,7 +988,7 @@
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             fs1
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \mp                                                          %! REAPPLIED_DYNAMIC:SM8
                             \<
                             \p
@@ -997,17 +997,17 @@
                             
                             % CelloMusicVoice [measure 80]                               %! SM4
                             fs2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             
                             % CelloMusicVoice [measure 81]                               %! SM4
                             fs1
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             
                             % CelloMusicVoice [measure 82]                               %! SM4
                             fs2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \ff
                             \stopTextSpan
@@ -1021,23 +1021,23 @@
                             R1 * 1/2
                             
                             % CelloMusicVoice [measure 84]                               %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! IC1
-                            \startStaff                                                  %! IC1
-                            \override RepeatTie.direction = #up
+                            \stopStaff                                                   %! IC
+                            \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! IC
+                            \startStaff                                                  %! IC
+                            \override RepeatTie.direction = #up                          %! OC
                             c'4
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/2 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/2 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -1081,12 +1081,12 @@
                             
                             c'4
                             \repeatTie
-                            \revert RepeatTie.direction
+                            \revert RepeatTie.direction                                  %! OC
                             
                             % CelloMusicVoice [measure 86]                               %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! IC
+                            \startStaff                                                  %! IC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6

@@ -969,7 +969,7 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         fs'2
-                        \ppp                                                             %! IC1
+                        \ppp                                                             %! IC
                         ^ \markup {
                             \column
                                 {
@@ -1246,42 +1246,42 @@
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 63]                          %! SM4
-                                \stopStaff                                               %! IC1
-                                \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! IC1
-                                \startStaff                                              %! IC1
+                                \stopStaff                                               %! IC
+                                \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! IC
+                                \startStaff                                              %! IC
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \>
                                 \f
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 64]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1294,29 +1294,29 @@
                                 
                                 % ViolinMusicVoice [measure 67]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 68]                          %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \p
                                 \<
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1330,29 +1330,29 @@
                                 
                                 % ViolinMusicVoice [measure 71]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 72]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1365,29 +1365,29 @@
                                 
                                 % ViolinMusicVoice [measure 75]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \f
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 76]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1535,9 +1535,9 @@
                         \context ViolaMusicVoice = "ViolaMusicVoice" {
                             
                             % ViolaMusicVoice [measure 63]                               %! SM4
-                            \stopStaff                                                   %! IC1
-                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! IC1
-                            \startStaff                                                  %! IC1
+                            \stopStaff                                                   %! IC
+                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! IC
+                            \startStaff                                                  %! IC
                             \set ViolaMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
                             \clef "alto"                                                 %! REAPPLIED_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1549,37 +1549,37 @@
                                 
                                 % ViolaMusicVoice [measure 64]                           %! SM4
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \>
                                 \f
-                                ^ \markup {                                              %! IC1
-                                    \whiteout                                            %! IC1
-                                        \upright                                         %! IC1
-                                            \override                                    %! IC1
-                                                #'(box-padding . 0.5)                    %! IC1
-                                                \box                                     %! IC1
-                                                    "brushes on BD"                      %! IC1
-                                    }                                                    %! IC1
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "brushes on BD"                      %! IC
+                                    }                                                    %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 65]                           %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1592,29 +1592,29 @@
                                 
                                 % ViolaMusicVoice [measure 68]                           %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 69]                           %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \p
                                 \<
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1627,30 +1627,30 @@
                                 
                                 % ViolaMusicVoice [measure 72]                           %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 73]                           %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1663,30 +1663,30 @@
                                 
                                 % ViolaMusicVoice [measure 76]                           %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \f
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 77]                           %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                             }
                             
@@ -1869,59 +1869,59 @@
                             
                             % CelloMusicVoice [measure 71]                               %! SM4
                             f1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \<
                             \p
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        "trem. flaut. tast."                             %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        "trem. flaut. tast."                             %! IC
+                                }                                                        %! IC
                             
                             % CelloMusicVoice [measure 72]                               %! SM4
                             f\breve
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \mp
                             \>
                             
                             % CelloMusicVoice [measure 73]                               %! SM4
                             f1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             \<
                             
                             % CelloMusicVoice [measure 74]                               %! SM4
                             f1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \mp
                             \>
                             
                             % CelloMusicVoice [measure 75]                               %! SM4
                             fqs2.
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \p
                             \<
                             
                             % CelloMusicVoice [measure 76]                               %! SM4
                             fqs2
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \mp
                             \>
                             
                             % CelloMusicVoice [measure 77]                               %! SM4
                             fqs1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             \<
                             
                             % CelloMusicVoice [measure 78]                               %! SM4
                             fqs\breve
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \repeatTie
                             \mp
                             

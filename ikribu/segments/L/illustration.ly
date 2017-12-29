@@ -1106,9 +1106,9 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         % BassClarinetMusicVoice [measure 143]                           %! SM4
-                        \stopStaff                                                       %! IC1
-                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC1
-                        \startStaff                                                      %! IC1
+                        \stopStaff                                                       %! IC
+                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC
+                        \startStaff                                                      %! IC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -1133,16 +1133,16 @@
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! EXPLICIT_CLEF_UNCOLOR:SM7
                         d\breve
-                        \ppp                                                             %! IC1
+                        \ppp                                                             %! IC
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC1
-                                        {                                                %! IC1
-                                            \whiteout                                    %! IC1
-                                                \upright                                 %! IC1
-                                                    "breathe discreetly before any downbeat as needed (but do not circular breathe)" %! IC1
-                                        }                                                %! IC1
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "breathe discreetly before any downbeat as needed (but do not circular breathe)" %! IC
+                                        }                                                %! IC
                                     %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -1552,78 +1552,78 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 \f                                                       %! REAPPLIED_DYNAMIC:SM8
                                 [
-                                _ \markup {                                              %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            “                                            %! IC1
-                                    \dynamic                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(font-name . #f)                           %! IC1
-                                            mp                                           %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            ”                                            %! IC1
-                                    }                                                    %! IC1
+                                _ \markup {                                              %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            “                                            %! IC
+                                    \dynamic                                             %! IC
+                                        \override                                        %! IC
+                                            #'(font-name . #f)                           %! IC
+                                            mp                                           %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            ”                                            %! IC
+                                    }                                                    %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1631,59 +1631,59 @@
                                 
                                 % ViolinMusicVoice [measure 144]                         %! SM4
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1691,134 +1691,134 @@
                                 
                                 % ViolinMusicVoice [measure 145]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 8/12 {
                                 
                                 % ViolinMusicVoice [measure 146]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 8/12 {
                                 
                                 % ViolinMusicVoice [measure 147]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             {
                                 
                                 % ViolinMusicVoice [measure 148]                         %! SM4
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1826,59 +1826,59 @@
                                 
                                 % ViolinMusicVoice [measure 149]                         %! SM4
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1886,76 +1886,76 @@
                                 
                                 % ViolinMusicVoice [measure 150]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 8/12 {
                                 
                                 % ViolinMusicVoice [measure 151]                         %! SM4
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1963,76 +1963,76 @@
                                 
                                 % ViolinMusicVoice [measure 152]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 8/12 {
                                 
                                 % ViolinMusicVoice [measure 153]                         %! SM4
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2040,35 +2040,35 @@
                                 
                                 % ViolinMusicVoice [measure 154]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             {
@@ -2076,18 +2076,18 @@
                                 % ViolinMusicVoice [measure 155]                         %! SM4
                                 \once \override Hairpin.circled-tip = ##t
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 \>
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2095,59 +2095,59 @@
                                 
                                 % ViolinMusicVoice [measure 156]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2155,124 +2155,124 @@
                                 
                                 % ViolinMusicVoice [measure 157]                         %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 16/20 {
                                 
                                 % ViolinMusicVoice [measure 158]                         %! SM4
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 \!
                                 ]
                             }
@@ -2293,171 +2293,171 @@
                                 
                                 % ViolinMusicVoice [measure 163]                         %! SM4
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \<
                                 \mp
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 164]                         %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mf
                                 \>
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 165]                         %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mp
                                 \<
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolinMusicVoice [measure 166]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \f
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 167]                         %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mf
                                 \<
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 168]                         %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolinMusicVoice [measure 169]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \mf
                                 \<
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 170]                         %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \ff
                                 \>
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 171]                         %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \<
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 172]                         %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \ff
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 173]                         %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \<
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolinMusicVoice [measure 174]                         %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \fff
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \ff
                             }
                             
@@ -2672,73 +2672,73 @@
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 \f                                                       %! REAPPLIED_DYNAMIC:SM8
                                 [
-                                _ \markup {                                              %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            “                                            %! IC1
-                                    \dynamic                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(font-name . #f)                           %! IC1
-                                            mp                                           %! IC1
-                                    \larger                                              %! IC1
-                                        \italic                                          %! IC1
-                                            ”                                            %! IC1
-                                    }                                                    %! IC1
+                                _ \markup {                                              %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            “                                            %! IC
+                                    \dynamic                                             %! IC
+                                        \override                                        %! IC
+                                            #'(font-name . #f)                           %! IC
+                                            mp                                           %! IC
+                                    \larger                                              %! IC
+                                        \italic                                          %! IC
+                                            ”                                            %! IC
+                                    }                                                    %! IC
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_COLOR_REDRAW:SM6
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2746,53 +2746,53 @@
                                 
                                 % ViolaMusicVoice [measure 144]                          %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2800,64 +2800,64 @@
                                 
                                 % ViolaMusicVoice [measure 145]                          %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 8/10 {
                                 
                                 % ViolaMusicVoice [measure 146]                          %! SM4
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 8/10 {
@@ -2865,59 +2865,59 @@
                                 % ViolaMusicVoice [measure 147]                          %! SM4
                                 \once \override Hairpin.circled-tip = ##t
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 \>
                                 [
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \times 4/6 {
                                 
                                 % ViolaMusicVoice [measure 148]                          %! SM4
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2925,53 +2925,53 @@
                                 
                                 % ViolaMusicVoice [measure 149]                          %! SM4
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -2979,29 +2979,29 @@
                                 
                                 % ViolaMusicVoice [measure 150]                          %! SM4
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 [
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 c'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 d'8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 
                                 b8
-                                -\staccato                                               %! IC1
+                                -\staccato                                               %! IC
                                 ]
                             }
                             
@@ -3021,287 +3021,287 @@
                                 
                                 % ViolaMusicVoice [measure 155]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \>
                                 \p
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 156]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \pp
                                 \<
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 157]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \>
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 158]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \pp
                                 \<
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 159]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mp
                                 \>
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 160]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 161]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mp
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 162]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \p
                                 \<
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 163]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mf
                                 \>
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 164]                          %! SM4
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \mp
                                 \<
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 165]                          %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mf
                                 \>
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 166]                          %! SM4
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \mp
                                 \<
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 167]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 168]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mf
                                 \<
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 169]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \>
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 170]                          %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \mf
                                 \<
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 171]                          %! SM4
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \ff
                                 \>
                                 
                                 c'2
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'2
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 172]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \<
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 173]                          %! SM4
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \ff
                                 \>
                                 
                                 c'1
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 
                                 c'1
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 174]                          %! SM4
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \f
                                 \<
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 
                                 c'4
-                                -\accent                                                 %! IC1
+                                -\accent                                                 %! IC
                                 \fff
                             }
                             
@@ -3594,18 +3594,18 @@
                             c'4
                             \p
                             \<
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/3 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/3 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -3665,18 +3665,18 @@
                             c'4
                             \p
                             \<
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/4 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/4 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -3730,18 +3730,18 @@
                             c'4
                             \p
                             \<
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/3 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/3 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -3825,18 +3825,18 @@
                             c'4
                             \p
                             \<
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/2 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/2 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie
@@ -3908,18 +3908,18 @@
                             c'4
                             \p
                             \<
-                            ^ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        \override                                        %! IC1
-                                            #'(box-padding . 0.5)                        %! IC1
-                                            \box                                         %! IC1
-                                                \column                                  %! IC1
-                                                    {                                    %! IC1
-                                                        graincircle:                     %! IC1
-                                                        "π/3 every quarter note"         %! IC1
-                                                    }                                    %! IC1
-                                }                                                        %! IC1
+                            ^ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        \override                                        %! IC
+                                            #'(box-padding . 0.5)                        %! IC
+                                            \box                                         %! IC
+                                                \column                                  %! IC
+                                                    {                                    %! IC
+                                                        graincircle:                     %! IC
+                                                        "π/3 every quarter note"         %! IC
+                                                    }                                    %! IC
+                                }                                                        %! IC
                             
                             c'4
                             \repeatTie

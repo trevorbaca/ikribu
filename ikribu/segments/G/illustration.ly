@@ -1249,30 +1249,30 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                            \override NoteHead.style = #'harmonic
-                            \override TupletBracket.direction = #down
+                            \override NoteHead.style = #'harmonic                        %! OC
+                            \override TupletBracket.direction = #down                    %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! REDUNDANT_CLEF:SM8
                             \clef "treble"                                               %! REDUNDANT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REDUNDANT_CLEF_UNCOLOR:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             d''1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \glissando
                             \<
                             \ppp
-                            _ \markup {                                                  %! IC1
-                                \whiteout                                                %! IC1
-                                    \upright                                             %! IC1
-                                        III                                              %! IC1
-                                }                                                        %! IC1
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        III                                              %! IC
+                                }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_COLOR_REDRAW:SM6
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 
                                 % CelloMusicVoice [measure 88]                           %! SM4
                                 fqf''4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \pp
                                 \glissando
                                 \>
@@ -1280,7 +1280,7 @@
                             
                             % CelloMusicVoice [measure 89]                               %! SM4
                             d''1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \ppp
                             \glissando
                             \<
@@ -1289,7 +1289,7 @@
                                 
                                 % CelloMusicVoice [measure 90]                           %! SM4
                                 b'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \pp
                                 \glissando
                                 \>
@@ -1297,7 +1297,7 @@
                             
                             % CelloMusicVoice [measure 91]                               %! SM4
                             d''1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \ppp
                             \glissando
                             \<
@@ -1306,7 +1306,7 @@
                                 
                                 % CelloMusicVoice [measure 92]                           %! SM4
                                 b'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \pp
                                 \glissando
                                 \>
@@ -1314,7 +1314,7 @@
                             
                             % CelloMusicVoice [measure 93]                               %! SM4
                             g'1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \ppp
                             \glissando
                             \<
@@ -1323,7 +1323,7 @@
                                 
                                 % CelloMusicVoice [measure 94]                           %! SM4
                                 b'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \pp
                                 \glissando
                                 \>
@@ -1331,7 +1331,7 @@
                             
                             % CelloMusicVoice [measure 95]                               %! SM4
                             g'1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \ppp
                             \glissando
                             \<
@@ -1340,7 +1340,7 @@
                                 
                                 % CelloMusicVoice [measure 96]                           %! SM4
                                 d'4
-                                :32                                                      %! IC1
+                                :32                                                      %! IC
                                 \pp
                                 \glissando
                                 \>
@@ -1348,13 +1348,13 @@
                             
                             % CelloMusicVoice [measure 97]                               %! SM4
                             g'1..
-                            :32                                                          %! IC1
+                            :32                                                          %! IC
                             \ppp
-                            \revert NoteHead.style
+                            \revert NoteHead.style                                       %! OC
                             
                             % CelloMusicVoice [measure 98]                               %! SM4
                             R1 * 1/6
-                            \revert TupletBracket.direction
+                            \revert TupletBracket.direction                              %! OC
                             
                         }
                     }
