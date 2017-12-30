@@ -64,11 +64,12 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 1),
     baca.make_tied_notes(repeat_ties=True),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('grainfall (I)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
-    baca.text_script_staff_padding(4.5),
+    baca.text_script_padding(2),
     )
 
 maker(

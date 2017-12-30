@@ -355,10 +355,14 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                            \once \override TextScript.staff-padding = #4.5              %! OC
+                            \once \override TextScript.padding = #2                      %! OC
+                            \set ViolinMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
+                            \clef "percussion"                                           %! EXPLICIT_CLEF:SM8
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                            %%% \override ViolinMusicStaff.Clef.color = ##f              %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            b'1..
+                            c'1..
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -378,6 +382,7 @@
                                             \box                                         %! IC
                                                 "grainfall (I)"                          %! IC
                                 }                                                        %! IC
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolinMusicVoice [measure 2]                               %! SM4
                             \stopStaff                                                   %! SM20

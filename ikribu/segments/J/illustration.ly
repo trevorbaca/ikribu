@@ -520,7 +520,7 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                        cs'''4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:line (
@@ -626,51 +626,51 @@
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 117]                           %! SM4
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 118]                           %! SM4
-                        cs'''4
+                        b'4
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -684,61 +684,61 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 119]                           %! SM4
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 120]                           %! SM4
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 121]                           %! SM4
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 122]                           %! SM4
@@ -760,7 +760,7 @@
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
-                        cs'''4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:line (
@@ -785,13 +785,13 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         
-                        cs'''4
+                        b'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         
@@ -940,6 +940,10 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
+                            \set ViolinMusicStaff.forceClef = ##t                        %! REAPPLIED_CLEF:SM8
+                            \clef "percussion"                                           %! REAPPLIED_CLEF:SM8
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                            %%% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             b'4
@@ -966,6 +970,7 @@
                                                         "π/2 every quarter note"         %! IC
                                                     }                                    %! IC
                                 }                                                        %! IC
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             b'4
                             \repeatTie
