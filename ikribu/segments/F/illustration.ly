@@ -1041,7 +1041,7 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            b'4
+                            d4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1055,47 +1055,47 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 85]                               %! SM4
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             

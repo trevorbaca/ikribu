@@ -114,7 +114,7 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 16),
-    baca.pitches('Bb2'),
+    baca.staff_positions([0]),
     )
 
 maker(

@@ -14,28 +14,8 @@ metadata = abjad.TypedOrderedDict(
                         [
                             abjad.Momento(
                                 context='BassClarinetMusicVoice',
-                                prototype='abjad.Clef',
-                                value='treble',
-                                ),
-                            abjad.Momento(
-                                context='BassClarinetMusicVoice',
-                                prototype='abjad.Instrument',
-                                value='BassClarinet',
-                                ),
-                            abjad.Momento(
-                                context='BassClarinetMusicVoice',
                                 prototype='baca.StaffLines',
                                 value=5,
-                                ),
-                            ],
-                        ),
-                    (
-                        'BassClarinetMusicVoice',
-                        [
-                            abjad.Momento(
-                                context='BassClarinetMusicVoice',
-                                prototype='abjad.Dynamic',
-                                value='p',
                                 ),
                             ],
                         ),

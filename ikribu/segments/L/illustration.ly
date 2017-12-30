@@ -1172,12 +1172,6 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC
-                                        {                                                %! IC
-                                            \whiteout                                    %! IC
-                                                \upright                                 %! IC
-                                                    "breathe discreetly before any downbeat as needed (but do not circular breathe)" %! IC
-                                        }                                                %! IC
                                     %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -1234,6 +1228,12 @@
                                                         }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                 }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    "breathe discreetly before any downbeat as needed (but do not circular breathe)" %! IC
+                                        }                                                %! IC
                                 }
                             }
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1589,7 +1589,7 @@
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override ViolinMusicStaff.Clef.color = ##f          %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 b'8
                                 -\staccato                                               %! IC
                                 _ #(make-dynamic-script
@@ -1603,7 +1603,7 @@
                                             #:general-align Y -2 #:normal-text #:larger "”"
                                             )
                                         )
-                                    )                                                    %! EXPLICIT_DYNAMIC:SM8
+                                    )                                                    %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
@@ -2722,7 +2722,7 @@
                                 \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override ViolaMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                                 b'8
                                 -\staccato                                               %! IC
                                 _ #(make-dynamic-script
@@ -2736,7 +2736,7 @@
                                             #:general-align Y -2 #:normal-text #:larger "”"
                                             )
                                         )
-                                    )                                                    %! EXPLICIT_DYNAMIC:SM8
+                                    )                                                    %! REDUNDANT_DYNAMIC:SM8
                                 [
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
@@ -3586,89 +3586,89 @@
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \<
                             \p
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 144]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 145]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \p
                             \<
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 146]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 147]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \p
                             \<
                             ^ \markup {                                                  %! IC
@@ -3684,66 +3684,66 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 148]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 149]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \p
                             \<
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 150]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 151]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \p
                             \<
                             ^ \markup {                                                  %! IC
@@ -3759,60 +3759,60 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 152]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 153]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \p
                             \<
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 154]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 155]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \p
                             \<
                             ^ \markup {                                                  %! IC
@@ -3828,90 +3828,90 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 156]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 157]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \p
                             \<
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 158]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 159]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \p
                             \<
                             ^ \markup {                                                  %! IC
@@ -3927,78 +3927,78 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 160]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 161]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \p
                             \<
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 162]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 163]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \p
                             \<
                             ^ \markup {                                                  %! IC
@@ -4014,66 +4014,66 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 164]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             \>
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 165]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \p
                             \<
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 166]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             \repeatTie
                             \f
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 167]                              %! SM4

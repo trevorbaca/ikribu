@@ -477,32 +477,9 @@
                         \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
-                        \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
-                                #16                                                      %! REAPPLIED_INSTRUMENT:SM8
-                                \center-column                                           %! REAPPLIED_INSTRUMENT:SM8
-                                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
-                                        Bass                                             %! REAPPLIED_INSTRUMENT:SM8
-                                        clarinet                                         %! REAPPLIED_INSTRUMENT:SM8
-                                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
-                            }                                                            %! REAPPLIED_INSTRUMENT:SM8
-                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {      %! REAPPLIED_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
-                                #10                                                      %! REAPPLIED_INSTRUMENT:SM8
-                                \line                                                    %! REAPPLIED_INSTRUMENT:SM8
-                                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
-                                        B.                                               %! REAPPLIED_INSTRUMENT:SM8
-                                        cl.                                              %! REAPPLIED_INSTRUMENT:SM8
-                                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
-                            }                                                            %! REAPPLIED_INSTRUMENT:SM8
-                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REAPPLIED_CLEF:SM8
-                        \clef "treble"                                                   %! REAPPLIED_CLEF:SM8
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                        %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        c'4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -515,202 +492,120 @@
                                     )
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
-                        ^ \markup {
-                            \column
-                                {
-                                    \line                                                %! IC
-                                        {                                                %! IC
-                                            \whiteout                                    %! IC
-                                                \upright                                 %! IC
-                                                    \override                            %! IC
-                                                        #'(box-padding . 0.5)            %! IC
-                                                        \box                             %! IC
-                                                            "graincircle: π/3 every quarter note" %! IC
-                                        }                                                %! IC
-                                    %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             (“BassClarinet”                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 #16                              %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 \center-column                   %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                     {                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                         Bass                     %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                         clarinet                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                     }                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%         \concat                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                     \hcenter-in                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                         #10                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                         \line                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                             {                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                                 B.               %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                                 cl.              %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                             }                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%                     )                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%             }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    %%%     }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    \line                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        {                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                #(x11-color 'green4)                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        (“BassClarinet”                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            #16                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \center-column               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    Bass                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    clarinet             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \concat                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    #10                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \line                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        {                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            B.           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                            cl.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        }                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                )                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                }
-                            }
-                        \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                \center-column                                           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                        Bass                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                        clarinet                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                #10                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                \line                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                        B.                                               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                        cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                        ^ \markup {                                                      %! IC
+                            \whiteout                                                    %! IC
+                                \upright                                                 %! IC
+                                    \override                                            %! IC
+                                        #'(box-padding . 0.5)                            %! IC
+                                        \box                                             %! IC
+                                            "graincircle: π/3 every quarter note"        %! IC
+                            }                                                            %! IC
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 248]                           %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 249]                           %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 250]                           %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 251]                           %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 252]                           %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 253]                           %! SM4
@@ -875,7 +770,7 @@
                             %%% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             _ #(make-dynamic-script
                                 (markup
@@ -896,159 +791,159 @@
                                 }                                                        %! IC
                             \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 248]                             %! SM4
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 249]                             %! SM4
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 250]                             %! SM4
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 251]                             %! SM4
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 252]                             %! SM4
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 253]                             %! SM4
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 254]                             %! SM4
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 255]                             %! SM4
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
-                            d'4
+                            c''4
                             -\tongue #2                                                  %! IC
                             
-                            b4
+                            a'4
                             -\tongue #2                                                  %! IC
                             
-                            c'4
+                            b'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 256]                             %! SM4
@@ -1203,8 +1098,8 @@
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -1224,160 +1119,160 @@
                                 }                                                        %! IC
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 248]                              %! SM4
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 249]                              %! SM4
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 250]                              %! SM4
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 251]                              %! SM4
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 252]                              %! SM4
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 253]                              %! SM4
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 254]                              %! SM4
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 255]                              %! SM4
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
-                            d'4
-                            -\staccato                                                   %! IC
+                            c''4
+                            -\tongue #2                                                  %! IC
                             
-                            c'4
-                            -\staccato                                                   %! IC
+                            b'4
+                            -\tongue #2                                                  %! IC
                             
-                            b4
-                            -\staccato                                                   %! IC
+                            a'4
+                            -\tongue #2                                                  %! IC
                             
                             % ViolaMusicVoice [measure 256]                              %! SM4
                             R1 * 3/4
@@ -1533,7 +1428,7 @@
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 _ #(make-dynamic-script
                                     (markup
@@ -1559,18 +1454,18 @@
                                 \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 
                                 r1
@@ -1578,16 +1473,16 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1597,12 +1492,12 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1615,26 +1510,26 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % CelloMusicVoice [measure 249]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 
                                 r8
                                 
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1642,22 +1537,22 @@
                                 
                                 r8
                                 
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1665,23 +1560,23 @@
                             \times 6/7 {
                                 
                                 % CelloMusicVoice [measure 250]                          %! SM4
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1694,17 +1589,17 @@
                                 % CelloMusicVoice [measure 251]                          %! SM4
                                 r4.
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1712,12 +1607,12 @@
                                 
                                 % CelloMusicVoice [measure 252]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 \repeatTie
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1725,17 +1620,17 @@
                                 
                                 r8
                                 
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r8
                                 
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 r8.
@@ -1749,19 +1644,19 @@
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1772,12 +1667,12 @@
                                 % CelloMusicVoice [measure 254]                          %! SM4
                                 r4
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1786,11 +1681,11 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1798,15 +1693,15 @@
                                 
                                 % CelloMusicVoice [measure 255]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 \repeatTie
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1822,23 +1717,23 @@
                                 % CelloMusicVoice [measure 256]                          %! SM4
                                 r4..
                                 
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1846,26 +1741,26 @@
                                 
                                 % CelloMusicVoice [measure 257]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8
+                                a8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'8.
+                                a8.
                                 -\accent                                                 %! IC
                                 
                                 r1
@@ -1873,12 +1768,12 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                b'16
+                                a16
                                 -\accent                                                 %! IC
                                 ]
                             }
