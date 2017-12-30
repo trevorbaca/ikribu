@@ -713,28 +713,17 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'4
-                        _ \markup {
-                            \concat
-                                {
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                “
-                                    \hspace
-                                        #0.2
-                                    \vcenter
-                                        \dynamic
-                                            \override
-                                                #'(font-name . #f)
-                                                f
-                                    \hspace
-                                        #0.1
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                ”
-                                }
-                            }                                                            %! EXPLICIT_DYNAMIC:SM8
+                        _ #(make-dynamic-script
+                            (markup
+                                #:line (
+                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                    #:hspace -0.4
+                                    #:dynamic "f"
+                                    #:hspace -0.2
+                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                    )
+                                )
+                            )                                                            %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -849,28 +838,17 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         c'4
-                        _ \markup {
-                            \concat
-                                {
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                “
-                                    \hspace
-                                        #0.35
-                                    \vcenter
-                                        \dynamic
-                                            \override
-                                                #'(font-name . #f)
-                                                mf
-                                    \hspace
-                                        #0.1
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                ”
-                                }
-                            }                                                            %! EXPLICIT_DYNAMIC:SM8
+                        _ #(make-dynamic-script
+                            (markup
+                                #:line (
+                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                    #:hspace -0.1
+                                    #:dynamic "mf"
+                                    #:hspace -0.2
+                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                    )
+                                )
+                            )                                                            %! EXPLICIT_DYNAMIC:SM8
                         
                         c'4
                         \repeatTie
@@ -902,28 +880,17 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         c'4
-                        _ \markup {
-                            \concat
-                                {
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                “
-                                    \hspace
-                                        #0.35
-                                    \vcenter
-                                        \dynamic
-                                            \override
-                                                #'(font-name . #f)
-                                                mp
-                                    \hspace
-                                        #0
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                ”
-                                }
-                            }                                                            %! EXPLICIT_DYNAMIC:SM8
+                        _ #(make-dynamic-script
+                            (markup
+                                #:line (
+                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                    #:hspace -0.1
+                                    #:dynamic "mp"
+                                    #:hspace -0.25
+                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                    )
+                                )
+                            )                                                            %! EXPLICIT_DYNAMIC:SM8
                         
                         c'4
                         \repeatTie
@@ -967,28 +934,17 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         c'4
-                        _ \markup {
-                            \concat
-                                {
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                “
-                                    \hspace
-                                        #0.6
-                                    \vcenter
-                                        \dynamic
-                                            \override
-                                                #'(font-name . #f)
-                                                p
-                                    \hspace
-                                        #0
-                                    \vcenter
-                                        \larger
-                                            \italic
-                                                ”
-                                }
-                            }                                                            %! EXPLICIT_DYNAMIC:SM8
+                        _ #(make-dynamic-script
+                            (markup
+                                #:line (
+                                    #:general-align Y -2 #:normal-text #:larger "“"
+                                    #:hspace -0.1
+                                    #:dynamic "p"
+                                    #:hspace -0.25
+                                    #:general-align Y -2 #:normal-text #:larger "”"
+                                    )
+                                )
+                            )                                                            %! EXPLICIT_DYNAMIC:SM8
                         
                         c'4
                         \repeatTie
@@ -1212,28 +1168,17 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             R1 * 1
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.2
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    f
-                                        \hspace
-                                            #0.1
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! REAPPLIED_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.4
+                                        #:dynamic "f"
+                                        #:hspace -0.2
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! REAPPLIED_DYNAMIC:SM8
                             
                             % ViolinMusicVoice [measure 128]                             %! SM4
                             \stopStaff                                                   %! SM20
@@ -1250,28 +1195,17 @@
                                 \startStaff                                              %! SM21
                                 b8
                                 -\staccato                                               %! IC
-                                _ \markup {
-                                    \concat
-                                        {
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        “
-                                            \hspace
-                                                #0.35
-                                            \vcenter
-                                                \dynamic
-                                                    \override
-                                                        #'(font-name . #f)
-                                                        mp
-                                            \hspace
-                                                #0
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        ”
-                                        }
-                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.1
+                                            #:dynamic "mp"
+                                            #:hspace -0.25
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 ^ \markup {                                              %! IC
                                     \whiteout                                            %! IC
@@ -1721,28 +1655,17 @@
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             R1 * 1
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.2
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    f
-                                        \hspace
-                                            #0.1
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! REAPPLIED_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.4
+                                        #:dynamic "f"
+                                        #:hspace -0.2
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! REAPPLIED_DYNAMIC:SM8
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolaMusicVoice [measure 128]                              %! SM4
@@ -1760,28 +1683,17 @@
                                 \startStaff                                              %! SM21
                                 b8
                                 -\staccato                                               %! IC
-                                _ \markup {
-                                    \concat
-                                        {
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        “
-                                            \hspace
-                                                #0.35
-                                            \vcenter
-                                                \dynamic
-                                                    \override
-                                                        #'(font-name . #f)
-                                                        mp
-                                            \hspace
-                                                #0
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        ”
-                                        }
-                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.1
+                                            #:dynamic "mp"
+                                            #:hspace -0.25
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 ^ \markup {                                              %! IC
                                     \whiteout                                            %! IC
@@ -2208,28 +2120,17 @@
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.6
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    p
-                                        \hspace
-                                            #0
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! EXPLICIT_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.1
+                                        #:dynamic "p"
+                                        #:hspace -0.25
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2277,28 +2178,17 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.35
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    mp
-                                        \hspace
-                                            #0
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! EXPLICIT_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.1
+                                        #:dynamic "mp"
+                                        #:hspace -0.25
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
                             c'4
                             \repeatTie
@@ -2330,28 +2220,17 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.35
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    mf
-                                        \hspace
-                                            #0.1
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! EXPLICIT_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.1
+                                        #:dynamic "mf"
+                                        #:hspace -0.2
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
                             c'4
                             \repeatTie
@@ -2395,28 +2274,17 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
-                            _ \markup {
-                                \concat
-                                    {
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    “
-                                        \hspace
-                                            #0.2
-                                        \vcenter
-                                            \dynamic
-                                                \override
-                                                    #'(font-name . #f)
-                                                    f
-                                        \hspace
-                                            #0.1
-                                        \vcenter
-                                            \larger
-                                                \italic
-                                                    ”
-                                    }
-                                }                                                        %! EXPLICIT_DYNAMIC:SM8
+                            _ #(make-dynamic-script
+                                (markup
+                                    #:line (
+                                        #:general-align Y -2 #:normal-text #:larger "“"
+                                        #:hspace -0.4
+                                        #:dynamic "f"
+                                        #:hspace -0.2
+                                        #:general-align Y -2 #:normal-text #:larger "”"
+                                        )
+                                    )
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
                             c'4
                             \repeatTie

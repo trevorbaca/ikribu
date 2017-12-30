@@ -1588,28 +1588,17 @@
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\staccato                                               %! IC
-                                _ \markup {
-                                    \concat
-                                        {
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        “
-                                            \hspace
-                                                #0.35
-                                            \vcenter
-                                                \dynamic
-                                                    \override
-                                                        #'(font-name . #f)
-                                                        mp
-                                            \hspace
-                                                #0
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        ”
-                                        }
-                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.1
+                                            #:dynamic "mp"
+                                            #:hspace -0.25
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 
                                 d'8
@@ -2730,28 +2719,17 @@
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\staccato                                               %! IC
-                                _ \markup {
-                                    \concat
-                                        {
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        “
-                                            \hspace
-                                                #0.35
-                                            \vcenter
-                                                \dynamic
-                                                    \override
-                                                        #'(font-name . #f)
-                                                        mp
-                                            \hspace
-                                                #0
-                                            \vcenter
-                                                \larger
-                                                    \italic
-                                                        ”
-                                        }
-                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
+                                _ #(make-dynamic-script
+                                    (markup
+                                        #:line (
+                                            #:general-align Y -2 #:normal-text #:larger "“"
+                                            #:hspace -0.1
+                                            #:dynamic "mp"
+                                            #:hspace -0.25
+                                            #:general-align Y -2 #:normal-text #:larger "”"
+                                            )
+                                        )
+                                    )                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
