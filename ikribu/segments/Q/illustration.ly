@@ -1525,7 +1525,7 @@
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 _ #(make-dynamic-script
                                     (markup
@@ -1550,18 +1550,18 @@
                                 \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 
                                 r1
@@ -1569,16 +1569,16 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1588,12 +1588,12 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1606,26 +1606,26 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % CelloMusicVoice [measure 249]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 
                                 r8
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1633,22 +1633,22 @@
                                 
                                 r8
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1656,23 +1656,23 @@
                             \times 6/7 {
                                 
                                 % CelloMusicVoice [measure 250]                          %! SM4
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1685,17 +1685,17 @@
                                 % CelloMusicVoice [measure 251]                          %! SM4
                                 r4.
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1703,12 +1703,12 @@
                                 
                                 % CelloMusicVoice [measure 252]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 \repeatTie
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1716,17 +1716,17 @@
                                 
                                 r8
                                 
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r8
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 r8.
@@ -1740,19 +1740,19 @@
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1763,12 +1763,12 @@
                                 % CelloMusicVoice [measure 254]                          %! SM4
                                 r4
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1777,11 +1777,11 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                             }
@@ -1789,15 +1789,15 @@
                                 
                                 % CelloMusicVoice [measure 255]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 \repeatTie
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
@@ -1813,23 +1813,23 @@
                                 % CelloMusicVoice [measure 256]                          %! SM4
                                 r4..
                                 
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1837,26 +1837,26 @@
                                 
                                 % CelloMusicVoice [measure 257]                          %! SM4
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 [
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                                 
                                 r16
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'8.
+                                b'8.
                                 -\accent                                                 %! IC
                                 
                                 r1
@@ -1864,12 +1864,12 @@
                                 r8
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 [
                                 
                                 \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie   %! SM26
-                                c'16
+                                b'16
                                 -\accent                                                 %! IC
                                 ]
                             }

@@ -520,7 +520,7 @@
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                        d''4
+                        cs'''4
                         _ #(make-dynamic-script
                             (markup
                                 #:line (
@@ -626,51 +626,51 @@
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 117]                           %! SM4
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 118]                           %! SM4
-                        d''4
+                        cs'''4
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -684,61 +684,61 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 119]                           %! SM4
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 120]                           %! SM4
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 121]                           %! SM4
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 122]                           %! SM4
@@ -760,7 +760,7 @@
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
-                        d''4
+                        cs'''4
                         _ #(make-dynamic-script
                             (markup
                                 #:line (
@@ -785,13 +785,13 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         
-                        d''4
+                        cs'''4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         
@@ -942,7 +942,7 @@
                             \override RepeatTie.direction = #up                          %! OC
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -967,77 +967,77 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 117]                             %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 118]                             %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 119]                             %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 120]                             %! SM4
-                            c'4
+                            b'4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1051,35 +1051,35 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 121]                             %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 122]                             %! SM4
@@ -1099,7 +1099,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -1124,13 +1124,13 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             
@@ -1284,7 +1284,7 @@
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -1310,51 +1310,51 @@
                                 }                                                        %! IC
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 117]                              %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 118]                              %! SM4
-                            c'4
+                            b'4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1368,30 +1368,30 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 119]                              %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 120]                              %! SM4
-                            c'4
+                            b'4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1405,35 +1405,35 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 121]                              %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 122]                              %! SM4
@@ -1453,7 +1453,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -1478,13 +1478,13 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             

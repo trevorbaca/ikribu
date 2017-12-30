@@ -1193,7 +1193,7 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 _ #(make-dynamic-script
                                     (markup
@@ -1213,37 +1213,37 @@
                                             "col legno battuto"                          %! IC
                                     }                                                    %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 ]
                             }
@@ -1271,65 +1271,65 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 [
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 ]
                             }
@@ -1358,35 +1358,35 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 [
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 ]
                             }
@@ -1414,41 +1414,41 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 [
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 ]
                                 \revert RepeatTie.direction                              %! OC
@@ -1681,7 +1681,7 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 _ #(make-dynamic-script
                                     (markup
@@ -1701,31 +1701,31 @@
                                             "col legno battuto"                          %! IC
                                     }                                                    %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 ]
                             }
@@ -1753,59 +1753,59 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 [
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 ]
                             }
@@ -1834,29 +1834,29 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 [
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 ]
                             }
@@ -1884,35 +1884,35 @@
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 [
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                b8
+                                a'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                d'8
+                                c''8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 
-                                c'8
+                                b'8
                                 -\staccato                                               %! IC
                                 ]
                                 \revert RepeatTie.direction                              %! OC
@@ -2119,7 +2119,7 @@
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2145,13 +2145,13 @@
                                 }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 128]                              %! SM4
@@ -2177,7 +2177,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2190,10 +2190,10 @@
                                     )
                                 )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 132]                              %! SM4
@@ -2219,7 +2219,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2232,22 +2232,22 @@
                                     )
                                 )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 136]                              %! SM4
@@ -2273,7 +2273,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2286,13 +2286,13 @@
                                     )
                                 )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             

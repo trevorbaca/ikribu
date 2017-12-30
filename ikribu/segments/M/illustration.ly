@@ -2155,7 +2155,7 @@
                             \override TextScript.staff-padding = #4.5                    %! OC
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            c'2.
+                            b'2.
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2178,7 +2178,7 @@
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 177]                         %! SM4
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 \<
                                 \mf
@@ -2191,34 +2191,34 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 178]                         %! SM4
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 179]                         %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff
                             }
@@ -2234,7 +2234,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            c'1..
+                            b'1..
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2259,7 +2259,7 @@
                                 
                                 % ViolinMusicVoice [measure 182]                         %! SM4
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {                                              %! IC
@@ -2271,13 +2271,13 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                             }
                             
@@ -2292,7 +2292,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            c'1
+                            b'1
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2316,7 +2316,7 @@
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 185]                         %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \<
                                 \mf
@@ -2329,53 +2329,53 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                             }
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 186]                         %! SM4
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 187]                         %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff
                             }
@@ -2391,7 +2391,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            c'2
+                            b'2
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2415,7 +2415,7 @@
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 190]                         %! SM4
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                                 \<
                                 \mf
@@ -2428,35 +2428,35 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                                 
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 191]                         %! SM4
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                                 
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                                 
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 192]                         %! SM4
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                                 
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                                 
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                                 \fff
                             }
@@ -2472,7 +2472,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            c'1..
+                            b'1..
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2497,7 +2497,7 @@
                                 
                                 % ViolinMusicVoice [measure 195]                         %! SM4
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {                                              %! IC
@@ -2509,13 +2509,13 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                             }
                             
@@ -2530,7 +2530,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            c'2
+                            b'2
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -2553,7 +2553,7 @@
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 198]                         %! SM4
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 \<
                                 \mf
@@ -2566,90 +2566,90 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/10 {
                                 
                                 % ViolinMusicVoice [measure 199]                         %! SM4
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                             }
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 200]                         %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                             }
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 201]                         %! SM4
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 202]                         %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff
                             }
@@ -2910,49 +2910,49 @@
                             {
                                 
                                 % ViolaMusicVoice [measure 177]                          %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \<
                                 \mf
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 178]                          %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 179]                          %! SM4
-                                c'8
+                                b'8
                                 :32                                                      %! IC
                                 [
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 
-                                c'8
+                                b'8
                                 :32                                                      %! IC
                                 
-                                c'8
+                                b'8
                                 -\accent                                                 %! IC
                                 \fff
                                 ]
@@ -2974,20 +2974,20 @@
                                 
                                 % ViolaMusicVoice [measure 182]                          %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff                                                     %! REDUNDANT_DYNAMIC:SM8
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                             }
                             
@@ -3005,39 +3005,39 @@
                             {
                                 
                                 % ViolaMusicVoice [measure 185]                          %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \<
                                 \mf
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 186]                          %! SM4
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 187]                          %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff
                             }
@@ -3057,49 +3057,49 @@
                             \times 7/8 {
                                 
                                 % ViolaMusicVoice [measure 190]                          %! SM4
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 \<
                                 \mf
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % ViolaMusicVoice [measure 191]                          %! SM4
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 192]                          %! SM4
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 \fff
                             }
@@ -3120,20 +3120,20 @@
                                 
                                 % ViolaMusicVoice [measure 195]                          %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff                                                     %! REDUNDANT_DYNAMIC:SM8
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                             }
                             
@@ -3151,64 +3151,64 @@
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 198]                          %! SM4
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                                 \<
                                 \mf
                                 
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                                 
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
                                 
                                 % ViolaMusicVoice [measure 199]                          %! SM4
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                                 
-                                c'1
+                                b'1
                                 :32                                                      %! IC
                                 
-                                c'1
+                                b'1
                                 -\accent                                                 %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 200]                          %! SM4
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                             }
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 201]                          %! SM4
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                                 
-                                c'2
+                                b'2
                                 :32                                                      %! IC
                                 
-                                c'2
+                                b'2
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 202]                          %! SM4
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 
-                                c'4
+                                b'4
                                 -\accent                                                 %! IC
                                 
-                                c'4
+                                b'4
                                 :32                                                      %! IC
                                 \fff
                             }

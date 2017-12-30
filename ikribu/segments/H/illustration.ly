@@ -602,7 +602,7 @@
                                 
                                 \override RepeatTie.direction = #up                      %! OC
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \>
                                 \ff
                                 ^ \markup {
@@ -626,7 +626,7 @@
                                         }
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         4
@@ -634,7 +634,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \<
                                 ^ \markup {
@@ -643,14 +643,14 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -658,7 +658,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 \>
                                 ^ \markup {
@@ -671,7 +671,7 @@
                                 
                                 % ViolinRHMusicVoice [measure 100]                       %! SM4
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 ^ \markup {
                                     \fraction
@@ -682,7 +682,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 \<
                                 ^ \markup {
@@ -691,7 +691,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -699,7 +699,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 ^ \markup {
                                     \fraction
@@ -710,7 +710,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \>
                                 ^ \markup {
@@ -723,7 +723,7 @@
                             \times 7/8 {
                                 
                                 % ViolinRHMusicVoice [measure 101]                       %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -731,7 +731,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 \<
                                 ^ \markup {
@@ -740,14 +740,14 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         5
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -755,7 +755,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 \>
                                 ^ \markup {
@@ -765,7 +765,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 ^ \markup {
                                     \fraction
@@ -776,7 +776,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \<
                                 ^ \markup {
@@ -789,7 +789,7 @@
                             \times 3/5 {
                                 
                                 % ViolinRHMusicVoice [measure 102]                       %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -797,7 +797,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 ^ \markup {
                                     \fraction
@@ -808,7 +808,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 \>
                                 ^ \markup {
@@ -817,7 +817,7 @@
                                         4
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         1
@@ -828,7 +828,7 @@
                                 
                                 % ViolinRHMusicVoice [measure 103]                       %! SM4
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 \<
                                 ^ \markup {
@@ -837,7 +837,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         4
@@ -847,7 +847,7 @@
                             {
                                 
                                 % ViolinRHMusicVoice [measure 104]                       %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         5
@@ -855,7 +855,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \>
                                 ^ \markup {
@@ -865,7 +865,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 ^ \markup {
                                     \fraction
@@ -876,7 +876,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 \<
                                 ^ \markup {
@@ -885,7 +885,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -893,7 +893,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 ^ \markup {
                                     \fraction
@@ -907,7 +907,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 \>
                                 ^ \markup {
@@ -916,7 +916,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -924,7 +924,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \<
                                 ^ \markup {
@@ -933,14 +933,14 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         4
@@ -948,7 +948,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 \>
                                 ^ \markup {
@@ -958,7 +958,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 ^ \markup {
                                     \fraction
@@ -972,7 +972,7 @@
                                 
                                 % ViolinRHMusicVoice [measure 106]                       %! SM4
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 \<
                                 ^ \markup {
@@ -981,7 +981,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -989,7 +989,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 ^ \markup {
                                     \fraction
@@ -1000,7 +1000,7 @@
                                 r4
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \>
                                 ^ \markup {
@@ -1010,7 +1010,7 @@
                                     }
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 ^ \markup {
                                     \fraction
@@ -1203,7 +1203,7 @@
                                 %%% \override ViolaRHMusicStaff.Clef.color = ##f         %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \>
                                 \ff
                                 ^ \markup {
@@ -1279,7 +1279,7 @@
                                 \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                                 \override ViolaRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -1287,7 +1287,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \<
                                 ^ \markup {
@@ -1297,7 +1297,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 ^ \markup {
                                     \fraction
@@ -1308,7 +1308,7 @@
                                 r4
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 \>
                                 ^ \markup {
@@ -1317,7 +1317,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -1325,7 +1325,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 \<
                                 ^ \markup {
@@ -1338,14 +1338,14 @@
                             \times 7/8 {
                                 
                                 % ViolaRHMusicVoice [measure 100]                        %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         5
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -1353,7 +1353,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \>
                                 ^ \markup {
@@ -1362,7 +1362,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -1370,7 +1370,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 \<
                                 ^ \markup {
@@ -1380,7 +1380,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 ^ \markup {
                                     \fraction
@@ -1391,7 +1391,7 @@
                                 r4
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 \>
                                 ^ \markup {
@@ -1404,7 +1404,7 @@
                             \times 7/9 {
                                 
                                 % ViolaRHMusicVoice [measure 101]                        %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         2
@@ -1412,7 +1412,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \<
                                 ^ \markup {
@@ -1421,7 +1421,7 @@
                                         4
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -1429,7 +1429,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 ^ \markup {
                                     \fraction
@@ -1440,7 +1440,7 @@
                                 r4
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 \>
                                 ^ \markup {
@@ -1449,7 +1449,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -1457,7 +1457,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 \<
                                 ^ \markup {
@@ -1466,7 +1466,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -1477,7 +1477,7 @@
                             \times 3/2 {
                                 
                                 % ViolaRHMusicVoice [measure 102]                        %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -1485,7 +1485,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \>
                                 ^ \markup {
@@ -1497,7 +1497,7 @@
                             {
                                 
                                 % ViolaRHMusicVoice [measure 103]                        %! SM4
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -1505,7 +1505,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 \<
                                 ^ \markup {
@@ -1519,7 +1519,7 @@
                                 
                                 % ViolaRHMusicVoice [measure 104]                        %! SM4
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 ^ \markup {
                                     \fraction
@@ -1530,7 +1530,7 @@
                                 r4
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 \>
                                 ^ \markup {
@@ -1539,7 +1539,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         4
@@ -1547,7 +1547,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \<
                                 ^ \markup {
@@ -1556,7 +1556,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         6
@@ -1564,7 +1564,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 ^ \markup {
                                     \fraction
@@ -1578,7 +1578,7 @@
                                 
                                 % ViolaRHMusicVoice [measure 105]                        %! SM4
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \f
                                 \>
                                 ^ \markup {
@@ -1587,7 +1587,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -1595,7 +1595,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \pp
                                 \<
                                 ^ \markup {
@@ -1604,14 +1604,14 @@
                                         4
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         1
                                         4
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         2
@@ -1619,7 +1619,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 \>
                                 ^ \markup {
@@ -1628,7 +1628,7 @@
                                         4
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         0
@@ -1636,7 +1636,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ppp
                                 \<
                                 ^ \markup {
@@ -1646,7 +1646,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 ^ \markup {
                                     \fraction
@@ -1661,7 +1661,7 @@
                                 
                                 % ViolaRHMusicVoice [measure 106]                        %! SM4
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \ff
                                 \>
                                 ^ \markup {
@@ -1670,7 +1670,7 @@
                                         7
                                     }
                                 
-                                c'4
+                                b'4
                                 ^ \markup {
                                     \fraction
                                         7
@@ -1678,7 +1678,7 @@
                                     }
                                 
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
+                                b'4
                                 \p
                                 ^ \markup {
                                     \fraction

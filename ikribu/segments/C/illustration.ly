@@ -1482,7 +1482,7 @@
                             \once \override TextScript.staff-padding = #4.5              %! OC
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            c'1..
+                            b'1..
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (

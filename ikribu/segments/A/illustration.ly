@@ -737,7 +737,7 @@
                             % ViolaMusicVoice [measure 5]                                %! SM4
                             \override RepeatTie.direction = #up                          %! OC
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -762,58 +762,58 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 6]                                %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 7]                                %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 8]                                %! SM4
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             

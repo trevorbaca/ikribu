@@ -1067,7 +1067,7 @@
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            c'4
+                            b'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:line (
@@ -1093,10 +1093,10 @@
                                 }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 109]                              %! SM4
@@ -1109,12 +1109,12 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 111]                              %! SM4
@@ -1127,12 +1127,12 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 113]                              %! SM4
@@ -1145,12 +1145,12 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            c'4
+                            b'4
                             
-                            c'4
+                            b'4
                             \repeatTie
                             
-                            c'4
+                            b'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             
