@@ -578,6 +578,7 @@
                             R1 * 2
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -753,6 +754,7 @@
                             c'4
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1

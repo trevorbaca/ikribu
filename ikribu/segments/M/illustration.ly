@@ -2154,7 +2154,7 @@
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
                             \override TextScript.staff-padding = #4.5                    %! OC
                             \set ViolinMusicStaff.forceClef = ##t                        %! REAPPLIED_CLEF:SM8
-                            \clef "percussion"                                           %! REAPPLIED_CLEF:SM8
+                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
@@ -2162,6 +2162,7 @@
                             b'2.
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2242,6 +2243,7 @@
                             b'1..
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2300,6 +2302,7 @@
                             b'1
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2399,6 +2402,7 @@
                             b'2
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2480,6 +2484,7 @@
                             b'1..
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2538,6 +2543,7 @@
                             b'2
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
