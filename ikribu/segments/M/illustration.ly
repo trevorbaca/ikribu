@@ -2154,9 +2154,30 @@
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
                             \override TextScript.staff-padding = #4.5                    %! OC
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'2.
-                            \ff                                                          %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2164,18 +2185,6 @@
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
                                                 "grainfall (III)"                        %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \times 2/3 {
                                 
@@ -2232,10 +2241,33 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 181]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'1..
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2243,18 +2275,6 @@
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
                                                 "grainfall (IV)"                         %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
@@ -2290,10 +2310,33 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 184]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'1
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2301,18 +2344,6 @@
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
                                                 "grainfall (V)"                          %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
@@ -2389,10 +2420,33 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 189]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'2
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2400,18 +2454,6 @@
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
                                                 "grainfall (VI)"                         %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
@@ -2470,10 +2512,33 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 194]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'1..
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! REDUNDANT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2482,26 +2547,14 @@
                                             \box                                         %! IC
                                                 "grainfall (VII)"                        %! IC
                                 }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
-                                }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % ViolinMusicVoice [measure 195]                         %! SM4
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 :32                                                      %! IC
-                                \fff                                                     %! REDUNDANT_DYNAMIC:SM8
+                                \fff                                                     %! EXPLICIT_DYNAMIC:SM8
                                 ^ \markup {                                              %! IC
                                     \whiteout                                            %! IC
                                         \upright                                         %! IC
@@ -2528,10 +2581,33 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 197]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'2
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2539,18 +2615,6 @@
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
                                                 "grainfall (VIII)"                       %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \times 4/5 {
                                 

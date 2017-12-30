@@ -1585,23 +1585,32 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\staccato                                               %! IC
-                                \f                                                       %! REAPPLIED_DYNAMIC:SM8
+                                _ \markup {
+                                    \concat
+                                        {
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        “
+                                            \hspace
+                                                #0.35
+                                            \vcenter
+                                                \dynamic
+                                                    \override
+                                                        #'(font-name . #f)
+                                                        mp
+                                            \hspace
+                                                #0
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        ”
+                                        }
+                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                _ \markup {                                              %! IC
-                                    \larger                                              %! IC
-                                        \italic                                          %! IC
-                                            “                                            %! IC
-                                    \dynamic                                             %! IC
-                                        \override                                        %! IC
-                                            #'(font-name . #f)                           %! IC
-                                            mp                                           %! IC
-                                    \larger                                              %! IC
-                                        \italic                                          %! IC
-                                            ”                                            %! IC
-                                    }                                                    %! IC
                                 
                                 d'8
                                 -\staccato                                               %! IC
@@ -2718,23 +2727,32 @@
                                 \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override ViolaMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\staccato                                               %! IC
-                                \f                                                       %! REAPPLIED_DYNAMIC:SM8
+                                _ \markup {
+                                    \concat
+                                        {
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        “
+                                            \hspace
+                                                #0.35
+                                            \vcenter
+                                                \dynamic
+                                                    \override
+                                                        #'(font-name . #f)
+                                                        mp
+                                            \hspace
+                                                #0
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        ”
+                                        }
+                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
-                                _ \markup {                                              %! IC
-                                    \larger                                              %! IC
-                                        \italic                                          %! IC
-                                            “                                            %! IC
-                                    \dynamic                                             %! IC
-                                        \override                                        %! IC
-                                            #'(font-name . #f)                           %! IC
-                                            mp                                           %! IC
-                                    \larger                                              %! IC
-                                        \italic                                          %! IC
-                                            ”                                            %! IC
-                                    }                                                    %! IC
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 d'8

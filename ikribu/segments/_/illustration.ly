@@ -356,8 +356,31 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \once \override TextScript.staff-padding = #4.5              %! OC
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'1..
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -365,18 +388,6 @@
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
                                                 "grainfall (I)"                          %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        mf                                               %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 2]                               %! SM4

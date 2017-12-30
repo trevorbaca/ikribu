@@ -500,10 +500,31 @@
                         \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'4
-                        \p                                                               %! REAPPLIED_DYNAMIC:SM8
+                        _ \markup {
+                            \concat
+                                {
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                “
+                                    \hspace
+                                        #0.35
+                                    \vcenter
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                mf
+                                    \hspace
+                                        #0.1
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                ”
+                                }
+                            }                                                            %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -574,18 +595,6 @@
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
-                        _ \markup {                                                      %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    “                                                    %! IC
-                            \dynamic                                                     %! IC
-                                \override                                                %! IC
-                                    #'(font-name . #f)                                   %! IC
-                                    mf                                                   %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    ”                                                    %! IC
-                            }                                                            %! IC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -870,27 +879,36 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             b4
                             -\tongue #2                                                  %! IC
-                            \fff                                                         %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
                                         "col legno battuto meccanico: strike each note twice" %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        mf                                               %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             
                             c'4
@@ -1198,27 +1216,36 @@
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             -\staccato                                                   %! IC
-                            \fff                                                         %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
                                         "col legno battuto meccanico: strike each note twice" %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        mf                                               %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
@@ -1529,11 +1556,32 @@
                                 \clef "tenor"                                            %! REAPPLIED_CLEF:SM8
                                 \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
+                                \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\accent                                                 %! IC
-                                \p                                                       %! REAPPLIED_DYNAMIC:SM8
+                                _ \markup {
+                                    \concat
+                                        {
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        “
+                                            \hspace
+                                                #0.35
+                                            \vcenter
+                                                \dynamic
+                                                    \override
+                                                        #'(font-name . #f)
+                                                        mf
+                                            \hspace
+                                                #0.1
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        ”
+                                        }
+                                    }                                                    %! EXPLICIT_DYNAMIC:SM8
                                 [
                                 ^ \markup {                                              %! IC
                                     \whiteout                                            %! IC
@@ -1542,18 +1590,6 @@
                                                 #'(box-padding . 0.5)                    %! IC
                                                 \box                                     %! IC
                                                     "stonescratch: one short stroke for each attack" %! IC
-                                    }                                                    %! IC
-                                _ \markup {                                              %! IC
-                                    \larger                                              %! IC
-                                        \italic                                          %! IC
-                                            “                                            %! IC
-                                    \dynamic                                             %! IC
-                                        \override                                        %! IC
-                                            #'(font-name . #f)                           %! IC
-                                            mf                                           %! IC
-                                    \larger                                              %! IC
-                                        \italic                                          %! IC
-                                            ”                                            %! IC
                                     }                                                    %! IC
                                 \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 

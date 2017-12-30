@@ -1065,10 +1065,31 @@
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'4
-                            \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1080,18 +1101,6 @@
                                                         stonecircle:                     %! IC
                                                         "π/4 every quarter note"         %! IC
                                                     }                                    %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        mf                                               %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             

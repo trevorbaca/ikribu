@@ -518,10 +518,31 @@
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         d''4
-                        \ppp                                                             %! REAPPLIED_DYNAMIC:SM8
+                        _ \markup {
+                            \concat
+                                {
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                “
+                                    \hspace
+                                        #0.35
+                                    \vcenter
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                mf
+                                    \hspace
+                                        #0.1
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                ”
+                                }
+                            }                                                            %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -596,18 +617,6 @@
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
-                        _ \markup {                                                      %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    “                                                    %! IC
-                            \dynamic                                                     %! IC
-                                \override                                                %! IC
-                                    #'(font-name . #f)                                   %! IC
-                                    mf                                                   %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    ”                                                    %! IC
-                            }                                                            %! IC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -758,10 +767,33 @@
                         %%% \once \override Score.SpanBar.transparent = ##t              %! BUILD:LEDGER:FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 125]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
                         d''4
+                        _ \markup {
+                            \concat
+                                {
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                “
+                                    \hspace
+                                        #0.2
+                                    \vcenter
+                                        \dynamic
+                                            \override
+                                                #'(font-name . #f)
+                                                f
+                                    \hspace
+                                        #0.1
+                                    \vcenter
+                                        \larger
+                                            \italic
+                                                ”
+                                }
+                            }                                                            %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -773,18 +805,6 @@
                                                     stonecircle:                         %! IC
                                                     "π/2 every quarter note"             %! IC
                                                 }                                        %! IC
-                            }                                                            %! IC
-                        _ \markup {                                                      %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    “                                                    %! IC
-                            \dynamic                                                     %! IC
-                                \override                                                %! IC
-                                    #'(font-name . #f)                                   %! IC
-                                    f                                                    %! IC
-                            \larger                                                      %! IC
-                                \italic                                                  %! IC
-                                    ”                                                    %! IC
                             }                                                            %! IC
                         
                         d''4
@@ -942,10 +962,31 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'4
-                            \f                                                           %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -957,18 +998,6 @@
                                                         stonecircle:                     %! IC
                                                         "π/2 every quarter note"         %! IC
                                                     }                                    %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        mf                                               %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             
                             c'4
@@ -1099,10 +1128,33 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 125]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
                             c'4
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1114,18 +1166,6 @@
                                                         stonecircle:                     %! IC
                                                         "π/2 every quarter note"         %! IC
                                                     }                                    %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             
                             c'4
@@ -1286,10 +1326,31 @@
                             \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'4
-                            \f                                                           %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1301,18 +1362,6 @@
                                                         stonecircle:                     %! IC
                                                         "π/3 every quarter note"         %! IC
                                                     }                                    %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        mf                                               %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
@@ -1455,10 +1504,33 @@
                             R1 * 1/4
                             
                             % ViolaMusicVoice [measure 125]                              %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
                             c'4
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.2
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    f
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1470,18 +1542,6 @@
                                                         stonecircle:                     %! IC
                                                         "π/2 every quarter note"         %! IC
                                                     }                                    %! IC
-                                }                                                        %! IC
-                            _ \markup {                                                  %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        “                                                %! IC
-                                \dynamic                                                 %! IC
-                                    \override                                            %! IC
-                                        #'(font-name . #f)                               %! IC
-                                        f                                                %! IC
-                                \larger                                                  %! IC
-                                    \italic                                              %! IC
-                                        ”                                                %! IC
                                 }                                                        %! IC
                             
                             c'4
@@ -1644,7 +1704,28 @@
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             R1 * 7/4
-                            \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
+                            _ \markup {
+                                \concat
+                                    {
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    “
+                                        \hspace
+                                            #0.35
+                                        \vcenter
+                                            \dynamic
+                                                \override
+                                                    #'(font-name . #f)
+                                                    mf
+                                        \hspace
+                                            #0.1
+                                        \vcenter
+                                            \larger
+                                                \italic
+                                                    ”
+                                    }
+                                }                                                        %! REAPPLIED_DYNAMIC:SM8
                             \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % CelloMusicVoice [measure 117]                              %! SM4
