@@ -711,8 +711,8 @@
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        c'4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -724,7 +724,7 @@
                                     #:general-align Y -2 #:normal-text #:larger "”"
                                     )
                                 )
-                            )                                                            %! EXPLICIT_DYNAMIC:SM8
+                            )                                                            %! REDUNDANT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -806,13 +806,13 @@
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 128]                           %! SM4
@@ -838,7 +838,7 @@
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
-                        c'4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -852,10 +852,10 @@
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 132]                           %! SM4
@@ -881,7 +881,7 @@
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
-                        c'4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -895,22 +895,22 @@
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 136]                           %! SM4
@@ -936,7 +936,7 @@
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
-                        c'4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -950,13 +950,13 @@
                                 )
                             )                                                            %! EXPLICIT_DYNAMIC:SM8
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         
@@ -2132,7 +2132,7 @@
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            b'4
+                            d4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -2159,13 +2159,13 @@
                                 }                                                        %! IC
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 128]                              %! SM4
@@ -2191,7 +2191,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            b'4
+                            d4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -2205,10 +2205,10 @@
                                     )
                                 )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 132]                              %! SM4
@@ -2234,7 +2234,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            b'4
+                            d4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -2248,22 +2248,22 @@
                                     )
                                 )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
                             % CelloMusicVoice [measure 136]                              %! SM4
@@ -2289,7 +2289,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            b'4
+                            d4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -2303,13 +2303,13 @@
                                     )
                                 )                                                        %! EXPLICIT_DYNAMIC:SM8
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             
-                            b'4
+                            d4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             

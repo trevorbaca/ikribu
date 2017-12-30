@@ -536,19 +536,6 @@
                         ^ \markup {
                             \column
                                 {
-                                    \line                                                %! IC
-                                        {                                                %! IC
-                                            \whiteout                                    %! IC
-                                                \upright                                 %! IC
-                                                    \override                            %! IC
-                                                        #'(box-padding . 0.5)            %! IC
-                                                        \box                             %! IC
-                                                            \column                      %! IC
-                                                                {                        %! IC
-                                                                    stonecircle:         %! IC
-                                                                    "π/4 every quarter note" %! IC
-                                                                }                        %! IC
-                                        }                                                %! IC
                                     %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
@@ -605,6 +592,19 @@
                                                         }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                                 }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                         }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    \line                                                %! IC
+                                        {                                                %! IC
+                                            \whiteout                                    %! IC
+                                                \upright                                 %! IC
+                                                    \override                            %! IC
+                                                        #'(box-padding . 0.5)            %! IC
+                                                        \box                             %! IC
+                                                            \column                      %! IC
+                                                                {                        %! IC
+                                                                    stonecircle:         %! IC
+                                                                    "π/4 every quarter note" %! IC
+                                                                }                        %! IC
+                                        }                                                %! IC
                                 }
                             }
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
