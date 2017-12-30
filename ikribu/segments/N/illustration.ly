@@ -1061,7 +1061,7 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! EXPLICIT_STAFF_LINES:SM8
                                 \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
                                 \set ViolinMusicStaff.forceClef = ##t                    %! REAPPLIED_CLEF:SM8
-                                \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
+                                \clef "treble"                                           %! REAPPLIED_CLEF:SM8
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                                 %%% \override ViolinMusicStaff.Clef.color = ##f          %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
@@ -1069,6 +1069,7 @@
                                 c''8
                                 _ #(make-dynamic-script
                                     (markup
+                                        #:whiteout
                                         #:line (
                                             #:general-align Y -2 #:normal-text #:larger "“"
                                             #:hspace -0.4

@@ -1173,12 +1173,15 @@
                         \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
+                        \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
+                        \once \override DynamicText.X-extent = ##f                       %! OC
                         \override RepeatTie.direction = #up                              %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                        c'4
+                        b'4
                         _ #(make-dynamic-script
                             (markup
+                                #:whiteout
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -1201,26 +1204,26 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 37]                            %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         
@@ -1231,28 +1234,28 @@
                         R1 * 1/6
                         
                         % BassClarinetMusicVoice [measure 40]                            %! SM4
-                        c'4
+                        b'4
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 41]                            %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 42]                            %! SM4
@@ -1262,28 +1265,28 @@
                         R1 * 1/6
                         
                         % BassClarinetMusicVoice [measure 44]                            %! SM4
-                        c'4
+                        b'4
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 45]                            %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 46]                            %! SM4
@@ -1293,28 +1296,28 @@
                         R1 * 1/6
                         
                         % BassClarinetMusicVoice [measure 48]                            %! SM4
-                        c'4
+                        b'4
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 49]                            %! SM4
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         
-                        c'4
+                        b'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         
@@ -1489,6 +1492,7 @@
                             b'1..
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -1512,8 +1516,15 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! OC
+                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \set ViolinMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
+                            \clef "treble"                                               %! EXPLICIT_CLEF:SM8
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                            %%% \override ViolinMusicStaff.Clef.color = ##f              %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             R1 * 1
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolinMusicVoice [measure 37]                              %! SM4
                             fs'1
@@ -1754,6 +1765,7 @@
                             R1 * 7/4
                             _ #(make-dynamic-script
                                 (markup
+                                    #:whiteout
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -1766,7 +1778,18 @@
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolaMusicVoice [measure 36]                               %! SM4
+                            \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolaMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
+                            \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \set ViolaMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
+                            \clef "treble"                                               %! EXPLICIT_CLEF:SM8
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                            %%% \override ViolaMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             R1 * 1
+                            \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolaMusicVoice [measure 37]                               %! SM4
                             f'1
@@ -1999,10 +2022,10 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
                             \once \override NoteHead.style = #'harmonic                  %! OC
-                            \set CelloMusicStaff.forceClef = ##t                         %! REDUNDANT_CLEF:SM8
-                            \clef "treble"                                               %! REDUNDANT_CLEF:SM8
-                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                            %%% \override CelloMusicStaff.Clef.color = ##f               %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                            \set CelloMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
+                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                            %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fqf''1..
@@ -2018,7 +2041,7 @@
                                     \upright                                             %! IC
                                         III                                              %! IC
                                 }                                                        %! IC
-                            \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
+                            \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             % CelloMusicVoice [measure 36]                               %! SM4
                             \override NoteHead.style = #'harmonic                        %! OC

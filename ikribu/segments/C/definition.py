@@ -111,10 +111,12 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 2, 17),
+    baca.dynamic_text_extra_offset((-3.5, 0)),
+    baca.dynamic_text_x_extent_false(),
     baca.effort_dynamic('mf'),
-    baca.pitches('Bb2'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
+    baca.staff_positions([0]),
     )
 
 maker(
@@ -134,6 +136,9 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 2, 16),
+    baca.clef('treble'),
+    baca.clef_x_extent_false(),
+    baca.clef_extra_offset((-2.5, 0)),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -147,6 +152,9 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 2, 16),
+    baca.clef('treble'),
+    baca.clef_x_extent_false(),
+    baca.clef_extra_offset((-2.5, 0)),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -154,12 +162,12 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
+    baca.staff_lines(5),
     baca.stem_tremolo(),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 1),
-    baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.markup.pizz(),
     baca.markup.string_number(3),
