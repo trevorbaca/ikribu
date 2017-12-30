@@ -1063,7 +1063,28 @@
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 c''8
-                                \fff                                                     %! REAPPLIED_DYNAMIC:SM8
+                                _ \markup {
+                                    \concat
+                                        {
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        “
+                                            \hspace
+                                                #0.2
+                                            \vcenter
+                                                \dynamic
+                                                    \override
+                                                        #'(font-name . #f)
+                                                        f
+                                            \hspace
+                                                #0.1
+                                            \vcenter
+                                                \larger
+                                                    \italic
+                                                        ”
+                                        }
+                                    }                                                    %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 [
                                 

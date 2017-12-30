@@ -105,6 +105,16 @@ metadata = abjad.TypedOrderedDict(
                             ],
                         ),
                     (
+                        'ViolaMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='ViolaMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='"mf"',
+                                ),
+                            ],
+                        ),
+                    (
                         'ViolaRHMusicStaff',
                         [
                             abjad.Momento(
@@ -136,6 +146,16 @@ metadata = abjad.TypedOrderedDict(
                                 context='ViolinMusicVoice',
                                 prototype='baca.StaffLines',
                                 value=5,
+                                ),
+                            ],
+                        ),
+                    (
+                        'ViolinMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='ViolinMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='"mf"',
                                 ),
                             ],
                         ),
