@@ -454,10 +454,8 @@
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'''2.
-                        \p                                                               %! REAPPLIED_DYNAMIC:SM8
-                        \<
                         \pp
                         ^ \markup {
                             \column
@@ -585,8 +583,8 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'''4
-                        \mf
                         \glissando
                         \>
                         \mf
@@ -640,6 +638,7 @@
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 246]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM20
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
@@ -952,7 +951,7 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c''8
-                                \ppppp                                                   %! REAPPLIED_DYNAMIC:SM8
+                                _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 [
                                 ^ \markup {
@@ -1425,7 +1424,7 @@
                                 \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                                 %%% \override ViolaMusicStaff.Clef.color = ##f           %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                                 c''2..
-                                \ppppp                                                   %! REAPPLIED_DYNAMIC:SM8
+                                _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 ^ \markup {
                                     \column

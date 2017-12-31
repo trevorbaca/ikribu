@@ -1087,7 +1087,7 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         R1 * 7/4
-                        \ppp                                                             %! REAPPLIED_DYNAMIC:SM8
+                        _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -1431,8 +1431,8 @@
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'DeepPink1) %! REDUNDANT_STAFF_LINES_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'1..
                             _ #(make-dynamic-script
                                 (markup
@@ -1445,7 +1445,7 @@
                                         #:general-align Y -2 #:normal-text #:larger "”"
                                         )
                                     )
-                                )                                                        %! REDUNDANT_DYNAMIC:SM8
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1528,6 +1528,7 @@
                             \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolinMusicVoice [measure 37]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'1
                             :32                                                          %! IC
                             \glissando
@@ -1540,6 +1541,7 @@
                                 }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 38]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             gs'2.
                             :32                                                          %! IC
                             \p
@@ -1551,6 +1553,7 @@
                             R1 * 1
                             
                             % ViolinMusicVoice [measure 41]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             gs'1
                             :32                                                          %! IC
                             \glissando
@@ -1558,6 +1561,7 @@
                             \p
                             
                             % ViolinMusicVoice [measure 42]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'2.
                             :32                                                          %! IC
                             \pp
@@ -1569,6 +1573,7 @@
                             R1 * 1
                             
                             % ViolinMusicVoice [measure 45]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             fs'1
                             :32                                                          %! IC
                             \glissando
@@ -1576,6 +1581,7 @@
                             \pp
                             
                             % ViolinMusicVoice [measure 46]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             gs'2.
                             :32                                                          %! IC
                             \p
@@ -1587,6 +1593,7 @@
                             R1 * 1
                             
                             % ViolinMusicVoice [measure 49]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             gs'1
                             :32                                                          %! IC
                             \glissando
@@ -1594,6 +1601,7 @@
                             \p
                             
                             % ViolinMusicVoice [measure 50]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs'2.
                             :32                                                          %! IC
                             \pp
@@ -1708,18 +1716,7 @@
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             R1 * 7/4
-                            _ #(make-dynamic-script
-                                (markup
-                                    #:whiteout
-                                    #:line (
-                                        #:general-align Y -2 #:normal-text #:larger "“"
-                                        #:hspace -0.1
-                                        #:dynamic "mf"
-                                        #:hspace -0.2
-                                        #:general-align Y -2 #:normal-text #:larger "”"
-                                        )
-                                    )
-                                )                                                        %! REAPPLIED_DYNAMIC:SM8
+                            _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1793,6 +1790,7 @@
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolaMusicVoice [measure 37]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f'1
                             :32                                                          %! IC
                             \glissando
@@ -1805,6 +1803,7 @@
                                 }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 38]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'2.
                             :32                                                          %! IC
                             \p
@@ -1816,6 +1815,7 @@
                             R1 * 1
                             
                             % ViolaMusicVoice [measure 41]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             e'1
                             :32                                                          %! IC
                             \glissando
@@ -1823,6 +1823,7 @@
                             \p
                             
                             % ViolaMusicVoice [measure 42]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f'2.
                             :32                                                          %! IC
                             \pp
@@ -1834,6 +1835,7 @@
                             R1 * 1
                             
                             % ViolaMusicVoice [measure 45]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             f'1
                             :32                                                          %! IC
                             \glissando
@@ -1841,6 +1843,7 @@
                             \pp
                             
                             % ViolaMusicVoice [measure 46]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'2.
                             :32                                                          %! IC
                             \p
@@ -1852,6 +1855,7 @@
                             R1 * 1
                             
                             % ViolaMusicVoice [measure 49]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             e'1
                             :32                                                          %! IC
                             \glissando
@@ -1859,6 +1863,7 @@
                             \p
                             
                             % ViolaMusicVoice [measure 50]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f'2.
                             :32                                                          %! IC
                             \pp

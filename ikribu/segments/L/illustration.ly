@@ -2113,10 +2113,8 @@
                             {
                                 
                                 % ViolinMusicVoice [measure 155]                         %! SM4
-                                \once \override Hairpin.circled-tip = ##t
                                 b'8
                                 -\staccato                                               %! IC
-                                \>
                                 [
                                 
                                 c''8
@@ -2310,10 +2308,11 @@
                                 b'8
                                 -\staccato                                               %! IC
                                 
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 a'8
                                 -\staccato                                               %! IC
-                                \!
                                 ]
+                                \!
                             }
                             
                             % ViolinMusicVoice [measure 159]                             %! SM4
@@ -2914,10 +2913,8 @@
                             \times 8/10 {
                                 
                                 % ViolaMusicVoice [measure 147]                          %! SM4
-                                \once \override Hairpin.circled-tip = ##t
                                 c''8
                                 -\staccato                                               %! IC
-                                \>
                                 [
                                 
                                 b'8
@@ -3057,6 +3054,7 @@
                             }
                             
                             % ViolaMusicVoice [measure 151]                              %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             R1 * 1
                             \!
                             

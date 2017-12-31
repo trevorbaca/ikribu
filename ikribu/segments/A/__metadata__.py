@@ -25,6 +25,16 @@ metadata = abjad.TypedOrderedDict(
                             ],
                         ),
                     (
+                        'BassClarinetMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='BassClarinetMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='niente',
+                                ),
+                            ],
+                        ),
+                    (
                         'CelloMusicStaff',
                         [
                             abjad.Momento(

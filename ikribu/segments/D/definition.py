@@ -75,7 +75,7 @@ maker(
 maker(
     baca.scope('CelloRHMusicVoice', 1, 2),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('ff p f pp p ppp'),
         baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,

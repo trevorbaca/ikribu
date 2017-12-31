@@ -185,7 +185,7 @@ maker(
     baca.glissando(),
     baca.natural_harmonics(),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('ppp pp'),
         baca.tleaves().enchain([2]),
         bookend=True,

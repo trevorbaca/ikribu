@@ -1740,23 +1740,27 @@
                         \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
                         % BassClarinetMusicVoice [measure 177]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs1
                         \<
                         \p
                         
                         % BassClarinetMusicVoice [measure 178]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs1
                         \repeatTie
                         \fff
                         
                         % BassClarinetMusicVoice [measure 179]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs2
                         \repeatTie
                         \>
                         \fff
                         
                         % BassClarinetMusicVoice [measure 180]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM20
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
@@ -1793,23 +1797,27 @@
                         R1 * 1
                         
                         % BassClarinetMusicVoice [measure 185]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs2.
                         \<
                         \p
                         
                         % BassClarinetMusicVoice [measure 186]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs1
                         \repeatTie
                         \fff
                         
                         % BassClarinetMusicVoice [measure 187]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs2.
                         \repeatTie
                         \>
                         \fff
                         
                         % BassClarinetMusicVoice [measure 188]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM20
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
@@ -1827,23 +1835,27 @@
                         R1 * 1/2
                         
                         % BassClarinetMusicVoice [measure 190]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs1..
                         \<
                         \p
                         
                         % BassClarinetMusicVoice [measure 191]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs1..
                         \repeatTie
                         \fff
                         
                         % BassClarinetMusicVoice [measure 192]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         cs\breve
                         \repeatTie
                         \>
                         \fff
                         
                         % BassClarinetMusicVoice [measure 193]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM20
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
@@ -1861,9 +1873,9 @@
                         R1 * 7/4
                         
                         % BassClarinetMusicVoice [measure 195]                           %! SM4
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs2.
-                        \p                                                               %! REDUNDANT_DYNAMIC:SM8
+                        \p                                                               %! EXPLICIT_DYNAMIC:SM8
                         
                         % BassClarinetMusicVoice [measure 196]                           %! SM4
                         \stopStaff                                                       %! SM20
@@ -1880,6 +1892,7 @@
                         R1 * 1/2
                         
                         % BassClarinetMusicVoice [measure 198]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs\breve
                         \<
                         \ppp
@@ -1909,6 +1922,7 @@
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 205]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs2.
                         \repeatTie
                         \fff
@@ -2185,6 +2199,7 @@
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 177]                         %! SM4
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'2
                                 :32                                                      %! IC
                                 \<
@@ -2225,6 +2240,7 @@
                                 b'4
                                 -\accent                                                 %! IC
                                 
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \fff
@@ -2237,7 +2253,7 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 181]                             %! SM4
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
@@ -2253,7 +2269,7 @@
                                         #:general-align Y -2 #:normal-text #:larger "”"
                                         )
                                     )
-                                )                                                        %! REDUNDANT_DYNAMIC:SM8
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2325,6 +2341,7 @@
                             \times 3/5 {
                                 
                                 % ViolinMusicVoice [measure 185]                         %! SM4
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \<
@@ -2384,6 +2401,7 @@
                                 b'4
                                 -\accent                                                 %! IC
                                 
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \fff
@@ -2396,7 +2414,7 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 189]                             %! SM4
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
@@ -2412,7 +2430,7 @@
                                         #:general-align Y -2 #:normal-text #:larger "”"
                                         )
                                     )
-                                )                                                        %! REDUNDANT_DYNAMIC:SM8
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2425,6 +2443,7 @@
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 190]                         %! SM4
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'1
                                 :32                                                      %! IC
                                 \<
@@ -2466,6 +2485,7 @@
                                 b'1
                                 -\accent                                                 %! IC
                                 
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'1
                                 :32                                                      %! IC
                                 \fff
@@ -2478,7 +2498,7 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 194]                             %! SM4
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
@@ -2494,7 +2514,7 @@
                                         #:general-align Y -2 #:normal-text #:larger "”"
                                         )
                                     )
-                                )                                                        %! REDUNDANT_DYNAMIC:SM8
+                                )                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -2565,6 +2585,7 @@
                             \times 4/5 {
                                 
                                 % ViolinMusicVoice [measure 198]                         %! SM4
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'2
                                 :32                                                      %! IC
                                 \<
@@ -2661,6 +2682,7 @@
                                 b'4
                                 -\accent                                                 %! IC
                                 
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \fff
@@ -2922,6 +2944,7 @@
                             {
                                 
                                 % ViolaMusicVoice [measure 177]                          %! SM4
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \<
@@ -2964,6 +2987,7 @@
                                 b'8
                                 :32                                                      %! IC
                                 
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'8
                                 -\accent                                                 %! IC
                                 \fff
@@ -3017,6 +3041,7 @@
                             {
                                 
                                 % ViolaMusicVoice [measure 185]                          %! SM4
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \<
@@ -3049,6 +3074,7 @@
                                 b'4
                                 -\accent                                                 %! IC
                                 
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \fff
@@ -3069,6 +3095,7 @@
                             \times 7/8 {
                                 
                                 % ViolaMusicVoice [measure 190]                          %! SM4
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'2
                                 :32                                                      %! IC
                                 \<
@@ -3111,6 +3138,7 @@
                                 b'2
                                 :32                                                      %! IC
                                 
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'2
                                 -\accent                                                 %! IC
                                 \fff
@@ -3163,6 +3191,7 @@
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 198]                          %! SM4
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'1
                                 :32                                                      %! IC
                                 \<
@@ -3220,6 +3249,7 @@
                                 b'4
                                 -\accent                                                 %! IC
                                 
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \fff
@@ -3515,6 +3545,7 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "bass"                                                 %! EXPLICIT_CLEF:SM8
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             c,,1
@@ -3528,6 +3559,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 179]                              %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,2
                             \repeatTie
                             \fff
@@ -3555,13 +3587,13 @@
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             g''1..
                             -\laissezVibrer                                              %! IC
-                            \sfz                                                         %! REDUNDANT_DYNAMIC:SM8
+                            \sfz                                                         %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -3652,6 +3684,7 @@
                             \clef "bass"                                                 %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,2.
                             \<
                             \mf
@@ -3663,6 +3696,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 187]                              %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,2.
                             \repeatTie
                             \fff
@@ -3688,13 +3722,13 @@
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! SM21
                             \startStaff                                                  %! SM21
                             g''2
                             -\laissezVibrer                                              %! IC
-                            \sffz                                                        %! REDUNDANT_DYNAMIC:SM8
+                            \sffz                                                        %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -3733,6 +3767,7 @@
                             \clef "bass"                                                 %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,1..
                             \<
                             \mf
@@ -3744,6 +3779,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 192]                              %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,\breve
                             \repeatTie
                             \fff
@@ -3868,6 +3904,7 @@
                             \clef "bass"                                                 %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,\breve
                             \<
                             \mf
@@ -3887,6 +3924,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 202]                              %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c,,2.
                             \repeatTie
                             \fff

@@ -1696,6 +1696,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 123]                              %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             d,,2.
                             \repeatTie
                             \<
@@ -1703,6 +1704,7 @@
                             \ottava #0
                             
                             % CelloMusicVoice [measure 124]                              %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM20
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
