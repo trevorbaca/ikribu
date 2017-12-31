@@ -1983,3 +1983,23 @@ LilyPond runtime: 0 seconds
 Segment-maker runtime: 1 second
 Abjad format time: 0 seconds
 LilyPond runtime: 1 second
+
+2017-12-30 17:41:56
+Segment-maker runtime: 0 seconds
+Abjad format time: 0 seconds
+LilyPond runtime: 0 seconds
+
+2017-12-30 18:09:32
+Segment-maker runtime: 0 seconds
+Abjad format time: 0 seconds
+LilyPond runtime: 0 seconds
+
+2017-12-30 18:21:38
+Segment-maker runtime: 0 seconds
+Abjad format time: 0 seconds
+LilyPond runtime: 0 seconds
+
+2017-12-30 18:24:10
+Segment-maker runtime: 1 second
+Abjad format time: 0 seconds
+LilyPond runtime: 1 second

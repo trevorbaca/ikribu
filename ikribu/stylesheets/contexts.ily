@@ -75,15 +75,19 @@
         \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
     }
 
-    % GENERIC CONTEXTS
+    % PIANO STAFF
     \context {
         \PianoStaff
         \remove "Keep_alive_together_engraver" 
     }
+
+    % STAFF
     \context {
         \Staff
         \remove Time_signature_engraver
     }
+
+    % VOICE
     \context {
         \Voice
         \remove Forbid_line_break_engraver
@@ -102,7 +106,6 @@
         \type Engraver_group
         \alias Staff
         \accepts BassClarinetMusicVoice
-        %\RemoveAllEmptyStaves
     }
 
     % VIOLIN
@@ -119,7 +122,6 @@
         \alias Staff
         \accepts ViolinRHMusicVoice
         \override Clef.stencil = ##f
-        %\override StaffSymbol.color = #red
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }
@@ -144,7 +146,6 @@
         \accepts ViolinRHMusicStaff
         \accepts ViolinMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-        %\RemoveAllEmptyStaves
     }
 
     % VIOLA
@@ -161,7 +162,6 @@
         \alias Staff
         \accepts ViolaRHMusicVoice
         \override Clef.stencil = ##f
-        %\override StaffSymbol.color = #green
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }
@@ -186,7 +186,6 @@
         \accepts ViolaRHMusicStaff
         \accepts ViolaMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-        %\RemoveAllEmptyStaves
     }
 
     % CELLO
@@ -203,7 +202,6 @@
         \alias Staff
         \accepts CelloRHMusicVoice
         \override Clef.stencil = ##f
-        %\override StaffSymbol.color = #blue
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }
@@ -228,7 +226,6 @@
         \accepts CelloRHMusicStaff
         \accepts CelloMusicStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-        %\RemoveAllEmptyStaves
     }
 
     % ENSEMBLE STAFF GROUP
