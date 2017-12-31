@@ -648,13 +648,20 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             <e' fs'>1..
+                            :32                                                          %! IC
                             \<
                             \sfpp
                             \startTextSpan
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        II+III                                           %! IC
+                                }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 85]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
                             <e' fs'>\breve
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             \stopTextSpan
@@ -835,13 +842,20 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             <ef' f'>1..
+                            :32                                                          %! IC
                             \<
                             \sfpp
                             \startTextSpan
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        I+II                                             %! IC
+                                }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 85]                               %! SM4
                             \once \override Hairpin.circled-tip = ##t
                             <ef' f'>\breve
+                            :32                                                          %! IC
                             \repeatTie
                             \p
                             \stopTextSpan

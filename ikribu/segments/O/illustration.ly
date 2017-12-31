@@ -871,14 +871,126 @@
                     \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                         
                         % BassClarinetMusicVoice [measure 218]                           %! SM4
+                        \stopStaff                                                       %! REAPPLIED_STAFF_LINES:SM8
+                        \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
+                        \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
                         \once \override Accidental.color = #red
                         \once \override Beam.color = #red
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>1
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
+                        \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
+                                #16                                                      %! REAPPLIED_INSTRUMENT:SM8
+                                \center-column                                           %! REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
+                                        Bass                                             %! REAPPLIED_INSTRUMENT:SM8
+                                        clarinet                                         %! REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REAPPLIED_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {      %! REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
+                                #10                                                      %! REAPPLIED_INSTRUMENT:SM8
+                                \line                                                    %! REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
+                                        B.                                               %! REAPPLIED_INSTRUMENT:SM8
+                                        cl.                                              %! REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REAPPLIED_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REDUNDANT_CLEF:SM8
+                        \clef "treble"                                                   %! REDUNDANT_CLEF:SM8
+                        \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
+                        %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
+                        <c e''>1
+                        \p                                                               %! REAPPLIED_DYNAMIC:SM8
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             (“BassClarinet”                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 #16                              %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \center-column                   %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     {                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         Bass                     %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         clarinet                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     }                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \concat                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     \hcenter-in                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         #10                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         \line                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                             {                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                                 B.               %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                                 cl.              %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                             }                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     )                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%     }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    \line                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        {                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                #(x11-color 'green4)                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        (“BassClarinet”                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            #16                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \center-column               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    Bass                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    clarinet             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \concat                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    #10                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    \line                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        {                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                            B.           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                            cl.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        }                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                )                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    \line                                                %! SM14
+                                        {                                                %! SM14
+                                            @                                            %! SM14
+                                        }                                                %! SM14
+                                }
+                            }
+                        \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                \center-column                                           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        Bass                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        clarinet                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                #10                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                \line                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        B.                                               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
                         % BassClarinetMusicVoice [measure 219]                           %! SM4
                         \once \override Accidental.color = #red
@@ -886,7 +998,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>2.
+                        <c e''>2.
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -897,7 +1009,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>1
+                        <c g''>1
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -907,7 +1019,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>2.
+                        <c g''>2.
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -918,7 +1030,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>2
+                        <c g''>2
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -929,7 +1041,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>1..
+                        <c g''>1..
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -940,7 +1052,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>1..
+                        <c e''>1..
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -950,7 +1062,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,,\breve
+                        c\breve
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -960,7 +1072,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>1..
+                        <c e''>1..
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -970,7 +1082,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>2.
+                        <c g''>2.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -980,7 +1092,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, atqf'>2
+                        <c btqf''>2
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -990,7 +1102,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, atqf'>\breve
+                        <c btqf''>\breve
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -1001,7 +1113,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>1..
+                        <c g''>1..
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1011,7 +1123,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,,1
+                        c1
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1021,7 +1133,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>1
+                        <c e''>1
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1031,7 +1143,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>2.
+                        <c e''>2.
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1041,7 +1153,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, f'>1..
+                        <c g''>1..
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1051,7 +1163,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        <bf,, d'>\breve
+                        <c e''>\breve
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
@@ -1062,7 +1174,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,,2.
+                        c2.
                         \>
                         \p
                         - \tweak color #red                                              %! SM14
@@ -1074,7 +1186,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf,,1
+                        c1
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -1315,9 +1427,16 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <e' fs'>1..
                             :32                                                          %! IC
+                            \ppppp                                                       %! EXPLICIT_DYNAMIC:SM8
                             \startTextSpan
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        II+III                                           %! IC
+                                }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 227]                             %! SM4
                             <e' fs'>2.
@@ -1605,9 +1724,16 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <ef' f'>1..
                             :32                                                          %! IC
+                            \ppppp                                                       %! EXPLICIT_DYNAMIC:SM8
                             \startTextSpan
+                            _ \markup {                                                  %! IC
+                                \whiteout                                                %! IC
+                                    \upright                                             %! IC
+                                        II+III                                           %! IC
+                                }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 227]                              %! SM4
                             <ef' f'>2.

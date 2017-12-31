@@ -430,12 +430,120 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
+                                #16                                                      %! REAPPLIED_INSTRUMENT:SM8
+                                \center-column                                           %! REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
+                                        Bass                                             %! REAPPLIED_INSTRUMENT:SM8
+                                        clarinet                                         %! REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REAPPLIED_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {      %! REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
+                                #10                                                      %! REAPPLIED_INSTRUMENT:SM8
+                                \line                                                    %! REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REAPPLIED_INSTRUMENT:SM8
+                                        B.                                               %! REAPPLIED_INSTRUMENT:SM8
+                                        cl.                                              %! REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REAPPLIED_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REAPPLIED_CLEF:SM8
+                        \clef "treble"                                                   %! REAPPLIED_CLEF:SM8
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                        \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                        bf'2.
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        c'''2.
+                        \p                                                               %! REAPPLIED_DYNAMIC:SM8
                         \<
                         \pp
-                        - \tweak color #red                                              %! SM14
-                        ^ \markup { @ }                                                  %! SM14
+                        ^ \markup {
+                            \column
+                                {
+                                    %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             (“BassClarinet”                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 #16                              %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \center-column                   %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     {                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         Bass                     %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         clarinet                 %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     }                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%         \concat                                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     \hcenter-in                  %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         #10                      %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                         \line                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                             {                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                                 B.               %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                                 cl.              %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                             }                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%                     )                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%             }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    %%%     }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
+                                    \line                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        {                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                            \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                #(x11-color 'green4)                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        (“BassClarinet”                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            #16                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \center-column               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    Bass                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    clarinet             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                    \concat                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    #10                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                    \line                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        {                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                            B.           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                            cl.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                        }                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                            \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                                )                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                        }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                                }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                        }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    \line                                                %! SM14
+                                        {                                                %! SM14
+                                            @                                            %! SM14
+                                        }                                                %! SM14
+                                }
+                            }
+                        \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                #16                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                \center-column                                           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        Bass                                             %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        clarinet                                         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.shortInstrumentName = \markup {      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            \hcenter-in                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                #10                                                      %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                \line                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    {                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        B.                                               %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                        cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                                    }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                            }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                        \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                         
                         % BassClarinetMusicVoice [measure 240]                           %! SM4
                         \once \override Accidental.color = #red
@@ -443,7 +551,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf'2
+                        c'''2
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -454,7 +562,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf'1..
+                        c'''1..
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -465,7 +573,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf'1..
+                        c'''1..
                         \repeatTie
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
@@ -477,7 +585,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        bf'4
+                        c'''4
                         \mf
                         \glissando
                         \>
@@ -485,50 +593,50 @@
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
+                        a''4
+                        \glissando
+                        
+                        f''4
+                        \glissando
+                        
+                        d''4
+                        \glissando
+                        
+                        b'4
+                        \glissando
+                        
                         g'4
                         \glissando
                         
-                        ef'4
+                        e'4
                         \glissando
                         
                         c'4
                         \glissando
                         
+                        % BassClarinetMusicVoice [measure 244]                           %! SM4
+                        b4
+                        \glissando
+                        
                         a4
+                        \glissando
+                        
+                        g4
                         \glissando
                         
                         f4
                         \glissando
                         
+                        e4
+                        \glissando
+                        
                         d4
                         \glissando
                         
-                        bf,4
-                        \glissando
-                        
-                        % BassClarinetMusicVoice [measure 244]                           %! SM4
-                        a,4
-                        \glissando
-                        
-                        g,4
-                        \glissando
-                        
-                        f,4
-                        \glissando
-                        
-                        ef,4
-                        \glissando
-                        
-                        d,4
-                        \glissando
-                        
-                        c,4
-                        \glissando
-                        
-                        b,,4
+                        cs4
                         
                         % BassClarinetMusicVoice [measure 245]                           %! SM4
-                        b,,2.
+                        cs2.
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 246]                           %! SM4
@@ -844,18 +952,7 @@
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c''8
-                                _ #(make-dynamic-script
-                                    (markup
-                                        #:whiteout
-                                        #:line (
-                                            #:general-align Y -2 #:normal-text #:larger "“"
-                                            #:hspace -0.4
-                                            #:dynamic "f"
-                                            #:hspace -0.2
-                                            #:general-align Y -2 #:normal-text #:larger "”"
-                                            )
-                                        )
-                                    )                                                    %! REAPPLIED_DYNAMIC:SM8
+                                \ppppp                                                   %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 [
                                 ^ \markup {
@@ -1328,7 +1425,7 @@
                                 \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
                                 %%% \override ViolaMusicStaff.Clef.color = ##f           %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                                 c''2..
-                                \fff                                                     %! REAPPLIED_DYNAMIC:SM8
+                                \ppppp                                                   %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 ^ \markup {
                                     \column
