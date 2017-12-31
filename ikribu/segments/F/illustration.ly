@@ -652,7 +652,7 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             <e' fs'>1..
                             :32                                                          %! IC
-                            \sfpp                                                        %! EXPLICIT_DYNAMIC:SM8
+                            \sfpp
                             \startTextSpan
                             _ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
@@ -661,12 +661,14 @@
                                 }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 85]                              %! SM4
+                            \once \override Hairpin.circled-tip = ##t
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <e' fs'>\breve
                             :32                                                          %! IC
-                            \p                                                           %! EXPLICIT_DYNAMIC:SM8
                             \repeatTie
                             \stopTextSpan
+                            \>
+                            \p
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -845,7 +847,7 @@
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             <ef' f'>1..
                             :32                                                          %! IC
-                            \sfpp                                                        %! EXPLICIT_DYNAMIC:SM8
+                            \sfpp
                             \startTextSpan
                             _ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
@@ -854,12 +856,14 @@
                                 }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 85]                               %! SM4
+                            \once \override Hairpin.circled-tip = ##t
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <ef' f'>\breve
                             :32                                                          %! IC
-                            \p                                                           %! EXPLICIT_DYNAMIC:SM8
                             \repeatTie
                             \stopTextSpan
+                            \>
+                            \p
                             ^ \markup {
                                 \whiteout
                                     \upright

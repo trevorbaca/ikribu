@@ -1696,7 +1696,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 123]                              %! SM4
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d,,2.
                             \repeatTie
                             \<
