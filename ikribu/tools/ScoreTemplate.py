@@ -57,6 +57,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                     \context ViolinStaffGroup = "ViolinStaffGroup" <<
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
+                                \clef "percussion" %! ST3
+                                s1
+                            }
+                        }
+                        \context ViolinMusicStaff = "ViolinMusicStaff" {
+                            \context ViolinMusicVoice = "ViolinMusicVoice" {
                                 \set ViolinStaffGroup.instrumentName = \markup {      %! ST1
                                     \hcenter-in                                       %! ST1
                                         #16                                           %! ST1
@@ -67,12 +73,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10                                           %! ST1
                                         Vn.                                           %! ST1
                                     }                                                 %! ST1
-                                \clef "percussion" %! ST3
-                                s1
-                            }
-                        }
-                        \context ViolinMusicStaff = "ViolinMusicStaff" {
-                            \context ViolinMusicVoice = "ViolinMusicVoice" {
                                 s1
                             }
                         }
@@ -81,6 +81,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                     \context ViolaStaffGroup = "ViolaStaffGroup" <<
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
+                                \clef "percussion" %! ST3
+                                s1
+                            }
+                        }
+                        \context ViolaMusicStaff = "ViolaMusicStaff" {
+                            \context ViolaMusicVoice = "ViolaMusicVoice" {
                                 \set ViolaStaffGroup.instrumentName = \markup {      %! ST1
                                     \hcenter-in                                      %! ST1
                                         #16                                          %! ST1
@@ -91,12 +97,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10                                          %! ST1
                                         Va.                                          %! ST1
                                     }                                                %! ST1
-                                \clef "percussion" %! ST3
-                                s1
-                            }
-                        }
-                        \context ViolaMusicStaff = "ViolaMusicStaff" {
-                            \context ViolaMusicVoice = "ViolaMusicVoice" {
                                 \clef "alto" %! ST3
                                 s1
                             }
@@ -106,6 +106,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                     \context CelloStaffGroup = "CelloStaffGroup" <<
                         \context CelloRHMusicStaff = "CelloRHMusicStaff" {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice" {
+                                \clef "percussion" %! ST3
+                                s1
+                            }
+                        }
+                        \context CelloMusicStaff = "CelloMusicStaff" {
+                            \context CelloMusicVoice = "CelloMusicVoice" {
                                 \set CelloStaffGroup.instrumentName = \markup {      %! ST1
                                     \hcenter-in                                      %! ST1
                                         #16                                          %! ST1
@@ -116,12 +122,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10                                          %! ST1
                                         Vc.                                          %! ST1
                                     }                                                %! ST1
-                                \clef "percussion" %! ST3
-                                s1
-                            }
-                        }
-                        \context CelloMusicStaff = "CelloMusicStaff" {
-                            \context CelloMusicVoice = "CelloMusicVoice" {
                                 s1
                             }
                         }
