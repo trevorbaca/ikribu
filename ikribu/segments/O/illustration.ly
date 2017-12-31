@@ -1174,6 +1174,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                         c2.
                         \>
                         \p
@@ -1192,6 +1193,7 @@
                         ^ \markup { @ }                                                  %! SM14
                         
                         % BassClarinetMusicVoice [measure 238]                           %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM20
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
@@ -1315,18 +1317,7 @@
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             R1 * 1
-                            _ #(make-dynamic-script
-                                (markup
-                                    #:whiteout
-                                    #:line (
-                                        #:general-align Y -2 #:normal-text #:larger "“"
-                                        #:hspace -0.4
-                                        #:dynamic "f"
-                                        #:hspace -0.2
-                                        #:general-align Y -2 #:normal-text #:larger "”"
-                                        )
-                                    )
-                                )                                                        %! REAPPLIED_DYNAMIC:SM8
+                            \fff                                                         %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -1484,12 +1475,11 @@
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 236]                             %! SM4
-                            \once \override Hairpin.circled-tip = ##t
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             <e' fs'>2.
                             :32                                                          %! IC
+                            \ppppp                                                       %! REDUNDANT_DYNAMIC:SM8
                             \repeatTie
-                            \>
-                            \ppppp
                             
                             % ViolinMusicVoice [measure 237]                             %! SM4
                             <e' fs'>1
@@ -1503,6 +1493,7 @@
                                 }
                             
                             % ViolinMusicVoice [measure 238]                             %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM20
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 0  %! SM20
                             \startStaff                                                  %! SM20
@@ -1781,12 +1772,11 @@
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 236]                              %! SM4
-                            \once \override Hairpin.circled-tip = ##t
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
                             <ef' f'>2.
                             :32                                                          %! IC
+                            \ppppp                                                       %! REDUNDANT_DYNAMIC:SM8
                             \repeatTie
-                            \>
-                            \ppppp
                             
                             % ViolaMusicVoice [measure 237]                              %! SM4
                             <ef' f'>1
@@ -1800,6 +1790,7 @@
                                 }
                             
                             % ViolaMusicVoice [measure 238]                              %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM20
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
@@ -1920,7 +1911,7 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             R1 * 1
-                            \sfffz                                                       %! REAPPLIED_DYNAMIC:SM8
+                            \fff                                                         %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {

@@ -111,7 +111,7 @@ maker(
     baca.clef('treble'),
     baca.glissando(),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('ppp pp'),
         baca.tleaves().enchain([2]),
         bookend=True,

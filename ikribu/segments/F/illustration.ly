@@ -471,6 +471,7 @@
                         R1 * 1/2
                         
                         % BassClarinetMusicVoice [measure 84]                            %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         a1..
                         \>
                         \sfp
@@ -480,6 +481,7 @@
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 86]                            %! SM4
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         a1..
                         \repeatTie
                         \ppp
@@ -646,11 +648,11 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             <e' fs'>1..
                             :32                                                          %! IC
-                            \<
-                            \sfpp
+                            \sfpp                                                        %! EXPLICIT_DYNAMIC:SM8
                             \startTextSpan
                             _ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
@@ -659,14 +661,12 @@
                                 }                                                        %! IC
                             
                             % ViolinMusicVoice [measure 85]                              %! SM4
-                            \once \override Hairpin.circled-tip = ##t
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <e' fs'>\breve
                             :32                                                          %! IC
+                            \p                                                           %! EXPLICIT_DYNAMIC:SM8
                             \repeatTie
-                            \p
                             \stopTextSpan
-                            \>
-                            \p
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -674,6 +674,7 @@
                                 }
                             
                             % ViolinMusicVoice [measure 86]                              %! SM4
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             R1 * 7/4
                             \!
                             
@@ -840,11 +841,11 @@
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             <ef' f'>1..
                             :32                                                          %! IC
-                            \<
-                            \sfpp
+                            \sfpp                                                        %! EXPLICIT_DYNAMIC:SM8
                             \startTextSpan
                             _ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
@@ -853,14 +854,12 @@
                                 }                                                        %! IC
                             
                             % ViolaMusicVoice [measure 85]                               %! SM4
-                            \once \override Hairpin.circled-tip = ##t
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <ef' f'>\breve
                             :32                                                          %! IC
+                            \p                                                           %! EXPLICIT_DYNAMIC:SM8
                             \repeatTie
-                            \p
                             \stopTextSpan
-                            \>
-                            \p
                             ^ \markup {
                                 \whiteout
                                     \upright
@@ -868,6 +867,7 @@
                                 }
                             
                             % ViolaMusicVoice [measure 86]                               %! SM4
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             R1 * 7/4
                             \!
                             
@@ -959,10 +959,9 @@
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %%% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs1
                             :32                                                          %! IC
-                            \mp                                                          %! REAPPLIED_DYNAMIC:SM8
                             \<
                             \p
                             \startTextSpan
@@ -1035,6 +1034,7 @@
                             \repeatTie
                             
                             % CelloMusicVoice [measure 82]                               %! SM4
+                            \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             fs2.
                             :32                                                          %! IC
                             \repeatTie

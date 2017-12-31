@@ -133,7 +133,7 @@ maker(
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.markup.boxed('brushes on BD', baca.pleaf(0)),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('f p'),
         baca.runs().map(baca.enchain([4, 3])).flatten(),
         bookend=True,
@@ -152,7 +152,7 @@ maker(
     baca.scope('CelloMusicVoice', 9, 16),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('p mp'),
         baca.tleaves().enchain([2]),
         bookend=True,

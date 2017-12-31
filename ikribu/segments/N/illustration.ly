@@ -385,9 +385,9 @@
                         %%% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c2
-                        \p                                                               %! REDUNDANT_DYNAMIC:SM8
+                        \p                                                               %! EXPLICIT_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -1011,18 +1011,7 @@
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                                 c''8
-                                _ #(make-dynamic-script
-                                    (markup
-                                        #:whiteout
-                                        #:line (
-                                            #:general-align Y -2 #:normal-text #:larger "“"
-                                            #:hspace -0.4
-                                            #:dynamic "f"
-                                            #:hspace -0.2
-                                            #:general-align Y -2 #:normal-text #:larger "”"
-                                            )
-                                        )
-                                    )                                                    %! REAPPLIED_DYNAMIC:SM8
+                                \fff                                                     %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 [
                                 ^ \markup {
@@ -2345,7 +2334,7 @@
                                 \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                                 a,8
-                                \sfffz                                                   %! REAPPLIED_DYNAMIC:SM8
+                                \fff                                                     %! REAPPLIED_DYNAMIC:SM8
                                 \glissando
                                 [
                                 ^ \markup {

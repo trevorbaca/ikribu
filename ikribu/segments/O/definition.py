@@ -188,7 +188,7 @@ maker(
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('mp p'),
         baca.runs().tleaves().enchain([2]),
         bookend=True,

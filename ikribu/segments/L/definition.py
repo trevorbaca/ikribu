@@ -114,7 +114,7 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 6, 8),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
         baca.tleaves().enchain([4]),
         bookend=True,
@@ -125,7 +125,7 @@ maker(
 maker(
     baca.scope('ViolaMusicVoice', 4, 8),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics(
             'p pp p pp mp p mp p mf mp mf mp f mf f mf ff f ff f fff',
             ),
@@ -143,7 +143,7 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 1, 6),
     baca.piecewise(
-        baca.hairpin(),
+        abjad.Hairpin(),
         baca.dynamics('p f'),
         baca.group_by_measure(),
         ),
