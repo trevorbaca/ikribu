@@ -14,8 +14,28 @@ metadata = abjad.TypedOrderedDict(
                         [
                             abjad.Momento(
                                 context='BassClarinetMusicVoice',
+                                prototype='abjad.Clef',
+                                value='treble',
+                                ),
+                            abjad.Momento(
+                                context='BassClarinetMusicVoice',
+                                prototype='abjad.Instrument',
+                                value='BassClarinet',
+                                ),
+                            abjad.Momento(
+                                context='BassClarinetMusicVoice',
                                 prototype='baca.StaffLines',
                                 value=5,
+                                ),
+                            ],
+                        ),
+                    (
+                        'BassClarinetMusicVoice',
+                        [
+                            abjad.Momento(
+                                context='BassClarinetMusicVoice',
+                                prototype='abjad.Dynamic',
+                                value='p',
                                 ),
                             ],
                         ),
@@ -115,7 +135,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ViolaMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='fff',
+                                value='ppppp',
                                 ),
                             ],
                         ),
@@ -175,7 +195,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ViolinMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"f"',
+                                value='ppppp',
                                 ),
                             ],
                         ),

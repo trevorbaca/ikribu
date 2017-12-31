@@ -14,6 +14,16 @@ metadata = abjad.TypedOrderedDict(
                         [
                             abjad.Momento(
                                 context='BassClarinetMusicVoice',
+                                prototype='abjad.Clef',
+                                value='treble',
+                                ),
+                            abjad.Momento(
+                                context='BassClarinetMusicVoice',
+                                prototype='abjad.Instrument',
+                                value='BassClarinet',
+                                ),
+                            abjad.Momento(
+                                context='BassClarinetMusicVoice',
                                 prototype='baca.StaffLines',
                                 value=1,
                                 ),
