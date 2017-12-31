@@ -1753,7 +1753,7 @@
                         
                         % BassClarinetMusicVoice [measure 179]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs2
                         \repeatTie
                         \>
@@ -1797,7 +1797,7 @@
                         R1 * 1
                         
                         % BassClarinetMusicVoice [measure 185]                           %! SM4
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs2.
                         \<
                         \p
@@ -1810,7 +1810,7 @@
                         
                         % BassClarinetMusicVoice [measure 187]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs2.
                         \repeatTie
                         \>
@@ -1848,7 +1848,7 @@
                         
                         % BassClarinetMusicVoice [measure 192]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         cs\breve
                         \repeatTie
                         \>

@@ -1162,7 +1162,7 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 28]                            %! SM4
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
                         \startStaff                                                      %! SM21
@@ -1178,7 +1178,7 @@
                         
                         % BassClarinetMusicVoice [measure 30]                            %! SM4
                         \once \override Hairpin.circled-tip = ##t
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         ef2.
                         \repeatTie
                         \>
@@ -1458,7 +1458,7 @@
                             
                             % ViolinMusicVoice [measure 12]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'2.
                             :32                                                          %! IC
                             \repeatTie
@@ -1531,7 +1531,7 @@
                             
                             % ViolinMusicVoice [measure 18]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'1
                             :32                                                          %! IC
                             \repeatTie
@@ -1604,7 +1604,7 @@
                             
                             % ViolinMusicVoice [measure 24]                              %! SM4
                             \once \override Hairpin.circled-tip = ##t
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             e'2.
                             :32                                                          %! IC
                             \repeatTie
@@ -2036,7 +2036,7 @@
                             
                             % ViolaMusicVoice [measure 33]                               %! SM4
                             \once \override Hairpin.circled-tip = ##t
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             ef'\breve
                             :32                                                          %! IC
                             \repeatTie

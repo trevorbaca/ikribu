@@ -1352,7 +1352,7 @@
                             {
                                 
                                 % ViolinMusicVoice [measure 67]                          %! SM4
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 -\accent                                                 %! IC
                                 \f
@@ -1391,7 +1391,7 @@
                             \times 7/12 {
                                 
                                 % ViolinMusicVoice [measure 71]                          %! SM4
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'1
                                 -\accent                                                 %! IC
                                 \f
@@ -1429,7 +1429,7 @@
                             {
                                 
                                 % ViolinMusicVoice [measure 75]                          %! SM4
-                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \f
@@ -1665,7 +1665,7 @@
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 68]                           %! SM4
-                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'2
                                 -\accent                                                 %! IC
                                 \f
@@ -1703,7 +1703,7 @@
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 72]                           %! SM4
-                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'1
                                 -\accent                                                 %! IC
                                 \f
@@ -1742,7 +1742,7 @@
                             \times 2/3 {
                                 
                                 % ViolaMusicVoice [measure 76]                           %! SM4
-                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                                \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 b'4
                                 :32                                                      %! IC
                                 \f

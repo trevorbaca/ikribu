@@ -1174,7 +1174,7 @@
                         \once \override Dots.color = #red
                         \once \override NoteHead.color = #red
                         \once \override Stem.color = #red
-                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                        \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c2.
                         \>
                         \p
@@ -1475,11 +1475,13 @@
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 236]                             %! SM4
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override Hairpin.circled-tip = ##t
+                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <e' fs'>2.
                             :32                                                          %! IC
-                            \ppppp                                                       %! REDUNDANT_DYNAMIC:SM8
                             \repeatTie
+                            \>
+                            \ppppp
                             
                             % ViolinMusicVoice [measure 237]                             %! SM4
                             <e' fs'>1
@@ -1772,11 +1774,13 @@
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 236]                              %! SM4
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:SM6
+                            \once \override Hairpin.circled-tip = ##t
+                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             <ef' f'>2.
                             :32                                                          %! IC
-                            \ppppp                                                       %! REDUNDANT_DYNAMIC:SM8
                             \repeatTie
+                            \>
+                            \ppppp
                             
                             % ViolaMusicVoice [measure 237]                              %! SM4
                             <ef' f'>1
