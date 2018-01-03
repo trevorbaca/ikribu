@@ -161,7 +161,11 @@
                                         cl.                                              %! DEFAULT_INSTRUMENT:SM8
                                     }                                                    %! DEFAULT_INSTRUMENT:SM8
                             }                                                            %! DEFAULT_INSTRUMENT:SM8
+                        \set BassClarinetMusicStaff.forceClef = ##t                      %! DEFAULT_CLEF:SM8
+                        \clef "treble"                                                   %! DEFAULT_CLEF:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! DEFAULT_INSTRUMENT_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:SM6
+                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! DEFAULT_CLEF_COLOR_CANCELLATION:SM7
                         R1 * 7/4
                         ^ \markup {
                             \column
@@ -243,6 +247,7 @@
                                     }                                                    %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_DEFAULT_INSTRUMENT:SM8
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'violet) %! REDRAWN_DEFAULT_INSTRUMENT_COLOR:SM6
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! DEFAULT_CLEF_REDRAW_COLOR:SM6
                         
                         % BassClarinetMusicVoice [measure 2]                             %! SM4
                         \stopStaff                                                       %! SM20

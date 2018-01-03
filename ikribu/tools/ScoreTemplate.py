@@ -50,6 +50,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                             cl.                                         %! ST1
                                         }                                               %! ST1
                                 }                                                       %! ST1
+                            \clef "treble" %! ST3
                             s1
                         }
                     }
@@ -73,6 +74,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                                         #10                                           %! ST1
                                         Vn.                                           %! ST1
                                     }                                                 %! ST1
+                                \clef "treble" %! ST3
                                 s1
                             }
                         }
@@ -170,6 +172,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['BassClarinet'],
             )
+        abjad.annotate(
+            bass_clarinet_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
+            )
         self._attach_tag('BassClarinet', bass_clarinet_music_staff)
 
         # VIOLIN
@@ -200,6 +207,11 @@ class ScoreTemplate(baca.ScoreTemplate):
             [violin_music_voice],
             context_name='ViolinMusicStaff',
             name='ViolinMusicStaff',
+            )
+        abjad.annotate(
+            violin_music_staff,
+            'default_clef',
+            abjad.Clef('treble'),
             )
         violin_staff_group = abjad.StaffGroup(
             [violin_rh_music_staff, violin_music_staff],
