@@ -75,21 +75,21 @@
                         %%%     }                                                        %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
-                %%% ^ \markup {                                                          %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! REDUNDANT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! REDUNDANT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! REDUNDANT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! REDUNDANT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! REDUNDANT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! REDUNDANT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! REDUNDANT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! REDUNDANT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! REDUNDANT_METRONOME_MARK:SM27
-                %%%         {                                                            %! REDUNDANT_METRONOME_MARK:SM27
-                %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27
-                %%%             42                                                       %! REDUNDANT_METRONOME_MARK:SM27
-                %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27
+                %%% ^ \markup {                                                          %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%     \fontsize                                                        %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%         #-6                                                          %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%         \general-align                                               %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%             #Y                                                       %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%             #DOWN                                                    %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%             \note-by-number                                          %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #2                                                   %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #0                                                   %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #1                                                   %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%     \upright                                                         %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%         {                                                            %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%             42                                                       %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 80]                                               %! SM4

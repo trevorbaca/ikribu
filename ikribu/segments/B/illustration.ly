@@ -202,21 +202,21 @@
                         %%%     }                                                        %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
-                %%% ^ \markup {                                                          %! REAPPLIED_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! REAPPLIED_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! REAPPLIED_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! REAPPLIED_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! REAPPLIED_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! REAPPLIED_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! REAPPLIED_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! REAPPLIED_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! REAPPLIED_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! REAPPLIED_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! REAPPLIED_METRONOME_MARK:SM27
-                %%%         {                                                            %! REAPPLIED_METRONOME_MARK:SM27
-                %%%             =                                                        %! REAPPLIED_METRONOME_MARK:SM27
-                %%%             42                                                       %! REAPPLIED_METRONOME_MARK:SM27
-                %%%         }                                                            %! REAPPLIED_METRONOME_MARK:SM27
+                %%% ^ \markup {                                                          %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%     \fontsize                                                        %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%         #-6                                                          %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%         \general-align                                               %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%             #Y                                                       %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%             #DOWN                                                    %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%             \note-by-number                                          %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%                 #2                                                   %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%                 #0                                                   %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%                 #1                                                   %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%     \upright                                                         %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%         {                                                            %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%             =                                                        %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%             42                                                       %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
+                %%%         }                                                            %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 %%%     }                                                                %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 11]                                               %! SM4

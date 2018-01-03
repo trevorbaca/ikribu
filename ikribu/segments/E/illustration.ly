@@ -208,21 +208,21 @@
                         %%%     }                                                        %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             58                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
+                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             58                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 66]                                               %! SM4
@@ -448,21 +448,21 @@
                         %%%     }                                                        %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             42                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
+                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             42                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 70]                                               %! SM4
@@ -691,21 +691,21 @@
                         %%%     }                                                        %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             58                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
+                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             58                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 74]                                               %! SM4
@@ -930,21 +930,21 @@
                         %%%     }                                                        %! SEGMENT:SPACING_MARKUP:HSS2
                         }
                     }
-                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
-                %%%             42                                                       %! EXPLICIT_METRONOME_MARK:SM27
-                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
+                %%% ^ \markup {                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \fontsize                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         #-6                                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         \general-align                                               %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #Y                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             #DOWN                                                    %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             \note-by-number                                          %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #2                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #0                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%                 #1                                                   %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%     \upright                                                         %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         {                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%             42                                                       %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
+                %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 78]                                               %! SM4
