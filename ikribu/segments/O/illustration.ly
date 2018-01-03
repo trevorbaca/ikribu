@@ -163,7 +163,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             42                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 219]                                              %! SM4
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
@@ -1984,7 +1984,7 @@
                             R1 * 3/4
                             
                             % CelloMusicVoice [measure 222]                              %! SM4
-                            \ottava #-1
+                            \ottava #-1                                                  %! SC
                             \once \override Accidental.color = #red
                             \once \override Beam.color = #red
                             \once \override Dots.color = #red
@@ -2310,7 +2310,7 @@
                                     \upright
                                         "tasto poss."
                                 }
-                            \ottava #0
+                            \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 238]                              %! SM4
                             \stopStaff                                                   %! SM20

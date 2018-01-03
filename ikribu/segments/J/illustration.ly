@@ -140,7 +140,7 @@
                 %%%             =                                                        %! REDUNDANT_METRONOME_MARK:SM27
                 %%%             42                                                       %! REDUNDANT_METRONOME_MARK:SM27
                 %%%         }                                                            %! REDUNDANT_METRONOME_MARK:SM27
-                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27
+                %%%     }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 117]                                              %! SM4
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
@@ -453,7 +453,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             58                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 126]                                              %! SM4
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
@@ -1669,7 +1669,7 @@
                             R1 * 2
                             
                             % CelloMusicVoice [measure 118]                              %! SM4
-                            \ottava #-1
+                            \ottava #-1                                                  %! SC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d,,1
                             \p                                                           %! EXPLICIT_DYNAMIC:SM8
@@ -1701,7 +1701,7 @@
                             \repeatTie
                             \<
                             \p
-                            \ottava #0
+                            \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 124]                              %! SM4
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6

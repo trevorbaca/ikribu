@@ -19,12 +19,12 @@
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT:LAYOUT:LMM3
                 #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT:LAYOUT:LMM3
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -42,15 +42,15 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 7/4                                                                %! REAPPLIED_TIME_SIGNATURE:SM8
                 \mark #7                                                                 %! SM9
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
@@ -59,7 +59,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT:SPACING:HSS1
                 \pageBreak                                                               %! SEGMENT:LAYOUT:LMM3
                 s1 * 7/4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -439,7 +439,7 @@
                 \newSpacingSection                                                       %! SEGMENT:SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT:SPACING:HSS1
                 s1 * 7/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -503,7 +503,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             104                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 98]                                               %! SM4
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
@@ -1237,7 +1237,7 @@
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''1..
                             :32                                                          %! IC
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \ppp
                             ^ \markup {
@@ -1310,7 +1310,7 @@
                                 fqf''4
                                 :32                                                      %! IC
                                 \pp
-                                \glissando
+                                \glissando                                               %! SC
                                 \>
                             }
                             
@@ -1319,7 +1319,7 @@
                             d''1..
                             :32                                                          %! IC
                             \ppp
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
@@ -1329,7 +1329,7 @@
                                 b'4
                                 :32                                                      %! IC
                                 \pp
-                                \glissando
+                                \glissando                                               %! SC
                                 \>
                             }
                             
@@ -1338,7 +1338,7 @@
                             d''1..
                             :32                                                          %! IC
                             \ppp
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
@@ -1348,7 +1348,7 @@
                                 b'4
                                 :32                                                      %! IC
                                 \pp
-                                \glissando
+                                \glissando                                               %! SC
                                 \>
                             }
                             
@@ -1357,7 +1357,7 @@
                             g'1..
                             :32                                                          %! IC
                             \ppp
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
@@ -1367,7 +1367,7 @@
                                 b'4
                                 :32                                                      %! IC
                                 \pp
-                                \glissando
+                                \glissando                                               %! SC
                                 \>
                             }
                             
@@ -1376,7 +1376,7 @@
                             g'1..
                             :32                                                          %! IC
                             \ppp
-                            \glissando
+                            \glissando                                                   %! SC
                             \<
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
@@ -1386,7 +1386,7 @@
                                 d'4
                                 :32                                                      %! IC
                                 \pp
-                                \glissando
+                                \glissando                                               %! SC
                                 \>
                             }
                             
