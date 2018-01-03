@@ -163,22 +163,22 @@
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
-            %F% ^ \markup {                                                              %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%     \fontsize                                                            %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%         #-6                                                              %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%         \general-align                                                   %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%             #Y                                                           %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%             #DOWN                                                        %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%             \note-by-number                                              %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%                 #2                                                       %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%                 #0                                                       %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%                 #1                                                       %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%     \upright                                                             %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%         {                                                                %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%             =                                                            %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%             58                                                           %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%         }                                                                %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
-            %F%     }                                                                    %! REDUNDANT_METRONOME_MARK:SM27                %! SM29
+            %F% ^ \markup {                                                              %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%     \fontsize                                                            %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%         #-6                                                              %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%         \general-align                                                   %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%             #Y                                                           %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%             #DOWN                                                        %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%             \note-by-number                                              %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%                 #2                                                       %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%                 #0                                                       %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%                 #1                                                       %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%     \upright                                                             %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%         {                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%             =                                                            %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%             58                                                           %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%         }                                                                %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F%     }                                                                    %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
                 ^ \markup {                                                              %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                     \with-color                                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                         #(x11-color 'DeepPink1)                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
