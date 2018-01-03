@@ -1159,12 +1159,12 @@
                                         cl.                                              %! REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
-                        \set BassClarinetMusicStaff.forceClef = ##t                      %! EXPLICIT_CLEF:SM8
-                        \clef "treble"                                                   %! EXPLICIT_CLEF:SM8
+                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REDUNDANT_CLEF:SM8
+                        \clef "treble"                                                   %! REDUNDANT_CLEF:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
+                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
-                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         d\breve
                         \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
@@ -1254,7 +1254,7 @@
                                     }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
                         % BassClarinetMusicVoice [measure 144]                           %! SM4
                         d1..
