@@ -53,12 +53,12 @@
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT:LAYOUT:LMM3
                 #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT:LAYOUT:LMM3
-                \once \override TextSpanner.arrow-width = 0.25
-                \once \override TextSpanner.bound-details.left-broken.padding = 0
+                \once \override TextSpanner.arrow-width = 0.25                           %! SM29
+                \once \override TextSpanner.bound-details.left-broken.padding = 0        %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
-                    }
-                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = -0.5 %! SM29
                 \once \override TextSpanner.bound-details.left.text = \markup {
                     \fontsize
                         #-6
@@ -76,15 +76,15 @@
                         }
                     \hspace
                         #1.25
-                    }
-                \once \override TextSpanner.bound-details.right-broken.arrow = ##f
-                \once \override TextSpanner.bound-details.right-broken.padding = 0
-                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                \once \override TextSpanner.bound-details.right.arrow = ##t
-                \once \override TextSpanner.bound-details.right.padding = 2
-                \once \override TextSpanner.bound-details.right.text = ##f
-                \once \override TextSpanner.dash-fraction = 0.25
-                \once \override TextSpanner.dash-period = 1.5
+                    }                                                                    %! SM29
+                \once \override TextSpanner.bound-details.right-broken.arrow = ##f       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
+                \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
+                \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 2              %! SM29
+                \once \override TextSpanner.bound-details.right.text = ##f               %! SM29
+                \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
+                \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \mark #16                                                                %! SM9
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
@@ -93,7 +93,7 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT:SPACING:HSS1
                 \pageBreak                                                               %! SEGMENT:LAYOUT:LMM3
                 s1 * 3/4
-                \startTextSpan
+                \startTextSpan                                                           %! SM29
                 ^ \markup {
                     \column
                         {
@@ -281,7 +281,7 @@
                 \newSpacingSection                                                       %! SEGMENT:SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT:SPACING:HSS1
                 s1 * 7/4
-                \stopTextSpan
+                \stopTextSpan                                                            %! SM29
                 ^ \markup {
                     \column
                         {
@@ -345,7 +345,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             42                                                       %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 245]                                              %! SM4
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
@@ -585,57 +585,57 @@
                         \once \override Stem.color = #red
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         c'''4
-                        \glissando
+                        \glissando                                                       %! SC
                         \>
                         \mf
                         - \tweak color #red                                              %! SM14
                         ^ \markup { @ }                                                  %! SM14
                         
                         a''4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f''4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         d''4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         b'4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         g'4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e'4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         c'4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         % BassClarinetMusicVoice [measure 244]                           %! SM4
                         b4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         a4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         g4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         f4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         e4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         d4
-                        \glissando
+                        \glissando                                                       %! SC
                         
                         cs4
                         
                         % BassClarinetMusicVoice [measure 245]                           %! SM4
                         cs2.
-                        \repeatTie
+                        \repeatTie                                                       %! SM17
                         
                         % BassClarinetMusicVoice [measure 246]                           %! SM4
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -952,7 +952,7 @@
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c''8
                                 _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 ^ \markup {
                                     \column
@@ -1013,79 +1013,79 @@
                                 \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 b''8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a'8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b'8.
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g'4
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 2/3 {
                                 
                                 % ViolinMusicVoice [measure 240]                         %! SM4
                                 g''2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 e''8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 
                                 f'''8
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % ViolinMusicVoice [measure 241]                         %! SM4
                                 e'''2..
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d''2..
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 
                                 % ViolinMusicVoice [measure 242]                         %! SM4
                                 c''1
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d'8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 
                                 e''8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d''8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f''8.
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f'4
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 8/9 {
                                 
                                 % ViolinMusicVoice [measure 243]                         %! SM4
                                 a'2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a1
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b'2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a8
                             }
@@ -1425,7 +1425,7 @@
                                 %%% \override ViolaMusicStaff.Clef.color = ##f           %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                                 c''2..
                                 _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
-                                \glissando
+                                \glissando                                               %! SC
                                 ^ \markup {
                                     \column
                                         {
@@ -1485,65 +1485,65 @@
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                                 
                                 d'8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 240]                          %! SM4
                                 e''2
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 14/15 {
                                 
                                 % ViolaMusicVoice [measure 241]                          %! SM4
                                 d''4.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f''2..
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f'2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a'8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % ViolaMusicVoice [measure 242]                          %! SM4
                                 g4.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 
                                 b'8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g8.
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a'2..
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f'8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 243]                          %! SM4
                                 f''2..
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d''2..
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 e''4
                             }
@@ -1872,7 +1872,7 @@
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                                 a,8
                                 \p                                                       %! REAPPLIED_DYNAMIC:SM8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 ^ \markup {
                                     \column
@@ -1933,71 +1933,71 @@
                                 \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                                 
                                 g,8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f'8
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 4/5 {
                                 
                                 % CelloMusicVoice [measure 240]                          %! SM4
                                 d'2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 e'8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % CelloMusicVoice [measure 241]                          %! SM4
                                 d8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 c'1
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d'2..
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % CelloMusicVoice [measure 242]                          %! SM4
                                 e''1
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f''8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 
                                 e'8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g'8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b8
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 16/17 {
                                 
                                 % CelloMusicVoice [measure 243]                          %! SM4
                                 a2.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b'1
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 c'4.
                             }

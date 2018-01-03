@@ -133,7 +133,7 @@
                 %%%             =                                                        %! EXPLICIT_METRONOME_MARK:SM27
                 %%%             104                                                      %! EXPLICIT_METRONOME_MARK:SM27
                 %%%         }                                                            %! EXPLICIT_METRONOME_MARK:SM27
-                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27
+                %%%     }                                                                %! EXPLICIT_METRONOME_MARK:SM27 %! SM29
                 
                 % GlobalSkips [measure 53]                                               %! SM4
                 \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
@@ -1373,7 +1373,7 @@
                                 %%% \override CelloMusicStaff.Clef.color = ##f           %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                                 a,8
                                 \ppp                                                     %! REAPPLIED_DYNAMIC:SM8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 ^ \markup {
                                     \column
@@ -1434,144 +1434,144 @@
                                 \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                                 
                                 g,8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f8.
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f'4
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 4/5 {
                                 
                                 % CelloMusicVoice [measure 53]                           %! SM4
                                 d'2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 e'8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 c'8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % CelloMusicVoice [measure 54]                           %! SM4
                                 d'4.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 e''2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f''8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 4/5 {
                                 
                                 % CelloMusicVoice [measure 55]                           %! SM4
                                 e'4
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g'4.
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % CelloMusicVoice [measure 56]                           %! SM4
                                 g2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 
                                 a8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b'8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 c'8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 b'8.
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a2.
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % CelloMusicVoice [measure 57]                           %! SM4
                                 b8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g'8
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \times 8/9 {
                                 
                                 % CelloMusicVoice [measure 58]                           %! SM4
                                 e'4.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f''2.
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % CelloMusicVoice [measure 59]                           %! SM4
                                 e''8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d'2..
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             {
                                 
                                 % CelloMusicVoice [measure 60]                           %! SM4
                                 c'8
-                                \glissando
+                                \glissando                                               %! SC
                                 [
                                 
                                 d8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 e'8.
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 d'8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f'8.
                                 ]
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 f4
-                                \glissando
+                                \glissando                                               %! SC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 
                                 % CelloMusicVoice [measure 61]                           %! SM4
                                 a2
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 g,8
-                                \glissando
+                                \glissando                                               %! SC
                                 
                                 a,4
                             }
