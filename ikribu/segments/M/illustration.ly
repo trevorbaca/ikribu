@@ -3472,6 +3472,7 @@
                             
                             % CelloMusicVoice [measure 177]                              %! SM4
                             \ottava #-1                                                  %! SC
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -3487,9 +3488,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                XP
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
@@ -3513,11 +3525,6 @@
                             \repeatTie
                             \fff
                             \stopTextSpan
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        XP
-                                }
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 180]                              %! SM4
@@ -3609,6 +3616,7 @@
                             
                             % CelloMusicVoice [measure 185]                              %! SM4
                             \ottava #-1                                                  %! SC
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -3624,9 +3632,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                XP
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
@@ -3650,11 +3669,6 @@
                             \repeatTie
                             \fff
                             \stopTextSpan
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        XP
-                                }
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 188]                              %! SM4
@@ -3692,6 +3706,7 @@
                             
                             % CelloMusicVoice [measure 190]                              %! SM4
                             \ottava #-1                                                  %! SC
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -3707,9 +3722,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                XP
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
@@ -3733,11 +3759,6 @@
                             \repeatTie
                             \fff
                             \stopTextSpan
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        XP
-                                }
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 193]                              %! SM4
@@ -3829,6 +3850,7 @@
                             
                             % CelloMusicVoice [measure 198]                              %! SM4
                             \ottava #-1                                                  %! SC
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -3844,9 +3866,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                XP
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
@@ -3878,11 +3911,6 @@
                             \repeatTie
                             \fff
                             \stopTextSpan
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        XP
-                                }
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 203]                              %! SM4
