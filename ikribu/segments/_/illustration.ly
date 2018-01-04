@@ -28,16 +28,16 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 1]                                                %! SM4
-                \autoPageBreaksOff                                                       %! SEGMENT:LAYOUT:LMM1
-                \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT:LAYOUT:LMM3
-                #'((Y-offset . 60) (alignment-distances . (15 20)))                      %! SEGMENT:LAYOUT:LMM3
+                \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
+                \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
+                #'((Y-offset . 60) (alignment-distances . (15 20)))                      %! SEGMENT_LAYOUT:LMM3
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \bar ""                                                                  %! EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
-                \pageBreak                                                               %! SEGMENT:LAYOUT:LMM3
+                \pageBreak                                                               %! SEGMENT_LAYOUT:LMM3
                 s1 * 7/4
                 ^ \markup {
                     \column
@@ -104,7 +104,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 
                 % GlobalSkips [measure 2]                                                %! SM4
-                \noBreak                                                                 %! SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
