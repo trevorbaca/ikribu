@@ -55,6 +55,12 @@ maker(
     )
 
 maker(
+    baca.scope('ViolinMusicVoice', 1),
+    baca.clef('treble'),
+    baca.staff_lines(5),
+    )
+
+maker(
     baca.scope('ViolaMusicVoice', 2, 3),
     baca.make_tied_repeated_durations((1, 4)),
     )

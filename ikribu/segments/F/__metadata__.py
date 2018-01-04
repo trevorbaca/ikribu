@@ -120,7 +120,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ViolaMusicVoice',
                                 prototype='abjad.Clef',
-                                value='treble',
+                                value='alto',
                                 ),
                             abjad.Momento(
                                 context='ViolaMusicVoice',

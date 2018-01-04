@@ -1531,7 +1531,7 @@
                                     Va.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \set ViolaMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
-                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \clef "alto"                                                 %! REAPPLIED_CLEF:SM8
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolaMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
@@ -1601,7 +1601,7 @@
                                 
                                 % ViolaMusicVoice [measure 64]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'1
+                                c'1
                                 :32                                                      %! IC
                                 \>
                                 \f
@@ -1614,26 +1614,26 @@
                                                     "brushes on BD"                      %! IC
                                     }                                                    %! IC
                                 
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 65]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'4
+                                c'4
                                 -\accent                                                 %! IC
                                 \p
                                 \<
                                 
-                                b'4
+                                c'4
                                 :32                                                      %! IC
                                 
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'4
+                                c'4
                                 -\accent                                                 %! IC
                                 \f
                             }
@@ -1647,31 +1647,31 @@
                                 
                                 % ViolaMusicVoice [measure 68]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'2
+                                c'2
                                 -\accent                                                 %! IC
                                 \f
                                 \>
                                 
-                                b'2
+                                c'2
                                 -\accent                                                 %! IC
                                 
-                                b'2
+                                c'2
                                 -\accent                                                 %! IC
                             }
                             {
                                 
                                 % ViolaMusicVoice [measure 69]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'4
+                                c'4
                                 :32                                                      %! IC
                                 \p
                                 \<
                                 
-                                b'4
+                                c'4
                                 -\accent                                                 %! IC
                                 
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'4
+                                c'4
                                 -\accent                                                 %! IC
                                 \f
                             }
@@ -1685,15 +1685,15 @@
                                 
                                 % ViolaMusicVoice [measure 72]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 \f
                                 \>
                                 
-                                b'1
+                                c'1
                                 :32                                                      %! IC
                                 
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1701,16 +1701,16 @@
                                 
                                 % ViolaMusicVoice [measure 73]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 \p
                                 \<
                                 
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 \f
                             }
@@ -1724,15 +1724,15 @@
                                 
                                 % ViolaMusicVoice [measure 76]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'4
+                                c'4
                                 :32                                                      %! IC
                                 \f
                                 \>
                                 
-                                b'4
+                                c'4
                                 -\accent                                                 %! IC
                                 
-                                b'4
+                                c'4
                                 -\accent                                                 %! IC
                             }
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1740,16 +1740,16 @@
                                 
                                 % ViolaMusicVoice [measure 77]                           %! SM4
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 \p
                                 \<
                                 
-                                b'1
+                                c'1
                                 :32                                                      %! IC
                                 
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                b'1
+                                c'1
                                 -\accent                                                 %! IC
                                 \f
                             }

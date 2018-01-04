@@ -50,10 +50,6 @@ maker.validate_measure_count(9)
 maker.validate_stage_count(3)
 maker.validate_measures_per_stage()
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
-
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
