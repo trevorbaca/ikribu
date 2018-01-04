@@ -632,6 +632,7 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -647,9 +648,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. tast."
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -673,11 +685,6 @@
                             \stopTextSpan
                             \>
                             \p
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "trem. flaut. tast."
-                                }
                             
                             % ViolinMusicVoice [measure 86]                              %! SM4
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -827,6 +834,7 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -842,9 +850,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. tast."
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -868,11 +887,6 @@
                             \stopTextSpan
                             \>
                             \p
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "trem. flaut. tast."
-                                }
                             
                             % ViolaMusicVoice [measure 86]                               %! SM4
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -931,6 +945,7 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -946,9 +961,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                "trem. XP (non. flaut.)"
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
@@ -1048,11 +1074,6 @@
                             \repeatTie
                             \ff
                             \stopTextSpan
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "trem. XP (non. flaut.)"
-                                }
                             
                             % CelloMusicVoice [measure 83]                               %! SM4
                             R1 * 1/2

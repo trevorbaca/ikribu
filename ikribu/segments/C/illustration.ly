@@ -2024,6 +2024,7 @@
                             % CelloMusicVoice [measure 36]                               %! SM4
                             \override NoteHead.style = #'harmonic                        %! OC
                             \override TupletBracket.direction = #down                    %! OC
+                            \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -2039,9 +2040,20 @@
                                 }
                             \once \override TextSpanner.bound-details.right-broken.arrow = ##f
                             \once \override TextSpanner.bound-details.right-broken.padding = 0
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.arrow = ##t
-                            \once \override TextSpanner.bound-details.right.padding = 1.75
+                            \once \override TextSpanner.bound-details.right.padding = 0.5
                             \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \concat
+                                    {
+                                        \hspace
+                                            #0.0
+                                        \whiteout
+                                            \upright
+                                                "trem. flaut. XP"
+                                    }
+                                }
                             \once \override TextSpanner.dash-fraction = 0.25
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2171,11 +2183,6 @@
                             :32                                                          %! IC
                             \ppp
                             \stopTextSpan
-                            ^ \markup {
-                                \whiteout
-                                    \upright
-                                        "trem. flaut. XP"
-                                }
                             \revert NoteHead.style                                       %! OC
                             \revert TupletBracket.direction                              %! OC
                             
