@@ -37,21 +37,14 @@
         \consists Axis_group_engraver
         \consists Bar_number_engraver
         \consists Mark_engraver
-        \consists Metronome_mark_engraver
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
         \accepts PageLayout
         \override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
-        \override MetronomeMark.X-extent = #'(0 . 0)
-        \override MetronomeMark.Y-extent = #'(0 . 0)
-        \override MetronomeMark.break-align-symbols = #'(left-edge)
-        \override MetronomeMark.extra-offset = #'(0 . 4)
-        \override MetronomeMark.font-size = 3
-        \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-offset = -2.25
-        \override RehearsalMark.X-offset = 6
+        \override RehearsalMark.X-extent = ##f
+        \override RehearsalMark.Y-extent = ##f
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"
@@ -259,7 +252,6 @@
         \accepts MusicContext
         \remove Bar_number_engraver
         \remove Mark_engraver
-        \remove Metronome_mark_engraver
         \remove System_start_delimiter_engraver
         \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
