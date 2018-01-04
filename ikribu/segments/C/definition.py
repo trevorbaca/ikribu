@@ -74,10 +74,6 @@ maker.validate_measure_count(17)
 maker.validate_stage_count(17)
 maker.validate_measures_per_stage()
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
-
 maker(
     baca.make_scopes(
         ['BassClarinetMusicVoice'],
@@ -88,6 +84,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
+    baca.clef('percussion'),
     baca.make_tied_notes(repeat_ties=True),
     )
 
@@ -152,7 +149,6 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 2, 16),
-    baca.clef('treble'),
     baca.clef_x_extent_false(),
     baca.clef_extra_offset((-2.5, 0)),
     baca.map(baca.glissando(), baca.runs()),
@@ -162,7 +158,6 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
-    baca.staff_lines(5),
     baca.stem_tremolo(),
     )
 

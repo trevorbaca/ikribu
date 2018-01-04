@@ -52,10 +52,6 @@ maker.validate_measure_count(11)
 maker.validate_stage_count(7)
 maker.validate_measures_per_stage()
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
-
 maker(
     baca.scope('CelloMusicVoice', 1),
     baca.clef('bass'),

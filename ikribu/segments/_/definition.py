@@ -48,10 +48,6 @@ maker.validate_measure_count(2)
 maker.validate_stage_count(2)
 maker.validate_measures_per_stage()
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
-
 maker(
     baca.scopes(
         ('ViolinRHMusicVoice', 1),

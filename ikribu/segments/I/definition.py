@@ -52,10 +52,6 @@ maker.validate_measure_count(8)
 maker.validate_stage_count(8)
 maker.validate_measures_per_stage()
 
-###############################################################################
-################################### COMMANDS ##################################
-###############################################################################
-
 maker(
     baca.make_scopes(['CelloMusicVoice'], [1, 3, 5, 7]),
     baca.make_tied_repeated_durations((1, 4)),
