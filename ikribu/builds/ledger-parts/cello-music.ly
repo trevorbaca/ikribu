@@ -1,30 +1,30 @@
 % Ikribu (2016) cello part
 
-\version "2.19.36"
+\version "2.19.80"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
-\include "../stylesheets/parts.ily"
+\include "stylesheet.ily"
 
 \score {
-    \keepWithTag cello {
-        \include "segment--introduction.ly"
-        \include "segment-a.ly"
-        \include "segment-b.ly"
-        \include "segment-c.ly"
-        \include "segment-d.ly"
-        \include "segment-e.ly"
-        \include "segment-f.ly"
-        \include "segment-g.ly"
-        \include "segment-h.ly"
-        \include "segment-i.ly"
-        \include "segment-j.ly"
-        \include "segment-k.ly"
-        \include "segment-l.ly"
-        \include "segment-m.ly"
-        \include "segment-n.ly"
-        \include "segment-o.ly"
-        \include "segment-p.ly"
-        \include "segment-q.ly"
+    \keepWithTag Cello {
+        \include "_segments/segment-_.ly"
+        \include "_segments/segment-A.ly"
+        \include "_segments/segment-B.ly"
+        \include "_segments/segment-C.ly"
+        \include "_segments/segment-D.ly"
+        \include "_segments/segment-E.ly"
+        \include "_segments/segment-F.ly"
+        \include "_segments/segment-G.ly"
+        \include "_segments/segment-H.ly"
+        \include "_segments/segment-I.ly"
+        \include "_segments/segment-J.ly"
+        \include "_segments/segment-K.ly"
+        \include "_segments/segment-L.ly"
+        \include "_segments/segment-M.ly"
+        \include "_segments/segment-N.ly"
+        \include "_segments/segment-O.ly"
+        \include "_segments/segment-P.ly"
+        \include "_segments/segment-Q.ly"
     }
 }
