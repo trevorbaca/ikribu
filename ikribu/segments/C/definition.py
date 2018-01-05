@@ -109,7 +109,7 @@ maker(
 maker(
     baca.scope('BassClarinetMusicVoice', 2, 17),
     baca.dynamic_text_extra_offset((-3.5, 0)),
-    baca.dynamic_text_x_extent_false(),
+    baca.dynamic_text_x_extent_zero(),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
