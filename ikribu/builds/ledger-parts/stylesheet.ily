@@ -31,3 +31,10 @@
 
 \header {
 }
+
+\layout {
+    \context {
+        \Score
+        \override NoteHead.color = #red
+    }
+}
