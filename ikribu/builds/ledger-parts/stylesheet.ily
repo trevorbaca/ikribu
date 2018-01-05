@@ -29,12 +29,40 @@
 
 }
 
-\header {
-}
-
 \layout {
     \context {
-        \Score
-        \override NoteHead.color = #red
+        \GlobalContext
+        \remove Time_signature_engraver
     }
+    \context {
+        \BassClarinetMusicStaff
+        \consists Time_signature_engraver
+    }
+    \context {
+        \ViolinRHMusicStaff
+        \consists Time_signature_engraver
+    }
+    \context {
+        \ViolinMusicStaff
+        \consists Time_signature_engraver
+    }
+    \context {
+        \ViolaRHMusicStaff
+        \consists Time_signature_engraver
+    }
+    \context {
+        \ViolaMusicStaff
+        \consists Time_signature_engraver
+    }
+    \context {
+        \CelloRHMusicStaff
+        \consists Time_signature_engraver
+    }
+    \context {
+        \CelloMusicStaff
+        \consists Time_signature_engraver
+    }
+}
+
+\header {
 }

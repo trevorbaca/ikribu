@@ -64,6 +64,14 @@
     top-margin = 0\mm
 }
 
+\layout {
+    \accidentalStyle forget
+    indent = 10
+    ragged-bottom = ##t
+    ragged-last = ##t
+    ragged-right = ##t
+}
+
 \header {
     composer = \markup {
         \override #'(font-name . "Palatino")
@@ -94,12 +102,4 @@
             }
         }
     }
-}
-
-\layout {
-    \accidentalStyle forget
-    indent = 10
-    ragged-bottom = ##t
-    ragged-last = ##t
-    ragged-right = ##t
 }
