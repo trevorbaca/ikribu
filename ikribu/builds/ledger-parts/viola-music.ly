@@ -1,4 +1,4 @@
-% Ikribu (2016) violin part
+% Ikribu (2016) viola part
 
 \version "2.19.80"
 \language "english"
@@ -7,7 +7,7 @@
 \include "stylesheet.ily"
 
 \score {
-    \keepWithTag Violin {
+    \keepWithTag Viola {
         \include "_segments/segment-_.ly"
         \include "_segments/segment-A.ly"
         \include "_segments/segment-B.ly"

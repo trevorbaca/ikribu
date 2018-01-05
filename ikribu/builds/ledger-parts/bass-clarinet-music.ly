@@ -7,7 +7,7 @@
 \include "stylesheet.ily"
 
 \score {
-    \keepWithTag Violin {
+    \keepWithTag BassClarinet {
         \include "_segments/segment-_.ly"
         \include "_segments/segment-A.ly"
         \include "_segments/segment-B.ly"
