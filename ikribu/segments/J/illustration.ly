@@ -69,57 +69,57 @@
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
                 #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT_LAYOUT:LMM3
-            %F% \once \override TextSpanner.bound-details.left.text =                    %! REDUNDANT_METRONOME_MARK:SM27
-            %F% \markup {                                                                %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     \fontsize                                                            %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         #-6                                                              %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         \general-align                                                   %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             #Y                                                           %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             #DOWN                                                        %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             \note-by-number                                              %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #2                                                       %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #0                                                       %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #1.5                                                     %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     \upright                                                             %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         {                                                                %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             =                                                            %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             42                                                           %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         }                                                                %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     \hspace                                                              %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         #1                                                               %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     }                                                                    %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+            %F% \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK:SM27
+            %F% \markup {                                                                %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! REAPPLIED_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! REAPPLIED_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! REAPPLIED_METRONOME_MARK:SM27
+            %F%                 #1.5                                                     %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         {                                                                %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             =                                                            %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             42                                                           %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         }                                                                %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         #1                                                               %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     }                                                                    %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 \once \override TextSpanner.Y-extent = ##f                               %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = ##f         %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
                     }                                                                    %! SM29
                 \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29
-                \once \override TextSpanner.bound-details.left.text =                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                \markup {                                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    \with-color                                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        #(x11-color 'DeepPink1)                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        {                                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            \fontsize                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                #-6                                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                \general-align                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    #Y                                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    #DOWN                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    \note-by-number                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #2                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #0                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #1.5                                             %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            \upright                                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    =                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    42                                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            \hspace                                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                #1                                                       %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        }                                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
+                \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                \markup {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                    \with-color                                                          %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                        #(x11-color 'green4)                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                        {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                            \fontsize                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                #-6                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                \general-align                                           %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    #Y                                                   %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    #DOWN                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    \note-by-number                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                        #2                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                        #0                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                        #1.5                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                            \upright                                                     %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    =                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    42                                                   %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                            \hspace                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                #1                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                        }                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                    }                                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -452,7 +452,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -535,6 +535,8 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                         \override RepeatTie.direction = #up                              %! OC
+                        \override TextScript.padding = #2.5                              %! OC
+                        \override TextScript.extra-offset = #'(1 . 0)                    %! OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -553,14 +555,14 @@
                                         cl.                                              %! REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
-                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REAPPLIED_CLEF:SM8
-                        \clef "treble"                                                   %! REAPPLIED_CLEF:SM8
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                        \set BassClarinetMusicStaff.forceClef = ##t                      %! EXPLICIT_CLEF:SM8
+                        \clef "percussion"                                               %! EXPLICIT_CLEF:SM8
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                        b'4
+                        c'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -665,54 +667,54 @@
                                         cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 117]                           %! SM4
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 118]                           %! SM4
-                        b'4
+                        c'4
                         ^ \markup {                                                      %! IC
                             \whiteout                                                    %! IC
                                 \upright                                                 %! IC
@@ -726,61 +728,61 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 119]                           %! SM4
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 120]                           %! SM4
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 121]                           %! SM4
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
                         % BassClarinetMusicVoice [measure 122]                           %! SM4
@@ -788,6 +790,7 @@
                         
                         % BassClarinetMusicVoice [measure 123]                           %! SM4
                         R1 * 3/4
+                        \revert TextScript.extra-offset                                  %! OC
                         
                         % BassClarinetMusicVoice [measure 124]                           %! SM4
                         \stopStaff                                                       %! SM20
@@ -802,7 +805,7 @@
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
                         \startStaff                                                      %! SM21
-                        b'4
+                        c'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
@@ -828,13 +831,13 @@
                                                 }                                        %! IC
                             }                                                            %! IC
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         
-                        b'4
+                        c'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         
@@ -843,6 +846,7 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
                         R1 * 1/4
+                        \revert TextScript.padding                                       %! OC
                         \once \override Score.BarLine.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                         \once \override Score.SpanBar.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                         
@@ -916,6 +920,8 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.extra-offset = #'(1 . 0)                %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -926,14 +932,14 @@
                                     #10                                                  %! REAPPLIED_INSTRUMENT:SM8
                                     Vn.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
-                            \set ViolinMusicStaff.forceClef = ##t                        %! REAPPLIED_CLEF:SM8
-                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \set ViolinMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
+                            \clef "percussion"                                           %! EXPLICIT_CLEF:SM8
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                        %F% \override ViolinMusicStaff.Clef.color = ##f                  %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                        %F% \override ViolinMusicStaff.Clef.color = ##f                  %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            b'4
+                            c'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -1015,79 +1021,79 @@
                                     Vn.                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                            \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 117]                             %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 118]                             %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 119]                             %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 120]                             %! SM4
-                            b'4
+                            c'4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1101,35 +1107,35 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 121]                             %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolinMusicVoice [measure 122]                             %! SM4
@@ -1137,6 +1143,7 @@
                             
                             % ViolinMusicVoice [measure 123]                             %! SM4
                             R1 * 3/4
+                            \revert TextScript.extra-offset                              %! OC
                             
                             % ViolinMusicVoice [measure 124]                             %! SM4
                             \stopStaff                                                   %! SM20
@@ -1149,7 +1156,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
                             \startStaff                                                  %! SM21
-                            b'4
+                            c'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -1175,13 +1182,13 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             
@@ -1190,6 +1197,7 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 0  %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert TextScript.padding                                   %! OC
                             
                         }
                     }
@@ -1262,6 +1270,8 @@
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.extra-offset = #'(1 . 0)                %! OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1272,14 +1282,14 @@
                                     #10                                                  %! REAPPLIED_INSTRUMENT:SM8
                                     Va.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
-                            \set ViolaMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
-                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \set ViolaMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
+                            \clef "percussion"                                           %! EXPLICIT_CLEF:SM8
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
-                        %F% \override ViolaMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
+                        %F% \override ViolaMusicStaff.Clef.color = ##f                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-                            b'4
+                            c'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -1361,53 +1371,53 @@
                                     Va.                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                            \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 117]                              %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 118]                              %! SM4
-                            b'4
+                            c'4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1421,30 +1431,30 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 119]                              %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 120]                              %! SM4
-                            b'4
+                            c'4
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
@@ -1458,35 +1468,35 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 121]                              %! SM4
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
                             % ViolaMusicVoice [measure 122]                              %! SM4
@@ -1494,6 +1504,7 @@
                             
                             % ViolaMusicVoice [measure 123]                              %! SM4
                             R1 * 3/4
+                            \revert TextScript.extra-offset                              %! OC
                             
                             % ViolaMusicVoice [measure 124]                              %! SM4
                             \stopStaff                                                   %! SM20
@@ -1506,7 +1517,7 @@
                             \stopStaff                                                   %! SM21
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! SM21
                             \startStaff                                                  %! SM21
-                            b'4
+                            c'4
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
@@ -1532,13 +1543,13 @@
                                                     }                                    %! IC
                                 }                                                        %! IC
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             
-                            b'4
+                            c'4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
                             
@@ -1547,6 +1558,7 @@
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert TextScript.padding                                   %! OC
                             
                         }
                     }
@@ -1710,6 +1722,7 @@
                             R1 * 2
                             
                             % CelloMusicVoice [measure 118]                              %! SM4
+                            \override CelloMusicStaff.OttavaBracket.staff-padding = #8   %! OC
                             \ottava #-1                                                  %! SC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d,,1
@@ -1742,6 +1755,7 @@
                             \repeatTie
                             \<
                             \p
+                            \revert CelloMusicStaff.OttavaBracket.staff-padding          %! OC
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 124]                              %! SM4

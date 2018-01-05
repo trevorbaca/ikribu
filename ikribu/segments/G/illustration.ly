@@ -72,7 +72,7 @@
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
                 \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
                 \once \override TextSpanner.dash-period = 1.5                            %! SM29
@@ -480,7 +480,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -568,6 +568,7 @@
                         \stopStaff                                                       %! REAPPLIED_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                         \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
+                        \once \override DynamicLineSpanner.staff-padding = #'7           %! OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -684,6 +685,7 @@
                         \mp
                         
                         % BassClarinetMusicVoice [measure 89]                            %! SM4
+                        \once \override DynamicLineSpanner.staff-padding = #'7           %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         af1..
                         \<
@@ -695,6 +697,7 @@
                         \mf
                         
                         % BassClarinetMusicVoice [measure 91]                            %! SM4
+                        \once \override DynamicLineSpanner.staff-padding = #'7           %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         g1..
                         \<
@@ -706,6 +709,7 @@
                         \f
                         
                         % BassClarinetMusicVoice [measure 93]                            %! SM4
+                        \once \override DynamicLineSpanner.staff-padding = #'7           %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         fs1..
                         \<
@@ -717,6 +721,7 @@
                         \ff
                         
                         % BassClarinetMusicVoice [measure 95]                            %! SM4
+                        \once \override DynamicLineSpanner.staff-padding = #'7           %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         f1..
                         \<
@@ -728,6 +733,7 @@
                         \fff
                         
                         % BassClarinetMusicVoice [measure 97]                            %! SM4
+                        \once \override DynamicLineSpanner.staff-padding = #'7           %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         e1..
                         \<
@@ -1036,7 +1042,7 @@
                                     Va.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \set ViolaMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
-                            \clef "alto"                                                 %! REAPPLIED_CLEF:SM8
+                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolaMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
@@ -1247,12 +1253,12 @@
                                     #10                                                  %! REAPPLIED_INSTRUMENT:SM8
                                     Vc.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
-                            \set CelloMusicStaff.forceClef = ##t                         %! REDUNDANT_CLEF:SM8
-                            \clef "treble"                                               %! REDUNDANT_CLEF:SM8
+                            \set CelloMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
+                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
                             \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %F% \override CelloMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                        %F% \override CelloMusicStaff.Clef.color = ##f                   %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             d''1..
                             :32                                                          %! IC
@@ -1320,7 +1326,7 @@
                                     Vc.                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \override CelloMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
+                            \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             \tweak edge-height #'(0.7 . 0)
                             \times 2/3 {
                                 

@@ -115,7 +115,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -831,13 +831,13 @@
                                     Vn.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \set ViolinMusicStaff.forceClef = ##t                        %! REAPPLIED_CLEF:SM8
-                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \clef "percussion"                                           %! REAPPLIED_CLEF:SM8
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolinMusicStaff.Clef.color = ##f                  %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             _ #(make-dynamic-script
                                 (markup
@@ -915,159 +915,159 @@
                             \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 248]                             %! SM4
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 249]                             %! SM4
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 250]                             %! SM4
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 251]                             %! SM4
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 252]                             %! SM4
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 253]                             %! SM4
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 254]                             %! SM4
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 255]                             %! SM4
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
-                            c''4
+                            d'4
                             -\tongue #2                                                  %! IC
                             
-                            a'4
+                            b4
                             -\tongue #2                                                  %! IC
                             
-                            b'4
+                            c'4
                             -\tongue #2                                                  %! IC
                             
                             % ViolinMusicVoice [measure 256]                             %! SM4

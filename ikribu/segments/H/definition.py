@@ -12,7 +12,7 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, ikribu.metronome_marks['windows']),
+    #(1, ikribu.metronome_marks['windows']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -29,7 +29,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    baca.page([99, 20, (15, 20)]),
+    baca.page([99, 20, (15, 20, 25, 20, 25, 20)]),
     )
 
 maker = baca.SegmentMaker(
@@ -53,6 +53,14 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
+    )
+
+maker(
+    baca.scopes(
+        ('ViolinRHMusicVoice', 1, abjad.Infinity),
+        ('ViolaRHMusicVoice', 1, abjad.Infinity),
+        ),
+    baca.dynamic_line_spanner_staff_padding(10),
     )
 
 maker(
@@ -121,7 +129,6 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 2),
-    baca.clef('treble'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     )

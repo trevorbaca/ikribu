@@ -80,6 +80,14 @@ maker(
     )
 
 maker(
+    baca.scopes(
+        ('ViolinMusicVoice', 1),
+        ('ViolaMusicVoice', 1),
+        ),
+    baca.clef('percussion'),
+    )
+
+maker(
     baca.make_scopes(
         ['ViolinMusicVoice'],
         [(1, 2), (5, 6), (9, 10), (13, 14)],

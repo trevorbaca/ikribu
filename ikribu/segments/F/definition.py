@@ -13,7 +13,7 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, ikribu.metronome_marks['night']),
+    #(1, ikribu.metronome_marks['night']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -78,6 +78,9 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 6, 7),
     baca.markup.string_numbers([2, 3]),
+    baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
@@ -89,6 +92,9 @@ maker(
 maker(
     baca.scope('ViolaMusicVoice', 6, 7),
     baca.markup.string_numbers([1, 2]),
+    baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.pitches('<Eb4 F4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
@@ -121,5 +127,7 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 8),
     baca.clef('treble'),
+    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef_x_extent_false(),
     baca.staff_lines(5),
     )

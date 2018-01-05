@@ -50,8 +50,8 @@
         \accepts PageLayout
         \override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
-        \override RehearsalMark.X-extent = ##f
-        \override RehearsalMark.Y-extent = ##f
+        \override RehearsalMark.X-extent = #'(0 . 0)
+        \override RehearsalMark.Y-extent = #'(0 . 0)
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
         \override RehearsalMark.font-name = "Didot"

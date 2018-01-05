@@ -13,7 +13,7 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, ikribu.metronome_marks['night']),
+    #(1, ikribu.metronome_marks['night']),
     (6, ikribu.metronome_marks['incisions']),
     ])
 
@@ -93,6 +93,7 @@ maker(
         ('ViolinMusicVoice', 1, 7),
         ('ViolaMusicVoice', 1, 7),
         ),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
@@ -148,6 +149,7 @@ maker(
     baca.hairpin('p < mf', baca.rleaves()[-2:]),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),
+    baca.ottava_bracket_staff_padding(8),
     baca.pitches('D1'),
     )
 
@@ -159,4 +161,22 @@ maker(
         ),
     baca.effort_dynamic('f'),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
+    )
+
+maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 1, abjad.Infinity),
+        ('ViolinMusicVoice', 1, abjad.Infinity),
+        ('ViolaMusicVoice', 1, abjad.Infinity),
+        ),
+    baca.text_script_padding(2.5),
+    )
+
+maker(
+    baca.scopes(
+        ('BassClarinetMusicVoice', 1, 4),
+        ('ViolinMusicVoice', 1, 4),
+        ('ViolaMusicVoice', 1, 4),
+        ),
+    baca.text_script_extra_offset((1, 0)),
     )

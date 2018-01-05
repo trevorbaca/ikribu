@@ -78,17 +78,13 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
-        ['CelloMusicVoice'],
-        [(5, 8), (9, 12), (13, 16), (17, 20)],
-        ),
+    baca.scope('CelloMusicVoice', 5, 20),
     baca.make_tied_notes(repeat_ties=True),
+    baca.ottava_bracket_staff_padding(10),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
-    # TODO: remove after clef metadata work again:
-    baca.clef('treble'),
     baca.pitches('<Bb1 D4>'),
     )
 

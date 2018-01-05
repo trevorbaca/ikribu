@@ -12,7 +12,7 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, ikribu.metronome_marks['incisions']),
+    #(1, ikribu.metronome_marks['incisions']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -99,13 +99,13 @@ maker(
     baca.pitches('C2'),
     )
 
-maker(
-    baca.scopes(
-        ('ViolinMusicVoice', 1, 8),
-        ('ViolaMusicVoice', 1, 8),
-        ),
-    baca.effort_dynamic('mp'),
-    )
+#maker(
+#    baca.scopes(
+#        ('ViolinMusicVoice', 1, 8),
+#        ('ViolaMusicVoice', 1, 8),
+#        ),
+#    baca.effort_dynamic('mp'),
+#    )
 
 maker(
     baca.scope('ViolinMusicVoice', 6, 8),

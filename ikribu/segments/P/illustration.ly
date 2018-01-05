@@ -52,7 +52,7 @@
                 \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-                #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT_LAYOUT:LMM3
+                #'((Y-offset . 20) (alignment-distances . (15 20 25 20 25 20 25)))       %! SEGMENT_LAYOUT:LMM3
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -106,7 +106,7 @@
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
                 \once \override TextSpanner.bound-details.right.arrow = ##t              %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-fraction = 0.25                         %! SM29
                 \once \override TextSpanner.dash-period = 1.5                            %! SM29
@@ -322,7 +322,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -675,6 +675,7 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                                \override DynamicLineSpanner.staff-padding = #'9         %! OC
                                 \set ViolinRHMusicStaff.forceClef = ##t                  %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -921,6 +922,7 @@
                                         0
                                         7
                                     }
+                                \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
                             }
                             
@@ -958,7 +960,7 @@
                                         Vn.                                              %! REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
                                 \set ViolinMusicStaff.forceClef = ##t                    %! REAPPLIED_CLEF:SM8
-                                \clef "treble"                                           %! REAPPLIED_CLEF:SM8
+                                \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                                 \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                             %F% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
@@ -1130,6 +1132,7 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                                \override DynamicLineSpanner.staff-padding = #'9         %! OC
                                 \override RepeatTie.direction = #up                      %! OC
                                 \set ViolaRHMusicStaff.forceClef = ##t                   %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
@@ -1394,6 +1397,7 @@
                                         0
                                         7
                                     }
+                                \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
                             }
                             
@@ -1430,13 +1434,13 @@
                                         #10                                              %! REAPPLIED_INSTRUMENT:SM8
                                         Va.                                              %! REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
-                                \set ViolaMusicStaff.forceClef = ##t                     %! REDUNDANT_CLEF:SM8
-                                \clef "treble"                                           %! REDUNDANT_CLEF:SM8
+                                \set ViolaMusicStaff.forceClef = ##t                     %! REAPPLIED_CLEF:SM8
+                                \clef "treble"                                           %! REAPPLIED_CLEF:SM8
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                                \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                            %F% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
-                                \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                            %F% \override ViolaMusicStaff.Clef.color = ##f               %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                                 c''2..
                                 _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                                 \glissando                                               %! SC
@@ -1496,7 +1500,7 @@
                                         Va.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                                \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
+                                \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 d'8
                                 \glissando                                               %! SC
@@ -1589,6 +1593,7 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                                \override DynamicLineSpanner.staff-padding = #'9         %! OC
                                 \set CelloRHMusicStaff.forceClef = ##t                   %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1842,6 +1847,7 @@
                                         5
                                         7
                                     }
+                                \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
                             }
                             

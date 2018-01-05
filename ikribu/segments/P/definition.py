@@ -31,7 +31,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    baca.page([239, 20, (15, 20)]),
+    baca.page([239, 20, (15, 20, 25, 20, 25, 20, 25)]),
     )
 
 maker = baca.SegmentMaker(
@@ -55,6 +55,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
+    baca.tie_next(),
     )
 
 maker(
@@ -135,6 +136,7 @@ maker(
         ('ViolaRHMusicVoice', 1, 3),
         ('CelloRHMusicVoice', 1, 3),
         ),
+    baca.dynamic_line_spanner_staff_padding(9),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
@@ -169,7 +171,6 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 3),
-    baca.clef('treble'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     )

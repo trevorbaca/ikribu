@@ -142,7 +142,7 @@
                     }                                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -915,13 +915,13 @@
                                         cl.                                              %! REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REAPPLIED_INSTRUMENT:SM8
-                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REDUNDANT_CLEF:SM8
-                        \clef "treble"                                                   %! REDUNDANT_CLEF:SM8
+                        \set BassClarinetMusicStaff.forceClef = ##t                      %! REAPPLIED_CLEF:SM8
+                        \clef "treble"                                                   %! REAPPLIED_CLEF:SM8
+                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                         \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
-                        \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink1) %! REDUNDANT_CLEF_COLOR:SM6
-                    %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! REDUNDANT_CLEF_COLOR_CANCELLATION:SM7
                         <c e''>1
                         \p                                                               %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
@@ -1007,8 +1007,8 @@
                                         cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
+                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                         \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                        \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DeepPink4) %! REDUNDANT_CLEF_REDRAW_COLOR:SM6
                         
                         % BassClarinetMusicVoice [measure 219]                           %! SM4
                         \once \override Accidental.color = #red
@@ -1328,7 +1328,7 @@
                                     Vn.                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 }                                                        %! REAPPLIED_INSTRUMENT:SM8
                             \set ViolinMusicStaff.forceClef = ##t                        %! REAPPLIED_CLEF:SM8
-                            \clef "treble"                                               %! REAPPLIED_CLEF:SM8
+                            \clef "percussion"                                           %! REAPPLIED_CLEF:SM8
                             \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolinMusicStaff.Clef.color = ##f                  %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
@@ -2016,12 +2016,8 @@
                             R1 * 3/4
                             
                             % CelloMusicVoice [measure 222]                              %! SM4
+                            \override CelloMusicStaff.OttavaBracket.staff-padding = #10  %! OC
                             \ottava #-1                                                  %! SC
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2059,58 +2055,30 @@
                             \>
                             \mp
                             \startTextSpan
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 223]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1..
                             \repeatTie
                             \p
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 224]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1..
                             \repeatTie
                             \mp
                             \>
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 225]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,\breve
                             \repeatTie
                             \p
                             \stopTextSpan
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 226]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2145,61 +2113,34 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1..
+                            \repeatTie
                             \mp
                             \>
                             \startTextSpan
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 227]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,2.
                             \repeatTie
                             \p
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 228]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,2
                             \repeatTie
                             \mp
                             \>
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 229]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,\breve
                             \repeatTie
                             \p
                             \stopTextSpan
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 230]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2234,61 +2175,34 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1..
+                            \repeatTie
                             \mp
                             \>
                             \startTextSpan
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 231]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1
                             \repeatTie
                             \p
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 232]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1
                             \repeatTie
                             \mp
                             \>
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 233]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,2.
                             \repeatTie
                             \p
                             \stopTextSpan
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 234]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2323,53 +2237,32 @@
                             \once \override TextSpanner.dash-period = 1.5
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1..
+                            \repeatTie
                             \mp
                             \>
                             \startTextSpan
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 235]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,\breve
                             \repeatTie
                             \p
                             \<
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 236]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,2.
                             \repeatTie
                             \mp
                             \>
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
                             
                             % CelloMusicVoice [measure 237]                              %! SM4
-                            \once \override Accidental.color = #red
-                            \once \override Beam.color = #red
-                            \once \override Dots.color = #red
-                            \once \override NoteHead.color = #red
-                            \once \override Stem.color = #red
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             bf,,,1
                             \repeatTie
                             \p
                             \stopTextSpan
-                            - \tweak color #red                                          %! SM14
-                            ^ \markup { @ }                                              %! SM14
+                            \revert CelloMusicStaff.OttavaBracket.staff-padding          %! OC
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 238]                              %! SM4
