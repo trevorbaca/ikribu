@@ -138,7 +138,7 @@
             %F%             \note-by-number                                              %! REDUNDANT_METRONOME_MARK:SM27
             %F%                 #2                                                       %! REDUNDANT_METRONOME_MARK:SM27
             %F%                 #0                                                       %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #1                                                       %! REDUNDANT_METRONOME_MARK:SM27
+            %F%                 #1.5                                                     %! REDUNDANT_METRONOME_MARK:SM27
             %F%     \upright                                                             %! REDUNDANT_METRONOME_MARK:SM27
             %F%         {                                                                %! REDUNDANT_METRONOME_MARK:SM27
             %F%             =                                                            %! REDUNDANT_METRONOME_MARK:SM27
@@ -166,7 +166,7 @@
                                     \note-by-number                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                         #2                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                         #0                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #1                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
+                                        #1.5                                             %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                             \upright                                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                 {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
                                     =                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
