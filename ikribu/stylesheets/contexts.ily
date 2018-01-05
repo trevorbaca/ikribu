@@ -2,7 +2,8 @@
 
 
 \layout {
-    % GLOBAL CONTEXT
+
+    % GLOBAL SKIPS
     \context {
         \name GlobalSkips
         \type Engraver_group
@@ -16,8 +17,10 @@
         \override TextScript.staff-padding = 3
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
-        \override TextSpanner.staff-padding = 4
+        \override TextSpanner.staff-padding = 8
         }
+
+    % GLOBAL RESTS
     \context {
         \name GlobalRests
         \type Engraver_group
@@ -27,10 +30,14 @@
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
         }
+
+    % PAGE LAYOUT
     \context {
         \name PageLayout
         \type Engraver_group
         }
+
+    % GLOBAL CONTEXT
     \context {
         \name GlobalContext
         \type Engraver_group
@@ -236,11 +243,13 @@
         \accepts CelloStaffGroup
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
     }
+
+    % MUSIC CONTEXT
     \context {
-        \StaffGroup
+        \ChoirStaff
         \name MusicContext
         \type Engraver_group
-        \alias StaffGroup
+        \alias ChoirStaff
         \accepts EnsembleStaffGroup
         systemStartDelimiter = #'SystemStartBar
     }
