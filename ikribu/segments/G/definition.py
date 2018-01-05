@@ -59,6 +59,7 @@ maker.validate_measures_per_stage()
 maker(
     baca.make_scopes(['BassClarinetMusicVoice'], [1, 3, 5, 7, 9, 11]),
     baca.make_tied_notes(repeat_ties=True),
+    baca.dynamic_line_spanner_staff_padding(7),
     )
 
 maker(
@@ -104,7 +105,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 12),
-    baca.clef('treble'),
     baca.glissando(),
     baca.piecewise(
         abjad.Hairpin(),

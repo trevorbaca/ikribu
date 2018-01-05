@@ -55,58 +55,58 @@
                 \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-                #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT_LAYOUT:LMM3
-            %F% \once \override TextSpanner.bound-details.left.text =                    %! REDUNDANT_METRONOME_MARK:SM27
-            %F% \markup {                                                                %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     \fontsize                                                            %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         #-6                                                              %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         \general-align                                                   %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             #Y                                                           %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             #DOWN                                                        %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             \note-by-number                                              %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #2                                                       %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #0                                                       %! REDUNDANT_METRONOME_MARK:SM27
-            %F%                 #1.5                                                     %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     \upright                                                             %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         {                                                                %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             =                                                            %! REDUNDANT_METRONOME_MARK:SM27
-            %F%             104                                                          %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         }                                                                %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     \hspace                                                              %! REDUNDANT_METRONOME_MARK:SM27
-            %F%         #1                                                               %! REDUNDANT_METRONOME_MARK:SM27
-            %F%     }                                                                    %! REDUNDANT_METRONOME_MARK:SM27 %! SM29
+                #'((Y-offset . 20) (alignment-distances . (15 20 25 20 25 20)))          %! SEGMENT_LAYOUT:LMM3
+            %F% \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK:SM27
+            %F% \markup {                                                                %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     \fontsize                                                            %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         #-6                                                              %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         \general-align                                                   %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             #Y                                                           %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             #DOWN                                                        %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             \note-by-number                                              %! REAPPLIED_METRONOME_MARK:SM27
+            %F%                 #2                                                       %! REAPPLIED_METRONOME_MARK:SM27
+            %F%                 #0                                                       %! REAPPLIED_METRONOME_MARK:SM27
+            %F%                 #1.5                                                     %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     \upright                                                             %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         {                                                                %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             =                                                            %! REAPPLIED_METRONOME_MARK:SM27
+            %F%             104                                                          %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         }                                                                %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     \hspace                                                              %! REAPPLIED_METRONOME_MARK:SM27
+            %F%         #1                                                               %! REAPPLIED_METRONOME_MARK:SM27
+            %F%     }                                                                    %! REAPPLIED_METRONOME_MARK:SM27 %! SM29
                 \once \override TextSpanner.Y-extent = ##f                               %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = ##f         %! SM29
                 \once \override TextSpanner.bound-details.left-broken.text = \markup {
                     \null
                     }                                                                    %! SM29
                 \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29
-                \once \override TextSpanner.bound-details.left.text =                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                \markup {                                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    \with-color                                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        #(x11-color 'DeepPink1)                                          %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        {                                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            \fontsize                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                #-6                                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                \general-align                                           %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    #Y                                                   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    #DOWN                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    \note-by-number                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #2                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #0                                               %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                        #1.5                                             %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            \upright                                                     %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                {                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    =                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                    104                                                  %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                }                                                        %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                            \hspace                                                      %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                                #1                                                       %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                        }                                                                %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                                    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
+                \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                \markup {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                    \with-color                                                          %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                        #(x11-color 'green4)                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                        {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                            \fontsize                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                #-6                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                \general-align                                           %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    #Y                                                   %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    #DOWN                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    \note-by-number                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                        #2                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                        #0                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                        #1.5                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                            \upright                                                     %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                {                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    =                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                    104                                                  %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                }                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                            \hspace                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                                #1                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                        }                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+                    }                                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
                 \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
                 \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
-                \once \override TextSpanner.bound-details.right.padding = 1              %! SM29
+                \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -548,6 +548,7 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                                \override DynamicLineSpanner.staff-padding = #'10        %! OC
                                 \set ViolinRHMusicStaff.forceClef = ##t                  %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -981,6 +982,7 @@
                             \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
                             
                         }
                     }
@@ -1213,6 +1215,7 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                                \override DynamicLineSpanner.staff-padding = #'10        %! OC
                                 \override RepeatTie.direction = #up                      %! OC
                                 \set ViolaRHMusicStaff.forceClef = ##t                   %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
@@ -1659,6 +1662,7 @@
                             \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
                             
                         }
                     }
@@ -1680,13 +1684,13 @@
                                         #10                                              %! REAPPLIED_INSTRUMENT:SM8
                                         Va.                                              %! REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REAPPLIED_INSTRUMENT:SM8
-                                \set ViolaMusicStaff.forceClef = ##t                     %! EXPLICIT_CLEF:SM8
-                                \clef "treble"                                           %! EXPLICIT_CLEF:SM8
+                                \set ViolaMusicStaff.forceClef = ##t                     %! REAPPLIED_CLEF:SM8
+                                \clef "treble"                                           %! REAPPLIED_CLEF:SM8
                                 \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                                \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                            %F% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
                                 \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
-                                \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
-                            %F% \override ViolaMusicStaff.Clef.color = ##f               %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                                 c''2..
                                 _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                                 \glissando                                               %! SC
@@ -1746,7 +1750,7 @@
                                         Va.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                                \override ViolaMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:SM6
+                                \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 d'1
                                 \glissando                                               %! SC

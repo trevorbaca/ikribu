@@ -29,7 +29,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    baca.page([208, 20, (15, 20)]),
+    baca.page([208, 20, (15, 20, 25, 20, 25, 20, 25)]),
     )
 
 maker = baca.SegmentMaker(
@@ -161,4 +161,13 @@ maker(
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
+    )
+
+maker(
+    baca.scopes(
+        ('ViolinRHMusicVoice', 1, abjad.Infinity),
+        ('ViolaRHMusicVoice', 1, abjad.Infinity),
+        ('CelloRHMusicVoice', 1, abjad.Infinity),
+        ),
+    baca.dynamic_line_spanner_staff_padding(9),
     )
