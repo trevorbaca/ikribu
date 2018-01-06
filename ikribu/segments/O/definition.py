@@ -150,6 +150,11 @@ maker(
     )
 
 maker(
+    baca.scope('BassClarinetMusicVoice', 1, abjad.Infinity),
+    baca.tie(selector=baca.pleaves(), repeat=True)
+    )
+
+maker(
     baca.scope('ViolinMusicVoice', 9, 20),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),

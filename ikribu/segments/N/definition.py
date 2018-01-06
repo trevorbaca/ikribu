@@ -112,6 +112,11 @@ maker(
     )
 
 maker(
+    baca.scope('BassClarinetMusicVoice', 1, 2),
+    baca.tie(repeat=True, selector=baca.tleaves())
+    )
+
+maker(
     baca.scopes(
         ('ViolinRHMusicVoice', 1, 2),
         ('ViolaRHMusicVoice', 1, 2),
