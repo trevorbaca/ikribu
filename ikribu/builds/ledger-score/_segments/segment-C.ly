@@ -6,10 +6,7 @@
         \context GlobalSkips = "GlobalSkips" {
             
             % GlobalSkips [measure 35]                                               %! SM4
-            \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-            #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT_LAYOUT:LMM3
+            %%% \autoPageBreaksOff                                                   %! SEGMENT_LAYOUT:LMM1
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -65,11 +62,11 @@
             \once \override TextSpanner.dash-period = 0                              %! SM29
             \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \mark #3                                                                 %! SM9
-        %%% \bar ""                                                                  %! EMPTY_START_BAR:SM2
+        %%% \bar ""                                                                  %! SEGMENT_EMPTY_START_BAR:SM2
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
-            \pageBreak                                                               %! SEGMENT_LAYOUT:LMM3
+        %%% \pageBreak                                                               %! SEGMENT_LAYOUT:LMM3
             s1 * 7/4
             \startTextSpan                                                           %! SM29
             ^ \markup {
@@ -101,7 +98,7 @@
                 }
             
             % GlobalSkips [measure 36]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -195,7 +192,7 @@
                 }
             
             % GlobalSkips [measure 37]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
@@ -229,7 +226,7 @@
                 }
             
             % GlobalSkips [measure 38]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -319,7 +316,7 @@
                 }
             
             % GlobalSkips [measure 39]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
@@ -354,7 +351,7 @@
                 }
             
             % GlobalSkips [measure 40]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -448,7 +445,7 @@
                 }
             
             % GlobalSkips [measure 41]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
@@ -482,7 +479,7 @@
                 }
             
             % GlobalSkips [measure 42]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -572,7 +569,7 @@
                 }
             
             % GlobalSkips [measure 43]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
@@ -607,7 +604,7 @@
                 }
             
             % GlobalSkips [measure 44]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -701,7 +698,7 @@
                 }
             
             % GlobalSkips [measure 45]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
@@ -735,7 +732,7 @@
                 }
             
             % GlobalSkips [measure 46]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -825,7 +822,7 @@
                 }
             
             % GlobalSkips [measure 47]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
@@ -860,9 +857,8 @@
                 }
             
             % GlobalSkips [measure 48]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-            #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! SEGMENT_LAYOUT:LMM3
+            %%% \noBreak                                                             %! SEGMENT_LAYOUT:LMM2
+        %%% #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! SEGMENT_LAYOUT:LMM3
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -924,7 +920,7 @@
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
-            \break                                                                   %! SEGMENT_LAYOUT:LMM3
+        %%% \break                                                                   %! SEGMENT_LAYOUT:LMM3
             s1 * 1
             \stopTextSpan                                                            %! SM29
             \startTextSpan                                                           %! SM29
@@ -957,7 +953,7 @@
                 }
             
             % GlobalSkips [measure 49]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
@@ -991,7 +987,7 @@
                 }
             
             % GlobalSkips [measure 50]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
         %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -1081,7 +1077,7 @@
                 }
             
             % GlobalSkips [measure 51]                                               %! SM4
-            \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1

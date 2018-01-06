@@ -9,9 +9,9 @@
 
 \score {
     <<
-        %{
-        %\include "layout.ly"
-        %}
+        {
+        \include "layout.ly"
+        }
         {
         \include "_segments/segment-_.ly"
         \include "_segments/segment-A.ly"
