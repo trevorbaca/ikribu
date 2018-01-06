@@ -785,8 +785,8 @@
                     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                     \startStaff                                                      %! SM20
                     R1 * 1/4
-                %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
-                %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
+                    \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22%F%
+                    \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22%F%
                     
                     % BassClarinetMusicVoice [measure 125]                           %! SM4
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6

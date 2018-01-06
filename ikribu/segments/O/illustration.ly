@@ -1092,8 +1092,8 @@
                         \!
                         \once \override Score.BarLine.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                         \once \override Score.SpanBar.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
                         
                     }
                 }

@@ -1837,8 +1837,8 @@
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
                         \!
-                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 181]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -1932,8 +1932,8 @@
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
                         \!
-                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 194]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -2009,8 +2009,8 @@
                         R1 * 1/4
                         \once \override Score.BarLine.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                         \once \override Score.SpanBar.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
                         
                     }
                 }
