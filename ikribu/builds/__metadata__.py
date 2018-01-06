@@ -4,7 +4,7 @@ import abjad
 metadata = abjad.TypedOrderedDict(
     [
         (
-            'ledger',
+            'ledger-score',
             abjad.TypedOrderedDict(
                 [
                     (
