@@ -55,7 +55,6 @@ maker.validate_measures_per_stage()
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
     baca.make_tied_notes(repeat_ties=True),
-    baca.tie_next(),
     )
 
 maker(
@@ -117,11 +116,12 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 3, 4),
+    baca.glissando(),
     baca.pitches(
         'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1',
         exact=True,
         ),
-    baca.glissando(),
+    baca.tie_to(),
     )
 
 maker(
