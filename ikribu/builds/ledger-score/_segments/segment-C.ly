@@ -1244,7 +1244,7 @@
                     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                     \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                     \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
-                    \once \override DynamicText.X-extent = ##f                       %! OC
+                    \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                     \override RepeatTie.direction = #up                              %! OC
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
