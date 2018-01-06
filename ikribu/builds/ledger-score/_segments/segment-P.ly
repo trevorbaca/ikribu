@@ -430,11 +430,6 @@
                     \stopStaff                                                       %! REAPPLIED_STAFF_LINES:SM8
                     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                     \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Stem.color = #red
                     \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                         \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                             #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -521,10 +516,6 @@
                                                     }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                             }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                \line                                                %! SM14
-                                    {                                                %! SM14
-                                        @                                            %! SM14
-                                    }                                                %! SM14
                             }
                         }
                     \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -549,52 +540,25 @@
                     \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                     
                     % BassClarinetMusicVoice [measure 240]                           %! SM4
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Stem.color = #red
                     c'''2
-                    \repeatTie
-                    - \tweak color #red                                              %! SM14
-                    ^ \markup { @ }                                                  %! SM14
+                    \repeatTie                                                       %! TCC
                     
                     % BassClarinetMusicVoice [measure 241]                           %! SM4
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Stem.color = #red
                     c'''1..
-                    \repeatTie
-                    - \tweak color #red                                              %! SM14
-                    ^ \markup { @ }                                                  %! SM14
+                    \repeatTie                                                       %! TCC
                     
                     % BassClarinetMusicVoice [measure 242]                           %! SM4
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Stem.color = #red
                     c'''1..
-                    \repeatTie
-                    - \tweak color #red                                              %! SM14
-                    ^ \markup { @ }                                                  %! SM14
+                    \repeatTie                                                       %! TCC
                     
                     % BassClarinetMusicVoice [measure 243]                           %! SM4
                     \once \override Hairpin.circled-tip = ##t
-                    \once \override Accidental.color = #red
-                    \once \override Beam.color = #red
-                    \once \override Dots.color = #red
-                    \once \override NoteHead.color = #red
-                    \once \override Stem.color = #red
                     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     c'''4
+                    \repeatTie                                                       %! TCC
                     \glissando                                                       %! SC
                     \>
                     \mf
-                    - \tweak color #red                                              %! SM14
-                    ^ \markup { @ }                                                  %! SM14
                     
                     a''4
                     \glissando                                                       %! SC
