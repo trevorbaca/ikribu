@@ -210,7 +210,7 @@
             \once \override TextSpanner.dash-period = 1.5                            %! SM29
             \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \mark #13                                                                %! SM9
-        %%% \bar ""                                                                  %! EMPTY_START_BAR:SM2
+        %%% \bar ""                                                                  %! SEGMENT_EMPTY_START_BAR:SM2
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1

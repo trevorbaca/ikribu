@@ -12,12 +12,12 @@
         \consists Text_engraver
         \consists Text_spanner_engraver
         \override StaffSymbol.stencil = ##f
-        \override TextScript.font-size = 6
-        \override TextScript.outside-staff-priority = 600
-        \override TextScript.staff-padding = 3
-        \override TextSpanner.bound-details.right.attach-dir = #LEFT
+        %\override TextScript.font-size = 6
+        %\override TextScript.outside-staff-priority = 600
+        %\override TextScript.staff-padding = 3
+        \override TextSpanner.bound-details.right.attach-dir = #left
         \override TextSpanner.font-size = 6
-        \override TextSpanner.staff-padding = 8
+        \override TextSpanner.staff-padding = 6
         }
 
     % GLOBAL RESTS
@@ -48,20 +48,24 @@
         \accepts GlobalSkips
         \accepts GlobalRests
         \accepts PageLayout
-        \override BarNumber.extra-offset = #'(-4 . -4)
+        \override BarNumber.X-offset = -8
+        \override BarNumber.Y-offset = -0.5
         \override BarNumber.font-size = 1
-        \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-extent = #'(0 . 0)
+        \override RehearsalMark.padding = 4
+        % rehearsal marks (right) align with time signatures:
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
+        \override RehearsalMark.extra-offset = #'(1.25 . 0)
         \override RehearsalMark.font-name = "Didot"
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 200
-        \override RehearsalMark.self-alignment-X = #center
+        %\override RehearsalMark.self-alignment-X = #left
+        \override RehearsalMark.self-alignment-X = #right
         % prevents StaffSymbol from starting too early after cut-away measures:
-        %\override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.X-extent = ##f
-        \override TimeSignature.break-align-symbol = #'left-edge
+        %\override TimeSignature.break-align-symbol = #'left-edge
+        % makes rehearsal (and other) marks right align to time signatures:
+        %\override TimeSignature.break-align-anchor-alignment = #right
         \override TimeSignature.break-visibility = #end-of-line-invisible
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
