@@ -52,7 +52,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 layout_measure_map = baca.layout(
     baca.page(
         [35, 20, (15, 20)],
-        [48, 140, (15, 20)],
+        #[48, 140, (15, 20)],
         ),
     )
 
@@ -108,6 +108,9 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 2, 17),
+    baca.bar_extent((-2, 2)),
+    baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
+    baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     baca.dynamic_text_extra_offset((-3.5, 0)),
     baca.dynamic_text_x_extent_zero(),
     baca.effort_dynamic('mf'),
@@ -120,6 +123,8 @@ maker(
     baca.scope('BassClarinetMusicVoice', 2, 3),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
+    baca.text_script_padding(3),
+    baca.text_script_extra_offset((1, 0)),
     )
 
 maker(
@@ -128,7 +133,7 @@ maker(
     baca.markup.boxed('grainfall (II)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
-    baca.text_script_staff_padding(4.5),
+    baca.text_script_padding(2.5),
     )
 
 maker(
@@ -136,6 +141,7 @@ maker(
     baca.clef('treble'),
     baca.clef_x_extent_false(),
     baca.clef_extra_offset((-2.5, 0)),
+    baca.dynamic_line_spanner_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -145,12 +151,14 @@ maker(
     baca.pitches('F#4 G#4 G#4 F#4'),
     baca.staff_lines(5),
     baca.stem_tremolo(),
+    baca.text_script_staff_padding(2.5),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', 2, 16),
     baca.clef_x_extent_false(),
     baca.clef_extra_offset((-2.5, 0)),
+    baca.dynamic_line_spanner_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -159,6 +167,7 @@ maker(
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
     baca.stem_tremolo(),
+    baca.text_script_staff_padding(2.5),
     )
 
 maker(
@@ -173,12 +182,13 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 2, 16),
+    baca.dynamic_line_spanner_staff_padding(7),
+    baca.glissando(),
+    baca.natural_harmonics(),
     baca.pitches(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,
         ),
-    baca.glissando(),
-    baca.natural_harmonics(),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics('ppp pp'),
@@ -190,5 +200,15 @@ maker(
         baca.markup('trem. flaut. tasto. (arco)'),
         baca.markup('trem. flaut. XP'),
         ),
+    baca.text_spanner_staff_padding(3.5),
     baca.tuplet_brackets_down(),
+    )
+
+maker(
+    baca.scopes(
+        ('GlobalSkips', 5),
+        ('GlobalSkips', 9),
+        ('GlobalSkips', 13),
+        ),
+    baca.spacing((1, 24)),
     )
