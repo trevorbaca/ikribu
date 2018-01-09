@@ -11,10 +11,20 @@
         \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
+
         \override StaffSymbol.stencil = ##f
-        %\override TextScript.font-size = 6
-        %\override TextScript.outside-staff-priority = 600
-        %\override TextScript.staff-padding = 3
+        \override TextScript.X-extent = #'(0 . 0)
+        \override TextScript.Y-extent = #'(0 . 0)
+        %\override TextScript.Y-offset = 20
+        %\override TextScript.extra-offset = #'(0 . 10)
+        \override TextScript.extra-spacing-height = #'(+inf.0 . -inf.0)
+        \override TextScript.extra-spacing-width = #'(+inf.0 . -inf.0)
+
+        \override TextScript.outside-staff-horizontal-padding = -10
+        \override TextScript.outside-staff-padding = 0
+        \override TextScript.padding = 0 
+        \override TextScript.side-axis = 1 
+
         \override TextSpanner.bound-details.right.attach-dir = #left
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 6

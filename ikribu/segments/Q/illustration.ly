@@ -148,9 +148,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (7/120)                                      %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (7/120)                                  %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -175,9 +176,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/18)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/18)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -202,9 +204,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/16)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -237,9 +240,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (3/56)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (3/56)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -264,9 +268,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/24)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -294,9 +299,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/16)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -329,9 +335,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (7/120)                                      %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (7/120)                                  %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -356,9 +363,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/20)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/20)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -382,9 +390,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/16)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -417,9 +426,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (3/56)                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (3/56)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -444,9 +454,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (7/128)                                      %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (7/128)                                  %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
@@ -474,9 +485,10 @@
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \fontsize                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 #-3                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 (1/4)                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/4)                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
