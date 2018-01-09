@@ -43,7 +43,10 @@
         \context GlobalSkips = "GlobalSkips" {
             
             % GlobalSkips [measure 99]                                               %! SM4
-            %%% \autoPageBreaksOff                                                   %! SEGMENT_LAYOUT:LMM1
+        %%% \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
+        %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+        %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
+        %%% #'((Y-offset . 20) (alignment-distances . (15 20 25 20 25 20)))          %! SEGMENT_LAYOUT:LMM3
         %F% \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK:SM27
         %F% \markup {                                                                %! REAPPLIED_METRONOME_MARK:SM27
         %F%     \fontsize                                                            %! REAPPLIED_METRONOME_MARK:SM27
@@ -69,29 +72,29 @@
                 \null
                 }                                                                    %! SM29
             \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29
-            \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-            \markup {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                \with-color                                                          %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                    #(x11-color 'green4)                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                    {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                        \fontsize                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            #-6                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            \general-align                                           %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                #Y                                                   %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                #DOWN                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                \note-by-number                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    #2                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    #0                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                    #1.5                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                        \upright                                                     %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            {                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                =                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                                104                                                  %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            }                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                        \hspace                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                            #1                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                    }                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
-                }                                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
+        %%% \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%% \markup {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%     \with-color                                                          %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%         #(x11-color 'green4)                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%         {                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%             \fontsize                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                 #-6                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                 \general-align                                           %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                     #Y                                                   %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                     #DOWN                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                     \note-by-number                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                         #2                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                         #0                                               %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                         #1.5                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%             \upright                                                     %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                 {                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                     =                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                     104                                                  %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                 }                                                        %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%             \hspace                                                      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%                 #1                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%         }                                                                %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15
+        %%%     }                                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:SM15 %! SM29
             \once \override TextSpanner.bound-details.right-broken.padding = 0       %! SM29
             \once \override TextSpanner.bound-details.right-broken.text = ##f        %! SM29
             \once \override TextSpanner.bound-details.right.padding = 0              %! SM29
@@ -100,7 +103,7 @@
             \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \mark #8                                                                 %! SM9
         %%% \bar ""                                                                  %! SEGMENT_EMPTY_START_BAR:SM2
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
         %%% \pageBreak                                                               %! SEGMENT_LAYOUT:LMM3
@@ -137,7 +140,7 @@
             % GlobalSkips [measure 100]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 7/4
@@ -163,7 +166,7 @@
             
             % GlobalSkips [measure 101]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
-            \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 7 120)        %! SEGMENT_SPACING:HSS1
             s1 * 7/4
@@ -190,7 +193,7 @@
             % GlobalSkips [measure 102]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 3/4
@@ -217,7 +220,7 @@
             % GlobalSkips [measure 103]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 1/2
@@ -252,7 +255,7 @@
             % GlobalSkips [measure 104]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
             s1 * 7/4
@@ -279,7 +282,7 @@
             % GlobalSkips [measure 105]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 2
@@ -306,7 +309,7 @@
             % GlobalSkips [measure 106]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 1
@@ -333,7 +336,7 @@
             % GlobalSkips [measure 107]                                              %! SM4
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-            \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+        %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
             \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
             s1 * 1/4
@@ -394,11 +397,11 @@
                         }                                                            %! REAPPLIED_INSTRUMENT:SM8
                     \set BassClarinetMusicStaff.forceClef = ##t                      %! REAPPLIED_CLEF:SM8
                     \clef "treble"                                                   %! REAPPLIED_CLEF:SM8
-                    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                %%% \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                 %F% \override BassClarinetMusicStaff.Clef.color = ##f                %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                %%% \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                %%% \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                %%% \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                     ef\breve
                     \ppp                                                             %! EXPLICIT_DYNAMIC:SM8
                     ^ \markup {
@@ -430,36 +433,36 @@
                             %F%                     )                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
                             %F%             }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                             %F%     }                                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                \line                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    {                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            #(x11-color 'green4)                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    (“BassClarinet”                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        #16                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \center-column               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Bass                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                clarinet             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \concat                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #10                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \line                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    {                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        B.           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        cl.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    }                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            )                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                    }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%% \line                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%     {                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%         \with-color                                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%             #(x11-color 'green4)                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%             {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                 \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                     (“BassClarinet”                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                 \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                     \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                         #16                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                         \center-column               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                             {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                 Bass                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                 clarinet             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                             }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                 \concat                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                     {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                         \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                             \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                 #10                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                 \line                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                     {                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                         B.           %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                         cl.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                                     }                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                         \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                             )                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%                     }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%             }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                            %%%     }                                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                             }
                         }
                     \set BassClarinetMusicStaff.instrumentName = \markup {           %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -480,8 +483,8 @@
                                     cl.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                         }                                                            %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                    \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-                    \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                %%% \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                %%% \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                     
                     % BassClarinetMusicVoice [measure 100]                           %! SM4
                     ef1..
@@ -520,8 +523,8 @@
                     R1 * 1/4
                 %%% \once \override Score.BarLine.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                 %%% \once \override Score.SpanBar.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
-                    \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22%F%
-                    \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22%F%
+                    \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22 %F%
+                    \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22 %F%
                     
                 }
             }
@@ -539,14 +542,14 @@
                             \override DynamicLineSpanner.staff-padding = #'10        %! OC
                             \set ViolinRHMusicStaff.forceClef = ##t                  %! REAPPLIED_CLEF:SM8
                             \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
-                            \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolinRHMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                        %%% \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                             r4
-                            \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                        %%% \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             \override RepeatTie.direction = #up                      %! OC
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \>
                             \ff
@@ -578,7 +581,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \<
@@ -602,7 +605,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             \>
@@ -615,7 +618,7 @@
                         {
                             
                             % ViolinRHMusicVoice [measure 100]                       %! SM4
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             ^ \markup {
@@ -626,7 +629,7 @@
                             
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             \<
@@ -643,7 +646,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             ^ \markup {
@@ -654,7 +657,7 @@
                             
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \>
@@ -675,7 +678,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             \<
@@ -699,7 +702,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             \>
@@ -709,7 +712,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             ^ \markup {
@@ -720,7 +723,7 @@
                             
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \<
@@ -741,7 +744,7 @@
                                     4
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             ^ \markup {
@@ -752,7 +755,7 @@
                             
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             \>
@@ -772,7 +775,7 @@
                         {
                             
                             % ViolinRHMusicVoice [measure 103]                       %! SM4
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             \<
@@ -799,7 +802,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \>
@@ -809,7 +812,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             ^ \markup {
@@ -820,7 +823,7 @@
                             
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             \<
@@ -837,7 +840,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             ^ \markup {
@@ -851,7 +854,7 @@
                             % ViolinRHMusicVoice [measure 105]                       %! SM4
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             \>
@@ -868,7 +871,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \<
@@ -892,7 +895,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             \>
@@ -902,7 +905,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             ^ \markup {
@@ -916,7 +919,7 @@
                         \times 4/6 {
                             
                             % ViolinRHMusicVoice [measure 106]                       %! SM4
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             \<
@@ -933,7 +936,7 @@
                                     7
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             ^ \markup {
@@ -944,7 +947,7 @@
                             
                             r4
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \>
@@ -954,7 +957,7 @@
                                     4
                                 }
                             
-                            \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             ^ \markup {
@@ -994,13 +997,13 @@
                                 }                                                    %! REAPPLIED_INSTRUMENT:SM8
                             \set ViolinMusicStaff.forceClef = ##t                    %! REAPPLIED_CLEF:SM8
                             \clef "treble"                                           %! REAPPLIED_CLEF:SM8
-                            \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        %%% \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolinMusicStaff.Clef.color = ##f              %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                        %%% \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c''8
-                            _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
+                        %%% _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                             \glissando                                               %! SC
                             [
                             ^ \markup {
@@ -1024,28 +1027,28 @@
                                     %F%                     )                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %F%             }                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %F%     }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                        \line                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Violin”                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Violin               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Vn.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%         \with-color                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%             #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%             {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                 \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     (“Violin”                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                 \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         #16                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         Violin               %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                 \concat                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                             \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                                 #10          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                                 Vn.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                             )                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%             }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%     }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     }
                                 }
                             \set ViolinStaffGroup.instrumentName = \markup {         %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1058,8 +1061,8 @@
                                     #10                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     Vn.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                        %%% \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                        %%% \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             b''8.
                             \glissando                                               %! SC
@@ -1207,10 +1210,10 @@
                             \override RepeatTie.direction = #up                      %! OC
                             \set ViolaRHMusicStaff.forceClef = ##t                   %! REAPPLIED_CLEF:SM8
                             \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
-                            \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolaRHMusicStaff.Clef.color = ##f             %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \>
                             \ff
@@ -1234,7 +1237,7 @@
                                             }
                                     }
                                 }
-                            \override ViolaRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                        %%% \override ViolaRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             c'4
                             ^ \markup {
@@ -1243,7 +1246,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \<
@@ -1253,7 +1256,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             ^ \markup {
@@ -1264,7 +1267,7 @@
                             
                             r4
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             \>
@@ -1281,7 +1284,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             \<
@@ -1309,7 +1312,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \>
@@ -1326,7 +1329,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             \<
@@ -1336,7 +1339,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             ^ \markup {
@@ -1347,7 +1350,7 @@
                             
                             r4
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             \>
@@ -1368,7 +1371,7 @@
                                     4
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \<
@@ -1385,7 +1388,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             ^ \markup {
@@ -1396,7 +1399,7 @@
                             
                             r4
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             \>
@@ -1413,7 +1416,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             \<
@@ -1441,7 +1444,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \>
@@ -1461,7 +1464,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             \<
@@ -1475,7 +1478,7 @@
                         \times 7/8 {
                             
                             % ViolaRHMusicVoice [measure 104]                        %! SM4
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             ^ \markup {
@@ -1486,7 +1489,7 @@
                             
                             r4
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             \>
@@ -1503,7 +1506,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \<
@@ -1520,7 +1523,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             ^ \markup {
@@ -1534,7 +1537,7 @@
                         \times 8/10 {
                             
                             % ViolaRHMusicVoice [measure 105]                        %! SM4
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \f
                             \>
@@ -1551,7 +1554,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \pp
                             \<
@@ -1575,7 +1578,7 @@
                                     4
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             \>
@@ -1592,7 +1595,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ppp
                             \<
@@ -1602,7 +1605,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             ^ \markup {
@@ -1617,7 +1620,7 @@
                         \times 4/3 {
                             
                             % ViolaRHMusicVoice [measure 106]                        %! SM4
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \ff
                             \>
@@ -1634,7 +1637,7 @@
                                     7
                                 }
                             
-                            \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             c'4
                             \p
                             ^ \markup {
@@ -1674,13 +1677,13 @@
                                 }                                                    %! REAPPLIED_INSTRUMENT:SM8
                             \set ViolaMusicStaff.forceClef = ##t                     %! REAPPLIED_CLEF:SM8
                             \clef "treble"                                           %! REAPPLIED_CLEF:SM8
-                            \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                        %%% \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                        %%% \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                         %F% \override ViolaMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                            \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                            \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                        %%% \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                        %%% \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                             c''2..
-                            _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
+                        %%% _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! REAPPLIED_DYNAMIC:SM8
                             \glissando                                               %! SC
                             ^ \markup {
                                 \column
@@ -1703,28 +1706,28 @@
                                     %F%                     )                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %F%             }                                %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                     %F%     }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                        \line                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                \with-color                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            (“Viola”                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                #16                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                Viola                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \concat                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        #10          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                        Va.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    )                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%% \line                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%     {                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%         \with-color                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%             #(x11-color 'green4)             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%             {                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                 \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     (“Viola”                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                 \vcenter                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     \hcenter-in              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         #16                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         Viola                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                 \concat                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     {                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                             \hcenter-in      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                                 #10          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                                 Va.          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                         \vcenter             %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                             )                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%                     }                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%             }                                %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                    %%%     }                                        %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                     }
                                 }
                             \set ViolaStaffGroup.instrumentName = \markup {          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1737,8 +1740,8 @@
                                     #10                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                     Va.                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                            \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                            \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                        %%% \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                        %%% \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             d'1
                             \glissando                                               %! SC
@@ -1873,13 +1876,13 @@
                         \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
                         \set CelloRHMusicStaff.forceClef = ##t                       %! REAPPLIED_CLEF:SM8
                         \clef "percussion"                                           %! REAPPLIED_CLEF:SM8
-                        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                    %%% \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                     %F% \override CelloRHMusicStaff.Clef.color = ##f                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                    %%% \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                    %%% \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         R1 * 2
-                        \pp                                                          %! REAPPLIED_DYNAMIC:SM8
-                        \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                    %%% \pp                                                          %! REAPPLIED_DYNAMIC:SM8
+                    %%% \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                         
                         % CelloRHMusicVoice [measure 100]                            %! SM4
                         R1 * 7/4
@@ -1929,13 +1932,13 @@
                             }                                                        %! REAPPLIED_INSTRUMENT:SM8
                         \set CelloMusicStaff.forceClef = ##t                         %! REAPPLIED_CLEF:SM8
                         \clef "treble"                                               %! REAPPLIED_CLEF:SM8
-                        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
-                        \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
+                    %%% \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
+                    %%% \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
                     %F% \override CelloMusicStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-                        \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
-                        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
+                    %%% \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
+                    %%% \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                         R1 * 2
-                        \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
+                    %%% \ppp                                                         %! REAPPLIED_DYNAMIC:SM8
                         ^ \markup {
                             \column
                                 {
@@ -1957,28 +1960,28 @@
                                 %F%                     )                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                 %F%             }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM10
                                 %F%     }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM10
-                                    \line                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        {                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                            \with-color                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                #(x11-color 'green4)                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                {                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        (“Cello”                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        \hcenter-in                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            #16                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            Cello                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                    \concat                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        {                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                \hcenter-in          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    #10              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                    Vc.              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                            \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                                )                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                        }                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                                }                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
-                                        }                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%% \line                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%     {                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%         \with-color                              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%             #(x11-color 'green4)                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%             {                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                     (“Cello”                     %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                 \vcenter                         %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                     \hcenter-in                  %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                         #16                      %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                         Cello                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                 \concat                          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                     {                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                         \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                             \hcenter-in          %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                                 #10              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                                 Vc.              %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                         \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                             )                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%                     }                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%             }                                    %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
+                                %%%     }                                            %! REAPPLIED_INSTRUMENT_ALERT_WITH_COLOR:SM11
                                 }
                             }
                         \set CelloStaffGroup.instrumentName = \markup {              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1991,8 +1994,8 @@
                                 #10                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 Vc.                                                  %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                             }                                                        %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
-                        \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
-                        \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
+                    %%% \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
+                    %%% \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                         
                         % CelloMusicVoice [measure 100]                              %! SM4
                         R1 * 7/4
