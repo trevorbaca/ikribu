@@ -98,17 +98,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [1]                                          %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             0'00''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -118,6 +112,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             0'00''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -135,7 +135,7 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [2]                                          %! STAGE_NUMBER_MARKUP:SM3

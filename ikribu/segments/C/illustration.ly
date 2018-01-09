@@ -87,17 +87,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.1]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             2'56''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -107,6 +101,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             2'56''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -182,17 +182,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.2]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'03''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -202,6 +196,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'03''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -217,17 +217,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.3]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'08''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -237,6 +231,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'08''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -308,17 +308,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.4]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'14''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -328,12 +322,18 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'14''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
                 % GlobalSkips [measure 39]                                               %! SM4
-                \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \newSpacingSection                                                       %! SEGMENT_SPACING_OVERRIDE:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -344,26 +344,26 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.5]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'DeepPink1)                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \bold                                            %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     #3                                       %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
                         %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
                         %%%             3'17''                                           %! CLOCK_TIME_MARKUP:SM28
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
                 
@@ -439,17 +439,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'18''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -459,6 +453,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'18''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -474,17 +474,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.7]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'22''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -494,6 +488,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'22''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -565,17 +565,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.8]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'26''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -585,12 +579,18 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'26''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
                 % GlobalSkips [measure 43]                                               %! SM4
-                \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \newSpacingSection                                                       %! SEGMENT_SPACING_OVERRIDE:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -601,26 +601,26 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.9]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'DeepPink1)                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \bold                                            %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     #3                                       %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
                         %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
                         %%%             3'31''                                           %! CLOCK_TIME_MARKUP:SM28
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
                 
@@ -696,17 +696,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.10]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'31''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -716,6 +710,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'31''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -731,17 +731,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.11]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'37''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -751,6 +745,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'37''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -822,17 +822,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.12]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'43''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -842,12 +836,18 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'43''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
                 % GlobalSkips [measure 47]                                               %! SM4
-                \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \newSpacingSection                                                       %! SEGMENT_SPACING_OVERRIDE:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -858,26 +858,26 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.13]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
+                        %%% \line                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'DeepPink1)                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \bold                                            %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     #3                                       %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
                         %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
                         %%%             3'46''                                           %! CLOCK_TIME_MARKUP:SM28
                         %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         }
                     }
                 
@@ -885,8 +885,6 @@
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-                #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! SEGMENT_LAYOUT:LMM3
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -946,7 +944,6 @@
                 \once \override TextSpanner.dash-period = 1.5                            %! SM29
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                \break                                                                   %! SEGMENT_LAYOUT:LMM3
                 s1 * 1
                 \stopTextSpan                                                            %! SM29
                 \startTextSpan                                                           %! SM29
@@ -956,17 +953,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.14]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'47''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -976,6 +967,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'47''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -991,17 +988,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.15]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'51''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -1011,6 +1002,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'51''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -1082,17 +1079,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.16]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'55''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -1102,6 +1093,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'55''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 
@@ -1119,17 +1116,11 @@
                         %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                        %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                        %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                         %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.17]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                        %%%             3'59''                                           %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -1139,6 +1130,12 @@
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                        %%%             3'59''                                           %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                         }
                     }
                 \override Score.BarLine.transparent = ##f                                %! SM5
@@ -1269,9 +1266,12 @@
                         \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
+                        \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC
                         \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
                         \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \override RepeatTie.direction = #up                              %! OC
+                        \override TextScript.padding = #3                                %! OC
+                        \override TextScript.extra-offset = #'(1 . 0)                    %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         b'4
@@ -1299,6 +1299,7 @@
                                                     "π/2 every quarter note"             %! IC
                                                 }                                        %! IC
                             }                                                            %! IC
+                        \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0)  %! OC
                         
                         b'4
                         \repeatTie
@@ -1322,6 +1323,8 @@
                         b'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
+                        \revert TextScript.padding                                       %! OC
+                        \revert TextScript.extra-offset                                  %! OC
                         
                         % BassClarinetMusicVoice [measure 38]                            %! SM4
                         R1 * 3/4
@@ -1422,6 +1425,8 @@
                         
                         % BassClarinetMusicVoice [measure 51]                            %! SM4
                         R1 * 1/6
+                        \revert BassClarinetMusicStaff.BarLine.bar-extent                %! OC
+                        \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
                         
                     }
                 }
@@ -1511,7 +1516,7 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                            \once \override TextScript.staff-padding = #4.5              %! OC
+                            \once \override TextScript.padding = #2.5                    %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1615,6 +1620,8 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! OC
                             \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \override DynamicLineSpanner.staff-padding = #'3             %! OC
+                            \override TextScript.staff-padding = #2.5                    %! OC
                             \set ViolinMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -1701,6 +1708,8 @@
                             fs'2.
                             :32                                                          %! IC
                             \pp
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.staff-padding                             %! OC
                             
                             % ViolinMusicVoice [measure 51]                              %! SM4
                             R1 * 1/6
@@ -1874,6 +1883,8 @@
                             % ViolaMusicVoice [measure 36]                               %! SM4
                             \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! OC
                             \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \override DynamicLineSpanner.staff-padding = #'3             %! OC
+                            \override TextScript.staff-padding = #2.5                    %! OC
                             R1 * 1
                             
                             % ViolaMusicVoice [measure 37]                               %! SM4
@@ -1954,6 +1965,8 @@
                             f'2.
                             :32                                                          %! IC
                             \pp
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.staff-padding                             %! OC
                             
                             % ViolaMusicVoice [measure 51]                               %! SM4
                             R1 * 1/6
@@ -2138,7 +2151,9 @@
                             \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             % CelloMusicVoice [measure 36]                               %! SM4
+                            \override DynamicLineSpanner.staff-padding = #'7             %! OC
                             \override NoteHead.style = #'harmonic                        %! OC
+                            \override TextSpanner.staff-padding = #3.5                   %! OC
                             \override TupletBracket.direction = #down                    %! OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
@@ -2299,7 +2314,9 @@
                             :32                                                          %! IC
                             \ppp
                             \stopTextSpan
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
                             \revert NoteHead.style                                       %! OC
+                            \revert TextSpanner.staff-padding                            %! OC
                             \revert TupletBracket.direction                              %! OC
                             
                             % CelloMusicVoice [measure 51]                               %! SM4
