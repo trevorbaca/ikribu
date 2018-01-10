@@ -4,6 +4,9 @@ import baca
 
 class BowContactPointCommand(baca.Command):
     r'''Bow contact point command.
+
+    >>> import ikribu
+
     '''
 
     ### CLASS VARIABLES ###
@@ -78,17 +81,30 @@ class BowContactPointCommand(baca.Command):
 
         ..  container:: example
 
-            >>> for pair in ikribu.BowContactPointCommand().bow_contact_points:
-            ...     pair
+            >>> command = ikribu.BowContactPointCommand()
+            >>> for list_ in command.bow_contact_points:
+            ...     list_
             ...
+            [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7)]
+            [(7, 7), (0, 7), (7, 7), (0, 7), (7, 7)]
+            [(0, 7), (4, 7), (5, 7), (6, 7), (7, 7), (6, 7), (7, 7)]
+            [(0, 4), (1, 4), (2, 4), (1, 4)]
 
-        Returns list of pairs.
+        Class constant.
+
+        Returns list of list of pairs.
         '''
         return self._bow_contact_points
 
     @property
     def rotation(self):
         r'''Gets rotation.
+
+        ..  container:: example
+
+            >>> command = ikribu.BowContactPointCommand(rotation=-1)
+            >>> command.rotation
+            -1
 
         Returns integer or none.
         '''
