@@ -58,7 +58,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -287,7 +286,7 @@ maker(
         ['ViolinMusicVoice'],
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
-    baca.markup.boxed('brushes on BD'),
+    baca.markup.boxed('sponges on BD'),
     )
 
 maker(

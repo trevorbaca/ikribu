@@ -594,6 +594,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \>
                                 \ff
@@ -706,6 +707,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -731,6 +733,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -758,6 +761,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \pp
                                 \stopTextSpan
                                 \startTextSpan
@@ -810,6 +814,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -836,6 +841,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -861,6 +867,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \startTextSpan
@@ -912,6 +919,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -938,6 +946,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1038,6 +1047,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \ff
                                 \stopTextSpan
                                 \>
@@ -1069,6 +1079,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \startTextSpan
@@ -1120,6 +1131,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \<
@@ -1146,6 +1158,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1223,6 +1236,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -1274,6 +1288,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -1383,6 +1398,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \ppp
                                 \stopTextSpan
                                 \startTextSpan
@@ -1431,6 +1447,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ppp
                                 \stopTextSpan
                                 \<
@@ -1457,6 +1474,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1482,6 +1500,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ff
                                 \stopTextSpan
                                 \startTextSpan
@@ -1533,6 +1552,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \ff
                                 \stopTextSpan
                                 \>
@@ -1559,6 +1579,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1584,6 +1605,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \<
@@ -1610,6 +1632,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1939,6 +1962,7 @@
                                 \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \>
                                 \ff
                                 \startTextSpan
@@ -1973,6 +1997,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -2002,6 +2027,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \<
@@ -2029,6 +2055,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \startTextSpan
@@ -2077,6 +2104,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -2103,6 +2131,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2207,6 +2236,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -2233,6 +2263,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2258,6 +2289,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \ppp
                                 \stopTextSpan
                                 \<
@@ -2285,6 +2317,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ff
                                 \stopTextSpan
                                 \startTextSpan
@@ -2337,6 +2370,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ff
                                 \stopTextSpan
                                 \>
@@ -2363,6 +2397,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2417,6 +2452,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2493,6 +2529,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -2544,6 +2581,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -2570,6 +2608,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2594,6 +2633,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -2623,6 +2663,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -2649,6 +2690,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2674,6 +2716,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ppp
                                 \stopTextSpan
                                 \<
@@ -2701,6 +2744,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \ff
                                 \stopTextSpan
                                 \startTextSpan
@@ -2752,6 +2796,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ff
                                 \stopTextSpan
                                 \>
@@ -2857,6 +2902,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \f
                                 \stopTextSpan
                                 \startTextSpan
@@ -2905,6 +2951,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -2931,6 +2978,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2956,6 +3004,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -3010,6 +3059,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -3061,6 +3111,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -3150,6 +3201,7 @@
                                 \startTextSpan
                                 
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \revert RepeatTie.direction                              %! OC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
@@ -3432,6 +3484,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \>
                                 \ff
@@ -3545,6 +3598,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -3570,6 +3624,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -3597,6 +3652,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \pp
                                 \stopTextSpan
                                 \startTextSpan
@@ -3645,6 +3701,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -3696,6 +3753,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -3750,6 +3808,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -3855,6 +3914,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -3883,6 +3943,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -3908,6 +3969,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \startTextSpan
@@ -3956,6 +4018,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \<
@@ -3985,6 +4048,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4010,6 +4074,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -4036,6 +4101,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4060,6 +4126,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4164,6 +4231,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -4193,6 +4261,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4218,6 +4287,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ppp
                                 \stopTextSpan
                                 \<
@@ -4248,6 +4318,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4272,6 +4343,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4323,6 +4395,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4374,6 +4447,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4475,6 +4549,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -4501,6 +4576,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4526,6 +4602,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -4552,6 +4629,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4576,6 +4654,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -4601,6 +4680,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -4638,6 +4718,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ppp
                                 \stopTextSpan
                                 \startTextSpan

@@ -39,7 +39,6 @@ maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-18, -6),
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     last_segment=True,
     layout_measure_map=layout_measure_map,

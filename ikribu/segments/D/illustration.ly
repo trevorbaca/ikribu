@@ -486,6 +486,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -978,6 +979,7 @@
                                 \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
+                                \override Script.staff-padding = #7                      %! OC
                                 \override TextScript.staff-padding = #8                  %! OC
                                 \override TextSpanner.staff-padding = #4                 %! OC
                                 \once \override TextSpanner.Y-extent = ##f
@@ -1020,6 +1022,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \>
                                 \ff
@@ -1132,6 +1135,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1157,6 +1161,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -1184,6 +1189,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \pp
                                 \stopTextSpan
                                 \startTextSpan
@@ -1232,6 +1238,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \<
@@ -1287,6 +1294,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -1340,6 +1348,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1446,6 +1455,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1470,6 +1480,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1495,6 +1506,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\upbow
                                 \p
                                 \stopTextSpan
                                 \startTextSpan
@@ -1543,6 +1555,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \<
@@ -1569,6 +1582,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -1598,6 +1612,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -1624,6 +1639,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1648,6 +1664,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1752,6 +1769,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \p
                                 \stopTextSpan
                                 \>
@@ -1778,6 +1796,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -1806,6 +1825,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \ppp
                                 \stopTextSpan
                                 \<
@@ -1832,6 +1852,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1856,6 +1877,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                             }
@@ -1910,6 +1932,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -1961,6 +1984,7 @@
                                 \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\downbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
@@ -2062,6 +2086,7 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \f
                                 \stopTextSpan
                                 \>
@@ -2098,15 +2123,18 @@
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
                                 c'4
+                                -\upbow
                                 \stopTextSpan
                                 \startTextSpan
                                 
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
+                                -\downbow
                                 \pp
                                 \stopTextSpan
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
+                                \revert Script.staff-padding                             %! OC
                                 \revert TextScript.staff-padding                         %! OC
                                 \revert TextSpanner.staff-padding                        %! OC
                             }

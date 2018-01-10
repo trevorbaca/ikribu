@@ -34,7 +34,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -174,5 +173,5 @@ maker(
         ('ViolaRHMusicVoice', 1, abjad.Infinity),
         ('CelloRHMusicVoice', 1, abjad.Infinity),
         ),
-    baca.dynamic_line_spanner_staff_padding(9),
+    baca.dls_sp(9),
     )

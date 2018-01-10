@@ -34,7 +34,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -69,7 +68,7 @@ maker(
         ('ViolaMusicVoice', 6, 7),
         ),
     baca.make_tied_notes(repeat_ties=True),
-    baca.dynamic_line_spanner_staff_padding(4),
+    baca.dls_sp(4),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
     baca.stem_tremolo(),
@@ -79,9 +78,7 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 6, 7),
     baca.markup.string_numbers([2, 3]),
-    baca.clef('treble'),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.clef_x_extent_false(),
+    baca.clef('treble', shift=True),
     baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
@@ -124,14 +121,11 @@ maker(
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
-    baca.text_script_parent_alignment_center(),
-    baca.text_script_padding(2.5),
+    ikribu.box_adjustment(),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 8),
-    baca.clef('treble'),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.clef_x_extent_false(),
+    baca.clef('treble', shift=True),
     baca.staff_lines(5),
     )

@@ -58,7 +58,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -111,9 +110,7 @@ maker(
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
-    baca.dynamic_text_extra_offset((-3.5, 0)),
-    baca.dynamic_text_x_extent_zero(),
-    baca.effort_dynamic('mf'),
+    baca.effort_dynamic('mf', shift=True),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
@@ -123,24 +120,21 @@ maker(
     baca.scope('BassClarinetMusicVoice', 2, 3),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
-    baca.text_script_padding(3),
-    baca.text_script_extra_offset((1, 0)),
+    ikribu.box_adjustment(),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
     baca.effort_dynamic('mf'),
-    baca.markup.boxed('grainfall (II)'),
+    baca.markup.boxed('grainfall (2)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
-    baca.text_script_padding(2.5),
+    ikribu.box_adjustment(),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 2, 16),
-    baca.clef('treble'),
-    baca.clef_x_extent_false(),
-    baca.clef_extra_offset((-2.5, 0)),
+    baca.clef('treble', shift=True),
     baca.dynamic_line_spanner_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
@@ -156,9 +150,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 2, 16),
-    baca.clef_x_extent_false(),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.dynamic_line_spanner_staff_padding(3),
+    baca.dls_sp(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -182,7 +174,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 2, 16),
-    baca.dynamic_line_spanner_staff_padding(7),
+    baca.dls_sp(7),
     baca.glissando(),
     baca.natural_harmonics(),
     baca.pitches(

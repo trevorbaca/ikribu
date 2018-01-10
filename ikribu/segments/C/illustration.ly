@@ -1267,17 +1267,18 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC
-                        \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
                         \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
+                        \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
                         \override RepeatTie.direction = #up                              %! OC
-                        \override TextScript.padding = #3                                %! OC
-                        \override TextScript.extra-offset = #'(1 . 0)                    %! OC
+                        \override TextScript.padding = #2.5                              %! OC
+                        \override TextScript.parent-alignment-X = #0                     %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                         b'4
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -1324,7 +1325,7 @@
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
                         \revert TextScript.padding                                       %! OC
-                        \revert TextScript.extra-offset                                  %! OC
+                        \revert TextScript.parent-alignment-X                            %! OC
                         
                         % BassClarinetMusicVoice [measure 38]                            %! SM4
                         R1 * 3/4
@@ -1517,6 +1518,7 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \once \override TextScript.padding = #2.5                    %! OC
+                            \once \override TextScript.parent-alignment-X = #0           %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1538,6 +1540,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -1597,7 +1600,7 @@
                                                         \override                        %! IC
                                                             #'(box-padding . 0.5)        %! IC
                                                             \box                         %! IC
-                                                                "grainfall (II)"         %! IC
+                                                                "grainfall (2)"          %! IC
                                             }                                            %! IC
                                     }
                                 }
@@ -1881,8 +1884,6 @@
                             \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             
                             % ViolaMusicVoice [measure 36]                               %! SM4
-                            \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! OC
-                            \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
                             \override TextScript.staff-padding = #2.5                    %! OC
                             R1 * 1

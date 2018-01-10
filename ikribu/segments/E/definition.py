@@ -55,7 +55,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -135,8 +134,8 @@ maker(
         ('ViolaMusicVoice', 1, 16),
         ),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
-    baca.dynamic_line_spanner_staff_padding(8),
-    baca.markup.boxed('brushes on BD', baca.pleaf(0)),
+    baca.dls_sp(8),
+    baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics('f p'),
@@ -146,9 +145,8 @@ maker(
     baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
-    baca.text_script_parent_alignment_center(),
-    baca.text_script_staff_padding(4.5),
     baca.tuplet_bracket_staff_padding(3),
+    ikribu.box_adjustment(),
     )
 
 maker(
@@ -158,7 +156,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 9, 16),
-    baca.dynamic_line_spanner_staff_padding(4),
+    baca.dls_sp(4),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
         abjad.Hairpin(),

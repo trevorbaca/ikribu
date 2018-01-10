@@ -83,10 +83,10 @@ maker(
 maker(
     baca.scope('ViolaMusicVoice', 2, 4),
     baca.clef('percussion'),
-    baca.effort_dynamic('mf'),
+    baca.effort_dynamic('mf', shift=True),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
     baca.staff_lines(1),
-    baca.text_script_padding(3),
+    ikribu.box_adjustment(),
     )

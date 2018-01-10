@@ -36,7 +36,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -136,7 +135,7 @@ maker(
         ('ViolaRHMusicVoice', 1, 3),
         ('CelloRHMusicVoice', 1, 3),
         ),
-    baca.dynamic_line_spanner_staff_padding(9),
+    baca.dls_sp(9),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),

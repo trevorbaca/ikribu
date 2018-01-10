@@ -312,7 +312,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                            \once \override TextScript.padding = #2                      %! OC
+                            \once \override TextScript.padding = #2.5                    %! OC
+                            \once \override TextScript.parent-alignment-X = #0           %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! DEFAULT_INSTRUMENT:SM8
                                 \hcenter-in                                              %! DEFAULT_INSTRUMENT:SM8
                                     #16                                                  %! DEFAULT_INSTRUMENT:SM8
@@ -334,6 +335,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -393,7 +395,7 @@
                                                         \override                        %! IC
                                                             #'(box-padding . 0.5)        %! IC
                                                             \box                         %! IC
-                                                                "grainfall (I)"          %! IC
+                                                                "grainfall (1)"          %! IC
                                             }                                            %! IC
                                     }
                                 }
