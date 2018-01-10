@@ -69,7 +69,7 @@ maker(
 
 maker(
     baca.scope('CelloRHMusicVoice', 1, 2),
-    baca.dynamic_line_spanner_staff_padding(9),
+    baca.dls_sp(9),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics('ff p f pp p ppp'),
@@ -78,6 +78,7 @@ maker(
         ),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.repeat_ties_up(),
+    baca.script_staff_padding(7, selector=baca.leaves()),
     baca.staff_positions([0]),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),

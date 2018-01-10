@@ -41,16 +41,16 @@ class BowContactPointCommand(baca.Command):
             return
         if self.selector:
             argument = self.selector(argument)
-        bow_contact_points = baca.sequence(self.bow_contact_points)
-        bow_contact_points = bow_contact_points.rotate(n=self.rotation)
-        bow_contact_points = bow_contact_points.flatten(depth=1)
-        bow_contact_points = abjad.CyclicTuple(bow_contact_points)
+        bcps = baca.sequence(self.bow_contact_points)
+        bcps = bcps.rotate(n=self.rotation)
+        bcps = bcps.flatten(depth=1)
+        bcps = abjad.CyclicTuple(bcps)
         leaves = baca.select(argument).leaves()
         spanner = abjad.TextSpanner()
         abjad.attach(spanner, leaves)
         lts = baca.select(argument).lts()
         total = len(lts)
-        previous_bow_contact_point, i = None, 0
+        previous_bcp, i = None, 0
         for lt in lts:
             previous_leaf = abjad.inspect(lt.head).get_leaf(-1)
             if (isinstance(lt.head, abjad.Rest) and
@@ -58,13 +58,12 @@ class BowContactPointCommand(baca.Command):
                 continue
             if (isinstance(lt.head, abjad.Note) and
                 isinstance(previous_leaf, abjad.Rest) and
-                previous_bow_contact_point is not None):
-                bow_contact_point = previous_bow_contact_point
+                previous_bcp is not None):
+                numerator, denominator = previous_bcp
             else:
-                bow_contact_point = bow_contact_points[i]
-                previous_bow_contact_point = bow_contact_point
+                bcp = bcps[i]
+                numerator, denominator = bcp
                 i += 1
-            numerator, denominator = bow_contact_point
             markup = abjad.Markup.fraction(numerator, denominator)
             spanner.attach(markup, lt.head)
             if lts is lts[-1]:
@@ -72,6 +71,22 @@ class BowContactPointCommand(baca.Command):
             if isinstance(lt.head, abjad.Note):
                 arrow = abjad.ArrowLineSegment()
                 spanner.attach(arrow, lt.head)
+            bcp_fraction = abjad.Fraction(*bcp)
+            next_bcp_fraction = abjad.Fraction(*bcps[i])
+            if isinstance(lt.head, abjad.Rest):
+                pass
+            elif isinstance(previous_leaf, abjad.Rest) or previous_bcp is None:
+                if bcp_fraction > next_bcp_fraction:
+                    abjad.attach(abjad.Articulation('upbow'), lt.head)
+                elif bcp_fraction < next_bcp_fraction:
+                    abjad.attach(abjad.Articulation('downbow'), lt.head)
+            else:
+                previous_bcp_fraction = abjad.Fraction(*previous_bcp)
+                if previous_bcp_fraction < bcp_fraction > next_bcp_fraction:
+                    abjad.attach(abjad.Articulation('upbow'), lt.head)
+                elif previous_bcp_fraction > bcp_fraction < next_bcp_fraction:
+                    abjad.attach(abjad.Articulation('downbow'), lt.head)
+            previous_bcp = bcp
 
     ### PUBLIC PROPERTIES ###
 

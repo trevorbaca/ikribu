@@ -579,6 +579,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -813,8 +814,8 @@
                     %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 125]                           %! SM4
-                        \once \override DynamicText.extra-offset = #'(-2 . 0)            %! OC
                         \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
+                        \once \override DynamicText.extra-offset = #'(-2 . 0)            %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -823,6 +824,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4
@@ -961,6 +963,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -1169,8 +1172,8 @@
                             R1 * 1/4
                             
                             % ViolinMusicVoice [measure 125]                             %! SM4
-                            \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
                             \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+                            \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! SM21
@@ -1179,6 +1182,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -1315,6 +1319,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -1534,8 +1539,8 @@
                             R1 * 1/4
                             
                             % ViolaMusicVoice [measure 125]                              %! SM4
-                            \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
                             \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+                            \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! SM21
@@ -1544,6 +1549,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -1676,6 +1682,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1

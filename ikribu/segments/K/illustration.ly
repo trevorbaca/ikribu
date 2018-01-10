@@ -725,6 +725,8 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                         \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
                         \override RepeatTie.direction = #up                              %! OC
+                        \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC
+                        \override DynamicLineSpanner.staff-padding = #'6                 %! OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -754,6 +756,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4
@@ -873,6 +876,8 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 131]                           %! SM4
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
+                        \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -881,6 +886,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -916,6 +922,8 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 135]                           %! SM4
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
+                        \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -924,6 +932,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -971,6 +980,8 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 139]                           %! SM4
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
+                        \once \override DynamicText.extra-offset = #'(-2 . 0)            %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -979,6 +990,7 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
+                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -1016,6 +1028,8 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
                         R1 * 1/4
+                        \revert BassClarinetMusicStaff.BarLine.bar-extent                %! OC
+                        \revert DynamicLineSpanner.staff-padding                         %! OC
                         \once \override Score.BarLine.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                         \once \override Score.SpanBar.transparent = ##t                  %! SEGMENT_FERMATA_BAR_LINE:SM22
                     %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE_FERMATA_BAR_LINE:SM22
@@ -1141,6 +1155,8 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TextScript.padding = #2.5                          %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1162,6 +1178,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -1238,6 +1255,8 @@
                                 
                                 % ViolinMusicVoice [measure 129]                         %! SM4
                                 \override RepeatTie.direction = #up                      %! OC
+                                \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
+                                \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1247,6 +1266,7 @@
                                 _ #(make-dynamic-script
                                     (markup
                                         #:whiteout
+                                        #:pad-around 0.25
                                         #:line (
                                             #:general-align Y -2 #:normal-text #:larger "“"
                                             #:hspace -0.1
@@ -1509,6 +1529,8 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 0  %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.padding                                   %! OC
                             
                         }
                     }
@@ -1631,6 +1653,8 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TextScript.padding = #2.5                          %! OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1652,6 +1676,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -1728,6 +1753,8 @@
                                 
                                 % ViolaMusicVoice [measure 129]                          %! SM4
                                 \override RepeatTie.direction = #up                      %! OC
+                                \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
+                                \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1737,6 +1764,7 @@
                                 _ #(make-dynamic-script
                                     (markup
                                         #:whiteout
+                                        #:pad-around 0.25
                                         #:line (
                                             #:general-align Y -2 #:normal-text #:larger "“"
                                             #:hspace -0.1
@@ -1975,6 +2003,8 @@
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.padding                                   %! OC
                             
                         }
                     }
@@ -2098,6 +2128,10 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
+                            \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2)     %! OC
+                            \override DynamicLineSpanner.staff-padding = #'6             %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -2119,6 +2153,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -2227,6 +2262,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 131]                              %! SM4
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+                            \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
@@ -2235,6 +2272,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -2270,6 +2308,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 135]                              %! SM4
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+                            \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
@@ -2278,6 +2318,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -2325,6 +2366,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 139]                              %! SM4
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+                            \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
@@ -2333,6 +2376,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2370,6 +2414,10 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert CelloMusicStaff.BarLine.bar-extent                   %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.padding                                   %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
                             
                         }
                     }

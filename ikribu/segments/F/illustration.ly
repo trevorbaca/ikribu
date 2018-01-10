@@ -661,8 +661,8 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override DynamicLineSpanner.staff-padding = #'4             %! OC
                             \override TextSpanner.staff-padding = #3.5                   %! OC
-                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! OC
+                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1134,8 +1134,8 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
-                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             d4
                             ^ \markup {                                                  %! IC
@@ -1194,15 +1194,15 @@
                             d4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
-                            \revert TextScript.parent-alignment-X                        %! OC
                             \revert TextScript.padding                                   %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
                             
                             % CelloMusicVoice [measure 86]                               %! SM4
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6

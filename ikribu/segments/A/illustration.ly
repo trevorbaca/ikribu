@@ -557,6 +557,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -778,8 +779,11 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+                            \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
                             \override RepeatTie.direction = #up                          %! OC
-                            \override TextScript.padding = #3                            %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \set ViolaMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "percussion"                                           %! EXPLICIT_CLEF:SM8
                             \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6
@@ -790,6 +794,7 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
+                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -874,6 +879,7 @@
                             \startStaff                                                  %! SM20
                             R1 * 1/4
                             \revert TextScript.padding                                   %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
                             
                         }
                     }

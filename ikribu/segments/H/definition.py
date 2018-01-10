@@ -28,7 +28,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    baca.page([99, 20, (15, 20, 25, 20, 25, 15)]),
+    baca.page([99, 20, (15, 25, 20, 25, 20, 20)]),
     )
 
 maker = baca.SegmentMaker(
@@ -58,7 +58,7 @@ maker(
         ('ViolinRHMusicVoice', 1, abjad.Infinity),
         ('ViolaRHMusicVoice', 1, abjad.Infinity),
         ),
-    baca.dynamic_line_spanner_staff_padding(10),
+    baca.dls_sp(10),
     )
 
 maker(
@@ -106,6 +106,7 @@ maker(
         bookend=True,
         ),
     baca.repeat_ties_up(),
+    baca.script_staff_padding(7, selector=baca.leaves()),
     baca.staff_positions([0]),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),

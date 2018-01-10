@@ -15,7 +15,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    #(1, ikribu.metronome_marks['incisions']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -37,7 +36,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -88,51 +86,55 @@ maker(
     baca.staff_lines(1),
     )
 
-#maker(
-#    baca.scope('BassClarinetMusicVoice', 1),
-#    baca.effort_dynamic('f'),
-#    )
-
 maker(
     baca.scope('BassClarinetMusicVoice', 5),
-    baca.effort_dynamic('mf'),
+    baca.effort_dynamic('mf', shift=True),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 9),
-    baca.effort_dynamic('mp'),
+    baca.effort_dynamic('mp', shift=True),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 13),
-    baca.effort_dynamic('p'),
+    baca.effort_dynamic('p', shift=True),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 16),
+    baca.bar_extent((-2, 0), selector=baca.leaves()),
+    baca.dls_sp(6),
     baca.staff_positions([0]),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 16),
-    baca.effort_dynamic('mp'),
+    baca.dls_sp(8),
+    baca.effort_dynamic('mp', shift=True),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
+    baca.text_script_padding(2.5),
     ikribu.clb_staff_positions(),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 16),
-    baca.effort_dynamic('mp'),
+    baca.dls_sp(8),
+    baca.effort_dynamic('mp', shift=True),
     baca.markup.col_legno_battuto(),
     baca.staccati(),
+    baca.text_script_padding(2.5),
     ikribu.clb_staff_positions(),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 1, 16),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
+    baca.bar_extent((0, 2), selector=baca.leaves()),
+    baca.dls_sp(6),
     baca.staff_positions([0]),
+    ikribu.box_adjustment(),
     )
 
 maker(
@@ -142,15 +144,15 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 5),
-    baca.effort_dynamic('mp'),
+    baca.effort_dynamic('mp', shift=True),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 9),
-    baca.effort_dynamic('mf'),
+    baca.effort_dynamic('mf', shift=True),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 13),
-    baca.effort_dynamic('f'),
+    baca.effort_dynamic('f', shift=True),
     )

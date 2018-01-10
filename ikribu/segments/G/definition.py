@@ -40,7 +40,6 @@ layout_measure_map = baca.layout(
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -58,9 +57,8 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.make_scopes(['BassClarinetMusicVoice'], [1, 3, 5, 7, 9, 11]),
-    #baca.make_tied_notes(repeat_ties=True),
     baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
-    baca.dynamic_line_spanner_staff_padding(7),
+    baca.dls_sp(7),
     )
 
 maker(
@@ -106,7 +104,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 12),
-    baca.dynamic_line_spanner_staff_padding(7),
+    baca.dls_sp(7),
     baca.glissando(),
     baca.piecewise(
         abjad.Hairpin(),
