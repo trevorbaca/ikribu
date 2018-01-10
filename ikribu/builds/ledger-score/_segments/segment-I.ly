@@ -61,6 +61,8 @@
         \context GlobalSkips = "GlobalSkips" {
             
             % GlobalSkips [measure 108]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
         %%% \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
         %%% \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
@@ -122,8 +124,6 @@
             \mark #9                                                                 %! SM9
         %%% \bar ""                                                                  %! SEGMENT_EMPTY_START_BAR:SM2
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
         %%% \pageBreak                                                               %! SEGMENT_LAYOUT:LMM3
             s1 * 3/4
             \startTextSpan                                                           %! SM29
@@ -133,17 +133,11 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.1]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                    %%%             8'16''                                           %! CLOCK_TIME_MARKUP:SM28
-                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -151,17 +145,23 @@
                     %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                    %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                    %%%             8'16''                                           %! CLOCK_TIME_MARKUP:SM28
+                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     }
                 }
             
             % GlobalSkips [measure 109]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
             s1 * 1/4
             ^ \markup {
                 \column
@@ -169,7 +169,7 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.2]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -187,11 +187,11 @@
                 }
             
             % GlobalSkips [measure 110]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 3/4
             ^ \markup {
                 \column
@@ -199,17 +199,11 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.3]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                    %%%             8'21''                                           %! CLOCK_TIME_MARKUP:SM28
-                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -217,17 +211,23 @@
                     %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                    %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                    %%%             8'21''                                           %! CLOCK_TIME_MARKUP:SM28
+                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     }
                 }
             
             % GlobalSkips [measure 111]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
             s1 * 1/4
             ^ \markup {
                 \column
@@ -235,7 +235,7 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.4]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -253,11 +253,11 @@
                 }
             
             % GlobalSkips [measure 112]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 3/4
             ^ \markup {
                 \column
@@ -265,17 +265,11 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.5]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                    %%%             8'27''                                           %! CLOCK_TIME_MARKUP:SM28
-                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -283,17 +277,23 @@
                     %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                    %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                    %%%             8'27''                                           %! CLOCK_TIME_MARKUP:SM28
+                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     }
                 }
             
             % GlobalSkips [measure 113]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
             s1 * 1/4
             ^ \markup {
                 \column
@@ -301,7 +301,7 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.6]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -319,11 +319,11 @@
                 }
             
             % GlobalSkips [measure 114]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
             s1 * 3/4
             ^ \markup {
                 \column
@@ -331,17 +331,11 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.7]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
-                    %%%             8'33''                                           %! CLOCK_TIME_MARKUP:SM28
-                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
@@ -349,17 +343,23 @@
                     %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                    %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                     %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                    %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                    %%%             #-2                                              %! CLOCK_TIME_MARKUP:SM28
+                    %%%             8'33''                                           %! CLOCK_TIME_MARKUP:SM28
+                    %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
                     }
                 }
             
             % GlobalSkips [measure 115]                                              %! SM4
+            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
         %%% \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
             \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-            \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SEGMENT_SPACING:HSS1
             s1 * 1/4
             \stopTextSpan                                                            %! SM29
             ^ \markup {
@@ -368,7 +368,7 @@
                     %%% \line                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     {                                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%         \fontsize                                            %! STAGE_NUMBER_MARKUP:SM3
-                    %%%             #-3                                              %! STAGE_NUMBER_MARKUP:SM3
+                    %%%             #3                                               %! STAGE_NUMBER_MARKUP:SM3
                     %%%             \with-color                                      %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [I.8]                                        %! STAGE_NUMBER_MARKUP:SM3
@@ -1020,7 +1020,10 @@
                         \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                         \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                        \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2)     %! OC
                         \override RepeatTie.direction = #up                          %! OC
+                        \override TextScript.padding = #2.5                          %! OC
+                        \override TextScript.parent-alignment-X = #0                 %! OC
                         \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1188,6 +1191,9 @@
                         \once \override CelloMusicStaff.StaffSymbol.line-count = 0   %! SM20
                         \startStaff                                                  %! SM20
                         R1 * 1/4
+                        \revert CelloMusicStaff.BarLine.bar-extent                   %! OC
+                        \revert TextScript.padding                                   %! OC
+                        \revert TextScript.parent-alignment-X                        %! OC
                         
                     }
                 }

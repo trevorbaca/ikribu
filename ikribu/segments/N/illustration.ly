@@ -552,6 +552,14 @@
                                 \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 \set ViolinRHMusicStaff.forceClef = ##t                  %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -560,384 +568,1116 @@
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 r4
                                 \ppp                                                     %! REAPPLIED_DYNAMIC:SM8
+                                \startTextSpan
                                 \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 \override RepeatTie.direction = #up                      %! OC
-                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
-                                \>
-                                \ff
-                                ^ \markup {
-                                    \column
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
                                         {
-                                            \line                                        %! IC
-                                                {                                        %! IC
-                                                    \whiteout                            %! IC
-                                                        \upright                         %! IC
-                                                            \override                    %! IC
-                                                                #'(box-padding . 0.5)    %! IC
-                                                                \box                     %! IC
-                                                                    "1/2 clt"            %! IC
-                                                }                                        %! IC
-                                            \line
-                                                {
-                                                    \fraction
-                                                        0
-                                                        7
-                                                }
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
                                         }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+                                c'4
+                                \stopTextSpan
+                                \>
+                                \ff
+                                \startTextSpan
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "1/2 clt"                            %! IC
+                                    }                                                    %! IC
                             }
                             {
                                 
                                 % ViolinRHMusicVoice [measure 209]                       %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % ViolinRHMusicVoice [measure 210]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \times 4/6 {
                                 
                                 % ViolinRHMusicVoice [measure 211]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
                                 
                                 % ViolinRHMusicVoice [measure 212]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             {
                                 
                                 % ViolinRHMusicVoice [measure 213]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                2
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % ViolinRHMusicVoice [measure 214]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                2
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        2
-                                        4
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             {
                                 
                                 % ViolinRHMusicVoice [measure 215]                       %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/6 {
                                 
                                 % ViolinRHMusicVoice [measure 216]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             {
                                 
                                 % ViolinRHMusicVoice [measure 217]                       %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.right.text = \markup {
+                                    \concat
+                                        {
+                                            \hspace
+                                                #0.0
+                                            \fraction
+                                                6
+                                                7
+                                        }
+                                    }
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \startTextSpan
                                 
                                 \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
                                 \revert RepeatTie.direction                              %! OC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 
@@ -1172,6 +1912,26 @@
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override RepeatTie.direction = #up                      %! OC
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \set ViolaRHMusicStaff.forceClef = ##t                   %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1181,421 +1941,1216 @@
                                 c'4
                                 \>
                                 \ff
-                                ^ \markup {
-                                    \column
-                                        {
-                                            \line                                        %! IC
-                                                {                                        %! IC
-                                                    \whiteout                            %! IC
-                                                        \upright                         %! IC
-                                                            \override                    %! IC
-                                                                #'(box-padding . 0.5)    %! IC
-                                                                \box                     %! IC
-                                                                    "1/2 clt"            %! IC
-                                                }                                        %! IC
-                                            \line
-                                                {
-                                                    \fraction
-                                                        7
-                                                        7
-                                                }
-                                        }
-                                    }
+                                \startTextSpan
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "1/2 clt"                            %! IC
+                                    }                                                    %! IC
                                 \override ViolaRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % ViolaRHMusicVoice [measure 209]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolaRHMusicVoice [measure 210]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3 {
                                 
                                 % ViolaRHMusicVoice [measure 211]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                2
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        2
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \startTextSpan
                             }
                             {
                                 
                                 % ViolaRHMusicVoice [measure 212]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \times 4/5 {
                                 
                                 % ViolaRHMusicVoice [measure 213]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
                                 
                                 % ViolaRHMusicVoice [measure 214]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             {
                                 
                                 % ViolaRHMusicVoice [measure 215]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             {
                                 
                                 % ViolaRHMusicVoice [measure 216]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        4
-                                    }
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % ViolaRHMusicVoice [measure 217]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
-                                
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        2
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                2
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
+                                
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.right.text = \markup {
+                                    \concat
+                                        {
+                                            \hspace
+                                                #1.0
+                                            \fraction
+                                                6
+                                                7
+                                        }
+                                    }
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
                                 \revert RepeatTie.direction                              %! OC
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 
@@ -1835,6 +3390,14 @@
                                 \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 \set CelloRHMusicStaff.forceClef = ##t                   %! REAPPLIED_CLEF:SM8
                                 \clef "percussion"                                       %! REAPPLIED_CLEF:SM8
                                 \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
@@ -1843,429 +3406,1245 @@
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 r4
                                 \pp                                                      %! REAPPLIED_DYNAMIC:SM8
+                                \startTextSpan
                                 \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
                                 \override RepeatTie.direction = #up                      %! OC
-                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                                c'4
-                                \>
-                                \ff
-                                ^ \markup {
-                                    \column
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
                                         {
-                                            \line                                        %! IC
-                                                {                                        %! IC
-                                                    \whiteout                            %! IC
-                                                        \upright                         %! IC
-                                                            \override                    %! IC
-                                                                #'(box-padding . 0.5)    %! IC
-                                                                \box                     %! IC
-                                                                    "1/2 clt"            %! IC
-                                                }                                        %! IC
-                                            \line
-                                                {
-                                                    \fraction
-                                                        0
-                                                        7
-                                                }
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
                                         }
                                     }
-                                
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
+                                \stopTextSpan
+                                \>
+                                \ff
+                                \startTextSpan
+                                ^ \markup {                                              %! IC
+                                    \whiteout                                            %! IC
+                                        \upright                                         %! IC
+                                            \override                                    %! IC
+                                                #'(box-padding . 0.5)                    %! IC
+                                                \box                                     %! IC
+                                                    "1/2 clt"                            %! IC
+                                    }                                                    %! IC
+                                
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/9 {
                                 
                                 % CelloRHMusicVoice [measure 209]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        4
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                2
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        2
-                                        4
-                                    }
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
                                 
                                 % CelloRHMusicVoice [measure 210]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             {
                                 
                                 % CelloRHMusicVoice [measure 211]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
                                 
                                 % CelloRHMusicVoice [measure 212]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                             }
                             \times 4/6 {
                                 
                                 % CelloRHMusicVoice [measure 213]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/2 {
                                 
                                 % CelloRHMusicVoice [measure 214]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                             }
                             {
                                 
                                 % CelloRHMusicVoice [measure 215]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/8 {
                                 
                                 % CelloRHMusicVoice [measure 216]                        %! SM4
-                                c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
                                     }
-                                
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
+                                c'4
+                                \stopTextSpan
+                                \startTextSpan
+                                
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ff
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                2
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        2
-                                        4
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                1
+                                                4
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        1
-                                        4
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                4
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        4
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                5
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
-                                ^ \markup {
-                                    \fraction
-                                        5
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                             }
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/9 {
                                 
                                 % CelloRHMusicVoice [measure 217]                        %! SM4
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.padding = 1.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-period = 0
                                 r4
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \f
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                6
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \pp
+                                \stopTextSpan
                                 \<
-                                ^ \markup {
-                                    \fraction
-                                        6
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 c'4
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                7
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \p
+                                \stopTextSpan
                                 \>
-                                ^ \markup {
-                                    \fraction
-                                        7
-                                        7
-                                    }
+                                \startTextSpan
                                 
+                                \once \override TextSpanner.Y-extent = ##f
+                                \once \override TextSpanner.arrow-width = 0.25
+                                \once \override TextSpanner.bound-details.left-broken.text = ##f
+                                \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.left.text = \markup {
+                                    \concat
+                                        {
+                                            \fraction
+                                                0
+                                                7
+                                            \hspace
+                                                #0.25
+                                        }
+                                    }
+                                \once \override TextSpanner.bound-details.right-broken.padding = 0
+                                \once \override TextSpanner.bound-details.right-broken.text = ##f
+                                \once \override TextSpanner.bound-details.right.arrow = ##t
+                                \once \override TextSpanner.bound-details.right.padding = 0.5
+                                \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+                                \once \override TextSpanner.bound-details.right.text = \markup {
+                                    \concat
+                                        {
+                                            \hspace
+                                                #0.0
+                                            \fraction
+                                                7
+                                                7
+                                        }
+                                    }
+                                \once \override TextSpanner.dash-fraction = 1
                                 \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 c'4
                                 \ppp
-                                ^ \markup {
-                                    \fraction
-                                        0
-                                        7
-                                    }
+                                \stopTextSpan
+                                \startTextSpan
                                 \revert RepeatTie.direction                              %! OC
                                 
                                 r4
+                                \stopTextSpan
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 
                             }

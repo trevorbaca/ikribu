@@ -58,7 +58,8 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.make_scopes(['BassClarinetMusicVoice'], [1, 3, 5, 7, 9, 11]),
-    baca.make_tied_notes(repeat_ties=True),
+    #baca.make_tied_notes(repeat_ties=True),
+    baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
     baca.dynamic_line_spanner_staff_padding(7),
     )
 
@@ -69,42 +70,43 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1),
-    baca.hairpin('ppp < mp', baca.rleaves()),
+    baca.hairpin('ppp < mp', baca.leaves()),
     baca.pitches('G2'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 3),
-    baca.hairpin('pp < mf', baca.rleaves()),
+    baca.hairpin('pp < mf', baca.leaves()),
     baca.pitches('Gb2'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 5),
-    baca.hairpin('p < f', baca.rleaves()),
+    baca.hairpin('p < f', baca.leaves()),
     baca.pitches('F2'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 7),
-    baca.hairpin('mf < ff', baca.rleaves()),
+    baca.hairpin('mf < ff', baca.leaves()),
     baca.pitches('E2'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 9),
-    baca.hairpin('f < fff', baca.rleaves()),
+    baca.hairpin('f < fff', baca.leaves()),
     baca.pitches('Eb2'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 11),
-    baca.hairpin('ff < ffff', baca.rleaves()),
+    baca.hairpin('ff < ffff', baca.leaves()),
     baca.pitches('D2'),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 1, 12),
+    baca.dynamic_line_spanner_staff_padding(7),
     baca.glissando(),
     baca.piecewise(
         abjad.Hairpin(),
@@ -117,4 +119,15 @@ maker(
     baca.pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
     baca.stem_tremolo(),
     baca.tuplet_brackets_down(),
+    )
+
+maker(
+    baca.scopes(
+        ('GlobalSkips', 2),
+        ('GlobalSkips', 4),
+        ('GlobalSkips', 6),
+        ('GlobalSkips', 8),
+        ('GlobalSkips', 10),
+        ),
+    baca.spacing((1, 24)),
     )

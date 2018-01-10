@@ -21,8 +21,6 @@ class BowContactPointCommand(baca.Command):
         [(0, 4), (1, 4), (2, 4), (1, 4)],
         )
 
-    _selector_type = 'logical ties'
-
     ### INITIALIZER ###
 
     def __init__(self, rotation=None, selector=None):
@@ -31,28 +29,62 @@ class BowContactPointCommand(baca.Command):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, selections=None):
-        r'''Calls command on leaf `selections`.
+    def __call__(self, argument=None):
+        r'''Calls command on `argument`.
 
         Returns none.
         '''
-        if selections is None:
+        if argument is None:
             return
-        if self.selector is not None:
-            selections = self.selector(selections)
-        bow_contact_points = baca.sequence(self._bow_contact_points)
+        if self.selector:
+            argument = self.selector(argument)
+        bow_contact_points = baca.sequence(self.bow_contact_points)
         bow_contact_points = bow_contact_points.rotate(n=self.rotation)
         bow_contact_points = bow_contact_points.flatten(depth=1)
         bow_contact_points = abjad.CyclicTuple(bow_contact_points)
-        plts = abjad.iterate(selections).logical_ties(pitched=True)
-        for i, plt in enumerate(plts):
-            bow_contact_point = bow_contact_points[i]
+        leaves = baca.select(argument).leaves()
+        spanner = abjad.TextSpanner()
+        abjad.attach(spanner, leaves)
+        lts = baca.select(argument).lts()
+        total = len(lts)
+        previous_bow_contact_point, i = None, 0
+        for lt in lts:
+            previous_leaf = abjad.inspect(lt.head).get_leaf(-1)
+            if (isinstance(lt.head, abjad.Rest) and
+                isinstance(previous_leaf, (abjad.Rest, type(None)))):
+                continue
+            if (isinstance(lt.head, abjad.Note) and
+                isinstance(previous_leaf, abjad.Rest) and
+                previous_bow_contact_point is not None):
+                bow_contact_point = previous_bow_contact_point
+            else:
+                bow_contact_point = bow_contact_points[i]
+                previous_bow_contact_point = bow_contact_point
+                i += 1
             numerator, denominator = bow_contact_point
             markup = abjad.Markup.fraction(numerator, denominator)
-            markup = abjad.new(markup, direction=abjad.Up)
-            abjad.attach(markup, plt.head)
+            spanner.attach(markup, lt.head)
+            if lts is lts[-1]:
+                continue
+            if isinstance(lt.head, abjad.Note):
+                arrow = abjad.ArrowLineSegment()
+                spanner.attach(arrow, lt.head)
 
     ### PUBLIC PROPERTIES ###
+
+    @property
+    def bow_contact_points(self):
+        r'''Gets bow contact points.
+
+        ..  container:: example
+
+            >>> for pair in ikribu.BowContactPointCommand().bow_contact_points:
+            ...     pair
+            ...
+
+        Returns list of pairs.
+        '''
+        return self._bow_contact_points
 
     @property
     def rotation(self):

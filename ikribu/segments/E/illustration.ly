@@ -670,8 +670,6 @@
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-                #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! SEGMENT_LAYOUT:LMM3
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -727,7 +725,6 @@
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                \break                                                                   %! SEGMENT_LAYOUT:LMM3
                 s1 * 7/4
                 \stopTextSpan                                                            %! SM29
                 \startTextSpan                                                           %! SM29
@@ -764,7 +761,10 @@
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
+                #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! SEGMENT_LAYOUT:LMM3
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+                \break                                                                   %! SEGMENT_LAYOUT:LMM3
                 s1 * 7/4
                 ^ \markup {
                     \column
@@ -1308,6 +1308,10 @@
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                                 \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
+                                \override DynamicLineSpanner.staff-padding = #'8         %! OC
+                                \override TextScript.parent-alignment-X = #0             %! OC
+                                \override TextScript.staff-padding = #4.5                %! OC
+                                \override TupletBracket.staff-padding = #3               %! OC
                                 \set ViolinStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
                                     \hcenter-in                                          %! REAPPLIED_INSTRUMENT:SM8
                                         #16                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -1541,6 +1545,10 @@
                             
                             % ViolinMusicVoice [measure 78]                              %! SM4
                             R1 * 2
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
+                            \revert TextScript.staff-padding                             %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                             
                         }
                     }
@@ -1616,6 +1624,10 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
+                            \override TextScript.staff-padding = #4.5                    %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1852,6 +1864,10 @@
                             
                             % ViolaMusicVoice [measure 78]                               %! SM4
                             R1 * 2
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
+                            \revert TextScript.staff-padding                             %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
                             
                         }
                     }
@@ -2028,6 +2044,8 @@
                             R1 * 1/2
                             
                             % CelloMusicVoice [measure 71]                               %! SM4
+                            \override DynamicLineSpanner.staff-padding = #'4             %! OC
+                            \override TextScript.staff-padding = #2.5                    %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             f1..
                             :32                                                          %! IC
@@ -2092,6 +2110,8 @@
                             :32                                                          %! IC
                             \repeatTie
                             \mp
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextScript.staff-padding                             %! OC
                             
                         }
                     }

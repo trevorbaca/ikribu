@@ -98,6 +98,7 @@
     % STAFF
     \context {
         \Staff
+        \remove Separating_line_group_engraver
         \remove Time_signature_engraver
     }
 
@@ -296,6 +297,7 @@
         \override Glissando.thickness = 3
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
+        \override PaperColumn.used = ##t
         \shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
         \override SpacingSpanner.strict-grace-spacing = ##t
@@ -304,7 +306,7 @@
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
-        \override TextScript.font-name = #"Palatino"
+        %\override TextScript.font-name = #"Palatino"
         \override TextScript.padding = 1
         \override TextScript.X-extent = ##f
         \override TextScript.Y-extent = #'(-1.5 . 1.5)

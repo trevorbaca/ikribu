@@ -20,7 +20,7 @@
                 \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-                #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! SEGMENT_LAYOUT:LMM3
+                #'((Y-offset . 20) (alignment-distances . (15 20 20 20)))                %! SEGMENT_LAYOUT:LMM3
             %F% \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK:SM27
             %F% \markup {                                                                %! REAPPLIED_METRONOME_MARK:SM27
             %F%     \fontsize                                                            %! REAPPLIED_METRONOME_MARK:SM27
@@ -659,6 +659,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \override DynamicLineSpanner.staff-padding = #'4             %! OC
+                            \override TextSpanner.staff-padding = #3.5                   %! OC
                             \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! OC
                             \once \override TextSpanner.Y-extent = ##f
@@ -719,6 +721,8 @@
                             \stopTextSpan
                             \>
                             \p
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextSpanner.staff-padding                            %! OC
                             
                             % ViolinMusicVoice [measure 86]                              %! SM4
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -868,6 +872,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \override DynamicLineSpanner.staff-padding = #'4             %! OC
+                            \override TextSpanner.staff-padding = #3.5                   %! OC
                             \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! OC
                             \once \override TextSpanner.Y-extent = ##f
@@ -928,6 +934,8 @@
                             \stopTextSpan
                             \>
                             \p
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TextSpanner.staff-padding                            %! OC
                             
                             % ViolaMusicVoice [measure 86]                               %! SM4
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -986,6 +994,7 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
+                            \override TextSpanner.staff-padding = #3.5                   %! OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1115,6 +1124,7 @@
                             \repeatTie
                             \ff
                             \stopTextSpan
+                            \revert TextSpanner.staff-padding                            %! OC
                             
                             % CelloMusicVoice [measure 83]                               %! SM4
                             R1 * 1/2
@@ -1124,6 +1134,8 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override RepeatTie.direction = #up                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
+                            \override TextScript.padding = #2.5                          %! OC
                             \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             d4
                             ^ \markup {                                                  %! IC
@@ -1182,6 +1194,8 @@
                             d4
                             \repeatTie
                             \revert RepeatTie.direction                                  %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
+                            \revert TextScript.padding                                   %! OC
                             
                             % CelloMusicVoice [measure 86]                               %! SM4
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8

@@ -12,7 +12,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    #(1, ikribu.metronome_marks['windows']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -25,16 +24,15 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
+    minimum_width=(1, 16),
     )
 
 layout_measure_map = baca.layout(
-    baca.page([99, 20, (15, 20, 25, 20, 25, 20)]),
+    baca.page([99, 20, (15, 20, 25, 20, 25, 15)]),
     )
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    ignore_repeat_pitch_classes=True,
     instruments=ikribu.instruments,
     layout_measure_map=layout_measure_map,
     measures_per_stage=measures_per_stage,
@@ -109,6 +107,8 @@ maker(
         ),
     baca.repeat_ties_up(),
     baca.staff_positions([0]),
+    baca.text_script_staff_padding(8),
+    baca.text_spanner_staff_padding(4),
     )
 
 maker(
