@@ -144,8 +144,8 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 19, 20),
-    baca.pitches('Bb1'),
     baca.hairpin('p > niente', baca.rleaves()[-3:]),
+    baca.pitches('Bb1'),
     )
 
 maker(
@@ -164,6 +164,7 @@ maker(
         baca.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(),
+    baca.text_spanner_staff_padding(2.5),
     )
 
 maker(
@@ -177,6 +178,7 @@ maker(
         baca.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(),
+    baca.text_spanner_staff_padding(2.5),
     )
 
 maker(
@@ -190,6 +192,7 @@ maker(
         bookend=True,
         ),
     baca.pitches('Bb0'),
+    baca.text_spanner_staff_padding(2.5),
     )
 
 maker(

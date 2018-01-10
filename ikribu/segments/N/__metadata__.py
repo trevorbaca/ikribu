@@ -115,7 +115,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='GlobalSkips',
                                 prototype='baca.SpacingSection',
-                                value='1/12',
+                                value='1/16',
                                 ),
                             ],
                         ),

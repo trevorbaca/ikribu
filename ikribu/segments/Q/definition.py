@@ -25,7 +25,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
+    minimum_width=(1, 24),
     )
 
 layout_measure_map = baca.layout(
@@ -38,7 +38,7 @@ layout_measure_map = baca.layout(
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
-    final_markup_extra_offset=(-18, -6),
+    final_markup_extra_offset=(-16, -4),
     instruments=ikribu.instruments,
     last_segment=True,
     layout_measure_map=layout_measure_map,
@@ -71,13 +71,36 @@ maker(
     )
 
 maker(
+    baca.scope('BassClarinetMusicVoice', 1, abjad.Infinity),
+    baca.bar_extent((-2, 0), selector=baca.rleaves()),
+    )
+
+maker(
+    baca.scope('BassClarinetMusicVoice', 1, 4),
+    baca.effort_dynamic('mf'),
+    baca.markup.boxed('graincircle: π/3 every quarter note'),
+    baca.staff_positions([0]),
+    ikribu.box_adjustment(),
+    )
+
+maker(
     baca.scope('ViolinMusicVoice', 1, 3),
     baca.make_repeated_durations((1, 4)),
+    baca.double_tonguing(),
+    baca.effort_dynamic('mf'),
+    baca.markup('col legno battuto meccanico: strike each note twice'),
+    baca.staff_positions([-1, 0, 1]),
+    baca.text_script_padding(2.5),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 3),
     baca.make_repeated_durations((1, 4)),
+    baca.double_tonguing(),
+    baca.effort_dynamic('mf'),
+    baca.markup('col legno battuto meccanico: strike each note twice'),
+    baca.staff_positions([0, -1, 1]),
+    baca.text_script_padding(2.5),
     )
 
 maker(
@@ -86,32 +109,16 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 4),
-    baca.effort_dynamic('mf'),
-    baca.markup.boxed('graincircle: π/3 every quarter note'),
-    baca.staff_positions([0]),
-    )
-
-maker(
-    baca.scope('ViolinMusicVoice', 1, 4),
-    baca.double_tonguing(),
-    baca.effort_dynamic('mf'),
-    baca.markup('col legno battuto meccanico: strike each note twice'),
-    baca.staff_positions([-1, 0, 1]),
-    )
-
-maker(
-    baca.scope('ViolaMusicVoice', 1, 4),
-    baca.double_tonguing(),
-    baca.effort_dynamic('mf'),
-    baca.markup('col legno battuto meccanico: strike each note twice'),
-    baca.staff_positions([0, -1, 1]),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 1, 4),
+    baca.scope('CelloMusicVoice', 1, abjad.Infinity),
+    baca.bar_extent((0, 2), selector=baca.rleaves()),
     baca.accents(),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
     baca.staff_positions([0]),
+    ikribu.box_adjustment(),
+    )
+
+maker(
+    baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.spacing((1, 14), selector=baca.skip(4)),
     )

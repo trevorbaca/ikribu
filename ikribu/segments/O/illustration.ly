@@ -1308,6 +1308,7 @@
                             R1 * 2
                             
                             % ViolinMusicVoice [measure 226]                             %! SM4
+                            \override TextSpanner.staff-padding = #2.5                   %! OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1410,6 +1411,7 @@
                             :32                                                          %! IC
                             \repeatTie
                             \stopTextSpan
+                            \revert TextSpanner.staff-padding                            %! OC
                             
                             % ViolinMusicVoice [measure 238]                             %! SM4
                             \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -1614,6 +1616,7 @@
                             R1 * 2
                             
                             % ViolaMusicVoice [measure 226]                              %! SM4
+                            \override TextSpanner.staff-padding = #2.5                   %! OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1716,6 +1719,7 @@
                             :32                                                          %! IC
                             \repeatTie
                             \stopTextSpan
+                            \revert TextSpanner.staff-padding                            %! OC
                             
                             % ViolaMusicVoice [measure 238]                              %! SM4
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -1821,6 +1825,7 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
+                            \override TextSpanner.staff-padding = #2.5                   %! OC
                             \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -2155,6 +2160,7 @@
                             \p
                             \stopTextSpan
                             \revert CelloMusicStaff.OttavaBracket.staff-padding          %! OC
+                            \revert TextSpanner.staff-padding                            %! OC
                             \ottava #0                                                   %! SC
                             
                             % CelloMusicVoice [measure 238]                              %! SM4

@@ -756,7 +756,6 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
-                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.4
@@ -886,7 +885,6 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
-                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -932,7 +930,6 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
-                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -990,7 +987,6 @@
                         _ #(make-dynamic-script
                             (markup
                                 #:whiteout
-                                #:pad-around 0.25
                                 #:line (
                                     #:general-align Y -2 #:normal-text #:larger "“"
                                     #:hspace -0.1
@@ -1178,7 +1174,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -1266,7 +1261,6 @@
                                 _ #(make-dynamic-script
                                     (markup
                                         #:whiteout
-                                        #:pad-around 0.25
                                         #:line (
                                             #:general-align Y -2 #:normal-text #:larger "“"
                                             #:hspace -0.1
@@ -1676,7 +1670,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -1764,7 +1757,6 @@
                                 _ #(make-dynamic-script
                                     (markup
                                         #:whiteout
-                                        #:pad-around 0.25
                                         #:line (
                                             #:general-align Y -2 #:normal-text #:larger "“"
                                             #:hspace -0.1
@@ -2153,7 +2145,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -2272,7 +2263,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -2318,7 +2308,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.1
@@ -2376,7 +2365,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4

@@ -25,11 +25,11 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
+    minimum_width=(1, 16),
     )
 
 layout_measure_map = baca.layout(
-    baca.page([208, 20, (15, 20, 25, 20, 25, 20, 25)]),
+    baca.page([208, 20, (15, 20, 22.5, 25, 22.5, 25, 22.5)]),
     )
 
 maker = baca.SegmentMaker(
@@ -134,16 +134,22 @@ maker(
 
 maker(
     baca.scope('ViolinRHMusicVoice', 1, 2),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(3.5),
     ikribu.BowContactPointCommand(rotation=0),
     )
 
 maker(
     baca.scope('ViolaRHMusicVoice', 1, 2),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(3.5),
     ikribu.BowContactPointCommand(rotation=-1),
     )
 
 maker(
     baca.scope('CelloRHMusicVoice', 1, 2),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(3.5),
     ikribu.BowContactPointCommand(rotation=-2),
     )
 
