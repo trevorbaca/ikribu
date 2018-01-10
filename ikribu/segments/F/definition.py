@@ -13,7 +13,6 @@ stage_measure_map = baca.StageMeasureMap([
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    #(1, ikribu.metronome_marks['night']),
     ])
 
 maker = baca.TimeSignatureMaker(
@@ -30,7 +29,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     )
 
 layout_measure_map = baca.layout(
-    baca.page([79, 20, (15, 20)]),
+    baca.page([79, 20, (15, 20, 20, 20)]),
     )
 
 maker = baca.SegmentMaker(
@@ -70,9 +69,11 @@ maker(
         ('ViolaMusicVoice', 6, 7),
         ),
     baca.make_tied_notes(repeat_ties=True),
+    baca.dynamic_line_spanner_staff_padding(4),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
     baca.stem_tremolo(),
+    baca.text_spanner_staff_padding(3.5),
     )
 
 maker(
@@ -113,6 +114,7 @@ maker(
         baca.markup('(trem. flaut. tast.)'),
         baca.markup('trem. XP (non. flaut.)'),
         ),
+    baca.text_spanner_staff_padding(3.5),
     )
 
 maker(
@@ -122,6 +124,8 @@ maker(
     baca.repeat_ties_up(),
     baca.staff_lines(1),
     baca.staff_positions([0]),
+    baca.text_script_parent_alignment_center(),
+    baca.text_script_padding(2.5),
     )
 
 maker(

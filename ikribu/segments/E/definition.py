@@ -33,7 +33,6 @@ metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     ])
 
 maker = baca.TimeSignatureMaker(
-    #[[(4, 4), (4, 4), (3, 4), (1, 6)]],
     ikribu.time_signatures,
     rotation=-5,
     stage_measure_map=stage_measure_map,
@@ -49,7 +48,8 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 layout_measure_map = baca.layout(
     baca.page(
         [63, 20, (15, 20)],
-        [73, 140, (15, 20)],
+        #[73, 140, (15, 20)],
+        [74, 140, (15, 20)],
         ),
     )
 
@@ -135,6 +135,7 @@ maker(
         ('ViolaMusicVoice', 1, 16),
         ),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.dynamic_line_spanner_staff_padding(8),
     baca.markup.boxed('brushes on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
@@ -145,6 +146,9 @@ maker(
     baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
+    baca.text_script_parent_alignment_center(),
+    baca.text_script_staff_padding(4.5),
+    baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
@@ -154,6 +158,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 9, 16),
+    baca.dynamic_line_spanner_staff_padding(4),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
         abjad.Hairpin(),
@@ -163,6 +168,7 @@ maker(
         ),
     baca.staff_positions([0]),
     baca.stem_tremolo(),
+    baca.text_script_staff_padding(2.5),
     )
 
 maker(

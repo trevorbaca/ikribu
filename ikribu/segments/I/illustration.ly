@@ -71,7 +71,7 @@
                 
                 % GlobalSkips [measure 108]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
                 \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
@@ -154,7 +154,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -197,7 +197,7 @@
                 
                 % GlobalSkips [measure 110]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -220,7 +220,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -263,7 +263,7 @@
                 
                 % GlobalSkips [measure 112]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -286,7 +286,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -329,7 +329,7 @@
                 
                 % GlobalSkips [measure 114]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -352,7 +352,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/24)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -1029,7 +1029,10 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2)     %! OC
                             \override RepeatTie.direction = #up                          %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1197,6 +1200,9 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
+                            \revert CelloMusicStaff.BarLine.bar-extent                   %! OC
+                            \revert TextScript.padding                                   %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
                             
                         }
                     }

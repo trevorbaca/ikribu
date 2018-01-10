@@ -83,8 +83,14 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 2, 4),
+    baca.scope('CelloMusicVoice', 2, 3),
     baca.make_tied_notes(repeat_ties=True),
+    )
+
+maker(
+    baca.scope('CelloMusicVoice', 4),
+    baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
+    baca.tie_to(),
     )
 
 maker(
@@ -94,6 +100,7 @@ maker(
         ('ViolaMusicVoice', 1, 7),
         ),
     baca.clef('percussion'),
+    baca.dynamic_line_spanner_staff_padding(6),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
@@ -146,7 +153,7 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 2, 4),
     baca.dynamic('p'),
-    baca.hairpin('p < mf', baca.rleaves()[-2:]),
+    baca.hairpin('p < mf', baca.leaves()[-2:]),
     baca.markup.vib_poco(),
     baca.ottava_bassa(),
     baca.ottava_bracket_staff_padding(8),
@@ -159,6 +166,8 @@ maker(
         ('ViolinMusicVoice', 6),
         ('ViolaMusicVoice', 6),
         ),
+    baca.dynamic_text_extra_offset((-2, 0)),
+    baca.dynamic_text_x_extent_zero(),
     baca.effort_dynamic('f'),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
@@ -174,9 +183,19 @@ maker(
 
 maker(
     baca.scopes(
-        ('BassClarinetMusicVoice', 1, 4),
-        ('ViolinMusicVoice', 1, 4),
-        ('ViolaMusicVoice', 1, 4),
+        ('BassClarinetMusicVoice', 1, abjad.Infinity),
+        ('ViolinMusicVoice', 1, abjad.Infinity),
+        ('ViolaMusicVoice', 1, abjad.Infinity),
         ),
-    baca.text_script_extra_offset((1, 0)),
+    baca.text_script_parent_alignment_center(),
+    )
+
+maker(
+    baca.scope('BassClarinetMusicVoice', 1, abjad.Infinity),
+    baca.bar_extent((-2, 0), selector=baca.leaves()),
+    )
+
+maker(
+    baca.scope('GlobalSkips', 6),
+    baca.spacing((1, 16)),
     )

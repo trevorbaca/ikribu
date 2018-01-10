@@ -27,7 +27,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
+    minimum_width=(1, 24),
     )
 
 layout_measure_map = baca.layout(
@@ -59,9 +59,12 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 8),
+    baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.staff_lines(1),
     baca.staff_positions([0]),
     baca.repeat_ties_up(),
+    baca.text_script_padding(2.5),
+    baca.text_script_parent_alignment_center(),
     )
