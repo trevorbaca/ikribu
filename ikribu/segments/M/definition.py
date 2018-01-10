@@ -74,36 +74,12 @@ maker.validate_stage_count(23)
 maker.validate_measures_per_stage()
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 2, 3),
+    baca.make_scopes(
+        ['BassClarinetMusicVoice'],
+        [(2, 3), 6, (9, 10), (13, 14), 17, (20, 22)],
+        ),
     baca.make_tied_notes(repeat_ties=True),
     )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 6),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 9, 10),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 13, 14),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 17),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 20, 22),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-# violin #
 
 maker(
     baca.make_scopes(['ViolinMusicVoice'], [1, 5, 8, 12, 16, 19]),
@@ -140,8 +116,6 @@ maker(
     ikribu.color_rhythm(5),
     )
 
-# viola #
-
 maker(
     baca.scope('ViolaMusicVoice', 2, 3),
     ikribu.color_rhythm(4),
@@ -172,66 +146,16 @@ maker(
     ikribu.color_rhythm(3),
     )
 
-# cello #
-
 maker(
     baca.scope('CelloMusicVoice', 1),
-    baca.make_tied_notes(repeat_ties=True),
     baca.staff_lines(5),
     )
-
 maker(
-    baca.scope('CelloMusicVoice', 2, 3),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 5),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 6),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 8),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 9, 10),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 12),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 13, 14),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 16),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 17),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 19),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 20, 21),
+    baca.make_scopes(
+        ['CelloMusicVoice'],
+        [1, (2, 3), 5, 6, 8, (9, 10), 12, (13, 14),
+        16, 17, 19, (20, 21)],
+        ),
     baca.make_tied_notes(repeat_ties=True),
     )
 
@@ -264,13 +188,15 @@ maker(
         ('ViolinMusicVoice', 1, 23),
         ('ViolaMusicVoice', 1, 23),
         ),
-    baca.text_script_staff_padding(4.5),
+    baca.dls_sp(8),
+    baca.tuplet_bracket_staff_padding(3),
+    ikribu.box_adjustment(),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
     baca.effort_dynamic('f'),
-    baca.markup.boxed('grainfall (III)'),
+    baca.markup.boxed('grainfall (3)'),
     )
 
 maker(
@@ -301,31 +227,31 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 5),
     baca.effort_dynamic('f'),
-    baca.markup.boxed('grainfall (IV)'),
+    baca.markup.boxed('grainfall (4)'),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 8),
     baca.effort_dynamic('f'),
-    baca.markup.boxed('grainfall (V)'),
+    baca.markup.boxed('grainfall (5)'),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 12),
     baca.effort_dynamic('f'),
-    baca.markup.boxed('grainfall (VI)'),
+    baca.markup.boxed('grainfall (6)'),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 16),
     baca.effort_dynamic('f'),
-    baca.markup.boxed('grainfall (VII)'),
+    baca.markup.boxed('grainfall (7)'),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 19),
     baca.effort_dynamic('f'),
-    baca.markup.boxed('grainfall (VIII)'),
+    baca.markup.boxed('grainfall (8)'),
     )
 
 maker(
@@ -390,9 +316,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 5),
-    baca.clef('treble'),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.clef_x_extent_false(),
+    baca.clef('treble', shift=True),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -403,9 +327,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 8),
-    baca.clef('treble'),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.clef_x_extent_false(),
+    baca.clef('treble', shift=True),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -427,9 +349,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 16),
-    baca.clef('treble'),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.clef_x_extent_false(),
+    baca.clef('treble', shift=True),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
@@ -440,13 +360,19 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 19),
-    baca.clef('treble'),
-    baca.clef_extra_offset((-2.5, 0)),
-    baca.clef_x_extent_false(),
+    baca.clef('treble', shift=True),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('C+6'),
+    )
+
+maker(
+    baca.scopes(
+        ('GlobalSkips', 6),
+        ('GlobalSkips', 17),
+        ),
+    baca.spacing((1, 16)),
     )

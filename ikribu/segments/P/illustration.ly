@@ -50,11 +50,11 @@
                 
                 % GlobalSkips [measure 239]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \autoPageBreaksOff                                                       %! SEGMENT_LAYOUT:LMM1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT_LAYOUT:LMM3
-                #'((Y-offset . 20) (alignment-distances . (15 20 25 20 25 20 25)))       %! SEGMENT_LAYOUT:LMM3
+                #'((Y-offset . 20) (alignment-distances . (15 25 20 25 20 25 20)))       %! SEGMENT_LAYOUT:LMM3
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -137,7 +137,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -150,7 +150,7 @@
                 
                 % GlobalSkips [measure 240]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -165,7 +165,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -178,7 +178,7 @@
                 
                 % GlobalSkips [measure 241]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -193,7 +193,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -206,7 +206,7 @@
                 
                 % GlobalSkips [measure 242]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
@@ -228,7 +228,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -241,7 +241,7 @@
                 
                 % GlobalSkips [measure 243]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -264,7 +264,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -277,7 +277,7 @@
                 
                 % GlobalSkips [measure 244]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
@@ -355,7 +355,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -368,7 +368,7 @@
                 
                 % GlobalSkips [measure 245]                                              %! SM4
                 \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING:HSS1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -391,7 +391,7 @@
                         %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_MARKUP:HSS2
                         %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -571,57 +571,18 @@
                         % BassClarinetMusicVoice [measure 243]                           %! SM4
                         \once \override Hairpin.circled-tip = ##t
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
-                        c'''4
+                        c'''\breve
                         \repeatTie                                                       %! TCC
-                        \glissando                                                       %! SC
                         \>
                         \mf
                         
-                        a''4
-                        \glissando                                                       %! SC
-                        
-                        f''4
-                        \glissando                                                       %! SC
-                        
-                        d''4
-                        \glissando                                                       %! SC
-                        
-                        b'4
-                        \glissando                                                       %! SC
-                        
-                        g'4
-                        \glissando                                                       %! SC
-                        
-                        e'4
-                        \glissando                                                       %! SC
-                        
-                        c'4
-                        \glissando                                                       %! SC
-                        
                         % BassClarinetMusicVoice [measure 244]                           %! SM4
-                        b4
-                        \glissando                                                       %! SC
-                        
-                        a4
-                        \glissando                                                       %! SC
-                        
-                        g4
-                        \glissando                                                       %! SC
-                        
-                        f4
-                        \glissando                                                       %! SC
-                        
-                        e4
-                        \glissando                                                       %! SC
-                        
-                        d4
-                        \glissando                                                       %! SC
-                        
-                        cs4
+                        c'''1..
+                        \repeatTie                                                       %! TCC
                         
                         % BassClarinetMusicVoice [measure 245]                           %! SM4
-                        cs2.
-                        \repeatTie                                                       %! SM17
+                        c'''2.
+                        \repeatTie                                                       %! TCC
                         
                         % BassClarinetMusicVoice [measure 246]                           %! SM4
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -648,6 +609,8 @@
                                 \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
+                                \override Script.staff-padding = #7                      %! OC
+                                \override TextSpanner.staff-padding = #4                 %! OC
                                 \once \override TextSpanner.Y-extent = ##f
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
                                 \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1373,6 +1336,8 @@
                                 \stopTextSpan
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
+                                \revert Script.staff-padding                             %! OC
+                                \revert TextSpanner.staff-padding                        %! OC
                             }
                             
                             % ViolinRHMusicVoice [measure 244]                           %! SM4
@@ -1583,6 +1548,8 @@
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
                                 \override RepeatTie.direction = #up                      %! OC
+                                \override Script.staff-padding = #7                      %! OC
+                                \override TextSpanner.staff-padding = #4                 %! OC
                                 \once \override TextSpanner.Y-extent = ##f
                                 \once \override TextSpanner.arrow-width = 0.25
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2351,6 +2318,8 @@
                                 \stopTextSpan
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
+                                \revert Script.staff-padding                             %! OC
+                                \revert TextSpanner.staff-padding                        %! OC
                             }
                             
                             % ViolaRHMusicVoice [measure 244]                            %! SM4
@@ -2546,6 +2515,8 @@
                                 \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
                                 \override DynamicLineSpanner.staff-padding = #'9         %! OC
+                                \override Script.staff-padding = #7                      %! OC
+                                \override TextSpanner.staff-padding = #4                 %! OC
                                 \once \override TextSpanner.Y-extent = ##f
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
                                 \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -3272,6 +3243,8 @@
                                 \stopTextSpan
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
+                                \revert Script.staff-padding                             %! OC
+                                \revert TextSpanner.staff-padding                        %! OC
                             }
                             
                             % CelloRHMusicVoice [measure 244]                            %! SM4

@@ -27,11 +27,11 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
+    minimum_width=(1, 16),
     )
 
 layout_measure_map = baca.layout(
-    baca.page([239, 20, (15, 20, 25, 20, 25, 20, 25)]),
+    baca.page([239, 20, (15, 25, 20, 25, 20, 25, 20)]),
     )
 
 maker = baca.SegmentMaker(
@@ -52,21 +52,17 @@ maker.validate_stage_count(6)
 maker.validate_measures_per_stage()
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 2),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 3, 4),
-    abjad.new(
-        baca.make_repeated_durations((1, 4)),
-        tie_last=True,
+    baca.scopes(
+        ('BassClarinetMusicVoice', 1, 2),
+        ('BassClarinetMusicVoice', 3, 4),
+        ('BassClarinetMusicVoice', 5),
         ),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 5),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.tie_to(),
     )
 
 maker(
@@ -150,16 +146,22 @@ maker(
 maker(
     baca.scope('ViolinRHMusicVoice', 1, 3),
     ikribu.BowContactPointCommand(rotation=0),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(4),
     )
 
 maker(
     baca.scope('ViolaRHMusicVoice', 1, 3),
     ikribu.BowContactPointCommand(rotation=-1),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(4),
     )
 
 maker(
     baca.scope('CelloRHMusicVoice', 1, 3),
     ikribu.BowContactPointCommand(rotation=-2),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(4),
     )
 
 maker(

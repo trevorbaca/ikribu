@@ -500,8 +500,8 @@
                     }
                 
                 % GlobalSkips [measure 182]                                              %! SM4
-                \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \newSpacingSection                                                       %! SEGMENT_SPACING_OVERRIDE:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
@@ -572,15 +572,15 @@
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [M.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'DeepPink1)                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \bold                                            %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     #3                                       %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1173,8 +1173,8 @@
                     }
                 
                 % GlobalSkips [measure 195]                                              %! SM4
-                \newSpacingSection                                                       %! SEGMENT_SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SEGMENT_SPACING:HSS1
+                \newSpacingSection                                                       %! SEGMENT_SPACING_OVERRIDE:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT_SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! SEGMENT_LAYOUT:LMM2
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1245,15 +1245,15 @@
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [M.17]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     {                                                        %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%         \with-color                                          %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             #(x11-color 'DarkCyan)                           %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%             \bold                                            %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                 \fontsize                                    %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     #3                                       %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%                     (1/12)                                   %! SEGMENT_SPACING_MARKUP:HSS2
-                        %%%     }                                                        %! SEGMENT_SPACING_MARKUP:HSS2
+                        %%% \line                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'DeepPink1)                          %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \bold                                            %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 \fontsize                                    %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     #3                                       %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                     (1/16)                                   %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! SEGMENT_SPACING_OVERRIDE_MARKUP:SOC2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -2200,7 +2200,10 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                            \override TextScript.staff-padding = #4.5                    %! OC
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -2222,7 +2225,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2282,7 +2284,7 @@
                                                         \override                        %! IC
                                                             #'(box-padding . 0.5)        %! IC
                                                             \box                         %! IC
-                                                                "grainfall (III)"        %! IC
+                                                                "grainfall (3)"          %! IC
                                             }                                            %! IC
                                     }
                                 }
@@ -2363,7 +2365,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2379,7 +2380,7 @@
                                         \override                                        %! IC
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
-                                                "grainfall (IV)"                         %! IC
+                                                "grainfall (4)"                          %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
@@ -2423,7 +2424,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2439,7 +2439,7 @@
                                         \override                                        %! IC
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
-                                                "grainfall (V)"                          %! IC
+                                                "grainfall (5)"                          %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5 {
@@ -2526,7 +2526,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2542,7 +2541,7 @@
                                         \override                                        %! IC
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
-                                                "grainfall (VI)"                         %! IC
+                                                "grainfall (6)"                          %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/12 {
@@ -2611,7 +2610,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2627,7 +2625,7 @@
                                         \override                                        %! IC
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
-                                                "grainfall (VII)"                        %! IC
+                                                "grainfall (7)"                          %! IC
                                 }                                                        %! IC
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4 {
@@ -2671,7 +2669,6 @@
                             _ #(make-dynamic-script
                                 (markup
                                     #:whiteout
-                                    #:pad-around 0.25
                                     #:line (
                                         #:general-align Y -2 #:normal-text #:larger "“"
                                         #:hspace -0.4
@@ -2687,7 +2684,7 @@
                                         \override                                        %! IC
                                             #'(box-padding . 0.5)                        %! IC
                                             \box                                         %! IC
-                                                "grainfall (VIII)"                       %! IC
+                                                "grainfall (8)"                          %! IC
                                 }                                                        %! IC
                             \times 4/5 {
                                 
@@ -2812,7 +2809,10 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 0  %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
-                            \revert TextScript.staff-padding                             %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
+                            \revert TextScript.padding                                   %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
                             
                         }
                     }
@@ -2971,7 +2971,10 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                            \override TextScript.staff-padding = #4.5                    %! OC
+                            \override DynamicLineSpanner.staff-padding = #'8             %! OC
+                            \override TupletBracket.staff-padding = #3                   %! OC
+                            \override TextScript.padding = #2.5                          %! OC
+                            \override TextScript.parent-alignment-X = #0                 %! OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -3375,7 +3378,10 @@
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
-                            \revert TextScript.staff-padding                             %! OC
+                            \revert DynamicLineSpanner.staff-padding                     %! OC
+                            \revert TupletBracket.staff-padding                          %! OC
+                            \revert TextScript.padding                                   %! OC
+                            \revert TextScript.parent-alignment-X                        %! OC
                             
                         }
                     }
@@ -3690,8 +3696,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 181]                              %! SM4
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
@@ -3742,8 +3748,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 184]                              %! SM4
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
@@ -3924,8 +3930,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 194]                              %! SM4
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
@@ -3976,8 +3982,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 197]                              %! SM4
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
