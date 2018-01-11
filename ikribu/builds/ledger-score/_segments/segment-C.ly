@@ -340,15 +340,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [C.5]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %F% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             #(x11-color 'DeepPink1)                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                 \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     (1/24)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                            {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                                \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
+                                        \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            (1/24)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
+                            }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -597,15 +597,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [C.9]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %F% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             #(x11-color 'DeepPink1)                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                 \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     (1/24)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                            {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                                \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
+                                        \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            (1/24)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
+                            }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -854,15 +854,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [C.13]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %F% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             #(x11-color 'DeepPink1)                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                 \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     (1/24)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                            {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                                \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
+                                        \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            (1/24)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
+                            }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1114,19 +1114,19 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [C.17]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %F% \line                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     {                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%         \with-color                                          %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             #(x11-color 'DeepPink1)                          %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             \bold                                            %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                 \fontsize                                    %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     #3                                       %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     (1/16)                                   %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     }                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                        \line                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                            {                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                                \with-color                                          %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                                    #(x11-color 'BlueViolet)                         %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                                    \bold                                            %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                                        \fontsize                                    %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                                            #3                                       %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                                            (1/16)                                   %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                            }                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
                     %F% \line                                                        %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                     %F%     {                                                        %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                     %F%         \with-color                                          %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             #(x11-color 'DeepPink1)                          %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                    %F%             #(x11-color 'BlueViolet)                         %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                     %F%             \bold                                            %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                     %F%                 \fontsize                                    %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                     %F%                     #3                                       %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2

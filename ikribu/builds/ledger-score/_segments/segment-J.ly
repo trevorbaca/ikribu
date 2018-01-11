@@ -473,15 +473,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [J.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                    %F% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             #(x11-color 'DeepPink1)                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%             \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                 \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%                     (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                    %F%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                            {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                                \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                                    \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
+                                        \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                                            (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
+                            }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
