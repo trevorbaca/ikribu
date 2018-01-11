@@ -60,10 +60,10 @@
                 % GlobalSkips [measure 52]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \autoPageBreaksOff                                                       %! SEGMENT+LAYOUT:LMM1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! SEGMENT+LAYOUT:LMM3
-                #'((Y-offset . 20) (alignment-distances . (15 15 15 20 22.5)))           %! SEGMENT+LAYOUT:LMM3
+                \autoPageBreaksOff                                                       %! +SEGMENT:LAYOUT:LMM1
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:LAYOUT:LMM3
+                #'((Y-offset . 20) (alignment-distances . (15 15 15 20 22.5)))           %! +SEGMENT:LAYOUT:LMM3
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %F%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -119,9 +119,9 @@
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \mark #4                                                                 %! SM9
-                \bar ""                                                                  %! SEGMENT+EMPTY_START_BAR:SM2
+                \bar ""                                                                  %! +SEGMENT:EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                \pageBreak                                                               %! SEGMENT+LAYOUT:LMM3
+                \pageBreak                                                               %! +SEGMENT:LAYOUT:LMM3
                 s1 * 3/4
                 \startTextSpan                                                           %! SM29
                 ^ \markup {
@@ -156,7 +156,7 @@
                 % GlobalSkips [measure 53]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
@@ -184,7 +184,7 @@
                 % GlobalSkips [measure 54]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
@@ -211,7 +211,7 @@
                 % GlobalSkips [measure 55]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
@@ -239,7 +239,7 @@
                 % GlobalSkips [measure 56]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
@@ -267,7 +267,7 @@
                 % GlobalSkips [measure 57]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
@@ -303,7 +303,7 @@
                 % GlobalSkips [measure 58]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
@@ -331,7 +331,7 @@
                 % GlobalSkips [measure 59]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
@@ -359,7 +359,7 @@
                 % GlobalSkips [measure 60]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
@@ -387,7 +387,7 @@
                 % GlobalSkips [measure 61]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
@@ -415,7 +415,7 @@
                 % GlobalSkips [measure 62]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! SPACING:HSS1
-                \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/4
@@ -457,7 +457,7 @@
                         \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
-                    %F% \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2)     %! LEDGER_SCORE:OC
+                    %F% \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2)     %! +LEDGER_SCORE:OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -612,10 +612,10 @@
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
-                        \once \override Score.BarLine.transparent = ##t                  %! SEGMENT+FERMATA_BAR_LINE:SM22
-                        \once \override Score.SpanBar.transparent = ##t                  %! SEGMENT+FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.BarLine.transparent = ##t                  %! LEDGER_SCORE+FERMATA_BAR_LINE:SM22
-                    %F% \once \override Score.SpanBar.transparent = ##t                  %! LEDGER_SCORE+FERMATA_BAR_LINE:SM22
+                        \once \override Score.BarLine.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
+                        \once \override Score.SpanBar.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.BarLine.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
+                    %F% \once \override Score.SpanBar.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
                         
                     }
                 }
@@ -2156,8 +2156,8 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
-                            %F% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! LEDGER_SCORE:OC
-                            %F% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! LEDGER_SCORE:OC
+                            %F% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! +LEDGER_SCORE:OC
+                            %F% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! +LEDGER_SCORE:OC
                                 \set CelloStaffGroup.instrumentName = \markup {          %! REAPPLIED_INSTRUMENT:SM8
                                     \hcenter-in                                          %! REAPPLIED_INSTRUMENT:SM8
                                         #16                                              %! REAPPLIED_INSTRUMENT:SM8

@@ -195,12 +195,13 @@ maker(
         ('GlobalSkips', 5),
         ('GlobalSkips', 9),
         ('GlobalSkips', 13),
+        ('GlobalSkips', 17),
         ),
     baca.spacing((1, 24)),
     )
 
 maker(
     baca.scope('GlobalSkips', 17),
-    baca.spacing((1, 16)),
+    baca.build(baca.Tags.SEGMENT, baca.spacing((1, 16))),
     baca.build('LEDGER_SCORE', baca.spacing((1, 30))),
     )
