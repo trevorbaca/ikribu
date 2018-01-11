@@ -87,6 +87,10 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 2),
+    baca.build(
+        'LEDGER_SCORE',
+        baca.shift_clef(-2.5),
+        ),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),

@@ -52,7 +52,6 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
 layout_measure_map = baca.layout(
     baca.page(
         [35, 20, (15, 20)],
-        #[48, 140, (15, 20)],
         ),
     )
 
@@ -82,30 +81,6 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
-    baca.clef('percussion'),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.make_scopes(
-        ['ViolinMusicVoice', 'ViolaMusicVoice'],
-        [(3, 4), (7, 8), (11, 12), (15, 16)],
-        ),
-    baca.make_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 1),
-    baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scope('CelloMusicVoice', 2, 16),
-    baca.make_notes(repeat_ties=True),
-    )
-
-maker(
     baca.scope('BassClarinetMusicVoice', 2, 17),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
@@ -125,11 +100,22 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
+    baca.build('LEDGER_SCORE', baca.shift_clef(-2.25)),
+    baca.clef('percussion'),
     baca.effort_dynamic('mf'),
+    baca.make_tied_notes(repeat_ties=True),
     baca.markup.boxed('grainfall (2)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
     ikribu.box_adjustment(),
+    )
+
+maker(
+    baca.make_scopes(
+        ['ViolinMusicVoice', 'ViolaMusicVoice'],
+        [(3, 4), (7, 8), (11, 12), (15, 16)],
+        ),
+    baca.make_notes(repeat_ties=True),
     )
 
 maker(
@@ -146,6 +132,14 @@ maker(
     baca.staff_lines(5),
     baca.stem_tremolo(),
     baca.text_script_staff_padding(2.5),
+    )
+
+maker(
+    baca.scopes(
+        ('CelloMusicVoice', 1),
+        ('CelloMusicVoice', (2, 16)),
+        ),
+    baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
@@ -203,4 +197,10 @@ maker(
         ('GlobalSkips', 13),
         ),
     baca.spacing((1, 24)),
+    )
+
+maker(
+    baca.scope('GlobalSkips', 17),
+    baca.spacing((1, 16)),
+    baca.build('LEDGER_SCORE', baca.spacing((1, 30))),
     )
