@@ -51,6 +51,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1),
+    baca.build('LEDGER_SCORE', baca.bar_extent((-2, 2))),
     baca.staff_lines(5),
     )
 
@@ -95,3 +96,8 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     )
+
+#maker(
+#    baca.scope('GlobalSkips', 1),
+#    baca.build('LEDGER_SCORE', baca.rehearsal_mark_extra_offset((-2, 0))),
+#    )

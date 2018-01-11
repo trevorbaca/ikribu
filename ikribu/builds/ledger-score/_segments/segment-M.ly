@@ -228,15 +228,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.1]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -264,15 +264,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.2]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -291,15 +291,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -382,15 +382,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.3]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -418,15 +418,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.4]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/4)                                    %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/4)                                    %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     }
                 }
             
@@ -472,15 +472,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.5]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -563,15 +563,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                            {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                                \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                                    #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
-                                    \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                                        \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                                            #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                                            (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                            }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%             #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%             \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%                 \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%                     #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%                     (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -599,15 +599,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.7]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/4)                                    %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/4)                                    %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     }
                 }
             
@@ -653,15 +653,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.8]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -689,15 +689,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.9]                                        %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -717,15 +717,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -808,15 +808,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.10]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -844,15 +844,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.11]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/4)                                    %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/4)                                    %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     }
                 }
             
@@ -901,15 +901,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.12]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -937,15 +937,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.13]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -964,15 +964,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1055,15 +1055,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.14]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1091,15 +1091,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.15]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/4)                                    %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/4)                                    %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     }
                 }
             
@@ -1145,15 +1145,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.16]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1236,15 +1236,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.17]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                            {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                                \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                                    #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
-                                    \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                                        \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                                            #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                                            (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                            }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%             #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%             \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%                 \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%                     #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%                     (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
+                    %%%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1272,15 +1272,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.18]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/4)                                    %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/4)                                    %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     }
                 }
             
@@ -1326,15 +1326,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.19]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1362,15 +1362,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.20]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1393,15 +1393,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1421,15 +1421,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1448,15 +1448,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1539,15 +1539,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.21]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1575,15 +1575,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.22]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1603,15 +1603,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1631,15 +1631,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1659,15 +1659,15 @@
             ^ \markup {
                 \column
                     {
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/12)                                   %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/12)                                   %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                     %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1696,15 +1696,15 @@
                     %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%                 [M.23]                                       %! STAGE_NUMBER_MARKUP:SM3
                     %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        \line                                                        %! SPACING_MARKUP:HSS2
-                            {                                                        %! SPACING_MARKUP:HSS2
-                                \with-color                                          %! SPACING_MARKUP:HSS2
-                                    #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                    \bold                                            %! SPACING_MARKUP:HSS2
-                                        \fontsize                                    %! SPACING_MARKUP:HSS2
-                                            #3                                       %! SPACING_MARKUP:HSS2
-                                            (1/4)                                    %! SPACING_MARKUP:HSS2
-                            }                                                        %! SPACING_MARKUP:HSS2
+                    %%% \line                                                        %! SPACING_MARKUP:HSS2
+                    %%%     {                                                        %! SPACING_MARKUP:HSS2
+                    %%%         \with-color                                          %! SPACING_MARKUP:HSS2
+                    %%%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                    %%%             \bold                                            %! SPACING_MARKUP:HSS2
+                    %%%                 \fontsize                                    %! SPACING_MARKUP:HSS2
+                    %%%                     #3                                       %! SPACING_MARKUP:HSS2
+                    %%%                     (1/4)                                    %! SPACING_MARKUP:HSS2
+                    %%%     }                                                        %! SPACING_MARKUP:HSS2
                     }
                 }
             \override Score.BarLine.transparent = ##f                                %! SM5
