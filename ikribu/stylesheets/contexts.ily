@@ -11,20 +11,9 @@
         \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
-
         \override StaffSymbol.stencil = ##f
         \override TextScript.X-extent = #'(0 . 0)
         \override TextScript.Y-extent = #'(0 . 0)
-        %\override TextScript.Y-offset = 20
-        %\override TextScript.extra-offset = #'(0 . 10)
-        \override TextScript.extra-spacing-height = #'(+inf.0 . -inf.0)
-        \override TextScript.extra-spacing-width = #'(+inf.0 . -inf.0)
-
-        \override TextScript.outside-staff-horizontal-padding = -10
-        \override TextScript.outside-staff-padding = 0
-        \override TextScript.padding = 0 
-        \override TextScript.side-axis = 1 
-
         \override TextSpanner.bound-details.right.attach-dir = #left
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 6
@@ -61,15 +50,13 @@
         \override BarNumber.X-offset = -8
         \override BarNumber.Y-offset = -0.5
         \override BarNumber.font-size = 1
-        \override RehearsalMark.padding = 4
         % rehearsal marks (right) align with time signatures:
+        \override RehearsalMark.padding = 4
         \override RehearsalMark.break-align-symbols = #'(time-signature)
         \override RehearsalMark.break-visibility = #end-of-line-invisible
-        \override RehearsalMark.extra-offset = #'(1.25 . 0)
         \override RehearsalMark.font-name = "Didot"
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 200
-        %\override RehearsalMark.self-alignment-X = #left
         \override RehearsalMark.self-alignment-X = #right
         % prevents StaffSymbol from starting too early after cut-away measures:
         \override TimeSignature.X-extent = ##f

@@ -1103,8 +1103,8 @@
                     }
                 
                 % GlobalSkips [measure 51]                                               %! SM4
-                \newSpacingSection                                                       %! SEGMENT+SPACING_OVERRIDE:SOC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT+SPACING_OVERRIDE:SOC1
+                \newSpacingSection                                                       %! -LEDGER_SCORE+SPACING_OVERRIDE:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! -LEDGER_SCORE+SPACING_OVERRIDE:SOC1
             %F% \newSpacingSection                                                       %! LEDGER_SCORE+SPACING_OVERRIDE:SOC1
             %F% \set Score.proportionalNotationDuration = #(ly:make-moment 1 30)         %! LEDGER_SCORE+SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
@@ -1123,19 +1123,19 @@
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [C.17]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                {                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                    \with-color                                          %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                        #(x11-color 'BlueViolet)                         %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                        \bold                                            %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                            \fontsize                                    %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                                #3                                       %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                                (1/16)                                   %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
-                                }                                                        %! SEGMENT+SPACING_OVERRIDE_MARKUP:SOC2
+                            \line                                                        %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                {                                                        %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                    \with-color                                          %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                        #(x11-color 'BlueViolet)                         %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                        \bold                                            %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                            \fontsize                                    %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                                #3                                       %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                                (1/16)                                   %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                                }                                                        %! -LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                         %F% \line                                                        %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                         %F%     {                                                        %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                         %F%         \with-color                                          %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
-                        %F%             #(x11-color 'BlueViolet)                         %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
+                        %F%             #(x11-color 'DarkOrange)                         %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                         %F%             \bold                                            %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                         %F%                 \fontsize                                    %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
                         %F%                     #3                                       %! LEDGER_SCORE+SPACING_OVERRIDE_MARKUP:SOC2
