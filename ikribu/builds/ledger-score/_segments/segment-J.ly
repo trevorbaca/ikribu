@@ -401,8 +401,8 @@
                 }
             
             % GlobalSkips [measure 125]                                              %! SM4
-            \newSpacingSection                                                       %! SEGMENT+SPACING_OVERRIDE:SOC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT+SPACING_OVERRIDE:SOC1
+        %%% \newSpacingSection                                                       %! SEGMENT+SPACING_OVERRIDE:SOC1
+        %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SEGMENT+SPACING_OVERRIDE:SOC1
         %%% \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
             \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27 %F%
             \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27 %F%

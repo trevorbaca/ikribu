@@ -1881,7 +1881,7 @@
                         \override TextScript.staff-padding = #3                      %! OC
                         \override TextSpanner.staff-padding = #3.5                   %! OC
                         \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! LEDGER_SCORE:OC %F%
-                        \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! LEDGER_SCORE:OC %F%
+                        \once \override ViolaMusicStaff.Clef.extra-offset = #'(-3 . 0)     %! LEDGER_SCORE:OC %F%
                     %%% \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                     %%%     \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                     %%%         #16                                                  %! REAPPLIED_INSTRUMENT:SM8

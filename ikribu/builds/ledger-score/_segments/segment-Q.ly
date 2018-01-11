@@ -240,8 +240,8 @@
                 }
             
             % GlobalSkips [measure 251]                                              %! SM4
-            \newSpacingSection                                                       %! SEGMENT+SPACING_OVERRIDE:SOC1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 14)         %! SEGMENT+SPACING_OVERRIDE:SOC1
+        %%% \newSpacingSection                                                       %! SEGMENT+SPACING_OVERRIDE:SOC1
+        %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 14)         %! SEGMENT+SPACING_OVERRIDE:SOC1
         %%% \noBreak                                                                 %! SEGMENT+LAYOUT:LMM2
             \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
         %%% \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
