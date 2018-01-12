@@ -25,7 +25,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 spacing_specifier = baca.HorizontalSpacingSpecifier(
     fermata_measure_width=(1, 4),
-    minimum_width=(1, 24),
+    minimum_width=(1, 30),
     )
 
 layout_measure_map = baca.layout(
@@ -122,10 +122,10 @@ maker(
     baca.scope('GlobalSkips', 1, abjad.Infinity),
     baca.build(
         'LEDGER_SCORE',
-        baca.spacing((1, 24), eol=True, selector=baca.skip(1)),
+        baca.spacing((1, 30), eol=True, selector=baca.skip(1)),
         ),
     baca.build(
         'SEGMENT',
-        baca.spacing((1, 24), eol=True, selector=baca.skip(4)),
+        baca.spacing((1, 30), eol=True, selector=baca.skip(4)),
         ),
     )

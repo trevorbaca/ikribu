@@ -136,3 +136,8 @@ maker(
     baca.build('LEDGER_SCORE', baca.spacing((1, 30))),
     baca.build('SEGMENT', baca.spacing((1, 24), eol=True)),
     )
+
+maker(
+    baca.scope('GlobalSkips', 10),
+    baca.build('LEDGER_SCORE', baca.spacing((1, 24), eol=True)),
+    )

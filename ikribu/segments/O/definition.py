@@ -226,3 +226,8 @@ maker(
         baca.markup('tasto poss.'),
         ),
     )
+
+maker(
+    baca.scope('GlobalSkips', 9),
+    baca.build('SEGMENT', baca.spacing((1, 12), eol=True)),
+    )

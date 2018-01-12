@@ -129,3 +129,8 @@ maker(
     baca.clef('treble', shift=True),
     baca.staff_lines(5),
     )
+
+maker(
+    baca.scope('GlobalSkips', 8),
+    baca.build('SEGMENT', baca.spacing((1, 12), eol=True)),
+    )

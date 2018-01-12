@@ -380,3 +380,8 @@ maker(
         ),
     baca.spacing((1, 16)),
     )
+
+maker(
+    baca.scope('GlobalSkips', 20),
+    baca.build('SEGMENT', baca.spacing((1, 12), eol=True)),
+    )
