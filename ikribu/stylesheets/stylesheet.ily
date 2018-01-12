@@ -36,31 +36,10 @@
     ragged-bottom = ##t
     ragged-last-bottom = ##t
     right-margin = 5\mm
-    markup-system-spacing = #'(
-        (basic-distance . 0)
-        (minimum-distance . 90)
-        (padding . 0)
-        (stretchability . 0)
-    )
-    system-system-spacing = #'(
-        (basic-distance . 0)
-        (minimum-distance . 24) % space after each system
-        (padding . 0)
-        (stretchability . 0)
-    )
-    %systems-per-page = 3
-    top-markup-spacing = #'(
-        (basic-distance . 0)
-        (minimum-distance . 18)
-        (padding . 0)
-        (stretchability . 0)
-    )
-    top-system-spacing = #'(
-        (basic-distance . 0)
-        (minimum-distance . 26)
-        (padding . 0)
-        (stretchability . 0)
-    )
+    markup-system-spacing.minimum-distance = 90
+    system-system-spacing.minimum-distance = 24
+    top-markup-spacing.minimum-distance = 24
+    top-system-spacing.minimum-distance = 26
     top-margin = 0\mm
 }
 
@@ -76,30 +55,31 @@
     composer = \markup {
         \override #'(font-name . "Palatino")
         \fontsize #5
-        \line { Trevor Bača (*1975) \hspace #15 }
+        \line { Trevor Bača (*1975) \hspace #39 }
     }
     tagline = \markup { "" }
     title = \markup \column {
         \center-align {
             \override #'(font-name . "Palatino")
-            \fontsize #3
+            \fontsize #16
             \line {
-                I \hspace #13
-                K \hspace #13
-                R \hspace #13
-                I \hspace #13
-                B \hspace #13
+                I
+                \hspace #0
+                K
+                \hspace #-2
+                R
+                \hspace #-1
+                I
+                \hspace #0
+                B
+                \hspace #-3
                 U
             }
             " "
             " "
             \override #'(font-name . "Palatino Italic")
             \fontsize #3
-            \line {
-                \hspace #2
-                for \hspace #1
-                Distractfold
-            }
+            \line { for \hspace #1 Distractfold }
         }
     }
 }

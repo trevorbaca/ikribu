@@ -317,6 +317,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 5),
+    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
     baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfz'),
@@ -382,6 +383,7 @@ maker(
     )
 
 maker(
-    baca.scope('GlobalSkips', 20),
-    baca.build('SEGMENT', baca.spacing((1, 12), eol=True)),
+    baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.build('LEDGER_SCORE', baca.spacing((1, 12), True, baca.skip(1))),
+    baca.build('SEGMENT', baca.spacing((1, 12), True, baca.skip(19))),
     )

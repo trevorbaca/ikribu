@@ -824,38 +824,11 @@
                     }
                 
                 % GlobalSkips [measure 164]                                              %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
-                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
-                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                s1 * 1
-                ^ \markup {
-                    \column
-                        {
-                            \line                                                        %! SPACING_MARKUP:HSS2
-                                {                                                        %! SPACING_MARKUP:HSS2
-                                    \with-color                                          %! SPACING_MARKUP:HSS2
-                                        #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                        \bold                                            %! SPACING_MARKUP:HSS2
-                                            \fontsize                                    %! SPACING_MARKUP:HSS2
-                                                #3                                       %! SPACING_MARKUP:HSS2
-                                                (1/16)                                   %! SPACING_MARKUP:HSS2
-                                }                                                        %! SPACING_MARKUP:HSS2
-                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
-                        %%%             #3                                               %! CLOCK_TIME_MARKUP:SM28
-                        %%%             12'16''                                          %! CLOCK_TIME_MARKUP:SM28
-                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        }
-                    }
-                
-                % GlobalSkips [measure 165]                                              %! SM4
             %F% \newSpacingSection                                                       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
             %F% \set Score.proportionalNotationDuration = #(ly:make-moment 35 384)       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
-                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+                \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
+                \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
                     \column
@@ -869,6 +842,33 @@
                         %F%                     #3                                       %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %F%                     (35/384)                                 %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %F%     }                                                        %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
+                        %%%             #3                                               %! CLOCK_TIME_MARKUP:SM28
+                        %%%             12'16''                                          %! CLOCK_TIME_MARKUP:SM28
+                        %%%     }                                                        %! CLOCK_TIME_MARKUP:SM28
+                        }
+                    }
+                
+                % GlobalSkips [measure 165]                                              %! SM4
+                \newSpacingSection                                                       %! SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! SPACING:HSS1
+                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
+                s1 * 1
+                ^ \markup {
+                    \column
+                        {
+                            \line                                                        %! SPACING_MARKUP:HSS2
+                                {                                                        %! SPACING_MARKUP:HSS2
+                                    \with-color                                          %! SPACING_MARKUP:HSS2
+                                        #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
+                                        \bold                                            %! SPACING_MARKUP:HSS2
+                                            \fontsize                                    %! SPACING_MARKUP:HSS2
+                                                #3                                       %! SPACING_MARKUP:HSS2
+                                                (1/16)                                   %! SPACING_MARKUP:HSS2
+                                }                                                        %! SPACING_MARKUP:HSS2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
