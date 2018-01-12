@@ -178,3 +178,11 @@ maker(
     baca.scope('CelloMusicVoice', 13, 16),
     baca.pitches('F+3'),
     )
+
+maker(
+    baca.scopes(
+        ('GlobalSkips', 11),
+        ('GlobalSkips', 16),
+        ),
+    baca.build('SEGMENT', baca.spacing((1, 12), eol=True)),
+    )

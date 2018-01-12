@@ -667,8 +667,8 @@
                     }
                 
                 % GlobalSkips [measure 73]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
+                \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
+                \set Score.proportionalNotationDuration = #(ly:make-moment 17 144)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
             %F% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %F% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
@@ -739,15 +739,15 @@
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [E.11]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                                        %! SPACING_MARKUP:HSS2
-                                {                                                        %! SPACING_MARKUP:HSS2
-                                    \with-color                                          %! SPACING_MARKUP:HSS2
-                                        #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                        \bold                                            %! SPACING_MARKUP:HSS2
-                                            \fontsize                                    %! SPACING_MARKUP:HSS2
-                                                #3                                       %! SPACING_MARKUP:HSS2
-                                                (1/12)                                   %! SPACING_MARKUP:HSS2
-                                }                                                        %! SPACING_MARKUP:HSS2
+                            \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                    \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                        #(x11-color 'DarkOrange)                         %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                        \bold                                            %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                            \fontsize                                    %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                                #3                                       %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                                (17/144)                                 %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28
@@ -1018,8 +1018,8 @@
                     }
                 
                 % GlobalSkips [measure 78]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
+                \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
+                \set Score.proportionalNotationDuration = #(ly:make-moment 17 144)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -1036,15 +1036,15 @@
                         %%%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%                 [E.16]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %%%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                                        %! SPACING_MARKUP:HSS2
-                                {                                                        %! SPACING_MARKUP:HSS2
-                                    \with-color                                          %! SPACING_MARKUP:HSS2
-                                        #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                                        \bold                                            %! SPACING_MARKUP:HSS2
-                                            \fontsize                                    %! SPACING_MARKUP:HSS2
-                                                #3                                       %! SPACING_MARKUP:HSS2
-                                                (1/12)                                   %! SPACING_MARKUP:HSS2
-                                }                                                        %! SPACING_MARKUP:HSS2
+                            \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                    \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                        #(x11-color 'DarkOrange)                         %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                        \bold                                            %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                            \fontsize                                    %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                                #3                                       %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                                (17/144)                                 %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%         \fontsize                                            %! CLOCK_TIME_MARKUP:SM28

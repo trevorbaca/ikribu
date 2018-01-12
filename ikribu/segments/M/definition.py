@@ -317,7 +317,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 5),
-    baca.build(baca.tags.SEGMENT, baca.shift_clef('treble')),
+    baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -352,7 +352,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 16),
-    baca.build(baca.tags.SEGMENT, baca.shift_clef('treble')),
+    baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),

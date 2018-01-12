@@ -138,6 +138,10 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     __documentation_section__ = None
 
+    known_builds = (
+        'LEDGER_SCORE',
+        )
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
