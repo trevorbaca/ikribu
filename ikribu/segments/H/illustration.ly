@@ -1878,6 +1878,7 @@
                                 c'4
                                 \ppp
                                 \stopTextSpan
+                                \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
                                 \revert Script.staff-padding                             %! OC
                                 \revert TextScript.staff-padding                         %! OC
@@ -1889,7 +1890,6 @@
                             \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
-                            \revert DynamicLineSpanner.staff-padding                     %! OC
                             
                         }
                     }
@@ -3444,6 +3444,7 @@
                                 -\downbow
                                 \p
                                 \stopTextSpan
+                                \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert RepeatTie.direction                              %! OC
                                 \revert Script.staff-padding                             %! OC
                                 \revert TextScript.staff-padding                         %! OC
@@ -3455,7 +3456,6 @@
                             \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                             \startStaff                                                  %! SM20
                             R1 * 1/4
-                            \revert DynamicLineSpanner.staff-padding                     %! OC
                             
                         }
                     }

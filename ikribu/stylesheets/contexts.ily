@@ -85,7 +85,6 @@
     % STAFF
     \context {
         \Staff
-        \remove Separating_line_group_engraver
         \remove Time_signature_engraver
     }
 

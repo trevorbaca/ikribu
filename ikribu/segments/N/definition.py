@@ -181,3 +181,8 @@ maker(
         ),
     baca.dls_sp(9),
     )
+
+maker(
+    baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.build('SEGMENT', baca.spacing((1, 16), True, baca.skip(-1))),
+    )

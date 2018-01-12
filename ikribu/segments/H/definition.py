@@ -50,15 +50,9 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
+    baca.dynamic('ppp'),
     baca.make_tied_notes(repeat_ties=True),
-    )
-
-maker(
-    baca.scopes(
-        ('ViolinRHMusicVoice', 1, abjad.Infinity),
-        ('ViolaRHMusicVoice', 1, abjad.Infinity),
-        ),
-    baca.dls_sp(10),
+    baca.pitches('Db2'),
     )
 
 maker(
@@ -67,10 +61,13 @@ maker(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
         ),
+    ikribu.BowContactPointCommand(rotation=0),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 2),
+    baca.glissando(),
+    ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
@@ -80,17 +77,14 @@ maker(
         logical_tie_masks=abjad.silence([4, 14], 16),
         rotation=-1,
         ),
+    ikribu.BowContactPointCommand(rotation=-1),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 2),
+    baca.glissando(),
+    ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
-    )
-
-maker(
-    baca.scope('BassClarinetMusicVoice', 1, 2),
-    baca.dynamic('ppp'),
-    baca.pitches('Db2'),
     )
 
 maker(
@@ -98,6 +92,7 @@ maker(
         ('ViolinRHMusicVoice', 1, 2),
         ('ViolaRHMusicVoice', 1, 2),
         ),
+    baca.dls_sp(10),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
@@ -110,26 +105,4 @@ maker(
     baca.staff_positions([0]),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
-    )
-
-maker(
-    baca.scope('ViolinRHMusicVoice', 1, 2),
-    ikribu.BowContactPointCommand(rotation=0),
-    )
-
-maker(
-    baca.scope('ViolaRHMusicVoice', 1, 2),
-    ikribu.BowContactPointCommand(rotation=-1),
-    )
-
-maker(
-    baca.scope('ViolinMusicVoice', 1, 2),
-    baca.glissando(),
-    ikribu.glissando_pitches(octave=5, rotation=0),
-    )
-
-maker(
-    baca.scope('ViolaMusicVoice', 1, 2),
-    baca.glissando(),
-    ikribu.glissando_pitches(octave=5, rotation=-10),
     )
