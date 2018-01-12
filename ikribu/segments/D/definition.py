@@ -88,16 +88,8 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 2),
-    baca.build(
-        'LEDGER_SCORE',
-        baca.shift_clef(-2.5),
-        ),
+    baca.build('LEDGER_SCORE', baca.shift_clef(-2.5)),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     )
-
-#maker(
-#    baca.scope('GlobalSkips', 1),
-#    baca.build('LEDGER_SCORE', baca.rehearsal_mark_extra_offset((-2, 0))),
-#    )

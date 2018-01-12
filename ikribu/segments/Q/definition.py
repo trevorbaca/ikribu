@@ -121,11 +121,11 @@ maker(
 maker(
     baca.scope('GlobalSkips', 1, abjad.Infinity),
     baca.build(
-        baca.tags.SEGMENT,
-        baca.spacing((1, 14), selector=baca.skip(4)),
+        'LEDGER_SCORE',
+        baca.spacing((1, 24), eol=True, selector=baca.skip(1)),
         ),
     baca.build(
-        'LEDGER_SCORE',
-        baca.spacing((1, 14), selector=baca.skip(1)),
+        'SEGMENT',
+        baca.spacing((1, 24), eol=True, selector=baca.skip(4)),
         ),
     )

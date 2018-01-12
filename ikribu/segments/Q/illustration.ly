@@ -158,7 +158,7 @@
                 
                 % GlobalSkips [measure 248]                                              %! SM4
             %F% \newSpacingSection                                                       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
-            %F% \set Score.proportionalNotationDuration = #(ly:make-moment 1 14)         %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
+            %F% \set Score.proportionalNotationDuration = #(ly:make-moment 17 288)       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -173,7 +173,7 @@
                         %F%             \bold                                            %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %F%                 \fontsize                                    %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %F%                     #3                                       %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %F%                     (1/14)                                   %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %F%                     (17/288)                                 %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %F%     }                                                        %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
@@ -250,7 +250,7 @@
                 
                 % GlobalSkips [measure 251]                                              %! SM4
                 \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 14)         %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
+                \set Score.proportionalNotationDuration = #(ly:make-moment 17 288)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %F%
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
@@ -265,7 +265,7 @@
                                         \bold                                            %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
                                             \fontsize                                    %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
                                                 #3                                       %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
-                                                (1/14)                                   %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
+                                                (17/288)                                 %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
                                 }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %F%
                         %%% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %%%     {                                                        %! CLOCK_TIME_MARKUP:SM28
