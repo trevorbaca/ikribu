@@ -3540,6 +3540,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                        %F% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
+                        %F% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! +LEDGER_SCORE:OC
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -3696,8 +3698,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 181]                              %! SM4
-                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +SEGMENT:OC %F%
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! +SEGMENT:OC %F%
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
@@ -3840,6 +3842,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 189]                              %! SM4
+                        %F% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
+                        %F% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! +LEDGER_SCORE:OC
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
@@ -3930,8 +3934,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 194]                              %! SM4
-                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
-                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +SEGMENT:OC %F%
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0)     %! +SEGMENT:OC %F%
                             \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
