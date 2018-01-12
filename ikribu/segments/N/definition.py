@@ -64,6 +64,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 2),
+    baca.clef('treble'),
     baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
