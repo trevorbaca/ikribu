@@ -64,6 +64,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 2),
+    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
@@ -162,6 +163,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 2),
+    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
@@ -169,6 +171,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 2),
+    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),

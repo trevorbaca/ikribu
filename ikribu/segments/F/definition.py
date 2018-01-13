@@ -126,7 +126,10 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 8),
-    baca.clef('treble', shift=True),
+    #baca.clef('treble', shift=True),
+    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
+    baca.build('SEGMENT', baca.shift_clef('treble')),
+    baca.clef('treble'),
     baca.staff_lines(5),
     )
 
