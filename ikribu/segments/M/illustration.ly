@@ -2264,6 +2264,8 @@
                         \!
                         \once \override Score.BarLine.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
                         \once \override Score.SpanBar.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
+                    %@% \once \override Score.BarLine.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
+                    %@% \once \override Score.SpanBar.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 189]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -2300,8 +2302,6 @@
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
                         \!
-                    %@% \once \override Score.BarLine.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
-                    %@% \once \override Score.SpanBar.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
                     %@% \once \override Score.BarLine.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
                     %@% \once \override Score.SpanBar.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
                         
@@ -2323,6 +2323,8 @@
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
+                    %@% \once \override Score.BarLine.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
+                    %@% \once \override Score.SpanBar.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 197]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -2379,8 +2381,6 @@
                         R1 * 1/4
                         \once \override Score.BarLine.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
                         \once \override Score.SpanBar.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
-                    %@% \once \override Score.BarLine.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
-                    %@% \once \override Score.SpanBar.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
                     %@% \once \override Score.BarLine.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
                     %@% \once \override Score.SpanBar.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
                         
