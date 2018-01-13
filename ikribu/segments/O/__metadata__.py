@@ -3,7 +3,7 @@ import abjad
 
 metadata = abjad.TypedOrderedDict(
     [
-        ('duration', "2'20''"),
+        ('duration', "2'21''"),
         ('first_measure_number', 218),
         (
             'persistent_indicators',
@@ -238,8 +238,8 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         ('segment_number', 16),
-        ('start_clock_time', "15'14''"),
-        ('stop_clock_time', "17'34''"),
+        ('start_clock_time', "15'24''"),
+        ('stop_clock_time', "17'45''"),
         (
             'time_signatures',
             [

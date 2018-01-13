@@ -238,8 +238,8 @@ metadata = abjad.TypedOrderedDict(
                 ),
             ),
         ('segment_number', 15),
-        ('start_clock_time', "14'50''"),
-        ('stop_clock_time', "15'14''"),
+        ('start_clock_time', "15'00''"),
+        ('stop_clock_time', "15'24''"),
         (
             'time_signatures',
             [
