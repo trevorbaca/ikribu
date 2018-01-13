@@ -1697,9 +1697,9 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                         %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +ARCH_A_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.25 . 0)     %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.25 . 0) %! +ARCH_A_SCORE:OC
                         %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.25 . 0)     %! +LEDGER_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.25 . 0) %! +LEDGER_SCORE:OC
                             \once \override TextScript.padding = #2.5                    %! OC
                             \once \override TextScript.parent-alignment-X = #0           %! OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
