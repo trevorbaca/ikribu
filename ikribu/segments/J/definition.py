@@ -51,13 +51,6 @@ maker.validate_stage_count(7)
 maker.validate_measures_per_stage()
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
-    baca.build('LEDGER_SCORE', baca.shift_clef('bass')),
-    baca.clef('bass'),
-    baca.staff_lines(5),
-    )
-
-maker(
     baca.make_scopes(['BassClarinetMusicVoice'], [1, (2, 3)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
@@ -82,6 +75,14 @@ maker(
     )
 
 maker(
+    baca.scope('CelloMusicVoice', 1),
+    baca.build('ARCH_A_SCORE', baca.shift_clef('bass')),
+    baca.build('LEDGER_SCORE', baca.shift_clef('bass')),
+    baca.clef('bass'),
+    baca.staff_lines(5),
+    )
+
+maker(
     baca.scope('CelloMusicVoice', 2, 3),
     baca.make_tied_notes(repeat_ties=True),
     )
@@ -99,6 +100,7 @@ maker(
         ('ViolaMusicVoice', 1, 7),
         ),
     baca.clef('percussion'),
+    baca.build('ARCH_A_SCORE', baca.shift_clef('percussion')),
     baca.build('LEDGER_SCORE', baca.shift_clef('percussion')),
     baca.dls_sp(6),
     baca.effort_dynamic('mf'),

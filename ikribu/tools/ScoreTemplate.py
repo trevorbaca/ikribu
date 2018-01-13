@@ -139,6 +139,7 @@ class ScoreTemplate(baca.ScoreTemplate):
     __documentation_section__ = None
 
     known_builds = (
+        'ARCH_A_SCORE',
         'LEDGER_SCORE',
         )
 
