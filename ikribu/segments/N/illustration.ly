@@ -424,6 +424,8 @@
                     }
                 
                 % GlobalSkips [measure 217]                                              %! SM4
+            %%% \newSpacingSection                                                       %! -SEGMENT:SPACING:HSS1
+            %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! -SEGMENT:SPACING:HSS1
                 \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 35 384)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
@@ -441,15 +443,22 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! MEASURE_INDEX_MARKUP:SM31
                         %@%                 [09]                                         %! MEASURE_INDEX_MARKUP:SM31
                         %@%     }                                                        %! MEASURE_INDEX_MARKUP:SM31
-                            \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                    \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                        #(x11-color 'DarkOrange)                         %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                        \bold                                            %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                            \fontsize                                    %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                                #3                                       %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                                (35/384)                                 %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
-                                }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2 %@%
+                        %@% \line                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%     {                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%         \with-color                                          %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%             #(x11-color 'DarkCyan)                           %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%             \fontsize                                        %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%                 #3                                           %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%                 [1/16]                                       %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@%     }                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@% \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DarkOrange)                         %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [[35/384]]                                   %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
