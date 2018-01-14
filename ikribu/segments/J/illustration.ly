@@ -577,15 +577,14 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [J.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                            \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                                {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
-                                    \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
-                                        #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
-                                        \bold                                            %! SPACING_OVERRIDE_MARKUP:SOC2
-                                            \fontsize                                    %! SPACING_OVERRIDE_MARKUP:SOC2
-                                                #3                                       %! SPACING_OVERRIDE_MARKUP:SOC2
-                                                (1/16)                                   %! SPACING_OVERRIDE_MARKUP:SOC2
-                                }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%% \line                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'BlueViolet)                         %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \fontsize                                        %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 #3                                           %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 [1/16]                                       %! SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! SPACING_OVERRIDE_MARKUP:SOC2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
