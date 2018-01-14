@@ -56,8 +56,6 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
-#    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
-#    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.staff_lines(5),
     )

@@ -140,7 +140,6 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     known_builds = (
         'ARCH_A_11_SCORE',
-        'ARCH_A_SCORE',
         'LEDGER_SCORE',
         )
 

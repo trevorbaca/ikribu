@@ -83,7 +83,6 @@ maker(
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
         ),
-#    baca.build('ARCH_A_SCORE', baca.shift_clef('percussion')),
     baca.clef('percussion'),
     )
 
@@ -152,7 +151,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 16),
-#    baca.build('ARCH_A_SCORE', baca.shift_clef('bass')),
     baca.clef('bass'),
     )
 
@@ -185,5 +183,4 @@ maker(
     baca.scope('GlobalSkips', 1, abjad.Infinity),
     baca.build('ARCH_A_11_SCORE', baca.spacing((1, 4), baca.skip(11))),
     baca.build('ARCH_A_11_SCORE', baca.spacing((1, 8), baca.skip(15))),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 4), baca.skip(15))),
     )
