@@ -863,9 +863,9 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
-                            \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
                             \override RepeatTie.direction = #up                          %! OC
+                            \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \override TextScript.padding = #2.5                          %! OC
                             \override TextScript.parent-alignment-X = #0                 %! OC
                             \set ViolaMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8

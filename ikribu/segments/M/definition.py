@@ -332,13 +332,14 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 8),
-    baca.clef('treble', shift=True),
+    baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
+    baca.shift_clef('treble'),
     )
 
 maker(

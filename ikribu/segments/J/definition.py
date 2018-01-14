@@ -168,8 +168,9 @@ maker(
         ('ViolinMusicVoice', 6),
         ('ViolaMusicVoice', 6),
         ),
-    baca.effort_dynamic('f', shift=True),
+    baca.effort_dynamic('f'),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
+    baca.shift_dynamic('"f"'),
     )
 
 maker(
