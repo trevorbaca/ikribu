@@ -2218,6 +2218,8 @@
                             \override TextSpanner.staff-padding = #3.5                   %! OC
                         %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
                         %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC
+                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_PARTS:OC
                         %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
                         %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_SCORE:OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

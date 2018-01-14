@@ -300,8 +300,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
-    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -318,9 +316,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 5),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
-    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
-    baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -339,13 +334,10 @@ maker(
     baca.markup.string_number(3),
     baca.natural_harmonics(),
     baca.pitches('F~5'),
-    baca.shift_clef('treble'),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 12),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
-    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
@@ -357,8 +349,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 16),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
-    baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
@@ -370,8 +360,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 19),
-    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
-    baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),

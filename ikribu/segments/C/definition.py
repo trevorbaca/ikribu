@@ -101,8 +101,8 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1),
-    baca.build('ARCH_A_SCORE', baca.shift_clef(-2.25)),
-    baca.build('LEDGER_SCORE', baca.shift_clef(-2.25)),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef(-2.25)),
+#    baca.build('LEDGER_SCORE', baca.shift_clef(-2.25)),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.make_tied_notes(repeat_ties=True),
@@ -131,7 +131,7 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
-    baca.shift_clef('treble'),
+#    baca.shift_clef('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(),
     baca.text_script_staff_padding(2.5),

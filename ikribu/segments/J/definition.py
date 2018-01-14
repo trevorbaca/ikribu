@@ -76,8 +76,8 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('bass')),
-    baca.build('LEDGER_SCORE', baca.shift_clef('bass')),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef('bass')),
+#    baca.build('LEDGER_SCORE', baca.shift_clef('bass')),
     baca.clef('bass'),
     baca.staff_lines(5),
     )
@@ -100,8 +100,8 @@ maker(
         ('ViolaMusicVoice', 1, 7),
         ),
     baca.clef('percussion'),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('percussion')),
-    baca.build('LEDGER_SCORE', baca.shift_clef('percussion')),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef('percussion')),
+#    baca.build('LEDGER_SCORE', baca.shift_clef('percussion')),
     baca.dls_sp(6),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),

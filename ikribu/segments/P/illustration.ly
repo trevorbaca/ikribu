@@ -3428,6 +3428,8 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                            %@% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! +LEDGER_PARTS:OC
+                            %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_PARTS:OC
                             %@% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! +LEDGER_SCORE:OC
                             %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_SCORE:OC
                                 \set CelloStaffGroup.instrumentName = \markup {          %! REAPPLIED_INSTRUMENT:SM8

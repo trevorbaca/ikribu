@@ -84,7 +84,7 @@ maker(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
         ),
-    baca.shift_clef('treble'),
+#    baca.shift_clef('treble'),
     baca.staff_lines(5),
     )
 
@@ -127,8 +127,8 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 8),
-    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
-    baca.build('SEGMENT', baca.shift_clef('treble')),
+#    baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
+#    baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
