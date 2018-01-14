@@ -94,3 +94,8 @@ maker(
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     )
+
+maker(
+    baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.build('ARCH_A_SCORE', baca.spacing((1, 16), True, baca.skip(6))),
+    )

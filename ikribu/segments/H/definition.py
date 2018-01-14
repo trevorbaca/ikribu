@@ -106,3 +106,8 @@ maker(
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
     )
+
+maker(
+    baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.build('ARCH_A_SCORE', baca.spacing((1, 16), True, baca.skip(4))),
+    )

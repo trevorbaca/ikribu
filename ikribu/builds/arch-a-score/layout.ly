@@ -556,9 +556,6 @@
             
             % PageLayout [measure 49] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
-            #'((Y-offset . 210) (alignment-distances . (15 17.5 17.5 22.5 20)))     %! +ARCH_A_SCORE:LAYOUT:LMM3
-            \break %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 1
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -570,6 +567,9 @@
             
             % PageLayout [measure 50] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
+            #'((Y-offset . 210) (alignment-distances . (15 17.5 17.5 22.5 20)))     %! +ARCH_A_SCORE:LAYOUT:LMM3
+            \break %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 3/4
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -782,9 +782,6 @@
             
             % PageLayout [measure 69] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
-            #'((Y-offset . 130) (alignment-distances . (15 20)))                    %! +ARCH_A_SCORE:LAYOUT:LMM3
-            \break %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 3/4
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -796,6 +793,9 @@
             
             % PageLayout [measure 70] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
+            #'((Y-offset . 130) (alignment-distances . (15 20)))                    %! +ARCH_A_SCORE:LAYOUT:LMM3
+            \break %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 1/2
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -975,9 +975,6 @@
             
             % PageLayout [measure 86] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
-            #'((Y-offset . 20) (alignment-distances . (15 25 20)))                  %! +ARCH_A_SCORE:LAYOUT:LMM3
-            \pageBreak %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 7/4
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -989,6 +986,9 @@
             
             % PageLayout [measure 87] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
+            #'((Y-offset . 20) (alignment-distances . (15 25 20)))                  %! +ARCH_A_SCORE:LAYOUT:LMM3
+            \pageBreak %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 7/4
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -1733,9 +1733,6 @@
             
             % PageLayout [measure 153] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
-            #'((Y-offset . 230) (alignment-distances . (15 20)))                    %! +ARCH_A_SCORE:LAYOUT:LMM3
-            \break %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 1
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
@@ -1747,6 +1744,9 @@
             
             % PageLayout [measure 154] %! SM4
             \noBreak %! +ARCH_A_SCORE:LAYOUT:LMM2
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details %! +ARCH_A_SCORE:LAYOUT:LMM3
+            #'((Y-offset . 230) (alignment-distances . (15 20)))                    %! +ARCH_A_SCORE:LAYOUT:LMM3
+            \break %! +ARCH_A_SCORE:LAYOUT:LMM3
             s1 * 3/4
                 %@% ^ \markup {                        %! MEASURE_INDEX_MARKUP:SM31
                 %@%     \fontsize                      %! MEASURE_INDEX_MARKUP:SM31
