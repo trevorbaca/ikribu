@@ -686,15 +686,17 @@
                         \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
-                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +ARCH_A_SCORE:OC
-                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
-                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +LEDGER_SCORE:OC
-                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
                         \override DynamicLineSpanner.staff-padding = #'6                 %! OC
                         \override RepeatTie.direction = #up                              %! OC
                         \override TextScript.padding = #2.5                              %! OC
                         \override TextScript.parent-alignment-X = #0                     %! OC
                         \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +ARCH_A_SCORE:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +LEDGER_PARTS:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +LEDGER_SCORE:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -1081,14 +1083,16 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 1  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +ARCH_A_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override RepeatTie.direction = #up                          %! OC
                             \override TextScript.padding = #2.5                          %! OC
                             \override TextScript.parent-alignment-X = #0                 %! OC
+                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_PARTS:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
+                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1439,14 +1443,16 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolaMusicStaff.StaffSymbol.line-count = 1   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
-                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
-                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
-                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
                             \override DynamicLineSpanner.staff-padding = #'6             %! OC
                             \override RepeatTie.direction = #up                          %! OC
                             \override TextScript.padding = #2.5                          %! OC
                             \override TextScript.parent-alignment-X = #0                 %! OC
+                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC
+                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
+                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
+                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_SCORE:OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
@@ -1810,6 +1816,8 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                         %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
                         %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_SCORE:OC
+                        %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC
+                        %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_PARTS:OC
                         %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
                         %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_SCORE:OC
                             \set CelloStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8

@@ -1598,6 +1598,8 @@
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                     %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +ARCH_A_SCORE:OC
                     %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +LEDGER_PARTS:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8

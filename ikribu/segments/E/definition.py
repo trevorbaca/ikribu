@@ -83,7 +83,7 @@ maker(
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
         ),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('percussion')),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef('percussion')),
     baca.clef('percussion'),
     )
 
@@ -152,7 +152,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 16),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('bass')),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef('bass')),
     baca.clef('bass'),
     )
 

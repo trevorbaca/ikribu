@@ -78,8 +78,8 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('alto')),
-    baca.build('LEDGER_SCORE', baca.shift_clef('alto')),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef('alto')),
+#    baca.build('LEDGER_SCORE', baca.shift_clef('alto')),
     baca.clef('alto'),
     baca.staff_lines(5),
     )

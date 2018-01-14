@@ -57,7 +57,7 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 7),
-    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
+#    baca.build('ARCH_A_SCORE', baca.shift_clef('treble')),
     baca.clef('treble'),
     baca.dynamic('ppp'),
     baca.make_tied_notes(repeat_ties=True),
