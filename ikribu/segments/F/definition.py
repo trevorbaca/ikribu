@@ -77,13 +77,14 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 6, 7),
+    baca.clef('treble'),
     baca.markup.string_numbers([2, 3]),
-    baca.clef('treble', shift=True),
     baca.pitches('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
         ),
+    baca.shift_clef('treble'),
     baca.staff_lines(5),
     )
 
@@ -126,7 +127,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 8),
-    #baca.clef('treble', shift=True),
     baca.build('LEDGER_SCORE', baca.shift_clef('treble')),
     baca.build('SEGMENT', baca.shift_clef('treble')),
     baca.clef('treble'),

@@ -4122,9 +4122,9 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 184]                              %! SM4
+                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \once \override CelloMusicStaff.Clef.X-extent = ##f          %! OC
                             \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
-                            \once \override NoteHead.style = #'harmonic                  %! OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6

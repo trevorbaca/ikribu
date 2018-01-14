@@ -88,17 +88,20 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 5),
-    baca.effort_dynamic('mf', shift=True),
+    baca.effort_dynamic('mf'),
+    baca.shift_dynamic('"mf"'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 9),
-    baca.effort_dynamic('mp', shift=True),
+    baca.effort_dynamic('mp'),
+    baca.shift_dynamic('"mp"'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', 13),
-    baca.effort_dynamic('p', shift=True),
+    baca.effort_dynamic('p'),
+    baca.shift_dynamic('"p"'),
     )
 
 maker(
@@ -111,8 +114,9 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', 1, 16),
     baca.dls_sp(8),
-    baca.effort_dynamic('mp', shift=True),
+    baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
+    baca.shift_dynamic('"mp"'),
     baca.staccati(),
     baca.text_script_padding(2.5),
     ikribu.clb_staff_positions(),
@@ -121,8 +125,9 @@ maker(
 maker(
     baca.scope('ViolaMusicVoice', 1, 16),
     baca.dls_sp(8),
-    baca.effort_dynamic('mp', shift=True),
+    baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
+    baca.shift_dynamic('"mp"'),
     baca.staccati(),
     baca.text_script_padding(2.5),
     ikribu.clb_staff_positions(),
@@ -144,15 +149,18 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 5),
-    baca.effort_dynamic('mp', shift=True),
+    baca.effort_dynamic('mp'),
+    baca.shift_dynamic('"mp"'),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 9),
-    baca.effort_dynamic('mf', shift=True),
+    baca.effort_dynamic('mf'),
+    baca.shift_dynamic('"mf"'),
     )
 
 maker(
     baca.scope('CelloMusicVoice', 13),
-    baca.effort_dynamic('f', shift=True),
+    baca.effort_dynamic('f'),
+    baca.shift_dynamic('"f"'),
     )

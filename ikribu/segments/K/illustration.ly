@@ -1067,8 +1067,8 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 131]                           %! SM4
-                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1114,8 +1114,8 @@
                     %@% \once \override Score.SpanBar.transparent = ##t                  %! +ARCH_A_SCORE:FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 135]                           %! SM4
-                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1171,8 +1171,8 @@
                         R1 * 1/4
                         
                         % BassClarinetMusicVoice [measure 139]                           %! SM4
-                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override DynamicText.extra-offset = #'(-2 . 0)            %! OC
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1444,8 +1444,8 @@
                                 
                                 % ViolinMusicVoice [measure 129]                         %! SM4
                                 \override RepeatTie.direction = #up                      %! OC
-                                \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
                                 \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
+                                \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 \stopStaff                                               %! SM21
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1940,8 +1940,8 @@
                                 
                                 % ViolaMusicVoice [measure 129]                          %! SM4
                                 \override RepeatTie.direction = #up                      %! OC
-                                \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
                                 \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
+                                \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                                 \stopStaff                                               %! SM21
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -2447,8 +2447,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 131]                              %! SM4
-                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
@@ -2492,8 +2492,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 135]                              %! SM4
-                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21
@@ -2549,8 +2549,8 @@
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 139]                              %! SM4
-                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
+                            \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
                             \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \stopStaff                                                   %! SM21
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 1   %! SM21

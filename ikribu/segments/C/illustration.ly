@@ -1480,8 +1480,8 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC
-                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \once \override DynamicText.extra-offset = #'(-3.5 . 0)          %! OC
+                        \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
                         \override RepeatTie.direction = #up                              %! OC
                         \override TextScript.padding = #2.5                              %! OC
                         \override TextScript.parent-alignment-X = #0                     %! OC
@@ -1836,9 +1836,9 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \override DynamicLineSpanner.staff-padding = #'3             %! OC
                             \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! OC
                             \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
-                            \override DynamicLineSpanner.staff-padding = #'3             %! OC
                             \override TextScript.staff-padding = #2.5                    %! OC
                             \set ViolinMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8

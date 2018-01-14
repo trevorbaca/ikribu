@@ -85,8 +85,9 @@ maker(
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
-    baca.effort_dynamic('mf', shift=True),
+    baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
+    baca.shift_dynamic('"mf"'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
     )
@@ -121,7 +122,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 2, 16),
-    baca.clef('treble', shift=True),
+    baca.clef('treble'),
     baca.dynamic_line_spanner_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
@@ -130,6 +131,7 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
+    baca.shift_clef('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(),
     baca.text_script_staff_padding(2.5),
