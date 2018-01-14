@@ -390,6 +390,8 @@ maker(
 
 maker(
     baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), True, baca.skip(0))),
+    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), True, baca.skip(27))),
     baca.build('LEDGER_SCORE', baca.spacing((1, 12), True, baca.skip(1))),
     baca.build('SEGMENT', baca.spacing((1, 12), True, baca.skip(19))),
     )
