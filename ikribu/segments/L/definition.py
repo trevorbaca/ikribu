@@ -176,3 +176,9 @@ maker(
     baca.scope('CelloMusicVoice', 6),
     baca.markup.boxed_lines(['graincircle:', 'π/3 every quarter note']),
     )
+
+maker(
+    baca.scope('GlobalSkips', 1, abjad.Infinity),
+    baca.build('ARCH_A_11_SCORE', baca.spacing((1, 12), baca.skip(24))),
+    baca.build('ARCH_A_11_SCORE', baca.spacing((1, 12), baca.skip(25))),
+    )

@@ -84,7 +84,7 @@ maker(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
         ),
-#    baca.shift_clef('treble'),
+    baca.shift_clef('treble'),
     baca.staff_lines(5),
     )
 
@@ -99,6 +99,7 @@ maker(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
         ),
+    baca.shift_clef('treble'),
     baca.staff_lines(5),
     )
 
