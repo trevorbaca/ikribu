@@ -93,8 +93,3 @@ maker(
     baca.staff_lines(1),
     ikribu.box_adjustment(),
     )
-
-maker(
-    baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), True, baca.skip(4))),
-    )

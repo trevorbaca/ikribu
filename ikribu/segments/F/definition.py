@@ -132,10 +132,3 @@ maker(
     baca.clef('treble'),
     baca.staff_lines(5),
     )
-
-maker(
-    baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), True, baca.skip(7))),
-    baca.build('LEDGER_SCORE', baca.spacing((1, 12), True, baca.skip(5))),
-    baca.build('SEGMENT', baca.spacing((1, 12), True, baca.skip(7))),
-    )

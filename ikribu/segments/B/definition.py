@@ -142,11 +142,3 @@ maker(
         baca.markup('trem. flaut. tast.'),
         ),
     )
-
-maker(
-    baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), True, baca.skip(6))),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), True, baca.skip(19))),
-    baca.build('LEDGER_SCORE', baca.spacing((1, 12), True, baca.skip(22))),
-    baca.build('SEGMENT', baca.spacing((1, 12), True, baca.skip(12))),
-    )
