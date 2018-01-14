@@ -1829,6 +1829,10 @@
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! EXPLICIT_STAFF_LINES:SM8
                                 \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
+                            %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! +ARCH_A_SCORE:OC
+                            %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
+                            %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! +LEDGER_PARTS:OC
+                            %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
                                 \set ViolinStaffGroup.instrumentName = \markup {         %! REAPPLIED_INSTRUMENT:SM8
                                     \hcenter-in                                          %! REAPPLIED_INSTRUMENT:SM8
                                         #16                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -3335,6 +3339,10 @@
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! EXPLICIT_STAFF_LINES:SM8
                                 \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
+                            %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! +ARCH_A_SCORE:OC
+                            %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
+                            %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! +LEDGER_PARTS:OC
+                            %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
                                 \set ViolaStaffGroup.instrumentName = \markup {          %! REAPPLIED_INSTRUMENT:SM8
                                     \hcenter-in                                          %! REAPPLIED_INSTRUMENT:SM8
                                         #16                                              %! REAPPLIED_INSTRUMENT:SM8
@@ -4861,6 +4869,10 @@
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
+                            %@% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! +ARCH_A_SCORE:OC
+                            %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_SCORE:OC
+                            %@% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! +LEDGER_PARTS:OC
+                            %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_PARTS:OC
                                 \set CelloStaffGroup.instrumentName = \markup {          %! REAPPLIED_INSTRUMENT:SM8
                                     \hcenter-in                                          %! REAPPLIED_INSTRUMENT:SM8
                                         #16                                              %! REAPPLIED_INSTRUMENT:SM8
