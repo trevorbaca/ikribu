@@ -252,11 +252,11 @@
                     }
                 
                 % GlobalSkips [measure 119]                                              %! SM4
-                \newSpacingSection                                                       %! -ARCH_A_11_SCORE:SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_11_SCORE:SPACING:HSS1
+                \newSpacingSection                                                       %! -ARCH_A_SCORE:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_SCORE:SPACING:HSS1
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
-            %@% \newSpacingSection                                                       %! +ARCH_A_11_SCORE:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_11_SCORE:SPACING_OVERRIDE:SOC1
+            %@% \newSpacingSection                                                       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
+            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
@@ -270,14 +270,14 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! MEASURE_INDEX_MARKUP:SM31
                         %@%                 "[03 (119)]"                                 %! MEASURE_INDEX_MARKUP:SM31
                         %@%     }                                                        %! MEASURE_INDEX_MARKUP:SM31
-                        %@% \line                                                        %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -ARCH_A_11_SCORE:SPACING_MARKUP:HSS2
+                        %@% \line                                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%     {                                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%         \with-color                                          %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%             \fontsize                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%                 #3                                           %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%                 [1/12]                                       %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
+                        %@%     }                                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -286,14 +286,14 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [9'10'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@% \line                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [[35/288]]                                   %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
                 
@@ -517,10 +517,10 @@
                     }
                 
                 % GlobalSkips [measure 125]                                              %! SM4
-                \newSpacingSection                                                       %! -ARCH_A_11_SCORE:SPACING:SOC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! -ARCH_A_11_SCORE:SPACING:SOC1
-            %@% \newSpacingSection                                                       %! +ARCH_A_11_SCORE:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! +ARCH_A_11_SCORE:SPACING_OVERRIDE:SOC1
+                \newSpacingSection                                                       %! -ARCH_A_SCORE:SPACING:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)         %! -ARCH_A_SCORE:SPACING:SOC1
+            %@% \newSpacingSection                                                       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
+            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
                 \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
@@ -599,22 +599,22 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [J.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%     {                                                        %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%         \with-color                                          %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%             #(x11-color 'BlueViolet)                         %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%             \fontsize                                        %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%                 #3                                           %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%                 [1/16]                                       %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%     }                                                        %! -ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@% \line                                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DeepPink1)                          %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [1/24]                                       %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +ARCH_A_11_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%% \line                                                        %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'BlueViolet)                         %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \fontsize                                        %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 #3                                           %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 [1/16]                                       %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! -ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@% \line                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DeepPink1)                          %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [1/24]                                       %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -701,8 +701,8 @@
                         \override TextScript.padding = #2.5                              %! OC
                         \override TextScript.parent-alignment-X = #0                     %! OC
                         \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC
-                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +ARCH_A_11_SCORE:OC
-                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_11_SCORE:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +ARCH_A_SCORE:OC
+                    %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
                     %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +LEDGER_PARTS:OC
                     %@% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
                     %@% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! +LEDGER_SCORE:OC
@@ -1097,8 +1097,8 @@
                             \override RepeatTie.direction = #up                          %! OC
                             \override TextScript.padding = #2.5                          %! OC
                             \override TextScript.parent-alignment-X = #0                 %! OC
-                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +ARCH_A_11_SCORE:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_11_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
                         %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_PARTS:OC
                         %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
                         %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! +LEDGER_SCORE:OC
@@ -1457,8 +1457,8 @@
                             \override RepeatTie.direction = #up                          %! OC
                             \override TextScript.padding = #2.5                          %! OC
                             \override TextScript.parent-alignment-X = #0                 %! OC
-                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_11_SCORE:OC
-                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_11_SCORE:OC
+                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
+                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
                         %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC
                         %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +LEDGER_PARTS:OC
                         %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC
@@ -1824,8 +1824,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
-                        %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_11_SCORE:OC
-                        %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_11_SCORE:OC
+                        %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
+                        %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_SCORE:OC
                         %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC
                         %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +LEDGER_PARTS:OC
                         %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_SCORE:OC

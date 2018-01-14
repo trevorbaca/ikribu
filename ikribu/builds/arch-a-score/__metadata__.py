@@ -43,7 +43,7 @@ metadata = abjad.TypedOrderedDict(
                 254,
                 ],
             ),
-        ('catalog_number_suffix', 'ARCH-A (11)'),
+        ('catalog_number_suffix', 'ARCH-A'),
         ('paper_size', 'arch a'),
         ('price', '\\$60 / \\euro 60'),
         ]
