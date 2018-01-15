@@ -143,6 +143,13 @@ class ScoreTemplate(baca.ScoreTemplate):
         'LEDGER_SCORE',
         )
 
+    part_names = (
+        'BassClarinet',
+        'Violin',
+        'Viola',
+        'Cello',
+        )
+
     ### SPECIAL METHODS ###
 
     def __call__(self):
@@ -153,13 +160,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
-        instrument_tags = (
-            'BassClarinet',
-            'Violin',
-            'Viola',
-            'Cello',
-            )
-        tag_string = '.'.join(instrument_tags)
+        tag_string = '.'.join(ScoreTemplate.part_names)
         self._attach_tag(tag_string, global_context)
 
         # BASS CLARINET
