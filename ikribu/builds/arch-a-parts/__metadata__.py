@@ -1,0 +1,31 @@
+import abjad
+
+
+metadata = abjad.TypedOrderedDict(
+    [
+        (
+            'break_measures',
+            [
+                1,
+                8,
+                16,
+                24,
+                32,
+                50,
+                60,
+                80,
+                100,
+                120,
+                140,
+                160,
+                180,
+                200,
+                220,
+                240,
+                ],
+            ),
+        ('catalog_number_suffix', 'ARCH-A'),
+        ('paper_size', 'arch a'),
+        ('parts_directory', True),
+        ]
+    )
