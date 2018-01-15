@@ -144,10 +144,10 @@ class ScoreTemplate(baca.ScoreTemplate):
         )
 
     part_names = (
-        'BassClarinet',
-        'Violin',
-        'Viola',
-        'Cello',
+        ('BassClarinet', 'BCL'),
+        ('Violin', 'VN'),
+        ('Viola', 'VA'),
+        ('Cello', 'VC'),
         )
 
     ### SPECIAL METHODS ###
@@ -160,7 +160,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
-        tag_string = '.'.join(ScoreTemplate.part_names)
+        part_names = [_[0] for _ in ScoreTemplate.part_names]
+        tag_string = '.'.join(part_names)
         self._attach_tag(tag_string, global_context)
 
         # BASS CLARINET
