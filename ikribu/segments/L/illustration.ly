@@ -2024,18 +2024,7 @@
                                 \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\staccato                                               %! IC
-                                _ #(make-dynamic-script
-                                    (markup
-                                        #:whiteout
-                                        #:line (
-                                            #:general-align Y -2 #:normal-text #:larger "“"
-                                            #:hspace -0.1
-                                            #:dynamic "mp"
-                                            #:hspace -0.25
-                                            #:general-align Y -2 #:normal-text #:larger "”"
-                                            )
-                                        )
-                                    )                                                    %! REAPPLIED_DYNAMIC:SM8
+                                \effort_mp                                               %! REAPPLIED_DYNAMIC:SM8
                                 [
                                 ^ \markup {
                                     \column
@@ -3192,18 +3181,7 @@
                                 \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
                                 c'8
                                 -\staccato                                               %! IC
-                                _ #(make-dynamic-script
-                                    (markup
-                                        #:whiteout
-                                        #:line (
-                                            #:general-align Y -2 #:normal-text #:larger "“"
-                                            #:hspace -0.1
-                                            #:dynamic "mp"
-                                            #:hspace -0.25
-                                            #:general-align Y -2 #:normal-text #:larger "”"
-                                            )
-                                        )
-                                    )                                                    %! REAPPLIED_DYNAMIC:SM8
+                                \effort_mp                                               %! REAPPLIED_DYNAMIC:SM8
                                 [
                                 ^ \markup {
                                     \column
