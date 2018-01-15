@@ -61,7 +61,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='CelloMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"mf"',
+                                value='\\effort_mf',
                                 ),
                             ],
                         ),

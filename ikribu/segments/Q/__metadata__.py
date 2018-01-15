@@ -36,7 +36,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='BassClarinetMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"mf"',
+                                value='\\effort_mf',
                                 ),
                             ],
                         ),
@@ -61,7 +61,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='CelloMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"mf"',
+                                value='\\effort_mf',
                                 ),
                             ],
                         ),
@@ -136,7 +136,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ViolaMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"mf"',
+                                value='\\effort_mf',
                                 ),
                             ],
                         ),
@@ -196,7 +196,7 @@ metadata = abjad.TypedOrderedDict(
                             abjad.Momento(
                                 context='ViolinMusicVoice',
                                 prototype='abjad.Dynamic',
-                                value='"mf"',
+                                value='\\effort_mf',
                                 ),
                             ],
                         ),

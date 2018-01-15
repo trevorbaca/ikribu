@@ -650,18 +650,7 @@
                         %@% \override ViolinMusicStaff.Clef.color = ##f                  %! EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
                             \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             R1 * 2
-                            _ #(make-dynamic-script
-                                (markup
-                                    #:whiteout
-                                    #:line (
-                                        #:general-align Y -2 #:normal-text #:larger "“"
-                                        #:hspace -0.1
-                                        #:dynamic "mf"
-                                        #:hspace -0.2
-                                        #:general-align Y -2 #:normal-text #:larger "”"
-                                        )
-                                    )
-                                )                                                        %! REAPPLIED_DYNAMIC:SM8
+                            \effort_mf                                                   %! REAPPLIED_DYNAMIC:SM8
                             ^ \markup {
                                 \column
                                     {
@@ -887,18 +876,7 @@
                             \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                             \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
                             c'4
-                            _ #(make-dynamic-script
-                                (markup
-                                    #:whiteout
-                                    #:line (
-                                        #:general-align Y -2 #:normal-text #:larger "“"
-                                        #:hspace -0.1
-                                        #:dynamic "mf"
-                                        #:hspace -0.2
-                                        #:general-align Y -2 #:normal-text #:larger "”"
-                                        )
-                                    )
-                                )                                                        %! EXPLICIT_DYNAMIC:SM8
+                            \effort_mf                                                   %! EXPLICIT_DYNAMIC:SM8
                             ^ \markup {                                                  %! IC
                                 \whiteout                                                %! IC
                                     \upright                                             %! IC
