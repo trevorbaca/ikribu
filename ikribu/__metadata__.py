@@ -6,6 +6,65 @@ metadata = abjad.TypedOrderedDict(
         ('catalog_number', 'AWN-014'),
         ('composer', 'Trevor Bača'),
         (
+            'fermata_measure_numbers',
+            abjad.TypedOrderedDict(
+                [
+                    (
+                        '_',
+                        [2],
+                        ),
+                    (
+                        'A',
+                        [9],
+                        ),
+                    (
+                        'B',
+                        [13, 15, 19, 21, 25, 27, 34],
+                        ),
+                    (
+                        'D',
+                        [62],
+                        ),
+                    (
+                        'H',
+                        [107],
+                        ),
+                    (
+                        'I',
+                        [109, 111, 113, 115],
+                        ),
+                    (
+                        'J',
+                        [124, 126],
+                        ),
+                    (
+                        'K',
+                        [128, 130, 132, 134, 136, 138, 140, 142],
+                        ),
+                    (
+                        'L',
+                        [175],
+                        ),
+                    (
+                        'M',
+                        [180, 183, 188, 193, 196, 207],
+                        ),
+                    (
+                        'O',
+                        [238],
+                        ),
+                    (
+                        'P',
+                        [246],
+                        ),
+                    (
+                        'Q',
+                        [258],
+                        ),
+                    ]
+                ),
+            ),
+        (
             'forces_tagline',
             'for bass clarinet, violin, viola \\& cello',
             ),

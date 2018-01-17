@@ -2583,3 +2583,13 @@ LilyPond runtime: 0 seconds
 Segment-maker runtime: 0 seconds
 Abjad format time: 0 seconds
 LilyPond runtime: 0 seconds
+
+2018-01-17 09:06:29
+Segment-maker runtime: 0 seconds
+Abjad format time: 0 seconds
+LilyPond runtime: 1 second
+
+2018-01-17 09:25:14
+Segment-maker runtime: 0 seconds
+Abjad format time: 0 seconds
+LilyPond runtime: 0 seconds
