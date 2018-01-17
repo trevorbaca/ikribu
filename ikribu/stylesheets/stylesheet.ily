@@ -37,7 +37,8 @@
     ragged-last-bottom = ##t
     right-margin = 5\mm
     markup-system-spacing.minimum-distance = 90
-    system-system-spacing.minimum-distance = 24
+    %system-system-spacing.minimum-distance = 24
+    system-system-spacing.minimum-distance = 0
     top-markup-spacing.minimum-distance = 24
     top-system-spacing.minimum-distance = 26
     top-margin = 0\mm

@@ -7,11 +7,9 @@
     \context {
         \name GlobalSkips
         \type Engraver_group
-        \consists Staff_symbol_engraver
         \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
-        \override StaffSymbol.stencil = ##f
         \override TextScript.X-extent = #'(0 . 0)
         \override TextScript.Y-extent = #'(0 . 0)
         \override TextSpanner.bound-details.right.attach-dir = #left
@@ -30,13 +28,11 @@
         \override MultiMeasureRestText.padding = 0
         }
 
-    % PAGE LAYOUT
+    % PAGE BREAKS
     \context {
         \name PageLayout
         \type Engraver_group
-        \consists Staff_symbol_engraver
         \consists Text_engraver
-        \override StaffSymbol.stencil = ##f
         \override TextScript.X-extent = #'(0 . 0)
         \override TextScript.Y-extent = #'(0 . 0)
         \override TextScript.staff-padding = 1
@@ -49,13 +45,16 @@
         \consists Axis_group_engraver
         \consists Bar_number_engraver
         \consists Mark_engraver
+        \consists Staff_symbol_engraver
         \consists Time_signature_engraver
         \accepts GlobalSkips
         \accepts GlobalRests
         \accepts PageLayout
+
         \override BarNumber.X-offset = -8
         \override BarNumber.Y-offset = -0.5
         \override BarNumber.font-size = 1
+
         % rehearsal marks (right) align with time signatures:
         \override RehearsalMark.padding = 4
         \override RehearsalMark.break-align-symbols = #'(time-signature)
@@ -64,6 +63,9 @@
         \override RehearsalMark.font-size = 10
         \override RehearsalMark.outside-staff-priority = 200
         \override RehearsalMark.self-alignment-X = #right
+
+        \override StaffSymbol.color = #red
+
         % prevents StaffSymbol from starting too early after cut-away measures:
         \override TimeSignature.X-extent = ##f
         %\override TimeSignature.break-align-symbol = #'left-edge
@@ -73,13 +75,17 @@
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'(
-            (basic-distance . 0)
-            (minimum-distance . 12) % distance below time signature context
-            (padding . 0)
-            (stretchability . 0)
-        )
-        \override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
+
+        %\override VerticalAxisGroup.default-staff-staff-spacing = #'(
+        %    (basic-distance . 0)
+        %    (minimum-distance . 12) % distance below time signature context
+        %    (padding . 0)
+        %    (stretchability . 0)
+        %)
+        %\override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
+        \override VerticalAxisGroup.Y-extent = #'(0 . 0)
+        \override VerticalAxisGroup.minimum-Y-extent = #'(0 . 0)
+
     }
 
     % PIANO STAFF

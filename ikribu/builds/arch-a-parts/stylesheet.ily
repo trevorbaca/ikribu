@@ -34,13 +34,23 @@
         \remove Time_signature_engraver
         \override RehearsalMark.font-size = 3
         \override BarNumber.X-offset = -5.5
-        \override BarNumber.Y-offset = 1
+        \override BarNumber.Y-offset = 4
         \override BarNumber.font-size = 0
         \override RehearsalMark.self-alignment-X = #left
     }
     \context {
         \GlobalRests
-        \override MultiMeasureRestText.padding = 5
+        \override MultiMeasureRestText.font-size = 0
+
+        % WARNING: setting multimeasure rest text PADDING large ...
+        %
+        %       \override MultiMeasureRestText.padding = 10
+        %
+        %  ... causes LilyPond to go haywire with the Y-offset values
+        %  set explicitly on NonMusicalPaperColumn.lin-break-system-details!
+        %
+        %  This destroys explicit page layout of systems.
+    
     }
     \context {
         \GlobalSkips

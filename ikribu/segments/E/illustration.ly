@@ -17,10 +17,10 @@
                 % GlobalSkips [measure 63]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \autoPageBreaksOff                                                       %! +SEGMENT:LAYOUT:LMM1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:LAYOUT:LMM3
-                #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! +SEGMENT:LAYOUT:LMM3
+                \autoPageBreaksOff                                                       %! +SEGMENT:BREAKS:LMM1
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:BREAKS:LMM3
+                #'((Y-offset . 20) (alignment-distances . (15 20)))                      %! +SEGMENT:BREAKS:LMM3
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -82,7 +82,7 @@
                 \mark #5                                                                 %! SM9
                 \bar ""                                                                  %! +SEGMENT:EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                \pageBreak                                                               %! +SEGMENT:LAYOUT:LMM3
+                \pageBreak                                                               %! +SEGMENT:BREAKS:LMM3
                 s1 * 1/2
                 \startTextSpan                                                           %! SM29
                 ^ \markup {
@@ -126,7 +126,7 @@
                 % GlobalSkips [measure 64]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
@@ -171,7 +171,7 @@
                 % GlobalSkips [measure 65]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -271,7 +271,7 @@
                 % GlobalSkips [measure 66]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
@@ -316,7 +316,7 @@
                 % GlobalSkips [measure 67]                                               %! SM4
                 \newSpacingSection                                                       %! -ARCH_A_SCORE:SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_SCORE:SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
             %@% \newSpacingSection                                                       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
             %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
@@ -430,7 +430,7 @@
                 % GlobalSkips [measure 68]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
@@ -475,7 +475,7 @@
                 % GlobalSkips [measure 69]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -575,7 +575,7 @@
                 % GlobalSkips [measure 70]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
@@ -620,7 +620,7 @@
                 % GlobalSkips [measure 71]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -724,7 +724,7 @@
                 % GlobalSkips [measure 72]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2
@@ -767,9 +767,11 @@
                     }
                 
                 % GlobalSkips [measure 73]                                               %! SM4
-            %%% \newSpacingSection                                                       %! -SEGMENT:SPACING:HSS1
-            %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -SEGMENT:SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+            %%% \newSpacingSection                                                       %! -SEGMENT:-ARCH_A_PARTS:SPACING:HSS1
+            %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -SEGMENT:-ARCH_A_PARTS:SPACING:HSS1
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
+            %@% \newSpacingSection                                                       %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
+            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
                 \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
@@ -849,14 +851,14 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [E.11]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
+                        %@% \line                                                        %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%     {                                                        %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%         \with-color                                          %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%             #(x11-color 'DarkCyan)                           %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%             \fontsize                                        %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%                 #3                                           %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%                 [1/12]                                       %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@%     }                                                        %! -SEGMENT:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -865,6 +867,14 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [5'20'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
+                        %@% \line                                                        %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DarkOrange)                         %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [[35/288]]                                   %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! -SEGMENT:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
                         %@% \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
                         %@%     {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
                         %@%         \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
@@ -881,13 +891,13 @@
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -LEDGER_SCORE:-ARCH_A_SCORE:SPACING:HSS1
             %@% \newSpacingSection                                                       %! -LEDGER_SCORE:+ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
             %@% \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! -LEDGER_SCORE:+ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:LAYOUT:LMM3
-                #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! +SEGMENT:LAYOUT:LMM3
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:BREAKS:LMM3
+                #'((Y-offset . 140) (alignment-distances . (15 20)))                     %! +SEGMENT:BREAKS:LMM3
             %@% \newSpacingSection                                                       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
             %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
-                \break                                                                   %! +SEGMENT:LAYOUT:LMM3
+                \break                                                                   %! +SEGMENT:BREAKS:LMM3
                 s1 * 7/4
                 ^ \markup {
                     \column
@@ -946,7 +956,7 @@
                 % GlobalSkips [measure 75]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -1050,7 +1060,7 @@
                 % GlobalSkips [measure 76]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
@@ -1095,7 +1105,7 @@
                 % GlobalSkips [measure 77]                                               %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -1197,7 +1207,7 @@
             %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -SEGMENT:-ARCH_A_SCORE:SPACING:HSS1
             %@% \newSpacingSection                                                       %! -SEGMENT:+ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
             %@% \set Score.proportionalNotationDuration = #(ly:make-moment 1 8)          %! -SEGMENT:+ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
@@ -1516,8 +1526,6 @@
                                 \override TupletBracket.staff-padding = #3               %! OC
                                 \override TextScript.padding = #2.5                      %! OC
                                 \override TextScript.parent-alignment-X = #0             %! OC
-                            %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! +ARCH_A_PARTS:OC
-                            %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_PARTS:OC
                             %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! +ARCH_A_SCORE:OC
                             %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
                             %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! +LEDGER_PARTS:OC
@@ -1838,8 +1846,6 @@
                             \override TupletBracket.staff-padding = #3                   %! OC
                             \override TextScript.padding = #2.5                          %! OC
                             \override TextScript.parent-alignment-X = #0                 %! OC
-                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_PARTS:OC
-                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_PARTS:OC
                         %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
                         %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! +ARCH_A_SCORE:OC
                         %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC
@@ -2161,8 +2167,6 @@
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
-                        %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_PARTS:OC
-                        %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_PARTS:OC
                         %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +ARCH_A_SCORE:OC
                         %@% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! +ARCH_A_SCORE:OC
                         %@% \once \override CelloMusicStaff.Clef.X-extent = ##f          %! +LEDGER_PARTS:OC

@@ -49,7 +49,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 12),
     )
 
-layout_measure_map = baca.breaks(
+breaks_measure_map = baca.breaks(
     baca.page(
         [35, 20, (15, 20)],
         ),
@@ -58,7 +58,7 @@ layout_measure_map = baca.breaks(
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
-    layout_measure_map=layout_measure_map,
+    breaks_measure_map=breaks_measure_map,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
