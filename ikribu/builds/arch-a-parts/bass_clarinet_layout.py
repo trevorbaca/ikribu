@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-layout = baca.layout(
+breaks = baca.breaks(
     baca.page( # 1
         [1, 55, (10,)],
         [10, 80, (10,)],
