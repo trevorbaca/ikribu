@@ -1,7 +1,7 @@
 import baca
 
 
-layout = baca.layout(
+breaks = baca.breaks(
     baca.page( # 1
         [1, 80, (15, 20)],
         [7, 190, (15, 20)],

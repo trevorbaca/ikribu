@@ -33,7 +33,7 @@ spacing_specifier = baca.HorizontalSpacingSpecifier(
     minimum_width=(1, 10),
     )
 
-layout_measure_map = baca.layout(
+layout_measure_map = baca.breaks(
     baca.page(
         [218, 20, (15, 20)],
         [227, 140, (15, 20)],
