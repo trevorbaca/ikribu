@@ -30,10 +30,10 @@
                 % GlobalSkips [measure 1]                                                %! SM4
                 \newSpacingSection                                                       %! SPACING:HSS1
                 \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \autoPageBreaksOff                                                       %! +SEGMENT:LAYOUT:LMM1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:LAYOUT:LMM3
-                #'((Y-offset . 60) (alignment-distances . (15 20)))                      %! +SEGMENT:LAYOUT:LMM3
+                \autoPageBreaksOff                                                       %! +SEGMENT:BREAKS:LMM1
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
+                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! +SEGMENT:BREAKS:LMM3
+                #'((Y-offset . 60) (alignment-distances . (15 20)))                      %! +SEGMENT:BREAKS:LMM3
             %@% \once \override TextSpanner.bound-details.left.text =                    %! EXPLICIT_METRONOME_MARK:SM27
             %@% \markup {                                                                %! EXPLICIT_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! EXPLICIT_METRONOME_MARK:SM27
@@ -89,7 +89,7 @@
                 \once \override TextSpanner.dash-period = 0                              %! SM29
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                \pageBreak                                                               %! +SEGMENT:LAYOUT:LMM3
+                \pageBreak                                                               %! +SEGMENT:BREAKS:LMM3
                 s1 * 7/4
                 \startTextSpan                                                           %! SM29
                 ^ \markup {
@@ -133,7 +133,7 @@
                 % GlobalSkips [measure 2]                                                %! SM4
             %%% \newSpacingSection                                                       %! -SEGMENT:SPACING:HSS1
             %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)          %! -SEGMENT:SPACING:HSS1
-                \noBreak                                                                 %! +SEGMENT:LAYOUT:LMM2
+                \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
                 \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)        %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \time 1/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
