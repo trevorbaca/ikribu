@@ -34,6 +34,12 @@
     \context {
         \name PageLayout
         \type Engraver_group
+        \consists Staff_symbol_engraver
+        \consists Text_engraver
+        \override StaffSymbol.stencil = ##f
+        \override TextScript.X-extent = #'(0 . 0)
+        \override TextScript.Y-extent = #'(0 . 0)
+        \override TextScript.staff-padding = 1
         }
 
     % GLOBAL CONTEXT
@@ -274,7 +280,7 @@
             (next-note semi-fixed-space . 0.0) 
             (right-edge extra-space . 0.0)
             )
-        \override BarLine.X-extent = #'(0 . 0)
+        %\override BarLine.X-extent = #'(0 . 0)
         \override Beam.breakable = ##t
         \override Beam.damping = 99
         \override DynamicLineSpanner.Y-extent = #'(-4 . 4)

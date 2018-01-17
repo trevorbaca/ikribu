@@ -33,9 +33,18 @@
         \GlobalContext
         \remove Time_signature_engraver
         \override RehearsalMark.font-size = 3
-        \override BarNumber.X-offset = -5
-        \override BarNumber.Y-offset = 10
+        \override BarNumber.X-offset = -5.5
+        \override BarNumber.Y-offset = 1
         \override BarNumber.font-size = 0
+        \override RehearsalMark.self-alignment-X = #left
+    }
+    \context {
+        \GlobalRests
+        \override MultiMeasureRestText.padding = 5
+    }
+    \context {
+        \GlobalSkips
+        \override TextSpanner.font-size = 3
     }
     \context {
         \BassClarinetMusicStaff
@@ -67,9 +76,7 @@
     }
     \context {
         \Score
-        %\override SpacingSpanner.strict-grace-spacing = ##f
-        %\override SpacingSpanner.strict-note-spacing = ##f
-        %\override SpacingSpanner.uniform-stretching = ##f
-        proportionalNotationDuration = #(ly:make-moment 1 4)
+        \override BarLine.hair-thickness = 1.25
+        \override TimeSignature.break-visibility = #end-of-line-invisible
     }
 }
