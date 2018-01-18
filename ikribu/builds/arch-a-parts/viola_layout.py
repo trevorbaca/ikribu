@@ -1,6 +1,8 @@
 import baca
 
 
+part_abbreviation = 'VA'
+
 breaks = baca.breaks(
     baca.page( # 1
         [1, 75, (15, 20)],

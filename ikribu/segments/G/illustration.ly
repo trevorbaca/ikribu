@@ -404,11 +404,11 @@
                     }
                 
                 % GlobalSkips [measure 94]                                               %! SM4
-                \newSpacingSection                                                       %! -ARCH_A_PARTS:SPACING:SOC1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! -ARCH_A_PARTS:SPACING:SOC1
+                \newSpacingSection                                                       %! -ARCH_A_PARTS_BCL:SPACING:SOC1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 24)         %! -ARCH_A_PARTS_BCL:SPACING:SOC1
                 \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
-            %@% \newSpacingSection                                                       %! +ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 576)       %! +ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
+            %@% \newSpacingSection                                                       %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
+            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 576)       %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
                 \time 1/6                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/6
@@ -431,14 +431,14 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [G.8]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %%% \line                                                        %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%     {                                                        %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%         \with-color                                          %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%             #(x11-color 'BlueViolet)                         %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%             \fontsize                                        %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%                 #3                                           %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%                 [1/24]                                       %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %%%     }                                                        %! -ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%% \line                                                        %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     {                                                        %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%         \with-color                                          %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             #(x11-color 'BlueViolet)                         %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%             \fontsize                                        %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 #3                                           %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%                 [1/24]                                       %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %%%     }                                                        %! -ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -447,14 +447,14 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [7'37'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/576]]                                   %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@% \line                                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [[35/576]]                                   %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
                 
