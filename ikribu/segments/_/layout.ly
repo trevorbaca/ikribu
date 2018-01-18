@@ -5,11 +5,11 @@
             % PageLayout [measure 1]                                                    %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)             %! SPACING:HSS1
-            \autoPageBreaksOff                                                           %! +SEGMENT:BREAKS:LMM1
-            \noBreak                                                                     %! +SEGMENT:BREAKS:LMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! +SEGMENT:BREAKS:LMM3
-            #'((Y-offset . 60) (alignment-distances . (15 20)))                          %! +SEGMENT:BREAKS:LMM3
-            \pageBreak                                                                   %! +SEGMENT:BREAKS:LMM3
+            \autoPageBreaksOff                                                           %! +SEGMENT:BREAKS:BMM1
+            \noBreak                                                                     %! +SEGMENT:BREAKS:BMM2
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! +SEGMENT:BREAKS:BMM3
+            #'((Y-offset . 60) (alignment-distances . (15 20)))                          %! +SEGMENT:BREAKS:BMM3
+            \pageBreak                                                                   %! +SEGMENT:BREAKS:BMM3
             s1 * 7/4
             %@% ^ \markup {                                                              %! SPACING_MARKUP:HSS2
             %@%     \with-color                                                          %! SPACING_MARKUP:HSS2
@@ -22,7 +22,7 @@
             % PageLayout [measure 2]                                                    %! SM4
             \newSpacingSection                                                           %! -SEGMENT:SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)              %! -SEGMENT:SPACING:HSS1
-            \noBreak                                                                     %! +SEGMENT:BREAKS:LMM2
+            \noBreak                                                                     %! +SEGMENT:BREAKS:BMM2
         %@% \newSpacingSection                                                           %! +SEGMENT:SPACING_OVERRIDE:SOC1
         %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! +SEGMENT:SPACING_OVERRIDE:SOC1
             s1 * 1/4
@@ -47,8 +47,6 @@
                         %@%     }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
-            \override Score.BarLine.transparent = ##f                                    %! SM5
-            \bar "|"                                                                     %! SM5
             
         }
     >>
