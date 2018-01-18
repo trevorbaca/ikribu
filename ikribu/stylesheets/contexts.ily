@@ -29,7 +29,7 @@
         \override MultiMeasureRestText.padding = 0
         }
 
-    % PAGE BREAKS
+    % PAGE BREAK
     \context {
         \name PageLayout
         \type Engraver_group
