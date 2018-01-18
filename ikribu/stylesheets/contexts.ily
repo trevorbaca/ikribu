@@ -23,6 +23,7 @@
         \type Engraver_group
         \consists Multi_measure_rest_engraver
         \override MultiMeasureRest.transparent = ##t
+        \override MultiMeasureRestText.extra-offset = #'(0 . -12)
         \override MultiMeasureRestText.font-size = 3
         \override MultiMeasureRestText.outside-staff-priority = 0
         \override MultiMeasureRestText.padding = 0
@@ -64,7 +65,8 @@
         \override RehearsalMark.outside-staff-priority = 200
         \override RehearsalMark.self-alignment-X = #right
 
-        \override StaffSymbol.color = #red
+        %\override StaffSymbol.color = #red
+        \override StaffSymbol.stencil = ##f
 
         % prevents StaffSymbol from starting too early after cut-away measures:
         \override TimeSignature.X-extent = ##f
@@ -83,8 +85,8 @@
         %    (stretchability . 0)
         %)
         %\override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
-        \override VerticalAxisGroup.Y-extent = #'(0 . 0)
-        \override VerticalAxisGroup.minimum-Y-extent = #'(0 . 0)
+        %\override VerticalAxisGroup.Y-extent = #'(0 . 0)
+        %\override VerticalAxisGroup.minimum-Y-extent = #'(0 . 0)
 
     }
 

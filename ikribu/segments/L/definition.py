@@ -178,6 +178,6 @@ maker(
 
 maker(
     baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), baca.skip(24))),
-    baca.build('ARCH_A_SCORE', baca.spacing((1, 12), baca.skip(25))),
+    baca.document('ARCH_A_SCORE', baca.spacing((1, 12), baca.skip(24))),
+    baca.document('ARCH_A_SCORE', baca.spacing((1, 12), baca.skip(25))),
     )

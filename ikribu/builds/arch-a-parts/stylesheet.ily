@@ -5,6 +5,7 @@
 #(set-global-staff-size 16)
 
 \paper {
+    right-margin = 15\mm
     top-markup-spacing.minimum-distance = 12
 }
 
@@ -40,6 +41,7 @@
     }
     \context {
         \GlobalRests
+        \override MultiMeasureRestText.extra-offset = #'(0 . -3)
         \override MultiMeasureRestText.font-size = 0
 
         % WARNING: setting multimeasure rest text PADDING large ...
@@ -89,4 +91,5 @@
         \override BarLine.hair-thickness = 1.25
         \override TimeSignature.break-visibility = #end-of-line-invisible
     }
+    ragged-right = ##f
 }
