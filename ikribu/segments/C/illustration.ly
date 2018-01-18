@@ -517,11 +517,11 @@
                     }
                 
                 % GlobalSkips [measure 41]                                               %! SM4
-                \newSpacingSection                                                       %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING:HSS1
+                \newSpacingSection                                                       %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING:HSS1
                 \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
-            %@% \newSpacingSection                                                       %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
+            %@% \newSpacingSection                                                       %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
+            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
             %@% \newSpacingSection                                                       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
             %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
@@ -545,14 +545,14 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [C.7]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@% \line                                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%     {                                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%         \with-color                                          %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%             \fontsize                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%                 #3                                           %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%                 [1/12]                                       %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%     }                                                        %! -ARCH_A_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -561,14 +561,14 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [3'26'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@% \line                                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DarkOrange)                         %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [[35/288]]                                   %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! -ARCH_A_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
                         %@% \line                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %@%     {                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         %@%         \with-color                                          %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
@@ -1133,11 +1133,11 @@
                     }
                 
                 % GlobalSkips [measure 49]                                               %! SM4
-                \newSpacingSection                                                       %! -ARCH_A_PARTS:SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_PARTS:SPACING:HSS1
+                \newSpacingSection                                                       %! -ARCH_A_PARTS_BCL:SPACING:HSS1
+                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_PARTS_BCL:SPACING:HSS1
                 \noBreak                                                                 %! +SEGMENT:BREAKS:LMM2
-            %@% \newSpacingSection                                                       %! +ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_PARTS:SPACING_OVERRIDE:SOC1
+            %@% \newSpacingSection                                                       %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
+            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
                 \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)      %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
                 ^ \markup {
@@ -1159,14 +1159,14 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [C.15]                                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -ARCH_A_PARTS:SPACING_MARKUP:HSS2
+                        %@% \line                                                        %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%     {                                                        %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%         \with-color                                          %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%             \fontsize                                        %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%                 #3                                           %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%                 [1/12]                                       %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
+                        %@%     }                                                        %! -ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -1175,14 +1175,14 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [3'55'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +ARCH_A_PARTS:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@% \line                                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     {                                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%         \with-color                                          %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%             \fontsize                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 #3                                           %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%                 [[35/288]]                                   %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
+                        %@%     }                                                        %! +ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
                 
@@ -1511,19 +1511,19 @@
                                 %@%                     \box                             %! +ARCH_A_PARTS_BCL:IC
                                 %@%                         "stonecircle: π/2 every quarter note" %! +ARCH_A_PARTS_BCL:IC
                                 %@%     }                                                %! +ARCH_A_PARTS_BCL:IC
-                                    \line                                                %! -ARCH_A_PARTS_BCL:None:IC
-                                        {                                                %! -ARCH_A_PARTS_BCL:None:IC
-                                            \whiteout                                    %! -ARCH_A_PARTS_BCL:None:IC
-                                                \upright                                 %! -ARCH_A_PARTS_BCL:None:IC
-                                                    \override                            %! -ARCH_A_PARTS_BCL:None:IC
-                                                        #'(box-padding . 0.5)            %! -ARCH_A_PARTS_BCL:None:IC
-                                                        \box                             %! -ARCH_A_PARTS_BCL:None:IC
-                                                            \column                      %! -ARCH_A_PARTS_BCL:None:IC
-                                                                {                        %! -ARCH_A_PARTS_BCL:None:IC
-                                                                    stonecircle:         %! -ARCH_A_PARTS_BCL:None:IC
-                                                                    "π/2 every quarter note" %! -ARCH_A_PARTS_BCL:None:IC
-                                                                }                        %! -ARCH_A_PARTS_BCL:None:IC
-                                        }                                                %! -ARCH_A_PARTS_BCL:None:IC
+                                    \line                                                %! -ARCH_A_PARTS_BCL:IC
+                                        {                                                %! -ARCH_A_PARTS_BCL:IC
+                                            \whiteout                                    %! -ARCH_A_PARTS_BCL:IC
+                                                \upright                                 %! -ARCH_A_PARTS_BCL:IC
+                                                    \override                            %! -ARCH_A_PARTS_BCL:IC
+                                                        #'(box-padding . 0.5)            %! -ARCH_A_PARTS_BCL:IC
+                                                        \box                             %! -ARCH_A_PARTS_BCL:IC
+                                                            \column                      %! -ARCH_A_PARTS_BCL:IC
+                                                                {                        %! -ARCH_A_PARTS_BCL:IC
+                                                                    stonecircle:         %! -ARCH_A_PARTS_BCL:IC
+                                                                    "π/2 every quarter note" %! -ARCH_A_PARTS_BCL:IC
+                                                                }                        %! -ARCH_A_PARTS_BCL:IC
+                                        }                                                %! -ARCH_A_PARTS_BCL:IC
                                 }
                             }
                         \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0)  %! OC

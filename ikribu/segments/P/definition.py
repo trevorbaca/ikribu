@@ -139,7 +139,6 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', 1, 3),
-#    baca.document('LEDGER_SCORE', baca.shift_clef('tenor')),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),

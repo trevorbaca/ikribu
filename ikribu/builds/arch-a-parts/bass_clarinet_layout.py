@@ -2,6 +2,8 @@ import abjad
 import baca
 
 
+part_abbreviation = 'BCL'
+
 padding = 0
 breaks = baca.breaks(
     baca.page( # 1

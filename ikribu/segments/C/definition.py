@@ -95,7 +95,7 @@ maker(
 maker(
     baca.scope('BassClarinetMusicVoice', 2, 3),
     baca.document(
-        'ARCH_A_PARTS_BCL',
+        '+ARCH_A_PARTS_BCL',
         baca.markup.boxed(['stonecircle: π/2 every quarter note']),
         ),
     baca.document(
@@ -209,5 +209,5 @@ maker(
 
 maker(
     baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.document('LEDGER_SCORE', baca.spacing((1, 30), baca.skip(16))),
+    baca.document('+LEDGER_SCORE', baca.spacing((1, 30), baca.skip(16))),
     )

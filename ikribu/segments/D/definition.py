@@ -51,8 +51,8 @@ maker.validate_measures_per_stage()
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1),
-    baca.document('ARCH_A_SCORE', baca.bar_extent((-2, 2))),
-    baca.document('LEDGER_SCORE', baca.bar_extent((-2, 2))),
+    baca.document('+ARCH_A_SCORE', baca.bar_extent((-2, 2))),
+    baca.document('+LEDGER_SCORE', baca.bar_extent((-2, 2))),
     baca.staff_lines(5),
     )
 
