@@ -1502,28 +1502,28 @@
                         ^ \markup {
                             \column
                                 {
-                                %@% \line                                                %! +ARCH_A_PARTS:IC
-                                %@%     {                                                %! +ARCH_A_PARTS:IC
-                                %@%         \whiteout                                    %! +ARCH_A_PARTS:IC
-                                %@%             \upright                                 %! +ARCH_A_PARTS:IC
-                                %@%                 \override                            %! +ARCH_A_PARTS:IC
-                                %@%                     #'(box-padding . 0.5)            %! +ARCH_A_PARTS:IC
-                                %@%                     \box                             %! +ARCH_A_PARTS:IC
-                                %@%                         "stonecircle: π/2 every quarter note" %! +ARCH_A_PARTS:IC
-                                %@%     }                                                %! +ARCH_A_PARTS:IC
-                                    \line                                                %! -ARCH_A_PARTS:None:IC
-                                        {                                                %! -ARCH_A_PARTS:None:IC
-                                            \whiteout                                    %! -ARCH_A_PARTS:None:IC
-                                                \upright                                 %! -ARCH_A_PARTS:None:IC
-                                                    \override                            %! -ARCH_A_PARTS:None:IC
-                                                        #'(box-padding . 0.5)            %! -ARCH_A_PARTS:None:IC
-                                                        \box                             %! -ARCH_A_PARTS:None:IC
-                                                            \column                      %! -ARCH_A_PARTS:None:IC
-                                                                {                        %! -ARCH_A_PARTS:None:IC
-                                                                    stonecircle:         %! -ARCH_A_PARTS:None:IC
-                                                                    "π/2 every quarter note" %! -ARCH_A_PARTS:None:IC
-                                                                }                        %! -ARCH_A_PARTS:None:IC
-                                        }                                                %! -ARCH_A_PARTS:None:IC
+                                %@% \line                                                %! +ARCH_A_PARTS_BCL:IC
+                                %@%     {                                                %! +ARCH_A_PARTS_BCL:IC
+                                %@%         \whiteout                                    %! +ARCH_A_PARTS_BCL:IC
+                                %@%             \upright                                 %! +ARCH_A_PARTS_BCL:IC
+                                %@%                 \override                            %! +ARCH_A_PARTS_BCL:IC
+                                %@%                     #'(box-padding . 0.5)            %! +ARCH_A_PARTS_BCL:IC
+                                %@%                     \box                             %! +ARCH_A_PARTS_BCL:IC
+                                %@%                         "stonecircle: π/2 every quarter note" %! +ARCH_A_PARTS_BCL:IC
+                                %@%     }                                                %! +ARCH_A_PARTS_BCL:IC
+                                    \line                                                %! -ARCH_A_PARTS_BCL:None:IC
+                                        {                                                %! -ARCH_A_PARTS_BCL:None:IC
+                                            \whiteout                                    %! -ARCH_A_PARTS_BCL:None:IC
+                                                \upright                                 %! -ARCH_A_PARTS_BCL:None:IC
+                                                    \override                            %! -ARCH_A_PARTS_BCL:None:IC
+                                                        #'(box-padding . 0.5)            %! -ARCH_A_PARTS_BCL:None:IC
+                                                        \box                             %! -ARCH_A_PARTS_BCL:None:IC
+                                                            \column                      %! -ARCH_A_PARTS_BCL:None:IC
+                                                                {                        %! -ARCH_A_PARTS_BCL:None:IC
+                                                                    stonecircle:         %! -ARCH_A_PARTS_BCL:None:IC
+                                                                    "π/2 every quarter note" %! -ARCH_A_PARTS_BCL:None:IC
+                                                                }                        %! -ARCH_A_PARTS_BCL:None:IC
+                                        }                                                %! -ARCH_A_PARTS_BCL:None:IC
                                 }
                             }
                         \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0)  %! OC
