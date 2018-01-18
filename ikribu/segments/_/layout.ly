@@ -2,51 +2,35 @@
     \context GlobalContext = "GlobalContext" <<
         \context PageLayout = "PageLayout" {
             
-            % PageLayout [measure 1]                                                    %! SM4
+            % PageLayout [measure 1]                                                     %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)             %! SPACING:HSS1
-            \autoPageBreaksOff                                                           %! +SEGMENT:BREAKS:BMM1
-            \noBreak                                                                     %! +SEGMENT:BREAKS:BMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! +SEGMENT:BREAKS:BMM3
-            #'((Y-offset . 60) (alignment-distances . (15 20)))                          %! +SEGMENT:BREAKS:BMM3
-            \pageBreak                                                                   %! +SEGMENT:BREAKS:BMM3
+            \autoPageBreaksOff                                                           %! BREAKS:BMM1
+            \noBreak                                                                     %! BREAKS:BMM2
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! BREAKS:BMM3
+            #'((Y-offset . 60) (alignment-distances . (15 20)))                          %! BREAKS:BMM3
+            \pageBreak                                                                   %! BREAKS:BMM3
             s1 * 7/4
-            %@% ^ \markup {                                                              %! SPACING_MARKUP:HSS2
-            %@%     \with-color                                                          %! SPACING_MARKUP:HSS2
-            %@%         #(x11-color 'DarkCyan)                                           %! SPACING_MARKUP:HSS2
-            %@%         \fontsize                                                        %! SPACING_MARKUP:HSS2
-            %@%             #3                                                           %! SPACING_MARKUP:HSS2
-            %@%             [1/12]                                                       %! SPACING_MARKUP:HSS2
-            %@%     }                                                                    %! SPACING_MARKUP:HSS2
+        %@% ^ \markup {                                                                  %! SPACING_MARKUP:HSS2
+        %@%     \with-color                                                              %! SPACING_MARKUP:HSS2
+        %@%         #(x11-color 'ForestGreen)                                            %! SPACING_MARKUP:HSS2
+        %@%         \fontsize                                                            %! SPACING_MARKUP:HSS2
+        %@%             #3                                                               %! SPACING_MARKUP:HSS2
+        %@%             [1/12]                                                           %! SPACING_MARKUP:HSS2
+        %@%     }                                                                        %! SPACING_MARKUP:HSS2
             
-            % PageLayout [measure 2]                                                    %! SM4
-            \newSpacingSection                                                           %! -SEGMENT:SPACING:HSS1
-            \set Score.proportionalNotationDuration = #(ly:make-moment 1 4)              %! -SEGMENT:SPACING:HSS1
-            \noBreak                                                                     %! +SEGMENT:BREAKS:BMM2
-        %@% \newSpacingSection                                                           %! +SEGMENT:SPACING_OVERRIDE:SOC1
-        %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! +SEGMENT:SPACING_OVERRIDE:SOC1
+            % PageLayout [measure 2]                                                     %! SM4
+            \newSpacingSection                                                           %! SPACING:HSS1
+            \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! SPACING:HSS1
+            \noBreak                                                                     %! BREAKS:BMM2
             s1 * 1/4
-                ^ \markup {
-                    \column
-                        {
-                        %@% \line                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%                 [1/4]                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@% \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/96]]                                    %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        }
-                    }
+        %@% ^ \markup {                                                                  %! SPACING_MARKUP:HSS2
+        %@%     \with-color                                                              %! SPACING_MARKUP:HSS2
+        %@%         #(x11-color 'ForestGreen)                                            %! SPACING_MARKUP:HSS2
+        %@%         \fontsize                                                            %! SPACING_MARKUP:HSS2
+        %@%             #3                                                               %! SPACING_MARKUP:HSS2
+        %@%             [[35/96]]                                                        %! SPACING_MARKUP:HSS2
+        %@%     }                                                                        %! SPACING_MARKUP:HSS2
             
         }
     >>
