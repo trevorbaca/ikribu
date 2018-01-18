@@ -4,7 +4,7 @@ import abjad
 metadata = abjad.TypedOrderedDict(
     [
         (
-            'break_measures',
+            'bol_measure_numbers',
             [
                 1,
                 7,
