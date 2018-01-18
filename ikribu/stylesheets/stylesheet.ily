@@ -5,7 +5,6 @@
 \include "contexts.ily"
 
 \paper {
-    %bottom-margin = 10\mm
     evenFooterMarkup = \markup
         \on-the-fly #print-page-number-check-first
         \fill-line {
@@ -33,12 +32,12 @@
     oddHeaderMarkup = \markup \fill-line { " " }
     print-first-page-number = ##f
     print-page-number = ##t
-    ragged-bottom = ##t
-    ragged-last-bottom = ##t
     right-margin = 5\mm
     markup-system-spacing.minimum-distance = 90
-    %system-system-spacing.minimum-distance = 24
+
+    % SEEMS TO BE IMPORTANT TO SET TO ZERO WITH EXPLICIT SYSTEM POSITIONS:
     system-system-spacing.minimum-distance = 0
+
     top-markup-spacing.minimum-distance = 24
     top-system-spacing.minimum-distance = 26
     top-margin = 0\mm
