@@ -504,7 +504,7 @@
                         \stopStaff                                                       %! REAPPLIED_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                         \startStaff                                                      %! REAPPLIED_STAFF_LINES:SM8
-                    %@% \override TextScript.extra-offset = #'(0 . 7)                    %! +ARCH_A_PARTS:OC
+                    %@% \override TextScript.extra-offset = #'(0 . 7)                    %! +ARCH_A_PARTS_BCL:OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
@@ -639,7 +639,7 @@
                         % BassClarinetMusicVoice [measure 212]                           %! SM4
                         c2.
                         \repeatTie                                                       %! SC
-                    %@% \revert TextScript.extra-offset                                  %! +ARCH_A_PARTS:OC
+                    %@% \revert TextScript.extra-offset                                  %! +ARCH_A_PARTS_BCL:OC
                         
                         % BassClarinetMusicVoice [measure 213]                           %! SM4
                         <c e''>1

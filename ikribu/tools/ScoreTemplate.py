@@ -138,12 +138,6 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     __documentation_section__ = None
 
-    known_documents = (
-        'ARCH_A_PARTS',
-        'ARCH_A_SCORE',
-        'LEDGER_SCORE',
-        )
-
     part_names = (
         ('BassClarinet', 'BCL'),
         ('Violin', 'VN'),
@@ -353,3 +347,37 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._assert_unique_context_names(score)
         self._assert_matching_custom_context_names(score)
         return score
+
+    ### PUBLIC PROPERTIES ##
+
+    @property
+    def known_documents(self):
+        r'''Gets known documents.
+
+        ..  container:: example
+
+            >>> score_template = ikribu.ScoreTemplate()
+            >>> for document_name in score_template.known_documents:
+            ...     document_name
+            ...
+            'ARCH_A_PARTS_BCL'
+            'ARCH_A_PARTS_VA'
+            'ARCH_A_PARTS_VC'
+            'ARCH_A_PARTS_VN'
+            'ARCH_A_SCORE'
+            'LEDGER_SCORE'
+
+        Returns list of strings.
+        '''
+        known_documents = [
+            'ARCH_A_SCORE',
+            'LEDGER_SCORE',
+            ]
+        stem = 'ARCH_A_PARTS'
+        for pair in self.part_names:
+            part_name, abbreviation = pair
+            abbreviation = abjad.String(abbreviation).to_shout_case()
+            document = f'{stem}_{abbreviation}'
+            known_documents.append(document)
+        known_documents.sort()
+        return known_documents
