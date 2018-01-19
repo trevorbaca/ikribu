@@ -87,7 +87,11 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1),
-    baca.document('+ARCH_A_PARTS_BCL', baca.text_script_extra_offset((0, 7))),
+    baca.tag(
+        '+ARCH_A_PARTS_BCL',
+        baca.text_script_extra_offset((0, 7)),
+        deactivate=True,
+        ),
     baca.dynamic('p'),
     baca.markup.lines([
         'introduce upper partials gradually;',

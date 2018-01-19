@@ -81,11 +81,12 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', 2, 3),
-    baca.document(
+    baca.tag(
         '+ARCH_A_PARTS_BCL',
         baca.markup.boxed(['stonecircle: π/2 every quarter note']),
+        deactivate=True,
         ),
-    baca.document(
+    baca.tag(
         '-ARCH_A_PARTS_BCL',
         baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
         ),
