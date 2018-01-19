@@ -9,9 +9,9 @@
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \autoPageBreaksOff                                                           %! BREAK:BMM1
             \noBreak                                                                     %! BREAK:BMM2
-            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! BREAK:BMM3
-            #'((Y-offset . 20) (alignment-distances . (15 20 22.5 25 22.5 25 22.5)))     %! BREAK:BMM3
-            \pageBreak                                                                   %! BREAK:BMM3
+            \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details      %! BREAK:IC
+            #'((Y-offset . 20) (alignment-distances . (15 20 22.5 25 22.5 25 22.5)))     %! BREAK:IC
+            \pageBreak                                                                   %! BREAK:IC
             s1 * 1/2
         %@% ^ \markup {                                                                  %! SPACING_MARKUP:HSS2
         %@%     \with-color                                                              %! SPACING_MARKUP:HSS2
