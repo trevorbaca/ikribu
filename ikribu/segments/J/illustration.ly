@@ -786,8 +786,6 @@
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                         \startStaff                                                      %! SM20
                         R1 * 1/4
-                    %@% \once \override Score.BarLine.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
-                    %@% \once \override Score.SpanBar.transparent = ##t                  %! +LEDGER_SCORE:FERMATA_BAR_LINE:SM22
                         
                         % BassClarinetMusicVoice [measure 125]                           %! SM4
                         \once \override DynamicText.extra-offset = #'(-2 . 0)            %! OC
@@ -830,8 +828,8 @@
                         \revert TextScript.padding                                       %! OC
                         \revert TextScript.parent-alignment-X                            %! OC
                         \revert BassClarinetMusicStaff.BarLine.bar-extent                %! OC
-                        \once \override Score.BarLine.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
-                        \once \override Score.SpanBar.transparent = ##t                  %! +SEGMENT:FERMATA_BAR_LINE:SM22
+                        \once \override Score.BarLine.transparent = ##t                  %! FERMATA_BAR_LINE:SM22
+                        \once \override Score.SpanBar.transparent = ##t                  %! FERMATA_BAR_LINE:SM22
                         
                     }
                 }
@@ -1710,7 +1708,6 @@
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
                             \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
-                            \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                             R1 * 1/4
                             
                             % CelloMusicVoice [measure 125]                              %! SM4
@@ -1723,7 +1720,6 @@
                             \stopStaff                                                   %! SM20
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 0   %! SM20
                             \startStaff                                                  %! SM20
-                            \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                             \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                             R1 * 1/4
                             
