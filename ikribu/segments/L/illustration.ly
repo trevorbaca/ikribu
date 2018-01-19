@@ -1121,8 +1121,8 @@
                         \stopStaff                                                       %! EXPLICIT_STAFF_LINES:SM8
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! EXPLICIT_STAFF_LINES:SM8
                         \startStaff                                                      %! EXPLICIT_STAFF_LINES:SM8
-                        \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! MEASURE_143:SHIFTED_CLEF:OC
-                        \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_143:SHIFTED_CLEF:OC
+                    %%% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f       %! MEASURE_143:SHIFTED_CLEF:OC
+                    %%% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_143:SHIFTED_CLEF:OC
                         \set BassClarinetMusicStaff.instrumentName = \markup {           %! REAPPLIED_INSTRUMENT:SM8
                             \hcenter-in                                                  %! REAPPLIED_INSTRUMENT:SM8
                                 #16                                                      %! REAPPLIED_INSTRUMENT:SM8
