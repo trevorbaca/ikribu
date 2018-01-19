@@ -1879,8 +1879,8 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override TextScript.staff-padding = #3                      %! OC
                             \override TextSpanner.staff-padding = #3.5                   %! OC
-                        %@% \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! -BOL_MEASURE_10:OC
-                        %@% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! -BOL_MEASURE_10:OC
+                            \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! -BOL_MEASURE_10:OC
+                            \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! -BOL_MEASURE_10:OC
                             \set ViolaStaffGroup.instrumentName = \markup {              %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
