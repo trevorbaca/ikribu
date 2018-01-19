@@ -80,7 +80,6 @@ maker(
     baca.scope('CelloMusicVoice', 1, 2),
     baca.clef('tenor'),
     baca.glissando(),
-    # TODO: make BOL-aware
     baca.shift_clef('tenor'),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     )
