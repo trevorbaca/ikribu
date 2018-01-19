@@ -988,8 +988,8 @@
                         R1 * 1/4
                         \revert BassClarinetMusicStaff.BarLine.bar-extent                %! OC
                         \revert DynamicLineSpanner.staff-padding                         %! OC
-                        \once \override Score.BarLine.transparent = ##t                  %! FERMATA_BAR_LINE:SM22
-                        \once \override Score.SpanBar.transparent = ##t                  %! FERMATA_BAR_LINE:SM22
+                        \once \override Score.BarLine.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:SM22
+                        \once \override Score.SpanBar.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:SM22
                         
                     }
                 }
