@@ -1486,8 +1486,8 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \once \override TextScript.padding = #2.5                    %! OC
                             \once \override TextScript.parent-alignment-X = #0           %! OC
-                        %@% \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! -BOL_MEASURE_35:OC
-                        %@% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! -BOL_MEASURE_35:OC
+                            \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! -BOL_MEASURE_35:OC
+                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! -BOL_MEASURE_35:OC
                             \set ViolinStaffGroup.instrumentName = \markup {             %! REAPPLIED_INSTRUMENT:SM8
                                 \hcenter-in                                              %! REAPPLIED_INSTRUMENT:SM8
                                     #16                                                  %! REAPPLIED_INSTRUMENT:SM8
