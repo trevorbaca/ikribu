@@ -7,6 +7,8 @@
 \include "../../stylesheets/nonfirst-segment.ily"
 
 \score {
+    <<
+    { \include "layout.ly" }
     \context Score = "Score" \with {
         currentBarNumber = #79
     } <<
@@ -15,12 +17,6 @@
             \context GlobalSkips = "GlobalSkips" {
                 
                 % GlobalSkips [measure 79]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \autoPageBreaksOff                                                       %! BREAK:BMM1
-                \noBreak                                                                 %! BREAK:BMM2
-                \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details  %! BREAK:BMM3
-                #'((Y-offset . 20) (alignment-distances . (15 20 20 20)))                %! BREAK:BMM3
             %@% \once \override TextSpanner.bound-details.left.text =                    %! REAPPLIED_METRONOME_MARK:SM27
             %@% \markup {                                                                %! REAPPLIED_METRONOME_MARK:SM27
             %@%     \fontsize                                                            %! REAPPLIED_METRONOME_MARK:SM27
@@ -78,7 +74,6 @@
                 \mark #6                                                                 %! SM9
                 \bar ""                                                                  %! +SEGMENT:EMPTY_START_BAR:SM2
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
-                \pageBreak                                                               %! BREAK:BMM3
                 s1 * 1
                 \startTextSpan                                                           %! SM29
                 ^ \markup {
@@ -100,14 +95,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.1]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -120,9 +107,6 @@
                     }
                 
                 % GlobalSkips [measure 80]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
@@ -145,14 +129,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.2]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -165,9 +141,6 @@
                     }
                 
                 % GlobalSkips [measure 81]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
                 \time 4/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1
@@ -190,14 +163,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.3]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -210,11 +175,6 @@
                     }
                 
                 % GlobalSkips [measure 82]                                               %! SM4
-                \newSpacingSection                                                       %! -ARCH_A_SCORE:SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -ARCH_A_SCORE:SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
-            %@% \newSpacingSection                                                       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +ARCH_A_SCORE:SPACING_OVERRIDE:SOC1
                 \time 3/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 3/4
@@ -237,14 +197,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.4]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -ARCH_A_SCORE:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -253,21 +205,10 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [6'16'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +ARCH_A_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
                 
                 % GlobalSkips [measure 83]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
                 \time 2/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 1/2
@@ -290,14 +231,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.5]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -310,13 +243,6 @@
                     }
                 
                 % GlobalSkips [measure 84]                                               %! SM4
-                \newSpacingSection                                                       %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
-            %@% \newSpacingSection                                                       %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE:SOC1
-            %@% \newSpacingSection                                                       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
-            %@% \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +LEDGER_SCORE:SPACING_OVERRIDE:SOC1
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
@@ -339,14 +265,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.6]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -LEDGER_SCORE:-ARCH_A_PARTS_BCL:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -355,29 +273,10 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [6'23'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! -LEDGER_SCORE:+ARCH_A_PARTS_BCL:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@% \line                                                        %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +LEDGER_SCORE:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
                 
                 % GlobalSkips [measure 85]                                               %! SM4
-                \newSpacingSection                                                       %! SPACING:HSS1
-                \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
                 \time 8/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 2
@@ -400,14 +299,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.7]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -420,11 +311,6 @@
                     }
                 
                 % GlobalSkips [measure 86]                                               %! SM4
-            %%% \newSpacingSection                                                       %! -SEGMENT:SPACING:HSS1
-            %%% \set Score.proportionalNotationDuration = #(ly:make-moment 1 12)         %! -SEGMENT:SPACING:HSS1
-                \noBreak                                                                 %! BREAK:BMM2
-                \newSpacingSection                                                       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
-                \set Score.proportionalNotationDuration = #(ly:make-moment 35 288)       %! +SEGMENT:SPACING_OVERRIDE:SOC1 %@%
                 \time 7/4                                                                %! EXPLICIT_TIME_SIGNATURE:SM8
                 \once \override Score.TimeSignature.color = #(x11-color 'blue)           %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                 s1 * 7/4
@@ -448,14 +334,6 @@
                         %@%                 #(x11-color 'DarkCyan)                       %! STAGE_NUMBER_MARKUP:SM3
                         %@%                 [F.8]                                        %! STAGE_NUMBER_MARKUP:SM3
                         %@%     }                                                        %! STAGE_NUMBER_MARKUP:SM3
-                        %@% \line                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%     {                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%         \with-color                                          %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%             #(x11-color 'DarkCyan)                           %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%             \fontsize                                        %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%                 #3                                           %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%                 [1/12]                                       %! -SEGMENT:SPACING_MARKUP:HSS2
-                        %@%     }                                                        %! -SEGMENT:SPACING_MARKUP:HSS2
                         %@% \line                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%     {                                                        %! CLOCK_TIME_MARKUP:SM28
                         %@%         \with-color                                          %! CLOCK_TIME_MARKUP:SM28
@@ -464,14 +342,6 @@
                         %@%                 #3                                           %! CLOCK_TIME_MARKUP:SM28
                         %@%                 [6'45'']                                     %! CLOCK_TIME_MARKUP:SM28
                         %@%     }                                                        %! CLOCK_TIME_MARKUP:SM28
-                        %@% \line                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     {                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%         \with-color                                          %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             #(x11-color 'DarkOrange)                         %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%             \fontsize                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 #3                                           %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%                 [[35/288]]                                   %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
-                        %@%     }                                                        %! +SEGMENT:SPACING_OVERRIDE_MARKUP:SOC2
                         }
                     }
                 \override Score.BarLine.transparent = ##f                                %! SM5
@@ -1326,5 +1196,6 @@
                 >>
             >>
         }
+    >>
     >>
 }

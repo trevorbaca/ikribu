@@ -72,3 +72,27 @@ breaks = baca.breaks(
         [254, 200, (15, 20)],
         ),
     )
+
+spacing = baca.scorewide_spacing(
+    __file__,
+    breaks=breaks,
+    fallback_duration=(1, 12),
+    fermata_measure_duration=(1, 4),
+    )
+spacing.override((52, 62), (1, 16))
+spacing.override(74, (1, 4))
+spacing.override(78, (1, 8))
+spacing.override((99, 107), (1, 16))
+spacing.override((108, 115), (1, 24))
+spacing.override(125, (1, 24))
+spacing.override((127, 142), (1, 16))
+spacing.override(127, (1, 24))
+spacing.override((143, 175), (1, 16))
+spacing.override([167, 168], (1, 12))
+spacing.override(181, (1, 4))
+spacing.override([182, 185], (1, 16))
+spacing.override(197, (1, 16))
+spacing.override((208, 217), (1, 16))
+spacing.override([219, 220, 221, 222], (1, 16))
+spacing.override((239, 246), (1, 16))
+spacing.override([251, 257], (1, 18))

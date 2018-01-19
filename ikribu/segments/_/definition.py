@@ -23,23 +23,12 @@ maker = baca.TimeSignatureMaker(
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
-spacing_specifier = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
-    )
-
-breaks = baca.breaks(
-    baca.page([1, 60, (15, 20)]),
-    )
-
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
-    breaks=breaks,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
-    spacing_specifier=spacing_specifier,
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     )
