@@ -22,30 +22,12 @@ maker = baca.TimeSignatureMaker(
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
-spacing_specifier = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=(1, 4),
-    minimum_width=(1, 16),
-    )
-
-breaks = baca.breaks(
-    baca.page(
-        [143, 20, (15, 15, 20, 22.5)],
-        [153, 140, (15, 15, 20, 22.5)],
-        ),
-    baca.page(
-        [162, 20, (15, 15, 20, 22.5)],
-        [171, 140, (15, 15, 20, 20)],
-        ),
-    )
-
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
-    breaks=breaks,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
-    spacing_specifier=spacing_specifier,
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -174,10 +156,4 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 6),
     baca.markup.boxed_lines(['graincircle:', 'π/3 every quarter note']),
-    )
-
-maker(
-    baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.document('+ARCH_A_SCORE', baca.spacing((1, 12), baca.skip(24))),
-    baca.document('+ARCH_A_SCORE', baca.spacing((1, 12), baca.skip(25))),
     )

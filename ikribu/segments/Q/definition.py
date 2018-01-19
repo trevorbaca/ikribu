@@ -23,29 +23,15 @@ maker = baca.TimeSignatureMaker(
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
-spacing_specifier = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=(1, 4),
-    minimum_width=(1, 30),
-    )
-
-breaks = baca.breaks(
-    baca.page(
-        [247, 20, (15, 20)],
-        [252, 140, (15, 20)],
-        ),
-    )
-
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-16, -4),
     instruments=ikribu.instruments,
     last_segment=True,
-    breaks=breaks,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
-    spacing_specifier=spacing_specifier,
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -116,12 +102,4 @@ maker(
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
     baca.staff_positions([0]),
     ikribu.box_adjustment(),
-    )
-
-maker(
-    baca.scope('GlobalSkips', 1, abjad.Infinity),
-    baca.document('+ARCH_A_SCORE', baca.spacing((1, 18), baca.skip(10))),
-    baca.document('+ARCH_A_SCORE', baca.spacing((1, 18), baca.skip(4))),
-    baca.document('+LEDGER_SCORE', baca.spacing((1, 18), baca.skip(4))),
-    baca.document('+SEGMENT', baca.spacing((1, 18), baca.skip(4))),
     )

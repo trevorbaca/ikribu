@@ -29,23 +29,12 @@ maker = baca.TimeSignatureMaker(
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
-spacing_specifier = baca.HorizontalSpacingSpecifier(
-    fermata_measure_width=(1, 4),
-    minimum_width=(1, 12),
-    )
-
-breaks = baca.breaks(
-    baca.page([87, 20, (15, 20)]),
-    )
-
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
     instruments=ikribu.instruments,
-    breaks=breaks,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
     score_template=ikribu.ScoreTemplate(),
-    spacing_specifier=spacing_specifier,
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
@@ -117,21 +106,4 @@ maker(
     baca.pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
     baca.stem_tremolo(),
     baca.tuplet_brackets_down(),
-    )
-
-maker(
-    baca.scopes(
-        ('GlobalSkips', 2),
-        ('GlobalSkips', 4),
-        ('GlobalSkips', 6),
-        ('GlobalSkips', 8),
-        ('GlobalSkips', 10),
-        ('GlobalSkips', 12),
-        ),
-    baca.spacing((1, 24)),
-    )
-
-maker(
-    baca.scope('GlobalSkips', 12),
-    baca.document('+LEDGER_SCORE', baca.spacing((1, 30))),
     )
