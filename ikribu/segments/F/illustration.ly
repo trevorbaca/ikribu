@@ -643,8 +643,8 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override DynamicLineSpanner.staff-padding = #'4             %! OC
                             \override TextSpanner.staff-padding = #3.5                   %! OC
-                            \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! OC
-                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! MEASURE_84:SHIFTED_CLEF:OC
+                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_84:SHIFTED_CLEF:OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -856,8 +856,10 @@
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override DynamicLineSpanner.staff-padding = #'4             %! OC
                             \override TextSpanner.staff-padding = #3.5                   %! OC
-                            \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! OC
                             \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
+                            \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! OC
+                            \once \override ViolaMusicStaff.Clef.X-extent = ##f          %! MEASURE_84:SHIFTED_CLEF:OC
+                            \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_84:SHIFTED_CLEF:OC
                             \once \override TextSpanner.Y-extent = ##f
                             \once \override TextSpanner.arrow-width = 0.25
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
