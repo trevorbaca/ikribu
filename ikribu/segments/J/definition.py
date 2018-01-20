@@ -159,6 +159,11 @@ maker(
     )
 
 maker(
+    baca.scope('BassClarinetMusicVoice', 6),
+    baca.tag('+ARCH_A_PARTS_BCL', baca.text_script_extra_offset((0, 8))),
+    )
+
+maker(
     baca.scopes(
         ('BassClarinetMusicVoice', 1, abjad.Infinity),
         ('ViolinMusicVoice', 1, abjad.Infinity),
