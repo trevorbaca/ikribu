@@ -525,6 +525,8 @@
                         \startStaff                                                      %! SM20
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
+                    %%% \once \override Score.BarLine.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_109:SM22
+                    %%% \once \override Score.SpanBar.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_109:SM22
                         
                         % BassClarinetMusicVoice [measure 110]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -538,6 +540,8 @@
                         \startStaff                                                      %! SM20
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
+                    %%% \once \override Score.BarLine.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_111:SM22
+                    %%% \once \override Score.SpanBar.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_111:SM22
                         
                         % BassClarinetMusicVoice [measure 112]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -551,6 +555,8 @@
                         \startStaff                                                      %! SM20
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
+                    %%% \once \override Score.BarLine.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_113:SM22
+                    %%% \once \override Score.SpanBar.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_113:SM22
                         
                         % BassClarinetMusicVoice [measure 114]                           %! SM4
                         \stopStaff                                                       %! SM21
@@ -564,8 +570,8 @@
                         \startStaff                                                      %! SM20
                         \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                         R1 * 1/4
-                        \once \override Score.BarLine.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:SM22
-                        \once \override Score.SpanBar.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:SM22
+                        \once \override Score.BarLine.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_115:SM22
+                        \once \override Score.SpanBar.transparent = ##t                  %! BAR_LINE_AFTER_EOL_FERMATA:MEASURE_115:SM22
                         
                     }
                 }
