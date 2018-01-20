@@ -7,10 +7,9 @@
 \include "stylesheet.ily"
 
 
-\score <<
-    {
-    \include "layout.ly"
-    }
+\score {
+    <<
+    { \include "layout.ly" }
     {
     \include "_segments/segment-_.ly"
     \include "_segments/segment-A.ly"
@@ -31,4 +30,5 @@
     \include "_segments/segment-P.ly"
     \include "_segments/segment-Q.ly"
     }
->>
+    >>
+}
