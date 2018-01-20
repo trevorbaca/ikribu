@@ -792,6 +792,7 @@
                         % BassClarinetMusicVoice [measure 125]                           %! SM4
                         \once \override DynamicText.extra-offset = #'(-2 . 0)            %! OC
                         \once \override DynamicText.X-extent = #'(0 . 0)                 %! OC
+                        \override TextScript.extra-offset = #'(0 . 8)                    %! +ARCH_A_PARTS_BCL:OC
                         \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
                         \stopStaff                                                       %! SM21
                         \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -820,6 +821,7 @@
                         c'4
                         \repeatTie
                         \revert RepeatTie.direction                                      %! OC
+                        \revert TextScript.extra-offset                                  %! +ARCH_A_PARTS_BCL:OC
                         
                         % BassClarinetMusicVoice [measure 126]                           %! SM4
                         \stopStaff                                                       %! SM20

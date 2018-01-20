@@ -43,7 +43,7 @@ breaks = baca.breaks(
     )
 
 spacing = baca.scorewide_spacing(
-    'ikribu',
+    __file__,
     (1, 2),
     breaks=breaks,
     fermata_measure_duration=(1, 4),
