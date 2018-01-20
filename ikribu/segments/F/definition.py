@@ -118,5 +118,6 @@ maker(
 maker(
     baca.scope('CelloMusicVoice', 8),
     baca.clef('treble'),
+    baca.shift_clef('treble'),
     baca.staff_lines(5),
     )

@@ -124,6 +124,7 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
+    baca.shift_clef('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(),
     baca.text_script_staff_padding(2.5),
