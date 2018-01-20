@@ -1185,6 +1185,8 @@
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
                             \once \override CelloMusicStaff.StaffSymbol.line-count = 5   %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
+                            \once \override CelloMusicStaff.Clef.X-extent = ##f          %! MEASURE_86:SHIFTED_CLEF:OC
+                            \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_86:SHIFTED_CLEF:OC
                             \set CelloMusicStaff.forceClef = ##t                         %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
                             \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! EXPLICIT_CLEF_COLOR:SM6

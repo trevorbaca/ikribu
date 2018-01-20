@@ -1579,6 +1579,8 @@
                             \once \override ViolinMusicStaff.StaffSymbol.line-count = 5  %! EXPLICIT_STAFF_LINES:SM8
                             \startStaff                                                  %! EXPLICIT_STAFF_LINES:SM8
                             \override DynamicLineSpanner.staff-padding = #'3             %! OC
+                            \once \override ViolinMusicStaff.Clef.X-extent = ##f         %! MEASURE_36:SHIFTED_CLEF:OC
+                            \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_36:SHIFTED_CLEF:OC
                             \override TextScript.staff-padding = #2.5                    %! OC
                             \set ViolinMusicStaff.forceClef = ##t                        %! EXPLICIT_CLEF:SM8
                             \clef "treble"                                               %! EXPLICIT_CLEF:SM8
