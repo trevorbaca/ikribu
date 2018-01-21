@@ -161,12 +161,12 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # BASS CLARINET
         bass_clarinet_music_voice = abjad.Voice(
-            context_name='BassClarinetMusicVoice',
+            lilypond_type='BassClarinetMusicVoice',
             name='BassClarinetMusicVoice',
             )
         bass_clarinet_music_staff = abjad.Staff(
             [bass_clarinet_music_voice],
-            context_name='BassClarinetMusicStaff',
+            lilypond_type='BassClarinetMusicStaff',
             name='BassClarinetMusicStaff',
             )
         abjad.annotate(
@@ -183,12 +183,12 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # VIOLIN
         violin_rh_music_voice = abjad.Voice(
-            context_name='ViolinRHMusicVoice',
+            lilypond_type='ViolinRHMusicVoice',
             name='ViolinRHMusicVoice',
             )
         violin_rh_music_staff = abjad.Staff(
             [violin_rh_music_voice],
-            context_name='ViolinRHMusicStaff',
+            lilypond_type='ViolinRHMusicStaff',
             name='ViolinRHMusicStaff',
             )
         abjad.annotate(
@@ -202,12 +202,12 @@ class ScoreTemplate(baca.ScoreTemplate):
             abjad.Clef('percussion'),
             )
         violin_music_voice = abjad.Voice(
-            context_name='ViolinMusicVoice',
+            lilypond_type='ViolinMusicVoice',
             name='ViolinMusicVoice',
             )
         violin_music_staff = abjad.Staff(
             [violin_music_voice],
-            context_name='ViolinMusicStaff',
+            lilypond_type='ViolinMusicStaff',
             name='ViolinMusicStaff',
             )
         abjad.annotate(
@@ -217,7 +217,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         violin_staff_group = abjad.StaffGroup(
             [violin_rh_music_staff, violin_music_staff],
-            context_name='ViolinStaffGroup',
+            lilypond_type='ViolinStaffGroup',
             name='ViolinStaffGroup',
             )
         abjad.annotate(
@@ -229,12 +229,12 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # VIOLA
         viola_rh_music_voice = abjad.Voice(
-            context_name='ViolaRHMusicVoice',
+            lilypond_type='ViolaRHMusicVoice',
             name='ViolaRHMusicVoice',
             )
         viola_rh_music_staff = abjad.Staff(
             [viola_rh_music_voice],
-            context_name='ViolaRHMusicStaff',
+            lilypond_type='ViolaRHMusicStaff',
             name='ViolaRHMusicStaff',
             )
         abjad.annotate(
@@ -248,12 +248,12 @@ class ScoreTemplate(baca.ScoreTemplate):
             abjad.Clef('percussion'),
             )
         viola_music_voice = abjad.Voice(
-            context_name='ViolaMusicVoice',
+            lilypond_type='ViolaMusicVoice',
             name='ViolaMusicVoice',
             )
         viola_music_staff = abjad.Staff(
             [viola_music_voice],
-            context_name='ViolaMusicStaff',
+            lilypond_type='ViolaMusicStaff',
             name='ViolaMusicStaff',
             )
         abjad.annotate(
@@ -263,7 +263,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         viola_staff_group = abjad.StaffGroup(
             [viola_rh_music_staff, viola_music_staff],
-            context_name='ViolaStaffGroup',
+            lilypond_type='ViolaStaffGroup',
             name='ViolaStaffGroup',
             )
         abjad.annotate(
@@ -275,12 +275,12 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # CELLO
         cello_rh_music_voice = abjad.Voice(
-            context_name='CelloRHMusicVoice',
+            lilypond_type='CelloRHMusicVoice',
             name='CelloRHMusicVoice',
             )
         cello_rh_music_staff = abjad.Staff(
             [cello_rh_music_voice],
-            context_name='CelloRHMusicStaff',
+            lilypond_type='CelloRHMusicStaff',
             name='CelloRHMusicStaff',
             )
         abjad.annotate(
@@ -294,17 +294,17 @@ class ScoreTemplate(baca.ScoreTemplate):
             abjad.Clef('percussion'),
             )
         cello_music_voice = abjad.Voice(
-            context_name='CelloMusicVoice',
+            lilypond_type='CelloMusicVoice',
             name='CelloMusicVoice',
             )
         cello_music_staff = abjad.Staff(
             [cello_music_voice],
-            context_name='CelloMusicStaff',
+            lilypond_type='CelloMusicStaff',
             name='CelloMusicStaff',
             )
         cello_staff_group = abjad.StaffGroup(
             [cello_rh_music_staff, cello_music_staff],
-            context_name='CelloStaffGroup',
+            lilypond_type='CelloStaffGroup',
             name='CelloStaffGroup',
             )
         abjad.annotate(
@@ -327,14 +327,14 @@ class ScoreTemplate(baca.ScoreTemplate):
                 viola_staff_group,
                 cello_staff_group,
                 ],
-            context_name='EnsembleStaffGroup',
+            lilypond_type='EnsembleStaffGroup',
             name='EnsembleStaffGroup',
             )
 
         # MUSIC CONTEXT
         music_context = abjad.Context(
             [ensemble_staff_group],
-            context_name='MusicContext',
+            lilypond_type='MusicContext',
             name='MusicContext',
             )
 
