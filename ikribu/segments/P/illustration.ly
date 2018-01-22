@@ -625,8 +625,8 @@
                             \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                             R1 * 1/4
                             \!
-                            \once \override Score.BarLine.transparent = ##t              %! BAR_LINE_ADJUSTMENT_AFTER_EOL_FERMATA:MEASURE_246:SM22
-                            \once \override Score.SpanBar.transparent = ##t              %! BAR_LINE_ADJUSTMENT_AFTER_EOL_FERMATA:MEASURE_246:SM22
+                            \once \override Score.BarLine.transparent = ##t              %! EOL_FERMATA:MEASURE_246:SM22
+                            \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_246:SM22
                             
                         }
                     }
