@@ -1814,7 +1814,8 @@
                                     -\staccato                                           %! IC
                                     ]
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 4/4 {
                                     
                                     % ViolinMusicVoice [measure 148]                     %! SM4
                                     c'8
@@ -2081,7 +2082,8 @@
                                     -\staccato                                           %! IC
                                     ]
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 4/4 {
                                     
                                     % ViolinMusicVoice [measure 155]                     %! SM4
                                     \override DynamicLineSpanner.staff-padding = #'8     %! OC
@@ -2375,7 +2377,8 @@
                                     c'2
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolinMusicVoice [measure 166]                     %! SM4
                                     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2421,7 +2424,8 @@
                                     c'1
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolinMusicVoice [measure 169]                     %! SM4
                                     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2497,7 +2501,8 @@
                                     c'1
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolinMusicVoice [measure 174]                     %! SM4
                                     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3172,7 +3177,8 @@
                                     c'1
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 160]                      %! SM4
                                     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3263,7 +3269,8 @@
                                     c'2
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 166]                      %! SM4
                                     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3309,7 +3316,8 @@
                                     c'1
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 169]                      %! SM4
                                     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3385,7 +3393,8 @@
                                     c'1
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 174]                      %! SM4
                                     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6

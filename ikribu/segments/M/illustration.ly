@@ -2941,7 +2941,8 @@
                                     }                                                    %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
                                 \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                                 \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 177]                      %! SM4
                                     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -2959,7 +2960,8 @@
                                     c'4
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 178]                      %! SM4
                                     c'4
@@ -2974,7 +2976,8 @@
                                     c'4
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 179]                      %! SM4
                                     c'8
@@ -3036,7 +3039,8 @@
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
                                 \startStaff                                              %! SM21
                                 R1 * 1
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 185]                      %! SM4
                                     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
@@ -3063,7 +3067,8 @@
                                     c'2
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 187]                      %! SM4
                                     c'4
@@ -3124,7 +3129,8 @@
                                     c'2
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 192]                      %! SM4
                                     c'2
@@ -3236,7 +3242,8 @@
                                     c'2
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 202]                      %! SM4
                                     c'4

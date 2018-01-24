@@ -1596,7 +1596,8 @@
                                     a16
                                     -\accent                                             %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 249]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
@@ -1686,7 +1687,8 @@
                                     -\accent                                             %! IC
                                     ]
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 252]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
@@ -1772,7 +1774,8 @@
                                     -\accent                                             %! IC
                                     ]
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 255]                      %! SM4
                                     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie %! SM26
