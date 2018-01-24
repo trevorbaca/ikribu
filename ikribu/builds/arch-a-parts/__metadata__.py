@@ -1,11 +1,11 @@
 import abjad
 
 
-metadata = abjad.TypedOrderedDict(
+metadata = abjad.OrderedDict(
     [
         (
             'ARCH_A_PARTS_BCL',
-            abjad.TypedOrderedDict(
+            abjad.OrderedDict(
                 [
                     (
                         'bol_measure_numbers',
