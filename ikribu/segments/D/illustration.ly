@@ -1292,7 +1292,8 @@
                                     \stopTextSpan
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 2/2 {
                                     
                                     % CelloRHMusicVoice [measure 55]                     %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -1768,7 +1769,8 @@
                                     \stopTextSpan
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/3 {
                                     
                                     % CelloRHMusicVoice [measure 59]                     %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -2233,7 +2235,8 @@
                                     c'8
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 54]                       %! SM4
                                     d'4.
@@ -2281,7 +2284,8 @@
                                     a2.
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 57]                       %! SM4
                                     b8
@@ -2312,7 +2316,8 @@
                                     d'2..
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 60]                       %! SM4
                                     c'8

@@ -700,7 +700,8 @@
                                                         "1/2 clt"                        %! IC
                                         }                                                %! IC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 2/2 {
                                     
                                     % ViolinRHMusicVoice [measure 240]                   %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -1502,7 +1503,8 @@
                                     ]
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolinMusicVoice [measure 241]                     %! SM4
                                     e'''2..
@@ -1573,7 +1575,8 @@
                     \context ViolaStaffGroup = "ViolaStaffGroup" <<
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 3/3 {
                                     
                                     % ViolaRHMusicVoice [measure 239]                    %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
@@ -2148,7 +2151,8 @@
                                     \stopTextSpan
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/8 {
                                     
                                     % ViolaRHMusicVoice [measure 243]                    %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -2459,7 +2463,8 @@
                                     d'8
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 240]                      %! SM4
                                     e''2
@@ -2508,7 +2513,8 @@
                                     f'8
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 243]                      %! SM4
                                     f''2..
@@ -2657,7 +2663,8 @@
                                     \<
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 2/2 {
                                     
                                     % CelloRHMusicVoice [measure 240]                    %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -2870,7 +2877,8 @@
                                     \>
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 7/7 {
                                     
                                     % CelloRHMusicVoice [measure 242]                    %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -3296,7 +3304,8 @@
                         }
                         \context CelloMusicStaff = "CelloMusicStaff" {
                             \context CelloMusicVoice = "CelloMusicVoice" {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 239]                      %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
@@ -3418,7 +3427,8 @@
                                     d'2..
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % CelloMusicVoice [measure 242]                      %! SM4
                                     e''1

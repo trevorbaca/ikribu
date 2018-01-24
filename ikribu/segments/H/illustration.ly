@@ -727,7 +727,8 @@
                                     \>
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 7/7 {
                                     
                                     % ViolinRHMusicVoice [measure 100]                   %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -1247,7 +1248,8 @@
                                     \stopTextSpan
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 2/2 {
                                     
                                     % ViolinRHMusicVoice [measure 103]                   %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -1302,7 +1304,8 @@
                                     \stopTextSpan
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 7/7 {
                                     
                                     % ViolinRHMusicVoice [measure 104]                   %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -1996,7 +1999,8 @@
                                     d''2.
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolinMusicVoice [measure 101]                     %! SM4
                                     c''4
@@ -2038,7 +2042,8 @@
                                     b'8
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolinMusicVoice [measure 104]                     %! SM4
                                     a4
@@ -2099,7 +2104,8 @@
                     \context ViolaStaffGroup = "ViolaStaffGroup" <<
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 8/8 {
                                     
                                     % ViolaRHMusicVoice [measure 99]                     %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
@@ -2834,7 +2840,8 @@
                                     \>
                                     \startTextSpan
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 2/2 {
                                     
                                     % ViolaRHMusicVoice [measure 103]                    %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
@@ -3534,7 +3541,8 @@
                                     e''4.
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 100]                      %! SM4
                                     d''2
@@ -3588,7 +3596,8 @@
                                     d''8
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 103]                      %! SM4
                                     e''4
@@ -3633,7 +3642,8 @@
                                     a'2..
                                     \glissando                                           %! SC
                                 }
-                                {
+                                \tweak text #tuplet-number::calc-fraction-text
+                                \times 1/1 {
                                     
                                     % ViolaMusicVoice [measure 106]                      %! SM4
                                     b''1
