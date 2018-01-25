@@ -193,7 +193,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         abjad.annotate(
             violin_rh_music_staff,
-            'REMOVE_ALL_EMPTY_STAVES',
+            abjad.tags.REMOVE_ALL_EMPTY_STAVES,
             True,
             )
         abjad.annotate(
@@ -239,7 +239,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         abjad.annotate(
             viola_rh_music_staff,
-            'REMOVE_ALL_EMPTY_STAVES',
+            abjad.tags.REMOVE_ALL_EMPTY_STAVES,
             True,
             )
         abjad.annotate(
@@ -285,7 +285,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             )
         abjad.annotate(
             cello_rh_music_staff,
-            'REMOVE_ALL_EMPTY_STAVES',
+            abjad.tags.REMOVE_ALL_EMPTY_STAVES,
             True,
             )
         abjad.annotate(
