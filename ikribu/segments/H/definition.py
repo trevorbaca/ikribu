@@ -32,10 +32,8 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=9,
+    validate_stage_count=3,
     )
-
-maker.validate_stage_count(3)
-maker.validate_measures_per_stage()
 
 maker(
     baca.scope('BassClarinetMusicVoice', 1, 2),
