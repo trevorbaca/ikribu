@@ -31,9 +31,9 @@ maker = baca.SegmentMaker(
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
+    validate_measure_count=9,
     )
 
-maker.validate_measure_count(9)
 maker.validate_stage_count(3)
 maker.validate_measures_per_stage()
 
