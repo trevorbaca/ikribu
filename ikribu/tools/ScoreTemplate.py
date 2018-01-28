@@ -138,7 +138,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     __documentation_section__ = None
 
-    part_names = (
+    _part_manifest = (
         ('BassClarinet', 'BCL'),
         ('Violin', 'VN'),
         ('Viola', 'VA'),
@@ -152,11 +152,9 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         Returns score.
         '''
-
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
-        part_names = [_[0] for _ in ScoreTemplate.part_names]
-        tag_string = '.'.join(part_names)
+        tag_string = '.'.join(self.part_names())
         self._attach_tag(tag_string, global_context)
 
         # BASS CLARINET
@@ -374,10 +372,47 @@ class ScoreTemplate(baca.ScoreTemplate):
             'LEDGER_SCORE',
             ]
         stem = 'ARCH_A_PARTS'
-        for pair in self.part_names:
+        for pair in self.part_manifest:
             part_name, abbreviation = pair
             abbreviation = abjad.String(abbreviation).to_shout_case()
             document = f'{stem}_{abbreviation}'
             known_documents.append(document)
         known_documents.sort()
         return known_documents
+
+    @property
+    def part_manifest(self):
+        r'''Gets part manifest.
+
+        ..  container:: example
+
+            >>> score_template = ikribu.ScoreTemplate()
+            >>> for pair in score_template.part_manifest:
+            ...     pair
+            ...
+            ('BassClarinet', 'BCL')
+            ('Violin', 'VN')
+            ('Viola', 'VA')
+            ('Cello', 'VC')
+
+        '''
+        return self._part_manifest
+
+    ### PUBLIC METHODS ###
+
+    def part_names(self):
+        r'''Gets part names.
+
+        ..  container:: example
+
+            >>> score_template = ikribu.ScoreTemplate()
+            >>> for name in score_template.part_names():
+            ...     name
+            ...
+            'BassClarinet'
+            'Violin'
+            'Viola'
+            'Cello'
+
+        '''
+        return [_[0] for _ in self.part_manifest]
