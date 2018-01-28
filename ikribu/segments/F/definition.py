@@ -28,6 +28,7 @@ maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
+    rehearsal_mark='F',
     score_template=ikribu.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
