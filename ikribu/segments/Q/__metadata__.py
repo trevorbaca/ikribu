@@ -247,6 +247,7 @@ metadata = abjad.OrderedDict(
                     ]
                 ),
             ),
+        ('segment_name', 'Q'),
         ('segment_number', 18),
         (
             'sounds_during_segment',
