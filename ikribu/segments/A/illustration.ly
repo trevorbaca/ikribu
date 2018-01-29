@@ -14,7 +14,6 @@
         \context Score = "Score" \with {
             currentBarNumber = #3
         } <<
-            \tag BassClarinet.Violin.Viola.Cello                                         %! ST4
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                     
