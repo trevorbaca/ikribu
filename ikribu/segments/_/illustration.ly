@@ -11,7 +11,6 @@
             \include "layout.ly"
         }
         \context Score = "Score" <<
-            \tag BassClarinet.Violin.Viola.Cello                                         %! ST4
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                     

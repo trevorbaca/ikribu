@@ -91,5 +91,5 @@
         \override BarLine.hair-thickness = 1.25
         \override TimeSignature.break-visibility = #end-of-line-invisible
     }
-    #ragged-right = ##f
+    %ragged-right = ##f
 }

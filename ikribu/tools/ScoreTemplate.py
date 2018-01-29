@@ -20,7 +20,6 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         >>> abjad.f(lilypond_file[abjad.Score])
         \context Score = "Score" <<
-            \tag BassClarinet.Violin.Viola.Cello %! ST4
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                 }
@@ -154,8 +153,6 @@ class ScoreTemplate(baca.ScoreTemplate):
         '''
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
-        tag_string = '.'.join(self.part_names())
-        self._attach_tag(tag_string, global_context)
 
         # BASS CLARINET
         bass_clarinet_music_voice = abjad.Voice(
