@@ -174,7 +174,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_clef',
             abjad.Clef('treble'),
             )
-        self._attach_tag('BassClarinet', bass_clarinet_music_staff)
+        self._attach_lilypond_tag('BassClarinet', bass_clarinet_music_staff)
 
         # VIOLIN
         violin_rh_music_voice = abjad.Voice(
@@ -220,7 +220,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['Violin'],
             )
-        self._attach_tag('Violin', violin_staff_group)
+        self._attach_lilypond_tag('Violin', violin_staff_group)
 
         # VIOLA
         viola_rh_music_voice = abjad.Voice(
@@ -266,7 +266,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_instrument',
             ikribu.instruments['Viola'],
             )
-        self._attach_tag('Viola', viola_staff_group)
+        self._attach_lilypond_tag('Viola', viola_staff_group)
 
         # CELLO
         cello_rh_music_voice = abjad.Voice(
@@ -312,7 +312,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'default_clef',
             abjad.Clef('bass'),
             )
-        self._attach_tag('Cello', cello_staff_group)
+        self._attach_lilypond_tag('Cello', cello_staff_group)
 
         # ENSEMBLE STAFF GROUP
         ensemble_staff_group = abjad.StaffGroup(
