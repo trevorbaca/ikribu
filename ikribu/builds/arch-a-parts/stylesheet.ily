@@ -21,15 +21,12 @@
             \fontsize #8
             \line { IKRIBU }
             " "
-            \override #'(font-name . "Palatino Italic")
-            \fontsize #3
-            \line { bass clarinet part }
-            " "
         }
     }
 }
 
 \layout {
+
     \context {
         \GlobalContext
         \remove Time_signature_engraver
@@ -39,6 +36,7 @@
         \override BarNumber.font-size = 0
         \override RehearsalMark.self-alignment-X = #left
     }
+
     \context {
         \GlobalRests
         \override MultiMeasureRestText.extra-offset = #'(0 . -3)
@@ -54,42 +52,52 @@
         %  This destroys explicit page layout of systems.
     
     }
+
     \context {
         \GlobalSkips
         \override TextSpanner.font-size = 3
     }
+
     \context {
         \BassClarinetMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \ViolinRHMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \ViolinMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \ViolaRHMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \ViolaMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \CelloRHMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \CelloMusicStaff
         \consists Time_signature_engraver
     }
+
     \context {
         \Score
         \override BarLine.hair-thickness = 1.25
         \override TimeSignature.break-visibility = #end-of-line-invisible
     }
+
     %ragged-right = ##f
 }
