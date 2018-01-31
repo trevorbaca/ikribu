@@ -4,7 +4,7 @@
     \context GlobalContext = "GlobalContext" <<
         \context PageLayout = "PageLayout" {
             
-            % PageLayout [measure 239]                                                   %! SM4
+            % [PageLayout measure 239]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \autoPageBreaksOff                                                           %! BREAK:BMM1
@@ -35,7 +35,7 @@
                     }
                 }
             
-            % PageLayout [measure 240]                                                   %! SM4
+            % [PageLayout measure 240]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
@@ -62,7 +62,7 @@
                     }
                 }
             
-            % PageLayout [measure 241]                                                   %! SM4
+            % [PageLayout measure 241]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
@@ -89,7 +89,7 @@
                     }
                 }
             
-            % PageLayout [measure 242]                                                   %! SM4
+            % [PageLayout measure 242]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
@@ -116,7 +116,7 @@
                     }
                 }
             
-            % PageLayout [measure 243]                                                   %! SM4
+            % [PageLayout measure 243]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
@@ -143,7 +143,7 @@
                     }
                 }
             
-            % PageLayout [measure 244]                                                   %! SM4
+            % [PageLayout measure 244]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
@@ -170,7 +170,7 @@
                     }
                 }
             
-            % PageLayout [measure 245]                                                   %! SM4
+            % [PageLayout measure 245]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 1 16)             %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
@@ -197,7 +197,7 @@
                     }
                 }
             
-            % PageLayout [measure 246]                                                   %! SM4
+            % [PageLayout measure 246]                                                   %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
             \set Score.proportionalNotationDuration = #(ly:make-moment 35 96)            %! SPACING:HSS1
             \noBreak                                                                     %! BREAK:BMM2
