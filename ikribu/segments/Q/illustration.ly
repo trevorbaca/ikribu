@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #247
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalRests = "GlobalRests" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalRests = "GlobalRests"
+                {
                     
                     % [Q GlobalRests measure 247]                                        %! SM4
                     R1 * 7/4
@@ -60,7 +65,8 @@
                         }                                                                %! SM18
                     
                 }
-                \context GlobalSkips = "GlobalSkips" {
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [Q GlobalSkips measure 247]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -570,11 +576,15 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" {
-                \context EnsembleStaffGroup = "EnsembleStaffGroup" <<
+            \context MusicContext = "MusicContext"
+            {
+                \context EnsembleStaffGroup = "EnsembleStaffGroup"
+                <<
                     \tag BassClarinet                                                    %! ST4
-                    \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
-                        \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
+                    \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
+                    {
+                        \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+                        {
                             
                             % [Q BassClarinetMusicVoice measure 247]                     %! SM4
                             \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
@@ -809,9 +819,12 @@
                         }
                     }
                     \tag Violin                                                          %! ST4
-                    \context ViolinStaffGroup = "ViolinStaffGroup" <<
-                        \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
-                            \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
+                    \context ViolinStaffGroup = "ViolinStaffGroup"
+                    <<
+                        \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
+                        {
+                            \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+                            {
                                 
                                 % [Q ViolinRHMusicVoice measure 247]                     %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -865,8 +878,10 @@
                                 
                             }
                         }
-                        \context ViolinMusicStaff = "ViolinMusicStaff" {
-                            \context ViolinMusicVoice = "ViolinMusicVoice" {
+                        \context ViolinMusicStaff = "ViolinMusicStaff"
+                        {
+                            \context ViolinMusicVoice = "ViolinMusicVoice"
+                            {
                                 
                                 % [Q ViolinMusicVoice measure 247]                       %! SM4
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1111,9 +1126,12 @@
                         }
                     >>
                     \tag Viola                                                           %! ST4
-                    \context ViolaStaffGroup = "ViolaStaffGroup" <<
-                        \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
-                            \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
+                    \context ViolaStaffGroup = "ViolaStaffGroup"
+                    <<
+                        \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
+                        {
+                            \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+                            {
                                 
                                 % [Q ViolaRHMusicVoice measure 247]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1167,8 +1185,10 @@
                                 
                             }
                         }
-                        \context ViolaMusicStaff = "ViolaMusicStaff" {
-                            \context ViolaMusicVoice = "ViolaMusicVoice" {
+                        \context ViolaMusicStaff = "ViolaMusicStaff"
+                        {
+                            \context ViolaMusicVoice = "ViolaMusicVoice"
+                            {
                                 
                                 % [Q ViolaMusicVoice measure 247]                        %! SM4
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1413,9 +1433,12 @@
                         }
                     >>
                     \tag Cello                                                           %! ST4
-                    \context CelloStaffGroup = "CelloStaffGroup" <<
-                        \context CelloRHMusicStaff = "CelloRHMusicStaff" {
-                            \context CelloRHMusicVoice = "CelloRHMusicVoice" {
+                    \context CelloStaffGroup = "CelloStaffGroup"
+                    <<
+                        \context CelloRHMusicStaff = "CelloRHMusicStaff"
+                        {
+                            \context CelloRHMusicVoice = "CelloRHMusicVoice"
+                            {
                                 
                                 % [Q CelloRHMusicVoice measure 247]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1469,8 +1492,10 @@
                                 
                             }
                         }
-                        \context CelloMusicStaff = "CelloMusicStaff" {
-                            \context CelloMusicVoice = "CelloMusicVoice" {
+                        \context CelloMusicStaff = "CelloMusicStaff"
+                        {
+                            \context CelloMusicVoice = "CelloMusicVoice"
+                            {
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 14/15 {
                                     

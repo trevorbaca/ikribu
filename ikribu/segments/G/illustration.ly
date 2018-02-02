@@ -11,11 +11,16 @@
         {
             \include "layout.ly"
         }
-        \context Score = "Score" \with {
+        \context Score = "Score"
+        \with
+        {
             currentBarNumber = #87
-        } <<
-            \context GlobalContext = "GlobalContext" <<
-                \context GlobalSkips = "GlobalSkips" {
+        }
+        <<
+            \context GlobalContext = "GlobalContext"
+            <<
+                \context GlobalSkips = "GlobalSkips"
+                {
                     
                     % [G GlobalSkips measure 87]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -641,11 +646,15 @@
                     
                 }
             >>
-            \context MusicContext = "MusicContext" {
-                \context EnsembleStaffGroup = "EnsembleStaffGroup" <<
+            \context MusicContext = "MusicContext"
+            {
+                \context EnsembleStaffGroup = "EnsembleStaffGroup"
+                <<
                     \tag BassClarinet                                                    %! ST4
-                    \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
-                        \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
+                    \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
+                    {
+                        \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+                        {
                             
                             % [G BassClarinetMusicVoice measure 87]                      %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -822,9 +831,12 @@
                         }
                     }
                     \tag Violin                                                          %! ST4
-                    \context ViolinStaffGroup = "ViolinStaffGroup" <<
-                        \context ViolinRHMusicStaff = "ViolinRHMusicStaff" {
-                            \context ViolinRHMusicVoice = "ViolinRHMusicVoice" {
+                    \context ViolinStaffGroup = "ViolinStaffGroup"
+                    <<
+                        \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
+                        {
+                            \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+                            {
                                 
                                 % [G ViolinRHMusicVoice measure 87]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -891,8 +903,10 @@
                                 }
                             }
                         }
-                        \context ViolinMusicStaff = "ViolinMusicStaff" {
-                            \context ViolinMusicVoice = "ViolinMusicVoice" {
+                        \context ViolinMusicStaff = "ViolinMusicStaff"
+                        {
+                            \context ViolinMusicVoice = "ViolinMusicVoice"
+                            {
                                 
                                 % [G ViolinMusicVoice measure 87]                        %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1006,9 +1020,12 @@
                         }
                     >>
                     \tag Viola                                                           %! ST4
-                    \context ViolaStaffGroup = "ViolaStaffGroup" <<
-                        \context ViolaRHMusicStaff = "ViolaRHMusicStaff" {
-                            \context ViolaRHMusicVoice = "ViolaRHMusicVoice" {
+                    \context ViolaStaffGroup = "ViolaStaffGroup"
+                    <<
+                        \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
+                        {
+                            \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+                            {
                                 
                                 % [G ViolaRHMusicVoice measure 87]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1075,8 +1092,10 @@
                                 }
                             }
                         }
-                        \context ViolaMusicStaff = "ViolaMusicStaff" {
-                            \context ViolaMusicVoice = "ViolaMusicVoice" {
+                        \context ViolaMusicStaff = "ViolaMusicStaff"
+                        {
+                            \context ViolaMusicVoice = "ViolaMusicVoice"
+                            {
                                 
                                 % [G ViolaMusicVoice measure 87]                         %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1190,9 +1209,12 @@
                         }
                     >>
                     \tag Cello                                                           %! ST4
-                    \context CelloStaffGroup = "CelloStaffGroup" <<
-                        \context CelloRHMusicStaff = "CelloRHMusicStaff" {
-                            \context CelloRHMusicVoice = "CelloRHMusicVoice" {
+                    \context CelloStaffGroup = "CelloStaffGroup"
+                    <<
+                        \context CelloRHMusicStaff = "CelloRHMusicStaff"
+                        {
+                            \context CelloRHMusicVoice = "CelloRHMusicVoice"
+                            {
                                 
                                 % [G CelloRHMusicVoice measure 87]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1261,8 +1283,10 @@
                                 }
                             }
                         }
-                        \context CelloMusicStaff = "CelloMusicStaff" {
-                            \context CelloMusicVoice = "CelloMusicVoice" {
+                        \context CelloMusicStaff = "CelloMusicStaff"
+                        {
+                            \context CelloMusicVoice = "CelloMusicVoice"
+                            {
                                 
                                 % [G CelloMusicVoice measure 87]                         %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
