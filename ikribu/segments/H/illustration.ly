@@ -17,31 +17,31 @@
             \context GlobalContext = "GlobalContext" <<
                 \context GlobalRests = "GlobalRests" {
                     
-                    % [GlobalRests measure 99]                                           %! SM4
+                    % [H GlobalRests measure 99]                                         %! SM4
                     R1 * 2
                     
-                    % [GlobalRests measure 100]                                          %! SM4
+                    % [H GlobalRests measure 100]                                        %! SM4
                     R1 * 7/4
                     
-                    % [GlobalRests measure 101]                                          %! SM4
+                    % [H GlobalRests measure 101]                                        %! SM4
                     R1 * 7/4
                     
-                    % [GlobalRests measure 102]                                          %! SM4
+                    % [H GlobalRests measure 102]                                        %! SM4
                     R1 * 3/4
                     
-                    % [GlobalRests measure 103]                                          %! SM4
+                    % [H GlobalRests measure 103]                                        %! SM4
                     R1 * 1/2
                     
-                    % [GlobalRests measure 104]                                          %! SM4
+                    % [H GlobalRests measure 104]                                        %! SM4
                     R1 * 7/4
                     
-                    % [GlobalRests measure 105]                                          %! SM4
+                    % [H GlobalRests measure 105]                                        %! SM4
                     R1 * 2
                     
-                    % [GlobalRests measure 106]                                          %! SM4
+                    % [H GlobalRests measure 106]                                        %! SM4
                     R1 * 1
                     
-                    % [GlobalRests measure 107]                                          %! SM4
+                    % [H GlobalRests measure 107]                                        %! SM4
                     \once \override Score.MultiMeasureRest.transparent = ##t             %! SM19
                     \once \override Score.TimeSignature.stencil = ##f                    %! SM19
                     R1 * 1/4
@@ -53,7 +53,7 @@
                 }
                 \context GlobalSkips = "GlobalSkips" {
                     
-                    % [GlobalSkips measure 99]                                           %! SM4
+                    % [H GlobalSkips measure 99]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
                 %@% \markup {                                                            %! REAPPLIED_METRONOME_MARK:SM27
                 %@%     \fontsize                                                        %! REAPPLIED_METRONOME_MARK:SM27
@@ -151,7 +151,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 100]                                          %! SM4
+                    % [H GlobalSkips measure 100]                                        %! SM4
                     \time 7/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/4
@@ -185,7 +185,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 101]                                          %! SM4
+                    % [H GlobalSkips measure 101]                                        %! SM4
                     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! REDUNDANT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/4
                     ^ \markup {
@@ -218,7 +218,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 102]                                          %! SM4
+                    % [H GlobalSkips measure 102]                                        %! SM4
                     \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 3/4
@@ -252,7 +252,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 103]                                          %! SM4
+                    % [H GlobalSkips measure 103]                                        %! SM4
                     \time 2/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/2
@@ -294,7 +294,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 104]                                          %! SM4
+                    % [H GlobalSkips measure 104]                                        %! SM4
                     \time 7/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 7/4
@@ -328,7 +328,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 105]                                          %! SM4
+                    % [H GlobalSkips measure 105]                                        %! SM4
                     \time 8/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 2
@@ -362,7 +362,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 106]                                          %! SM4
+                    % [H GlobalSkips measure 106]                                        %! SM4
                     \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1
@@ -396,7 +396,7 @@
                             }
                         }
                     
-                    % [GlobalSkips measure 107]                                          %! SM4
+                    % [H GlobalSkips measure 107]                                        %! SM4
                     \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
                     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
                     s1 * 1/4
@@ -449,7 +449,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff" {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice" {
                             
-                            % [BassClarinetMusicVoice measure 99]                        %! SM4
+                            % [H BassClarinetMusicVoice measure 99]                      %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
                             \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                             \startStaff                                                  %! REAPPLIED_STAFF_LINES:SM8
@@ -530,35 +530,35 @@
                             \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                             \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                             
-                            % [BassClarinetMusicVoice measure 100]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 100]                     %! SM4
                             ef1..
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 101]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 101]                     %! SM4
                             ef1..
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 102]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 102]                     %! SM4
                             ef2.
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 103]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 103]                     %! SM4
                             ef2
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 104]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 104]                     %! SM4
                             ef1..
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 105]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 105]                     %! SM4
                             ef\breve
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 106]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 106]                     %! SM4
                             ef1
                             \repeatTie
                             
-                            % [BassClarinetMusicVoice measure 107]                       %! SM4
+                            % [H BassClarinetMusicVoice measure 107]                     %! SM4
                             \stopStaff                                                   %! SM20
                             \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
                             \startStaff                                                  %! SM20
@@ -576,7 +576,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/7 {
                                     
-                                    % [ViolinRHMusicVoice measure 99]                    %! SM4
+                                    % [H ViolinRHMusicVoice measure 99]                  %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
                                     \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                     \startStaff                                          %! REAPPLIED_STAFF_LINES:SM8
@@ -769,7 +769,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/7 {
                                     
-                                    % [ViolinRHMusicVoice measure 100]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 100]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -952,7 +952,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/8 {
                                     
-                                    % [ViolinRHMusicVoice measure 101]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 101]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1161,7 +1161,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/5 {
                                     
-                                    % [ViolinRHMusicVoice measure 102]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 102]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1290,7 +1290,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 2/2 {
                                     
-                                    % [ViolinRHMusicVoice measure 103]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 103]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1346,7 +1346,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/7 {
                                     
-                                    % [ViolinRHMusicVoice measure 104]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 104]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1529,7 +1529,7 @@
                                 }
                                 \times 8/9 {
                                     
-                                    % [ViolinRHMusicVoice measure 105]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 105]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
                                     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1759,7 +1759,7 @@
                                 }
                                 \times 4/6 {
                                     
-                                    % [ViolinRHMusicVoice measure 106]                   %! SM4
+                                    % [H ViolinRHMusicVoice measure 106]                 %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1911,7 +1911,7 @@
                                     \revert TextSpanner.staff-padding                    %! OC
                                 }
                                 
-                                % [ViolinRHMusicVoice measure 107]                       %! SM4
+                                % [H ViolinRHMusicVoice measure 107]                     %! SM4
                                 \stopStaff                                               %! SM20
                                 \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                                 \startStaff                                              %! SM20
@@ -1923,7 +1923,7 @@
                             \context ViolinMusicVoice = "ViolinMusicVoice" {
                                 \times 16/17 {
                                     
-                                    % [ViolinMusicVoice measure 99]                      %! SM4
+                                    % [H ViolinMusicVoice measure 99]                    %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
                                     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                                     \startStaff                                          %! REAPPLIED_STAFF_LINES:SM8
@@ -2004,7 +2004,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/8 {
                                     
-                                    % [ViolinMusicVoice measure 100]                     %! SM4
+                                    % [H ViolinMusicVoice measure 100]                   %! SM4
                                     f'''4.
                                     \glissando                                           %! SC
                                     
@@ -2017,7 +2017,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [ViolinMusicVoice measure 101]                     %! SM4
+                                    % [H ViolinMusicVoice measure 101]                   %! SM4
                                     c''4
                                     \glissando                                           %! SC
                                     
@@ -2041,13 +2041,13 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     
-                                    % [ViolinMusicVoice measure 102]                     %! SM4
+                                    % [H ViolinMusicVoice measure 102]                   %! SM4
                                     a'2..
                                     \glissando                                           %! SC
                                 }
                                 \times 2/3 {
                                     
-                                    % [ViolinMusicVoice measure 103]                     %! SM4
+                                    % [H ViolinMusicVoice measure 103]                   %! SM4
                                     g8
                                     \glissando                                           %! SC
                                     
@@ -2060,7 +2060,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [ViolinMusicVoice measure 104]                     %! SM4
+                                    % [H ViolinMusicVoice measure 104]                   %! SM4
                                     a4
                                     \glissando                                           %! SC
                                     
@@ -2083,7 +2083,7 @@
                                 }
                                 \times 16/17 {
                                     
-                                    % [ViolinMusicVoice measure 105]                     %! SM4
+                                    % [H ViolinMusicVoice measure 105]                   %! SM4
                                     e''8
                                     \glissando                                           %! SC
                                     
@@ -2098,14 +2098,14 @@
                                 }
                                 \times 4/5 {
                                     
-                                    % [ViolinMusicVoice measure 106]                     %! SM4
+                                    % [H ViolinMusicVoice measure 106]                   %! SM4
                                     e'''2.
                                     \glissando                                           %! SC
                                     
                                     f'''2
                                 }
                                 
-                                % [ViolinMusicVoice measure 107]                         %! SM4
+                                % [H ViolinMusicVoice measure 107]                       %! SM4
                                 \stopStaff                                               %! SM20
                                 \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
                                 \startStaff                                              %! SM20
@@ -2122,7 +2122,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 8/8 {
                                     
-                                    % [ViolaRHMusicVoice measure 99]                     %! SM4
+                                    % [H ViolaRHMusicVoice measure 99]                   %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
                                     \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                     \startStaff                                          %! REAPPLIED_STAFF_LINES:SM8
@@ -2357,7 +2357,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/8 {
                                     
-                                    % [ViolaRHMusicVoice measure 100]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 100]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2567,7 +2567,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/9 {
                                     
-                                    % [ViolaRHMusicVoice measure 101]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 101]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2801,7 +2801,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/2 {
                                     
-                                    % [ViolaRHMusicVoice measure 102]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 102]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2858,7 +2858,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 2/2 {
                                     
-                                    % [ViolaRHMusicVoice measure 103]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 103]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2915,7 +2915,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 7/8 {
                                     
-                                    % [ViolaRHMusicVoice measure 104]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 104]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -3119,7 +3119,7 @@
                                 }
                                 \times 8/10 {
                                     
-                                    % [ViolaRHMusicVoice measure 105]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 105]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -3380,7 +3380,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 4/3 {
                                     
-                                    % [ViolaRHMusicVoice measure 106]                    %! SM4
+                                    % [H ViolaRHMusicVoice measure 106]                  %! SM4
                                     \once \override TextSpanner.Y-extent = ##f
                                     \once \override TextSpanner.arrow-width = 0.25
                                     \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -3456,7 +3456,7 @@
                                     \revert TextSpanner.staff-padding                    %! OC
                                 }
                                 
-                                % [ViolaRHMusicVoice measure 107]                        %! SM4
+                                % [H ViolaRHMusicVoice measure 107]                      %! SM4
                                 \stopStaff                                               %! SM20
                                 \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                                 \startStaff                                              %! SM20
@@ -3468,7 +3468,7 @@
                             \context ViolaMusicVoice = "ViolaMusicVoice" {
                                 \times 8/9 {
                                     
-                                    % [ViolaMusicVoice measure 99]                       %! SM4
+                                    % [H ViolaMusicVoice measure 99]                     %! SM4
                                     \stopStaff                                           %! REAPPLIED_STAFF_LINES:SM8
                                     \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                                     \startStaff                                          %! REAPPLIED_STAFF_LINES:SM8
@@ -3535,7 +3535,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [ViolaMusicVoice measure 100]                      %! SM4
+                                    % [H ViolaMusicVoice measure 100]                    %! SM4
                                     d''2
                                     \glissando                                           %! SC
                                     
@@ -3553,7 +3553,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 14/15 {
                                     
-                                    % [ViolaMusicVoice measure 101]                      %! SM4
+                                    % [H ViolaMusicVoice measure 101]                    %! SM4
                                     g16
                                     \glissando                                           %! SC
                                     [
@@ -3577,7 +3577,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 3/4 {
                                     
-                                    % [ViolaMusicVoice measure 102]                      %! SM4
+                                    % [H ViolaMusicVoice measure 102]                    %! SM4
                                     f'4.
                                     \glissando                                           %! SC
                                     
@@ -3590,7 +3590,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [ViolaMusicVoice measure 103]                      %! SM4
+                                    % [H ViolaMusicVoice measure 103]                    %! SM4
                                     e''4
                                     \glissando                                           %! SC
                                     
@@ -3600,7 +3600,7 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 14/15 {
                                     
-                                    % [ViolaMusicVoice measure 104]                      %! SM4
+                                    % [H ViolaMusicVoice measure 104]                    %! SM4
                                     c''2.
                                     \glissando                                           %! SC
                                     
@@ -3623,7 +3623,7 @@
                                 }
                                 \times 8/9 {
                                     
-                                    % [ViolaMusicVoice measure 105]                      %! SM4
+                                    % [H ViolaMusicVoice measure 105]                    %! SM4
                                     g'4.
                                     \glissando                                           %! SC
                                     
@@ -3636,11 +3636,11 @@
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
-                                    % [ViolaMusicVoice measure 106]                      %! SM4
+                                    % [H ViolaMusicVoice measure 106]                    %! SM4
                                     b''1
                                 }
                                 
-                                % [ViolaMusicVoice measure 107]                          %! SM4
+                                % [H ViolaMusicVoice measure 107]                        %! SM4
                                 \stopStaff                                               %! SM20
                                 \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
                                 \startStaff                                              %! SM20
@@ -3655,7 +3655,7 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff" {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice" {
                                 
-                                % [CelloRHMusicVoice measure 99]                         %! SM4
+                                % [H CelloRHMusicVoice measure 99]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
@@ -3669,28 +3669,28 @@
                                 \pp                                                      %! REAPPLIED_DYNAMIC:SM8
                                 \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
-                                % [CelloRHMusicVoice measure 100]                        %! SM4
+                                % [H CelloRHMusicVoice measure 100]                      %! SM4
                                 R1 * 7/4
                                 
-                                % [CelloRHMusicVoice measure 101]                        %! SM4
+                                % [H CelloRHMusicVoice measure 101]                      %! SM4
                                 R1 * 7/4
                                 
-                                % [CelloRHMusicVoice measure 102]                        %! SM4
+                                % [H CelloRHMusicVoice measure 102]                      %! SM4
                                 R1 * 3/4
                                 
-                                % [CelloRHMusicVoice measure 103]                        %! SM4
+                                % [H CelloRHMusicVoice measure 103]                      %! SM4
                                 R1 * 1/2
                                 
-                                % [CelloRHMusicVoice measure 104]                        %! SM4
+                                % [H CelloRHMusicVoice measure 104]                      %! SM4
                                 R1 * 7/4
                                 
-                                % [CelloRHMusicVoice measure 105]                        %! SM4
+                                % [H CelloRHMusicVoice measure 105]                      %! SM4
                                 R1 * 2
                                 
-                                % [CelloRHMusicVoice measure 106]                        %! SM4
+                                % [H CelloRHMusicVoice measure 106]                      %! SM4
                                 R1 * 1
                                 
-                                % [CelloRHMusicVoice measure 107]                        %! SM4
+                                % [H CelloRHMusicVoice measure 107]                      %! SM4
                                 \stopStaff                                               %! SM20
                                 \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
                                 \startStaff                                              %! SM20
@@ -3701,7 +3701,7 @@
                         \context CelloMusicStaff = "CelloMusicStaff" {
                             \context CelloMusicVoice = "CelloMusicVoice" {
                                 
-                                % [CelloMusicVoice measure 99]                           %! SM4
+                                % [H CelloMusicVoice measure 99]                         %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
                                 \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! REAPPLIED_STAFF_LINES:SM8
                                 \startStaff                                              %! REAPPLIED_STAFF_LINES:SM8
@@ -3758,28 +3758,28 @@
                                 \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM6
                                 \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:SM6
                                 
-                                % [CelloMusicVoice measure 100]                          %! SM4
+                                % [H CelloMusicVoice measure 100]                        %! SM4
                                 R1 * 7/4
                                 
-                                % [CelloMusicVoice measure 101]                          %! SM4
+                                % [H CelloMusicVoice measure 101]                        %! SM4
                                 R1 * 7/4
                                 
-                                % [CelloMusicVoice measure 102]                          %! SM4
+                                % [H CelloMusicVoice measure 102]                        %! SM4
                                 R1 * 3/4
                                 
-                                % [CelloMusicVoice measure 103]                          %! SM4
+                                % [H CelloMusicVoice measure 103]                        %! SM4
                                 R1 * 1/2
                                 
-                                % [CelloMusicVoice measure 104]                          %! SM4
+                                % [H CelloMusicVoice measure 104]                        %! SM4
                                 R1 * 7/4
                                 
-                                % [CelloMusicVoice measure 105]                          %! SM4
+                                % [H CelloMusicVoice measure 105]                        %! SM4
                                 R1 * 2
                                 
-                                % [CelloMusicVoice measure 106]                          %! SM4
+                                % [H CelloMusicVoice measure 106]                        %! SM4
                                 R1 * 1
                                 
-                                % [CelloMusicVoice measure 107]                          %! SM4
+                                % [H CelloMusicVoice measure 107]                        %! SM4
                                 \stopStaff                                               %! SM20
                                 \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
                                 \startStaff                                              %! SM20
