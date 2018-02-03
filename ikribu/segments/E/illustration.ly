@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% EGlobalSkips
                     
                     % [E GlobalSkips measure 63]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1153,7 +1153,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% EGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -1163,7 +1163,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
                     {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
-                        {
+                        {   %*% EBassClarinetMusicVoice
                             
                             % [E BassClarinetMusicVoice measure 63]                      %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -1303,7 +1303,7 @@
                             gqs'\breve
                             \repeatTie
                             
-                        }
+                        }   %*% EBassClarinetMusicVoice
                     }
                     \tag Violin                                                          %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup"
@@ -1311,7 +1311,7 @@
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
                         {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
-                            {
+                            {   %*% EViolinRHMusicVoice
                                 
                                 % [E ViolinRHMusicVoice measure 63]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1370,12 +1370,12 @@
                                 % [E ViolinRHMusicVoice measure 78]                      %! SM4
                                 R1 * 2
                                 
-                            }
+                            }   %*% EViolinRHMusicVoice
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff"
                         {
                             \context ViolinMusicVoice = "ViolinMusicVoice"
-                            {
+                            {   %*% EViolinMusicVoice
                                 \times 2/3 {
                                     
                                     % [E ViolinMusicVoice measure 63]                    %! SM4
@@ -1610,7 +1610,7 @@
                                 \revert TextScript.padding                               %! OC
                                 \revert TextScript.parent-alignment-X                    %! OC
                                 
-                            }
+                            }   %*% EViolinMusicVoice
                         }
                     >>
                     \tag Viola                                                           %! ST4
@@ -1619,7 +1619,7 @@
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
                         {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
-                            {
+                            {   %*% EViolaRHMusicVoice
                                 
                                 % [E ViolaRHMusicVoice measure 63]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1678,12 +1678,12 @@
                                 % [E ViolaRHMusicVoice measure 78]                       %! SM4
                                 R1 * 2
                                 
-                            }
+                            }   %*% EViolaRHMusicVoice
                         }
                         \context ViolaMusicStaff = "ViolaMusicStaff"
                         {
                             \context ViolaMusicVoice = "ViolaMusicVoice"
-                            {
+                            {   %*% EViolaMusicVoice
                                 
                                 % [E ViolaMusicVoice measure 63]                         %! SM4
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1914,7 +1914,7 @@
                                 \revert TextScript.padding                               %! OC
                                 \revert TextScript.parent-alignment-X                    %! OC
                                 
-                            }
+                            }   %*% EViolaMusicVoice
                         }
                     >>
                     \tag Cello                                                           %! ST4
@@ -1923,7 +1923,7 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff"
                         {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice"
-                            {
+                            {   %*% ECelloRHMusicVoice
                                 
                                 % [E CelloRHMusicVoice measure 63]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1984,12 +1984,12 @@
                                 % [E CelloRHMusicVoice measure 78]                       %! SM4
                                 R1 * 2
                                 
-                            }
+                            }   %*% ECelloRHMusicVoice
                         }
                         \context CelloMusicStaff = "CelloMusicStaff"
                         {
                             \context CelloMusicVoice = "CelloMusicVoice"
-                            {
+                            {   %*% ECelloMusicVoice
                                 
                                 % [E CelloMusicVoice measure 63]                         %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2141,7 +2141,7 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert TextScript.staff-padding                         %! OC
                                 
-                            }
+                            }   %*% ECelloMusicVoice
                         }
                     >>
                 >>

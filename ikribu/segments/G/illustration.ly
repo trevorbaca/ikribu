@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% GGlobalSkips
                     
                     % [G GlobalSkips measure 87]                                         %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -644,7 +644,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% GGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -654,7 +654,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
                     {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
-                        {
+                        {   %*% GBassClarinetMusicVoice
                             
                             % [G BassClarinetMusicVoice measure 87]                      %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -828,7 +828,7 @@
                             % [G BassClarinetMusicVoice measure 98]                      %! SM4
                             R1 * 1/6
                             
-                        }
+                        }   %*% GBassClarinetMusicVoice
                     }
                     \tag Violin                                                          %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup"
@@ -836,7 +836,7 @@
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
                         {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
-                            {
+                            {   %*% GViolinRHMusicVoice
                                 
                                 % [G ViolinRHMusicVoice measure 87]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -901,12 +901,12 @@
                                     R1 * 1/4
                                     
                                 }
-                            }
+                            }   %*% GViolinRHMusicVoice
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff"
                         {
                             \context ViolinMusicVoice = "ViolinMusicVoice"
-                            {
+                            {   %*% GViolinMusicVoice
                                 
                                 % [G ViolinMusicVoice measure 87]                        %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1016,7 +1016,7 @@
                                     R1 * 1/4
                                     
                                 }
-                            }
+                            }   %*% GViolinMusicVoice
                         }
                     >>
                     \tag Viola                                                           %! ST4
@@ -1025,7 +1025,7 @@
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
                         {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
-                            {
+                            {   %*% GViolaRHMusicVoice
                                 
                                 % [G ViolaRHMusicVoice measure 87]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1090,12 +1090,12 @@
                                     R1 * 1/4
                                     
                                 }
-                            }
+                            }   %*% GViolaRHMusicVoice
                         }
                         \context ViolaMusicStaff = "ViolaMusicStaff"
                         {
                             \context ViolaMusicVoice = "ViolaMusicVoice"
-                            {
+                            {   %*% GViolaMusicVoice
                                 
                                 % [G ViolaMusicVoice measure 87]                         %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1205,7 +1205,7 @@
                                     R1 * 1/4
                                     
                                 }
-                            }
+                            }   %*% GViolaMusicVoice
                         }
                     >>
                     \tag Cello                                                           %! ST4
@@ -1214,7 +1214,7 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff"
                         {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice"
-                            {
+                            {   %*% GCelloRHMusicVoice
                                 
                                 % [G CelloRHMusicVoice measure 87]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1281,12 +1281,12 @@
                                     R1 * 1/4
                                     
                                 }
-                            }
+                            }   %*% GCelloRHMusicVoice
                         }
                         \context CelloMusicStaff = "CelloMusicStaff"
                         {
                             \context CelloMusicVoice = "CelloMusicVoice"
-                            {
+                            {   %*% GCelloMusicVoice
                                 
                                 % [G CelloMusicVoice measure 87]                         %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1455,7 +1455,7 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert TupletBracket.direction                          %! OC
                                 
-                            }
+                            }   %*% GCelloMusicVoice
                         }
                     >>
                 >>

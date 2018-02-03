@@ -7,7 +7,7 @@
     \context GlobalContext = "GlobalContext"
     <<
         \context PageLayout = "PageLayout"
-        {
+        {   %*% PageLayout
             
             % [PageLayout measure 10]                                                    %! SM4
             \newSpacingSection                                                           %! SPACING:HSS1
@@ -691,6 +691,6 @@
                     }
                 }
             
-        }
+        }   %*% PageLayout
     >>
 >>
