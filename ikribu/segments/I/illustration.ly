@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalRests = "GlobalRests"
-                {
+                {   %*% IGlobalRests
                     
                     % [I GlobalRests measure 108]                                        %! SM4
                     R1 * 3/4
@@ -70,9 +70,9 @@
                             #"scripts.ulongfermata"                                      %! SM18
                         }                                                                %! SM18
                     
-                }
+                }   %*% IGlobalRests
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% IGlobalSkips
                     
                     % [I GlobalSkips measure 108]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -469,7 +469,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% IGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -479,7 +479,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
                     {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
-                        {
+                        {   %*% IBassClarinetMusicVoice
                             
                             % [I BassClarinetMusicVoice measure 108]                     %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -616,7 +616,7 @@
                             \once \override Score.BarLine.transparent = ##t              %! EOL_FERMATA:MEASURE_115:SM22
                             \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_115:SM22
                             
-                        }
+                        }   %*% IBassClarinetMusicVoice
                     }
                     \tag Violin                                                          %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup"
@@ -624,7 +624,7 @@
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
                         {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
-                            {
+                            {   %*% IViolinRHMusicVoice
                                 
                                 % [I ViolinRHMusicVoice measure 108]                     %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -682,12 +682,12 @@
                                 \startStaff                                              %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% IViolinRHMusicVoice
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff"
                         {
                             \context ViolinMusicVoice = "ViolinMusicVoice"
-                            {
+                            {   %*% IViolinMusicVoice
                                 
                                 % [I ViolinMusicVoice measure 108]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -792,7 +792,7 @@
                                 \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% IViolinMusicVoice
                         }
                     >>
                     \tag Viola                                                           %! ST4
@@ -801,7 +801,7 @@
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
                         {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
-                            {
+                            {   %*% IViolaRHMusicVoice
                                 
                                 % [I ViolaRHMusicVoice measure 108]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -859,12 +859,12 @@
                                 \startStaff                                              %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% IViolaRHMusicVoice
                         }
                         \context ViolaMusicStaff = "ViolaMusicStaff"
                         {
                             \context ViolaMusicVoice = "ViolaMusicVoice"
-                            {
+                            {   %*% IViolaMusicVoice
                                 
                                 % [I ViolaMusicVoice measure 108]                        %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -969,7 +969,7 @@
                                 \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% IViolaMusicVoice
                         }
                     >>
                     \tag Cello                                                           %! ST4
@@ -978,7 +978,7 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff"
                         {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice"
-                            {
+                            {   %*% ICelloRHMusicVoice
                                 
                                 % [I CelloRHMusicVoice measure 108]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1036,12 +1036,12 @@
                                 \startStaff                                              %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% ICelloRHMusicVoice
                         }
                         \context CelloMusicStaff = "CelloMusicStaff"
                         {
                             \context CelloMusicVoice = "CelloMusicVoice"
-                            {
+                            {   %*% ICelloMusicVoice
                                 
                                 % [I CelloMusicVoice measure 108]                        %! SM4
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1193,7 +1193,7 @@
                                 \revert TextScript.padding                               %! OC
                                 \revert TextScript.parent-alignment-X                    %! OC
                                 
-                            }
+                            }   %*% ICelloMusicVoice
                         }
                     >>
                 >>

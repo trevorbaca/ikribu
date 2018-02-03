@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalRests = "GlobalRests"
-                {
+                {   %*% KGlobalRests
                     
                     % [K GlobalRests measure 127]                                        %! SM4
                     R1 * 1
@@ -118,9 +118,9 @@
                             #"scripts.ufermata"                                          %! SM18
                         }                                                                %! SM18
                     
-                }
+                }   %*% KGlobalRests
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% KGlobalSkips
                     
                     % [K GlobalSkips measure 127]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -853,7 +853,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% KGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -863,7 +863,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
                     {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
-                        {
+                        {   %*% KBassClarinetMusicVoice
                             
                             % [K BassClarinetMusicVoice measure 127]                     %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -1112,7 +1112,7 @@
                             \once \override Score.BarLine.transparent = ##t              %! EOL_FERMATA:MEASURE_142:SM22
                             \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_142:SM22
                             
-                        }
+                        }   %*% KBassClarinetMusicVoice
                     }
                     \tag Violin                                                          %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup"
@@ -1120,7 +1120,7 @@
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
                         {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
-                            {
+                            {   %*% KViolinRHMusicVoice
                                 
                                 % [K ViolinRHMusicVoice measure 127]                     %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1226,12 +1226,12 @@
                                 \startStaff                                              %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% KViolinRHMusicVoice
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff"
                         {
                             \context ViolinMusicVoice = "ViolinMusicVoice"
-                            {
+                            {   %*% KViolinMusicVoice
                                 
                                 % [K ViolinMusicVoice measure 127]                       %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1566,7 +1566,7 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert TextScript.padding                               %! OC
                                 
-                            }
+                            }   %*% KViolinMusicVoice
                         }
                     >>
                     \tag Viola                                                           %! ST4
@@ -1575,7 +1575,7 @@
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
                         {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
-                            {
+                            {   %*% KViolaRHMusicVoice
                                 
                                 % [K ViolaRHMusicVoice measure 127]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1681,12 +1681,12 @@
                                 \startStaff                                              %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% KViolaRHMusicVoice
                         }
                         \context ViolaMusicStaff = "ViolaMusicStaff"
                         {
                             \context ViolaMusicVoice = "ViolaMusicVoice"
-                            {
+                            {   %*% KViolaMusicVoice
                                 
                                 % [K ViolaMusicVoice measure 127]                        %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1997,7 +1997,7 @@
                                 \revert DynamicLineSpanner.staff-padding                 %! OC
                                 \revert TextScript.padding                               %! OC
                                 
-                            }
+                            }   %*% KViolaMusicVoice
                         }
                     >>
                     \tag Cello                                                           %! ST4
@@ -2006,7 +2006,7 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff"
                         {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice"
-                            {
+                            {   %*% KCelloRHMusicVoice
                                 
                                 % [K CelloRHMusicVoice measure 127]                      %! SM4
                                 \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2112,12 +2112,12 @@
                                 \startStaff                                              %! SM20
                                 R1 * 1/4
                                 
-                            }
+                            }   %*% KCelloRHMusicVoice
                         }
                         \context CelloMusicStaff = "CelloMusicStaff"
                         {
                             \context CelloMusicVoice = "CelloMusicVoice"
-                            {
+                            {   %*% KCelloMusicVoice
                                 
                                 % [K CelloMusicVoice measure 127]                        %! SM4
                                 \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -2349,7 +2349,7 @@
                                 \revert TextScript.padding                               %! OC
                                 \revert TextScript.parent-alignment-X                    %! OC
                                 
-                            }
+                            }   %*% KCelloMusicVoice
                         }
                     >>
                 >>

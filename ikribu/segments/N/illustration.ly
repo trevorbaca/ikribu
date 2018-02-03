@@ -20,7 +20,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                {
+                {   %*% NGlobalSkips
                     
                     % [N GlobalSkips measure 208]                                        %! SM4
                 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -436,7 +436,7 @@
                     \override Score.BarLine.transparent = ##f                            %! SM5
                     \bar "|"                                                             %! SM5
                     
-                }
+                }   %*% NGlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -446,7 +446,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
                     {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
-                        {
+                        {   %*% NBassClarinetMusicVoice
                             
                             % [N BassClarinetMusicVoice measure 208]                     %! SM4
                             \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -583,7 +583,7 @@
                             <c e''>1..
                             \repeatTie                                                   %! SC
                             
-                        }
+                        }   %*% NBassClarinetMusicVoice
                     }
                     \tag Violin                                                          %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup"
@@ -591,7 +591,7 @@
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
                         {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
-                            {
+                            {   %*% NViolinRHMusicVoice
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 2/2 {
                                     
@@ -1761,12 +1761,12 @@
                                     \revert DynamicLineSpanner.staff-padding             %! OC
                                     
                                 }
-                            }
+                            }   %*% NViolinRHMusicVoice
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff"
                         {
                             \context ViolinMusicVoice = "ViolinMusicVoice"
-                            {
+                            {   %*% NViolinMusicVoice
                                 \times 4/5 {
                                     
                                     % [N ViolinMusicVoice measure 208]                   %! SM4
@@ -1959,7 +1959,7 @@
                                     e'''2
                                     
                                 }
-                            }
+                            }   %*% NViolinMusicVoice
                         }
                     >>
                     \tag Viola                                                           %! ST4
@@ -1968,7 +1968,7 @@
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
                         {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
-                            {
+                            {   %*% NViolaRHMusicVoice
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 2/2 {
                                     
@@ -3257,12 +3257,12 @@
                                     \revert DynamicLineSpanner.staff-padding             %! OC
                                     
                                 }
-                            }
+                            }   %*% NViolaRHMusicVoice
                         }
                         \context ViolaMusicStaff = "ViolaMusicStaff"
                         {
                             \context ViolaMusicVoice = "ViolaMusicVoice"
-                            {
+                            {   %*% NViolaMusicVoice
                                 \times 2/3 {
                                     
                                     % [N ViolaMusicVoice measure 208]                    %! SM4
@@ -3461,7 +3461,7 @@
                                     g'4.
                                     
                                 }
-                            }
+                            }   %*% NViolaMusicVoice
                         }
                     >>
                     \tag Cello                                                           %! ST4
@@ -3470,7 +3470,7 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff"
                         {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice"
-                            {
+                            {   %*% NCelloRHMusicVoice
                                 \times 2/3 {
                                     
                                     % [N CelloRHMusicVoice measure 208]                  %! SM4
@@ -4771,12 +4771,12 @@
                                     \revert DynamicLineSpanner.staff-padding             %! OC
                                     
                                 }
-                            }
+                            }   %*% NCelloRHMusicVoice
                         }
                         \context CelloMusicStaff = "CelloMusicStaff"
                         {
                             \context CelloMusicVoice = "CelloMusicVoice"
-                            {
+                            {   %*% NCelloMusicVoice
                                 \tweak text #tuplet-number::calc-fraction-text
                                 \times 1/1 {
                                     
@@ -4973,7 +4973,7 @@
                                     d'4.
                                     
                                 }
-                            }
+                            }   %*% NCelloMusicVoice
                         }
                     >>
                 >>
