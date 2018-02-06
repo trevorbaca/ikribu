@@ -1,4 +1,4 @@
-MGlobalRests = {
+M_GlobalRests = {
     
     % [M GlobalRests measure 176]                                        %! SM4
     R1 * 3/4
@@ -135,7 +135,7 @@ MGlobalRests = {
 }
 
 
-MGlobalSkips = {
+M_GlobalSkips = {
     
     % [M GlobalSkips measure 176]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1922,7 +1922,7 @@ MGlobalSkips = {
 }
 
 
-MBassClarinetMusicVoice = {
+M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 176]                     %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -2208,7 +2208,7 @@ MBassClarinetMusicVoice = {
 }
 
 
-MViolinRHMusicVoice = {
+M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 176]                     %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2353,7 +2353,7 @@ MViolinRHMusicVoice = {
 }
 
 
-MViolinMusicVoice = {
+M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 176]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2892,7 +2892,7 @@ MViolinMusicVoice = {
 }
 
 
-MViolaRHMusicVoice = {
+M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 176]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -3037,7 +3037,7 @@ MViolaRHMusicVoice = {
 }
 
 
-MViolaMusicVoice = {
+M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 176]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -3441,7 +3441,7 @@ MViolaMusicVoice = {
 }
 
 
-MCelloRHMusicVoice = {
+M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 176]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -3586,7 +3586,7 @@ MCelloRHMusicVoice = {
 }
 
 
-MCelloMusicVoice = {
+M_CelloMusicVoice = {
     
     % [M CelloMusicVoice measure 176]                        %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8

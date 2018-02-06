@@ -1,4 +1,4 @@
-QGlobalRests = {
+Q_GlobalRests = {
     
     % [Q GlobalRests measure 247]                                        %! SM4
     R1 * 7/4
@@ -45,7 +45,7 @@ QGlobalRests = {
 }
 
 
-QGlobalSkips = {
+Q_GlobalSkips = {
     
     % [Q GlobalSkips measure 247]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -556,7 +556,7 @@ QGlobalSkips = {
 }
 
 
-QBassClarinetMusicVoice = {
+Q_BassClarinetMusicVoice = {
     
     % [Q BassClarinetMusicVoice measure 247]                     %! SM4
     \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
@@ -791,7 +791,7 @@ QBassClarinetMusicVoice = {
 }
 
 
-QViolinRHMusicVoice = {
+Q_ViolinRHMusicVoice = {
     
     % [Q ViolinRHMusicVoice measure 247]                     %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -846,7 +846,7 @@ QViolinRHMusicVoice = {
 }
 
 
-QViolinMusicVoice = {
+Q_ViolinMusicVoice = {
     
     % [Q ViolinMusicVoice measure 247]                       %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1090,7 +1090,7 @@ QViolinMusicVoice = {
 }
 
 
-QViolaRHMusicVoice = {
+Q_ViolaRHMusicVoice = {
     
     % [Q ViolaRHMusicVoice measure 247]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1145,7 +1145,7 @@ QViolaRHMusicVoice = {
 }
 
 
-QViolaMusicVoice = {
+Q_ViolaMusicVoice = {
     
     % [Q ViolaMusicVoice measure 247]                        %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1389,7 +1389,7 @@ QViolaMusicVoice = {
 }
 
 
-QCelloRHMusicVoice = {
+Q_CelloRHMusicVoice = {
     
     % [Q CelloRHMusicVoice measure 247]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1444,7 +1444,7 @@ QCelloRHMusicVoice = {
 }
 
 
-QCelloMusicVoice = {
+Q_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         

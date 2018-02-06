@@ -22,7 +22,7 @@
             \context GlobalContext = "GlobalContext"
             <<
                 \context GlobalSkips = "GlobalSkips"
-                \CGlobalSkips
+                \C_GlobalSkips
             >>
             \context MusicContext = "MusicContext"
             {
@@ -32,7 +32,7 @@
                     \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
                     {
                         \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
-                        \CBassClarinetMusicVoice
+                        \C_BassClarinetMusicVoice
                     }
                     \tag Violin                                                          %! ST4
                     \context ViolinStaffGroup = "ViolinStaffGroup"
@@ -40,12 +40,12 @@
                         \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
                         {
                             \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
-                            \CViolinRHMusicVoice
+                            \C_ViolinRHMusicVoice
                         }
                         \context ViolinMusicStaff = "ViolinMusicStaff"
                         {
                             \context ViolinMusicVoice = "ViolinMusicVoice"
-                            \CViolinMusicVoice
+                            \C_ViolinMusicVoice
                         }
                     >>
                     \tag Viola                                                           %! ST4
@@ -54,12 +54,12 @@
                         \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
                         {
                             \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
-                            \CViolaRHMusicVoice
+                            \C_ViolaRHMusicVoice
                         }
                         \context ViolaMusicStaff = "ViolaMusicStaff"
                         {
                             \context ViolaMusicVoice = "ViolaMusicVoice"
-                            \CViolaMusicVoice
+                            \C_ViolaMusicVoice
                         }
                     >>
                     \tag Cello                                                           %! ST4
@@ -68,12 +68,12 @@
                         \context CelloRHMusicStaff = "CelloRHMusicStaff"
                         {
                             \context CelloRHMusicVoice = "CelloRHMusicVoice"
-                            \CCelloRHMusicVoice
+                            \C_CelloRHMusicVoice
                         }
                         \context CelloMusicStaff = "CelloMusicStaff"
                         {
                             \context CelloMusicVoice = "CelloMusicVoice"
-                            \CCelloMusicVoice
+                            \C_CelloMusicVoice
                         }
                     >>
                 >>

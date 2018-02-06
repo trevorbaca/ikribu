@@ -1,4 +1,4 @@
-EGlobalSkips = {
+E_GlobalSkips = {
     
     % [E GlobalSkips measure 63]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1134,7 +1134,7 @@ EGlobalSkips = {
 }
 
 
-EBassClarinetMusicVoice = {
+E_BassClarinetMusicVoice = {
     
     % [E BassClarinetMusicVoice measure 63]                      %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -1277,7 +1277,7 @@ EBassClarinetMusicVoice = {
 }
 
 
-EViolinRHMusicVoice = {
+E_ViolinRHMusicVoice = {
     
     % [E ViolinRHMusicVoice measure 63]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1339,7 +1339,7 @@ EViolinRHMusicVoice = {
 }
 
 
-EViolinMusicVoice = {
+E_ViolinMusicVoice = {
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 63]                    %! SM4
@@ -1577,7 +1577,7 @@ EViolinMusicVoice = {
 }
 
 
-EViolaRHMusicVoice = {
+E_ViolaRHMusicVoice = {
     
     % [E ViolaRHMusicVoice measure 63]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1639,7 +1639,7 @@ EViolaRHMusicVoice = {
 }
 
 
-EViolaMusicVoice = {
+E_ViolaMusicVoice = {
     
     % [E ViolaMusicVoice measure 63]                         %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1873,7 +1873,7 @@ EViolaMusicVoice = {
 }
 
 
-ECelloRHMusicVoice = {
+E_CelloRHMusicVoice = {
     
     % [E CelloRHMusicVoice measure 63]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1937,7 +1937,7 @@ ECelloRHMusicVoice = {
 }
 
 
-ECelloMusicVoice = {
+E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 63]                         %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8

@@ -1,4 +1,4 @@
-AGlobalRests = {
+A_GlobalRests = {
     
     % [A GlobalRests measure 3]                                          %! SM4
     R1 * 2
@@ -30,7 +30,7 @@ AGlobalRests = {
 }
 
 
-AGlobalSkips = {
+A_GlobalSkips = {
     
     % [A GlobalSkips measure 3]                                          %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -363,7 +363,7 @@ AGlobalSkips = {
 }
 
 
-ABassClarinetMusicVoice = {
+A_BassClarinetMusicVoice = {
     
     % [A BassClarinetMusicVoice measure 3]                       %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -486,7 +486,7 @@ ABassClarinetMusicVoice = {
 }
 
 
-AViolinRHMusicVoice = {
+A_ViolinRHMusicVoice = {
     
     % [A ViolinRHMusicVoice measure 3]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -524,7 +524,7 @@ AViolinRHMusicVoice = {
 }
 
 
-AViolinMusicVoice = {
+A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 3]                         %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -610,7 +610,7 @@ AViolinMusicVoice = {
 }
 
 
-AViolaRHMusicVoice = {
+A_ViolaRHMusicVoice = {
     
     % [A ViolaRHMusicVoice measure 3]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -648,7 +648,7 @@ AViolaRHMusicVoice = {
 }
 
 
-AViolaMusicVoice = {
+A_ViolaMusicVoice = {
     
     % [A ViolaMusicVoice measure 3]                          %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -805,7 +805,7 @@ AViolaMusicVoice = {
 }
 
 
-ACelloRHMusicVoice = {
+A_CelloRHMusicVoice = {
     
     % [A CelloRHMusicVoice measure 3]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -843,7 +843,7 @@ ACelloRHMusicVoice = {
 }
 
 
-ACelloMusicVoice = {
+A_CelloMusicVoice = {
     
     % [A CelloMusicVoice measure 3]                          %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8

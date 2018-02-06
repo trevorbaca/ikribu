@@ -1,4 +1,4 @@
-iGlobalRests = {
+i_GlobalRests = {
     
     % [_ GlobalRests measure 1]                                          %! SM4
     R1 * 7/4
@@ -15,7 +15,7 @@ iGlobalRests = {
 }
 
 
-iGlobalSkips = {
+i_GlobalSkips = {
     
     % [_ GlobalSkips measure 1]                                          %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -161,7 +161,7 @@ iGlobalSkips = {
 }
 
 
-iBassClarinetMusicVoice = {
+i_BassClarinetMusicVoice = {
     
     % [_ BassClarinetMusicVoice measure 1]                       %! SM4
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! DEFAULT_INSTRUMENT:SM8
@@ -250,7 +250,7 @@ iBassClarinetMusicVoice = {
 }
 
 
-iViolinRHMusicVoice = {
+i_ViolinRHMusicVoice = {
     
     % [_ ViolinRHMusicVoice measure 1]                       %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -273,7 +273,7 @@ iViolinRHMusicVoice = {
 }
 
 
-iViolinMusicVoice = {
+i_ViolinMusicVoice = {
     
     % [_ ViolinMusicVoice measure 1]                         %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -358,7 +358,7 @@ iViolinMusicVoice = {
 }
 
 
-iViolaRHMusicVoice = {
+i_ViolaRHMusicVoice = {
     
     % [_ ViolaRHMusicVoice measure 1]                        %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -381,7 +381,7 @@ iViolaRHMusicVoice = {
 }
 
 
-iViolaMusicVoice = {
+i_ViolaMusicVoice = {
     
     % [_ ViolaMusicVoice measure 1]                          %! SM4
     \set ViolaStaffGroup.instrumentName = \markup {          %! DEFAULT_INSTRUMENT:SM8
@@ -444,7 +444,7 @@ iViolaMusicVoice = {
 }
 
 
-iCelloRHMusicVoice = {
+i_CelloRHMusicVoice = {
     
     % [_ CelloRHMusicVoice measure 1]                        %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -467,7 +467,7 @@ iCelloRHMusicVoice = {
 }
 
 
-iCelloMusicVoice = {
+i_CelloMusicVoice = {
     
     % [_ CelloMusicVoice measure 1]                          %! SM4
     \once \override NoteHead.style = #'harmonic              %! OC

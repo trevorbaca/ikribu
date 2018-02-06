@@ -1,4 +1,4 @@
-PGlobalRests = {
+P_GlobalRests = {
     
     % [P GlobalRests measure 239]                                        %! SM4
     R1 * 3/4
@@ -33,7 +33,7 @@ PGlobalRests = {
 }
 
 
-PGlobalSkips = {
+P_GlobalSkips = {
     
     % [P GlobalSkips measure 239]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -475,7 +475,7 @@ PGlobalSkips = {
 }
 
 
-PBassClarinetMusicVoice = {
+P_BassClarinetMusicVoice = {
     
     % [P BassClarinetMusicVoice measure 239]                     %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -644,7 +644,7 @@ PBassClarinetMusicVoice = {
 }
 
 
-PViolinRHMusicVoice = {
+P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
@@ -1400,7 +1400,7 @@ PViolinRHMusicVoice = {
 }
 
 
-PViolinMusicVoice = {
+P_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -1558,7 +1558,7 @@ PViolinMusicVoice = {
 }
 
 
-PViolaRHMusicVoice = {
+P_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/3 {
         
@@ -2358,7 +2358,7 @@ PViolaRHMusicVoice = {
 }
 
 
-PViolaMusicVoice = {
+P_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -2502,7 +2502,7 @@ PViolaMusicVoice = {
 }
 
 
-PCelloRHMusicVoice = {
+P_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -3260,7 +3260,7 @@ PCelloRHMusicVoice = {
 }
 
 
-PCelloMusicVoice = {
+P_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         

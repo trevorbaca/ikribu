@@ -1,4 +1,4 @@
-DGlobalRests = {
+D_GlobalRests = {
     
     % [D GlobalRests measure 52]                                         %! SM4
     R1 * 3/4
@@ -42,7 +42,7 @@ DGlobalRests = {
 }
 
 
-DGlobalSkips = {
+D_GlobalSkips = {
     
     % [D GlobalSkips measure 52]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -503,7 +503,7 @@ DGlobalSkips = {
 }
 
 
-DBassClarinetMusicVoice = {
+D_BassClarinetMusicVoice = {
     
     % [D BassClarinetMusicVoice measure 52]                      %! SM4
     \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
@@ -627,7 +627,7 @@ DBassClarinetMusicVoice = {
 }
 
 
-DViolinRHMusicVoice = {
+D_ViolinRHMusicVoice = {
     
     % [D ViolinRHMusicVoice measure 52]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -677,7 +677,7 @@ DViolinRHMusicVoice = {
 }
 
 
-DViolinMusicVoice = {
+D_ViolinMusicVoice = {
     
     % [D ViolinMusicVoice measure 52]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -773,7 +773,7 @@ DViolinMusicVoice = {
 }
 
 
-DViolaRHMusicVoice = {
+D_ViolaRHMusicVoice = {
     
     % [D ViolaRHMusicVoice measure 52]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -823,7 +823,7 @@ DViolaRHMusicVoice = {
 }
 
 
-DViolaMusicVoice = {
+D_ViolaMusicVoice = {
     
     % [D ViolaMusicVoice measure 52]                         %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -919,7 +919,7 @@ DViolaMusicVoice = {
 }
 
 
-DCelloRHMusicVoice = {
+D_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -2099,7 +2099,7 @@ DCelloRHMusicVoice = {
 }
 
 
-DCelloMusicVoice = {
+D_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         

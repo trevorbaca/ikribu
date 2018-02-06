@@ -1,4 +1,4 @@
-NGlobalSkips = {
+N_GlobalSkips = {
     
     % [N GlobalSkips measure 208]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -417,7 +417,7 @@ NGlobalSkips = {
 }
 
 
-NBassClarinetMusicVoice = {
+N_BassClarinetMusicVoice = {
     
     % [N BassClarinetMusicVoice measure 208]                     %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -557,7 +557,7 @@ NBassClarinetMusicVoice = {
 }
 
 
-NViolinRHMusicVoice = {
+N_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
         
@@ -1730,7 +1730,7 @@ NViolinRHMusicVoice = {
 }
 
 
-NViolinMusicVoice = {
+N_ViolinMusicVoice = {
     \times 4/5 {
         
         % [N ViolinMusicVoice measure 208]                   %! SM4
@@ -1926,7 +1926,7 @@ NViolinMusicVoice = {
 }
 
 
-NViolaRHMusicVoice = {
+N_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
         
@@ -3218,7 +3218,7 @@ NViolaRHMusicVoice = {
 }
 
 
-NViolaMusicVoice = {
+N_ViolaMusicVoice = {
     \times 2/3 {
         
         % [N ViolaMusicVoice measure 208]                    %! SM4
@@ -3420,7 +3420,7 @@ NViolaMusicVoice = {
 }
 
 
-NCelloRHMusicVoice = {
+N_CelloRHMusicVoice = {
     \times 2/3 {
         
         % [N CelloRHMusicVoice measure 208]                  %! SM4
@@ -4724,7 +4724,7 @@ NCelloRHMusicVoice = {
 }
 
 
-NCelloMusicVoice = {
+N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         

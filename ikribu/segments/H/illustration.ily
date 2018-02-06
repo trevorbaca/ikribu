@@ -1,4 +1,4 @@
-HGlobalRests = {
+H_GlobalRests = {
     
     % [H GlobalRests measure 99]                                         %! SM4
     R1 * 2
@@ -36,7 +36,7 @@ HGlobalRests = {
 }
 
 
-HGlobalSkips = {
+H_GlobalSkips = {
     
     % [H GlobalSkips measure 99]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -429,7 +429,7 @@ HGlobalSkips = {
 }
 
 
-HBassClarinetMusicVoice = {
+H_BassClarinetMusicVoice = {
     
     % [H BassClarinetMusicVoice measure 99]                      %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -552,7 +552,7 @@ HBassClarinetMusicVoice = {
 }
 
 
-HViolinRHMusicVoice = {
+H_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
         
@@ -1900,7 +1900,7 @@ HViolinRHMusicVoice = {
 }
 
 
-HViolinMusicVoice = {
+H_ViolinMusicVoice = {
     \times 16/17 {
         
         % [H ViolinMusicVoice measure 99]                    %! SM4
@@ -2095,7 +2095,7 @@ HViolinMusicVoice = {
 }
 
 
-HViolaRHMusicVoice = {
+H_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/8 {
         
@@ -3442,7 +3442,7 @@ HViolaRHMusicVoice = {
 }
 
 
-HViolaMusicVoice = {
+H_ViolaMusicVoice = {
     \times 8/9 {
         
         % [H ViolaMusicVoice measure 99]                     %! SM4
@@ -3627,7 +3627,7 @@ HViolaMusicVoice = {
 }
 
 
-HCelloRHMusicVoice = {
+H_CelloRHMusicVoice = {
     
     % [H CelloRHMusicVoice measure 99]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -3673,7 +3673,7 @@ HCelloRHMusicVoice = {
 }
 
 
-HCelloMusicVoice = {
+H_CelloMusicVoice = {
     
     % [H CelloMusicVoice measure 99]                         %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8

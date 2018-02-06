@@ -1,4 +1,4 @@
-LGlobalRests = {
+L_GlobalRests = {
     
     % [L GlobalRests measure 143]                                        %! SM4
     R1 * 2
@@ -108,7 +108,7 @@ LGlobalRests = {
 }
 
 
-LGlobalSkips = {
+L_GlobalSkips = {
     
     % [L GlobalSkips measure 143]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -1362,7 +1362,7 @@ LGlobalSkips = {
 }
 
 
-LBassClarinetMusicVoice = {
+L_BassClarinetMusicVoice = {
     
     % [L BassClarinetMusicVoice measure 143]                     %! SM4
     \stopStaff                                                   %! EXPLICIT_STAFF_LINES:SM8
@@ -1591,7 +1591,7 @@ LBassClarinetMusicVoice = {
 }
 
 
-LViolinRHMusicVoice = {
+L_ViolinRHMusicVoice = {
     
     % [L ViolinRHMusicVoice measure 143]                     %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1709,7 +1709,7 @@ LViolinRHMusicVoice = {
 }
 
 
-LViolinMusicVoice = {
+L_ViolinMusicVoice = {
     \times 16/20 {
         
         % [L ViolinMusicVoice measure 143]                   %! SM4
@@ -2726,7 +2726,7 @@ LViolinMusicVoice = {
 }
 
 
-LViolaRHMusicVoice = {
+L_ViolaRHMusicVoice = {
     
     % [L ViolaRHMusicVoice measure 143]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2844,7 +2844,7 @@ LViolaRHMusicVoice = {
 }
 
 
-LViolaMusicVoice = {
+L_ViolaMusicVoice = {
     \times 16/18 {
         
         % [L ViolaMusicVoice measure 143]                    %! SM4
@@ -3591,7 +3591,7 @@ LViolaMusicVoice = {
 }
 
 
-LCelloRHMusicVoice = {
+L_CelloRHMusicVoice = {
     
     % [L CelloRHMusicVoice measure 143]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -3709,7 +3709,7 @@ LCelloRHMusicVoice = {
 }
 
 
-LCelloMusicVoice = {
+L_CelloMusicVoice = {
     
     % [L CelloMusicVoice measure 143]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8

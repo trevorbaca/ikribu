@@ -1,4 +1,4 @@
-CGlobalSkips = {
+C_GlobalSkips = {
     
     % [C GlobalSkips measure 35]                                         %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1228,7 +1228,7 @@ CGlobalSkips = {
 }
 
 
-CBassClarinetMusicVoice = {
+C_BassClarinetMusicVoice = {
     
     % [C BassClarinetMusicVoice measure 35]                      %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -1484,7 +1484,7 @@ CBassClarinetMusicVoice = {
 }
 
 
-CViolinRHMusicVoice = {
+C_ViolinRHMusicVoice = {
     
     % [C ViolinRHMusicVoice measure 35]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1561,7 +1561,7 @@ CViolinRHMusicVoice = {
 }
 
 
-CViolinMusicVoice = {
+C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 35]                        %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
@@ -1742,7 +1742,7 @@ CViolinMusicVoice = {
 }
 
 
-CViolaRHMusicVoice = {
+C_ViolaRHMusicVoice = {
     
     % [C ViolaRHMusicVoice measure 35]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1819,7 +1819,7 @@ CViolaRHMusicVoice = {
 }
 
 
-CViolaMusicVoice = {
+C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 35]                         %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1970,7 +1970,7 @@ CViolaMusicVoice = {
 }
 
 
-CCelloRHMusicVoice = {
+C_CelloRHMusicVoice = {
     
     % [C CelloRHMusicVoice measure 35]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2047,7 +2047,7 @@ CCelloRHMusicVoice = {
 }
 
 
-CCelloMusicVoice = {
+C_CelloMusicVoice = {
     
     % [C CelloMusicVoice measure 35]                         %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
