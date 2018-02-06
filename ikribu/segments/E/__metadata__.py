@@ -4,6 +4,33 @@ import abjad
 metadata = abjad.OrderedDict(
     [
         (
+            'alive_during_segment',
+            [
+                'Score',
+                'GlobalContext',
+                'GlobalSkips',
+                'MusicContext',
+                'EnsembleStaffGroup',
+                'BassClarinetMusicStaff',
+                'BassClarinetMusicVoice',
+                'ViolinStaffGroup',
+                'ViolinRHMusicStaff',
+                'ViolinRHMusicVoice',
+                'ViolinMusicStaff',
+                'ViolinMusicVoice',
+                'ViolaStaffGroup',
+                'ViolaRHMusicStaff',
+                'ViolaRHMusicVoice',
+                'ViolaMusicStaff',
+                'ViolaMusicVoice',
+                'CelloStaffGroup',
+                'CelloRHMusicStaff',
+                'CelloRHMusicVoice',
+                'CelloMusicStaff',
+                'CelloMusicVoice',
+                ],
+            ),
+        (
             'bol_measure_numbers',
             [63, 74],
             ),
