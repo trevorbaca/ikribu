@@ -1,4 +1,4 @@
-KGlobalRests = {
+K_GlobalRests = {
     
     % [K GlobalRests measure 127]                                        %! SM4
     R1 * 1
@@ -99,7 +99,7 @@ KGlobalRests = {
 }
 
 
-KGlobalSkips = {
+K_GlobalSkips = {
     
     % [K GlobalSkips measure 127]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! REAPPLIED_METRONOME_MARK:SM27
@@ -835,7 +835,7 @@ KGlobalSkips = {
 }
 
 
-KBassClarinetMusicVoice = {
+K_BassClarinetMusicVoice = {
     
     % [K BassClarinetMusicVoice measure 127]                     %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -1087,7 +1087,7 @@ KBassClarinetMusicVoice = {
 }
 
 
-KViolinRHMusicVoice = {
+K_ViolinRHMusicVoice = {
     
     % [K ViolinRHMusicVoice measure 127]                     %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1196,7 +1196,7 @@ KViolinRHMusicVoice = {
 }
 
 
-KViolinMusicVoice = {
+K_ViolinMusicVoice = {
     
     % [K ViolinMusicVoice measure 127]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1534,7 +1534,7 @@ KViolinMusicVoice = {
 }
 
 
-KViolaRHMusicVoice = {
+K_ViolaRHMusicVoice = {
     
     % [K ViolaRHMusicVoice measure 127]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1643,7 +1643,7 @@ KViolaRHMusicVoice = {
 }
 
 
-KViolaMusicVoice = {
+K_ViolaMusicVoice = {
     
     % [K ViolaMusicVoice measure 127]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1957,7 +1957,7 @@ KViolaMusicVoice = {
 }
 
 
-KCelloRHMusicVoice = {
+K_CelloRHMusicVoice = {
     
     % [K CelloRHMusicVoice measure 127]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -2066,7 +2066,7 @@ KCelloRHMusicVoice = {
 }
 
 
-KCelloMusicVoice = {
+K_CelloMusicVoice = {
     
     % [K CelloMusicVoice measure 127]                        %! SM4
     \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8

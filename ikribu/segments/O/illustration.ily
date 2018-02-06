@@ -1,4 +1,4 @@
-OGlobalRests = {
+O_GlobalRests = {
     
     % [O GlobalRests measure 218]                                        %! SM4
     R1 * 1
@@ -72,7 +72,7 @@ OGlobalRests = {
 }
 
 
-OGlobalSkips = {
+O_GlobalSkips = {
     
     % [O GlobalSkips measure 218]                                        %! SM4
 %@% \once \override TextSpanner.bound-details.left.text =                %! EXPLICIT_METRONOME_MARK:SM27
@@ -1016,7 +1016,7 @@ OGlobalSkips = {
 }
 
 
-OBassClarinetMusicVoice = {
+O_BassClarinetMusicVoice = {
     
     % [O BassClarinetMusicVoice measure 218]                     %! SM4
     \stopStaff                                                   %! REAPPLIED_STAFF_LINES:SM8
@@ -1193,7 +1193,7 @@ OBassClarinetMusicVoice = {
 }
 
 
-OViolinRHMusicVoice = {
+O_ViolinRHMusicVoice = {
     
     % [O ViolinRHMusicVoice measure 218]                     %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1275,7 +1275,7 @@ OViolinRHMusicVoice = {
 }
 
 
-OViolinMusicVoice = {
+O_ViolinMusicVoice = {
     
     % [O ViolinMusicVoice measure 218]                       %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1473,7 +1473,7 @@ OViolinMusicVoice = {
 }
 
 
-OViolaRHMusicVoice = {
+O_ViolaRHMusicVoice = {
     
     % [O ViolaRHMusicVoice measure 218]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1555,7 +1555,7 @@ OViolaRHMusicVoice = {
 }
 
 
-OViolaMusicVoice = {
+O_ViolaMusicVoice = {
     
     % [O ViolaMusicVoice measure 218]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1753,7 +1753,7 @@ OViolaMusicVoice = {
 }
 
 
-OCelloRHMusicVoice = {
+O_CelloRHMusicVoice = {
     
     % [O CelloRHMusicVoice measure 218]                      %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
@@ -1835,7 +1835,7 @@ OCelloRHMusicVoice = {
 }
 
 
-OCelloMusicVoice = {
+O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 218]                        %! SM4
     \stopStaff                                               %! REAPPLIED_STAFF_LINES:SM8
