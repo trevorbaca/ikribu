@@ -155,10 +155,10 @@ K_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.padding = 0          %! METRONOME_MARK_SPANNER:SM29
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! METRONOME_MARK_SPANNER:SM29
     \once \override TextSpanner.dash-period = 0                          %! METRONOME_MARK_SPANNER:SM29
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
     \mark #11                                                            %! SM9
     \bar ""                                                              %! +SEGMENT:EMPTY_START_BAR:SM2
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     \startTextSpan                                                       %! METRONOME_MARK_SPANNER:SM29
     ^ \markup {
@@ -200,8 +200,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 128]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -242,8 +242,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 129]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -284,8 +284,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 130]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -326,8 +326,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 131]                                        %! SM4
-    \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 3/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 3/4
     ^ \markup {
         \column
@@ -368,8 +368,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 132]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -410,8 +410,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 133]                                        %! SM4
-    \time 8/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 8/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 2
     ^ \markup {
         \column
@@ -452,8 +452,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 134]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -494,8 +494,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 135]                                        %! SM4
-    \time 7/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 7/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 7/4
     ^ \markup {
         \column
@@ -536,8 +536,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 136]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -578,8 +578,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 137]                                        %! SM4
-    \time 3/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 3/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 3/4
     ^ \markup {
         \column
@@ -620,8 +620,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 138]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -662,8 +662,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 139]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -704,8 +704,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 140]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     ^ \markup {
         \column
@@ -746,8 +746,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 141]                                        %! SM4
-    \time 4/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 4/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1
     ^ \markup {
         \column
@@ -788,8 +788,8 @@ K_GlobalSkips = {
         }
     
     % [K GlobalSkips measure 142]                                        %! SM4
-    \time 1/4                                                            %! EXPLICIT_TIME_SIGNATURE:SM8
-    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! EXPLICIT_TIME_SIGNATURE_COLOR:SM6
+    \time 1/4                                                            %! SM1:EXPLICIT_TIME_SIGNATURE:SM8
+    \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM1:EXPLICIT_TIME_SIGNATURE_COLOR:SM6
     s1 * 1/4
     \stopTextSpan                                                        %! METRONOME_MARK_SPANNER:SM29
     ^ \markup {
@@ -931,12 +931,12 @@ K_BassClarinetMusicVoice = {
     % [K BassClarinetMusicVoice measure 131]                     %! SM4
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
     \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                                   %! SM21
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
     \startStaff                                                  %! SM21
     c'4
-    \effort_mf                                                   %! EXPLICIT_DYNAMIC:SM8
+    \effort_mf                                                   %! IC:EXPLICIT_DYNAMIC:SM8
     
     c'4
     \repeatTie
@@ -969,12 +969,12 @@ K_BassClarinetMusicVoice = {
     % [K BassClarinetMusicVoice measure 135]                     %! SM4
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
     \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                                   %! SM21
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
     \startStaff                                                  %! SM21
     c'4
-    \effort_mp                                                   %! EXPLICIT_DYNAMIC:SM8
+    \effort_mp                                                   %! IC:EXPLICIT_DYNAMIC:SM8
     
     c'4
     \repeatTie
@@ -1019,12 +1019,12 @@ K_BassClarinetMusicVoice = {
     % [K BassClarinetMusicVoice measure 139]                     %! SM4
     \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
     \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                                   %! SM21
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
     \startStaff                                                  %! SM21
     c'4
-    \effort_p                                                    %! EXPLICIT_DYNAMIC:SM8
+    \effort_p                                                    %! IC:EXPLICIT_DYNAMIC:SM8
     
     c'4
     \repeatTie
@@ -1228,13 +1228,13 @@ K_ViolinMusicVoice = {
         \override RepeatTie.direction = #up                  %! OC
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         \stopStaff                                           %! SM21
         \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
         \startStaff                                          %! SM21
         b8
         -\staccato                                           %! IC
-        \effort_mp                                           %! EXPLICIT_DYNAMIC:SM8
+        \effort_mp                                           %! IC:EXPLICIT_DYNAMIC:SM8
         [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -1659,13 +1659,13 @@ K_ViolaMusicVoice = {
         \override RepeatTie.direction = #up                  %! OC
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         \stopStaff                                           %! SM21
         \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
         \startStaff                                          %! SM21
         b8
         -\staccato                                           %! IC
-        \effort_mp                                           %! EXPLICIT_DYNAMIC:SM8
+        \effort_mp                                           %! IC:EXPLICIT_DYNAMIC:SM8
         [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -2013,9 +2013,9 @@ K_CelloRHMusicVoice = {
 K_CelloMusicVoice = {
     
     % [K CelloMusicVoice measure 127]                        %! SM4
-    \stopStaff                                               %! EXPLICIT_STAFF_LINES:SM8
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! EXPLICIT_STAFF_LINES:SM8
-    \startStaff                                              %! EXPLICIT_STAFF_LINES:SM8
+    \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
+    \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
     \override RepeatTie.direction = #up                      %! OC
     \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC
     \override DynamicLineSpanner.staff-padding = #'6         %! OC
@@ -2036,10 +2036,10 @@ K_CelloMusicVoice = {
     \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
-    \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! EXPLICIT_STAFF_LINES_COLOR:SM6
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
-    \effort_p                                                %! EXPLICIT_DYNAMIC:SM8
+    \effort_p                                                %! IC:EXPLICIT_DYNAMIC:SM8
     ^ \markup {
         \column
             {
@@ -2107,12 +2107,12 @@ K_CelloMusicVoice = {
     % [K CelloMusicVoice measure 131]                        %! SM4
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
     \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                               %! SM21
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM21
     \startStaff                                              %! SM21
     d4
-    \effort_mp                                               %! EXPLICIT_DYNAMIC:SM8
+    \effort_mp                                               %! IC:EXPLICIT_DYNAMIC:SM8
     
     d4
     \repeatTie
@@ -2141,12 +2141,12 @@ K_CelloMusicVoice = {
     % [K CelloMusicVoice measure 135]                        %! SM4
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
     \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                               %! SM21
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM21
     \startStaff                                              %! SM21
     d4
-    \effort_mf                                               %! EXPLICIT_DYNAMIC:SM8
+    \effort_mf                                               %! IC:EXPLICIT_DYNAMIC:SM8
     
     d4
     \repeatTie
@@ -2187,12 +2187,12 @@ K_CelloMusicVoice = {
     % [K CelloMusicVoice measure 139]                        %! SM4
     \once \override DynamicText.extra-offset = #'(-2 . 0)    %! OC
     \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                               %! SM21
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM21
     \startStaff                                              %! SM21
     d4
-    \effort_f                                                %! EXPLICIT_DYNAMIC:SM8
+    \effort_f                                                %! IC:EXPLICIT_DYNAMIC:SM8
     
     d4
     \repeatTie
