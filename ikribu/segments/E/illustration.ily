@@ -1170,31 +1170,7 @@ E_BassClarinetMusicVoice = {
     ^ \markup {                                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            {                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    (“BassClarinet”                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        #16                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \center-column                           %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                Bass                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                clarinet                         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \concat                                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    {                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #10                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                \line                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    {                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        B.                       %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        cl.                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    }                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            )                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    }                                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            }                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“BassClarinet”)                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1380,23 +1356,7 @@ E_ViolinMusicVoice = {
                         {                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
                             \with-color                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
                                 #(x11-color 'green4)         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                {                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        (“Violin”            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \vcenter                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        \hcenter-in          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            #16              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            Violin           %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                    \concat                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        {                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                \hcenter-in  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    #10      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                    Vn.      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                            \vcenter         %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                                )            %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                        }                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                }                            %! REAPPLIED_INSTRUMENT_ALERT:SM11
+                                (“Violin”)                   %! REAPPLIED_INSTRUMENT_ALERT:SM11
                         }                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
                     \line                                    %! IC
                         {                                    %! IC
@@ -1673,23 +1633,7 @@ E_ViolaMusicVoice = {
     ^ \markup {                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            {                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    (“Viola”                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        #16                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        Viola                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \concat                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #10                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                Va.                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            )                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            }                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Viola”)                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
     \set ViolaStaffGroup.instrumentName = \markup {          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
@@ -1967,23 +1911,7 @@ E_CelloMusicVoice = {
     ^ \markup {                                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
         \with-color                                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
             #(x11-color 'green4)                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            {                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    (“Cello”                                 %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \vcenter                                     %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    \hcenter-in                              %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        #16                                  %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        Cello                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                \concat                                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    {                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            \hcenter-in                      %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                #10                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                                Vc.                          %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                        \vcenter                             %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                            )                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
-                    }                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
-            }                                                %! REAPPLIED_INSTRUMENT_ALERT:SM11
+            (“Cello”)                                        %! REAPPLIED_INSTRUMENT_ALERT:SM11
         }                                                    %! REAPPLIED_INSTRUMENT_ALERT:SM11
     \set CelloStaffGroup.instrumentName = \markup {          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! REDRAWN_REAPPLIED_INSTRUMENT:SM8
