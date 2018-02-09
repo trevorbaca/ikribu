@@ -620,6 +620,12 @@ P_BassClarinetMusicVoice = {
 }
 
 
+P_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \P_BassClarinetMusicVoice
+}
+
+
 P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
@@ -1376,6 +1382,12 @@ P_ViolinRHMusicVoice = {
 }
 
 
+P_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \P_ViolinRHMusicVoice
+}
+
+
 P_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -1515,6 +1527,12 @@ P_ViolinMusicVoice = {
     \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
+}
+
+
+P_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \P_ViolinMusicVoice
 }
 
 
@@ -2318,6 +2336,12 @@ P_ViolaRHMusicVoice = {
 }
 
 
+P_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \P_ViolaRHMusicVoice
+}
+
+
 P_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2443,6 +2467,12 @@ P_ViolaMusicVoice = {
     \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
+}
+
+
+P_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \P_ViolaMusicVoice
 }
 
 
@@ -3204,6 +3234,12 @@ P_CelloRHMusicVoice = {
 }
 
 
+P_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \P_CelloRHMusicVoice
+}
+
+
 P_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -3337,4 +3373,10 @@ P_CelloMusicVoice = {
     \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
+}
+
+
+P_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \P_CelloMusicVoice
 }

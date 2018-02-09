@@ -528,6 +528,12 @@ H_BassClarinetMusicVoice = {
 }
 
 
+H_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \H_BassClarinetMusicVoice
+}
+
+
 H_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
@@ -1876,6 +1882,12 @@ H_ViolinRHMusicVoice = {
 }
 
 
+H_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \H_ViolinRHMusicVoice
+}
+
+
 H_ViolinMusicVoice = {
     \times 16/17 {
         
@@ -2052,6 +2064,12 @@ H_ViolinMusicVoice = {
     \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
+}
+
+
+H_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \H_ViolinMusicVoice
 }
 
 
@@ -3402,6 +3420,12 @@ H_ViolaRHMusicVoice = {
 }
 
 
+H_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \H_ViolaRHMusicVoice
+}
+
+
 H_ViolaMusicVoice = {
     \times 8/9 {
         
@@ -3571,6 +3595,12 @@ H_ViolaMusicVoice = {
 }
 
 
+H_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \H_ViolaMusicVoice
+}
+
+
 H_CelloRHMusicVoice = {
     
     % [H CelloRHMusicVoice measure 99]                       %! SM4
@@ -3614,6 +3644,12 @@ H_CelloRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+H_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \H_CelloRHMusicVoice
 }
 
 
@@ -3688,4 +3724,10 @@ H_CelloMusicVoice = {
     \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
+}
+
+
+H_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \H_CelloMusicVoice
 }

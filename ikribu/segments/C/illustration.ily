@@ -1460,6 +1460,12 @@ C_BassClarinetMusicVoice = {
 }
 
 
+C_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \C_BassClarinetMusicVoice
+}
+
+
 C_ViolinRHMusicVoice = {
     
     % [C ViolinRHMusicVoice measure 35]                      %! SM4
@@ -1534,6 +1540,12 @@ C_ViolinRHMusicVoice = {
         R1 * 1/4
         
     }
+}
+
+
+C_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \C_ViolinRHMusicVoice
 }
 
 
@@ -1702,6 +1714,12 @@ C_ViolinMusicVoice = {
 }
 
 
+C_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \C_ViolinMusicVoice
+}
+
+
 C_ViolaRHMusicVoice = {
     
     % [C ViolaRHMusicVoice measure 35]                       %! SM4
@@ -1776,6 +1794,12 @@ C_ViolaRHMusicVoice = {
         R1 * 1/4
         
     }
+}
+
+
+C_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \C_ViolaRHMusicVoice
 }
 
 
@@ -1914,6 +1938,12 @@ C_ViolaMusicVoice = {
 }
 
 
+C_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \C_ViolaMusicVoice
+}
+
+
 C_CelloRHMusicVoice = {
     
     % [C CelloRHMusicVoice measure 35]                       %! SM4
@@ -1988,6 +2018,12 @@ C_CelloRHMusicVoice = {
         R1 * 1/4
         
     }
+}
+
+
+C_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \C_CelloRHMusicVoice
 }
 
 
@@ -2225,4 +2261,10 @@ C_CelloMusicVoice = {
     % [C CelloMusicVoice measure 51]                         %! SM4
     R1 * 1/6
     
+}
+
+
+C_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \C_CelloMusicVoice
 }

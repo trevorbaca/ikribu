@@ -767,6 +767,12 @@ Q_BassClarinetMusicVoice = {
 }
 
 
+Q_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \Q_BassClarinetMusicVoice
+}
+
+
 Q_ViolinRHMusicVoice = {
     
     % [Q ViolinRHMusicVoice measure 247]                     %! SM4
@@ -819,6 +825,12 @@ Q_ViolinRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+Q_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \Q_ViolinRHMusicVoice
 }
 
 
@@ -1050,6 +1062,12 @@ Q_ViolinMusicVoice = {
 }
 
 
+Q_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \Q_ViolinMusicVoice
+}
+
+
 Q_ViolaRHMusicVoice = {
     
     % [Q ViolaRHMusicVoice measure 247]                      %! SM4
@@ -1102,6 +1120,12 @@ Q_ViolaRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+Q_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \Q_ViolaRHMusicVoice
 }
 
 
@@ -1333,6 +1357,12 @@ Q_ViolaMusicVoice = {
 }
 
 
+Q_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \Q_ViolaMusicVoice
+}
+
+
 Q_CelloRHMusicVoice = {
     
     % [Q CelloRHMusicVoice measure 247]                      %! SM4
@@ -1385,6 +1415,12 @@ Q_CelloRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+Q_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \Q_CelloRHMusicVoice
 }
 
 
@@ -1815,4 +1851,10 @@ Q_CelloMusicVoice = {
     \revert TextScript.padding                               %! OC
     \revert TextScript.parent-alignment-X                    %! OC
     
+}
+
+
+Q_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \Q_CelloMusicVoice
 }

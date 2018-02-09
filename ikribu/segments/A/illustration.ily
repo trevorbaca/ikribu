@@ -462,6 +462,12 @@ A_BassClarinetMusicVoice = {
 }
 
 
+A_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \A_BassClarinetMusicVoice
+}
+
+
 A_ViolinRHMusicVoice = {
     
     % [A ViolinRHMusicVoice measure 3]                       %! SM4
@@ -497,6 +503,12 @@ A_ViolinRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+A_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \A_ViolinRHMusicVoice
 }
 
 
@@ -570,6 +582,12 @@ A_ViolinMusicVoice = {
 }
 
 
+A_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \A_ViolinMusicVoice
+}
+
+
 A_ViolaRHMusicVoice = {
     
     % [A ViolaRHMusicVoice measure 3]                        %! SM4
@@ -605,6 +623,12 @@ A_ViolaRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+A_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \A_ViolaRHMusicVoice
 }
 
 
@@ -749,6 +773,12 @@ A_ViolaMusicVoice = {
 }
 
 
+A_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \A_ViolaMusicVoice
+}
+
+
 A_CelloRHMusicVoice = {
     
     % [A CelloRHMusicVoice measure 3]                        %! SM4
@@ -784,6 +814,12 @@ A_CelloRHMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     
+}
+
+
+A_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \A_CelloRHMusicVoice
 }
 
 
@@ -852,4 +888,10 @@ A_CelloMusicVoice = {
     \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
+}
+
+
+A_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \A_CelloMusicVoice
 }

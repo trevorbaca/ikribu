@@ -63,7 +63,7 @@ maker(
     baca.make_tied_notes(repeat_ties=True),
     baca.suite([
         baca.pitches('B1'),
-        baca.tie_to(repeat=True),
+        baca.repeat_tie_to(),
         ]),
     )
 

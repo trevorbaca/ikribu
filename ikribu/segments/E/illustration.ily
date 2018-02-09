@@ -1253,6 +1253,12 @@ E_BassClarinetMusicVoice = {
 }
 
 
+E_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \E_BassClarinetMusicVoice
+}
+
+
 E_ViolinRHMusicVoice = {
     
     % [E ViolinRHMusicVoice measure 63]                      %! SM4
@@ -1312,6 +1318,12 @@ E_ViolinRHMusicVoice = {
     % [E ViolinRHMusicVoice measure 78]                      %! SM4
     R1 * 2
     
+}
+
+
+E_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \E_ViolinRHMusicVoice
 }
 
 
@@ -1537,6 +1549,12 @@ E_ViolinMusicVoice = {
 }
 
 
+E_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \E_ViolinMusicVoice
+}
+
+
 E_ViolaRHMusicVoice = {
     
     % [E ViolaRHMusicVoice measure 63]                       %! SM4
@@ -1596,6 +1614,12 @@ E_ViolaRHMusicVoice = {
     % [E ViolaRHMusicVoice measure 78]                       %! SM4
     R1 * 2
     
+}
+
+
+E_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \E_ViolaRHMusicVoice
 }
 
 
@@ -1817,6 +1841,12 @@ E_ViolaMusicVoice = {
 }
 
 
+E_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \E_ViolaMusicVoice
+}
+
+
 E_CelloRHMusicVoice = {
     
     % [E CelloRHMusicVoice measure 63]                       %! SM4
@@ -1878,6 +1908,12 @@ E_CelloRHMusicVoice = {
     % [E CelloRHMusicVoice measure 78]                       %! SM4
     R1 * 2
     
+}
+
+
+E_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \E_CelloRHMusicVoice
 }
 
 
@@ -2017,4 +2053,10 @@ E_CelloMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                 %! OC
     \revert TextScript.staff-padding                         %! OC
     
+}
+
+
+E_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \E_CelloMusicVoice
 }
