@@ -491,6 +491,12 @@ F_BassClarinetMusicVoice = {
 }
 
 
+F_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \F_BassClarinetMusicVoice
+}
+
+
 F_ViolinRHMusicVoice = {
     
     % [F ViolinRHMusicVoice measure 79]                      %! SM4
@@ -526,6 +532,12 @@ F_ViolinRHMusicVoice = {
     % [F ViolinRHMusicVoice measure 86]                      %! SM4
     R1 * 7/4
     
+}
+
+
+F_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \F_ViolinRHMusicVoice
 }
 
 
@@ -661,6 +673,12 @@ F_ViolinMusicVoice = {
 }
 
 
+F_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \F_ViolinMusicVoice
+}
+
+
 F_ViolaRHMusicVoice = {
     
     % [F ViolaRHMusicVoice measure 79]                       %! SM4
@@ -696,6 +714,12 @@ F_ViolaRHMusicVoice = {
     % [F ViolaRHMusicVoice measure 86]                       %! SM4
     R1 * 7/4
     
+}
+
+
+F_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \F_ViolaRHMusicVoice
 }
 
 
@@ -833,6 +857,12 @@ F_ViolaMusicVoice = {
 }
 
 
+F_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \F_ViolaMusicVoice
+}
+
+
 F_CelloRHMusicVoice = {
     
     % [F CelloRHMusicVoice measure 79]                       %! SM4
@@ -870,6 +900,12 @@ F_CelloRHMusicVoice = {
     % [F CelloRHMusicVoice measure 86]                       %! SM4
     R1 * 7/4
     
+}
+
+
+F_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \F_CelloRHMusicVoice
 }
 
 
@@ -1056,4 +1092,10 @@ F_CelloMusicVoice = {
     R1 * 7/4
     \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! IC:EXPLICIT_CLEF_REDRAW_COLOR:SM6
     
+}
+
+
+F_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \F_CelloMusicVoice
 }

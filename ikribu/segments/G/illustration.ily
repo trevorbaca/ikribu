@@ -778,6 +778,12 @@ G_BassClarinetMusicVoice = {
 }
 
 
+G_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \G_BassClarinetMusicVoice
+}
+
+
 G_ViolinRHMusicVoice = {
     
     % [G ViolinRHMusicVoice measure 87]                      %! SM4
@@ -843,6 +849,12 @@ G_ViolinRHMusicVoice = {
         R1 * 1/4
         
     }
+}
+
+
+G_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \G_ViolinRHMusicVoice
 }
 
 
@@ -943,6 +955,12 @@ G_ViolinMusicVoice = {
 }
 
 
+G_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \G_ViolinMusicVoice
+}
+
+
 G_ViolaRHMusicVoice = {
     
     % [G ViolaRHMusicVoice measure 87]                       %! SM4
@@ -1008,6 +1026,12 @@ G_ViolaRHMusicVoice = {
         R1 * 1/4
         
     }
+}
+
+
+G_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \G_ViolaRHMusicVoice
 }
 
 
@@ -1108,6 +1132,12 @@ G_ViolaMusicVoice = {
 }
 
 
+G_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \G_ViolaMusicVoice
+}
+
+
 G_CelloRHMusicVoice = {
     
     % [G CelloRHMusicVoice measure 87]                       %! SM4
@@ -1175,6 +1205,12 @@ G_CelloRHMusicVoice = {
         R1 * 1/4
         
     }
+}
+
+
+G_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \G_CelloRHMusicVoice
 }
 
 
@@ -1331,4 +1367,10 @@ G_CelloMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                 %! OC
     \revert TupletBracket.direction                          %! OC
     
+}
+
+
+G_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \G_CelloMusicVoice
 }

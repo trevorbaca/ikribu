@@ -533,6 +533,12 @@ N_BassClarinetMusicVoice = {
 }
 
 
+N_BassClarinetMusicStaff = {
+    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \N_BassClarinetMusicVoice
+}
+
+
 N_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
@@ -1706,6 +1712,12 @@ N_ViolinRHMusicVoice = {
 }
 
 
+N_ViolinRHMusicStaff = {
+    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \N_ViolinRHMusicVoice
+}
+
+
 N_ViolinMusicVoice = {
     \times 4/5 {
         
@@ -1883,6 +1895,12 @@ N_ViolinMusicVoice = {
         e'''2
         
     }
+}
+
+
+N_ViolinMusicStaff = {
+    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \N_ViolinMusicVoice
 }
 
 
@@ -3178,6 +3196,12 @@ N_ViolaRHMusicVoice = {
 }
 
 
+N_ViolaRHMusicStaff = {
+    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \N_ViolaRHMusicVoice
+}
+
+
 N_ViolaMusicVoice = {
     \times 2/3 {
         
@@ -3361,6 +3385,12 @@ N_ViolaMusicVoice = {
         g'4.
         
     }
+}
+
+
+N_ViolaMusicStaff = {
+    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \N_ViolaMusicVoice
 }
 
 
@@ -4668,6 +4698,12 @@ N_CelloRHMusicVoice = {
 }
 
 
+N_CelloRHMusicStaff = {
+    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \N_CelloRHMusicVoice
+}
+
+
 N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -4849,4 +4885,10 @@ N_CelloMusicVoice = {
         d'4.
         
     }
+}
+
+
+N_CelloMusicStaff = {
+    \context CelloMusicVoice = "CelloMusicVoice"
+    \N_CelloMusicVoice
 }
