@@ -182,11 +182,11 @@ i_BassClarinetMusicVoice = {
                     cl.                                          %! ST1:DEFAULT_INSTRUMENT:SM8
                 }                                                %! ST1:DEFAULT_INSTRUMENT:SM8
         }                                                        %! ST1:DEFAULT_INSTRUMENT:SM8
-    \set BassClarinetMusicStaff.forceClef = ##t                  %! ST3:DEFAULT_CLEF:SM8
     \clef "treble"                                               %! ST3:DEFAULT_CLEF:SM8
     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
     \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override BassClarinetMusicStaff.Clef.color = ##f            %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set BassClarinetMusicStaff.forceClef = ##t                  %! ST3:DEFAULT_CLEF:SM8
     R1 * 7/4
     ^ \markup {                                                  %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
         \with-color                                              %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
@@ -238,10 +238,10 @@ i_ViolinRHMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \set ViolinRHMusicStaff.forceClef = ##t                  %! ST3:DEFAULT_CLEF:SM8
     \clef "percussion"                                       %! ST3:DEFAULT_CLEF:SM8
     \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override ViolinRHMusicStaff.Clef.color = ##f            %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set ViolinRHMusicStaff.forceClef = ##t                  %! ST3:DEFAULT_CLEF:SM8
     \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
     R1 * 7/4
     \override ViolinRHMusicStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
@@ -279,11 +279,11 @@ i_ViolinMusicVoice = {
             #10                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             Vn.                                              %! ST1:DEFAULT_INSTRUMENT:SM8
         }                                                    %! ST1:DEFAULT_INSTRUMENT:SM8
-    \set ViolinMusicStaff.forceClef = ##t                    %! IC:EXPLICIT_CLEF:SM8
     \clef "percussion"                                       %! IC:EXPLICIT_CLEF:SM8
     \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
     \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override ViolinMusicStaff.Clef.color = ##f              %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+    \set ViolinMusicStaff.forceClef = ##t                    %! IC:EXPLICIT_CLEF:SM8
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
     c'1..
@@ -342,10 +342,10 @@ i_ViolaRHMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \set ViolaRHMusicStaff.forceClef = ##t                   %! ST3:DEFAULT_CLEF:SM8
     \clef "percussion"                                       %! ST3:DEFAULT_CLEF:SM8
     \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override ViolaRHMusicStaff.Clef.color = ##f             %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set ViolaRHMusicStaff.forceClef = ##t                   %! ST3:DEFAULT_CLEF:SM8
     \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
     R1 * 7/4
     \override ViolaRHMusicStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
@@ -378,11 +378,11 @@ i_ViolaMusicVoice = {
             #10                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             Va.                                              %! ST1:DEFAULT_INSTRUMENT:SM8
         }                                                    %! ST1:DEFAULT_INSTRUMENT:SM8
-    \set ViolaMusicStaff.forceClef = ##t                     %! ST3:DEFAULT_CLEF:SM8
     \clef "alto"                                             %! ST3:DEFAULT_CLEF:SM8
     \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
     \once \override ViolaMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override ViolaMusicStaff.Clef.color = ##f               %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set ViolaMusicStaff.forceClef = ##t                     %! ST3:DEFAULT_CLEF:SM8
     R1 * 7/4
     ^ \markup {                                              %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
         \with-color                                          %! ST1:DEFAULT_INSTRUMENT_ALERT:SM11
@@ -424,10 +424,10 @@ i_CelloRHMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \set CelloRHMusicStaff.forceClef = ##t                   %! ST3:DEFAULT_CLEF:SM8
     \clef "percussion"                                       %! ST3:DEFAULT_CLEF:SM8
     \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'DarkViolet) %! ST3:DEFAULT_CLEF_COLOR:SM6
 %@% \override CelloRHMusicStaff.Clef.color = ##f             %! ST3:DEFAULT_CLEF_COLOR_CANCELLATION:SM7
+    \set CelloRHMusicStaff.forceClef = ##t                   %! ST3:DEFAULT_CLEF:SM8
     \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
     R1 * 7/4
     \override CelloRHMusicStaff.Clef.color = #(x11-color 'violet) %! ST3:DEFAULT_CLEF_REDRAW_COLOR:SM6
@@ -461,11 +461,11 @@ i_CelloMusicVoice = {
             #10                                              %! ST1:DEFAULT_INSTRUMENT:SM8
             Vc.                                              %! ST1:DEFAULT_INSTRUMENT:SM8
         }                                                    %! ST1:DEFAULT_INSTRUMENT:SM8
-    \set CelloMusicStaff.forceClef = ##t                     %! IC:EXPLICIT_CLEF:SM8
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'DarkViolet) %! ST1:DEFAULT_INSTRUMENT_COLOR:SM6
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+    \set CelloMusicStaff.forceClef = ##t                     %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     fqf''1..
     -\laissezVibrer                                          %! IC

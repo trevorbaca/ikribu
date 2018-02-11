@@ -499,10 +499,10 @@ P_BassClarinetMusicVoice = {
                     cl.                                          %! REAPPLIED_INSTRUMENT:SM8
                 }                                                %! REAPPLIED_INSTRUMENT:SM8
         }                                                        %! REAPPLIED_INSTRUMENT:SM8
-    \set BassClarinetMusicStaff.forceClef = ##t                  %! REAPPLIED_CLEF:SM8
     \clef "treble"                                               %! REAPPLIED_CLEF:SM8
     \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
 %@% \override BassClarinetMusicStaff.Clef.color = ##f            %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+    \set BassClarinetMusicStaff.forceClef = ##t                  %! REAPPLIED_CLEF:SM8
     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
     \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -645,10 +645,10 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 1.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-period = 0
-        \set ViolinRHMusicStaff.forceClef = ##t              %! REAPPLIED_CLEF:SM8
         \clef "percussion"                                   %! REAPPLIED_CLEF:SM8
         \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
     %@% \override ViolinRHMusicStaff.Clef.color = ##f        %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+        \set ViolinRHMusicStaff.forceClef = ##t              %! REAPPLIED_CLEF:SM8
         \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
         r4
@@ -1406,11 +1406,11 @@ P_ViolinMusicVoice = {
                 #10                                          %! REAPPLIED_INSTRUMENT:SM8
                 Vn.                                          %! REAPPLIED_INSTRUMENT:SM8
             }                                                %! REAPPLIED_INSTRUMENT:SM8
-        \set ViolinMusicStaff.forceClef = ##t                %! REAPPLIED_CLEF:SM8
         \clef "treble"                                       %! REAPPLIED_CLEF:SM8
         \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
     %@% \override ViolinMusicStaff.Clef.color = ##f          %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+        \set ViolinMusicStaff.forceClef = ##t                %! REAPPLIED_CLEF:SM8
         \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
         c''8
@@ -1568,10 +1568,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \set ViolaRHMusicStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
         \clef "percussion"                                   %! REAPPLIED_CLEF:SM8
         \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
     %@% \override ViolaRHMusicStaff.Clef.color = ##f         %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+        \set ViolaRHMusicStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
         \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
@@ -2360,11 +2360,11 @@ P_ViolaMusicVoice = {
                 #10                                          %! REAPPLIED_INSTRUMENT:SM8
                 Va.                                          %! REAPPLIED_INSTRUMENT:SM8
             }                                                %! REAPPLIED_INSTRUMENT:SM8
-        \set ViolaMusicStaff.forceClef = ##t                 %! REAPPLIED_CLEF:SM8
         \clef "treble"                                       %! REAPPLIED_CLEF:SM8
         \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
     %@% \override ViolaMusicStaff.Clef.color = ##f           %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+        \set ViolaMusicStaff.forceClef = ##t                 %! REAPPLIED_CLEF:SM8
         \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
         c''2..
@@ -2495,10 +2495,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 1.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-period = 0
-        \set CelloRHMusicStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
         \clef "percussion"                                   %! REAPPLIED_CLEF:SM8
         \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:SM6
     %@% \override CelloRHMusicStaff.Clef.color = ##f         %! REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
+        \set CelloRHMusicStaff.forceClef = ##t               %! REAPPLIED_CLEF:SM8
         \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
         r4
@@ -3260,13 +3260,13 @@ P_CelloMusicVoice = {
                 #10                                          %! REAPPLIED_INSTRUMENT:SM8
                 Vc.                                          %! REAPPLIED_INSTRUMENT:SM8
             }                                                %! REAPPLIED_INSTRUMENT:SM8
-        \set CelloMusicStaff.forceClef = ##t                 %! IC:EXPLICIT_CLEF:SM8
         \clef "tenor"                                        %! IC:EXPLICIT_CLEF:SM8
         \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_INSTRUMENT_COLOR:SM6
         \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:SM6
         \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:SM6
         \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
     %@% \override CelloMusicStaff.Clef.color = ##f           %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
+        \set CelloMusicStaff.forceClef = ##t                 %! IC:EXPLICIT_CLEF:SM8
         a,8
         \p                                                   %! REAPPLIED_DYNAMIC:SM8
         \glissando                                           %! SC
