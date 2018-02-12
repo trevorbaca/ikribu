@@ -600,10 +600,10 @@ F_ViolinMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'4         %! OC
-    \override TextSpanner.staff-padding = #3.5               %! OC
-    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! MEASURE_84:SHIFTED_CLEF:OC
-    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_84:SHIFTED_CLEF:OC
+    \override DynamicLineSpanner.staff-padding = #'4         %! OC1
+    \override TextSpanner.staff-padding = #3.5               %! OC1
+    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -665,8 +665,8 @@ F_ViolinMusicVoice = {
     \stopTextSpan                                            %! PCW1
     \>                                                       %! HC1
     \p                                                       %! HC1
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextSpanner.staff-padding                        %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextSpanner.staff-padding                        %! OC2
     
     % [F ViolinMusicVoice measure 86]                        %! SM4
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -785,12 +785,12 @@ F_ViolaMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'4         %! OC
-    \override TextSpanner.staff-padding = #3.5               %! OC
-    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC
-    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC
-    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! MEASURE_84:SHIFTED_CLEF:OC
-    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_84:SHIFTED_CLEF:OC
+    \override DynamicLineSpanner.staff-padding = #'4         %! OC1
+    \override TextSpanner.staff-padding = #3.5               %! OC1
+    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1
+    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1
+    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -852,8 +852,8 @@ F_ViolaMusicVoice = {
     \stopTextSpan                                            %! PCW1
     \>                                                       %! HC1
     \p                                                       %! HC1
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextSpanner.staff-padding                        %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextSpanner.staff-padding                        %! OC2
     
     % [F ViolaMusicVoice measure 86]                         %! SM4
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC3:EXPLICIT_DYNAMIC_COLOR:SM6
@@ -921,7 +921,7 @@ F_CelloMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override TextSpanner.staff-padding = #3.5               %! OC
+    \override TextSpanner.staff-padding = #3.5               %! OC1
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -1011,7 +1011,7 @@ F_CelloMusicVoice = {
     \repeatTie
     \ff                                                      %! HC1
     \stopTextSpan                                            %! PCW1
-    \revert TextSpanner.staff-padding                        %! OC
+    \revert TextSpanner.staff-padding                        %! OC2
     
     % [F CelloMusicVoice measure 83]                         %! SM4
     R1 * 1/2
@@ -1020,9 +1020,9 @@ F_CelloMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override RepeatTie.direction = #up                      %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override RepeatTie.direction = #up                      %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
     d4
     ^ \markup {                                              %! IC
@@ -1080,16 +1080,16 @@ F_CelloMusicVoice = {
     
     d4
     \repeatTie
-    \revert RepeatTie.direction                              %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert RepeatTie.direction                              %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
     % [F CelloMusicVoice measure 86]                         %! SM4
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_86:SHIFTED_CLEF:OC
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_86:SHIFTED_CLEF:OC
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7

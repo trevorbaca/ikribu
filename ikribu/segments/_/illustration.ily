@@ -267,8 +267,8 @@ i_ViolinMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \once \override TextScript.padding = #2.5                %! OC
-    \once \override TextScript.parent-alignment-X = #0       %! OC
+    \once \override TextScript.padding = #2.5                %! OC1
+    \once \override TextScript.parent-alignment-X = #0       %! OC1
     \set ViolinStaffGroup.instrumentName = \markup {         %! ST1:DEFAULT_INSTRUMENT:SM8
         \hcenter-in                                          %! ST1:DEFAULT_INSTRUMENT:SM8
             #16                                              %! ST1:DEFAULT_INSTRUMENT:SM8
@@ -450,7 +450,7 @@ i_CelloRHMusicStaff = {
 i_CelloMusicVoice = {
     
     % [_ CelloMusicVoice measure 1]                          %! SM4
-    \once \override NoteHead.style = #'harmonic              %! OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
     \set CelloStaffGroup.instrumentName = \markup {          %! ST1:DEFAULT_INSTRUMENT:SM8
         \hcenter-in                                          %! ST1:DEFAULT_INSTRUMENT:SM8
             #16                                              %! ST1:DEFAULT_INSTRUMENT:SM8

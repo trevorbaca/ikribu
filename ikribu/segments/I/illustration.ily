@@ -976,10 +976,10 @@ I_CelloMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC
-    \override RepeatTie.direction = #up                      %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC1
+    \override RepeatTie.direction = #up                      %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \set CelloStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1095,16 +1095,16 @@ I_CelloMusicVoice = {
     
     b'4
     \repeatTie
-    \revert RepeatTie.direction                              %! OC
+    \revert RepeatTie.direction                              %! OC2
     
     % [I CelloMusicVoice measure 115]                        %! SM4
     \stopStaff                                               %! SM20
     \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert CelloMusicStaff.BarLine.bar-extent               %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert CelloMusicStaff.BarLine.bar-extent               %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 

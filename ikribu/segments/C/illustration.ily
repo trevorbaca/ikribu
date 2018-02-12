@@ -1291,12 +1291,12 @@ C_BassClarinetMusicVoice = {
     \stopStaff                                                   %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                                  %! IC:EXPLICIT_STAFF_LINES:SM8
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC
-    \override RepeatTie.direction = #up                          %! OC
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
-    \override TextScript.padding = #2.5                          %! OC
-    \override TextScript.parent-alignment-X = #0                 %! OC
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC1
+    \override RepeatTie.direction = #up                          %! OC1
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC1
+    \override TextScript.padding = #2.5                          %! OC1
+    \override TextScript.parent-alignment-X = #0                 %! OC1
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! IC:EXPLICIT_STAFF_LINES_COLOR:SM6
     b'4
@@ -1304,31 +1304,31 @@ C_BassClarinetMusicVoice = {
     ^ \markup {
         \column
             {
-            %@% \line                                            %! +ARCH_A_PARTS_BCL:IC
-            %@%     {                                            %! +ARCH_A_PARTS_BCL:IC
-            %@%         \whiteout                                %! +ARCH_A_PARTS_BCL:IC
-            %@%             \upright                             %! +ARCH_A_PARTS_BCL:IC
-            %@%                 \override                        %! +ARCH_A_PARTS_BCL:IC
-            %@%                     #'(box-padding . 0.5)        %! +ARCH_A_PARTS_BCL:IC
-            %@%                     \box                         %! +ARCH_A_PARTS_BCL:IC
-            %@%                         "stonecircle: π/2 every quarter note" %! +ARCH_A_PARTS_BCL:IC
-            %@%     }                                            %! +ARCH_A_PARTS_BCL:IC
-                \line                                            %! -ARCH_A_PARTS_BCL:IC
-                    {                                            %! -ARCH_A_PARTS_BCL:IC
-                        \whiteout                                %! -ARCH_A_PARTS_BCL:IC
-                            \upright                             %! -ARCH_A_PARTS_BCL:IC
-                                \override                        %! -ARCH_A_PARTS_BCL:IC
-                                    #'(box-padding . 0.5)        %! -ARCH_A_PARTS_BCL:IC
-                                    \box                         %! -ARCH_A_PARTS_BCL:IC
-                                        \column                  %! -ARCH_A_PARTS_BCL:IC
-                                            {                    %! -ARCH_A_PARTS_BCL:IC
-                                                stonecircle:     %! -ARCH_A_PARTS_BCL:IC
-                                                "π/2 every quarter note" %! -ARCH_A_PARTS_BCL:IC
-                                            }                    %! -ARCH_A_PARTS_BCL:IC
-                    }                                            %! -ARCH_A_PARTS_BCL:IC
+            %@% \line                                            %! IC:+ARCH_A_PARTS_BCL
+            %@%     {                                            %! IC:+ARCH_A_PARTS_BCL
+            %@%         \whiteout                                %! IC:+ARCH_A_PARTS_BCL
+            %@%             \upright                             %! IC:+ARCH_A_PARTS_BCL
+            %@%                 \override                        %! IC:+ARCH_A_PARTS_BCL
+            %@%                     #'(box-padding . 0.5)        %! IC:+ARCH_A_PARTS_BCL
+            %@%                     \box                         %! IC:+ARCH_A_PARTS_BCL
+            %@%                         "stonecircle: π/2 every quarter note" %! IC:+ARCH_A_PARTS_BCL
+            %@%     }                                            %! IC:+ARCH_A_PARTS_BCL
+                \line                                            %! IC:-ARCH_A_PARTS_BCL
+                    {                                            %! IC:-ARCH_A_PARTS_BCL
+                        \whiteout                                %! IC:-ARCH_A_PARTS_BCL
+                            \upright                             %! IC:-ARCH_A_PARTS_BCL
+                                \override                        %! IC:-ARCH_A_PARTS_BCL
+                                    #'(box-padding . 0.5)        %! IC:-ARCH_A_PARTS_BCL
+                                    \box                         %! IC:-ARCH_A_PARTS_BCL
+                                        \column                  %! IC:-ARCH_A_PARTS_BCL
+                                            {                    %! IC:-ARCH_A_PARTS_BCL
+                                                stonecircle:     %! IC:-ARCH_A_PARTS_BCL
+                                                "π/2 every quarter note" %! IC:-ARCH_A_PARTS_BCL
+                                            }                    %! IC:-ARCH_A_PARTS_BCL
+                    }                                            %! IC:-ARCH_A_PARTS_BCL
             }
         }
-    \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
+    \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1
     
     b'4
     \repeatTie
@@ -1351,8 +1351,8 @@ C_BassClarinetMusicVoice = {
     
     b'4
     \repeatTie
-    \revert TextScript.padding                                   %! OC
-    \revert TextScript.parent-alignment-X                        %! OC
+    \revert TextScript.padding                                   %! OC2
+    \revert TextScript.parent-alignment-X                        %! OC2
     
     % [C BassClarinetMusicVoice measure 38]                      %! SM4
     R1 * 3/4
@@ -1446,15 +1446,15 @@ C_BassClarinetMusicVoice = {
     
     b'4
     \repeatTie
-    \revert RepeatTie.direction                                  %! OC
+    \revert RepeatTie.direction                                  %! OC2
     
     % [C BassClarinetMusicVoice measure 50]                      %! SM4
     R1 * 3/4
     
     % [C BassClarinetMusicVoice measure 51]                      %! SM4
     R1 * 1/6
-    \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC
+    \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC2
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(0 . 0) %! OC1
     
 }
 
@@ -1554,10 +1554,10 @@ C_ViolinMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \once \override TextScript.padding = #2.5                %! OC
-    \once \override TextScript.parent-alignment-X = #0       %! OC
-%%% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! MEASURE_35:SHIFTED_CLEF:OC
-%%% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_35:SHIFTED_CLEF:OC
+    \once \override TextScript.padding = #2.5                %! OC1
+    \once \override TextScript.parent-alignment-X = #0       %! OC1
+    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1614,10 +1614,10 @@ C_ViolinMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'3         %! OC
-    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! MEASURE_36:SHIFTED_CLEF:OC
-    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_36:SHIFTED_CLEF:OC
-    \override TextScript.staff-padding = #2.5                %! OC
+    \override DynamicLineSpanner.staff-padding = #'3         %! OC1
+    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+    \override TextScript.staff-padding = #2.5                %! OC1
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override ViolinMusicStaff.Clef.color = ##f              %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -1704,8 +1704,8 @@ C_ViolinMusicVoice = {
     fs'2.
     :32                                                      %! IC
     \pp                                                      %! HC1
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextScript.staff-padding                         %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextScript.staff-padding                         %! OC2
     
     % [C ViolinMusicVoice measure 51]                        %! SM4
     R1 * 1/6
@@ -1846,8 +1846,8 @@ C_ViolaMusicVoice = {
     \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     
     % [C ViolaMusicVoice measure 36]                         %! SM4
-    \override DynamicLineSpanner.staff-padding = #'3         %! OC
-    \override TextScript.staff-padding = #2.5                %! OC
+    \override DynamicLineSpanner.staff-padding = #'3         %! OC1
+    \override TextScript.staff-padding = #2.5                %! OC1
     R1 * 1
     
     % [C ViolaMusicVoice measure 37]                         %! SM4
@@ -1928,8 +1928,8 @@ C_ViolaMusicVoice = {
     f'2.
     :32                                                      %! IC
     \pp                                                      %! HC1
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextScript.staff-padding                         %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextScript.staff-padding                         %! OC2
     
     % [C ViolaMusicVoice measure 51]                         %! SM4
     R1 * 1/6
@@ -2032,7 +2032,7 @@ C_CelloMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \once \override NoteHead.style = #'harmonic              %! OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
     \set CelloStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -2089,10 +2089,10 @@ C_CelloMusicVoice = {
     \override CelloMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
     
     % [C CelloMusicVoice measure 36]                         %! SM4
-    \override DynamicLineSpanner.staff-padding = #'7         %! OC
-    \override NoteHead.style = #'harmonic                    %! OC
-    \override TextSpanner.staff-padding = #3.5               %! OC
-    \override TupletBracket.direction = #down                %! OC
+    \override DynamicLineSpanner.staff-padding = #'7         %! OC1
+    \override NoteHead.style = #'harmonic                    %! OC1
+    \override TextSpanner.staff-padding = #3.5               %! OC1
+    \override TupletBracket.direction = #down                %! OC1
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -2125,7 +2125,7 @@ C_CelloMusicVoice = {
         }                                                    %! PCW1
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \<                                                       %! PCW1
@@ -2133,7 +2133,7 @@ C_CelloMusicVoice = {
     \startTextSpan                                           %! PCW1
     
     % [C CelloMusicVoice measure 37]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2141,7 +2141,7 @@ C_CelloMusicVoice = {
     \>                                                       %! PCW1
     
     % [C CelloMusicVoice measure 38]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''2.
     :32                                                      %! IC
     \repeatTie
@@ -2151,7 +2151,7 @@ C_CelloMusicVoice = {
     \times 2/3 {
         
         % [C CelloMusicVoice measure 39]                     %! SM4
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         d''4
         :32                                                  %! IC
         \repeatTie
@@ -2160,7 +2160,7 @@ C_CelloMusicVoice = {
     }
     
     % [C CelloMusicVoice measure 40]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2168,7 +2168,7 @@ C_CelloMusicVoice = {
     \<                                                       %! PCW1
     
     % [C CelloMusicVoice measure 41]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2176,7 +2176,7 @@ C_CelloMusicVoice = {
     \>                                                       %! PCW1
     
     % [C CelloMusicVoice measure 42]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''2.
     :32                                                      %! IC
     \repeatTie
@@ -2186,7 +2186,7 @@ C_CelloMusicVoice = {
     \times 2/3 {
         
         % [C CelloMusicVoice measure 43]                     %! SM4
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         d''4
         :32                                                  %! IC
         \repeatTie
@@ -2195,7 +2195,7 @@ C_CelloMusicVoice = {
     }
     
     % [C CelloMusicVoice measure 44]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2203,7 +2203,7 @@ C_CelloMusicVoice = {
     \<                                                       %! PCW1
     
     % [C CelloMusicVoice measure 45]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2211,7 +2211,7 @@ C_CelloMusicVoice = {
     \>                                                       %! PCW1
     
     % [C CelloMusicVoice measure 46]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''2.
     :32                                                      %! IC
     \repeatTie
@@ -2221,7 +2221,7 @@ C_CelloMusicVoice = {
     \times 2/3 {
         
         % [C CelloMusicVoice measure 47]                     %! SM4
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         d''4
         :32                                                  %! IC
         \repeatTie
@@ -2230,7 +2230,7 @@ C_CelloMusicVoice = {
     }
     
     % [C CelloMusicVoice measure 48]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2238,7 +2238,7 @@ C_CelloMusicVoice = {
     \<                                                       %! PCW1
     
     % [C CelloMusicVoice measure 49]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''1
     :32                                                      %! IC
     \repeatTie
@@ -2246,16 +2246,16 @@ C_CelloMusicVoice = {
     \>                                                       %! PCW1
     
     % [C CelloMusicVoice measure 50]                         %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d''2.
     :32                                                      %! IC
     \repeatTie
     \ppp                                                     %! PCW1
     \stopTextSpan                                            %! PCW1
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert NoteHead.style                                   %! OC
-    \revert TextSpanner.staff-padding                        %! OC
-    \revert TupletBracket.direction                          %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert NoteHead.style                                   %! OC2
+    \revert TextSpanner.staff-padding                        %! OC2
+    \revert TupletBracket.direction                          %! OC2
     
     % [C CelloMusicVoice measure 51]                         %! SM4
     R1 * 1/6

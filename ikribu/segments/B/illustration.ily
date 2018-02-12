@@ -1508,8 +1508,8 @@ B_ViolinMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override TextScript.staff-padding = #3                  %! OC
-    \override TextSpanner.staff-padding = #3.5               %! OC
+    \override TextScript.staff-padding = #3                  %! OC1
+    \override TextSpanner.staff-padding = #3.5               %! OC1
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -1817,8 +1817,8 @@ B_ViolinMusicVoice = {
     \startStaff                                              %! SM20
     \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
-    \revert TextScript.staff-padding                         %! OC
-    \revert TextSpanner.staff-padding                        %! OC
+    \revert TextScript.staff-padding                         %! OC2
+    \revert TextSpanner.staff-padding                        %! OC2
     
 }
 
@@ -1969,10 +1969,10 @@ B_ViolaMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override TextScript.staff-padding = #3                  %! OC
-    \override TextSpanner.staff-padding = #3.5               %! OC
-%%% \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! MEASURE_10:SHIFTED_CLEF:OC
-%%% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_10:SHIFTED_CLEF:OC
+    \override TextScript.staff-padding = #3                  %! OC1
+    \override TextSpanner.staff-padding = #3.5               %! OC1
+    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
     \set ViolaStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -2188,8 +2188,8 @@ B_ViolaMusicVoice = {
     \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     \!                                                       %! HC1
-    \revert TextScript.staff-padding                         %! OC
-    \revert TextSpanner.staff-padding                        %! OC
+    \revert TextScript.staff-padding                         %! OC2
+    \revert TextSpanner.staff-padding                        %! OC2
     
 }
 

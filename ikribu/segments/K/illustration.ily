@@ -841,9 +841,9 @@ K_BassClarinetMusicVoice = {
     \stopStaff                                                   %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                                  %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override RepeatTie.direction = #up                          %! OC
-    \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC
-    \override DynamicLineSpanner.staff-padding = #'6             %! OC
+    \override RepeatTie.direction = #up                          %! OC1
+    \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC1
+    \override DynamicLineSpanner.staff-padding = #'6             %! OC1
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -929,8 +929,8 @@ K_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_130:SM22
     
     % [K BassClarinetMusicVoice measure 131]                     %! SM4
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC1
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                                   %! SM21
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -967,8 +967,8 @@ K_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_134:SM22
     
     % [K BassClarinetMusicVoice measure 135]                     %! SM4
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC1
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                                   %! SM21
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1017,8 +1017,8 @@ K_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_138:SM22
     
     % [K BassClarinetMusicVoice measure 139]                     %! SM4
-    \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC
+    \once \override DynamicText.extra-offset = #'(-2 . 0)        %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)             %! OC1
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                                   %! SM21
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1034,7 +1034,7 @@ K_BassClarinetMusicVoice = {
     
     c'4
     \repeatTie
-    \revert RepeatTie.direction                                  %! OC
+    \revert RepeatTie.direction                                  %! OC2
     
     % [K BassClarinetMusicVoice measure 140]                     %! SM4
     \stopStaff                                                   %! SM20
@@ -1055,8 +1055,8 @@ K_BassClarinetMusicVoice = {
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                                  %! SM20
     R1 * 1/4
-    \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC
-    \revert DynamicLineSpanner.staff-padding                     %! OC
+    \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC2
+    \revert DynamicLineSpanner.staff-padding                     %! OC2
     \once \override Score.BarLine.transparent = ##t              %! EOL_FERMATA:MEASURE_142:SM22
     \once \override Score.SpanBar.transparent = ##t              %! EOL_FERMATA:MEASURE_142:SM22
     
@@ -1190,8 +1190,8 @@ K_ViolinMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'8         %! OC
-    \override TextScript.padding = #2.5                      %! OC
+    \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1237,9 +1237,9 @@ K_ViolinMusicVoice = {
     \times 8/12 {
         
         % [K ViolinMusicVoice measure 129]                   %! SM4
-        \override RepeatTie.direction = #up                  %! OC
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC
-        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC
+        \override RepeatTie.direction = #up                  %! OC1
+        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
+        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         \stopStaff                                           %! SM21
         \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1492,7 +1492,7 @@ K_ViolinMusicVoice = {
         d'8
         -\staccato                                           %! IC
         ]
-        \revert RepeatTie.direction                          %! OC
+        \revert RepeatTie.direction                          %! OC2
     }
     
     % [K ViolinMusicVoice measure 142]                       %! SM4
@@ -1500,8 +1500,8 @@ K_ViolinMusicVoice = {
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextScript.padding                               %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextScript.padding                               %! OC2
     
 }
 
@@ -1633,8 +1633,8 @@ K_ViolaMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'8         %! OC
-    \override TextScript.padding = #2.5                      %! OC
+    \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
     \set ViolaStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1680,9 +1680,9 @@ K_ViolaMusicVoice = {
     \times 8/10 {
         
         % [K ViolaMusicVoice measure 129]                    %! SM4
-        \override RepeatTie.direction = #up                  %! OC
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC
-        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC
+        \override RepeatTie.direction = #up                  %! OC1
+        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
+        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
         \stopStaff                                           %! SM21
         \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -1911,7 +1911,7 @@ K_ViolaMusicVoice = {
         c'8
         -\staccato                                           %! IC
         ]
-        \revert RepeatTie.direction                          %! OC
+        \revert RepeatTie.direction                          %! OC2
     }
     
     % [K ViolaMusicVoice measure 142]                        %! SM4
@@ -1919,8 +1919,8 @@ K_ViolaMusicVoice = {
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextScript.padding                               %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextScript.padding                               %! OC2
     
 }
 
@@ -2052,11 +2052,11 @@ K_CelloMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override RepeatTie.direction = #up                      %! OC
-    \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC
-    \override DynamicLineSpanner.staff-padding = #'6         %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override RepeatTie.direction = #up                      %! OC1
+    \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC1
+    \override DynamicLineSpanner.staff-padding = #'6         %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \set CelloStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -2141,8 +2141,8 @@ K_CelloMusicVoice = {
     R1 * 1/4
     
     % [K CelloMusicVoice measure 131]                        %! SM4
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                               %! SM21
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -2175,8 +2175,8 @@ K_CelloMusicVoice = {
     R1 * 1/4
     
     % [K CelloMusicVoice measure 135]                        %! SM4
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                               %! SM21
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -2221,8 +2221,8 @@ K_CelloMusicVoice = {
     R1 * 1/4
     
     % [K CelloMusicVoice measure 139]                        %! SM4
-    \once \override DynamicText.extra-offset = #'(-2 . 0)    %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
+    \once \override DynamicText.extra-offset = #'(-2 . 0)    %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! IC:EXPLICIT_DYNAMIC_COLOR:SM6
     \stopStaff                                               %! SM21
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM21
@@ -2238,7 +2238,7 @@ K_CelloMusicVoice = {
     
     d4
     \repeatTie
-    \revert RepeatTie.direction                              %! OC
+    \revert RepeatTie.direction                              %! OC2
     
     % [K CelloMusicVoice measure 140]                        %! SM4
     \stopStaff                                               %! SM20
@@ -2257,10 +2257,10 @@ K_CelloMusicVoice = {
     \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert CelloMusicStaff.BarLine.bar-extent               %! OC
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert CelloMusicStaff.BarLine.bar-extent               %! OC2
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 

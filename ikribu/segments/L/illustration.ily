@@ -1368,8 +1368,8 @@ L_BassClarinetMusicVoice = {
     \stopStaff                                                   %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                                  %! IC:EXPLICIT_STAFF_LINES:SM8
-%%% \once \override BassClarinetMusicStaff.Clef.X-extent = ##f   %! MEASURE_143:SHIFTED_CLEF:OC
-%%% \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_143:SHIFTED_CLEF:OC
+    \once \override BassClarinetMusicStaff.Clef.X-extent = ##f   %! OC1:SHIFTED_CLEF
+    \once \override BassClarinetMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -2251,10 +2251,10 @@ L_ViolinMusicVoice = {
     \times 4/4 {
         
         % [L ViolinMusicVoice measure 155]                   %! SM4
-        \override DynamicLineSpanner.staff-padding = #'8     %! OC
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC
-        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC
-        \once \override Hairpin.shorten-pair = #'(2.25 . 0)  %! OC
+        \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
+        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
+        \once \override Hairpin.shorten-pair = #'(2.25 . 0)  %! OC1
         \once \override Hairpin.circled-tip = ##t            %! HC1
         \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
         c'8
@@ -2470,7 +2470,7 @@ L_ViolinMusicVoice = {
         -\staccato                                           %! IC
         \!                                                   %! HC1
         ]
-        \revert DynamicLineSpanner.staff-padding             %! OC
+        \revert DynamicLineSpanner.staff-padding             %! OC2
     }
     
     % [L ViolinMusicVoice measure 159]                       %! SM4
@@ -2488,11 +2488,11 @@ L_ViolinMusicVoice = {
     \times 7/12 {
         
         % [L ViolinMusicVoice measure 163]                   %! SM4
-        \override DynamicLineSpanner.staff-padding = #'8     %! OC
-        \override TupletBracket.staff-padding = #3           %! OC
-        \override TextScript.padding = #2.5                  %! OC
-        \override TextScript.parent-alignment-X = #0         %! OC
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+        \override TupletBracket.staff-padding = #3           %! OC1
+        \override TextScript.padding = #2.5                  %! OC1
+        \override TextScript.parent-alignment-X = #0         %! OC1
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         :32                                                  %! IC
         \<                                                   %! PCW1
@@ -2515,7 +2515,7 @@ L_ViolinMusicVoice = {
     \times 2/3 {
         
         % [L ViolinMusicVoice measure 164]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \mf                                                  %! PCW1
@@ -2530,7 +2530,7 @@ L_ViolinMusicVoice = {
     \times 2/3 {
         
         % [L ViolinMusicVoice measure 165]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \mp                                                  %! PCW1
@@ -2546,7 +2546,7 @@ L_ViolinMusicVoice = {
     \times 1/1 {
         
         % [L ViolinMusicVoice measure 166]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         :32                                                  %! IC
         \f                                                   %! PCW1
@@ -2562,7 +2562,7 @@ L_ViolinMusicVoice = {
     \times 7/12 {
         
         % [L ViolinMusicVoice measure 167]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \mf                                                  %! PCW1
@@ -2577,7 +2577,7 @@ L_ViolinMusicVoice = {
     \times 2/3 {
         
         % [L ViolinMusicVoice measure 168]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -2593,7 +2593,7 @@ L_ViolinMusicVoice = {
     \times 1/1 {
         
         % [L ViolinMusicVoice measure 169]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         :32                                                  %! IC
         \mf                                                  %! PCW1
@@ -2608,7 +2608,7 @@ L_ViolinMusicVoice = {
     \times 2/3 {
         
         % [L ViolinMusicVoice measure 170]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \ff                                                  %! PCW1
@@ -2623,7 +2623,7 @@ L_ViolinMusicVoice = {
     \times 2/3 {
         
         % [L ViolinMusicVoice measure 171]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -2638,7 +2638,7 @@ L_ViolinMusicVoice = {
     \times 2/3 {
         
         % [L ViolinMusicVoice measure 172]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         :32                                                  %! IC
         \ff                                                  %! PCW1
@@ -2654,7 +2654,7 @@ L_ViolinMusicVoice = {
     \times 7/12 {
         
         % [L ViolinMusicVoice measure 173]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -2670,7 +2670,7 @@ L_ViolinMusicVoice = {
     \times 1/1 {
         
         % [L ViolinMusicVoice measure 174]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \fff                                                 %! PCW1
@@ -2679,14 +2679,14 @@ L_ViolinMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \ff                                                  %! PCW1
-        \revert DynamicLineSpanner.staff-padding             %! OC
-        \revert TupletBracket.staff-padding                  %! OC
-        \revert TextScript.padding                           %! OC
-        \revert TextScript.parent-alignment-X                %! OC
+        \revert DynamicLineSpanner.staff-padding             %! OC2
+        \revert TupletBracket.staff-padding                  %! OC2
+        \revert TextScript.padding                           %! OC2
+        \revert TextScript.parent-alignment-X                %! OC2
     }
     
     % [L ViolinMusicVoice measure 175]                       %! SM4
@@ -3048,10 +3048,10 @@ L_ViolaMusicVoice = {
     \times 8/10 {
         
         % [L ViolaMusicVoice measure 147]                    %! SM4
-        \override DynamicLineSpanner.staff-padding = #'8     %! OC
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC
-        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC
-        \once \override Hairpin.shorten-pair = #'(2.25 . 0)  %! OC
+        \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
+        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
+        \once \override Hairpin.shorten-pair = #'(2.25 . 0)  %! OC1
         \once \override Hairpin.circled-tip = ##t            %! HC1
         \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! HC2:EXPLICIT_DYNAMIC_COLOR:SM6
         d'8
@@ -3207,7 +3207,7 @@ L_ViolaMusicVoice = {
         -\staccato                                           %! IC
         \!                                                   %! HC1
         ]
-        \revert DynamicLineSpanner.staff-padding             %! OC
+        \revert DynamicLineSpanner.staff-padding             %! OC2
     }
     
     % [L ViolaMusicVoice measure 151]                        %! SM4
@@ -3224,11 +3224,11 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 155]                    %! SM4
-        \override DynamicLineSpanner.staff-padding = #'8     %! OC
-        \override TupletBracket.staff-padding = #3           %! OC
-        \override TextScript.padding = #2.5                  %! OC
-        \override TextScript.parent-alignment-X = #0         %! OC
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \override DynamicLineSpanner.staff-padding = #'8     %! OC1
+        \override TupletBracket.staff-padding = #3           %! OC1
+        \override TextScript.padding = #2.5                  %! OC1
+        \override TextScript.parent-alignment-X = #0         %! OC1
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         :32                                                  %! IC
         \>                                                   %! PCW1
@@ -3252,7 +3252,7 @@ L_ViolaMusicVoice = {
     \times 7/12 {
         
         % [L ViolaMusicVoice measure 156]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \pp                                                  %! PCW1
@@ -3268,7 +3268,7 @@ L_ViolaMusicVoice = {
     \times 7/12 {
         
         % [L ViolaMusicVoice measure 157]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \p                                                   %! PCW1
@@ -3283,7 +3283,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 158]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \pp                                                  %! PCW1
@@ -3299,7 +3299,7 @@ L_ViolaMusicVoice = {
     \times 7/12 {
         
         % [L ViolaMusicVoice measure 159]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \mp                                                  %! PCW1
@@ -3315,7 +3315,7 @@ L_ViolaMusicVoice = {
     \times 1/1 {
         
         % [L ViolaMusicVoice measure 160]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \p                                                   %! PCW1
@@ -3330,7 +3330,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 161]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \mp                                                  %! PCW1
@@ -3345,7 +3345,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 162]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \p                                                   %! PCW1
@@ -3361,7 +3361,7 @@ L_ViolaMusicVoice = {
     \times 7/12 {
         
         % [L ViolaMusicVoice measure 163]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \mf                                                  %! PCW1
@@ -3376,7 +3376,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 164]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         :32                                                  %! IC
         \mp                                                  %! PCW1
@@ -3391,7 +3391,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 165]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \mf                                                  %! PCW1
@@ -3407,7 +3407,7 @@ L_ViolaMusicVoice = {
     \times 1/1 {
         
         % [L ViolaMusicVoice measure 166]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         :32                                                  %! IC
         \mp                                                  %! PCW1
@@ -3423,7 +3423,7 @@ L_ViolaMusicVoice = {
     \times 7/12 {
         
         % [L ViolaMusicVoice measure 167]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -3438,7 +3438,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 168]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \mf                                                  %! PCW1
@@ -3454,7 +3454,7 @@ L_ViolaMusicVoice = {
     \times 1/1 {
         
         % [L ViolaMusicVoice measure 169]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -3469,7 +3469,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 170]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \mf                                                  %! PCW1
@@ -3484,7 +3484,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 171]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'2
         -\accent                                             %! IC
         \ff                                                  %! PCW1
@@ -3499,7 +3499,7 @@ L_ViolaMusicVoice = {
     \times 2/3 {
         
         % [L ViolaMusicVoice measure 172]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -3515,7 +3515,7 @@ L_ViolaMusicVoice = {
     \times 7/12 {
         
         % [L ViolaMusicVoice measure 173]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'1
         -\accent                                             %! IC
         \ff                                                  %! PCW1
@@ -3531,7 +3531,7 @@ L_ViolaMusicVoice = {
     \times 1/1 {
         
         % [L ViolaMusicVoice measure 174]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -3540,14 +3540,14 @@ L_ViolaMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\accent                                             %! IC
         \fff                                                 %! PCW1
-        \revert DynamicLineSpanner.staff-padding             %! OC
-        \revert TupletBracket.staff-padding                  %! OC
-        \revert TextScript.padding                           %! OC
-        \revert TextScript.parent-alignment-X                %! OC
+        \revert DynamicLineSpanner.staff-padding             %! OC2
+        \revert TupletBracket.staff-padding                  %! OC2
+        \revert TextScript.padding                           %! OC2
+        \revert TextScript.parent-alignment-X                %! OC2
     }
     
     % [L ViolaMusicVoice measure 175]                        %! SM4
@@ -3695,9 +3695,9 @@ L_CelloMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \set CelloStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -3714,7 +3714,7 @@ L_CelloMusicVoice = {
 %@% \override CelloMusicStaff.Clef.color = ##f               %! SM37:REAPPLIED_CLEF_COLOR_CANCELLATION:SM7
     \set CelloMusicStaff.forceClef = ##t                     %! SM37:SM33:REAPPLIED_CLEF:SM8
     \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM37:REAPPLIED_STAFF_LINES_COLOR:SM6
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \<                                                       %! PCW1
     \p                                                       %! PCW1
@@ -3758,7 +3758,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 144]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -3783,7 +3783,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 145]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \p                                                       %! PCW1
@@ -3796,7 +3796,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 146]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -3812,7 +3812,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 147]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \p                                                       %! PCW1
     \<                                                       %! PCW1
@@ -3839,7 +3839,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 148]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -3849,7 +3849,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 149]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \p                                                       %! PCW1
@@ -3874,7 +3874,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 150]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -3887,7 +3887,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 151]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \p                                                       %! PCW1
     \<                                                       %! PCW1
@@ -3914,7 +3914,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 152]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -3927,7 +3927,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 153]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \p                                                       %! PCW1
@@ -3943,7 +3943,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 154]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -3956,7 +3956,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 155]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \p                                                       %! PCW1
     \<                                                       %! PCW1
@@ -3977,7 +3977,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 156]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -4002,7 +4002,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 157]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \p                                                       %! PCW1
@@ -4027,7 +4027,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 158]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -4055,7 +4055,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 159]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \p                                                       %! PCW1
     \<                                                       %! PCW1
@@ -4091,7 +4091,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 160]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -4104,7 +4104,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 161]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \p                                                       %! PCW1
@@ -4114,7 +4114,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 162]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -4142,7 +4142,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 163]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \p                                                       %! PCW1
     \<                                                       %! PCW1
@@ -4178,7 +4178,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 164]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -4194,7 +4194,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 165]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \p                                                       %! PCW1
@@ -4210,7 +4210,7 @@ L_CelloMusicVoice = {
     \repeatTie
     
     % [L CelloMusicVoice measure 166]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
     d4
     \repeatTie
     \f                                                       %! PCW1
@@ -4250,9 +4250,9 @@ L_CelloMusicVoice = {
     \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert CelloMusicStaff.BarLine.bar-extent               %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert CelloMusicStaff.BarLine.bar-extent               %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 
