@@ -89,7 +89,6 @@ maker(
         '-ARCH_A_PARTS_BCL',
         baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
         ),
-    baca.repeat_ties_up(),
     ikribu.box_adjustment(),
     )
 
