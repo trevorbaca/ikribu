@@ -2347,10 +2347,10 @@ M_ViolinMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'8         %! OC
-    \override TupletBracket.staff-padding = #3               %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+    \override TupletBracket.staff-padding = #3               %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -2856,10 +2856,10 @@ M_ViolinMusicVoice = {
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TupletBracket.staff-padding                      %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TupletBracket.staff-padding                      %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 
@@ -3027,10 +3027,10 @@ M_ViolaMusicVoice = {
     \stopStaff                                               %! SM37:REAPPLIED_STAFF_LINES:SM8
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
     \startStaff                                              %! SM37:REAPPLIED_STAFF_LINES:SM8
-    \override DynamicLineSpanner.staff-padding = #'8         %! OC
-    \override TupletBracket.staff-padding = #3               %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+    \override TupletBracket.staff-padding = #3               %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \set ViolaStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -3401,10 +3401,10 @@ M_ViolaMusicVoice = {
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert DynamicLineSpanner.staff-padding                 %! OC
-    \revert TupletBracket.staff-padding                      %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert DynamicLineSpanner.staff-padding                 %! OC2
+    \revert TupletBracket.staff-padding                      %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 
@@ -3572,9 +3572,9 @@ M_CelloMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \once \override NoteHead.style = #'harmonic              %! OC
-%%% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_176:SHIFTED_CLEF:OC
-%%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_176:SHIFTED_CLEF:OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \set CelloStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -3695,9 +3695,9 @@ M_CelloMusicVoice = {
     R1 * 1/4
     
     % [M CelloMusicVoice measure 181]                        %! SM4
-    \once \override NoteHead.style = #'harmonic              %! OC
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_181:SHIFTED_CLEF:OC
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_181:SHIFTED_CLEF:OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -3746,9 +3746,9 @@ M_CelloMusicVoice = {
     R1 * 1/4
     
     % [M CelloMusicVoice measure 184]                        %! SM4
-    \once \override NoteHead.style = #'harmonic              %! OC
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_184:SHIFTED_CLEF:OC
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_184:SHIFTED_CLEF:OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -3837,9 +3837,9 @@ M_CelloMusicVoice = {
     R1 * 1/4
     
     % [M CelloMusicVoice measure 189]                        %! SM4
-    \once \override NoteHead.style = #'harmonic              %! OC
-%%% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_189:SHIFTED_CLEF:OC
-%%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_189:SHIFTED_CLEF:OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -3928,9 +3928,9 @@ M_CelloMusicVoice = {
     R1 * 1/4
     
     % [M CelloMusicVoice measure 194]                        %! SM4
-    \once \override NoteHead.style = #'harmonic              %! OC
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_194:SHIFTED_CLEF:OC
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_194:SHIFTED_CLEF:OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -3979,9 +3979,9 @@ M_CelloMusicVoice = {
     R1 * 1/4
     
     % [M CelloMusicVoice measure 197]                        %! SM4
-    \once \override NoteHead.style = #'harmonic              %! OC
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! MEASURE_197:SHIFTED_CLEF:OC
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_197:SHIFTED_CLEF:OC
+    \once \override NoteHead.style = #'harmonic              %! OC1
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \clef "treble"                                           %! IC:EXPLICIT_CLEF:SM8
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override CelloMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7

@@ -562,9 +562,9 @@ Q_BassClarinetMusicVoice = {
     \stopStaff                                                   %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                                  %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC
-    \override TextScript.padding = #2.5                          %! OC
-    \override TextScript.parent-alignment-X = #0                 %! OC
+    \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 0) %! OC1
+    \override TextScript.padding = #2.5                          %! OC1
+    \override TextScript.parent-alignment-X = #0                 %! OC1
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -754,15 +754,15 @@ Q_BassClarinetMusicVoice = {
     
     % [Q BassClarinetMusicVoice measure 257]                     %! SM4
     R1 * 7/4
-    \revert TextScript.padding                                   %! OC
-    \revert TextScript.parent-alignment-X                        %! OC
+    \revert TextScript.padding                                   %! OC2
+    \revert TextScript.parent-alignment-X                        %! OC2
     
     % [Q BassClarinetMusicVoice measure 258]                     %! SM4
     \stopStaff                                                   %! SM20
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                                  %! SM20
     R1 * 1/4
-    \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC
+    \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC2
     
 }
 
@@ -840,7 +840,7 @@ Q_ViolinMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override TextScript.padding = #2.5                      %! OC
+    \override TextScript.padding = #2.5                      %! OC1
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1045,7 +1045,7 @@ Q_ViolinMusicVoice = {
     
     b'4
     -\tongue #2                                              %! IC
-    \revert TextScript.padding                               %! OC
+    \revert TextScript.padding                               %! OC2
     
     % [Q ViolinMusicVoice measure 256]                       %! SM4
     R1 * 3/4
@@ -1135,7 +1135,7 @@ Q_ViolaMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override TextScript.padding = #2.5                      %! OC
+    \override TextScript.padding = #2.5                      %! OC1
     \set ViolaStaffGroup.instrumentName = \markup {          %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1340,7 +1340,7 @@ Q_ViolaMusicVoice = {
     
     a'4
     -\tongue #2                                              %! IC
-    \revert TextScript.padding                               %! OC
+    \revert TextScript.padding                               %! OC2
     
     % [Q ViolaMusicVoice measure 256]                        %! SM4
     R1 * 3/4
@@ -1432,9 +1432,9 @@ Q_CelloMusicVoice = {
         \stopStaff                                           %! IC:EXPLICIT_STAFF_LINES:SM8
         \once \override CelloMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
         \startStaff                                          %! IC:EXPLICIT_STAFF_LINES:SM8
-        \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC
-        \override TextScript.padding = #2.5                  %! OC
-        \override TextScript.parent-alignment-X = #0         %! OC
+        \override CelloMusicStaff.BarLine.bar-extent = #'(0 . 2) %! OC1
+        \override TextScript.padding = #2.5                  %! OC1
+        \override TextScript.parent-alignment-X = #0         %! OC1
         \set CelloStaffGroup.instrumentName = \markup {      %! SM37:REAPPLIED_INSTRUMENT:SM8
             \hcenter-in                                      %! SM37:REAPPLIED_INSTRUMENT:SM8
                 #16                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -1847,9 +1847,9 @@ Q_CelloMusicVoice = {
                                 }                            %! SCORE2
                         }                                    %! SCORE2
         }                                                    %! SCORE2
-    \revert CelloMusicStaff.BarLine.bar-extent               %! OC
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert CelloMusicStaff.BarLine.bar-extent               %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 

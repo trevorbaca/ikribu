@@ -518,8 +518,8 @@ A_ViolinMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-%%% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! MEASURE_3:SHIFTED_CLEF:OC
-%%% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_3:SHIFTED_CLEF:OC
+    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -680,11 +680,11 @@ A_ViolaMusicVoice = {
     \stopStaff                                               %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                              %! IC:EXPLICIT_STAFF_LINES:SM8
-    \override RepeatTie.direction = #up                      %! OC
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC
-    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC
-    \override TextScript.padding = #2.5                      %! OC
-    \override TextScript.parent-alignment-X = #0             %! OC
+    \override RepeatTie.direction = #up                      %! OC1
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
+    \override TextScript.padding = #2.5                      %! OC1
+    \override TextScript.parent-alignment-X = #0             %! OC1
     \clef "percussion"                                       %! IC:EXPLICIT_CLEF:SM8
     \once \override ViolaMusicStaff.Clef.color = #(x11-color 'blue) %! IC:EXPLICIT_CLEF_COLOR:SM6
 %@% \override ViolaMusicStaff.Clef.color = ##f               %! IC:EXPLICIT_CLEF_COLOR_CANCELLATION:SM7
@@ -760,15 +760,15 @@ A_ViolaMusicVoice = {
     
     c'4
     \repeatTie
-    \revert RepeatTie.direction                              %! OC
+    \revert RepeatTie.direction                              %! OC2
     
     % [A ViolaMusicVoice measure 9]                          %! SM4
     \stopStaff                                               %! SM20
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert TextScript.padding                               %! OC
-    \revert TextScript.parent-alignment-X                    %! OC
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 

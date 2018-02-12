@@ -509,8 +509,8 @@ D_BassClarinetMusicVoice = {
     \stopStaff                                                   %! IC:EXPLICIT_STAFF_LINES:SM8
     \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! IC:EXPLICIT_STAFF_LINES:SM8
     \startStaff                                                  %! IC:EXPLICIT_STAFF_LINES:SM8
-%@% \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! +ARCH_A_SCORE:OC
-%@% \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! +LEDGER_SCORE:OC
+%@% \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC1:+ARCH_A_SCORE
+%@% \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! OC1:+LEDGER_SCORE
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM37:REAPPLIED_INSTRUMENT:SM8
         \hcenter-in                                              %! SM37:REAPPLIED_INSTRUMENT:SM8
             #16                                                  %! SM37:REAPPLIED_INSTRUMENT:SM8
@@ -901,10 +901,10 @@ D_CelloRHMusicVoice = {
         \stopStaff                                           %! SM37:REAPPLIED_STAFF_LINES:SM8
         \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM37:REAPPLIED_STAFF_LINES:SM8
         \startStaff                                          %! SM37:REAPPLIED_STAFF_LINES:SM8
-        \override DynamicLineSpanner.staff-padding = #'9     %! OC
-        \override Script.staff-padding = #7                  %! OC
-        \override TextScript.staff-padding = #8              %! OC
-        \override TextSpanner.staff-padding = #4             %! OC
+        \override DynamicLineSpanner.staff-padding = #'9     %! OC1
+        \override Script.staff-padding = #7                  %! OC1
+        \override TextScript.staff-padding = #8              %! OC1
+        \override TextSpanner.staff-padding = #4             %! OC1
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -922,7 +922,7 @@ D_CelloRHMusicVoice = {
         \startTextSpan
         \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM37:REAPPLIED_CLEF_REDRAW_COLOR:SM6
         
-        \override RepeatTie.direction = #up                  %! OC
+        \override RepeatTie.direction = #up                  %! OC1
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -943,7 +943,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \stopTextSpan
@@ -1003,7 +1003,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
@@ -1082,7 +1082,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \f                                                   %! PCW1
@@ -1110,7 +1110,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -1159,7 +1159,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \pp                                                  %! PCW1
@@ -1215,7 +1215,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\upbow
         \p                                                   %! PCW1
@@ -1296,7 +1296,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
@@ -1351,7 +1351,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \ff                                                  %! PCW1
         \stopTextSpan
@@ -1428,7 +1428,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\upbow
         \p                                                   %! PCW1
@@ -1477,7 +1477,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -1534,7 +1534,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \f                                                   %! PCW1
@@ -1612,7 +1612,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
@@ -1639,7 +1639,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
@@ -1691,7 +1691,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -1748,7 +1748,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \ppp                                                 %! PCW1
@@ -1829,7 +1829,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \ff                                                  %! PCW1
         \stopTextSpan
@@ -1881,7 +1881,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
@@ -1961,7 +1961,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         \f                                                   %! PCW1
         \stopTextSpan
@@ -2009,7 +2009,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \f                                                   %! PCW1
@@ -2052,16 +2052,16 @@ D_CelloRHMusicVoice = {
         \stopTextSpan
         \startTextSpan
         
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:SM6
+        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! PWC3:EXPLICIT_DYNAMIC_COLOR:SM6
         c'4
         -\downbow
         \pp                                                  %! PCW1
         \stopTextSpan
-        \revert DynamicLineSpanner.staff-padding             %! OC
-        \revert RepeatTie.direction                          %! OC
-        \revert Script.staff-padding                         %! OC
-        \revert TextScript.staff-padding                     %! OC
-        \revert TextSpanner.staff-padding                    %! OC
+        \revert DynamicLineSpanner.staff-padding             %! OC2
+        \revert RepeatTie.direction                          %! OC2
+        \revert Script.staff-padding                         %! OC2
+        \revert TextScript.staff-padding                     %! OC2
+        \revert TextSpanner.staff-padding                    %! OC2
     }
     
     % [D CelloRHMusicVoice measure 62]                       %! SM4
@@ -2087,8 +2087,8 @@ D_CelloMusicVoice = {
         \stopStaff                                           %! SM37:REAPPLIED_STAFF_LINES:SM8
         \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM37:REAPPLIED_STAFF_LINES:SM8
         \startStaff                                          %! SM37:REAPPLIED_STAFF_LINES:SM8
-    %%% \once \override CelloMusicStaff.Clef.X-extent = ##f  %! MEASURE_52:SHIFTED_CLEF:OC
-    %%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_52:SHIFTED_CLEF:OC
+        \once \override CelloMusicStaff.Clef.X-extent = ##f  %! OC1:SHIFTED_CLEF
+        \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
         \set CelloStaffGroup.instrumentName = \markup {      %! SM37:REAPPLIED_INSTRUMENT:SM8
             \hcenter-in                                      %! SM37:REAPPLIED_INSTRUMENT:SM8
                 #16                                          %! SM37:REAPPLIED_INSTRUMENT:SM8
