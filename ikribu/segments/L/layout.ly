@@ -24,14 +24,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <0>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <0>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -51,14 +51,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <1>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <1>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -78,14 +78,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <2>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <2>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -105,14 +105,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <3>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <3>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -132,14 +132,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <4>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <4>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -159,14 +159,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <5>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <5>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -186,14 +186,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <6>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <6>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -213,14 +213,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <7>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <7>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -240,14 +240,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <8>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <8>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -267,14 +267,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <9>                                              %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <9>                                              %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -297,14 +297,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <10>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <10>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -324,14 +324,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <11>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <11>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -351,14 +351,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <12>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <12>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -378,14 +378,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <13>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <13>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -405,14 +405,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <14>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <14>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -432,14 +432,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <15>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <15>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -459,14 +459,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <16>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <16>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -486,14 +486,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <17>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <17>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -513,14 +513,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <18>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <18>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -543,14 +543,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <19>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <19>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -570,14 +570,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <20>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <20>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -597,14 +597,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <21>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <21>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -624,14 +624,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <22>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <22>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -651,14 +651,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <23>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <23>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -678,14 +678,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <24>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <24>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -705,14 +705,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <25>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <25>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -732,14 +732,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <26>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <26>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -759,14 +759,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <27>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <27>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -789,14 +789,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <28>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <28>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -816,14 +816,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <29>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <29>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -843,14 +843,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <30>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <30>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -870,14 +870,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <31>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <31>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
@@ -897,14 +897,14 @@
             ^ \markup {
                 \column
                     {
-                    %@% \line                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     {                                                            %! MEASURE_INDEX_MARKUP:SM32
-                    %@%         \fontsize                                                %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             #3                                                   %! MEASURE_INDEX_MARKUP:SM32
-                    %@%             \with-color                                          %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 #(x11-color 'DarkCyan)                           %! MEASURE_INDEX_MARKUP:SM32
-                    %@%                 <32>                                             %! MEASURE_INDEX_MARKUP:SM32
-                    %@%     }                                                            %! MEASURE_INDEX_MARKUP:SM32
+                    %@% \line                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     {                                                            %! SM32:MEASURE_INDEX_MARKUP
+                    %@%         \fontsize                                                %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             #3                                                   %! SM32:MEASURE_INDEX_MARKUP
+                    %@%             \with-color                                          %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 #(x11-color 'DarkCyan)                           %! SM32:MEASURE_INDEX_MARKUP
+                    %@%                 <32>                                             %! SM32:MEASURE_INDEX_MARKUP
+                    %@%     }                                                            %! SM32:MEASURE_INDEX_MARKUP
                     %@% \line                                                            %! HSS2:SPACING_MARKUP
                     %@%     {                                                            %! HSS2:SPACING_MARKUP
                     %@%         \with-color                                              %! HSS2:SPACING_MARKUP
