@@ -57,10 +57,6 @@ P_GlobalSkips = {
 %@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.arrow-width = 0.25                       %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
-        \null
-        }                                                                %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
@@ -310,10 +306,6 @@ P_GlobalSkips = {
 %@%         #1                                                           %! SM27:EXPLICIT_METRONOME_MARK:SM30
 %@%     }                                                                %! SM27:EXPLICIT_METRONOME_MARK:SM30 %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left-broken.text =
-    \markup {
-        \null
-        }                                                                %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
@@ -661,7 +653,6 @@ P_ViolinRHMusicVoice = {
         \override RepeatTie.direction = #up                  %! OC1
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -701,7 +692,6 @@ P_ViolinRHMusicVoice = {
         % [P ViolinRHMusicVoice measure 240]                 %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -725,7 +715,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -756,7 +745,6 @@ P_ViolinRHMusicVoice = {
         % [P ViolinRHMusicVoice measure 241]                 %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -780,7 +768,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -805,7 +792,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -833,7 +819,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -882,7 +867,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -910,7 +894,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -935,7 +918,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -988,7 +970,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1016,7 +997,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1041,7 +1021,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1068,7 +1047,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1092,7 +1070,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1116,7 +1093,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1144,7 +1120,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1197,7 +1172,6 @@ P_ViolinRHMusicVoice = {
         % [P ViolinRHMusicVoice measure 243]                 %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1225,7 +1199,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1250,7 +1223,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1298,7 +1270,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1326,7 +1297,6 @@ P_ViolinRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1552,7 +1522,6 @@ P_ViolaRHMusicVoice = {
         \override RepeatTie.direction = #up                  %! OC1
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1593,7 +1562,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1618,7 +1586,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1649,7 +1616,6 @@ P_ViolaRHMusicVoice = {
         % [P ViolaRHMusicVoice measure 240]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1698,7 +1664,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1730,7 +1695,6 @@ P_ViolaRHMusicVoice = {
         % [P ViolaRHMusicVoice measure 241]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1755,7 +1719,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1782,7 +1745,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1806,7 +1768,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1830,7 +1791,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1858,7 +1818,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1883,7 +1842,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1911,7 +1869,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1964,7 +1921,6 @@ P_ViolaRHMusicVoice = {
         % [P ViolaRHMusicVoice measure 242]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -1992,7 +1948,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2017,7 +1972,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2044,7 +1998,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2069,7 +2022,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2121,7 +2073,6 @@ P_ViolaRHMusicVoice = {
         % [P ViolaRHMusicVoice measure 243]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2149,7 +2100,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2173,7 +2123,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2201,7 +2150,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2226,7 +2174,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2251,7 +2198,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2279,7 +2225,6 @@ P_ViolaRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2511,7 +2456,6 @@ P_CelloRHMusicVoice = {
         \override RepeatTie.direction = #up                  %! OC1
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2547,7 +2491,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2571,7 +2514,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2602,7 +2544,6 @@ P_CelloRHMusicVoice = {
         % [P CelloRHMusicVoice measure 240]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2626,7 +2567,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2655,7 +2595,6 @@ P_CelloRHMusicVoice = {
         % [P CelloRHMusicVoice measure 241]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2683,7 +2622,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2732,7 +2670,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2760,7 +2697,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2784,7 +2720,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2816,7 +2751,6 @@ P_CelloRHMusicVoice = {
         % [P CelloRHMusicVoice measure 242]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2840,7 +2774,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2865,7 +2798,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2892,7 +2824,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2916,7 +2847,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2943,7 +2873,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2968,7 +2897,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -2996,7 +2924,6 @@ P_CelloRHMusicVoice = {
         % [P CelloRHMusicVoice measure 243]                  %! SM4
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -3045,7 +2972,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -3073,7 +2999,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -3098,7 +3023,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -3126,7 +3050,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -3151,7 +3074,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
@@ -3176,7 +3098,6 @@ P_CelloRHMusicVoice = {
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.left.text = \markup {
             \concat
