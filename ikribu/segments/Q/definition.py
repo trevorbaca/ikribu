@@ -70,7 +70,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 1, 3),
-    baca.make_repeated_durations((1, 4)),
+    baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
@@ -80,7 +80,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 1, 3),
-    baca.make_repeated_durations((1, 4)),
+    baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),

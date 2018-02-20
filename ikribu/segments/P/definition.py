@@ -48,7 +48,7 @@ maker(
 maker(
     baca.scope('BassClarinetMusicVoice', 3, 4),
     baca.glissando(),
-    baca.make_repeated_durations((1, 4)),
+    baca.make_repeated_duration_notes((1, 4)),
     baca.suite([
         baca.pitches(
             'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1',
