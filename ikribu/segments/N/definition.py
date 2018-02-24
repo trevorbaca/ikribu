@@ -111,9 +111,9 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinRHMusicVoice', 1, 2),
-        ('ViolaRHMusicVoice', 1, 2),
-        ('CelloRHMusicVoice', 1, 2),
+        ('ViolinRHMusicVoice', (1, 2)),
+        ('ViolaRHMusicVoice', (1, 2)),
+        ('CelloRHMusicVoice', (1, 2)),
         ),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
@@ -169,9 +169,9 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinRHMusicVoice', 1, abjad.Infinity),
-        ('ViolaRHMusicVoice', 1, abjad.Infinity),
-        ('CelloRHMusicVoice', 1, abjad.Infinity),
+        ('ViolinRHMusicVoice', 'all'),
+        ('ViolaRHMusicVoice', 'all'),
+        ('CelloRHMusicVoice', 'all'),
         ),
     baca.dls_sp(9),
     )

@@ -56,7 +56,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, abjad.Infinity),
+    baca.scope('BassClarinetMusicVoice', 'all'),
     baca.bar_extent((-2, 0), selector=baca.rleaves()),
     )
 
@@ -94,7 +94,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, abjad.Infinity),
+    baca.scope('CelloMusicVoice', 'all'),
     baca.bar_extent((0, 2), selector=baca.rleaves()),
     baca.accents(),
     baca.effort_dynamic('mf'),

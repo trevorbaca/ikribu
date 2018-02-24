@@ -61,10 +61,10 @@ maker(
 
 maker(
     baca.scopes(
-        ('BassClarinetMusicVoice', 1, 16),
-        ('ViolinMusicVoice', 1, 16),
-        ('ViolaMusicVoice', 1, 16),
-        ('CelloMusicVoice', 1, 16),
+        ('BassClarinetMusicVoice', 'all'),
+        ('ViolinMusicVoice', 'all'),
+        ('ViolaMusicVoice', 'all'),
+        ('CelloMusicVoice', 'all'),
         ),
     baca.repeat_ties_up(),
     )

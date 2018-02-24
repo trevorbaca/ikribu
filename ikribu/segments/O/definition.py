@@ -134,7 +134,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, abjad.Infinity),
+    baca.scope('BassClarinetMusicVoice', 'all'),
     baca.tie(selector=baca.pleaves(), repeat=True)
     )
 

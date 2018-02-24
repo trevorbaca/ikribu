@@ -54,8 +54,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 1, 15),
-        ('ViolaMusicVoice', 1, 15),
+        ('ViolinMusicVoice', 'all'),
+        ('ViolaMusicVoice', 'all'),
         ),
     baca.text_script_staff_padding(3),
     baca.text_spanner_staff_padding(3.5),

@@ -135,9 +135,9 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinRHMusicVoice', 1, 3),
-        ('ViolaRHMusicVoice', 1, 3),
-        ('CelloRHMusicVoice', 1, 3),
+        ('ViolinRHMusicVoice', (1, 3)),
+        ('ViolaRHMusicVoice', (1, 3)),
+        ('CelloRHMusicVoice', (1, 3)),
         ),
     baca.dls_sp(9),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),

@@ -81,9 +81,9 @@ maker(
 
 maker(
     baca.scopes(
-        ('BassClarinetMusicVoice', 1, 7),
-        ('ViolinMusicVoice', 1, 7),
-        ('ViolaMusicVoice', 1, 7),
+        ('BassClarinetMusicVoice', 'all'),
+        ('ViolinMusicVoice', 'all'),
+        ('ViolaMusicVoice', 'all'),
         ),
     baca.clef('percussion'),
     baca.dls_sp(6),
@@ -105,8 +105,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 1, 7),
-        ('ViolaMusicVoice', 1, 7),
+        ('ViolinMusicVoice', 'all'),
+        ('ViolaMusicVoice', 'all'),
         ),
     baca.staff_positions([0]),
     )
@@ -164,14 +164,14 @@ maker(
 
 maker(
     baca.scopes(
-        ('BassClarinetMusicVoice', 1, abjad.Infinity),
-        ('ViolinMusicVoice', 1, abjad.Infinity),
-        ('ViolaMusicVoice', 1, abjad.Infinity),
+        ('BassClarinetMusicVoice', 'all'),
+        ('ViolinMusicVoice', 'all'),
+        ('ViolaMusicVoice', 'all'),
         ),
     ikribu.box_adjustment()
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, abjad.Infinity),
+    baca.scope('BassClarinetMusicVoice', 'all'),
     baca.bar_extent((-2, 0), selector=baca.leaves()),
     )
