@@ -52,8 +52,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 6, 7),
-        ('ViolaMusicVoice', 6, 7),
+        ('ViolinMusicVoice', (6, 7)),
+        ('ViolaMusicVoice', (6, 7)),
         ),
     baca.make_tied_notes(repeat_ties=True),
     baca.dls_sp(4),

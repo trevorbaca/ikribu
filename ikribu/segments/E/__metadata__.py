@@ -256,12 +256,12 @@ metadata = abjad.OrderedDict(
             abjad.OrderedDict(
                 [
                     ('BassClarinetMusicVoice', True),
-                    ('ViolinRHMusicVoice', False),
-                    ('ViolinMusicVoice', True),
-                    ('ViolaRHMusicVoice', False),
-                    ('ViolaMusicVoice', True),
-                    ('CelloRHMusicVoice', False),
                     ('CelloMusicVoice', True),
+                    ('CelloRHMusicVoice', False),
+                    ('ViolaMusicVoice', True),
+                    ('ViolaRHMusicVoice', False),
+                    ('ViolinMusicVoice', True),
+                    ('ViolinRHMusicVoice', False),
                     ]
                 ),
             ),

@@ -167,8 +167,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 1, 23),
-        ('ViolaMusicVoice', 1, 23),
+        ('ViolinMusicVoice', (1, 23)),
+        ('ViolaMusicVoice', (1, 23)),
         ),
     baca.dls_sp(8),
     baca.tuplet_bracket_staff_padding(3),
@@ -183,8 +183,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 1, 21),
-        ('ViolaMusicVoice', 1, 21),
+        ('ViolinMusicVoice', (1, 21)),
+        ('ViolaMusicVoice', (1, 21)),
         ),
     baca.staff_positions([0]),
     )
