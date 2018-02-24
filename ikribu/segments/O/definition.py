@@ -52,28 +52,28 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 9, 20),
+    baca.scope('ViolinMusicVoice', (9, 20)),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 9, 20),
+    baca.scope('ViolaMusicVoice', (9, 20)),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 5, 20),
+    baca.scope('CelloMusicVoice', (5, 20)),
     baca.make_tied_notes(repeat_ties=True),
     baca.ottava_bracket_staff_padding(10),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', (1, 2)),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 3, 6),
+    baca.scope('BassClarinetMusicVoice', (3, 6)),
     baca.pitches('<Bb1 F4>'),
     )
 
@@ -98,7 +98,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 11, 12),
+    baca.scope('BassClarinetMusicVoice', (11, 12)),
     baca.pitches('<Bb1 Ab~4>'),
     )
 
@@ -113,7 +113,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 15, 16),
+    baca.scope('BassClarinetMusicVoice', (15, 16)),
     baca.pitches('<Bb1 D4>'),
     )
 
@@ -128,7 +128,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 19, 20),
+    baca.scope('BassClarinetMusicVoice', (19, 20)),
     baca.hairpin('p > niente', baca.rleaves()[-3:]),
     baca.pitches('Bb1'),
     )
@@ -139,7 +139,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 9, 20),
+    baca.scope('ViolinMusicVoice', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
@@ -153,7 +153,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 9, 20),
+    baca.scope('ViolaMusicVoice', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
@@ -167,7 +167,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 20),
+    baca.scope('CelloMusicVoice', (1, 20)),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.piecewise(
@@ -181,7 +181,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 5, 8),
+    baca.scope('CelloMusicVoice', (5, 8)),
     baca.single_segment_transition(
         baca.markup('tasto poss.'),
         baca.markup('pos. ord.'),
@@ -189,7 +189,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 9, 12),
+    baca.scope('CelloMusicVoice', (9, 12)),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
         baca.markup.XP(),
@@ -197,7 +197,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 13, 16),
+    baca.scope('CelloMusicVoice', (13, 16)),
     baca.single_segment_transition(
         baca.markup.XP(),
         baca.markup('pos. ord.'),
@@ -205,7 +205,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 17, 20),
+    baca.scope('CelloMusicVoice', (17, 20)),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
         baca.markup('tasto poss.'),

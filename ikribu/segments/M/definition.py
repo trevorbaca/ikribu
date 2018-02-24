@@ -69,7 +69,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 2, 3),
+    baca.scope('ViolinMusicVoice', (2, 3)),
     ikribu.color_rhythm(3),
     )
 
@@ -79,12 +79,12 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 9, 10),
+    baca.scope('ViolinMusicVoice', (9, 10)),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 13, 14),
+    baca.scope('ViolinMusicVoice', (13, 14)),
     ikribu.color_rhythm(3),
     )
 
@@ -94,12 +94,12 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 20, 21),
+    baca.scope('ViolinMusicVoice', (20, 21)),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 2, 3),
+    baca.scope('ViolaMusicVoice', (2, 3)),
     ikribu.color_rhythm(4),
     )
 
@@ -109,12 +109,12 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 9, 10),
+    baca.scope('ViolaMusicVoice', (9, 10)),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 13, 14),
+    baca.scope('ViolaMusicVoice', (13, 14)),
     ikribu.color_rhythm(4),
     )
 
@@ -124,7 +124,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 20, 21),
+    baca.scope('ViolaMusicVoice', (20, 21)),
     ikribu.color_rhythm(3),
     )
 
@@ -142,7 +142,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 23),
+    baca.scope('BassClarinetMusicVoice', (1, 23)),
     baca.pitches('B1'),
     )
 
@@ -156,7 +156,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 20, 22),
+    baca.scope('BassClarinetMusicVoice', (20, 22)),
     baca.hairpin('ppp < fff', baca.leaves()[:-1]),
     )
 
@@ -292,7 +292,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 2, 3),
+    baca.scope('CelloMusicVoice', (2, 3)),
     baca.clef('bass'),
     )
 

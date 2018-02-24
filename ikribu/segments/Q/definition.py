@@ -51,7 +51,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 2),
+    baca.scope('BassClarinetMusicVoice', (1, 2)),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
@@ -61,7 +61,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 4),
+    baca.scope('BassClarinetMusicVoice', (1, 4)),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
     baca.staff_positions([0]),
@@ -69,7 +69,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1, 3),
+    baca.scope('ViolinMusicVoice', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
@@ -79,7 +79,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 1, 3),
+    baca.scope('ViolaMusicVoice', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
@@ -89,7 +89,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 4),
+    baca.scope('CelloMusicVoice', (1, 4)),
     ikribu.inscription_rhythm(),
     )
 

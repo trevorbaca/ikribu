@@ -69,7 +69,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 2, 3),
+    baca.scope('CelloMusicVoice', (2, 3)),
     baca.make_tied_notes(repeat_ties=True),
     )
 
@@ -112,7 +112,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1, 2),
+    baca.scope('ViolinMusicVoice', (1, 2)),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
 
@@ -137,7 +137,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 2, 4),
+    baca.scope('CelloMusicVoice', (2, 4)),
     baca.dynamic('p'),
     baca.hairpin('p < mf', baca.leaves()[-2:]),
     baca.markup.vib_poco(),

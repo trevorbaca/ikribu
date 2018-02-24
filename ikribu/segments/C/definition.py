@@ -67,7 +67,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 2, 17),
+    baca.scope('BassClarinetMusicVoice', (2, 17)),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
@@ -79,7 +79,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 2, 3),
+    baca.scope('BassClarinetMusicVoice', (2, 3)),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
         baca.markup.boxed(['stonecircle: π/2 every quarter note']),
@@ -112,7 +112,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 2, 16),
+    baca.scope('ViolinMusicVoice', (2, 16)),
     baca.clef('treble'),
     baca.dynamic_line_spanner_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
@@ -137,7 +137,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 2, 16),
+    baca.scope('ViolaMusicVoice', (2, 16)),
     baca.dls_sp(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
@@ -161,7 +161,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 2, 16),
+    baca.scope('CelloMusicVoice', (2, 16)),
     baca.dls_sp(7),
     baca.glissando(),
     baca.natural_harmonics(),

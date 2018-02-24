@@ -68,12 +68,12 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 13, 14),
+    baca.scope('ViolaMusicVoice', (13, 14)),
     baca.make_tied_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 3, 15),
+    baca.scope('BassClarinetMusicVoice', (3, 15)),
     baca.pitches('Db2'),
     )
 
@@ -89,7 +89,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1, 9),
+    baca.scope('ViolinMusicVoice', (1, 9)),
     baca.markup.string_number(3),
     baca.pitches('E4'),
     baca.stem_tremolo(),
@@ -108,14 +108,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 13, 14),
+    baca.scope('ViolaMusicVoice', (13, 14)),
     baca.markup.string_number(2),
     baca.pitches('Eb4'),
     baca.stem_tremolo(),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 13, 14),
+    baca.scope('ViolaMusicVoice', (13, 14)),
     baca.suite([
         baca.hairpin('ppp < mf', baca.leaves()[:5]),
         baca.hairpin('mf > niente', baca.rleaves()[-2:]),
