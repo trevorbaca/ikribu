@@ -92,23 +92,23 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 4),
+    baca.scope('BassClarinetMusicVoice', (1, 4)),
     baca.dynamic('ppp'),
     baca.pitches('E3'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 5, 8),
+    baca.scope('BassClarinetMusicVoice', (5, 8)),
     baca.pitches('E+3'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 9, 12),
+    baca.scope('BassClarinetMusicVoice', (9, 12)),
     baca.pitches('F3'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 13, 16),
+    baca.scope('BassClarinetMusicVoice', (13, 16)),
     baca.pitches('F+3'),
     )
 
@@ -134,12 +134,12 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 16),
+    baca.scope('CelloMusicVoice', (1, 16)),
     baca.clef('bass'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 9, 16),
+    baca.scope('CelloMusicVoice', (9, 16)),
     baca.dls_sp(4),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
@@ -154,11 +154,11 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 9, 12),
+    baca.scope('CelloMusicVoice', (9, 12)),
     baca.pitches('F3'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 13, 16),
+    baca.scope('CelloMusicVoice', (13, 16)),
     baca.pitches('F+3'),
     )

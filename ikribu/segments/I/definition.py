@@ -45,7 +45,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 8),
+    baca.scope('CelloMusicVoice', (1, 8)),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),

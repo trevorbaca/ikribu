@@ -50,7 +50,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 11),
+    baca.scope('CelloMusicVoice', (1, 11)),
     baca.make_notes(repeat_ties=True),
     )
 
@@ -91,7 +91,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 12),
+    baca.scope('CelloMusicVoice', (1, 12)),
     baca.dls_sp(7),
     baca.glissando(),
     baca.piecewise(

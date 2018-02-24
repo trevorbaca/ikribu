@@ -37,7 +37,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1, 7),
+    baca.scope('BassClarinetMusicVoice', (1, 7)),
     baca.clef('treble'),
     baca.dynamic('ppp'),
     baca.make_tied_notes(repeat_ties=True),
@@ -50,14 +50,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1, 4),
+    baca.scope('ViolinMusicVoice', (1, 4)),
     baca.staccati(),
     ikribu.clb_rhythm([4]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 6, 8),
+    baca.scope('ViolinMusicVoice', (6, 8)),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_sp(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
@@ -82,7 +82,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 1, 2),
+    baca.scope('ViolaMusicVoice', (1, 2)),
     baca.staccati(),
     ikribu.clb_rhythm([2]),
     ikribu.clb_staff_positions(rotation=-1),
@@ -96,7 +96,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 4, 8),
+    baca.scope('ViolaMusicVoice', (4, 8)),
     baca.accents(baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_sp(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
@@ -121,7 +121,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1, 9),
+    baca.scope('CelloMusicVoice', (1, 9)),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.piecewise(
         abjad.Hairpin(),
