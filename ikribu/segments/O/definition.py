@@ -48,22 +48,22 @@ maker(
         [(1, 2), (3, 6), 7, 8, 9, 10,
         (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
         ),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', (9, 20)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(
     baca.scope('ViolaMusicVoice', (9, 20)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(
     baca.scope('CelloMusicVoice', (5, 20)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.ottava_bracket_staff_padding(10),
     )
 

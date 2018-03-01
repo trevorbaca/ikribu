@@ -96,7 +96,7 @@ maker(
     baca.scope('ViolinMusicVoice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.markup.boxed('grainfall (2)'),
     baca.staff_lines(1),
     baca.staff_positions([0]),
@@ -114,7 +114,7 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', (2, 16)),
     baca.clef('treble'),
-    baca.dynamic_line_spanner_staff_padding(3),
+    baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -133,7 +133,7 @@ maker(
         ('CelloMusicVoice', 1),
         ('CelloMusicVoice', (2, 16)),
         ),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(

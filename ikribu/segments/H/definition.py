@@ -39,7 +39,7 @@ maker = baca.SegmentMaker(
 maker(
     baca.scope('BassClarinetMusicVoice', (1, 2)),
     baca.dynamic('ppp'),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.pitches('Db2'),
     )
 

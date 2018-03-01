@@ -40,7 +40,7 @@ maker(
     baca.scope('BassClarinetMusicVoice', (1, 7)),
     baca.clef('treble'),
     baca.dynamic('ppp'),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.markup(
         'breathe discreetly before any downbeat as needed'
         ' (but do not circular breathe)'
