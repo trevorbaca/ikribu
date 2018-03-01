@@ -758,14 +758,14 @@ A_ViolaMusicVoice = {
     c'4
     \repeatTie
     \revert RepeatTie.direction                              %! OC2
+    \revert TextScript.padding                               %! OC2
+    \revert TextScript.parent-alignment-X                    %! OC2
     
     % [A ViolaMusicVoice measure 9]                          %! SM4
     \stopStaff                                               %! SM20
     \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
-    \revert TextScript.padding                               %! OC2
-    \revert TextScript.parent-alignment-X                    %! OC2
     
 }
 

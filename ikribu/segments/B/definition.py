@@ -57,7 +57,7 @@ maker(
         ('ViolinMusicVoice', 'all'),
         ('ViolaMusicVoice', 'all'),
         ),
-    baca.text_script_staff_padding(3),
+    baca.text_script_staff_padding(3, allow_mmrests=True),
     baca.text_spanner_staff_padding(3.5),
     )
 
