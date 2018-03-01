@@ -70,7 +70,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (2, 3)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(

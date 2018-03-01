@@ -59,7 +59,7 @@ maker(
         ['BassClarinetMusicVoice'],
         [(1, 4), (5, 8), (9, 12), (13, 16)],
         ),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(
@@ -88,7 +88,7 @@ maker(
 
 maker(
     baca.make_scopes(['CelloMusicVoice'], [(9, 12), (13, 16)]),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     )
 
 maker(

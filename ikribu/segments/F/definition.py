@@ -39,13 +39,13 @@ maker = baca.SegmentMaker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', (1, 4)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.pitches('F#3'),
     )
 
 maker(
     baca.scope('BassClarinetMusicVoice', (6, 8)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.hairpin('sfp > ppp'),
     baca.pitches('G2'),
     )
@@ -55,7 +55,7 @@ maker(
         ('ViolinMusicVoice', (6, 7)),
         ('ViolaMusicVoice', (6, 7)),
         ),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.dls_sp(4),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
@@ -93,7 +93,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (1, 4)),
-    baca.make_tied_notes(repeat_ties=True),
+    baca.make_repeat_tied_notes(),
     baca.hairpin('p < ff'),
     baca.pitches('F#3'),
     baca.stem_tremolo(),
