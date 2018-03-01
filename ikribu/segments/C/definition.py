@@ -125,7 +125,7 @@ maker(
     baca.shift_clef('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(),
-    baca.text_script_staff_padding(2.5),
+    baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
 
 maker(
@@ -147,7 +147,7 @@ maker(
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
     baca.stem_tremolo(),
-    baca.text_script_staff_padding(2.5),
+    baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
 
 maker(

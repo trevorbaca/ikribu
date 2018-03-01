@@ -69,7 +69,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (2, 4)),
+    baca.scope('ViolaMusicVoice', (2, 3)),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),

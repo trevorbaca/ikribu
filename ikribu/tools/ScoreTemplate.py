@@ -160,7 +160,7 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     __documentation_section__ = None
 
-    _part_manifest = (
+    _part_manifest = abjad.PartManifest(
         ('BassClarinet', 'BCL'),
         ('Violin', 'VN'),
         ('Viola', 'VA'),
@@ -392,9 +392,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             'LEDGER_SCORE',
             ]
         stem = 'ARCH_A_PARTS'
-        for pair in self.part_manifest:
-            part_name, abbreviation = pair
-            abbreviation = abjad.String(abbreviation).to_shout_case()
+        for part in self.part_manifest.parts:
+            abbreviation = abjad.String(part.abbreviation).to_shout_case()
             document = f'{stem}_{abbreviation}'
             known_documents.append(document)
         known_documents.sort()
@@ -407,32 +406,13 @@ class ScoreTemplate(baca.ScoreTemplate):
         ..  container:: example
 
             >>> score_template = ikribu.ScoreTemplate()
-            >>> for pair in score_template.part_manifest:
-            ...     pair
+            >>> for part in score_template.part_manifest.parts:
+            ...     part
             ...
-            ('BassClarinet', 'BCL')
-            ('Violin', 'VN')
-            ('Viola', 'VA')
-            ('Cello', 'VC')
+            Part(name='BassClarinet', abbreviation='BCL')
+            Part(name='Violin', abbreviation='VN')
+            Part(name='Viola', abbreviation='VA')
+            Part(name='Cello', abbreviation='VC')
 
         '''
         return self._part_manifest
-
-    ### PUBLIC METHODS ###
-
-    def part_names(self):
-        r'''Gets part names.
-
-        ..  container:: example
-
-            >>> score_template = ikribu.ScoreTemplate()
-            >>> for name in score_template.part_names():
-            ...     name
-            ...
-            'BassClarinet'
-            'Violin'
-            'Viola'
-            'Cello'
-
-        '''
-        return [_[0] for _ in self.part_manifest]
