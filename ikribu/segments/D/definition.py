@@ -59,7 +59,7 @@ maker(
 
 maker(
     baca.scope('CelloRHMusicVoice', (1, 2)),
-    baca.dls_sp(9),
+    baca.dls_staff_padding(9),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics('ff p f pp p ppp'),

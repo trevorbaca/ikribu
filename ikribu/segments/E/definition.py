@@ -118,7 +118,7 @@ maker(
         ('ViolaMusicVoice', 'all'),
         ),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
@@ -140,7 +140,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (9, 16)),
-    baca.dls_sp(4),
+    baca.dls_staff_padding(4),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
         abjad.Hairpin(),

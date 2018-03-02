@@ -138,7 +138,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', (2, 16)),
-    baca.dls_sp(3),
+    baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
         [baca.hairpin('pp < p'), baca.hairpin('p > pp')],
@@ -162,7 +162,7 @@ maker(
 
 maker(
     baca.scope('CelloMusicVoice', (2, 16)),
-    baca.dls_sp(7),
+    baca.dls_staff_padding(7),
     baca.glissando(),
     baca.natural_harmonics(),
     baca.pitches(

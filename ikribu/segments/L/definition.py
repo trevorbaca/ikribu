@@ -59,7 +59,7 @@ maker(
 maker(
     baca.scope('ViolinMusicVoice', (6, 8)),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
@@ -76,7 +76,7 @@ maker(
 
 maker(
     baca.scope('ViolinMusicVoice', 4),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.hairpin('"mp" > niente', baca.tleaves()),
     baca.shift_hairpin_start('"mp"'),
     )
@@ -90,7 +90,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', 2),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.hairpin('"mp" > niente', baca.tleaves()),
     baca.shift_hairpin_start('"mp"'),
     )
@@ -98,7 +98,7 @@ maker(
 maker(
     baca.scope('ViolaMusicVoice', (4, 8)),
     baca.accents(baca.pheads()[~abjad.index([0, 5], 11)]),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),

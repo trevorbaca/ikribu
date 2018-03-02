@@ -95,13 +95,13 @@ maker(
 maker(
     baca.scope('BassClarinetMusicVoice', (1, 16)),
     baca.bar_extent((-2, 0), selector=baca.leaves()),
-    baca.dls_sp(6),
+    baca.dls_staff_padding(6),
     baca.staff_positions([0]),
     )
 
 maker(
     baca.scope('ViolinMusicVoice', (1, 16)),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.shift_dynamic('"mp"'),
@@ -112,7 +112,7 @@ maker(
 
 maker(
     baca.scope('ViolaMusicVoice', (1, 16)),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.shift_dynamic('"mp"'),
@@ -125,7 +125,7 @@ maker(
     baca.scope('CelloMusicVoice', (1, 16)),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.bar_extent((0, 2), selector=baca.leaves()),
-    baca.dls_sp(6),
+    baca.dls_staff_padding(6),
     baca.staff_positions([0]),
     ikribu.box_adjustment(),
     )

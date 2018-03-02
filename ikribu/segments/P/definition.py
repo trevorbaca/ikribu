@@ -75,7 +75,7 @@ maker(
 
 maker(
     baca.scope('BassClarinetMusicVoice', (3, 5)),
-    baca.dls_sp(9),
+    baca.dls_staff_padding(9),
     )
 
 maker(
@@ -139,7 +139,7 @@ maker(
         ('ViolaRHMusicVoice', (1, 3)),
         ('CelloRHMusicVoice', (1, 3)),
         ),
-    baca.dls_sp(9),
+    baca.dls_staff_padding(9),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
