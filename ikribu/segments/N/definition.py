@@ -173,5 +173,5 @@ maker(
         ('ViolaRHMusicVoice', 'all'),
         ('CelloRHMusicVoice', 'all'),
         ),
-    baca.dls_sp(9),
+    baca.dls_staff_padding(9),
     )

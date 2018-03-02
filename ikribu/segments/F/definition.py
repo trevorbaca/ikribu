@@ -56,7 +56,7 @@ maker(
         ('ViolaMusicVoice', (6, 7)),
         ),
     baca.make_repeat_tied_notes(),
-    baca.dls_sp(4),
+    baca.dls_staff_padding(4),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
     baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
     baca.stem_tremolo(),

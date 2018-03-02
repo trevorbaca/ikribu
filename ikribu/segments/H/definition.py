@@ -80,7 +80,7 @@ maker(
         ('ViolinRHMusicVoice', (1, 2)),
         ('ViolaRHMusicVoice', (1, 2)),
         ),
-    baca.dls_sp(10),
+    baca.dls_staff_padding(10),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),

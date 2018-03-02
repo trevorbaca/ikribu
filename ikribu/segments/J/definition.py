@@ -86,7 +86,7 @@ maker(
         ('ViolaMusicVoice', 'all'),
         ),
     baca.clef('percussion'),
-    baca.dls_sp(6),
+    baca.dls_staff_padding(6),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),

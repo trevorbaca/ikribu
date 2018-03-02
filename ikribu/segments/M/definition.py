@@ -170,7 +170,7 @@ maker(
         ('ViolinMusicVoice', (1, 23)),
         ('ViolaMusicVoice', (1, 23)),
         ),
-    baca.dls_sp(8),
+    baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     )
