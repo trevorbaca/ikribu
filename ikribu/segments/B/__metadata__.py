@@ -60,11 +60,6 @@ metadata = abjad.OrderedDict(
                                 prototype='abjad.Instrument',
                                 value='BassClarinet',
                                 ),
-                            abjad.Momento(
-                                context='BassClarinetMusicVoice',
-                                prototype='baca.StaffLines',
-                                value=5,
-                                ),
                             ],
                         ),
                     (
@@ -84,11 +79,6 @@ metadata = abjad.OrderedDict(
                                 context='CelloMusicVoice',
                                 prototype='abjad.Clef',
                                 value='treble',
-                                ),
-                            abjad.Momento(
-                                context='CelloMusicVoice',
-                                prototype='baca.StaffLines',
-                                value=5,
                                 ),
                             ],
                         ),
