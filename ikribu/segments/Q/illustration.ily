@@ -755,9 +755,6 @@ Q_BassClarinetMusicVoice = {
     \revert TextScript.parent-alignment-X                        %! OC2
     
     % [Q BassClarinetMusicVoice measure 258]                     %! SM4
-    \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                                  %! SM20
     R1 * 1/4
     \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC2
     
@@ -817,9 +814,6 @@ Q_ViolinRHMusicVoice = {
     R1 * 7/4
     
     % [Q ViolinRHMusicVoice measure 258]                     %! SM4
-    \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1051,9 +1045,6 @@ Q_ViolinMusicVoice = {
     R1 * 7/4
     
     % [Q ViolinMusicVoice measure 258]                       %! SM4
-    \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1112,9 +1103,6 @@ Q_ViolaRHMusicVoice = {
     R1 * 7/4
     
     % [Q ViolaRHMusicVoice measure 258]                      %! SM4
-    \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1346,9 +1334,6 @@ Q_ViolaMusicVoice = {
     R1 * 7/4
     
     % [Q ViolaMusicVoice measure 258]                        %! SM4
-    \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1407,9 +1392,6 @@ Q_CelloRHMusicVoice = {
     R1 * 7/4
     
     % [Q CelloRHMusicVoice measure 258]                      %! SM4
-    \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1816,9 +1798,6 @@ Q_CelloMusicVoice = {
     
     % [Q CelloMusicVoice measure 258]                        %! SM4
     \once \override MultiMeasureRestText.extra-offset = #'(-16 . -4)
-    \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
-    \startStaff                                              %! SM20
     R1 * 1/4
     _ \markup {                                              %! SCORE2
         \whiteout                                            %! SCORE2
