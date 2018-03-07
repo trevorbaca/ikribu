@@ -1780,8 +1780,8 @@ B_ViolaMusicVoice = {
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
     \override TextScript.staff-padding = #3                  %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
-    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
-    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
+%%% \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_10:SHIFTED_CLEF
+%%% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_10:SHIFTED_CLEF
     \set ViolaStaffGroup.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37

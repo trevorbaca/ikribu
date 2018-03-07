@@ -2020,8 +2020,8 @@ D_CelloMusicVoice = {
     \times 6/7 {
         
         % [D CelloMusicVoice measure 52]                     %! SM4
-        \once \override CelloMusicStaff.Clef.X-extent = ##f  %! OC1:SHIFTED_CLEF
-        \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
+    %%% \once \override CelloMusicStaff.Clef.X-extent = ##f  %! OC1:MEASURE_52:SHIFTED_CLEF
+    %%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_52:SHIFTED_CLEF
         \set CelloStaffGroup.instrumentName = \markup {      %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #16                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
