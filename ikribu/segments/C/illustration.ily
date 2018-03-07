@@ -1525,8 +1525,8 @@ C_ViolinMusicVoice = {
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override TextScript.padding = #2.5                %! OC1
     \once \override TextScript.parent-alignment-X = #0       %! OC1
-    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
-    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+%%% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_35:SHIFTED_CLEF
+%%% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_35:SHIFTED_CLEF
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -1584,8 +1584,8 @@ C_ViolinMusicVoice = {
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
     \override DynamicLineSpanner.staff-padding = #'3         %! OC1
-    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
-    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_36:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_36:SHIFTED_CLEF
     \override TextScript.staff-padding = #2.5                %! OC1
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
     \once \override ViolinMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC

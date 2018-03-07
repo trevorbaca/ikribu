@@ -1314,8 +1314,8 @@ E_ViolinMusicVoice = {
         \override TupletBracket.staff-padding = #3           %! OC1
         \override TextScript.padding = #2.5                  %! OC1
         \override TextScript.parent-alignment-X = #0         %! OC1
-        \once \override ViolinMusicStaff.Clef.X-extent = ##f %! OC1:SHIFTED_CLEF
-        \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+    %%% \once \override ViolinMusicStaff.Clef.X-extent = ##f %! OC1:MEASURE_63:SHIFTED_CLEF
+    %%% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_63:SHIFTED_CLEF
         \set ViolinStaffGroup.instrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #16                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -1609,8 +1609,8 @@ E_ViolaMusicVoice = {
     \override TupletBracket.staff-padding = #3               %! OC1
     \override TextScript.padding = #2.5                      %! OC1
     \override TextScript.parent-alignment-X = #0             %! OC1
-    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
-    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+%%% \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_63:SHIFTED_CLEF
+%%% \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_63:SHIFTED_CLEF
     \set ViolaStaffGroup.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -1896,8 +1896,8 @@ E_CelloRHMusicStaff = {
 E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 63]                         %! SM4
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:SHIFTED_CLEF
+%%% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_63:SHIFTED_CLEF
+%%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_63:SHIFTED_CLEF
     \set CelloStaffGroup.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37

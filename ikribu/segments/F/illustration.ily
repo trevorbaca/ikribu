@@ -599,8 +599,8 @@ F_ViolinMusicVoice = {
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
     \override DynamicLineSpanner.staff-padding = #'4         %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
-    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
-    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_84:SHIFTED_CLEF
+    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_84:SHIFTED_CLEF
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -786,8 +786,8 @@ F_ViolaMusicVoice = {
     \override TextSpanner.staff-padding = #3.5               %! OC1
     \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1
     \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1
-    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
-    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+    \once \override ViolaMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_84:SHIFTED_CLEF
+    \once \override ViolaMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_84:SHIFTED_CLEF
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -1081,8 +1081,8 @@ F_CelloMusicVoice = {
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:SHIFTED_CLEF
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_86:SHIFTED_CLEF
+    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_86:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC

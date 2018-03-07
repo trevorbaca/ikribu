@@ -502,8 +502,8 @@ A_ViolinMusicVoice = {
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
-    \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:SHIFTED_CLEF
-    \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:SHIFTED_CLEF
+%%% \once \override ViolinMusicStaff.Clef.X-extent = ##f     %! OC1:MEASURE_3:SHIFTED_CLEF
+%%% \once \override ViolinMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_3:SHIFTED_CLEF
     \set ViolinStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
