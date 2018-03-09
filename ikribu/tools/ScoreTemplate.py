@@ -42,20 +42,12 @@ class ScoreTemplate(baca.ScoreTemplate):
                             \set BassClarinetMusicStaff.instrumentName = \markup {      %! ST1
                                 \hcenter-in                                             %! ST1
                                     #16                                                 %! ST1
-                                    \center-column                                      %! ST1
-                                        {                                               %! ST1
-                                            Bass                                        %! ST1
-                                            clarinet                                    %! ST1
-                                        }                                               %! ST1
+                                    "Bass clarinet"                                     %! ST1
                                 }                                                       %! ST1
                             \set BassClarinetMusicStaff.shortInstrumentName = \markup { %! ST1
                                 \hcenter-in                                             %! ST1
                                     #10                                                 %! ST1
-                                    \line                                               %! ST1
-                                        {                                               %! ST1
-                                            B.                                          %! ST1
-                                            cl.                                         %! ST1
-                                        }                                               %! ST1
+                                    "B. cl."                                            %! ST1
                                 }                                                       %! ST1
                             \clef "treble" %! ST3
                             s1
