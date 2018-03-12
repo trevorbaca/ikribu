@@ -153,10 +153,10 @@ class ScoreTemplate(baca.ScoreTemplate):
     __documentation_section__ = None
 
     _part_manifest = abjad.PartManifest(
-        ('BassClarinet', 'BCL'),
-        ('Violin', 'VN'),
-        ('Viola', 'VA'),
-        ('Cello', 'VC'),
+        abjad.Part('BassClarinet', abbreviation='BCL'),
+        abjad.Part('Violin', abbreviation='VN'),
+        abjad.Part('Viola', abbreviation='VA'),
+        abjad.Part('Cello', abbreviation='VC'),
         )
 
     ### SPECIAL METHODS ###
