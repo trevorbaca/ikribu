@@ -401,10 +401,10 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> for part in score_template.part_manifest.parts:
             ...     part
             ...
-            Part(name='BassClarinet', abbreviation='BCL')
-            Part(name='Violin', abbreviation='VN')
-            Part(name='Viola', abbreviation='VA')
-            Part(name='Cello', abbreviation='VC')
+            Part('BassClarinet', abbreviation='BCL')
+            Part('Violin', abbreviation='VN')
+            Part('Viola', abbreviation='VA')
+            Part('Cello', abbreviation='VC')
 
         '''
         return self._part_manifest
