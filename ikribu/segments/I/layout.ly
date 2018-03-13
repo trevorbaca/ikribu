@@ -1,4 +1,4 @@
-% measure_count = 8
+% time_signatures = ['3/4', '1/4', '3/4', '1/4', '3/4', '1/4', '3/4', '1/4']
 
 
 \context Score = "Score"
