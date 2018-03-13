@@ -153,10 +153,10 @@ class ScoreTemplate(baca.ScoreTemplate):
     __documentation_section__ = None
 
     _part_manifest = abjad.PartManifest(
-        abjad.Part('BassClarinet', abbreviation='BCL'),
-        abjad.Part('Violin', abbreviation='VN'),
-        abjad.Part('Viola', abbreviation='VA'),
-        abjad.Part('Cello', abbreviation='VC'),
+        abjad.Part(section='BassClarinet', abbreviation='BCL'),
+        abjad.Part(section='Violin', abbreviation='VN'),
+        abjad.Part(section='Viola', abbreviation='VA'),
+        abjad.Part(section='Cello', abbreviation='VC'),
         )
 
     ### SPECIAL METHODS ###
@@ -401,10 +401,10 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> for part in score_template.part_manifest.parts:
             ...     part
             ...
-            Part('BassClarinet', abbreviation='BCL')
-            Part('Violin', abbreviation='VN')
-            Part('Viola', abbreviation='VA')
-            Part('Cello', abbreviation='VC')
+            Part(abbreviation='BCL', instrument='BassClarinet', number=1, section='BassClarinet')
+            Part(abbreviation='VN', instrument='Violin', number=2, section='Violin')
+            Part(abbreviation='VA', instrument='Viola', number=3, section='Viola')
+            Part(abbreviation='VC', instrument='Cello', number=4, section='Cello')
 
         '''
         return self._part_manifest
