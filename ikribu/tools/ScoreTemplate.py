@@ -153,10 +153,10 @@ class ScoreTemplate(baca.ScoreTemplate):
     __documentation_section__ = None
 
     _part_manifest = abjad.PartManifest(
-        abjad.Part(section='BassClarinet', abbreviation='BCL'),
-        abjad.Part(section='Violin', abbreviation='VN'),
-        abjad.Part(section='Viola', abbreviation='VA'),
-        abjad.Part(section='Cello', abbreviation='VC'),
+        abjad.Part(section='BassClarinet', section_abbreviation='BCL'),
+        abjad.Part(section='Violin', section_abbreviation='VN'),
+        abjad.Part(section='Viola', section_abbreviation='VA'),
+        abjad.Part(section='Cello', section_abbreviation='VC'),
         )
 
     ### SPECIAL METHODS ###
@@ -385,7 +385,8 @@ class ScoreTemplate(baca.ScoreTemplate):
             ]
         stem = 'ARCH_A_PARTS'
         for part in self.part_manifest.parts:
-            abbreviation = abjad.String(part.abbreviation).to_shout_case()
+            abbreviation = part.section_abbreviation
+            abbreviation = abjad.String(abbreviation).to_shout_case()
             document = f'{stem}_{abbreviation}'
             known_documents.append(document)
         known_documents.sort()
@@ -401,10 +402,10 @@ class ScoreTemplate(baca.ScoreTemplate):
             >>> for part in score_template.part_manifest.parts:
             ...     part
             ...
-            Part(abbreviation='BCL', instrument='BassClarinet', number=1, section='BassClarinet')
-            Part(abbreviation='VN', instrument='Violin', number=2, section='Violin')
-            Part(abbreviation='VA', instrument='Viola', number=3, section='Viola')
-            Part(abbreviation='VC', instrument='Cello', number=4, section='Cello')
+            Part(instrument='BassClarinet', number=1, section='BassClarinet', section_abbreviation='BCL')
+            Part(instrument='Violin', number=2, section='Violin', section_abbreviation='VN')
+            Part(instrument='Viola', number=3, section='Viola', section_abbreviation='VA')
+            Part(instrument='Cello', number=4, section='Cello', section_abbreviation='VC')
 
         '''
         return self._part_manifest
