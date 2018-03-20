@@ -99,7 +99,7 @@ Q_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \mark #17                                                            %! SM9
+    \mark #17                                                            %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -739,6 +739,9 @@ Q_BassClarinetMusicVoice = {
     \revert TextScript.parent-alignment-X                        %! OC2
     
     % [Q BassClarinetMusicVoice measure 258]                     %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
     R1 * 1/4
     \revert BassClarinetMusicStaff.BarLine.bar-extent            %! OC2
     
@@ -798,6 +801,9 @@ Q_ViolinRHMusicVoice = {
     R1 * 7/4
     
     % [Q ViolinRHMusicVoice measure 258]                     %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1029,6 +1035,9 @@ Q_ViolinMusicVoice = {
     R1 * 7/4
     
     % [Q ViolinMusicVoice measure 258]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1087,6 +1096,9 @@ Q_ViolaRHMusicVoice = {
     R1 * 7/4
     
     % [Q ViolaRHMusicVoice measure 258]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1318,6 +1330,9 @@ Q_ViolaMusicVoice = {
     R1 * 7/4
     
     % [Q ViolaMusicVoice measure 258]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1376,6 +1391,9 @@ Q_CelloRHMusicVoice = {
     R1 * 7/4
     
     % [Q CelloRHMusicVoice measure 258]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1782,6 +1800,9 @@ Q_CelloMusicVoice = {
     
     % [Q CelloMusicVoice measure 258]                        %! SM4
     \once \override MultiMeasureRestText.extra-offset = #'(-16 . -4)
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     _ \markup {                                              %! SCORE2
         \whiteout                                            %! SCORE2

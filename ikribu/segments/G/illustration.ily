@@ -56,7 +56,7 @@ G_GlobalSkips = {
     \once \override TextSpanner.dash-fraction = 0.25                     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 1.5                        %! SM29:METRONOME_MARK_SPANNER
     \time 7/4                                                            %! SM8:REAPPLIED_TIME_SIGNATURE:SM38:SM1
-    \mark #7                                                             %! SM9
+    \mark #7                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'green4)     %! SM6:REAPPLIED_TIME_SIGNATURE_COLOR:SM38:SM1
     s1 * 7/4

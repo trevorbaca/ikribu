@@ -79,6 +79,11 @@ metadata = abjad.OrderedDict(
                                 prototype='abjad.Clef',
                                 value='treble',
                                 ),
+                            abjad.Momento(
+                                context='CelloMusicVoice',
+                                prototype='baca.StaffLines',
+                                value=5,
+                                ),
                             ],
                         ),
                     (

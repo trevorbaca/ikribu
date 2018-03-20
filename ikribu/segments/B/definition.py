@@ -33,13 +33,17 @@ maker = baca.SegmentMaker(
     instruments=ikribu.instruments,
     measures_per_stage=measures_per_stage,
     metronome_marks=ikribu.metronome_marks,
-    rehearsal_mark='B',
     score_template=ikribu.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=25,
     validate_stage_count=15,
+    )
+
+maker(
+    baca.scope('GlobalSkips', (1, -1)),
+    baca.rehearsal_mark('B'),
     )
 
 maker(

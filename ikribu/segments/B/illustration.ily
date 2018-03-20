@@ -174,7 +174,7 @@ B_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \mark #2                                                             %! SM9
+    \mark #2                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
@@ -1153,6 +1153,9 @@ B_GlobalSkips = {
 B_BassClarinetMusicVoice = {
     
     % [B BassClarinetMusicVoice measure 10]                      %! SM4
+    \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
     \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -1168,6 +1171,7 @@ B_BassClarinetMusicVoice = {
 %@% \override BassClarinetMusicStaff.Clef.color = ##f            %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set BassClarinetMusicStaff.forceClef = ##t                  %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 1
     _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -1196,17 +1200,35 @@ B_BassClarinetMusicVoice = {
     R1 * 3/4
     
     % [B BassClarinetMusicVoice measure 13]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+%%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_13
+%%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_13
     
     % [B BassClarinetMusicVoice measure 14]                      %! SM4
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \stopStaff                                                   %! SM21
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                                  %! SM21
     ef1..
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     
     % [B BassClarinetMusicVoice measure 15]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+%%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_15
+%%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_15
     
     % [B BassClarinetMusicVoice measure 16]                      %! SM4
+    \stopStaff                                                   %! SM21
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                                  %! SM21
     R1 * 2
     
     % [B BassClarinetMusicVoice measure 17]                      %! SM4
@@ -1216,15 +1238,33 @@ B_BassClarinetMusicVoice = {
     R1 * 1
     
     % [B BassClarinetMusicVoice measure 19]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+%%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_19
+%%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_19
     
     % [B BassClarinetMusicVoice measure 20]                      %! SM4
+    \stopStaff                                                   %! SM21
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                                  %! SM21
     ef1
     
     % [B BassClarinetMusicVoice measure 21]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+%%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_21
+%%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_21
     
     % [B BassClarinetMusicVoice measure 22]                      %! SM4
+    \stopStaff                                                   %! SM21
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                                  %! SM21
     R1 * 1/2
     
     % [B BassClarinetMusicVoice measure 23]                      %! SM4
@@ -1234,16 +1274,34 @@ B_BassClarinetMusicVoice = {
     R1 * 3/4
     
     % [B BassClarinetMusicVoice measure 25]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+%%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_25
+%%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_25
     
     % [B BassClarinetMusicVoice measure 26]                      %! SM4
+    \stopStaff                                                   %! SM21
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                                  %! SM21
     ef1
     
     % [B BassClarinetMusicVoice measure 27]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+%%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_27
+%%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_27
     
     % [B BassClarinetMusicVoice measure 28]                      %! SM4
     \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \stopStaff                                                   %! SM21
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                                  %! SM21
     ef2.
     \<                                                           %! HC1
     \ppp                                                         %! HC1
@@ -1274,7 +1332,13 @@ B_BassClarinetMusicVoice = {
     R1 * 2
     
     % [B BassClarinetMusicVoice measure 34]                      %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+    \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_34
+    \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_34
     
 }
 
@@ -1306,15 +1370,27 @@ B_ViolinRHMusicVoice = {
     R1 * 3/4
     
     % [B ViolinRHMusicVoice measure 13]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolinRHMusicVoice measure 14]                      %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 7/4
     
     % [B ViolinRHMusicVoice measure 15]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolinRHMusicVoice measure 16]                      %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 2
     
     % [B ViolinRHMusicVoice measure 17]                      %! SM4
@@ -1324,15 +1400,27 @@ B_ViolinRHMusicVoice = {
     R1 * 1
     
     % [B ViolinRHMusicVoice measure 19]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolinRHMusicVoice measure 20]                      %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolinRHMusicVoice measure 21]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolinRHMusicVoice measure 22]                      %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1/2
     
     % [B ViolinRHMusicVoice measure 23]                      %! SM4
@@ -1342,15 +1430,27 @@ B_ViolinRHMusicVoice = {
     R1 * 3/4
     
     % [B ViolinRHMusicVoice measure 25]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolinRHMusicVoice measure 26]                      %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolinRHMusicVoice measure 27]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolinRHMusicVoice measure 28]                      %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 3/4
     
     % [B ViolinRHMusicVoice measure 29]                      %! SM4
@@ -1369,6 +1469,9 @@ B_ViolinRHMusicVoice = {
     R1 * 2
     
     % [B ViolinRHMusicVoice measure 34]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1484,13 +1587,24 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 13]                        %! SM4
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     \!                                                       %! HC1
     
     % [B ViolinMusicVoice measure 14]                        %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 7/4
     
     % [B ViolinMusicVoice measure 15]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 16]                        %! SM4
@@ -1527,6 +1641,9 @@ B_ViolinMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \stopStaff                                               %! SM21
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     e'\breve
     :32                                                      %! IC
     \<                                                       %! HC1
@@ -1552,13 +1669,24 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 19]                        %! SM4
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     \!                                                       %! HC1
     
     % [B ViolinMusicVoice measure 20]                        %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolinMusicVoice measure 21]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 22]                        %! SM4
@@ -1595,6 +1723,9 @@ B_ViolinMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \stopStaff                                               %! SM21
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     e'2
     :32                                                      %! IC
     \<                                                       %! HC1
@@ -1620,16 +1751,30 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 25]                        %! SM4
     \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     \!                                                       %! HC1
     
     % [B ViolinMusicVoice measure 26]                        %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolinMusicVoice measure 27]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 28]                        %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 3/4
     
     % [B ViolinMusicVoice measure 29]                        %! SM4
@@ -1648,6 +1793,10 @@ B_ViolinMusicVoice = {
     R1 * 2
     
     % [B ViolinMusicVoice measure 34]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     \revert TextScript.staff-padding                         %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
@@ -1682,15 +1831,27 @@ B_ViolaRHMusicVoice = {
     R1 * 3/4
     
     % [B ViolaRHMusicVoice measure 13]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolaRHMusicVoice measure 14]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 7/4
     
     % [B ViolaRHMusicVoice measure 15]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolaRHMusicVoice measure 16]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 2
     
     % [B ViolaRHMusicVoice measure 17]                       %! SM4
@@ -1700,15 +1861,27 @@ B_ViolaRHMusicVoice = {
     R1 * 1
     
     % [B ViolaRHMusicVoice measure 19]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolaRHMusicVoice measure 20]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolaRHMusicVoice measure 21]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolaRHMusicVoice measure 22]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1/2
     
     % [B ViolaRHMusicVoice measure 23]                       %! SM4
@@ -1718,15 +1891,27 @@ B_ViolaRHMusicVoice = {
     R1 * 3/4
     
     % [B ViolaRHMusicVoice measure 25]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolaRHMusicVoice measure 26]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolaRHMusicVoice measure 27]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B ViolaRHMusicVoice measure 28]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 3/4
     
     % [B ViolaRHMusicVoice measure 29]                       %! SM4
@@ -1745,6 +1930,9 @@ B_ViolaRHMusicVoice = {
     R1 * 2
     
     % [B ViolaRHMusicVoice measure 34]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -1810,15 +1998,29 @@ B_ViolaMusicVoice = {
     R1 * 3/4
     
     % [B ViolaMusicVoice measure 13]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 14]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 7/4
     
     % [B ViolaMusicVoice measure 15]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 16]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 2
     
     % [B ViolaMusicVoice measure 17]                         %! SM4
@@ -1828,15 +2030,29 @@ B_ViolaMusicVoice = {
     R1 * 1
     
     % [B ViolaMusicVoice measure 19]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 20]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolaMusicVoice measure 21]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 22]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1/2
     
     % [B ViolaMusicVoice measure 23]                         %! SM4
@@ -1846,12 +2062,23 @@ B_ViolaMusicVoice = {
     R1 * 3/4
     
     % [B ViolaMusicVoice measure 25]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 26]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B ViolaMusicVoice measure 27]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 28]                         %! SM4
@@ -1888,6 +2115,9 @@ B_ViolaMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \stopStaff                                               %! SM21
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     ef'2.
     :32                                                      %! IC
     \<                                                       %! HC1
@@ -1933,6 +2163,10 @@ B_ViolaMusicVoice = {
     
     % [B ViolaMusicVoice measure 34]                         %! SM4
     \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     \!                                                       %! HC1
     \revert TextScript.staff-padding                         %! OC2
@@ -1968,15 +2202,27 @@ B_CelloRHMusicVoice = {
     R1 * 3/4
     
     % [B CelloRHMusicVoice measure 13]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B CelloRHMusicVoice measure 14]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 7/4
     
     % [B CelloRHMusicVoice measure 15]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B CelloRHMusicVoice measure 16]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 2
     
     % [B CelloRHMusicVoice measure 17]                       %! SM4
@@ -1986,15 +2232,27 @@ B_CelloRHMusicVoice = {
     R1 * 1
     
     % [B CelloRHMusicVoice measure 19]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B CelloRHMusicVoice measure 20]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B CelloRHMusicVoice measure 21]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B CelloRHMusicVoice measure 22]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1/2
     
     % [B CelloRHMusicVoice measure 23]                       %! SM4
@@ -2004,15 +2262,27 @@ B_CelloRHMusicVoice = {
     R1 * 3/4
     
     % [B CelloRHMusicVoice measure 25]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B CelloRHMusicVoice measure 26]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B CelloRHMusicVoice measure 27]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
     % [B CelloRHMusicVoice measure 28]                       %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \startStaff                                              %! SM21
     R1 * 3/4
     
     % [B CelloRHMusicVoice measure 29]                       %! SM4
@@ -2031,6 +2301,9 @@ B_CelloRHMusicVoice = {
     R1 * 2
     
     % [B CelloRHMusicVoice measure 34]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -2045,6 +2318,9 @@ B_CelloRHMusicStaff = {
 B_CelloMusicVoice = {
     
     % [B CelloMusicVoice measure 10]                         %! SM4
+    \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \set CelloStaffGroup.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
@@ -2060,6 +2336,7 @@ B_CelloMusicVoice = {
     \once \override CelloMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set CelloMusicStaff.forceClef = ##t                     %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 1
     \sfz                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
@@ -2088,15 +2365,29 @@ B_CelloMusicVoice = {
     R1 * 3/4
     
     % [B CelloMusicVoice measure 13]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B CelloMusicVoice measure 14]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 7/4
     
     % [B CelloMusicVoice measure 15]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B CelloMusicVoice measure 16]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 2
     
     % [B CelloMusicVoice measure 17]                         %! SM4
@@ -2106,15 +2397,29 @@ B_CelloMusicVoice = {
     R1 * 1
     
     % [B CelloMusicVoice measure 19]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B CelloMusicVoice measure 20]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B CelloMusicVoice measure 21]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B CelloMusicVoice measure 22]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1/2
     
     % [B CelloMusicVoice measure 23]                         %! SM4
@@ -2124,15 +2429,29 @@ B_CelloMusicVoice = {
     R1 * 3/4
     
     % [B CelloMusicVoice measure 25]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B CelloMusicVoice measure 26]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 1
     
     % [B CelloMusicVoice measure 27]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
     % [B CelloMusicVoice measure 28]                         %! SM4
+    \stopStaff                                               %! SM21
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \startStaff                                              %! SM21
     R1 * 3/4
     
     % [B CelloMusicVoice measure 29]                         %! SM4
@@ -2151,6 +2470,10 @@ B_CelloMusicVoice = {
     R1 * 2
     
     % [B CelloMusicVoice measure 34]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
 }

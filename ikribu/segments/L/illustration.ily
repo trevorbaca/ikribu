@@ -162,7 +162,7 @@ L_GlobalSkips = {
     \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.dash-period = 0                          %! SM29:METRONOME_MARK_SPANNER
     \time 8/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \mark #12                                                            %! SM9
+    \mark #12                                                            %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2
@@ -1537,7 +1537,13 @@ L_BassClarinetMusicVoice = {
     R1 * 3/4
     
     % [L BassClarinetMusicVoice measure 175]                     %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+    \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_175
+    \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_175
     
 }
 
@@ -1658,6 +1664,9 @@ L_ViolinRHMusicVoice = {
     R1 * 3/4
     
     % [L ViolinRHMusicVoice measure 175]                     %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -2662,6 +2671,9 @@ L_ViolinMusicVoice = {
     }
     
     % [L ViolinMusicVoice measure 175]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -2783,6 +2795,9 @@ L_ViolaRHMusicVoice = {
     R1 * 3/4
     
     % [L ViolaRHMusicVoice measure 175]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -3517,6 +3532,9 @@ L_ViolaMusicVoice = {
     }
     
     % [L ViolaMusicVoice measure 175]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -3638,6 +3656,9 @@ L_CelloRHMusicVoice = {
     R1 * 3/4
     
     % [L CelloRHMusicVoice measure 175]                      %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -4206,6 +4227,9 @@ L_CelloMusicVoice = {
     R1 * 3/4
     
     % [L CelloMusicVoice measure 175]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     \revert CelloMusicStaff.BarLine.bar-extent               %! OC2
     \revert TextScript.padding                               %! OC2

@@ -196,7 +196,13 @@ i_BassClarinetMusicVoice = {
     \override BassClarinetMusicStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
     
     % [_ BassClarinetMusicVoice measure 2]                       %! SM4
+    \stopStaff                                                   %! SM20
+    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                                  %! SM20
+    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
+    \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_2
+    \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_2
     
 }
 
@@ -222,6 +228,9 @@ i_ViolinRHMusicVoice = {
     \override ViolinRHMusicStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
     
     % [_ ViolinRHMusicVoice measure 2]                       %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -294,6 +303,9 @@ i_ViolinMusicVoice = {
     \override ViolinMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [_ ViolinMusicVoice measure 2]                         %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -320,6 +332,9 @@ i_ViolaRHMusicVoice = {
     \override ViolaRHMusicStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
     
     % [_ ViolaRHMusicVoice measure 2]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -369,6 +384,10 @@ i_ViolaMusicVoice = {
     \override ViolaMusicStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
     
     % [_ ViolaMusicVoice measure 2]                          %! SM4
+    \stopStaff                                               %! SM20
+    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
 }
@@ -395,6 +414,9 @@ i_CelloRHMusicVoice = {
     \override CelloRHMusicStaff.Clef.color = #(x11-color 'violet) %! SM6:DEFAULT_CLEF_REDRAW_COLOR:ST3
     
     % [_ CelloRHMusicVoice measure 2]                        %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
     R1 * 1/4
     
 }
@@ -465,6 +487,10 @@ i_CelloMusicVoice = {
     \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [_ CelloMusicVoice measure 2]                          %! SM4
+    \stopStaff                                               %! SM20
+    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \startStaff                                              %! SM20
+    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
     R1 * 1/4
     
 }
