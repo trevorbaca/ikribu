@@ -170,9 +170,9 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinRHMusicVoice', 'all'),
-        ('ViolaRHMusicVoice', 'all'),
-        ('CelloRHMusicVoice', 'all'),
+        ('ViolinRHMusicVoice', (1, -1)),
+        ('ViolaRHMusicVoice', (1, -1)),
+        ('CelloRHMusicVoice', (1, -1)),
         ),
     baca.dls_staff_padding(9),
     )
