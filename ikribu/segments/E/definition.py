@@ -115,8 +115,8 @@ maker(
 
 maker(
     baca.scopes(
-        ('ViolinMusicVoice', 'all'),
-        ('ViolaMusicVoice', 'all'),
+        ('ViolinMusicVoice', (1, -1)),
+        ('ViolaMusicVoice', (1, -1)),
         ),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
