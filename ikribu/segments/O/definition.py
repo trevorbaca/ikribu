@@ -30,10 +30,7 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    instruments=ikribu.instruments,
     measures_per_stage=measures_per_stage,
-    metronome_marks=ikribu.metronome_marks,
-    score_template=ikribu.ScoreTemplate(),
     metronome_mark_measure_map=metronome_mark_measure_map,
     time_signatures=time_signatures,
     transpose_score=True,
