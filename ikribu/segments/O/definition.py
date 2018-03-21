@@ -39,7 +39,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('O'),
     )
 
@@ -53,94 +53,94 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (9, 20)),
+    ('ViolinMusicVoice', (9, 20)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (9, 20)),
+    ('ViolaMusicVoice', (9, 20)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (5, 20)),
+    ('CelloMusicVoice', (5, 20)),
     baca.make_repeat_tied_notes(),
     baca.ottava_bracket_staff_padding(10),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (3, 6)),
+    ('BassClarinetMusicVoice', (3, 6)),
     baca.pitches('<Bb1 F4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 7),
+    ('BassClarinetMusicVoice', 7),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 8),
+    ('BassClarinetMusicVoice', 8),
     baca.pitches('Bb1'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 9),
+    ('BassClarinetMusicVoice', 9),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 10),
+    ('BassClarinetMusicVoice', 10),
     baca.pitches('<Bb1 F4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (11, 12)),
+    ('BassClarinetMusicVoice', (11, 12)),
     baca.pitches('<Bb1 Ab~4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 13),
+    ('BassClarinetMusicVoice', 13),
     baca.pitches('<Bb1 F4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 14),
+    ('BassClarinetMusicVoice', 14),
     baca.pitches('Bb1'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (15, 16)),
+    ('BassClarinetMusicVoice', (15, 16)),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 17),
+    ('BassClarinetMusicVoice', 17),
     baca.pitches('<Bb1 F4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 18),
+    ('BassClarinetMusicVoice', 18),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (19, 20)),
+    ('BassClarinetMusicVoice', (19, 20)),
     baca.hairpin('p > niente', baca.rleaves()[-3:]),
     baca.pitches('Bb1'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, -1)),
+    ('BassClarinetMusicVoice', (1, -1)),
     baca.tie(selector=baca.pleaves(), repeat=True)
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (9, 20)),
+    ('ViolinMusicVoice', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
@@ -154,7 +154,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (9, 20)),
+    ('ViolaMusicVoice', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
@@ -168,7 +168,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 20)),
+    ('CelloMusicVoice', (1, 20)),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.piecewise(
@@ -182,7 +182,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (5, 8)),
+    ('CelloMusicVoice', (5, 8)),
     baca.single_segment_transition(
         baca.markup('tasto poss.'),
         baca.markup('pos. ord.'),
@@ -190,7 +190,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (9, 12)),
+    ('CelloMusicVoice', (9, 12)),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
         baca.markup.XP(),
@@ -198,7 +198,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (13, 16)),
+    ('CelloMusicVoice', (13, 16)),
     baca.single_segment_transition(
         baca.markup.XP(),
         baca.markup('pos. ord.'),
@@ -206,7 +206,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (17, 20)),
+    ('CelloMusicVoice', (17, 20)),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
         baca.markup('tasto poss.'),

@@ -34,7 +34,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('N'),
     )
 
@@ -44,7 +44,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinRHMusicVoice', (1, 2)),
+    ('ViolinRHMusicVoice', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
@@ -52,14 +52,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 2)),
+    ('ViolinMusicVoice', (1, 2)),
     baca.clef('treble'),
     baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    baca.scope('ViolaRHMusicVoice', (1, 2)),
+    ('ViolaRHMusicVoice', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([4, 14], 16),
         rotation=-1,
@@ -67,13 +67,13 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 2)),
+    ('ViolaMusicVoice', (1, 2)),
     baca.staff_lines(5),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 
 maker(
-    baca.scope('CelloRHMusicVoice', (1, 2)),
+    ('CelloRHMusicVoice', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([8, 20], 20),
         rotation=-2,
@@ -81,12 +81,12 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 2)),
+    ('CelloMusicVoice', (1, 2)),
     ikribu.glissando_rhythm(rotation_1=-8, rotation_2=-2),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1),
+    ('BassClarinetMusicVoice', 1),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
         baca.text_script_extra_offset((0, 7)),
@@ -101,12 +101,12 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 2),
+    ('BassClarinetMusicVoice', 2),
     baca.pitches('<Bb1 D4>'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.tie(repeat=True, selector=baca.tleaves())
     )
 
@@ -128,41 +128,41 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinRHMusicVoice', (1, 2)),
+    ('ViolinRHMusicVoice', (1, 2)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(3.5),
     ikribu.BowContactPointCommand(rotation=0),
     )
 
 maker(
-    baca.scope('ViolaRHMusicVoice', (1, 2)),
+    ('ViolaRHMusicVoice', (1, 2)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(3.5),
     ikribu.BowContactPointCommand(rotation=-1),
     )
 
 maker(
-    baca.scope('CelloRHMusicVoice', (1, 2)),
+    ('CelloRHMusicVoice', (1, 2)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(3.5),
     ikribu.BowContactPointCommand(rotation=-2),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 2)),
+    ('ViolinMusicVoice', (1, 2)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 2)),
+    ('ViolaMusicVoice', (1, 2)),
     baca.clef('treble'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 2)),
+    ('CelloMusicVoice', (1, 2)),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),

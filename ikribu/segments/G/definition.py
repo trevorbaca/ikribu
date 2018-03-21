@@ -40,7 +40,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('G'),
     )
 
@@ -51,48 +51,48 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 11)),
+    ('CelloMusicVoice', (1, 11)),
     baca.make_notes(repeat_ties=True),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 1),
+    ('BassClarinetMusicVoice', 1),
     baca.hairpin('ppp < mp', baca.leaves()),
     baca.pitches('G2'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 3),
+    ('BassClarinetMusicVoice', 3),
     baca.hairpin('pp < mf', baca.leaves()),
     baca.pitches('Gb2'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 5),
+    ('BassClarinetMusicVoice', 5),
     baca.hairpin('p < f', baca.leaves()),
     baca.pitches('F2'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 7),
+    ('BassClarinetMusicVoice', 7),
     baca.hairpin('mf < ff', baca.leaves()),
     baca.pitches('E2'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 9),
+    ('BassClarinetMusicVoice', 9),
     baca.hairpin('f < fff', baca.leaves()),
     baca.pitches('Eb2'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 11),
+    ('BassClarinetMusicVoice', 11),
     baca.hairpin('ff < ffff', baca.leaves()),
     baca.pitches('D2'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 12)),
+    ('CelloMusicVoice', (1, 12)),
     baca.dls_staff_padding(7),
     baca.glissando(),
     baca.piecewise(

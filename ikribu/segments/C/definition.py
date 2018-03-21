@@ -55,7 +55,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('C'),
     )
 
@@ -68,7 +68,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (2, 17)),
+    ('BassClarinetMusicVoice', (2, 17)),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
@@ -80,7 +80,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (2, 3)),
+    ('BassClarinetMusicVoice', (2, 3)),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
         baca.markup.boxed(['stonecircle: π/2 every quarter note']),
@@ -94,7 +94,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
+    ('ViolinMusicVoice', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.make_repeat_tied_notes(),
@@ -113,7 +113,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (2, 16)),
+    ('ViolinMusicVoice', (2, 16)),
     baca.clef('treble'),
     baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
@@ -138,7 +138,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (2, 16)),
+    ('ViolaMusicVoice', (2, 16)),
     baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
@@ -152,7 +152,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.dynamic('sfz'),
     baca.markup.pizz(),
     baca.markup.string_number(3),
@@ -162,7 +162,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (2, 16)),
+    ('CelloMusicVoice', (2, 16)),
     baca.dls_staff_padding(7),
     baca.glissando(),
     baca.natural_harmonics(),

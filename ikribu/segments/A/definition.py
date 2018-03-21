@@ -34,43 +34,43 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('A'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
+    ('ViolinMusicVoice', 1),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (2, 3)),
+    ('ViolaMusicVoice', (2, 3)),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.pitches('D2'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.hairpin('ppp < f', baca.leaves()[:2]),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.hairpin('f > niente', baca.rleaves()[-4:]),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (2, 3)),
+    ('ViolaMusicVoice', (2, 3)),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),

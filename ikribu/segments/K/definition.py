@@ -36,7 +36,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('K'),
     )
 
@@ -71,37 +71,37 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.staff_lines(1),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 5),
+    ('BassClarinetMusicVoice', 5),
     baca.effort_dynamic('mf'),
     baca.shift_dynamic('"mf"'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 9),
+    ('BassClarinetMusicVoice', 9),
     baca.effort_dynamic('mp'),
     baca.shift_dynamic('"mp"'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 13),
+    ('BassClarinetMusicVoice', 13),
     baca.effort_dynamic('p'),
     baca.shift_dynamic('"p"'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 16)),
+    ('BassClarinetMusicVoice', (1, 16)),
     baca.bar_extent((-2, 0), selector=baca.leaves()),
     baca.dls_staff_padding(6),
     baca.staff_positions([0]),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 16)),
+    ('ViolinMusicVoice', (1, 16)),
     baca.dls_staff_padding(8),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
@@ -112,7 +112,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 16)),
+    ('ViolaMusicVoice', (1, 16)),
     baca.dls_staff_padding(8),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
@@ -123,7 +123,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 16)),
+    ('CelloMusicVoice', (1, 16)),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.dls_staff_padding(6),
@@ -132,24 +132,24 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.effort_dynamic('p'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 5),
+    ('CelloMusicVoice', 5),
     baca.effort_dynamic('mp'),
     baca.shift_dynamic('"mp"'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 9),
+    ('CelloMusicVoice', 9),
     baca.effort_dynamic('mf'),
     baca.shift_dynamic('"mf"'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 13),
+    ('CelloMusicVoice', 13),
     baca.effort_dynamic('f'),
     baca.shift_dynamic('"f"'),
     )

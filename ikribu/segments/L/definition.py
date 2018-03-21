@@ -33,12 +33,12 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('L'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 7)),
+    ('BassClarinetMusicVoice', (1, 7)),
     baca.clef('treble'),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
@@ -51,14 +51,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 4)),
+    ('ViolinMusicVoice', (1, 4)),
     baca.staccati(),
     ikribu.clb_rhythm([4]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (6, 8)),
+    ('ViolinMusicVoice', (6, 8)),
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
@@ -76,28 +76,28 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 4),
+    ('ViolinMusicVoice', 4),
     baca.dls_staff_padding(8),
     baca.hairpin('"mp" > niente', baca.tleaves()),
     baca.shift_hairpin_start('"mp"'),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 2)),
+    ('ViolaMusicVoice', (1, 2)),
     baca.staccati(),
     ikribu.clb_rhythm([2]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 2),
+    ('ViolaMusicVoice', 2),
     baca.dls_staff_padding(8),
     baca.hairpin('"mp" > niente', baca.tleaves()),
     baca.shift_hairpin_start('"mp"'),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (4, 8)),
+    ('ViolaMusicVoice', (4, 8)),
     baca.accents(baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
@@ -122,7 +122,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 9)),
+    ('CelloMusicVoice', (1, 9)),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.piecewise(
         abjad.Hairpin(),
@@ -134,26 +134,26 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 2),
+    ('CelloMusicVoice', 2),
     baca.markup.boxed_lines(['graincircle:', 'π/3 every quarter note']),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 3),
+    ('CelloMusicVoice', 3),
     baca.markup.boxed_lines(['graincircle:', 'π/4 every quarter note']),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 4),
+    ('CelloMusicVoice', 4),
     baca.markup.boxed_lines(['graincircle:', 'π/3 every quarter note']),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 5),
+    ('CelloMusicVoice', 5),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 6),
+    ('CelloMusicVoice', 6),
     baca.markup.boxed_lines(['graincircle:', 'π/3 every quarter note']),
     )

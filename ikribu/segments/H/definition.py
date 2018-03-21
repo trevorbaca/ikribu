@@ -33,19 +33,19 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('H'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitches('Db2'),
     )
 
 maker(
-    baca.scope('ViolinRHMusicVoice', (1, 2)),
+    ('ViolinRHMusicVoice', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
@@ -54,14 +54,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 2)),
+    ('ViolinMusicVoice', (1, 2)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    baca.scope('ViolaRHMusicVoice', (1, 2)),
+    ('ViolaRHMusicVoice', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([4, 14], 16),
         rotation=-1,
@@ -70,7 +70,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 2)),
+    ('ViolaMusicVoice', (1, 2)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
