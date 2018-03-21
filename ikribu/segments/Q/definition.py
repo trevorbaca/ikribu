@@ -37,7 +37,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('Q'),
     )
 
@@ -52,12 +52,12 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, -1)),
+    'BassClarinetMusicVoice',
     baca.bar_extent((-2, 0), selector=baca.rleaves()),
     )
 
@@ -70,7 +70,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 3)),
+    ('ViolinMusicVoice', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
@@ -80,7 +80,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 3)),
+    ('ViolaMusicVoice', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
@@ -90,12 +90,12 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 4)),
+    ('CelloMusicVoice', (1, 4)),
     ikribu.inscription_rhythm(),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, -1)),
+    'CelloMusicVoice',
     baca.bar_extent((0, 2), selector=baca.rleaves()),
     baca.accents(),
     baca.effort_dynamic('mf'),

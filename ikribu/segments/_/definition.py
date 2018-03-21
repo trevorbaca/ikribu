@@ -42,7 +42,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 1),
+    ('ViolinMusicVoice', 1),
     baca.make_repeat_tied_notes(),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -53,7 +53,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.make_repeat_tied_notes(),
     baca.clef('treble'),
     baca.dynamic('sfz'),

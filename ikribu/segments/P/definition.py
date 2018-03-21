@@ -36,18 +36,18 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('P'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 2)),
+    ('BassClarinetMusicVoice', (1, 2)),
     baca.make_repeat_tied_notes(),
     baca.pitches('Bb4'),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (3, 4)),
+    ('BassClarinetMusicVoice', (3, 4)),
     baca.glissando(),
     baca.make_repeated_duration_notes((1, 4)),
     baca.suite([
@@ -60,7 +60,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', 5),
+    ('BassClarinetMusicVoice', 5),
     baca.make_repeat_tied_notes(),
     baca.suite([
         baca.pitches('B1'),
@@ -69,18 +69,18 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 5)),
+    ('BassClarinetMusicVoice', (1, 5)),
     baca.hairpin('pp < mf', baca.leaves()[:4]),
     baca.hairpin('mf > niente', baca.rleaves()[4:]),
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (3, 5)),
+    ('BassClarinetMusicVoice', (3, 5)),
     baca.dls_staff_padding(9),
     )
 
 maker(
-    baca.scope('ViolinRHMusicVoice', (1, 3)),
+    ('ViolinRHMusicVoice', (1, 3)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
@@ -91,14 +91,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (1, 3)),
+    ('ViolinMusicVoice', (1, 3)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    baca.scope('ViolaRHMusicVoice', (1, 3)),
+    ('ViolaRHMusicVoice', (1, 3)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bow_rhythm(
@@ -109,14 +109,14 @@ maker(
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (1, 3)),
+    ('ViolaMusicVoice', (1, 3)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 
 maker(
-    baca.scope('CelloRHMusicVoice', (1, 3)),
+    ('CelloRHMusicVoice', (1, 3)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bow_rhythm(
@@ -127,7 +127,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (1, 3)),
+    ('CelloMusicVoice', (1, 3)),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),

@@ -52,7 +52,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scope('GlobalSkips', (1, -1)),
+    'GlobalSkips',
     baca.rehearsal_mark('M'),
     )
 
@@ -70,7 +70,7 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (2, 3)),
+    ('ViolinMusicVoice', (2, 3)),
     ikribu.color_rhythm(3),
     )
 
@@ -80,57 +80,57 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (9, 10)),
+    ('ViolinMusicVoice', (9, 10)),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (13, 14)),
+    ('ViolinMusicVoice', (13, 14)),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 17),
+    ('ViolinMusicVoice', 17),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', (20, 21)),
+    ('ViolinMusicVoice', (20, 21)),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (2, 3)),
+    ('ViolaMusicVoice', (2, 3)),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 6),
+    ('ViolaMusicVoice', 6),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (9, 10)),
+    ('ViolaMusicVoice', (9, 10)),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (13, 14)),
+    ('ViolaMusicVoice', (13, 14)),
     ikribu.color_rhythm(4),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', 17),
+    ('ViolaMusicVoice', 17),
     ikribu.color_rhythm(5),
     )
 
 maker(
-    baca.scope('ViolaMusicVoice', (20, 21)),
+    ('ViolaMusicVoice', (20, 21)),
     ikribu.color_rhythm(3),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.staff_lines(5),
     )
 maker(
@@ -143,7 +143,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 23)),
+    ('BassClarinetMusicVoice', (1, 23)),
     baca.pitches('B1'),
     )
 
@@ -157,7 +157,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (20, 22)),
+    ('BassClarinetMusicVoice', (20, 22)),
     baca.hairpin('ppp < fff', baca.leaves()[:-1]),
     )
 
@@ -208,31 +208,31 @@ maker(
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 5),
+    ('ViolinMusicVoice', 5),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (4)'),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 8),
+    ('ViolinMusicVoice', 8),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (5)'),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 12),
+    ('ViolinMusicVoice', 12),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (6)'),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 16),
+    ('ViolinMusicVoice', 16),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (7)'),
     )
 
 maker(
-    baca.scope('ViolinMusicVoice', 19),
+    ('ViolinMusicVoice', 19),
     baca.effort_dynamic('f'),
     baca.markup.boxed('grainfall (8)'),
     )
@@ -282,7 +282,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 1),
+    ('CelloMusicVoice', 1),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -293,12 +293,12 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', (2, 3)),
+    ('CelloMusicVoice', (2, 3)),
     baca.clef('bass'),
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 5),
+    ('CelloMusicVoice', 5),
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(),
@@ -309,7 +309,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 8),
+    ('CelloMusicVoice', 8),
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
@@ -320,7 +320,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 12),
+    ('CelloMusicVoice', 12),
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(),
@@ -331,7 +331,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 16),
+    ('CelloMusicVoice', 16),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
@@ -342,7 +342,7 @@ maker(
     )
 
 maker(
-    baca.scope('CelloMusicVoice', 19),
+    ('CelloMusicVoice', 19),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(),
