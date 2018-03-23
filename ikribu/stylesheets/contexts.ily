@@ -110,140 +110,159 @@
         \remove Forbid_line_break_engraver
     }
 
-    % BASS CLARINET
-    \context {
-        \Voice
-        \name BassClarinetMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name BassClarinetMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts BassClarinetMusicVoice
-    }
+%    % BASS CLARINET
+%    \context {
+%        \Voice
+%        \name BassClarinetMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name BassClarinetMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts BassClarinetMusicVoice
+%    }
 
-    % VIOLIN
-    \context {
-        \Voice
-        \name ViolinRHMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
     \context {
         \Staff
-        \name ViolinRHMusicStaff
+        \name RHStaff
         \type Engraver_group
         \alias Staff
-        \accepts ViolinRHMusicVoice
         \override Clef.stencil = ##f
         \override StaffSymbol.line-count = 1
         \RemoveAllEmptyStaves
     }
-    \context {
-        \Voice
-        \name ViolinMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolinMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolinMusicVoice
-    }
+
     \context {
         \PianoStaff
-        \name ViolinStaffGroup
+        \name SingleStringStaffGroup
         \type Engraver_group
         \alias PianoStaff
-        \accepts ViolinRHMusicStaff
-        \accepts ViolinMusicStaff
+        \accepts RHStaff
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
     }
 
-    % VIOLA
-    \context {
-        \Voice
-        \name ViolaRHMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolaRHMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolaRHMusicVoice
-        \override Clef.stencil = ##f
-        \override StaffSymbol.line-count = 1
-        \RemoveAllEmptyStaves
-    }
-    \context {
-        \Voice
-        \name ViolaMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name ViolaMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts ViolaMusicVoice
-    }
-    \context {
-        \PianoStaff
-        \name ViolaStaffGroup
-        \type Engraver_group
-        \alias PianoStaff
-        \accepts ViolaRHMusicStaff
-        \accepts ViolaMusicStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-    }
-
-    % CELLO
-    \context {
-        \Voice
-        \name CelloRHMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name CelloRHMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts CelloRHMusicVoice
-        \override Clef.stencil = ##f
-        \override StaffSymbol.line-count = 1
-        \RemoveAllEmptyStaves
-    }
-    \context {
-        \Voice
-        \name CelloMusicVoice
-        \type Engraver_group
-        \alias Voice
-    }
-    \context {
-        \Staff
-        \name CelloMusicStaff
-        \type Engraver_group
-        \alias Staff
-        \accepts CelloMusicVoice
-    }
-    \context {
-        \PianoStaff
-        \name CelloStaffGroup
-        \type Engraver_group
-        \alias PianoStaff
-        \accepts CelloRHMusicStaff
-        \accepts CelloMusicStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-    }
+%    % VIOLIN
+%    \context {
+%        \Voice
+%        \name ViolinRHMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ViolinRHMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ViolinRHMusicVoice
+%        \override Clef.stencil = ##f
+%        \override StaffSymbol.line-count = 1
+%        \RemoveAllEmptyStaves
+%    }
+%    \context {
+%        \Voice
+%        \name ViolinMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ViolinMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ViolinMusicVoice
+%    }
+%    \context {
+%        \PianoStaff
+%        \name ViolinStaffGroup
+%        \type Engraver_group
+%        \alias PianoStaff
+%        \accepts ViolinRHMusicStaff
+%        \accepts ViolinMusicStaff
+%        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+%    }
+%
+%    % VIOLA
+%    \context {
+%        \Voice
+%        \name ViolaRHMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ViolaRHMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ViolaRHMusicVoice
+%        \override Clef.stencil = ##f
+%        \override StaffSymbol.line-count = 1
+%        \RemoveAllEmptyStaves
+%    }
+%    \context {
+%        \Voice
+%        \name ViolaMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name ViolaMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts ViolaMusicVoice
+%    }
+%    \context {
+%        \PianoStaff
+%        \name ViolaStaffGroup
+%        \type Engraver_group
+%        \alias PianoStaff
+%        \accepts ViolaRHMusicStaff
+%        \accepts ViolaMusicStaff
+%        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+%    }
+%
+%    % CELLO
+%    \context {
+%        \Voice
+%        \name CelloRHMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name CelloRHMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts CelloRHMusicVoice
+%        \override Clef.stencil = ##f
+%        \override StaffSymbol.line-count = 1
+%        \RemoveAllEmptyStaves
+%    }
+%    \context {
+%        \Voice
+%        \name CelloMusicVoice
+%        \type Engraver_group
+%        \alias Voice
+%    }
+%    \context {
+%        \Staff
+%        \name CelloMusicStaff
+%        \type Engraver_group
+%        \alias Staff
+%        \accepts CelloMusicVoice
+%    }
+%    \context {
+%        \PianoStaff
+%        \name CelloStaffGroup
+%        \type Engraver_group
+%        \alias PianoStaff
+%        \accepts CelloRHMusicStaff
+%        \accepts CelloMusicStaff
+%        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
+%    }
 
     % ENSEMBLE STAFF GROUP
     \context {
@@ -251,13 +270,14 @@
         \name EnsembleStaffGroup
         \type Engraver_group
         \alias StaffGroup
-        \accepts BassClarinetMusicStaff
-        \accepts ViolinMusicStaff
-        \accepts ViolinStaffGroup
-        \accepts ViolaMusicStaff
-        \accepts ViolaStaffGroup
-        \accepts CelloMusicStaff
-        \accepts CelloStaffGroup
+%        \accepts BassClarinetMusicStaff
+%        \accepts ViolinMusicStaff
+%        \accepts ViolinStaffGroup
+%        \accepts ViolaMusicStaff
+%        \accepts ViolaStaffGroup
+%        \accepts CelloMusicStaff
+%        \accepts CelloStaffGroup
+        \accepts SingleStringStaffGroup
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
     }
 

@@ -29,30 +29,30 @@
                 \context EnsembleStaffGroup = "EnsembleStaffGroup"
                 <<
                     \tag BassClarinet                                                    %! ST4
-                    \context BassClarinetMusicStaff = "BassClarinetMusicStaff"
+                    \context Staff = "BassClarinetMusicStaff"
                     \F_BassClarinetMusicStaff
                     \tag Violin                                                          %! ST4
-                    \context ViolinStaffGroup = "ViolinStaffGroup"
+                    \context SingleStringStaffGroup = "ViolinStaffGroup"
                     <<
-                        \context ViolinRHMusicStaff = "ViolinRHMusicStaff"
+                        \context RHStaff = "ViolinRHMusicStaff"
                         \F_ViolinRHMusicStaff
-                        \context ViolinMusicStaff = "ViolinMusicStaff"
+                        \context Staff = "ViolinMusicStaff"
                         \F_ViolinMusicStaff
                     >>
                     \tag Viola                                                           %! ST4
-                    \context ViolaStaffGroup = "ViolaStaffGroup"
+                    \context SingleStringStaffGroup = "ViolaStaffGroup"
                     <<
-                        \context ViolaRHMusicStaff = "ViolaRHMusicStaff"
+                        \context RHStaff = "ViolaRHMusicStaff"
                         \F_ViolaRHMusicStaff
-                        \context ViolaMusicStaff = "ViolaMusicStaff"
+                        \context Staff = "ViolaMusicStaff"
                         \F_ViolaMusicStaff
                     >>
                     \tag Cello                                                           %! ST4
-                    \context CelloStaffGroup = "CelloStaffGroup"
+                    \context SingleStringStaffGroup = "CelloStaffGroup"
                     <<
-                        \context CelloRHMusicStaff = "CelloRHMusicStaff"
+                        \context RHStaff = "CelloRHMusicStaff"
                         \F_CelloRHMusicStaff
-                        \context CelloMusicStaff = "CelloMusicStaff"
+                        \context Staff = "CelloMusicStaff"
                         \F_CelloMusicStaff
                     >>
                 >>

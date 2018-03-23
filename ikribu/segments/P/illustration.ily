@@ -423,25 +423,25 @@ P_BassClarinetMusicVoice = {
     
     % [P BassClarinetMusicVoice measure 239]                     %! SM4
     \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set Staff.instrumentName = \markup {                        %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
             "Bass clarinet"                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
-    \set BassClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set Staff.shortInstrumentName = \markup {                   %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #10                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
             "B. cl."                                             %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
-    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override BassClarinetMusicStaff.Clef.color = ##f            %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set BassClarinetMusicStaff.forceClef = ##t                  %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Staff.Clef.color = #(x11-color 'green4)      %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override Staff.Clef.color = ##f                             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'''2.
     \<                                                           %! HC1
     \pp                                                          %! HC1
@@ -450,14 +450,14 @@ P_BassClarinetMusicVoice = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“BassClarinet”)                                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-    \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-    \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+    \set Staff.instrumentName = \markup {                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #16                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             "Bass clarinet"                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \set BassClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \set Staff.shortInstrumentName = \markup {                   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #10                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
@@ -472,7 +472,7 @@ P_BassClarinetMusicVoice = {
     \repeatTie                                                   %! TCC
     
     % [P BassClarinetMusicVoice measure 242]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c'''1..
     \repeatTie                                                   %! TCC
     \mf                                                          %! HC1
@@ -480,7 +480,7 @@ P_BassClarinetMusicVoice = {
     % [P BassClarinetMusicVoice measure 243]                     %! SM4
     \override DynamicLineSpanner.staff-padding = #'9             %! OC1
     \once \override Hairpin.circled-tip = ##t                    %! HC1
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'''4
     \repeatTie                                                   %! TCC
     \glissando                                                   %! SC
@@ -535,11 +535,11 @@ P_BassClarinetMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
     % [P BassClarinetMusicVoice measure 246]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
     \!                                                           %! HC1
     \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_246
@@ -549,7 +549,7 @@ P_BassClarinetMusicVoice = {
 
 
 P_BassClarinetMusicStaff = {
-    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \context Voice = "BassClarinetMusicVoice"
     \P_BassClarinetMusicVoice
 }
 
@@ -560,7 +560,7 @@ P_ViolinRHMusicVoice = {
         
         % [P ViolinRHMusicVoice measure 239]                 %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
         \override Script.staff-padding = #7                  %! OC1
         \override TextSpanner.staff-padding = #4             %! OC1
@@ -574,15 +574,15 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-period = 0
         \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
-        \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override ViolinRHMusicStaff.Clef.color = ##f        %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set ViolinRHMusicStaff.forceClef = ##t              %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+        \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set RHStaff.forceClef = ##t                         %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         r4
         \pp                                                  %! SM8:REAPPLIED_DYNAMIC:SM37
         \startTextSpan
-        \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
         \once \override TextSpanner.Y-extent = ##f
@@ -604,7 +604,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \stopTextSpan
@@ -666,7 +666,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
@@ -743,7 +743,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -770,7 +770,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \ppp                                                 %! PCW1
@@ -818,7 +818,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PCW1
@@ -869,7 +869,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PCW1
@@ -921,7 +921,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -972,7 +972,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
@@ -1044,7 +1044,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PCW1
@@ -1071,7 +1071,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PCW1
@@ -1123,7 +1123,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -1174,7 +1174,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
@@ -1221,7 +1221,7 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PCW1
@@ -1262,7 +1262,7 @@ P_ViolinRHMusicVoice = {
         \stopTextSpan
         \startTextSpan
         
-        \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PCW1
@@ -1281,7 +1281,7 @@ P_ViolinRHMusicVoice = {
     
     % [P ViolinRHMusicVoice measure 246]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
@@ -1289,7 +1289,7 @@ P_ViolinRHMusicVoice = {
 
 
 P_ViolinRHMusicStaff = {
-    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \context Voice = "ViolinRHMusicVoice"
     \P_ViolinRHMusicVoice
 }
 
@@ -1300,25 +1300,25 @@ P_ViolinMusicVoice = {
         
         % [P ViolinMusicVoice measure 239]                   %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override ViolinMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override Staff.StaffSymbol.line-count = 5     %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \set ViolinStaffGroup.instrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set SingleStringStaffGroup.instrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #16                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
                 Violin                                       %! SM8:REAPPLIED_INSTRUMENT:SM37
             }                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
-        \set ViolinStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #10                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
                 Vn.                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             }                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
         \clef "treble"                                       %! SM8:REAPPLIED_CLEF:SM37
-        \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-        \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override ViolinMusicStaff.Clef.color = ##f          %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set ViolinMusicStaff.forceClef = ##t                %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override Staff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override Staff.Clef.color = ##f                     %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set Staff.forceClef = ##t                           %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c''8
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! SM8:REAPPLIED_DYNAMIC:SM37
         \glissando                                           %! SC
@@ -1328,18 +1328,18 @@ P_ViolinMusicVoice = {
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 (“Violin”)                                   %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             }                                                %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-        \set ViolinStaffGroup.instrumentName = \markup {     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set SingleStringStaffGroup.instrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             \hcenter-in                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 #16                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 Violin                                       %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             }                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \set ViolinStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             \hcenter-in                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 #10                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 Vn.                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             }                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override Staff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         b''8.
         \glissando                                           %! SC
@@ -1428,16 +1428,16 @@ P_ViolinMusicVoice = {
     
     % [P ViolinMusicVoice measure 246]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override ViolinMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
 }
 
 
 P_ViolinMusicStaff = {
-    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \context Voice = "ViolinMusicVoice"
     \P_ViolinMusicVoice
 }
 
@@ -1448,7 +1448,7 @@ P_ViolaRHMusicVoice = {
         
         % [P ViolaRHMusicVoice measure 239]                  %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
         \override Script.staff-padding = #7                  %! OC1
         \override TextSpanner.staff-padding = #4             %! OC1
@@ -1474,11 +1474,11 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
-        \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override ViolaRHMusicStaff.Clef.color = ##f         %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set ViolaRHMusicStaff.forceClef = ##t               %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set RHStaff.forceClef = ##t                         %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \>                                                   %! PCW1
@@ -1492,7 +1492,7 @@ P_ViolaRHMusicVoice = {
                         \box                                 %! IC
                             "1/2 clt"                        %! IC
             }                                                %! IC
-        \override ViolaRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1537,7 +1537,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -1567,7 +1567,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -1615,7 +1615,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PCW1
@@ -1670,7 +1670,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
@@ -1742,7 +1742,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -1793,7 +1793,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \ppp                                                 %! PCW1
@@ -1820,7 +1820,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -1872,7 +1872,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -1923,7 +1923,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
@@ -1973,7 +1973,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
@@ -2024,7 +2024,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -2074,7 +2074,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \ppp                                                 %! PCW1
@@ -2149,7 +2149,7 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PCW1
@@ -2191,7 +2191,7 @@ P_ViolaRHMusicVoice = {
         \stopTextSpan
         \startTextSpan
         
-        \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PCW1
@@ -2210,7 +2210,7 @@ P_ViolaRHMusicVoice = {
     
     % [P ViolaRHMusicVoice measure 246]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
@@ -2218,7 +2218,7 @@ P_ViolaRHMusicVoice = {
 
 
 P_ViolaRHMusicStaff = {
-    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \context Voice = "ViolaRHMusicVoice"
     \P_ViolaRHMusicVoice
 }
 
@@ -2229,25 +2229,25 @@ P_ViolaMusicVoice = {
         
         % [P ViolaMusicVoice measure 239]                    %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override ViolaMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override Staff.StaffSymbol.line-count = 5     %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \set ViolaStaffGroup.instrumentName = \markup {      %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set SingleStringStaffGroup.instrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #16                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
                 Viola                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
             }                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
-        \set ViolaStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #10                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
                 Va.                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             }                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
         \clef "treble"                                       %! SM8:REAPPLIED_CLEF:SM37
-        \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-        \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override ViolaMusicStaff.Clef.color = ##f           %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set ViolaMusicStaff.forceClef = ##t                 %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override Staff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override Staff.Clef.color = ##f                     %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set Staff.forceClef = ##t                           %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c''2..
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! SM8:REAPPLIED_DYNAMIC:SM37
         \glissando                                           %! SC
@@ -2256,18 +2256,18 @@ P_ViolaMusicVoice = {
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 (“Viola”)                                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             }                                                %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-        \set ViolaStaffGroup.instrumentName = \markup {      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set SingleStringStaffGroup.instrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             \hcenter-in                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 #16                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 Viola                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             }                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \set ViolaStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             \hcenter-in                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 #10                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 Va.                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             }                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override Staff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         d'8
         \glissando                                           %! SC
@@ -2343,16 +2343,16 @@ P_ViolaMusicVoice = {
     
     % [P ViolaMusicVoice measure 246]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override ViolaMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
 }
 
 
 P_ViolaMusicStaff = {
-    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \context Voice = "ViolaMusicVoice"
     \P_ViolaMusicVoice
 }
 
@@ -2363,7 +2363,7 @@ P_CelloRHMusicVoice = {
         
         % [P CelloRHMusicVoice measure 239]                  %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
         \override Script.staff-padding = #7                  %! OC1
         \override TextSpanner.staff-padding = #4             %! OC1
@@ -2377,15 +2377,15 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-period = 0
         \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
-        \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override CelloRHMusicStaff.Clef.color = ##f         %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set CelloRHMusicStaff.forceClef = ##t               %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+        \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+    %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+        \set RHStaff.forceClef = ##t                         %! SM8:REAPPLIED_CLEF:SM33:SM37
+        \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         r4
         \ppp                                                 %! SM8:REAPPLIED_DYNAMIC:SM37
         \startTextSpan
-        \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
         \once \override TextSpanner.Y-extent = ##f
@@ -2407,7 +2407,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \stopTextSpan
@@ -2465,7 +2465,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
@@ -2546,7 +2546,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -2573,7 +2573,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \ppp                                                 %! PCW1
@@ -2621,7 +2621,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PCW1
@@ -2671,7 +2671,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -2749,7 +2749,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
@@ -2798,7 +2798,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
@@ -2875,7 +2875,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PCW1
@@ -2923,7 +2923,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PCW1
@@ -2974,7 +2974,7 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PCW1
@@ -3059,14 +3059,14 @@ P_CelloRHMusicVoice = {
                 }
             }
         \once \override TextSpanner.dash-fraction = 1
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
         
-        \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
@@ -3084,7 +3084,7 @@ P_CelloRHMusicVoice = {
     
     % [P CelloRHMusicVoice measure 246]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
@@ -3092,7 +3092,7 @@ P_CelloRHMusicVoice = {
 
 
 P_CelloRHMusicStaff = {
-    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \context Voice = "CelloRHMusicVoice"
     \P_CelloRHMusicVoice
 }
 
@@ -3103,27 +3103,27 @@ P_CelloMusicVoice = {
         
         % [P CelloMusicVoice measure 239]                    %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+        \once \override Staff.StaffSymbol.line-count = 5     %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
-    %%% \once \override CelloMusicStaff.Clef.X-extent = ##f  %! OC1:MEASURE_239:SHIFTED_CLEF
-    %%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_239:SHIFTED_CLEF
-        \set CelloStaffGroup.instrumentName = \markup {      %! SM8:REAPPLIED_INSTRUMENT:SM37
+    %%% \once \override Staff.Clef.X-extent = ##f            %! OC1:MEASURE_239:SHIFTED_CLEF
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0) %! OC1:MEASURE_239:SHIFTED_CLEF
+        \set SingleStringStaffGroup.instrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #16                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
                 Cello                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
             }                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
-        \set CelloStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
+        \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
                 #10                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
                 Vc.                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             }                                                %! SM8:REAPPLIED_INSTRUMENT:SM37
         \clef "tenor"                                        %! SM8:EXPLICIT_CLEF:IC
-        \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-        \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-        \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-    %@% \override CelloMusicStaff.Clef.color = ##f           %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-        \set CelloMusicStaff.forceClef = ##t                 %! SM8:EXPLICIT_CLEF:SM33:IC
+        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+        \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+        \once \override Staff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
+    %@% \override Staff.Clef.color = ##f                     %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+        \set Staff.forceClef = ##t                           %! SM8:EXPLICIT_CLEF:SM33:IC
         a,8
         \p                                                   %! SM8:REAPPLIED_DYNAMIC:SM37
         \glissando                                           %! SC
@@ -3133,18 +3133,18 @@ P_CelloMusicVoice = {
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 (“Cello”)                                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             }                                                %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-        \set CelloStaffGroup.instrumentName = \markup {      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+        \set SingleStringStaffGroup.instrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             \hcenter-in                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 #16                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 Cello                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             }                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \set CelloStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+        \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             \hcenter-in                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 #10                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
                 Vc.                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             }                                                %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-        \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
         
         g,8.
         \glissando                                           %! SC
@@ -3225,15 +3225,15 @@ P_CelloMusicVoice = {
     
     % [P CelloMusicVoice measure 246]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
 }
 
 
 P_CelloMusicStaff = {
-    \context CelloMusicVoice = "CelloMusicVoice"
+    \context Voice = "CelloMusicVoice"
     \P_CelloMusicVoice
 }

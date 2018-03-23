@@ -1758,25 +1758,25 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 176]                     %! SM4
     \stopStaff                                                   %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                  %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set Staff.instrumentName = \markup {                        %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
             "Bass clarinet"                                      %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
-    \set BassClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set Staff.shortInstrumentName = \markup {                   %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             #10                                                  %! SM8:REAPPLIED_INSTRUMENT:SM37
             "B. cl."                                             %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                        %! SM8:REAPPLIED_INSTRUMENT:SM37
     \clef "treble"                                               %! SM8:REAPPLIED_CLEF:SM37
-    \once \override BassClarinetMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override BassClarinetMusicStaff.Clef.color = ##f            %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set BassClarinetMusicStaff.forceClef = ##t                  %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-    \once \override BassClarinetMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override Staff.Clef.color = #(x11-color 'green4)      %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override Staff.Clef.color = ##f                             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 3/4
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1784,45 +1784,45 @@ M_BassClarinetMusicVoice = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“BassClarinet”)                                     %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \override BassClarinetMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-    \override BassClarinetMusicStaff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-    \set BassClarinetMusicStaff.instrumentName = \markup {       %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+    \set Staff.instrumentName = \markup {                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #16                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             "Bass clarinet"                                      %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \set BassClarinetMusicStaff.shortInstrumentName = \markup {  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \set Staff.shortInstrumentName = \markup {                   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #10                                                  %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     
     % [M BassClarinetMusicVoice measure 177]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs1
     \<                                                           %! HC1
     \p                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 178]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     cs1
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 179]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs2
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 180]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
     \!                                                           %! HC1
 %%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_180
@@ -1830,56 +1830,56 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 181]                     %! SM4
     \stopStaff                                                   %! SM21
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
     R1 * 7/4
     
     % [M BassClarinetMusicVoice measure 182]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     cs2.
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     
     % [M BassClarinetMusicVoice measure 183]                     %! SM4
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
 %%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_183
 %%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_183
     
     % [M BassClarinetMusicVoice measure 184]                     %! SM4
     \stopStaff                                                   %! SM21
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
     R1 * 1
     
     % [M BassClarinetMusicVoice measure 185]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs2.
     \<                                                           %! HC1
     \p                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 186]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     cs1
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 187]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs2.
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 188]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
     \!                                                           %! HC1
     \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_188
@@ -1887,36 +1887,36 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 189]                     %! SM4
     \stopStaff                                                   %! SM21
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
     R1 * 1/2
     
     % [M BassClarinetMusicVoice measure 190]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs1..
     \<                                                           %! HC1
     \p                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 191]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     cs1..
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 192]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs\breve
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 193]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
     \!                                                           %! HC1
 %%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_193
@@ -1924,32 +1924,32 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 194]                     %! SM4
     \stopStaff                                                   %! SM21
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
     R1 * 7/4
     
     % [M BassClarinetMusicVoice measure 195]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     cs2.
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     
     % [M BassClarinetMusicVoice measure 196]                     %! SM4
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
 %%% \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_196
 %%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_196
     
     % [M BassClarinetMusicVoice measure 197]                     %! SM4
     \stopStaff                                                   %! SM21
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
     R1 * 1/2
     
     % [M BassClarinetMusicVoice measure 198]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs\breve
     \<                                                           %! HC1
     \ppp                                                         %! HC1
@@ -1979,7 +1979,7 @@ M_BassClarinetMusicVoice = {
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 205]                     %! SM4
-    \once \override BassClarinetMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     cs2.
     \repeatTie
     \fff                                                         %! HC1
@@ -1990,9 +1990,9 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 207]                     %! SM4
     \stopStaff                                                   %! SM20
-    \once \override BassClarinetMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
-    \once \override BassClarinetMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
     \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_207
     \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_207
@@ -2001,7 +2001,7 @@ M_BassClarinetMusicVoice = {
 
 
 M_BassClarinetMusicStaff = {
-    \context BassClarinetMusicVoice = "BassClarinetMusicVoice"
+    \context Voice = "BassClarinetMusicVoice"
     \M_BassClarinetMusicVoice
 }
 
@@ -2010,17 +2010,17 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 176]                     %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
-    \once \override ViolinRHMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override ViolinRHMusicStaff.Clef.color = ##f            %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set ViolinRHMusicStaff.forceClef = ##t                  %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override ViolinRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override ViolinRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override RHStaff.Clef.color = ##f                       %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set RHStaff.forceClef = ##t                             %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 3/4
     \ppp                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
-    \override ViolinRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [M ViolinRHMusicVoice measure 177]                     %! SM4
     R1 * 1
@@ -2033,13 +2033,13 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 180]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 181]                     %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     
@@ -2048,13 +2048,13 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 183]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 184]                     %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1
     
@@ -2069,13 +2069,13 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 188]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 189]                     %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     
@@ -2090,13 +2090,13 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 193]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 194]                     %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     
@@ -2105,13 +2105,13 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 196]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 197]                     %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     
@@ -2144,7 +2144,7 @@ M_ViolinRHMusicVoice = {
     
     % [M ViolinRHMusicVoice measure 207]                     %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
@@ -2152,7 +2152,7 @@ M_ViolinRHMusicVoice = {
 
 
 M_ViolinRHMusicStaff = {
-    \context ViolinRHMusicVoice = "ViolinRHMusicVoice"
+    \context Voice = "ViolinRHMusicVoice"
     \M_ViolinRHMusicVoice
 }
 
@@ -2161,29 +2161,29 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 176]                       %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override DynamicLineSpanner.staff-padding = #'8         %! OC1
     \override TupletBracket.staff-padding = #3               %! OC1
     \override TextScript.padding = #2.5                      %! OC1
     \override TextScript.parent-alignment-X = #0             %! OC1
-    \set ViolinStaffGroup.instrumentName = \markup {         %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set SingleStringStaffGroup.instrumentName = \markup {   %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             Violin                                           %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
-    \set ViolinStaffGroup.shortInstrumentName = \markup {    %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             Vn.                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
-    \once \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-    \once \override ViolinMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override ViolinMusicStaff.Clef.color = ##f              %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set ViolinMusicStaff.forceClef = ##t                    %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override ViolinMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override Staff.Clef.color = #(x11-color 'green4)  %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override Staff.Clef.color = ##f                         %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'2.
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
@@ -2206,22 +2206,22 @@ M_ViolinMusicVoice = {
                     }                                        %! IC
             }
         }
-    \override ViolinStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-    \set ViolinStaffGroup.instrumentName = \markup {         %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+    \set SingleStringStaffGroup.instrumentName = \markup {   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             Violin                                           %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \set ViolinStaffGroup.shortInstrumentName = \markup {    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             Vn.                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \override ViolinMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \times 2/3 {
         
         % [M ViolinMusicVoice measure 177]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'2
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -2262,7 +2262,7 @@ M_ViolinMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
@@ -2270,14 +2270,14 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 180]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 181]                       %! SM4
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'1..
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2293,7 +2293,7 @@ M_ViolinMusicVoice = {
     \times 3/4 {
         
         % [M ViolinMusicVoice measure 182]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c'4
         :32                                                  %! IC
         \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2318,14 +2318,14 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 183]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 184]                       %! SM4
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'1
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2341,7 +2341,7 @@ M_ViolinMusicVoice = {
     \times 3/5 {
         
         % [M ViolinMusicVoice measure 185]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'4
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -2401,7 +2401,7 @@ M_ViolinMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
@@ -2409,14 +2409,14 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 188]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 189]                       %! SM4
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'2
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2432,7 +2432,7 @@ M_ViolinMusicVoice = {
     \times 7/12 {
         
         % [M ViolinMusicVoice measure 190]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'1
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -2474,7 +2474,7 @@ M_ViolinMusicVoice = {
         c'1
         -\accent                                             %! IC
         
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'1
         :32                                                  %! IC
         \fff                                                 %! HC1
@@ -2482,14 +2482,14 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 193]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 194]                       %! SM4
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'1..
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2505,7 +2505,7 @@ M_ViolinMusicVoice = {
     \times 3/4 {
         
         % [M ViolinMusicVoice measure 195]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         c'4
         :32                                                  %! IC
         \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2530,14 +2530,14 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 196]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 197]                       %! SM4
-    \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'2
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
@@ -2552,7 +2552,7 @@ M_ViolinMusicVoice = {
     \times 4/5 {
         
         % [M ViolinMusicVoice measure 198]                   %! SM4
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'2
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -2649,7 +2649,7 @@ M_ViolinMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolinMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
@@ -2669,7 +2669,7 @@ M_ViolinMusicVoice = {
     
     % [M ViolinMusicVoice measure 207]                       %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolinMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     \revert DynamicLineSpanner.staff-padding                 %! OC2
@@ -2681,7 +2681,7 @@ M_ViolinMusicVoice = {
 
 
 M_ViolinMusicStaff = {
-    \context ViolinMusicVoice = "ViolinMusicVoice"
+    \context Voice = "ViolinMusicVoice"
     \M_ViolinMusicVoice
 }
 
@@ -2690,17 +2690,17 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 176]                      %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
-    \once \override ViolaRHMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override ViolaRHMusicStaff.Clef.color = ##f             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set ViolaRHMusicStaff.forceClef = ##t                   %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override ViolaRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override ViolaRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override RHStaff.Clef.color = ##f                       %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set RHStaff.forceClef = ##t                             %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 3/4
     \p                                                       %! SM8:REAPPLIED_DYNAMIC:SM37
-    \override ViolaRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [M ViolaRHMusicVoice measure 177]                      %! SM4
     R1 * 1
@@ -2713,13 +2713,13 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 180]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 181]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     
@@ -2728,13 +2728,13 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 183]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 184]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1
     
@@ -2749,13 +2749,13 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 188]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 189]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     
@@ -2770,13 +2770,13 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 193]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 194]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     
@@ -2785,13 +2785,13 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 196]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 197]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     
@@ -2824,7 +2824,7 @@ M_ViolaRHMusicVoice = {
     
     % [M ViolaRHMusicVoice measure 207]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
@@ -2832,7 +2832,7 @@ M_ViolaRHMusicVoice = {
 
 
 M_ViolaRHMusicStaff = {
-    \context ViolaRHMusicVoice = "ViolaRHMusicVoice"
+    \context Voice = "ViolaRHMusicVoice"
     \M_ViolaRHMusicVoice
 }
 
@@ -2841,29 +2841,29 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 176]                        %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override DynamicLineSpanner.staff-padding = #'8         %! OC1
     \override TupletBracket.staff-padding = #3               %! OC1
     \override TextScript.padding = #2.5                      %! OC1
     \override TextScript.parent-alignment-X = #0             %! OC1
-    \set ViolaStaffGroup.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set SingleStringStaffGroup.instrumentName = \markup {   %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             Viola                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
-    \set ViolaStaffGroup.shortInstrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             Va.                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
-    \once \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-    \once \override ViolaMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override ViolaMusicStaff.Clef.color = ##f               %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set ViolaMusicStaff.forceClef = ##t                     %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override ViolaMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override Staff.Clef.color = #(x11-color 'green4)  %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override Staff.Clef.color = ##f                         %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 3/4
     \fff                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2871,23 +2871,23 @@ M_ViolaMusicVoice = {
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“Viola”)                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \override ViolaStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-    \set ViolaStaffGroup.instrumentName = \markup {          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+    \set SingleStringStaffGroup.instrumentName = \markup {   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             Viola                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \set ViolaStaffGroup.shortInstrumentName = \markup {     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             Va.                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \override ViolaMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [M ViolaMusicVoice measure 177]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'4
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -2932,7 +2932,7 @@ M_ViolaMusicVoice = {
         c'8
         :32                                                  %! IC
         
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'8
         -\accent                                             %! IC
         \fff                                                 %! HC1
@@ -2941,13 +2941,13 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 180]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 181]                        %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     \tweak text #tuplet-number::calc-fraction-text
@@ -2972,20 +2972,20 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 183]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 184]                        %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     R1 * 1
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
         % [M ViolaMusicVoice measure 185]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'4
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -3019,7 +3019,7 @@ M_ViolaMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
@@ -3027,20 +3027,20 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 188]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 189]                        %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
         % [M ViolaMusicVoice measure 190]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'2
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -3084,7 +3084,7 @@ M_ViolaMusicVoice = {
         c'2
         :32                                                  %! IC
         
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'2
         -\accent                                             %! IC
         \fff                                                 %! HC1
@@ -3092,13 +3092,13 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 193]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 194]                        %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     \tweak text #tuplet-number::calc-fraction-text
@@ -3123,19 +3123,19 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 196]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 197]                        %! SM4
     \stopStaff                                               %! SM21
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     \times 2/3 {
         
         % [M ViolaMusicVoice measure 198]                    %! SM4
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'1
         :32                                                  %! IC
         \<                                                   %! HC1
@@ -3194,7 +3194,7 @@ M_ViolaMusicVoice = {
         c'4
         -\accent                                             %! IC
         
-        \once \override ViolaMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
@@ -3214,7 +3214,7 @@ M_ViolaMusicVoice = {
     
     % [M ViolaMusicVoice measure 207]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override ViolaMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     \revert DynamicLineSpanner.staff-padding                 %! OC2
@@ -3226,7 +3226,7 @@ M_ViolaMusicVoice = {
 
 
 M_ViolaMusicStaff = {
-    \context ViolaMusicVoice = "ViolaMusicVoice"
+    \context Voice = "ViolaMusicVoice"
     \M_ViolaMusicVoice
 }
 
@@ -3235,17 +3235,17 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 176]                      %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
-    \once \override CelloRHMusicStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-%@% \override CelloRHMusicStaff.Clef.color = ##f             %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set CelloRHMusicStaff.forceClef = ##t                   %! SM8:REAPPLIED_CLEF:SM33:SM37
-    \once \override CelloRHMusicStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override CelloRHMusicVoice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
+    \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override RHStaff.Clef.color = ##f                       %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set RHStaff.forceClef = ##t                             %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 3/4
     \pp                                                      %! SM8:REAPPLIED_DYNAMIC:SM37
-    \override CelloRHMusicStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [M CelloRHMusicVoice measure 177]                      %! SM4
     R1 * 1
@@ -3258,13 +3258,13 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 180]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 181]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     
@@ -3273,13 +3273,13 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 183]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 184]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1
     
@@ -3294,13 +3294,13 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 188]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 189]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     
@@ -3315,13 +3315,13 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 193]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 194]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 7/4
     
@@ -3330,13 +3330,13 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 196]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 197]                      %! SM4
     \stopStaff                                               %! SM21
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 1 %! SM21
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
     
@@ -3369,7 +3369,7 @@ M_CelloRHMusicVoice = {
     
     % [M CelloRHMusicVoice measure 207]                      %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloRHMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
     
@@ -3377,7 +3377,7 @@ M_CelloRHMusicVoice = {
 
 
 M_CelloRHMusicStaff = {
-    \context CelloRHMusicVoice = "CelloRHMusicVoice"
+    \context Voice = "CelloRHMusicVoice"
     \M_CelloRHMusicVoice
 }
 
@@ -3386,28 +3386,28 @@ M_CelloMusicVoice = {
     
     % [M CelloMusicVoice measure 176]                        %! SM4
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM8:EXPLICIT_STAFF_LINES:IC
+    \once \override Staff.StaffSymbol.line-count = 5         %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override NoteHead.style = #'harmonic              %! OC1
-%%% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_176:SHIFTED_CLEF
-%%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_176:SHIFTED_CLEF
-    \set CelloStaffGroup.instrumentName = \markup {          %! SM8:REAPPLIED_INSTRUMENT:SM37
+%%% \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_176:SHIFTED_CLEF
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_176:SHIFTED_CLEF
+    \set SingleStringStaffGroup.instrumentName = \markup {   %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #16                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             Cello                                            %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
-    \set CelloStaffGroup.shortInstrumentName = \markup {     %! SM8:REAPPLIED_INSTRUMENT:SM37
+    \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REAPPLIED_INSTRUMENT:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_INSTRUMENT:SM37
             #10                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
             Vc.                                              %! SM8:REAPPLIED_INSTRUMENT:SM37
         }                                                    %! SM8:REAPPLIED_INSTRUMENT:SM37
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
-    \once \override CelloMusicStaff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_INSTRUMENT_COLOR:SM37
+    \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fqf''2.
     -\laissezVibrer                                          %! IC
     \sfz                                                     %! SM8:EXPLICIT_DYNAMIC:IC
@@ -3433,18 +3433,18 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 III                                          %! IC
         }                                                    %! IC
-    \override CelloStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
-    \set CelloStaffGroup.instrumentName = \markup {          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_INSTRUMENT_COLOR:SM37
+    \set SingleStringStaffGroup.instrumentName = \markup {   %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #16                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             Cello                                            %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \set CelloStaffGroup.shortInstrumentName = \markup {     %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
+    \set SingleStringStaffGroup.shortInstrumentName = \markup { %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         \hcenter-in                                          %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             #10                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
             Vc.                                              %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 177]                        %! SM4
     \ottava #-1                                              %! SC
@@ -3481,22 +3481,22 @@ M_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     c,,1
     \<                                                       %! HC1
     \mf                                                      %! HC1
     \startTextSpan                                           %! PCW1
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 178]                        %! SM4
     c,,1
     \repeatTie
     
     % [M CelloMusicVoice measure 179]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c,,2
     \repeatTie
     \fff                                                     %! HC1
@@ -3505,22 +3505,22 @@ M_CelloMusicVoice = {
     
     % [M CelloMusicVoice measure 180]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
     % [M CelloMusicVoice measure 181]                        %! SM4
     \once \override NoteHead.style = #'harmonic              %! OC1
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_181:SHIFTED_CLEF
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_181:SHIFTED_CLEF
+    \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_181:SHIFTED_CLEF
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_181:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     g''1..
     -\laissezVibrer                                          %! IC
@@ -3535,15 +3535,15 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 III                                          %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 182]                        %! SM4
     \ottava #-1                                              %! SC
     \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c,,2.
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
@@ -3551,27 +3551,27 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 XP                                           %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \ottava #0                                               %! SC
     
     % [M CelloMusicVoice measure 183]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
     % [M CelloMusicVoice measure 184]                        %! SM4
     \once \override NoteHead.style = #'harmonic              %! OC1
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_184:SHIFTED_CLEF
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_184:SHIFTED_CLEF
+    \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_184:SHIFTED_CLEF
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_184:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     fqf''1
     -\laissezVibrer                                          %! IC
@@ -3586,7 +3586,7 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 III                                          %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 185]                        %! SM4
     \ottava #-1                                              %! SC
@@ -3623,22 +3623,22 @@ M_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,,2.
     \<                                                       %! HC1
     \mf                                                      %! HC1
     \startTextSpan                                           %! PCW1
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 186]                        %! SM4
     c,,1
     \repeatTie
     
     % [M CelloMusicVoice measure 187]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c,,2.
     \repeatTie
     \fff                                                     %! HC1
@@ -3647,22 +3647,22 @@ M_CelloMusicVoice = {
     
     % [M CelloMusicVoice measure 188]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
     % [M CelloMusicVoice measure 189]                        %! SM4
     \once \override NoteHead.style = #'harmonic              %! OC1
-%%% \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_189:SHIFTED_CLEF
-%%% \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_189:SHIFTED_CLEF
+%%% \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_189:SHIFTED_CLEF
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_189:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     g''2
     -\laissezVibrer                                          %! IC
@@ -3677,7 +3677,7 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 III                                          %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 190]                        %! SM4
     \ottava #-1                                              %! SC
@@ -3714,22 +3714,22 @@ M_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,,1..
     \<                                                       %! HC1
     \mf                                                      %! HC1
     \startTextSpan                                           %! PCW1
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 191]                        %! SM4
     c,,1..
     \repeatTie
     
     % [M CelloMusicVoice measure 192]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c,,\breve
     \repeatTie
     \fff                                                     %! HC1
@@ -3738,22 +3738,22 @@ M_CelloMusicVoice = {
     
     % [M CelloMusicVoice measure 193]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
     % [M CelloMusicVoice measure 194]                        %! SM4
     \once \override NoteHead.style = #'harmonic              %! OC1
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_194:SHIFTED_CLEF
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_194:SHIFTED_CLEF
+    \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_194:SHIFTED_CLEF
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_194:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     a''1..
     -\laissezVibrer                                          %! IC
@@ -3768,15 +3768,15 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 III                                          %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 195]                        %! SM4
     \ottava #-1                                              %! SC
     \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c,,2.
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
@@ -3784,27 +3784,27 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 XP                                           %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \ottava #0                                               %! SC
     
     % [M CelloMusicVoice measure 196]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
     % [M CelloMusicVoice measure 197]                        %! SM4
     \once \override NoteHead.style = #'harmonic              %! OC1
-    \once \override CelloMusicStaff.Clef.X-extent = ##f      %! OC1:MEASURE_197:SHIFTED_CLEF
-    \once \override CelloMusicStaff.Clef.extra-offset = #'(-2.5 . 0) %! OC1:MEASURE_197:SHIFTED_CLEF
+    \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_197:SHIFTED_CLEF
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_197:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 5 %! SM21
+    \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     cqs'''2
     -\laissezVibrer                                          %! IC
@@ -3819,7 +3819,7 @@ M_CelloMusicVoice = {
             \upright                                         %! IC
                 III                                          %! IC
         }                                                    %! IC
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 198]                        %! SM4
     \ottava #-1                                              %! SC
@@ -3856,15 +3856,15 @@ M_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \clef "bass"                                             %! SM8:EXPLICIT_CLEF:IC
-    \once \override CelloMusicStaff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
-%@% \override CelloMusicStaff.Clef.color = ##f               %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
-    \set CelloMusicStaff.forceClef = ##t                     %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
+%@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
+    \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,,\breve
     \<                                                       %! HC1
     \mf                                                      %! HC1
     \startTextSpan                                           %! PCW1
-    \override CelloMusicStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 199]                        %! SM4
     c,,1..
@@ -3879,7 +3879,7 @@ M_CelloMusicVoice = {
     \repeatTie
     
     % [M CelloMusicVoice measure 202]                        %! SM4
-    \once \override CelloMusicVoice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c,,2.
     \repeatTie
     \fff                                                     %! HC1
@@ -3900,15 +3900,15 @@ M_CelloMusicVoice = {
     
     % [M CelloMusicVoice measure 207]                        %! SM4
     \stopStaff                                               %! SM20
-    \once \override CelloMusicStaff.StaffSymbol.line-count = 0 %! SM20
+    \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
-    \once \override CelloMusicStaff.BarLine.bar-extent = #'(-2 . 2) %! SM20
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
     
 }
 
 
 M_CelloMusicStaff = {
-    \context CelloMusicVoice = "CelloMusicVoice"
+    \context Voice = "CelloMusicVoice"
     \M_CelloMusicVoice
 }
