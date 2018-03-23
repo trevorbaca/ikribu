@@ -41,14 +41,14 @@ maker(
 maker(
     ('BassClarinetMusicVoice', (1, 4)),
     baca.make_repeat_tied_notes(),
-    baca.pitches('F#3'),
+    baca.pitch('F#3'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (6, 8)),
     baca.make_repeat_tied_notes(),
     baca.hairpin('sfp > ppp'),
-    baca.pitches('G2'),
+    baca.pitch('G2'),
     )
 
 maker(
@@ -68,7 +68,7 @@ maker(
     ('ViolinMusicVoice', (6, 7)),
     baca.clef('treble'),
     baca.markup.string_numbers([2, 3]),
-    baca.pitches('<E4 F#4>'),
+    baca.pitch('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
@@ -83,7 +83,7 @@ maker(
     baca.clef('treble'),
     baca.clef_extra_offset((-2.5, 0)),
     baca.clef_x_extent_false(),
-    baca.pitches('<Eb4 F4>'),
+    baca.pitch('<Eb4 F4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
@@ -96,7 +96,7 @@ maker(
     ('CelloMusicVoice', (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.hairpin('p < ff'),
-    baca.pitches('F#3'),
+    baca.pitch('F#3'),
     baca.stem_tremolo(),
     baca.single_segment_transition(
         baca.markup('(trem. flaut. tast.)'),

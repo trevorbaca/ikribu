@@ -41,7 +41,7 @@ maker(
     ('BassClarinetMusicVoice', (1, 2)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
-    baca.pitches('Db2'),
+    baca.pitch('Db2'),
     )
 
 maker(

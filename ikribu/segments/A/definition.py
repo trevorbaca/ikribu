@@ -56,7 +56,7 @@ maker(
 
 maker(
     ('BassClarinetMusicVoice', (1, 2)),
-    baca.pitches('D2'),
+    baca.pitch('D2'),
     )
 
 maker(

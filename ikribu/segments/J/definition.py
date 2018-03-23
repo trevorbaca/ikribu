@@ -144,7 +144,7 @@ maker(
     baca.markup.vib_poco(),
     baca.ottava_bassa(),
     baca.ottava_bracket_staff_padding(8),
-    baca.pitches('D1'),
+    baca.pitch('D1'),
     )
 
 maker(

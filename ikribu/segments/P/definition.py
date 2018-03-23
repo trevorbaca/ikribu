@@ -43,7 +43,7 @@ maker(
 maker(
     ('BassClarinetMusicVoice', (1, 2)),
     baca.make_repeat_tied_notes(),
-    baca.pitches('Bb4'),
+    baca.pitch('Bb4'),
     )
 
 maker(
@@ -63,7 +63,7 @@ maker(
     ('BassClarinetMusicVoice', 5),
     baca.make_repeat_tied_notes(),
     baca.suite([
-        baca.pitches('B1'),
+        baca.pitch('B1'),
         baca.repeat_tie_to(),
         ]),
     )

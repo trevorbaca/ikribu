@@ -97,12 +97,12 @@ maker(
         'introduce upper partials gradually;',
         'breathe as necessary before downbeats',
         ]),
-    baca.pitches('Bb1'),
+    baca.pitch('Bb1'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 2),
-    baca.pitches('<Bb1 D4>'),
+    baca.pitch('<Bb1 D4>'),
     )
 
 maker(

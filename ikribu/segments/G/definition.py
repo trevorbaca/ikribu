@@ -58,37 +58,37 @@ maker(
 maker(
     ('BassClarinetMusicVoice', 1),
     baca.hairpin('ppp < mp', baca.leaves()),
-    baca.pitches('G2'),
+    baca.pitch('G2'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 3),
     baca.hairpin('pp < mf', baca.leaves()),
-    baca.pitches('Gb2'),
+    baca.pitch('Gb2'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 5),
     baca.hairpin('p < f', baca.leaves()),
-    baca.pitches('F2'),
+    baca.pitch('F2'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 7),
     baca.hairpin('mf < ff', baca.leaves()),
-    baca.pitches('E2'),
+    baca.pitch('E2'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 9),
     baca.hairpin('f < fff', baca.leaves()),
-    baca.pitches('Eb2'),
+    baca.pitch('Eb2'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 11),
     baca.hairpin('ff < ffff', baca.leaves()),
-    baca.pitches('D2'),
+    baca.pitch('D2'),
     )
 
 maker(

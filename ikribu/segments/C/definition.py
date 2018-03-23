@@ -158,7 +158,7 @@ maker(
     baca.markup.string_number(3),
     baca.laissez_vibrer(),
     baca.natural_harmonics(),
-    baca.pitches('F~5'),
+    baca.pitch('F~5'),
     )
 
 maker(

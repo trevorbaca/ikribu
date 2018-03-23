@@ -70,68 +70,68 @@ maker(
 
 maker(
     ('BassClarinetMusicVoice', (1, 2)),
-    baca.pitches('<Bb1 D4>'),
+    baca.pitch('<Bb1 D4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (3, 6)),
-    baca.pitches('<Bb1 F4>'),
+    baca.pitch('<Bb1 F4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 7),
-    baca.pitches('<Bb1 D4>'),
+    baca.pitch('<Bb1 D4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 8),
-    baca.pitches('Bb1'),
+    baca.pitch('Bb1'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 9),
-    baca.pitches('<Bb1 D4>'),
+    baca.pitch('<Bb1 D4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 10),
-    baca.pitches('<Bb1 F4>'),
+    baca.pitch('<Bb1 F4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (11, 12)),
-    baca.pitches('<Bb1 Ab~4>'),
+    baca.pitch('<Bb1 Ab~4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 13),
-    baca.pitches('<Bb1 F4>'),
+    baca.pitch('<Bb1 F4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 14),
-    baca.pitches('Bb1'),
+    baca.pitch('Bb1'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (15, 16)),
-    baca.pitches('<Bb1 D4>'),
+    baca.pitch('<Bb1 D4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 17),
-    baca.pitches('<Bb1 F4>'),
+    baca.pitch('<Bb1 F4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', 18),
-    baca.pitches('<Bb1 D4>'),
+    baca.pitch('<Bb1 D4>'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (19, 20)),
     baca.hairpin('p > niente', baca.rleaves()[-3:]),
-    baca.pitches('Bb1'),
+    baca.pitch('Bb1'),
     )
 
 maker(
@@ -144,7 +144,7 @@ maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
-    baca.pitches('<E4 F#4>'),
+    baca.pitch('<E4 F#4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
@@ -158,7 +158,7 @@ maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
-    baca.pitches('<Eb4 F4>'),
+    baca.pitch('<Eb4 F4>'),
     baca.single_segment_transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
@@ -177,7 +177,7 @@ maker(
         baca.runs().tleaves().enchain([2]),
         bookend=True,
         ),
-    baca.pitches('Bb0'),
+    baca.pitch('Bb0'),
     baca.text_spanner_staff_padding(2.5),
     )
 
