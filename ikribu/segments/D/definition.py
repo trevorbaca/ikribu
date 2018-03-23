@@ -70,7 +70,7 @@ maker(
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.repeat_ties_up(),
     baca.script_staff_padding(7, selector=baca.leaves()),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
     ikribu.BowContactPointCommand(rotation=-2),

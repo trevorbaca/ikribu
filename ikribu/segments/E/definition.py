@@ -64,10 +64,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
-        ),
+        ],
     baca.clef('percussion'),
     )
 
@@ -114,10 +114,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('ViolinMusicVoice', (1, -1)),
-        ('ViolaMusicVoice', (1, -1)),
-        ),
+    [
+        'ViolinMusicVoice',
+        'ViolaMusicVoice',
+        ],
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
@@ -128,7 +128,7 @@ maker(
         bookend=True,
         ),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -149,7 +149,7 @@ maker(
         baca.tleaves().enchain([2]),
         bookend=True,
         ),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.stem_tremolo(),
     baca.text_script_staff_padding(2.5),
     )

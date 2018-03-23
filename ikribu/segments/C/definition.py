@@ -76,7 +76,7 @@ maker(
     baca.repeat_ties_up(),
     baca.shift_dynamic('"mf"'),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     )
 
 maker(
@@ -100,7 +100,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('grainfall (2)'),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )
 
@@ -130,10 +130,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('CelloMusicVoice', 1),
         ('CelloMusicVoice', (2, 16)),
-        ),
+        ],
     baca.make_repeat_tied_notes(),
     )
 

@@ -69,7 +69,7 @@ maker(
         bookend=True,
         ),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     ikribu.triplet_rhythm(),
@@ -109,7 +109,7 @@ maker(
         baca.tleaves().enchain([4]),
         bookend=True,
         ),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.stem_tremolo(baca.pheads()[abjad.index([0, 5], 11)]),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -129,7 +129,7 @@ maker(
         baca.dynamics('p f'),
         baca.notes().group_by_measure(),
         ),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )
 

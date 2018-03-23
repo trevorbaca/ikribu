@@ -167,10 +167,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (1, 23)),
         ('ViolaMusicVoice', (1, 23)),
-        ),
+        ],
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -183,11 +183,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (1, 21)),
         ('ViolaMusicVoice', (1, 21)),
-        ),
-    baca.staff_positions([0]),
+        ],
+    baca.staff_position(0),
     )
 
 maker(
@@ -267,12 +267,12 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', 6),
         ('ViolinMusicVoice', 17),
         ('CelloMusicVoice', 6),
         ('CelloMusicVoice', 17),
-        ),
+        ],
     baca.dynamic('fff'),
     )
 

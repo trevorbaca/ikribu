@@ -55,11 +55,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('BassClarinetMusicVoice', 6),
         ('ViolinMusicVoice', 6),
         ('ViolaMusicVoice', 6),
-        ),
+        ],
     baca.make_tied_repeated_durations((1, 4)),
     )
 
@@ -81,17 +81,17 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', (1, -1)),
-        ('ViolinMusicVoice', (1, -1)),
-        ('ViolaMusicVoice', (1, -1)),
-        ),
+    [
+        'BassClarinetMusicVoice',
+        'ViolinMusicVoice',
+        'ViolaMusicVoice',
+        ],
     baca.clef('percussion'),
     baca.dls_staff_padding(6),
     baca.effort_dynamic('mf'),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     )
 
 maker(
@@ -105,11 +105,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('ViolinMusicVoice', (1, -1)),
-        ('ViolaMusicVoice', (1, -1)),
-        ),
-    baca.staff_positions([0]),
+    [
+        'ViolinMusicVoice',
+        'ViolaMusicVoice',
+        ],
+    baca.staff_position(0),
     )
 
 maker(
@@ -148,11 +148,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('BassClarinetMusicVoice', 6),
         ('ViolinMusicVoice', 6),
         ('ViolaMusicVoice', 6),
-        ),
+        ],
     baca.effort_dynamic('f'),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     baca.shift_dynamic('"f"'),
@@ -164,11 +164,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', (1, -1)),
-        ('ViolinMusicVoice', (1, -1)),
-        ('ViolaMusicVoice', (1, -1)),
-        ),
+    [
+        'BassClarinetMusicVoice',
+        'ViolinMusicVoice',
+        'ViolaMusicVoice',
+        ],
     ikribu.box_adjustment()
     )
 

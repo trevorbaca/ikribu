@@ -61,12 +61,12 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('BassClarinetMusicVoice', (1, -1)),
-        ('ViolinMusicVoice', (1, -1)),
-        ('ViolaMusicVoice', (1, -1)),
-        ('CelloMusicVoice', (1, -1)),
-        ),
+    [
+        'BassClarinetMusicVoice',
+        'ViolinMusicVoice',
+        'ViolaMusicVoice',
+        'CelloMusicVoice',
+        ],
     baca.repeat_ties_up(),
     )
 
@@ -97,7 +97,7 @@ maker(
     ('BassClarinetMusicVoice', (1, 16)),
     baca.bar_extent((-2, 0), selector=baca.leaves()),
     baca.dls_staff_padding(6),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     )
 
 maker(
@@ -127,7 +127,7 @@ maker(
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.dls_staff_padding(6),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )
 
