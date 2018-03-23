@@ -95,22 +95,22 @@ maker(
 maker(
     ('BassClarinetMusicVoice', (1, 4)),
     baca.dynamic('ppp'),
-    baca.pitches('E3'),
+    baca.pitch('E3'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (5, 8)),
-    baca.pitches('E+3'),
+    baca.pitch('E+3'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (9, 12)),
-    baca.pitches('F3'),
+    baca.pitch('F3'),
     )
 
 maker(
     ('BassClarinetMusicVoice', (13, 16)),
-    baca.pitches('F+3'),
+    baca.pitch('F+3'),
     )
 
 maker(
@@ -156,10 +156,10 @@ maker(
 
 maker(
     ('CelloMusicVoice', (9, 12)),
-    baca.pitches('F3'),
+    baca.pitch('F3'),
     )
 
 maker(
     ('CelloMusicVoice', (13, 16)),
-    baca.pitches('F+3'),
+    baca.pitch('F+3'),
     )

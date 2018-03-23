@@ -46,7 +46,7 @@ maker(
         'breathe discreetly before any downbeat as needed'
         ' (but do not circular breathe)'
         ),
-    baca.pitches('C2'),
+    baca.pitch('C2'),
     baca.staff_lines(5),
     )
 

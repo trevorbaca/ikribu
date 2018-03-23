@@ -75,7 +75,7 @@ maker(
 
 maker(
     ('BassClarinetMusicVoice', (3, 15)),
-    baca.pitches('Db2'),
+    baca.pitch('Db2'),
     )
 
 maker(
@@ -92,7 +92,7 @@ maker(
 maker(
     ('ViolinMusicVoice', (1, 9)),
     baca.markup.string_number(3),
-    baca.pitches('E4'),
+    baca.pitch('E4'),
     baca.stem_tremolo(),
     )
 
@@ -111,7 +111,7 @@ maker(
 maker(
     ('ViolaMusicVoice', (13, 14)),
     baca.markup.string_number(2),
-    baca.pitches('Eb4'),
+    baca.pitch('Eb4'),
     baca.stem_tremolo(),
     )
 

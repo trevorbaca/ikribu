@@ -61,5 +61,5 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('F~5'),
+    baca.pitch('F~5'),
     )

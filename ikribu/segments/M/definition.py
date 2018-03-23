@@ -144,7 +144,7 @@ maker(
 
 maker(
     ('BassClarinetMusicVoice', (1, 23)),
-    baca.pitches('B1'),
+    baca.pitch('B1'),
     )
 
 maker(
@@ -244,7 +244,7 @@ maker(
         ),
     baca.clef('bass'),
     baca.ottava_bassa(),
-    baca.pitches('C1'),
+    baca.pitch('C1'),
     )
 
 maker(
@@ -289,7 +289,7 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('F~5'),
+    baca.pitch('F~5'),
     )
 
 maker(
@@ -305,7 +305,7 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('G5'),
+    baca.pitch('G5'),
     )
 
 maker(
@@ -316,7 +316,7 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('F~5'),
+    baca.pitch('F~5'),
     )
 
 maker(
@@ -327,7 +327,7 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('G5'),
+    baca.pitch('G5'),
     )
 
 maker(
@@ -338,7 +338,7 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('A5'),
+    baca.pitch('A5'),
     )
 
 maker(
@@ -349,5 +349,5 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.natural_harmonics(),
-    baca.pitches('C+6'),
+    baca.pitch('C+6'),
     )
