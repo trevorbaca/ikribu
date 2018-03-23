@@ -77,10 +77,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinRHMusicVoice', (1, 2)),
         ('ViolaRHMusicVoice', (1, 2)),
-        ),
+        ],
     baca.dls_staff_padding(10),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
@@ -91,7 +91,7 @@ maker(
         ),
     baca.repeat_ties_up(),
     baca.script_staff_padding(7, selector=baca.leaves()),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
     )

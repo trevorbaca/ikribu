@@ -33,11 +33,11 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinRHMusicVoice', 1),
         ('ViolaRHMusicVoice', 1),
         ('CelloRHMusicVoice', 1),
-        ),
+        ],
     baca.staff_lines(1),
     )
 
@@ -48,7 +48,7 @@ maker(
     baca.effort_dynamic('mf'),
     baca.markup.boxed('grainfall (1)'),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )
 

@@ -42,12 +42,12 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('BassClarinetMusicVoice', 1),
         ('ViolinMusicVoice', 1),
         ('ViolaMusicVoice', 1),
         ('CelloMusicVoice', 1),
-        ),
+        ],
     baca.staff_lines(1),
     )
 
@@ -65,7 +65,7 @@ maker(
     baca.scope('BassClarinetMusicVoice', (1, 4)),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )
 
@@ -100,6 +100,6 @@ maker(
     baca.accents(),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )

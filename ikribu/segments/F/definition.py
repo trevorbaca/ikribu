@@ -52,10 +52,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinMusicVoice', (6, 7)),
         ('ViolaMusicVoice', (6, 7)),
-        ),
+        ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
     baca.hairpin('sfpp < p', baca.leaves()[:2]),
@@ -111,7 +111,7 @@ maker(
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
     baca.staff_lines(1),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     ikribu.box_adjustment(),
     )
 

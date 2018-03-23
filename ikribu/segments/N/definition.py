@@ -111,11 +111,11 @@ maker(
     )
 
 maker(
-    baca.scopes(
+    [
         ('ViolinRHMusicVoice', (1, 2)),
         ('ViolaRHMusicVoice', (1, 2)),
         ('CelloRHMusicVoice', (1, 2)),
-        ),
+        ],
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
@@ -124,7 +124,7 @@ maker(
         bookend=True,
         ),
     baca.repeat_ties_up(),
-    baca.staff_positions([0]),
+    baca.staff_position(0),
     )
 
 maker(
@@ -169,10 +169,10 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ('ViolinRHMusicVoice', (1, -1)),
-        ('ViolaRHMusicVoice', (1, -1)),
-        ('CelloRHMusicVoice', (1, -1)),
-        ),
+    [
+        'ViolinRHMusicVoice',
+        'ViolaRHMusicVoice',
+        'CelloRHMusicVoice',
+        ],
     baca.dls_staff_padding(9),
     )
