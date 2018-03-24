@@ -1,7 +1,7 @@
 import abjad
 
 
-metronome_marks = abjad.MetronomeMarkDictionary([
+metronome_marks = abjad.OrderedDict([
     (
         'incisions',
         abjad.MetronomeMark((1, 4), 58),
