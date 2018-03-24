@@ -45,7 +45,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['BassClarinetMusicVoice'], [1, 3, 5, 7, 9, 11]),
+    baca.scopes(['BassClarinetMusicVoice'], [1, 3, 5, 7, 9, 11]),
     baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
     baca.dls_staff_padding(7),
     )

@@ -56,7 +56,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['BassClarinetMusicVoice'],
         [(1, 4), (5, 8), (9, 12), (13, 16)],
         ),
@@ -72,7 +72,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['ViolinMusicVoice'],
         [(1, 2), (5, 6), (9, 10), (13, 14)],
         ),
@@ -80,7 +80,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['ViolaMusicVoice'],
         [(2, 3), (6, 7), (10, 11), (14, 15)],
         ),
@@ -88,7 +88,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['CelloMusicVoice'], [(9, 12), (13, 16)]),
+    baca.scopes(['CelloMusicVoice'], [(9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
     )
 

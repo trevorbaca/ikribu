@@ -40,17 +40,17 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['BassClarinetMusicVoice'], [1, (2, 3)]),
+    baca.scopes(['BassClarinetMusicVoice'], [1, (2, 3)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.make_scopes(['ViolinMusicVoice'], [(1, 2), 3]),
+    baca.scopes(['ViolinMusicVoice'], [(1, 2), 3]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.make_scopes(['ViolaMusicVoice'], [1, 2, 3]),
+    baca.scopes(['ViolaMusicVoice'], [1, 2, 3]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 

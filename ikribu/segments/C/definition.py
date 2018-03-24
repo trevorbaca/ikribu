@@ -60,7 +60,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['BassClarinetMusicVoice'],
         [(2, 3), (6, 7), (10, 11), (14, 15)],
         ),
@@ -105,7 +105,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['ViolinMusicVoice', 'ViolaMusicVoice'],
         [(3, 4), (7, 8), (11, 12), (15, 16)],
         ),
