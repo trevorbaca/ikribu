@@ -41,7 +41,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['CelloMusicVoice'], [1, 3, 5, 7]),
+    baca.scopes(['CelloMusicVoice'], [1, 3, 5, 7]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 

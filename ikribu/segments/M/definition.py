@@ -57,7 +57,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['BassClarinetMusicVoice'],
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 22)],
         ),
@@ -65,7 +65,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['ViolinMusicVoice'], [1, 5, 8, 12, 16, 19]),
+    baca.scopes(['ViolinMusicVoice'], [1, 5, 8, 12, 16, 19]),
     baca.make_repeat_tied_notes(),
     )
 
@@ -134,7 +134,7 @@ maker(
     baca.staff_lines(5),
     )
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['CelloMusicVoice'],
         [1, (2, 3), 5, 6, 8, (9, 10), 12, (13, 14),
         16, 17, 19, (20, 21)],
@@ -148,7 +148,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['BassClarinetMusicVoice'],
         [(2, 3), (9, 10), (13, 14)],
         ),
@@ -162,7 +162,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['BassClarinetMusicVoice'], [6, 17]),
+    baca.scopes(['BassClarinetMusicVoice'], [6, 17]),
     baca.dynamic('p'),
     )
 
@@ -191,7 +191,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['ViolinMusicVoice'],
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
@@ -199,7 +199,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['ViolinMusicVoice', 'ViolaMusicVoice'], 
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
@@ -238,7 +238,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['CelloMusicVoice'],
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
@@ -248,7 +248,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['ViolinMusicVoice', 'ViolaMusicVoice', 'CelloMusicVoice'], 
         [(2, 3), (9, 10), (13, 14), (20, 21)],
         ),
@@ -256,7 +256,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(
+    baca.scopes(
         ['CelloMusicVoice'],
         [(2, 3), (9, 10), (13, 14), (20, 21)],
         ),
@@ -277,7 +277,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['CelloMusicVoice'], [6, 17]),
+    baca.scopes(['CelloMusicVoice'], [6, 17]),
     baca.markup.XP(),
     )
 

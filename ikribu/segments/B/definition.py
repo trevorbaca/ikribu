@@ -44,12 +44,12 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['BassClarinetMusicVoice'], [3, 7, 11, 13]),
+    baca.scopes(['BassClarinetMusicVoice'], [3, 7, 11, 13]),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    baca.make_scopes(['ViolinMusicVoice'], [1, 5, 9]),
+    baca.scopes(['ViolinMusicVoice'], [1, 5, 9]),
     baca.make_repeat_tied_notes(),
     )
 
@@ -97,7 +97,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['ViolinMusicVoice'], [1, 5, 9]),
+    baca.scopes(['ViolinMusicVoice'], [1, 5, 9]),
     baca.suite([
         baca.hairpin('ppp < p', baca.leaves()[:2]),
         baca.hairpin('p > niente', baca.rleaves()[-2:]),

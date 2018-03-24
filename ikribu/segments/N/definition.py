@@ -39,7 +39,7 @@ maker(
     )
 
 maker(
-    baca.make_scopes(['BassClarinetMusicVoice'], [1, 2]),
+    baca.scopes(['BassClarinetMusicVoice'], [1, 2]),
     baca.make_repeat_tied_notes(),
     )
 
