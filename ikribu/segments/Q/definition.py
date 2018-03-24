@@ -62,7 +62,7 @@ maker(
     )
 
 maker(
-    baca.scope('BassClarinetMusicVoice', (1, 4)),
+    ('BassClarinetMusicVoice', (1, 4)),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
     baca.staff_position(0),

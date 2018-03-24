@@ -56,10 +56,7 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ['BassClarinetMusicVoice'],
-        [(1, 4), (5, 8), (9, 12), (13, 16)],
-        ),
+    ('BassClarinetMusicVoice', [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
     )
 
@@ -72,23 +69,17 @@ maker(
     )
 
 maker(
-    baca.scopes(
-        ['ViolinMusicVoice'],
-        [(1, 2), (5, 6), (9, 10), (13, 14)],
-        ),
+    ('ViolinMusicVoice', [(1, 2), (5, 6), (9, 10), (13, 14)]),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    baca.scopes(
-        ['ViolaMusicVoice'],
-        [(2, 3), (6, 7), (10, 11), (14, 15)],
-        ),
+    ('ViolaMusicVoice', [(2, 3), (6, 7), (10, 11), (14, 15)]),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    baca.scopes(['CelloMusicVoice'], [(9, 12), (13, 16)]),
+    ('CelloMusicVoice', [(9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
     )
 
