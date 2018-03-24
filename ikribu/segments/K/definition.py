@@ -41,22 +41,22 @@ maker(
     )
 
 maker(
-    baca.scopes(['BassClarinetMusicVoice'], [1, 5, 9, 13]),
+    ('BassClarinetMusicVoice', [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    baca.scopes(['ViolinMusicVoice'], [3, 7, 11, 15]),
+    ('ViolinMusicVoice', [3, 7, 11, 15]),
     ikribu.clb_rhythm([4]),
     )
 
 maker(
-    baca.scopes(['ViolaMusicVoice'], [3, 7, 11, 15]),
+    ('ViolaMusicVoice', [3, 7, 11, 15]),
     ikribu.clb_rhythm([2]),
     )
 
 maker(
-    baca.scopes(['CelloMusicVoice'], [1, 5, 9, 13]),
+    ('CelloMusicVoice', [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
