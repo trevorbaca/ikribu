@@ -42,7 +42,10 @@ maker(
 
 maker(
     ('bcl', (1, 2)),
+    baca.hairpin('ppp < f', baca.leaves()[:2]),
+    baca.hairpin('f > niente', baca.rleaves()[-4:]),
     baca.make_repeat_tied_notes(),
+    baca.pitch('D2'),
     )
 
 maker(
@@ -53,28 +56,9 @@ maker(
 
 maker(
     ('va', (2, 3)),
-    baca.make_tied_repeated_durations((1, 4)),
-    )
-
-maker(
-    ('bcl', (1, 2)),
-    baca.pitch('D2'),
-    )
-
-maker(
-    ('bcl', (1, 2)),
-    baca.hairpin('ppp < f', baca.leaves()[:2]),
-    )
-
-maker(
-    ('bcl', (1, 2)),
-    baca.hairpin('f > niente', baca.rleaves()[-4:]),
-    )
-
-maker(
-    ('va', (2, 3)),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
+    baca.make_tied_repeated_durations((1, 4)),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.repeat_ties_up(),
     baca.shift_dynamic('"mf"'),
