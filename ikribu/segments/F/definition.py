@@ -41,13 +41,13 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 4)),
+    ('bcl', (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.pitch('F#3'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (6, 8)),
+    ('bcl', (6, 8)),
     baca.make_repeat_tied_notes(),
     baca.hairpin('sfp > ppp'),
     baca.pitch('G2'),
@@ -55,8 +55,8 @@ maker(
 
 maker(
     [
-        ('ViolinMusicVoice', (6, 7)),
-        ('ViolaMusicVoice', (6, 7)),
+        ('vn', (6, 7)),
+        ('va', (6, 7)),
         ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
@@ -67,7 +67,7 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', (6, 7)),
+    ('vn', (6, 7)),
     baca.clef('treble'),
     baca.markup.string_numbers([2, 3]),
     baca.pitch('<E4 F#4>'),
@@ -80,7 +80,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (6, 7)),
+    ('va', (6, 7)),
     baca.markup.string_numbers([1, 2]),
     baca.clef('treble'),
     baca.clef_extra_offset((-2.5, 0)),
@@ -95,7 +95,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 4)),
+    ('vc', (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.hairpin('p < ff'),
     baca.pitch('F#3'),
@@ -108,7 +108,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (6, 7)),
+    ('vc', (6, 7)),
     baca.make_tied_repeated_durations((1, 4)),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.repeat_ties_up(),
@@ -118,7 +118,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', 8),
+    ('vc', 8),
     baca.clef('treble'),
     baca.shift_clef('treble'),
     baca.staff_lines(5),

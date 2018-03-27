@@ -36,15 +36,15 @@ maker = baca.SegmentMaker(
 
 maker(
     [
-        ('ViolinRHMusicVoice', 1),
-        ('ViolaRHMusicVoice', 1),
-        ('CelloRHMusicVoice', 1),
+        ('vn_rh', 1),
+        ('va_rh', 1),
+        ('vc_rh', 1),
         ],
     baca.staff_lines(1),
     )
 
 maker(
-    ('ViolinMusicVoice', 1),
+    ('vn', 1),
     baca.make_repeat_tied_notes(),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
@@ -55,7 +55,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.make_repeat_tied_notes(),
     baca.clef('treble'),
     baca.dynamic('sfz'),

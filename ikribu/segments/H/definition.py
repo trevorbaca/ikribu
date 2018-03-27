@@ -40,14 +40,14 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
     baca.pitch('Db2'),
     )
 
 maker(
-    ('ViolinRHMusicVoice', (1, 2)),
+    ('vn_rh', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
@@ -56,14 +56,14 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 2)),
+    ('vn', (1, 2)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    ('ViolaRHMusicVoice', (1, 2)),
+    ('va_rh', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([4, 14], 16),
         rotation=-1,
@@ -72,7 +72,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (1, 2)),
+    ('va', (1, 2)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
@@ -80,8 +80,8 @@ maker(
 
 maker(
     [
-        ('ViolinRHMusicVoice', (1, 2)),
-        ('ViolaRHMusicVoice', (1, 2)),
+        ('vn_rh', (1, 2)),
+        ('va_rh', (1, 2)),
         ],
     baca.dls_staff_padding(10),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),

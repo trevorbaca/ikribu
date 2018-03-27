@@ -43,67 +43,67 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', [1, 5, 9, 13]),
+    ('bcl', [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('ViolinMusicVoice', [3, 7, 11, 15]),
+    ('vn', [3, 7, 11, 15]),
     ikribu.clb_rhythm([4]),
     )
 
 maker(
-    ('ViolaMusicVoice', [3, 7, 11, 15]),
+    ('va', [3, 7, 11, 15]),
     ikribu.clb_rhythm([2]),
     )
 
 maker(
-    ('CelloMusicVoice', [1, 5, 9, 13]),
+    ('vc', [1, 5, 9, 13]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
     [
-        'BassClarinetMusicVoice',
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
-        'CelloMusicVoice',
+        'bcl',
+        'vn',
+        'va',
+        'vc',
         ],
     baca.repeat_ties_up(),
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.staff_lines(1),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 5),
+    ('bcl', 5),
     baca.effort_dynamic('mf'),
     baca.shift_dynamic('"mf"'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 9),
+    ('bcl', 9),
     baca.effort_dynamic('mp'),
     baca.shift_dynamic('"mp"'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 13),
+    ('bcl', 13),
     baca.effort_dynamic('p'),
     baca.shift_dynamic('"p"'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 16)),
+    ('bcl', (1, 16)),
     baca.bar_extent((-2, 0), selector=baca.leaves()),
     baca.dls_staff_padding(6),
     baca.staff_position(0),
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 16)),
+    ('vn', (1, 16)),
     baca.dls_staff_padding(8),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
@@ -114,7 +114,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (1, 16)),
+    ('va', (1, 16)),
     baca.dls_staff_padding(8),
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
@@ -125,7 +125,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 16)),
+    ('vc', (1, 16)),
     baca.markup.boxed_lines(['graincircle:', 'π/2 every quarter note']),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.dls_staff_padding(6),
@@ -134,24 +134,24 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.effort_dynamic('p'),
     )
 
 maker(
-    ('CelloMusicVoice', 5),
+    ('vc', 5),
     baca.effort_dynamic('mp'),
     baca.shift_dynamic('"mp"'),
     )
 
 maker(
-    ('CelloMusicVoice', 9),
+    ('vc', 9),
     baca.effort_dynamic('mf'),
     baca.shift_dynamic('"mf"'),
     )
 
 maker(
-    ('CelloMusicVoice', 13),
+    ('vc', 13),
     baca.effort_dynamic('f'),
     baca.shift_dynamic('"f"'),
     )

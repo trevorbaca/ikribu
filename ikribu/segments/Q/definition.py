@@ -45,26 +45,26 @@ maker(
 
 maker(
     [
-        ('BassClarinetMusicVoice', 1),
-        ('ViolinMusicVoice', 1),
-        ('ViolaMusicVoice', 1),
-        ('CelloMusicVoice', 1),
+        ('bcl', 1),
+        ('vn', 1),
+        ('va', 1),
+        ('vc', 1),
         ],
     baca.staff_lines(1),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    'BassClarinetMusicVoice',
+    'bcl',
     baca.bar_extent((-2, 0), selector=baca.rleaves()),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 4)),
+    ('bcl', (1, 4)),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('graincircle: π/3 every quarter note'),
     baca.staff_position(0),
@@ -72,7 +72,7 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 3)),
+    ('vn', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
@@ -82,7 +82,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (1, 3)),
+    ('va', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_tonguing(),
     baca.effort_dynamic('mf'),
@@ -92,12 +92,12 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 4)),
+    ('vc', (1, 4)),
     ikribu.inscription_rhythm(),
     )
 
 maker(
-    'CelloMusicVoice',
+    'vc',
     baca.bar_extent((0, 2), selector=baca.rleaves()),
     baca.accents(),
     baca.effort_dynamic('mf'),

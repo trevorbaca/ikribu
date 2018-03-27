@@ -46,60 +46,60 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', [3, 7, 11, 13]),
+    ('bcl', [3, 7, 11, 13]),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('ViolinMusicVoice', [1, 5, 9]),
+    ('vn', [1, 5, 9]),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
     [
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
+        'vn',
+        'va',
         ],
     baca.text_script_staff_padding(3, allow_mmrests=True),
     baca.text_spanner_staff_padding(3.5),
     )
 
 maker(
-    ('ViolaMusicVoice', 1),
+    ('va', 1),
     baca.clef('alto'),
     baca.staff_lines(5),
     )
 
 maker(
-    ('ViolaMusicVoice', (13, 14)),
+    ('va', (13, 14)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (3, 15)),
+    ('bcl', (3, 15)),
     baca.pitch('Db2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 3),
+    ('bcl', 3),
     baca.dynamic('ppp'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 13),
+    ('bcl', 13),
     baca.hairpin('ppp < f', baca.leaves()[:2]),
     baca.hairpin('f > niente', baca.rleaves()[-2:]),
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 9)),
+    ('vn', (1, 9)),
     baca.markup.string_number(3),
     baca.pitch('E4'),
     baca.stem_tremolo(),
     )
 
 maker(
-    ('ViolinMusicVoice', [1, 5, 9]),
+    ('vn', [1, 5, 9]),
     baca.suite([
         baca.hairpin('ppp < p', baca.leaves()[:2]),
         baca.hairpin('p > niente', baca.rleaves()[-2:]),
@@ -111,14 +111,14 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (13, 14)),
+    ('va', (13, 14)),
     baca.markup.string_number(2),
     baca.pitch('Eb4'),
     baca.stem_tremolo(),
     )
 
 maker(
-    ('ViolaMusicVoice', (13, 14)),
+    ('va', (13, 14)),
     baca.suite([
         baca.hairpin('ppp < mf', baca.leaves()[:5]),
         baca.hairpin('mf > niente', baca.rleaves()[-2:]),

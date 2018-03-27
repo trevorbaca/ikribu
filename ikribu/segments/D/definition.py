@@ -41,14 +41,14 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', 1),
+    ('bcl', 1),
     baca.tag('+ARCH_A_SCORE', baca.bar_extent((-2, 2)), deactivate=True),
     baca.tag('+LEDGER_SCORE', baca.bar_extent((-2, 2)), deactivate=True),
     baca.staff_lines(5),
     )
 
 maker(
-    ('CelloRHMusicVoice', (1, 2)),
+    ('vc_rh', (1, 2)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([8, 20], 20),
         rotation=-2,
@@ -56,12 +56,12 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 2)),
+    ('vc', (1, 2)),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    ('CelloRHMusicVoice', (1, 2)),
+    ('vc_rh', (1, 2)),
     baca.dls_staff_padding(9),
     baca.piecewise(
         abjad.Hairpin(),
@@ -79,7 +79,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 2)),
+    ('vc', (1, 2)),
     baca.clef('tenor'),
     baca.glissando(),
     baca.shift_clef('tenor'),

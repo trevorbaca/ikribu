@@ -58,58 +58,58 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', [(1, 4), (5, 8), (9, 12), (13, 16)]),
+    ('bcl', [(1, 4), (5, 8), (9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
     [
-        ('ViolinMusicVoice', 1),
-        ('ViolaMusicVoice', 1),
+        ('vn', 1),
+        ('va', 1),
         ],
     baca.clef('percussion'),
     )
 
 maker(
-    ('ViolinMusicVoice', [(1, 2), (5, 6), (9, 10), (13, 14)]),
+    ('vn', [(1, 2), (5, 6), (9, 10), (13, 14)]),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    ('ViolaMusicVoice', [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    ('va', [(2, 3), (6, 7), (10, 11), (14, 15)]),
     ikribu.triplet_rhythm(),
     )
 
 maker(
-    ('CelloMusicVoice', [(9, 12), (13, 16)]),
+    ('vc', [(9, 12), (13, 16)]),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 4)),
+    ('bcl', (1, 4)),
     baca.dynamic('ppp'),
     baca.pitch('E3'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (5, 8)),
+    ('bcl', (5, 8)),
     baca.pitch('E+3'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (9, 12)),
+    ('bcl', (9, 12)),
     baca.pitch('F3'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (13, 16)),
+    ('bcl', (13, 16)),
     baca.pitch('F+3'),
     )
 
 maker(
     [
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
+        'vn',
+        'va',
         ],
     baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
@@ -128,12 +128,12 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 16)),
+    ('vc', (1, 16)),
     baca.clef('bass'),
     )
 
 maker(
-    ('CelloMusicVoice', (9, 16)),
+    ('vc', (9, 16)),
     baca.dls_staff_padding(4),
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
@@ -148,11 +148,11 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (9, 12)),
+    ('vc', (9, 12)),
     baca.pitch('F3'),
     )
 
 maker(
-    ('CelloMusicVoice', (13, 16)),
+    ('vc', (13, 16)),
     baca.pitch('F+3'),
     )
