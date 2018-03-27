@@ -35,11 +35,7 @@ maker = baca.SegmentMaker(
     )
 
 maker(
-    [
-        ('vn_rh', 1),
-        ('va_rh', 1),
-        ('vc_rh', 1),
-        ],
+    (['vn_rh', 'va_rh', 'vc_rh'], 1),
     baca.staff_lines(1),
     )
 
