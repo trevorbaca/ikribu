@@ -43,13 +43,13 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.make_repeat_tied_notes(),
     baca.pitch('Bb4'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (3, 4)),
+    ('bcl', (3, 4)),
     baca.glissando(),
     baca.make_repeated_duration_notes((1, 4)),
     baca.suite([
@@ -62,7 +62,7 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', 5),
+    ('bcl', 5),
     baca.make_repeat_tied_notes(),
     baca.suite([
         baca.pitch('B1'),
@@ -71,18 +71,18 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 5)),
+    ('bcl', (1, 5)),
     baca.hairpin('pp < mf', baca.leaves()[:4]),
     baca.hairpin('mf > niente', baca.rleaves()[4:]),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (3, 5)),
+    ('bcl', (3, 5)),
     baca.dls_staff_padding(9),
     )
 
 maker(
-    ('ViolinRHMusicVoice', (1, 3)),
+    ('vn_rh', (1, 3)),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
@@ -93,14 +93,14 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 3)),
+    ('vn', (1, 3)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    ('ViolaRHMusicVoice', (1, 3)),
+    ('va_rh', (1, 3)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bow_rhythm(
@@ -111,14 +111,14 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (1, 3)),
+    ('va', (1, 3)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 
 maker(
-    ('CelloRHMusicVoice', (1, 3)),
+    ('vc_rh', (1, 3)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bow_rhythm(
@@ -129,7 +129,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 3)),
+    ('vc', (1, 3)),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
@@ -138,9 +138,9 @@ maker(
 
 maker(
     [
-        ('ViolinRHMusicVoice', (1, 3)),
-        ('ViolaRHMusicVoice', (1, 3)),
-        ('CelloRHMusicVoice', (1, 3)),
+        ('vn_rh', (1, 3)),
+        ('va_rh', (1, 3)),
+        ('vc_rh', (1, 3)),
         ],
     baca.dls_staff_padding(9),
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),

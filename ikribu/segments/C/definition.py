@@ -62,12 +62,12 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', [(2, 3), (6, 7), (10, 11), (14, 15)]),
+    ('bcl', [(2, 3), (6, 7), (10, 11), (14, 15)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (2, 17)),
+    ('bcl', (2, 17)),
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
@@ -79,7 +79,7 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', (2, 3)),
+    ('bcl', (2, 3)),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
         baca.markup.boxed(['stonecircle: π/2 every quarter note']),
@@ -93,7 +93,7 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', 1),
+    ('vn', 1),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.make_repeat_tied_notes(),
@@ -105,14 +105,14 @@ maker(
 
 maker(
     (
-        ['ViolinMusicVoice', 'ViolaMusicVoice'],
+        ['vn', 'va'],
         [(3, 4), (7, 8), (11, 12), (15, 16)],
         ),
     baca.make_notes(repeat_ties=True),
     )
 
 maker(
-    ('ViolinMusicVoice', (2, 16)),
+    ('vn', (2, 16)),
     baca.clef('treble'),
     baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
@@ -130,14 +130,14 @@ maker(
 
 maker(
     [
-        ('CelloMusicVoice', 1),
-        ('CelloMusicVoice', (2, 16)),
+        ('vc', 1),
+        ('vc', (2, 16)),
         ],
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('ViolaMusicVoice', (2, 16)),
+    ('va', (2, 16)),
     baca.dls_staff_padding(3),
     baca.map(baca.glissando(), baca.runs()),
     baca.map(
@@ -151,7 +151,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.dynamic('sfz'),
     baca.markup.pizz(),
     baca.markup.string_number(3),
@@ -161,7 +161,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (2, 16)),
+    ('vc', (2, 16)),
     baca.dls_staff_padding(7),
     baca.glissando(),
     baca.natural_harmonics(),

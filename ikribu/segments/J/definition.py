@@ -42,51 +42,51 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', [1, (2, 3)]),
+    ('bcl', [1, (2, 3)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('ViolinMusicVoice', [(1, 2), 3]),
+    ('vn', [(1, 2), 3]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('ViolaMusicVoice', [1, 2, 3]),
+    ('va', [1, 2, 3]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
     [
-        ('BassClarinetMusicVoice', 6),
-        ('ViolinMusicVoice', 6),
-        ('ViolaMusicVoice', 6),
+        ('bcl', 6),
+        ('vn', 6),
+        ('va', 6),
         ],
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('CelloMusicVoice', 1),
+    ('vc', 1),
     baca.clef('bass'),
     baca.staff_lines(5),
     )
 
 maker(
-    ('CelloMusicVoice', (2, 3)),
+    ('vc', (2, 3)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('CelloMusicVoice', 4),
+    ('vc', 4),
     baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
     baca.tie_to(),
     )
 
 maker(
     [
-        'BassClarinetMusicVoice',
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
+        'bcl',
+        'vn',
+        'va',
         ],
     baca.clef('percussion'),
     baca.dls_staff_padding(6),
@@ -97,50 +97,50 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', 1),
+    ('bcl', 1),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 2),
+    ('bcl', 2),
     baca.markup.boxed_lines(['stonecircle:', 'π/3 every quarter note']),
     )
 
 maker(
     [
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
+        'vn',
+        'va',
         ],
     baca.staff_position(0),
     )
 
 maker(
-    ('ViolinMusicVoice', (1, 2)),
+    ('vn', (1, 2)),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
 
 maker(
-    ('ViolinMusicVoice', 3),
+    ('vn', 3),
     baca.markup.boxed_lines(['stonecircle:', 'π every quarter note']),
     )
 
 maker(
-    ('ViolaMusicVoice', 1),
+    ('va', 1),
     baca.markup.boxed_lines(['stonecircle:', 'π/3 every quarter note']),
     )
 
 maker(
-    ('ViolaMusicVoice', 2),
+    ('va', 2),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     )
 
 maker(
-    ('ViolaMusicVoice', 3),
+    ('va', 3),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
 
 maker(
-    ('CelloMusicVoice', (2, 4)),
+    ('vc', (2, 4)),
     baca.dynamic('p'),
     baca.hairpin('p < mf', baca.leaves()[-2:]),
     baca.markup.vib_poco(),
@@ -151,9 +151,9 @@ maker(
 
 maker(
     [
-        ('BassClarinetMusicVoice', 6),
-        ('ViolinMusicVoice', 6),
-        ('ViolaMusicVoice', 6),
+        ('bcl', 6),
+        ('vn', 6),
+        ('va', 6),
         ],
     baca.effort_dynamic('f'),
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
@@ -161,20 +161,20 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', 6),
+    ('bcl', 6),
     baca.tag('+ARCH_A_PARTS_BCL', baca.text_script_extra_offset((0, 8))),
     )
 
 maker(
     [
-        'BassClarinetMusicVoice',
-        'ViolinMusicVoice',
-        'ViolaMusicVoice',
+        'bcl',
+        'vn',
+        'va',
         ],
     ikribu.box_adjustment()
     )
 
 maker(
-    'BassClarinetMusicVoice',
+    'bcl',
     baca.bar_extent((-2, 0), selector=baca.leaves()),
     )

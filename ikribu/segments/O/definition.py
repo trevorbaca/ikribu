@@ -47,7 +47,7 @@ maker(
 
 maker(
     (
-        'BassClarinetMusicVoice',
+        'bcl',
         [(1, 2), (3, 6), 7, 8, 9, 10,
         (11, 12), 13, 14, 15, 16, 17, 18, (19, 20)],
         ),
@@ -55,94 +55,94 @@ maker(
     )
 
 maker(
-    ('ViolinMusicVoice', (9, 20)),
+    ('vn', (9, 20)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('ViolaMusicVoice', (9, 20)),
+    ('va', (9, 20)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('CelloMusicVoice', (5, 20)),
+    ('vc', (5, 20)),
     baca.make_repeat_tied_notes(),
     baca.ottava_bracket_staff_padding(10),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.pitch('<Bb1 D4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (3, 6)),
+    ('bcl', (3, 6)),
     baca.pitch('<Bb1 F4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 7),
+    ('bcl', 7),
     baca.pitch('<Bb1 D4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 8),
+    ('bcl', 8),
     baca.pitch('Bb1'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 9),
+    ('bcl', 9),
     baca.pitch('<Bb1 D4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 10),
+    ('bcl', 10),
     baca.pitch('<Bb1 F4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (11, 12)),
+    ('bcl', (11, 12)),
     baca.pitch('<Bb1 Ab~4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 13),
+    ('bcl', 13),
     baca.pitch('<Bb1 F4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 14),
+    ('bcl', 14),
     baca.pitch('Bb1'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (15, 16)),
+    ('bcl', (15, 16)),
     baca.pitch('<Bb1 D4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 17),
+    ('bcl', 17),
     baca.pitch('<Bb1 F4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 18),
+    ('bcl', 18),
     baca.pitch('<Bb1 D4>'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (19, 20)),
+    ('bcl', (19, 20)),
     baca.hairpin('p > niente', baca.rleaves()[-3:]),
     baca.pitch('Bb1'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, -1)),
+    ('bcl', (1, -1)),
     baca.tie(selector=baca.pleaves(), repeat=True)
     )
 
 maker(
-    ('ViolinMusicVoice', (9, 20)),
+    ('vn', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
@@ -156,7 +156,7 @@ maker(
     )
 
 maker(
-    ('ViolaMusicVoice', (9, 20)),
+    ('va', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
@@ -170,7 +170,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (1, 20)),
+    ('vc', (1, 20)),
     baca.clef('bass'),
     baca.ottava_bassa(),
     baca.piecewise(
@@ -184,7 +184,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (5, 8)),
+    ('vc', (5, 8)),
     baca.single_segment_transition(
         baca.markup('tasto poss.'),
         baca.markup('pos. ord.'),
@@ -192,7 +192,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (9, 12)),
+    ('vc', (9, 12)),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
         baca.markup.XP(),
@@ -200,7 +200,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (13, 16)),
+    ('vc', (13, 16)),
     baca.single_segment_transition(
         baca.markup.XP(),
         baca.markup('pos. ord.'),
@@ -208,7 +208,7 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', (17, 20)),
+    ('vc', (17, 20)),
     baca.single_segment_transition(
         baca.markup('pos. ord.'),
         baca.markup('tasto poss.'),

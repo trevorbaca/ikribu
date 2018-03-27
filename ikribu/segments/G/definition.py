@@ -47,54 +47,54 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', [1, 3, 5, 7, 9, 11]),
+    ('bcl', [1, 3, 5, 7, 9, 11]),
     baca.make_tied_repeated_durations([(6, 4), (1, 4)]),
     baca.dls_staff_padding(7),
     )
 
 maker(
-    ('CelloMusicVoice', (1, 11)),
+    ('vc', (1, 11)),
     baca.make_notes(repeat_ties=True),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 1),
+    ('bcl', 1),
     baca.hairpin('ppp < mp', baca.leaves()),
     baca.pitch('G2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 3),
+    ('bcl', 3),
     baca.hairpin('pp < mf', baca.leaves()),
     baca.pitch('Gb2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 5),
+    ('bcl', 5),
     baca.hairpin('p < f', baca.leaves()),
     baca.pitch('F2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 7),
+    ('bcl', 7),
     baca.hairpin('mf < ff', baca.leaves()),
     baca.pitch('E2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 9),
+    ('bcl', 9),
     baca.hairpin('f < fff', baca.leaves()),
     baca.pitch('Eb2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', 11),
+    ('bcl', 11),
     baca.hairpin('ff < ffff', baca.leaves()),
     baca.pitch('D2'),
     )
 
 maker(
-    ('CelloMusicVoice', (1, 12)),
+    ('vc', (1, 12)),
     baca.dls_staff_padding(7),
     baca.glissando(),
     baca.piecewise(

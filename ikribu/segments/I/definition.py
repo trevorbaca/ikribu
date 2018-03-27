@@ -43,12 +43,12 @@ maker(
     )
 
 maker(
-    ('CelloMusicVoice', [1, 3, 5, 7]),
+    ('vc', [1, 3, 5, 7]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('CelloMusicVoice', (1, 8)),
+    ('vc', (1, 8)),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),

@@ -41,38 +41,38 @@ maker(
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('ViolinMusicVoice', 1),
+    ('vn', 1),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
 
 maker(
-    ('ViolaMusicVoice', (2, 3)),
+    ('va', (2, 3)),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.pitch('D2'),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.hairpin('ppp < f', baca.leaves()[:2]),
     )
 
 maker(
-    ('BassClarinetMusicVoice', (1, 2)),
+    ('bcl', (1, 2)),
     baca.hairpin('f > niente', baca.rleaves()[-4:]),
     )
 
 maker(
-    ('ViolaMusicVoice', (2, 3)),
+    ('va', (2, 3)),
     baca.clef('percussion'),
     baca.effort_dynamic('mf'),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
