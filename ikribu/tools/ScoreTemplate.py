@@ -159,6 +159,20 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.Part(section='Cello', section_abbreviation='VC'),
         )
 
+    ### INITIALIZER ###
+
+    def __init__(self):
+        super(ScoreTemplate, self).__init__()
+        self.voice_abbreviations.update({
+            'bcl': 'BassClarinetMusicVoice',
+            'vn_rh': 'ViolinRHMusicVoice',
+            'vn': 'ViolinMusicVoice',
+            'va_rh': 'ViolaRHMusicVoice',
+            'va': 'ViolaMusicVoice',
+            'vc_rh': 'CelloRHMusicVoice',
+            'vc': 'CelloMusicVoice',
+            })
+
     ### SPECIAL METHODS ###
 
     def __call__(self) -> abjad.Score:
@@ -375,3 +389,26 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         '''
         return self._part_manifest
+
+    @property
+    def voice_abbreviations(self):
+        r'''Gets voice abbreviations.
+
+        ..  container:: example
+
+            >>> score_template = ikribu.ScoreTemplate()
+            >>> abjad.f(score_template.voice_abbreviations)
+            abjad.OrderedDict(
+                [
+                    ('bcl', 'BassClarinetMusicVoice'),
+                    ('vn_rh', 'ViolinRHMusicVoice'),
+                    ('vn', 'ViolinMusicVoice'),
+                    ('va_rh', 'ViolaRHMusicVoice'),
+                    ('va', 'ViolaMusicVoice'),
+                    ('vc_rh', 'CelloRHMusicVoice'),
+                    ('vc', 'CelloMusicVoice'),
+                    ]
+                )
+
+        '''
+        return super(ScoreTemplate, self).voice_abbreviations
