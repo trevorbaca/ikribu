@@ -39,16 +39,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                     {
                         \context Voice = "BassClarinetMusicVoice"
                         {
-                            \set Staff.instrumentName = \markup {      %! ST1
-                                \hcenter-in                            %! ST1
-                                    #16                                %! ST1
-                                    "Bass clarinet"                    %! ST1
-                                }                                      %! ST1
-                            \set Staff.shortInstrumentName = \markup { %! ST1
-                                \hcenter-in                            %! ST1
-                                    #10                                %! ST1
-                                    "B. cl."                           %! ST1
-                                }                                      %! ST1
                             \clef "treble" %! ST3
                             s1
                         }
@@ -68,16 +58,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolinMusicVoice"
                             {
-                                \set SingleStringStaffGroup.instrumentName = \markup {      %! ST1
-                                    \hcenter-in                                             %! ST1
-                                        #16                                                 %! ST1
-                                        Violin                                              %! ST1
-                                    }                                                       %! ST1
-                                \set SingleStringStaffGroup.shortInstrumentName = \markup { %! ST1
-                                    \hcenter-in                                             %! ST1
-                                        #10                                                 %! ST1
-                                        Vn.                                                 %! ST1
-                                    }                                                       %! ST1
                                 \clef "treble" %! ST3
                                 s1
                             }
@@ -98,16 +78,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolaMusicVoice"
                             {
-                                \set SingleStringStaffGroup.instrumentName = \markup {      %! ST1
-                                    \hcenter-in                                             %! ST1
-                                        #16                                                 %! ST1
-                                        Viola                                               %! ST1
-                                    }                                                       %! ST1
-                                \set SingleStringStaffGroup.shortInstrumentName = \markup { %! ST1
-                                    \hcenter-in                                             %! ST1
-                                        #10                                                 %! ST1
-                                        Va.                                                 %! ST1
-                                    }                                                       %! ST1
                                 \clef "alto" %! ST3
                                 s1
                             }
@@ -128,16 +98,6 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "CelloMusicVoice"
                             {
-                                \set SingleStringStaffGroup.instrumentName = \markup {      %! ST1
-                                    \hcenter-in                                             %! ST1
-                                        #16                                                 %! ST1
-                                        Cello                                               %! ST1
-                                    }                                                       %! ST1
-                                \set SingleStringStaffGroup.shortInstrumentName = \markup { %! ST1
-                                    \hcenter-in                                             %! ST1
-                                        #10                                                 %! ST1
-                                        Vc.                                                 %! ST1
-                                    }                                                       %! ST1
                                 s1
                             }
                         }
