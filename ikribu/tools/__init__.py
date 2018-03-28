@@ -9,5 +9,6 @@ from .color_rhythm import color_rhythm
 from .glissando_pitches import glissando_pitches
 from .glissando_rhythm import glissando_rhythm
 from .inscription_rhythm import inscription_rhythm
+from .margin_markup import margin_markup
 from .triplet_rhythm import triplet_rhythm
 from .vigil_rhythm import vigil_rhythm
