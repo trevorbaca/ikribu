@@ -1042,11 +1042,7 @@ E_BassClarinetMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_INSTRUMENT:SM34:SM37
     
     % [E BassClarinetMusicVoice measure 64]                      %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
+    \makeRed                                                     %! SM12
     fs'1..
     \repeatTie
     - \tweak color #red                                          %! SM12
@@ -1064,11 +1060,7 @@ E_BassClarinetMusicVoice = {
     ftqs'2.
     
     % [E BassClarinetMusicVoice measure 68]                      %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
+    \makeRed                                                     %! SM12
     ftqs'1
     \repeatTie
     - \tweak color #red                                          %! SM12
@@ -1086,11 +1078,7 @@ E_BassClarinetMusicVoice = {
     g'1..
     
     % [E BassClarinetMusicVoice measure 72]                      %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
+    \makeRed                                                     %! SM12
     g'\breve
     \repeatTie
     - \tweak color #red                                          %! SM12
@@ -1108,11 +1096,7 @@ E_BassClarinetMusicVoice = {
     gqs'2.
     
     % [E BassClarinetMusicVoice measure 76]                      %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
+    \makeRed                                                     %! SM12
     gqs'2
     \repeatTie
     - \tweak color #red                                          %! SM12
@@ -1280,12 +1264,8 @@ E_ViolinMusicVoice = {
     \times 7/12 {
         
         % [E ViolinMusicVoice measure 64]                    %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \p                                                   %! PCW1
@@ -1293,22 +1273,14 @@ E_ViolinMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'1
         :32                                                  %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -1340,12 +1312,8 @@ E_ViolinMusicVoice = {
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 68]                    %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'2
         :32                                                  %! IC
         \p                                                   %! PCW1
@@ -1353,22 +1321,14 @@ E_ViolinMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -1400,12 +1360,8 @@ E_ViolinMusicVoice = {
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 72]                    %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \p                                                   %! PCW1
@@ -1413,22 +1369,14 @@ E_ViolinMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -1460,12 +1408,8 @@ E_ViolinMusicVoice = {
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 76]                    %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
         \p                                                   %! PCW1
@@ -1473,22 +1417,14 @@ E_ViolinMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'4
         :32                                                  %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -1635,12 +1571,8 @@ E_ViolaMusicVoice = {
     \times 7/12 {
         
         % [E ViolaMusicVoice measure 64]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'1
         :32                                                  %! IC
         \>                                                   %! PCW1
@@ -1664,21 +1596,13 @@ E_ViolaMusicVoice = {
                 }
             }
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
@@ -1711,12 +1635,8 @@ E_ViolaMusicVoice = {
     \times 2/3 {
         
         % [E ViolaMusicVoice measure 68]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -1724,21 +1644,13 @@ E_ViolaMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
@@ -1771,12 +1683,8 @@ E_ViolaMusicVoice = {
     \times 2/3 {
         
         % [E ViolaMusicVoice measure 72]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
@@ -1784,21 +1692,13 @@ E_ViolaMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'1
         :32                                                  %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
@@ -1831,12 +1731,8 @@ E_ViolaMusicVoice = {
     \times 2/3 {
         
         % [E ViolaMusicVoice measure 76]                     %! SM4
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \makeRed                                             %! SM12
         c'4
         :32                                                  %! IC
         \f                                                   %! PCW1
@@ -1844,21 +1740,13 @@ E_ViolaMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \once \override Accidental.color = #red
-        \once \override Beam.color = #red
-        \once \override Dots.color = #red
-        \once \override NoteHead.color = #red
-        \once \override Stem.color = #red
+        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
         - \tweak color #red                                  %! SM12
@@ -2050,12 +1938,8 @@ E_CelloMusicVoice = {
         }                                                    %! IC
     
     % [E CelloMusicVoice measure 72]                         %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \makeRed                                                 %! SM12
     f\breve
     :32                                                      %! IC
     \repeatTie
@@ -2088,12 +1972,8 @@ E_CelloMusicVoice = {
     \<                                                       %! PCW1
     
     % [E CelloMusicVoice measure 76]                         %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \makeRed                                                 %! SM12
     fqs2
     :32                                                      %! IC
     \repeatTie
