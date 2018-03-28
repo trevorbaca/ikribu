@@ -1153,12 +1153,8 @@ B_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_27
     
     % [B BassClarinetMusicVoice measure 28]                      %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \makeRed                                                     %! SM12
     \stopStaff                                                   %! SM21
     \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
@@ -1169,12 +1165,8 @@ B_BassClarinetMusicVoice = {
     ^ \markup { OCTAVE }                                         %! SM12
     
     % [B BassClarinetMusicVoice measure 29]                      %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \makeRed                                                     %! SM12
     ef1
     \repeatTie
     \f                                                           %! HC1
@@ -1183,12 +1175,8 @@ B_BassClarinetMusicVoice = {
     
     % [B BassClarinetMusicVoice measure 30]                      %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \makeRed                                                     %! SM12
     ef2.
     \repeatTie
     \>                                                           %! HC1
@@ -1958,11 +1946,6 @@ B_ViolaMusicVoice = {
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 28]                         %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
     \once \override TextSpanner.Y-extent = ##f               %! PCW1
     \once \override TextSpanner.arrow-width = 0.25           %! PCW1
     \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
@@ -1996,6 +1979,7 @@ B_ViolaMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
     \once \override TextSpanner.dash-period = 1.5            %! PCW1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \makeRed                                                 %! SM12
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
@@ -2013,11 +1997,7 @@ B_ViolaMusicVoice = {
         }                                                    %! IC
     
     % [B ViolaMusicVoice measure 29]                         %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
+    \makeRed                                                 %! SM12
     ef'1
     :32                                                      %! IC
     \repeatTie
@@ -2025,11 +2005,7 @@ B_ViolaMusicVoice = {
     ^ \markup { OCTAVE }                                     %! SM12
     
     % [B ViolaMusicVoice measure 30]                         %! SM4
-    \once \override Accidental.color = #red
-    \once \override Beam.color = #red
-    \once \override Dots.color = #red
-    \once \override NoteHead.color = #red
-    \once \override Stem.color = #red
+    \makeRed                                                 %! SM12
     ef'2.
     :32                                                      %! IC
     \repeatTie
