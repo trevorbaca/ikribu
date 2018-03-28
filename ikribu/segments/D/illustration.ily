@@ -1060,6 +1060,11 @@ D_CelloRHMusicVoice = {
         \stopTextSpan
         \startTextSpan
         
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1086,6 +1091,8 @@ D_CelloRHMusicVoice = {
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
@@ -1295,6 +1302,11 @@ D_CelloRHMusicVoice = {
         \stopTextSpan
         \startTextSpan
         
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1318,7 +1330,14 @@ D_CelloRHMusicVoice = {
         -\downbow
         \stopTextSpan
         \startTextSpan
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
         
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1344,6 +1363,8 @@ D_CelloRHMusicVoice = {
         \p                                                   %! PCW1
         \stopTextSpan
         \startTextSpan
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1707,6 +1728,11 @@ D_CelloRHMusicVoice = {
     \times 4/5 {
         
         % [D CelloRHMusicVoice measure 60]                   %! SM4
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
         \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
@@ -1732,6 +1758,8 @@ D_CelloRHMusicVoice = {
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2043,8 +2071,15 @@ D_CelloMusicVoice = {
         d2
         \glissando                                           %! SC
         
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         c'8
         \glissando                                           %! SC
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2085,8 +2120,15 @@ D_CelloMusicVoice = {
         b'8.
         \glissando                                           %! SC
         
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         c'8
         \glissando                                           %! SC
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
         
         b'8.
         ]
@@ -2131,9 +2173,16 @@ D_CelloMusicVoice = {
     \times 1/1 {
         
         % [D CelloMusicVoice measure 60]                     %! SM4
+        \once \override Accidental.color = #red
+        \once \override Beam.color = #red
+        \once \override Dots.color = #red
+        \once \override NoteHead.color = #red
+        \once \override Stem.color = #red
         c'8
         \glissando                                           %! SC
         [
+        - \tweak color #red                                  %! SM12
+        ^ \markup { OCTAVE }                                 %! SM12
         
         d8
         \glissando                                           %! SC
