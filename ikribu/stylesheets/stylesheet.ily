@@ -44,7 +44,7 @@
 }
 
 \layout {
-    \accidentalStyle forget
+    \accidentalStyle neo-modern
     indent = 10
     ragged-bottom = ##t
     ragged-last = ##t
