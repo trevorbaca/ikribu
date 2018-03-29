@@ -10,8 +10,10 @@
         \consists Script_engraver
         \consists Text_engraver
         \consists Text_spanner_engraver
+
         \override TextScript.X-extent = #'(0 . 0)
         \override TextScript.Y-extent = #'(0 . 0)
+
         \override TextSpanner.bound-details.right.attach-dir = #left
         \override TextSpanner.font-size = 6
         \override TextSpanner.staff-padding = 6
@@ -24,6 +26,7 @@
         \consists Multi_measure_rest_engraver
 
         \override MultiMeasureRest.transparent = ##t
+
         \override MultiMeasureRestText.extra-offset = #'(0 . -12)
         \override MultiMeasureRestText.font-size = 3
         \override MultiMeasureRestText.outside-staff-priority = 0
@@ -79,17 +82,6 @@
         \override TimeSignature.font-size = 3
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-
-        %\override VerticalAxisGroup.default-staff-staff-spacing = #'(
-        %    (basic-distance . 0)
-        %    (minimum-distance . 12) % distance below time signature context
-        %    (padding . 0)
-        %    (stretchability . 0)
-        %)
-        %\override VerticalAxisGroup.minimum-Y-extent = #'(-4 . 4)
-        %\override VerticalAxisGroup.Y-extent = #'(0 . 0)
-        %\override VerticalAxisGroup.minimum-Y-extent = #'(0 . 0)
-
     }
 
     % PIANO STAFF
@@ -110,21 +102,6 @@
         \remove Forbid_line_break_engraver
     }
 
-%    % BASS CLARINET
-%    \context {
-%        \Voice
-%        \name BassClarinetMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name BassClarinetMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts BassClarinetMusicVoice
-%    }
-
     \context {
         \Staff
         \name RHStaff
@@ -144,139 +121,12 @@
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
     }
 
-%    % VIOLIN
-%    \context {
-%        \Voice
-%        \name ViolinRHMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ViolinRHMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ViolinRHMusicVoice
-%        \override Clef.stencil = ##f
-%        \override StaffSymbol.line-count = 1
-%        \RemoveAllEmptyStaves
-%    }
-%    \context {
-%        \Voice
-%        \name ViolinMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ViolinMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ViolinMusicVoice
-%    }
-%    \context {
-%        \PianoStaff
-%        \name ViolinStaffGroup
-%        \type Engraver_group
-%        \alias PianoStaff
-%        \accepts ViolinRHMusicStaff
-%        \accepts ViolinMusicStaff
-%        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-%    }
-%
-%    % VIOLA
-%    \context {
-%        \Voice
-%        \name ViolaRHMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ViolaRHMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ViolaRHMusicVoice
-%        \override Clef.stencil = ##f
-%        \override StaffSymbol.line-count = 1
-%        \RemoveAllEmptyStaves
-%    }
-%    \context {
-%        \Voice
-%        \name ViolaMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name ViolaMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts ViolaMusicVoice
-%    }
-%    \context {
-%        \PianoStaff
-%        \name ViolaStaffGroup
-%        \type Engraver_group
-%        \alias PianoStaff
-%        \accepts ViolaRHMusicStaff
-%        \accepts ViolaMusicStaff
-%        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-%    }
-%
-%    % CELLO
-%    \context {
-%        \Voice
-%        \name CelloRHMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name CelloRHMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts CelloRHMusicVoice
-%        \override Clef.stencil = ##f
-%        \override StaffSymbol.line-count = 1
-%        \RemoveAllEmptyStaves
-%    }
-%    \context {
-%        \Voice
-%        \name CelloMusicVoice
-%        \type Engraver_group
-%        \alias Voice
-%    }
-%    \context {
-%        \Staff
-%        \name CelloMusicStaff
-%        \type Engraver_group
-%        \alias Staff
-%        \accepts CelloMusicVoice
-%    }
-%    \context {
-%        \PianoStaff
-%        \name CelloStaffGroup
-%        \type Engraver_group
-%        \alias PianoStaff
-%        \accepts CelloRHMusicStaff
-%        \accepts CelloMusicStaff
-%        \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
-%    }
-
     % ENSEMBLE STAFF GROUP
     \context {
         \StaffGroup
         \name EnsembleStaffGroup
         \type Engraver_group
         \alias StaffGroup
-%        \accepts BassClarinetMusicStaff
-%        \accepts ViolinMusicStaff
-%        \accepts ViolinStaffGroup
-%        \accepts ViolaMusicStaff
-%        \accepts ViolaStaffGroup
-%        \accepts CelloMusicStaff
-%        \accepts CelloStaffGroup
         \accepts SingleStringStaffGroup
         \override StaffGrouper.staff-staff-spacing.minimum-distance = 12
     }
@@ -339,7 +189,6 @@
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
 
-        %\override TextScript.font-name = #"Palatino"
         \override TextScript.padding = 1
         \override TextScript.X-extent = ##f
         \override TextScript.Y-extent = #'(-1.5 . 1.5)
@@ -352,7 +201,6 @@
         \override TupletBracket.padding = 2
         \override TupletBracket.staff-padding = 1.5
         \override TupletNumber.font-size = 1
-        %\override TupletNumber.text = #tuplet-number::calc-fraction-text
 
         autoBeaming = ##f
         barNumberFormatter = #format-oval-barnumbers
