@@ -1058,11 +1058,8 @@ E_BassClarinetMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
     % [E BassClarinetMusicVoice measure 64]                      %! SM4
-    \makeRed                                                     %! SM12
     fs'1..
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [E BassClarinetMusicVoice measure 65]                      %! SM4
     fs'2.
@@ -1076,11 +1073,8 @@ E_BassClarinetMusicVoice = {
     ftqs'2.
     
     % [E BassClarinetMusicVoice measure 68]                      %! SM4
-    \makeRed                                                     %! SM12
     ftqs'1
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [E BassClarinetMusicVoice measure 69]                      %! SM4
     ftqs'2.
@@ -1094,11 +1088,8 @@ E_BassClarinetMusicVoice = {
     g'1..
     
     % [E BassClarinetMusicVoice measure 72]                      %! SM4
-    \makeRed                                                     %! SM12
     g'\breve
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [E BassClarinetMusicVoice measure 73]                      %! SM4
     g'1..
@@ -1112,11 +1103,8 @@ E_BassClarinetMusicVoice = {
     gqs'2.
     
     % [E BassClarinetMusicVoice measure 76]                      %! SM4
-    \makeRed                                                     %! SM12
     gqs'2
     \repeatTie
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [E BassClarinetMusicVoice measure 77]                      %! SM4
     gqs'1..
@@ -1291,27 +1279,18 @@ E_ViolinMusicVoice = {
         
         % [E ViolinMusicVoice measure 64]                    %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \p                                                   %! PCW1
         \<                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'1
         :32                                                  %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [E ViolinMusicVoice measure 65]                        %! SM4
@@ -1339,27 +1318,18 @@ E_ViolinMusicVoice = {
         
         % [E ViolinMusicVoice measure 68]                    %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'2
         :32                                                  %! IC
         \p                                                   %! PCW1
         \<                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         \f                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [E ViolinMusicVoice measure 69]                        %! SM4
@@ -1387,27 +1357,18 @@ E_ViolinMusicVoice = {
         
         % [E ViolinMusicVoice measure 72]                    %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \p                                                   %! PCW1
         \<                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [E ViolinMusicVoice measure 73]                        %! SM4
@@ -1435,27 +1396,18 @@ E_ViolinMusicVoice = {
         
         % [E ViolinMusicVoice measure 76]                    %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
         \p                                                   %! PCW1
         \<                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'4
         :32                                                  %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
         \f                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [E ViolinMusicVoice measure 77]                        %! SM4
@@ -1614,41 +1566,24 @@ E_ViolaMusicVoice = {
         
         % [E ViolaMusicVoice measure 64]                     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'1
         :32                                                  %! IC
         \>                                                   %! PCW1
         \f                                                   %! PCW1
-        ^ \markup {
-            \column
-                {
-                    \line                                    %! IC
-                        {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    \override                %! IC
-                                        #'(box-padding . 0.5) %! IC
-                                        \box                 %! IC
-                                            "sponges on BD"  %! IC
-                        }                                    %! IC
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
-                }
-            }
+        ^ \markup {                                          %! IC
+            \whiteout                                        %! IC
+                \upright                                     %! IC
+                    \override                                %! IC
+                        #'(box-padding . 0.5)                %! IC
+                        \box                                 %! IC
+                            "sponges on BD"                  %! IC
+            }                                                %! IC
         
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1678,25 +1613,16 @@ E_ViolaMusicVoice = {
         
         % [E ViolaMusicVoice measure 68]                     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
         \f                                                   %! PCW1
         \>                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'2
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1726,25 +1652,16 @@ E_ViolaMusicVoice = {
         
         % [E ViolaMusicVoice measure 72]                     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
         \f                                                   %! PCW1
         \>                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'1
         :32                                                  %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'1
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/12 {
@@ -1774,25 +1691,16 @@ E_ViolaMusicVoice = {
         
         % [E ViolaMusicVoice measure 76]                     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         :32                                                  %! IC
         \f                                                   %! PCW1
         \>                                                   %! PCW1
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'4
         -\accent                                             %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/12 {
@@ -1997,14 +1905,11 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 72]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    \makeRed                                                 %! SM12
     f\breve
     :32                                                      %! IC
     \repeatTie
     \mp                                                      %! PCW1
     \>                                                       %! PCW1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [E CelloMusicVoice measure 73]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
@@ -2031,14 +1936,11 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 76]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    \makeRed                                                 %! SM12
     fqs2
     :32                                                      %! IC
     \repeatTie
     \mp                                                      %! PCW1
     \>                                                       %! PCW1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [E CelloMusicVoice measure 77]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3

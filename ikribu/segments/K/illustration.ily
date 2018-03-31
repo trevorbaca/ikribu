@@ -1142,7 +1142,6 @@ K_ViolinMusicVoice = {
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
@@ -1150,51 +1149,26 @@ K_ViolinMusicVoice = {
         -\staccato                                           %! IC
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
-        ^ \markup {
-            \column
-                {
-                    \line                                    %! IC
-                        {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    "col legno battuto"      %! IC
-                        }                                    %! IC
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
-                }
-            }
+        ^ \markup {                                          %! IC
+            \whiteout                                        %! IC
+                \upright                                     %! IC
+                    "col legno battuto"                      %! IC
+            }                                                %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
@@ -1205,11 +1179,8 @@ K_ViolinMusicVoice = {
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
@@ -1239,21 +1210,15 @@ K_ViolinMusicVoice = {
     \times 16/20 {
         
         % [K ViolinMusicVoice measure 133]                   %! SM4
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         d'8
         -\staccato                                           %! IC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         b8
         -\staccato                                           %! IC
@@ -1267,44 +1232,11 @@ K_ViolinMusicVoice = {
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        b8
-        -\staccato                                           %! IC
-        
-        \makeRed                                             %! SM12
-        c'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        d'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        d'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        c'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         b8
         -\staccato                                           %! IC
@@ -1312,33 +1244,36 @@ K_ViolinMusicVoice = {
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
+        d'8
+        -\staccato                                           %! IC
+        
+        c'8
+        -\staccato                                           %! IC
+        
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
+        
+        c'8
+        -\staccato                                           %! IC
         
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
+        b8
+        -\staccato                                           %! IC
+        
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
+        d'8
+        -\staccato                                           %! IC
+        
         d'8
         -\staccato                                           %! IC
         ]
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [K ViolinMusicVoice measure 134]                       %! SM4
@@ -1369,11 +1304,8 @@ K_ViolinMusicVoice = {
         -\staccato                                           %! IC
         [
         
-        \makeRed                                             %! SM12
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
@@ -1384,11 +1316,8 @@ K_ViolinMusicVoice = {
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
@@ -1396,18 +1325,12 @@ K_ViolinMusicVoice = {
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         b8
         -\staccato                                           %! IC
         ]
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [K ViolinMusicVoice measure 138]                       %! SM4
@@ -1430,33 +1353,24 @@ K_ViolinMusicVoice = {
     \times 8/12 {
         
         % [K ViolinMusicVoice measure 141]                   %! SM4
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         c'8
         -\staccato                                           %! IC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         b8
         -\staccato                                           %! IC
@@ -1464,29 +1378,17 @@ K_ViolinMusicVoice = {
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
@@ -1699,7 +1601,6 @@ K_ViolaMusicVoice = {
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
@@ -1707,45 +1608,11 @@ K_ViolaMusicVoice = {
         -\staccato                                           %! IC
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
         [
-        ^ \markup {
-            \column
-                {
-                    \line                                    %! IC
-                        {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    "col legno battuto"      %! IC
-                        }                                    %! IC
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
-                }
-            }
-        
-        \makeRed                                             %! SM12
-        c'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        d'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        d'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        c'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
+        ^ \markup {                                          %! IC
+            \whiteout                                        %! IC
+                \upright                                     %! IC
+                    "col legno battuto"                      %! IC
+            }                                                %! IC
         
         c'8
         -\staccato                                           %! IC
@@ -1753,11 +1620,20 @@ K_ViolaMusicVoice = {
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
+        d'8
+        -\staccato                                           %! IC
+        
+        c'8
+        -\staccato                                           %! IC
+        
+        c'8
+        -\staccato                                           %! IC
+        
+        d'8
+        -\staccato                                           %! IC
+        
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
@@ -1787,15 +1663,12 @@ K_ViolaMusicVoice = {
     \times 16/18 {
         
         % [K ViolaMusicVoice measure 133]                    %! SM4
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         d'8
         -\staccato                                           %! IC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
@@ -1809,72 +1682,45 @@ K_ViolaMusicVoice = {
         b8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         b8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
         ]
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [K ViolaMusicVoice measure 134]                        %! SM4
@@ -1898,15 +1744,12 @@ K_ViolaMusicVoice = {
     \times 6/8 {
         
         % [K ViolaMusicVoice measure 137]                    %! SM4
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         b8
         -\staccato                                           %! IC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d'8
         -\staccato                                           %! IC
@@ -1917,27 +1760,18 @@ K_ViolaMusicVoice = {
         d'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         b8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         b8
         -\staccato                                           %! IC
         ]
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     
     % [K ViolaMusicVoice measure 138]                        %! SM4
@@ -1960,61 +1794,40 @@ K_ViolaMusicVoice = {
     \times 8/10 {
         
         % [K ViolaMusicVoice measure 141]                    %! SM4
-        \makeRed                                             %! SM12
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         c'8
         -\staccato                                           %! IC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        \makeRed                                             %! SM12
-        c'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
-        
-        d'8
-        -\staccato                                           %! IC
-        
-        \makeRed                                             %! SM12
-        d'8
-        -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
+        d'8
+        -\staccato                                           %! IC
+        
+        d'8
+        -\staccato                                           %! IC
+        
+        c'8
+        -\staccato                                           %! IC
+        
         b8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         c'8
         -\staccato                                           %! IC
         
-        \makeRed                                             %! SM12
         d'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         c'8
         -\staccato                                           %! IC
         ]
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         \revert RepeatTie.direction                          %! OC2
     }
     
