@@ -659,31 +659,20 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \>                                                   %! PCW1
         \p                                                   %! PCW1
         \startTextSpan
-        ^ \markup {
-            \column
-                {
-                    \line                                    %! IC
-                        {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    \override                %! IC
-                                        #'(box-padding . 0.5) %! IC
-                                        \box                 %! IC
-                                            "1/2 clt"        %! IC
-                        }                                    %! IC
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
-                }
-            }
+        ^ \markup {                                          %! IC
+            \whiteout                                        %! IC
+                \upright                                     %! IC
+                    \override                                %! IC
+                        #'(box-padding . 0.5)                %! IC
+                        \box                                 %! IC
+                            "1/2 clt"                        %! IC
+            }                                                %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
@@ -708,12 +697,9 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -735,14 +721,11 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -767,12 +750,9 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -793,13 +773,10 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -821,15 +798,12 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -851,14 +825,11 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \ppp                                                 %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -902,15 +873,12 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -931,13 +899,10 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -959,14 +924,11 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
@@ -1014,15 +976,12 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1043,13 +1002,10 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1071,14 +1027,11 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1099,12 +1052,9 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1125,12 +1075,9 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1152,15 +1099,12 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1182,14 +1126,11 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1237,15 +1178,12 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1266,13 +1204,10 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1294,13 +1229,10 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1344,15 +1276,12 @@ P_ViolinRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1383,21 +1312,15 @@ P_ViolinRHMusicVoice = {
                 }
             }
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \ppp                                                 %! PCW1
         \stopTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
         \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -1521,11 +1444,8 @@ P_ViolinMusicVoice = {
     \times 2/3 {
         
         % [P ViolinMusicVoice measure 240]                   %! SM4
-        \makeRed                                             %! SM12
         g''2
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \makeRed                                             %! SM12
         e''8
@@ -1567,12 +1487,9 @@ P_ViolinMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d'8
         \glissando                                           %! SC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \makeRed                                             %! SM12
         e''8.
@@ -1580,18 +1497,12 @@ P_ViolinMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         d''8
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         f''8.
         ]
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \makeRed                                             %! SM12
         f'4
@@ -1691,30 +1602,19 @@ P_ViolaRHMusicVoice = {
         \set RHStaff.forceClef = ##t                         %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \>                                                   %! PCW1
         \p                                                   %! PCW1
         \startTextSpan
-        ^ \markup {
-            \column
-                {
-                    \line                                    %! IC
-                        {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    \override                %! IC
-                                        #'(box-padding . 0.5) %! IC
-                                        \box                 %! IC
-                                            "1/2 clt"        %! IC
-                        }                                    %! IC
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
-                }
-            }
+        ^ \markup {                                          %! IC
+            \whiteout                                        %! IC
+                \upright                                     %! IC
+                    \override                                %! IC
+                        #'(box-padding . 0.5)                %! IC
+                        \box                                 %! IC
+                            "1/2 clt"                        %! IC
+            }                                                %! IC
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1736,13 +1636,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1764,15 +1661,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \times 2/3 {
         
@@ -1797,14 +1691,11 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1848,15 +1739,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
@@ -1881,13 +1769,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1909,14 +1794,11 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1937,12 +1819,9 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1963,12 +1842,9 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1990,15 +1866,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2019,13 +1892,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2047,15 +1917,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2077,14 +1944,11 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2132,15 +1996,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2161,13 +2022,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2189,14 +2047,11 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2217,13 +2072,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2245,13 +2097,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -2299,15 +2148,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2328,12 +2174,9 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2355,15 +2198,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2384,13 +2224,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2411,13 +2248,10 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2439,15 +2273,12 @@ P_ViolaRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2478,22 +2309,16 @@ P_ViolaRHMusicVoice = {
                 }
             }
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \ppp                                                 %! PCW1
         \stopTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
         \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -2588,11 +2413,8 @@ P_ViolaMusicVoice = {
             }                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         \override Staff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \makeRed                                             %! SM12
         d'8
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2775,31 +2597,20 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \>                                                   %! PCW1
         \p                                                   %! PCW1
         \startTextSpan
-        ^ \markup {
-            \column
-                {
-                    \line                                    %! IC
-                        {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    \override                %! IC
-                                        #'(box-padding . 0.5) %! IC
-                                        \box                 %! IC
-                                            "1/2 clt"        %! IC
-                        }                                    %! IC
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
-                }
-            }
+        ^ \markup {                                          %! IC
+            \whiteout                                        %! IC
+                \upright                                     %! IC
+                    \override                                %! IC
+                        #'(box-padding . 0.5)                %! IC
+                        \box                                 %! IC
+                            "1/2 clt"                        %! IC
+            }                                                %! IC
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2820,12 +2631,9 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2847,14 +2655,11 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
@@ -2879,12 +2684,9 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2905,13 +2707,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
@@ -2937,15 +2736,12 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2967,14 +2763,11 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \ppp                                                 %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -3018,15 +2811,12 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3047,12 +2837,9 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3074,15 +2861,12 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/7 {
@@ -3107,12 +2891,9 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3133,13 +2914,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3161,14 +2939,11 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3189,12 +2964,9 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3216,14 +2988,11 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3244,13 +3013,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3271,13 +3037,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \times 8/9 {
         
@@ -3302,14 +3065,11 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -3353,15 +3113,12 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3382,13 +3139,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3410,15 +3164,12 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \p                                                   %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3439,13 +3190,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3466,13 +3214,10 @@ P_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -3504,22 +3249,16 @@ P_CelloRHMusicVoice = {
             }
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \ppp                                                 %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \pp                                                  %! PCW1
         \stopTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
         \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -3689,12 +3428,9 @@ P_CelloMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         f''8
         \glissando                                           %! SC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \makeRed                                             %! SM12
         e'8.
@@ -3702,17 +3438,11 @@ P_CelloMusicVoice = {
         - \tweak color #red                                  %! SM12
         ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         g'8
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
-        \makeRed                                             %! SM12
         g8.
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \makeRed                                             %! SM12
         b8

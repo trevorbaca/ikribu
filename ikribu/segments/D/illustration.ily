@@ -1128,15 +1128,12 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \pp                                                  %! PCW1
         \stopTextSpan
         \<                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
@@ -1365,13 +1362,10 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.padding = 0.5
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
-        \makeRed                                             %! SM12
         c'4
         -\downbow
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -1393,14 +1387,11 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         -\upbow
         \p                                                   %! PCW1
         \stopTextSpan
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1784,14 +1775,11 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        \makeRed                                             %! SM12
         c'4
         \ff                                                  %! PCW1
         \stopTextSpan
         \>                                                   %! PCW1
         \startTextSpan
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         \once \override TextSpanner.Y-extent = ##f
         \once \override TextSpanner.arrow-width = 0.25
@@ -2119,11 +2107,8 @@ D_CelloMusicVoice = {
         d2
         \glissando                                           %! SC
         
-        \makeRed                                             %! SM12
         c'8
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2164,11 +2149,8 @@ D_CelloMusicVoice = {
         b'8.
         \glissando                                           %! SC
         
-        \makeRed                                             %! SM12
         c'8
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         b'8.
         ]
@@ -2213,12 +2195,9 @@ D_CelloMusicVoice = {
     \times 1/1 {
         
         % [D CelloMusicVoice measure 60]                     %! SM4
-        \makeRed                                             %! SM12
         c'8
         \glissando                                           %! SC
         [
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
         
         d8
         \glissando                                           %! SC
