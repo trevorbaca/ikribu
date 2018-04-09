@@ -147,7 +147,7 @@ maker(
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
     baca.pitch('<E4 F#4>'),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
         ),
@@ -161,7 +161,7 @@ maker(
     baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
     baca.pitch('<Eb4 F4>'),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
         ),
@@ -185,7 +185,7 @@ maker(
 
 maker(
     ('vc', (5, 8)),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('tasto poss.'),
         baca.markup('pos. ord.'),
         ),
@@ -193,7 +193,7 @@ maker(
 
 maker(
     ('vc', (9, 12)),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('pos. ord.'),
         baca.markup.XP(),
         ),
@@ -201,7 +201,7 @@ maker(
 
 maker(
     ('vc', (13, 16)),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup.XP(),
         baca.markup('pos. ord.'),
         ),
@@ -209,7 +209,7 @@ maker(
 
 maker(
     ('vc', (17, 20)),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('pos. ord.'),
         baca.markup('tasto poss.'),
         ),
