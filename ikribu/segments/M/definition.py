@@ -247,7 +247,7 @@ maker(
 
 maker(
     ('vc', [(2, 3), (9, 10), (13, 14), (20, 21)]),
-    baca.single_segment_transition(
+    baca.enchained_transition(
         baca.markup.tasto(),
         baca.markup.XP(),
         ),
