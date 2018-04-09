@@ -71,7 +71,7 @@ maker(
     baca.clef('treble'),
     baca.markup.string_numbers([2, 3]),
     baca.pitch('<E4 F#4>'),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
         ),
@@ -86,7 +86,7 @@ maker(
     baca.clef_extra_offset((-2.5, 0)),
     baca.clef_x_extent_false(),
     baca.pitch('<Eb4 F4>'),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. tast.'),
         ),
@@ -100,7 +100,7 @@ maker(
     baca.hairpin('p < ff'),
     baca.pitch('F#3'),
     baca.stem_tremolo(),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('(trem. flaut. tast.)'),
         baca.markup('trem. XP (non. flaut.)'),
         ),

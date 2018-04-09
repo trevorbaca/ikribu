@@ -104,7 +104,7 @@ maker(
         baca.hairpin('ppp < p', baca.leaves()[:2]),
         baca.hairpin('p > niente', baca.rleaves()[-2:]),
         ]),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. pont.'),
         baca.markup('trem. flaut. tast.'),
         ),
@@ -123,7 +123,7 @@ maker(
         baca.hairpin('ppp < mf', baca.leaves()[:5]),
         baca.hairpin('mf > niente', baca.rleaves()[-2:]),
         ]),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. pont.'),
         baca.markup('trem. flaut. tast.'),
         ),

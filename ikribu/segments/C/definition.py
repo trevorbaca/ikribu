@@ -176,7 +176,7 @@ maker(
         bookend=True,
         ),
     baca.stem_tremolo(),
-    baca.enchained_transition(
+    baca.transition(
         baca.markup('trem. flaut. tasto. (arco)'),
         baca.markup('trem. flaut. XP'),
         ),
