@@ -1983,10 +1983,10 @@ C_CelloMusicVoice = {
     \override NoteHead.style = #'harmonic                    %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
     \override TupletBracket.direction = #down                %! OC1
-    \once \override TextSpanner.Y-extent = ##f               %! PCW1
-    \once \override TextSpanner.arrow-width = 0.25           %! PCW1
-    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PCW1
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PCW1
+    \once \override TextSpanner.Y-extent = ##f               %! PWC1
+    \once \override TextSpanner.arrow-width = 0.25           %! PWC1
+    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PWC1
+    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.left.text = \markup {
         \concat
             {
@@ -1996,13 +1996,13 @@ C_CelloMusicVoice = {
                 \hspace
                     #0.5
             }
-        }                                                    %! PCW1
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PCW1
-    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PCW1
-    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PCW1
-    \once \override TextSpanner.bound-details.right.arrow = ##t %! PCW1
-    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PCW1
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PCW1
+        }                                                    %! PWC1
+    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PWC1
+    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PWC1
+    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PWC1
+    \once \override TextSpanner.bound-details.right.arrow = ##t %! PWC1
+    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PWC1
+    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.right.text = \markup {
         \concat
             {
@@ -2012,31 +2012,31 @@ C_CelloMusicVoice = {
                     \upright
                         "trem. flaut. XP"
             }
-        }                                                    %! PCW1
-    \once \override TextSpanner.dash-fraction = 0.25         %! PCW1
-    \once \override TextSpanner.dash-period = 1.5            %! PCW1
+        }                                                    %! PWC1
+    \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
+    \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
-    \<                                                       %! PCW1
-    \ppp                                                     %! PCW1
-    \startTextSpan                                           %! PCW1
+    \<                                                       %! PWC1
+    \ppp                                                     %! PWC1
+    \startTextSpan                                           %! PWC1
     
     % [C CelloMusicVoice measure 37]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
     \repeatTie
-    \pp                                                      %! PCW1
-    \>                                                       %! PCW1
+    \pp                                                      %! PWC1
+    \>                                                       %! PWC1
     
     % [C CelloMusicVoice measure 38]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''2.
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \<                                                       %! PCW1
+    \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
@@ -2045,8 +2045,8 @@ C_CelloMusicVoice = {
         d''4
         :32                                                  %! IC
         \repeatTie
-        \pp                                                  %! PCW1
-        \>                                                   %! PCW1
+        \pp                                                  %! PWC1
+        \>                                                   %! PWC1
     }
     
     % [C CelloMusicVoice measure 40]                         %! SM4
@@ -2054,24 +2054,24 @@ C_CelloMusicVoice = {
     d''1
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \<                                                       %! PCW1
+    \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     
     % [C CelloMusicVoice measure 41]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
     \repeatTie
-    \pp                                                      %! PCW1
-    \>                                                       %! PCW1
+    \pp                                                      %! PWC1
+    \>                                                       %! PWC1
     
     % [C CelloMusicVoice measure 42]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''2.
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \<                                                       %! PCW1
+    \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
@@ -2080,8 +2080,8 @@ C_CelloMusicVoice = {
         d''4
         :32                                                  %! IC
         \repeatTie
-        \pp                                                  %! PCW1
-        \>                                                   %! PCW1
+        \pp                                                  %! PWC1
+        \>                                                   %! PWC1
     }
     
     % [C CelloMusicVoice measure 44]                         %! SM4
@@ -2089,24 +2089,24 @@ C_CelloMusicVoice = {
     d''1
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \<                                                       %! PCW1
+    \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     
     % [C CelloMusicVoice measure 45]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
     \repeatTie
-    \pp                                                      %! PCW1
-    \>                                                       %! PCW1
+    \pp                                                      %! PWC1
+    \>                                                       %! PWC1
     
     % [C CelloMusicVoice measure 46]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''2.
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \<                                                       %! PCW1
+    \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
@@ -2115,8 +2115,8 @@ C_CelloMusicVoice = {
         d''4
         :32                                                  %! IC
         \repeatTie
-        \pp                                                  %! PCW1
-        \>                                                   %! PCW1
+        \pp                                                  %! PWC1
+        \>                                                   %! PWC1
     }
     
     % [C CelloMusicVoice measure 48]                         %! SM4
@@ -2124,24 +2124,24 @@ C_CelloMusicVoice = {
     d''1
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \<                                                       %! PCW1
+    \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     
     % [C CelloMusicVoice measure 49]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
     \repeatTie
-    \pp                                                      %! PCW1
-    \>                                                       %! PCW1
+    \pp                                                      %! PWC1
+    \>                                                       %! PWC1
     
     % [C CelloMusicVoice measure 50]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''2.
     :32                                                      %! IC
     \repeatTie
-    \ppp                                                     %! PCW1
-    \stopTextSpan                                            %! PCW1
+    \ppp                                                     %! PWC1
+    \stopTextSpan                                            %! PWC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert NoteHead.style                                   %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
