@@ -954,11 +954,8 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 226]                     %! SM4
-    \makeRed                                                     %! SM12
     <c e''>1..
     \repeatTie                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [O BassClarinetMusicVoice measure 227]                     %! SM4
     <c g''>2.
@@ -981,29 +978,20 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 232]                     %! SM4
-    \makeRed                                                     %! SM12
     <c e''>1
     \repeatTie                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [O BassClarinetMusicVoice measure 233]                     %! SM4
-    \makeRed                                                     %! SM12
     <c e''>2.
     \repeatTie                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [O BassClarinetMusicVoice measure 234]                     %! SM4
     <c g''>1..
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 235]                     %! SM4
-    \makeRed                                                     %! SM12
     <c e''>\breve
     \repeatTie                                                   %! SC
-    - \tweak color #red                                          %! SM12
-    ^ \markup { OCTAVE }                                         %! SM12
     
     % [O BassClarinetMusicVoice measure 236]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
@@ -1240,13 +1228,10 @@ O_ViolinMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \makeRed                                                 %! SM12
     <e' fs'>1..
     :32                                                      %! IC
     \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     \startTextSpan                                           %! PWC1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     _ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC
@@ -1279,20 +1264,14 @@ O_ViolinMusicVoice = {
     \repeatTie
     
     % [O ViolinMusicVoice measure 232]                       %! SM4
-    \makeRed                                                 %! SM12
     <e' fs'>1
     :32                                                      %! IC
     \repeatTie
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O ViolinMusicVoice measure 233]                       %! SM4
-    \makeRed                                                 %! SM12
     <e' fs'>2.
     :32                                                      %! IC
     \repeatTie
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O ViolinMusicVoice measure 234]                       %! SM4
     <e' fs'>1..
@@ -1300,12 +1279,9 @@ O_ViolinMusicVoice = {
     \repeatTie
     
     % [O ViolinMusicVoice measure 235]                       %! SM4
-    \makeRed                                                 %! SM12
     <e' fs'>\breve
     :32                                                      %! IC
     \repeatTie
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O ViolinMusicVoice measure 236]                       %! SM4
     \once \override Hairpin.circled-tip = ##t                %! HC1
@@ -1544,13 +1520,10 @@ O_ViolaMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \makeRed                                                 %! SM12
     <ef' f'>1..
     :32                                                      %! IC
     \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     \startTextSpan                                           %! PWC1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     _ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC
@@ -1583,20 +1556,14 @@ O_ViolaMusicVoice = {
     \repeatTie
     
     % [O ViolaMusicVoice measure 232]                        %! SM4
-    \makeRed                                                 %! SM12
     <ef' f'>1
     :32                                                      %! IC
     \repeatTie
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O ViolaMusicVoice measure 233]                        %! SM4
-    \makeRed                                                 %! SM12
     <ef' f'>2.
     :32                                                      %! IC
     \repeatTie
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O ViolaMusicVoice measure 234]                        %! SM4
     <ef' f'>1..
@@ -1604,12 +1571,9 @@ O_ViolaMusicVoice = {
     \repeatTie
     
     % [O ViolaMusicVoice measure 235]                        %! SM4
-    \makeRed                                                 %! SM12
     <ef' f'>\breve
     :32                                                      %! IC
     \repeatTie
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O ViolaMusicVoice measure 236]                        %! SM4
     \once \override Hairpin.circled-tip = ##t                %! HC1
@@ -1899,14 +1863,11 @@ O_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    \makeRed                                                 %! SM12
     bf,,,1..
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
     \startTextSpan                                           %! PWC1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O CelloMusicVoice measure 227]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
@@ -1979,24 +1940,18 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 232]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    \makeRed                                                 %! SM12
     bf,,,1
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O CelloMusicVoice measure 233]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    \makeRed                                                 %! SM12
     bf,,,2.
     \repeatTie
     \p                                                       %! PWC1
     \stopTextSpan                                            %! PWC1
     \<                                                       %! PWC1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O CelloMusicVoice measure 234]                        %! SM4
     \once \override TextSpanner.Y-extent = ##f               %! PWC1
@@ -2040,13 +1995,10 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 235]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    \makeRed                                                 %! SM12
     bf,,,\breve
     \repeatTie
     \p                                                       %! PWC1
     \<                                                       %! PWC1
-    - \tweak color #red                                      %! SM12
-    ^ \markup { OCTAVE }                                     %! SM12
     
     % [O CelloMusicVoice measure 236]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3

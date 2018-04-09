@@ -406,7 +406,6 @@ H_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    \makeRed                                                     %! SM12
     ef\breve
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
@@ -424,10 +423,6 @@ H_BassClarinetMusicVoice = {
                             #(x11-color 'green4)                 %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                             "[“B. cl.”]"                         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                \line                                            %! SM12
-                    {                                            %! SM12
-                        OCTAVE                                   %! SM12
-                    }                                            %! SM12
             }
         }
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
@@ -1830,7 +1825,6 @@ H_ViolinMusicVoice = {
         \set Staff.forceClef = ##t                           %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-        \makeRed                                             %! SM12
         c''8
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! SM8:REAPPLIED_DYNAMIC:SM37
         \glissando                                           %! SC
@@ -1850,10 +1844,6 @@ H_ViolinMusicVoice = {
                                 #(x11-color 'green4)         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Vn.”]                      %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
                 }
             }
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
@@ -1887,11 +1877,8 @@ H_ViolinMusicVoice = {
         g''2
         \glissando                                           %! SC
         
-        \makeRed                                             %! SM12
         e''8
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -3349,7 +3336,6 @@ H_ViolaMusicVoice = {
         \set Staff.forceClef = ##t                           %! SM8:REAPPLIED_CLEF:SM33:SM37
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-        \makeRed                                             %! SM12
         c''2..
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente")) %! SM8:REAPPLIED_DYNAMIC:SM37
         \glissando                                           %! SC
@@ -3368,10 +3354,6 @@ H_ViolaMusicVoice = {
                                 #(x11-color 'green4)         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                                 [“Va.”]                      %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                         }                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                    \line                                    %! SM12
-                        {                                    %! SM12
-                            OCTAVE                           %! SM12
-                        }                                    %! SM12
                 }
             }
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
@@ -3392,11 +3374,8 @@ H_ViolaMusicVoice = {
         d'1
         \glissando                                           %! SC
         
-        \makeRed                                             %! SM12
         e''4.
         \glissando                                           %! SC
-        - \tweak color #red                                  %! SM12
-        ^ \markup { OCTAVE }                                 %! SM12
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
