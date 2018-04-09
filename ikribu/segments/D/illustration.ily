@@ -922,8 +922,8 @@ D_CelloRHMusicVoice = {
         c'4
         -\downbow
         \stopTextSpan
-        \>                                                   %! PCW1
-        \ff                                                  %! PCW1
+        \>                                                   %! PWC1
+        \ff                                                  %! PWC1
         \startTextSpan
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -978,9 +978,9 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
     }
     \times 4/6 {
@@ -1055,9 +1055,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \f                                                   %! PCW1
+        \f                                                   %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1082,7 +1082,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
-        \pp                                                  %! PCW1
+        \pp                                                  %! PWC1
         \stopTextSpan
         \startTextSpan
         
@@ -1130,9 +1130,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \pp                                                  %! PCW1
+        \pp                                                  %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1184,9 +1184,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1261,9 +1261,9 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \ppp                                                 %! PCW1
+        \ppp                                                 %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1314,9 +1314,9 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \ff                                                  %! PCW1
+        \ff                                                  %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1389,7 +1389,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
         \startTextSpan
         
@@ -1437,9 +1437,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1492,9 +1492,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \f                                                   %! PCW1
+        \f                                                   %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1566,9 +1566,9 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \pp                                                  %! PCW1
+        \pp                                                  %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1592,7 +1592,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
         \startTextSpan
     }
@@ -1644,9 +1644,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1699,9 +1699,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \ppp                                                 %! PCW1
+        \ppp                                                 %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1776,9 +1776,9 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \ff                                                  %! PCW1
+        \ff                                                  %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1826,9 +1826,9 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \p                                                   %! PCW1
+        \p                                                   %! PWC1
         \stopTextSpan
-        \<                                                   %! PCW1
+        \<                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1903,7 +1903,7 @@ D_CelloRHMusicVoice = {
         \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
-        \f                                                   %! PCW1
+        \f                                                   %! PWC1
         \stopTextSpan
         \startTextSpan
         
@@ -1951,9 +1951,9 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \f                                                   %! PCW1
+        \f                                                   %! PWC1
         \stopTextSpan
-        \>                                                   %! PCW1
+        \>                                                   %! PWC1
         \startTextSpan
         
         \once \override TextSpanner.Y-extent = ##f
@@ -1993,7 +1993,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \pp                                                  %! PCW1
+        \pp                                                  %! PWC1
         \stopTextSpan
         \revert DynamicLineSpanner.staff-padding             %! OC2
         \revert RepeatTie.direction                          %! OC2
