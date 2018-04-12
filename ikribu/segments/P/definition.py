@@ -83,13 +83,13 @@ maker(
 
 maker(
     ('vn_rh', (1, 3)),
+    baca.script_staff_padding(7, selector=baca.leaves()),
+    baca.text_spanner_staff_padding(4),
+    ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([0, 8], 12),
         rotation=0,
         ),
-    ikribu.BowContactPointCommand(rotation=0),
-    baca.script_staff_padding(7, selector=baca.leaves()),
-    baca.text_spanner_staff_padding(4),
     )
 
 maker(
@@ -103,11 +103,11 @@ maker(
     ('va_rh', (1, 3)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
+    ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([4, 14], 16),
         rotation=-1,
         ),
-    ikribu.BowContactPointCommand(rotation=-1),
     )
 
 maker(
@@ -121,11 +121,11 @@ maker(
     ('vc_rh', (1, 3)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
+    ikribu.bcps(rotation=-2),
     ikribu.bow_rhythm(
         logical_tie_masks=abjad.silence([8, 20], 20),
         rotation=-2,
         ),
-    ikribu.BowContactPointCommand(rotation=-2),
     )
 
 maker(

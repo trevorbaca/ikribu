@@ -75,7 +75,7 @@ maker(
     baca.staff_position(0),
     baca.text_script_staff_padding(8),
     baca.text_spanner_staff_padding(4),
-    ikribu.BowContactPointCommand(rotation=-2),
+    ikribu.bcps(rotation=-2),
     )
 
 maker(
