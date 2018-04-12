@@ -1,6 +1,6 @@
-from .BowContactPointCommand import BowContactPointCommand
 from .ScoreTemplate import ScoreTemplate
 from .bcl_color_rhythm import bcl_color_rhythm
+from .bcps import bcps
 from .bow_rhythm import bow_rhythm
 from .box_adjustment import box_adjustment
 from .clb_rhythm import clb_rhythm

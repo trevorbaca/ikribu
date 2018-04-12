@@ -133,21 +133,21 @@ maker(
     ('vn_rh', (1, 2)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(3.5),
-    ikribu.BowContactPointCommand(rotation=0),
+    ikribu.bcps(rotation=0),
     )
 
 maker(
     ('va_rh', (1, 2)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(3.5),
-    ikribu.BowContactPointCommand(rotation=-1),
+    ikribu.bcps(rotation=-1),
     )
 
 maker(
     ('vc_rh', (1, 2)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(3.5),
-    ikribu.BowContactPointCommand(rotation=-2),
+    ikribu.bcps(rotation=-2),
     )
 
 maker(
