@@ -109,7 +109,7 @@ maker(
 
 maker(
     ('bcl', (1, 2)),
-    baca.tie(repeat=True, selector=baca.tleaves())
+    baca.repeat_tie(selector=baca.tleaves())
     )
 
 maker(
