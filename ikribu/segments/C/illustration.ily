@@ -1492,7 +1492,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 37]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    fs'1
+    fs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
     \<                                                       %! HC1
@@ -1505,7 +1505,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 38]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    gs'2.
+    gs'!2.
     :32                                                      %! IC
     \p                                                       %! HC1
     
@@ -1517,7 +1517,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 41]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    gs'1
+    gs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
     \>                                                       %! HC1
@@ -1525,7 +1525,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 42]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    fs'2.
+    fs'!2.
     :32                                                      %! IC
     \pp                                                      %! HC1
     
@@ -1537,7 +1537,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 45]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    fs'1
+    fs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
     \<                                                       %! HC1
@@ -1545,7 +1545,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 46]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    gs'2.
+    gs'!2.
     :32                                                      %! IC
     \p                                                       %! HC1
     
@@ -1557,7 +1557,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 49]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    gs'1
+    gs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
     \>                                                       %! HC1
@@ -1565,7 +1565,7 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 50]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    fs'2.
+    fs'!2.
     :32                                                      %! IC
     \pp                                                      %! HC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
@@ -1932,7 +1932,7 @@ C_CelloMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fqf''1..
+    fqf''!1..
     -\laissezVibrer                                          %! IC
     \sfz                                                     %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {

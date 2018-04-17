@@ -543,10 +543,10 @@ P_BassClarinetMusicVoice = {
     d4
     \glissando                                                   %! SC
     
-    cs4
+    cs!4
     
     % [P BassClarinetMusicVoice measure 245]                     %! SM4
-    cs2.
+    cs!2.
     \repeatTie                                                   %! TCC
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     

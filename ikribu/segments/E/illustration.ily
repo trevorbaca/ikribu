@@ -1023,7 +1023,7 @@ E_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fs'2
+    fs'!2
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \column
@@ -1058,30 +1058,30 @@ E_BassClarinetMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
     % [E BassClarinetMusicVoice measure 64]                      %! SM4
-    fs'1..
+    fs'!1..
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 65]                      %! SM4
-    fs'2.
+    fs'!2.
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 66]                      %! SM4
-    fs'1
+    fs'!1
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 67]                      %! SM4
-    ftqs'2.
+    ftqs'!2.
     
     % [E BassClarinetMusicVoice measure 68]                      %! SM4
-    ftqs'1
+    ftqs'!1
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 69]                      %! SM4
-    ftqs'2.
+    ftqs'!2.
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 70]                      %! SM4
-    ftqs'2
+    ftqs'!2
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 71]                      %! SM4
@@ -1100,18 +1100,18 @@ E_BassClarinetMusicVoice = {
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 75]                      %! SM4
-    gqs'2.
+    gqs'!2.
     
     % [E BassClarinetMusicVoice measure 76]                      %! SM4
-    gqs'2
+    gqs'!2
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 77]                      %! SM4
-    gqs'1..
+    gqs'!1..
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 78]                      %! SM4
-    gqs'\breve
+    gqs'!\breve
     \repeatTie
     
 }
@@ -1929,14 +1929,14 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 75]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    fqs2.
+    fqs!2.
     :32                                                      %! IC
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     
     % [E CelloMusicVoice measure 76]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    fqs2
+    fqs!2
     :32                                                      %! IC
     \repeatTie
     \mp                                                      %! PWC1
@@ -1944,7 +1944,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 77]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    fqs1..
+    fqs!1..
     :32                                                      %! IC
     \repeatTie
     \p                                                       %! PWC1
@@ -1952,7 +1952,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 78]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    fqs\breve
+    fqs!\breve
     :32                                                      %! IC
     \repeatTie
     \mp                                                      %! PWC1

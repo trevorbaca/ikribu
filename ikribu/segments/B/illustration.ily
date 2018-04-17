@@ -1084,7 +1084,7 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                   %! SM21
     \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
-    ef1..
+    ef!1..
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     
     % [B BassClarinetMusicVoice measure 15]                      %! SM4
@@ -1121,7 +1121,7 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                   %! SM21
     \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
-    ef1
+    ef!1
     
     % [B BassClarinetMusicVoice measure 21]                      %! SM4
     \stopStaff                                                   %! SM20
@@ -1157,7 +1157,7 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                   %! SM21
     \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
-    ef1
+    ef!1
     
     % [B BassClarinetMusicVoice measure 27]                      %! SM4
     \stopStaff                                                   %! SM20
@@ -1173,20 +1173,20 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                   %! SM21
     \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
-    ef2.
+    ef!2.
     \<                                                           %! HC1
     \ppp                                                         %! HC1
     
     % [B BassClarinetMusicVoice measure 29]                      %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    ef1
+    ef!1
     \repeatTie
     \f                                                           %! HC1
     
     % [B BassClarinetMusicVoice measure 30]                      %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    ef2.
+    ef!2.
     \repeatTie
     \>                                                           %! HC1
     \f                                                           %! HC1
@@ -2021,7 +2021,7 @@ B_ViolaMusicVoice = {
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
-    ef'2.
+    ef'!2.
     :32                                                      %! IC
     \<                                                       %! HC1
     \ppp                                                     %! HC1
@@ -2033,23 +2033,23 @@ B_ViolaMusicVoice = {
         }                                                    %! IC
     
     % [B ViolaMusicVoice measure 29]                         %! SM4
-    ef'1
+    ef'!1
     :32                                                      %! IC
     \repeatTie
     
     % [B ViolaMusicVoice measure 30]                         %! SM4
-    ef'2.
+    ef'!2.
     :32                                                      %! IC
     \repeatTie
     
     % [B ViolaMusicVoice measure 31]                         %! SM4
-    ef'2
+    ef'!2
     :32                                                      %! IC
     \repeatTie
     
     % [B ViolaMusicVoice measure 32]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    ef'1..
+    ef'!1..
     :32                                                      %! IC
     \repeatTie
     \mf                                                      %! HC1
@@ -2057,7 +2057,7 @@ B_ViolaMusicVoice = {
     % [B ViolaMusicVoice measure 33]                         %! SM4
     \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    ef'\breve
+    ef'!\breve
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
