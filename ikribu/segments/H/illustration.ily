@@ -406,7 +406,7 @@ H_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    ef\breve
+    ef!\breve
     \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
         \column
@@ -441,31 +441,31 @@ H_BassClarinetMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
     % [H BassClarinetMusicVoice measure 100]                     %! SM4
-    ef1..
+    ef!1..
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 101]                     %! SM4
-    ef1..
+    ef!1..
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 102]                     %! SM4
-    ef2.
+    ef!2.
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 103]                     %! SM4
-    ef2
+    ef!2
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 104]                     %! SM4
-    ef1..
+    ef!1..
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 105]                     %! SM4
-    ef\breve
+    ef!\breve
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 106]                     %! SM4
-    ef1
+    ef!1
     \repeatTie
     
     % [H BassClarinetMusicVoice measure 107]                     %! SM4

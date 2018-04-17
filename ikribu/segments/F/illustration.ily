@@ -364,7 +364,7 @@ F_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
-    gs'1
+    gs'!1
     \ppp                                                         %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {
         \column
@@ -399,15 +399,15 @@ F_BassClarinetMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
     % [F BassClarinetMusicVoice measure 80]                      %! SM4
-    gs'2.
+    gs'!2.
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 81]                      %! SM4
-    gs'1
+    gs'!1
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 82]                      %! SM4
-    gs'2.
+    gs'!2.
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 83]                      %! SM4
@@ -599,7 +599,7 @@ F_ViolinMusicVoice = {
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
-    <e' fs'>1..
+    <e' fs'!>1..
     :32                                                      %! IC
     \<                                                       %! HC1
     \sfpp                                                    %! HC1
@@ -615,7 +615,7 @@ F_ViolinMusicVoice = {
     \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    <e' fs'>\breve
+    <e' fs'!>\breve
     :32                                                      %! IC
     \repeatTie
     \p                                                       %! HC1
@@ -802,7 +802,7 @@ F_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
-    <ef' f'>1..
+    <ef'! f'>1..
     :32                                                      %! IC
     \<                                                       %! HC1
     \sfpp                                                    %! HC1
@@ -818,7 +818,7 @@ F_ViolaMusicVoice = {
     \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    <ef' f'>\breve
+    <ef'! f'>\breve
     :32                                                      %! IC
     \repeatTie
     \p                                                       %! HC1
@@ -946,7 +946,7 @@ F_CelloMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    fs1
+    fs!1
     :32                                                      %! IC
     \<                                                       %! HC1
     \p                                                       %! HC1
@@ -984,18 +984,18 @@ F_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     % [F CelloMusicVoice measure 80]                         %! SM4
-    fs2.
+    fs!2.
     :32                                                      %! IC
     \repeatTie
     
     % [F CelloMusicVoice measure 81]                         %! SM4
-    fs1
+    fs!1
     :32                                                      %! IC
     \repeatTie
     
     % [F CelloMusicVoice measure 82]                         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    fs2.
+    fs!2.
     :32                                                      %! IC
     \repeatTie
     \ff                                                      %! HC1

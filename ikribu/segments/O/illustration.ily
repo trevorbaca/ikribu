@@ -962,11 +962,11 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 228]                     %! SM4
-    <c btqf''>2
+    <c btqf''!>2
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 229]                     %! SM4
-    <c btqf''>\breve
+    <c btqf''!>\breve
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 230]                     %! SM4
@@ -1228,7 +1228,7 @@ O_ViolinMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    <e' fs'>1..
+    <e' fs'!>1..
     :32                                                      %! IC
     \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     \startTextSpan                                           %! PWC1
@@ -1239,61 +1239,61 @@ O_ViolinMusicVoice = {
         }                                                    %! IC
     
     % [O ViolinMusicVoice measure 227]                       %! SM4
-    <e' fs'>2.
+    <e' fs'!>2.
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 228]                       %! SM4
-    <e' fs'>2
+    <e' fs'!>2
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 229]                       %! SM4
-    <e' fs'>\breve
+    <e' fs'!>\breve
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 230]                       %! SM4
-    <e' fs'>1..
+    <e' fs'!>1..
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 231]                       %! SM4
-    <e' fs'>1
+    <e' fs'!>1
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 232]                       %! SM4
-    <e' fs'>1
+    <e' fs'!>1
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 233]                       %! SM4
-    <e' fs'>2.
+    <e' fs'!>2.
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 234]                       %! SM4
-    <e' fs'>1..
+    <e' fs'!>1..
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 235]                       %! SM4
-    <e' fs'>\breve
+    <e' fs'!>\breve
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolinMusicVoice measure 236]                       %! SM4
     \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    <e' fs'>2.
+    <e' fs'!>2.
     :32                                                      %! IC
     \repeatTie
     \>                                                       %! HC1
     \ppppp                                                   %! HC1
     
     % [O ViolinMusicVoice measure 237]                       %! SM4
-    <e' fs'>1
+    <e' fs'!>1
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
@@ -1520,7 +1520,7 @@ O_ViolaMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    <ef' f'>1..
+    <ef'! f'>1..
     :32                                                      %! IC
     \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     \startTextSpan                                           %! PWC1
@@ -1531,61 +1531,61 @@ O_ViolaMusicVoice = {
         }                                                    %! IC
     
     % [O ViolaMusicVoice measure 227]                        %! SM4
-    <ef' f'>2.
+    <ef'! f'>2.
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 228]                        %! SM4
-    <ef' f'>2
+    <ef'! f'>2
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 229]                        %! SM4
-    <ef' f'>\breve
+    <ef'! f'>\breve
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 230]                        %! SM4
-    <ef' f'>1..
+    <ef'! f'>1..
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 231]                        %! SM4
-    <ef' f'>1
+    <ef'! f'>1
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 232]                        %! SM4
-    <ef' f'>1
+    <ef'! f'>1
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 233]                        %! SM4
-    <ef' f'>2.
+    <ef'! f'>2.
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 234]                        %! SM4
-    <ef' f'>1..
+    <ef'! f'>1..
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 235]                        %! SM4
-    <ef' f'>\breve
+    <ef'! f'>\breve
     :32                                                      %! IC
     \repeatTie
     
     % [O ViolaMusicVoice measure 236]                        %! SM4
     \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    <ef' f'>2.
+    <ef'! f'>2.
     :32                                                      %! IC
     \repeatTie
     \>                                                       %! HC1
     \ppppp                                                   %! HC1
     
     % [O ViolaMusicVoice measure 237]                        %! SM4
-    <ef' f'>1
+    <ef'! f'>1
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
@@ -1802,28 +1802,28 @@ O_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,2
+    bf,,,!2
     \>                                                       %! PWC1
     \mp                                                      %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [O CelloMusicVoice measure 223]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1..
+    bf,,,!1..
     \repeatTie
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 224]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1..
+    bf,,,!1..
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
     
     % [O CelloMusicVoice measure 225]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,\breve
+    bf,,,!\breve
     \repeatTie
     \p                                                       %! PWC1
     \stopTextSpan                                            %! PWC1
@@ -1863,7 +1863,7 @@ O_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1..
+    bf,,,!1..
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
@@ -1871,21 +1871,21 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 227]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,2.
+    bf,,,!2.
     \repeatTie
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 228]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,2
+    bf,,,!2
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
     
     % [O CelloMusicVoice measure 229]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,\breve
+    bf,,,!\breve
     \repeatTie
     \p                                                       %! PWC1
     \stopTextSpan                                            %! PWC1
@@ -1925,7 +1925,7 @@ O_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1..
+    bf,,,!1..
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
@@ -1933,21 +1933,21 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 231]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1
+    bf,,,!1
     \repeatTie
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 232]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1
+    bf,,,!1
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
     
     % [O CelloMusicVoice measure 233]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,2.
+    bf,,,!2.
     \repeatTie
     \p                                                       %! PWC1
     \stopTextSpan                                            %! PWC1
@@ -1987,7 +1987,7 @@ O_CelloMusicVoice = {
     \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
     \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1..
+    bf,,,!1..
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
@@ -1995,21 +1995,21 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 235]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,\breve
+    bf,,,!\breve
     \repeatTie
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 236]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,2.
+    bf,,,!2.
     \repeatTie
     \mp                                                      %! PWC1
     \>                                                       %! PWC1
     
     % [O CelloMusicVoice measure 237]                        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-    bf,,,1
+    bf,,,!1
     \repeatTie
     \p                                                       %! PWC1
     \stopTextSpan                                            %! PWC1

@@ -608,12 +608,12 @@ G_BassClarinetMusicVoice = {
     % [G BassClarinetMusicVoice measure 89]                      %! SM4
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    af1.
+    af!1.
     \<                                                           %! HC1
     \pp                                                          %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    af4
+    af!4
     \repeatTie
     \mf                                                          %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -640,12 +640,12 @@ G_BassClarinetMusicVoice = {
     % [G BassClarinetMusicVoice measure 93]                      %! SM4
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    fs1.
+    fs!1.
     \<                                                           %! HC1
     \mf                                                          %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    fs4
+    fs!4
     \repeatTie
     \ff                                                          %! HC1
     \revert DynamicLineSpanner.staff-padding                     %! OC2
@@ -1230,7 +1230,7 @@ G_CelloMusicVoice = {
         
         % [G CelloMusicVoice measure 88]                     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        fqf''4
+        fqf''!4
         :32                                                  %! IC
         \pp                                                  %! PWC1
         \glissando                                           %! SC

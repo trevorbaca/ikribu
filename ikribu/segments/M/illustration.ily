@@ -1815,20 +1815,20 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 177]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs1
+    cs!1
     \<                                                           %! HC1
     \p                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 178]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    cs1
+    cs!1
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 179]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs2
+    cs!2
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
@@ -1852,7 +1852,7 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 182]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs2.
+    cs!2.
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     
     % [M BassClarinetMusicVoice measure 183]                     %! SM4
@@ -1872,20 +1872,20 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 185]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs2.
+    cs!2.
     \<                                                           %! HC1
     \p                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 186]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    cs1
+    cs!1
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 187]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs2.
+    cs!2.
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
@@ -1909,20 +1909,20 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 190]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs1..
+    cs!1..
     \<                                                           %! HC1
     \p                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 191]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    cs1..
+    cs!1..
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 192]                     %! SM4
     \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs\breve
+    cs!\breve
     \repeatTie
     \>                                                           %! HC1
     \fff                                                         %! HC1
@@ -1946,7 +1946,7 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 195]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    cs2.
+    cs!2.
     \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC
     
     % [M BassClarinetMusicVoice measure 196]                     %! SM4
@@ -1966,42 +1966,42 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 198]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-    cs\breve
+    cs!\breve
     \<                                                           %! HC1
     \ppp                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 199]                     %! SM4
-    cs1..
+    cs!1..
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 200]                     %! SM4
-    cs1
+    cs!1
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 201]                     %! SM4
-    cs1
+    cs!1
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 202]                     %! SM4
-    cs2.
+    cs!2.
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 203]                     %! SM4
-    cs1..
+    cs!1..
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 204]                     %! SM4
-    cs\breve
+    cs!\breve
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 205]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-    cs2.
+    cs!2.
     \repeatTie
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 206]                     %! SM4
-    cs1
+    cs!1
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 207]                     %! SM4
@@ -3452,7 +3452,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-    fqf''2.
+    fqf''!2.
     -\laissezVibrer                                          %! IC
     \sfz                                                     %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {
@@ -3625,7 +3625,7 @@ M_CelloMusicVoice = {
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
-    fqf''1
+    fqf''!1
     -\laissezVibrer                                          %! IC
     \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
@@ -3858,7 +3858,7 @@ M_CelloMusicVoice = {
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
-    cqs'''2
+    cqs'''!2
     -\laissezVibrer                                          %! IC
     \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
