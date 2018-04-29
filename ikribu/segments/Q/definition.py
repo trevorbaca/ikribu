@@ -74,7 +74,7 @@ maker(
 maker(
     ('vn', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
-    baca.double_tonguing(),
+    baca.double_staccato(),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_positions([-1, 0, 1]),
@@ -84,7 +84,7 @@ maker(
 maker(
     ('va', (1, 3)),
     baca.make_repeated_duration_notes((1, 4)),
-    baca.double_tonguing(),
+    baca.double_staccato(),
     baca.effort_dynamic('mf'),
     baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_positions([0, -1, 1]),
@@ -99,7 +99,7 @@ maker(
 maker(
     'vc',
     baca.bar_extent((0, 2), selector=baca.rleaves()),
-    baca.accents(),
+    baca.accent(),
     baca.effort_dynamic('mf'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
     baca.staff_position(0),

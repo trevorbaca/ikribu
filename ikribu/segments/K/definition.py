@@ -69,7 +69,7 @@ maker(
         'va',
         'vc',
         ],
-    baca.repeat_ties_up(),
+    baca.repeat_tie_up(),
     )
 
 maker(
@@ -108,7 +108,7 @@ maker(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.shift_dynamic('"mp"'),
-    baca.staccati(),
+    baca.staccato(),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
     )
@@ -119,7 +119,7 @@ maker(
     baca.effort_dynamic('mp'),
     baca.markup.col_legno_battuto(),
     baca.shift_dynamic('"mp"'),
-    baca.staccati(),
+    baca.staccato(),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
     )
