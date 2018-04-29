@@ -93,6 +93,6 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )

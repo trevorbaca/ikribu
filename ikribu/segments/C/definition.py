@@ -72,7 +72,7 @@ maker(
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     baca.effort_dynamic('mf'),
-    baca.repeat_ties_up(),
+    baca.repeat_tie_up(),
     baca.shift_dynamic('"mf"'),
     baca.staff_lines(1),
     baca.staff_position(0),
@@ -156,7 +156,7 @@ maker(
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.laissez_vibrer(),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
 
@@ -164,14 +164,14 @@ maker(
     ('vc', (2, 16)),
     baca.dls_staff_padding(7),
     baca.glissando(),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitches(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,
         ),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('ppp pp'),
+        baca.make_dynamics('ppp pp'),
         baca.tleaves().enchain([2]),
         bookend=True,
         ),
@@ -181,5 +181,5 @@ maker(
         baca.markup('trem. flaut. XP'),
         ),
     baca.text_spanner_staff_padding(3.5),
-    baca.tuplet_brackets_down(),
+    baca.tuplet_bracket_down(),
     )

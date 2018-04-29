@@ -54,19 +54,19 @@ maker(
 
 maker(
     ('vn', (1, 4)),
-    baca.staccati(),
+    baca.staccato(),
     ikribu.clb_rhythm([4]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
     ('vn', (6, 8)),
-    baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.accent(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
+        baca.make_dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
         baca.tleaves().enchain([4]),
         bookend=True,
         ),
@@ -86,7 +86,7 @@ maker(
 
 maker(
     ('va', (1, 2)),
-    baca.staccati(),
+    baca.staccato(),
     ikribu.clb_rhythm([2]),
     ikribu.clb_staff_positions(rotation=-1),
     )
@@ -100,12 +100,12 @@ maker(
 
 maker(
     ('va', (4, 8)),
-    baca.accents(baca.pheads()[~abjad.index([0, 5], 11)]),
+    baca.accent(baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics(
+        baca.make_dynamics(
             'p pp p pp mp p mp p mf mp mf mp f mf f mf ff f ff f fff',
             ),
         baca.tleaves().enchain([4]),
@@ -128,7 +128,7 @@ maker(
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('p f'),
+        baca.make_dynamics('p f'),
         baca.notes().group_by_measure(),
         ),
     baca.staff_position(0),

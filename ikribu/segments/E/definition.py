@@ -111,12 +111,12 @@ maker(
         'vn',
         'va',
         ],
-    baca.accents(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.accent(baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('f p'),
+        baca.make_dynamics('f p'),
         baca.runs().map(baca.enchain([4, 3])).flatten(),
         bookend=True,
         ),
@@ -138,7 +138,7 @@ maker(
     baca.markup.trem_flaut_tast(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('p mp'),
+        baca.make_dynamics('p mp'),
         baca.tleaves().enchain([2]),
         bookend=True,
         ),

@@ -175,7 +175,7 @@ maker(
     baca.ottava_bassa(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('mp p'),
+        baca.make_dynamics('mp p'),
         baca.runs().tleaves().enchain([2]),
         bookend=True,
         ),

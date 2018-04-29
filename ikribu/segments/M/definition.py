@@ -196,7 +196,7 @@ maker(
         ['vn', 'va'], 
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
-    baca.accents(baca.pheads()[~abjad.index([0], 2)]),
+    baca.accent(baca.pheads()[~abjad.index([0], 2)]),
     baca.stem_tremolo(baca.pheads()[abjad.index([0], 2)]),
     )
 
@@ -275,7 +275,7 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
 
@@ -291,7 +291,7 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('G5'),
     )
 
@@ -302,7 +302,7 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
 
@@ -313,7 +313,7 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('G5'),
     )
 
@@ -324,7 +324,7 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('A5'),
     )
 
@@ -335,6 +335,6 @@ maker(
     baca.laissez_vibrer(),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.natural_harmonics(),
+    baca.note_head_style_harmonic(),
     baca.pitch('C+6'),
     )
