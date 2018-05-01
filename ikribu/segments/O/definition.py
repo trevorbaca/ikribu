@@ -151,7 +151,7 @@ maker(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
         ),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
     )
 
@@ -165,7 +165,7 @@ maker(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
         ),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
     )
 

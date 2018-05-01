@@ -143,7 +143,7 @@ maker(
         bookend=True,
         ),
     baca.staff_position(0),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     baca.text_script_staff_padding(2.5),
     )
 

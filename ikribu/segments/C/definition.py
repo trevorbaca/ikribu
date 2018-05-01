@@ -126,7 +126,7 @@ maker(
     baca.pitches('F#4 G#4 G#4 F#4'),
     baca.shift_clef('treble'),
     baca.staff_lines(5),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
 
@@ -148,7 +148,7 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
     )
 
@@ -177,7 +177,7 @@ maker(
         baca.tleaves().enchain([2]),
         bookend=True,
         ),
-    baca.stem_tremolo(),
+    baca.stem_tremolo(baca.pleaves()),
     baca.transition(
         baca.markup('trem. flaut. tasto. (arco)'),
         baca.markup('trem. flaut. XP'),
