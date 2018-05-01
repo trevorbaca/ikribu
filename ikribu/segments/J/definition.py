@@ -90,7 +90,7 @@ maker(
         ],
     baca.clef('percussion'),
     baca.dls_staff_padding(6),
-    baca.effort_dynamic('mf'),
+    baca.dynamic('"mf"'),
     baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
@@ -155,9 +155,11 @@ maker(
         ('vn', 6),
         ('va', 6),
         ],
-    baca.effort_dynamic('f'),
+    [
+        baca.dynamic('"f"'),
+        baca.shift_dynamic('"f"'),
+        ],
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
-    baca.shift_dynamic('"f"'),
     )
 
 maker(

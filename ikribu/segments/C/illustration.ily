@@ -1146,9 +1146,9 @@ C_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1             %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                  %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! OC1
-    \override RepeatTie.direction = #up                          %! OC1
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)      %! OC1
     \once \override DynamicText.X-extent = #'(0 . 0)             %! OC1
+    \override RepeatTie.direction = #up                          %! OC1
     \override TextScript.padding = #2.5                          %! OC1
     \override TextScript.parent-alignment-X = #0                 %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC

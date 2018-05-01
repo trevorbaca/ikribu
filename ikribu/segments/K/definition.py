@@ -79,20 +79,26 @@ maker(
 
 maker(
     ('bcl', 5),
-    baca.effort_dynamic('mf'),
-    baca.shift_dynamic('"mf"'),
+    [
+        baca.dynamic('"mf"'),
+        baca.shift_dynamic('"mf"'),
+        ],
     )
 
 maker(
     ('bcl', 9),
-    baca.effort_dynamic('mp'),
-    baca.shift_dynamic('"mp"'),
+    [
+        baca.dynamic('"mp"'),
+        baca.shift_dynamic('"mp"'),
+        ],
     )
 
 maker(
     ('bcl', 13),
-    baca.effort_dynamic('p'),
-    baca.shift_dynamic('"p"'),
+    [
+        baca.dynamic('"p"'),
+        baca.shift_dynamic('"p"'),
+        ],
     )
 
 maker(
@@ -105,9 +111,11 @@ maker(
 maker(
     ('vn', (1, 16)),
     baca.dls_staff_padding(8),
-    baca.effort_dynamic('mp'),
+    [
+        baca.dynamic('"mp"'),
+        baca.shift_dynamic('"mp"'),
+        ],
     baca.markup.col_legno_battuto(),
-    baca.shift_dynamic('"mp"'),
     baca.staccato(),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
@@ -116,9 +124,11 @@ maker(
 maker(
     ('va', (1, 16)),
     baca.dls_staff_padding(8),
-    baca.effort_dynamic('mp'),
+    [
+        baca.dynamic('"mp"'),
+        baca.shift_dynamic('"mp"'),
+        ],
     baca.markup.col_legno_battuto(),
-    baca.shift_dynamic('"mp"'),
     baca.staccato(),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
@@ -135,23 +145,29 @@ maker(
 
 maker(
     ('vc', 1),
-    baca.effort_dynamic('p'),
+    baca.dynamic('"p"'),
     )
 
 maker(
     ('vc', 5),
-    baca.effort_dynamic('mp'),
-    baca.shift_dynamic('"mp"'),
+    [
+        baca.dynamic('"mp"'),
+        baca.shift_dynamic('"mp"'),
+        ],
     )
 
 maker(
     ('vc', 9),
-    baca.effort_dynamic('mf'),
-    baca.shift_dynamic('"mf"'),
+    [
+        baca.dynamic('"mf"'),
+        baca.shift_dynamic('"mf"'),
+        ],
     )
 
 maker(
     ('vc', 13),
-    baca.effort_dynamic('f'),
-    baca.shift_dynamic('"f"'),
+    [
+        baca.dynamic('"f"'),
+        baca.shift_dynamic('"f"'),
+        ],
     )
