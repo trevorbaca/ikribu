@@ -157,7 +157,7 @@ maker(
     baca.dynamic('sfz'),
     baca.markup.pizz(),
     baca.markup.string_number(3),
-    baca.laissez_vibrer(),
+    baca.laissez_vibrer(baca.ptails()),
     baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
