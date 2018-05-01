@@ -90,7 +90,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.clef('treble'),
     baca.dynamic('sfz'),
-    baca.laissez_vibrer(),
+    baca.laissez_vibrer(baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
