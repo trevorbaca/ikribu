@@ -99,7 +99,7 @@ maker(
 maker(
     'vc',
     baca.bar_extent((0, 2), selector=baca.rleaves()),
-    baca.accent(),
+    baca.accent(baca.pheads()),
     baca.dynamic('"mf"'),
     baca.markup.boxed('stonescratch: one short stroke for each attack'),
     baca.staff_position(0),
