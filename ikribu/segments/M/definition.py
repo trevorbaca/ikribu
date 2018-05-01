@@ -174,7 +174,7 @@ maker(
 
 maker(
     ('vn', 1),
-    baca.effort_dynamic('f'),
+    baca.dynamic('"f"'),
     baca.markup.boxed('grainfall (3)'),
     )
 
@@ -202,31 +202,31 @@ maker(
 
 maker(
     ('vn', 5),
-    baca.effort_dynamic('f'),
+    baca.dynamic('"f"'),
     baca.markup.boxed('grainfall (4)'),
     )
 
 maker(
     ('vn', 8),
-    baca.effort_dynamic('f'),
+    baca.dynamic('"f"'),
     baca.markup.boxed('grainfall (5)'),
     )
 
 maker(
     ('vn', 12),
-    baca.effort_dynamic('f'),
+    baca.dynamic('"f"'),
     baca.markup.boxed('grainfall (6)'),
     )
 
 maker(
     ('vn', 16),
-    baca.effort_dynamic('f'),
+    baca.dynamic('"f"'),
     baca.markup.boxed('grainfall (7)'),
     )
 
 maker(
     ('vn', 19),
-    baca.effort_dynamic('f'),
+    baca.dynamic('"f"'),
     baca.markup.boxed('grainfall (8)'),
     )
 

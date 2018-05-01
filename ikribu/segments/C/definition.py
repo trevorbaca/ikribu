@@ -71,9 +71,11 @@ maker(
     baca.bar_extent((-2, 2)),
     baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
-    baca.effort_dynamic('mf'),
+    [
+        baca.dynamic('"mf"'),
+        baca.shift_dynamic('"mf"'),
+        ],
     baca.repeat_tie_up(),
-    baca.shift_dynamic('"mf"'),
     baca.staff_lines(1),
     baca.staff_position(0),
     )
@@ -95,7 +97,7 @@ maker(
 maker(
     ('vn', 1),
     baca.clef('percussion'),
-    baca.effort_dynamic('mf'),
+    baca.dynamic('"mf"'),
     baca.make_repeat_tied_notes(),
     baca.markup.boxed('grainfall (2)'),
     baca.staff_lines(1),

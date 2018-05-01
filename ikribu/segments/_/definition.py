@@ -78,7 +78,7 @@ maker(
     ('vn', 1),
     baca.make_repeat_tied_notes(),
     baca.clef('percussion'),
-    baca.effort_dynamic('mf'),
+    baca.dynamic('"mf"'),
     baca.markup.boxed('grainfall (1)'),
     baca.staff_lines(1),
     baca.staff_position(0),
