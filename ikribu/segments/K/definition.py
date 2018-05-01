@@ -116,7 +116,7 @@ maker(
         baca.shift_dynamic('"mp"'),
         ],
     baca.markup.col_legno_battuto(),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
     )
@@ -129,7 +129,7 @@ maker(
         baca.shift_dynamic('"mp"'),
         ],
     baca.markup.col_legno_battuto(),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
     )

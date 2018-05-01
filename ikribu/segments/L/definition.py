@@ -54,7 +54,7 @@ maker(
 
 maker(
     ('vn', (1, 4)),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     ikribu.clb_rhythm([4]),
     ikribu.clb_staff_positions(rotation=-1),
     )
@@ -86,7 +86,7 @@ maker(
 
 maker(
     ('va', (1, 2)),
-    baca.staccato(),
+    baca.staccato(baca.pheads()),
     ikribu.clb_rhythm([2]),
     ikribu.clb_staff_positions(rotation=-1),
     )

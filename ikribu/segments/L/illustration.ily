@@ -2102,7 +2102,7 @@ L_ViolinMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'8     %! OC1
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
-        \once \override Hairpin.shorten-pair = #'(2.25 . 0)  %! OC1
+        \override Hairpin.shorten-pair = #'(2.25 . 0)        %! OC1
         \once \override Hairpin.circled-tip = ##t            %! HC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'8
@@ -2319,6 +2319,7 @@ L_ViolinMusicVoice = {
         \!                                                   %! HC1
         ]
         \revert DynamicLineSpanner.staff-padding             %! OC2
+        \revert Hairpin.shorten-pair                         %! OC2
     }
     
     % [L ViolinMusicVoice measure 159]                       %! SM4
@@ -2915,7 +2916,7 @@ L_ViolaMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'8     %! OC1
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
-        \once \override Hairpin.shorten-pair = #'(2.25 . 0)  %! OC1
+        \override Hairpin.shorten-pair = #'(2.25 . 0)        %! OC1
         \once \override Hairpin.circled-tip = ##t            %! HC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d'8
@@ -3072,6 +3073,7 @@ L_ViolaMusicVoice = {
         \!                                                   %! HC1
         ]
         \revert DynamicLineSpanner.staff-padding             %! OC2
+        \revert Hairpin.shorten-pair                         %! OC2
     }
     
     % [L ViolaMusicVoice measure 151]                        %! SM4
