@@ -495,14 +495,6 @@ N_ViolinRHMusicVoice = {
         \override Script.staff-padding = #7                  %! OC1
         \override TextSpanner.staff-padding = #3.5           %! OC1
         \override DynamicLineSpanner.staff-padding = #'9     %! OC1
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
         \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
         \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -511,14 +503,26 @@ N_ViolinRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         r4
         \ppp                                                 %! SM8:REAPPLIED_DYNAMIC:SM37
+        -\tweak Y-extent ##f
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \stopTextSpan
+        \>                                                   %! PWC1
+        \ff                                                  %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -528,18 +532,14 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \stopTextSpan
-        \>                                                   %! PWC1
-        \ff                                                  %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -554,10 +554,10 @@ N_ViolinRHMusicVoice = {
     \times 7/7 {
         
         % [N ViolinRHMusicVoice measure 209]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -567,20 +567,23 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -590,23 +593,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -616,71 +616,74 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         c'4
         -\upbow
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        6
+                        7
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        6
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \pp                                                  %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -690,23 +693,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \pp                                                  %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -716,74 +716,27 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
         % [N ViolinRHMusicVoice measure 210]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -793,23 +746,70 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PWC1
         \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        0
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -819,49 +819,50 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \times 4/6 {
         
         % [N ViolinRHMusicVoice measure 211]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -871,21 +872,23 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \ppp                                                 %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -895,23 +898,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \ppp                                                 %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -921,20 +921,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -944,20 +944,24 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -967,28 +971,27 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \ff                                                  %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
         % [N ViolinRHMusicVoice measure 212]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \p                                                   %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -998,23 +1001,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \p                                                   %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1024,23 +1024,27 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/4 {
         
         % [N ViolinRHMusicVoice measure 213]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1050,24 +1054,21 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1077,21 +1078,22 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \f                                                   %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1101,22 +1103,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \f                                                   %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1126,23 +1126,27 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
         % [N ViolinRHMusicVoice measure 214]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \f                                                   %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1152,24 +1156,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \f                                                   %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1179,47 +1179,47 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        0
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1229,24 +1229,24 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
         
         % [N ViolinRHMusicVoice measure 215]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1256,20 +1256,23 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1279,75 +1282,50 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
         
         % [N ViolinRHMusicVoice measure 216]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \ppp                                                 %! PWC1
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        6
+                        7
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1357,24 +1335,47 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        6
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1384,21 +1385,23 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1408,23 +1411,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ff                                                  %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1434,50 +1434,51 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/7 {
         
         % [N ViolinRHMusicVoice measure 217]                 %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \ff                                                  %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1487,48 +1488,48 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1538,21 +1539,20 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1562,34 +1562,16 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        5
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.right.text = \markup {
             \concat
                 {
@@ -1600,12 +1582,30 @@ N_ViolinRHMusicVoice = {
                         7
                 }
             }
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        5
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
@@ -1841,25 +1841,6 @@ N_ViolaRHMusicVoice = {
         \override Script.staff-padding = #7                  %! OC1
         \override TextSpanner.staff-padding = #3.5           %! OC1
         \override DynamicLineSpanner.staff-padding = #'9     %! OC1
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
         \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -1870,6 +1851,25 @@ N_ViolaRHMusicVoice = {
         -\upbow
         \>                                                   %! PWC1
         \ff                                                  %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -1881,10 +1881,11 @@ N_ViolaRHMusicVoice = {
             }                                                %! IC
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1894,52 +1895,54 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
         % [N ViolaRHMusicVoice measure 209]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \f                                                   %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1949,45 +1952,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \f                                                   %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -1997,24 +1975,47 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2024,21 +2025,23 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \pp                                                  %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2048,23 +2051,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \pp                                                  %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2074,20 +2074,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2097,24 +2097,28 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
         % [N ViolaRHMusicVoice measure 210]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2124,24 +2128,21 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2151,21 +2152,24 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \ppp                                                 %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2175,24 +2179,23 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \ppp                                                 %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2202,23 +2205,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ff                                                  %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2228,23 +2228,27 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
         
         % [N ViolaRHMusicVoice measure 211]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2254,24 +2258,21 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ff                                                  %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2281,21 +2282,23 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2305,27 +2308,25 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/3 {
         
         % [N ViolaRHMusicVoice measure 212]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2335,21 +2336,22 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \f                                                   %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2359,22 +2361,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \f                                                   %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        r4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2384,49 +2384,49 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
-        r4
-        \stopTextSpan
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \times 4/5 {
         
         % [N ViolaRHMusicVoice measure 213]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        5
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        5
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2436,47 +2436,48 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2486,21 +2487,21 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2510,76 +2511,28 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
         % [N ViolaRHMusicVoice measure 214]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2589,50 +2542,48 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \ff                                                  %! PWC1
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2642,23 +2593,76 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         r4
         \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        0
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
         
         % [N ViolaRHMusicVoice measure 215]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2668,24 +2672,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ff                                                  %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2695,24 +2695,27 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/7 {
         
         % [N ViolaRHMusicVoice measure 216]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2722,23 +2725,20 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2748,68 +2748,46 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \f                                                   %! PWC1
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        6
+                        7
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2819,24 +2797,47 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        6
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2846,21 +2847,24 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \pp                                                  %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2870,28 +2874,24 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \pp                                                  %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
         % [N ViolaRHMusicVoice measure 217]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2901,20 +2901,21 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2924,21 +2925,23 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2948,23 +2951,21 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2974,21 +2975,23 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \ppp                                                 %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -2998,23 +3001,22 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \ppp                                                 %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3024,35 +3026,16 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \ff                                                  %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
         \once \override TextSpanner.bound-details.right.text = \markup {
             \concat
                 {
@@ -3063,9 +3046,26 @@ N_ViolaRHMusicVoice = {
                         7
                 }
             }
-        \once \override TextSpanner.dash-period = 0
         r4
         \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        6
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
         c'4
@@ -3304,14 +3304,6 @@ N_CelloRHMusicVoice = {
         \override Script.staff-padding = #7                  %! OC1
         \override TextSpanner.staff-padding = #3.5           %! OC1
         \override DynamicLineSpanner.staff-padding = #'9     %! OC1
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
         \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
         \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
     %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -3320,14 +3312,26 @@ N_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         r4
         \pp                                                  %! SM8:REAPPLIED_DYNAMIC:SM37
+        -\tweak Y-extent ##f
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \stopTextSpan
+        \>                                                   %! PWC1
+        \ff                                                  %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3337,18 +3341,14 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \stopTextSpan
-        \>                                                   %! PWC1
-        \ff                                                  %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -3359,10 +3359,10 @@ N_CelloRHMusicVoice = {
                             "1/2 clt"                        %! IC
             }                                                %! IC
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3372,24 +3372,27 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
         % [N CelloRHMusicVoice measure 209]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3399,23 +3402,20 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3425,119 +3425,97 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         c'4
         -\upbow
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        6
+                        7
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        7
+                        6
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PWC1
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        0
-                        4
+                        7
+                        7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3547,24 +3525,46 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        0
+                        4
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3574,20 +3574,24 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\upbow
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3597,28 +3601,24 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
         % [N CelloRHMusicVoice measure 210]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3628,20 +3628,21 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3651,25 +3652,27 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/4 {
         
         % [N CelloRHMusicVoice measure 211]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \ppp                                                 %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3679,23 +3682,20 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \ppp                                                 %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3705,20 +3705,23 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3728,23 +3731,21 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \ff                                                  %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3754,25 +3755,25 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
         % [N CelloRHMusicVoice measure 212]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3782,69 +3783,46 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        0
+                        7
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3854,51 +3832,23 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
-        \startTextSpan
-    }
-    \times 4/6 {
-        
-        % [N CelloRHMusicVoice measure 213]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3908,48 +3858,51 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+    }
+    \times 4/6 {
+        
+        % [N CelloRHMusicVoice measure 213]                  %! SM4
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3959,21 +3912,71 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         c'4
         -\downbow
         \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        0
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \pp                                                  %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -3983,23 +3986,22 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \pp                                                  %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4009,48 +4011,24 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
         % [N CelloRHMusicVoice measure 214]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4060,52 +4038,23 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
-        \startTextSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [N CelloRHMusicVoice measure 215]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4115,28 +4064,25 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ppp                                                 %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 2/2 {
         
-        % [N CelloRHMusicVoice measure 216]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        % [N CelloRHMusicVoice measure 215]                  %! SM4
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4146,21 +4092,76 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        -\downbow
+        \ppp                                                 %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        6
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+    }
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/8 {
+        
+        % [N CelloRHMusicVoice measure 216]                  %! SM4
         c'4
         -\upbow
         \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4170,21 +4171,23 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \ff                                                  %! PWC1
+        \stopTextSpan
+        \>                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4194,23 +4197,21 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \ff                                                  %! PWC1
-        \stopTextSpan
-        \>                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4220,21 +4221,23 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \p                                                   %! PWC1
+        \stopTextSpan
+        \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4244,23 +4247,21 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopTextSpan
-        \<                                                   %! PWC1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4270,21 +4271,20 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4294,20 +4294,22 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        c'4
+        \f                                                   %! PWC1
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4317,48 +4319,24 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \f                                                   %! PWC1
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
         % [N CelloRHMusicVoice measure 217]                  %! SM4
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.bound-details.left-broken.text = ##f
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.padding = 1.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-period = 0
         r4
         \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4368,48 +4346,23 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak dash-period 0
+        -\tweak bound-details.left-broken.text ##f
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 1.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4419,24 +4372,72 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        7
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PWC1
         \stopTextSpan
         \<                                                   %! PWC1
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        6
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\upbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4446,21 +4447,21 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\upbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        c'4
+        -\downbow
+        \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
@@ -4470,62 +4471,43 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
-        c'4
-        -\downbow
-        \stopTextSpan
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
         \stopTextSpan
         \>                                                   %! PWC1
-        \startTextSpan
-        
-        \once \override TextSpanner.Y-extent = ##f
-        \once \override TextSpanner.arrow-width = 0.25
-        \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center
-        \once \override TextSpanner.bound-details.left.text = \markup {
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
             \concat
                 {
                     \fraction
-                        0
+                        7
                         7
                     \hspace
                         #0.25
                 }
             }
-        \once \override TextSpanner.bound-details.right-broken.padding = 0
-        \once \override TextSpanner.bound-details.right-broken.text = ##f
-        \once \override TextSpanner.bound-details.right.arrow = ##t
-        \once \override TextSpanner.bound-details.right.padding = 0.5
-        \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
+        \startTextSpan
+        
         \once \override TextSpanner.bound-details.right.text = \markup {
             \concat
                 {
@@ -4536,12 +4518,30 @@ N_CelloRHMusicVoice = {
                         7
                 }
             }
-        \once \override TextSpanner.dash-fraction = 1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \ppp                                                 %! PWC1
         \stopTextSpan
+        -\tweak Y-extent ##f
+        -\tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \fraction
+                        0
+                        7
+                    \hspace
+                        #0.25
+                }
+            }
+        -\tweak arrow-width 0.25
+        -\tweak dash-fraction 1
+        -\tweak bound-details.left.stencil-align-dir-y #center
+        -\tweak bound-details.right.arrow ##t
+        -\tweak bound-details.right-broken.padding 0
+        -\tweak bound-details.right-broken.text ##f
+        -\tweak bound-details.right.padding 0.5
+        -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         \revert RepeatTie.direction                          %! OC2
         
