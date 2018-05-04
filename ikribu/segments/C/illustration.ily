@@ -1983,16 +1983,6 @@ C_CelloMusicVoice = {
     \override NoteHead.style = #'harmonic                    %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
     \override TupletBracket.direction = #down                %! OC1
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. XP"
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
@@ -2020,6 +2010,16 @@ C_CelloMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. XP"
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [C CelloMusicVoice measure 37]                         %! SM4

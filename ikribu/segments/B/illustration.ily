@@ -1374,16 +1374,6 @@ B_ViolinMusicVoice = {
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override TextScript.staff-padding = #3                  %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. tast."
-            }
-        }                                                    %! PWC1
     \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.Clef.color = #(x11-color 'green4)  %! SM6:REAPPLIED_CLEF_COLOR:SM37
@@ -1417,6 +1407,16 @@ B_ViolinMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. tast."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     ^ \markup {
         \column
@@ -1495,16 +1495,6 @@ B_ViolinMusicVoice = {
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 16]                        %! SM4
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. tast."
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
@@ -1535,6 +1525,16 @@ B_ViolinMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. tast."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [B ViolinMusicVoice measure 17]                        %! SM4
@@ -1577,16 +1577,6 @@ B_ViolinMusicVoice = {
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 22]                        %! SM4
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. tast."
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
@@ -1617,6 +1607,16 @@ B_ViolinMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. tast."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [B ViolinMusicVoice measure 23]                        %! SM4
@@ -1985,16 +1985,6 @@ B_ViolaMusicVoice = {
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 28]                         %! SM4
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. tast."
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
@@ -2025,6 +2015,16 @@ B_ViolaMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. tast."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     _ \markup {                                              %! IC
         \whiteout                                            %! IC
