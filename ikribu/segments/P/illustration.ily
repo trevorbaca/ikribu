@@ -1245,16 +1245,6 @@ P_ViolinRHMusicVoice = {
         -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.bound-details.right.text = \markup {
-            \concat
-                {
-                    \hspace
-                        #0.0
-                    \fraction
-                        0
-                        7
-                }
-            }
         c'4
         \stopTextSpan
         -\tweak Y-extent ##f
@@ -1276,6 +1266,16 @@ P_ViolinRHMusicVoice = {
         -\tweak bound-details.right-broken.text ##f
         -\tweak bound-details.right.padding 0.5
         -\tweak bound-details.right.stencil-align-dir-y #center
+        -\tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \fraction
+                        0
+                        7
+                }
+            }
         \startTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
@@ -2189,16 +2189,6 @@ P_ViolaRHMusicVoice = {
         -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.bound-details.right.text = \markup {
-            \concat
-                {
-                    \hspace
-                        #0.0
-                    \fraction
-                        0
-                        7
-                }
-            }
         c'4
         -\upbow
         \stopTextSpan
@@ -2221,6 +2211,16 @@ P_ViolaRHMusicVoice = {
         -\tweak bound-details.right-broken.text ##f
         -\tweak bound-details.right.padding 0.5
         -\tweak bound-details.right.stencil-align-dir-y #center
+        -\tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \fraction
+                        0
+                        7
+                }
+            }
         \startTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
@@ -3078,16 +3078,6 @@ P_CelloRHMusicVoice = {
         -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.bound-details.right.text = \markup {
-            \concat
-                {
-                    \hspace
-                        #0.0
-                    \fraction
-                        5
-                        7
-                }
-            }
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ppp                                                 %! PWC1
@@ -3112,6 +3102,16 @@ P_CelloRHMusicVoice = {
         -\tweak bound-details.right-broken.text ##f
         -\tweak bound-details.right.padding 0.5
         -\tweak bound-details.right.stencil-align-dir-y #center
+        -\tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \fraction
+                        5
+                        7
+                }
+            }
         \startTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3

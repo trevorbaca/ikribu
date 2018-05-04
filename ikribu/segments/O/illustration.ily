@@ -1195,16 +1195,6 @@ O_ViolinMusicVoice = {
     
     % [O ViolinMusicVoice measure 226]                       %! SM4
     \override TextSpanner.staff-padding = #2.5               %! OC1
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. nut"
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     <e' fs'!>1..
     :32                                                      %! IC
@@ -1231,6 +1221,16 @@ O_ViolinMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. nut"
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     _ \markup {                                              %! IC
         \whiteout                                            %! IC
@@ -1487,16 +1487,6 @@ O_ViolaMusicVoice = {
     
     % [O ViolaMusicVoice measure 226]                        %! SM4
     \override TextSpanner.staff-padding = #2.5               %! OC1
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "trem. flaut. nut"
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     <ef'! f'>1..
     :32                                                      %! IC
@@ -1523,6 +1513,16 @@ O_ViolaMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "trem. flaut. nut"
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     _ \markup {                                              %! IC
         \whiteout                                            %! IC
@@ -1769,16 +1769,6 @@ O_CelloMusicVoice = {
     % [O CelloMusicVoice measure 222]                        %! SM4
     \override Staff.OttavaBracket.staff-padding = #10        %! OC1
     \ottava #-1                                              %! SC
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "pos. ord."
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     bf,,,!2
     \>                                                       %! PWC1
@@ -1805,6 +1795,16 @@ O_CelloMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "pos. ord."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [O CelloMusicVoice measure 223]                        %! SM4
@@ -1830,16 +1830,6 @@ O_CelloMusicVoice = {
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 226]                        %! SM4
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        XP
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     bf,,,!1..
     \repeatTie
@@ -1867,6 +1857,16 @@ O_CelloMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        XP
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [O CelloMusicVoice measure 227]                        %! SM4
@@ -1892,16 +1892,6 @@ O_CelloMusicVoice = {
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 230]                        %! SM4
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "pos. ord."
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     bf,,,!1..
     \repeatTie
@@ -1929,6 +1919,16 @@ O_CelloMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "pos. ord."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [O CelloMusicVoice measure 231]                        %! SM4
@@ -1954,16 +1954,6 @@ O_CelloMusicVoice = {
     \<                                                       %! PWC1
     
     % [O CelloMusicVoice measure 234]                        %! SM4
-    \once \override TextSpanner.bound-details.right.text = \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \whiteout
-                    \upright
-                        "tasto poss."
-            }
-        }                                                    %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     bf,,,!1..
     \repeatTie
@@ -1991,6 +1981,16 @@ O_CelloMusicVoice = {
     -\tweak bound-details.right-broken.text ##f              %! PWC1
     -\tweak bound-details.right.padding 0.5                  %! PWC1
     -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
+    -\tweak bound-details.right.text \markup {
+        \concat
+            {
+                \hspace
+                    #0.0
+                \whiteout
+                    \upright
+                        "tasto poss."
+            }
+        }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [O CelloMusicVoice measure 235]                        %! SM4

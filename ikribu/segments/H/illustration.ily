@@ -1736,16 +1736,6 @@ H_ViolinRHMusicVoice = {
         -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.bound-details.right.text = \markup {
-            \concat
-                {
-                    \hspace
-                        #0.0
-                    \fraction
-                        1
-                        4
-                }
-            }
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
@@ -1771,6 +1761,16 @@ H_ViolinRHMusicVoice = {
         -\tweak bound-details.right-broken.text ##f
         -\tweak bound-details.right.padding 0.5
         -\tweak bound-details.right.stencil-align-dir-y #center
+        -\tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \fraction
+                        1
+                        4
+                }
+            }
         \startTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
@@ -3249,16 +3249,6 @@ H_ViolaRHMusicVoice = {
         -\tweak bound-details.right.stencil-align-dir-y #center
         \startTextSpan
         
-        \once \override TextSpanner.bound-details.right.text = \markup {
-            \concat
-                {
-                    \hspace
-                        #0.0
-                    \fraction
-                        6
-                        7
-                }
-            }
         c'4
         -\upbow
         \stopTextSpan
@@ -3281,6 +3271,16 @@ H_ViolaRHMusicVoice = {
         -\tweak bound-details.right-broken.text ##f
         -\tweak bound-details.right.padding 0.5
         -\tweak bound-details.right.stencil-align-dir-y #center
+        -\tweak bound-details.right.text \markup {
+            \concat
+                {
+                    \hspace
+                        #0.0
+                    \fraction
+                        6
+                        7
+                }
+            }
         \startTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
