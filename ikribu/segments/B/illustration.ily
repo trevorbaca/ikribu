@@ -1374,26 +1374,6 @@ B_ViolinMusicVoice = {
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override TextScript.staff-padding = #3                  %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
-    \once \override TextSpanner.Y-extent = ##f               %! PWC1
-    \once \override TextSpanner.arrow-width = 0.25           %! PWC1
-    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PWC1
-    \once \override TextSpanner.bound-details.left.text = \markup {
-        \concat
-            {
-                \whiteout
-                    \upright
-                        "trem. flaut. pont."
-                \hspace
-                    #0.5
-            }
-        }                                                    %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right.arrow = ##t %! PWC1
-    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PWC1
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.right.text = \markup {
         \concat
             {
@@ -1404,8 +1384,6 @@ B_ViolinMusicVoice = {
                         "trem. flaut. tast."
             }
         }                                                    %! PWC1
-    \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
-    \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \clef "treble"                                           %! SM8:REAPPLIED_CLEF:SM37
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.Clef.color = #(x11-color 'green4)  %! SM6:REAPPLIED_CLEF_COLOR:SM37
@@ -1417,6 +1395,28 @@ B_ViolinMusicVoice = {
     :32                                                      %! IC
     \<                                                       %! HC1
     \ppp                                                     %! HC1
+    -\tweak Y-extent ##f                                     %! PWC1
+    -\tweak bound-details.left.text \markup {
+        \concat
+            {
+                \whiteout
+                    \upright
+                        "trem. flaut. pont."
+                \hspace
+                    #0.5
+            }
+        }                                                    %! PWC1
+    -\tweak arrow-width 0.25                                 %! PWC1
+    -\tweak dash-fraction 0.25                               %! PWC1
+    -\tweak dash-period 1.5                                  %! PWC1
+    -\tweak bound-details.left-broken.text ##f               %! PWC1
+    -\tweak bound-details.left.stencil-align-dir-y #center   %! PWC1
+    -\tweak bound-details.right.arrow ##t                    %! PWC1
+    -\tweak bound-details.right-broken.arrow ##f             %! PWC1
+    -\tweak bound-details.right-broken.padding 0             %! PWC1
+    -\tweak bound-details.right-broken.text ##f              %! PWC1
+    -\tweak bound-details.right.padding 0.5                  %! PWC1
+    -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
     \startTextSpan                                           %! PWC1
     ^ \markup {
         \column
@@ -1495,26 +1495,6 @@ B_ViolinMusicVoice = {
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 16]                        %! SM4
-    \once \override TextSpanner.Y-extent = ##f               %! PWC1
-    \once \override TextSpanner.arrow-width = 0.25           %! PWC1
-    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PWC1
-    \once \override TextSpanner.bound-details.left.text = \markup {
-        \concat
-            {
-                \whiteout
-                    \upright
-                        "trem. flaut. pont."
-                \hspace
-                    #0.5
-            }
-        }                                                    %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right.arrow = ##t %! PWC1
-    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PWC1
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.right.text = \markup {
         \concat
             {
@@ -1525,8 +1505,6 @@ B_ViolinMusicVoice = {
                         "trem. flaut. tast."
             }
         }                                                    %! PWC1
-    \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
-    \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
@@ -1535,6 +1513,28 @@ B_ViolinMusicVoice = {
     :32                                                      %! IC
     \<                                                       %! HC1
     \ppp                                                     %! HC1
+    -\tweak Y-extent ##f                                     %! PWC1
+    -\tweak bound-details.left.text \markup {
+        \concat
+            {
+                \whiteout
+                    \upright
+                        "trem. flaut. pont."
+                \hspace
+                    #0.5
+            }
+        }                                                    %! PWC1
+    -\tweak arrow-width 0.25                                 %! PWC1
+    -\tweak dash-fraction 0.25                               %! PWC1
+    -\tweak dash-period 1.5                                  %! PWC1
+    -\tweak bound-details.left-broken.text ##f               %! PWC1
+    -\tweak bound-details.left.stencil-align-dir-y #center   %! PWC1
+    -\tweak bound-details.right.arrow ##t                    %! PWC1
+    -\tweak bound-details.right-broken.arrow ##f             %! PWC1
+    -\tweak bound-details.right-broken.padding 0             %! PWC1
+    -\tweak bound-details.right-broken.text ##f              %! PWC1
+    -\tweak bound-details.right.padding 0.5                  %! PWC1
+    -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [B ViolinMusicVoice measure 17]                        %! SM4
@@ -1577,26 +1577,6 @@ B_ViolinMusicVoice = {
     R1 * 1/4
     
     % [B ViolinMusicVoice measure 22]                        %! SM4
-    \once \override TextSpanner.Y-extent = ##f               %! PWC1
-    \once \override TextSpanner.arrow-width = 0.25           %! PWC1
-    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PWC1
-    \once \override TextSpanner.bound-details.left.text = \markup {
-        \concat
-            {
-                \whiteout
-                    \upright
-                        "trem. flaut. pont."
-                \hspace
-                    #0.5
-            }
-        }                                                    %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right.arrow = ##t %! PWC1
-    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PWC1
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.right.text = \markup {
         \concat
             {
@@ -1607,8 +1587,6 @@ B_ViolinMusicVoice = {
                         "trem. flaut. tast."
             }
         }                                                    %! PWC1
-    \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
-    \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
@@ -1617,6 +1595,28 @@ B_ViolinMusicVoice = {
     :32                                                      %! IC
     \<                                                       %! HC1
     \ppp                                                     %! HC1
+    -\tweak Y-extent ##f                                     %! PWC1
+    -\tweak bound-details.left.text \markup {
+        \concat
+            {
+                \whiteout
+                    \upright
+                        "trem. flaut. pont."
+                \hspace
+                    #0.5
+            }
+        }                                                    %! PWC1
+    -\tweak arrow-width 0.25                                 %! PWC1
+    -\tweak dash-fraction 0.25                               %! PWC1
+    -\tweak dash-period 1.5                                  %! PWC1
+    -\tweak bound-details.left-broken.text ##f               %! PWC1
+    -\tweak bound-details.left.stencil-align-dir-y #center   %! PWC1
+    -\tweak bound-details.right.arrow ##t                    %! PWC1
+    -\tweak bound-details.right-broken.arrow ##f             %! PWC1
+    -\tweak bound-details.right-broken.padding 0             %! PWC1
+    -\tweak bound-details.right-broken.text ##f              %! PWC1
+    -\tweak bound-details.right.padding 0.5                  %! PWC1
+    -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [B ViolinMusicVoice measure 23]                        %! SM4
@@ -1985,26 +1985,6 @@ B_ViolaMusicVoice = {
     R1 * 1/4
     
     % [B ViolaMusicVoice measure 28]                         %! SM4
-    \once \override TextSpanner.Y-extent = ##f               %! PWC1
-    \once \override TextSpanner.arrow-width = 0.25           %! PWC1
-    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PWC1
-    \once \override TextSpanner.bound-details.left.text = \markup {
-        \concat
-            {
-                \whiteout
-                    \upright
-                        "trem. flaut. pont."
-                \hspace
-                    #0.5
-            }
-        }                                                    %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right.arrow = ##t %! PWC1
-    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PWC1
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.right.text = \markup {
         \concat
             {
@@ -2015,8 +1995,6 @@ B_ViolaMusicVoice = {
                         "trem. flaut. tast."
             }
         }                                                    %! PWC1
-    \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
-    \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
@@ -2025,6 +2003,28 @@ B_ViolaMusicVoice = {
     :32                                                      %! IC
     \<                                                       %! HC1
     \ppp                                                     %! HC1
+    -\tweak Y-extent ##f                                     %! PWC1
+    -\tweak bound-details.left.text \markup {
+        \concat
+            {
+                \whiteout
+                    \upright
+                        "trem. flaut. pont."
+                \hspace
+                    #0.5
+            }
+        }                                                    %! PWC1
+    -\tweak arrow-width 0.25                                 %! PWC1
+    -\tweak dash-fraction 0.25                               %! PWC1
+    -\tweak dash-period 1.5                                  %! PWC1
+    -\tweak bound-details.left-broken.text ##f               %! PWC1
+    -\tweak bound-details.left.stencil-align-dir-y #center   %! PWC1
+    -\tweak bound-details.right.arrow ##t                    %! PWC1
+    -\tweak bound-details.right-broken.arrow ##f             %! PWC1
+    -\tweak bound-details.right-broken.padding 0             %! PWC1
+    -\tweak bound-details.right-broken.text ##f              %! PWC1
+    -\tweak bound-details.right.padding 0.5                  %! PWC1
+    -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
     \startTextSpan                                           %! PWC1
     _ \markup {                                              %! IC
         \whiteout                                            %! IC

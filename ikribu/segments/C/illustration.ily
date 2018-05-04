@@ -1983,26 +1983,6 @@ C_CelloMusicVoice = {
     \override NoteHead.style = #'harmonic                    %! OC1
     \override TextSpanner.staff-padding = #3.5               %! OC1
     \override TupletBracket.direction = #down                %! OC1
-    \once \override TextSpanner.Y-extent = ##f               %! PWC1
-    \once \override TextSpanner.arrow-width = 0.25           %! PWC1
-    \once \override TextSpanner.bound-details.left-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! PWC1
-    \once \override TextSpanner.bound-details.left.text = \markup {
-        \concat
-            {
-                \whiteout
-                    \upright
-                        "trem. flaut. tasto. (arco)"
-                \hspace
-                    #0.5
-            }
-        }                                                    %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.arrow = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.padding = 0 %! PWC1
-    \once \override TextSpanner.bound-details.right-broken.text = ##f %! PWC1
-    \once \override TextSpanner.bound-details.right.arrow = ##t %! PWC1
-    \once \override TextSpanner.bound-details.right.padding = 0.5 %! PWC1
-    \once \override TextSpanner.bound-details.right.stencil-align-dir-y = #center %! PWC1
     \once \override TextSpanner.bound-details.right.text = \markup {
         \concat
             {
@@ -2013,13 +1993,33 @@ C_CelloMusicVoice = {
                         "trem. flaut. XP"
             }
         }                                                    %! PWC1
-    \once \override TextSpanner.dash-fraction = 0.25         %! PWC1
-    \once \override TextSpanner.dash-period = 1.5            %! PWC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
     \<                                                       %! PWC1
     \ppp                                                     %! PWC1
+    -\tweak Y-extent ##f                                     %! PWC1
+    -\tweak bound-details.left.text \markup {
+        \concat
+            {
+                \whiteout
+                    \upright
+                        "trem. flaut. tasto. (arco)"
+                \hspace
+                    #0.5
+            }
+        }                                                    %! PWC1
+    -\tweak arrow-width 0.25                                 %! PWC1
+    -\tweak dash-fraction 0.25                               %! PWC1
+    -\tweak dash-period 1.5                                  %! PWC1
+    -\tweak bound-details.left-broken.text ##f               %! PWC1
+    -\tweak bound-details.left.stencil-align-dir-y #center   %! PWC1
+    -\tweak bound-details.right.arrow ##t                    %! PWC1
+    -\tweak bound-details.right-broken.arrow ##f             %! PWC1
+    -\tweak bound-details.right-broken.padding 0             %! PWC1
+    -\tweak bound-details.right-broken.text ##f              %! PWC1
+    -\tweak bound-details.right.padding 0.5                  %! PWC1
+    -\tweak bound-details.right.stencil-align-dir-y #center  %! PWC1
     \startTextSpan                                           %! PWC1
     
     % [C CelloMusicVoice measure 37]                         %! SM4
