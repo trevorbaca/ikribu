@@ -25,7 +25,7 @@ install:
     - PACKAGE=ikribu
 
 script:
-    - ajv doctest --external-modules=baca ./$PACKAGE
+#    - ajv doctest --external-modules=baca ./$PACKAGE
     - py.test -rf ./$PACKAGE
 
 notifications:
