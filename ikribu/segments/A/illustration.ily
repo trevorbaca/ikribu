@@ -33,8 +33,7 @@ A_GlobalRests = {
 A_GlobalSkips = {
     
     % [A GlobalSkips measure 3]                                          %! SM4
-%@% \once \override TextSpanner.bound-details.left.text =                %! SM27:EXPLICIT_METRONOME_MARK:SM30
-%@% \markup {                                                            %! SM27:EXPLICIT_METRONOME_MARK:SM30
+%@% \once \override TextSpanner.bound-details.left.text = \markup {      %! SM27:EXPLICIT_METRONOME_MARK:SM30
 %@%     \fontsize                                                        %! SM27:EXPLICIT_METRONOME_MARK:SM30
 %@%         #-6                                                          %! SM27:EXPLICIT_METRONOME_MARK:SM30
 %@%         \general-align                                               %! SM27:EXPLICIT_METRONOME_MARK:SM30
@@ -55,8 +54,7 @@ A_GlobalSkips = {
     \once \override TextSpanner.Y-extent = ##f                           %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left-broken.text = ##f     %! SM29:METRONOME_MARK_SPANNER
     \once \override TextSpanner.bound-details.left.stencil-align-dir-y = #center %! SM29:METRONOME_MARK_SPANNER
-    \once \override TextSpanner.bound-details.left.text =                %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
-    \markup {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
+    \once \override TextSpanner.bound-details.left.text = \markup {      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
         \with-color                                                      %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
             #(x11-color 'blue)                                           %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
             {                                                            %! SM15:EXPLICIT_METRONOME_MARK_WITH_COLOR:SM30
