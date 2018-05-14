@@ -610,7 +610,6 @@ F_ViolinMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolinMusicVoice measure 85]                        %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     <e' fs'!>\breve
@@ -618,6 +617,7 @@ F_ViolinMusicVoice = {
     \repeatTie
     \p                                                       %! HC1
     \stopTextSpan                                            %! PWC1
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \p                                                       %! HC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
@@ -813,7 +813,6 @@ F_ViolaMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolaMusicVoice measure 85]                         %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     <ef'! f'>\breve
@@ -821,6 +820,7 @@ F_ViolaMusicVoice = {
     \repeatTie
     \p                                                       %! HC1
     \stopTextSpan                                            %! PWC1
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \p                                                       %! HC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2

@@ -491,11 +491,11 @@ P_BassClarinetMusicVoice = {
     
     % [P BassClarinetMusicVoice measure 243]                     %! SM4
     \override DynamicLineSpanner.staff-padding = #'9             %! OC1
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'''4
     \repeatTie                                                   %! TCC
     \glissando                                                   %! SC
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \mf                                                          %! HC1
     

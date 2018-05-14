@@ -1802,10 +1802,10 @@ M_BassClarinetMusicVoice = {
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 179]                     %! SM4
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2
     \repeatTie
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \fff                                                         %! HC1
     
@@ -1859,10 +1859,10 @@ M_BassClarinetMusicVoice = {
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 187]                     %! SM4
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2.
     \repeatTie
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \fff                                                         %! HC1
     
@@ -1896,10 +1896,10 @@ M_BassClarinetMusicVoice = {
     \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 192]                     %! SM4
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!\breve
     \repeatTie
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \fff                                                         %! HC1
     

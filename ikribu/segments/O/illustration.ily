@@ -992,10 +992,10 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 236]                     %! SM4
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c2.
     \repeatTie                                                   %! SC
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \p                                                           %! HC1
     
@@ -1282,11 +1282,11 @@ O_ViolinMusicVoice = {
     \repeatTie
     
     % [O ViolinMusicVoice measure 236]                       %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     <e' fs'!>2.
     :32                                                      %! IC
     \repeatTie
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \ppppp                                                   %! HC1
     
@@ -1574,11 +1574,11 @@ O_ViolaMusicVoice = {
     \repeatTie
     
     % [O ViolaMusicVoice measure 236]                        %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     <ef'! f'>2.
     :32                                                      %! IC
     \repeatTie
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \ppppp                                                   %! HC1
     

@@ -385,10 +385,10 @@ A_BassClarinetMusicVoice = {
     \f                                                           %! HC1
     
     % [A BassClarinetMusicVoice measure 5]                       %! SM4
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e1
     \repeatTie
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \f                                                           %! HC1
     
