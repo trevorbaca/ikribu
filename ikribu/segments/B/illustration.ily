@@ -1182,10 +1182,10 @@ B_BassClarinetMusicVoice = {
     \f                                                           %! HC1
     
     % [B BassClarinetMusicVoice measure 30]                      %! SM4
-    \once \override Hairpin.circled-tip = ##t                    %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     ef!2.
     \repeatTie
+    - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
     \f                                                           %! HC1
     
@@ -1461,12 +1461,12 @@ B_ViolinMusicVoice = {
     \p                                                       %! HC1
     
     % [B ViolinMusicVoice measure 12]                        %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e'2.
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \p                                                       %! HC1
     
@@ -1543,12 +1543,12 @@ B_ViolinMusicVoice = {
     \p                                                       %! HC1
     
     % [B ViolinMusicVoice measure 18]                        %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e'1
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \p                                                       %! HC1
     
@@ -1625,12 +1625,12 @@ B_ViolinMusicVoice = {
     \p                                                       %! HC1
     
     % [B ViolinMusicVoice measure 24]                        %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e'2.
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \p                                                       %! HC1
     
@@ -2053,12 +2053,12 @@ B_ViolaMusicVoice = {
     \mf                                                      %! HC1
     
     % [B ViolaMusicVoice measure 33]                         %! SM4
-    \once \override Hairpin.circled-tip = ##t                %! HC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     ef'!\breve
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
     \mf                                                      %! HC1
     
