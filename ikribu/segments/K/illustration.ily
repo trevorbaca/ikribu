@@ -1144,8 +1144,8 @@ K_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         b8
-        -\staccato                                           %! IC
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccato                                           %! IC
         [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
@@ -1603,8 +1603,8 @@ K_ViolaMusicVoice = {
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         b8
-        -\staccato                                           %! IC
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
+        -\staccato                                           %! IC
         [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC

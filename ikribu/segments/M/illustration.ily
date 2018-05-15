@@ -3429,8 +3429,8 @@ M_CelloMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     fqf''!2.
-    -\laissezVibrer                                          %! IC
     \sfz                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                          %! IC
     ^ \markup {
         \column
             {
@@ -3551,8 +3551,8 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     g''1..
-    -\laissezVibrer                                          %! IC
     \sfz                                                     %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                          %! IC
     ^ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC
@@ -3602,8 +3602,8 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     fqf''!1
-    -\laissezVibrer                                          %! IC
     \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                          %! IC
     ^ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC
@@ -3693,8 +3693,8 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     g''2
-    -\laissezVibrer                                          %! IC
     \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                          %! IC
     ^ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC
@@ -3784,8 +3784,8 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     a''1..
-    -\laissezVibrer                                          %! IC
     \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                          %! IC
     ^ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC
@@ -3835,8 +3835,8 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     cqs'''!2
-    -\laissezVibrer                                          %! IC
     \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    -\laissezVibrer                                          %! IC
     ^ \markup {                                              %! IC
         \whiteout                                            %! IC
             \upright                                         %! IC

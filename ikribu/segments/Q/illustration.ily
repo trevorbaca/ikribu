@@ -787,8 +787,8 @@ Q_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     a'4
-    -\tongue #2                                              %! IC
     \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tongue #2                                              %! IC
     ^ \markup {
         \column
             {
@@ -1092,8 +1092,8 @@ Q_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     b'4
-    -\tongue #2                                              %! IC
     \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    -\tongue #2                                              %! IC
     ^ \markup {
         \column
             {
@@ -1401,8 +1401,8 @@ Q_CelloMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a8
-        -\accent                                             %! IC
         \effort_mf                                           %! SM8:EXPLICIT_DYNAMIC:IC
+        -\accent                                             %! IC
         [
         ^ \markup {
             \column
