@@ -1554,8 +1554,8 @@ L_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c'8
-        -\staccato                                           %! IC
         \effort_mp                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+        -\staccato                                           %! IC
         [
         ^ \markup {
             \column
@@ -2702,8 +2702,8 @@ L_ViolaMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c'8
-        -\staccato                                           %! IC
         \effort_mp                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+        -\staccato                                           %! IC
         [
         ^ \markup {
             \column
