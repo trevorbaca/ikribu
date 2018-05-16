@@ -60,9 +60,9 @@ maker(
         ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
-    baca.hairpin('sfpp < p', baca.leaves()[:2]),
-    baca.hairpin('p > niente', baca.leaves()[-1:].rleak()),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.hairpin('sfpp < p', selector=baca.leaves()[:2]),
+    baca.hairpin('p > niente', selector=baca.leaves()[-1:].rleak()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(3.5),
     )
 
@@ -99,7 +99,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.hairpin('p < ff'),
     baca.pitch('F#3'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     baca.transition(
         baca.markup('(trem. flaut. tast.)'),
         baca.markup('trem. XP (non. flaut.)'),

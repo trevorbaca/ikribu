@@ -148,13 +148,13 @@ maker(
 
 maker(
     ('bcl', [(2, 3), (9, 10), (13, 14)]),
-    baca.hairpin('p < fff', baca.leaves()[:2]),
-    baca.hairpin('fff > niente', baca.rleaves()[-2:]),
+    baca.hairpin('p < fff', selector=baca.leaves()[:2]),
+    baca.hairpin('fff > niente', selector=baca.rleaves()[-2:]),
     )
 
 maker(
     ('bcl', (20, 22)),
-    baca.hairpin('ppp < fff', baca.leaves()[:-1]),
+    baca.hairpin('ppp < fff', selector=baca.leaves()[:-1]),
     )
 
 maker(
@@ -196,8 +196,8 @@ maker(
         ['vn', 'va'], 
         [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)],
         ),
-    baca.accent(baca.pheads()[~abjad.index([0], 2)]),
-    baca.stem_tremolo(baca.pheads()[abjad.index([0], 2)]),
+    baca.accent(selector=baca.pheads()[~abjad.index([0], 2)]),
+    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0], 2)]),
     )
 
 maker(
@@ -272,7 +272,7 @@ maker(
     ('vc', 1),
     baca.clef('treble'),
     baca.dynamic('sfz'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
@@ -288,7 +288,7 @@ maker(
     ('vc', 5),
     baca.clef('treble'),
     baca.dynamic('sfz'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
@@ -299,7 +299,7 @@ maker(
     ('vc', 8),
     baca.clef('treble'),
     baca.dynamic('sffz'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
@@ -310,7 +310,7 @@ maker(
     ('vc', 12),
     baca.clef('treble'),
     baca.dynamic('sffz'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
@@ -321,7 +321,7 @@ maker(
     ('vc', 16),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
@@ -332,7 +332,7 @@ maker(
     ('vc', 19),
     baca.clef('treble'),
     baca.dynamic('sfffz'),
-    baca.laissez_vibrer(baca.ptails()),
+    baca.laissez_vibrer(selector=baca.ptails()),
     baca.markup.pizz(),
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),

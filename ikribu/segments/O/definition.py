@@ -132,7 +132,7 @@ maker(
 
 maker(
     ('bcl', (19, 20)),
-    baca.hairpin('p > niente', baca.rleaves()[-3:]),
+    baca.hairpin('p > niente', selector=baca.rleaves()[-3:]),
     baca.pitch('Bb1'),
     )
 
@@ -144,28 +144,28 @@ maker(
 maker(
     ('vn', (9, 20)),
     baca.dynamic('ppppp'),
-    baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
+    baca.hairpin('ppppp > niente', selector=baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
     baca.pitch('<E4 F#4>'),
     baca.transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
         ),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
     )
 
 maker(
     ('va', (9, 20)),
     baca.dynamic('ppppp'),
-    baca.hairpin('ppppp > niente', baca.rleaves()[-3:]),
+    baca.hairpin('ppppp > niente', selector=baca.rleaves()[-3:]),
     baca.markup.string_numbers([2, 3]),
     baca.pitch('<Eb4 F4>'),
     baca.transition(
         baca.markup('trem. flaut. XP'),
         baca.markup('trem. flaut. nut'),
         ),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
     )
 
