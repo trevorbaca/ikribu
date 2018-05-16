@@ -59,37 +59,37 @@ maker(
 
 maker(
     ('bcl', 1),
-    baca.hairpin('ppp < mp', baca.leaves()),
+    baca.hairpin('ppp < mp', selector=baca.leaves()),
     baca.pitch('G2'),
     )
 
 maker(
     ('bcl', 3),
-    baca.hairpin('pp < mf', baca.leaves()),
+    baca.hairpin('pp < mf', selector=baca.leaves()),
     baca.pitch('Gb2'),
     )
 
 maker(
     ('bcl', 5),
-    baca.hairpin('p < f', baca.leaves()),
+    baca.hairpin('p < f', selector=baca.leaves()),
     baca.pitch('F2'),
     )
 
 maker(
     ('bcl', 7),
-    baca.hairpin('mf < ff', baca.leaves()),
+    baca.hairpin('mf < ff', selector=baca.leaves()),
     baca.pitch('E2'),
     )
 
 maker(
     ('bcl', 9),
-    baca.hairpin('f < fff', baca.leaves()),
+    baca.hairpin('f < fff', selector=baca.leaves()),
     baca.pitch('Eb2'),
     )
 
 maker(
     ('bcl', 11),
-    baca.hairpin('ff < ffff', baca.leaves()),
+    baca.hairpin('ff < ffff', selector=baca.leaves()),
     baca.pitch('D2'),
     )
 
@@ -106,6 +106,6 @@ maker(
     baca.markup.string_number(3),
     baca.note_head_style_harmonic(),
     baca.pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     baca.tuplet_bracket_down(),
     )

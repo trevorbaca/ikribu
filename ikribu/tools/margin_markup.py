@@ -9,8 +9,9 @@ def margin_markup(
     context: str = 'Staff',
     selector: baca.Typing.Selector = 'baca.leaf(0)',
     ) -> baca.IndicatorCommand:
-    r'''Makes tagged margin markup indicator command.
-    '''
+    """
+    Makes tagged margin markup indicator command.
+    """
     margin_markup = ikribu.margin_markups[key]
     command = baca.margin_markup(
         margin_markup,

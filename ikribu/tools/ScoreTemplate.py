@@ -4,7 +4,8 @@ import ikribu
 
 
 class ScoreTemplate(baca.ScoreTemplate):
-    r'''Score template.
+    r"""
+    Score template.
 
     >>> import ikribu
 
@@ -106,7 +107,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             }
         >>
 
-    '''
+    """
 
     ### CLASS VARIABLES ###
 
@@ -136,8 +137,9 @@ class ScoreTemplate(baca.ScoreTemplate):
     ### SPECIAL METHODS ###
 
     def __call__(self) -> abjad.Score:
-        r'''Calls score template.
-        '''
+        """
+        Calls score template.
+        """
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
@@ -302,7 +304,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     @property
     def known_documents(self):
-        r'''Gets known documents.
+        """
+        Gets known documents.
 
         ..  container:: example
 
@@ -318,7 +321,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             'LEDGER_SCORE'
 
         Returns list of strings.
-        '''
+        """
         known_documents = [
             'ARCH_A_SCORE',
             'LEDGER_SCORE',
@@ -334,7 +337,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     @property
     def part_manifest(self):
-        r'''Gets part manifest.
+        """
+        Gets part manifest.
 
         ..  container:: example
 
@@ -347,12 +351,13 @@ class ScoreTemplate(baca.ScoreTemplate):
             Part(instrument='Viola', number=3, section='Viola', section_abbreviation='VA')
             Part(instrument='Cello', number=4, section='Cello', section_abbreviation='VC')
 
-        '''
+        """
         return self._part_manifest
 
     @property
     def voice_abbreviations(self):
-        r'''Gets voice abbreviations.
+        """
+        Gets voice abbreviations.
 
         ..  container:: example
 
@@ -370,5 +375,5 @@ class ScoreTemplate(baca.ScoreTemplate):
                     ]
                 )
 
-        '''
+        """
         return super(ScoreTemplate, self).voice_abbreviations

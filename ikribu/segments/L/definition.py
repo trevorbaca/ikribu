@@ -54,14 +54,14 @@ maker(
 
 maker(
     ('vn', (1, 4)),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     ikribu.clb_rhythm([4]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
     ('vn', (6, 8)),
-    baca.accent(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
@@ -70,7 +70,7 @@ maker(
         baca.tleaves().enchain([4]),
         bookend=True,
         ),
-    baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
+    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 4], 9)]),
     baca.staff_position(0),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
@@ -80,13 +80,13 @@ maker(
 maker(
     ('vn', 4),
     baca.dls_staff_padding(8),
-    baca.hairpin('"mp" > niente', baca.tleaves()),
+    baca.hairpin('"mp" > niente', selector=baca.tleaves()),
     baca.shift_hairpin_start('"mp"'),
     )
 
 maker(
     ('va', (1, 2)),
-    baca.staccato(baca.pheads()),
+    baca.staccato(selector=baca.pheads()),
     ikribu.clb_rhythm([2]),
     ikribu.clb_staff_positions(rotation=-1),
     )
@@ -94,13 +94,13 @@ maker(
 maker(
     ('va', 2),
     baca.dls_staff_padding(8),
-    baca.hairpin('"mp" > niente', baca.tleaves()),
+    baca.hairpin('"mp" > niente', selector=baca.tleaves()),
     baca.shift_hairpin_start('"mp"'),
     )
 
 maker(
     ('va', (4, 8)),
-    baca.accent(baca.pheads()[~abjad.index([0, 5], 11)]),
+    baca.accent(selector=baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
@@ -112,7 +112,7 @@ maker(
         bookend=True,
         ),
     baca.staff_position(0),
-    baca.stem_tremolo(baca.pheads()[abjad.index([0, 5], 11)]),
+    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 5], 11)]),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     ikribu.triplet_rhythm(),

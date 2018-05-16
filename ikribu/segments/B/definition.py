@@ -87,22 +87,22 @@ maker(
 
 maker(
     ('bcl', 13),
-    baca.hairpin('ppp < f', baca.leaves()[:2]),
-    baca.hairpin('f > niente', baca.rleaves()[-2:]),
+    baca.hairpin('ppp < f', selector=baca.leaves()[:2]),
+    baca.hairpin('f > niente', selector=baca.rleaves()[-2:]),
     )
 
 maker(
     ('vn', (1, 9)),
     baca.markup.string_number(3),
     baca.pitch('E4'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('vn', [1, 5, 9]),
     baca.suite([
-        baca.hairpin('ppp < p', baca.leaves()[:2]),
-        baca.hairpin('p > niente', baca.rleaves()[-2:]),
+        baca.hairpin('ppp < p', selector=baca.leaves()[:2]),
+        baca.hairpin('p > niente', selector=baca.rleaves()[-2:]),
         ]),
     baca.transition(
         baca.markup('trem. flaut. pont.'),
@@ -114,14 +114,14 @@ maker(
     ('va', (13, 14)),
     baca.markup.string_number(2),
     baca.pitch('Eb4'),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
     ('va', (13, 14)),
     baca.suite([
-        baca.hairpin('ppp < mf', baca.leaves()[:5]),
-        baca.hairpin('mf > niente', baca.rleaves()[-2:]),
+        baca.hairpin('ppp < mf', selector=baca.leaves()[:5]),
+        baca.hairpin('mf > niente', selector=baca.rleaves()[-2:]),
         ]),
     baca.transition(
         baca.markup('trem. flaut. pont.'),

@@ -111,7 +111,7 @@ maker(
         'vn',
         'va',
         ],
-    baca.accent(baca.pheads()[~abjad.index([0, 4], 9)]),
+    baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup.boxed('sponges on BD', baca.pleaf(0)),
     baca.piecewise(
@@ -122,7 +122,7 @@ maker(
         ),
     baca.staff_lines(1),
     baca.staff_position(0),
-    baca.stem_tremolo(baca.pheads()[abjad.index([0, 4], 9)]),
+    baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 4], 9)]),
     baca.tuplet_bracket_staff_padding(3),
     ikribu.box_adjustment(),
     )
@@ -143,7 +143,7 @@ maker(
         bookend=True,
         ),
     baca.staff_position(0),
-    baca.stem_tremolo(baca.pleaves()),
+    baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_script_staff_padding(2.5),
     )
 
