@@ -1,27 +1,27 @@
 P_GlobalRests = {
     
-    % [P GlobalRests measure 239]                                        %! SM4
+    % [P GlobalRests measure 239 / measure 1]                            %! SM4
     R1 * 3/4
     
-    % [P GlobalRests measure 240]                                        %! SM4
+    % [P GlobalRests measure 240 / measure 2]                            %! SM4
     R1 * 1/2
     
-    % [P GlobalRests measure 241]                                        %! SM4
+    % [P GlobalRests measure 241 / measure 3]                            %! SM4
     R1 * 7/4
     
-    % [P GlobalRests measure 242]                                        %! SM4
+    % [P GlobalRests measure 242 / measure 4]                            %! SM4
     R1 * 7/4
     
-    % [P GlobalRests measure 243]                                        %! SM4
+    % [P GlobalRests measure 243 / measure 5]                            %! SM4
     R1 * 2
     
-    % [P GlobalRests measure 244]                                        %! SM4
+    % [P GlobalRests measure 244 / measure 6]                            %! SM4
     R1 * 7/4
     
-    % [P GlobalRests measure 245]                                        %! SM4
+    % [P GlobalRests measure 245 / measure 7]                            %! SM4
     R1 * 3/4
     
-    % [P GlobalRests measure 246]                                        %! SM4
+    % [P GlobalRests measure 246 / measure 8]                            %! SM4
     \once \override Score.MultiMeasureRest.transparent = ##t             %! SM19
     \once \override Score.TimeSignature.stencil = ##f                    %! SM19
     R1 * 1/4
@@ -35,7 +35,7 @@ P_GlobalRests = {
 
 P_GlobalSkips = {
     
-    % [P GlobalSkips measure 239]                                        %! SM4
+    % [P GlobalSkips measure 239 / measure 1]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \mark #16                                                            %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
@@ -125,7 +125,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 240]                                        %! SM4
+    % [P GlobalSkips measure 240 / measure 2]                            %! SM4
     \time 2/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
@@ -155,7 +155,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 241]                                        %! SM4
+    % [P GlobalSkips measure 241 / measure 3]                            %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -185,7 +185,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 242]                                        %! SM4
+    % [P GlobalSkips measure 242 / measure 4]                            %! SM4
     \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
     ^ \markup {
@@ -219,7 +219,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 243]                                        %! SM4
+    % [P GlobalSkips measure 243 / measure 5]                            %! SM4
     \time 8/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2
@@ -254,7 +254,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 244]                                        %! SM4
+    % [P GlobalSkips measure 244 / measure 6]                            %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -339,7 +339,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 245]                                        %! SM4
+    % [P GlobalSkips measure 245 / measure 7]                            %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -374,7 +374,7 @@ P_GlobalSkips = {
             }
         }
     
-    % [P GlobalSkips measure 246]                                        %! SM4
+    % [P GlobalSkips measure 246 / measure 8]                            %! SM4
     \time 1/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/4
@@ -417,7 +417,7 @@ P_GlobalSkips = {
 
 P_BassClarinetMusicVoice = {
     
-    % [P BassClarinetMusicVoice measure 239]                     %! SM4
+    % [P BassClarinetMusicVoice measure 239 / measure 1]         %! SM4
     \set Staff.instrumentName =                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -475,21 +475,21 @@ P_BassClarinetMusicVoice = {
             "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    % [P BassClarinetMusicVoice measure 240]                     %! SM4
+    % [P BassClarinetMusicVoice measure 240 / measure 2]         %! SM4
     c'''2
     \repeatTie                                                   %! TCC
     
-    % [P BassClarinetMusicVoice measure 241]                     %! SM4
+    % [P BassClarinetMusicVoice measure 241 / measure 3]         %! SM4
     c'''1..
     \repeatTie                                                   %! TCC
     
-    % [P BassClarinetMusicVoice measure 242]                     %! SM4
+    % [P BassClarinetMusicVoice measure 242 / measure 4]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c'''1..
     \repeatTie                                                   %! TCC
     \mf                                                          %! HC1
     
-    % [P BassClarinetMusicVoice measure 243]                     %! SM4
+    % [P BassClarinetMusicVoice measure 243 / measure 5]         %! SM4
     \override DynamicLineSpanner.staff-padding = #'9             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'''4
@@ -520,7 +520,7 @@ P_BassClarinetMusicVoice = {
     c'4
     \glissando                                                   %! SC
     
-    % [P BassClarinetMusicVoice measure 244]                     %! SM4
+    % [P BassClarinetMusicVoice measure 244 / measure 6]         %! SM4
     b4
     \glissando                                                   %! SC
     
@@ -541,12 +541,12 @@ P_BassClarinetMusicVoice = {
     
     cs!4
     
-    % [P BassClarinetMusicVoice measure 245]                     %! SM4
+    % [P BassClarinetMusicVoice measure 245 / measure 7]         %! SM4
     cs!2.
     \repeatTie                                                   %! TCC
     \revert DynamicLineSpanner.staff-padding                     %! OC2
     
-    % [P BassClarinetMusicVoice measure 246]                     %! SM4
+    % [P BassClarinetMusicVoice measure 246 / measure 8]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \stopStaff                                                   %! SM20
     \once \override Staff.StaffSymbol.line-count = 0             %! SM20
@@ -570,7 +570,7 @@ P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
-        % [P ViolinRHMusicVoice measure 239]                 %! SM4
+        % [P ViolinRHMusicVoice measure 239 / measure 1]     %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
         \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -635,7 +635,7 @@ P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
         
-        % [P ViolinRHMusicVoice measure 240]                 %! SM4
+        % [P ViolinRHMusicVoice measure 240 / measure 2]     %! SM4
         c'4
         \stopTextSpan
         - \tweak Y-extent ##f
@@ -688,7 +688,7 @@ P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        % [P ViolinRHMusicVoice measure 241]                 %! SM4
+        % [P ViolinRHMusicVoice measure 241 / measure 3]     %! SM4
         c'4
         \stopTextSpan
         - \tweak Y-extent ##f
@@ -891,7 +891,7 @@ P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
-        % [P ViolinRHMusicVoice measure 242]                 %! SM4
+        % [P ViolinRHMusicVoice measure 242 / measure 4]     %! SM4
         r4
         \stopTextSpan
         - \tweak Y-extent ##f
@@ -1115,7 +1115,7 @@ P_ViolinRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
         
-        % [P ViolinRHMusicVoice measure 243]                 %! SM4
+        % [P ViolinRHMusicVoice measure 243 / measure 5]     %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
@@ -1285,13 +1285,13 @@ P_ViolinRHMusicVoice = {
         \revert RepeatTie.direction                          %! OC2
     }
     
-    % [P ViolinRHMusicVoice measure 244]                     %! SM4
+    % [P ViolinRHMusicVoice measure 244 / measure 6]         %! SM4
     R1 * 7/4
     
-    % [P ViolinRHMusicVoice measure 245]                     %! SM4
+    % [P ViolinRHMusicVoice measure 245 / measure 7]         %! SM4
     R1 * 3/4
     
-    % [P ViolinRHMusicVoice measure 246]                     %! SM4
+    % [P ViolinRHMusicVoice measure 246 / measure 8]         %! SM4
     \stopStaff                                               %! SM20
     \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
@@ -1310,7 +1310,7 @@ P_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        % [P ViolinMusicVoice measure 239]                   %! SM4
+        % [P ViolinMusicVoice measure 239 / measure 1]       %! SM4
         \set SingleStringStaffGroup.instrumentName =         %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -1384,7 +1384,7 @@ P_ViolinMusicVoice = {
     }
     \times 2/3 {
         
-        % [P ViolinMusicVoice measure 240]                   %! SM4
+        % [P ViolinMusicVoice measure 240 / measure 2]       %! SM4
         g''2
         \glissando                                           %! SC
         
@@ -1399,7 +1399,7 @@ P_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [P ViolinMusicVoice measure 241]                   %! SM4
+        % [P ViolinMusicVoice measure 241 / measure 3]       %! SM4
         e'''2..
         \glissando                                           %! SC
         
@@ -1409,7 +1409,7 @@ P_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
-        % [P ViolinMusicVoice measure 242]                   %! SM4
+        % [P ViolinMusicVoice measure 242 / measure 4]       %! SM4
         c''1
         \glissando                                           %! SC
         
@@ -1432,7 +1432,7 @@ P_ViolinMusicVoice = {
     }
     \times 8/9 {
         
-        % [P ViolinMusicVoice measure 243]                   %! SM4
+        % [P ViolinMusicVoice measure 243 / measure 5]       %! SM4
         a'2
         \glissando                                           %! SC
         
@@ -1448,13 +1448,13 @@ P_ViolinMusicVoice = {
         a8
     }
     
-    % [P ViolinMusicVoice measure 244]                       %! SM4
+    % [P ViolinMusicVoice measure 244 / measure 6]           %! SM4
     R1 * 7/4
     
-    % [P ViolinMusicVoice measure 245]                       %! SM4
+    % [P ViolinMusicVoice measure 245 / measure 7]           %! SM4
     R1 * 3/4
     
-    % [P ViolinMusicVoice measure 246]                       %! SM4
+    % [P ViolinMusicVoice measure 246 / measure 8]           %! SM4
     \stopStaff                                               %! SM20
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
@@ -1474,7 +1474,7 @@ P_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/3 {
         
-        % [P ViolaRHMusicVoice measure 239]                  %! SM4
+        % [P ViolaRHMusicVoice measure 239 / measure 1]      %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
         \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -1575,7 +1575,7 @@ P_ViolaRHMusicVoice = {
     }
     \times 2/3 {
         
-        % [P ViolaRHMusicVoice measure 240]                  %! SM4
+        % [P ViolaRHMusicVoice measure 240 / measure 2]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
@@ -1654,7 +1654,7 @@ P_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
-        % [P ViolaRHMusicVoice measure 241]                  %! SM4
+        % [P ViolaRHMusicVoice measure 241 / measure 3]      %! SM4
         c'4
         -\downbow
         \stopTextSpan
@@ -1880,7 +1880,7 @@ P_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
         
-        % [P ViolaRHMusicVoice measure 242]                  %! SM4
+        % [P ViolaRHMusicVoice measure 242 / measure 4]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
@@ -2032,7 +2032,7 @@ P_ViolaRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/8 {
         
-        % [P ViolaRHMusicVoice measure 243]                  %! SM4
+        % [P ViolaRHMusicVoice measure 243 / measure 5]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
@@ -2230,13 +2230,13 @@ P_ViolaRHMusicVoice = {
         \revert RepeatTie.direction                          %! OC2
     }
     
-    % [P ViolaRHMusicVoice measure 244]                      %! SM4
+    % [P ViolaRHMusicVoice measure 244 / measure 6]          %! SM4
     R1 * 7/4
     
-    % [P ViolaRHMusicVoice measure 245]                      %! SM4
+    % [P ViolaRHMusicVoice measure 245 / measure 7]          %! SM4
     R1 * 3/4
     
-    % [P ViolaRHMusicVoice measure 246]                      %! SM4
+    % [P ViolaRHMusicVoice measure 246 / measure 8]          %! SM4
     \stopStaff                                               %! SM20
     \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
@@ -2255,7 +2255,7 @@ P_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        % [P ViolaMusicVoice measure 239]                    %! SM4
+        % [P ViolaMusicVoice measure 239 / measure 1]        %! SM4
         \set SingleStringStaffGroup.instrumentName =         %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -2319,14 +2319,14 @@ P_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [P ViolaMusicVoice measure 240]                    %! SM4
+        % [P ViolaMusicVoice measure 240 / measure 2]        %! SM4
         e''2
         \glissando                                           %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
-        % [P ViolaMusicVoice measure 241]                    %! SM4
+        % [P ViolaMusicVoice measure 241 / measure 3]        %! SM4
         d''4.
         \glissando                                           %! SC
         
@@ -2342,7 +2342,7 @@ P_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        % [P ViolaMusicVoice measure 242]                    %! SM4
+        % [P ViolaMusicVoice measure 242 / measure 4]        %! SM4
         g4.
         \glissando                                           %! SC
         
@@ -2369,7 +2369,7 @@ P_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [P ViolaMusicVoice measure 243]                    %! SM4
+        % [P ViolaMusicVoice measure 243 / measure 5]        %! SM4
         f''2..
         \glissando                                           %! SC
         
@@ -2379,13 +2379,13 @@ P_ViolaMusicVoice = {
         e''4
     }
     
-    % [P ViolaMusicVoice measure 244]                        %! SM4
+    % [P ViolaMusicVoice measure 244 / measure 6]            %! SM4
     R1 * 7/4
     
-    % [P ViolaMusicVoice measure 245]                        %! SM4
+    % [P ViolaMusicVoice measure 245 / measure 7]            %! SM4
     R1 * 3/4
     
-    % [P ViolaMusicVoice measure 246]                        %! SM4
+    % [P ViolaMusicVoice measure 246 / measure 8]            %! SM4
     \stopStaff                                               %! SM20
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
@@ -2405,7 +2405,7 @@ P_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        % [P CelloRHMusicVoice measure 239]                  %! SM4
+        % [P CelloRHMusicVoice measure 239 / measure 1]      %! SM4
         \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
         \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
         \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -2519,7 +2519,7 @@ P_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
         
-        % [P CelloRHMusicVoice measure 240]                  %! SM4
+        % [P CelloRHMusicVoice measure 240 / measure 2]      %! SM4
         c'4
         \stopTextSpan
         - \tweak Y-extent ##f
@@ -2570,7 +2570,7 @@ P_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
         
-        % [P CelloRHMusicVoice measure 241]                  %! SM4
+        % [P CelloRHMusicVoice measure 241 / measure 3]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
@@ -2726,7 +2726,7 @@ P_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/7 {
         
-        % [P CelloRHMusicVoice measure 242]                  %! SM4
+        % [P CelloRHMusicVoice measure 242 / measure 4]      %! SM4
         c'4
         \stopTextSpan
         - \tweak Y-extent ##f
@@ -2899,7 +2899,7 @@ P_CelloRHMusicVoice = {
     }
     \times 8/9 {
         
-        % [P CelloRHMusicVoice measure 243]                  %! SM4
+        % [P CelloRHMusicVoice measure 243 / measure 5]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
@@ -3120,13 +3120,13 @@ P_CelloRHMusicVoice = {
         \revert RepeatTie.direction                          %! OC2
     }
     
-    % [P CelloRHMusicVoice measure 244]                      %! SM4
+    % [P CelloRHMusicVoice measure 244 / measure 6]          %! SM4
     R1 * 7/4
     
-    % [P CelloRHMusicVoice measure 245]                      %! SM4
+    % [P CelloRHMusicVoice measure 245 / measure 7]          %! SM4
     R1 * 3/4
     
-    % [P CelloRHMusicVoice measure 246]                      %! SM4
+    % [P CelloRHMusicVoice measure 246 / measure 8]          %! SM4
     \stopStaff                                               %! SM20
     \once \override RHStaff.StaffSymbol.line-count = 0       %! SM20
     \startStaff                                              %! SM20
@@ -3145,7 +3145,7 @@ P_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [P CelloMusicVoice measure 239]                    %! SM4
+        % [P CelloMusicVoice measure 239 / measure 1]        %! SM4
         \set SingleStringStaffGroup.instrumentName =         %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \markup {                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
             \hcenter-in                                      %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -3221,7 +3221,7 @@ P_CelloMusicVoice = {
     }
     \times 4/5 {
         
-        % [P CelloMusicVoice measure 240]                    %! SM4
+        % [P CelloMusicVoice measure 240 / measure 2]        %! SM4
         d'2
         \glissando                                           %! SC
         
@@ -3231,7 +3231,7 @@ P_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        % [P CelloMusicVoice measure 241]                    %! SM4
+        % [P CelloMusicVoice measure 241 / measure 3]        %! SM4
         d8
         \glissando                                           %! SC
         
@@ -3244,7 +3244,7 @@ P_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
         
-        % [P CelloMusicVoice measure 242]                    %! SM4
+        % [P CelloMusicVoice measure 242 / measure 4]        %! SM4
         e''1
         \glissando                                           %! SC
         
@@ -3267,7 +3267,7 @@ P_CelloMusicVoice = {
     }
     \times 16/17 {
         
-        % [P CelloMusicVoice measure 243]                    %! SM4
+        % [P CelloMusicVoice measure 243 / measure 5]        %! SM4
         a2.
         \glissando                                           %! SC
         
@@ -3277,13 +3277,13 @@ P_CelloMusicVoice = {
         c'4.
     }
     
-    % [P CelloMusicVoice measure 244]                        %! SM4
+    % [P CelloMusicVoice measure 244 / measure 6]            %! SM4
     R1 * 7/4
     
-    % [P CelloMusicVoice measure 245]                        %! SM4
+    % [P CelloMusicVoice measure 245 / measure 7]            %! SM4
     R1 * 3/4
     
-    % [P CelloMusicVoice measure 246]                        %! SM4
+    % [P CelloMusicVoice measure 246 / measure 8]            %! SM4
     \stopStaff                                               %! SM20
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20

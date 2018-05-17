@@ -1,6 +1,6 @@
 F_GlobalSkips = {
     
-    % [F GlobalSkips measure 79]                                         %! SM4
+    % [F GlobalSkips measure 79 / measure 1]                             %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \mark #6                                                             %! IC
     \bar ""                                                              %! SM2:+SEGMENT:EMPTY_START_BAR
@@ -86,7 +86,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 80]                                         %! SM4
+    % [F GlobalSkips measure 80 / measure 2]                             %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -121,7 +121,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 81]                                         %! SM4
+    % [F GlobalSkips measure 81 / measure 3]                             %! SM4
     \time 4/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
@@ -156,7 +156,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 82]                                         %! SM4
+    % [F GlobalSkips measure 82 / measure 4]                             %! SM4
     \time 3/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 3/4
@@ -191,7 +191,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 83]                                         %! SM4
+    % [F GlobalSkips measure 83 / measure 5]                             %! SM4
     \time 2/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1/2
@@ -226,7 +226,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 84]                                         %! SM4
+    % [F GlobalSkips measure 84 / measure 6]                             %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -261,7 +261,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 85]                                         %! SM4
+    % [F GlobalSkips measure 85 / measure 7]                             %! SM4
     \time 8/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 2
@@ -296,7 +296,7 @@ F_GlobalSkips = {
             }
         }
     
-    % [F GlobalSkips measure 86]                                         %! SM4
+    % [F GlobalSkips measure 86 / measure 8]                             %! SM4
     \time 7/4                                                            %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
     \once \override Score.TimeSignature.color = #(x11-color 'blue)       %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
     s1 * 7/4
@@ -339,7 +339,7 @@ F_GlobalSkips = {
 
 F_BassClarinetMusicVoice = {
     
-    % [F BassClarinetMusicVoice measure 79]                      %! SM4
+    % [F BassClarinetMusicVoice measure 79 / measure 1]          %! SM4
     \set Staff.instrumentName =                                  %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -396,32 +396,32 @@ F_BassClarinetMusicVoice = {
             "B. cl."                                             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
-    % [F BassClarinetMusicVoice measure 80]                      %! SM4
+    % [F BassClarinetMusicVoice measure 80 / measure 2]          %! SM4
     gs'!2.
     \repeatTie
     
-    % [F BassClarinetMusicVoice measure 81]                      %! SM4
+    % [F BassClarinetMusicVoice measure 81 / measure 3]          %! SM4
     gs'!1
     \repeatTie
     
-    % [F BassClarinetMusicVoice measure 82]                      %! SM4
+    % [F BassClarinetMusicVoice measure 82 / measure 4]          %! SM4
     gs'!2.
     \repeatTie
     
-    % [F BassClarinetMusicVoice measure 83]                      %! SM4
+    % [F BassClarinetMusicVoice measure 83 / measure 5]          %! SM4
     R1 * 1/2
     
-    % [F BassClarinetMusicVoice measure 84]                      %! SM4
+    % [F BassClarinetMusicVoice measure 84 / measure 6]          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a1..
     \>                                                           %! HC1
     \sfp                                                         %! HC1
     
-    % [F BassClarinetMusicVoice measure 85]                      %! SM4
+    % [F BassClarinetMusicVoice measure 85 / measure 7]          %! SM4
     a\breve
     \repeatTie
     
-    % [F BassClarinetMusicVoice measure 86]                      %! SM4
+    % [F BassClarinetMusicVoice measure 86 / measure 8]          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     a1..
     \repeatTie
@@ -438,7 +438,7 @@ F_BassClarinetMusicStaff = {
 
 F_ViolinRHMusicVoice = {
     
-    % [F ViolinRHMusicVoice measure 79]                      %! SM4
+    % [F ViolinRHMusicVoice measure 79 / measure 1]          %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -450,25 +450,25 @@ F_ViolinRHMusicVoice = {
     R1 * 1
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F ViolinRHMusicVoice measure 80]                      %! SM4
+    % [F ViolinRHMusicVoice measure 80 / measure 2]          %! SM4
     R1 * 3/4
     
-    % [F ViolinRHMusicVoice measure 81]                      %! SM4
+    % [F ViolinRHMusicVoice measure 81 / measure 3]          %! SM4
     R1 * 1
     
-    % [F ViolinRHMusicVoice measure 82]                      %! SM4
+    % [F ViolinRHMusicVoice measure 82 / measure 4]          %! SM4
     R1 * 3/4
     
-    % [F ViolinRHMusicVoice measure 83]                      %! SM4
+    % [F ViolinRHMusicVoice measure 83 / measure 5]          %! SM4
     R1 * 1/2
     
-    % [F ViolinRHMusicVoice measure 84]                      %! SM4
+    % [F ViolinRHMusicVoice measure 84 / measure 6]          %! SM4
     R1 * 7/4
     
-    % [F ViolinRHMusicVoice measure 85]                      %! SM4
+    % [F ViolinRHMusicVoice measure 85 / measure 7]          %! SM4
     R1 * 2
     
-    % [F ViolinRHMusicVoice measure 86]                      %! SM4
+    % [F ViolinRHMusicVoice measure 86 / measure 8]          %! SM4
     R1 * 7/4
     
 }
@@ -482,7 +482,7 @@ F_ViolinRHMusicStaff = {
 
 F_ViolinMusicVoice = {
     
-    % [F ViolinMusicVoice measure 79]                        %! SM4
+    % [F ViolinMusicVoice measure 79 / measure 1]            %! SM4
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -539,19 +539,19 @@ F_ViolinMusicVoice = {
         }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F ViolinMusicVoice measure 80]                        %! SM4
+    % [F ViolinMusicVoice measure 80 / measure 2]            %! SM4
     R1 * 3/4
     
-    % [F ViolinMusicVoice measure 81]                        %! SM4
+    % [F ViolinMusicVoice measure 81 / measure 3]            %! SM4
     R1 * 1
     
-    % [F ViolinMusicVoice measure 82]                        %! SM4
+    % [F ViolinMusicVoice measure 82 / measure 4]            %! SM4
     R1 * 3/4
     
-    % [F ViolinMusicVoice measure 83]                        %! SM4
+    % [F ViolinMusicVoice measure 83 / measure 5]            %! SM4
     R1 * 1/2
     
-    % [F ViolinMusicVoice measure 84]                        %! SM4
+    % [F ViolinMusicVoice measure 84 / measure 6]            %! SM4
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 5         %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -609,7 +609,7 @@ F_ViolinMusicVoice = {
         }                                                    %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    % [F ViolinMusicVoice measure 85]                        %! SM4
+    % [F ViolinMusicVoice measure 85 / measure 7]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     <e' fs'!>\breve
@@ -623,7 +623,7 @@ F_ViolinMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
-    % [F ViolinMusicVoice measure 86]                        %! SM4
+    % [F ViolinMusicVoice measure 86 / measure 8]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     R1 * 7/4
     \!                                                       %! HC1
@@ -639,7 +639,7 @@ F_ViolinMusicStaff = {
 
 F_ViolaRHMusicVoice = {
     
-    % [F ViolaRHMusicVoice measure 79]                       %! SM4
+    % [F ViolaRHMusicVoice measure 79 / measure 1]           %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -651,25 +651,25 @@ F_ViolaRHMusicVoice = {
     R1 * 1
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F ViolaRHMusicVoice measure 80]                       %! SM4
+    % [F ViolaRHMusicVoice measure 80 / measure 2]           %! SM4
     R1 * 3/4
     
-    % [F ViolaRHMusicVoice measure 81]                       %! SM4
+    % [F ViolaRHMusicVoice measure 81 / measure 3]           %! SM4
     R1 * 1
     
-    % [F ViolaRHMusicVoice measure 82]                       %! SM4
+    % [F ViolaRHMusicVoice measure 82 / measure 4]           %! SM4
     R1 * 3/4
     
-    % [F ViolaRHMusicVoice measure 83]                       %! SM4
+    % [F ViolaRHMusicVoice measure 83 / measure 5]           %! SM4
     R1 * 1/2
     
-    % [F ViolaRHMusicVoice measure 84]                       %! SM4
+    % [F ViolaRHMusicVoice measure 84 / measure 6]           %! SM4
     R1 * 7/4
     
-    % [F ViolaRHMusicVoice measure 85]                       %! SM4
+    % [F ViolaRHMusicVoice measure 85 / measure 7]           %! SM4
     R1 * 2
     
-    % [F ViolaRHMusicVoice measure 86]                       %! SM4
+    % [F ViolaRHMusicVoice measure 86 / measure 8]           %! SM4
     R1 * 7/4
     
 }
@@ -683,7 +683,7 @@ F_ViolaRHMusicStaff = {
 
 F_ViolaMusicVoice = {
     
-    % [F ViolaMusicVoice measure 79]                         %! SM4
+    % [F ViolaMusicVoice measure 79 / measure 1]             %! SM4
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -740,19 +740,19 @@ F_ViolaMusicVoice = {
         }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F ViolaMusicVoice measure 80]                         %! SM4
+    % [F ViolaMusicVoice measure 80 / measure 2]             %! SM4
     R1 * 3/4
     
-    % [F ViolaMusicVoice measure 81]                         %! SM4
+    % [F ViolaMusicVoice measure 81 / measure 3]             %! SM4
     R1 * 1
     
-    % [F ViolaMusicVoice measure 82]                         %! SM4
+    % [F ViolaMusicVoice measure 82 / measure 4]             %! SM4
     R1 * 3/4
     
-    % [F ViolaMusicVoice measure 83]                         %! SM4
+    % [F ViolaMusicVoice measure 83 / measure 5]             %! SM4
     R1 * 1/2
     
-    % [F ViolaMusicVoice measure 84]                         %! SM4
+    % [F ViolaMusicVoice measure 84 / measure 6]             %! SM4
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 5         %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -812,7 +812,7 @@ F_ViolaMusicVoice = {
         }                                                    %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    % [F ViolaMusicVoice measure 85]                         %! SM4
+    % [F ViolaMusicVoice measure 85 / measure 7]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     <ef'! f'>\breve
@@ -826,7 +826,7 @@ F_ViolaMusicVoice = {
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
-    % [F ViolaMusicVoice measure 86]                         %! SM4
+    % [F ViolaMusicVoice measure 86 / measure 8]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     R1 * 7/4
     \!                                                       %! HC1
@@ -842,7 +842,7 @@ F_ViolaMusicStaff = {
 
 F_CelloRHMusicVoice = {
     
-    % [F CelloRHMusicVoice measure 79]                       %! SM4
+    % [F CelloRHMusicVoice measure 79 / measure 1]           %! SM4
     \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -856,25 +856,25 @@ F_CelloRHMusicVoice = {
     \pp                                                      %! SM8:REAPPLIED_DYNAMIC:SM37
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F CelloRHMusicVoice measure 80]                       %! SM4
+    % [F CelloRHMusicVoice measure 80 / measure 2]           %! SM4
     R1 * 3/4
     
-    % [F CelloRHMusicVoice measure 81]                       %! SM4
+    % [F CelloRHMusicVoice measure 81 / measure 3]           %! SM4
     R1 * 1
     
-    % [F CelloRHMusicVoice measure 82]                       %! SM4
+    % [F CelloRHMusicVoice measure 82 / measure 4]           %! SM4
     R1 * 3/4
     
-    % [F CelloRHMusicVoice measure 83]                       %! SM4
+    % [F CelloRHMusicVoice measure 83 / measure 5]           %! SM4
     R1 * 1/2
     
-    % [F CelloRHMusicVoice measure 84]                       %! SM4
+    % [F CelloRHMusicVoice measure 84 / measure 6]           %! SM4
     R1 * 7/4
     
-    % [F CelloRHMusicVoice measure 85]                       %! SM4
+    % [F CelloRHMusicVoice measure 85 / measure 7]           %! SM4
     R1 * 2
     
-    % [F CelloRHMusicVoice measure 86]                       %! SM4
+    % [F CelloRHMusicVoice measure 86 / measure 8]           %! SM4
     R1 * 7/4
     
 }
@@ -888,7 +888,7 @@ F_CelloRHMusicStaff = {
 
 F_CelloMusicVoice = {
     
-    % [F CelloMusicVoice measure 79]                         %! SM4
+    % [F CelloMusicVoice measure 79 / measure 1]             %! SM4
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -981,17 +981,17 @@ F_CelloMusicVoice = {
         }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [F CelloMusicVoice measure 80]                         %! SM4
+    % [F CelloMusicVoice measure 80 / measure 2]             %! SM4
     fs!2.
     :32                                                      %! IC
     \repeatTie
     
-    % [F CelloMusicVoice measure 81]                         %! SM4
+    % [F CelloMusicVoice measure 81 / measure 3]             %! SM4
     fs!1
     :32                                                      %! IC
     \repeatTie
     
-    % [F CelloMusicVoice measure 82]                         %! SM4
+    % [F CelloMusicVoice measure 82 / measure 4]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     fs!2.
     :32                                                      %! IC
@@ -1000,10 +1000,10 @@ F_CelloMusicVoice = {
     \stopTextSpan                                            %! PWC1
     \revert TextSpanner.staff-padding                        %! OC2
     
-    % [F CelloMusicVoice measure 83]                         %! SM4
+    % [F CelloMusicVoice measure 83 / measure 5]             %! SM4
     R1 * 1/2
     
-    % [F CelloMusicVoice measure 84]                         %! SM4
+    % [F CelloMusicVoice measure 84 / measure 6]             %! SM4
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 1         %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -1043,7 +1043,7 @@ F_CelloMusicVoice = {
     d4
     \repeatTie
     
-    % [F CelloMusicVoice measure 85]                         %! SM4
+    % [F CelloMusicVoice measure 85 / measure 7]             %! SM4
     d4
     \repeatTie
     
@@ -1071,7 +1071,7 @@ F_CelloMusicVoice = {
     \revert TextScript.padding                               %! OC2
     \revert TextScript.parent-alignment-X                    %! OC2
     
-    % [F CelloMusicVoice measure 86]                         %! SM4
+    % [F CelloMusicVoice measure 86 / measure 8]             %! SM4
     \stopStaff                                               %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 5         %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                              %! SM8:EXPLICIT_STAFF_LINES:IC
