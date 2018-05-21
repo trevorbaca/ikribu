@@ -14,6 +14,6 @@ def vigil_rhythm():
             repeat_ties=True,
             ),
         )
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythm_maker,
         )
