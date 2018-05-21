@@ -20,6 +20,6 @@ def glissando_rhythm(rotation_1=None, rotation_2=None):
             strip_ties=True,
             ),
         )
-    return baca.RhythmCommand(
+    return baca.rhythm(
         rhythm_maker=rhythm_maker,
         )
