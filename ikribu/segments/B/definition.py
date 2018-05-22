@@ -100,10 +100,10 @@ maker(
 
 maker(
     ('vn', [1, 5, 9]),
-    baca.suite([
+    baca.suite(
         baca.hairpin('ppp < p', selector=baca.leaves()[:2]),
         baca.hairpin('p > niente', selector=baca.rleaves()[-2:]),
-        ]),
+        ),
     baca.transition(
         baca.markup('trem. flaut. pont.'),
         baca.markup('trem. flaut. tast.'),
@@ -119,10 +119,10 @@ maker(
 
 maker(
     ('va', (13, 14)),
-    baca.suite([
+    baca.suite(
         baca.hairpin('ppp < mf', selector=baca.leaves()[:5]),
         baca.hairpin('mf > niente', selector=baca.rleaves()[-2:]),
-        ]),
+        ),
     baca.transition(
         baca.markup('trem. flaut. pont.'),
         baca.markup('trem. flaut. tast.'),
