@@ -36,37 +36,37 @@ maker = baca.SegmentMaker(
 
 maker(
     'bcl',
-    baca.suite([
+    baca.suite(
         ikribu.margin_markup('B. cl.'),
         baca.start_markup(['Bass', 'clarinet'], hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'vn',
-    baca.suite([
+    baca.suite(
         ikribu.margin_markup('Vn.', context='SingleStringStaffGroup'),
         baca.start_markup(
             'Violin', context='SingleStringStaffGroup', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'va',
-    baca.suite([
+    baca.suite(
         ikribu.margin_markup('Va.', context='SingleStringStaffGroup'),
         baca.start_markup(
             'Viola', context='SingleStringStaffGroup', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(
     'vc',
-    baca.suite([
+    baca.suite(
         ikribu.margin_markup('Vc.', context='SingleStringStaffGroup'),
         baca.start_markup(
             'Cello', context='SingleStringStaffGroup', hcenter_in=16),
-        ]),
+        ),
     )
 
 maker(

@@ -52,22 +52,22 @@ maker(
     ('bcl', (3, 4)),
     baca.glissando(),
     baca.make_repeated_duration_notes((1, 4)),
-    baca.suite([
+    baca.suite(
         baca.pitches(
             'Bb4 G4 Eb4 C4 A3 F3 D3 Bb2 A2 G2 F2 Eb2 D2 C2 B1',
             exact=True,
             ),
         baca.tie_to(),
-        ]),
+        ),
     )
 
 maker(
     ('bcl', 5),
     baca.make_repeat_tied_notes(),
-    baca.suite([
+    baca.suite(
         baca.pitch('B1'),
         baca.repeat_tie_to(),
-        ]),
+        ),
     )
 
 maker(
