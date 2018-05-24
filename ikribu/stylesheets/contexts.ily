@@ -203,7 +203,7 @@
         \override TupletNumber.font-size = 1
 
         autoBeaming = ##f
-        barNumberFormatter = #format-oval-barnumbers
+        barNumberFormatter = #baca-oval-bar-numbers
         explicitClefVisibility = #end-of-line-invisible
         forceClef = ##t
         markFormatter = #format-mark-box-alphabet
