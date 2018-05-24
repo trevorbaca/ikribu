@@ -1,13 +1,13 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def color_rhythm(n):
     tuplet_ratio = tuple(n * [1])
-    rhythm_maker = rhythmos.TupletRhythmMaker(
+    rhythm_maker = rmakers.TupletRhythmMaker(
         tuplet_ratios=[tuplet_ratio],
-        tuplet_specifier=rhythmos.TupletSpecifier(
+        tuplet_specifier=rmakers.TupletSpecifier(
             avoid_dots=True,
             ),
         )

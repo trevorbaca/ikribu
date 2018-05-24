@@ -1,12 +1,12 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def triplet_rhythm():
-    rhythm_maker = rhythmos.TupletRhythmMaker(
+    rhythm_maker = rmakers.TupletRhythmMaker(
         tuplet_ratios=[(1, 1, 1)],
-        tuplet_specifier=rhythmos.TupletSpecifier(
+        tuplet_specifier=rmakers.TupletSpecifier(
             avoid_dots=True,
             ),
         )

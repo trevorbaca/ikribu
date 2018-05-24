@@ -1,10 +1,10 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def clb_rhythm(extra_counts_per_division):
-    rhythm_maker = rhythmos.EvenDivisionRhythmMaker(
+    rhythm_maker = rmakers.EvenDivisionRhythmMaker(
         denominators=[8],
         extra_counts_per_division=extra_counts_per_division,
         )
