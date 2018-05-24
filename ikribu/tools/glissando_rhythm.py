@@ -1,6 +1,6 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def glissando_rhythm(rotation_1=None, rotation_2=None):
@@ -10,13 +10,13 @@ def glissando_rhythm(rotation_1=None, rotation_2=None):
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation_2,
         )
-    rhythm_maker = rhythmos.TaleaRhythmMaker(
+    rhythm_maker = rmakers.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
-        talea=rhythmos.Talea(
+        talea=rmakers.Talea(
             counts=counts,
             denominator=16,
             ),
-        tie_specifier=rhythmos.TieSpecifier(
+        tie_specifier=rmakers.TieSpecifier(
             strip_ties=True,
             ),
         )

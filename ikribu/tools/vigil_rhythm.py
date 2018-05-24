@@ -1,16 +1,16 @@
 import abjad
 import baca
-from abjad import rhythmos
+from abjad import rmakers
 
 
 def vigil_rhythm():
     counts = abjad.sequence([16, -1])
-    rhythm_maker = rhythmos.TaleaRhythmMaker(
-        talea=rhythmos.Talea(
+    rhythm_maker = rmakers.TaleaRhythmMaker(
+        talea=rmakers.Talea(
             counts=counts,
             denominator=4,
             ),
-        tie_specifier=rhythmos.TieSpecifier(
+        tie_specifier=rmakers.TieSpecifier(
             repeat_ties=True,
             ),
         )
