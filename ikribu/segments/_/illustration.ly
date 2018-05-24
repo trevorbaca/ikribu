@@ -1,8 +1,6 @@
 \version "2.19.80"
 \language "english"
 
-#(ly:set-option 'relative-includes #t)
-
 \include "../../stylesheets/stylesheet.ily"
 \include "illustration.ily"
 
