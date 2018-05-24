@@ -1,4 +1,4 @@
-\include "/Users/trevorbaca/baca/baca/stylesheets/baca.ily"
+\include "/Users/trevorbaca/baca/baca/lilypond/baca.ily"
 
 
 \layout {
