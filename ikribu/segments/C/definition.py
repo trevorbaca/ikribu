@@ -185,14 +185,8 @@ maker(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,
         ),
-#    baca.piecewise(
-#        abjad.Hairpin(),
-#        baca.make_dynamics('ppp pp'),
-#        baca.tleaves().enchain([2]),
-#        bookend=True,
-#        ),
     baca.enchained_hairpin(
-        *baca.make_dynamics('ppp pp'),
+        baca.make_dynamics('ppp pp'),
         bookend=True,
         selector=baca.tleaves().enchain([2]),
         ),
