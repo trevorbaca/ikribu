@@ -1,10 +1,10 @@
 import abjad
 import baca
-from abjad import rmakers
+from abjadext import rmakers
 
 
 def bow_rhythm(
-    logical_tie_masks=abjad.silence([4, 19], 20),
+    logical_tie_masks=rmakers.silence([4, 19], 20),
     rotation=None,
     ):
     extra_counts_per_division = abjad.sequence([-1, 0, 1, 2])
