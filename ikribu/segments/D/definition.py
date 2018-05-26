@@ -2,6 +2,7 @@ import abjad
 import baca
 import ikribu
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -50,7 +51,7 @@ maker(
 maker(
     ('vc_rh', (1, 2)),
     ikribu.bow_rhythm(
-        logical_tie_masks=abjad.silence([8, 20], 20),
+        logical_tie_masks=rmakers.silence([8, 20], 20),
         rotation=-2,
         ),
     )
