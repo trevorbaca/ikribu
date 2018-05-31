@@ -6,27 +6,74 @@ python:
     - 3.6
 
 before_install:
-    - LILYPOND_SCRIPT=lilypond-2.19.80-1.linux-64.sh
-    - LILYPOND_URL=http://download.linuxaudio.org/lilypond/binaries/linux-64
-    - LILYPOND_URL=$LILYPOND_URL/$LILYPOND_SCRIPT
-    - wget -q $LILYPOND_URL
-    - sh $LILYPOND_SCRIPT --batch
-    - git clone https://github.com/Abjad/abjad.git;
-    - cd abjad; git checkout trevor/dev; pip install -e .[rmakers]
-    - echo `git branch`
-    - cd ..
+    # alias package
+    - PACKAGE=`pwd`/ikribu
+
+    # upgrade pip:
     - pip install --upgrade pip
 
-install:
-    - pip install -e git://github.com/Abjad/ide.git#egg=ide
-    - pip install -e git://github.com/trevorbaca/baca.git#egg=baca
-    - pip install -r requirements.txt
-    - pip install -e .
-    - PACKAGE=ikribu
+    # install mypy:
+    - pip install mypy
 
+    # install lilypond:
+    - LILYPOND=/tmp/lilypond
+    - LILYPOND_URL=http://download.linuxaudio.org/lilypond/binaries/linux-64
+    - LILYPOND_SOURCE=lilypond-2.19.80-1.linux-64.sh
+    - wget -q -O $LILYPOND $LILYPOND_URL/$LILYPOND_SOURCE
+    - sh $LILYPOND --batch
+
+    # clone & install abjad dev branch:
+    - ABJAD=/tmp/abjad
+    - git clone -b trevor/dev https://github.com/Abjad/abjad.git $ABJAD
+    - pip install -e $ABJAD
+    - export MYPYPATH=$ABJAD
+    - export PATH=$PATH:$ABJAD/abjad/scr
+
+    # clone & install rmakers:
+    - RMAKERS=/tmp/abjad-ext-rmakers
+    - git clone https://github.com/Abjad/abjad-ext-rmakers.git $RMAKERS
+    - pip install -e $RMAKERS
+    - export MYPYPATH=$MYPYPATH:$RMAKERS
+
+    # clone & install baca:
+    - BACA=/tmp/baca
+    - git clone https://github.com/trevorbaca/baca.git $BACA
+    - pip install -e $BACA
+    - export MYPYPATH=$MYPYPATH:$BACA
+    - export PATH=$PATH:$BACA/baca/scr
+
+    # clone & install ide:
+    - IDE=/tmp/ide
+    - git clone https://github.com/Abjad/ide.git $IDE
+    - pip install -e $IDE
+    - export MYPYPATH=$MYPYPATH:$IDE
+    - export PATH=$PATH:$IDE/ide/scr
+
+    # install uqbar:
+    - UQBAR=/tmp/uqbar
+    - pip install --no-deps --target $UQBAR uqbar
+    - export MYPYPATH=$MYPYPATH:$UQBAR
+
+    # log setup:
+    - echo $MYPYPATH
+    - echo $PATH
+    - ls
+    - ls /tmp
+    - pwd
+    - which doctest
+    - which mypy
+    - which prime-parser-tables
+
+install:
+    - pip install coverage
+    - pip install -e .
+    - prime-parser-tables
+    
 script:
-#    - ajv doctest --external-modules=baca ./$PACKAGE
-    - py.test -rf ./$PACKAGE
+    # eventually uncomment:
+    # -mypy $PACKAGE
+    - coverage run -a `which doctest` $PACKAGE
+    - coverage run -a `which py.test` -rf $PACKAGE
 
 notifications:
     email: false
