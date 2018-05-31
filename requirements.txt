@@ -1,4 +1,0 @@
-# leave commented-out when cloning trevor/dev:
-#-e git://github.com/Abjad/abjad.git#egg=abjad
-inflect
-roman
