@@ -1,9 +1,10 @@
-language: python
-
 sudo: false
+
+language: python
 
 python:
     - 3.6
+    - "3.7-dev"
 
 before_install:
     # alias package
@@ -74,6 +75,10 @@ script:
     # -mypy $PACKAGE
     - coverage run -a `which doctest` $PACKAGE
     - coverage run -a `which py.test` -rf $PACKAGE
+
+after_success:
+    - pip install --quiet coveralls
+    - coveralls
 
 notifications:
     email: false
