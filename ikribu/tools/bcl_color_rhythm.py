@@ -19,5 +19,9 @@ def bcl_color_rhythm(rotation_1=None, rotation_2=None):
         tie_specifier=rmakers.TieSpecifier(
             repeat_ties=True,
             ),
+        tuplet_specifier=rmakers.TupletSpecifier(
+            extract_trivial=True,
+            trivialize=True,
+            )
         )
     return baca.rhythm(rhythm_maker=rhythm_maker)
