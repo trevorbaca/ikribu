@@ -1259,20 +1259,20 @@ E_ViolinMusicVoice = {
         -\accent                                             %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 7/6 {
         
         % [E ViolinMusicVoice measure 64 / measure 2]        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \p                                                   %! PWC1
         \<                                                   %! PWC1
         
-        c'1
+        c'2
         :32                                                  %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \f                                                   %! PWC1
     }
@@ -1282,22 +1282,19 @@ E_ViolinMusicVoice = {
     
     % [E ViolinMusicVoice measure 66 / measure 4]            %! SM4
     R1 * 1
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolinMusicVoice measure 67 / measure 5]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\accent                                             %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
-        
-        c'4
-        -\accent                                             %! IC
-        
-        c'4
-        -\accent                                             %! IC
-    }
+    
+    % [E ViolinMusicVoice measure 67 / measure 5]            %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\accent                                                 %! IC
+    \f                                                       %! PWC1
+    \>                                                       %! PWC1
+    
+    c'4
+    -\accent                                                 %! IC
+    
+    c'4
+    -\accent                                                 %! IC
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 68 / measure 6]        %! SM4
@@ -1322,19 +1319,19 @@ E_ViolinMusicVoice = {
     % [E ViolinMusicVoice measure 70 / measure 8]            %! SM4
     R1 * 1/2
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 7/6 {
         
         % [E ViolinMusicVoice measure 71 / measure 9]        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \f                                                   %! PWC1
         \>                                                   %! PWC1
         
-        c'1
+        c'2
         :32                                                  %! IC
         
-        c'1
+        c'2
         -\accent                                             %! IC
     }
     \times 2/3 {
@@ -1360,22 +1357,19 @@ E_ViolinMusicVoice = {
     
     % [E ViolinMusicVoice measure 74 / measure 12]           %! SM4
     R1 * 7/4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolinMusicVoice measure 75 / measure 13]       %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        :32                                                  %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
-        
-        c'4
-        -\accent                                             %! IC
-        
-        c'4
-        -\accent                                             %! IC
-    }
+    
+    % [E ViolinMusicVoice measure 75 / measure 13]           %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    :32                                                      %! IC
+    \f                                                       %! PWC1
+    \>                                                       %! PWC1
+    
+    c'4
+    -\accent                                                 %! IC
+    
+    c'4
+    -\accent                                                 %! IC
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 76 / measure 14]       %! SM4
@@ -1546,11 +1540,11 @@ E_ViolaMusicVoice = {
         }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 7/6 {
         
         % [E ViolaMusicVoice measure 64 / measure 2]         %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         :32                                                  %! IC
         \>                                                   %! PWC1
         \f                                                   %! PWC1
@@ -1563,30 +1557,27 @@ E_ViolaMusicVoice = {
                             "sponges on BD"                  %! IC
             }                                                %! IC
         
-        c'1
+        c'2
         -\accent                                             %! IC
         
-        c'1
+        c'2
         -\accent                                             %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolaMusicVoice measure 65 / measure 3]         %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\accent                                             %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
-        
-        c'4
-        :32                                                  %! IC
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\accent                                             %! IC
-        \f                                                   %! PWC1
-    }
+    
+    % [E ViolaMusicVoice measure 65 / measure 3]             %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\accent                                                 %! IC
+    \p                                                       %! PWC1
+    \<                                                       %! PWC1
+    
+    c'4
+    :32                                                      %! IC
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\accent                                                 %! IC
+    \f                                                       %! PWC1
     
     % [E ViolaMusicVoice measure 66 / measure 4]             %! SM4
     R1 * 1
@@ -1608,24 +1599,21 @@ E_ViolaMusicVoice = {
         c'2
         -\accent                                             %! IC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [E ViolaMusicVoice measure 69 / measure 7]         %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        :32                                                  %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
-        
-        c'4
-        -\accent                                             %! IC
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\accent                                             %! IC
-        \f                                                   %! PWC1
-    }
+    
+    % [E ViolaMusicVoice measure 69 / measure 7]             %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    :32                                                      %! IC
+    \p                                                       %! PWC1
+    \<                                                       %! PWC1
+    
+    c'4
+    -\accent                                                 %! IC
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\accent                                                 %! IC
+    \f                                                       %! PWC1
     
     % [E ViolaMusicVoice measure 70 / measure 8]             %! SM4
     R1 * 1/2
@@ -1648,20 +1636,20 @@ E_ViolaMusicVoice = {
         -\accent                                             %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 7/6 {
         
         % [E ViolaMusicVoice measure 73 / measure 11]        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \p                                                   %! PWC1
         \<                                                   %! PWC1
         
-        c'1
+        c'2
         -\accent                                             %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \f                                                   %! PWC1
     }
@@ -1687,20 +1675,20 @@ E_ViolaMusicVoice = {
         -\accent                                             %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \times 7/6 {
         
         % [E ViolaMusicVoice measure 77 / measure 15]        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \p                                                   %! PWC1
         \<                                                   %! PWC1
         
-        c'1
+        c'2
         :32                                                  %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'1
+        c'2
         -\accent                                             %! IC
         \f                                                   %! PWC1
     }

@@ -8,6 +8,8 @@ def triplet_rhythm():
         tuplet_ratios=[(1, 1, 1)],
         tuplet_specifier=rmakers.TupletSpecifier(
             avoid_dots=True,
+            extract_trivial=True,
+            trivialize=True,
             ),
         )
     return baca.rhythm(
