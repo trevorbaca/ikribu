@@ -1133,6 +1133,7 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
+    \tweak text #tuplet-number::calc-fraction-text
     \times 8/12 {
         
         % [K ViolinMusicVoice measure 129 / measure 3]       %! SM4
@@ -1205,6 +1206,7 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
+    \tweak text #tuplet-number::calc-fraction-text
     \times 16/20 {
         
         % [K ViolinMusicVoice measure 133 / measure 7]       %! SM4
@@ -1348,6 +1350,7 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
+    \tweak text #tuplet-number::calc-fraction-text
     \times 8/12 {
         
         % [K ViolinMusicVoice measure 141 / measure 15]      %! SM4
@@ -1592,6 +1595,7 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
+    \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
         % [K ViolaMusicVoice measure 129 / measure 3]        %! SM4
@@ -1658,6 +1662,7 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
+    \tweak text #tuplet-number::calc-fraction-text
     \times 16/18 {
         
         % [K ViolaMusicVoice measure 133 / measure 7]        %! SM4
@@ -1789,6 +1794,7 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     R1 * 1/4
+    \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
         % [K ViolaMusicVoice measure 141 / measure 15]       %! SM4

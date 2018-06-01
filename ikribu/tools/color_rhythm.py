@@ -10,6 +10,8 @@ def color_rhythm(n):
         tuplet_specifier=rmakers.TupletSpecifier(
             avoid_dots=True,
             extract_trivial=True,
+            diminution=True,
+            force_fraction=True,
             trivialize=True,
             ),
         )
