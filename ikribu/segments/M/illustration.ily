@@ -2220,6 +2220,7 @@ M_ViolinMusicVoice = {
             Vn.                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         }                                                    %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)     %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolinMusicVoice measure 177 / measure 2]       %! SM4
@@ -2243,6 +2244,7 @@ M_ViolinMusicVoice = {
         c'2
         :32                                                  %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolinMusicVoice measure 178 / measure 3]       %! SM4
@@ -2255,6 +2257,7 @@ M_ViolinMusicVoice = {
         c'2
         -\accent                                             %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolinMusicVoice measure 179 / measure 4]       %! SM4
@@ -2292,14 +2295,13 @@ M_ViolinMusicVoice = {
                         "grainfall (4)"                      %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2 {
+    \times 3/4 {
         
         % [M ViolinMusicVoice measure 182 / measure 7]       %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        c'8
+        c'4
         :32                                                  %! IC
         \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
-        [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
                 \upright                                     %! IC
@@ -2309,15 +2311,14 @@ M_ViolinMusicVoice = {
                             "sponges on BD"                  %! IC
             }                                                %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
-        ]
     }
     
     % [M ViolinMusicVoice measure 183 / measure 8]           %! SM4
@@ -2342,15 +2343,14 @@ M_ViolinMusicVoice = {
                         "grainfall (5)"                      %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 3/5 {
         
         % [M ViolinMusicVoice measure 185 / measure 10]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        c'8
+        c'4
         :32                                                  %! IC
         \<                                                   %! HC1
         \mf                                                  %! HC1
-        [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
                 \upright                                     %! IC
@@ -2360,19 +2360,19 @@ M_ViolinMusicVoice = {
                             "sponges on BD"                  %! IC
             }                                                %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
-        ]
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
         % [M ViolinMusicVoice measure 186 / measure 11]      %! SM4
@@ -2392,27 +2392,25 @@ M_ViolinMusicVoice = {
         -\accent                                             %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 3/5 {
         
         % [M ViolinMusicVoice measure 187 / measure 12]      %! SM4
-        c'8
+        c'4
         :32                                                  %! IC
-        [
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        c'8
+        c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
-        ]
     }
     
     % [M ViolinMusicVoice measure 188 / measure 13]          %! SM4
@@ -2437,11 +2435,11 @@ M_ViolinMusicVoice = {
                         "grainfall (6)"                      %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \times 7/12 {
         
         % [M ViolinMusicVoice measure 190 / measure 15]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        c'2
+        c'1
         :32                                                  %! IC
         \<                                                   %! HC1
         \mf                                                  %! HC1
@@ -2454,25 +2452,26 @@ M_ViolinMusicVoice = {
                             "sponges on BD"                  %! IC
             }                                                %! IC
         
-        c'2
+        c'1
         -\accent                                             %! IC
         
-        c'2
+        c'1
         :32                                                  %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \times 7/12 {
         
         % [M ViolinMusicVoice measure 191 / measure 16]      %! SM4
-        c'2
+        c'1
         -\accent                                             %! IC
         
-        c'2
+        c'1
         :32                                                  %! IC
         
-        c'2
+        c'1
         -\accent                                             %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolinMusicVoice measure 192 / measure 17]      %! SM4
@@ -2510,14 +2509,13 @@ M_ViolinMusicVoice = {
                         "grainfall (7)"                      %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2 {
+    \times 3/4 {
         
         % [M ViolinMusicVoice measure 195 / measure 20]      %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
-        c'8
+        c'4
         :32                                                  %! IC
         \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
-        [
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
                 \upright                                     %! IC
@@ -2527,15 +2525,14 @@ M_ViolinMusicVoice = {
                             "sponges on BD"                  %! IC
             }                                                %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
-        ]
     }
     
     % [M ViolinMusicVoice measure 196 / measure 21]          %! SM4
@@ -2559,6 +2556,7 @@ M_ViolinMusicVoice = {
                     \box                                     %! IC
                         "grainfall (8)"                      %! IC
         }                                                    %! IC
+    \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
         % [M ViolinMusicVoice measure 198 / measure 23]      %! SM4
@@ -2589,24 +2587,25 @@ M_ViolinMusicVoice = {
         :32                                                  %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \times 7/10 {
         
         % [M ViolinMusicVoice measure 199 / measure 24]      %! SM4
-        c'4
+        c'2
         -\accent                                             %! IC
         
-        c'4
+        c'2
         :32                                                  %! IC
         
-        c'4
+        c'2
         -\accent                                             %! IC
         
-        c'4
+        c'2
         :32                                                  %! IC
         
-        c'4
+        c'2
         -\accent                                             %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
         % [M ViolinMusicVoice measure 200 / measure 25]      %! SM4
@@ -2625,6 +2624,7 @@ M_ViolinMusicVoice = {
         c'4
         :32                                                  %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
         % [M ViolinMusicVoice measure 201 / measure 26]      %! SM4
@@ -2644,27 +2644,25 @@ M_ViolinMusicVoice = {
         -\accent                                             %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 3/5 {
         
         % [M ViolinMusicVoice measure 202 / measure 27]      %! SM4
-        c'8
+        c'4
         :32                                                  %! IC
-        [
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
-        c'8
+        c'4
         :32                                                  %! IC
         \fff                                                 %! HC1
-        ]
     }
     
     % [M ViolinMusicVoice measure 203 / measure 28]          %! SM4
@@ -2970,25 +2968,23 @@ M_ViolaMusicVoice = {
     \startStaff                                              %! SM21
     R1 * 7/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 3/5 {
         
         % [M ViolaMusicVoice measure 182 / measure 7]        %! SM4
-        c'8
+        c'4
         :32                                                  %! IC
-        [
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
-        ]
     }
     
     % [M ViolaMusicVoice measure 183 / measure 8]            %! SM4
@@ -3015,6 +3011,7 @@ M_ViolaMusicVoice = {
     
     c'4
     :32                                                      %! IC
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolaMusicVoice measure 186 / measure 11]       %! SM4
@@ -3052,38 +3049,38 @@ M_ViolaMusicVoice = {
     \startStaff                                              %! SM21
     R1 * 1/2
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    \times 7/8 {
         
         % [M ViolaMusicVoice measure 190 / measure 15]       %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
-        c'4
+        c'2
         :32                                                  %! IC
         \<                                                   %! HC1
         \mf                                                  %! HC1
         
-        c'4
+        c'2
         -\accent                                             %! IC
         
-        c'4
+        c'2
         :32                                                  %! IC
         
-        c'4
+        c'2
         -\accent                                             %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    \times 7/8 {
         
         % [M ViolaMusicVoice measure 191 / measure 16]       %! SM4
-        c'4
+        c'2
         :32                                                  %! IC
         
-        c'4
+        c'2
         -\accent                                             %! IC
         
-        c'4
+        c'2
         :32                                                  %! IC
         
-        c'4
+        c'2
         -\accent                                             %! IC
     }
     
@@ -3114,25 +3111,23 @@ M_ViolaMusicVoice = {
     \startStaff                                              %! SM21
     R1 * 7/4
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 3/5 {
         
         % [M ViolaMusicVoice measure 195 / measure 20]       %! SM4
-        c'8
+        c'4
         :32                                                  %! IC
-        [
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
         
-        c'8
+        c'4
         -\accent                                             %! IC
         
-        c'8
+        c'4
         :32                                                  %! IC
-        ]
     }
     
     % [M ViolaMusicVoice measure 196 / measure 21]           %! SM4
@@ -3146,6 +3141,7 @@ M_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     R1 * 1/2
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolaMusicVoice measure 198 / measure 23]       %! SM4
@@ -3162,18 +3158,19 @@ M_ViolaMusicVoice = {
         :32                                                  %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \times 7/12 {
         
         % [M ViolaMusicVoice measure 199 / measure 24]       %! SM4
-        c'2
+        c'1
         -\accent                                             %! IC
         
-        c'2
+        c'1
         :32                                                  %! IC
         
-        c'2
+        c'1
         -\accent                                             %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolaMusicVoice measure 200 / measure 25]       %! SM4
@@ -3186,6 +3183,7 @@ M_ViolaMusicVoice = {
         c'2
         :32                                                  %! IC
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
         % [M ViolaMusicVoice measure 201 / measure 26]       %! SM4

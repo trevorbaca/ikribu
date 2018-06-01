@@ -8,7 +8,10 @@ def triplet_rhythm():
         tuplet_ratios=[(1, 1, 1)],
         tuplet_specifier=rmakers.TupletSpecifier(
             avoid_dots=True,
+            denominator='divisions',
+            diminution=True,
             extract_trivial=True,
+            force_fraction=True,
             trivialize=True,
             ),
         )
