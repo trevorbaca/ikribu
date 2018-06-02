@@ -188,7 +188,7 @@ maker(
     baca.enchained_hairpin(
         baca.make_dynamics('ppp pp'),
         bookend=True,
-        selector=baca.tleaves().enchain([2]),
+        pieces=baca.tleaves().enchain([2]),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.transition(
