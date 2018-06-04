@@ -44,7 +44,7 @@ maker(
     baca.clef('treble'),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
-    baca.markup(
+    baca.markup.markup(
         'breathe discreetly before any downbeat as needed'
         ' (but do not circular breathe)'
         ),
