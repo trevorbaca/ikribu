@@ -105,8 +105,8 @@ maker(
         baca.hairpin('p > niente', selector=baca.rleaves()[-2:]),
         ),
     baca.transition(
-        baca.markup('trem. flaut. pont.'),
-        baca.markup('trem. flaut. tast.'),
+        baca.markup.markup('trem. flaut. pont.'),
+        baca.markup.markup('trem. flaut. tast.'),
         ),
     )
 
@@ -124,7 +124,7 @@ maker(
         baca.hairpin('mf > niente', selector=baca.rleaves()[-2:]),
         ),
     baca.transition(
-        baca.markup('trem. flaut. pont.'),
-        baca.markup('trem. flaut. tast.'),
+        baca.markup.markup('trem. flaut. pont.'),
+        baca.markup.markup('trem. flaut. tast.'),
         ),
     )
