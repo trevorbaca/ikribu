@@ -893,14 +893,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 1.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         \ff                                                  %! PWC1
         - \tweak Y-extent ##f
@@ -922,7 +922,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         ^ \markup {                                          %! IC
             \whiteout                                        %! IC
                 \upright                                     %! IC
@@ -933,7 +933,7 @@ D_CelloRHMusicVoice = {
             }                                                %! IC
         
         c'4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -953,12 +953,12 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -979,13 +979,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \times 4/6 {
         
         % [D CelloRHMusicVoice measure 53 / measure 2]       %! SM4
         c'4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1005,11 +1005,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1029,13 +1029,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1056,13 +1056,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \pp                                                  %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1082,10 +1082,10 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         r4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1104,13 +1104,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 1.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1131,14 +1131,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
         
         % [D CelloRHMusicVoice measure 54 / measure 3]       %! SM4
         c'4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1158,13 +1158,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1185,10 +1185,10 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1208,7 +1208,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/2 {
@@ -1216,7 +1216,7 @@ D_CelloRHMusicVoice = {
         % [D CelloRHMusicVoice measure 55 / measure 4]       %! SM4
         c'4
         -\downbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1236,12 +1236,12 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ppp                                                 %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1262,14 +1262,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
         % [D CelloRHMusicVoice measure 56 / measure 5]       %! SM4
         c'4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1289,12 +1289,12 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ff                                                  %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1315,11 +1315,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1339,11 +1339,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\downbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1363,13 +1363,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1389,10 +1389,10 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         r4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1411,13 +1411,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 1.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1438,11 +1438,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1462,7 +1462,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1472,7 +1472,7 @@ D_CelloRHMusicVoice = {
         c'4
         -\downbow
         \f                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1493,11 +1493,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1517,11 +1517,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\downbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1541,12 +1541,12 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \pp                                                  %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1567,12 +1567,12 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1592,14 +1592,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
         
         % [D CelloRHMusicVoice measure 58 / measure 7]       %! SM4
         r4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1618,13 +1618,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 1.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1645,11 +1645,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1669,7 +1669,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/3 {
@@ -1679,7 +1679,7 @@ D_CelloRHMusicVoice = {
         c'4
         -\downbow
         \ppp                                                 %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1700,11 +1700,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1724,11 +1724,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\downbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1748,7 +1748,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \times 4/5 {
         
@@ -1756,7 +1756,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \ff                                                  %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1777,11 +1777,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1801,12 +1801,12 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \p                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1827,11 +1827,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\downbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1851,10 +1851,10 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1874,7 +1874,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1883,7 +1883,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         \f                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1903,10 +1903,10 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         r4
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1925,13 +1925,13 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 1.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \f                                                   %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1952,11 +1952,11 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right-broken.text ##f
         - \tweak bound-details.right.padding 0.5
         - \tweak bound-details.right.stencil-align-dir-y #center
-        \startTextSpan
+        \startBCPTextSpan
         
         c'4
         -\upbow
-        \stopTextSpan
+        \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1986,13 +1986,13 @@ D_CelloRHMusicVoice = {
                         7
                 }
             }
-        \startTextSpan
+        \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\downbow
         \pp                                                  %! PWC1
-        \stopTextSpan
+        \stopBCPTextSpan
         \revert DynamicLineSpanner.staff-padding             %! OC2
         \revert RepeatTie.direction                          %! OC2
         \revert Script.staff-padding                         %! OC2
