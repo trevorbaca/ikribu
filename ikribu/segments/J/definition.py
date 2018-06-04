@@ -157,7 +157,7 @@ maker(
         ],
     [
         baca.dynamic('"f"'),
-        baca.shift_dynamic('"f"'),
+        baca.dynamic_shift('"f"'),
         ],
     baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )

@@ -73,7 +73,7 @@ maker(
     baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
     [
         baca.dynamic('"mf"'),
-        baca.shift_dynamic('"mf"'),
+        baca.dynamic_shift('"mf"'),
         ],
     baca.repeat_tie_up(),
     baca.staff_lines(1),
@@ -131,7 +131,7 @@ maker(
         ),
     baca.markup.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
-    baca.shift_clef('treble'),
+    baca.clef_shift('treble'),
     baca.staff_lines(5),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
