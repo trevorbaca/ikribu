@@ -147,7 +147,7 @@ maker(
     baca.markup.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.make_dynamics('p pp p ppp pp ppp'),
+        baca.dynamics('p pp p ppp pp ppp'),
         baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,
         ),
