@@ -83,6 +83,6 @@ maker(
     ('vc', (1, 2)),
     baca.clef('tenor'),
     baca.glissando(),
-    baca.shift_clef('tenor'),
+    baca.clef_shift('tenor'),
     ikribu.glissando_pitches(octave=4, rotation=-20),
     )

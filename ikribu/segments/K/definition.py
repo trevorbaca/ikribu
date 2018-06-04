@@ -81,7 +81,7 @@ maker(
     ('bcl', 5),
     [
         baca.dynamic('"mf"'),
-        baca.shift_dynamic('"mf"'),
+        baca.dynamic_shift('"mf"'),
         ],
     )
 
@@ -89,7 +89,7 @@ maker(
     ('bcl', 9),
     [
         baca.dynamic('"mp"'),
-        baca.shift_dynamic('"mp"'),
+        baca.dynamic_shift('"mp"'),
         ],
     )
 
@@ -97,7 +97,7 @@ maker(
     ('bcl', 13),
     [
         baca.dynamic('"p"'),
-        baca.shift_dynamic('"p"'),
+        baca.dynamic_shift('"p"'),
         ],
     )
 
@@ -113,7 +113,7 @@ maker(
     baca.dls_staff_padding(8),
     [
         baca.dynamic('"mp"'),
-        baca.shift_dynamic('"mp"'),
+        baca.dynamic_shift('"mp"'),
         ],
     baca.markup.col_legno_battuto(),
     baca.staccato(selector=baca.pheads()),
@@ -126,7 +126,7 @@ maker(
     baca.dls_staff_padding(8),
     [
         baca.dynamic('"mp"'),
-        baca.shift_dynamic('"mp"'),
+        baca.dynamic_shift('"mp"'),
         ],
     baca.markup.col_legno_battuto(),
     baca.staccato(selector=baca.pheads()),
@@ -152,7 +152,7 @@ maker(
     ('vc', 5),
     [
         baca.dynamic('"mp"'),
-        baca.shift_dynamic('"mp"'),
+        baca.dynamic_shift('"mp"'),
         ],
     )
 
@@ -160,7 +160,7 @@ maker(
     ('vc', 9),
     [
         baca.dynamic('"mf"'),
-        baca.shift_dynamic('"mf"'),
+        baca.dynamic_shift('"mf"'),
         ],
     )
 
@@ -168,6 +168,6 @@ maker(
     ('vc', 13),
     [
         baca.dynamic('"f"'),
-        baca.shift_dynamic('"f"'),
+        baca.dynamic_shift('"f"'),
         ],
     )

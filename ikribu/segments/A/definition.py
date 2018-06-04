@@ -61,7 +61,7 @@ maker(
     baca.make_tied_repeated_durations((1, 4)),
     baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     baca.repeat_tie_up(),
-    baca.shift_dynamic('"mf"'),
+    baca.dynamic_shift('"mf"'),
     baca.staff_position(0),
     baca.staff_lines(1),
     ikribu.box_adjustment(),
