@@ -99,7 +99,7 @@ maker(
     baca.glissando(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.make_dynamics('ppp pp'),
+        baca.dynamics('ppp pp'),
         baca.tleaves().enchain([2]),
         bookend=True,
         ),
