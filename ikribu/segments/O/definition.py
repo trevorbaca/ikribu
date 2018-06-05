@@ -145,7 +145,10 @@ maker(
     ('vn', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', selector=baca.rleaves()[-3:]),
-    baca.markups.string_numbers([2, 3]),
+    baca.markup(
+        baca.markups.string_numbers([2, 3]),
+        direction=abjad.Down,
+        ),
     baca.pitch('<E4 F#4>'),
     baca.transition(
         baca.markup('trem. flaut. XP'),
@@ -159,7 +162,10 @@ maker(
     ('va', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', selector=baca.rleaves()[-3:]),
-    baca.markups.string_numbers([2, 3]),
+    baca.markup(
+        baca.markups.string_numbers([2, 3]),
+        direction=abjad.Down,
+        ),
     baca.pitch('<Eb4 F4>'),
     baca.transition(
         baca.markup('trem. flaut. XP'),
@@ -195,14 +201,14 @@ maker(
     ('vc', (9, 12)),
     baca.transition(
         baca.markup('pos. ord.'),
-        baca.markups.XP(),
+        baca.markups.XP().upright(),
         ),
     )
 
 maker(
     ('vc', (13, 16)),
     baca.transition(
-        baca.markups.XP(),
+        baca.markups.XP().upright(),
         baca.markup('pos. ord.'),
         ),
     )

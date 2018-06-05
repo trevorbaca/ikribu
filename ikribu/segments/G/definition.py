@@ -103,7 +103,10 @@ maker(
         baca.tleaves().enchain([2]),
         bookend=True,
         ),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitches('D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3'),
     baca.stem_tremolo(selector=baca.pleaves()),

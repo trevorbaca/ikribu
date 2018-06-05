@@ -93,7 +93,10 @@ maker(
 
 maker(
     ('vn', (1, 9)),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.pitch('E4'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
@@ -112,7 +115,10 @@ maker(
 
 maker(
     ('va', (13, 14)),
-    baca.markups.string_number(2),
+    baca.markup(
+        baca.markups.string_number(2),
+        direction=abjad.Down,
+        ),
     baca.pitch('Eb4'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )

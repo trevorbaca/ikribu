@@ -92,7 +92,10 @@ maker(
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
