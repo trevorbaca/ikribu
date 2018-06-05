@@ -63,7 +63,7 @@ maker(
     ('vn', (6, 8)),
     baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
-    baca.markups.boxed('sponges on BD', baca.pleaf(0)),
+    baca.markups.markup('sponges on BD').boxed(),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
@@ -102,7 +102,7 @@ maker(
     ('va', (4, 8)),
     baca.accent(selector=baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
-    baca.markups.boxed('sponges on BD', baca.pleaf(0)),
+    baca.markups.markup('sponges on BD').boxed(),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics(
@@ -137,25 +137,25 @@ maker(
 
 maker(
     ('vc', 2),
-    baca.markups.boxed_lines(['graincircle:', 'π/3 every quarter note']),
+    baca.markups.lines(['graincircle:', 'π/3 every quarter note']).boxed(),
     )
 
 maker(
     ('vc', 3),
-    baca.markups.boxed_lines(['graincircle:', 'π/4 every quarter note']),
+    baca.markups.lines(['graincircle:', 'π/4 every quarter note']).boxed(),
     )
 
 maker(
     ('vc', 4),
-    baca.markups.boxed_lines(['graincircle:', 'π/3 every quarter note']),
+    baca.markups.lines(['graincircle:', 'π/3 every quarter note']).boxed(),
     )
 
 maker(
     ('vc', 5),
-    baca.markups.boxed_lines(['graincircle:', 'π/2 every quarter note']),
+    baca.markups.lines(['graincircle:', 'π/2 every quarter note']).boxed(),
     )
 
 maker(
     ('vc', 6),
-    baca.markups.boxed_lines(['graincircle:', 'π/3 every quarter note']),
+    baca.markups.lines(['graincircle:', 'π/3 every quarter note']).boxed(),
     )
