@@ -681,16 +681,14 @@ A_ViolaMusicVoice = {
     c'4
     \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                stonecircle:                 %! IC
-                                "π/4 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        stonecircle:                         %! IC
+                        "π/4 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     

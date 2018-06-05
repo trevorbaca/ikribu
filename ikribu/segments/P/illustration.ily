@@ -624,12 +624,10 @@ P_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1513,12 +1511,10 @@ P_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
@@ -2459,12 +2455,10 @@ P_CelloRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
         
         c'4

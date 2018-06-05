@@ -572,16 +572,14 @@ J_BassClarinetMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        \column                  %! IC
-                                            {                    %! IC
-                                                stonecircle:     %! IC
-                                                "π/4 every quarter note" %! IC
-                                            }                    %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                \column                          %! IC
+                                    {                            %! IC
+                                        stonecircle:             %! IC
+                                        "π/4 every quarter note" %! IC
+                                    }                            %! IC
                     }                                            %! IC
             }
         }
@@ -646,16 +644,14 @@ J_BassClarinetMusicVoice = {
     % [J BassClarinetMusicVoice measure 118 / measure 3]         %! SM4
     c'4
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        \column                                  %! IC
-                            {                                    %! IC
-                                stonecircle:                     %! IC
-                                "π/3 every quarter note"         %! IC
-                            }                                    %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                \column                                          %! IC
+                    {                                            %! IC
+                        stonecircle:                             %! IC
+                        "π/3 every quarter note"                 %! IC
+                    }                                            %! IC
         }                                                        %! IC
     
     c'4
@@ -740,16 +736,14 @@ J_BassClarinetMusicVoice = {
     c'4
     \effort_f                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! IC
-        \whiteout                                                %! IC
-            \upright                                             %! IC
-                \override                                        %! IC
-                    #'(box-padding . 0.5)                        %! IC
-                    \box                                         %! IC
-                        \column                                  %! IC
-                            {                                    %! IC
-                                stonecircle:                     %! IC
-                                "π/2 every quarter note"         %! IC
-                            }                                    %! IC
+        \override                                                %! IC
+            #'(box-padding . 0.5)                                %! IC
+            \box                                                 %! IC
+                \column                                          %! IC
+                    {                                            %! IC
+                        stonecircle:                             %! IC
+                        "π/2 every quarter note"                 %! IC
+                    }                                            %! IC
         }                                                        %! IC
     
     c'4
@@ -898,16 +892,14 @@ J_ViolinMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        \column              %! IC
-                                            {                %! IC
-                                                stonecircle: %! IC
-                                                "π/2 every quarter note" %! IC
-                                            }                %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                \column                      %! IC
+                                    {                        %! IC
+                                        stonecircle:         %! IC
+                                        "π/2 every quarter note" %! IC
+                                    }                        %! IC
                     }                                        %! IC
             }
         }
@@ -998,16 +990,14 @@ J_ViolinMusicVoice = {
     % [J ViolinMusicVoice measure 120 / measure 5]           %! SM4
     c'4
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                stonecircle:                 %! IC
-                                "π every quarter note"       %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        stonecircle:                         %! IC
+                        "π every quarter note"               %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     c'4
@@ -1063,16 +1053,14 @@ J_ViolinMusicVoice = {
     c'4
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                stonecircle:                 %! IC
-                                "π/2 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        stonecircle:                         %! IC
+                        "π/2 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     c'4
@@ -1217,16 +1205,14 @@ J_ViolaMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        \column              %! IC
-                                            {                %! IC
-                                                stonecircle: %! IC
-                                                "π/3 every quarter note" %! IC
-                                            }                %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                \column                      %! IC
+                                    {                        %! IC
+                                        stonecircle:         %! IC
+                                        "π/3 every quarter note" %! IC
+                                    }                        %! IC
                     }                                        %! IC
             }
         }
@@ -1291,16 +1277,14 @@ J_ViolaMusicVoice = {
     % [J ViolaMusicVoice measure 118 / measure 3]            %! SM4
     c'4
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                stonecircle:                 %! IC
-                                "π/4 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        stonecircle:                         %! IC
+                        "π/4 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     c'4
@@ -1328,16 +1312,14 @@ J_ViolaMusicVoice = {
     % [J ViolaMusicVoice measure 120 / measure 5]            %! SM4
     c'4
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                stonecircle:                 %! IC
-                                "π/2 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        stonecircle:                         %! IC
+                        "π/2 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     c'4
@@ -1393,16 +1375,14 @@ J_ViolaMusicVoice = {
     c'4
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                stonecircle:                 %! IC
-                                "π/2 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        stonecircle:                         %! IC
+                        "π/2 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     c'4
@@ -1567,11 +1547,7 @@ J_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d,,1
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                "vib. poco."                                 %! IC
-        }                                                    %! IC
+    ^ \markup { "vib. poco." }                               %! IC
     
     % [J CelloMusicVoice measure 119 / measure 4]            %! SM4
     d,,1

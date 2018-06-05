@@ -411,16 +411,14 @@ N_BassClarinetMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        \column                  %! IC
-                                            {                    %! IC
-                                                "introduce upper partials gradually;" %! IC
-                                                "breathe as necessary before downbeats" %! IC
-                                            }                    %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                \column                          %! IC
+                                    {                            %! IC
+                                        "introduce upper partials gradually;" %! IC
+                                        "breathe as necessary before downbeats" %! IC
+                                    }                            %! IC
                     }                                            %! IC
             }
         }
@@ -543,12 +541,10 @@ N_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1873,12 +1869,10 @@ N_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
@@ -3352,12 +3346,10 @@ N_CelloRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
         
         c'4

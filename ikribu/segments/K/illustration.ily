@@ -1148,11 +1148,7 @@ K_ViolinMusicVoice = {
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                           %! IC
         [
-        ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    "col legno battuto"                      %! IC
-            }                                                %! IC
+        ^ \markup { "col legno battuto" }                    %! IC
         
         c'8
         -\staccato                                           %! IC
@@ -1610,11 +1606,7 @@ K_ViolaMusicVoice = {
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                           %! IC
         [
-        ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    "col legno battuto"                      %! IC
-            }                                                %! IC
+        ^ \markup { "col legno battuto" }                    %! IC
         
         c'8
         -\staccato                                           %! IC
@@ -2016,16 +2008,14 @@ K_CelloMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        \column              %! IC
-                                            {                %! IC
-                                                graincircle: %! IC
-                                                "π/2 every quarter note" %! IC
-                                            }                %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                \column                      %! IC
+                                    {                        %! IC
+                                        graincircle:         %! IC
+                                        "π/2 every quarter note" %! IC
+                                    }                        %! IC
                     }                                        %! IC
             }
         }

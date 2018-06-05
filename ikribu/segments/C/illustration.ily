@@ -1142,25 +1142,21 @@ C_BassClarinetMusicVoice = {
             {
             %@% \line                                            %! IC:+ARCH_A_PARTS_BCL
             %@%     {                                            %! IC:+ARCH_A_PARTS_BCL
-            %@%         \whiteout                                %! IC:+ARCH_A_PARTS_BCL
-            %@%             \upright                             %! IC:+ARCH_A_PARTS_BCL
-            %@%                 \override                        %! IC:+ARCH_A_PARTS_BCL
-            %@%                     #'(box-padding . 0.5)        %! IC:+ARCH_A_PARTS_BCL
-            %@%                     \box                         %! IC:+ARCH_A_PARTS_BCL
-            %@%                         "stonecircle: π/2 every quarter note" %! IC:+ARCH_A_PARTS_BCL
+            %@%         \override                                %! IC:+ARCH_A_PARTS_BCL
+            %@%             #'(box-padding . 0.5)                %! IC:+ARCH_A_PARTS_BCL
+            %@%             \box                                 %! IC:+ARCH_A_PARTS_BCL
+            %@%                 "stonecircle: π/2 every quarter note" %! IC:+ARCH_A_PARTS_BCL
             %@%     }                                            %! IC:+ARCH_A_PARTS_BCL
                 \line                                            %! IC:-ARCH_A_PARTS_BCL
                     {                                            %! IC:-ARCH_A_PARTS_BCL
-                        \whiteout                                %! IC:-ARCH_A_PARTS_BCL
-                            \upright                             %! IC:-ARCH_A_PARTS_BCL
-                                \override                        %! IC:-ARCH_A_PARTS_BCL
-                                    #'(box-padding . 0.5)        %! IC:-ARCH_A_PARTS_BCL
-                                    \box                         %! IC:-ARCH_A_PARTS_BCL
-                                        \column                  %! IC:-ARCH_A_PARTS_BCL
-                                            {                    %! IC:-ARCH_A_PARTS_BCL
-                                                stonecircle:     %! IC:-ARCH_A_PARTS_BCL
-                                                "π/2 every quarter note" %! IC:-ARCH_A_PARTS_BCL
-                                            }                    %! IC:-ARCH_A_PARTS_BCL
+                        \override                                %! IC:-ARCH_A_PARTS_BCL
+                            #'(box-padding . 0.5)                %! IC:-ARCH_A_PARTS_BCL
+                            \box                                 %! IC:-ARCH_A_PARTS_BCL
+                                \column                          %! IC:-ARCH_A_PARTS_BCL
+                                    {                            %! IC:-ARCH_A_PARTS_BCL
+                                        stonecircle:             %! IC:-ARCH_A_PARTS_BCL
+                                        "π/2 every quarter note" %! IC:-ARCH_A_PARTS_BCL
+                                    }                            %! IC:-ARCH_A_PARTS_BCL
                     }                                            %! IC:-ARCH_A_PARTS_BCL
             }
         }
@@ -1432,12 +1428,10 @@ C_ViolinMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        "grainfall (2)"      %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                "grainfall (2)"              %! IC
                     }                                        %! IC
             }
         }
@@ -1479,11 +1473,7 @@ C_ViolinMusicVoice = {
     \glissando                                               %! SC
     \<                                                       %! HC1
     \pp                                                      %! HC1
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                "trem. flaut. tast."                         %! IC
-        }                                                    %! IC
+    ^ \markup { "trem. flaut. tast." }                       %! IC
     
     % [C ViolinMusicVoice measure 38 / measure 4]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1719,11 +1709,7 @@ C_ViolaMusicVoice = {
     \glissando                                               %! SC
     \<                                                       %! HC1
     \pp                                                      %! HC1
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                "trem. flaut. tast."                         %! IC
-        }                                                    %! IC
+    ^ \markup { "trem. flaut. tast." }                       %! IC
     
     % [C ViolaMusicVoice measure 38 / measure 4]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1934,17 +1920,11 @@ C_CelloMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                pizz.                        %! IC
+                        pizz.                                %! IC
                     }                                        %! IC
             }
         }
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    _ \markup { III }                                        %! IC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1974,9 +1954,7 @@ C_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. flaut. tasto. (arco)"         %! PWC1
+                "trem. flaut. tasto. (arco)"                 %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1997,9 +1975,7 @@ C_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. flaut. XP"                    %! PWC1
+                "trem. flaut. XP"                            %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1

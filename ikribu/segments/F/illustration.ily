@@ -573,9 +573,7 @@ F_ViolinMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. flaut. XP"                    %! PWC1
+                "trem. flaut. XP"                            %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -596,17 +594,11 @@ F_ViolinMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. flaut. tast."                 %! PWC1
+                "trem. flaut. tast."                         %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                II+III                                       %! IC
-        }                                                    %! IC
+    _ \markup { II+III }                                     %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolinMusicVoice measure 85 / measure 7]            %! SM4
@@ -776,9 +768,7 @@ F_ViolaMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. flaut. XP"                    %! PWC1
+                "trem. flaut. XP"                            %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -799,17 +789,11 @@ F_ViolaMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. flaut. tast."                 %! PWC1
+                "trem. flaut. tast."                         %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                I+II                                         %! IC
-        }                                                    %! IC
+    _ \markup { I+II }                                       %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolaMusicVoice measure 85 / measure 7]             %! SM4
@@ -920,9 +904,7 @@ F_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "(trem. flaut. tast.)"               %! PWC1
+                "(trem. flaut. tast.)"                       %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -943,9 +925,7 @@ F_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                \whiteout                                    %! PWC1
-                    \upright                                 %! PWC1
-                        "trem. XP (non. flaut.)"             %! PWC1
+                "trem. XP (non. flaut.)"                     %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -1013,16 +993,14 @@ F_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     d4
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                graincircle:                 %! IC
-                                "π/2 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        graincircle:                         %! IC
+                        "π/2 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     d4

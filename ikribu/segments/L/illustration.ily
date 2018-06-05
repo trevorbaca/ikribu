@@ -1244,9 +1244,7 @@ L_BassClarinetMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                "breathe discreetly before any downbeat as needed (but do not circular breathe)" %! IC
+                        "breathe discreetly before any downbeat as needed (but do not circular breathe)" %! IC
                     }                                            %! IC
             }
         }
@@ -2334,12 +2332,10 @@ L_ViolinMusicVoice = {
         \<                                                   %! PWC1
         \mp                                                  %! PWC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'1
@@ -3078,12 +3074,10 @@ L_ViolaMusicVoice = {
         \>                                                   %! PWC1
         \p                                                   %! PWC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'4
@@ -3674,16 +3668,14 @@ L_CelloMusicVoice = {
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                graincircle:                 %! IC
-                                "π/3 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        graincircle:                         %! IC
+                        "π/3 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     d4
@@ -3749,16 +3741,14 @@ L_CelloMusicVoice = {
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                graincircle:                 %! IC
-                                "π/4 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        graincircle:                         %! IC
+                        "π/4 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     d4
@@ -3818,16 +3808,14 @@ L_CelloMusicVoice = {
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                graincircle:                 %! IC
-                                "π/3 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        graincircle:                         %! IC
+                        "π/3 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     d4
@@ -3917,16 +3905,14 @@ L_CelloMusicVoice = {
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                graincircle:                 %! IC
-                                "π/2 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        graincircle:                         %! IC
+                        "π/2 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     d4
@@ -4004,16 +3990,14 @@ L_CelloMusicVoice = {
     \p                                                       %! PWC1
     \<                                                       %! PWC1
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        \column                              %! IC
-                            {                                %! IC
-                                graincircle:                 %! IC
-                                "π/3 every quarter note"     %! IC
-                            }                                %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                \column                                      %! IC
+                    {                                        %! IC
+                        graincircle:                         %! IC
+                        "π/3 every quarter note"             %! IC
+                    }                                        %! IC
         }                                                    %! IC
     
     d4

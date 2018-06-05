@@ -1229,12 +1229,10 @@ E_ViolinMusicVoice = {
                         }                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     \line                                    %! IC
                         {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    \override                %! IC
-                                        #'(box-padding . 0.5) %! IC
-                                        \box                 %! IC
-                                            "sponges on BD"  %! IC
+                            \override                        %! IC
+                                #'(box-padding . 0.5)        %! IC
+                                \box                         %! IC
+                                    "sponges on BD"          %! IC
                         }                                    %! IC
                 }
             }
@@ -1553,12 +1551,10 @@ E_ViolaMusicVoice = {
         \>                                                   %! PWC1
         \f                                                   %! PWC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'1
@@ -1876,11 +1872,7 @@ E_CelloMusicVoice = {
     :32                                                      %! IC
     \<                                                       %! PWC1
     \p                                                       %! PWC1
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                "trem. flaut. tast."                         %! IC
-        }                                                    %! IC
+    ^ \markup { "trem. flaut. tast." }                       %! IC
     
     % [E CelloMusicVoice measure 72 / measure 10]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
