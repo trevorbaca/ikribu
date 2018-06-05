@@ -84,12 +84,12 @@ maker(
     ('bcl', (2, 3)),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
-        baca.markups.boxed(['stonecircle: π/2 every quarter note']),
+        baca.markups.markup('stonecircle: π/2 every quarter note').boxed(),
         deactivate=True,
         ),
     baca.tag(
         '-ARCH_A_PARTS_BCL',
-        baca.markups.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
+        baca.markups.lines(['stonecircle:', 'π/2 every quarter note']).boxed(),
         ),
     ikribu.box_adjustment(),
     )
@@ -99,7 +99,7 @@ maker(
     baca.clef('percussion'),
     baca.dynamic('"mf"'),
     baca.make_repeat_tied_notes(),
-    baca.markups.boxed('grainfall (2)'),
+    baca.markups.markup('grainfall (2)').boxed(),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),

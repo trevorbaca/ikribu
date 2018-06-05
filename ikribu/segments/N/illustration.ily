@@ -413,11 +413,14 @@ N_BassClarinetMusicVoice = {
                     {                                            %! IC
                         \whiteout                                %! IC
                             \upright                             %! IC
-                                \column                          %! IC
-                                    {                            %! IC
-                                        "introduce upper partials gradually;" %! IC
-                                        "breathe as necessary before downbeats" %! IC
-                                    }                            %! IC
+                                \override                        %! IC
+                                    #'(box-padding . 0.5)        %! IC
+                                    \box                         %! IC
+                                        \column                  %! IC
+                                            {                    %! IC
+                                                "introduce upper partials gradually;" %! IC
+                                                "breathe as necessary before downbeats" %! IC
+                                            }                    %! IC
                     }                                            %! IC
             }
         }

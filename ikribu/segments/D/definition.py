@@ -70,7 +70,7 @@ maker(
         baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,
         ),
-    baca.markups.boxed('1/2 clt', baca.pleaf(0)),
+    baca.markups.half_clt().boxed(),
     baca.repeat_tie_up(),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.staff_position(0),
