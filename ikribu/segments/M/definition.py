@@ -248,8 +248,8 @@ maker(
 maker(
     ('vc', [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.transition(
-        baca.markups.tasto().upright(),
-        baca.markups.XP().upright(),
+        baca.markups.tasto(),
+        baca.markups.XP(),
         ),
     )
 

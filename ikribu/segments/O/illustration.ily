@@ -1201,7 +1201,8 @@ O_ViolinMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "trem. flaut. XP"                            %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. XP"                        %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1222,7 +1223,8 @@ O_ViolinMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "trem. flaut. nut"                           %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. nut"                       %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -1485,7 +1487,8 @@ O_ViolaMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "trem. flaut. XP"                            %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. XP"                        %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1506,7 +1509,8 @@ O_ViolaMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "trem. flaut. nut"                           %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. nut"                       %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -1759,7 +1763,8 @@ O_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "tasto poss."                                %! PWC1
+                \upright                                     %! PWC1
+                    "tasto poss."                            %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1780,7 +1785,8 @@ O_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "pos. ord."                                  %! PWC1
+                \upright                                     %! PWC1
+                    "pos. ord."                              %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -1817,7 +1823,8 @@ O_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "pos. ord."                                  %! PWC1
+                \upright                                     %! PWC1
+                    "pos. ord."                              %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1898,7 +1905,8 @@ O_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "pos. ord."                                  %! PWC1
+                \upright                                     %! PWC1
+                    "pos. ord."                              %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -1935,7 +1943,8 @@ O_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "pos. ord."                                  %! PWC1
+                \upright                                     %! PWC1
+                    "pos. ord."                              %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1956,7 +1965,8 @@ O_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "tasto poss."                                %! PWC1
+                \upright                                     %! PWC1
+                    "tasto poss."                            %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1

@@ -573,7 +573,8 @@ F_ViolinMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "trem. flaut. XP"                            %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. XP"                        %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -594,7 +595,8 @@ F_ViolinMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "trem. flaut. tast."                         %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. tast."                     %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -768,7 +770,8 @@ F_ViolaMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "trem. flaut. XP"                            %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. XP"                        %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -789,7 +792,8 @@ F_ViolaMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "trem. flaut. tast."                         %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. tast."                     %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
@@ -904,7 +908,8 @@ F_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "(trem. flaut. tast.)"                       %! PWC1
+                \upright                                     %! PWC1
+                    "(trem. flaut. tast.)"                   %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -925,7 +930,8 @@ F_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "trem. XP (non. flaut.)"                     %! PWC1
+                \upright                                     %! PWC1
+                    "trem. XP (non. flaut.)"                 %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
