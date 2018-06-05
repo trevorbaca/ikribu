@@ -1954,7 +1954,8 @@ C_CelloMusicVoice = {
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
             {                                                %! PWC1
-                "trem. flaut. tasto. (arco)"                 %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. tasto. (arco)"             %! PWC1
                 \hspace                                      %! PWC1
                     #0.5                                     %! PWC1
             }                                                %! PWC1
@@ -1975,7 +1976,8 @@ C_CelloMusicVoice = {
             {                                                %! PWC1
                 \hspace                                      %! PWC1
                     #0.0                                     %! PWC1
-                "trem. flaut. XP"                            %! PWC1
+                \upright                                     %! PWC1
+                    "trem. flaut. XP"                        %! PWC1
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1

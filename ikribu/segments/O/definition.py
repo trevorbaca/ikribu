@@ -201,14 +201,14 @@ maker(
     ('vc', (9, 12)),
     baca.transition(
         baca.markups.pos_ord(),
-        baca.markups.XP().upright(),
+        baca.markups.XP(),
         ),
     )
 
 maker(
     ('vc', (13, 16)),
     baca.transition(
-        baca.markups.XP().upright(),
+        baca.markups.XP(),
         baca.markups.pos_ord(),
         ),
     )
