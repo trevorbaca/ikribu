@@ -148,8 +148,8 @@ maker(
     baca.markups.string_numbers([2, 3]),
     baca.pitch('<E4 F#4>'),
     baca.transition(
-        baca.markups.markup('trem. flaut. XP'),
-        baca.markups.markup('trem. flaut. nut'),
+        baca.markup('trem. flaut. XP'),
+        baca.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -162,8 +162,8 @@ maker(
     baca.markups.string_numbers([2, 3]),
     baca.pitch('<Eb4 F4>'),
     baca.transition(
-        baca.markups.markup('trem. flaut. XP'),
-        baca.markups.markup('trem. flaut. nut'),
+        baca.markup('trem. flaut. XP'),
+        baca.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -186,15 +186,15 @@ maker(
 maker(
     ('vc', (5, 8)),
     baca.transition(
-        baca.markups.markup('tasto poss.'),
-        baca.markups.markup('pos. ord.'),
+        baca.markup('tasto poss.'),
+        baca.markup('pos. ord.'),
         ),
     )
 
 maker(
     ('vc', (9, 12)),
     baca.transition(
-        baca.markups.markup('pos. ord.'),
+        baca.markup('pos. ord.'),
         baca.markups.XP(),
         ),
     )
@@ -203,14 +203,14 @@ maker(
     ('vc', (13, 16)),
     baca.transition(
         baca.markups.XP(),
-        baca.markups.markup('pos. ord.'),
+        baca.markup('pos. ord.'),
         ),
     )
 
 maker(
     ('vc', (17, 20)),
     baca.transition(
-        baca.markups.markup('pos. ord.'),
-        baca.markups.markup('tasto poss.'),
+        baca.markup('pos. ord.'),
+        baca.markup('tasto poss.'),
         ),
     )
