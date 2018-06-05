@@ -195,8 +195,8 @@ maker(
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.transition(
-        baca.markup('trem. flaut. tasto. (arco)'),
-        baca.markup('trem. flaut. XP'),
+        baca.markups.markup('trem. flaut. tasto. (arco)'),
+        baca.markups.markup('trem. flaut. XP'),
         ),
     baca.text_spanner_staff_padding(3.5),
     baca.tuplet_bracket_down(),
