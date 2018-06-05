@@ -248,8 +248,8 @@ maker(
 maker(
     ('vc', [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.transition(
-        baca.markups.tasto(),
-        baca.markups.XP(),
+        baca.markups.tasto().upright(),
+        baca.markups.XP().upright(),
         ),
     )
 
@@ -274,7 +274,10 @@ maker(
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
@@ -290,7 +293,10 @@ maker(
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('G5'),
     )
@@ -301,7 +307,10 @@ maker(
     baca.dynamic('sffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('F~5'),
     )
@@ -312,7 +321,10 @@ maker(
     baca.dynamic('sffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('G5'),
     )
@@ -323,7 +335,10 @@ maker(
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('A5'),
     )
@@ -334,7 +349,10 @@ maker(
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
     baca.markups.pizz(),
-    baca.markups.string_number(3),
+    baca.markup(
+        baca.markups.string_number(3),
+        direction=abjad.Down,
+        ),
     baca.note_head_style_harmonic(),
     baca.pitch('C+6'),
     )

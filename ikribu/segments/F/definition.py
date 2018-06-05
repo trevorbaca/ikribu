@@ -69,7 +69,10 @@ maker(
 maker(
     ('vn', (6, 7)),
     baca.clef('treble'),
-    baca.markups.string_numbers([2, 3]),
+    baca.markup(
+        baca.markups.string_numbers([2, 3]),
+        direction=abjad.Down,
+        ),
     baca.pitch('<E4 F#4>'),
     baca.transition(
         baca.markup('trem. flaut. XP'),
@@ -81,7 +84,10 @@ maker(
 
 maker(
     ('va', (6, 7)),
-    baca.markups.string_numbers([1, 2]),
+    baca.markup(
+        baca.markups.string_numbers([1, 2]),
+        direction=abjad.Down,
+        ),
     baca.clef('treble'),
     baca.clef_extra_offset((-2.5, 0)),
     baca.clef_x_extent_false(),
