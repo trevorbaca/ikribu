@@ -93,7 +93,7 @@ maker(
 
 maker(
     ('vn', (1, 9)),
-    baca.markup.string_number(3),
+    baca.markups.string_number(3),
     baca.pitch('E4'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
@@ -105,14 +105,14 @@ maker(
         baca.hairpin('p > niente', selector=baca.rleaves()[-2:]),
         ),
     baca.transition(
-        baca.markup.markup('trem. flaut. pont.'),
-        baca.markup.markup('trem. flaut. tast.'),
+        baca.markups.markup('trem. flaut. pont.'),
+        baca.markups.markup('trem. flaut. tast.'),
         ),
     )
 
 maker(
     ('va', (13, 14)),
-    baca.markup.string_number(2),
+    baca.markups.string_number(2),
     baca.pitch('Eb4'),
     baca.stem_tremolo(selector=baca.pleaves()),
     )
@@ -124,7 +124,7 @@ maker(
         baca.hairpin('mf > niente', selector=baca.rleaves()[-2:]),
         ),
     baca.transition(
-        baca.markup.markup('trem. flaut. pont.'),
-        baca.markup.markup('trem. flaut. tast.'),
+        baca.markups.markup('trem. flaut. pont.'),
+        baca.markups.markup('trem. flaut. tast.'),
         ),
     )
