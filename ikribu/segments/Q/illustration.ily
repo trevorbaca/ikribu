@@ -535,12 +535,10 @@ Q_BassClarinetMusicVoice = {
                     }                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                            %! IC
                     {                                            %! IC
-                        \whiteout                                %! IC
-                            \upright                             %! IC
-                                \override                        %! IC
-                                    #'(box-padding . 0.5)        %! IC
-                                    \box                         %! IC
-                                        "graincircle: π/3 every quarter note" %! IC
+                        \override                                %! IC
+                            #'(box-padding . 0.5)                %! IC
+                            \box                                 %! IC
+                                "graincircle: π/3 every quarter note" %! IC
                     }                                            %! IC
             }
         }
@@ -806,9 +804,7 @@ Q_ViolinMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                "col legno battuto meccanico: strike each note twice" %! IC
+                        "col legno battuto meccanico: strike each note twice" %! IC
                     }                                        %! IC
             }
         }
@@ -1111,9 +1107,7 @@ Q_ViolaMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                "col legno battuto meccanico: strike each note twice" %! IC
+                        "col legno battuto meccanico: strike each note twice" %! IC
                     }                                        %! IC
             }
         }
@@ -1421,12 +1415,10 @@ Q_CelloMusicVoice = {
                         }                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                     \line                                    %! IC
                         {                                    %! IC
-                            \whiteout                        %! IC
-                                \upright                     %! IC
-                                    \override                %! IC
-                                        #'(box-padding . 0.5) %! IC
-                                        \box                 %! IC
-                                            "stonescratch: one short stroke for each attack" %! IC
+                            \override                        %! IC
+                                #'(box-padding . 0.5)        %! IC
+                                \box                         %! IC
+                                    "stonescratch: one short stroke for each attack" %! IC
                         }                                    %! IC
                 }
             }
@@ -1780,30 +1772,28 @@ Q_CelloMusicVoice = {
     \startStaff                                              %! SM20
     R1 * 1/4
     _ \markup {                                              %! SCORE2
-        \whiteout                                            %! SCORE2
-            \upright                                         %! SCORE2
-                \override                                    %! SCORE2
-                    #'(font-name . "Palatino")               %! SCORE2
-                    \with-color                              %! SCORE2
-                        #black                               %! SCORE2
-                        \right-column                        %! SCORE2
+        \override                                            %! SCORE2
+            #'(font-name . "Palatino")                       %! SCORE2
+            \with-color                                      %! SCORE2
+                #black                                       %! SCORE2
+                \right-column                                %! SCORE2
+                    {                                        %! SCORE2
+                        \line                                %! SCORE2
                             {                                %! SCORE2
-                                \line                        %! SCORE2
-                                    {                        %! SCORE2
-                                        "Madison, WI."       %! SCORE2
-                                    }                        %! SCORE2
-                                \line                        %! SCORE2
-                                    {                        %! SCORE2
-                                        January              %! SCORE2
-                                        \hspace              %! SCORE2
-                                            #0.75            %! SCORE2
-                                        –                    %! SCORE2
-                                        \hspace              %! SCORE2
-                                            #0.75            %! SCORE2
-                                        March                %! SCORE2
-                                        2016.                %! SCORE2
-                                    }                        %! SCORE2
+                                "Madison, WI."               %! SCORE2
                             }                                %! SCORE2
+                        \line                                %! SCORE2
+                            {                                %! SCORE2
+                                January                      %! SCORE2
+                                \hspace                      %! SCORE2
+                                    #0.75                    %! SCORE2
+                                –                            %! SCORE2
+                                \hspace                      %! SCORE2
+                                    #0.75                    %! SCORE2
+                                March                        %! SCORE2
+                                2016.                        %! SCORE2
+                            }                                %! SCORE2
+                    }                                        %! SCORE2
         }                                                    %! SCORE2
     \revert Staff.BarLine.bar-extent                         %! OC2
     \revert TextScript.padding                               %! OC2

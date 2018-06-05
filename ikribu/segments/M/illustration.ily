@@ -2197,12 +2197,10 @@ M_ViolinMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        "grainfall (3)"      %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                "grainfall (3)"              %! IC
                     }                                        %! IC
             }
         }
@@ -2230,12 +2228,10 @@ M_ViolinMusicVoice = {
         \<                                                   %! HC1
         \mf                                                  %! HC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'2
@@ -2287,12 +2283,10 @@ M_ViolinMusicVoice = {
     c'1..
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        "grainfall (4)"                      %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                "grainfall (4)"                              %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2303,12 +2297,10 @@ M_ViolinMusicVoice = {
         :32                                                  %! IC
         \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'4
@@ -2335,12 +2327,10 @@ M_ViolinMusicVoice = {
     c'1
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        "grainfall (5)"                      %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                "grainfall (5)"                              %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2352,12 +2342,10 @@ M_ViolinMusicVoice = {
         \<                                                   %! HC1
         \mf                                                  %! HC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'4
@@ -2427,12 +2415,10 @@ M_ViolinMusicVoice = {
     c'2
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        "grainfall (6)"                      %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                "grainfall (6)"                              %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/12 {
@@ -2444,12 +2430,10 @@ M_ViolinMusicVoice = {
         \<                                                   %! HC1
         \mf                                                  %! HC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'1
@@ -2501,12 +2485,10 @@ M_ViolinMusicVoice = {
     c'1..
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        "grainfall (7)"                      %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                "grainfall (7)"                              %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2517,12 +2499,10 @@ M_ViolinMusicVoice = {
         :32                                                  %! IC
         \fff                                                 %! SM8:EXPLICIT_DYNAMIC:IC
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'4
@@ -2549,12 +2529,10 @@ M_ViolinMusicVoice = {
     c'2
     \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                \override                                    %! IC
-                    #'(box-padding . 0.5)                    %! IC
-                    \box                                     %! IC
-                        "grainfall (8)"                      %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                "grainfall (8)"                              %! IC
         }                                                    %! IC
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
@@ -2566,12 +2544,10 @@ M_ViolinMusicVoice = {
         \<                                                   %! HC1
         \mf                                                  %! HC1
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "sponges on BD"                  %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "sponges on BD"                          %! IC
             }                                                %! IC
         
         c'2
@@ -3439,17 +3415,11 @@ M_CelloMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                pizz.                        %! IC
+                        pizz.                                %! IC
                     }                                        %! IC
             }
         }
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    _ \markup { III }                                        %! IC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -3542,16 +3512,8 @@ M_CelloMusicVoice = {
     g''1..
     \sfz                                                     %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                pizz.                                        %! IC
-        }                                                    %! IC
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    ^ \markup { pizz. }                                      %! IC
+    _ \markup { III }                                        %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 182 / measure 7]            %! SM4
@@ -3563,11 +3525,7 @@ M_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c,,2.
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                XP                                           %! IC
-        }                                                    %! IC
+    ^ \markup { XP }                                         %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \ottava #0                                               %! SC
     
@@ -3593,16 +3551,8 @@ M_CelloMusicVoice = {
     fqf''!1
     \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                pizz.                                        %! IC
-        }                                                    %! IC
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    ^ \markup { pizz. }                                      %! IC
+    _ \markup { III }                                        %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 185 / measure 10]           %! SM4
@@ -3682,16 +3632,8 @@ M_CelloMusicVoice = {
     g''2
     \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                pizz.                                        %! IC
-        }                                                    %! IC
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    ^ \markup { pizz. }                                      %! IC
+    _ \markup { III }                                        %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 190 / measure 15]           %! SM4
@@ -3771,16 +3713,8 @@ M_CelloMusicVoice = {
     a''1..
     \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                pizz.                                        %! IC
-        }                                                    %! IC
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    ^ \markup { pizz. }                                      %! IC
+    _ \markup { III }                                        %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 195 / measure 20]           %! SM4
@@ -3792,11 +3726,7 @@ M_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c,,2.
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                XP                                           %! IC
-        }                                                    %! IC
+    ^ \markup { XP }                                         %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     \ottava #0                                               %! SC
     
@@ -3822,16 +3752,8 @@ M_CelloMusicVoice = {
     cqs'''!2
     \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
-    ^ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                pizz.                                        %! IC
-        }                                                    %! IC
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    ^ \markup { pizz. }                                      %! IC
+    _ \markup { III }                                        %! IC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 198 / measure 23]           %! SM4

@@ -989,16 +989,14 @@ I_CelloMusicVoice = {
                     }                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        \column              %! IC
-                                            {                %! IC
-                                                stonecircle: %! IC
-                                                "π/4 every quarter note" %! IC
-                                            }                %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                \column                      %! IC
+                                    {                        %! IC
+                                        stonecircle:         %! IC
+                                        "π/4 every quarter note" %! IC
+                                    }                        %! IC
                     }                                        %! IC
             }
         }

@@ -298,12 +298,10 @@ i_ViolinMusicVoice = {
                     }                                        %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                \override                    %! IC
-                                    #'(box-padding . 0.5)    %! IC
-                                    \box                     %! IC
-                                        "grainfall (1)"      %! IC
+                        \override                            %! IC
+                            #'(box-padding . 0.5)            %! IC
+                            \box                             %! IC
+                                "grainfall (1)"              %! IC
                     }                                        %! IC
                 \line                                        %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
                     {                                        %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
@@ -518,9 +516,7 @@ i_CelloMusicVoice = {
                     }                                        %! SM11:DEFAULT_INSTRUMENT_ALERT:ST1
                 \line                                        %! IC
                     {                                        %! IC
-                        \whiteout                            %! IC
-                            \upright                         %! IC
-                                pizz.                        %! IC
+                        pizz.                                %! IC
                     }                                        %! IC
                 \line                                        %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
                     {                                        %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
@@ -530,11 +526,7 @@ i_CelloMusicVoice = {
                     }                                        %! SM11:EXPLICIT_MARGIN_MARKUP_ALERT:IC:-PARTS
             }
         }
-    _ \markup {                                              %! IC
-        \whiteout                                            %! IC
-            \upright                                         %! IC
-                III                                          %! IC
-        }                                                    %! IC
+    _ \markup { III }                                        %! IC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! SM6:REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:IC:-PARTS
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS
     \markup {                                                %! SM8:REDRAWN_EXPLICIT_MARGIN_MARKUP:SM34:IC:-PARTS

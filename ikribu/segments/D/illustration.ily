@@ -924,12 +924,10 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         ^ \markup {                                          %! IC
-            \whiteout                                        %! IC
-                \upright                                     %! IC
-                    \override                                %! IC
-                        #'(box-padding . 0.5)                %! IC
-                        \box                                 %! IC
-                            "1/2 clt"                        %! IC
+            \override                                        %! IC
+                #'(box-padding . 0.5)                        %! IC
+                \box                                         %! IC
+                    "1/2 clt"                                %! IC
             }                                                %! IC
         
         c'4
