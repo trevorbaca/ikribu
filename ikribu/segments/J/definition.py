@@ -98,12 +98,12 @@ maker(
 
 maker(
     ('bcl', 1),
-    baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     )
 
 maker(
     ('bcl', 2),
-    baca.markup.boxed_lines(['stonecircle:', 'π/3 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/3 every quarter note']),
     )
 
 maker(
@@ -116,34 +116,34 @@ maker(
 
 maker(
     ('vn', (1, 2)),
-    baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
 
 maker(
     ('vn', 3),
-    baca.markup.boxed_lines(['stonecircle:', 'π every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π every quarter note']),
     )
 
 maker(
     ('va', 1),
-    baca.markup.boxed_lines(['stonecircle:', 'π/3 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/3 every quarter note']),
     )
 
 maker(
     ('va', 2),
-    baca.markup.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/4 every quarter note']),
     )
 
 maker(
     ('va', 3),
-    baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
 
 maker(
     ('vc', (2, 4)),
     baca.dynamic('p'),
     baca.hairpin('p < mf', selector=baca.leaves()[-2:]),
-    baca.markup.vib_poco(),
+    baca.markups.vib_poco(),
     baca.ottava_bassa(),
     baca.ottava_bracket_staff_padding(8),
     baca.pitch('D1'),
@@ -159,7 +159,7 @@ maker(
         baca.dynamic('"f"'),
         baca.dynamic_shift('"f"'),
         ],
-    baca.markup.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
+    baca.markups.boxed_lines(['stonecircle:', 'π/2 every quarter note']),
     )
 
 maker(

@@ -145,11 +145,11 @@ maker(
     ('vn', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', selector=baca.rleaves()[-3:]),
-    baca.markup.string_numbers([2, 3]),
+    baca.markups.string_numbers([2, 3]),
     baca.pitch('<E4 F#4>'),
     baca.transition(
-        baca.markup.markup('trem. flaut. XP'),
-        baca.markup.markup('trem. flaut. nut'),
+        baca.markups.markup('trem. flaut. XP'),
+        baca.markups.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -159,11 +159,11 @@ maker(
     ('va', (9, 20)),
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp > niente', selector=baca.rleaves()[-3:]),
-    baca.markup.string_numbers([2, 3]),
+    baca.markups.string_numbers([2, 3]),
     baca.pitch('<Eb4 F4>'),
     baca.transition(
-        baca.markup.markup('trem. flaut. XP'),
-        baca.markup.markup('trem. flaut. nut'),
+        baca.markups.markup('trem. flaut. XP'),
+        baca.markups.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -186,31 +186,31 @@ maker(
 maker(
     ('vc', (5, 8)),
     baca.transition(
-        baca.markup.markup('tasto poss.'),
-        baca.markup.markup('pos. ord.'),
+        baca.markups.markup('tasto poss.'),
+        baca.markups.markup('pos. ord.'),
         ),
     )
 
 maker(
     ('vc', (9, 12)),
     baca.transition(
-        baca.markup.markup('pos. ord.'),
-        baca.markup.XP(),
+        baca.markups.markup('pos. ord.'),
+        baca.markups.XP(),
         ),
     )
 
 maker(
     ('vc', (13, 16)),
     baca.transition(
-        baca.markup.XP(),
-        baca.markup.markup('pos. ord.'),
+        baca.markups.XP(),
+        baca.markups.markup('pos. ord.'),
         ),
     )
 
 maker(
     ('vc', (17, 20)),
     baca.transition(
-        baca.markup.markup('pos. ord.'),
-        baca.markup.markup('tasto poss.'),
+        baca.markups.markup('pos. ord.'),
+        baca.markups.markup('tasto poss.'),
         ),
     )

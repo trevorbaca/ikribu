@@ -96,7 +96,7 @@ maker(
         deactivate=True,
         ),
     baca.dynamic('p'),
-    baca.markup.lines([
+    baca.markups.lines([
         'introduce upper partials gradually;',
         'breathe as necessary before downbeats',
         ]),
@@ -119,7 +119,7 @@ maker(
         ('va_rh', (1, 2)),
         ('vc_rh', (1, 2)),
         ],
-    baca.markup.boxed('1/2 clt', baca.pleaf(0)),
+    baca.markups.boxed('1/2 clt', baca.pleaf(0)),
     baca.piecewise(
         abjad.Hairpin(),
         baca.dynamics('ff p f pp p ppp'),

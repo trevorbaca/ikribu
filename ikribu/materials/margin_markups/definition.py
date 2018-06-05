@@ -5,7 +5,7 @@ import baca
 def _make_margin_markup(markup, context='Staff'):
     return abjad.MarginMarkup(
         context=context,
-        markup=baca.markup.instrument(markup, hcenter_in=16),
+        markup=baca.markups.instrument(markup, hcenter_in=16),
         )
 
 margin_markups = abjad.OrderedDict([
