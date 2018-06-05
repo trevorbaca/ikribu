@@ -76,7 +76,7 @@ maker(
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
-    baca.markups.markup('col legno battuto meccanico: strike each note twice'),
+    baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_positions([-1, 0, 1]),
     baca.text_script_padding(2.5),
     )
@@ -86,7 +86,7 @@ maker(
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
-    baca.markups.markup('col legno battuto meccanico: strike each note twice'),
+    baca.markup('col legno battuto meccanico: strike each note twice'),
     baca.staff_positions([0, -1, 1]),
     baca.text_script_padding(2.5),
     )
