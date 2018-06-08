@@ -117,7 +117,7 @@ K_GlobalSkips = {
 %@%             \note-by-number                                          %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%                 #2                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%                 #0                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
-%@%                 #1                                                   %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
+%@%                 #1.5                                                 %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%     \upright                                                         %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%         {                                                            %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
 %@%             =                                                        %! SM27:REAPPLIED_METRONOME_MARK:SM36 %! SM29:METRONOME_MARK_SPANNER
@@ -138,7 +138,7 @@ K_GlobalSkips = {
                         \note-by-number                                  %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
                             #2                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
                             #0                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
-                            #1                                           %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
+                            #1.5                                         %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
                 \upright                                                 %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
                     {                                                    %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
                         =                                                %! SM15:REAPPLIED_METRONOME_MARK_WITH_COLOR:SM36 %! SM29:METRONOME_MARK_SPANNER
@@ -1086,6 +1086,8 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
     \override TextScript.padding = #2.5                      %! OC1
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
@@ -1138,8 +1140,6 @@ K_ViolinMusicVoice = {
         
         % [K ViolinMusicVoice measure 129 / measure 3]       %! SM4
         \override RepeatTie.direction = #up                  %! OC1
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
-        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
@@ -1544,6 +1544,8 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
     \override DynamicLineSpanner.staff-padding = #'8         %! OC1
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC1
+    \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
     \override TextScript.padding = #2.5                      %! OC1
     \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
@@ -1596,8 +1598,6 @@ K_ViolaMusicVoice = {
         
         % [K ViolaMusicVoice measure 129 / measure 3]        %! SM4
         \override RepeatTie.direction = #up                  %! OC1
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
-        \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \stopStaff                                           %! SM21
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
