@@ -7,11 +7,11 @@ def triplet_rhythm():
     rhythm_maker = rmakers.TupletRhythmMaker(
         tuplet_ratios=[(1, 1, 1)],
         tuplet_specifier=rmakers.TupletSpecifier(
-            avoid_dots=True,
             denominator='divisions',
             diminution=True,
             extract_trivial=True,
             force_fraction=True,
+            rewrite_dots=True,
             trivialize=True,
             ),
         )
