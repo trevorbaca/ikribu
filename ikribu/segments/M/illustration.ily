@@ -1792,8 +1792,8 @@ M_BassClarinetMusicVoice = {
     % [M BassClarinetMusicVoice measure 177 / measure 2]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!1
-    \<                                                           %! HC1
     \p                                                           %! HC1
+    \<                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 178 / measure 3]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1805,9 +1805,9 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2
     \repeatTie
+    \fff                                                         %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 180 / measure 5]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1849,8 +1849,8 @@ M_BassClarinetMusicVoice = {
     % [M BassClarinetMusicVoice measure 185 / measure 10]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2.
-    \<                                                           %! HC1
     \p                                                           %! HC1
+    \<                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 186 / measure 11]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1862,9 +1862,9 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!2.
     \repeatTie
+    \fff                                                         %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 188 / measure 13]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1886,8 +1886,8 @@ M_BassClarinetMusicVoice = {
     % [M BassClarinetMusicVoice measure 190 / measure 15]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!1..
-    \<                                                           %! HC1
     \p                                                           %! HC1
+    \<                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 191 / measure 16]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1899,9 +1899,9 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!\breve
     \repeatTie
+    \fff                                                         %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \fff                                                         %! HC1
     
     % [M BassClarinetMusicVoice measure 193 / measure 18]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1943,8 +1943,8 @@ M_BassClarinetMusicVoice = {
     % [M BassClarinetMusicVoice measure 198 / measure 23]        %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     cs!\breve
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     
     % [M BassClarinetMusicVoice measure 199 / measure 24]        %! SM4
     cs!1..
@@ -2225,8 +2225,8 @@ M_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'2
         :32                                                  %! IC
-        \<                                                   %! HC1
         \mf                                                  %! HC1
+        \<                                                   %! HC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -2339,8 +2339,8 @@ M_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'4
         :32                                                  %! IC
-        \<                                                   %! HC1
         \mf                                                  %! HC1
+        \<                                                   %! HC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -2427,8 +2427,8 @@ M_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'1
         :32                                                  %! IC
-        \<                                                   %! HC1
         \mf                                                  %! HC1
+        \<                                                   %! HC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -2541,8 +2541,8 @@ M_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'2
         :32                                                  %! IC
-        \<                                                   %! HC1
         \mf                                                  %! HC1
+        \<                                                   %! HC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -2890,8 +2890,8 @@ M_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'4
     :32                                                      %! IC
-    \<                                                       %! HC1
     \mf                                                      %! HC1
+    \<                                                       %! HC1
     
     c'4
     -\accent                                                 %! IC
@@ -2979,8 +2979,8 @@ M_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'4
     :32                                                      %! IC
-    \<                                                       %! HC1
     \mf                                                      %! HC1
+    \<                                                       %! HC1
     
     c'4
     -\accent                                                 %! IC
@@ -3031,8 +3031,8 @@ M_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'2
         :32                                                  %! IC
-        \<                                                   %! HC1
         \mf                                                  %! HC1
+        \<                                                   %! HC1
         
         c'2
         -\accent                                             %! IC
@@ -3124,8 +3124,8 @@ M_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         c'1
         :32                                                  %! IC
-        \<                                                   %! HC1
         \mf                                                  %! HC1
+        \<                                                   %! HC1
         
         c'1
         -\accent                                             %! IC
@@ -3443,8 +3443,8 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     c,,1
-    \<                                                       %! HC1
     \mf                                                      %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -3563,8 +3563,8 @@ M_CelloMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,,2.
-    \<                                                       %! HC1
     \mf                                                      %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -3644,8 +3644,8 @@ M_CelloMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,,1..
-    \<                                                       %! HC1
     \mf                                                      %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -3764,8 +3764,8 @@ M_CelloMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c,,\breve
-    \<                                                       %! HC1
     \mf                                                      %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1

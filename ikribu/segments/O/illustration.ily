@@ -995,9 +995,9 @@ O_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c2.
     \repeatTie                                                   %! SC
+    \p                                                           %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \p                                                           %! HC1
     
     % [O BassClarinetMusicVoice measure 237 / measure 20]        %! SM4
     c1
@@ -1280,9 +1280,9 @@ O_ViolinMusicVoice = {
     <e' fs'!>2.
     :32                                                      %! IC
     \repeatTie
+    \ppppp                                                   %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \ppppp                                                   %! HC1
     
     % [O ViolinMusicVoice measure 237 / measure 20]          %! SM4
     <e' fs'!>1
@@ -1566,9 +1566,9 @@ O_ViolaMusicVoice = {
     <ef'! f'>2.
     :32                                                      %! IC
     \repeatTie
+    \ppppp                                                   %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \ppppp                                                   %! HC1
     
     % [O ViolaMusicVoice measure 237 / measure 20]           %! SM4
     <ef'! f'>1
@@ -1757,8 +1757,8 @@ O_CelloMusicVoice = {
     \ottava #-1                                              %! SC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     bf,,,!2
-    \>                                                       %! PWC1
     \mp                                                      %! PWC1
+    \>                                                       %! PWC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1

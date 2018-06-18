@@ -441,8 +441,8 @@ P_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'''2.
-    \<                                                           %! HC1
     \pp                                                          %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -495,9 +495,9 @@ P_BassClarinetMusicVoice = {
     c'''4
     \repeatTie                                                   %! TCC
     \glissando                                                   %! SC
+    \mf                                                          %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \mf                                                          %! HC1
     
     a''4
     \glissando                                                   %! SC
@@ -601,8 +601,8 @@ P_ViolinRHMusicVoice = {
         c'4
         -\downbow
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         \p                                                   %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1488,8 +1488,8 @@ P_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
-        \>                                                   %! PWC1
         \p                                                   %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2432,8 +2432,8 @@ P_CelloRHMusicVoice = {
         c'4
         -\downbow
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         \p                                                   %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat

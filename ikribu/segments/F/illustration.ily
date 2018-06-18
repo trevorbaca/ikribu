@@ -414,8 +414,8 @@ F_BassClarinetMusicVoice = {
     % [F BassClarinetMusicVoice measure 84 / measure 6]          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a1..
-    \>                                                           %! HC1
     \sfp                                                         %! HC1
+    \>                                                           %! HC1
     
     % [F BassClarinetMusicVoice measure 85 / measure 7]          %! SM4
     a\breve
@@ -567,8 +567,8 @@ F_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     <e' fs'!>1..
     :32                                                      %! IC
-    \<                                                       %! HC1
     \sfpp                                                    %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -611,9 +611,9 @@ F_ViolinMusicVoice = {
     \repeatTie
     \p                                                       %! HC1
     \stopTextSpan                                            %! PWC1
+    \p                                                       %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \p                                                       %! HC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
@@ -764,8 +764,8 @@ F_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     <ef'! f'>1..
     :32                                                      %! IC
-    \<                                                       %! HC1
     \sfpp                                                    %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -808,9 +808,9 @@ F_ViolaMusicVoice = {
     \repeatTie
     \p                                                       %! HC1
     \stopTextSpan                                            %! PWC1
+    \p                                                       %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \p                                                       %! HC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
@@ -902,8 +902,8 @@ F_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs!1
     :32                                                      %! IC
-    \<                                                       %! HC1
     \p                                                       %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1

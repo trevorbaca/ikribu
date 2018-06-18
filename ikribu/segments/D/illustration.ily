@@ -901,8 +901,8 @@ D_CelloRHMusicVoice = {
         c'4
         -\downbow
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         \ff                                                  %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
