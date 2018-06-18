@@ -1172,8 +1172,8 @@ B_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5             %! SM21
     \startStaff                                                  %! SM21
     ef!2.
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     
     % [B BassClarinetMusicVoice measure 29 / measure 20]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1185,9 +1185,9 @@ B_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     ef!2.
     \repeatTie
+    \f                                                           %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \f                                                           %! HC1
     
     % [B BassClarinetMusicVoice measure 31 / measure 22]         %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1381,8 +1381,8 @@ B_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e'1
     :32                                                      %! IC
-    \<                                                       %! HC1
     \ppp                                                     %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -1460,9 +1460,9 @@ B_ViolinMusicVoice = {
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    \p                                                       %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \p                                                       %! HC1
     
     % [B ViolinMusicVoice measure 13 / measure 4]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1493,8 +1493,8 @@ B_ViolinMusicVoice = {
     \startStaff                                              %! SM21
     e'\breve
     :32                                                      %! IC
-    \<                                                       %! HC1
     \ppp                                                     %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -1540,9 +1540,9 @@ B_ViolinMusicVoice = {
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    \p                                                       %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \p                                                       %! HC1
     
     % [B ViolinMusicVoice measure 19 / measure 10]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1573,8 +1573,8 @@ B_ViolinMusicVoice = {
     \startStaff                                              %! SM21
     e'2
     :32                                                      %! IC
-    \<                                                       %! HC1
     \ppp                                                     %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -1620,9 +1620,9 @@ B_ViolinMusicVoice = {
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    \p                                                       %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \p                                                       %! HC1
     
     % [B ViolinMusicVoice measure 25 / measure 16]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1979,8 +1979,8 @@ B_ViolaMusicVoice = {
     \startStaff                                              %! SM21
     ef'!2.
     :32                                                      %! IC
-    \<                                                       %! HC1
     \ppp                                                     %! HC1
+    \<                                                       %! HC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -2042,9 +2042,9 @@ B_ViolaMusicVoice = {
     :32                                                      %! IC
     \repeatTie
     \stopTextSpan                                            %! PWC1
+    \mf                                                      %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \mf                                                      %! HC1
     
     % [B ViolaMusicVoice measure 34 / measure 25]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3

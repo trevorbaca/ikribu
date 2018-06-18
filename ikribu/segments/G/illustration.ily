@@ -558,8 +558,8 @@ G_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     a1.
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -605,8 +605,8 @@ G_BassClarinetMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     af!1.
-    \<                                                           %! HC1
     \pp                                                          %! HC1
+    \<                                                           %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     af!4
@@ -621,8 +621,8 @@ G_BassClarinetMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     g1.
-    \<                                                           %! HC1
     \p                                                           %! HC1
+    \<                                                           %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     g4
@@ -637,8 +637,8 @@ G_BassClarinetMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     fs!1.
-    \<                                                           %! HC1
     \mf                                                          %! HC1
+    \<                                                           %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     fs!4
@@ -653,8 +653,8 @@ G_BassClarinetMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     f1.
-    \<                                                           %! HC1
     \f                                                           %! HC1
+    \<                                                           %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     f4
@@ -669,8 +669,8 @@ G_BassClarinetMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'7             %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e1.
-    \<                                                           %! HC1
     \ff                                                          %! HC1
+    \<                                                           %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     e4
@@ -1183,8 +1183,8 @@ G_CelloMusicVoice = {
     d''1..
     :32                                                      %! IC
     \glissando                                               %! SC
-    \<                                                       %! PWC1
     \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     ^ \markup {
         \column
             {

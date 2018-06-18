@@ -1471,8 +1471,8 @@ C_ViolinMusicVoice = {
     fs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \<                                                       %! HC1
     \pp                                                      %! HC1
+    \<                                                       %! HC1
     ^ \markup { "trem. flaut. tast." }                       %! IC
     
     % [C ViolinMusicVoice measure 38 / measure 4]            %! SM4
@@ -1492,8 +1492,8 @@ C_ViolinMusicVoice = {
     gs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \>                                                       %! HC1
     \p                                                       %! HC1
+    \>                                                       %! HC1
     
     % [C ViolinMusicVoice measure 42 / measure 8]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1512,8 +1512,8 @@ C_ViolinMusicVoice = {
     fs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \<                                                       %! HC1
     \pp                                                      %! HC1
+    \<                                                       %! HC1
     
     % [C ViolinMusicVoice measure 46 / measure 12]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1532,8 +1532,8 @@ C_ViolinMusicVoice = {
     gs'!1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \>                                                       %! HC1
     \p                                                       %! HC1
+    \>                                                       %! HC1
     
     % [C ViolinMusicVoice measure 50 / measure 16]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1707,8 +1707,8 @@ C_ViolaMusicVoice = {
     f'1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \<                                                       %! HC1
     \pp                                                      %! HC1
+    \<                                                       %! HC1
     ^ \markup { "trem. flaut. tast." }                       %! IC
     
     % [C ViolaMusicVoice measure 38 / measure 4]             %! SM4
@@ -1728,8 +1728,8 @@ C_ViolaMusicVoice = {
     e'1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \>                                                       %! HC1
     \p                                                       %! HC1
+    \>                                                       %! HC1
     
     % [C ViolaMusicVoice measure 42 / measure 8]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1748,8 +1748,8 @@ C_ViolaMusicVoice = {
     f'1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \<                                                       %! HC1
     \pp                                                      %! HC1
+    \<                                                       %! HC1
     
     % [C ViolaMusicVoice measure 46 / measure 12]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1768,8 +1768,8 @@ C_ViolaMusicVoice = {
     e'1
     :32                                                      %! IC
     \glissando                                               %! SC
-    \>                                                       %! HC1
     \p                                                       %! HC1
+    \>                                                       %! HC1
     
     % [C ViolaMusicVoice measure 50 / measure 16]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
@@ -1948,8 +1948,8 @@ C_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d''1
     :32                                                      %! IC
-    \<                                                       %! PWC1
     \ppp                                                     %! PWC1
+    \<                                                       %! PWC1
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1

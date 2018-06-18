@@ -2102,9 +2102,9 @@ L_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'8
     -\staccato                                               %! IC
+    \effort_mp                                               %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    \effort_mp                                               %! HC1
     [
     
     d'8
@@ -2329,8 +2329,8 @@ L_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'1
         :32                                                  %! IC
-        \<                                                   %! PWC1
         \mp                                                  %! PWC1
+        \<                                                   %! PWC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -2903,9 +2903,9 @@ L_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d'8
         -\staccato                                           %! IC
+        \effort_mp                                           %! HC1
         - \tweak circled-tip ##t                             %! HC1
         \>                                                   %! HC1
-        \effort_mp                                           %! HC1
         [
         
         c'8
@@ -3071,8 +3071,8 @@ L_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         :32                                                  %! IC
-        \>                                                   %! PWC1
         \p                                                   %! PWC1
+        \>                                                   %! PWC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -3553,8 +3553,8 @@ L_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     d4
-    \<                                                       %! PWC1
     \p                                                       %! PWC1
+    \<                                                       %! PWC1
     ^ \markup {
         \column
             {

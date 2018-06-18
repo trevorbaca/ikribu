@@ -518,8 +518,8 @@ N_ViolinRHMusicVoice = {
         c'4
         -\downbow
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         \ff                                                  %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1846,8 +1846,8 @@ N_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'4
         -\upbow
-        \>                                                   %! PWC1
         \ff                                                  %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -3323,8 +3323,8 @@ N_CelloRHMusicVoice = {
         c'4
         -\downbow
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         \ff                                                  %! PWC1
+        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat

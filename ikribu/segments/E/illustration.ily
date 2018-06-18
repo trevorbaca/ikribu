@@ -1210,8 +1210,8 @@ E_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
         c'4
         :32                                                  %! IC
-        \>                                                   %! PWC1
         \f                                                   %! PWC1
+        \>                                                   %! PWC1
         ^ \markup {
             \column
                 {
@@ -1548,8 +1548,8 @@ E_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
         c'1
         :32                                                  %! IC
-        \>                                                   %! PWC1
         \f                                                   %! PWC1
+        \>                                                   %! PWC1
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -1870,8 +1870,8 @@ E_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
     f1..
     :32                                                      %! IC
-    \<                                                       %! PWC1
     \p                                                       %! PWC1
+    \<                                                       %! PWC1
     ^ \markup { "trem. flaut. tast." }                       %! IC
     
     % [E CelloMusicVoice measure 72 / measure 10]            %! SM4

@@ -1569,8 +1569,8 @@ J_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     d,,2
     \repeatTie                                               %! TCC
-    \<                                                       %! HC1
     \p                                                       %! HC1
+    \<                                                       %! HC1
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     d,,4

@@ -344,8 +344,8 @@ A_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e\breve
-    \<                                                           %! HC1
     \ppp                                                         %! HC1
+    \<                                                           %! HC1
     ^ \markup {
         \column
             {
@@ -388,9 +388,9 @@ A_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     e1
     \repeatTie
+    \f                                                           %! HC1
     - \tweak circled-tip ##t                                     %! HC1
     \>                                                           %! HC1
-    \f                                                           %! HC1
     
     % [A BassClarinetMusicVoice measure 6 / measure 4]           %! SM4
     e1
