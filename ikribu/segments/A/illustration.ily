@@ -184,7 +184,6 @@ A_GlobalSkips = {
         }
     
     % [A GlobalSkips measure 6 / measure 4]                              %! SM4
-    \once \override Score.TimeSignature.color = #(x11-color 'DeepPink1)  %! SM6:REDUNDANT_TIME_SIGNATURE_COLOR:SM1
     s1 * 1
     ^ \markup {
         \column
