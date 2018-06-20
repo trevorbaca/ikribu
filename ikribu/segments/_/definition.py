@@ -48,7 +48,10 @@ maker(
     baca.suite(
         ikribu.margin_markup('Vn.', context='SingleStringStaffGroup'),
         baca.start_markup(
-            'Violin', context='SingleStringStaffGroup', hcenter_in=16),
+            'Violin',
+            context='SingleStringStaffGroup',
+            hcenter_in=16,
+            ),
         ),
     )
 
@@ -57,7 +60,10 @@ maker(
     baca.suite(
         ikribu.margin_markup('Va.', context='SingleStringStaffGroup'),
         baca.start_markup(
-            'Viola', context='SingleStringStaffGroup', hcenter_in=16),
+            'Viola',
+            context='SingleStringStaffGroup',
+            hcenter_in=16,
+            ),
         ),
     )
 
@@ -66,7 +72,10 @@ maker(
     baca.suite(
         ikribu.margin_markup('Vc.', context='SingleStringStaffGroup'),
         baca.start_markup(
-            'Cello', context='SingleStringStaffGroup', hcenter_in=16),
+            'Cello',
+            context='SingleStringStaffGroup',
+            hcenter_in=16,
+            ),
         ),
     )
 
