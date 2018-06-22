@@ -20,17 +20,17 @@ stage_measure_map = baca.StageMeasureMap([
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, ikribu.metronome_marks['incisions']),
-    (1, abjad.Accelerando()),
+    (1, baca.Accelerando()),
     (3, ikribu.metronome_marks['windows']),
-    (5, abjad.Ritardando()),
+    (5, baca.Ritardando()),
     (6, ikribu.metronome_marks['incisions']),
-    (8, abjad.Accelerando()),
+    (8, baca.Accelerando()),
     (10, ikribu.metronome_marks['windows']),
-    (12, abjad.Ritardando()),
+    (12, baca.Ritardando()),
     (14, ikribu.metronome_marks['incisions']),
-    (16, abjad.Accelerando()),
+    (16, baca.Accelerando()),
     (17, ikribu.metronome_marks['windows']),
-    (19, abjad.Ritardando()),
+    (19, baca.Ritardando()),
     (21, ikribu.metronome_marks['incisions']),
     ])
 
