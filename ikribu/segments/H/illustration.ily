@@ -1731,8 +1731,8 @@ H_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c''8
         \niente                                              %! SM8:REAPPLIED_DYNAMIC:SM37
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1798,8 +1798,8 @@ H_ViolinMusicVoice = {
         \glissando                                           %! SC
         
         d'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         e''8.
         \glissando                                           %! SC
@@ -1844,8 +1844,8 @@ H_ViolinMusicVoice = {
         \glissando                                           %! SC
         
         a'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         f'8.
         \glissando                                           %! SC
@@ -3276,8 +3276,8 @@ H_ViolaMusicVoice = {
         \glissando                                           %! SC
         
         f'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         a'8
         ]
@@ -3288,8 +3288,8 @@ H_ViolaMusicVoice = {
         
         % [H ViolaMusicVoice measure 101 / measure 3]        %! SM4
         g16
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         a8
         \glissando                                           %! SC
@@ -3338,8 +3338,8 @@ H_ViolaMusicVoice = {
         \glissando                                           %! SC
         
         d''8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         e'''8.
         \glissando                                           %! SC

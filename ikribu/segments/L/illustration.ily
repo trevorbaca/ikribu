@@ -1775,10 +1775,10 @@ L_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
     c'8
     -\staccato                                               %! IC
+    [
     \effort_mp                                               %! HC1
     - \tweak circled-tip ##t                                 %! HC1
     \>                                                       %! HC1
-    [
     
     d'8
     -\staccato                                               %! IC
@@ -1974,8 +1974,8 @@ L_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         b8
         -\staccato                                           %! IC
-        \!                                                   %! HC1
         ]
+        \!                                                   %! HC1
         \revert DynamicLineSpanner.staff-padding             %! OC2
         \revert Hairpin.shorten-pair                         %! OC2
     }
@@ -2569,10 +2569,10 @@ L_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
         d'8
         -\staccato                                           %! IC
+        [
         \effort_mp                                           %! HC1
         - \tweak circled-tip ##t                             %! HC1
         \>                                                   %! HC1
-        [
         
         c'8
         -\staccato                                           %! IC
@@ -2709,8 +2709,8 @@ L_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
         b8
         -\staccato                                           %! IC
-        \!                                                   %! HC1
         ]
+        \!                                                   %! HC1
         \revert DynamicLineSpanner.staff-padding             %! OC2
         \revert Hairpin.shorten-pair                         %! OC2
     }

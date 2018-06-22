@@ -2593,8 +2593,8 @@ M_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
     c'8
     -\accent                                                 %! IC
-    \fff                                                     %! HC1
     ]
+    \fff                                                     %! HC1
     
     % [M ViolaMusicVoice measure 180 / measure 5]            %! SM4
     \stopStaff                                               %! SM20

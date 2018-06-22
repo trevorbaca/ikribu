@@ -1553,8 +1553,8 @@ N_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
         c''8
         \fff                                                 %! SM8:REAPPLIED_DYNAMIC:SM37
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1624,8 +1624,8 @@ N_ViolinMusicVoice = {
         
         % [N ViolinMusicVoice measure 212 / measure 5]       %! SM4
         c''8.
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         d'8
         \glissando                                           %! SC
@@ -1677,8 +1677,8 @@ N_ViolinMusicVoice = {
         \glissando                                           %! SC
         
         a'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         f'8
         \glissando                                           %! SC
@@ -3065,8 +3065,8 @@ N_ViolaMusicVoice = {
         \glissando                                           %! SC
         
         b'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         a8.
         \glissando                                           %! SC
@@ -3089,8 +3089,8 @@ N_ViolaMusicVoice = {
         \glissando                                           %! SC
         
         d''8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         e''8
         ]
@@ -3130,8 +3130,8 @@ N_ViolaMusicVoice = {
         
         % [N ViolaMusicVoice measure 216 / measure 9]        %! SM4
         g''8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         g'8
         \glissando                                           %! SC
@@ -4470,8 +4470,8 @@ N_CelloMusicVoice = {
         \set Staff.forceClef = ##t                           %! SM8:EXPLICIT_CLEF:SM33:IC
         a,8
         \fff                                                 %! SM8:REAPPLIED_DYNAMIC:SM37
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -4542,8 +4542,8 @@ N_CelloMusicVoice = {
         
         % [N CelloMusicVoice measure 212 / measure 5]        %! SM4
         e''8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         f''8.
         \glissando                                           %! SC
@@ -4600,8 +4600,8 @@ N_CelloMusicVoice = {
         \glissando                                           %! SC
         
         e'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         f''8.
         \glissando                                           %! SC

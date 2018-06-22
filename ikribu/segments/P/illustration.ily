@@ -1247,8 +1247,8 @@ P_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c''8
         \niente                                              %! SM8:REAPPLIED_DYNAMIC:SM37
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1294,8 +1294,8 @@ P_ViolinMusicVoice = {
         \glissando                                           %! SC
         
         e''8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         f'''8
         ]
@@ -1319,8 +1319,8 @@ P_ViolinMusicVoice = {
         \glissando                                           %! SC
         
         d'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         e''8.
         \glissando                                           %! SC
@@ -2243,8 +2243,8 @@ P_ViolaMusicVoice = {
         \glissando                                           %! SC
         
         a8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         b'8.
         \glissando                                           %! SC
@@ -3066,8 +3066,8 @@ P_CelloMusicVoice = {
         \set Staff.forceClef = ##t                           %! SM8:EXPLICIT_CLEF:SM33:IC
         a,8
         \p                                                   %! SM8:REAPPLIED_DYNAMIC:SM37
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -3136,8 +3136,8 @@ P_CelloMusicVoice = {
         \glissando                                           %! SC
         
         f''8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         e'8.
         \glissando                                           %! SC
