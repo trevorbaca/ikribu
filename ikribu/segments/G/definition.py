@@ -19,7 +19,7 @@ stage_measure_map = baca.StageMeasureMap([
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
     (1, ikribu.metronome_marks['night']),
-    (1, abjad.Accelerando()),
+    (1, baca.Accelerando()),
     (11, ikribu.metronome_marks['windows']),
     ])
 
