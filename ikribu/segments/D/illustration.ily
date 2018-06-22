@@ -1920,8 +1920,8 @@ D_CelloMusicVoice = {
         \set Staff.forceClef = ##t                           %! SM8:EXPLICIT_CLEF:SM33:IC
         a,8
         \ppp                                                 %! SM8:REAPPLIED_DYNAMIC:SM37
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2005,8 +2005,8 @@ D_CelloMusicVoice = {
         \glissando                                           %! SC
         
         b8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         a8
         \glissando                                           %! SC
@@ -2061,8 +2061,8 @@ D_CelloMusicVoice = {
         
         % [D CelloMusicVoice measure 60 / measure 9]         %! SM4
         c'8
-        \glissando                                           %! SC
         [
+        \glissando                                           %! SC
         
         d8
         \glissando                                           %! SC
