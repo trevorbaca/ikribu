@@ -50,7 +50,7 @@ maker(
 maker(
     ('bcl', (6, 8)),
     baca.make_repeat_tied_notes(),
-    baca.hairpin('sfp > ppp'),
+    baca.new_hairpin('sfp > ppp'),
     baca.pitch('G2'),
     )
 
@@ -61,8 +61,8 @@ maker(
         ],
     baca.make_repeat_tied_notes(),
     baca.dls_staff_padding(4),
-    baca.hairpin('sfpp < p', selector=baca.leaves()[:2]),
-    baca.hairpin('p > niente', selector=baca.leaves()[-1:].rleak()),
+    baca.new_hairpin('sfpp < p', selector=baca.leaves()[:2]),
+    baca.new_hairpin('p >o niente', selector=baca.leaves()[-1:].rleak()),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(3.5),
     )
@@ -104,7 +104,7 @@ maker(
 maker(
     ('vc', (1, 4)),
     baca.make_repeat_tied_notes(),
-    baca.hairpin('p < ff'),
+    baca.new_hairpin('p < ff'),
     baca.pitch('F#3'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.transition(

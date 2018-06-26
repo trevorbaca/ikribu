@@ -43,8 +43,8 @@ maker(
 
 maker(
     ('bcl', (1, 2)),
-    baca.hairpin('ppp < f', selector=baca.leaves()[:2]),
-    baca.hairpin('f > niente', selector=baca.rleaves()[-4:]),
+    baca.new_hairpin('ppp < f', selector=baca.leaves()[:2]),
+    baca.new_hairpin('f >o niente', selector=baca.rleaves()[-4:]),
     baca.make_repeat_tied_notes(),
     baca.pitch('D2'),
     )

@@ -60,37 +60,37 @@ maker(
 
 maker(
     ('bcl', 1),
-    baca.hairpin('ppp < mp', selector=baca.leaves()),
+    baca.new_hairpin('ppp < mp', selector=baca.leaves()),
     baca.pitch('G2'),
     )
 
 maker(
     ('bcl', 3),
-    baca.hairpin('pp < mf', selector=baca.leaves()),
+    baca.new_hairpin('pp < mf', selector=baca.leaves()),
     baca.pitch('Gb2'),
     )
 
 maker(
     ('bcl', 5),
-    baca.hairpin('p < f', selector=baca.leaves()),
+    baca.new_hairpin('p < f', selector=baca.leaves()),
     baca.pitch('F2'),
     )
 
 maker(
     ('bcl', 7),
-    baca.hairpin('mf < ff', selector=baca.leaves()),
+    baca.new_hairpin('mf < ff', selector=baca.leaves()),
     baca.pitch('E2'),
     )
 
 maker(
     ('bcl', 9),
-    baca.hairpin('f < fff', selector=baca.leaves()),
+    baca.new_hairpin('f < fff', selector=baca.leaves()),
     baca.pitch('Eb2'),
     )
 
 maker(
     ('bcl', 11),
-    baca.hairpin('ff < ffff', selector=baca.leaves()),
+    baca.new_hairpin('ff < ffff', selector=baca.leaves()),
     baca.pitch('D2'),
     )
 

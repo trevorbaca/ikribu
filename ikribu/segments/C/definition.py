@@ -124,11 +124,11 @@ maker(
         ),
     baca.map(
         baca.runs()[abjad.index([0], 2)],
-        baca.hairpin('pp < p'),
+        baca.new_hairpin('pp < p'),
         ),
     baca.map(
         baca.runs()[abjad.index([1], 2)],
-        baca.hairpin('p > pp'),
+        baca.new_hairpin('p > pp'),
         ),
     baca.markups.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
@@ -155,11 +155,11 @@ maker(
         ),
     baca.map(
         baca.runs()[abjad.index([0], 2)],
-        baca.hairpin('pp < p'),
+        baca.new_hairpin('pp < p'),
         ),
     baca.map(
         baca.runs()[abjad.index([1], 2)],
-        baca.hairpin('p > pp'),
+        baca.new_hairpin('p > pp'),
         ),
     baca.markups.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
