@@ -475,6 +475,7 @@ F_ViolinMusicVoice = {
     :32                                                      %! IC
     \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     _ \markup { II+III }                                     %! IC
+    \<                                                       %! IC:BACA_HAIRPIN
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -506,7 +507,6 @@ F_ViolinMusicVoice = {
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
-    \<                                                       %! IC:BACA_HAIRPIN
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolinMusicVoice measure 85 / measure 7]            %! SM4
@@ -514,10 +514,10 @@ F_ViolinMusicVoice = {
     <e' fs'!>\breve
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
-    \stopTextSpan                                            %! PWC1
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
+    \repeatTie
+    \stopTextSpan                                            %! PWC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
@@ -663,6 +663,7 @@ F_ViolaMusicVoice = {
     :32                                                      %! IC
     \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     _ \markup { I+II }                                       %! IC
+    \<                                                       %! IC:BACA_HAIRPIN
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -694,7 +695,6 @@ F_ViolaMusicVoice = {
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
-    \<                                                       %! IC:BACA_HAIRPIN
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolaMusicVoice measure 85 / measure 7]             %! SM4
@@ -702,10 +702,10 @@ F_ViolaMusicVoice = {
     <ef'! f'>\breve
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
-    \stopTextSpan                                            %! PWC1
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
+    \repeatTie
+    \stopTextSpan                                            %! PWC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
@@ -808,6 +808,7 @@ F_CelloMusicVoice = {
             #(x11-color 'green4)                             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
             [“Vc.”]                                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
+    \<                                                       %! IC:BACA_HAIRPIN
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -839,7 +840,6 @@ F_CelloMusicVoice = {
             }                                                %! PWC1
         }                                                    %! PWC1
     \startTextSpan                                           %! PWC1
-    \<                                                       %! IC:BACA_HAIRPIN
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37

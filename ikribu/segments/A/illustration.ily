@@ -313,9 +313,9 @@ A_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     e1
     \f                                                           %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
     - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
     \>                                                           %! IC:BACA_HAIRPIN
+    \repeatTie
     
     % [A BassClarinetMusicVoice measure 6 / measure 4]           %! SM4
     e1

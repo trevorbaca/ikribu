@@ -776,9 +776,9 @@ O_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     c2.
     \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie                                                   %! SC
     - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
     \>                                                           %! IC:BACA_HAIRPIN
+    \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 237 / measure 20]        %! SM4
     c1
@@ -1054,9 +1054,9 @@ O_ViolinMusicVoice = {
     <e' fs'!>2.
     :32                                                      %! IC
     \ppppp                                                   %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
+    \repeatTie
     
     % [O ViolinMusicVoice measure 237 / measure 20]          %! SM4
     <e' fs'!>1
@@ -1333,9 +1333,9 @@ O_ViolaMusicVoice = {
     <ef'! f'>2.
     :32                                                      %! IC
     \ppppp                                                   %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
+    \repeatTie
     
     % [O ViolaMusicVoice measure 237 / measure 20]           %! SM4
     <ef'! f'>1

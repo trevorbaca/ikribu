@@ -1431,8 +1431,8 @@ J_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     d,,2
     \p                                                       %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie                                               %! TCC
     \<                                                       %! IC:BACA_HAIRPIN
+    \repeatTie                                               %! TCC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     d,,4
