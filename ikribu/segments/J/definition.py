@@ -143,7 +143,7 @@ maker(
 maker(
     ('vc', (2, 4)),
     baca.dynamic('p'),
-    baca.hairpin('p < mf', selector=baca.leaves()[-2:]),
+    baca.new_hairpin('p < mf', selector=baca.leaves()[-2:]),
     baca.markups.vib_poco(),
     baca.ottava_bassa(),
     baca.ottava_bracket_staff_padding(8),

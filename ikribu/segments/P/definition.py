@@ -74,8 +74,8 @@ maker(
 
 maker(
     ('bcl', (1, 5)),
-    baca.hairpin('pp < mf', selector=baca.leaves()[:4]),
-    baca.hairpin('mf > niente', selector=baca.rleaves()[4:]),
+    baca.new_hairpin('pp < mf', selector=baca.leaves()[:4]),
+    baca.new_hairpin('mf >o niente', selector=baca.rleaves()[4:]),
     )
 
 maker(

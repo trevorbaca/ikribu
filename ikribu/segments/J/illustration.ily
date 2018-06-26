@@ -1428,16 +1428,16 @@ J_CelloMusicVoice = {
     \repeatTie                                               %! TCC
     
     % [J CelloMusicVoice measure 123 / measure 8]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC2
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     d,,2
+    \p                                                       %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
     \repeatTie                                               %! TCC
-    \p                                                       %! HC1
-    \<                                                       %! HC1
+    \<                                                       %! IC:BACA_HAIRPIN
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:HC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     d,,4
+    \mf                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \repeatTie                                               %! TCC
-    \mf                                                      %! HC1
     \revert Staff.OttavaBracket.staff-padding                %! OC2
     \ottava #0                                               %! SC
     
