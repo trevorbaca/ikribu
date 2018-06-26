@@ -408,10 +408,10 @@ P_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     c'''4
     \mf                                                          %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
-    \repeatTie                                                   %! TCC
-    \glissando                                                   %! SC
     - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
     \>                                                           %! IC:BACA_HAIRPIN
+    \repeatTie                                                   %! TCC
+    \glissando                                                   %! SC
     
     a''4
     \glissando                                                   %! SC
