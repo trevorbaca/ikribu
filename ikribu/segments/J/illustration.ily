@@ -1428,9 +1428,9 @@ J_CelloMusicVoice = {
     \repeatTie                                               %! TCC
     
     % [J CelloMusicVoice measure 123 / measure 8]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     d,,2
-    \p                                                       %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     \<                                                       %! IC:BACA_HAIRPIN
     \repeatTie                                               %! TCC
     

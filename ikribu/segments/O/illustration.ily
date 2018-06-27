@@ -773,9 +773,9 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 236 / measure 19]        %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     c2.
-    \p                                                           %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
     \>                                                           %! IC:BACA_HAIRPIN
     \repeatTie                                                   %! SC
@@ -1050,10 +1050,10 @@ O_ViolinMusicVoice = {
     \repeatTie
     
     % [O ViolinMusicVoice measure 236 / measure 19]          %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     <e' fs'!>2.
     :32                                                      %! IC
-    \ppppp                                                   %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
@@ -1329,10 +1329,10 @@ O_ViolaMusicVoice = {
     \repeatTie
     
     % [O ViolaMusicVoice measure 236 / measure 19]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     <ef'! f'>2.
     :32                                                      %! IC
-    \ppppp                                                   %! SM8:REDUNDANT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
