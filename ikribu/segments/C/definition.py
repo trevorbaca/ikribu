@@ -190,12 +190,8 @@ maker(
         exact=True,
         ),
     baca.hairpin_indicator_chain(
-        [
-            (abjad.Dynamic('ppp'), abjad.DynamicTrend('<')),
-            (abjad.Dynamic('pp'), abjad.DynamicTrend('>')),
-            ],
-        bookend=True,
-        pieces=baca.tleaves().enchain([2]),
+        'ppp < pp >',
+        pieces=baca.group_notes_by_measures(),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.transition(
