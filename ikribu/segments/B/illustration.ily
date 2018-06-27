@@ -937,6 +937,7 @@ B_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
     ef!2.
     \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                      %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
     \>                                                           %! IC:BACA_HAIRPIN
     \repeatTie
@@ -1204,6 +1205,7 @@ B_ViolinMusicVoice = {
     e'2.
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
@@ -1284,6 +1286,7 @@ B_ViolinMusicVoice = {
     e'1
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
@@ -1364,6 +1367,7 @@ B_ViolinMusicVoice = {
     e'2.
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
@@ -1779,6 +1783,7 @@ B_ViolaMusicVoice = {
     ef'!\breve
     :32                                                      %! IC
     \mf                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
