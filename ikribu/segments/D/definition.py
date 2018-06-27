@@ -67,7 +67,7 @@ maker(
     baca.dls_staff_padding(9),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('ff p f pp p ppp'),
+        baca.make_dynamics('ff p f pp p ppp'),
         baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,
         ),

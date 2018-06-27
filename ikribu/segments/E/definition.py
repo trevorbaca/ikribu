@@ -117,7 +117,7 @@ maker(
     baca.markups.markup('sponges on BD').boxed(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('f p'),
+        baca.make_dynamics('f p'),
         baca.runs().map(baca.enchain([4, 3])).flatten(),
         bookend=True,
         ),
@@ -139,7 +139,7 @@ maker(
     baca.markups.trem_flaut_tast(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('p mp'),
+        baca.make_dynamics('p mp'),
         baca.tleaves().enchain([2]),
         bookend=True,
         ),
