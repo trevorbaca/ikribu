@@ -1038,10 +1038,11 @@ E_ViolinMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue) %! SM6:EXPLICIT_CLEF_COLOR:IC
     %@% \override Staff.Clef.color = ##f                     %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
         \set Staff.forceClef = ##t                           %! SM8:EXPLICIT_CLEF:SM33:IC
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
         c'4
         :32                                                  %! IC
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
                 #(x11-color 'green4)                         %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1058,8 +1059,7 @@ E_ViolinMusicVoice = {
                 \box                                         %! IC
                     "sponges on BD"                          %! IC
             }                                                %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
+        \>                                                   %! PIC
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
         \set SingleStringStaffGroup.instrumentName =         %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
         \markup {                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1085,19 +1085,19 @@ E_ViolinMusicVoice = {
     \times 7/12 {
         
         % [E ViolinMusicVoice measure 64 / measure 2]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
+        \<                                                   %! PIC
         
         c'1
         :32                                                  %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
     }
     
     % [E ViolinMusicVoice measure 65 / measure 3]            %! SM4
@@ -1107,11 +1107,11 @@ E_ViolinMusicVoice = {
     R1 * 1
     
     % [E ViolinMusicVoice measure 67 / measure 5]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                 %! IC
-    \f                                                       %! PWC1
-    \>                                                       %! PWC1
+    \>                                                       %! PIC
     
     c'4
     -\accent                                                 %! IC
@@ -1122,19 +1122,19 @@ E_ViolinMusicVoice = {
     \times 4/6 {
         
         % [E ViolinMusicVoice measure 68 / measure 6]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'2
         :32                                                  %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                   %! PIC
         
         c'2
         -\accent                                             %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'2
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
     }
     
     % [E ViolinMusicVoice measure 69 / measure 7]            %! SM4
@@ -1146,11 +1146,11 @@ E_ViolinMusicVoice = {
     \times 7/12 {
         
         % [E ViolinMusicVoice measure 71 / measure 9]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
+        \>                                                   %! PIC
         
         c'1
         :32                                                  %! IC
@@ -1162,19 +1162,19 @@ E_ViolinMusicVoice = {
     \times 8/12 {
         
         % [E ViolinMusicVoice measure 72 / measure 10]       %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
+        \<                                                   %! PIC
         
         c'1
         -\accent                                             %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
     }
     
     % [E ViolinMusicVoice measure 73 / measure 11]           %! SM4
@@ -1184,11 +1184,11 @@ E_ViolinMusicVoice = {
     R1 * 7/4
     
     % [E ViolinMusicVoice measure 75 / measure 13]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     :32                                                      %! IC
-    \f                                                       %! PWC1
-    \>                                                       %! PWC1
+    \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     
     c'4
     -\accent                                                 %! IC
@@ -1199,19 +1199,19 @@ E_ViolinMusicVoice = {
     \times 2/3 {
         
         % [E ViolinMusicVoice measure 76 / measure 14]       %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
+        \<                                                   %! PIC
         
         c'4
         :32                                                  %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
     }
     
     % [E ViolinMusicVoice measure 77 / measure 15]           %! SM4
@@ -1362,17 +1362,17 @@ E_ViolaMusicVoice = {
     \times 7/12 {
         
         % [E ViolaMusicVoice measure 64 / measure 2]         %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
         :32                                                  %! IC
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
                 \box                                         %! IC
                     "sponges on BD"                          %! IC
             }                                                %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
+        \>                                                   %! PIC
         
         c'1
         -\accent                                             %! IC
@@ -1382,19 +1382,19 @@ E_ViolaMusicVoice = {
     }
     
     % [E ViolaMusicVoice measure 65 / measure 3]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                 %! IC
-    \p                                                       %! PWC1
-    \<                                                       %! PWC1
+    \<                                                       %! PIC
     
     c'4
     :32                                                      %! IC
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                 %! IC
-    \f                                                       %! PWC1
     
     % [E ViolaMusicVoice measure 66 / measure 4]             %! SM4
     R1 * 1
@@ -1405,11 +1405,11 @@ E_ViolaMusicVoice = {
     \times 4/6 {
         
         % [E ViolaMusicVoice measure 68 / measure 6]         %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'2
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
+        \>                                                   %! PIC
         
         c'2
         -\accent                                             %! IC
@@ -1419,19 +1419,19 @@ E_ViolaMusicVoice = {
     }
     
     % [E ViolaMusicVoice measure 69 / measure 7]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     :32                                                      %! IC
-    \p                                                       %! PWC1
-    \<                                                       %! PWC1
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     
     c'4
     -\accent                                                 %! IC
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                 %! IC
-    \f                                                       %! PWC1
     
     % [E ViolaMusicVoice measure 70 / measure 8]             %! SM4
     R1 * 1/2
@@ -1442,11 +1442,11 @@ E_ViolaMusicVoice = {
     \times 8/12 {
         
         % [E ViolaMusicVoice measure 72 / measure 10]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
+        \>                                                   %! PIC
         
         c'1
         :32                                                  %! IC
@@ -1458,19 +1458,19 @@ E_ViolaMusicVoice = {
     \times 7/12 {
         
         % [E ViolaMusicVoice measure 73 / measure 11]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
+        \<                                                   %! PIC
         
         c'1
         -\accent                                             %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
     }
     
     % [E ViolaMusicVoice measure 74 / measure 12]            %! SM4
@@ -1482,11 +1482,11 @@ E_ViolaMusicVoice = {
     \times 2/3 {
         
         % [E ViolaMusicVoice measure 76 / measure 14]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         :32                                                  %! IC
-        \f                                                   %! PWC1
-        \>                                                   %! PWC1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                   %! PIC
         
         c'4
         -\accent                                             %! IC
@@ -1498,19 +1498,19 @@ E_ViolaMusicVoice = {
     \times 7/12 {
         
         % [E ViolaMusicVoice measure 77 / measure 15]        %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \p                                                   %! PWC1
-        \<                                                   %! PWC1
+        \<                                                   %! PIC
         
         c'1
         :32                                                  %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                             %! IC
-        \f                                                   %! PWC1
     }
     
     % [E ViolaMusicVoice measure 78 / measure 16]            %! SM4
@@ -1677,66 +1677,66 @@ E_CelloMusicVoice = {
     % [E CelloMusicVoice measure 71 / measure 9]             %! SM4
     \override DynamicLineSpanner.staff-padding = #'4         %! OC1
     \override TextScript.staff-padding = #2.5                %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f1..
     :32                                                      %! IC
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "trem. flaut. tast." }                       %! IC
-    \p                                                       %! PWC1
-    \<                                                       %! PWC1
+    \<                                                       %! PIC
     
     % [E CelloMusicVoice measure 72 / measure 10]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f\breve
     :32                                                      %! IC
+    \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
-    \mp                                                      %! PWC1
-    \>                                                       %! PWC1
     
     % [E CelloMusicVoice measure 73 / measure 11]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f1..
     :32                                                      %! IC
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
-    \p                                                       %! PWC1
-    \<                                                       %! PWC1
     
     % [E CelloMusicVoice measure 74 / measure 12]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f1..
     :32                                                      %! IC
+    \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
-    \mp                                                      %! PWC1
-    \>                                                       %! PWC1
     
     % [E CelloMusicVoice measure 75 / measure 13]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fqs!2.
     :32                                                      %! IC
-    \p                                                       %! PWC1
-    \<                                                       %! PWC1
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     
     % [E CelloMusicVoice measure 76 / measure 14]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fqs!2
     :32                                                      %! IC
+    \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
-    \mp                                                      %! PWC1
-    \>                                                       %! PWC1
     
     % [E CelloMusicVoice measure 77 / measure 15]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fqs!1..
     :32                                                      %! IC
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
-    \p                                                       %! PWC1
-    \<                                                       %! PWC1
     
     % [E CelloMusicVoice measure 78 / measure 16]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fqs!\breve
     :32                                                      %! IC
+    \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \mp                                                      %! PWC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextScript.staff-padding                         %! OC2
     

@@ -115,11 +115,10 @@ maker(
     baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markups.markup('sponges on BD').boxed(),
-    baca.piecewise(
-        abjad.Hairpin(),
-        baca.make_dynamics('f p'),
-        baca.runs().map(baca.enchain([4, 3])).flatten(),
+    baca.hairpin_chain(
+        'f > p <',
         bookend=True,
+        piece_selector=baca.runs().map(baca.enchain([4, 3])).flatten(),
         ),
     baca.staff_lines(1),
     baca.staff_position(0),
@@ -137,11 +136,9 @@ maker(
     ('vc', (9, 16)),
     baca.dls_staff_padding(4),
     baca.markups.trem_flaut_tast(),
-    baca.piecewise(
-        abjad.Hairpin(),
-        baca.make_dynamics('p mp'),
-        baca.tleaves().enchain([2]),
-        bookend=True,
+    baca.hairpin_chain(
+        'p < mp >',
+        piece_selector=baca.group_by_measures(),
         ),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
