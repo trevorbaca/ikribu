@@ -98,11 +98,9 @@ maker(
     ('vc', (1, 12)),
     baca.dls_staff_padding(7),
     baca.glissando(),
-    baca.piecewise(
-        abjad.Hairpin(),
-        baca.make_dynamics('ppp pp'),
-        baca.tleaves().enchain([2]),
-        bookend=True,
+    baca.hairpin_chain(
+        'ppp < pp >',
+        piece_selector=baca.group_by_measures(),
         ),
     baca.markup(
         baca.markups.string_number(3),
