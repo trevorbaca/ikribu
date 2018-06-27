@@ -67,7 +67,7 @@ maker(
     baca.markups.markup('sponges on BD').boxed(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
+        baca.make_dynamics('mp mf mp f mf f mf ff f ff f fff ff'),
         baca.tleaves().enchain([4]),
         bookend=True,
         ),
@@ -106,7 +106,7 @@ maker(
     baca.markups.markup('sponges on BD').boxed(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics(
+        baca.make_dynamics(
             'p pp p pp mp p mp p mf mp mf mp f mf f mf ff f ff f fff',
             ),
         baca.tleaves().enchain([4]),
@@ -129,7 +129,7 @@ maker(
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('p f'),
+        baca.make_dynamics('p f'),
         baca.notes().group_by_measure(),
         ),
     baca.staff_position(0),

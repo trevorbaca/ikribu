@@ -89,7 +89,7 @@ maker(
     baca.markups.half_clt().boxed(),
     baca.piecewise(
         abjad.Hairpin(),
-        baca.dynamics('ff p f pp p ppp'),
+        baca.make_dynamics('ff p f pp p ppp'),
         baca.runs().map(baca.enchain([3, 4])).flatten(),
         bookend=True,
         ),
