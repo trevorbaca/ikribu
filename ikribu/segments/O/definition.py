@@ -180,11 +180,9 @@ maker(
     ('vc', (1, 20)),
     baca.clef('bass'),
     baca.ottava_bassa(),
-    baca.piecewise(
-        abjad.Hairpin(),
-        baca.make_dynamics('mp p'),
-        baca.runs().tleaves().enchain([2]),
-        bookend=True,
+    baca.hairpin_chain(
+        'mp > p <',
+        piece_selector=baca.group_by_measures(),
         ),
     baca.pitch('Bb0'),
     baca.text_spanner_staff_padding(2.5),

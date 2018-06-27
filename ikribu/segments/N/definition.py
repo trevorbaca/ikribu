@@ -121,11 +121,10 @@ maker(
         ('vc_rh', (1, 2)),
         ],
     baca.markups.half_clt().boxed(),
-    baca.piecewise(
-        abjad.Hairpin(),
-        baca.make_dynamics('ff p f pp p ppp'),
-        baca.runs().map(baca.enchain([3, 4])).flatten(),
+    baca.hairpin_chain(
+        'ff > p < f > pp < p > ppp <',
         bookend=True,
+        piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),
         ),
     baca.repeat_tie_up(),
     baca.staff_position(0),
