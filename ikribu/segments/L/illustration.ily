@@ -1776,6 +1776,7 @@ L_ViolinMusicVoice = {
     c'8
     \effort_mp                                               %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
     -\staccato                                               %! IC
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     [
@@ -2570,6 +2571,7 @@ L_ViolaMusicVoice = {
         d'8
         \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
         -\staccato                                           %! IC
+        - \tweak to-barline ##t                              %! IC:BACA_HAIRPIN
         - \tweak circled-tip ##t                             %! IC:BACA_HAIRPIN
         \>                                                   %! IC:BACA_HAIRPIN
         [

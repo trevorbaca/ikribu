@@ -514,6 +514,7 @@ F_ViolinMusicVoice = {
     <e' fs'!>\breve
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
@@ -702,6 +703,7 @@ F_ViolaMusicVoice = {
     <ef'! f'>\breve
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
     - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
     \>                                                       %! IC:BACA_HAIRPIN
     \repeatTie
