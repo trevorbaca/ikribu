@@ -19,6 +19,11 @@ def glissando_rhythm(rotation_1=None, rotation_2=None):
         tie_specifier=rmakers.TieSpecifier(
             strip_ties=True,
             ),
+        tuplet_specifier=rmakers.TupletSpecifier(
+            denominator=(1, 8),
+            extract_trivial=True,
+            force_fraction=True,
+            ),
         )
     return baca.rhythm(
         rhythm_maker=rhythm_maker,

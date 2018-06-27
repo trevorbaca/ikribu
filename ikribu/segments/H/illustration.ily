@@ -578,184 +578,181 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/7 {
-        
-        % [H ViolinRHMusicVoice measure 100 / measure 2]     %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \pp                                                  %! PWC1
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+    
+    % [H ViolinRHMusicVoice measure 100 / measure 2]         %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\upbow
+    \pp                                                      %! PWC1
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        r4
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    r4
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \pp                                                  %! PWC1
-        \stopBCPTextSpan
-        \<                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak dash-period 0
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \pp                                                      %! PWC1
+    \stopBCPTextSpan
+    \<                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        c'4
-        -\upbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    c'4
+    -\upbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \p                                                   %! PWC1
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \p                                                       %! PWC1
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        r4
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    r4
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \p                                                   %! PWC1
-        \stopBCPTextSpan
-        \>                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak dash-period 0
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\upbow
+    \p                                                       %! PWC1
+    \stopBCPTextSpan
+    \>                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
@@ -1083,238 +1080,233 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
+    
+    % [H ViolinRHMusicVoice measure 103 / measure 5]         %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \pp                                                      %! PWC1
+    \stopBCPTextSpan
+    \<                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    c'4
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    4
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    % [H ViolinRHMusicVoice measure 104 / measure 6]         %! SM4
+    c'4
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    5
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    \p                                                       %! PWC1
+    \stopBCPTextSpan
+    \>                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    6
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\upbow
+    \ppp                                                     %! PWC1
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    r4
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    6
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak dash-period 0
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \ppp                                                     %! PWC1
+    \stopBCPTextSpan
+    \<                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    6
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    c'4
+    -\upbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \ff                                                      %! PWC1
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
     \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [H ViolinRHMusicVoice measure 103 / measure 5]     %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \pp                                                  %! PWC1
-        \stopBCPTextSpan
-        \<                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        c'4
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        4
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/7 {
-        
-        % [H ViolinRHMusicVoice measure 104 / measure 6]     %! SM4
-        c'4
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        5
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \p                                                   %! PWC1
-        \stopBCPTextSpan
-        \>                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \ppp                                                 %! PWC1
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        r4
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ppp                                                 %! PWC1
-        \stopBCPTextSpan
-        \<                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        c'4
-        -\upbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ff                                                  %! PWC1
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
     \times 8/9 {
         
         % [H ViolinRHMusicVoice measure 105 / measure 7]     %! SM4
@@ -1538,6 +1530,7 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
         % [H ViolinRHMusicVoice measure 106 / measure 8]     %! SM4
@@ -1704,6 +1697,7 @@ H_ViolinRHMusicStaff = {
 
 
 H_ViolinMusicVoice = {
+    \tweak text #tuplet-number::calc-fraction-text
     \times 16/17 {
         
         % [H ViolinMusicVoice measure 99 / measure 1]        %! SM4
@@ -1778,7 +1772,7 @@ H_ViolinMusicVoice = {
         \glissando                                           %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 14/16 {
         
         % [H ViolinMusicVoice measure 100 / measure 2]       %! SM4
         f'''4.
@@ -1790,30 +1784,27 @@ H_ViolinMusicVoice = {
         d''2.
         \glissando                                           %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ViolinMusicVoice measure 101 / measure 3]       %! SM4
-        c''4
-        \glissando                                           %! SC
-        
-        d'8
-        [
-        \glissando                                           %! SC
-        
-        e''8.
-        \glissando                                           %! SC
-        
-        d''8
-        \glissando                                           %! SC
-        
-        f''8.
-        ]
-        \glissando                                           %! SC
-        
-        f'2..
-        \glissando                                           %! SC
-    }
+    
+    % [H ViolinMusicVoice measure 101 / measure 3]           %! SM4
+    c''4
+    \glissando                                               %! SC
+    
+    d'8
+    [
+    \glissando                                               %! SC
+    
+    e''8.
+    \glissando                                               %! SC
+    
+    d''8
+    \glissando                                               %! SC
+    
+    f''8.
+    ]
+    \glissando                                               %! SC
+    
+    f'2..
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
@@ -1821,7 +1812,8 @@ H_ViolinMusicVoice = {
         a'2..
         \glissando                                           %! SC
     }
-    \times 2/3 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 4/6 {
         
         % [H ViolinMusicVoice measure 103 / measure 5]       %! SM4
         g8
@@ -1833,30 +1825,28 @@ H_ViolinMusicVoice = {
         b'8
         \glissando                                           %! SC
     }
+    
+    % [H ViolinMusicVoice measure 104 / measure 6]           %! SM4
+    a4
+    \glissando                                               %! SC
+    
+    g1
+    \glissando                                               %! SC
+    
+    a'8
+    [
+    \glissando                                               %! SC
+    
+    f'8.
+    \glissando                                               %! SC
+    
+    f''8
+    \glissando                                               %! SC
+    
+    d''16
+    ]
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ViolinMusicVoice measure 104 / measure 6]       %! SM4
-        a4
-        \glissando                                           %! SC
-        
-        g1
-        \glissando                                           %! SC
-        
-        a'8
-        [
-        \glissando                                           %! SC
-        
-        f'8.
-        \glissando                                           %! SC
-        
-        f''8
-        \glissando                                           %! SC
-        
-        d''16
-        ]
-        \glissando                                           %! SC
-    }
     \times 16/17 {
         
         % [H ViolinMusicVoice measure 105 / measure 7]       %! SM4
@@ -1872,7 +1862,8 @@ H_ViolinMusicVoice = {
         d''8
         \glissando                                           %! SC
     }
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 8/10 {
         
         % [H ViolinMusicVoice measure 106 / measure 8]       %! SM4
         e'''2.
@@ -1898,232 +1889,229 @@ H_ViolinMusicStaff = {
 
 
 H_ViolaRHMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/8 {
-        
-        % [H ViolaRHMusicVoice measure 99 / measure 1]       %! SM4
-        \stopStaff                                           %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \once \override RHStaff.StaffSymbol.line-count = 1   %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \startStaff                                          %! SM8:REAPPLIED_STAFF_LINES:SM37
-        \override DynamicLineSpanner.staff-padding = #'10    %! OC1
-        \override RepeatTie.direction = #up                  %! OC1
-        \override Script.staff-padding = #7                  %! OC1
-        \override TextScript.staff-padding = #8              %! OC1
-        \override TextSpanner.staff-padding = #4             %! OC1
-        \clef "percussion"                                   %! SM8:REAPPLIED_CLEF:SM37
-        \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override RHStaff.Clef.color = ##f                   %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set RHStaff.forceClef = ##t                         %! SM8:REAPPLIED_CLEF:SM33:SM37
-        \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        ^ \markup {                                          %! IC
-            \override                                        %! IC
-                #'(box-padding . 0.5)                        %! IC
-                \box                                         %! IC
-                    "1/2 clt"                                %! IC
-            }                                                %! IC
-        \ff                                                  %! PWC1
-        \>                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+    
+    % [H ViolaRHMusicVoice measure 99 / measure 1]           %! SM4
+    \stopStaff                                               %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \once \override RHStaff.StaffSymbol.line-count = 1       %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \startStaff                                              %! SM8:REAPPLIED_STAFF_LINES:SM37
+    \override DynamicLineSpanner.staff-padding = #'10        %! OC1
+    \override RepeatTie.direction = #up                      %! OC1
+    \override Script.staff-padding = #7                      %! OC1
+    \override TextScript.staff-padding = #8                  %! OC1
+    \override TextSpanner.staff-padding = #4                 %! OC1
+    \clef "percussion"                                       %! SM8:REAPPLIED_CLEF:SM37
+    \once \override RHStaff.Clef.color = #(x11-color 'green4) %! SM6:REAPPLIED_CLEF_COLOR:SM37
+%@% \override RHStaff.Clef.color = ##f                       %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
+    \set RHStaff.forceClef = ##t                             %! SM8:REAPPLIED_CLEF:SM33:SM37
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\upbow
+    ^ \markup {                                              %! IC
+        \override                                            %! IC
+            #'(box-padding . 0.5)                            %! IC
+            \box                                             %! IC
+                "1/2 clt"                                    %! IC
+        }                                                    %! IC
+    \ff                                                      %! PWC1
+    \>                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
-        
-        c'4
-        -\downbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    
+    c'4
+    -\downbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \p                                                   %! PWC1
-        \stopBCPTextSpan
-        \<                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\upbow
+    \p                                                       %! PWC1
+    \stopBCPTextSpan
+    \<                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \f                                                   %! PWC1
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \f                                                       %! PWC1
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        r4
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    r4
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\upbow
-        \f                                                   %! PWC1
-        \stopBCPTextSpan
-        \>                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak dash-period 0
+    - \tweak bound-details.left-broken.text ##f
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 1.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\upbow
+    \f                                                       %! PWC1
+    \stopBCPTextSpan
+    \>                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        c'4
-        -\downbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    c'4
+    -\downbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        \pp                                                  %! PWC1
-        \stopBCPTextSpan
-        \<                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        4
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    \pp                                                      %! PWC1
+    \stopBCPTextSpan
+    \<                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    4
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
@@ -2608,61 +2596,58 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [H ViolaRHMusicVoice measure 103 / measure 5]      %! SM4
-        c'4
-        -\upbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
+    
+    % [H ViolaRHMusicVoice measure 103 / measure 5]          %! SM4
+    c'4
+    -\upbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
-        c'4
-        -\downbow
-        \ppp                                                 %! PWC1
-        \stopBCPTextSpan
-        \<                                                   %! PWC1
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    c'4
+    -\downbow
+    \ppp                                                     %! PWC1
+    \stopBCPTextSpan
+    \<                                                       %! PWC1
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
@@ -2862,6 +2847,7 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
         % [H ViolaRHMusicVoice measure 105 / measure 7]      %! SM4
@@ -3206,7 +3192,8 @@ H_ViolaRHMusicStaff = {
 
 
 H_ViolaMusicVoice = {
-    \times 8/9 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 16/18 {
         
         % [H ViolaMusicVoice measure 99 / measure 1]         %! SM4
         \set SingleStringStaffGroup.instrumentName =         %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -3265,24 +3252,21 @@ H_ViolaMusicVoice = {
         e''4.
         \glissando                                           %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ViolaMusicVoice measure 100 / measure 2]        %! SM4
-        d''2
-        \glissando                                           %! SC
-        
-        f''1
-        \glissando                                           %! SC
-        
-        f'8
-        [
-        \glissando                                           %! SC
-        
-        a'8
-        ]
-        \glissando                                           %! SC
-    }
+    
+    % [H ViolaMusicVoice measure 100 / measure 2]            %! SM4
+    d''2
+    \glissando                                               %! SC
+    
+    f''1
+    \glissando                                               %! SC
+    
+    f'8
+    [
+    \glissando                                               %! SC
+    
+    a'8
+    ]
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
@@ -3308,7 +3292,7 @@ H_ViolaMusicVoice = {
         \glissando                                           %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 6/8 {
         
         % [H ViolaMusicVoice measure 102 / measure 4]        %! SM4
         f'4.
@@ -3320,16 +3304,13 @@ H_ViolaMusicVoice = {
         d''8
         \glissando                                           %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ViolaMusicVoice measure 103 / measure 5]        %! SM4
-        e''4
-        \glissando                                           %! SC
-        
-        d'4
-        \glissando                                           %! SC
-    }
+    
+    % [H ViolaMusicVoice measure 103 / measure 5]            %! SM4
+    e''4
+    \glissando                                               %! SC
+    
+    d'4
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
@@ -3354,7 +3335,8 @@ H_ViolaMusicVoice = {
         g''2
         \glissando                                           %! SC
     }
-    \times 8/9 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 16/18 {
         
         % [H ViolaMusicVoice measure 105 / measure 7]        %! SM4
         g'4.
@@ -3366,12 +3348,9 @@ H_ViolaMusicVoice = {
         a'2..
         \glissando                                           %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [H ViolaMusicVoice measure 106 / measure 8]        %! SM4
-        b''1
-    }
+    
+    % [H ViolaMusicVoice measure 106 / measure 8]            %! SM4
+    b''1
     
     % [H ViolaMusicVoice measure 107 / measure 9]            %! SM4
     \stopStaff                                               %! SM20

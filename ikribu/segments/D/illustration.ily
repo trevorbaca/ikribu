@@ -855,6 +855,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
+    \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
         % [D CelloRHMusicVoice measure 53 / measure 2]       %! SM4
@@ -1084,60 +1085,57 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
-        
-        % [D CelloRHMusicVoice measure 55 / measure 4]       %! SM4
-        c'4
-        -\downbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        7
-                    \hspace
-                        #0.25
-                }
+    
+    % [D CelloRHMusicVoice measure 55 / measure 4]           %! SM4
+    c'4
+    -\downbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-        c'4
-        \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                   %! PIC
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        4
-                        7
-                    \hspace
-                        #0.25
-                }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    c'4
+    \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    4
+                    7
+                \hspace
+                    #0.25
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
@@ -1545,85 +1543,83 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
     }
+    
+    % [D CelloRHMusicVoice measure 59 / measure 8]           %! SM4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    c'4
+    \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
+    -\downbow
+    \<                                                       %! PIC
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    6
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    c'4
+    -\upbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    7
+                    7
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
+    
+    c'4
+    -\downbow
+    \stopBCPTextSpan
+    - \tweak Y-extent ##f
+    - \tweak bound-details.left.text \markup {
+        \concat
+            {
+                \fraction
+                    0
+                    4
+                \hspace
+                    #0.25
+            }
+        }
+    - \tweak arrow-width 0.25
+    - \tweak dash-fraction 1
+    - \tweak bound-details.left.stencil-align-dir-y #center
+    - \tweak bound-details.right.arrow ##t
+    - \tweak bound-details.right-broken.padding 0
+    - \tweak bound-details.right-broken.text ##f
+    - \tweak bound-details.right.padding 0.5
+    - \tweak bound-details.right.stencil-align-dir-y #center
+    \startBCPTextSpan
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/3 {
-        
-        % [D CelloRHMusicVoice measure 59 / measure 8]       %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-        c'4
-        \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
-        \<                                                   %! PIC
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        6
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        c'4
-        -\upbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        7
-                        7
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-        
-        c'4
-        -\downbow
-        \stopBCPTextSpan
-        - \tweak Y-extent ##f
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \fraction
-                        0
-                        4
-                    \hspace
-                        #0.25
-                }
-            }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
-        \startBCPTextSpan
-    }
     \times 4/5 {
         
         % [D CelloRHMusicVoice measure 60 / measure 9]       %! SM4
@@ -1960,7 +1956,8 @@ D_CelloMusicVoice = {
         f'4
         \glissando                                           %! SC
     }
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 8/10 {
         
         % [D CelloMusicVoice measure 53 / measure 2]         %! SM4
         d'2
@@ -1975,19 +1972,17 @@ D_CelloMusicVoice = {
         c'8
         \glissando                                           %! SC
     }
+    
+    % [D CelloMusicVoice measure 54 / measure 3]             %! SM4
+    d'4.
+    \glissando                                               %! SC
+    
+    e''2
+    \glissando                                               %! SC
+    
+    f''8
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D CelloMusicVoice measure 54 / measure 3]         %! SM4
-        d'4.
-        \glissando                                           %! SC
-        
-        e''2
-        \glissando                                           %! SC
-        
-        f''8
-        \glissando                                           %! SC
-    }
     \times 4/5 {
         
         % [D CelloMusicVoice measure 55 / measure 4]         %! SM4
@@ -1998,7 +1993,7 @@ D_CelloMusicVoice = {
         \glissando                                           %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 14/16 {
         
         % [D CelloMusicVoice measure 56 / measure 5]         %! SM4
         g2
@@ -2024,19 +2019,17 @@ D_CelloMusicVoice = {
         a2.
         \glissando                                           %! SC
     }
+    
+    % [D CelloMusicVoice measure 57 / measure 6]             %! SM4
+    b8
+    \glissando                                               %! SC
+    
+    g2
+    \glissando                                               %! SC
+    
+    g'8
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D CelloMusicVoice measure 57 / measure 6]         %! SM4
-        b8
-        \glissando                                           %! SC
-        
-        g2
-        \glissando                                           %! SC
-        
-        g'8
-        \glissando                                           %! SC
-    }
     \times 8/9 {
         
         % [D CelloMusicVoice measure 58 / measure 7]         %! SM4
@@ -2047,7 +2040,7 @@ D_CelloMusicVoice = {
         \glissando                                           %! SC
     }
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 6/8 {
         
         % [D CelloMusicVoice measure 59 / measure 8]         %! SM4
         e''8
@@ -2056,30 +2049,27 @@ D_CelloMusicVoice = {
         d'2..
         \glissando                                           %! SC
     }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
-        
-        % [D CelloMusicVoice measure 60 / measure 9]         %! SM4
-        c'8
-        [
-        \glissando                                           %! SC
-        
-        d8
-        \glissando                                           %! SC
-        
-        e'8.
-        \glissando                                           %! SC
-        
-        d'8
-        \glissando                                           %! SC
-        
-        f'8.
-        ]
-        \glissando                                           %! SC
-        
-        f4
-        \glissando                                           %! SC
-    }
+    
+    % [D CelloMusicVoice measure 60 / measure 9]             %! SM4
+    c'8
+    [
+    \glissando                                               %! SC
+    
+    d8
+    \glissando                                               %! SC
+    
+    e'8.
+    \glissando                                               %! SC
+    
+    d'8
+    \glissando                                               %! SC
+    
+    f'8.
+    ]
+    \glissando                                               %! SC
+    
+    f4
+    \glissando                                               %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         

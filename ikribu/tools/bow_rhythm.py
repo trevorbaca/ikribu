@@ -15,5 +15,9 @@ def bow_rhythm(
         denominators=[4],
         extra_counts_per_division=extra_counts_per_division,
         logical_tie_masks=logical_tie_masks,
+        tuplet_specifier=rmakers.TupletSpecifier(
+            extract_trivial=True,
+            force_fraction=True,
+            ),
         )
     return baca.rhythm(rhythm_maker=rhythm_maker)
