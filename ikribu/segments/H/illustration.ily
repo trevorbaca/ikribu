@@ -422,8 +422,9 @@ H_ViolinRHMusicVoice = {
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         ^ \markup {                                          %! IC
             \override                                        %! IC
@@ -431,9 +432,8 @@ H_ViolinRHMusicVoice = {
                 \box                                         %! IC
                     "1/2 clt"                                %! IC
             }                                                %! IC
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \ff                                                  %! PWC1
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -478,11 +478,11 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \p                                                   %! PWC1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -551,12 +551,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \f                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -580,10 +580,10 @@ H_ViolinRHMusicVoice = {
     }
     
     % [H ViolinRHMusicVoice measure 100 / measure 2]         %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
-    \pp                                                      %! PWC1
     \stopBCPTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
@@ -628,12 +628,12 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \pp                                                      %! PWC1
+    \<                                                       %! PIC
     \stopBCPTextSpan
-    \<                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -679,10 +679,10 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \p                                                       %! PWC1
     \stopBCPTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
@@ -727,12 +727,12 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
-    \p                                                       %! PWC1
+    \>                                                       %! PIC
     \stopBCPTextSpan
-    \>                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -781,11 +781,11 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \ppp                                                 %! PWC1
+        \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -853,12 +853,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \ff                                                  %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -880,10 +880,10 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \p                                                   %! PWC1
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -928,12 +928,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \p                                                   %! PWC1
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -983,9 +983,9 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \f                                                   %! PWC1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1030,12 +1030,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \f                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1082,12 +1082,12 @@ H_ViolinRHMusicVoice = {
     }
     
     % [H ViolinRHMusicVoice measure 103 / measure 5]         %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \pp                                                      %! PWC1
+    \<                                                       %! PIC
     \stopBCPTextSpan
-    \<                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -1156,11 +1156,11 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
-    \p                                                       %! PWC1
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \stopBCPTextSpan
-    \>                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -1182,10 +1182,10 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
-    \ppp                                                     %! PWC1
     \stopBCPTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
@@ -1230,12 +1230,12 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \ppp                                                     %! PWC1
+    \<                                                       %! PIC
     \stopBCPTextSpan
-    \<                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -1281,10 +1281,10 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \ff                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \ff                                                      %! PWC1
     \stopBCPTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
@@ -1332,12 +1332,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \ff                                                  %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1383,12 +1383,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \p                                                   %! PWC1
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1457,11 +1457,11 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \f                                                   %! PWC1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1483,9 +1483,9 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \pp                                                  %! PWC1
+        \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1534,12 +1534,12 @@ H_ViolinRHMusicVoice = {
     \times 4/6 {
         
         % [H ViolinRHMusicVoice measure 106 / measure 8]     %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \pp                                                  %! PWC1
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1585,10 +1585,10 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \p                                                   %! PWC1
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -1633,12 +1633,12 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \p                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -1670,9 +1670,9 @@ H_ViolinRHMusicVoice = {
             }
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \ppp                                                 %! PWC1
+        \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \stopBCPTextSpan
         \revert DynamicLineSpanner.staff-padding             %! OC2
         \revert RepeatTie.direction                          %! OC2
@@ -1904,8 +1904,9 @@ H_ViolaRHMusicVoice = {
 %@% \override RHStaff.Clef.color = ##f                       %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set RHStaff.forceClef = ##t                             %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \ff                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
     ^ \markup {                                              %! IC
         \override                                            %! IC
@@ -1913,8 +1914,7 @@ H_ViolaRHMusicVoice = {
             \box                                             %! IC
                 "1/2 clt"                                    %! IC
         }                                                    %! IC
-    \ff                                                      %! PWC1
-    \>                                                       %! PWC1
+    \>                                                       %! PIC
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -1961,12 +1961,12 @@ H_ViolaRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
-    \p                                                       %! PWC1
+    \<                                                       %! PIC
     \stopBCPTextSpan
-    \<                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -1988,10 +1988,10 @@ H_ViolaRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \f                                                       %! PWC1
     \stopBCPTextSpan
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
@@ -2036,12 +2036,12 @@ H_ViolaRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
-    \f                                                       %! PWC1
+    \>                                                       %! PIC
     \stopBCPTextSpan
-    \>                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -2087,11 +2087,11 @@ H_ViolaRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
-    \pp                                                      %! PWC1
+    \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \stopBCPTextSpan
-    \<                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -2162,12 +2162,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \p                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2213,12 +2213,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \ppp                                                 %! PWC1
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2240,10 +2240,10 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \ff                                                  %! PWC1
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -2288,12 +2288,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \ff                                                  %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2343,11 +2343,11 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \p                                                   %! PWC1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2393,9 +2393,9 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \f                                                   %! PWC1
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -2440,12 +2440,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \f                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2490,12 +2490,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \pp                                                  %! PWC1
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2569,12 +2569,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \p                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2622,12 +2622,12 @@ H_ViolaRHMusicVoice = {
     - \tweak bound-details.right.stencil-align-dir-y #center
     \startBCPTextSpan
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
+    \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow
-    \ppp                                                     %! PWC1
+    \<                                                       %! PIC
     \stopBCPTextSpan
-    \<                                                       %! PWC1
     - \tweak Y-extent ##f
     - \tweak bound-details.left.text \markup {
         \concat
@@ -2652,10 +2652,10 @@ H_ViolaRHMusicVoice = {
     \times 7/8 {
         
         % [H ViolaRHMusicVoice measure 104 / measure 6]      %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \ff                                                  %! PWC1
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -2700,12 +2700,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \ff                                                  %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2750,11 +2750,11 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \p                                                   %! PWC1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2799,10 +2799,10 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
-        \f                                                   %! PWC1
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -2851,12 +2851,12 @@ H_ViolaRHMusicVoice = {
     \times 8/10 {
         
         % [H ViolaRHMusicVoice measure 105 / measure 7]      %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \f                                                   %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2902,12 +2902,12 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \pp                                                  %! PWC1
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -2976,11 +2976,11 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \p                                                   %! PWC1
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -3026,11 +3026,11 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \ppp                                                 %! PWC1
+        \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                   %! PIC
         \stopBCPTextSpan
-        \<                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -3052,9 +3052,9 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.right.stencil-align-dir-y #center
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
-        \ff                                                  %! PWC1
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \stopBCPTextSpan
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
@@ -3103,12 +3103,12 @@ H_ViolaRHMusicVoice = {
     \times 4/3 {
         
         % [H ViolaRHMusicVoice measure 106 / measure 8]      %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \ff                                                  %! PWC1
+        \>                                                   %! PIC
         \stopBCPTextSpan
-        \>                                                   %! PWC1
         - \tweak Y-extent ##f
         - \tweak bound-details.left.text \markup {
             \concat
@@ -3164,10 +3164,10 @@ H_ViolaRHMusicVoice = {
             }
         \startBCPTextSpan
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PWC3
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
+        \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
-        \p                                                   %! PWC1
         \stopBCPTextSpan
         \revert DynamicLineSpanner.staff-padding             %! OC2
         \revert RepeatTie.direction                          %! OC2

@@ -146,11 +146,10 @@ maker(
         ],
     baca.dls_staff_padding(9),
     baca.markups.half_clt().boxed(),
-    baca.piecewise(
-        abjad.Hairpin(),
-        baca.make_dynamics('p pp p ppp pp ppp'),
-        baca.runs().map(baca.enchain([3, 4])).flatten(),
+    baca.hairpin_chain(
+        'p > pp < p > ppp < pp > ppp <',
         bookend=True,
+        piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),
         ),
     baca.repeat_tie_up(),
     baca.staff_position(0),
