@@ -189,7 +189,7 @@ maker(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,
         ),
-    baca.hairpin_indicator_chain(
+    baca.hairpin_chain(
         'ppp < pp >',
         piece_selector=baca.group_notes_by_measures(),
         ),
