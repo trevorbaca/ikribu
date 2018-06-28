@@ -80,7 +80,7 @@ maker(
 maker(
     ('vn', 4),
     baca.dls_staff_padding(8),
-    baca.hairpin('"mp" >o niente', selector=baca.tleaves()),
+    baca.generalized_hairpin('"mp" >o niente', selector=baca.tleaves()),
     baca.hairpin_start_shift('"mp"'),
     )
 
@@ -94,7 +94,7 @@ maker(
 maker(
     ('va', 2),
     baca.dls_staff_padding(8),
-    baca.hairpin('"mp" >o niente', selector=baca.tleaves()),
+    baca.generalized_hairpin('"mp" >o niente', selector=baca.tleaves()),
     baca.hairpin_start_shift('"mp"'),
     )
 

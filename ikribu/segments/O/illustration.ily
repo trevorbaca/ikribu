@@ -773,12 +773,12 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 236 / measure 19]        %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c2.
-    \p                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    - \tweak to-barline ##t                                      %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
-    \>                                                           %! IC:BACA_HAIRPIN
+    \p                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                      %! PIC
+    - \tweak circled-tip ##t                                     %! PIC
+    \>                                                           %! PIC
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 237 / measure 20]        %! SM4
@@ -786,13 +786,13 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                   %! SC
     
     % [O BassClarinetMusicVoice measure 238 / measure 21]        %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     \stopStaff                                                   %! SM20
     \once \override Staff.StaffSymbol.line-count = 0             %! SM20
     \startStaff                                                  %! SM20
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)        %! SM20
     R1 * 1/4
-    \!                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \!                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
     \once \override Score.BarLine.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_238
     \once \override Score.SpanBar.transparent = ##t              %! SM22:EOL_FERMATA:MEASURE_238
     
@@ -1051,13 +1051,13 @@ O_ViolinMusicVoice = {
     \repeatTie
     
     % [O ViolinMusicVoice measure 236 / measure 19]          %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     <e' fs'!>2.
     :32                                                      %! IC
-    \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
-    \>                                                       %! IC:BACA_HAIRPIN
+    \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                  %! PIC
+    - \tweak circled-tip ##t                                 %! PIC
+    \>                                                       %! PIC
     \repeatTie
     
     % [O ViolinMusicVoice measure 237 / measure 20]          %! SM4
@@ -1068,13 +1068,13 @@ O_ViolinMusicVoice = {
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [O ViolinMusicVoice measure 238 / measure 21]          %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     \stopStaff                                               %! SM20
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
-    \!                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \!                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     
 }
 
@@ -1331,13 +1331,13 @@ O_ViolaMusicVoice = {
     \repeatTie
     
     % [O ViolaMusicVoice measure 236 / measure 19]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     <ef'! f'>2.
     :32                                                      %! IC
-    \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
-    \>                                                       %! IC:BACA_HAIRPIN
+    \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                  %! PIC
+    - \tweak circled-tip ##t                                 %! PIC
+    \>                                                       %! PIC
     \repeatTie
     
     % [O ViolaMusicVoice measure 237 / measure 20]           %! SM4
@@ -1348,13 +1348,13 @@ O_ViolaMusicVoice = {
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [O ViolaMusicVoice measure 238 / measure 21]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     \stopStaff                                               %! SM20
     \once \override Staff.StaffSymbol.line-count = 0         %! SM20
     \startStaff                                              %! SM20
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)    %! SM20
     R1 * 1/4
-    \!                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \!                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     
 }
 
