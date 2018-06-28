@@ -74,8 +74,8 @@ maker(
 
 maker(
     ('bcl', (1, 5)),
-    baca.generalized_hairpin('pp < mf', selector=baca.leaves()[:4]),
-    baca.generalized_hairpin('mf >o niente', selector=baca.rleaves()[4:]),
+    baca.hairpin('pp < mf', selector=baca.leaves()[:4]),
+    baca.hairpin('mf >o niente', selector=baca.rleaves()[4:]),
     )
 
 maker(
@@ -146,7 +146,7 @@ maker(
         ],
     baca.dls_staff_padding(9),
     baca.markups.half_clt().boxed(),
-    baca.hairpin_chain(
+    baca.hairpins(
         'p > pp < p > ppp < pp > ppp <',
         bookend=True,
         piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),

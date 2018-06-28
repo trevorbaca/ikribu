@@ -133,7 +133,7 @@ maker(
 
 maker(
     ('bcl', (19, 20)),
-    baca.generalized_hairpin('p >o niente', selector=baca.rleaves()[-3:]),
+    baca.hairpin('p >o niente', selector=baca.rleaves()[-3:]),
     baca.pitch('Bb1'),
     )
 
@@ -145,7 +145,7 @@ maker(
 maker(
     ('vn', (9, 20)),
     baca.dynamic('ppppp'),
-    baca.generalized_hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
+    baca.hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
     baca.markup(
         baca.markups.string_numbers([2, 3]),
         direction=abjad.Down,
@@ -162,7 +162,7 @@ maker(
 maker(
     ('va', (9, 20)),
     baca.dynamic('ppppp'),
-    baca.generalized_hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
+    baca.hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
     baca.markup(
         baca.markups.string_numbers([2, 3]),
         direction=abjad.Down,
@@ -180,7 +180,7 @@ maker(
     ('vc', (1, 20)),
     baca.clef('bass'),
     baca.ottava_bassa(),
-    baca.hairpin_chain(
+    baca.hairpins(
         'mp > p <',
         piece_selector=baca.group_by_measures(),
         ),

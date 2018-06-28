@@ -124,11 +124,11 @@ maker(
         ),
     baca.map(
         baca.runs()[abjad.index([0], 2)],
-        baca.generalized_hairpin('pp < p'),
+        baca.hairpin('pp < p'),
         ),
     baca.map(
         baca.runs()[abjad.index([1], 2)],
-        baca.generalized_hairpin('p > pp'),
+        baca.hairpin('p > pp'),
         ),
     baca.markups.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
@@ -155,11 +155,11 @@ maker(
         ),
     baca.map(
         baca.runs()[abjad.index([0], 2)],
-        baca.generalized_hairpin('pp < p'),
+        baca.hairpin('pp < p'),
         ),
     baca.map(
         baca.runs()[abjad.index([1], 2)],
-        baca.generalized_hairpin('p > pp'),
+        baca.hairpin('p > pp'),
         ),
     baca.markups.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
@@ -189,7 +189,7 @@ maker(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,
         ),
-    baca.hairpin_chain(
+    baca.hairpins(
         'ppp < pp >',
         piece_selector=baca.group_notes_by_measures(),
         ),
