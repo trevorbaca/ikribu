@@ -1053,7 +1053,6 @@ G_CelloMusicVoice = {
             [“Vc.”]                                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     _ \markup { III }                                        %! IC
-    \<                                                       %! PIC
     \glissando                                               %! SC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -1077,7 +1076,6 @@ G_CelloMusicVoice = {
         fqf''!4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                   %! PIC
         \glissando                                           %! SC
     }
     
@@ -1086,7 +1084,6 @@ G_CelloMusicVoice = {
     d''1..
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1096,7 +1093,6 @@ G_CelloMusicVoice = {
         b'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                   %! PIC
         \glissando                                           %! SC
     }
     
@@ -1105,7 +1101,6 @@ G_CelloMusicVoice = {
     d''1..
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1115,7 +1110,6 @@ G_CelloMusicVoice = {
         b'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                   %! PIC
         \glissando                                           %! SC
     }
     
@@ -1124,7 +1118,6 @@ G_CelloMusicVoice = {
     g'1..
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1134,7 +1127,6 @@ G_CelloMusicVoice = {
         b'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                   %! PIC
         \glissando                                           %! SC
     }
     
@@ -1143,7 +1135,6 @@ G_CelloMusicVoice = {
     g'1..
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1153,7 +1144,6 @@ G_CelloMusicVoice = {
         d'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                   %! PIC
         \glissando                                           %! SC
     }
     
