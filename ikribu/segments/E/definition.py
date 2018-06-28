@@ -138,6 +138,7 @@ maker(
     baca.markups.trem_flaut_tast(),
     baca.hairpins(
         'p < mp >',
+        last_hairpin=False,
         piece_selector=baca.group_by_measures(),
         ),
     baca.staff_position(0),

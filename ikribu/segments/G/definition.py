@@ -100,6 +100,7 @@ maker(
     baca.glissando(),
     baca.hairpins(
         'ppp < pp >',
+        last_hairpin=False,
         piece_selector=baca.group_by_measures(),
         ),
     baca.markup(
