@@ -1682,14 +1682,12 @@ E_CelloMusicVoice = {
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "trem. flaut. tast." }                       %! IC
-    \<                                                       %! PIC
     
     % [E CelloMusicVoice measure 72 / measure 10]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f\breve
     :32                                                      %! IC
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                       %! PIC
     \repeatTie
     
     % [E CelloMusicVoice measure 73 / measure 11]            %! SM4
@@ -1697,7 +1695,6 @@ E_CelloMusicVoice = {
     f1..
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     \repeatTie
     
     % [E CelloMusicVoice measure 74 / measure 12]            %! SM4
@@ -1705,7 +1702,6 @@ E_CelloMusicVoice = {
     f1..
     :32                                                      %! IC
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                       %! PIC
     \repeatTie
     
     % [E CelloMusicVoice measure 75 / measure 13]            %! SM4
@@ -1713,14 +1709,12 @@ E_CelloMusicVoice = {
     fqs!2.
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     
     % [E CelloMusicVoice measure 76 / measure 14]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fqs!2
     :32                                                      %! IC
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                       %! PIC
     \repeatTie
     
     % [E CelloMusicVoice measure 77 / measure 15]            %! SM4
@@ -1728,7 +1722,6 @@ E_CelloMusicVoice = {
     fqs!1..
     :32                                                      %! IC
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                       %! PIC
     \repeatTie
     
     % [E CelloMusicVoice measure 78 / measure 16]            %! SM4

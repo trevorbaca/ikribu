@@ -3102,37 +3102,37 @@ M_CelloMusicVoice = {
     c,,1
     \mf                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PWC1
-    - \tweak bound-details.left.text \markup {               %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \upright                                     %! PWC1
-                    tasto                                    %! PWC1
-                \hspace                                      %! PWC1
-                    #0.5                                     %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    - \tweak arrow-width 0.25                                %! PWC1
-    - \tweak dash-fraction 0.25                              %! PWC1
-    - \tweak dash-period 1.5                                 %! PWC1
-    - \tweak bound-details.left-broken.text ##f              %! PWC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-    - \tweak bound-details.right.arrow ##t                   %! PWC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-    - \tweak bound-details.right-broken.padding 0            %! PWC1
-    - \tweak bound-details.right-broken.text ##f             %! PWC1
-    - \tweak bound-details.right.padding 0.5                 %! PWC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-    - \tweak bound-details.right.text \markup {              %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \hspace                                      %! PWC1
-                    #0.0                                     %! PWC1
-                \upright                                     %! PWC1
-                    XP                                       %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    \startTextSpan                                           %! PWC1
+    - \tweak Y-extent ##f                                    %! PSC1
+    - \tweak bound-details.left.text \markup {               %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \upright                                     %! PSC1
+                    tasto                                    %! PSC1
+                \hspace                                      %! PSC1
+                    #0.5                                     %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    - \tweak arrow-width 0.25                                %! PSC1
+    - \tweak dash-fraction 0.25                              %! PSC1
+    - \tweak dash-period 1.5                                 %! PSC1
+    - \tweak bound-details.left-broken.text ##f              %! PSC1
+    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+    - \tweak bound-details.right.arrow ##t                   %! PSC1
+    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+    - \tweak bound-details.right-broken.padding 0            %! PSC1
+    - \tweak bound-details.right-broken.text ##f             %! PSC1
+    - \tweak bound-details.right.padding 0.5                 %! PSC1
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+    - \tweak bound-details.right.text \markup {              %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \hspace                                      %! PSC1
+                    #0.0                                     %! PSC1
+                \upright                                     %! PSC1
+                    XP                                       %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    \startTextSpan                                           %! PSC1
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 178 / measure 3]            %! SM4
@@ -3144,7 +3144,7 @@ M_CelloMusicVoice = {
     c,,2
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PWC1
+    \stopTextSpan                                            %! PSC1
     \ottava #0                                               %! SC
     
     % [M CelloMusicVoice measure 180 / measure 5]            %! SM4
@@ -3222,37 +3222,37 @@ M_CelloMusicVoice = {
     c,,2.
     \mf                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PWC1
-    - \tweak bound-details.left.text \markup {               %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \upright                                     %! PWC1
-                    tasto                                    %! PWC1
-                \hspace                                      %! PWC1
-                    #0.5                                     %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    - \tweak arrow-width 0.25                                %! PWC1
-    - \tweak dash-fraction 0.25                              %! PWC1
-    - \tweak dash-period 1.5                                 %! PWC1
-    - \tweak bound-details.left-broken.text ##f              %! PWC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-    - \tweak bound-details.right.arrow ##t                   %! PWC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-    - \tweak bound-details.right-broken.padding 0            %! PWC1
-    - \tweak bound-details.right-broken.text ##f             %! PWC1
-    - \tweak bound-details.right.padding 0.5                 %! PWC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-    - \tweak bound-details.right.text \markup {              %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \hspace                                      %! PWC1
-                    #0.0                                     %! PWC1
-                \upright                                     %! PWC1
-                    XP                                       %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    \startTextSpan                                           %! PWC1
+    - \tweak Y-extent ##f                                    %! PSC1
+    - \tweak bound-details.left.text \markup {               %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \upright                                     %! PSC1
+                    tasto                                    %! PSC1
+                \hspace                                      %! PSC1
+                    #0.5                                     %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    - \tweak arrow-width 0.25                                %! PSC1
+    - \tweak dash-fraction 0.25                              %! PSC1
+    - \tweak dash-period 1.5                                 %! PSC1
+    - \tweak bound-details.left-broken.text ##f              %! PSC1
+    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+    - \tweak bound-details.right.arrow ##t                   %! PSC1
+    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+    - \tweak bound-details.right-broken.padding 0            %! PSC1
+    - \tweak bound-details.right-broken.text ##f             %! PSC1
+    - \tweak bound-details.right.padding 0.5                 %! PSC1
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+    - \tweak bound-details.right.text \markup {              %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \hspace                                      %! PSC1
+                    #0.0                                     %! PSC1
+                \upright                                     %! PSC1
+                    XP                                       %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    \startTextSpan                                           %! PSC1
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 186 / measure 11]           %! SM4
@@ -3264,7 +3264,7 @@ M_CelloMusicVoice = {
     c,,2.
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PWC1
+    \stopTextSpan                                            %! PSC1
     \ottava #0                                               %! SC
     
     % [M CelloMusicVoice measure 188 / measure 13]           %! SM4
@@ -3303,37 +3303,37 @@ M_CelloMusicVoice = {
     c,,1..
     \mf                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PWC1
-    - \tweak bound-details.left.text \markup {               %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \upright                                     %! PWC1
-                    tasto                                    %! PWC1
-                \hspace                                      %! PWC1
-                    #0.5                                     %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    - \tweak arrow-width 0.25                                %! PWC1
-    - \tweak dash-fraction 0.25                              %! PWC1
-    - \tweak dash-period 1.5                                 %! PWC1
-    - \tweak bound-details.left-broken.text ##f              %! PWC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-    - \tweak bound-details.right.arrow ##t                   %! PWC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-    - \tweak bound-details.right-broken.padding 0            %! PWC1
-    - \tweak bound-details.right-broken.text ##f             %! PWC1
-    - \tweak bound-details.right.padding 0.5                 %! PWC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-    - \tweak bound-details.right.text \markup {              %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \hspace                                      %! PWC1
-                    #0.0                                     %! PWC1
-                \upright                                     %! PWC1
-                    XP                                       %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    \startTextSpan                                           %! PWC1
+    - \tweak Y-extent ##f                                    %! PSC1
+    - \tweak bound-details.left.text \markup {               %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \upright                                     %! PSC1
+                    tasto                                    %! PSC1
+                \hspace                                      %! PSC1
+                    #0.5                                     %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    - \tweak arrow-width 0.25                                %! PSC1
+    - \tweak dash-fraction 0.25                              %! PSC1
+    - \tweak dash-period 1.5                                 %! PSC1
+    - \tweak bound-details.left-broken.text ##f              %! PSC1
+    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+    - \tweak bound-details.right.arrow ##t                   %! PSC1
+    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+    - \tweak bound-details.right-broken.padding 0            %! PSC1
+    - \tweak bound-details.right-broken.text ##f             %! PSC1
+    - \tweak bound-details.right.padding 0.5                 %! PSC1
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+    - \tweak bound-details.right.text \markup {              %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \hspace                                      %! PSC1
+                    #0.0                                     %! PSC1
+                \upright                                     %! PSC1
+                    XP                                       %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    \startTextSpan                                           %! PSC1
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 191 / measure 16]           %! SM4
@@ -3345,7 +3345,7 @@ M_CelloMusicVoice = {
     c,,\breve
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PWC1
+    \stopTextSpan                                            %! PSC1
     \ottava #0                                               %! SC
     
     % [M CelloMusicVoice measure 193 / measure 18]           %! SM4
@@ -3423,37 +3423,37 @@ M_CelloMusicVoice = {
     c,,\breve
     \mf                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PWC1
-    - \tweak bound-details.left.text \markup {               %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \upright                                     %! PWC1
-                    tasto                                    %! PWC1
-                \hspace                                      %! PWC1
-                    #0.5                                     %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    - \tweak arrow-width 0.25                                %! PWC1
-    - \tweak dash-fraction 0.25                              %! PWC1
-    - \tweak dash-period 1.5                                 %! PWC1
-    - \tweak bound-details.left-broken.text ##f              %! PWC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PWC1
-    - \tweak bound-details.right.arrow ##t                   %! PWC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PWC1
-    - \tweak bound-details.right-broken.padding 0            %! PWC1
-    - \tweak bound-details.right-broken.text ##f             %! PWC1
-    - \tweak bound-details.right.padding 0.5                 %! PWC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PWC1
-    - \tweak bound-details.right.text \markup {              %! PWC1
-        \concat                                              %! PWC1
-            {                                                %! PWC1
-                \hspace                                      %! PWC1
-                    #0.0                                     %! PWC1
-                \upright                                     %! PWC1
-                    XP                                       %! PWC1
-            }                                                %! PWC1
-        }                                                    %! PWC1
-    \startTextSpan                                           %! PWC1
+    - \tweak Y-extent ##f                                    %! PSC1
+    - \tweak bound-details.left.text \markup {               %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \upright                                     %! PSC1
+                    tasto                                    %! PSC1
+                \hspace                                      %! PSC1
+                    #0.5                                     %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    - \tweak arrow-width 0.25                                %! PSC1
+    - \tweak dash-fraction 0.25                              %! PSC1
+    - \tweak dash-period 1.5                                 %! PSC1
+    - \tweak bound-details.left-broken.text ##f              %! PSC1
+    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
+    - \tweak bound-details.right.arrow ##t                   %! PSC1
+    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
+    - \tweak bound-details.right-broken.padding 0            %! PSC1
+    - \tweak bound-details.right-broken.text ##f             %! PSC1
+    - \tweak bound-details.right.padding 0.5                 %! PSC1
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
+    - \tweak bound-details.right.text \markup {              %! PSC1
+        \concat                                              %! PSC1
+            {                                                %! PSC1
+                \hspace                                      %! PSC1
+                    #0.0                                     %! PSC1
+                \upright                                     %! PSC1
+                    XP                                       %! PSC1
+            }                                                %! PSC1
+        }                                                    %! PSC1
+    \startTextSpan                                           %! PSC1
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [M CelloMusicVoice measure 199 / measure 24]           %! SM4
@@ -3473,7 +3473,7 @@ M_CelloMusicVoice = {
     c,,2.
     \fff                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PWC1
+    \stopTextSpan                                            %! PSC1
     \ottava #0                                               %! SC
     
     % [M CelloMusicVoice measure 203 / measure 28]           %! SM4
