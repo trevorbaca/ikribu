@@ -1772,13 +1772,13 @@ L_ViolinMusicVoice = {
     \once \override DynamicText.extra-offset = #'(-3.5 . 0)  %! OC1
     \once \override DynamicText.X-extent = #'(0 . 0)         %! OC1
     \override Hairpin.shorten-pair = #'(2.25 . 0)            %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'8
-    \effort_mp                                               %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \effort_mp                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                               %! IC
-    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
-    \>                                                       %! IC:BACA_HAIRPIN
+    - \tweak to-barline ##t                                  %! PIC
+    - \tweak circled-tip ##t                                 %! PIC
+    \>                                                       %! PIC
     [
     
     d'8
@@ -1972,9 +1972,9 @@ L_ViolinMusicVoice = {
         c'8
         -\staccato                                           %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         b8
-        \!                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+        \!                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccato                                           %! IC
         ]
         \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -2567,13 +2567,13 @@ L_ViolaMusicVoice = {
         \once \override DynamicText.extra-offset = #'(-3.5 . 0) %! OC1
         \once \override DynamicText.X-extent = #'(0 . 0)     %! OC1
         \override Hairpin.shorten-pair = #'(2.25 . 0)        %! OC1
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         d'8
-        \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+        \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccato                                           %! IC
-        - \tweak to-barline ##t                              %! IC:BACA_HAIRPIN
-        - \tweak circled-tip ##t                             %! IC:BACA_HAIRPIN
-        \>                                                   %! IC:BACA_HAIRPIN
+        - \tweak to-barline ##t                              %! PIC
+        - \tweak circled-tip ##t                             %! PIC
+        \>                                                   %! PIC
         [
         
         c'8
@@ -2708,9 +2708,9 @@ L_ViolaMusicVoice = {
         d'8
         -\staccato                                           %! IC
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+        \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         b8
-        \!                                                   %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+        \!                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccato                                           %! IC
         ]
         \revert DynamicLineSpanner.staff-padding             %! OC2

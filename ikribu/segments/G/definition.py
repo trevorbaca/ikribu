@@ -60,37 +60,37 @@ maker(
 
 maker(
     ('bcl', 1),
-    baca.hairpin('ppp < mp'),
+    baca.generalized_hairpin('ppp < mp'),
     baca.pitch('G2'),
     )
 
 maker(
     ('bcl', 3),
-    baca.hairpin('pp < mf'),
+    baca.generalized_hairpin('pp < mf'),
     baca.pitch('Gb2'),
     )
 
 maker(
     ('bcl', 5),
-    baca.hairpin('p < f'),
+    baca.generalized_hairpin('p < f'),
     baca.pitch('F2'),
     )
 
 maker(
     ('bcl', 7),
-    baca.hairpin('mf < ff'),
+    baca.generalized_hairpin('mf < ff'),
     baca.pitch('E2'),
     )
 
 maker(
     ('bcl', 9),
-    baca.hairpin('f < fff'),
+    baca.generalized_hairpin('f < fff'),
     baca.pitch('Eb2'),
     )
 
 maker(
     ('bcl', 11),
-    baca.hairpin('ff < ffff'),
+    baca.generalized_hairpin('ff < ffff'),
     baca.pitch('D2'),
     )
 

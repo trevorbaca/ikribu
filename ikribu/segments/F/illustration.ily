@@ -325,19 +325,19 @@ F_BassClarinetMusicVoice = {
     R1 * 1/2
     
     % [F BassClarinetMusicVoice measure 84 / measure 6]          %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     a1..
-    \sfp                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    \>                                                           %! IC:BACA_HAIRPIN
+    \sfp                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                           %! PIC
     
     % [F BassClarinetMusicVoice measure 85 / measure 7]          %! SM4
     a\breve
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 86 / measure 8]          %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     a1..
-    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
 }
@@ -466,16 +466,16 @@ F_ViolinMusicVoice = {
     \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_84:SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_84:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     <e' fs'!>1..
     :32                                                      %! IC
-    \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { II+III }                                     %! IC
-    \<                                                       %! IC:BACA_HAIRPIN
+    \<                                                       %! PIC
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -510,22 +510,22 @@ F_ViolinMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolinMusicVoice measure 85 / measure 7]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     <e' fs'!>\breve
     :32                                                      %! IC
-    \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
-    \>                                                       %! IC:BACA_HAIRPIN
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                  %! PIC
+    - \tweak circled-tip ##t                                 %! PIC
+    \>                                                       %! PIC
     \repeatTie
     \stopTextSpan                                            %! PWC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [F ViolinMusicVoice measure 86 / measure 8]            %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     R1 * 7/4
-    \!                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \!                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     
 }
 
@@ -655,16 +655,16 @@ F_ViolaMusicVoice = {
     \once \override Staff.Clef.X-extent = ##f                %! OC1:MEASURE_84:SHIFTED_CLEF
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)   %! OC1:MEASURE_84:SHIFTED_CLEF
     \clef "treble"                                           %! SM8:EXPLICIT_CLEF:IC
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     <ef'! f'>1..
     :32                                                      %! IC
-    \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { I+II }                                       %! IC
-    \<                                                       %! IC:BACA_HAIRPIN
+    \<                                                       %! PIC
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -699,22 +699,22 @@ F_ViolaMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolaMusicVoice measure 85 / measure 7]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     <ef'! f'>\breve
     :32                                                      %! IC
-    \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    - \tweak to-barline ##t                                  %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                 %! IC:BACA_HAIRPIN
-    \>                                                       %! IC:BACA_HAIRPIN
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                  %! PIC
+    - \tweak circled-tip ##t                                 %! PIC
+    \>                                                       %! PIC
     \repeatTie
     \stopTextSpan                                            %! PWC1
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [F ViolaMusicVoice measure 86 / measure 8]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     R1 * 7/4
-    \!                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \!                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     
 }
 
@@ -796,10 +796,10 @@ F_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                         %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
     \set Staff.forceClef = ##t                               %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!1
     :32                                                      %! IC
-    \p                                                       %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -810,7 +810,7 @@ F_CelloMusicVoice = {
             #(x11-color 'green4)                             %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
             [“Vc.”]                                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-    \<                                                       %! IC:BACA_HAIRPIN
+    \<                                                       %! PIC
     - \tweak Y-extent ##f                                    %! PWC1
     - \tweak bound-details.left.text \markup {               %! PWC1
         \concat                                              %! PWC1
@@ -868,10 +868,10 @@ F_CelloMusicVoice = {
     \repeatTie
     
     % [F CelloMusicVoice measure 82 / measure 4]             %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!2.
     :32                                                      %! IC
-    \ff                                                      %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \ff                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                            %! PWC1
     \revert TextSpanner.staff-padding                        %! OC2

@@ -274,9 +274,9 @@ A_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                   %! SM8:REAPPLIED_CLEF:SM33:SM37
     \once \override Staff.InstrumentName.color = #(x11-color 'green4) %! SM6:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     e\breve
-    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \ppp                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -287,7 +287,7 @@ A_BassClarinetMusicVoice = {
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
             "[“B. cl.”]"                                         %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-    \<                                                           %! IC:BACA_HAIRPIN
+    \<                                                           %! PIC
     \override Staff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -304,18 +304,18 @@ A_BassClarinetMusicVoice = {
         }                                                        %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     
     % [A BassClarinetMusicVoice measure 4 / measure 2]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     e1..
-    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [A BassClarinetMusicVoice measure 5 / measure 3]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     e1
-    \f                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
-    - \tweak to-barline ##t                                      %! IC:BACA_HAIRPIN
-    - \tweak circled-tip ##t                                     %! IC:BACA_HAIRPIN
-    \>                                                           %! IC:BACA_HAIRPIN
+    \f                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                      %! PIC
+    - \tweak circled-tip ##t                                     %! PIC
+    \>                                                           %! PIC
     \repeatTie
     
     % [A BassClarinetMusicVoice measure 6 / measure 4]           %! SM4
@@ -327,9 +327,9 @@ A_BassClarinetMusicVoice = {
     \repeatTie
     
     % [A BassClarinetMusicVoice measure 8 / measure 6]           %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC:BACA_HAIRPIN
+    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     R1 * 7/4
-    \!                                                           %! SM8:EXPLICIT_DYNAMIC:IC:BACA_HAIRPIN
+    \!                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [A BassClarinetMusicVoice measure 9 / measure 7]           %! SM4
     \stopStaff                                                   %! SM20

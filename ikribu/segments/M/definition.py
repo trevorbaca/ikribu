@@ -149,13 +149,13 @@ maker(
 
 maker(
     ('bcl', [(2, 3), (9, 10), (13, 14)]),
-    baca.hairpin('p < fff', selector=baca.leaves()[:2]),
-    baca.hairpin('fff >o niente', selector=baca.rleaves()[-2:]),
+    baca.generalized_hairpin('p < fff', selector=baca.leaves()[:2]),
+    baca.generalized_hairpin('fff >o niente', selector=baca.rleaves()[-2:]),
     )
 
 maker(
     ('bcl', (20, 22)),
-    baca.hairpin('ppp < fff', selector=baca.leaves()[:-1]),
+    baca.generalized_hairpin('ppp < fff', selector=baca.leaves()[:-1]),
     )
 
 maker(
@@ -243,7 +243,7 @@ maker(
         ['vn', 'va', 'vc'], 
         [(2, 3), (9, 10), (13, 14), (20, 21)],
         ),
-    baca.hairpin('mf < fff'),
+    baca.generalized_hairpin('mf < fff'),
     )
 
 maker(
