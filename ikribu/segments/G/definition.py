@@ -60,37 +60,37 @@ maker(
 
 maker(
     ('bcl', 1),
-    baca.generalized_hairpin('ppp < mp'),
+    baca.hairpin('ppp < mp'),
     baca.pitch('G2'),
     )
 
 maker(
     ('bcl', 3),
-    baca.generalized_hairpin('pp < mf'),
+    baca.hairpin('pp < mf'),
     baca.pitch('Gb2'),
     )
 
 maker(
     ('bcl', 5),
-    baca.generalized_hairpin('p < f'),
+    baca.hairpin('p < f'),
     baca.pitch('F2'),
     )
 
 maker(
     ('bcl', 7),
-    baca.generalized_hairpin('mf < ff'),
+    baca.hairpin('mf < ff'),
     baca.pitch('E2'),
     )
 
 maker(
     ('bcl', 9),
-    baca.generalized_hairpin('f < fff'),
+    baca.hairpin('f < fff'),
     baca.pitch('Eb2'),
     )
 
 maker(
     ('bcl', 11),
-    baca.generalized_hairpin('ff < ffff'),
+    baca.hairpin('ff < ffff'),
     baca.pitch('D2'),
     )
 
@@ -98,7 +98,7 @@ maker(
     ('vc', (1, 12)),
     baca.dls_staff_padding(7),
     baca.glissando(),
-    baca.hairpin_chain(
+    baca.hairpins(
         'ppp < pp >',
         piece_selector=baca.group_by_measures(),
         ),

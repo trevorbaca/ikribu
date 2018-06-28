@@ -121,7 +121,7 @@ maker(
         ('vc_rh', (1, 2)),
         ],
     baca.markups.half_clt().boxed(),
-    baca.hairpin_chain(
+    baca.hairpins(
         'ff > p < f > pp < p > ppp <',
         bookend=True,
         piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),

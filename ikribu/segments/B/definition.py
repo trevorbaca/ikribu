@@ -88,8 +88,8 @@ maker(
 
 maker(
     ('bcl', 13),
-    baca.generalized_hairpin('ppp < f', selector=baca.leaves()[:2]),
-    baca.generalized_hairpin('f >o niente', selector=baca.rleaves()[-2:]),
+    baca.hairpin('ppp < f', selector=baca.leaves()[:2]),
+    baca.hairpin('f >o niente', selector=baca.rleaves()[-2:]),
     )
 
 maker(
@@ -105,8 +105,8 @@ maker(
 maker(
     ('vn', [1, 5, 9]),
     baca.suite(
-        baca.generalized_hairpin('ppp < p', selector=baca.leaves()[:2]),
-        baca.generalized_hairpin('p >o niente', selector=baca.rleaves()[-2:]),
+        baca.hairpin('ppp < p', selector=baca.leaves()[:2]),
+        baca.hairpin('p >o niente', selector=baca.rleaves()[-2:]),
         ),
     baca.transition(
         baca.markups.markup('trem. flaut. pont.'),
@@ -127,8 +127,8 @@ maker(
 maker(
     ('va', (13, 14)),
     baca.suite(
-        baca.generalized_hairpin('ppp < mf', selector=baca.leaves()[:5]),
-        baca.generalized_hairpin('mf >o niente', selector=baca.rleaves()[-2:]),
+        baca.hairpin('ppp < mf', selector=baca.leaves()[:5]),
+        baca.hairpin('mf >o niente', selector=baca.rleaves()[-2:]),
         ),
     baca.transition(
         baca.markups.markup('trem. flaut. pont.'),

@@ -115,7 +115,7 @@ maker(
     baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markups.markup('sponges on BD').boxed(),
-    baca.hairpin_chain(
+    baca.hairpins(
         'f > p <',
         bookend=True,
         piece_selector=baca.runs().map(baca.enchain([4, 3])).flatten(),
@@ -136,7 +136,7 @@ maker(
     ('vc', (9, 16)),
     baca.dls_staff_padding(4),
     baca.markups.trem_flaut_tast(),
-    baca.hairpin_chain(
+    baca.hairpins(
         'p < mp >',
         piece_selector=baca.group_by_measures(),
         ),
