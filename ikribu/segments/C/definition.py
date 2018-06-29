@@ -189,7 +189,7 @@ maker(
         'D5 F~5 D5  B4 D5 B4  G4 B4 G4   D4 G4 D4  G3 D4 G3',
         exact=True,
         ),
-    baca.hairpins(
+    baca.hairpin(
         'ppp < pp >',
         final_hairpin=False,
         piece_selector=baca.group_by_measures(),

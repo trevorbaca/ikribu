@@ -87,7 +87,7 @@ maker(
         ],
     baca.dls_staff_padding(10),
     baca.markups.half_clt().boxed(),
-    baca.hairpins(
+    baca.hairpin(
         'ff > p < f > pp < p > ppp <',
         bookend=True,
         piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),

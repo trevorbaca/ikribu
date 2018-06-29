@@ -65,7 +65,7 @@ maker(
     baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markups.markup('sponges on BD').boxed(),
-    baca.hairpins(
+    baca.hairpin(
         'mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff',
         bookend=-1,
         piece_selector=baca.group_by_measures(),
@@ -103,7 +103,7 @@ maker(
     baca.accent(selector=baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
     baca.markups.markup('sponges on BD').boxed(),
-    baca.hairpins(
+    baca.hairpin(
         'p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <'
         ' f > mf < f > mf < ff > f < ff > f < fff',
         bookend=-1,
@@ -124,7 +124,7 @@ maker(
 maker(
     ('vc', (1, 9)),
     baca.bar_extent((0, 2), selector=baca.leaves()),
-    baca.hairpins(
+    baca.hairpin(
         'p < f >',
         bookend=-1,
         piece_selector=baca.group_by_measures(),
