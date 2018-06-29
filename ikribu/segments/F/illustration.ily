@@ -473,7 +473,7 @@ F_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     <e' fs'!>1..
     :32                                                      %! IC
-    \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
+    \baca_sfpp                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { II+III }                                     %! IC
     \<                                                       %! PIC
     - \tweak Y-extent ##f                                    %! PSC1
@@ -662,7 +662,7 @@ F_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     <ef'! f'>1..
     :32                                                      %! IC
-    \sfpp                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
+    \baca_sfpp                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { I+II }                                       %! IC
     \<                                                       %! PIC
     - \tweak Y-extent ##f                                    %! PSC1

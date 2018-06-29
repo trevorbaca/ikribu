@@ -3363,12 +3363,12 @@ M_CelloMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     a''1..
-    \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_sfffz                                              %! SM8:REDUNDANT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
     ^ \markup { pizz. }                                      %! IC
     _ \markup { III }                                        %! IC
@@ -3402,12 +3402,12 @@ M_CelloMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)    %! SM6:EXPLICIT_CLEF_COLOR:IC
 %@% \override Staff.Clef.color = ##f                         %! SM7:EXPLICIT_CLEF_COLOR_CANCELLATION:IC
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
-    \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
+    \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1) %! SM6:REDUNDANT_DYNAMIC_COLOR:IC
     \stopStaff                                               %! SM21
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     cqs'''!2
-    \sfffz                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_sfffz                                              %! SM8:REDUNDANT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
     ^ \markup { pizz. }                                      %! IC
     _ \markup { III }                                        %! IC
