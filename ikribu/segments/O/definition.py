@@ -180,7 +180,7 @@ maker(
     ('vc', (1, 20)),
     baca.clef('bass'),
     baca.ottava_bassa(),
-    baca.hairpins(
+    baca.hairpin(
         'mp > p <',
         final_hairpin=False,
         piece_selector=baca.group_by_measures(),

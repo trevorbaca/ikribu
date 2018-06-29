@@ -98,7 +98,7 @@ maker(
     ('vc', (1, 12)),
     baca.dls_staff_padding(7),
     baca.glissando(),
-    baca.hairpins(
+    baca.hairpin(
         'ppp < pp >',
         final_hairpin=False,
         piece_selector=baca.group_by_measures(),
