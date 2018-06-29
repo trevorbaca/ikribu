@@ -421,7 +421,7 @@ A_ViolinMusicVoice = {
     \set Staff.forceClef = ##t                               %! SM8:EXPLICIT_CLEF:SM33:IC
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     R1 * 2
-    \effort_mf                                               %! SM8:REAPPLIED_DYNAMIC:SM37
+    \baca_effort_mf                                          %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -591,7 +591,7 @@ A_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     c'4
-    \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mf                                          %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC

@@ -403,7 +403,7 @@ Q_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     b'4
-    \effort_mf                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mf                                              %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -663,7 +663,7 @@ Q_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     a'4
-    \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mf                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\baca_staccati #2                                       %! IC
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -956,7 +956,7 @@ Q_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     b'4
-    \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mf                                          %! SM8:EXPLICIT_DYNAMIC:IC
     -\baca_staccati #2                                       %! IC
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1253,7 +1253,7 @@ Q_CelloMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         a8
-        \effort_mf                                           %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_effort_mf                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\accent                                             %! IC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
