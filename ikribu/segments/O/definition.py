@@ -182,7 +182,7 @@ maker(
     baca.ottava_bassa(),
     baca.hairpins(
         'mp > p <',
-        last_hairpin=False,
+        final_hairpin=False,
         piece_selector=baca.group_by_measures(),
         ),
     baca.pitch('Bb0'),

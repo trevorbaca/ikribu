@@ -191,7 +191,7 @@ maker(
         ),
     baca.hairpins(
         'ppp < pp >',
-        last_hairpin=False,
+        final_hairpin=False,
         piece_selector=baca.group_by_measures(),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
