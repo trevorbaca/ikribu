@@ -1861,7 +1861,7 @@ M_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     c'2.
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1955,7 +1955,7 @@ M_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'1..
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC
@@ -1999,7 +1999,7 @@ M_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'1
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC
@@ -2087,7 +2087,7 @@ M_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'2
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC
@@ -2157,7 +2157,7 @@ M_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'1..
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC
@@ -2201,7 +2201,7 @@ M_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     c'2
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC
@@ -3206,7 +3206,7 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     fqf''!1
-    \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_sffz                                               %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
     ^ \markup { pizz. }                                      %! IC
     _ \markup { III }                                        %! IC
@@ -3287,7 +3287,7 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 5         %! SM21
     \startStaff                                              %! SM21
     g''2
-    \sffz                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_sffz                                               %! SM8:EXPLICIT_DYNAMIC:IC
     -\laissezVibrer                                          %! IC
     ^ \markup { pizz. }                                      %! IC
     _ \markup { III }                                        %! IC

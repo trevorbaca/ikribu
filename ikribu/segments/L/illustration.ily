@@ -1233,7 +1233,7 @@ L_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c'8
-        \effort_mp                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+        \baca_effort_mp                                      %! SM8:REAPPLIED_DYNAMIC:SM37
         -\staccato                                           %! IC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1774,7 +1774,7 @@ L_ViolinMusicVoice = {
     \override Hairpin.shorten-pair = #'(2.25 . 0)            %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'8
-    \effort_mp                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \baca_effort_mp                                          %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                               %! IC
     - \tweak to-barline ##t                                  %! PIC
     - \tweak circled-tip ##t                                 %! PIC
@@ -2359,7 +2359,7 @@ L_ViolaMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         c'8
-        \effort_mp                                           %! SM8:REAPPLIED_DYNAMIC:SM37
+        \baca_effort_mp                                      %! SM8:REAPPLIED_DYNAMIC:SM37
         -\staccato                                           %! IC
         ^ \markup {                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             \with-color                                      %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -2569,7 +2569,7 @@ L_ViolaMusicVoice = {
         \override Hairpin.shorten-pair = #'(2.25 . 0)        %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         d'8
-        \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \baca_effort_mp                                      %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccato                                           %! IC
         - \tweak to-barline ##t                              %! PIC
         - \tweak circled-tip ##t                             %! PIC

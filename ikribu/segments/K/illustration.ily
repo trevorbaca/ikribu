@@ -587,7 +587,7 @@ K_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     c'4
-    \effort_f                                                    %! SM8:REAPPLIED_DYNAMIC:SM37
+    \baca_effort_f                                               %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -652,7 +652,7 @@ K_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1             %! SM21
     \startStaff                                                  %! SM21
     c'4
-    \effort_mf                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mf                                              %! SM8:EXPLICIT_DYNAMIC:IC
     
     c'4
     \repeatTie
@@ -690,7 +690,7 @@ K_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1             %! SM21
     \startStaff                                                  %! SM21
     c'4
-    \effort_mp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mp                                              %! SM8:EXPLICIT_DYNAMIC:IC
     
     c'4
     \repeatTie
@@ -740,7 +740,7 @@ K_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1             %! SM21
     \startStaff                                                  %! SM21
     c'4
-    \effort_p                                                    %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_p                                               %! SM8:EXPLICIT_DYNAMIC:IC
     
     c'4
     \repeatTie
@@ -930,7 +930,7 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 1
-    \effort_f                                                %! SM8:REAPPLIED_DYNAMIC:SM37
+    \baca_effort_f                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -971,7 +971,7 @@ K_ViolinMusicVoice = {
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         b8
-        \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_effort_mp                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                           %! IC
         ^ \markup { "col legno battuto" }                    %! IC
         [
@@ -1381,7 +1381,7 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     R1 * 1
-    \effort_f                                                %! SM8:REAPPLIED_DYNAMIC:SM37
+    \baca_effort_f                                           %! SM8:REAPPLIED_DYNAMIC:SM37
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1422,7 +1422,7 @@ K_ViolaMusicVoice = {
         \once \override Staff.StaffSymbol.line-count = 1     %! SM21
         \startStaff                                          %! SM21
         b8
-        \effort_mp                                           %! SM8:EXPLICIT_DYNAMIC:IC
+        \baca_effort_mp                                      %! SM8:EXPLICIT_DYNAMIC:IC
         -\staccato                                           %! IC
         ^ \markup { "col legno battuto" }                    %! IC
         [
@@ -1809,7 +1809,7 @@ K_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue) %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d4
-    \effort_p                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_p                                           %! SM8:EXPLICIT_DYNAMIC:IC
     ^ \markup {                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         \with-color                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             #(x11-color 'green4)                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
@@ -1880,7 +1880,7 @@ K_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     d4
-    \effort_mp                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mp                                          %! SM8:EXPLICIT_DYNAMIC:IC
     
     d4
     \repeatTie
@@ -1914,7 +1914,7 @@ K_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     d4
-    \effort_mf                                               %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_mf                                          %! SM8:EXPLICIT_DYNAMIC:IC
     
     d4
     \repeatTie
@@ -1960,7 +1960,7 @@ K_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1         %! SM21
     \startStaff                                              %! SM21
     d4
-    \effort_f                                                %! SM8:EXPLICIT_DYNAMIC:IC
+    \baca_effort_f                                           %! SM8:EXPLICIT_DYNAMIC:IC
     
     d4
     \repeatTie
