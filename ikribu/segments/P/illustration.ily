@@ -501,13 +501,7 @@ P_ViolinRHMusicVoice = {
         r4
         \pp                                                  %! SM8:REAPPLIED_DYNAMIC:SM37
         - \tweak Y-extent ##f
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
@@ -712,13 +706,7 @@ P_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -815,13 +803,7 @@ P_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1013,13 +995,7 @@ P_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1115,13 +1091,7 @@ P_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1513,13 +1483,7 @@ P_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1766,13 +1730,7 @@ P_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1918,13 +1876,7 @@ P_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
     }
     
@@ -2303,13 +2255,7 @@ P_CelloRHMusicVoice = {
         r4
         \ppp                                                 %! SM8:REAPPLIED_DYNAMIC:SM37
         - \tweak Y-extent ##f
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
@@ -2514,13 +2460,7 @@ P_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2814,13 +2754,7 @@ P_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \tweak dash-period 0
-        - \tweak bound-details.left-broken.text ##f
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 1.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
+        - \abjad_start_text_span_invisible
         \startBCPTextSpan
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
