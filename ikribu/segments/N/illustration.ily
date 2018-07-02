@@ -370,7 +370,7 @@ N_ViolinRHMusicVoice = {
     r4
     \ppp                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
     - \tweak Y-extent ##f
-    - \abjad_invisible_line_segment
+    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
@@ -571,7 +571,7 @@ N_ViolinRHMusicVoice = {
                     #0.25
             }
         }
-    - \abjad_invisible_line_segment
+    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -667,7 +667,7 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -867,7 +867,7 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     
@@ -961,7 +961,7 @@ N_ViolinRHMusicVoice = {
                     #0.25
             }
         }
-    - \abjad_invisible_line_segment
+    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -1160,7 +1160,7 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1253,7 +1253,7 @@ N_ViolinRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     
@@ -1767,7 +1767,7 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2014,7 +2014,7 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2162,7 +2162,7 @@ N_ViolaRHMusicVoice = {
                     #0.25
             }
         }
-    - \abjad_invisible_line_segment
+    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
@@ -2414,7 +2414,7 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     
@@ -2558,7 +2558,7 @@ N_ViolaRHMusicVoice = {
                     #0.25
             }
         }
-    - \abjad_invisible_line_segment
+    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2803,7 +2803,7 @@ N_ViolaRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         - \tweak bound-details.right.text \markup {
             \concat
                 {
@@ -3049,7 +3049,7 @@ N_CelloRHMusicVoice = {
         r4
         \pp                                                  %! SM8:REAPPLIED_DYNAMIC:SM37
         - \tweak Y-extent ##f
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
@@ -3253,7 +3253,7 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3551,7 +3551,7 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3752,7 +3752,7 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -4051,7 +4051,7 @@ N_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC

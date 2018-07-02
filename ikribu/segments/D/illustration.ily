@@ -732,7 +732,7 @@ D_CelloRHMusicVoice = {
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! SM6:REAPPLIED_STAFF_LINES_COLOR:SM37
         r4
         - \tweak Y-extent ##f
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
@@ -936,7 +936,7 @@ D_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1234,7 +1234,7 @@ D_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1435,7 +1435,7 @@ D_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1734,7 +1734,7 @@ D_CelloRHMusicVoice = {
                         #0.25
                 }
             }
-        - \abjad_invisible_line_segment
+        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
