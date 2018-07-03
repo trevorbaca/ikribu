@@ -446,37 +446,23 @@ F_ViolinMusicVoice = {
     \baca_sfpp                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { II+III }                                     %! IC
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. XP"                        %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. tast."                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "trem. flaut. XP"                        %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "trem. flaut. tast."                             %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolinMusicVoice measure 85 / measure 7]            %! SM4
@@ -488,7 +474,7 @@ F_ViolinMusicVoice = {
     - \tweak circled-tip ##t                                 %! PIC
     \>                                                       %! PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
@@ -635,37 +621,23 @@ F_ViolaMusicVoice = {
     \baca_sfpp                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { I+II }                                       %! IC
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. XP"                        %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. tast."                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "trem. flaut. XP"                        %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "trem. flaut. tast."                             %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)  %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
     % [F ViolaMusicVoice measure 85 / measure 7]             %! SM4
@@ -677,7 +649,7 @@ F_ViolaMusicVoice = {
     - \tweak circled-tip ##t                                 %! PIC
     \>                                                       %! PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     
@@ -781,37 +753,23 @@ F_CelloMusicVoice = {
             [“Vc.”]                                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
         }                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     \<                                                       %! PIC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "(trem. flaut. tast.)"                   %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "trem. XP (non. flaut.)"                 %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "(trem. flaut. tast.)"                   %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "trem. XP (non. flaut.)"                         %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =             %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -843,7 +801,7 @@ F_CelloMusicVoice = {
     :32                                                      %! IC
     \ff                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [F CelloMusicVoice measure 83 / measure 5]             %! SM4
