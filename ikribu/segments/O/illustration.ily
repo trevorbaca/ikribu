@@ -943,37 +943,23 @@ O_ViolinMusicVoice = {
     :32                                                      %! IC
     \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     _ \markup { II+III }                                     %! IC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. XP"                        %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. nut"                       %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "trem. flaut. XP"                        %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "trem. flaut. nut"                               %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [O ViolinMusicVoice measure 227 / measure 10]          %! SM4
     <e' fs'!>2.
@@ -1034,7 +1020,7 @@ O_ViolinMusicVoice = {
     <e' fs'!>1
     :32                                                      %! IC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [O ViolinMusicVoice measure 238 / measure 21]          %! SM4
@@ -1223,37 +1209,23 @@ O_ViolaMusicVoice = {
     :32                                                      %! IC
     \ppppp                                                   %! SM8:EXPLICIT_DYNAMIC:IC
     _ \markup { II+III }                                     %! IC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. XP"                        %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. nut"                       %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "trem. flaut. XP"                        %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "trem. flaut. nut"                               %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [O ViolaMusicVoice measure 227 / measure 10]           %! SM4
     <ef'! f'>2.
@@ -1314,7 +1286,7 @@ O_ViolaMusicVoice = {
     <ef'! f'>1
     :32                                                      %! IC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert TextSpanner.staff-padding                        %! OC2
     
     % [O ViolaMusicVoice measure 238 / measure 21]           %! SM4
@@ -1491,37 +1463,23 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "tasto poss."                            %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "pos. ord."                              %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "tasto poss."                            %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "pos. ord."                                      %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [O CelloMusicVoice measure 223 / measure 6]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1540,44 +1498,30 @@ O_CelloMusicVoice = {
     bf,,,!\breve
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     
     % [O CelloMusicVoice measure 226 / measure 9]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "pos. ord."                              %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    XP                                       %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "pos. ord."                              %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            XP                                               %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [O CelloMusicVoice measure 227 / measure 10]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1596,44 +1540,30 @@ O_CelloMusicVoice = {
     bf,,,!\breve
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     
     % [O CelloMusicVoice measure 230 / measure 13]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    XP                                       %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "pos. ord."                              %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    XP                                       %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "pos. ord."                                      %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [O CelloMusicVoice measure 231 / measure 14]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1652,44 +1582,30 @@ O_CelloMusicVoice = {
     bf,,,!2.
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     
     % [O CelloMusicVoice measure 234 / measure 17]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "pos. ord."                              %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "tasto poss."                            %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "pos. ord."                              %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "tasto poss."                                    %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [O CelloMusicVoice measure 235 / measure 18]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1708,7 +1624,7 @@ O_CelloMusicVoice = {
     bf,,,!1
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert Staff.OttavaBracket.staff-padding                %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     \ottava #0                                               %! SC

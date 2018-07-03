@@ -1450,37 +1450,23 @@ C_CelloMusicVoice = {
     d''1
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak Y-extent ##f                                    %! PSC1
-    - \tweak bound-details.left.text \markup {               %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. tasto. (arco)"             %! PSC1
-                \hspace                                      %! PSC1
-                    #0.5                                     %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    - \tweak arrow-width 0.25                                %! PSC1
-    - \tweak dash-fraction 0.25                              %! PSC1
-    - \tweak dash-period 1.5                                 %! PSC1
-    - \tweak bound-details.left-broken.text ##f              %! PSC1
-    - \tweak bound-details.left.stencil-align-dir-y #center  %! PSC1
-    - \tweak bound-details.right.arrow ##t                   %! PSC1
-    - \tweak bound-details.right-broken.arrow ##f            %! PSC1
-    - \tweak bound-details.right-broken.padding 0            %! PSC1
-    - \tweak bound-details.right-broken.text ##f             %! PSC1
-    - \tweak bound-details.right.padding 0.5                 %! PSC1
-    - \tweak bound-details.right.stencil-align-dir-y #center %! PSC1
-    - \tweak bound-details.right.text \markup {              %! PSC1
-        \concat                                              %! PSC1
-            {                                                %! PSC1
-                \hspace                                      %! PSC1
-                    #0.0                                     %! PSC1
-                \upright                                     %! PSC1
-                    "trem. flaut. XP"                        %! PSC1
-            }                                                %! PSC1
-        }                                                    %! PSC1
-    \startTextSpan                                           %! PSC1
+    - \abjad_dashed_line_with_arrow                          %! PIC
+    - \tweak bound-details.left.text \markup {               %! PIC
+        \concat                                              %! PIC
+            {                                                %! PIC
+                \upright                                     %! PIC
+                    "trem. flaut. tasto. (arco)"             %! PIC
+                \hspace                                      %! PIC
+                    #0.5                                     %! PIC
+            }                                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.text \markup {              %! PIC
+        \upright                                             %! PIC
+            "trem. flaut. XP"                                %! PIC
+        }                                                    %! PIC
+    - \tweak bound-details.right.padding #0.5                %! PIC
+    - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
+    \startTextSpan                                           %! PIC
     
     % [C CelloMusicVoice measure 37 / measure 3]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1588,7 +1574,7 @@ C_CelloMusicVoice = {
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
-    \stopTextSpan                                            %! PSC1
+    \stopTextSpan                                            %! PIC
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert NoteHead.style                                   %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
