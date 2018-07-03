@@ -369,9 +369,6 @@ N_ViolinRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
     r4
     \ppp                                                     %! SM8:REAPPLIED_DYNAMIC:SM37
-    - \tweak Y-extent ##f
-    - \abjad_invisible_line
-    \bacaStartTextSpanBCP
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     \override RepeatTie.direction = #up                      %! OC1
@@ -387,49 +384,35 @@ N_ViolinRHMusicVoice = {
         }                                                    %! IC
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     % [N ViolinRHMusicVoice measure 209 / measure 2]         %! SM4
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    4
-                    7
+                \upright
+                    \fraction
+                        4
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -437,72 +420,51 @@ N_ViolinRHMusicVoice = {
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    5
-                    7
+                \upright
+                    \fraction
+                        5
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     -\upbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -511,25 +473,18 @@ N_ViolinRHMusicVoice = {
     -\downbow
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -537,41 +492,34 @@ N_ViolinRHMusicVoice = {
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     r4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -583,49 +531,35 @@ N_ViolinRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -633,41 +567,34 @@ N_ViolinRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -680,49 +607,35 @@ N_ViolinRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -730,71 +643,50 @@ N_ViolinRHMusicVoice = {
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -803,25 +695,18 @@ N_ViolinRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -833,41 +718,34 @@ N_ViolinRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     
@@ -878,90 +756,69 @@ N_ViolinRHMusicVoice = {
     -\upbow
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     -\downbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    4
+                \upright
+                    \fraction
+                        0
+                        4
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    1
-                    4
+                \upright
+                    \fraction
+                        1
+                        4
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     r4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    2
-                    4
+                \upright
+                    \fraction
+                        2
+                        4
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -973,48 +830,34 @@ N_ViolinRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        2
-                        4
+                    \upright
+                        \fraction
+                            2
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1023,73 +866,52 @@ N_ViolinRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     
     % [N ViolinRHMusicVoice measure 215 / measure 8]         %! SM4
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    5
-                    7
+                \upright
+                    \fraction
+                        5
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1097,25 +919,18 @@ N_ViolinRHMusicVoice = {
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
@@ -1126,41 +941,34 @@ N_ViolinRHMusicVoice = {
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1169,49 +977,35 @@ N_ViolinRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1219,41 +1013,34 @@ N_ViolinRHMusicVoice = {
         \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     
@@ -1264,49 +1051,35 @@ N_ViolinRHMusicVoice = {
     -\upbow
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     -\downbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1315,72 +1088,51 @@ N_ViolinRHMusicVoice = {
     -\upbow
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     -\downbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    4
-                    7
+                \upright
+                    \fraction
+                        4
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1388,34 +1140,23 @@ N_ViolinRHMusicVoice = {
     \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    5
-                    7
+                \upright
+                    \fraction
+                        5
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     - \tweak bound-details.right.text \markup {
-        \concat
-            {
-                \hspace
-                    #0.0
-                \fraction
-                    6
-                    7
-            }
+        \upright
+            \fraction
+                6
+                7
         }
     \bacaStartTextSpanBCP
     
@@ -1652,50 +1393,37 @@ N_ViolaRHMusicVoice = {
                 "1/2 clt"                                    %! IC
         }                                                    %! IC
     \>                                                       %! PIC
-    - \tweak Y-extent ##f
+    \bacaStopTextSpanBCP
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     c'4
     -\downbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -1707,25 +1435,18 @@ N_ViolaRHMusicVoice = {
         -\upbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1733,41 +1454,34 @@ N_ViolaRHMusicVoice = {
         \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1776,49 +1490,35 @@ N_ViolaRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1826,71 +1526,50 @@ N_ViolaRHMusicVoice = {
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1903,49 +1582,35 @@ N_ViolaRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1954,25 +1619,18 @@ N_ViolaRHMusicVoice = {
         -\upbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1980,41 +1638,34 @@ N_ViolaRHMusicVoice = {
         \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        4
+                    \upright
+                        \fraction
+                            0
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2027,49 +1678,35 @@ N_ViolaRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        2
-                        4
+                    \upright
+                        \fraction
+                            2
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2077,25 +1714,18 @@ N_ViolaRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     
@@ -2103,66 +1733,52 @@ N_ViolaRHMusicVoice = {
     c'4
     -\downbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    4
-                    7
+                \upright
+                    \fraction
+                        4
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     r4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    5
-                    7
+                \upright
+                    \fraction
+                        5
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
@@ -2174,48 +1790,34 @@ N_ViolaRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2224,73 +1826,52 @@ N_ViolaRHMusicVoice = {
         -\upbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2303,49 +1884,35 @@ N_ViolaRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2354,25 +1921,18 @@ N_ViolaRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2380,41 +1940,34 @@ N_ViolaRHMusicVoice = {
         \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
     }
     
@@ -2425,48 +1978,34 @@ N_ViolaRHMusicVoice = {
     -\downbow
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    7
+                \upright
+                    \fraction
+                        0
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    4
-                    7
+                \upright
+                    \fraction
+                        4
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     % [N ViolaRHMusicVoice measure 216 / measure 9]          %! SM4
@@ -2475,48 +2014,34 @@ N_ViolaRHMusicVoice = {
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    5
-                    7
+                \upright
+                    \fraction
+                        5
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2524,41 +2049,34 @@ N_ViolaRHMusicVoice = {
     \f                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     r4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_invisible_line
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \abjad_invisible_line
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2567,49 +2085,35 @@ N_ViolaRHMusicVoice = {
     -\downbow
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     -\upbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2618,25 +2122,18 @@ N_ViolaRHMusicVoice = {
     -\downbow
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    0
-                    4
+                \upright
+                    \fraction
+                        0
+                        4
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -2644,49 +2141,35 @@ N_ViolaRHMusicVoice = {
         % [N ViolaRHMusicVoice measure 217 / measure 10]     %! SM4
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        2
-                        4
+                    \upright
+                        \fraction
+                            2
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2694,49 +2177,35 @@ N_ViolaRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2744,80 +2213,55 @@ N_ViolaRHMusicVoice = {
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
-                }
-            }
-        - \abjad_invisible_line
-        - \tweak bound-details.right.text \markup {
-            \concat
-                {
-                    \hspace
-                        #1.0
-                    \fraction
-                        6
-                        7
+                        #0.5
                 }
             }
         \bacaStartTextSpanBCP
         
         c'4
-        -\downbow
         \bacaStopTextSpanBCP
         \revert RepeatTie.direction                          %! OC2
         \revert Script.staff-padding                         %! OC2
@@ -3048,9 +2492,6 @@ N_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! SM6:REAPPLIED_DYNAMIC_COLOR:SM37
         r4
         \pp                                                  %! SM8:REAPPLIED_DYNAMIC:SM37
-        - \tweak Y-extent ##f
-        - \abjad_invisible_line
-        \bacaStartTextSpanBCP
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab) %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
         \override RepeatTie.direction = #up                  %! OC1
@@ -3066,48 +2507,34 @@ N_CelloRHMusicVoice = {
             }                                                %! IC
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3119,72 +2546,51 @@ N_CelloRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3193,25 +2599,18 @@ N_CelloRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3219,41 +2618,34 @@ N_CelloRHMusicVoice = {
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        4
+                    \upright
+                        \fraction
+                            0
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3262,48 +2654,34 @@ N_CelloRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        4
+                    \upright
+                        \fraction
+                            0
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3312,25 +2690,18 @@ N_CelloRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        2
-                        4
+                    \upright
+                        \fraction
+                            2
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3339,49 +2710,35 @@ N_CelloRHMusicVoice = {
         % [N CelloRHMusicVoice measure 210 / measure 3]      %! SM4
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     
@@ -3391,48 +2748,34 @@ N_CelloRHMusicVoice = {
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    4
-                    7
+                \upright
+                    \fraction
+                        4
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    5
-                    7
+                \upright
+                    \fraction
+                        5
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3440,49 +2783,35 @@ N_CelloRHMusicVoice = {
     \ff                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \>                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     c'4
     -\upbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -3491,25 +2820,18 @@ N_CelloRHMusicVoice = {
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3517,41 +2839,34 @@ N_CelloRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3560,25 +2875,18 @@ N_CelloRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3588,25 +2896,18 @@ N_CelloRHMusicVoice = {
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3615,73 +2916,52 @@ N_CelloRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3689,50 +2969,36 @@ N_CelloRHMusicVoice = {
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3741,18 +3007,18 @@ N_CelloRHMusicVoice = {
         % [N CelloRHMusicVoice measure 214 / measure 7]      %! SM4
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3761,25 +3027,18 @@ N_CelloRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     
@@ -3787,25 +3046,18 @@ N_CelloRHMusicVoice = {
     c'4
     -\upbow
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    7
-                    7
+                \upright
+                    \fraction
+                        7
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3814,25 +3066,18 @@ N_CelloRHMusicVoice = {
     -\downbow
     \<                                                       %! PIC
     \bacaStopTextSpanBCP
-    - \tweak Y-extent ##f
+    - \abjad_solid_line_with_arrow
     - \tweak bound-details.left.text \markup {
         \concat
             {
-                \fraction
-                    6
-                    7
+                \upright
+                    \fraction
+                        6
+                        7
                 \hspace
-                    #0.25
+                    #0.5
             }
         }
-    - \tweak arrow-width 0.25
-    - \tweak dash-fraction 1
-    - \tweak bound-details.left.stencil-align-dir-y #center
-    - \tweak bound-details.right.arrow ##t
-    - \tweak bound-details.right-broken.padding 0
-    - \tweak bound-details.right-broken.text ##f
-    - \tweak bound-details.right.padding 0.5
-    - \tweak bound-details.right.stencil-align-dir-y #center
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -3841,49 +3086,35 @@ N_CelloRHMusicVoice = {
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        4
+                    \upright
+                        \fraction
+                            0
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3891,49 +3122,35 @@ N_CelloRHMusicVoice = {
         \ff                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        2
-                        4
+                    \upright
+                        \fraction
+                            2
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3941,97 +3158,69 @@ N_CelloRHMusicVoice = {
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        1
-                        4
+                    \upright
+                        \fraction
+                            1
+                            4
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        4
-                        7
+                    \upright
+                        \fraction
+                            4
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \f                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        5
-                        7
+                    \upright
+                        \fraction
+                            5
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -4040,18 +3229,18 @@ N_CelloRHMusicVoice = {
         % [N CelloRHMusicVoice measure 217 / measure 10]     %! SM4
         r4
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_invisible_line
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \abjad_invisible_line
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -4060,49 +3249,35 @@ N_CelloRHMusicVoice = {
         -\downbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -4111,73 +3286,52 @@ N_CelloRHMusicVoice = {
         -\downbow
         \<                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        6
-                        7
+                    \upright
+                        \fraction
+                            6
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\upbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         c'4
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -4186,25 +3340,18 @@ N_CelloRHMusicVoice = {
         -\upbow
         \>                                                   %! PIC
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        7
-                        7
+                    \upright
+                        \fraction
+                            7
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -4212,40 +3359,42 @@ N_CelloRHMusicVoice = {
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow
         \bacaStopTextSpanBCP
-        - \tweak Y-extent ##f
+        - \abjad_solid_line_with_arrow
         - \tweak bound-details.left.text \markup {
             \concat
                 {
-                    \fraction
-                        0
-                        7
+                    \upright
+                        \fraction
+                            0
+                            7
                     \hspace
-                        #0.25
+                        #0.5
                 }
             }
-        - \tweak arrow-width 0.25
-        - \tweak dash-fraction 1
-        - \tweak bound-details.left.stencil-align-dir-y #center
-        - \tweak bound-details.right.arrow ##t
-        - \tweak bound-details.right-broken.padding 0
-        - \tweak bound-details.right-broken.text ##f
-        - \tweak bound-details.right.padding 0.5
-        - \tweak bound-details.right.stencil-align-dir-y #center
         - \tweak bound-details.right.text \markup {
-            \concat
-                {
-                    \hspace
-                        #0.0
-                    \fraction
-                        7
-                        7
-                }
+            \upright
+                \fraction
+                    7
+                    7
             }
         \bacaStartTextSpanBCP
         \revert RepeatTie.direction                          %! OC2
         
         r4
         \bacaStopTextSpanBCP
+        - \abjad_invisible_line
+        - \tweak bound-details.left.text \markup {
+            \concat
+                {
+                    \upright
+                        \fraction
+                            7
+                            7
+                    \hspace
+                        #0.5
+                }
+            }
+        \bacaStartTextSpanBCP
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
         \revert DynamicLineSpanner.staff-padding             %! OC2
