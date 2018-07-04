@@ -1469,6 +1469,7 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     - \abjad_dashed_line_with_arrow                          %! PIC
     - \tweak bound-details.left.text \markup {               %! PIC
         \concat                                              %! PIC
@@ -1491,18 +1492,21 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 224 / measure 7]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 225 / measure 8]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!\breve
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     \stopTextSpan                                            %! PIC
     
@@ -1510,6 +1514,7 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     - \abjad_dashed_line_with_arrow                          %! PIC
     - \tweak bound-details.left.text \markup {               %! PIC
@@ -1533,18 +1538,21 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2.
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 228 / measure 11]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 229 / measure 12]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!\breve
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     \stopTextSpan                                            %! PIC
     
@@ -1552,6 +1560,7 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     - \abjad_dashed_line_with_arrow                          %! PIC
     - \tweak bound-details.left.text \markup {               %! PIC
@@ -1575,18 +1584,21 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 232 / measure 15]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 233 / measure 16]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2.
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     \stopTextSpan                                            %! PIC
     
@@ -1594,6 +1606,7 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     - \abjad_dashed_line_with_arrow                          %! PIC
     - \tweak bound-details.left.text \markup {               %! PIC
@@ -1617,12 +1630,14 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!\breve
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 236 / measure 19]           %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2.
     \mp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                       %! PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 237 / measure 20]           %! SM4
