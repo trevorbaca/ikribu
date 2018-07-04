@@ -1467,29 +1467,30 @@ C_CelloMusicVoice = {
     - \tweak bound-details.right.padding #0.5                %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center %! PIC
     \startTextSpan                                           %! PIC
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 37 / measure 3]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''1
+    fqf''!1
     :32                                                      %! IC
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 38 / measure 4]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d''2.
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [C CelloMusicVoice measure 39 / measure 5]         %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-        d''4
+        b'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \repeatTie
+        \glissando                                           %! SC
     }
     
     % [C CelloMusicVoice measure 40 / measure 6]             %! SM4
@@ -1497,83 +1498,82 @@ C_CelloMusicVoice = {
     d''1
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 41 / measure 7]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''1
+    b'1
     :32                                                      %! IC
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 42 / measure 8]             %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''2.
+    g'2.
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [C CelloMusicVoice measure 43 / measure 9]         %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-        d''4
+        b'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \repeatTie
+        \glissando                                           %! SC
     }
     
     % [C CelloMusicVoice measure 44 / measure 10]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''1
+    g'1
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 45 / measure 11]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''1
+    d'1
     :32                                                      %! IC
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 46 / measure 12]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''2.
+    g'2.
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
         % [C CelloMusicVoice measure 47 / measure 13]        %! SM4
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-        d''4
+        d'4
         :32                                                  %! IC
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \repeatTie
+        \glissando                                           %! SC
     }
     
     % [C CelloMusicVoice measure 48 / measure 14]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''1
+    g1
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 49 / measure 15]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''1
+    d'1
     :32                                                      %! IC
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
+    \glissando                                               %! SC
     
     % [C CelloMusicVoice measure 50 / measure 16]            %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
-    d''2.
+    g2.
     :32                                                      %! IC
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \repeatTie
     \stopTextSpan                                            %! PIC
     \revert DynamicLineSpanner.staff-padding                 %! OC2
     \revert NoteHead.style                                   %! OC2
