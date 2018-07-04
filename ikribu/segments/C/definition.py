@@ -139,11 +139,13 @@ maker(
     )
 
 maker(
-    [
-        ('vc', 1),
-        ('vc', (2, 16)),
-        ],
+    ('vc', 1),
     baca.make_repeat_tied_notes(),
+    )
+
+maker(
+    ('vc', (2, 16)),
+    baca.make_notes(),
     )
 
 maker(
