@@ -25,7 +25,6 @@ maker = baca.TimeSignatureMaker(
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
-    do_not_attach_metronome_mark_spanner=True,
     fermata_measure_staff_line_count=0,
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-16, -4),
