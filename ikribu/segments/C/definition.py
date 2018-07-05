@@ -197,7 +197,7 @@ maker(
         piece_selector=baca.group_by_measures(),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
-    baca.new_transition(
+    baca.transition(
         baca.markups.markup('trem. flaut. tasto. (arco)'),
         baca.markups.markup('trem. flaut. XP'),
         ),
