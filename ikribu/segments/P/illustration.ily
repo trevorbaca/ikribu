@@ -449,7 +449,7 @@ P_ViolinRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -457,367 +457,167 @@ P_ViolinRHMusicVoice = {
                     "1/2 clt"                                %! IC
             }                                                %! IC
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     
     % [P ViolinRHMusicVoice measure 240 / measure 2]         %! SM4
     c'4
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        4
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        5
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
         % [P ViolinRHMusicVoice measure 241 / measure 3]     %! SM4
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
         % [P ViolinRHMusicVoice measure 242 / measure 4]     %! SM4
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            4
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            5
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/7 {
@@ -826,120 +626,55 @@ P_ViolinRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            1
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            2
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            2
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            1
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        - \tweak bound-details.right.text \markup {
-            \upright
-                \fraction
-                    0
-                    7
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+        - \tweak bound-details.right.text \markup \baca-bcp-right #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        \bacaStopTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
         \revert DynamicLineSpanner.staff-padding             %! OC2
@@ -1141,7 +876,7 @@ P_ViolaRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-    -\upbow
+    -\upbow                                                  %! BACA_BCP_COMMAND
     ^ \markup {                                              %! IC
         \override                                            %! IC
             #'(box-padding . 0.5)                            %! IC
@@ -1149,58 +884,28 @@ P_ViolaRHMusicVoice = {
                 "1/2 clt"                                    %! IC
         }                                                    %! IC
     \>                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
     c'4
-    -\downbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        0
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\downbow                                                %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    -\upbow
+    -\upbow                                                  %! BACA_BCP_COMMAND
     \<                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
@@ -1208,221 +913,101 @@ P_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
         % [P ViolaRHMusicVoice measure 241 / measure 3]      %! SM4
         c'4
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            4
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            5
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            1
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
@@ -1431,249 +1016,114 @@ P_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            1
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            2
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            1
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            4
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            5
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     
     % [P ViolaRHMusicVoice measure 243 / measure 5]          %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
-    -\downbow
+    -\downbow                                                %! BACA_BCP_COMMAND
     \>                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        5
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        6
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    -\upbow
+    -\upbow                                                  %! BACA_BCP_COMMAND
     \<                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\downbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        6
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\downbow                                                %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\upbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\upbow                                                  %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \pp                                                      %! SM8:EXPLICIT_DYNAMIC:PIC
-    -\downbow
+    -\downbow                                                %! BACA_BCP_COMMAND
     \>                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        0
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\upbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    - \tweak bound-details.right.text \markup {
-        \upright
-            \fraction
-                0
-                7
-        }
-    \bacaStartTextSpanBCP
+    -\upbow                                                  %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    - \tweak bound-details.right.text \markup \baca-bcp-right #0 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \bacaStopTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
     \revert Script.staff-padding                             %! OC2
     \revert TextSpanner.staff-padding                        %! OC2
     \revert DynamicLineSpanner.staff-padding                 %! OC2
@@ -1862,7 +1312,7 @@ P_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         ^ \markup {                                          %! IC
             \override                                        %! IC
                 #'(box-padding . 0.5)                        %! IC
@@ -1870,90 +1320,40 @@ P_CelloRHMusicVoice = {
                     "1/2 clt"                                %! IC
             }                                                %! IC
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            4
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            5
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     
     % [P CelloRHMusicVoice measure 240 / measure 2]          %! SM4
     c'4
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        6
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\upbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\upbow                                                  %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
         
@@ -1961,236 +1361,106 @@ P_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            6
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            1
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
+        -\upbow                                              %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            2
-                            4
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
     }
     
     % [P CelloRHMusicVoice measure 242 / measure 4]          %! SM4
     c'4
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        1
-                        4
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\downbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        0
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\downbow                                                %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \ppp                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        4
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        5
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \p                                                       %! SM8:EXPLICIT_DYNAMIC:PIC
     \>                                                       %! PIC
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        6
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\upbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        7
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\upbow                                                  %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     
     c'4
-    -\downbow
-    \bacaStopTextSpanBCP
-    - \abjad_solid_line_with_arrow
-    - \tweak bound-details.left.text \markup {
-        \concat
-            {
-                \upright
-                    \fraction
-                        6
-                        7
-                \hspace
-                    #0.5
-            }
-        }
-    \bacaStartTextSpanBCP
+    -\downbow                                                %! BACA_BCP_COMMAND
+    \bacaStopTextSpanBCP                                     %! BACA_BCP_COMMAND
+    - \abjad_solid_line_with_arrow                           %! BACA_BCP_COMMAND
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7 %! BACA_BCP_COMMAND
+    \bacaStartTextSpanBCP                                    %! BACA_BCP_COMMAND
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/9 {
         
@@ -2198,158 +1468,73 @@ P_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         r4
-        \bacaStopTextSpanBCP
-        - \abjad_invisible_line
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_invisible_line                              %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-        -\downbow
+        -\downbow                                            %! BACA_BCP_COMMAND
         \>                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\upbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            7
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\upbow                                              %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         c'4
-        -\downbow
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            0
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        \bacaStartTextSpanBCP
+        -\downbow                                            %! BACA_BCP_COMMAND
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
         \<                                                   %! PIC
-        \bacaStopTextSpanBCP
-        - \abjad_solid_line_with_arrow
-        - \tweak bound-details.left.text \markup {
-            \concat
-                {
-                    \upright
-                        \fraction
-                            4
-                            7
-                    \hspace
-                        #0.5
-                }
-            }
-        - \tweak bound-details.right.text \markup {
-            \upright
-                \fraction
-                    5
-                    7
-            }
-        \bacaStartTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
+        - \abjad_solid_line_with_arrow                       %! BACA_BCP_COMMAND
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7 %! BACA_BCP_COMMAND
+        - \tweak bound-details.right.text \markup \baca-bcp-right #5 #7 %! BACA_BCP_COMMAND
+        \bacaStartTextSpanBCP                                %! BACA_BCP_COMMAND
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                  %! SM8:EXPLICIT_DYNAMIC:PIC
-        \bacaStopTextSpanBCP
+        \bacaStopTextSpanBCP                                 %! BACA_BCP_COMMAND
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
         \revert DynamicLineSpanner.staff-padding             %! OC2
