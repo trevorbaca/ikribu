@@ -36,7 +36,6 @@ N_GlobalSkips = {
 %@%                 #0.5                                                 %! MMI2
 %@%         }                                                            %! MMI2
 %@%     }                                                                %! MMI2
-%@% - \tweak bound-details.left-broken.text ##f                          %! MMI2
 %@% \startTextSpan                                                       %! MMI2
     - \abjad_invisible_line                                              %! MMI3
     - \tweak bound-details.left.text \markup {                           %! MMI3
@@ -49,7 +48,6 @@ N_GlobalSkips = {
                     #0.5                                                 %! MMI3
             }                                                            %! MMI3
         }                                                                %! MMI3
-    - \tweak bound-details.left-broken.text ##f                          %! MMI3
     \startTextSpan                                                       %! MMI3
     
     % [N GlobalSkips measure 209 / measure 2]                            %! SM4
@@ -402,7 +400,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     % [N ViolinRHMusicVoice measure 209 / measure 2]         %! SM4
@@ -420,7 +417,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -440,7 +436,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -457,7 +452,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -475,7 +469,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -496,7 +489,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -516,7 +508,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     r4
@@ -533,7 +524,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -557,7 +547,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -575,7 +564,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -595,7 +583,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -612,7 +599,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -637,7 +623,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -655,7 +640,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -675,7 +659,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -692,7 +675,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -709,7 +691,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -730,7 +711,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -754,7 +734,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -771,7 +750,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -794,7 +772,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -812,7 +789,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -831,7 +807,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     r4
@@ -848,7 +823,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -872,7 +846,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -889,7 +862,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -910,7 +882,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -927,7 +898,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -946,7 +916,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -966,7 +935,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
@@ -989,7 +957,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -1006,7 +973,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1027,7 +993,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1045,7 +1010,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1065,7 +1029,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -1082,7 +1045,6 @@ N_ViolinRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -1105,7 +1067,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -1123,7 +1084,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1144,7 +1104,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -1162,7 +1121,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -1179,7 +1137,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1199,7 +1156,6 @@ N_ViolinRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     - \tweak bound-details.right.text \markup {
         \upright
             \fraction
@@ -1454,7 +1410,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
@@ -1473,7 +1428,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -1497,7 +1451,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1517,7 +1470,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -1534,7 +1486,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1555,7 +1506,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1573,7 +1523,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1593,7 +1542,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1610,7 +1558,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1627,7 +1574,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1652,7 +1598,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1670,7 +1615,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1691,7 +1635,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1711,7 +1654,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -1728,7 +1670,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1753,7 +1694,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1771,7 +1711,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1791,7 +1730,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -1811,7 +1749,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1830,7 +1767,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     r4
@@ -1847,7 +1783,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
@@ -1871,7 +1806,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1888,7 +1822,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -1909,7 +1842,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1927,7 +1859,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1945,7 +1876,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1970,7 +1900,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -1988,7 +1917,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2009,7 +1937,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2029,7 +1956,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -2046,7 +1972,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -2069,7 +1994,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -2086,7 +2010,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     % [N ViolaRHMusicVoice measure 216 / measure 9]          %! SM4
@@ -2107,7 +2030,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -2124,7 +2046,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2144,7 +2065,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     r4
@@ -2161,7 +2081,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2182,7 +2101,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -2200,7 +2118,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2221,7 +2138,6 @@ N_ViolaRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -2241,7 +2157,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2259,7 +2174,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2279,7 +2193,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2297,7 +2210,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2317,7 +2229,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2336,7 +2247,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -2353,7 +2263,6 @@ N_ViolaRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2614,7 +2523,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2631,7 +2539,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2655,7 +2562,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2672,7 +2578,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2690,7 +2595,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2711,7 +2615,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2731,7 +2634,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -2748,7 +2650,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2769,7 +2670,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2786,7 +2686,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2807,7 +2706,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2828,7 +2726,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -2846,7 +2743,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -2868,7 +2764,6 @@ N_CelloRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -2885,7 +2780,6 @@ N_CelloRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2905,7 +2799,6 @@ N_CelloRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     c'4
@@ -2923,7 +2816,6 @@ N_CelloRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2944,7 +2836,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -2964,7 +2855,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         r4
@@ -2981,7 +2871,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3002,7 +2891,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3024,7 +2912,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3045,7 +2932,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3063,7 +2949,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3081,7 +2966,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3101,7 +2985,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3120,7 +3003,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3141,7 +3023,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3162,7 +3043,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     
@@ -3182,7 +3062,6 @@ N_CelloRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3203,7 +3082,6 @@ N_CelloRHMusicVoice = {
                     #0.5
             }
         }
-    - \tweak bound-details.left-broken.text ##f
     \bacaStartTextSpanBCP
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -3224,7 +3102,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3242,7 +3119,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3262,7 +3138,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3280,7 +3155,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3300,7 +3174,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3318,7 +3191,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3335,7 +3207,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3354,7 +3225,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3375,7 +3245,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3396,7 +3265,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3414,7 +3282,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3435,7 +3302,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3453,7 +3319,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         c'4
@@ -3471,7 +3336,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3492,7 +3356,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue) %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -3512,7 +3375,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         - \tweak bound-details.right.text \markup {
             \upright
                 \fraction
@@ -3536,7 +3398,6 @@ N_CelloRHMusicVoice = {
                         #0.5
                 }
             }
-        - \tweak bound-details.left-broken.text ##f
         \bacaStartTextSpanBCP
         \revert Script.staff-padding                         %! OC2
         \revert TextSpanner.staff-padding                    %! OC2
