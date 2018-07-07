@@ -150,7 +150,7 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.markup('trem. flaut. XP'),
         '=>',
         baca.markups.markup('trem. flaut. nut'),
@@ -168,7 +168,7 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('<Eb4 F4>'),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.markup('trem. flaut. XP'),
         '=>',
         baca.markups.markup('trem. flaut. nut'),
@@ -192,7 +192,7 @@ maker(
 
 maker(
     ('vc', (5, 8)),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.tasto_poss(),
         '=>',
         baca.markups.pos_ord(),
@@ -201,7 +201,7 @@ maker(
 
 maker(
     ('vc', (9, 12)),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.pos_ord(),
         '=>',
         baca.markups.XP(),
@@ -210,7 +210,7 @@ maker(
 
 maker(
     ('vc', (13, 16)),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.XP(),
         '=>',
         baca.markups.pos_ord(),
@@ -219,7 +219,7 @@ maker(
 
 maker(
     ('vc', (17, 20)),
-    baca.new_text_spanner(
+    baca.text_spanner(
         baca.markups.pos_ord(),
         '=>',
         baca.markups.tasto_poss(),
