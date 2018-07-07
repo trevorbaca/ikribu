@@ -24,10 +24,10 @@
             {
                 \context EnsembleStaffGroup = "EnsembleStaffGroup"
                 <<
-                    \tag BassClarinet                                                    %! ST4
+                    \tag BassClarinet                                                              %! ST4
                     \context Staff = "BassClarinetMusicStaff"
                     \P_BassClarinetMusicStaff
-                    \tag Violin                                                          %! ST4
+                    \tag Violin                                                                    %! ST4
                     \context SingleStringStaffGroup = "ViolinStaffGroup"
                     <<
                         \context RHStaff = "ViolinRHMusicStaff"
@@ -35,7 +35,7 @@
                         \context Staff = "ViolinMusicStaff"
                         \P_ViolinMusicStaff
                     >>
-                    \tag Viola                                                           %! ST4
+                    \tag Viola                                                                     %! ST4
                     \context SingleStringStaffGroup = "ViolaStaffGroup"
                     <<
                         \context RHStaff = "ViolaRHMusicStaff"
@@ -43,7 +43,7 @@
                         \context Staff = "ViolaMusicStaff"
                         \P_ViolaMusicStaff
                     >>
-                    \tag Cello                                                           %! ST4
+                    \tag Cello                                                                     %! ST4
                     \context SingleStringStaffGroup = "CelloStaffGroup"
                     <<
                         \context RHStaff = "CelloRHMusicStaff"
