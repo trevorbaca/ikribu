@@ -247,8 +247,9 @@ maker(
 
 maker(
     ('vc', [(2, 3), (9, 10), (13, 14), (20, 21)]),
-    baca.transition(
+    baca.new_text_spanner(
         baca.markups.tasto(),
+        '=>',
         baca.markups.XP(),
         ),
     )
