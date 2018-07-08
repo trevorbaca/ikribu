@@ -103,7 +103,7 @@ maker(
         piece_selector=baca.group_by_measures(),
         ),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),

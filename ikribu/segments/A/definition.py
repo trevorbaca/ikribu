@@ -59,7 +59,7 @@ maker(
     baca.clef('percussion'),
     baca.dynamic('"mf"'),
     baca.make_tied_repeated_durations((1, 4)),
-    baca.markups.lines(['stonecircle:', 'π/4 every quarter note']).boxed(),
+    baca.markuplib.lines(['stonecircle:', 'π/4 every quarter note']).boxed(),
     baca.repeat_tie_up(),
     baca.dynamic_shift('"mf"'),
     baca.staff_position(0),

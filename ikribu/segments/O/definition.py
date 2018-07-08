@@ -146,14 +146,14 @@ maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
     baca.markup(
-        baca.markups.string_numbers([2, 3]),
+        baca.markuplib.string_numbers([2, 3]),
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner(
-        baca.markups.markup('trem. flaut. XP'),
+        baca.markuplib.markup('trem. flaut. XP'),
         '=>',
-        baca.markups.markup('trem. flaut. nut'),
+        baca.markuplib.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -164,14 +164,14 @@ maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
     baca.markup(
-        baca.markups.string_numbers([2, 3]),
+        baca.markuplib.string_numbers([2, 3]),
         direction=abjad.Down,
         ),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner(
-        baca.markups.markup('trem. flaut. XP'),
+        baca.markuplib.markup('trem. flaut. XP'),
         '=>',
-        baca.markups.markup('trem. flaut. nut'),
+        baca.markuplib.markup('trem. flaut. nut'),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -193,35 +193,35 @@ maker(
 maker(
     ('vc', (5, 8)),
     baca.text_spanner(
-        baca.markups.tasto_poss(),
+        baca.markuplib.tasto_poss(),
         '=>',
-        baca.markups.pos_ord(),
+        baca.markuplib.pos_ord(),
         ),
     )
 
 maker(
     ('vc', (9, 12)),
     baca.text_spanner(
-        baca.markups.pos_ord(),
+        baca.markuplib.pos_ord(),
         '=>',
-        baca.markups.XP(),
+        baca.markuplib.XP(),
         ),
     )
 
 maker(
     ('vc', (13, 16)),
     baca.text_spanner(
-        baca.markups.XP(),
+        baca.markuplib.XP(),
         '=>',
-        baca.markups.pos_ord(),
+        baca.markuplib.pos_ord(),
         ),
     )
 
 maker(
     ('vc', (17, 20)),
     baca.text_spanner(
-        baca.markups.pos_ord(),
+        baca.markuplib.pos_ord(),
         '=>',
-        baca.markups.tasto_poss(),
+        baca.markuplib.tasto_poss(),
         ),
     )

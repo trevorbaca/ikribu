@@ -175,7 +175,7 @@ maker(
 maker(
     ('vn', 1),
     baca.dynamic('"f"'),
-    baca.markups.markup('grainfall (3)').boxed(),
+    baca.markuplib.markup('grainfall (3)').boxed(),
     )
 
 maker(
@@ -188,7 +188,7 @@ maker(
 
 maker(
     ('vn', [(2, 3), 6, (9, 10), (13, 14), 17, (20, 21)]),
-    baca.markups.markup('sponges on BD').boxed(),
+    baca.markuplib.markup('sponges on BD').boxed(),
     )
 
 maker(
@@ -203,31 +203,31 @@ maker(
 maker(
     ('vn', 5),
     baca.dynamic('"f"'),
-    baca.markups.markup('grainfall (4)').boxed(),
+    baca.markuplib.markup('grainfall (4)').boxed(),
     )
 
 maker(
     ('vn', 8),
     baca.dynamic('"f"'),
-    baca.markups.markup('grainfall (5)').boxed(),
+    baca.markuplib.markup('grainfall (5)').boxed(),
     )
 
 maker(
     ('vn', 12),
     baca.dynamic('"f"'),
-    baca.markups.markup('grainfall (6)').boxed(),
+    baca.markuplib.markup('grainfall (6)').boxed(),
     )
 
 maker(
     ('vn', 16),
     baca.dynamic('"f"'),
-    baca.markups.markup('grainfall (7)').boxed(),
+    baca.markuplib.markup('grainfall (7)').boxed(),
     )
 
 maker(
     ('vn', 19),
     baca.dynamic('"f"'),
-    baca.markups.markup('grainfall (8)').boxed(),
+    baca.markuplib.markup('grainfall (8)').boxed(),
     )
 
 maker(
@@ -248,9 +248,9 @@ maker(
 maker(
     ('vc', [(2, 3), (9, 10), (13, 14), (20, 21)]),
     baca.text_spanner(
-        baca.markups.tasto(),
+        baca.markuplib.tasto(),
         '=>',
-        baca.markups.XP(),
+        baca.markuplib.XP(),
         ),
     )
 
@@ -266,7 +266,7 @@ maker(
 
 maker(
     ('vc', [6, 17]),
-    baca.markups.XP(),
+    baca.markuplib.XP(),
     )
 
 maker(
@@ -274,9 +274,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markuplib.pizz(),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -293,9 +293,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markuplib.pizz(),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -307,9 +307,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markuplib.pizz(),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -321,9 +321,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markuplib.pizz(),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -335,9 +335,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markuplib.pizz(),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -349,9 +349,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markuplib.pizz(),
     baca.markup(
-        baca.markups.string_number(3),
+        baca.markuplib.string_number(3),
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
