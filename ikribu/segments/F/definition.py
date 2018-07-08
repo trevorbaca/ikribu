@@ -70,14 +70,14 @@ maker(
     ('vn', (6, 7)),
     baca.clef('treble'),
     baca.markup(
-        baca.markups.string_numbers([2, 3]),
+        baca.markuplib.string_numbers([2, 3]),
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner(
-        baca.markups.markup('trem. flaut. XP'),
+        baca.markuplib.markup('trem. flaut. XP'),
         '=>',
-        baca.markups.markup('trem. flaut. tast.'),
+        baca.markuplib.markup('trem. flaut. tast.'),
         ),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
@@ -86,7 +86,7 @@ maker(
 maker(
     ('va', (6, 7)),
     baca.markup(
-        baca.markups.string_numbers([1, 2]),
+        baca.markuplib.string_numbers([1, 2]),
         direction=abjad.Down,
         ),
     baca.clef('treble'),
@@ -94,9 +94,9 @@ maker(
     baca.clef_x_extent_false(),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner(
-        baca.markups.markup('trem. flaut. XP'),
+        baca.markuplib.markup('trem. flaut. XP'),
         '=>',
-        baca.markups.markup('trem. flaut. tast.'),
+        baca.markuplib.markup('trem. flaut. tast.'),
         ),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
@@ -109,9 +109,9 @@ maker(
     baca.pitch('F#3'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner(
-        baca.markups.markup('(trem. flaut. tast.)'),
+        baca.markuplib.markup('(trem. flaut. tast.)'),
         '=>',
-        baca.markups.markup('trem. XP (non. flaut.)'),
+        baca.markuplib.markup('trem. XP (non. flaut.)'),
         ),
     baca.text_spanner_staff_padding(3.5),
     )
@@ -119,7 +119,7 @@ maker(
 maker(
     ('vc', (6, 7)),
     baca.make_tied_repeated_durations((1, 4)),
-    baca.markups.lines(['graincircle:', 'π/2 every quarter note']).boxed(),
+    baca.markuplib.lines(['graincircle:', 'π/2 every quarter note']).boxed(),
     baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
