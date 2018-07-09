@@ -80,16 +80,19 @@ maker(
     baca.staff_position(0),
     )
 
+markup_1 = baca.markups.markup('stonecircle: π/2 every quarter note').boxed()
+markup_2 = baca.markups.lines(['stonecircle:', 'π/2 every quarter note'])
+markup_2 = markup_2.boxed()
 maker(
     ('bcl', (2, 3)),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
-        baca.markups.markup('stonecircle: π/2 every quarter note').boxed(),
+        baca.markup(markup_1),
         deactivate=True,
         ),
     baca.tag(
         '-ARCH_A_PARTS_BCL',
-        baca.markups.lines(['stonecircle:', 'π/2 every quarter note']).boxed(),
+        baca.markup(markup_2),
         ),
     ikribu.box_adjustment(),
     )
