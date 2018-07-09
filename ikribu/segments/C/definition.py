@@ -84,12 +84,12 @@ maker(
     ('bcl', (2, 3)),
     baca.tag(
         '+ARCH_A_PARTS_BCL',
-        baca.markuplib.markup('stonecircle: π/2 every quarter note').boxed(),
+        baca.markups.markup('stonecircle: π/2 every quarter note').boxed(),
         deactivate=True,
         ),
     baca.tag(
         '-ARCH_A_PARTS_BCL',
-        baca.markuplib.lines(['stonecircle:', 'π/2 every quarter note']).boxed(),
+        baca.markups.lines(['stonecircle:', 'π/2 every quarter note']).boxed(),
         ),
     ikribu.box_adjustment(),
     )
@@ -99,7 +99,7 @@ maker(
     baca.clef('percussion'),
     baca.dynamic('"mf"'),
     baca.make_repeat_tied_notes(),
-    baca.markuplib.markup('grainfall (2)').boxed(),
+    baca.markups.markup('grainfall (2)').boxed(),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),
@@ -129,7 +129,7 @@ maker(
         baca.runs()[abjad.index([1], 2)],
         baca.hairpin('p > pp'),
         ),
-    baca.markuplib.trem_flaut_tast(),
+    baca.markups.trem_flaut_tast(),
     baca.pitches('F#4 G#4 G#4 F#4'),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
@@ -162,7 +162,7 @@ maker(
         baca.runs()[abjad.index([1], 2)],
         baca.hairpin('p > pp'),
         ),
-    baca.markuplib.trem_flaut_tast(),
+    baca.markups.trem_flaut_tast(),
     baca.pitches('F4 E4 E4 F4'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_script_staff_padding(2.5, allow_mmrests=True),
@@ -171,9 +171,9 @@ maker(
 maker(
     ('vc', 1),
     baca.dynamic('sfz'),
-    baca.markuplib.pizz(),
+    baca.markups.pizz(),
     baca.markup(
-        baca.markuplib.string_number(3),
+        baca.markups.string_number(3),
         direction=abjad.Down,
         ),
     baca.laissez_vibrer(selector=baca.ptails()),
