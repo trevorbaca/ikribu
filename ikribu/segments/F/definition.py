@@ -74,9 +74,7 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
-    baca.text_spanner(
-        'trem. flaut. XP => trem. flaut. tast.',
-        ),
+    baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
     )
@@ -91,9 +89,7 @@ maker(
     baca.clef_extra_offset((-2.5, 0)),
     baca.clef_x_extent_false(),
     baca.pitch('<Eb4 F4>'),
-    baca.text_spanner(
-        'trem. flaut. XP => trem. flaut. tast.',
-        ),
+    baca.text_spanner('trem. flaut. XP => trem. flaut. tast.'),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
     )
@@ -104,9 +100,7 @@ maker(
     baca.hairpin('p < ff'),
     baca.pitch('F#3'),
     baca.stem_tremolo(selector=baca.pleaves()),
-    baca.text_spanner(
-        '(trem. flaut. tast.) => trem. XP (non. flaut.)',
-        ),
+    baca.text_spanner('(trem. flaut. tast.) => trem. XP (non. flaut.)'),
     baca.text_spanner_staff_padding(3.5),
     )
 
