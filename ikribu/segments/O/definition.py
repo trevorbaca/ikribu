@@ -151,9 +151,7 @@ maker(
         ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner(
-        baca.markuplib.markup('trem. flaut. XP'),
-        '=>',
-        baca.markuplib.markup('trem. flaut. nut'),
+        'trem. flaut. XP => trem. flaut. nut',
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -169,9 +167,7 @@ maker(
         ),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner(
-        baca.markuplib.markup('trem. flaut. XP'),
-        '=>',
-        baca.markuplib.markup('trem. flaut. nut'),
+        'trem. flaut. XP => trem. flaut. nut',
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
@@ -192,36 +188,20 @@ maker(
 
 maker(
     ('vc', (5, 8)),
-    baca.text_spanner(
-        baca.markuplib.tasto_poss(),
-        '=>',
-        baca.markuplib.pos_ord(),
-        ),
+    baca.text_spanner('tasto poss. => pos. ord.'),
     )
 
 maker(
     ('vc', (9, 12)),
-    baca.text_spanner(
-        baca.markuplib.pos_ord(),
-        '=>',
-        baca.markuplib.XP(),
-        ),
+    baca.text_spanner('pos. ord. => XP'),
     )
 
 maker(
     ('vc', (13, 16)),
-    baca.text_spanner(
-        baca.markuplib.XP(),
-        '=>',
-        baca.markuplib.pos_ord(),
-        ),
+    baca.text_spanner('XP => pos. ord.'),
     )
 
 maker(
     ('vc', (17, 20)),
-    baca.text_spanner(
-        baca.markuplib.pos_ord(),
-        '=>',
-        baca.markuplib.tasto_poss(),
-        ),
+    baca.text_spanner('pos. ord. => tasto poss.'),
     )

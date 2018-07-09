@@ -2886,19 +2886,8 @@ M_CelloMusicVoice = {
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    tasto                                              %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            XP                                                         %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC
@@ -2992,19 +2981,8 @@ M_CelloMusicVoice = {
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    tasto                                              %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            XP                                                         %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC
@@ -3059,19 +3037,8 @@ M_CelloMusicVoice = {
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    tasto                                              %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            XP                                                         %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC
@@ -3165,19 +3132,8 @@ M_CelloMusicVoice = {
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    tasto                                              %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            XP                                                         %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC

@@ -247,11 +247,7 @@ maker(
 
 maker(
     ('vc', [(2, 3), (9, 10), (13, 14), (20, 21)]),
-    baca.text_spanner(
-        baca.markuplib.tasto(),
-        '=>',
-        baca.markuplib.XP(),
-        ),
+    baca.text_spanner('tasto => XP'),
     )
 
 maker(
