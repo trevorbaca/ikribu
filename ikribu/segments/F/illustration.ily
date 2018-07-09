@@ -451,19 +451,8 @@ F_ViolinMusicVoice = {
     _ \markup { II+III }                                               %! IC
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    "trem. flaut. XP"                                  %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            "trem. flaut. tast."                                       %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "trem. flaut. XP" %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC
@@ -626,19 +615,8 @@ F_ViolaMusicVoice = {
     _ \markup { I+II }                                                 %! IC
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    "trem. flaut. XP"                                  %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            "trem. flaut. tast."                                       %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "trem. flaut. XP" %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC
@@ -758,19 +736,8 @@ F_CelloMusicVoice = {
         }                                                              %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
     \<                                                                 %! PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup {                         %! PIC
-        \concat                                                        %! PIC
-            {                                                          %! PIC
-                \upright                                               %! PIC
-                    "(trem. flaut. tast.)"                             %! PIC
-                \hspace                                                %! PIC
-                    #0.5                                               %! PIC
-            }                                                          %! PIC
-        }                                                              %! PIC
-    - \tweak bound-details.right.text \markup {                        %! PIC
-        \upright                                                       %! PIC
-            "trem. XP (non. flaut.)"                                   %! PIC
-        }                                                              %! PIC
+    - \tweak bound-details.left.text \markup \baca-left "(trem. flaut. tast.)" %! PIC
+    - \tweak bound-details.right.text \markup \baca-right "trem. XP (non. flaut.)" %! PIC
     - \tweak bound-details.right.padding #0.5                          %! PIC
     - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
     \startTextSpan                                                     %! PIC

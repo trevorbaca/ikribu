@@ -75,9 +75,7 @@ maker(
         ),
     baca.pitch('<E4 F#4>'),
     baca.text_spanner(
-        baca.markuplib.markup('trem. flaut. XP'),
-        '=>',
-        baca.markuplib.markup('trem. flaut. tast.'),
+        'trem. flaut. XP => trem. flaut. tast.',
         ),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
@@ -94,9 +92,7 @@ maker(
     baca.clef_x_extent_false(),
     baca.pitch('<Eb4 F4>'),
     baca.text_spanner(
-        baca.markuplib.markup('trem. flaut. XP'),
-        '=>',
-        baca.markuplib.markup('trem. flaut. tast.'),
+        'trem. flaut. XP => trem. flaut. tast.',
         ),
     baca.clef_shift('treble'),
     baca.staff_lines(5),
@@ -109,9 +105,7 @@ maker(
     baca.pitch('F#3'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner(
-        baca.markuplib.markup('(trem. flaut. tast.)'),
-        '=>',
-        baca.markuplib.markup('trem. XP (non. flaut.)'),
+        '(trem. flaut. tast.) => trem. XP (non. flaut.)',
         ),
     baca.text_spanner_staff_padding(3.5),
     )
