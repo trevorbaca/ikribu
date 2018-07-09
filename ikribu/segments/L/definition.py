@@ -63,7 +63,7 @@ maker(
     ('vn', (6, 8)),
     baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
-    baca.markups.markup('sponges on BD').boxed(),
+    baca.markup('sponges on BD', boxed=True),
     baca.hairpin(
         'mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff',
         bookend=-1,
@@ -101,7 +101,7 @@ maker(
     ('va', (4, 8)),
     baca.accent(selector=baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
-    baca.markups.markup('sponges on BD').boxed(),
+    baca.markup('sponges on BD', boxed=True),
     baca.hairpin(
         'p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <'
         ' f > mf < f > mf < ff > f < ff > f < fff',
