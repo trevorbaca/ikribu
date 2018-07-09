@@ -115,7 +115,7 @@ maker(
         baca.dynamic('"mp"'),
         baca.dynamic_shift('"mp"'),
         ],
-    baca.markuplib.col_legno_battuto(),
+    baca.markups.col_legno_battuto(),
     baca.staccato(selector=baca.pheads()),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
@@ -128,7 +128,7 @@ maker(
         baca.dynamic('"mp"'),
         baca.dynamic_shift('"mp"'),
         ],
-    baca.markuplib.col_legno_battuto(),
+    baca.markups.col_legno_battuto(),
     baca.staccato(selector=baca.pheads()),
     baca.text_script_padding(2.5, allow_mmrests=True),
     ikribu.clb_staff_positions(),
@@ -136,7 +136,7 @@ maker(
 
 maker(
     ('vc', (1, 16)),
-    baca.markuplib.lines(['graincircle:', 'π/2 every quarter note']).boxed(),
+    baca.markups.lines(['graincircle:', 'π/2 every quarter note']).boxed(),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.dls_staff_padding(6),
     baca.staff_position(0),

@@ -94,7 +94,7 @@ maker(
 maker(
     ('vn', (1, 9)),
     baca.markup(
-        baca.markuplib.string_number(3),
+        baca.markups.string_number(3),
         direction=abjad.Down,
         ),
     baca.pitch('E4'),
@@ -115,7 +115,7 @@ maker(
 maker(
     ('va', (13, 14)),
     baca.markup(
-        baca.markuplib.string_number(2),
+        baca.markups.string_number(2),
         direction=abjad.Down,
         ),
     baca.pitch('Eb4'),

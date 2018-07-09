@@ -146,7 +146,7 @@ maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
     baca.markup(
-        baca.markuplib.string_numbers([2, 3]),
+        baca.markups.string_numbers([2, 3]),
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
@@ -162,7 +162,7 @@ maker(
     baca.dynamic('ppppp'),
     baca.hairpin('ppppp >o niente', selector=baca.rleaves()[-3:]),
     baca.markup(
-        baca.markuplib.string_numbers([2, 3]),
+        baca.markups.string_numbers([2, 3]),
         direction=abjad.Down,
         ),
     baca.pitch('<Eb4 F4>'),
