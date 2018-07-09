@@ -150,9 +150,7 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
-    baca.text_spanner(
-        'trem. flaut. XP => trem. flaut. nut',
-        ),
+    baca.text_spanner('trem. flaut. XP => trem. flaut. nut'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
     )
@@ -166,9 +164,7 @@ maker(
         direction=abjad.Down,
         ),
     baca.pitch('<Eb4 F4>'),
-    baca.text_spanner(
-        'trem. flaut. XP => trem. flaut. nut',
-        ),
+    baca.text_spanner('trem. flaut. XP => trem. flaut. nut'),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.text_spanner_staff_padding(2.5),
     )

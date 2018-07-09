@@ -199,9 +199,7 @@ maker(
         piece_selector=baca.group_by_measures(),
         ),
     baca.stem_tremolo(selector=baca.pleaves()),
-    baca.text_spanner(
-        'trem. flaut. tasto. (arco) => trem. flaut. XP',
-        ),
+    baca.text_spanner('trem. flaut. tasto. (arco) => trem. flaut. XP'),
     baca.text_spanner_staff_padding(3.5),
     baca.tuplet_bracket_down(),
     )
