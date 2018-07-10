@@ -99,7 +99,9 @@ maker(
     baca.markups.lines([
         'introduce upper partials gradually;',
         'breathe as necessary before downbeats',
-        ]).boxed(),
+        ],
+        boxed=True,
+        ),
     baca.pitch('Bb1'),
     )
 
@@ -119,7 +121,7 @@ maker(
         ('va_rh', (1, 2)),
         ('vc_rh', (1, 2)),
         ],
-    baca.markups.half_clt().boxed(),
+    baca.markup('1/2 clt', boxed=True),
     baca.hairpin(
         'ff > p < f > pp < p > ppp <',
         bookend=True,

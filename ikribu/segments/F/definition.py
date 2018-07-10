@@ -70,7 +70,7 @@ maker(
     ('vn', (6, 7)),
     baca.clef('treble'),
     baca.markup(
-        baca.markups.string_numbers([2, 3]),
+        'II+III',
         direction=abjad.Down,
         ),
     baca.pitch('<E4 F#4>'),
@@ -82,7 +82,7 @@ maker(
 maker(
     ('va', (6, 7)),
     baca.markup(
-        baca.markups.string_numbers([1, 2]),
+        'I+II',
         direction=abjad.Down,
         ),
     baca.clef('treble'),
@@ -107,7 +107,7 @@ maker(
 maker(
     ('vc', (6, 7)),
     baca.make_tied_repeated_durations((1, 4)),
-    baca.markups.lines(['graincircle:', 'π/2 every quarter note']).boxed(),
+    baca.markups.lines(['graincircle:', 'π/2 every quarter note'], boxed=True),
     baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),

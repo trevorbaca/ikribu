@@ -1356,7 +1356,7 @@ J_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
     d,,1
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:IC
-    ^ \markup { "vib. poco." }                                         %! IC
+    ^ \markup { "poco vib." }                                          %! IC
     
     % [J CelloMusicVoice measure 119 / measure 4]                      %! SM4
     d,,1
