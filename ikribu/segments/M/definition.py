@@ -262,7 +262,7 @@ maker(
 
 maker(
     ('vc', [6, 17]),
-    baca.markups.XP(),
+    baca.markup('XP'),
     )
 
 maker(
@@ -270,9 +270,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.markup(
-        baca.markups.string_number(3),
+        'III',
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -289,9 +289,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.markup(
-        baca.markups.string_number(3),
+        'III',
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -303,9 +303,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.markup(
-        baca.markups.string_number(3),
+        'III',
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -317,9 +317,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.markup(
-        baca.markups.string_number(3),
+        'III',
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -331,9 +331,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.markup(
-        baca.markups.string_number(3),
+        'III',
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),
@@ -345,9 +345,9 @@ maker(
     baca.clef('treble'),
     baca.dynamic('sfffz'),
     baca.laissez_vibrer(selector=baca.ptails()),
-    baca.markups.pizz(),
+    baca.markup('pizz.'),
     baca.markup(
-        baca.markups.string_number(3),
+        'III',
         direction=abjad.Down,
         ),
     baca.note_head_style_harmonic(),

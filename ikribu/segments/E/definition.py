@@ -134,7 +134,7 @@ maker(
 maker(
     ('vc', (9, 16)),
     baca.dls_staff_padding(4),
-    baca.markups.trem_flaut_tast(),
+    baca.markup('trem. flaut. tast.'),
     baca.hairpin(
         'p < mp >',
         final_hairpin=False,
