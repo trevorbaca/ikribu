@@ -136,7 +136,10 @@ maker(
 
 maker(
     ('vc', (1, 16)),
-    baca.markups.lines(['graincircle:', 'π/2 every quarter note'], boxed=True),
+    baca.markup(
+        baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
+        boxed=True,
+        ),
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.dls_staff_padding(6),
     baca.staff_position(0),

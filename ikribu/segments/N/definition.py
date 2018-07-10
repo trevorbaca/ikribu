@@ -96,10 +96,11 @@ maker(
         deactivate=True,
         ),
     baca.dynamic('p'),
-    baca.markups.lines([
-        'introduce upper partials gradually;',
-        'breathe as necessary before downbeats',
-        ],
+    baca.markup(
+        baca.markups.lines([
+            'introduce upper partials gradually;',
+            'breathe as necessary before downbeats',
+            ]),
         boxed=True,
         ),
     baca.pitch('Bb1'),
