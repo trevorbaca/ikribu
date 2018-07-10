@@ -134,25 +134,40 @@ maker(
 
 maker(
     ('vc', 2),
-    baca.markups.lines(['graincircle:', 'π/3 every quarter note'], boxed=True),
+    baca.markup(
+        baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
+        boxed=True,
+        ),
     )
 
 maker(
     ('vc', 3),
-    baca.markups.lines(['graincircle:', 'π/4 every quarter note'], boxed=True),
+    baca.markup(
+        baca.markups.lines(['graincircle:', 'π/4 every quarter note']),
+        boxed=True,
+        ),
     )
 
 maker(
     ('vc', 4),
-    baca.markups.lines(['graincircle:', 'π/3 every quarter note'], boxed=True),
+    baca.markup(
+        baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
+        boxed=True,
+        ),
     )
 
 maker(
     ('vc', 5),
-    baca.markups.lines(['graincircle:', 'π/2 every quarter note'], boxed=True),
+    baca.markup(
+        baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
+        boxed=True,
+        ),
     )
 
 maker(
     ('vc', 6),
-    baca.markups.lines(['graincircle:', 'π/3 every quarter note'], boxed=True),
+    baca.markup(
+        baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
+        boxed=True,
+        ),
     )
