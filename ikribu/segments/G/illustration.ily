@@ -1,3 +1,44 @@
+G_GlobalRests = {
+    
+    % [G GlobalRests measure 87 / measure 1]                                       %! SM4
+    R1 * 7/4
+    
+    % [G GlobalRests measure 88 / measure 2]                                       %! SM4
+    R1 * 1/6
+    
+    % [G GlobalRests measure 89 / measure 3]                                       %! SM4
+    R1 * 7/4
+    
+    % [G GlobalRests measure 90 / measure 4]                                       %! SM4
+    R1 * 1/6
+    
+    % [G GlobalRests measure 91 / measure 5]                                       %! SM4
+    R1 * 7/4
+    
+    % [G GlobalRests measure 92 / measure 6]                                       %! SM4
+    R1 * 1/6
+    
+    % [G GlobalRests measure 93 / measure 7]                                       %! SM4
+    R1 * 7/4
+    
+    % [G GlobalRests measure 94 / measure 8]                                       %! SM4
+    R1 * 1/6
+    
+    % [G GlobalRests measure 95 / measure 9]                                       %! SM4
+    R1 * 7/4
+    
+    % [G GlobalRests measure 96 / measure 10]                                      %! SM4
+    R1 * 1/6
+    
+    % [G GlobalRests measure 97 / measure 11]                                      %! SM4
+    R1 * 7/4
+    
+    % [G GlobalRests measure 98 / measure 12]                                      %! SM4
+    R1 * 1/6
+    
+}
+
+
 G_GlobalSkips = {
     
     % [G GlobalSkips measure 87 / measure 1]                                       %! SM4

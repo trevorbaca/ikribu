@@ -1,3 +1,38 @@
+N_GlobalRests = {
+    
+    % [N GlobalRests measure 208 / measure 1]                                      %! SM4
+    R1 * 1/2
+    
+    % [N GlobalRests measure 209 / measure 2]                                      %! SM4
+    R1 * 7/4
+    
+    % [N GlobalRests measure 210 / measure 3]                                      %! SM4
+    R1 * 3/4
+    
+    % [N GlobalRests measure 211 / measure 4]                                      %! SM4
+    R1 * 1
+    
+    % [N GlobalRests measure 212 / measure 5]                                      %! SM4
+    R1 * 3/4
+    
+    % [N GlobalRests measure 213 / measure 6]                                      %! SM4
+    R1 * 1
+    
+    % [N GlobalRests measure 214 / measure 7]                                      %! SM4
+    R1 * 3/4
+    
+    % [N GlobalRests measure 215 / measure 8]                                      %! SM4
+    R1 * 1/2
+    
+    % [N GlobalRests measure 216 / measure 9]                                      %! SM4
+    R1 * 7/4
+    
+    % [N GlobalRests measure 217 / measure 10]                                     %! SM4
+    R1 * 7/4
+    
+}
+
+
 N_GlobalSkips = {
     
     % [N GlobalSkips measure 208 / measure 1]                                      %! SM4

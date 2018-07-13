@@ -113,6 +113,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     __documentation_section__ = None
 
+    _always_make_global_rests = True
+
     _part_manifest = abjad.PartManifest(
         abjad.Part(section='BassClarinet', section_abbreviation='BCL'),
         abjad.Part(section='Violin', section_abbreviation='VN'),
