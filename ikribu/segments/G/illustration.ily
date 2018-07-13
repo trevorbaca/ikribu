@@ -83,7 +83,7 @@ G_GlobalSkips = {
         \concat                                                                    %! MMI3
             {                                                                      %! MMI3
                 \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
+                    #(x11-color 'DeepPink1)                                        %! MMI3
                     \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI3
                 \hspace                                                            %! MMI3
                     #0.5                                                           %! MMI3

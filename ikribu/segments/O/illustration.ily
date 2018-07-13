@@ -61,13 +61,13 @@ O_GlobalRests = {
     R1 * 1
     
     % [O GlobalRests measure 238 / measure 21]                                     %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ufermata"                                                    %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ufermata"                                                    %! GFC1
+        }                                                                          %! GFC1
     
 }
 

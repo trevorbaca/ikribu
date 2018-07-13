@@ -97,13 +97,13 @@ L_GlobalRests = {
     R1 * 3/4
     
     % [L GlobalRests measure 175 / measure 33]                                     %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ushortfermata"                                               %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ushortfermata"                                               %! GFC1
+        }                                                                          %! GFC1
     
 }
 
@@ -176,6 +176,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((2))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.2]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [10'46'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -197,6 +201,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((3))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.3]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [10'53'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -218,6 +226,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((4))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.4]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [10'56'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -239,7 +251,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.2]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.5]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -262,6 +274,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((6))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.6]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'04'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -283,6 +299,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((7))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.7]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'06'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -304,6 +324,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((8))                                                                  %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.8]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'14'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -327,7 +351,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.3]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.9]                                                                  %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -350,6 +374,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((10))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.10]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'21'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -371,6 +399,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((11))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.11]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'24'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -392,6 +424,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((12))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.12]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'28'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -415,7 +451,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.4]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.13]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -438,6 +474,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((14))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.14]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'33'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -457,6 +497,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((15))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.15]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'41'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -478,6 +522,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((16))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.16]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [11'48'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -501,7 +549,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.5]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.17]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -524,6 +572,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((18))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.18]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'03'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -545,6 +597,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((19))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.19]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'06'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -566,6 +622,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((20))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.20]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'09'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -589,7 +649,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.6]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.21]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -612,6 +672,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((22))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.22]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'24'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -631,6 +695,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((23))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.23]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'28'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -652,6 +720,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((24))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.24]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'32'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -675,7 +747,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.7]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.25]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -698,6 +770,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((26))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.26]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'43'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -719,6 +795,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((27))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.27]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'51'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -740,6 +820,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((28))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.28]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [12'54'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -761,7 +845,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.8]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.29]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
@@ -784,6 +868,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((30))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.30]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [13'02'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -805,6 +893,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((31))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.31]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [13'04'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -826,6 +918,10 @@ L_GlobalSkips = {
 %@%     \baca-dark-cyan-markup                                                     %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%         ((32))                                                                 %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
+%@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
+%@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.32]                                                                 %! SM3:STAGE_NUMBER_MARKUP
+%@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP
 %@%         [13'12'']                                                              %! SM28:CLOCK_TIME_MARKUP
@@ -849,7 +945,7 @@ L_GlobalSkips = {
 %@%     }                                                                          %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM3:STAGE_NUMBER_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM3:STAGE_NUMBER_MARKUP
-%@%         [L.9]                                                                  %! SM3:STAGE_NUMBER_MARKUP
+%@%         [L.33]                                                                 %! SM3:STAGE_NUMBER_MARKUP
 %@%     }                                                                          %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup {                                                                    %! SM28:CLOCK_TIME_MARKUP
 %@%     \baca-dark-cyan-markup                                                     %! SM28:CLOCK_TIME_MARKUP

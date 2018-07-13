@@ -4,49 +4,49 @@ I_GlobalRests = {
     R1 * 3/4
     
     % [I GlobalRests measure 109 / measure 2]                                      %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ulongfermata"                                                %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ulongfermata"                                                %! GFC1
+        }                                                                          %! GFC1
     
     % [I GlobalRests measure 110 / measure 3]                                      %! SM4
     R1 * 3/4
     
     % [I GlobalRests measure 111 / measure 4]                                      %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ulongfermata"                                                %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ulongfermata"                                                %! GFC1
+        }                                                                          %! GFC1
     
     % [I GlobalRests measure 112 / measure 5]                                      %! SM4
     R1 * 3/4
     
     % [I GlobalRests measure 113 / measure 6]                                      %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ulongfermata"                                                %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ulongfermata"                                                %! GFC1
+        }                                                                          %! GFC1
     
     % [I GlobalRests measure 114 / measure 7]                                      %! SM4
     R1 * 3/4
     
     % [I GlobalRests measure 115 / measure 8]                                      %! SM4
-    \once \override Score.MultiMeasureRest.transparent = ##t                       %! SM19
-    \once \override Score.TimeSignature.stencil = ##f                              %! SM19
+    \once \override Score.MultiMeasureRest.transparent = ##t                       %! GFC2
+    \once \override Score.TimeSignature.stencil = ##f                              %! GFC2
     R1 * 1/4
-    ^ \markup {                                                                    %! SM18
-        \musicglyph                                                                %! SM18
-            #"scripts.ulongfermata"                                                %! SM18
-        }                                                                          %! SM18
+    ^ \markup {                                                                    %! GFC1
+        \musicglyph                                                                %! GFC1
+            #"scripts.ulongfermata"                                                %! GFC1
+        }                                                                          %! GFC1
     
 }
 

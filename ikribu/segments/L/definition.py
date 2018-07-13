@@ -38,13 +38,10 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=33,
-    validate_stage_count=9,
     )
 
 maker(
@@ -53,7 +50,12 @@ maker(
     )
 
 maker(
-    ('bcl', (1, 7)),
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(33 - 1)),
+    )
+
+maker(
+    ('bcl', (1, 28)),
     baca.clef('treble'),
     baca.dynamic('ppp'),
     baca.make_repeat_tied_notes(),
@@ -66,14 +68,14 @@ maker(
     )
 
 maker(
-    ('vn', (1, 4)),
+    ('vn', (1, 16)),
     baca.staccato(selector=baca.pheads()),
     ikribu.clb_rhythm([4]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
-    ('vn', (6, 8)),
+    ('vn', (21, 32)),
     baca.accent(selector=baca.pheads()[~abjad.index([0, 4], 9)]),
     baca.dls_staff_padding(8),
     baca.markup('sponges on BD', boxed=True),
@@ -90,28 +92,28 @@ maker(
     )
 
 maker(
-    ('vn', 4),
+    ('vn', (13, 16)),
     baca.dls_staff_padding(8),
     baca.hairpin('"mp" >o niente', selector=baca.tleaves()),
     baca.hairpin_start_shift('"mp"'),
     )
 
 maker(
-    ('va', (1, 2)),
+    ('va', (1, 8)),
     baca.staccato(selector=baca.pheads()),
     ikribu.clb_rhythm([2]),
     ikribu.clb_staff_positions(rotation=-1),
     )
 
 maker(
-    ('va', 2),
+    ('va', (5, 8)),
     baca.dls_staff_padding(8),
     baca.hairpin('"mp" >o niente', selector=baca.tleaves()),
     baca.hairpin_start_shift('"mp"'),
     )
 
 maker(
-    ('va', (4, 8)),
+    ('va', (13, 32)),
     baca.accent(selector=baca.pheads()[~abjad.index([0, 5], 11)]),
     baca.dls_staff_padding(8),
     baca.markup('sponges on BD', boxed=True),
@@ -129,12 +131,12 @@ maker(
     )
 
 maker(
-    ('vc', [1, 2, 3, 4, 5, 6]),
+    ('vc', [(1, 4), (5, 8), (9, 12), (13, 16), (17, 20), (21, 24)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('vc', (1, 9)),
+    'vc',
     baca.bar_extent((0, 2), selector=baca.leaves()),
     baca.hairpin(
         'p < f >',
@@ -146,7 +148,7 @@ maker(
     )
 
 maker(
-    ('vc', 2),
+    ('vc', 5),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
         boxed=True,
@@ -154,7 +156,7 @@ maker(
     )
 
 maker(
-    ('vc', 3),
+    ('vc', 9),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/4 every quarter note']),
         boxed=True,
@@ -162,7 +164,7 @@ maker(
     )
 
 maker(
-    ('vc', 4),
+    ('vc', 13),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
         boxed=True,
@@ -170,7 +172,7 @@ maker(
     )
 
 maker(
-    ('vc', 5),
+    ('vc', 17),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
         boxed=True,
@@ -178,7 +180,7 @@ maker(
     )
 
 maker(
-    ('vc', 6),
+    ('vc', 21),
     baca.markup(
         baca.markups.lines(['graincircle:', 'π/3 every quarter note']),
         boxed=True,
