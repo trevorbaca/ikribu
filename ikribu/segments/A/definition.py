@@ -14,10 +14,6 @@ def stage(n):
         2: (3, 5),
         3: (6, 6),
         4: 7,
-        1: (1, 2),
-        2: (3, 5),
-        3: (6, 6),
-        4: 7,
         }[n]
 
 stage_measure_map = baca.StageMeasureMap([
@@ -38,22 +34,25 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=7,
-    validate_stage_count=4,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark('A'),
     )
 
 maker(
-    ('bcl', (1, 2)),
+    'GlobalRests',
+    baca.global_fermata('long', selector=baca.leaf(7 - 1)),
+    )
+
+maker(
+    ('bcl', (1, 5)),
     baca.hairpin('ppp < f', selector=baca.leaves()[:2]),
     baca.hairpin('f >o niente', selector=baca.rleaves()[-4:]),
     baca.make_repeat_tied_notes(),
@@ -61,13 +60,13 @@ maker(
     )
 
 maker(
-    ('vn', 1),
+    ('vn', (1, 2)),
     baca.clef('treble'),
     baca.staff_lines(5),
     )
 
 maker(
-    ('va', (2, 3)),
+    ('va', (3, 6)),
     baca.clef('percussion'),
     baca.dynamic('"mf"'),
     baca.make_tied_repeated_durations((1, 4)),

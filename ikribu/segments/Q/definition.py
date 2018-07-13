@@ -10,6 +10,7 @@ import os
 
 def stage(n):
     return {
+        1: (1, 3),
         2: (4, 6),
         3: (7, 9),
         4: (10, 11),
@@ -37,32 +38,35 @@ maker = baca.SegmentMaker(
     final_markup=(['Madison, WI.'], ['January', 'March 2016.']),
     final_markup_extra_offset=(-16, -4),
     last_segment=True,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=12,
-    validate_stage_count=5,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('inscription', selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark('Q'),
     )
 
 maker(
+    'GlobalRests',
+    baca.global_fermata('fermata', selector=baca.leaf(-1)),
+    )
+
+maker(
     [
-        ('bcl', 1),
-        ('vn', 1),
-        ('va', 1),
-        ('vc', 1),
+        ('bcl', (1, 3)),
+        ('vn', (1, 3)),
+        ('va', (1, 3)),
+        ('vc', (1, 3)),
         ],
     baca.staff_lines(1),
     )
 
 maker(
-    ('bcl', (1, 2)),
+    ('bcl', (1, 6)),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
@@ -72,7 +76,7 @@ maker(
     )
 
 maker(
-    ('bcl', (1, 4)),
+    ('bcl', (1, 11)),
     baca.dynamic('"mf"'),
     baca.markup('graincircle: π/3 every quarter note', boxed=True),
     baca.staff_position(0),
@@ -80,7 +84,7 @@ maker(
     )
 
 maker(
-    ('vn', (1, 3)),
+    ('vn', (1, 9)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
@@ -90,7 +94,7 @@ maker(
     )
 
 maker(
-    ('va', (1, 3)),
+    ('va', (1, 9)),
     baca.make_repeated_duration_notes((1, 4)),
     baca.double_staccato(selector=baca.pheads()),
     baca.dynamic('"mf"'),
@@ -100,7 +104,7 @@ maker(
     )
 
 maker(
-    ('vc', (1, 4)),
+    ('vc', (1, 11)),
     ikribu.inscription_rhythm(),
     )
 

@@ -63,17 +63,30 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=16,
-    validate_stage_count=16,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('night', selector=baca.leaf(1 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(1 - 1)),
+    baca.metronome_mark('incisions', selector=baca.leaf(3 - 1)),
+
+    baca.metronome_mark('incisions', selector=baca.leaf(5 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(5 - 1)),
+    baca.metronome_mark('night', selector=baca.leaf(7 - 1)),
+
+    baca.metronome_mark('night', selector=baca.leaf(9 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(9 - 1)),
+    baca.metronome_mark('incisions', selector=baca.leaf(11 - 1)),
+
+    baca.metronome_mark('incisions', selector=baca.leaf(13 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(13 - 1)),
+    baca.metronome_mark('night', selector=baca.leaf(15 - 1)),
+
     baca.rehearsal_mark('E'),
     )
 

@@ -38,57 +38,61 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=11,
-    validate_stage_count=7,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('incisions', selector=baca.leaf(10 - 1)),
     baca.rehearsal_mark('J'),
     )
 
 maker(
-    ('bcl', [1, (2, 3)]),
+    'GlobalRests',
+    baca.global_fermata('long', selector=baca.leaf(9 - 1)),
+    baca.global_fermata('long', selector=baca.leaf(11 - 1)),
+    )
+
+maker(
+    ('bcl', [(1, 2), (3, 6)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('vn', [(1, 2), 3]),
+    ('vn', [(1, 4), (5, 6)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('va', [1, 2, 3]),
+    ('va', [(1, 2), (3, 4), (5, 6)]),
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
     [
-        ('bcl', 6),
-        ('vn', 6),
-        ('va', 6),
+        ('bcl', 10),
+        ('vn', 10),
+        ('va', 10),
         ],
     baca.make_tied_repeated_durations((1, 4)),
     )
 
 maker(
-    ('vc', 1),
+    ('vc', (1, 2)),
     baca.clef('bass'),
     baca.staff_lines(5),
     )
 
 maker(
-    ('vc', (2, 3)),
+    ('vc', (3, 6)),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
-    ('vc', 4),
+    ('vc', (7, 8)),
     baca.make_tied_repeated_durations([(7, 4), (2, 4), (1, 4)]),
     baca.tie_to(),
     )
@@ -108,7 +112,7 @@ maker(
     )
 
 maker(
-    ('bcl', 1),
+    ('bcl', (1, 2)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
         boxed=True,
@@ -116,7 +120,7 @@ maker(
     )
 
 maker(
-    ('bcl', 2),
+    ('bcl', (3, 4)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/3 every quarter note']),
         boxed=True,
@@ -132,7 +136,7 @@ maker(
     )
 
 maker(
-    ('vn', (1, 2)),
+    ('vn', (1, 4)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/2 every quarter note']),
         boxed=True,
@@ -140,7 +144,7 @@ maker(
     )
 
 maker(
-    ('vn', 3),
+    ('vn', (5, 6)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π every quarter note']),
         boxed=True,
@@ -148,7 +152,7 @@ maker(
     )
 
 maker(
-    ('va', 1),
+    ('va', (1, 2)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/3 every quarter note']),
         boxed=True,
@@ -156,7 +160,7 @@ maker(
     )
 
 maker(
-    ('va', 2),
+    ('va', (3, 4)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
         boxed=True,
@@ -164,7 +168,7 @@ maker(
     )
 
 maker(
-    ('va', 3),
+    ('va', (5, 6)),
     baca.markup(
         baca.markups.lines(['stonecircle:', 'π/2 every quarter note']),
         boxed=True,
@@ -172,7 +176,7 @@ maker(
     )
 
 maker(
-    ('vc', (2, 4)),
+    ('vc', (3, 8)),
     baca.dynamic('p'),
     baca.hairpin('p < mf', selector=baca.leaves()[-2:]),
     baca.markup('poco vib.'),
@@ -183,9 +187,9 @@ maker(
 
 maker(
     [
-        ('bcl', 6),
-        ('vn', 6),
-        ('va', 6),
+        ('bcl', 10),
+        ('vn', 10),
+        ('va', 10),
         ],
     [
         baca.dynamic('"f"'),
@@ -198,7 +202,7 @@ maker(
     )
 
 maker(
-    ('bcl', 6),
+    ('bcl', 10),
     baca.tag('+ARCH_A_PARTS_BCL', baca.text_script_extra_offset((0, 8))),
     )
 

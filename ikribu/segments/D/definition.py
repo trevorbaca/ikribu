@@ -14,9 +14,6 @@ def stage(n):
         1: (1, 5),
         2: (6, 10),
         3: 11,
-        1: (1, 5),
-        2: (6, 10),
-        3: 11,
         }[n]
 
 stage_measure_map = baca.StageMeasureMap([
@@ -37,29 +34,32 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=11,
-    validate_stage_count=3,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('windows', selector=baca.leaf(1 - 1)),
     baca.rehearsal_mark('D'),
     )
 
 maker(
-    ('bcl', 1),
+    'GlobalRests',
+    baca.global_fermata('short', selector=baca.leaf(11 - 1)),
+    )
+
+maker(
+    ('bcl', (1, 5)),
     baca.tag('+ARCH_A_SCORE', baca.bar_extent((-2, 2)), deactivate=True),
     baca.tag('+LEDGER_SCORE', baca.bar_extent((-2, 2)), deactivate=True),
     baca.staff_lines(5),
     )
 
 maker(
-    ('vc_rh', (1, 2)),
+    ('vc_rh', (1, 10)),
     ikribu.bow_rhythm(
         logical_tie_masks=rmakers.silence([8, 20], 20),
         rotation=-2,
@@ -67,12 +67,12 @@ maker(
     )
 
 maker(
-    ('vc', (1, 2)),
+    ('vc', (1, 10)),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    ('vc_rh', (1, 2)),
+    ('vc_rh', (1, 10)),
     baca.dls_staff_padding(9),
     baca.hairpin(
         'ff > p < f > pp < f > ppp <',
@@ -89,7 +89,7 @@ maker(
     )
 
 maker(
-    ('vc', (1, 2)),
+    ('vc', (1, 10)),
     baca.clef('tenor'),
     baca.glissando(),
     baca.clef_shift('tenor'),

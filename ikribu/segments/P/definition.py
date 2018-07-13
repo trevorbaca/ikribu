@@ -39,28 +39,33 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=8,
-    validate_stage_count=6,
     )
 
 maker(
     'GlobalSkips',
+    baca.metronome_mark('windows', selector=baca.leaf(1 - 1)),
+    baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(1 - 1)),
+    baca.metronome_mark('night', selector=baca.leaf(6 - 1)),
     baca.rehearsal_mark('P'),
     )
 
 maker(
-    ('bcl', (1, 2)),
+    'GlobalRests',
+    baca.global_fermata('long', selector=baca.leaf(-1)),
+    )
+
+maker(
+    ('bcl', (1, 4)),
     baca.make_repeat_tied_notes(),
     baca.pitch('Bb4'),
     )
 
 maker(
-    ('bcl', (3, 4)),
+    ('bcl', (5, 6)),
     baca.glissando(),
     baca.make_repeated_duration_notes((1, 4)),
     baca.suite(
@@ -73,7 +78,7 @@ maker(
     )
 
 maker(
-    ('bcl', 5),
+    ('bcl', 7),
     baca.make_repeat_tied_notes(),
     baca.suite(
         baca.pitch('B1'),
@@ -82,18 +87,18 @@ maker(
     )
 
 maker(
-    ('bcl', (1, 5)),
+    ('bcl', (1, 7)),
     baca.hairpin('pp < mf', selector=baca.leaves()[:4]),
     baca.hairpin('mf >o niente', selector=baca.rleaves()[4:]),
     )
 
 maker(
-    ('bcl', (3, 5)),
+    ('bcl', (5, 7)),
     baca.dls_staff_padding(9),
     )
 
 maker(
-    ('vn_rh', (1, 3)),
+    ('vn_rh', (1, 5)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=0),
@@ -104,14 +109,14 @@ maker(
     )
 
 maker(
-    ('vn', (1, 3)),
+    ('vn', (1, 5)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=0),
     ikribu.glissando_rhythm(rotation_1=0, rotation_2=0),
     )
 
 maker(
-    ('va_rh', (1, 3)),
+    ('va_rh', (1, 5)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-1),
@@ -122,14 +127,14 @@ maker(
     )
 
 maker(
-    ('va', (1, 3)),
+    ('va', (1, 5)),
     baca.glissando(),
     ikribu.glissando_pitches(octave=5, rotation=-10),
     ikribu.glissando_rhythm(rotation_1=-4, rotation_2=-1),
     )
 
 maker(
-    ('vc_rh', (1, 3)),
+    ('vc_rh', (1, 5)),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.text_spanner_staff_padding(4),
     ikribu.bcps(rotation=-2),
@@ -140,7 +145,7 @@ maker(
     )
 
 maker(
-    ('vc', (1, 3)),
+    ('vc', (1, 5)),
     baca.clef('tenor'),
     baca.glissando(),
     ikribu.glissando_pitches(octave=4, rotation=-20),
@@ -149,9 +154,9 @@ maker(
 
 maker(
     [
-        ('vn_rh', (1, 3)),
-        ('va_rh', (1, 3)),
-        ('vc_rh', (1, 3)),
+        ('vn_rh', (1, 5)),
+        ('va_rh', (1, 5)),
+        ('vc_rh', (1, 5)),
         ],
     baca.dls_staff_padding(9),
     baca.markup('1/2 clt', boxed=True),
