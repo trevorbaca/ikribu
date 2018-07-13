@@ -9,7 +9,8 @@ import os
 ###############################################################################
 
 stage_measure_map = baca.StageMeasureMap([
-    1, abjad.Fermata('longfermata'),
+    1,
+    abjad.Fermata('longfermata'),
     ])
 
 metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
@@ -26,12 +27,19 @@ measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
-    measures_per_stage=measures_per_stage,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
     validate_measure_count=2,
-    validate_stage_count=2,
+    )
+
+maker(
+    'GlobalSkips',
+    baca.metronome_mark('incisions', selector=baca.leaf(1 - 1)),
+    )
+
+maker(
+    'GlobalRests',
+    baca.global_fermata('long', selector=baca.leaf(2 - 1)),
     )
 
 maker(
