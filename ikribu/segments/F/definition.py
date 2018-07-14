@@ -25,14 +25,10 @@ stage_measure_map = baca.StageMeasureMap([
     1, 1, 1, 1,
     ])
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    ])
-
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
     rotation=-6,
     stage_measure_map=stage_measure_map,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
