@@ -20,15 +20,10 @@ stage_measure_map = baca.StageMeasureMap([
     5, 5, abjad.Fermata('shortfermata'),
     ])
 
-metronome_mark_measure_map = baca.MetronomeMarkMeasureMap([
-    (1, ikribu.metronome_marks['windows']),
-    ])
-
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
     rotation=-4,
     stage_measure_map=stage_measure_map,
-    metronome_mark_measure_map=metronome_mark_measure_map,
     )
 measures_per_stage, metronome_mark_measure_map, time_signatures = maker()
 
