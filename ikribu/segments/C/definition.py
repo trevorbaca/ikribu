@@ -29,22 +29,14 @@ def stage(n):
         17: (17, 17),
         }[n]
 
-stage_measure_map = baca.StageMeasureMap([
-    1,
-    1, 1, 1, 1,
-    1, 1, 1, 1,
-    1, 1, 1, 1,
-    1, 1, 1, 1,
-    ])
-
 time_signatures = 4 * [(4, 4), (4, 4), (3, 4), (1, 6)]
 time_signatures.insert(0, (7, 4))
 time_signatures = [time_signatures]
 maker = baca.TimeSignatureMaker(
     time_signatures,
-    stage_measure_map=stage_measure_map,
+    count=17,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,

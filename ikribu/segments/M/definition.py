@@ -35,22 +35,13 @@ def stage(n):
         23: 32,
         }[n]
 
-stage_measure_map = baca.StageMeasureMap([
-    1, 2, 1, abjad.Fermata('shortfermata'),
-    1, 1, abjad.Fermata('shortfermata'),
-    1, 2, 1, abjad.Fermata('shortfermata'),
-    1, 2, 1, abjad.Fermata('shortfermata'),
-    1, 1, abjad.Fermata('shortfermata'),
-    1, 4, 1,
-    4, abjad.Fermata('shortfermata'),
-    ])
-
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
+    count=32,
+    fermata_measures=[5, 8, 13, 18, 21, 32],
     rotation=-13,
-    stage_measure_map=stage_measure_map,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
