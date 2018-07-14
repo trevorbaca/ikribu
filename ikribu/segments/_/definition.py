@@ -8,17 +8,13 @@ import os
 ##################################### [_] #####################################
 ###############################################################################
 
-stage_measure_map = baca.StageMeasureMap([
-    1,
-    abjad.Fermata('longfermata'),
-    ])
-
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
+    count=2,
+    fermata_measures=[2],
     rotation=0,
-    stage_measure_map=stage_measure_map,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,

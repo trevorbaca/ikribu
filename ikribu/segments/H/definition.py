@@ -16,16 +16,13 @@ def stage(n):
         3: 9,
         }[n]
 
-stage_measure_map = baca.StageMeasureMap([
-    4, 4, abjad.Fermata('fermata'),
-    ])
-
 maker = baca.TimeSignatureMaker(
     ikribu.time_signatures,
+    count=9,
+    fermata_measures=[9],
     rotation=-8,
-    stage_measure_map=stage_measure_map,
     )
-time_signatures = maker()
+time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
     fermata_measure_staff_line_count=0,
