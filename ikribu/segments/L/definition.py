@@ -75,7 +75,7 @@ maker(
     baca.hairpin(
         'mp < mf > mp < f > mf < f > mf < ff > f < ff > f < fff > ff',
         bookend=-1,
-        piece_selector=baca.group_by_measures(),
+        piece_selector=baca.mgroups(),
         ),
     baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 4], 9)]),
     baca.staff_position(0),
@@ -114,7 +114,7 @@ maker(
         'p > pp < p > pp < mp > p < mp > p < mf > mp < mf > mp <'
         ' f > mf < f > mf < ff > f < ff > f < fff',
         bookend=-1,
-        piece_selector=baca.group_by_measures(),
+        piece_selector=baca.mgroups(),
         ),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pheads()[abjad.index([0, 5], 11)]),
@@ -134,7 +134,7 @@ maker(
     baca.hairpin(
         'p < f >',
         bookend=-1,
-        piece_selector=baca.group_by_measures(),
+        piece_selector=baca.mgroups(),
         ),
     baca.staff_position(0),
     ikribu.box_adjustment(),
