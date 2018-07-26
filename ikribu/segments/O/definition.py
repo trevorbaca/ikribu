@@ -192,6 +192,7 @@ maker(
         'mp > p <',
         final_hairpin=False,
         piece_selector=baca.mgroups(),
+        selector=baca.tleaves(),
         ),
     baca.pitch('Bb0'),
     baca.text_spanner_staff_padding(2.5),
