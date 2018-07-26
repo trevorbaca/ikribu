@@ -53,7 +53,7 @@ maker(
     ('vn_rh', (1, 8)),
     ikribu.bcps(rotation=0),
     ikribu.bow_rhythm(
-        logical_tie_masks=rmakers.silence([0, 8], 12),
+        ltmask=rmakers.silence([0, 8], 12),
         rotation=0,
         ),
     )
@@ -69,7 +69,7 @@ maker(
     ('va_rh', (1, 8)),
     ikribu.bcps(rotation=-1),
     ikribu.bow_rhythm(
-        logical_tie_masks=rmakers.silence([4, 14], 16),
+        ltmask=rmakers.silence([4, 14], 16),
         rotation=-1,
         ),
     )

@@ -53,7 +53,7 @@ maker(
 maker(
     ('vc_rh', (1, 10)),
     ikribu.bow_rhythm(
-        logical_tie_masks=rmakers.silence([8, 20], 20),
+        ltmask=rmakers.silence([8, 20], 20),
         rotation=-2,
         ),
     )
