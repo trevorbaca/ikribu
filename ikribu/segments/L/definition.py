@@ -135,6 +135,7 @@ maker(
         'p < f >',
         bookend=-1,
         piece_selector=baca.mgroups(),
+        selector=baca.tleaves(),
         ),
     baca.staff_position(0),
     ikribu.box_adjustment(),

@@ -101,6 +101,7 @@ maker(
         'ppp < pp >',
         final_hairpin=False,
         piece_selector=baca.mgroups(),
+        selector=baca.tleaves(),
         ),
     baca.markup(
         'III',
