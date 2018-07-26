@@ -8,10 +8,6 @@ def bow_rhythm(
     ltmask=rmakers.silence([4, 19], 20),
     rotation=None,
     ):
-    if ltmask is None:
-        logical_tie_masks = None
-    else:
-        logical_tie_masks = [ltmask]
     extra_counts_per_division = abjad.sequence([-1, 0, 1, 2])
     extra_counts_per_division = extra_counts_per_division.rotate(
         n=rotation
@@ -19,7 +15,7 @@ def bow_rhythm(
     rhythm_maker = rmakers.EvenDivisionRhythmMaker(
         denominators=[4],
         extra_counts_per_division=extra_counts_per_division,
-        logical_tie_masks=logical_tie_masks,
+        logical_tie_masks=ltmask,
         tuplet_specifier=rmakers.TupletSpecifier(
             extract_trivial=True,
             force_fraction=True,
