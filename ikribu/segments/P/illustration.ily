@@ -333,7 +333,6 @@ P_ViolinRHMusicVoice = {
         \pp                                                            %! SM8:REAPPLIED_DYNAMIC:SM37
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \override RepeatTie.direction = #up                            %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
@@ -566,7 +565,6 @@ P_ViolinRHMusicVoice = {
         \revert Script.staff-padding                                   %! OC2
         \revert TextSpanner.staff-padding                              %! OC2
         \revert DynamicLineSpanner.staff-padding                       %! OC2
-        \revert RepeatTie.direction                                    %! OC2
     }
     
     % [P ViolinRHMusicVoice measure 244 / measure 6]                   %! SM4
@@ -755,7 +753,6 @@ P_ViolaRHMusicVoice = {
     \override Script.staff-padding = #7                                %! OC1
     \override TextSpanner.staff-padding = #4                           %! OC1
     \override DynamicLineSpanner.staff-padding = #'9                   %! OC1
-    \override RepeatTie.direction = #up                                %! OC1
     \clef "percussion"                                                 %! SM8:REAPPLIED_CLEF:SM37
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! SM6:REAPPLIED_CLEF_COLOR:SM37
 %@% \override RHStaff.Clef.color = ##f                                 %! SM7:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
@@ -1015,7 +1012,6 @@ P_ViolaRHMusicVoice = {
     \revert Script.staff-padding                                       %! OC2
     \revert TextSpanner.staff-padding                                  %! OC2
     \revert DynamicLineSpanner.staff-padding                           %! OC2
-    \revert RepeatTie.direction                                        %! OC2
     
     % [P ViolaRHMusicVoice measure 244 / measure 6]                    %! SM4
     R1 * 7/4
@@ -1196,7 +1192,6 @@ P_CelloRHMusicVoice = {
         \ppp                                                           %! SM8:REAPPLIED_DYNAMIC:SM37
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \override RepeatTie.direction = #up                            %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
@@ -1426,7 +1421,6 @@ P_CelloRHMusicVoice = {
         \revert Script.staff-padding                                   %! OC2
         \revert TextSpanner.staff-padding                              %! OC2
         \revert DynamicLineSpanner.staff-padding                       %! OC2
-        \revert RepeatTie.direction                                    %! OC2
     }
     
     % [P CelloRHMusicVoice measure 244 / measure 6]                    %! SM4

@@ -66,7 +66,6 @@ maker(
         baca.markups.lines(['stonecircle:', 'π/4 every quarter note']),
         boxed=True,
         ),
-    baca.repeat_tie_up(),
     baca.dynamic_shift('"mf"'),
     baca.staff_position(0),
     baca.staff_lines(1),

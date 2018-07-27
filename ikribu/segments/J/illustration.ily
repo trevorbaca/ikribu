@@ -231,7 +231,6 @@ J_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                            %! SM8:EXPLICIT_STAFF_LINES:IC
     \override DynamicLineSpanner.staff-padding = #'6                       %! OC1
-    \override RepeatTie.direction = #up                                    %! OC1
     \override TextScript.padding = #2.5                                    %! OC1
     \override TextScript.parent-alignment-X = #0                           %! OC1
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                        %! OC1
@@ -437,7 +436,6 @@ J_BassClarinetMusicVoice = {
     
     c'4
     \repeatTie
-    \revert RepeatTie.direction                                            %! OC2
 %%% \revert TextScript.extra-offset                                        %! OC2:+ARCH_A_PARTS_BCL
     
     % [J BassClarinetMusicVoice measure 126 / measure 11]                  %! SM4
@@ -544,7 +542,6 @@ J_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1                   %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                        %! SM8:EXPLICIT_STAFF_LINES:IC
     \override DynamicLineSpanner.staff-padding = #'6                   %! OC1
-    \override RepeatTie.direction = #up                                %! OC1
     \override TextScript.padding = #2.5                                %! OC1
     \override TextScript.parent-alignment-X = #0                       %! OC1
 %%% \once \override Staff.Clef.X-extent = ##f                          %! OC1:MEASURE_116:SHIFTED_CLEF
@@ -746,7 +743,6 @@ J_ViolinMusicVoice = {
     
     c'4
     \repeatTie
-    \revert RepeatTie.direction                                        %! OC2
     
     % [J ViolinMusicVoice measure 126 / measure 11]                    %! SM4
     \stopStaff                                                         %! SM20
@@ -849,7 +845,6 @@ J_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 1                   %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                        %! SM8:EXPLICIT_STAFF_LINES:IC
     \override DynamicLineSpanner.staff-padding = #'6                   %! OC1
-    \override RepeatTie.direction = #up                                %! OC1
     \override TextScript.padding = #2.5                                %! OC1
     \override TextScript.parent-alignment-X = #0                       %! OC1
 %%% \once \override Staff.Clef.X-extent = ##f                          %! OC1:MEASURE_116:SHIFTED_CLEF
@@ -1060,7 +1055,6 @@ J_ViolaMusicVoice = {
     
     c'4
     \repeatTie
-    \revert RepeatTie.direction                                        %! OC2
     
     % [J ViolaMusicVoice measure 126 / measure 11]                     %! SM4
     \stopStaff                                                         %! SM20

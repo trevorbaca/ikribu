@@ -310,7 +310,6 @@ K_BassClarinetMusicVoice = {
     \stopStaff                                                             %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                            %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \override RepeatTie.direction = #up                                    %! OC1
     \override Staff.BarLine.bar-extent = #'(-2 . 0)                        %! OC1
     \override DynamicLineSpanner.staff-padding = #'6                       %! OC1
     \clef "percussion"                                                     %! SM8:REAPPLIED_CLEF:SM37
@@ -484,7 +483,6 @@ K_BassClarinetMusicVoice = {
     
     c'4
     \repeatTie
-    \revert RepeatTie.direction                                            %! OC2
     
     % [K BassClarinetMusicVoice measure 140 / measure 14]                  %! SM4
     \stopStaff                                                             %! SM20
@@ -699,7 +697,6 @@ K_ViolinMusicVoice = {
     \times 8/12 {
         
         % [K ViolinMusicVoice measure 129 / measure 3]                 %! SM4
-        \override RepeatTie.direction = #up                            %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \stopStaff                                                     %! SM21
         \once \override Staff.StaffSymbol.line-count = 1               %! SM21
@@ -950,7 +947,6 @@ K_ViolinMusicVoice = {
         d'8
         -\staccato                                                     %! IC
         ]
-        \revert RepeatTie.direction                                    %! OC2
     }
     
     % [K ViolinMusicVoice measure 142 / measure 16]                    %! SM4
@@ -1150,7 +1146,6 @@ K_ViolaMusicVoice = {
     \times 8/10 {
         
         % [K ViolaMusicVoice measure 129 / measure 3]                  %! SM4
-        \override RepeatTie.direction = #up                            %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:IC
         \stopStaff                                                     %! SM21
         \once \override Staff.StaffSymbol.line-count = 1               %! SM21
@@ -1377,7 +1372,6 @@ K_ViolaMusicVoice = {
         c'8
         -\staccato                                                     %! IC
         ]
-        \revert RepeatTie.direction                                    %! OC2
     }
     
     % [K ViolaMusicVoice measure 142 / measure 16]                     %! SM4
@@ -1530,7 +1524,6 @@ K_CelloMusicVoice = {
     \stopStaff                                                         %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 1                   %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                        %! SM8:EXPLICIT_STAFF_LINES:IC
-    \override RepeatTie.direction = #up                                %! OC1
     \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! OC1
     \override DynamicLineSpanner.staff-padding = #'6                   %! OC1
     \override TextScript.padding = #2.5                                %! OC1
@@ -1704,7 +1697,6 @@ K_CelloMusicVoice = {
     
     d4
     \repeatTie
-    \revert RepeatTie.direction                                        %! OC2
     
     % [K CelloMusicVoice measure 140 / measure 14]                     %! SM4
     \stopStaff                                                         %! SM20

@@ -82,16 +82,6 @@ maker(
     )
 
 maker(
-    [
-        'bcl',
-        'vn',
-        'va',
-        'vc',
-        ],
-    baca.repeat_tie_up(),
-    )
-
-maker(
     ('vc', 1),
     baca.staff_lines(1),
     )

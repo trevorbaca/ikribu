@@ -97,7 +97,6 @@ maker(
     baca.clef('percussion'),
     baca.dls_staff_padding(6),
     baca.dynamic('"mf"'),
-    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     )
