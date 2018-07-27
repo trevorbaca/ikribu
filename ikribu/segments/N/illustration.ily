@@ -292,7 +292,6 @@ N_ViolinRHMusicVoice = {
     \ppp                                                               %! SM8:REAPPLIED_DYNAMIC:SM37
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    \override RepeatTie.direction = #up                                %! OC1
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
@@ -660,7 +659,6 @@ N_ViolinRHMusicVoice = {
     c'4
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
-    \revert RepeatTie.direction                                        %! OC2
     \revert Script.staff-padding                                       %! OC2
     \revert TextSpanner.staff-padding                                  %! OC2
     \revert DynamicLineSpanner.staff-padding                           %! OC2
@@ -869,7 +867,6 @@ N_ViolaRHMusicVoice = {
     \stopStaff                                                         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                        %! SM8:REAPPLIED_STAFF_LINES:SM37
-    \override RepeatTie.direction = #up                                %! OC1
     \override Script.staff-padding = #7                                %! OC1
     \override TextSpanner.staff-padding = #3.5                         %! OC1
     \override DynamicLineSpanner.staff-padding = #'9                   %! OC1
@@ -1289,7 +1286,6 @@ N_ViolaRHMusicVoice = {
         
         c'4
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
-        \revert RepeatTie.direction                                    %! OC2
         \revert Script.staff-padding                                   %! OC2
         \revert TextSpanner.staff-padding                              %! OC2
         \revert DynamicLineSpanner.staff-padding                       %! OC2
@@ -1520,7 +1516,6 @@ N_CelloRHMusicVoice = {
         \pp                                                            %! SM8:REAPPLIED_DYNAMIC:SM37
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \override RepeatTie.direction = #up                            %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
@@ -1929,7 +1924,6 @@ N_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
         - \tweak bound-details.right.text \markup \baca-bcp-right #7 #7 %! BACA_BCP_COMMAND
         \bacaStartTextSpanBCP                                          %! BACA_BCP_COMMAND
-        \revert RepeatTie.direction                                    %! OC2
         
         r4
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND

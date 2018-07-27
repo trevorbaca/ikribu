@@ -78,7 +78,6 @@ maker(
         baca.dynamic('"mf"'),
         baca.dynamic_shift('"mf"'),
         ],
-    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     )

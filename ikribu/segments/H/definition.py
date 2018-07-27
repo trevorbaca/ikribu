@@ -93,7 +93,6 @@ maker(
         bookend=True,
         piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),
         ),
-    baca.repeat_tie_up(),
     baca.script_staff_padding(7, selector=baca.leaves()),
     baca.staff_position(0),
     baca.text_script_staff_padding(8),

@@ -691,7 +691,6 @@ F_CelloMusicVoice = {
     \stopStaff                                                         %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 1                   %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                        %! SM8:EXPLICIT_STAFF_LINES:IC
-    \override RepeatTie.direction = #up                                %! OC1
     \override TextScript.padding = #2.5                                %! OC1
     \override TextScript.parent-alignment-X = #0                       %! OC1
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! SM6:EXPLICIT_STAFF_LINES_COLOR:IC
@@ -749,7 +748,6 @@ F_CelloMusicVoice = {
     
     d4
     \repeatTie
-    \revert RepeatTie.direction                                        %! OC2
     \revert TextScript.padding                                         %! OC2
     \revert TextScript.parent-alignment-X                              %! OC2
     

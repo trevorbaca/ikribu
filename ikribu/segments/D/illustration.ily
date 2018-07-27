@@ -604,7 +604,6 @@ D_CelloRHMusicVoice = {
         r4
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
         
-        \override RepeatTie.direction = #up                            %! OC1
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
@@ -976,7 +975,6 @@ D_CelloRHMusicVoice = {
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         \revert DynamicLineSpanner.staff-padding                       %! OC2
-        \revert RepeatTie.direction                                    %! OC2
         \revert Script.staff-padding                                   %! OC2
         \revert TextScript.staff-padding                               %! OC2
         \revert TextSpanner.staff-padding                              %! OC2

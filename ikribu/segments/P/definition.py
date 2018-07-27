@@ -155,6 +155,5 @@ maker(
         bookend=True,
         piece_selector=baca.runs().map(baca.enchain([3, 4])).flatten(),
         ),
-    baca.repeat_tie_up(),
     baca.staff_position(0),
     )

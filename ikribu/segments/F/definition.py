@@ -111,7 +111,6 @@ maker(
         baca.markups.lines(['graincircle:', 'π/2 every quarter note']),
         boxed=True,
         ),
-    baca.repeat_tie_up(),
     baca.staff_lines(1),
     baca.staff_position(0),
     ikribu.box_adjustment(),
