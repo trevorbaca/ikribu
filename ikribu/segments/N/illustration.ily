@@ -302,7 +302,8 @@ N_ViolinRHMusicVoice = {
             \box                                                       %! IC
                 "1/2 clt"                                              %! IC
         }                                                              %! IC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BACA_BCP_COMMAND
@@ -318,7 +319,8 @@ N_ViolinRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BACA_BCP_COMMAND
@@ -341,7 +343,8 @@ N_ViolinRHMusicVoice = {
     c'4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow                                                          %! BACA_BCP_COMMAND
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BACA_BCP_COMMAND
@@ -369,7 +372,8 @@ N_ViolinRHMusicVoice = {
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -405,7 +409,8 @@ N_ViolinRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -421,7 +426,8 @@ N_ViolinRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BACA_BCP_COMMAND
@@ -443,7 +449,8 @@ N_ViolinRHMusicVoice = {
         c'4
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -474,7 +481,8 @@ N_ViolinRHMusicVoice = {
     c'4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow                                                            %! BACA_BCP_COMMAND
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BACA_BCP_COMMAND
@@ -508,7 +516,8 @@ N_ViolinRHMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BACA_BCP_COMMAND
@@ -524,7 +533,8 @@ N_ViolinRHMusicVoice = {
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -547,7 +557,8 @@ N_ViolinRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BACA_BCP_COMMAND
@@ -575,7 +586,8 @@ N_ViolinRHMusicVoice = {
         c'4
         \ppp                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BACA_BCP_COMMAND
@@ -609,7 +621,8 @@ N_ViolinRHMusicVoice = {
     c'4
     \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow                                                            %! BACA_BCP_COMMAND
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BACA_BCP_COMMAND
@@ -626,7 +639,8 @@ N_ViolinRHMusicVoice = {
     c'4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\upbow                                                            %! BACA_BCP_COMMAND
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BACA_BCP_COMMAND
@@ -648,7 +662,8 @@ N_ViolinRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BACA_BCP_COMMAND
@@ -885,7 +900,8 @@ N_ViolaRHMusicVoice = {
             \box                                                       %! IC
                 "1/2 clt"                                              %! IC
         }                                                              %! IC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BACA_BCP_COMMAND
@@ -906,7 +922,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -931,7 +948,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -947,7 +965,8 @@ N_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BACA_BCP_COMMAND
@@ -973,7 +992,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -990,7 +1010,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \ppp                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -1019,7 +1040,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BACA_BCP_COMMAND
@@ -1035,7 +1057,8 @@ N_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BACA_BCP_COMMAND
@@ -1071,7 +1094,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BACA_BCP_COMMAND
@@ -1087,7 +1111,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND
@@ -1115,7 +1140,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -1132,7 +1158,8 @@ N_ViolaRHMusicVoice = {
         c'4
         \ppp                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -1159,7 +1186,8 @@ N_ViolaRHMusicVoice = {
     c'4
     \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow                                                          %! BACA_BCP_COMMAND
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BACA_BCP_COMMAND
@@ -1175,7 +1203,8 @@ N_ViolaRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BACA_BCP_COMMAND
@@ -1206,7 +1235,8 @@ N_ViolaRHMusicVoice = {
     c'4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow                                                          %! BACA_BCP_COMMAND
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BACA_BCP_COMMAND
@@ -1223,7 +1253,8 @@ N_ViolaRHMusicVoice = {
     c'4
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow                                                          %! BACA_BCP_COMMAND
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4      %! BACA_BCP_COMMAND
@@ -1248,7 +1279,8 @@ N_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BACA_BCP_COMMAND
@@ -1264,7 +1296,8 @@ N_ViolaRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ppp                                                           %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BACA_BCP_COMMAND
@@ -1526,7 +1559,8 @@ N_CelloRHMusicVoice = {
                 \box                                                   %! IC
                     "1/2 clt"                                          %! IC
             }                                                          %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -1545,7 +1579,8 @@ N_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BACA_BCP_COMMAND
@@ -1568,7 +1603,8 @@ N_CelloRHMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BACA_BCP_COMMAND
@@ -1593,7 +1629,8 @@ N_CelloRHMusicVoice = {
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BACA_BCP_COMMAND
@@ -1609,7 +1646,8 @@ N_CelloRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BACA_BCP_COMMAND
@@ -1637,7 +1675,8 @@ N_CelloRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BACA_BCP_COMMAND
@@ -1652,7 +1691,8 @@ N_CelloRHMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c'4
     \ff                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BACA_BCP_COMMAND
@@ -1694,7 +1734,8 @@ N_CelloRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -1715,7 +1756,8 @@ N_CelloRHMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BACA_BCP_COMMAND
@@ -1738,7 +1780,8 @@ N_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BACA_BCP_COMMAND
@@ -1766,7 +1809,8 @@ N_CelloRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BACA_BCP_COMMAND
@@ -1785,7 +1829,8 @@ N_CelloRHMusicVoice = {
     c'4
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     -\downbow                                                          %! BACA_BCP_COMMAND
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \bacaStopTextSpanBCP                                               %! BACA_BCP_COMMAND
     - \abjad_solid_line_with_arrow                                     %! BACA_BCP_COMMAND
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BACA_BCP_COMMAND
@@ -1811,7 +1856,8 @@ N_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BACA_BCP_COMMAND
@@ -1827,7 +1873,8 @@ N_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BACA_BCP_COMMAND
@@ -1868,7 +1915,8 @@ N_CelloRHMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BACA_BCP_COMMAND
@@ -1885,7 +1933,8 @@ N_CelloRHMusicVoice = {
         c'4
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\downbow                                                      %! BACA_BCP_COMMAND
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BACA_BCP_COMMAND
@@ -1909,7 +1958,8 @@ N_CelloRHMusicVoice = {
         c'4
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\upbow                                                        %! BACA_BCP_COMMAND
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \bacaStopTextSpanBCP                                           %! BACA_BCP_COMMAND
         - \abjad_solid_line_with_arrow                                 %! BACA_BCP_COMMAND
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BACA_BCP_COMMAND

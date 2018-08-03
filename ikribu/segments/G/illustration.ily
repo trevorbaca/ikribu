@@ -253,7 +253,8 @@ G_BassClarinetMusicVoice = {
             #(x11-color 'green4)                                           %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“BassClarinet”)                                               %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set Staff.instrumentName =                                            %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -283,7 +284,8 @@ G_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     af!1.
     \pp                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     af!4
@@ -299,7 +301,8 @@ G_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     g1.
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     g4
@@ -315,7 +318,8 @@ G_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!1.
     \mf                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     fs!4
@@ -331,7 +335,8 @@ G_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f1.
     \f                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     f4
@@ -347,7 +352,8 @@ G_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     e1.
     \ff                                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     e4
@@ -857,7 +863,8 @@ G_CelloMusicVoice = {
             (“Cello”)                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
     _ \markup { III }                                                  %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -881,7 +888,8 @@ G_CelloMusicVoice = {
         fqf''!4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -890,7 +898,8 @@ G_CelloMusicVoice = {
     d''1..
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -900,7 +909,8 @@ G_CelloMusicVoice = {
         b'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -909,7 +919,8 @@ G_CelloMusicVoice = {
     d''1..
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -919,7 +930,8 @@ G_CelloMusicVoice = {
         b'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -928,7 +940,8 @@ G_CelloMusicVoice = {
     g'1..
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -938,7 +951,8 @@ G_CelloMusicVoice = {
         b'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -947,7 +961,8 @@ G_CelloMusicVoice = {
     g'1..
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -957,7 +972,8 @@ G_CelloMusicVoice = {
         d'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     

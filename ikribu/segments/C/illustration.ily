@@ -817,7 +817,8 @@ C_ViolinMusicVoice = {
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "trem. flaut. tast." }                                 %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolinMusicVoice measure 38 / measure 4]                      %! SM4
@@ -837,7 +838,8 @@ C_ViolinMusicVoice = {
     gs'!1
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolinMusicVoice measure 42 / measure 8]                      %! SM4
@@ -857,7 +859,8 @@ C_ViolinMusicVoice = {
     fs'!1
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolinMusicVoice measure 46 / measure 12]                     %! SM4
@@ -877,7 +880,8 @@ C_ViolinMusicVoice = {
     gs'!1
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolinMusicVoice measure 50 / measure 16]                     %! SM4
@@ -1046,7 +1050,8 @@ C_ViolaMusicVoice = {
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
     ^ \markup { "trem. flaut. tast." }                                 %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolaMusicVoice measure 38 / measure 4]                       %! SM4
@@ -1066,7 +1071,8 @@ C_ViolaMusicVoice = {
     e'1
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolaMusicVoice measure 42 / measure 8]                       %! SM4
@@ -1086,7 +1092,8 @@ C_ViolaMusicVoice = {
     f'1
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolaMusicVoice measure 46 / measure 12]                      %! SM4
@@ -1106,7 +1113,8 @@ C_ViolaMusicVoice = {
     e'1
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C ViolaMusicVoice measure 50 / measure 16]                      %! SM4
@@ -1277,7 +1285,8 @@ C_CelloMusicVoice = {
     d''1
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. tasto. (arco)" %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. XP" %! PIC
@@ -1291,7 +1300,8 @@ C_CelloMusicVoice = {
     fqf''!1
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 38 / measure 4]                       %! SM4
@@ -1299,7 +1309,8 @@ C_CelloMusicVoice = {
     d''2.
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1309,7 +1320,8 @@ C_CelloMusicVoice = {
         b'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -1318,7 +1330,8 @@ C_CelloMusicVoice = {
     d''1
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 41 / measure 7]                       %! SM4
@@ -1326,7 +1339,8 @@ C_CelloMusicVoice = {
     b'1
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 42 / measure 8]                       %! SM4
@@ -1334,7 +1348,8 @@ C_CelloMusicVoice = {
     g'2.
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1344,7 +1359,8 @@ C_CelloMusicVoice = {
         b'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -1353,7 +1369,8 @@ C_CelloMusicVoice = {
     g'1
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 45 / measure 11]                      %! SM4
@@ -1361,7 +1378,8 @@ C_CelloMusicVoice = {
     d'1
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 46 / measure 12]                      %! SM4
@@ -1369,7 +1387,8 @@ C_CelloMusicVoice = {
     g'2.
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
@@ -1379,7 +1398,8 @@ C_CelloMusicVoice = {
         d'4
         :32                                                            %! IC
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         \glissando                                                     %! SC
     }
     
@@ -1388,7 +1408,8 @@ C_CelloMusicVoice = {
     g1
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 49 / measure 15]                      %! SM4
@@ -1396,7 +1417,8 @@ C_CelloMusicVoice = {
     d'1
     :32                                                                %! IC
     \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \glissando                                                         %! SC
     
     % [C CelloMusicVoice measure 50 / measure 16]                      %! SM4

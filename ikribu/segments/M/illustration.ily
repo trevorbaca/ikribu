@@ -811,7 +811,8 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!1
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [M BassClarinetMusicVoice measure 178 / measure 3]                   %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -823,9 +824,10 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!2
     \fff                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                                %! PIC
-    - \tweak circled-tip ##t                                               %! PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 180 / measure 5]                   %! SM4
@@ -869,7 +871,8 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!2.
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [M BassClarinetMusicVoice measure 186 / measure 11]                  %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -881,9 +884,10 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!2.
     \fff                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                                %! PIC
-    - \tweak circled-tip ##t                                               %! PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 188 / measure 13]                  %! SM4
@@ -907,7 +911,8 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!1..
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [M BassClarinetMusicVoice measure 191 / measure 16]                  %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -919,9 +924,10 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!\breve
     \fff                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                                %! PIC
-    - \tweak circled-tip ##t                                               %! PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 193 / measure 18]                  %! SM4
@@ -965,7 +971,8 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!\breve
     \ppp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [M BassClarinetMusicVoice measure 199 / measure 24]                  %! SM4
     cs!1..
@@ -1245,7 +1252,8 @@ M_ViolinMusicVoice = {
                 \box                                                   %! IC
                     "sponges on BD"                                    %! IC
             }                                                          %! IC
-        \<                                                             %! PIC
+        - \tweak color #'DeepPink1                                     %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -1359,7 +1367,8 @@ M_ViolinMusicVoice = {
                 \box                                                   %! IC
                     "sponges on BD"                                    %! IC
             }                                                          %! IC
-        \<                                                             %! PIC
+        - \tweak color #'DeepPink1                                     %! SM8:REDUNDANT_DYNAMIC:PIC
+        \<                                                             %! SM8:REDUNDANT_DYNAMIC:PIC
         
         c'4
         -\accent                                                       %! IC
@@ -1447,7 +1456,8 @@ M_ViolinMusicVoice = {
                 \box                                                   %! IC
                     "sponges on BD"                                    %! IC
             }                                                          %! IC
-        \<                                                             %! PIC
+        - \tweak color #'DeepPink1                                     %! SM8:REDUNDANT_DYNAMIC:PIC
+        \<                                                             %! SM8:REDUNDANT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -1561,7 +1571,8 @@ M_ViolinMusicVoice = {
                 \box                                                   %! IC
                     "sponges on BD"                                    %! IC
             }                                                          %! IC
-        \<                                                             %! PIC
+        - \tweak color #'DeepPink1                                     %! SM8:REDUNDANT_DYNAMIC:PIC
+        \<                                                             %! SM8:REDUNDANT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -1897,7 +1908,8 @@ M_ViolaMusicVoice = {
     c'4
     :32                                                                %! IC
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #'DeepPink1                                         %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -1986,7 +1998,8 @@ M_ViolaMusicVoice = {
     c'4
     :32                                                                %! IC
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #'DeepPink1                                         %! SM8:REDUNDANT_DYNAMIC:PIC
+    \<                                                                 %! SM8:REDUNDANT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -2038,7 +2051,8 @@ M_ViolaMusicVoice = {
         c'2
         :32                                                            %! IC
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #'DeepPink1                                     %! SM8:REDUNDANT_DYNAMIC:PIC
+        \<                                                             %! SM8:REDUNDANT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -2131,7 +2145,8 @@ M_ViolaMusicVoice = {
         c'1
         :32                                                            %! IC
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #'DeepPink1                                     %! SM8:REDUNDANT_DYNAMIC:PIC
+        \<                                                             %! SM8:REDUNDANT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2440,7 +2455,8 @@ M_CelloMusicVoice = {
     \set Staff.forceClef = ##t                                         %! SM8:EXPLICIT_CLEF:SM33:IC
     c,,1
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #'DeepPink1                                         %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
     - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
@@ -2535,7 +2551,8 @@ M_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c,,2.
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #'DeepPink1                                         %! SM8:REDUNDANT_DYNAMIC:PIC
+    \<                                                                 %! SM8:REDUNDANT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
     - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
@@ -2591,7 +2608,8 @@ M_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c,,1..
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #'DeepPink1                                         %! SM8:REDUNDANT_DYNAMIC:PIC
+    \<                                                                 %! SM8:REDUNDANT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
     - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
@@ -2686,7 +2704,8 @@ M_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c,,\breve
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #'DeepPink1                                         %! SM8:REDUNDANT_DYNAMIC:PIC
+    \<                                                                 %! SM8:REDUNDANT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "tasto"        %! PIC
     - \tweak bound-details.right.text \markup \baca-right "XP"         %! PIC
