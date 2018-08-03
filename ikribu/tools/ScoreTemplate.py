@@ -35,23 +35,23 @@ class ScoreTemplate(baca.ScoreTemplate):
             {
                 \context EnsembleStaffGroup = "EnsembleStaffGroup"
                 <<
-                    \tag BassClarinet %! ST4
+                    \tag BassClarinet %! ST_4
                     \context Staff = "BassClarinetMusicStaff"
                     {
                         \context Voice = "BassClarinetMusicVoice"
                         {
-                            \clef "treble" %! ST3
+                            \clef "treble" %! ST_3
                             s1
                         }
                     }
-                    \tag Violin %! ST4
+                    \tag Violin %! ST_4
                     \context SingleStringStaffGroup = "ViolinStaffGroup"
                     <<
                         \context RHStaff = "ViolinRHMusicStaff"
                         {
                             \context Voice = "ViolinRHMusicVoice"
                             {
-                                \clef "percussion" %! ST3
+                                \clef "percussion" %! ST_3
                                 s1
                             }
                         }
@@ -59,19 +59,19 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolinMusicVoice"
                             {
-                                \clef "treble" %! ST3
+                                \clef "treble" %! ST_3
                                 s1
                             }
                         }
                     >>
-                    \tag Viola %! ST4
+                    \tag Viola %! ST_4
                     \context SingleStringStaffGroup = "ViolaStaffGroup"
                     <<
                         \context RHStaff = "ViolaRHMusicStaff"
                         {
                             \context Voice = "ViolaRHMusicVoice"
                             {
-                                \clef "percussion" %! ST3
+                                \clef "percussion" %! ST_3
                                 s1
                             }
                         }
@@ -79,19 +79,19 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolaMusicVoice"
                             {
-                                \clef "alto" %! ST3
+                                \clef "alto" %! ST_3
                                 s1
                             }
                         }
                     >>
-                    \tag Cello %! ST4
+                    \tag Cello %! ST_4
                     \context SingleStringStaffGroup = "CelloStaffGroup"
                     <<
                         \context RHStaff = "CelloRHMusicStaff"
                         {
                             \context Voice = "CelloRHMusicVoice"
                             {
-                                \clef "percussion" %! ST3
+                                \clef "percussion" %! ST_3
                                 s1
                             }
                         }
