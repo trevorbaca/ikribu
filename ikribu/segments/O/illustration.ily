@@ -435,9 +435,10 @@ O_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     c2.
     \p                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                                %! PIC
-    - \tweak circled-tip ##t                                               %! PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie                                                             %! SC
     
     % [O BassClarinetMusicVoice measure 237 / measure 20]                  %! SM4
@@ -689,9 +690,10 @@ O_ViolinMusicVoice = {
     <e' fs'!>2.
     :32                                                                %! IC
     \ppppp                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O ViolinMusicVoice measure 237 / measure 20]                    %! SM4
@@ -944,9 +946,10 @@ O_ViolaMusicVoice = {
     <ef'! f'>2.
     :32                                                                %! IC
     \ppppp                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O ViolaMusicVoice measure 237 / measure 20]                     %! SM4
@@ -1130,7 +1133,8 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "tasto poss."  %! PIC
     - \tweak bound-details.right.text \markup \baca-right "pos. ord."  %! PIC
@@ -1142,21 +1146,24 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 224 / measure 7]                      %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 225 / measure 8]                      %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!\breve
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     
@@ -1164,7 +1171,8 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "pos. ord."    %! PIC
@@ -1177,21 +1185,24 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2.
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 228 / measure 11]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 229 / measure 12]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!\breve
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     
@@ -1199,7 +1210,8 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "XP"           %! PIC
@@ -1212,21 +1224,24 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 232 / measure 15]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 233 / measure 16]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2.
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     
@@ -1234,7 +1249,8 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!1..
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "pos. ord."    %! PIC
@@ -1247,14 +1263,16 @@ O_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!\breve
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 236 / measure 19]                     %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     bf,,,!2.
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [O CelloMusicVoice measure 237 / measure 20]                     %! SM4

@@ -564,7 +564,8 @@ B_BassClarinetMusicVoice = {
     \startStaff                                                            %! SM21
     ef!2.
     \ppp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [B BassClarinetMusicVoice measure 29 / measure 20]                   %! SM4
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
@@ -576,9 +577,10 @@ B_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     ef!2.
     \f                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                                %! PIC
-    - \tweak circled-tip ##t                                               %! PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     % [B BassClarinetMusicVoice measure 31 / measure 22]                   %! SM4
@@ -785,7 +787,8 @@ B_ViolinMusicVoice = {
             (“Violin”)                                                 %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
     _ \markup { III }                                                  %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. pont." %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
@@ -819,9 +822,10 @@ B_ViolinMusicVoice = {
     e'2.
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     
@@ -855,7 +859,8 @@ B_ViolinMusicVoice = {
     e'\breve
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. pont." %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
@@ -875,9 +880,10 @@ B_ViolinMusicVoice = {
     e'1
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     
@@ -911,7 +917,8 @@ B_ViolinMusicVoice = {
     e'2
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. pont." %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
@@ -931,9 +938,10 @@ B_ViolinMusicVoice = {
     e'2.
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     
@@ -1287,7 +1295,8 @@ B_ViolaMusicVoice = {
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { II }                                                   %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. pont." %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
@@ -1322,9 +1331,10 @@ B_ViolaMusicVoice = {
     ef'!\breve
     :32                                                                %! IC
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     

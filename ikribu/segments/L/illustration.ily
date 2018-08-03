@@ -1351,9 +1351,10 @@ L_ViolinMusicVoice = {
     c'8
     \baca_effort_mp                                                    %! SM8:EXPLICIT_DYNAMIC:PIC
     -\staccato                                                         %! IC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     [
     
     d'8
@@ -1585,7 +1586,8 @@ L_ViolinMusicVoice = {
                 \box                                                   %! IC
                     "sponges on BD"                                    %! IC
             }                                                          %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -1601,7 +1603,8 @@ L_ViolinMusicVoice = {
         c'2
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         :32                                                            %! IC
@@ -1617,7 +1620,8 @@ L_ViolinMusicVoice = {
         c'2
         \mp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -1631,7 +1635,8 @@ L_ViolinMusicVoice = {
     c'4
     :32                                                                %! IC
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -1646,7 +1651,8 @@ L_ViolinMusicVoice = {
         c'1
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         :32                                                            %! IC
@@ -1662,7 +1668,8 @@ L_ViolinMusicVoice = {
         c'1
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -1676,7 +1683,8 @@ L_ViolinMusicVoice = {
     c'4
     :32                                                                %! IC
     \mf                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -1691,7 +1699,8 @@ L_ViolinMusicVoice = {
         c'2
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         :32                                                            %! IC
@@ -1707,7 +1716,8 @@ L_ViolinMusicVoice = {
         c'2
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -1723,7 +1733,8 @@ L_ViolinMusicVoice = {
         c'4
         :32                                                            %! IC
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'4
         -\accent                                                       %! IC
@@ -1739,7 +1750,8 @@ L_ViolinMusicVoice = {
         c'1
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         :32                                                            %! IC
@@ -1753,7 +1765,8 @@ L_ViolinMusicVoice = {
     c'4
     \fff                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                           %! IC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -2146,9 +2159,10 @@ L_ViolaMusicVoice = {
         d'8
         \baca_effort_mp                                                %! SM8:EXPLICIT_DYNAMIC:PIC
         -\staccato                                                     %! IC
-        - \tweak to-barline ##t                                        %! PIC
-        - \tweak circled-tip ##t                                       %! PIC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak to-barline ##t                                        %! SM8:EXPLICIT_DYNAMIC:PIC
+        - \tweak circled-tip ##t                                       %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         [
         
         c'8
@@ -2321,7 +2335,8 @@ L_ViolaMusicVoice = {
                 \box                                                   %! IC
                     "sponges on BD"                                    %! IC
             }                                                          %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'4
         -\accent                                                       %! IC
@@ -2337,7 +2352,8 @@ L_ViolaMusicVoice = {
         c'1
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2353,7 +2369,8 @@ L_ViolaMusicVoice = {
         c'1
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2369,7 +2386,8 @@ L_ViolaMusicVoice = {
         c'1
         \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2385,7 +2403,8 @@ L_ViolaMusicVoice = {
         c'1
         \mp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2399,7 +2418,8 @@ L_ViolaMusicVoice = {
     c'4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                           %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     :32                                                                %! IC
@@ -2414,7 +2434,8 @@ L_ViolaMusicVoice = {
         c'4
         \mp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'4
         -\accent                                                       %! IC
@@ -2430,7 +2451,8 @@ L_ViolaMusicVoice = {
         c'1
         \p                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         :32                                                            %! IC
@@ -2446,7 +2468,8 @@ L_ViolaMusicVoice = {
         c'1
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2462,7 +2485,8 @@ L_ViolaMusicVoice = {
         c'2
         :32                                                            %! IC
         \mp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -2478,7 +2502,8 @@ L_ViolaMusicVoice = {
         c'2
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -2492,7 +2517,8 @@ L_ViolaMusicVoice = {
     c'4
     :32                                                                %! IC
     \mp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -2507,7 +2533,8 @@ L_ViolaMusicVoice = {
         c'1
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2523,7 +2550,8 @@ L_ViolaMusicVoice = {
         c'1
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         -\accent                                                       %! IC
@@ -2537,7 +2565,8 @@ L_ViolaMusicVoice = {
     c'4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                           %! IC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -2552,7 +2581,8 @@ L_ViolaMusicVoice = {
         c'2
         \mf                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         -\accent                                                       %! IC
@@ -2568,7 +2598,8 @@ L_ViolaMusicVoice = {
         c'2
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'2
         :32                                                            %! IC
@@ -2584,7 +2615,8 @@ L_ViolaMusicVoice = {
         c'4
         \f                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \<                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \<                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'4
         -\accent                                                       %! IC
@@ -2600,7 +2632,8 @@ L_ViolaMusicVoice = {
         c'1
         \ff                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
         -\accent                                                       %! IC
-        \>                                                             %! PIC
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
         
         c'1
         :32                                                            %! IC
@@ -2614,7 +2647,8 @@ L_ViolaMusicVoice = {
     c'4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     -\accent                                                           %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     c'4
     -\accent                                                           %! IC
@@ -2807,7 +2841,8 @@ L_CelloMusicVoice = {
             #(x11-color 'green4)                                       %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“Cello”)                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! SM6:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
     \set SingleStringStaffGroup.instrumentName =                       %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \markup {                                                          %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
@@ -2848,7 +2883,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -2873,7 +2909,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -2886,7 +2923,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -2912,7 +2950,8 @@ L_CelloMusicVoice = {
                         "π/3 every quarter note"                       %! IC
                     }                                                  %! IC
         }                                                              %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     d4
     \repeatTie
@@ -2927,7 +2966,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -2937,7 +2977,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -2962,7 +3003,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -2985,7 +3027,8 @@ L_CelloMusicVoice = {
                         "π/4 every quarter note"                       %! IC
                     }                                                  %! IC
         }                                                              %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     d4
     \repeatTie
@@ -3000,7 +3043,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3013,7 +3057,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3029,7 +3074,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3052,7 +3098,8 @@ L_CelloMusicVoice = {
                         "π/3 every quarter note"                       %! IC
                     }                                                  %! IC
         }                                                              %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     d4
     \repeatTie
@@ -3061,7 +3108,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3086,7 +3134,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3111,7 +3160,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3149,7 +3199,8 @@ L_CelloMusicVoice = {
                         "π/2 every quarter note"                       %! IC
                     }                                                  %! IC
         }                                                              %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     d4
     \repeatTie
@@ -3173,7 +3224,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3186,7 +3238,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3196,7 +3249,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3234,7 +3288,8 @@ L_CelloMusicVoice = {
                         "π/3 every quarter note"                       %! IC
                     }                                                  %! IC
         }                                                              %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     
     d4
     \repeatTie
@@ -3258,7 +3313,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3274,7 +3330,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4
@@ -3290,7 +3347,8 @@ L_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     d4
     \f                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     
     d4

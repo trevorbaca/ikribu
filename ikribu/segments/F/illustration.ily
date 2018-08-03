@@ -211,7 +211,8 @@ F_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     a1..
     \sfp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                     %! PIC
+    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [F BassClarinetMusicVoice measure 85 / measure 7]                    %! SM4
     a\breve
@@ -358,7 +359,8 @@ F_ViolinMusicVoice = {
     :32                                                                %! IC
     \baca_sfpp                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { II+III }                                               %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. XP" %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
@@ -372,9 +374,10 @@ F_ViolinMusicVoice = {
     <e' fs'!>\breve
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     \revert DynamicLineSpanner.staff-padding                           %! OC2
@@ -522,7 +525,8 @@ F_ViolaMusicVoice = {
     :32                                                                %! IC
     \baca_sfpp                                                         %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { I+II }                                                 %! IC
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. XP" %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. flaut. tast." %! PIC
@@ -536,9 +540,10 @@ F_ViolaMusicVoice = {
     <ef'! f'>\breve
     :32                                                                %! IC
     \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak to-barline ##t                                            %! PIC
-    - \tweak circled-tip ##t                                           %! PIC
-    \>                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak to-barline ##t                                            %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak circled-tip ##t                                           %! SM8:EXPLICIT_DYNAMIC:PIC
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     \repeatTie
     \stopTextSpan                                                      %! PIC
     \revert DynamicLineSpanner.staff-padding                           %! OC2
@@ -643,7 +648,8 @@ F_CelloMusicVoice = {
             #(x11-color 'green4)                                       %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
             (“Cello”)                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
         }                                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    \<                                                                 %! PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "(trem. flaut. tast.)" %! PIC
     - \tweak bound-details.right.text \markup \baca-right "trem. XP (non. flaut.)" %! PIC
