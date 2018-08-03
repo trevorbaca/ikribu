@@ -971,7 +971,7 @@ M_BassClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
     cs!\breve
     \ppp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                                   %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [M BassClarinetMusicVoice measure 199 / measure 24]                  %! SM4
