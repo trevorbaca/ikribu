@@ -1,54 +1,54 @@
 C_GlobalRests = {
     
-    % [C GlobalRests measure 35 / measure 1]                                       %! SM4
+    % [C GlobalRests measure 35 / measure 1]                                       %! SM_4
     R1 * 7/4
     
-    % [C GlobalRests measure 36 / measure 2]                                       %! SM4
+    % [C GlobalRests measure 36 / measure 2]                                       %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 37 / measure 3]                                       %! SM4
+    % [C GlobalRests measure 37 / measure 3]                                       %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 38 / measure 4]                                       %! SM4
+    % [C GlobalRests measure 38 / measure 4]                                       %! SM_4
     R1 * 3/4
     
-    % [C GlobalRests measure 39 / measure 5]                                       %! SM4
+    % [C GlobalRests measure 39 / measure 5]                                       %! SM_4
     R1 * 1/6
     
-    % [C GlobalRests measure 40 / measure 6]                                       %! SM4
+    % [C GlobalRests measure 40 / measure 6]                                       %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 41 / measure 7]                                       %! SM4
+    % [C GlobalRests measure 41 / measure 7]                                       %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 42 / measure 8]                                       %! SM4
+    % [C GlobalRests measure 42 / measure 8]                                       %! SM_4
     R1 * 3/4
     
-    % [C GlobalRests measure 43 / measure 9]                                       %! SM4
+    % [C GlobalRests measure 43 / measure 9]                                       %! SM_4
     R1 * 1/6
     
-    % [C GlobalRests measure 44 / measure 10]                                      %! SM4
+    % [C GlobalRests measure 44 / measure 10]                                      %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 45 / measure 11]                                      %! SM4
+    % [C GlobalRests measure 45 / measure 11]                                      %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 46 / measure 12]                                      %! SM4
+    % [C GlobalRests measure 46 / measure 12]                                      %! SM_4
     R1 * 3/4
     
-    % [C GlobalRests measure 47 / measure 13]                                      %! SM4
+    % [C GlobalRests measure 47 / measure 13]                                      %! SM_4
     R1 * 1/6
     
-    % [C GlobalRests measure 48 / measure 14]                                      %! SM4
+    % [C GlobalRests measure 48 / measure 14]                                      %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 49 / measure 15]                                      %! SM4
+    % [C GlobalRests measure 49 / measure 15]                                      %! SM_4
     R1 * 1
     
-    % [C GlobalRests measure 50 / measure 16]                                      %! SM4
+    % [C GlobalRests measure 50 / measure 16]                                      %! SM_4
     R1 * 3/4
     
-    % [C GlobalRests measure 51 / measure 17]                                      %! SM4
+    % [C GlobalRests measure 51 / measure 17]                                      %! SM_4
     R1 * 1/6
     
 }
@@ -56,75 +56,75 @@ C_GlobalRests = {
 
 C_GlobalSkips = {
     
-    % [C GlobalSkips measure 35 / measure 1]                                       %! SM4
-    \time 7/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
+    % [C GlobalSkips measure 35 / measure 1]                                       %! SM_4
+    \time 7/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
     \mark #3                                                                       %! IC
     \bar ""                                                                        %! SM2:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 7/4
 %@% ^ \markup \baca-dark-cyan-markup (35)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <0>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.1]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'00'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 36 / measure 2]                                       %! SM4
-    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 36 / measure 2]                                       %! SM_4
+    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (36)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <1>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((2))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.2]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'07'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_dashed_line_with_arrow                                                %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_dashed_line_with_arrow                                                %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_dashed_line_with_arrow                                                %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 37 / measure 3]                                       %! SM4
+    % [C GlobalSkips measure 37 / measure 3]                                       %! SM_4
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (37)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <2>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -132,42 +132,42 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.3]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'12'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 38 / measure 4]                                       %! SM4
-    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 38 / measure 4]                                       %! SM_4
+    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (38)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <3>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((4))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.4]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'18'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 39 / measure 5]                                       %! SM4
-    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 39 / measure 5]                                       %! SM_4
+    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/6
 %@% ^ \markup \baca-dark-cyan-markup (39)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <4>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -175,40 +175,40 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.5]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'21'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 40 / measure 6]                                       %! SM4
-    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 40 / measure 6]                                       %! SM_4
+    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (40)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <5>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((6))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.6]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'22'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_dashed_line_with_arrow                                                %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_dashed_line_with_arrow                                                %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_dashed_line_with_arrow                                                %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 41 / measure 7]                                       %! SM4
+    % [C GlobalSkips measure 41 / measure 7]                                       %! SM_4
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (41)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <6>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -216,42 +216,42 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.7]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'26'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 42 / measure 8]                                       %! SM4
-    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 42 / measure 8]                                       %! SM_4
+    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (42)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <7>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((8))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.8]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'30'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 43 / measure 9]                                       %! SM4
-    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 43 / measure 9]                                       %! SM_4
+    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/6
 %@% ^ \markup \baca-dark-cyan-markup (43)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <8>                                           %! SM32:MEASURE_INDEX_MARKUP
@@ -259,40 +259,40 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.9]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'35'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 44 / measure 10]                                      %! SM4
-    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 44 / measure 10]                                      %! SM_4
+    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (44)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <9>                                           %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((10))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.10]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'35'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_dashed_line_with_arrow                                                %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_dashed_line_with_arrow                                                %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_dashed_line_with_arrow                                                %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 45 / measure 11]                                      %! SM4
+    % [C GlobalSkips measure 45 / measure 11]                                      %! SM_4
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (45)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <10>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -300,42 +300,42 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.11]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'41'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 46 / measure 12]                                      %! SM4
-    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 46 / measure 12]                                      %! SM_4
+    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (46)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <11>                                          %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((12))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.12]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'47'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 47 / measure 13]                                      %! SM4
-    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 47 / measure 13]                                      %! SM_4
+    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/6
 %@% ^ \markup \baca-dark-cyan-markup (47)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <12>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -343,40 +343,40 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.13]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'50'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 48 / measure 14]                                      %! SM4
-    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 48 / measure 14]                                      %! SM_4
+    \time 4/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (48)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <13>                                          %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((14))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.14]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'51'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_dashed_line_with_arrow                                                %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_dashed_line_with_arrow                                                %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"58"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_dashed_line_with_arrow                                                %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"58"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 49 / measure 15]                                      %! SM4
+    % [C GlobalSkips measure 49 / measure 15]                                      %! SM_4
     s1 * 1
 %@% ^ \markup \baca-dark-cyan-markup (49)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <14>                                          %! SM32:MEASURE_INDEX_MARKUP
@@ -384,58 +384,58 @@ C_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup [C.15]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'55'']"                                    %! SM28:CLOCK_TIME_MARKUP
     
-    % [C GlobalSkips measure 50 / measure 16]                                      %! SM4
-    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 50 / measure 16]                                      %! SM_4
+    \time 3/4                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 3/4
 %@% ^ \markup \baca-dark-cyan-markup (50)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <15>                                          %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((16))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.16]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[3'59'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI1
-%@% - \abjad_invisible_line                                                        %! MMI2
-%@% - \tweak bound-details.left.text \markup {                                     %! MMI2
-%@%     \concat                                                                    %! MMI2
-%@%         {                                                                      %! MMI2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI2
-%@%             \hspace                                                            %! MMI2
-%@%                 #0.5                                                           %! MMI2
-%@%         }                                                                      %! MMI2
-%@%     }                                                                          %! MMI2
-%@% \startTextSpan                                                                 %! MMI2
-    - \abjad_invisible_line                                                        %! MMI3
-    - \tweak bound-details.left.text \markup {                                     %! MMI3
-        \concat                                                                    %! MMI3
-            {                                                                      %! MMI3
-                \with-color                                                        %! MMI3
-                    #(x11-color 'blue)                                             %! MMI3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI3
-                \hspace                                                            %! MMI3
-                    #0.5                                                           %! MMI3
-            }                                                                      %! MMI3
-        }                                                                          %! MMI3
-    \startTextSpan                                                                 %! MMI3
+    \stopTextSpan                                                                  %! MMI_1
+%@% - \abjad_invisible_line                                                        %! MMI_2
+%@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
+%@%     \concat                                                                    %! MMI_2
+%@%         {                                                                      %! MMI_2
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"42"                        %! MMI_2
+%@%             \hspace                                                            %! MMI_2
+%@%                 #0.5                                                           %! MMI_2
+%@%         }                                                                      %! MMI_2
+%@%     }                                                                          %! MMI_2
+%@% \startTextSpan                                                                 %! MMI_2
+    - \abjad_invisible_line                                                        %! MMI_3
+    - \tweak bound-details.left.text \markup {                                     %! MMI_3
+        \concat                                                                    %! MMI_3
+            {                                                                      %! MMI_3
+                \with-color                                                        %! MMI_3
+                    #(x11-color 'blue)                                             %! MMI_3
+                    \abjad-metronome-mark-markup #2 #0 #1 #"42"                    %! MMI_3
+                \hspace                                                            %! MMI_3
+                    #0.5                                                           %! MMI_3
+            }                                                                      %! MMI_3
+        }                                                                          %! MMI_3
+    \startTextSpan                                                                 %! MMI_3
     
-    % [C GlobalSkips measure 51 / measure 17]                                      %! SM4
-    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM1
-    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM1
+    % [C GlobalSkips measure 51 / measure 17]                                      %! SM_4
+    \time 1/6                                                                      %! SM8:EXPLICIT_TIME_SIGNATURE:SM_1
+    \baca_time_signature_color "blue"                                              %! SM6:EXPLICIT_TIME_SIGNATURE_COLOR:SM_1
     s1 * 1/6
 %@% ^ \markup \baca-dark-cyan-markup (51)                                          %! SM31:MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup <16>                                          %! SM32:MEASURE_INDEX_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup ((17))                                        %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [C.17]                                        %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'03'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI4
-    \baca_bar_line_visible                                                         %! SM5
-    \bar "|"                                                                       %! SM5
+    \stopTextSpan                                                                  %! MMI_4
+    \baca_bar_line_visible                                                         %! SM_5
+    \bar "|"                                                                       %! SM_5
     
 }
 
 
 C_BassClarinetMusicVoice = {
     
-    % [C BassClarinetMusicVoice measure 35 / measure 1]                    %! SM4
+    % [C BassClarinetMusicVoice measure 35 / measure 1]                    %! SM_4
     \set Staff.instrumentName =                                            %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                              %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                        %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -485,7 +485,7 @@ C_BassClarinetMusicVoice = {
         }                                                                  %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [C BassClarinetMusicVoice measure 36 / measure 2]                    %! SM4
+    % [C BassClarinetMusicVoice measure 36 / measure 2]                    %! SM_4
     \stopStaff                                                             %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 1                       %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                            %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -525,7 +525,7 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 37 / measure 3]                    %! SM4
+    % [C BassClarinetMusicVoice measure 37 / measure 3]                    %! SM_4
     b'4
     \repeatTie
     
@@ -540,13 +540,13 @@ C_BassClarinetMusicVoice = {
     \revert TextScript.padding                                             %! OC2
     \revert TextScript.parent-alignment-X                                  %! OC2
     
-    % [C BassClarinetMusicVoice measure 38 / measure 4]                    %! SM4
+    % [C BassClarinetMusicVoice measure 38 / measure 4]                    %! SM_4
     R1 * 3/4
     
-    % [C BassClarinetMusicVoice measure 39 / measure 5]                    %! SM4
+    % [C BassClarinetMusicVoice measure 39 / measure 5]                    %! SM_4
     R1 * 1/6
     
-    % [C BassClarinetMusicVoice measure 40 / measure 6]                    %! SM4
+    % [C BassClarinetMusicVoice measure 40 / measure 6]                    %! SM_4
     b'4
     
     b'4
@@ -558,7 +558,7 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 41 / measure 7]                    %! SM4
+    % [C BassClarinetMusicVoice measure 41 / measure 7]                    %! SM_4
     b'4
     \repeatTie
     
@@ -571,13 +571,13 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 42 / measure 8]                    %! SM4
+    % [C BassClarinetMusicVoice measure 42 / measure 8]                    %! SM_4
     R1 * 3/4
     
-    % [C BassClarinetMusicVoice measure 43 / measure 9]                    %! SM4
+    % [C BassClarinetMusicVoice measure 43 / measure 9]                    %! SM_4
     R1 * 1/6
     
-    % [C BassClarinetMusicVoice measure 44 / measure 10]                   %! SM4
+    % [C BassClarinetMusicVoice measure 44 / measure 10]                   %! SM_4
     b'4
     
     b'4
@@ -589,7 +589,7 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 45 / measure 11]                   %! SM4
+    % [C BassClarinetMusicVoice measure 45 / measure 11]                   %! SM_4
     b'4
     \repeatTie
     
@@ -602,13 +602,13 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 46 / measure 12]                   %! SM4
+    % [C BassClarinetMusicVoice measure 46 / measure 12]                   %! SM_4
     R1 * 3/4
     
-    % [C BassClarinetMusicVoice measure 47 / measure 13]                   %! SM4
+    % [C BassClarinetMusicVoice measure 47 / measure 13]                   %! SM_4
     R1 * 1/6
     
-    % [C BassClarinetMusicVoice measure 48 / measure 14]                   %! SM4
+    % [C BassClarinetMusicVoice measure 48 / measure 14]                   %! SM_4
     b'4
     
     b'4
@@ -620,7 +620,7 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 49 / measure 15]                   %! SM4
+    % [C BassClarinetMusicVoice measure 49 / measure 15]                   %! SM_4
     b'4
     \repeatTie
     
@@ -633,10 +633,10 @@ C_BassClarinetMusicVoice = {
     b'4
     \repeatTie
     
-    % [C BassClarinetMusicVoice measure 50 / measure 16]                   %! SM4
+    % [C BassClarinetMusicVoice measure 50 / measure 16]                   %! SM_4
     R1 * 3/4
     
-    % [C BassClarinetMusicVoice measure 51 / measure 17]                   %! SM4
+    % [C BassClarinetMusicVoice measure 51 / measure 17]                   %! SM_4
     R1 * 1/6
     \revert Staff.BarLine.bar-extent                                       %! OC2
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                   %! OC1
@@ -652,7 +652,7 @@ C_BassClarinetMusicStaff = {
 
 C_ViolinRHMusicVoice = {
     
-    % [C ViolinRHMusicVoice measure 35 / measure 1]                    %! SM4
+    % [C ViolinRHMusicVoice measure 35 / measure 1]                    %! SM_4
     \stopStaff                                                         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                        %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -664,63 +664,63 @@ C_ViolinRHMusicVoice = {
     R1 * 7/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [C ViolinRHMusicVoice measure 36 / measure 2]                    %! SM4
+    % [C ViolinRHMusicVoice measure 36 / measure 2]                    %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 37 / measure 3]                    %! SM4
+    % [C ViolinRHMusicVoice measure 37 / measure 3]                    %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 38 / measure 4]                    %! SM4
+    % [C ViolinRHMusicVoice measure 38 / measure 4]                    %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolinRHMusicVoice measure 39 / measure 5]                %! SM4
+        % [C ViolinRHMusicVoice measure 39 / measure 5]                %! SM_4
         R1 * 1/4
     }
     
-    % [C ViolinRHMusicVoice measure 40 / measure 6]                    %! SM4
+    % [C ViolinRHMusicVoice measure 40 / measure 6]                    %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 41 / measure 7]                    %! SM4
+    % [C ViolinRHMusicVoice measure 41 / measure 7]                    %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 42 / measure 8]                    %! SM4
+    % [C ViolinRHMusicVoice measure 42 / measure 8]                    %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolinRHMusicVoice measure 43 / measure 9]                %! SM4
+        % [C ViolinRHMusicVoice measure 43 / measure 9]                %! SM_4
         R1 * 1/4
     }
     
-    % [C ViolinRHMusicVoice measure 44 / measure 10]                   %! SM4
+    % [C ViolinRHMusicVoice measure 44 / measure 10]                   %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 45 / measure 11]                   %! SM4
+    % [C ViolinRHMusicVoice measure 45 / measure 11]                   %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 46 / measure 12]                   %! SM4
+    % [C ViolinRHMusicVoice measure 46 / measure 12]                   %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolinRHMusicVoice measure 47 / measure 13]               %! SM4
+        % [C ViolinRHMusicVoice measure 47 / measure 13]               %! SM_4
         R1 * 1/4
     }
     
-    % [C ViolinRHMusicVoice measure 48 / measure 14]                   %! SM4
+    % [C ViolinRHMusicVoice measure 48 / measure 14]                   %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 49 / measure 15]                   %! SM4
+    % [C ViolinRHMusicVoice measure 49 / measure 15]                   %! SM_4
     R1 * 1
     
-    % [C ViolinRHMusicVoice measure 50 / measure 16]                   %! SM4
+    % [C ViolinRHMusicVoice measure 50 / measure 16]                   %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolinRHMusicVoice measure 51 / measure 17]               %! SM4
+        % [C ViolinRHMusicVoice measure 51 / measure 17]               %! SM_4
         R1 * 1/4
         
     }
@@ -735,7 +735,7 @@ C_ViolinRHMusicStaff = {
 
 C_ViolinMusicVoice = {
     
-    % [C ViolinMusicVoice measure 35 / measure 1]                      %! SM4
+    % [C ViolinMusicVoice measure 35 / measure 1]                      %! SM_4
     \set SingleStringStaffGroup.instrumentName =                       %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -795,7 +795,7 @@ C_ViolinMusicVoice = {
         }                                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    % [C ViolinMusicVoice measure 36 / measure 2]                      %! SM4
+    % [C ViolinMusicVoice measure 36 / measure 2]                      %! SM_4
     \stopStaff                                                         %! SM8:EXPLICIT_STAFF_LINES:IC
     \once \override Staff.StaffSymbol.line-count = 5                   %! SM8:EXPLICIT_STAFF_LINES:IC
     \startStaff                                                        %! SM8:EXPLICIT_STAFF_LINES:IC
@@ -811,88 +811,88 @@ C_ViolinMusicVoice = {
     R1 * 1
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! SM6:EXPLICIT_CLEF_REDRAW_COLOR:IC
     
-    % [C ViolinMusicVoice measure 37 / measure 3]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 37 / measure 3]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     fs'!1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
     ^ \markup { "trem. flaut. tast." }                                 %! IC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolinMusicVoice measure 38 / measure 4]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 38 / measure 4]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     gs'!2.
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_2
     
-    % [C ViolinMusicVoice measure 39 / measure 5]                      %! SM4
+    % [C ViolinMusicVoice measure 39 / measure 5]                      %! SM_4
     R1 * 1/6
     
-    % [C ViolinMusicVoice measure 40 / measure 6]                      %! SM4
+    % [C ViolinMusicVoice measure 40 / measure 6]                      %! SM_4
     R1 * 1
     
-    % [C ViolinMusicVoice measure 41 / measure 7]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 41 / measure 7]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     gs'!1
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolinMusicVoice measure 42 / measure 8]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 42 / measure 8]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     fs'!2.
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_2
     
-    % [C ViolinMusicVoice measure 43 / measure 9]                      %! SM4
+    % [C ViolinMusicVoice measure 43 / measure 9]                      %! SM_4
     R1 * 1/6
     
-    % [C ViolinMusicVoice measure 44 / measure 10]                     %! SM4
+    % [C ViolinMusicVoice measure 44 / measure 10]                     %! SM_4
     R1 * 1
     
-    % [C ViolinMusicVoice measure 45 / measure 11]                     %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 45 / measure 11]                     %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     fs'!1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolinMusicVoice measure 46 / measure 12]                     %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 46 / measure 12]                     %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     gs'!2.
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_2
     
-    % [C ViolinMusicVoice measure 47 / measure 13]                     %! SM4
+    % [C ViolinMusicVoice measure 47 / measure 13]                     %! SM_4
     R1 * 1/6
     
-    % [C ViolinMusicVoice measure 48 / measure 14]                     %! SM4
+    % [C ViolinMusicVoice measure 48 / measure 14]                     %! SM_4
     R1 * 1
     
-    % [C ViolinMusicVoice measure 49 / measure 15]                     %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 49 / measure 15]                     %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     gs'!1
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolinMusicVoice measure 50 / measure 16]                     %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolinMusicVoice measure 50 / measure 16]                     %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     fs'!2.
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_2
     \revert DynamicLineSpanner.staff-padding                           %! OC2
     \revert TextScript.staff-padding                                   %! OC2
     
-    % [C ViolinMusicVoice measure 51 / measure 17]                     %! SM4
+    % [C ViolinMusicVoice measure 51 / measure 17]                     %! SM_4
     R1 * 1/6
     
 }
@@ -906,7 +906,7 @@ C_ViolinMusicStaff = {
 
 C_ViolaRHMusicVoice = {
     
-    % [C ViolaRHMusicVoice measure 35 / measure 1]                     %! SM4
+    % [C ViolaRHMusicVoice measure 35 / measure 1]                     %! SM_4
     \stopStaff                                                         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                        %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -918,63 +918,63 @@ C_ViolaRHMusicVoice = {
     R1 * 7/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [C ViolaRHMusicVoice measure 36 / measure 2]                     %! SM4
+    % [C ViolaRHMusicVoice measure 36 / measure 2]                     %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 37 / measure 3]                     %! SM4
+    % [C ViolaRHMusicVoice measure 37 / measure 3]                     %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 38 / measure 4]                     %! SM4
+    % [C ViolaRHMusicVoice measure 38 / measure 4]                     %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolaRHMusicVoice measure 39 / measure 5]                 %! SM4
+        % [C ViolaRHMusicVoice measure 39 / measure 5]                 %! SM_4
         R1 * 1/4
     }
     
-    % [C ViolaRHMusicVoice measure 40 / measure 6]                     %! SM4
+    % [C ViolaRHMusicVoice measure 40 / measure 6]                     %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 41 / measure 7]                     %! SM4
+    % [C ViolaRHMusicVoice measure 41 / measure 7]                     %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 42 / measure 8]                     %! SM4
+    % [C ViolaRHMusicVoice measure 42 / measure 8]                     %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolaRHMusicVoice measure 43 / measure 9]                 %! SM4
+        % [C ViolaRHMusicVoice measure 43 / measure 9]                 %! SM_4
         R1 * 1/4
     }
     
-    % [C ViolaRHMusicVoice measure 44 / measure 10]                    %! SM4
+    % [C ViolaRHMusicVoice measure 44 / measure 10]                    %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 45 / measure 11]                    %! SM4
+    % [C ViolaRHMusicVoice measure 45 / measure 11]                    %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 46 / measure 12]                    %! SM4
+    % [C ViolaRHMusicVoice measure 46 / measure 12]                    %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolaRHMusicVoice measure 47 / measure 13]                %! SM4
+        % [C ViolaRHMusicVoice measure 47 / measure 13]                %! SM_4
         R1 * 1/4
     }
     
-    % [C ViolaRHMusicVoice measure 48 / measure 14]                    %! SM4
+    % [C ViolaRHMusicVoice measure 48 / measure 14]                    %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 49 / measure 15]                    %! SM4
+    % [C ViolaRHMusicVoice measure 49 / measure 15]                    %! SM_4
     R1 * 1
     
-    % [C ViolaRHMusicVoice measure 50 / measure 16]                    %! SM4
+    % [C ViolaRHMusicVoice measure 50 / measure 16]                    %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C ViolaRHMusicVoice measure 51 / measure 17]                %! SM4
+        % [C ViolaRHMusicVoice measure 51 / measure 17]                %! SM_4
         R1 * 1/4
         
     }
@@ -989,7 +989,7 @@ C_ViolaRHMusicStaff = {
 
 C_ViolaMusicVoice = {
     
-    % [C ViolaMusicVoice measure 35 / measure 1]                       %! SM4
+    % [C ViolaMusicVoice measure 35 / measure 1]                       %! SM_4
     \set SingleStringStaffGroup.instrumentName =                       %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -1039,93 +1039,93 @@ C_ViolaMusicVoice = {
         }                                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [C ViolaMusicVoice measure 36 / measure 2]                       %! SM4
+    % [C ViolaMusicVoice measure 36 / measure 2]                       %! SM_4
     \override DynamicLineSpanner.staff-padding = #'3                   %! OC1
     \override TextScript.staff-padding = #2.5                          %! OC1
     R1 * 1
     
-    % [C ViolaMusicVoice measure 37 / measure 3]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 37 / measure 3]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     f'1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
     ^ \markup { "trem. flaut. tast." }                                 %! IC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolaMusicVoice measure 38 / measure 4]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 38 / measure 4]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     e'2.
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_2
     
-    % [C ViolaMusicVoice measure 39 / measure 5]                       %! SM4
+    % [C ViolaMusicVoice measure 39 / measure 5]                       %! SM_4
     R1 * 1/6
     
-    % [C ViolaMusicVoice measure 40 / measure 6]                       %! SM4
+    % [C ViolaMusicVoice measure 40 / measure 6]                       %! SM_4
     R1 * 1
     
-    % [C ViolaMusicVoice measure 41 / measure 7]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 41 / measure 7]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     e'1
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolaMusicVoice measure 42 / measure 8]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 42 / measure 8]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     f'2.
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_2
     
-    % [C ViolaMusicVoice measure 43 / measure 9]                       %! SM4
+    % [C ViolaMusicVoice measure 43 / measure 9]                       %! SM_4
     R1 * 1/6
     
-    % [C ViolaMusicVoice measure 44 / measure 10]                      %! SM4
+    % [C ViolaMusicVoice measure 44 / measure 10]                      %! SM_4
     R1 * 1
     
-    % [C ViolaMusicVoice measure 45 / measure 11]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 45 / measure 11]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     f'1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolaMusicVoice measure 46 / measure 12]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 46 / measure 12]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     e'2.
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_2
     
-    % [C ViolaMusicVoice measure 47 / measure 13]                      %! SM4
+    % [C ViolaMusicVoice measure 47 / measure 13]                      %! SM_4
     R1 * 1/6
     
-    % [C ViolaMusicVoice measure 48 / measure 14]                      %! SM4
+    % [C ViolaMusicVoice measure 48 / measure 14]                      %! SM_4
     R1 * 1
     
-    % [C ViolaMusicVoice measure 49 / measure 15]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 49 / measure 15]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     e'1
     :32                                                                %! IC
-    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \p                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C ViolaMusicVoice measure 50 / measure 16]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C ViolaMusicVoice measure 50 / measure 16]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_2
     f'2.
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_2
     \revert DynamicLineSpanner.staff-padding                           %! OC2
     \revert TextScript.staff-padding                                   %! OC2
     
-    % [C ViolaMusicVoice measure 51 / measure 17]                      %! SM4
+    % [C ViolaMusicVoice measure 51 / measure 17]                      %! SM_4
     R1 * 1/6
     
 }
@@ -1139,7 +1139,7 @@ C_ViolaMusicStaff = {
 
 C_CelloRHMusicVoice = {
     
-    % [C CelloRHMusicVoice measure 35 / measure 1]                     %! SM4
+    % [C CelloRHMusicVoice measure 35 / measure 1]                     %! SM_4
     \stopStaff                                                         %! SM8:REAPPLIED_STAFF_LINES:SM37
     \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM8:REAPPLIED_STAFF_LINES:SM37
     \startStaff                                                        %! SM8:REAPPLIED_STAFF_LINES:SM37
@@ -1151,63 +1151,63 @@ C_CelloRHMusicVoice = {
     R1 * 7/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [C CelloRHMusicVoice measure 36 / measure 2]                     %! SM4
+    % [C CelloRHMusicVoice measure 36 / measure 2]                     %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 37 / measure 3]                     %! SM4
+    % [C CelloRHMusicVoice measure 37 / measure 3]                     %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 38 / measure 4]                     %! SM4
+    % [C CelloRHMusicVoice measure 38 / measure 4]                     %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloRHMusicVoice measure 39 / measure 5]                 %! SM4
+        % [C CelloRHMusicVoice measure 39 / measure 5]                 %! SM_4
         R1 * 1/4
     }
     
-    % [C CelloRHMusicVoice measure 40 / measure 6]                     %! SM4
+    % [C CelloRHMusicVoice measure 40 / measure 6]                     %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 41 / measure 7]                     %! SM4
+    % [C CelloRHMusicVoice measure 41 / measure 7]                     %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 42 / measure 8]                     %! SM4
+    % [C CelloRHMusicVoice measure 42 / measure 8]                     %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloRHMusicVoice measure 43 / measure 9]                 %! SM4
+        % [C CelloRHMusicVoice measure 43 / measure 9]                 %! SM_4
         R1 * 1/4
     }
     
-    % [C CelloRHMusicVoice measure 44 / measure 10]                    %! SM4
+    % [C CelloRHMusicVoice measure 44 / measure 10]                    %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 45 / measure 11]                    %! SM4
+    % [C CelloRHMusicVoice measure 45 / measure 11]                    %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 46 / measure 12]                    %! SM4
+    % [C CelloRHMusicVoice measure 46 / measure 12]                    %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloRHMusicVoice measure 47 / measure 13]                %! SM4
+        % [C CelloRHMusicVoice measure 47 / measure 13]                %! SM_4
         R1 * 1/4
     }
     
-    % [C CelloRHMusicVoice measure 48 / measure 14]                    %! SM4
+    % [C CelloRHMusicVoice measure 48 / measure 14]                    %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 49 / measure 15]                    %! SM4
+    % [C CelloRHMusicVoice measure 49 / measure 15]                    %! SM_4
     R1 * 1
     
-    % [C CelloRHMusicVoice measure 50 / measure 16]                    %! SM4
+    % [C CelloRHMusicVoice measure 50 / measure 16]                    %! SM_4
     R1 * 3/4
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloRHMusicVoice measure 51 / measure 17]                %! SM4
+        % [C CelloRHMusicVoice measure 51 / measure 17]                %! SM_4
         R1 * 1/4
         
     }
@@ -1222,7 +1222,7 @@ C_CelloRHMusicStaff = {
 
 C_CelloMusicVoice = {
     
-    % [C CelloMusicVoice measure 35 / measure 1]                       %! SM4
+    % [C CelloMusicVoice measure 35 / measure 1]                       %! SM_4
     \set SingleStringStaffGroup.instrumentName =                       %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
     \markup {                                                          %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
         \hcenter-in                                                    %! SM8:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
@@ -1276,163 +1276,163 @@ C_CelloMusicVoice = {
         }                                                              %! SM8:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! SM6:REAPPLIED_CLEF_REDRAW_COLOR:SM37
     
-    % [C CelloMusicVoice measure 36 / measure 2]                       %! SM4
+    % [C CelloMusicVoice measure 36 / measure 2]                       %! SM_4
     \override DynamicLineSpanner.staff-padding = #'7                   %! OC1
     \override NoteHead.style = #'harmonic                              %! OC1
     \override TextSpanner.staff-padding = #3.5                         %! OC1
     \override TupletBracket.direction = #down                          %! OC1
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     d''1
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \abjad_dashed_line_with_arrow                                    %! PIC
-    - \tweak bound-details.left.text \markup \baca-left "trem. flaut. tasto. (arco)" %! PIC
-    - \tweak bound-details.right.text \markup \baca-right "trem. flaut. XP" %! PIC
-    - \tweak bound-details.right.padding #0.5                          %! PIC
-    - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC
-    \startTextSpan                                                     %! PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \abjad_dashed_line_with_arrow                                    %! PIC_1
+    - \tweak bound-details.left.text \markup \baca-left "trem. flaut. tasto. (arco)" %! PIC_1
+    - \tweak bound-details.right.text \markup \baca-right "trem. flaut. XP" %! PIC_1
+    - \tweak bound-details.right.padding #0.5                          %! PIC_1
+    - \tweak bound-details.right.stencil-align-dir-y #center           %! PIC_1
+    \startTextSpan                                                     %! PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 37 / measure 3]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 37 / measure 3]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     fqf''!1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 38 / measure 4]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 38 / measure 4]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     d''2.
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloMusicVoice measure 39 / measure 5]                   %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+        % [C CelloMusicVoice measure 39 / measure 5]                   %! SM_4
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
         b'4
         :32                                                            %! IC
-        \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
+        \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC_1
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC_1
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC_1
         \glissando                                                     %! SC
     }
     
-    % [C CelloMusicVoice measure 40 / measure 6]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 40 / measure 6]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     d''1
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 41 / measure 7]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 41 / measure 7]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     b'1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 42 / measure 8]                       %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 42 / measure 8]                       %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     g'2.
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloMusicVoice measure 43 / measure 9]                   %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+        % [C CelloMusicVoice measure 43 / measure 9]                   %! SM_4
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
         b'4
         :32                                                            %! IC
-        \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
+        \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC_1
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC_1
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC_1
         \glissando                                                     %! SC
     }
     
-    % [C CelloMusicVoice measure 44 / measure 10]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 44 / measure 10]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     g'1
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 45 / measure 11]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 45 / measure 11]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     d'1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 46 / measure 12]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 46 / measure 12]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     g'2.
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     \tweak edge-height #'(0.7 . 0)
     \times 2/3 {
         
-        % [C CelloMusicVoice measure 47 / measure 13]                  %! SM4
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+        % [C CelloMusicVoice measure 47 / measure 13]                  %! SM_4
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
         d'4
         :32                                                            %! IC
-        \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC
-        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC
-        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC
+        \pp                                                            %! SM8:EXPLICIT_DYNAMIC:PIC_1
+        - \tweak color #blue                                           %! SM8:EXPLICIT_DYNAMIC:PIC_1
+        \>                                                             %! SM8:EXPLICIT_DYNAMIC:PIC_1
         \glissando                                                     %! SC
     }
     
-    % [C CelloMusicVoice measure 48 / measure 14]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 48 / measure 14]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     g1
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 49 / measure 15]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 49 / measure 15]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     d'1
     :32                                                                %! IC
-    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
+    \pp                                                                %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \>                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC_1
     \glissando                                                         %! SC
     
-    % [C CelloMusicVoice measure 50 / measure 16]                      %! SM4
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC
+    % [C CelloMusicVoice measure 50 / measure 16]                      %! SM_4
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! SM6:EXPLICIT_DYNAMIC_COLOR:PIC_1
     g2.
     :32                                                                %! IC
-    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
-    \stopTextSpan                                                      %! PIC
+    \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC_1
+    \stopTextSpan                                                      %! PIC_2
     \revert DynamicLineSpanner.staff-padding                           %! OC2
     \revert NoteHead.style                                             %! OC2
     \revert TextSpanner.staff-padding                                  %! OC2
     \revert TupletBracket.direction                                    %! OC2
     
-    % [C CelloMusicVoice measure 51 / measure 17]                      %! SM4
+    % [C CelloMusicVoice measure 51 / measure 17]                      %! SM_4
     R1 * 1/6
     
 }
