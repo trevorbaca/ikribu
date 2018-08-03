@@ -564,7 +564,7 @@ B_BassClarinetMusicVoice = {
     \startStaff                                                            %! SM21
     ef!2.
     \ppp                                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
-    - \tweak color #blue                                                   %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                                   %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                     %! SM8:EXPLICIT_DYNAMIC:PIC
     
     % [B BassClarinetMusicVoice measure 29 / measure 20]                   %! SM4
@@ -1295,7 +1295,7 @@ B_ViolaMusicVoice = {
     :32                                                                %! IC
     \ppp                                                               %! SM8:EXPLICIT_DYNAMIC:PIC
     _ \markup { II }                                                   %! IC
-    - \tweak color #blue                                               %! SM8:EXPLICIT_DYNAMIC:PIC
+    - \tweak color #blue                                               %! SM43 %! SM8:EXPLICIT_DYNAMIC:PIC
     \<                                                                 %! SM8:EXPLICIT_DYNAMIC:PIC
     - \abjad_dashed_line_with_arrow                                    %! PIC
     - \tweak bound-details.left.text \markup \baca-left "trem. flaut. pont." %! PIC
