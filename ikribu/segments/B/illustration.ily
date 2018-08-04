@@ -452,7 +452,7 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    ef!1..
+    ef!1..                                                                 %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [B BassClarinetMusicVoice measure 15 / measure 6]                    %! _comment_measure_numbers
@@ -489,7 +489,7 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    ef!1
+    ef!1                                                                   %! baca_make_repeat_tied_notes
     
     % [B BassClarinetMusicVoice measure 21 / measure 12]                   %! _comment_measure_numbers
     \stopStaff                                                             %! _style_fermata_measures(1)
@@ -525,7 +525,7 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    ef!1
+    ef!1                                                                   %! baca_make_repeat_tied_notes
     
     % [B BassClarinetMusicVoice measure 27 / measure 18]                   %! _comment_measure_numbers
     \stopStaff                                                             %! _style_fermata_measures(1)
@@ -541,20 +541,20 @@ B_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    ef!2.
+    ef!2.                                                                  %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [B BassClarinetMusicVoice measure 29 / measure 20]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ef!1
+    ef!1                                                                   %! baca_make_repeat_tied_notes
     \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [B BassClarinetMusicVoice measure 30 / measure 21]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ef!2.
+    ef!2.                                                                  %! baca_make_repeat_tied_notes
     \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -746,7 +746,7 @@ B_ViolinMusicVoice = {
     \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'1
+    e'1                                                                %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -771,14 +771,14 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 11 / measure 2]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'1
+    e'1                                                                %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [B ViolinMusicVoice measure 12 / measure 3]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'2.
+    e'2.                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -815,7 +815,7 @@ B_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    e'\breve
+    e'\breve                                                           %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -829,14 +829,14 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 17 / measure 8]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'2.
+    e'2.                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [B ViolinMusicVoice measure 18 / measure 9]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'1
+    e'1                                                                %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -873,7 +873,7 @@ B_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    e'2
+    e'2                                                                %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -887,14 +887,14 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 23 / measure 14]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'1..
+    e'1..                                                              %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [B ViolinMusicVoice measure 24 / measure 15]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e'2.
+    e'2.                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1230,7 +1230,7 @@ B_ViolaMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    ef'!2.
+    ef'!2.                                                             %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     _ \markup { II }                                                   %! IndicatorCommand
@@ -1244,30 +1244,30 @@ B_ViolaMusicVoice = {
     \startTextSpan                                                     %! PiecewiseIndicatorCommand(1)
     
     % [B ViolaMusicVoice measure 29 / measure 20]                      %! _comment_measure_numbers
-    ef'!1
+    ef'!1                                                              %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \repeatTie
     
     % [B ViolaMusicVoice measure 30 / measure 21]                      %! _comment_measure_numbers
-    ef'!2.
+    ef'!2.                                                             %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \repeatTie
     
     % [B ViolaMusicVoice measure 31 / measure 22]                      %! _comment_measure_numbers
-    ef'!2
+    ef'!2                                                              %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \repeatTie
     
     % [B ViolaMusicVoice measure 32 / measure 23]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ef'!1..
+    ef'!1..                                                            %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [B ViolaMusicVoice measure 33 / measure 24]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ef'!\breve
+    ef'!\breve                                                         %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)

@@ -312,7 +312,7 @@ K_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \baca_effort_f                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -325,13 +325,13 @@ K_BassClarinetMusicVoice = {
         }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K BassClarinetMusicVoice measure 128 / measure 2]                   %! _comment_measure_numbers
@@ -363,13 +363,13 @@ K_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \baca_effort_mf                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K BassClarinetMusicVoice measure 132 / measure 6]                   %! _comment_measure_numbers
@@ -401,25 +401,25 @@ K_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \baca_effort_mp                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K BassClarinetMusicVoice measure 136 / measure 10]                  %! _comment_measure_numbers
@@ -451,16 +451,16 @@ K_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \baca_effort_p                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K BassClarinetMusicVoice measure 140 / measure 14]                  %! _comment_measure_numbers
@@ -1468,7 +1468,7 @@ K_CelloMusicVoice = {
     \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \baca_effort_p                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -1491,13 +1491,13 @@ K_CelloMusicVoice = {
         }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K CelloMusicVoice measure 128 / measure 2]                      %! _comment_measure_numbers
@@ -1525,13 +1525,13 @@ K_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \baca_effort_mp                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K CelloMusicVoice measure 132 / measure 6]                      %! _comment_measure_numbers
@@ -1559,25 +1559,25 @@ K_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \baca_effort_mf                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K CelloMusicVoice measure 136 / measure 10]                     %! _comment_measure_numbers
@@ -1605,16 +1605,16 @@ K_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [K CelloMusicVoice measure 140 / measure 14]                     %! _comment_measure_numbers

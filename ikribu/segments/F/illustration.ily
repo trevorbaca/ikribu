@@ -158,7 +158,7 @@ F_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    gs'!1
+    gs'!1                                                                  %! baca_make_repeat_tied_notes
     \ppp                                                                   %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -172,15 +172,15 @@ F_BassClarinetMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [F BassClarinetMusicVoice measure 80 / measure 2]                    %! _comment_measure_numbers
-    gs'!2.
+    gs'!2.                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 81 / measure 3]                    %! _comment_measure_numbers
-    gs'!1
+    gs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 82 / measure 4]                    %! _comment_measure_numbers
-    gs'!2.
+    gs'!2.                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 83 / measure 5]                    %! _comment_measure_numbers
@@ -188,18 +188,18 @@ F_BassClarinetMusicVoice = {
     
     % [F BassClarinetMusicVoice measure 84 / measure 6]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    a1..
+    a1..                                                                   %! baca_make_repeat_tied_notes
     \sfp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [F BassClarinetMusicVoice measure 85 / measure 7]                    %! _comment_measure_numbers
-    a\breve
+    a\breve                                                                %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [F BassClarinetMusicVoice measure 86 / measure 8]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    a1..
+    a1..                                                                   %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
@@ -570,7 +570,7 @@ F_CelloMusicVoice = {
     \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!1
+    fs!1                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -593,18 +593,18 @@ F_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [F CelloMusicVoice measure 80 / measure 2]                       %! _comment_measure_numbers
-    fs!2.
+    fs!2.                                                              %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \repeatTie
     
     % [F CelloMusicVoice measure 81 / measure 3]                       %! _comment_measure_numbers
-    fs!1
+    fs!1                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \repeatTie
     
     % [F CelloMusicVoice measure 82 / measure 4]                       %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs!2.
+    fs!2.                                                              %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
@@ -621,7 +621,7 @@ F_CelloMusicVoice = {
     \override TextScript.padding = #2.5                                %! OverrideCommand(1)
     \override TextScript.parent-alignment-X = #0                       %! OverrideCommand(1)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
             #'(box-padding . 0.5)                                      %! IndicatorCommand
@@ -633,47 +633,47 @@ F_CelloMusicVoice = {
                     }                                                  %! IndicatorCommand
         }                                                              %! IndicatorCommand
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [F CelloMusicVoice measure 85 / measure 7]                       %! _comment_measure_numbers
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     
-    d4
+    d4                                                                 %! baca_make_tied_reepated_durations
     \repeatTie
     \revert TextScript.padding                                         %! OverrideCommand(2)
     \revert TextScript.parent-alignment-X                              %! OverrideCommand(2)

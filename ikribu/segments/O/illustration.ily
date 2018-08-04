@@ -367,7 +367,7 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                             %! SpannerCommand
     
     % [O BassClarinetMusicVoice measure 225 / measure 8]                   %! _comment_measure_numbers
-    c\breve
+    c\breve                                                                %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
     
     % [O BassClarinetMusicVoice measure 226 / measure 9]                   %! _comment_measure_numbers
@@ -391,7 +391,7 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                             %! SpannerCommand
     
     % [O BassClarinetMusicVoice measure 231 / measure 14]                  %! _comment_measure_numbers
-    c1
+    c1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
     
     % [O BassClarinetMusicVoice measure 232 / measure 15]                  %! _comment_measure_numbers
@@ -412,7 +412,7 @@ O_BassClarinetMusicVoice = {
     
     % [O BassClarinetMusicVoice measure 236 / measure 19]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -421,7 +421,7 @@ O_BassClarinetMusicVoice = {
     \repeatTie                                                             %! SpannerCommand
     
     % [O BassClarinetMusicVoice measure 237 / measure 20]                  %! _comment_measure_numbers
-    c1
+    c1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
     
     % [O BassClarinetMusicVoice measure 238 / measure 21]                  %! _comment_measure_numbers
@@ -1050,7 +1050,7 @@ O_CelloMusicVoice = {
     \override Staff.OttavaBracket.staff-padding = #10                  %! OverrideCommand(1)
     \ottava #-1                                                        %! SpannerCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!2
+    bf,,,!2                                                            %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1063,7 +1063,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 223 / measure 6]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1..
+    bf,,,!1..                                                          %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1071,7 +1071,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 224 / measure 7]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1..
+    bf,,,!1..                                                          %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1079,7 +1079,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 225 / measure 8]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!\breve
+    bf,,,!\breve                                                       %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1088,7 +1088,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 226 / measure 9]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1..
+    bf,,,!1..                                                          %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1102,7 +1102,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 227 / measure 10]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!2.
+    bf,,,!2.                                                           %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1110,7 +1110,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 228 / measure 11]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!2
+    bf,,,!2                                                            %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1118,7 +1118,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 229 / measure 12]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!\breve
+    bf,,,!\breve                                                       %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1127,7 +1127,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 230 / measure 13]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1..
+    bf,,,!1..                                                          %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1141,7 +1141,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 231 / measure 14]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1
+    bf,,,!1                                                            %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1149,7 +1149,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 232 / measure 15]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1
+    bf,,,!1                                                            %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1157,7 +1157,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 233 / measure 16]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!2.
+    bf,,,!2.                                                           %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1166,7 +1166,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 234 / measure 17]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1..
+    bf,,,!1..                                                          %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1180,7 +1180,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 235 / measure 18]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!\breve
+    bf,,,!\breve                                                       %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1188,7 +1188,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 236 / measure 19]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!2.
+    bf,,,!2.                                                           %! baca_make_repeat_tied_notes
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1196,7 +1196,7 @@ O_CelloMusicVoice = {
     
     % [O CelloMusicVoice measure 237 / measure 20]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,,,!1
+    bf,,,!1                                                            %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)

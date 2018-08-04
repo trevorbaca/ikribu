@@ -175,7 +175,7 @@ i_ViolinMusicVoice = {
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'1..
+    c'1..                                                              %! baca_make_repeat_tied_notes
     \baca_effort_mf                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-default-indicator-markup "(“Violin”)"              %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup {                                                        %! IndicatorCommand
@@ -337,7 +337,7 @@ i_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fqf''!1..
+    fqf''!1..                                                          %! baca_make_repeat_tied_notes
     \sfz                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup \baca-default-indicator-markup "(“Cello”)"               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert

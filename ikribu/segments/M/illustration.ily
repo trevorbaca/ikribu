@@ -788,20 +788,20 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 177 / measure 2]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [M BassClarinetMusicVoice measure 178 / measure 3]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 179 / measure 4]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2
+    cs!2                                                                   %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -828,7 +828,7 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 182 / measure 7]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [M BassClarinetMusicVoice measure 183 / measure 8]                   %! _comment_measure_numbers
@@ -848,20 +848,20 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 185 / measure 10]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [M BassClarinetMusicVoice measure 186 / measure 11]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 187 / measure 12]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -888,20 +888,20 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 190 / measure 15]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!1..
+    cs!1..                                                                 %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [M BassClarinetMusicVoice measure 191 / measure 16]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!1..
+    cs!1..                                                                 %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 192 / measure 17]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!\breve
+    cs!\breve                                                              %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -928,7 +928,7 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 195 / measure 20]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [M BassClarinetMusicVoice measure 196 / measure 21]                  %! _comment_measure_numbers
@@ -948,43 +948,43 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 198 / measure 23]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!\breve
+    cs!\breve                                                              %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [M BassClarinetMusicVoice measure 199 / measure 24]                  %! _comment_measure_numbers
-    cs!1..
+    cs!1..                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 200 / measure 25]                  %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 201 / measure 26]                  %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 202 / measure 27]                  %! _comment_measure_numbers
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 203 / measure 28]                  %! _comment_measure_numbers
-    cs!1..
+    cs!1..                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 204 / measure 29]                  %! _comment_measure_numbers
-    cs!\breve
+    cs!\breve                                                              %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 205 / measure 30]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 206 / measure 31]                  %! _comment_measure_numbers
-    cs!1
+    cs!1                                                                   %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 207 / measure 32]                  %! _comment_measure_numbers
@@ -1179,7 +1179,7 @@ M_ViolinMusicVoice = {
     \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2.
+    c'2.                                                               %! baca_make_repeat_tied_notes
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -1260,7 +1260,7 @@ M_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'1..
+    c'1..                                                              %! baca_make_repeat_tied_notes
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -1304,7 +1304,7 @@ M_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'1
+    c'1                                                                %! baca_make_repeat_tied_notes
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -1393,7 +1393,7 @@ M_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'2
+    c'2                                                                %! baca_make_repeat_tied_notes
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -1464,7 +1464,7 @@ M_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'1..
+    c'1..                                                              %! baca_make_repeat_tied_notes
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -1508,7 +1508,7 @@ M_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'2
+    c'2                                                                %! baca_make_repeat_tied_notes
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -2349,7 +2349,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fqf''!2.
+    fqf''!2.                                                           %! baca_make_repeat_tied_notes
     \sfz                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -2372,7 +2372,7 @@ M_CelloMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-    c,,1
+    c,,1                                                               %! baca_make_repeat_tied_notes
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #'DeepPink1                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2385,12 +2385,12 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 178 / measure 3]                      %! _comment_measure_numbers
-    c,,1
+    c,,1                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M CelloMusicVoice measure 179 / measure 4]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,2
+    c,,2                                                               %! baca_make_repeat_tied_notes
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
@@ -2415,7 +2415,7 @@ M_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    g''1..
+    g''1..                                                             %! baca_make_repeat_tied_notes
     \sfz                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup { pizz. }                                                %! IndicatorCommand
@@ -2429,7 +2429,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,2.
+    c,,2.                                                              %! baca_make_repeat_tied_notes
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { XP }                                                   %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2454,7 +2454,7 @@ M_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    fqf''!1
+    fqf''!1                                                            %! baca_make_repeat_tied_notes
     \baca_sffz                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup { pizz. }                                                %! IndicatorCommand
@@ -2468,7 +2468,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,2.
+    c,,2.                                                              %! baca_make_repeat_tied_notes
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #'DeepPink1                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2481,12 +2481,12 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 186 / measure 11]                     %! _comment_measure_numbers
-    c,,1
+    c,,1                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M CelloMusicVoice measure 187 / measure 12]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,2.
+    c,,2.                                                              %! baca_make_repeat_tied_notes
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
@@ -2511,7 +2511,7 @@ M_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    g''2
+    g''2                                                               %! baca_make_repeat_tied_notes
     \baca_sffz                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup { pizz. }                                                %! IndicatorCommand
@@ -2525,7 +2525,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,1..
+    c,,1..                                                             %! baca_make_repeat_tied_notes
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #'DeepPink1                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2538,12 +2538,12 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 191 / measure 16]                     %! _comment_measure_numbers
-    c,,1..
+    c,,1..                                                             %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M CelloMusicVoice measure 192 / measure 17]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,\breve
+    c,,\breve                                                          %! baca_make_repeat_tied_notes
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
@@ -2568,7 +2568,7 @@ M_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    a''1..
+    a''1..                                                             %! baca_make_repeat_tied_notes
     \baca_sfffz                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup { pizz. }                                                %! IndicatorCommand
@@ -2582,7 +2582,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,2.
+    c,,2.                                                              %! baca_make_repeat_tied_notes
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { XP }                                                   %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2607,7 +2607,7 @@ M_CelloMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    cqs'''!2
+    cqs'''!2                                                           %! baca_make_repeat_tied_notes
     \baca_sfffz                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
     ^ \markup { pizz. }                                                %! IndicatorCommand
@@ -2621,7 +2621,7 @@ M_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,\breve
+    c,,\breve                                                          %! baca_make_repeat_tied_notes
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #'DeepPink1                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2634,20 +2634,20 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 199 / measure 24]                     %! _comment_measure_numbers
-    c,,1..
+    c,,1..                                                             %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M CelloMusicVoice measure 200 / measure 25]                     %! _comment_measure_numbers
-    c,,1
+    c,,1                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M CelloMusicVoice measure 201 / measure 26]                     %! _comment_measure_numbers
-    c,,1
+    c,,1                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [M CelloMusicVoice measure 202 / measure 27]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c,,2.
+    c,,2.                                                              %! baca_make_repeat_tied_notes
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
