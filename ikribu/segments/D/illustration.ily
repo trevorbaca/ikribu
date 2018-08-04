@@ -200,7 +200,7 @@ D_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -208,12 +208,12 @@ D_BassClarinetMusicVoice = {
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [D BassClarinetMusicVoice measure 53 / measure 2]                    %! _comment_measure_numbers
@@ -244,13 +244,13 @@ D_BassClarinetMusicVoice = {
     R1 * 3/4
     
     % [D BassClarinetMusicVoice measure 62 / measure 11]                   %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
-    \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_62
-    \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_62
+    \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_62
+    \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_62
     
 }
 
@@ -270,7 +270,7 @@ D_ViolinRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 3/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -303,9 +303,9 @@ D_ViolinRHMusicVoice = {
     R1 * 3/4
     
     % [D ViolinRHMusicVoice measure 62 / measure 11]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -333,7 +333,7 @@ D_ViolinMusicVoice = {
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -341,12 +341,12 @@ D_ViolinMusicVoice = {
     ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            Vn.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Vn.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [D ViolinMusicVoice measure 53 / measure 2]                      %! _comment_measure_numbers
@@ -377,10 +377,10 @@ D_ViolinMusicVoice = {
     R1 * 3/4
     
     % [D ViolinMusicVoice measure 62 / measure 11]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -401,7 +401,7 @@ D_ViolaRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 3/4
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -434,9 +434,9 @@ D_ViolaRHMusicVoice = {
     R1 * 3/4
     
     % [D ViolaRHMusicVoice measure 62 / measure 11]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -464,7 +464,7 @@ D_ViolaMusicVoice = {
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -472,12 +472,12 @@ D_ViolaMusicVoice = {
     ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            Va.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Va.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [D ViolaMusicVoice measure 53 / measure 2]                       %! _comment_measure_numbers
@@ -508,10 +508,10 @@ D_ViolaMusicVoice = {
     R1 * 3/4
     
     % [D ViolaMusicVoice measure 62 / measure 11]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -538,7 +538,7 @@ D_CelloRHMusicVoice = {
         \clef "percussion"                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)      %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override RHStaff.Clef.color = ##f                             %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set RHStaff.forceClef = ##t                                   %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+        \set RHStaff.forceClef = ##t                                   %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         r4
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -945,9 +945,9 @@ D_CelloRHMusicVoice = {
     }
     
     % [D CelloRHMusicVoice measure 62 / measure 11]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -981,167 +981,167 @@ D_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         a,8
         \ppp                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-                Vc.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+                Vc.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         g,8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f'4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
         % [D CelloMusicVoice measure 53 / measure 2]                   %! _comment_measure_numbers
         d'2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [D CelloMusicVoice measure 54 / measure 3]                       %! _comment_measure_numbers
     d'4.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     e''2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f''8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
         % [D CelloMusicVoice measure 55 / measure 4]                   %! _comment_measure_numbers
         e'4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g'4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
         % [D CelloMusicVoice measure 56 / measure 5]                   %! _comment_measure_numbers
         g2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b8
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a2.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [D CelloMusicVoice measure 57 / measure 6]                       %! _comment_measure_numbers
     b8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     g2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     g'8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/9 {
         
         % [D CelloMusicVoice measure 58 / measure 7]                   %! _comment_measure_numbers
         e'4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f''2.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
         
         % [D CelloMusicVoice measure 59 / measure 8]                   %! _comment_measure_numbers
         e''8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [D CelloMusicVoice measure 60 / measure 9]                       %! _comment_measure_numbers
     c'8
     [
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     e'8.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d'8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f'8.
     ]
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f4
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         % [D CelloMusicVoice measure 61 / measure 10]                  %! _comment_measure_numbers
         a2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g,8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a,4
     }
     
     % [D CelloMusicVoice measure 62 / measure 11]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
 }

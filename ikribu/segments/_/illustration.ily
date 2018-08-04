@@ -87,28 +87,28 @@ i_BassClarinetMusicVoice = {
     \clef "treble"                                                         %! DEFAULT_CLEF:_set_status_tag:ScoreTemplate(3)
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)            %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:SM33:ScoreTemplate(3)
+    \set Staff.forceClef = ##t                                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):ScoreTemplate(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     R1 * 7/4
     ^ \markup \baca-default-indicator-markup "(“BassClarinet”)"            %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-explicit-indicator-markup "[“B. cl.”]"                 %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-    \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            "B. cl."                                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
+    \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+    \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            "B. cl."                                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
     
     % [_ BassClarinetMusicVoice measure 2]                                 %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
-    \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_2
-    \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_2
+    \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_2
+    \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_2
     
 }
 
@@ -128,15 +128,15 @@ i_ViolinRHMusicVoice = {
     \clef "percussion"                                                 %! DEFAULT_CLEF:_set_status_tag:ScoreTemplate(3)
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)      %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! DEFAULT_CLEF:_set_status_tag:SM33:ScoreTemplate(3)
+    \set RHStaff.forceClef = ##t                                       %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):ScoreTemplate(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)     %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 7/4
     \override RHStaff.Clef.color = #(x11-color 'violet)                %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [_ ViolinRHMusicVoice measure 2]                                 %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -172,7 +172,7 @@ i_ViolinMusicVoice = {
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'1..
@@ -186,18 +186,18 @@ i_ViolinMusicVoice = {
         }                                                              %! IndicatorCommand
     ^ \markup \baca-explicit-indicator-markup "[“Vn.”]"                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-    \markup {                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        \hcenter-in                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            #16                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            Vn.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+    \markup {                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        \hcenter-in                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            #16                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            Vn.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [_ ViolinMusicVoice measure 2]                                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -218,15 +218,15 @@ i_ViolaRHMusicVoice = {
     \clef "percussion"                                                 %! DEFAULT_CLEF:_set_status_tag:ScoreTemplate(3)
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)      %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! DEFAULT_CLEF:_set_status_tag:SM33:ScoreTemplate(3)
+    \set RHStaff.forceClef = ##t                                       %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):ScoreTemplate(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)     %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 7/4
     \override RHStaff.Clef.color = #(x11-color 'violet)                %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [_ ViolaRHMusicVoice measure 2]                                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -256,25 +256,25 @@ i_ViolaMusicVoice = {
     \clef "alto"                                                       %! DEFAULT_CLEF:_set_status_tag:ScoreTemplate(3)
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)        %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! DEFAULT_CLEF:_set_status_tag:SM33:ScoreTemplate(3)
+    \set Staff.forceClef = ##t                                         %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):ScoreTemplate(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     R1 * 7/4
     ^ \markup \baca-default-indicator-markup "(“Viola”)"               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-explicit-indicator-markup "[“Va.”]"                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                  %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-    \markup {                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        \hcenter-in                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            #16                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            Va.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+    \markup {                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        \hcenter-in                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            #16                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            Va.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
     
     % [_ ViolaMusicVoice measure 2]                                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -295,15 +295,15 @@ i_CelloRHMusicVoice = {
     \clef "percussion"                                                 %! DEFAULT_CLEF:_set_status_tag:ScoreTemplate(3)
     \once \override RHStaff.Clef.color = #(x11-color 'DarkViolet)      %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! DEFAULT_CLEF:_set_status_tag:SM33:ScoreTemplate(3)
+    \set RHStaff.forceClef = ##t                                       %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):ScoreTemplate(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'blue)     %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     R1 * 7/4
     \override RHStaff.Clef.color = #(x11-color 'violet)                %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [_ CelloRHMusicVoice measure 2]                                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -335,7 +335,7 @@ i_CelloMusicVoice = {
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue) %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fqf''!1..
     \sfz                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -345,19 +345,19 @@ i_CelloMusicVoice = {
     ^ \markup \baca-explicit-indicator-markup "[“Vc.”]"                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     _ \markup { III }                                                  %! IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'DeepSkyBlue2) %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-    \markup {                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        \hcenter-in                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            #16                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-            Vc.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
-        }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:SM34:IndicatorCommand:-PARTS
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+    \markup {                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        \hcenter-in                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            #16                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+            Vc.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
+        }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [_ CelloMusicVoice measure 2]                                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
