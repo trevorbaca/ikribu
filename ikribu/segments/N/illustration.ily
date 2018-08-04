@@ -183,7 +183,7 @@ N_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c2
+    c2                                                                     %! baca_make_repeat_tied_notes
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -207,19 +207,19 @@ N_BassClarinetMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [N BassClarinetMusicVoice measure 209 / measure 2]                   %! _comment_measure_numbers
-    c1..
+    c1..                                                                   %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 210 / measure 3]                   %! _comment_measure_numbers
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 211 / measure 4]                   %! _comment_measure_numbers
-    c1
+    c1                                                                     %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 212 / measure 5]                   %! _comment_measure_numbers
-    c2.
+    c2.                                                                    %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! SpannerCommand
 %@% \revert TextScript.extra-offset                                        %! OverrideCommand(2):+ARCH_A_PARTS_BCL
     

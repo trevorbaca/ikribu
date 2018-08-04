@@ -236,7 +236,7 @@ J_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \baca_effort_mf                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -259,51 +259,51 @@ J_BassClarinetMusicVoice = {
         }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J BassClarinetMusicVoice measure 117 / measure 2]                   %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J BassClarinetMusicVoice measure 118 / measure 3]                   %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     ^ \markup {                                                            %! IndicatorCommand
         \override                                                          %! IndicatorCommand
             #'(box-padding . 0.5)                                          %! IndicatorCommand
@@ -315,61 +315,61 @@ J_BassClarinetMusicVoice = {
                     }                                                      %! IndicatorCommand
         }                                                                  %! IndicatorCommand
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J BassClarinetMusicVoice measure 119 / measure 4]                   %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J BassClarinetMusicVoice measure 120 / measure 5]                   %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J BassClarinetMusicVoice measure 121 / measure 6]                   %! _comment_measure_numbers
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J BassClarinetMusicVoice measure 122 / measure 7]                   %! _comment_measure_numbers
@@ -394,7 +394,7 @@ J_BassClarinetMusicVoice = {
     \stopStaff                                                             %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                       %! _style_fermata_measures(2)
     \startStaff                                                            %! _style_fermata_measures(2)
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \baca_effort_f                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                            %! IndicatorCommand
         \override                                                          %! IndicatorCommand
@@ -407,13 +407,13 @@ J_BassClarinetMusicVoice = {
                     }                                                      %! IndicatorCommand
         }                                                                  %! IndicatorCommand
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                    %! baca_make_tied_reepated_durations
     \repeatTie
 %%% \revert TextScript.extra-offset                                        %! OverrideCommand(2):+ARCH_A_PARTS_BCL
     
@@ -526,7 +526,7 @@ J_ViolinMusicVoice = {
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \baca_effort_mf                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -549,77 +549,77 @@ J_ViolinMusicVoice = {
         }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 117 / measure 2]                     %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 118 / measure 3]                     %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 119 / measure 4]                     %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 120 / measure 5]                     %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
             #'(box-padding . 0.5)                                      %! IndicatorCommand
@@ -631,35 +631,35 @@ J_ViolinMusicVoice = {
                     }                                                  %! IndicatorCommand
         }                                                              %! IndicatorCommand
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 121 / measure 6]                     %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 122 / measure 7]                     %! _comment_measure_numbers
@@ -681,7 +681,7 @@ J_ViolinMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -694,13 +694,13 @@ J_ViolinMusicVoice = {
                     }                                                  %! IndicatorCommand
         }                                                              %! IndicatorCommand
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolinMusicVoice measure 126 / measure 11]                    %! _comment_measure_numbers
@@ -809,7 +809,7 @@ J_ViolaMusicVoice = {
     \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \baca_effort_mf                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -832,51 +832,51 @@ J_ViolaMusicVoice = {
         }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 117 / measure 2]                      %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 118 / measure 3]                      %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
             #'(box-padding . 0.5)                                      %! IndicatorCommand
@@ -888,30 +888,30 @@ J_ViolaMusicVoice = {
                     }                                                  %! IndicatorCommand
         }                                                              %! IndicatorCommand
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 119 / measure 4]                      %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 120 / measure 5]                      %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
             #'(box-padding . 0.5)                                      %! IndicatorCommand
@@ -923,35 +923,35 @@ J_ViolaMusicVoice = {
                     }                                                  %! IndicatorCommand
         }                                                              %! IndicatorCommand
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 121 / measure 6]                      %! _comment_measure_numbers
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 122 / measure 7]                      %! _comment_measure_numbers
@@ -973,7 +973,7 @@ J_ViolaMusicVoice = {
     \stopStaff                                                         %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
     \startStaff                                                        %! _style_fermata_measures(2)
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
         \override                                                      %! IndicatorCommand
@@ -986,13 +986,13 @@ J_ViolaMusicVoice = {
                     }                                                  %! IndicatorCommand
         }                                                              %! IndicatorCommand
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
-    c'4
+    c'4                                                                %! baca_make_tied_reepated_durations
     \repeatTie
     
     % [J ViolaMusicVoice measure 126 / measure 11]                     %! _comment_measure_numbers
@@ -1118,36 +1118,36 @@ J_CelloMusicVoice = {
     \override Staff.OttavaBracket.staff-padding = #8                   %! OverrideCommand(1)
     \ottava #-1                                                        %! SpannerCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d,,1
+    d,,1                                                               %! baca_make_repeat_tied_notes
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { "poco vib." }                                          %! IndicatorCommand
     
     % [J CelloMusicVoice measure 119 / measure 4]                      %! _comment_measure_numbers
-    d,,1
+    d,,1                                                               %! baca_make_repeat_tied_notes
     \repeatTie                                                         %! TCC
     
     % [J CelloMusicVoice measure 120 / measure 5]                      %! _comment_measure_numbers
-    d,,2.
+    d,,2.                                                              %! baca_make_repeat_tied_notes
     \repeatTie                                                         %! TCC
     
     % [J CelloMusicVoice measure 121 / measure 6]                      %! _comment_measure_numbers
-    d,,\breve
+    d,,\breve                                                          %! baca_make_repeat_tied_notes
     \repeatTie                                                         %! TCC
     
     % [J CelloMusicVoice measure 122 / measure 7]                      %! _comment_measure_numbers
-    d,,1..
+    d,,1..                                                             %! baca_make_tied_reepated_durations
     \repeatTie                                                         %! TCC
     
     % [J CelloMusicVoice measure 123 / measure 8]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d,,2
+    d,,2                                                               %! baca_make_tied_reepated_durations
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie                                                         %! TCC
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d,,4
+    d,,4                                                               %! baca_make_tied_reepated_durations
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie                                                         %! TCC
     \revert Staff.OttavaBracket.staff-padding                          %! OverrideCommand(2)

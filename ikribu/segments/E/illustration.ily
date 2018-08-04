@@ -421,7 +421,7 @@ E_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs'!2
+    fs'!2                                                                  %! baca_make_repeat_tied_notes
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -435,60 +435,60 @@ E_BassClarinetMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [E BassClarinetMusicVoice measure 64 / measure 2]                    %! _comment_measure_numbers
-    fs'!1..
+    fs'!1..                                                                %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 65 / measure 3]                    %! _comment_measure_numbers
-    fs'!2.
+    fs'!2.                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 66 / measure 4]                    %! _comment_measure_numbers
-    fs'!1
+    fs'!1                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 67 / measure 5]                    %! _comment_measure_numbers
-    ftqs'!2.
+    ftqs'!2.                                                               %! baca_make_repeat_tied_notes
     
     % [E BassClarinetMusicVoice measure 68 / measure 6]                    %! _comment_measure_numbers
-    ftqs'!1
+    ftqs'!1                                                                %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 69 / measure 7]                    %! _comment_measure_numbers
-    ftqs'!2.
+    ftqs'!2.                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 70 / measure 8]                    %! _comment_measure_numbers
-    ftqs'!2
+    ftqs'!2                                                                %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 71 / measure 9]                    %! _comment_measure_numbers
-    g'1..
+    g'1..                                                                  %! baca_make_repeat_tied_notes
     
     % [E BassClarinetMusicVoice measure 72 / measure 10]                   %! _comment_measure_numbers
-    g'\breve
+    g'\breve                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 73 / measure 11]                   %! _comment_measure_numbers
-    g'1..
+    g'1..                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 74 / measure 12]                   %! _comment_measure_numbers
-    g'1..
+    g'1..                                                                  %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 75 / measure 13]                   %! _comment_measure_numbers
-    gqs'!2.
+    gqs'!2.                                                                %! baca_make_repeat_tied_notes
     
     % [E BassClarinetMusicVoice measure 76 / measure 14]                   %! _comment_measure_numbers
-    gqs'!2
+    gqs'!2                                                                 %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 77 / measure 15]                   %! _comment_measure_numbers
-    gqs'!1..
+    gqs'!1..                                                               %! baca_make_repeat_tied_notes
     \repeatTie
     
     % [E BassClarinetMusicVoice measure 78 / measure 16]                   %! _comment_measure_numbers
-    gqs'!\breve
+    gqs'!\breve                                                            %! baca_make_repeat_tied_notes
     \repeatTie
     
 }
@@ -1203,7 +1203,7 @@ E_CelloMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'4                   %! OverrideCommand(1)
     \override TextScript.staff-padding = #2.5                          %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    f1..
+    f1..                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup { "trem. flaut. tast." }                                 %! IndicatorCommand
@@ -1212,7 +1212,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 72 / measure 10]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    f\breve
+    f\breve                                                            %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1221,7 +1221,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 73 / measure 11]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    f1..
+    f1..                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1230,7 +1230,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 74 / measure 12]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    f1..
+    f1..                                                               %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1239,7 +1239,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 75 / measure 13]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fqs!2.
+    fqs!2.                                                             %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1247,7 +1247,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 76 / measure 14]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fqs!2
+    fqs!2                                                              %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1256,7 +1256,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 77 / measure 15]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fqs!1..
+    fqs!1..                                                            %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1265,7 +1265,7 @@ E_CelloMusicVoice = {
     
     % [E CelloMusicVoice measure 78 / measure 16]                      %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fqs!\breve
+    fqs!\breve                                                         %! baca_make_repeat_tied_notes
     :32                                                                %! IndicatorCommand
     \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie

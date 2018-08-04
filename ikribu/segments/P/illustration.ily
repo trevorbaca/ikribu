@@ -185,7 +185,7 @@ P_BassClarinetMusicVoice = {
     \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'''2.
+    c'''2.                                                                 %! baca_make_repeat_tied_notes
     \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -201,23 +201,23 @@ P_BassClarinetMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [P BassClarinetMusicVoice measure 240 / measure 2]                   %! _comment_measure_numbers
-    c'''2
+    c'''2                                                                  %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! TCC
     
     % [P BassClarinetMusicVoice measure 241 / measure 3]                   %! _comment_measure_numbers
-    c'''1..
+    c'''1..                                                                %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! TCC
     
     % [P BassClarinetMusicVoice measure 242 / measure 4]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'''1..
+    c'''1..                                                                %! baca_make_repeat_tied_notes
     \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie                                                             %! TCC
     
     % [P BassClarinetMusicVoice measure 243 / measure 5]                   %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'9                       %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'''4
+    c'''4                                                                  %! baca_make_repeated_duration_notes
     \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -226,50 +226,50 @@ P_BassClarinetMusicVoice = {
     \repeatTie                                                             %! TCC
     \glissando                                                             %! SpannerCommand
     
-    a''4
+    a''4                                                                   %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    f''4
+    f''4                                                                   %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    d''4
+    d''4                                                                   %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    b'4
+    b'4                                                                    %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    g'4
+    g'4                                                                    %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    e'4
+    e'4                                                                    %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    c'4
+    c'4                                                                    %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
     % [P BassClarinetMusicVoice measure 244 / measure 6]                   %! _comment_measure_numbers
-    b4
+    b4                                                                     %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    a4
+    a4                                                                     %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    g4
+    g4                                                                     %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    f4
+    f4                                                                     %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    e4
+    e4                                                                     %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    d4
+    d4                                                                     %! baca_make_repeated_duration_notes
     \glissando                                                             %! SpannerCommand
     
-    cs!4
+    cs!4                                                                   %! baca_make_repeated_duration_notes
     
     % [P BassClarinetMusicVoice measure 245 / measure 7]                   %! _comment_measure_numbers
-    cs!2.
+    cs!2.                                                                  %! baca_make_repeat_tied_notes
     \repeatTie                                                             %! TCC
     \revert DynamicLineSpanner.staff-padding                               %! OverrideCommand(2)
     
