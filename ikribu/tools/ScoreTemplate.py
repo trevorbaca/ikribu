@@ -40,7 +40,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                     {
                         \context Voice = "BassClarinetMusicVoice"
                         {
-                            \clef "treble" %! ST_3
+                            \clef "treble" %! ScoreTemplate(3)
                             s1
                         }
                     }
@@ -51,7 +51,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolinRHMusicVoice"
                             {
-                                \clef "percussion" %! ST_3
+                                \clef "percussion" %! ScoreTemplate(3)
                                 s1
                             }
                         }
@@ -59,7 +59,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolinMusicVoice"
                             {
-                                \clef "treble" %! ST_3
+                                \clef "treble" %! ScoreTemplate(3)
                                 s1
                             }
                         }
@@ -71,7 +71,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolaRHMusicVoice"
                             {
-                                \clef "percussion" %! ST_3
+                                \clef "percussion" %! ScoreTemplate(3)
                                 s1
                             }
                         }
@@ -79,7 +79,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "ViolaMusicVoice"
                             {
-                                \clef "alto" %! ST_3
+                                \clef "alto" %! ScoreTemplate(3)
                                 s1
                             }
                         }
@@ -91,7 +91,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                         {
                             \context Voice = "CelloRHMusicVoice"
                             {
-                                \clef "percussion" %! ST_3
+                                \clef "percussion" %! ScoreTemplate(3)
                                 s1
                             }
                         }

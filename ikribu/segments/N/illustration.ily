@@ -1,265 +1,245 @@
 N_GlobalRests = {
     
-    % [N GlobalRests measure 208 / measure 1]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 1/2                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 208 / measure 1]                                      %! _comment_measure_numbers
+    R1 * 1/2                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 209 / measure 2]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 7/4                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 209 / measure 2]                                      %! _comment_measure_numbers
+    R1 * 7/4                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 210 / measure 3]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 3/4                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 210 / measure 3]                                      %! _comment_measure_numbers
+    R1 * 3/4                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 211 / measure 4]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 1                                                                         %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 211 / measure 4]                                      %! _comment_measure_numbers
+    R1 * 1                                                                         %! _make_global_rests
     
-    % [N GlobalRests measure 212 / measure 5]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 3/4                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 212 / measure 5]                                      %! _comment_measure_numbers
+    R1 * 3/4                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 213 / measure 6]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 1                                                                         %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 213 / measure 6]                                      %! _comment_measure_numbers
+    R1 * 1                                                                         %! _make_global_rests
     
-    % [N GlobalRests measure 214 / measure 7]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 3/4                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 214 / measure 7]                                      %! _comment_measure_numbers
+    R1 * 3/4                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 215 / measure 8]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 1/2                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 215 / measure 8]                                      %! _comment_measure_numbers
+    R1 * 1/2                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 216 / measure 9]                                      %! COMMENT_MEASURE_NUMBERS
-    R1 * 7/4                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 216 / measure 9]                                      %! _comment_measure_numbers
+    R1 * 7/4                                                                       %! _make_global_rests
     
-    % [N GlobalRests measure 217 / measure 10]                                     %! COMMENT_MEASURE_NUMBERS
-    R1 * 7/4                                                                       %! MAKE_GLOBAL_RESTS
+    % [N GlobalRests measure 217 / measure 10]                                     %! _comment_measure_numbers
+    R1 * 7/4                                                                       %! _make_global_rests
     
 }
 
 
 N_GlobalSkips = {
     
-    % [N GlobalSkips measure 208 / measure 1]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 2/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \mark #14                                                                      %! INDICATOR_COMMAND
-    \bar ""                                                                        %! MAKE_GLOBAL_SKIPS_3:+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 1/2                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (208)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <0>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.1]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'00'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
-%@% - \abjad_invisible_line                                                        %! ATTACH_METRONOME_MARKS_2
-%@% - \tweak bound-details.left.text \markup {                                     %! ATTACH_METRONOME_MARKS_2
-%@%     \concat                                                                    %! ATTACH_METRONOME_MARKS_2
-%@%         {                                                                      %! ATTACH_METRONOME_MARKS_2
-%@%             \abjad-metronome-mark-markup #2 #0 #1 #"104"                       %! ATTACH_METRONOME_MARKS_2
-%@%             \hspace                                                            %! ATTACH_METRONOME_MARKS_2
-%@%                 #0.5                                                           %! ATTACH_METRONOME_MARKS_2
-%@%         }                                                                      %! ATTACH_METRONOME_MARKS_2
-%@%     }                                                                          %! ATTACH_METRONOME_MARKS_2
-%@% \startTextSpan                                                                 %! ATTACH_METRONOME_MARKS_2
-    - \abjad_invisible_line                                                        %! ATTACH_METRONOME_MARKS_3
-    - \tweak bound-details.left.text \markup {                                     %! ATTACH_METRONOME_MARKS_3
-        \concat                                                                    %! ATTACH_METRONOME_MARKS_3
-            {                                                                      %! ATTACH_METRONOME_MARKS_3
-                \with-color                                                        %! ATTACH_METRONOME_MARKS_3
-                    #(x11-color 'blue)                                             %! ATTACH_METRONOME_MARKS_3
-                    \abjad-metronome-mark-markup #2 #0 #1 #"104"                   %! ATTACH_METRONOME_MARKS_3
-                \hspace                                                            %! ATTACH_METRONOME_MARKS_3
-                    #0.5                                                           %! ATTACH_METRONOME_MARKS_3
-            }                                                                      %! ATTACH_METRONOME_MARKS_3
-        }                                                                          %! ATTACH_METRONOME_MARKS_3
-    \startTextSpan                                                                 %! ATTACH_METRONOME_MARKS_3
+    % [N GlobalSkips measure 208 / measure 1]                                      %! _comment_measure_numbers
+    \time 2/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \mark #14                                                                      %! IndicatorCommand
+    \bar ""                                                                        %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (208)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <0>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.1]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'00'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
+%@% - \abjad_invisible_line                                                        %! _attach_metronome_marks(2)
+%@% - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(2)
+%@%     \concat                                                                    %! _attach_metronome_marks(2)
+%@%         {                                                                      %! _attach_metronome_marks(2)
+%@%             \abjad-metronome-mark-markup #2 #0 #1 #"104"                       %! _attach_metronome_marks(2)
+%@%             \hspace                                                            %! _attach_metronome_marks(2)
+%@%                 #0.5                                                           %! _attach_metronome_marks(2)
+%@%         }                                                                      %! _attach_metronome_marks(2)
+%@%     }                                                                          %! _attach_metronome_marks(2)
+%@% \startTextSpan                                                                 %! _attach_metronome_marks(2)
+    - \abjad_invisible_line                                                        %! _attach_metronome_marks(3)
+    - \tweak bound-details.left.text \markup {                                     %! _attach_metronome_marks(3)
+        \concat                                                                    %! _attach_metronome_marks(3)
+            {                                                                      %! _attach_metronome_marks(3)
+                \with-color                                                        %! _attach_metronome_marks(3)
+                    #(x11-color 'blue)                                             %! _attach_metronome_marks(3)
+                    \abjad-metronome-mark-markup #2 #0 #1 #"104"                   %! _attach_metronome_marks(3)
+                \hspace                                                            %! _attach_metronome_marks(3)
+                    #0.5                                                           %! _attach_metronome_marks(3)
+            }                                                                      %! _attach_metronome_marks(3)
+        }                                                                          %! _attach_metronome_marks(3)
+    \startTextSpan                                                                 %! _attach_metronome_marks(3)
     
-    % [N GlobalSkips measure 209 / measure 2]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 7/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 7/4                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (209)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <1>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((2))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.2]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'01'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 209 / measure 2]                                      %! _comment_measure_numbers
+    \time 7/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/4                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (209)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <1>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((2))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.2]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'01'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 210 / measure 3]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 3/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 3/4                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (210)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <2>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((3))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.3]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'05'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 210 / measure 3]                                      %! _comment_measure_numbers
+    \time 3/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (210)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <2>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((3))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.3]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'05'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 211 / measure 4]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 4/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 1                                                                         %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (211)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <3>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((4))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.4]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'06'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 211 / measure 4]                                      %! _comment_measure_numbers
+    \time 4/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                         %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (211)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <3>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((4))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.4]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'06'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 212 / measure 5]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 3/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 3/4                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (212)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <4>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((5))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.5]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'09'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 212 / measure 5]                                      %! _comment_measure_numbers
+    \time 3/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (212)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <4>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((5))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.5]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'09'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 213 / measure 6]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 4/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 1                                                                         %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (213)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <5>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((6))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.6]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'10'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 213 / measure 6]                                      %! _comment_measure_numbers
+    \time 4/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1                                                                         %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (213)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <5>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((6))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.6]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'10'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 214 / measure 7]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 3/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 3/4                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (214)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <6>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((7))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.7]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'13'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 214 / measure 7]                                      %! _comment_measure_numbers
+    \time 3/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 3/4                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (214)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <6>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((7))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.7]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'13'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 215 / measure 8]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 2/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 1/2                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (215)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <7>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((8))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.8]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'15'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 215 / measure 8]                                      %! _comment_measure_numbers
+    \time 2/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 1/2                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (215)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <7>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((8))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.8]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'15'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 216 / measure 9]                                      %! COMMENT_MEASURE_NUMBERS
-    \time 7/4                                                                      %! SET_STATUS_TAG:EXPLICIT_TIME_SIGNATURE:MAKE_GLOBAL_SKIPS_2
-    \baca_time_signature_color "blue"                                              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_TIME_SIGNATURE_COLOR:MAKE_GLOBAL_SKIPS_2
-    s1 * 7/4                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (216)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <8>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((9))                                         %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.9]                                         %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'16'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
+    % [N GlobalSkips measure 216 / measure 9]                                      %! _comment_measure_numbers
+    \time 7/4                                                                      %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
+    \baca_time_signature_color "blue"                                              %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    s1 * 7/4                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (216)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <8>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((9))                                         %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.9]                                         %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'16'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
     
-    % [N GlobalSkips measure 217 / measure 10]                                     %! COMMENT_MEASURE_NUMBERS
-    s1 * 7/4                                                                       %! MAKE_GLOBAL_SKIPS_1
-%@% ^ \markup \baca-dark-cyan-markup (217)                                         %! LABEL_MEASURE_INDICES_1:MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup <9>                                           %! LABEL_MEASURE_INDICES_2:MEASURE_INDEX_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup ((10))                                        %! LABEL_MEASURE_INDICES_3:LOCAL_MEASURE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup [N.10]                                        %! LABEL_STAGE_NUMBERS:STAGE_NUMBER_MARKUP
-%@% ^ \markup \baca-dark-cyan-markup "[15'20'']"                                   %! LABEL_CLOCK_TIME:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! ATTACH_METRONOME_MARKS_4
-    \baca_bar_line_visible                                                         %! ATTACH_FINAL_BAR_LINE
-    \bar "|"                                                                       %! ATTACH_FINAL_BAR_LINE
+    % [N GlobalSkips measure 217 / measure 10]                                     %! _comment_measure_numbers
+    s1 * 7/4                                                                       %! _make_global_skips(1)
+%@% ^ \markup \baca-dark-cyan-markup (217)                                         %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
+%@% ^ \markup \baca-dark-cyan-markup <9>                                           %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
+%@% ^ \markup \baca-dark-cyan-markup ((10))                                        %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
+%@% ^ \markup \baca-dark-cyan-markup [N.10]                                        %! _label_stage_numbers:STAGE_NUMBER_MARKUP
+%@% ^ \markup \baca-dark-cyan-markup "[15'20'']"                                   %! CLOCK_TIME_MARKUP:_label_clock_time
+    \stopTextSpan                                                                  %! _attach_metronome_marks(4)
+    \baca_bar_line_visible                                                         %! _attach_final_bar_line
+    \bar "|"                                                                       %! _attach_final_bar_line
     
 }
 
 
 N_BassClarinetMusicVoice = {
     
-    % [N BassClarinetMusicVoice measure 208 / measure 1]                   %! COMMENT_MEASURE_NUMBERS
-    \set Staff.instrumentName =                                            %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \markup {                                                              %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \hcenter-in                                                        %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            #16                                                            %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            "B. cl."                                                       %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        }                                                                  %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \set Staff.shortInstrumentName =                                       %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \markup {                                                              %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \hcenter-in                                                        %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            #16                                                            %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            "B. cl."                                                       %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        }                                                                  %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \stopStaff                                                             %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \once \override Staff.StaffSymbol.line-count = 5                       %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \startStaff                                                            %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-%@% \override TextScript.extra-offset = #'(0 . 7)                          %! OVERRIDE_COMMAND_1:+ARCH_A_PARTS_BCL
-    \clef "treble"                                                         %! SET_STATUS_TAG:REAPPLIED_CLEF:SM37
-    \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! ATTACH_COLOR_LITERAL_2:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \once \override Staff.Clef.color = #(x11-color 'green4)                %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_COLOR:SM37
-%@% \override Staff.Clef.color = ##f                                       %! ATTACH_COLOR_LITERAL_1:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set Staff.forceClef = ##t                                             %! SET_STATUS_TAG:REAPPLIED_CLEF:SM33:SM37
-    \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! ATTACH_COLOR_LITERAL_2:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:INDICATOR_COMMAND
+    % [N BassClarinetMusicVoice measure 208 / measure 1]                   %! _comment_measure_numbers
+    \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            #16                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            "B. cl."                                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        }                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+    \stopStaff                                                             %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override Staff.StaffSymbol.line-count = 5                       %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \startStaff                                                            %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+%@% \override TextScript.extra-offset = #'(0 . 7)                          %! OverrideCommand(1):+ARCH_A_PARTS_BCL
+    \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+    \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c2
-    \p                                                                     %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:INDICATOR_COMMAND
-    ^ \markup {                                                            %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-        \with-color                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            #(x11-color 'green4)                                           %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            "[“B. cl.”]"                                                   %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-        }                                                                  %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-    ^ \markup {                                                            %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \with-color                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            #(x11-color 'green4)                                           %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            (“BassClarinet”)                                               %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        }                                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-    ^ \markup {                                                            %! INDICATOR_COMMAND
-        \override                                                          %! INDICATOR_COMMAND
-            #'(box-padding . 0.5)                                          %! INDICATOR_COMMAND
-            \box                                                           %! INDICATOR_COMMAND
-                \column                                                    %! INDICATOR_COMMAND
-                    {                                                      %! INDICATOR_COMMAND
-                        "introduce upper partials gradually;"              %! INDICATOR_COMMAND
-                        "breathe as necessary before downbeats"            %! INDICATOR_COMMAND
-                    }                                                      %! INDICATOR_COMMAND
-        }                                                                  %! INDICATOR_COMMAND
-    \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! ATTACH_COLOR_LITERAL_2:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \set Staff.instrumentName =                                            %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \markup {                                                              %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \hcenter-in                                                        %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            #16                                                            %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            "B. cl."                                                       %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        }                                                                  %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \set Staff.shortInstrumentName =                                       %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \markup {                                                              %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \hcenter-in                                                        %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            #16                                                            %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            "B. cl."                                                       %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        }                                                                  %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
+    ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    ^ \markup {                                                            %! IndicatorCommand
+        \override                                                          %! IndicatorCommand
+            #'(box-padding . 0.5)                                          %! IndicatorCommand
+            \box                                                           %! IndicatorCommand
+                \column                                                    %! IndicatorCommand
+                    {                                                      %! IndicatorCommand
+                        "introduce upper partials gradually;"              %! IndicatorCommand
+                        "breathe as necessary before downbeats"            %! IndicatorCommand
+                    }                                                      %! IndicatorCommand
+        }                                                                  %! IndicatorCommand
+    \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    % [N BassClarinetMusicVoice measure 209 / measure 2]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 209 / measure 2]                   %! _comment_measure_numbers
     c1..
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 210 / measure 3]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 210 / measure 3]                   %! _comment_measure_numbers
     c2.
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 211 / measure 4]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 211 / measure 4]                   %! _comment_measure_numbers
     c1
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 212 / measure 5]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 212 / measure 5]                   %! _comment_measure_numbers
     c2.
     \repeatTie                                                             %! SC
-%@% \revert TextScript.extra-offset                                        %! OVERRIDE_COMMAND_2:+ARCH_A_PARTS_BCL
+%@% \revert TextScript.extra-offset                                        %! OverrideCommand(2):+ARCH_A_PARTS_BCL
     
-    % [N BassClarinetMusicVoice measure 213 / measure 6]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 213 / measure 6]                   %! _comment_measure_numbers
     <c e''>1
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 214 / measure 7]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 214 / measure 7]                   %! _comment_measure_numbers
     <c e''>2.
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 215 / measure 8]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 215 / measure 8]                   %! _comment_measure_numbers
     <c e''>2
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 216 / measure 9]                   %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 216 / measure 9]                   %! _comment_measure_numbers
     <c e''>1..
     \repeatTie                                                             %! SC
     
-    % [N BassClarinetMusicVoice measure 217 / measure 10]                  %! COMMENT_MEASURE_NUMBERS
+    % [N BassClarinetMusicVoice measure 217 / measure 10]                  %! _comment_measure_numbers
     <c e''>1..
     \repeatTie                                                             %! SC
     
@@ -274,424 +254,416 @@ N_BassClarinetMusicStaff = {
 
 N_ViolinRHMusicVoice = {
     
-    % [N ViolinRHMusicVoice measure 208 / measure 1]                   %! COMMENT_MEASURE_NUMBERS
-    \stopStaff                                                         %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \startStaff                                                        %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \override Script.staff-padding = #7                                %! OVERRIDE_COMMAND_1
-    \override TextSpanner.staff-padding = #3.5                         %! OVERRIDE_COMMAND_1
-    \override DynamicLineSpanner.staff-padding = #'9                   %! OVERRIDE_COMMAND_1
-    \clef "percussion"                                                 %! SET_STATUS_TAG:REAPPLIED_CLEF:SM37
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_COLOR:SM37
-%@% \override RHStaff.Clef.color = ##f                                 %! ATTACH_COLOR_LITERAL_1:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set RHStaff.forceClef = ##t                                       %! SET_STATUS_TAG:REAPPLIED_CLEF:SM33:SM37
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! ATTACH_COLOR_LITERAL_2:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+    % [N ViolinRHMusicVoice measure 208 / measure 1]                   %! _comment_measure_numbers
+    \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \override Script.staff-padding = #7                                %! OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                         %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'9                   %! OverrideCommand(1)
+    \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
+    \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     r4
-    \ppp                                                               %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \ppp                                                               %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ff                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\downbow                                                          %! BCP_COMMAND
-    ^ \markup {                                                        %! INDICATOR_COMMAND
-        \override                                                      %! INDICATOR_COMMAND
-            #'(box-padding . 0.5)                                      %! INDICATOR_COMMAND
-            \box                                                       %! INDICATOR_COMMAND
-                "1/2 clt"                                              %! INDICATOR_COMMAND
-        }                                                              %! INDICATOR_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\downbow                                                          %! BowContactPointCommand
+    ^ \markup {                                                        %! IndicatorCommand
+        \override                                                      %! IndicatorCommand
+            #'(box-padding . 0.5)                                      %! IndicatorCommand
+            \box                                                       %! IndicatorCommand
+                "1/2 clt"                                              %! IndicatorCommand
+        }                                                              %! IndicatorCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    % [N ViolinRHMusicVoice measure 209 / measure 2]                   %! COMMENT_MEASURE_NUMBERS
+    % [N ViolinRHMusicVoice measure 209 / measure 2]                   %! _comment_measure_numbers
     c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
-    
-    c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    -\upbow                                                            %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
     c'4
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\downbow                                                          %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\upbow                                                            %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \pp                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    -\upbow                                                            %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\downbow                                                          %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+    c'4
+    \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    -\upbow                                                            %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     r4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_invisible_line                                            %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_invisible_line                                            %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        % [N ViolinRHMusicVoice measure 210 / measure 3]               %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolinRHMusicVoice measure 210 / measure 3]               %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
-        % [N ViolinRHMusicVoice measure 211 / measure 4]               %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolinRHMusicVoice measure 211 / measure 4]               %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
-        % [N ViolinRHMusicVoice measure 212 / measure 5]               %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        % [N ViolinRHMusicVoice measure 212 / measure 5]               %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N ViolinRHMusicVoice measure 213 / measure 6]                   %! COMMENT_MEASURE_NUMBERS
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    % [N ViolinRHMusicVoice measure 213 / measure 6]                   %! _comment_measure_numbers
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\upbow                                                            %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\upbow                                                            %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    -\downbow                                                          %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\downbow                                                          %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     r4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_invisible_line                                            %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_invisible_line                                            %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        % [N ViolinRHMusicVoice measure 214 / measure 7]               %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolinRHMusicVoice measure 214 / measure 7]               %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N ViolinRHMusicVoice measure 215 / measure 8]                   %! COMMENT_MEASURE_NUMBERS
+    % [N ViolinRHMusicVoice measure 215 / measure 8]                   %! _comment_measure_numbers
     c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/6 {
         
-        % [N ViolinRHMusicVoice measure 216 / measure 9]               %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        % [N ViolinRHMusicVoice measure 216 / measure 9]               %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N ViolinRHMusicVoice measure 217 / measure 10]                  %! COMMENT_MEASURE_NUMBERS
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    % [N ViolinRHMusicVoice measure 217 / measure 10]                  %! _comment_measure_numbers
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ff                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\upbow                                                            %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\upbow                                                            %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    -\downbow                                                          %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\downbow                                                          %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\upbow                                                            %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
-    
-    c'4
-    -\downbow                                                          %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\upbow                                                            %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\downbow                                                          %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
     c'4
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BCP_COMMAND
-    - \tweak bound-details.right.text \markup \baca-bcp-right #6 #7    %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \pp                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    \revert Script.staff-padding                                       %! OVERRIDE_COMMAND_2
-    \revert TextSpanner.staff-padding                                  %! OVERRIDE_COMMAND_2
-    \revert DynamicLineSpanner.staff-padding                           %! OVERRIDE_COMMAND_2
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BowContactPointCommand
+    - \tweak bound-details.right.text \markup \baca-bcp-right #6 #7    %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
+    
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+    c'4
+    \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    \revert Script.staff-padding                                       %! OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                  %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                           %! OverrideCommand(2)
     
 }
 
@@ -706,59 +678,39 @@ N_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
-        % [N ViolinMusicVoice measure 208 / measure 1]                 %! COMMENT_MEASURE_NUMBERS
-        \set SingleStringStaffGroup.instrumentName =                   %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                Vn.                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \set SingleStringStaffGroup.shortInstrumentName =              %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                Vn.                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \stopStaff                                                     %! SET_STATUS_TAG:EXPLICIT_STAFF_LINES:INDICATOR_COMMAND
-        \once \override Staff.StaffSymbol.line-count = 5               %! SET_STATUS_TAG:EXPLICIT_STAFF_LINES:INDICATOR_COMMAND
-        \startStaff                                                    %! SET_STATUS_TAG:EXPLICIT_STAFF_LINES:INDICATOR_COMMAND
-    %%% \once \override Staff.Clef.X-extent = ##f                      %! OVERRIDE_COMMAND_1:MEASURE_208:SHIFTED_CLEF
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)         %! OVERRIDE_COMMAND_1:MEASURE_208:SHIFTED_CLEF
-        \clef "treble"                                                 %! SET_STATUS_TAG:EXPLICIT_CLEF:INDICATOR_COMMAND
-        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
-        \once \override Staff.Clef.color = #(x11-color 'blue)          %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_COLOR:INDICATOR_COMMAND
-    %@% \override Staff.Clef.color = ##f                               %! ATTACH_COLOR_LITERAL_1:EXPLICIT_CLEF_COLOR_CANCELLATION:INDICATOR_COMMAND
-        \set Staff.forceClef = ##t                                     %! SET_STATUS_TAG:EXPLICIT_CLEF:SM33:INDICATOR_COMMAND
-        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_STAFF_LINES_COLOR:INDICATOR_COMMAND
+        % [N ViolinMusicVoice measure 208 / measure 1]                 %! _comment_measure_numbers
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+                Vn.                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \stopStaff                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 5               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+        \startStaff                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+    %%% \once \override Staff.Clef.X-extent = ##f                      %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)         %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+        \clef "treble"                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+        \once \override Staff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
+    %@% \override Staff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         c''8
-        \fff                                                           %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-        ^ \markup {                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            \with-color                                                %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                #(x11-color 'green4)                                   %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                [“Vn.”]                                                %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            }                                                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-        ^ \markup {                                                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            \with-color                                                %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                #(x11-color 'green4)                                   %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                (“Violin”)                                             %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            }                                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        \fff                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+        ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
+        ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
         \glissando                                                     %! SC
-        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! ATTACH_COLOR_LITERAL_2:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-        \set SingleStringStaffGroup.instrumentName =                   %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                Vn.                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \set SingleStringStaffGroup.shortInstrumentName =              %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                Vn.                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_REDRAW_COLOR:INDICATOR_COMMAND
+        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+                Vn.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         b''8.
         \glissando                                                     %! SC
@@ -773,7 +725,7 @@ N_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
-        % [N ViolinMusicVoice measure 209 / measure 2]                 %! COMMENT_MEASURE_NUMBERS
+        % [N ViolinMusicVoice measure 209 / measure 2]                 %! _comment_measure_numbers
         g'2..
         \glissando                                                     %! SC
         
@@ -784,13 +736,13 @@ N_ViolinMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N ViolinMusicVoice measure 210 / measure 3]                     %! COMMENT_MEASURE_NUMBERS
+    % [N ViolinMusicVoice measure 210 / measure 3]                     %! _comment_measure_numbers
     f'''2.
     \glissando                                                         %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/9 {
         
-        % [N ViolinMusicVoice measure 211 / measure 4]                 %! COMMENT_MEASURE_NUMBERS
+        % [N ViolinMusicVoice measure 211 / measure 4]                 %! _comment_measure_numbers
         e'''1
         \glissando                                                     %! SC
         
@@ -800,7 +752,7 @@ N_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
         
-        % [N ViolinMusicVoice measure 212 / measure 5]                 %! COMMENT_MEASURE_NUMBERS
+        % [N ViolinMusicVoice measure 212 / measure 5]                 %! _comment_measure_numbers
         c''8.
         [
         \glissando                                                     %! SC
@@ -816,7 +768,7 @@ N_ViolinMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N ViolinMusicVoice measure 213 / measure 6]                     %! COMMENT_MEASURE_NUMBERS
+    % [N ViolinMusicVoice measure 213 / measure 6]                     %! _comment_measure_numbers
     f''4.
     \glissando                                                         %! SC
     
@@ -828,7 +780,7 @@ N_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        % [N ViolinMusicVoice measure 214 / measure 7]                 %! COMMENT_MEASURE_NUMBERS
+        % [N ViolinMusicVoice measure 214 / measure 7]                 %! _comment_measure_numbers
         g4.
         \glissando                                                     %! SC
         
@@ -838,7 +790,7 @@ N_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
-        % [N ViolinMusicVoice measure 215 / measure 8]                 %! COMMENT_MEASURE_NUMBERS
+        % [N ViolinMusicVoice measure 215 / measure 8]                 %! _comment_measure_numbers
         b'4.
         \glissando                                                     %! SC
         
@@ -846,7 +798,7 @@ N_ViolinMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N ViolinMusicVoice measure 216 / measure 9]                     %! COMMENT_MEASURE_NUMBERS
+    % [N ViolinMusicVoice measure 216 / measure 9]                     %! _comment_measure_numbers
     g2
     \glissando                                                         %! SC
     
@@ -872,7 +824,7 @@ N_ViolinMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
-        % [N ViolinMusicVoice measure 217 / measure 10]                %! COMMENT_MEASURE_NUMBERS
+        % [N ViolinMusicVoice measure 217 / measure 10]                %! _comment_measure_numbers
         c''4.
         \glissando                                                     %! SC
         
@@ -893,474 +845,462 @@ N_ViolinMusicStaff = {
 
 N_ViolaRHMusicVoice = {
     
-    % [N ViolaRHMusicVoice measure 208 / measure 1]                    %! COMMENT_MEASURE_NUMBERS
-    \stopStaff                                                         %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \startStaff                                                        %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \override Script.staff-padding = #7                                %! OVERRIDE_COMMAND_1
-    \override TextSpanner.staff-padding = #3.5                         %! OVERRIDE_COMMAND_1
-    \override DynamicLineSpanner.staff-padding = #'9                   %! OVERRIDE_COMMAND_1
-    \clef "percussion"                                                 %! SET_STATUS_TAG:REAPPLIED_CLEF:SM37
-    \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_COLOR:SM37
-%@% \override RHStaff.Clef.color = ##f                                 %! ATTACH_COLOR_LITERAL_1:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-    \set RHStaff.forceClef = ##t                                       %! SET_STATUS_TAG:REAPPLIED_CLEF:SM33:SM37
-    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! ATTACH_COLOR_LITERAL_2:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    % [N ViolaRHMusicVoice measure 208 / measure 1]                    %! _comment_measure_numbers
+    \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \override Script.staff-padding = #7                                %! OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                         %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'9                   %! OverrideCommand(1)
+    \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ff                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\upbow                                                            %! BCP_COMMAND
-    ^ \markup {                                                        %! INDICATOR_COMMAND
-        \override                                                      %! INDICATOR_COMMAND
-            #'(box-padding . 0.5)                                      %! INDICATOR_COMMAND
-            \box                                                       %! INDICATOR_COMMAND
-                "1/2 clt"                                              %! INDICATOR_COMMAND
-        }                                                              %! INDICATOR_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
-    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+    \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\upbow                                                            %! BowContactPointCommand
+    ^ \markup {                                                        %! IndicatorCommand
+        \override                                                      %! IndicatorCommand
+            #'(box-padding . 0.5)                                      %! IndicatorCommand
+            \box                                                       %! IndicatorCommand
+                "1/2 clt"                                              %! IndicatorCommand
+        }                                                              %! IndicatorCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
+    \override RHStaff.Clef.color = #(x11-color 'OliveDrab)             %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     c'4
-    -\downbow                                                          %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\downbow                                                          %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        % [N ViolaRHMusicVoice measure 209 / measure 2]                %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolaRHMusicVoice measure 209 / measure 2]                %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
-        c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        c'4
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
-        % [N ViolaRHMusicVoice measure 210 / measure 3]                %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolaRHMusicVoice measure 210 / measure 3]                %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/3 {
         
-        % [N ViolaRHMusicVoice measure 211 / measure 4]                %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolaRHMusicVoice measure 211 / measure 4]                %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N ViolaRHMusicVoice measure 212 / measure 5]                    %! COMMENT_MEASURE_NUMBERS
+    % [N ViolaRHMusicVoice measure 212 / measure 5]                    %! _comment_measure_numbers
     c'4
-    -\downbow                                                          %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\downbow                                                          %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     r4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_invisible_line                                            %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_invisible_line                                            %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
-        % [N ViolaRHMusicVoice measure 213 / measure 6]                %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolaRHMusicVoice measure 213 / measure 6]                %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        c'4
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
         
-        % [N ViolaRHMusicVoice measure 214 / measure 7]                %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N ViolaRHMusicVoice measure 214 / measure 7]                %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N ViolaRHMusicVoice measure 215 / measure 8]                    %! COMMENT_MEASURE_NUMBERS
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    % [N ViolaRHMusicVoice measure 215 / measure 8]                    %! _comment_measure_numbers
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ff                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\downbow                                                          %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\downbow                                                          %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    % [N ViolaRHMusicVoice measure 216 / measure 9]                    %! COMMENT_MEASURE_NUMBERS
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    % [N ViolaRHMusicVoice measure 216 / measure 9]                    %! _comment_measure_numbers
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \p                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    -\upbow                                                            %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    -\upbow                                                            %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     r4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_invisible_line                                            %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_invisible_line                                            %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \f                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\downbow                                                          %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\downbow                                                          %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    -\upbow                                                            %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\upbow                                                            %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \pp                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \pp                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\downbow                                                          %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\downbow                                                          %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        % [N ViolaRHMusicVoice measure 217 / measure 10]               %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaRHMusicVoice measure 217 / measure 10]               %! _comment_measure_numbers
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        \revert Script.staff-padding                                   %! OVERRIDE_COMMAND_2
-        \revert TextSpanner.staff-padding                              %! OVERRIDE_COMMAND_2
-        \revert DynamicLineSpanner.staff-padding                       %! OVERRIDE_COMMAND_2
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        \revert Script.staff-padding                                   %! OverrideCommand(2)
+        \revert TextSpanner.staff-padding                              %! OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
         
     }
 }
@@ -1376,61 +1316,41 @@ N_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
-        % [N ViolaMusicVoice measure 208 / measure 1]                  %! COMMENT_MEASURE_NUMBERS
-        \set SingleStringStaffGroup.instrumentName =                   %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                Va.                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \set SingleStringStaffGroup.shortInstrumentName =              %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-                Va.                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \stopStaff                                                     %! SET_STATUS_TAG:EXPLICIT_STAFF_LINES:INDICATOR_COMMAND
-        \once \override Staff.StaffSymbol.line-count = 5               %! SET_STATUS_TAG:EXPLICIT_STAFF_LINES:INDICATOR_COMMAND
-        \startStaff                                                    %! SET_STATUS_TAG:EXPLICIT_STAFF_LINES:INDICATOR_COMMAND
-    %%% \once \override Staff.Clef.X-extent = ##f                      %! OVERRIDE_COMMAND_1:MEASURE_208:SHIFTED_CLEF
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)         %! OVERRIDE_COMMAND_1:MEASURE_208:SHIFTED_CLEF
-        \clef "treble"                                                 %! SET_STATUS_TAG:EXPLICIT_CLEF:INDICATOR_COMMAND
-        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
-        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_STAFF_LINES_COLOR:INDICATOR_COMMAND
-        \once \override Staff.Clef.color = #(x11-color 'blue)          %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_COLOR:INDICATOR_COMMAND
-    %@% \override Staff.Clef.color = ##f                               %! ATTACH_COLOR_LITERAL_1:EXPLICIT_CLEF_COLOR_CANCELLATION:INDICATOR_COMMAND
-        \set Staff.forceClef = ##t                                     %! SET_STATUS_TAG:EXPLICIT_CLEF:SM33:INDICATOR_COMMAND
+        % [N ViolaMusicVoice measure 208 / measure 1]                  %! _comment_measure_numbers
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+                Va.                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \stopStaff                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 5               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+        \startStaff                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+    %%% \once \override Staff.Clef.X-extent = ##f                      %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)         %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+        \clef "treble"                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
+        \once \override Staff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
+    %@% \override Staff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
         c''2.
-        \fff                                                           %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-        ^ \markup {                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            \with-color                                                %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                #(x11-color 'green4)                                   %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-                [“Va.”]                                                %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            }                                                          %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-        ^ \markup {                                                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            \with-color                                                %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                #(x11-color 'green4)                                   %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-                (“Viola”)                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            }                                                          %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+        \fff                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+        ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
+        ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \glissando                                                     %! SC
-        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! ATTACH_COLOR_LITERAL_2:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-        \set SingleStringStaffGroup.instrumentName =                   %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                Va.                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \set SingleStringStaffGroup.shortInstrumentName =              %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \markup {                                                      %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            \hcenter-in                                                %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                #16                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-                Va.                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            }                                                          %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_REDRAW_COLOR:INDICATOR_COMMAND
+        \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+                Va.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     }
     
-    % [N ViolaMusicVoice measure 209 / measure 2]                      %! COMMENT_MEASURE_NUMBERS
+    % [N ViolaMusicVoice measure 209 / measure 2]                      %! _comment_measure_numbers
     d'8
     \glissando                                                         %! SC
     
@@ -1445,7 +1365,7 @@ N_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        % [N ViolaMusicVoice measure 210 / measure 3]                  %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaMusicVoice measure 210 / measure 3]                  %! _comment_measure_numbers
         f'4
         \glissando                                                     %! SC
         
@@ -1458,7 +1378,7 @@ N_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
-        % [N ViolaMusicVoice measure 211 / measure 4]                  %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaMusicVoice measure 211 / measure 4]                  %! _comment_measure_numbers
         a4.
         \glissando                                                     %! SC
         
@@ -1480,7 +1400,7 @@ N_ViolaMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N ViolaMusicVoice measure 212 / measure 5]                      %! COMMENT_MEASURE_NUMBERS
+    % [N ViolaMusicVoice measure 212 / measure 5]                      %! _comment_measure_numbers
     f''2
     \glissando                                                         %! SC
     
@@ -1494,7 +1414,7 @@ N_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/9 {
         
-        % [N ViolaMusicVoice measure 213 / measure 6]                  %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaMusicVoice measure 213 / measure 6]                  %! _comment_measure_numbers
         d'2..
         \glissando                                                     %! SC
         
@@ -1504,7 +1424,7 @@ N_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
         
-        % [N ViolaMusicVoice measure 214 / measure 7]                  %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaMusicVoice measure 214 / measure 7]                  %! _comment_measure_numbers
         d''2
         \glissando                                                     %! SC
         
@@ -1515,13 +1435,13 @@ N_ViolaMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N ViolaMusicVoice measure 215 / measure 8]                      %! COMMENT_MEASURE_NUMBERS
+    % [N ViolaMusicVoice measure 215 / measure 8]                      %! _comment_measure_numbers
     e''2
     \glissando                                                         %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
-        % [N ViolaMusicVoice measure 216 / measure 9]                  %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaMusicVoice measure 216 / measure 9]                  %! _comment_measure_numbers
         g''8
         [
         \glissando                                                     %! SC
@@ -1548,7 +1468,7 @@ N_ViolaMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
-        % [N ViolaMusicVoice measure 217 / measure 10]                 %! COMMENT_MEASURE_NUMBERS
+        % [N ViolaMusicVoice measure 217 / measure 10]                 %! _comment_measure_numbers
         a'2.
         \glissando                                                     %! SC
         
@@ -1571,481 +1491,469 @@ N_CelloRHMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
-        % [N CelloRHMusicVoice measure 208 / measure 1]                %! COMMENT_MEASURE_NUMBERS
-        \stopStaff                                                     %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-        \once \override RHStaff.StaffSymbol.line-count = 1             %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-        \startStaff                                                    %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-        \override Script.staff-padding = #7                            %! OVERRIDE_COMMAND_1
-        \override TextSpanner.staff-padding = #3.5                     %! OVERRIDE_COMMAND_1
-        \override DynamicLineSpanner.staff-padding = #'9               %! OVERRIDE_COMMAND_1
-        \clef "percussion"                                             %! SET_STATUS_TAG:REAPPLIED_CLEF:SM37
-        \once \override RHStaff.Clef.color = #(x11-color 'green4)      %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_COLOR:SM37
-    %@% \override RHStaff.Clef.color = ##f                             %! ATTACH_COLOR_LITERAL_1:REAPPLIED_CLEF_COLOR_CANCELLATION:SM37
-        \set RHStaff.forceClef = ##t                                   %! SET_STATUS_TAG:REAPPLIED_CLEF:SM33:SM37
-        \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_STAFF_LINES_COLOR:SM37
-        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
+        % [N CelloRHMusicVoice measure 208 / measure 1]                %! _comment_measure_numbers
+        \stopStaff                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+        \once \override RHStaff.StaffSymbol.line-count = 1             %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+        \startStaff                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+        \override Script.staff-padding = #7                            %! OverrideCommand(1)
+        \override TextSpanner.staff-padding = #3.5                     %! OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'9               %! OverrideCommand(1)
+        \clef "percussion"                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+        \once \override RHStaff.Clef.color = #(x11-color 'green4)      %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+    %@% \override RHStaff.Clef.color = ##f                             %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+        \set RHStaff.forceClef = ##t                                   %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+        \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
+        \once \override Voice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
         r4
-        \pp                                                            %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-        \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! ATTACH_COLOR_LITERAL_2:REAPPLIED_CLEF_REDRAW_COLOR:SM37
+        \pp                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+        \override RHStaff.Clef.color = #(x11-color 'OliveDrab)         %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        ^ \markup {                                                    %! INDICATOR_COMMAND
-            \override                                                  %! INDICATOR_COMMAND
-                #'(box-padding . 0.5)                                  %! INDICATOR_COMMAND
-                \box                                                   %! INDICATOR_COMMAND
-                    "1/2 clt"                                          %! INDICATOR_COMMAND
-            }                                                          %! INDICATOR_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        ^ \markup {                                                    %! IndicatorCommand
+            \override                                                  %! IndicatorCommand
+                #'(box-padding . 0.5)                                  %! IndicatorCommand
+                \box                                                   %! IndicatorCommand
+                    "1/2 clt"                                          %! IndicatorCommand
+            }                                                          %! IndicatorCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
-        % [N CelloRHMusicVoice measure 209 / measure 2]                %! COMMENT_MEASURE_NUMBERS
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        % [N CelloRHMusicVoice measure 209 / measure 2]                %! _comment_measure_numbers
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
-        % [N CelloRHMusicVoice measure 210 / measure 3]                %! COMMENT_MEASURE_NUMBERS
+        % [N CelloRHMusicVoice measure 210 / measure 3]                %! _comment_measure_numbers
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N CelloRHMusicVoice measure 211 / measure 4]                    %! COMMENT_MEASURE_NUMBERS
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    % [N CelloRHMusicVoice measure 211 / measure 4]                    %! _comment_measure_numbers
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ppp                                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \ppp                                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ff                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \ff                                                                %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \>                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \>                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
     c'4
-    -\upbow                                                            %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\upbow                                                            %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
-        % [N CelloRHMusicVoice measure 212 / measure 5]                %! COMMENT_MEASURE_NUMBERS
+        % [N CelloRHMusicVoice measure 212 / measure 5]                %! _comment_measure_numbers
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
-        % [N CelloRHMusicVoice measure 213 / measure 6]                %! COMMENT_MEASURE_NUMBERS
+        % [N CelloRHMusicVoice measure 213 / measure 6]                %! _comment_measure_numbers
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
         c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/2 {
         
-        % [N CelloRHMusicVoice measure 214 / measure 7]                %! COMMENT_MEASURE_NUMBERS
+        % [N CelloRHMusicVoice measure 214 / measure 7]                %! _comment_measure_numbers
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     
-    % [N CelloRHMusicVoice measure 215 / measure 8]                    %! COMMENT_MEASURE_NUMBERS
+    % [N CelloRHMusicVoice measure 215 / measure 8]                    %! _comment_measure_numbers
     c'4
-    -\upbow                                                            %! BCP_COMMAND
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    -\upbow                                                            %! BowContactPointCommand
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+    \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
-    \ppp                                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-    \ppp                                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    -\downbow                                                          %! BCP_COMMAND
-    - \tweak color #blue                                               %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \<                                                                 %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-    \bacaStopTextSpanBCP                                               %! BCP_COMMAND
-    - \abjad_solid_line_with_arrow                                     %! BCP_COMMAND
-    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BCP_COMMAND
-    \bacaStartTextSpanBCP                                              %! BCP_COMMAND
+    \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    -\downbow                                                          %! BowContactPointCommand
+    - \tweak color #blue                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    \bacaStopTextSpanBCP                                               %! BowContactPointCommand
+    - \abjad_solid_line_with_arrow                                     %! BowContactPointCommand
+    - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7      %! BowContactPointCommand
+    \bacaStartTextSpanBCP                                              %! BowContactPointCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
         
-        % [N CelloRHMusicVoice measure 216 / measure 9]                %! COMMENT_MEASURE_NUMBERS
+        % [N CelloRHMusicVoice measure 216 / measure 9]                %! _comment_measure_numbers
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \ff                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
-        c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \ff                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/9 {
         
-        % [N CelloRHMusicVoice measure 217 / measure 10]               %! COMMENT_MEASURE_NUMBERS
+        % [N CelloRHMusicVoice measure 217 / measure 10]               %! _comment_measure_numbers
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \f                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
-        c'4
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \pp                                                            %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\downbow                                                      %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \<                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\upbow                                                        %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\downbow                                                      %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \<                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         c'4
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\upbow                                                        %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_1
         c'4
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        \p                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        -\upbow                                                        %! BCP_COMMAND
-        - \tweak color #blue                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \>                                                             %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_1
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
-        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! ATTACH_COLOR_LITERAL_2:EXPLICIT_DYNAMIC_COLOR:PIC_2
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
-        \ppp                                                           %! SET_STATUS_TAG:EXPLICIT_DYNAMIC:PIC_2
-        -\downbow                                                      %! BCP_COMMAND
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_solid_line_with_arrow                                 %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BCP_COMMAND
-        - \tweak bound-details.right.text \markup \baca-bcp-right #7 #7 %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        \p                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        -\upbow                                                        %! BowContactPointCommand
+        - \tweak color #blue                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \>                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        
+        \once \override Voice.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
+        c'4
+        \ppp                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        -\downbow                                                      %! BowContactPointCommand
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_solid_line_with_arrow                                 %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7  %! BowContactPointCommand
+        - \tweak bound-details.right.text \markup \baca-bcp-right #7 #7 %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
         
         r4
-        \bacaStopTextSpanBCP                                           %! BCP_COMMAND
-        - \abjad_invisible_line                                        %! BCP_COMMAND
-        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BCP_COMMAND
-        \bacaStartTextSpanBCP                                          %! BCP_COMMAND
-        \revert Script.staff-padding                                   %! OVERRIDE_COMMAND_2
-        \revert TextSpanner.staff-padding                              %! OVERRIDE_COMMAND_2
-        \revert DynamicLineSpanner.staff-padding                       %! OVERRIDE_COMMAND_2
+        \bacaStopTextSpanBCP                                           %! BowContactPointCommand
+        - \abjad_invisible_line                                        %! BowContactPointCommand
+        - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7  %! BowContactPointCommand
+        \bacaStartTextSpanBCP                                          %! BowContactPointCommand
+        \revert Script.staff-padding                                   %! OverrideCommand(2)
+        \revert TextSpanner.staff-padding                              %! OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                       %! OverrideCommand(2)
         
     }
 }
@@ -2059,59 +1967,39 @@ N_CelloRHMusicStaff = {
 
 N_CelloMusicVoice = {
     
-    % [N CelloMusicVoice measure 208 / measure 1]                      %! COMMENT_MEASURE_NUMBERS
-    \set SingleStringStaffGroup.instrumentName =                       %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \markup {                                                          %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \hcenter-in                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            #16                                                        %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            Vc.                                                        %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        }                                                              %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \markup {                                                          %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        \hcenter-in                                                    %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            #16                                                        %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-            Vc.                                                        %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-        }                                                              %! SET_STATUS_TAG:REAPPLIED_MARGIN_MARKUP:-PARTS:SM37
-    \stopStaff                                                         %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \once \override Staff.StaffSymbol.line-count = 5                   %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-    \startStaff                                                        %! SET_STATUS_TAG:REAPPLIED_STAFF_LINES:SM37
-%%% \once \override Staff.Clef.X-extent = ##f                          %! OVERRIDE_COMMAND_1:MEASURE_208:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)            %! OVERRIDE_COMMAND_1:MEASURE_208:SHIFTED_CLEF
-    \clef "tenor"                                                      %! SET_STATUS_TAG:EXPLICIT_CLEF:INDICATOR_COMMAND
-    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! ATTACH_COLOR_LITERAL_2:REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_STAFF_LINES_COLOR:SM37
-    \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! ATTACH_COLOR_LITERAL_2:REAPPLIED_DYNAMIC_COLOR:SM37
-    \once \override Staff.Clef.color = #(x11-color 'blue)              %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_COLOR:INDICATOR_COMMAND
-%@% \override Staff.Clef.color = ##f                                   %! ATTACH_COLOR_LITERAL_1:EXPLICIT_CLEF_COLOR_CANCELLATION:INDICATOR_COMMAND
-    \set Staff.forceClef = ##t                                         %! SET_STATUS_TAG:EXPLICIT_CLEF:SM33:INDICATOR_COMMAND
+    % [N CelloMusicVoice measure 208 / measure 1]                      %! _comment_measure_numbers
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            Vc.                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+    \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override Staff.StaffSymbol.line-count = 5                   %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+%%% \once \override Staff.Clef.X-extent = ##f                          %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+%%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)            %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+    \clef "tenor"                                                      %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+    \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
+    \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
+    \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
     a,8
-    \fff                                                               %! SET_STATUS_TAG:REAPPLIED_DYNAMIC:SM37
-    ^ \markup {                                                        %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-        \with-color                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            #(x11-color 'green4)                                       %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-            [“Vc.”]                                                    %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-        }                                                              %! SM11:REAPPLIED_MARGIN_MARKUP_ALERT:-PARTS:SM37
-    ^ \markup {                                                        %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        \with-color                                                    %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            #(x11-color 'green4)                                       %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-            (“Cello”)                                                  %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
-        }                                                              %! SM11:REAPPLIED_INSTRUMENT_ALERT:SM37
+    \fff                                                               %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+    ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
+    ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     [
     \glissando                                                         %! SC
-    \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! ATTACH_COLOR_LITERAL_2:REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:-PARTS:SM37
-    \set SingleStringStaffGroup.instrumentName =                       %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \markup {                                                          %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \hcenter-in                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            #16                                                        %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            Vc.                                                        %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        }                                                              %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \markup {                                                          %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        \hcenter-in                                                    %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            #16                                                        %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-            Vc.                                                        %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-        }                                                              %! SET_STATUS_TAG:REDRAWN_REAPPLIED_MARGIN_MARKUP:SM34:-PARTS:SM37
-    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! ATTACH_COLOR_LITERAL_2:EXPLICIT_CLEF_REDRAW_COLOR:INDICATOR_COMMAND
+    \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+            Vc.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     g,8.
     \glissando                                                         %! SC
@@ -2125,7 +2013,7 @@ N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
-        % [N CelloMusicVoice measure 209 / measure 2]                  %! COMMENT_MEASURE_NUMBERS
+        % [N CelloMusicVoice measure 209 / measure 2]                  %! _comment_measure_numbers
         f'8
         \glissando                                                     %! SC
         
@@ -2138,7 +2026,7 @@ N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
         
-        % [N CelloMusicVoice measure 210 / measure 3]                  %! COMMENT_MEASURE_NUMBERS
+        % [N CelloMusicVoice measure 210 / measure 3]                  %! _comment_measure_numbers
         d8
         \glissando                                                     %! SC
         
@@ -2146,13 +2034,13 @@ N_CelloMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N CelloMusicVoice measure 211 / measure 4]                      %! COMMENT_MEASURE_NUMBERS
+    % [N CelloMusicVoice measure 211 / measure 4]                      %! _comment_measure_numbers
     d'1
     \glissando                                                         %! SC
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
-        % [N CelloMusicVoice measure 212 / measure 5]                  %! COMMENT_MEASURE_NUMBERS
+        % [N CelloMusicVoice measure 212 / measure 5]                  %! _comment_measure_numbers
         e''8
         [
         \glissando                                                     %! SC
@@ -2173,7 +2061,7 @@ N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
-        % [N CelloMusicVoice measure 213 / measure 6]                  %! COMMENT_MEASURE_NUMBERS
+        % [N CelloMusicVoice measure 213 / measure 6]                  %! _comment_measure_numbers
         b2
         \glissando                                                     %! SC
         
@@ -2187,7 +2075,7 @@ N_CelloMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N CelloMusicVoice measure 214 / measure 7]                      %! COMMENT_MEASURE_NUMBERS
+    % [N CelloMusicVoice measure 214 / measure 7]                      %! _comment_measure_numbers
     b'4.
     \glissando                                                         %! SC
     
@@ -2196,7 +2084,7 @@ N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
-        % [N CelloMusicVoice measure 215 / measure 8]                  %! COMMENT_MEASURE_NUMBERS
+        % [N CelloMusicVoice measure 215 / measure 8]                  %! _comment_measure_numbers
         b2
         \glissando                                                     %! SC
         
@@ -2206,7 +2094,7 @@ N_CelloMusicVoice = {
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
-        % [N CelloMusicVoice measure 216 / measure 9]                  %! COMMENT_MEASURE_NUMBERS
+        % [N CelloMusicVoice measure 216 / measure 9]                  %! _comment_measure_numbers
         g'2..
         \glissando                                                     %! SC
         
@@ -2228,7 +2116,7 @@ N_CelloMusicVoice = {
         \glissando                                                     %! SC
     }
     
-    % [N CelloMusicVoice measure 217 / measure 10]                     %! COMMENT_MEASURE_NUMBERS
+    % [N CelloMusicVoice measure 217 / measure 10]                     %! _comment_measure_numbers
     d4.
     \glissando                                                         %! SC
     
