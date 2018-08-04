@@ -64,7 +64,6 @@ E_GlobalSkips = {
 %@% ^ \markup \baca-dark-cyan-markup ((1))                                         %! SM42:LOCAL_MEASURE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup [E.1]                                         %! SM3:STAGE_NUMBER_MARKUP
 %@% ^ \markup \baca-dark-cyan-markup "[4'25'']"                                    %! SM28:CLOCK_TIME_MARKUP
-    \stopTextSpan                                                                  %! MMI_1
 %@% - \abjad_dashed_line_with_arrow                                                %! MMI_2
 %@% - \tweak bound-details.left.text \markup {                                     %! MMI_2
 %@%     \concat                                                                    %! MMI_2
