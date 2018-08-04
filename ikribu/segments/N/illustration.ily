@@ -180,7 +180,7 @@ N_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c2
@@ -198,50 +198,50 @@ N_BassClarinetMusicVoice = {
                     }                                                      %! IndicatorCommand
         }                                                                  %! IndicatorCommand
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [N BassClarinetMusicVoice measure 209 / measure 2]                   %! _comment_measure_numbers
     c1..
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 210 / measure 3]                   %! _comment_measure_numbers
     c2.
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 211 / measure 4]                   %! _comment_measure_numbers
     c1
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 212 / measure 5]                   %! _comment_measure_numbers
     c2.
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
 %@% \revert TextScript.extra-offset                                        %! OverrideCommand(2):+ARCH_A_PARTS_BCL
     
     % [N BassClarinetMusicVoice measure 213 / measure 6]                   %! _comment_measure_numbers
     <c e''>1
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 214 / measure 7]                   %! _comment_measure_numbers
     <c e''>2.
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 215 / measure 8]                   %! _comment_measure_numbers
     <c e''>2
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 216 / measure 9]                   %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
     % [N BassClarinetMusicVoice measure 217 / measure 10]                  %! _comment_measure_numbers
     <c e''>1..
-    \repeatTie                                                             %! SC
+    \repeatTie                                                             %! SpannerCommand
     
 }
 
@@ -264,7 +264,7 @@ N_ViolinRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     r4
@@ -695,59 +695,59 @@ N_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         c''8
         \fff                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-                Vn.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+                Vn.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         b''8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
         % [N ViolinMusicVoice measure 209 / measure 2]                 %! _comment_measure_numbers
         g'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g''1
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e''8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N ViolinMusicVoice measure 210 / measure 3]                     %! _comment_measure_numbers
     f'''2.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/9 {
         
         % [N ViolinMusicVoice measure 211 / measure 4]                 %! _comment_measure_numbers
         e'''1
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d''8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
@@ -755,81 +755,81 @@ N_ViolinMusicVoice = {
         % [N ViolinMusicVoice measure 212 / measure 5]                 %! _comment_measure_numbers
         c''8.
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e''8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d''2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N ViolinMusicVoice measure 213 / measure 6]                     %! _comment_measure_numbers
     f''4.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f'2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     a'8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         % [N ViolinMusicVoice measure 214 / measure 7]                 %! _comment_measure_numbers
         g4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
         % [N ViolinMusicVoice measure 215 / measure 8]                 %! _comment_measure_numbers
         b'4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N ViolinMusicVoice measure 216 / measure 9]                     %! _comment_measure_numbers
     g2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     a'8
     [
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f'8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f''8.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d''8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     e''8.
     ]
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d'2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
         % [N ViolinMusicVoice measure 217 / measure 10]                %! _comment_measure_numbers
         c''4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d''1
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e'''2
         
@@ -855,7 +855,7 @@ N_ViolaRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
@@ -1334,146 +1334,146 @@ N_ViolaMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+        \set Staff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         c''2.
         \fff                                                           %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-                Va.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+        \set SingleStringStaffGroup.shortInstrumentName =              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \markup {                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            \hcenter-in                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+                #16                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+                Va.                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            }                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     }
     
     % [N ViolaMusicVoice measure 209 / measure 2]                      %! _comment_measure_numbers
     d'8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     e''1
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d''2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f''8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         % [N ViolaMusicVoice measure 210 / measure 3]                  %! _comment_measure_numbers
         f'4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a'2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
         % [N ViolaMusicVoice measure 211 / measure 4]                  %! _comment_measure_numbers
         a4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'8
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a'8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f'4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N ViolaMusicVoice measure 212 / measure 5]                      %! _comment_measure_numbers
     f''2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d''8
     [
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     e''8
     ]
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/9 {
         
         % [N ViolaMusicVoice measure 213 / measure 6]                  %! _comment_measure_numbers
         d'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c''4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
         
         % [N ViolaMusicVoice measure 214 / measure 7]                  %! _comment_measure_numbers
         d''2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e'''8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f'''4.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N ViolaMusicVoice measure 215 / measure 8]                      %! _comment_measure_numbers
     e''2
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
         % [N ViolaMusicVoice measure 216 / measure 9]                  %! _comment_measure_numbers
         g''8
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b''8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c''2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b''4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
         % [N ViolaMusicVoice measure 217 / measure 10]                 %! _comment_measure_numbers
         a'2.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g'4.
         
@@ -1501,7 +1501,7 @@ N_CelloRHMusicVoice = {
         \clef "percussion"                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)      %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override RHStaff.Clef.color = ##f                             %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set RHStaff.forceClef = ##t                                   %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+        \set RHStaff.forceClef = ##t                                   %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4) %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4) %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
         r4
@@ -1985,143 +1985,143 @@ N_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     a,8
     \fff                                                               %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     [
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            Vc.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Vc.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     g,8.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     a8
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     f16
     ]
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/15 {
         
         % [N CelloMusicVoice measure 209 / measure 2]                  %! _comment_measure_numbers
         f'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/8 {
         
         % [N CelloMusicVoice measure 210 / measure 3]                  %! _comment_measure_numbers
         d8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N CelloMusicVoice measure 211 / measure 4]                      %! _comment_measure_numbers
     d'1
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         % [N CelloMusicVoice measure 212 / measure 5]                  %! _comment_measure_numbers
         e''8
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f''8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g'8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g4
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/10 {
         
         % [N CelloMusicVoice measure 213 / measure 6]                  %! _comment_measure_numbers
         b2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         a8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         b'2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c'8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N CelloMusicVoice measure 214 / measure 7]                      %! _comment_measure_numbers
     b'4.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     a4.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
         
         % [N CelloMusicVoice measure 215 / measure 8]                  %! _comment_measure_numbers
         b2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         g8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 14/16 {
         
         % [N CelloMusicVoice measure 216 / measure 9]                  %! _comment_measure_numbers
         g'2..
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e'8
         [
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         f''8.
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         e''8
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         d'8.
         ]
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
         
         c'2
-        \glissando                                                     %! SC
+        \glissando                                                     %! SpannerCommand
     }
     
     % [N CelloMusicVoice measure 217 / measure 10]                     %! _comment_measure_numbers
     d4.
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     e'1
-    \glissando                                                         %! SC
+    \glissando                                                         %! SpannerCommand
     
     d'4.
     

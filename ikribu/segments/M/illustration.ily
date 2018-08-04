@@ -770,7 +770,7 @@ M_BassClarinetMusicVoice = {
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -778,12 +778,12 @@ M_BassClarinetMusicVoice = {
     ^ \markup \baca-reapplied-indicator-markup "[“B. cl.”]"                %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“BassClarinet”)"          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            "B. cl."                                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M BassClarinetMusicVoice measure 177 / measure 2]                   %! _comment_measure_numbers
@@ -811,19 +811,19 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 180 / measure 5]                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
     \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-%%% \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_180
-%%% \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_180
+%%% \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_180
+%%% \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_180
     
     % [M BassClarinetMusicVoice measure 181 / measure 6]                   %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                       %! SM_21
-    \startStaff                                                            %! SM_21
+    \stopStaff                                                             %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
+    \startStaff                                                            %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M BassClarinetMusicVoice measure 182 / measure 7]                   %! _comment_measure_numbers
@@ -832,18 +832,18 @@ M_BassClarinetMusicVoice = {
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [M BassClarinetMusicVoice measure 183 / measure 8]                   %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
-%%% \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_183
-%%% \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_183
+%%% \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_183
+%%% \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_183
     
     % [M BassClarinetMusicVoice measure 184 / measure 9]                   %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                       %! SM_21
-    \startStaff                                                            %! SM_21
+    \stopStaff                                                             %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
+    \startStaff                                                            %! _style_fermata_measures(2)
     R1 * 1
     
     % [M BassClarinetMusicVoice measure 185 / measure 10]                  %! _comment_measure_numbers
@@ -871,19 +871,19 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 188 / measure 13]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
     \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_188
-    \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_188
+    \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_188
+    \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_188
     
     % [M BassClarinetMusicVoice measure 189 / measure 14]                  %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                       %! SM_21
-    \startStaff                                                            %! SM_21
+    \stopStaff                                                             %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
+    \startStaff                                                            %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M BassClarinetMusicVoice measure 190 / measure 15]                  %! _comment_measure_numbers
@@ -911,19 +911,19 @@ M_BassClarinetMusicVoice = {
     
     % [M BassClarinetMusicVoice measure 193 / measure 18]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
     \!                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-%%% \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_193
-%%% \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_193
+%%% \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_193
+%%% \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_193
     
     % [M BassClarinetMusicVoice measure 194 / measure 19]                  %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                       %! SM_21
-    \startStaff                                                            %! SM_21
+    \stopStaff                                                             %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
+    \startStaff                                                            %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M BassClarinetMusicVoice measure 195 / measure 20]                  %! _comment_measure_numbers
@@ -932,25 +932,25 @@ M_BassClarinetMusicVoice = {
     \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
     % [M BassClarinetMusicVoice measure 196 / measure 21]                  %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
-%%% \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_196
-%%% \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_196
+%%% \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_196
+%%% \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_196
     
     % [M BassClarinetMusicVoice measure 197 / measure 22]                  %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                       %! SM_21
-    \startStaff                                                            %! SM_21
+    \stopStaff                                                             %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                       %! _style_fermata_measures(2)
+    \startStaff                                                            %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M BassClarinetMusicVoice measure 198 / measure 23]                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs!\breve
     \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    - \tweak color #blue                                                   %! SM_43 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     % [M BassClarinetMusicVoice measure 199 / measure 24]                  %! _comment_measure_numbers
@@ -988,13 +988,13 @@ M_BassClarinetMusicVoice = {
     \repeatTie
     
     % [M BassClarinetMusicVoice measure 207 / measure 32]                  %! _comment_measure_numbers
-    \stopStaff                                                             %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                       %! SM_20
-    \startStaff                                                            %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! SM_20
+    \stopStaff                                                             %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                       %! _style_fermata_measures(1)
+    \startStaff                                                            %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! _style_fermata_measures(1)
     R1 * 1/4
-    \once \override Score.BarLine.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_207
-    \once \override Score.SpanBar.transparent = ##t                        %! SM22:EOL_FERMATA:MEASURE_207
+    \once \override Score.BarLine.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_207
+    \once \override Score.SpanBar.transparent = ##t                        %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_207
     
 }
 
@@ -1014,7 +1014,7 @@ M_ViolinRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -1031,30 +1031,30 @@ M_ViolinRHMusicVoice = {
     R1 * 1/2
     
     % [M ViolinRHMusicVoice measure 180 / measure 5]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 181 / measure 6]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M ViolinRHMusicVoice measure 182 / measure 7]                   %! _comment_measure_numbers
     R1 * 3/4
     
     % [M ViolinRHMusicVoice measure 183 / measure 8]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 184 / measure 9]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1
     
     % [M ViolinRHMusicVoice measure 185 / measure 10]                  %! _comment_measure_numbers
@@ -1067,15 +1067,15 @@ M_ViolinRHMusicVoice = {
     R1 * 3/4
     
     % [M ViolinRHMusicVoice measure 188 / measure 13]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 189 / measure 14]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M ViolinRHMusicVoice measure 190 / measure 15]                  %! _comment_measure_numbers
@@ -1088,30 +1088,30 @@ M_ViolinRHMusicVoice = {
     R1 * 2
     
     % [M ViolinRHMusicVoice measure 193 / measure 18]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 194 / measure 19]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M ViolinRHMusicVoice measure 195 / measure 20]                  %! _comment_measure_numbers
     R1 * 3/4
     
     % [M ViolinRHMusicVoice measure 196 / measure 21]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinRHMusicVoice measure 197 / measure 22]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M ViolinRHMusicVoice measure 198 / measure 23]                  %! _comment_measure_numbers
@@ -1142,9 +1142,9 @@ M_ViolinRHMusicVoice = {
     R1 * 1
     
     % [M ViolinRHMusicVoice measure 207 / measure 32]                  %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -1176,7 +1176,7 @@ M_ViolinMusicVoice = {
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2.
@@ -1190,12 +1190,12 @@ M_ViolinMusicVoice = {
                 "grainfall (3)"                                        %! IndicatorCommand
         }                                                              %! IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            Vn.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Vn.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
@@ -1250,16 +1250,16 @@ M_ViolinMusicVoice = {
     }
     
     % [M ViolinMusicVoice measure 180 / measure 5]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 181 / measure 6]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     c'1..
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
@@ -1294,16 +1294,16 @@ M_ViolinMusicVoice = {
     }
     
     % [M ViolinMusicVoice measure 183 / measure 8]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 184 / measure 9]                     %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     c'1
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
@@ -1383,16 +1383,16 @@ M_ViolinMusicVoice = {
     }
     
     % [M ViolinMusicVoice measure 188 / measure 13]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 189 / measure 14]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     c'2
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
@@ -1454,16 +1454,16 @@ M_ViolinMusicVoice = {
     }
     
     % [M ViolinMusicVoice measure 193 / measure 18]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 194 / measure 19]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     c'1..
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
@@ -1498,16 +1498,16 @@ M_ViolinMusicVoice = {
     }
     
     % [M ViolinMusicVoice measure 196 / measure 21]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolinMusicVoice measure 197 / measure 22]                    %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     c'2
     \baca_effort_f                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                        %! IndicatorCommand
@@ -1637,9 +1637,9 @@ M_ViolinMusicVoice = {
     R1 * 1
     
     % [M ViolinMusicVoice measure 207 / measure 32]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     \revert DynamicLineSpanner.staff-padding                           %! OverrideCommand(2)
     \revert TupletBracket.staff-padding                                %! OverrideCommand(2)
@@ -1664,7 +1664,7 @@ M_ViolaRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -1681,30 +1681,30 @@ M_ViolaRHMusicVoice = {
     R1 * 1/2
     
     % [M ViolaRHMusicVoice measure 180 / measure 5]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 181 / measure 6]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M ViolaRHMusicVoice measure 182 / measure 7]                    %! _comment_measure_numbers
     R1 * 3/4
     
     % [M ViolaRHMusicVoice measure 183 / measure 8]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 184 / measure 9]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1
     
     % [M ViolaRHMusicVoice measure 185 / measure 10]                   %! _comment_measure_numbers
@@ -1717,15 +1717,15 @@ M_ViolaRHMusicVoice = {
     R1 * 3/4
     
     % [M ViolaRHMusicVoice measure 188 / measure 13]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 189 / measure 14]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M ViolaRHMusicVoice measure 190 / measure 15]                   %! _comment_measure_numbers
@@ -1738,30 +1738,30 @@ M_ViolaRHMusicVoice = {
     R1 * 2
     
     % [M ViolaRHMusicVoice measure 193 / measure 18]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 194 / measure 19]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M ViolaRHMusicVoice measure 195 / measure 20]                   %! _comment_measure_numbers
     R1 * 3/4
     
     % [M ViolaRHMusicVoice measure 196 / measure 21]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaRHMusicVoice measure 197 / measure 22]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M ViolaRHMusicVoice measure 198 / measure 23]                   %! _comment_measure_numbers
@@ -1792,9 +1792,9 @@ M_ViolaRHMusicVoice = {
     R1 * 1
     
     % [M ViolaRHMusicVoice measure 207 / measure 32]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -1826,7 +1826,7 @@ M_ViolaMusicVoice = {
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4) %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -1834,12 +1834,12 @@ M_ViolaMusicVoice = {
     ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            Va.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Va.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)               %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M ViolaMusicVoice measure 177 / measure 2]                      %! _comment_measure_numbers
@@ -1890,15 +1890,15 @@ M_ViolaMusicVoice = {
     ]
     
     % [M ViolaMusicVoice measure 180 / measure 5]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 181 / measure 6]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1921,15 +1921,15 @@ M_ViolaMusicVoice = {
     }
     
     % [M ViolaMusicVoice measure 183 / measure 8]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 184 / measure 9]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1
     
     % [M ViolaMusicVoice measure 185 / measure 10]                     %! _comment_measure_numbers
@@ -1972,15 +1972,15 @@ M_ViolaMusicVoice = {
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     
     % [M ViolaMusicVoice measure 188 / measure 13]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 189 / measure 14]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -2035,15 +2035,15 @@ M_ViolaMusicVoice = {
     -\accent                                                           %! IndicatorCommand
     
     % [M ViolaMusicVoice measure 193 / measure 18]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 194 / measure 19]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2066,15 +2066,15 @@ M_ViolaMusicVoice = {
     }
     
     % [M ViolaMusicVoice measure 196 / measure 21]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M ViolaMusicVoice measure 197 / measure 22]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 1                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 1                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
@@ -2158,9 +2158,9 @@ M_ViolaMusicVoice = {
     R1 * 1
     
     % [M ViolaMusicVoice measure 207 / measure 32]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     \revert DynamicLineSpanner.staff-padding                           %! OverrideCommand(2)
     \revert TupletBracket.staff-padding                                %! OverrideCommand(2)
@@ -2185,7 +2185,7 @@ M_CelloRHMusicVoice = {
     \clef "percussion"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)          %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                 %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:SM33:_reapply_persistent_indicators(3)
+    \set RHStaff.forceClef = ##t                                       %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)   %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)     %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     R1 * 3/4
@@ -2202,30 +2202,30 @@ M_CelloRHMusicVoice = {
     R1 * 1/2
     
     % [M CelloRHMusicVoice measure 180 / measure 5]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 181 / measure 6]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M CelloRHMusicVoice measure 182 / measure 7]                    %! _comment_measure_numbers
     R1 * 3/4
     
     % [M CelloRHMusicVoice measure 183 / measure 8]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 184 / measure 9]                    %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1
     
     % [M CelloRHMusicVoice measure 185 / measure 10]                   %! _comment_measure_numbers
@@ -2238,15 +2238,15 @@ M_CelloRHMusicVoice = {
     R1 * 3/4
     
     % [M CelloRHMusicVoice measure 188 / measure 13]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 189 / measure 14]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M CelloRHMusicVoice measure 190 / measure 15]                   %! _comment_measure_numbers
@@ -2259,30 +2259,30 @@ M_CelloRHMusicVoice = {
     R1 * 2
     
     % [M CelloRHMusicVoice measure 193 / measure 18]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 194 / measure 19]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 7/4
     
     % [M CelloRHMusicVoice measure 195 / measure 20]                   %! _comment_measure_numbers
     R1 * 3/4
     
     % [M CelloRHMusicVoice measure 196 / measure 21]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloRHMusicVoice measure 197 / measure 22]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_21
-    \once \override RHStaff.StaffSymbol.line-count = 1                 %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override RHStaff.StaffSymbol.line-count = 1                 %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     R1 * 1/2
     
     % [M CelloRHMusicVoice measure 198 / measure 23]                   %! _comment_measure_numbers
@@ -2313,9 +2313,9 @@ M_CelloRHMusicVoice = {
     R1 * 1
     
     % [M CelloRHMusicVoice measure 207 / measure 32]                   %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override RHStaff.StaffSymbol.line-count = 0                 %! SM_20
-    \startStaff                                                        %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override RHStaff.StaffSymbol.line-count = 0                 %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
@@ -2347,7 +2347,7 @@ M_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)       %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fqf''!2.
     \sfz                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2357,21 +2357,21 @@ M_CelloMusicVoice = {
     ^ \markup { pizz. }                                                %! IndicatorCommand
     _ \markup { III }                                                  %! IndicatorCommand
     \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab) %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-            Vc.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
-        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:SM34:-PARTS:_reapply_persistent_indicators(3)
+    \set SingleStringStaffGroup.shortInstrumentName =                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+    \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        \hcenter-in                                                    %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            #16                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Vc.                                                        %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+        }                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 177 / measure 2]                      %! _comment_measure_numbers
-    \ottava #-1                                                        %! SC
+    \ottava #-1                                                        %! SpannerCommand
     \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     c,,1
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #'DeepPink1                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2394,13 +2394,13 @@ M_CelloMusicVoice = {
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
-    \ottava #0                                                         %! SC
+    \ottava #0                                                         %! SpannerCommand
     
     % [M CelloMusicVoice measure 180 / measure 5]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloMusicVoice measure 181 / measure 6]                      %! _comment_measure_numbers
@@ -2410,11 +2410,11 @@ M_CelloMusicVoice = {
     \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     g''1..
     \sfz                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
@@ -2423,23 +2423,23 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 182 / measure 7]                      %! _comment_measure_numbers
-    \ottava #-1                                                        %! SC
+    \ottava #-1                                                        %! SpannerCommand
     \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c,,2.
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { XP }                                                   %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    \ottava #0                                                         %! SC
+    \ottava #0                                                         %! SpannerCommand
     
     % [M CelloMusicVoice measure 183 / measure 8]                      %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloMusicVoice measure 184 / measure 9]                      %! _comment_measure_numbers
@@ -2449,11 +2449,11 @@ M_CelloMusicVoice = {
     \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     fqf''!1
     \baca_sffz                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
@@ -2462,11 +2462,11 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 185 / measure 10]                     %! _comment_measure_numbers
-    \ottava #-1                                                        %! SC
+    \ottava #-1                                                        %! SpannerCommand
     \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c,,2.
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2490,13 +2490,13 @@ M_CelloMusicVoice = {
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
-    \ottava #0                                                         %! SC
+    \ottava #0                                                         %! SpannerCommand
     
     % [M CelloMusicVoice measure 188 / measure 13]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloMusicVoice measure 189 / measure 14]                     %! _comment_measure_numbers
@@ -2506,11 +2506,11 @@ M_CelloMusicVoice = {
     \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     g''2
     \baca_sffz                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
@@ -2519,11 +2519,11 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 190 / measure 15]                     %! _comment_measure_numbers
-    \ottava #-1                                                        %! SC
+    \ottava #-1                                                        %! SpannerCommand
     \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c,,1..
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2547,13 +2547,13 @@ M_CelloMusicVoice = {
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
-    \ottava #0                                                         %! SC
+    \ottava #0                                                         %! SpannerCommand
     
     % [M CelloMusicVoice measure 193 / measure 18]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloMusicVoice measure 194 / measure 19]                     %! _comment_measure_numbers
@@ -2563,11 +2563,11 @@ M_CelloMusicVoice = {
     \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     a''1..
     \baca_sfffz                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
@@ -2576,23 +2576,23 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 195 / measure 20]                     %! _comment_measure_numbers
-    \ottava #-1                                                        %! SC
+    \ottava #-1                                                        %! SpannerCommand
     \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c,,2.
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { XP }                                                   %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    \ottava #0                                                         %! SC
+    \ottava #0                                                         %! SpannerCommand
     
     % [M CelloMusicVoice measure 196 / measure 21]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
     % [M CelloMusicVoice measure 197 / measure 22]                     %! _comment_measure_numbers
@@ -2602,11 +2602,11 @@ M_CelloMusicVoice = {
     \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)  %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \stopStaff                                                         %! SM_21
-    \once \override Staff.StaffSymbol.line-count = 5                   %! SM_21
-    \startStaff                                                        %! SM_21
+    \stopStaff                                                         %! _style_fermata_measures(2)
+    \once \override Staff.StaffSymbol.line-count = 5                   %! _style_fermata_measures(2)
+    \startStaff                                                        %! _style_fermata_measures(2)
     cqs'''!2
     \baca_sfffz                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     -\laissezVibrer                                                    %! IndicatorCommand
@@ -2615,11 +2615,11 @@ M_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)            %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [M CelloMusicVoice measure 198 / measure 23]                     %! _comment_measure_numbers
-    \ottava #-1                                                        %! SC
+    \ottava #-1                                                        %! SpannerCommand
     \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                   %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:SM33:IndicatorCommand
+    \set Staff.forceClef = ##t                                         %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)       %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c,,\breve
     \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2651,7 +2651,7 @@ M_CelloMusicVoice = {
     \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                      %! PiecewiseIndicatorCommand(2)
-    \ottava #0                                                         %! SC
+    \ottava #0                                                         %! SpannerCommand
     
     % [M CelloMusicVoice measure 203 / measure 28]                     %! _comment_measure_numbers
     R1 * 7/4
@@ -2666,10 +2666,10 @@ M_CelloMusicVoice = {
     R1 * 1
     
     % [M CelloMusicVoice measure 207 / measure 32]                     %! _comment_measure_numbers
-    \stopStaff                                                         %! SM_20
-    \once \override Staff.StaffSymbol.line-count = 0                   %! SM_20
-    \startStaff                                                        %! SM_20
-    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! SM_20
+    \stopStaff                                                         %! _style_fermata_measures(1)
+    \once \override Staff.StaffSymbol.line-count = 0                   %! _style_fermata_measures(1)
+    \startStaff                                                        %! _style_fermata_measures(1)
+    \once \override Staff.BarLine.bar-extent = #'(-2 . 2)              %! _style_fermata_measures(1)
     R1 * 1/4
     
 }
