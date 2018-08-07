@@ -1215,7 +1215,7 @@ M_ViolinMusicVoice = {
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
@@ -1225,13 +1225,13 @@ M_ViolinMusicVoice = {
         
         % [M ViolinMusicVoice measure 178 / measure 3]                                             %! _comment_measure_numbers
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
@@ -1241,7 +1241,7 @@ M_ViolinMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
@@ -1284,13 +1284,13 @@ M_ViolinMusicVoice = {
             }                                                                                      %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [M ViolinMusicVoice measure 183 / measure 8]                                                 %! _comment_measure_numbers
@@ -1330,13 +1330,13 @@ M_ViolinMusicVoice = {
         \<                                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
@@ -1346,19 +1346,19 @@ M_ViolinMusicVoice = {
         
         % [M ViolinMusicVoice measure 186 / measure 11]                                            %! _comment_measure_numbers
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1368,13 +1368,13 @@ M_ViolinMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
@@ -1419,7 +1419,7 @@ M_ViolinMusicVoice = {
         \<                                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'1
         :32                                                                                        %! IndicatorCommand
@@ -1429,13 +1429,13 @@ M_ViolinMusicVoice = {
         
         % [M ViolinMusicVoice measure 191 / measure 16]                                            %! _comment_measure_numbers
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'1
         :32                                                                                        %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
@@ -1445,7 +1445,7 @@ M_ViolinMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
@@ -1488,13 +1488,13 @@ M_ViolinMusicVoice = {
             }                                                                                      %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [M ViolinMusicVoice measure 196 / measure 21]                                                %! _comment_measure_numbers
@@ -1534,13 +1534,13 @@ M_ViolinMusicVoice = {
         \<                                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
@@ -1550,19 +1550,19 @@ M_ViolinMusicVoice = {
         
         % [M ViolinMusicVoice measure 199 / measure 24]                                            %! _comment_measure_numbers
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/5 {
@@ -1572,13 +1572,13 @@ M_ViolinMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
@@ -1588,19 +1588,19 @@ M_ViolinMusicVoice = {
         
         % [M ViolinMusicVoice measure 201 / measure 26]                                            %! _comment_measure_numbers
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -1610,13 +1610,13 @@ M_ViolinMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
@@ -1851,26 +1851,26 @@ M_ViolaMusicVoice = {
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'4
     :32                                                                                            %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     % [M ViolaMusicVoice measure 178 / measure 3]                                                  %! _comment_measure_numbers
     c'4
     :32                                                                                            %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'4
     :32                                                                                            %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     % [M ViolaMusicVoice measure 179 / measure 4]                                                  %! _comment_measure_numbers
     c'8
@@ -1878,7 +1878,7 @@ M_ViolaMusicVoice = {
     [
     
     c'8
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'8
     :32                                                                                            %! IndicatorCommand
@@ -1886,7 +1886,7 @@ M_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'8
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     ]
     
     % [M ViolaMusicVoice measure 180 / measure 5]                                                  %! _comment_measure_numbers
@@ -1908,13 +1908,13 @@ M_ViolaMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
@@ -1941,7 +1941,7 @@ M_ViolaMusicVoice = {
     \<                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'4
     :32                                                                                            %! IndicatorCommand
@@ -1950,13 +1950,13 @@ M_ViolaMusicVoice = {
         
         % [M ViolaMusicVoice measure 186 / measure 11]                                             %! _comment_measure_numbers
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [M ViolaMusicVoice measure 187 / measure 12]                                                 %! _comment_measure_numbers
@@ -1964,7 +1964,7 @@ M_ViolaMusicVoice = {
     :32                                                                                            %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
@@ -1994,13 +1994,13 @@ M_ViolaMusicVoice = {
         \<                                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/8 {
@@ -2010,13 +2010,13 @@ M_ViolaMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [M ViolaMusicVoice measure 192 / measure 17]                                                 %! _comment_measure_numbers
@@ -2024,7 +2024,7 @@ M_ViolaMusicVoice = {
     :32                                                                                            %! IndicatorCommand
     
     c'2
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'2
     :32                                                                                            %! IndicatorCommand
@@ -2032,7 +2032,7 @@ M_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     % [M ViolaMusicVoice measure 193 / measure 18]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -2053,13 +2053,13 @@ M_ViolaMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
         :32                                                                                        %! IndicatorCommand
@@ -2088,7 +2088,7 @@ M_ViolaMusicVoice = {
         \<                                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'1
         :32                                                                                        %! IndicatorCommand
@@ -2098,13 +2098,13 @@ M_ViolaMusicVoice = {
         
         % [M ViolaMusicVoice measure 199 / measure 24]                                             %! _comment_measure_numbers
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'1
         :32                                                                                        %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
@@ -2114,7 +2114,7 @@ M_ViolaMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
@@ -2124,13 +2124,13 @@ M_ViolaMusicVoice = {
         
         % [M ViolaMusicVoice measure 201 / measure 26]                                             %! _comment_measure_numbers
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
         :32                                                                                        %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [M ViolaMusicVoice measure 202 / measure 27]                                                 %! _comment_measure_numbers
@@ -2138,7 +2138,7 @@ M_ViolaMusicVoice = {
     :32                                                                                            %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
@@ -2351,7 +2351,7 @@ M_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fqf''!2.                                                                                       %! baca_make_repeat_tied_notes
     \sfz                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"                                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"                                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
@@ -2417,7 +2417,7 @@ M_CelloMusicVoice = {
     \startStaff                                                                                    %! _style_fermata_measures(2)
     g''1..                                                                                         %! baca_make_repeat_tied_notes
     \sfz                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
     _ \markup { III }                                                                              %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2456,7 +2456,7 @@ M_CelloMusicVoice = {
     \startStaff                                                                                    %! _style_fermata_measures(2)
     fqf''!1                                                                                        %! baca_make_repeat_tied_notes
     \baca_sffz                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
     _ \markup { III }                                                                              %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2513,7 +2513,7 @@ M_CelloMusicVoice = {
     \startStaff                                                                                    %! _style_fermata_measures(2)
     g''2                                                                                           %! baca_make_repeat_tied_notes
     \baca_sffz                                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
     _ \markup { III }                                                                              %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2570,7 +2570,7 @@ M_CelloMusicVoice = {
     \startStaff                                                                                    %! _style_fermata_measures(2)
     a''1..                                                                                         %! baca_make_repeat_tied_notes
     \baca_sfffz                                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
     _ \markup { III }                                                                              %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2609,7 +2609,7 @@ M_CelloMusicVoice = {
     \startStaff                                                                                    %! _style_fermata_measures(2)
     cqs'''!2                                                                                       %! baca_make_repeat_tied_notes
     \baca_sfffz                                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
     _ \markup { III }                                                                              %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
