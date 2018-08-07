@@ -145,7 +145,7 @@ maker(
     baca.hairpin(
         'p < mp >',
         final_hairpin=False,
-        piece_selector=baca.mgroups(),
+        piece_selector=baca.cmgroups(),
         ),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
