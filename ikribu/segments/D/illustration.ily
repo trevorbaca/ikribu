@@ -256,7 +256,7 @@ D_BassClarinetMusicVoice = {
 
 
 D_BassClarinetMusicStaff = {
-    \context Voice = "BassClarinetMusicVoice"
+    \context Voice = "BassClarinetMusicVoice"                                                      %! ScoreTemplate
     \D_BassClarinetMusicVoice                                                                      %! extern
 }
 
@@ -312,7 +312,7 @@ D_ViolinRHMusicVoice = {
 
 
 D_ViolinRHMusicStaff = {
-    \context Voice = "ViolinRHMusicVoice"
+    \context Voice = "ViolinRHMusicVoice"                                                          %! ScoreTemplate
     \D_ViolinRHMusicVoice                                                                          %! extern
 }
 
@@ -387,7 +387,7 @@ D_ViolinMusicVoice = {
 
 
 D_ViolinMusicStaff = {
-    \context Voice = "ViolinMusicVoice"
+    \context Voice = "ViolinMusicVoice"                                                            %! ScoreTemplate
     \D_ViolinMusicVoice                                                                            %! extern
 }
 
@@ -443,7 +443,7 @@ D_ViolaRHMusicVoice = {
 
 
 D_ViolaRHMusicStaff = {
-    \context Voice = "ViolaRHMusicVoice"
+    \context Voice = "ViolaRHMusicVoice"                                                           %! ScoreTemplate
     \D_ViolaRHMusicVoice                                                                           %! extern
 }
 
@@ -518,7 +518,7 @@ D_ViolaMusicVoice = {
 
 
 D_ViolaMusicStaff = {
-    \context Voice = "ViolaMusicVoice"
+    \context Voice = "ViolaMusicVoice"                                                             %! ScoreTemplate
     \D_ViolaMusicVoice                                                                             %! extern
 }
 
@@ -954,7 +954,7 @@ D_CelloRHMusicVoice = {
 
 
 D_CelloRHMusicStaff = {
-    \context Voice = "CelloRHMusicVoice"
+    \context Voice = "CelloRHMusicVoice"                                                           %! ScoreTemplate
     \D_CelloRHMusicVoice                                                                           %! extern
 }
 
@@ -1148,6 +1148,6 @@ D_CelloMusicVoice = {
 
 
 D_CelloMusicStaff = {
-    \context Voice = "CelloMusicVoice"
+    \context Voice = "CelloMusicVoice"                                                             %! ScoreTemplate
     \D_CelloMusicVoice                                                                             %! extern
 }
