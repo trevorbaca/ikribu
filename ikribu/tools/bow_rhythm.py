@@ -16,6 +16,7 @@ def bow_rhythm(
         denominators=[4],
         extra_counts_per_division=extra_counts_per_division,
         logical_tie_masks=ltmask,
+        tag='bow_rhythm',
         tuplet_specifier=rmakers.TupletSpecifier(
             extract_trivial=True,
             force_fraction=True,

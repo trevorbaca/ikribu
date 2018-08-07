@@ -4,6 +4,9 @@ from abjadext import rmakers
 
 
 def glissando_rhythm(rotation_1=None, rotation_2=None):
+    """
+    Makes glissando rhythm.
+    """
     counts = abjad.sequence([2, 3, 2, 3, 14, 16, 14, 16])
     counts = counts.rotate(n=rotation_1)
     extra_counts_per_division = abjad.sequence([2, 4, 0])
@@ -12,6 +15,7 @@ def glissando_rhythm(rotation_1=None, rotation_2=None):
         )
     rhythm_maker = rmakers.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
+        tag='glissando_rhythm',
         talea=rmakers.Talea(
             counts=counts,
             denominator=16,

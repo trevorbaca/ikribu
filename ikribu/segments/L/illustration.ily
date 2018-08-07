@@ -760,8 +760,8 @@ L_ViolinRHMusicStaff = {
 
 
 L_ViolinMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/20 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 16/20 {                                                                                 %! clb_rhythm
         
         % [L ViolinMusicVoice measure 143 / measure 1]                                             %! _comment_measure_numbers
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -780,12 +780,12 @@ L_ViolinMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'8
+        c'8                                                                                        %! clb_rhythm
         \baca_effort_mp                                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         - \staccato                                                                                %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"                                    %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [
+        [                                                                                          %! clb_rhythm
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab)            %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -795,511 +795,511 @@ L_ViolinMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/18 {
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 14/18 {                                                                                 %! clb_rhythm
         
         % [L ViolinMusicVoice measure 144 / measure 2]                                             %! _comment_measure_numbers
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/10 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 145 / measure 3]                                             %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/12 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 146 / measure 4]                                             %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/12 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 147 / measure 5]                                             %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [L ViolinMusicVoice measure 148 / measure 6]                                                 %! _comment_measure_numbers
-    c'8
+    c'8                                                                                            %! clb_rhythm
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! clb_rhythm
     
-    c'8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    d'8
+    c'8                                                                                            %! clb_rhythm
     - \staccato                                                                                    %! IndicatorCommand
     
-    d'8
+    d'8                                                                                            %! clb_rhythm
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/18 {
+    
+    d'8                                                                                            %! clb_rhythm
+    - \staccato                                                                                    %! IndicatorCommand
+    ]                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 14/18 {                                                                                 %! clb_rhythm
         
         % [L ViolinMusicVoice measure 149 / measure 7]                                             %! _comment_measure_numbers
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/10 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 150 / measure 8]                                             %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/12 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 151 / measure 9]                                             %! _comment_measure_numbers
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/10 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 152 / measure 10]                                            %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+        
+        b8                                                                                         %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/12 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 153 / measure 11]                                            %! _comment_measure_numbers
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/10 {                                                                                  %! clb_rhythm
         
         % [L ViolinMusicVoice measure 154 / measure 12]                                            %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [L ViolinMusicVoice measure 155 / measure 13]                                                %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
@@ -1307,214 +1307,214 @@ L_ViolinMusicVoice = {
     \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
     \override Hairpin.shorten-pair = #'(2.25 . 0)                                                  %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'8
+    c'8                                                                                            %! clb_rhythm
     \baca_effort_mp                                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak to-barline ##t                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak circled-tip ##t                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    [
+    [                                                                                              %! clb_rhythm
     
-    d'8
+    d'8                                                                                            %! clb_rhythm
     - \staccato                                                                                    %! IndicatorCommand
     
-    b8
+    b8                                                                                             %! clb_rhythm
     - \staccato                                                                                    %! IndicatorCommand
     
-    d'8
+    d'8                                                                                            %! clb_rhythm
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/18 {
+    ]                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 14/18 {                                                                                 %! clb_rhythm
         
         % [L ViolinMusicVoice measure 156 / measure 14]                                            %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/18 {
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 14/18 {                                                                                 %! clb_rhythm
         
         % [L ViolinMusicVoice measure 157 / measure 15]                                            %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/20 {
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 16/20 {                                                                                 %! clb_rhythm
         
         % [L ViolinMusicVoice measure 158 / measure 16]                                            %! _comment_measure_numbers
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b8
+        b8                                                                                         %! clb_rhythm
         \!                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                                                %! IndicatorCommand
-        ]
+        ]                                                                                          %! clb_rhythm
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Hairpin.shorten-pair                                                               %! OverrideCommand(2)
-    }
+    }                                                                                              %! clb_rhythm
     
     % [L ViolinMusicVoice measure 159 / measure 17]                                                %! _comment_measure_numbers
     R1 * 7/4                                                                                       %! _make_measure_silences
@@ -1527,8 +1527,8 @@ L_ViolinMusicVoice = {
     
     % [L ViolinMusicVoice measure 162 / measure 20]                                                %! _comment_measure_numbers
     R1 * 2                                                                                         %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 163 / measure 21]                                            %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
@@ -1536,7 +1536,7 @@ L_ViolinMusicVoice = {
         \override TextScript.padding = #2.5                                                        %! OverrideCommand(1)
         \override TextScript.parent-alignment-X = #0                                               %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         \mp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup {                                                                                %! IndicatorCommand
@@ -1548,190 +1548,190 @@ L_ViolinMusicVoice = {
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 164 / measure 22]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 165 / measure 23]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \mp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolinMusicVoice measure 166 / measure 24]                                                %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     :32                                                                                            %! IndicatorCommand
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 167 / measure 25]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 8/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 168 / measure 26]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolinMusicVoice measure 169 / measure 27]                                                %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     :32                                                                                            %! IndicatorCommand
     \mf                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 170 / measure 28]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 171 / measure 29]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 2/3 {                                                                                   %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 172 / measure 30]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 173 / measure 31]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolinMusicVoice measure 174 / measure 32]                                                %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \accent                                                                                      %! IndicatorCommand
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \accent                                                                                      %! IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
@@ -1879,8 +1879,8 @@ L_ViolaRHMusicStaff = {
 
 
 L_ViolaMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 16/18 {                                                                                 %! clb_rhythm
         
         % [L ViolaMusicVoice measure 143 / measure 1]                                              %! _comment_measure_numbers
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1899,12 +1899,12 @@ L_ViolaMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'8
+        c'8                                                                                        %! clb_rhythm
         \baca_effort_mp                                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         - \staccato                                                                                %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [
+        [                                                                                          %! clb_rhythm
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab)            %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1914,180 +1914,180 @@ L_ViolaMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 14/16 {                                                                                 %! clb_rhythm
         
         % [L ViolaMusicVoice measure 144 / measure 2]                                              %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/8 {                                                                                   %! clb_rhythm
         
         % [L ViolaMusicVoice measure 145 / measure 3]                                              %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/10 {                                                                                  %! clb_rhythm
         
         % [L ViolaMusicVoice measure 146 / measure 4]                                              %! _comment_measure_numbers
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+        
+        b8                                                                                         %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/10 {                                                                                  %! clb_rhythm
         
         % [L ViolaMusicVoice measure 147 / measure 5]                                              %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
@@ -2095,155 +2095,155 @@ L_ViolaMusicVoice = {
         \once \override DynamicText.X-extent = #'(0 . 0)                                           %! OverrideCommand(1)
         \override Hairpin.shorten-pair = #'(2.25 . 0)                                              %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d'8
+        d'8                                                                                        %! clb_rhythm
         \baca_effort_mp                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak to-barline ##t                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak circled-tip ##t                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 4/6 {                                                                                   %! clb_rhythm
         
         % [L ViolaMusicVoice measure 148 / measure 6]                                              %! _comment_measure_numbers
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 14/16 {                                                                                 %! clb_rhythm
         
         % [L ViolaMusicVoice measure 149 / measure 7]                                              %! _comment_measure_numbers
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/8 {                                                                                   %! clb_rhythm
         
         % [L ViolaMusicVoice measure 150 / measure 8]                                              %! _comment_measure_numbers
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b8
+        b8                                                                                         %! clb_rhythm
         \!                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                                                %! IndicatorCommand
-        ]
+        ]                                                                                          %! clb_rhythm
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Hairpin.shorten-pair                                                               %! OverrideCommand(2)
-    }
+    }                                                                                              %! clb_rhythm
     
     % [L ViolaMusicVoice measure 151 / measure 9]                                                  %! _comment_measure_numbers
     R1 * 1                                                                                         %! _make_measure_silences
@@ -2256,8 +2256,8 @@ L_ViolaMusicVoice = {
     
     % [L ViolaMusicVoice measure 154 / measure 12]                                                 %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 2/3 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 155 / measure 13]                                             %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
@@ -2265,7 +2265,7 @@ L_ViolaMusicVoice = {
         \override TextScript.padding = #2.5                                                        %! OverrideCommand(1)
         \override TextScript.parent-alignment-X = #0                                               %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup {                                                                                %! IndicatorCommand
@@ -2277,323 +2277,323 @@ L_ViolaMusicVoice = {
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 156 / measure 14]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 157 / measure 15]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 8/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 158 / measure 16]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 159 / measure 17]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \mp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolaMusicVoice measure 160 / measure 18]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \accent                                                                                      %! IndicatorCommand
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     :32                                                                                            %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 2/3 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 161 / measure 19]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         \mp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 8/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 162 / measure 20]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 163 / measure 21]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 164 / measure 22]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         \mp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 165 / measure 23]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolaMusicVoice measure 166 / measure 24]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     :32                                                                                            %! IndicatorCommand
     \mp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 167 / measure 25]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 8/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 168 / measure 26]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolaMusicVoice measure 169 / measure 27]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \accent                                                                                      %! IndicatorCommand
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     :32                                                                                            %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 170 / measure 28]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 4/6 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 171 / measure 29]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/3 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 2/3 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 172 / measure 30]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/12 {
+    }                                                                                              %! triplet_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! triplet_rhythm
+    \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 173 / measure 31]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! triplet_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! triplet_rhythm
     
     % [L ViolaMusicVoice measure 174 / measure 32]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \accent                                                                                      %! IndicatorCommand
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! triplet_rhythm
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \accent                                                                                      %! IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)

@@ -4,7 +4,11 @@ from abjadext import rmakers
 
 
 def triplet_rhythm():
+    """
+    Makes triplet rhythm.
+    """
     rhythm_maker = rmakers.TupletRhythmMaker(
+        tag='triplet_rhythm',
         tuplet_ratios=[(1, 1, 1)],
         tuplet_specifier=rmakers.TupletSpecifier(
             denominator='divisions',

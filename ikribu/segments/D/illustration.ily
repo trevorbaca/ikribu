@@ -524,8 +524,8 @@ D_ViolaMusicStaff = {
 
 
 D_CelloRHMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 3/4 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 52 / measure 1]                                             %! _comment_measure_numbers
         \stopStaff                                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -544,7 +544,7 @@ D_CelloRHMusicVoice = {
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         ^ \markup {                                                                                %! IndicatorCommand
@@ -560,14 +560,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -576,18 +576,18 @@ D_CelloRHMusicVoice = {
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 4/6 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 53 / measure 2]                                             %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -595,7 +595,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
@@ -607,7 +607,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -622,7 +622,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -631,19 +631,19 @@ D_CelloRHMusicVoice = {
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 4/3 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 54 / measure 3]                                             %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
@@ -654,15 +654,15 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
+    }                                                                                              %! bow_rhythm
     
     % [D CelloRHMusicVoice measure 55 / measure 4]                                                 %! _comment_measure_numbers
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
@@ -670,7 +670,7 @@ D_CelloRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -679,18 +679,18 @@ D_CelloRHMusicVoice = {
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 7/8 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 56 / measure 5]                                             %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -700,14 +700,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -715,7 +715,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -730,7 +730,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -740,19 +740,19 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 3/5 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 57 / measure 6]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
@@ -763,14 +763,14 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -778,7 +778,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -789,15 +789,15 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 4/3 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 58 / measure 7]                                             %! _comment_measure_numbers
         r4
@@ -807,7 +807,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -817,17 +817,17 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
+    }                                                                                              %! bow_rhythm
     
     % [D CelloRHMusicVoice measure 59 / measure 8]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \downbow                                                                                     %! BowContactPointCommand
@@ -838,25 +838,25 @@ D_CelloRHMusicVoice = {
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 4/5 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 60 / measure 9]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -866,7 +866,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -874,7 +874,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -884,25 +884,25 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 3/5 {                                                                                   %! bow_rhythm
         
         % [D CelloRHMusicVoice measure 61 / measure 10]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -916,7 +916,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -926,7 +926,7 @@ D_CelloRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -935,14 +935,14 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Script.staff-padding                                                               %! OverrideCommand(2)
         \revert TextScript.staff-padding                                                           %! OverrideCommand(2)
         \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
-    }
+    }                                                                                              %! bow_rhythm
     
     % [D CelloRHMusicVoice measure 62 / measure 11]                                                %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -960,8 +960,8 @@ D_CelloRHMusicStaff = {
 
 
 D_CelloMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         % [D CelloMusicVoice measure 52 / measure 1]                                               %! _comment_measure_numbers
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -982,11 +982,11 @@ D_CelloMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        a,8
+        a,8                                                                                        %! glissando_rhythm
         \ppp                                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab)            %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -997,145 +997,145 @@ D_CelloMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        g,8.
+        g,8.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a8
+        a8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f8.
-        ]
+        f8.                                                                                        %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f'4
+        f'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 8/10 {                                                                                  %! glissando_rhythm
         
         % [D CelloMusicVoice measure 53 / measure 2]                                               %! _comment_measure_numbers
-        d'2
+        d'2                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e'8
+        e'8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d2
+        d2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c'8
+        c'8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [D CelloMusicVoice measure 54 / measure 3]                                                   %! _comment_measure_numbers
-    d'4.
+    d'4.                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e''2
+    e''2                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f''8
+    f''8                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [D CelloMusicVoice measure 55 / measure 4]                                               %! _comment_measure_numbers
-        e'4
+        e'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g'4.
+        g'4.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 14/16 {                                                                                 %! glissando_rhythm
         
         % [D CelloMusicVoice measure 56 / measure 5]                                               %! _comment_measure_numbers
-        g2
+        g2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b8
-        [
+        b8                                                                                         %! glissando_rhythm
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a8
+        a8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'8.
+        b'8.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c'8
+        c'8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'8.
-        ]
+        b'8.                                                                                       %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a2.
+        a2.                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [D CelloMusicVoice measure 57 / measure 6]                                                   %! _comment_measure_numbers
-    b8
+    b8                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    g2
+    g2                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    g'8
+    g'8                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/9 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 8/9 {                                                                                   %! glissando_rhythm
         
         % [D CelloMusicVoice measure 58 / measure 7]                                               %! _comment_measure_numbers
-        e'4.
+        e'4.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f''2.
+        f''2.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/8 {                                                                                   %! glissando_rhythm
         
         % [D CelloMusicVoice measure 59 / measure 8]                                               %! _comment_measure_numbers
-        e''8
+        e''8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d'2..
+        d'2..                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [D CelloMusicVoice measure 60 / measure 9]                                                   %! _comment_measure_numbers
-    c'8
-    [
+    c'8                                                                                            %! glissando_rhythm
+    [                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d8
+    d8                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e'8.
+    e'8.                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d'8
+    d'8                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f'8.
-    ]
+    f'8.                                                                                           %! glissando_rhythm
+    ]                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f4
+    f4                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         % [D CelloMusicVoice measure 61 / measure 10]                                              %! _comment_measure_numbers
-        a2
+        a2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g,8
+        g,8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a,4
-    }
+        a,4                                                                                        %! glissando_rhythm
+    }                                                                                              %! glissando_rhythm
     
     % [D CelloMusicVoice measure 62 / measure 11]                                                  %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)

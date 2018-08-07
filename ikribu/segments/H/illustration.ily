@@ -235,8 +235,8 @@ H_BassClarinetMusicStaff = {
 
 
 H_ViolinRHMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 8/7 {                                                                                   %! bow_rhythm
         
         % [H ViolinRHMusicVoice measure 99 / measure 1]                                            %! _comment_measure_numbers
         \stopStaff                                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -255,7 +255,7 @@ H_ViolinRHMusicVoice = {
         \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                                     %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         ^ \markup {                                                                                %! IndicatorCommand
@@ -271,14 +271,14 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -288,13 +288,13 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -302,7 +302,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
@@ -312,11 +312,11 @@ H_ViolinRHMusicVoice = {
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
+    }                                                                                              %! bow_rhythm
     
     % [H ViolinRHMusicVoice measure 100 / measure 2]                                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
@@ -331,7 +331,7 @@ H_ViolinRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \downbow                                                                                     %! BowContactPointCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -341,7 +341,7 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
@@ -349,7 +349,7 @@ H_ViolinRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
@@ -364,7 +364,7 @@ H_ViolinRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \upbow                                                                                       %! BowContactPointCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -373,11 +373,11 @@ H_ViolinRHMusicVoice = {
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 7/8 {                                                                                   %! bow_rhythm
         
         % [H ViolinRHMusicVoice measure 101 / measure 3]                                           %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -385,7 +385,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -395,20 +395,20 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
@@ -420,7 +420,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -435,7 +435,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -444,12 +444,12 @@ H_ViolinRHMusicVoice = {
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 3/5 {                                                                                   %! bow_rhythm
         
         % [H ViolinRHMusicVoice measure 102 / measure 4]                                           %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -457,7 +457,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -471,7 +471,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -481,16 +481,16 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
+    }                                                                                              %! bow_rhythm
     
     % [H ViolinRHMusicVoice measure 103 / measure 5]                                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \downbow                                                                                     %! BowContactPointCommand
@@ -501,21 +501,21 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     % [H ViolinRHMusicVoice measure 104 / measure 6]                                               %! _comment_measure_numbers
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -526,7 +526,7 @@ H_ViolinRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
@@ -541,7 +541,7 @@ H_ViolinRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \downbow                                                                                     %! BowContactPointCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -551,7 +551,7 @@ H_ViolinRHMusicVoice = {
     - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
@@ -559,15 +559,15 @@ H_ViolinRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/9 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 8/9 {                                                                                   %! bow_rhythm
         
         % [H ViolinRHMusicVoice measure 105 / measure 7]                                           %! _comment_measure_numbers
         r4
@@ -577,7 +577,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -587,7 +587,7 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -595,7 +595,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
@@ -606,21 +606,21 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -631,7 +631,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -643,13 +643,13 @@ H_ViolinRHMusicVoice = {
         - \abjad_invisible_line                                                                    %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 4/6 {                                                                                   %! bow_rhythm
         
         % [H ViolinRHMusicVoice measure 106 / measure 8]                                           %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -659,7 +659,7 @@ H_ViolinRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -667,7 +667,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -682,7 +682,7 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -694,14 +694,14 @@ H_ViolinRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Script.staff-padding                                                               %! OverrideCommand(2)
         \revert TextScript.staff-padding                                                           %! OverrideCommand(2)
         \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
-    }
+    }                                                                                              %! bow_rhythm
     
     % [H ViolinRHMusicVoice measure 107 / measure 9]                                               %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -719,8 +719,8 @@ H_ViolinRHMusicStaff = {
 
 
 H_ViolinMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/17 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 16/17 {                                                                                 %! glissando_rhythm
         
         % [H ViolinMusicVoice measure 99 / measure 1]                                              %! _comment_measure_numbers
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -739,11 +739,11 @@ H_ViolinMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-        c''8
+        c''8                                                                                       %! glissando_rhythm
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))               %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"                                    %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab)            %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -754,125 +754,125 @@ H_ViolinMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        b''8.
+        b''8.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'8
+        a'8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'8.
-        ]
+        b'8.                                                                                       %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g'2..
+        g'2..                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g''2
+        g''2                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e''8
+        e''8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/16 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 14/16 {                                                                                 %! glissando_rhythm
         
         % [H ViolinMusicVoice measure 100 / measure 2]                                             %! _comment_measure_numbers
-        f'''4.
+        f'''4.                                                                                     %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e'''2..
+        e'''2..                                                                                    %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d''2.
+        d''2.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [H ViolinMusicVoice measure 101 / measure 3]                                                 %! _comment_measure_numbers
-    c''4
+    c''4                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d'8
-    [
+    d'8                                                                                            %! glissando_rhythm
+    [                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e''8.
+    e''8.                                                                                          %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''8
+    d''8                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f''8.
-    ]
+    f''8.                                                                                          %! glissando_rhythm
+    ]                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f'2..
+    f'2..                                                                                          %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         % [H ViolinMusicVoice measure 102 / measure 4]                                             %! _comment_measure_numbers
-        a'2..
+        a'2..                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 4/6 {                                                                                   %! glissando_rhythm
         
         % [H ViolinMusicVoice measure 103 / measure 5]                                             %! _comment_measure_numbers
-        g8
+        g8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a2
+        a2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'8
+        b'8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [H ViolinMusicVoice measure 104 / measure 6]                                                 %! _comment_measure_numbers
-    a4
+    a4                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    g1
+    g1                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    a'8
-    [
+    a'8                                                                                            %! glissando_rhythm
+    [                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f'8.
+    f'8.                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f''8
+    f''8                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''16
-    ]
+    d''16                                                                                          %! glissando_rhythm
+    ]                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/17 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 16/17 {                                                                                 %! glissando_rhythm
         
         % [H ViolinMusicVoice measure 105 / measure 7]                                             %! _comment_measure_numbers
-        e''8
+        e''8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d'2..
+        d'2..                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c''1
+        c''1                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d''8
+        d''8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 8/10 {                                                                                  %! glissando_rhythm
         
         % [H ViolinMusicVoice measure 106 / measure 8]                                             %! _comment_measure_numbers
-        e'''2.
+        e'''2.                                                                                     %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f'''2
-    }
+        f'''2                                                                                      %! glissando_rhythm
+    }                                                                                              %! glissando_rhythm
     
     % [H ViolinMusicVoice measure 107 / measure 9]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -906,7 +906,7 @@ H_ViolaRHMusicVoice = {
     \set RHStaff.forceClef = ##t                                                                   %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.color = #(x11-color 'green4)                               %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \upbow                                                                                       %! BowContactPointCommand
     ^ \markup {                                                                                    %! IndicatorCommand
@@ -923,7 +923,7 @@ H_ViolaRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     \override RHStaff.Clef.color = #(x11-color 'OliveDrab)                                         %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
@@ -931,7 +931,7 @@ H_ViolaRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \upbow                                                                                       %! BowContactPointCommand
@@ -943,7 +943,7 @@ H_ViolaRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
@@ -958,7 +958,7 @@ H_ViolaRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \upbow                                                                                       %! BowContactPointCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -968,7 +968,7 @@ H_ViolaRHMusicVoice = {
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
@@ -976,7 +976,7 @@ H_ViolaRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -985,24 +985,24 @@ H_ViolaRHMusicVoice = {
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 7/8 {                                                                                   %! bow_rhythm
         
         % [H ViolaRHMusicVoice measure 100 / measure 2]                                            %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
@@ -1013,7 +1013,7 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1021,7 +1021,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
@@ -1033,7 +1033,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -1048,7 +1048,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1057,12 +1057,12 @@ H_ViolaRHMusicVoice = {
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 7/9 {                                                                                   %! bow_rhythm
         
         % [H ViolaRHMusicVoice measure 101 / measure 3]                                            %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1070,7 +1070,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1080,7 +1080,7 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1088,7 +1088,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1102,7 +1102,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1112,14 +1112,14 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \upbow                                                                                   %! BowContactPointCommand
@@ -1130,18 +1130,18 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 3/2 {                                                                                   %! bow_rhythm
         
         % [H ViolaRHMusicVoice measure 102 / measure 4]                                            %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1149,7 +1149,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
@@ -1159,10 +1159,10 @@ H_ViolaRHMusicVoice = {
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
+    }                                                                                              %! bow_rhythm
     
     % [H ViolaRHMusicVoice measure 103 / measure 5]                                                %! _comment_measure_numbers
-    c'4
+    c'4                                                                                            %! bow_rhythm
     - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
@@ -1170,7 +1170,7 @@ H_ViolaRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! bow_rhythm
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \downbow                                                                                     %! BowContactPointCommand
@@ -1180,12 +1180,12 @@ H_ViolaRHMusicVoice = {
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 7/8 {                                                                                   %! bow_rhythm
         
         % [H ViolaRHMusicVoice measure 104 / measure 6]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -1200,7 +1200,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1210,14 +1210,14 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #4 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1227,14 +1227,14 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #5 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -1247,13 +1247,13 @@ H_ViolaRHMusicVoice = {
         - \abjad_invisible_line                                                                    %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 8/10 {                                                                                  %! bow_rhythm
         
         % [H ViolaRHMusicVoice measure 105 / measure 7]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1263,7 +1263,7 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1271,7 +1271,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
@@ -1282,13 +1282,13 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1296,7 +1296,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1306,7 +1306,7 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #1 #4                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1314,7 +1314,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1325,7 +1325,7 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1337,13 +1337,13 @@ H_ViolaRHMusicVoice = {
         - \abjad_invisible_line                                                                    %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    }                                                                                              %! bow_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! bow_rhythm
+    \times 4/3 {                                                                                   %! bow_rhythm
         
         % [H ViolaRHMusicVoice measure 106 / measure 8]                                            %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1353,7 +1353,7 @@ H_ViolaRHMusicVoice = {
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
-        c'4
+        c'4                                                                                        %! bow_rhythm
         - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
@@ -1362,14 +1362,14 @@ H_ViolaRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Script.staff-padding                                                               %! OverrideCommand(2)
         \revert TextScript.staff-padding                                                           %! OverrideCommand(2)
         \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
-    }
+    }                                                                                              %! bow_rhythm
     
     % [H ViolaRHMusicVoice measure 107 / measure 9]                                                %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -1387,8 +1387,8 @@ H_ViolaRHMusicStaff = {
 
 
 H_ViolaMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 16/18 {                                                                                 %! glissando_rhythm
         
         % [H ViolaMusicVoice measure 99 / measure 1]                                               %! _comment_measure_numbers
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1407,7 +1407,7 @@ H_ViolaMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-        c''2..
+        c''2..                                                                                     %! glissando_rhythm
         _ #(make-dynamic-script (markup #:whiteout #:normal-text #:italic "niente"))               %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -1421,111 +1421,111 @@ H_ViolaMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        d'1
+        d'1                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e''4.
+        e''4.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [H ViolaMusicVoice measure 100 / measure 2]                                                  %! _comment_measure_numbers
-    d''2
+    d''2                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f''1
+    f''1                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f'8
-    [
+    f'8                                                                                            %! glissando_rhythm
+    [                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    a'8
-    ]
+    a'8                                                                                            %! glissando_rhythm
+    ]                                                                                              %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 14/15 {                                                                                 %! glissando_rhythm
         
         % [H ViolaMusicVoice measure 101 / measure 3]                                              %! _comment_measure_numbers
-        g16
-        [
+        g16                                                                                        %! glissando_rhythm
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a8
+        a8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'8.
-        ]
+        b'8.                                                                                       %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a2..
+        a2..                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g2
+        g2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'8
+        a'8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/8 {                                                                                   %! glissando_rhythm
         
         % [H ViolaMusicVoice measure 102 / measure 4]                                              %! _comment_measure_numbers
-        f'4.
+        f'4.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f''2
+        f''2                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d''8
+        d''8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [H ViolaMusicVoice measure 103 / measure 5]                                                  %! _comment_measure_numbers
-    e''4
+    e''4                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d'4
+    d'4                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 14/15 {                                                                                 %! glissando_rhythm
         
         % [H ViolaMusicVoice measure 104 / measure 6]                                              %! _comment_measure_numbers
-        c''2.
+        c''2.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d''8
-        [
+        d''8                                                                                       %! glissando_rhythm
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e'''8.
+        e'''8.                                                                                     %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f'''8
+        f'''8                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e''8.
-        ]
+        e''8.                                                                                      %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g''2
+        g''2                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 16/18 {                                                                                 %! glissando_rhythm
         
         % [H ViolaMusicVoice measure 105 / measure 7]                                              %! _comment_measure_numbers
-        g'4.
+        g'4.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'1
+        b'1                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'2..
+        a'2..                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [H ViolaMusicVoice measure 106 / measure 8]                                                  %! _comment_measure_numbers
-    b''1
+    b''1                                                                                           %! glissando_rhythm
     
     % [H ViolaMusicVoice measure 107 / measure 9]                                                  %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
