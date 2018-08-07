@@ -6,53 +6,53 @@
 \include "illustration.ily"
 
 
-\score {
-    <<
-        {
-            \include "layout.ly"
-        }
+\score {                                                                                           %! _make_lilypond_file
+    <<                                                                                             %! _make_lilypond_file
+        {                                                                                          %! _make_lilypond_file
+            \include "layout.ly"                                                                   %! _make_lilypond_file
+        }                                                                                          %! _make_lilypond_file
         \context Score = "Score"
         <<
-            \context GlobalContext = "GlobalContext"
-            <<
-                \context GlobalRests = "GlobalRests"
-                \E_GlobalRests
-                \context GlobalSkips = "GlobalSkips"
-                \E_GlobalSkips
-            >>
+            \context GlobalContext = "GlobalContext"                                               %! _make_global_context
+            <<                                                                                     %! _make_global_context
+                \context GlobalRests = "GlobalRests"                                               %! _make_global_context
+                \E_GlobalRests                                                                     %! extern
+                \context GlobalSkips = "GlobalSkips"                                               %! _make_global_context
+                \E_GlobalSkips                                                                     %! extern
+            >>                                                                                     %! _make_global_context
             \context MusicContext = "MusicContext"
             {
                 \context EnsembleStaffGroup = "EnsembleStaffGroup"
                 <<
-                    \tag BassClarinet                                                              %! ST_4
+                    \tag BassClarinet                                                              %! ScoreTemplate(5)
                     \context Staff = "BassClarinetMusicStaff"
-                    \E_BassClarinetMusicStaff
-                    \tag Violin                                                                    %! ST_4
+                    \E_BassClarinetMusicStaff                                                      %! extern
+                    \tag Violin                                                                    %! ScoreTemplate(5)
                     \context SingleStringStaffGroup = "ViolinStaffGroup"
                     <<
                         \context RHStaff = "ViolinRHMusicStaff"
-                        \E_ViolinRHMusicStaff
+                        \E_ViolinRHMusicStaff                                                      %! extern
                         \context Staff = "ViolinMusicStaff"
-                        \E_ViolinMusicStaff
+                        \E_ViolinMusicStaff                                                        %! extern
                     >>
-                    \tag Viola                                                                     %! ST_4
+                    \tag Viola                                                                     %! ScoreTemplate(5)
                     \context SingleStringStaffGroup = "ViolaStaffGroup"
                     <<
                         \context RHStaff = "ViolaRHMusicStaff"
-                        \E_ViolaRHMusicStaff
+                        \E_ViolaRHMusicStaff                                                       %! extern
                         \context Staff = "ViolaMusicStaff"
-                        \E_ViolaMusicStaff
+                        \E_ViolaMusicStaff                                                         %! extern
                     >>
-                    \tag Cello                                                                     %! ST_4
+                    \tag Cello                                                                     %! ScoreTemplate(5)
                     \context SingleStringStaffGroup = "CelloStaffGroup"
                     <<
                         \context RHStaff = "CelloRHMusicStaff"
-                        \E_CelloRHMusicStaff
+                        \E_CelloRHMusicStaff                                                       %! extern
                         \context Staff = "CelloMusicStaff"
-                        \E_CelloMusicStaff
+                        \E_CelloMusicStaff                                                         %! extern
                     >>
                 >>
             }
         >>
-    >>
-}
+    >>                                                                                             %! _make_lilypond_file
+}                                                                                                  %! _make_lilypond_file

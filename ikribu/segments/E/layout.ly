@@ -2,16 +2,16 @@
 % measure_count = 16
 
 
-\context Score = "Score"
-\with
-{
-    currentBarNumber = #63
-}
-<<
-    \context GlobalContext = "GlobalContext"
-    <<
-        \context PageLayout = "PageLayout"
-        {   %*% PageLayout
+\context Score = "Score"                                                                 %! SingleStaffScoreTemplate
+\with                                                                                    %! SingleStaffScoreTemplate
+{                                                                                        %! SingleStaffScoreTemplate
+    currentBarNumber = #63                                                               %! SingleStaffScoreTemplate
+}                                                                                        %! SingleStaffScoreTemplate
+<<                                                                                       %! SingleStaffScoreTemplate
+    \context GlobalContext = "GlobalContext"                                             %! _make_global_context
+    <<                                                                                   %! _make_global_context
+        \context PageLayout = "PageLayout"                                               %! _make_global_context
+        {   %*% PageLayout                                                               %! _make_global_context
             
             % [PageLayout measure 63]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #12                                             %! HorizontalSpacingSpecifier(1):SPACING
@@ -114,6 +114,6 @@
             s1 * 2                                                                       %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[[1/12 * 35/24]]" }                   %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
             
-        }   %*% PageLayout
-    >>
->>
+        }   %*% PageLayout                                                               %! _make_global_context
+    >>                                                                                   %! _make_global_context
+>>                                                                                       %! SingleStaffScoreTemplate
