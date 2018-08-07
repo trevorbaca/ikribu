@@ -984,8 +984,8 @@ Q_CelloRHMusicStaff = {
 
 
 Q_CelloMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 14/15 {                                                                                 %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 247 / measure 1]                                              %! _comment_measure_numbers
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1007,7 +1007,7 @@ Q_CelloMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a8
+        a8                                                                                         %! inscription_rhythm
         \baca_effort_mf                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \accent                                                                                  %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1018,7 +1018,7 @@ Q_CelloMusicVoice = {
                 \box                                                                               %! IndicatorCommand
                     "stonescratch: one short stroke for each attack"                               %! IndicatorCommand
             }                                                                                      %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'OliveDrab)            %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set SingleStringStaffGroup.shortInstrumentName =                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1029,332 +1029,332 @@ Q_CelloMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r16
+        r16                                                                                        %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        r1
+        r1                                                                                         %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
-    }
-    \times 8/9 {
+        ]                                                                                          %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \times 8/9 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 248 / measure 2]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r2
+        r2                                                                                         %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
-        r1
+        r1                                                                                         %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 1/1 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 249 / measure 3]                                              %! _comment_measure_numbers
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r2
+        r2                                                                                         %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r16
+        r16                                                                                        %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+        ]                                                                                          %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 6/7 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 250 / measure 4]                                              %! _comment_measure_numbers
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
-        - \accent                                                                                  %! IndicatorCommand
-        
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        a16
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
         
-        r8
+        a16                                                                                        %! inscription_rhythm
+        - \accent                                                                                  %! IndicatorCommand
+        ]                                                                                          %! inscription_rhythm
         
-        r4
-    }
-    \times 2/3 {
+        r8                                                                                         %! inscription_rhythm
+        
+        r4                                                                                         %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \times 2/3 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 251 / measure 5]                                              %! _comment_measure_numbers
-        r4.
+        r4.                                                                                        %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        r16
+        r16                                                                                        %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+        ]                                                                                          %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 1/1 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 252 / measure 6]                                              %! _comment_measure_numbers
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         \repeatTie
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r1
+        r1                                                                                         %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        r8.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 14/15 {
+        r8.                                                                                        %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 14/15 {                                                                                 %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 253 / measure 7]                                              %! _comment_measure_numbers
-        r4..
+        r4..                                                                                       %! inscription_rhythm
         
-        r16
-        
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
-        - \accent                                                                                  %! IndicatorCommand
-        [
-        
-        a8
-        - \accent                                                                                  %! IndicatorCommand
+        r16                                                                                        %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8.                                                                                        %! inscription_rhythm
+        - \accent                                                                                  %! IndicatorCommand
+        [                                                                                          %! inscription_rhythm
+        
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
         
-        r2..
-    }
-    \times 4/5 {
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
+        a16                                                                                        %! inscription_rhythm
+        - \accent                                                                                  %! IndicatorCommand
+        ]                                                                                          %! inscription_rhythm
+        
+        r2..                                                                                       %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \times 4/5 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 254 / measure 8]                                              %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r2
+        r2                                                                                         %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+        ]                                                                                          %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 1/1 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 255 / measure 9]                                              %! _comment_measure_numbers
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         \repeatTie
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r16
+        r16                                                                                        %! inscription_rhythm
         
-        r2
+        r2                                                                                         %! inscription_rhythm
         
-        r8.
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+        r8.                                                                                        %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 6/7 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 256 / measure 10]                                             %! _comment_measure_numbers
-        r4..
+        r4..                                                                                       %! inscription_rhythm
         
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
+        ]                                                                                          %! inscription_rhythm
         
-        r8
+        r8                                                                                         %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    }                                                                                              %! inscription_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! inscription_rhythm
+    \times 7/8 {                                                                                   %! inscription_rhythm
         
         % [Q CelloMusicVoice measure 257 / measure 11]                                             %! _comment_measure_numbers
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        [                                                                                          %! inscription_rhythm
         
-        a8
-        - \accent                                                                                  %! IndicatorCommand
-        
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a8                                                                                         %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
-        
-        r16
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a8.
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
+        ]                                                                                          %! inscription_rhythm
         
-        r1
-        
-        r8
+        r16                                                                                        %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a8.                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        [
+        
+        r1                                                                                         %! inscription_rhythm
+        
+        r8                                                                                         %! inscription_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        a16
+        a16                                                                                        %! inscription_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        ]
-    }
+        [                                                                                          %! inscription_rhythm
+        
+        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
+        a16                                                                                        %! inscription_rhythm
+        - \accent                                                                                  %! IndicatorCommand
+        ]                                                                                          %! inscription_rhythm
+    }                                                                                              %! inscription_rhythm
     
     % [Q CelloMusicVoice measure 258 / measure 12]                                                 %! _comment_measure_numbers
     \once \override MultiMeasureRestText.extra-offset = #'(-16 . -4)

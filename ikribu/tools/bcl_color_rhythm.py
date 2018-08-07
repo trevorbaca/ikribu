@@ -12,6 +12,7 @@ def bcl_color_rhythm(rotation_1=None, rotation_2=None):
         )
     rhythm_maker = rmakers.TaleaRhythmMaker(
         extra_counts_per_division=extra_counts_per_division,
+        tag='bcl_color_rhythm',
         talea=rmakers.Talea(
             counts=counts,
             denominator=8,

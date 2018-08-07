@@ -652,54 +652,54 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/12 {                                                                                  %! clb_rhythm
         
         % [K ViolinMusicVoice measure 129 / measure 3]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        b8
+        b8                                                                                         %! clb_rhythm
         \baca_effort_mp                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccato                                                                                %! IndicatorCommand
         ^ \markup { "col legno battuto" }                                                          %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolinMusicVoice measure 130 / measure 4]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -718,75 +718,75 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/20 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 16/20 {                                                                                 %! clb_rhythm
         
         % [K ViolinMusicVoice measure 133 / measure 7]                                             %! _comment_measure_numbers
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolinMusicVoice measure 134 / measure 8]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -805,45 +805,45 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/10 {                                                                                  %! clb_rhythm
         
         % [K ViolinMusicVoice measure 137 / measure 11]                                            %! _comment_measure_numbers
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        b8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        b8                                                                                         %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolinMusicVoice measure 138 / measure 12]                                                %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -862,51 +862,51 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/12 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/12 {                                                                                  %! clb_rhythm
         
         % [K ViolinMusicVoice measure 141 / measure 15]                                            %! _comment_measure_numbers
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolinMusicVoice measure 142 / measure 16]                                                %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -1081,48 +1081,48 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/10 {                                                                                  %! clb_rhythm
         
         % [K ViolaMusicVoice measure 129 / measure 3]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        b8
+        b8                                                                                         %! clb_rhythm
         \baca_effort_mp                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccato                                                                                %! IndicatorCommand
         ^ \markup { "col legno battuto" }                                                          %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolaMusicVoice measure 130 / measure 4]                                                  %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -1141,69 +1141,69 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 16/18 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 16/18 {                                                                                 %! clb_rhythm
         
         % [K ViolaMusicVoice measure 133 / measure 7]                                              %! _comment_measure_numbers
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        d'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolaMusicVoice measure 134 / measure 8]                                                  %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -1222,39 +1222,39 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 6/8 {                                                                                   %! clb_rhythm
         
         % [K ViolaMusicVoice measure 137 / measure 11]                                             %! _comment_measure_numbers
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        b8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        d'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        b8                                                                                         %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolaMusicVoice measure 138 / measure 12]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -1273,45 +1273,45 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! clb_rhythm
+    \times 8/10 {                                                                                  %! clb_rhythm
         
         % [K ViolaMusicVoice measure 141 / measure 15]                                             %! _comment_measure_numbers
         \stopStaff                                                                                 %! _style_fermata_measures(2)
         \once \override Staff.StaffSymbol.line-count = 1                                           %! _style_fermata_measures(2)
         \startStaff                                                                                %! _style_fermata_measures(2)
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! clb_rhythm
         
-        c'8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        b8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        b8                                                                                         %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        d'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        d'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! clb_rhythm
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        
+        c'8                                                                                        %! clb_rhythm
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! clb_rhythm
+    }                                                                                              %! clb_rhythm
     
     % [K ViolaMusicVoice measure 142 / measure 16]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
