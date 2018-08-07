@@ -546,7 +546,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         ^ \markup {                                                                                %! IndicatorCommand
             \override                                                                              %! IndicatorCommand
                 #'(box-padding . 0.5)                                                              %! IndicatorCommand
@@ -588,7 +588,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
@@ -598,7 +598,7 @@ D_CelloRHMusicVoice = {
         c'4
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -609,7 +609,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
@@ -624,7 +624,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -646,7 +646,7 @@ D_CelloRHMusicVoice = {
         c'4
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -663,7 +663,7 @@ D_CelloRHMusicVoice = {
     
     % [D CelloRHMusicVoice measure 55 / measure 4]                                                 %! _comment_measure_numbers
     c'4
-    -\downbow                                                                                      %! BowContactPointCommand
+    - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                                  %! BowContactPointCommand
@@ -701,14 +701,14 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #6 #7                              %! BowContactPointCommand
@@ -717,7 +717,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
@@ -732,7 +732,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -741,7 +741,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
@@ -755,7 +755,7 @@ D_CelloRHMusicVoice = {
         c'4
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -764,14 +764,14 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
@@ -809,7 +809,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -818,7 +818,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
@@ -830,7 +830,7 @@ D_CelloRHMusicVoice = {
     c'4
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    -\downbow                                                                                      %! BowContactPointCommand
+    - \downbow                                                                                     %! BowContactPointCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
@@ -839,14 +839,14 @@ D_CelloRHMusicVoice = {
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     c'4
-    -\upbow                                                                                        %! BowContactPointCommand
+    - \upbow                                                                                       %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                                  %! BowContactPointCommand
     \bacaStartTextSpanBCP                                                                          %! BowContactPointCommand
     
     c'4
-    -\downbow                                                                                      %! BowContactPointCommand
+    - \downbow                                                                                     %! BowContactPointCommand
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
     - \abjad_solid_line_with_arrow                                                                 %! BowContactPointCommand
     - \tweak bound-details.left.text \markup \baca-bcp-left #0 #4                                  %! BowContactPointCommand
@@ -867,7 +867,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #2 #4                              %! BowContactPointCommand
@@ -885,7 +885,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #0 #7                              %! BowContactPointCommand
@@ -918,7 +918,7 @@ D_CelloRHMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\downbow                                                                                  %! BowContactPointCommand
+        - \downbow                                                                                 %! BowContactPointCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
@@ -927,7 +927,7 @@ D_CelloRHMusicVoice = {
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
         
         c'4
-        -\upbow                                                                                    %! BowContactPointCommand
+        - \upbow                                                                                   %! BowContactPointCommand
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
         - \abjad_solid_line_with_arrow                                                             %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand

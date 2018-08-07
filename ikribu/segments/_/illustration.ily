@@ -339,7 +339,7 @@ i_CelloMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fqf''!1..                                                                                      %! baca_make_repeat_tied_notes
     \sfz                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup \baca-default-indicator-markup "(“Cello”)"                                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { pizz. }                                                                            %! IndicatorCommand
     ^ \markup \baca-explicit-indicator-markup "[“Vc.”]"                                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert

@@ -618,10 +618,10 @@ E_ViolinMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/12 {
@@ -631,7 +631,7 @@ E_ViolinMusicVoice = {
         c'1
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
@@ -641,7 +641,7 @@ E_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolinMusicVoice measure 65 / measure 3]                                                  %! _comment_measure_numbers
@@ -654,15 +654,15 @@ E_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 4/6 {
         
@@ -676,12 +676,12 @@ E_ViolinMusicVoice = {
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'2
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolinMusicVoice measure 69 / measure 7]                                                  %! _comment_measure_numbers
@@ -696,7 +696,7 @@ E_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
@@ -704,7 +704,7 @@ E_ViolinMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 8/12 {
@@ -714,17 +714,17 @@ E_ViolinMusicVoice = {
         c'1
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolinMusicVoice measure 73 / measure 11]                                                 %! _comment_measure_numbers
@@ -742,10 +742,10 @@ E_ViolinMusicVoice = {
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 2/3 {
         
@@ -754,7 +754,7 @@ E_ViolinMusicVoice = {
         c'4
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
@@ -764,7 +764,7 @@ E_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolinMusicVoice measure 77 / measure 15]                                                 %! _comment_measure_numbers
@@ -909,10 +909,10 @@ E_ViolaMusicVoice = {
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolaMusicVoice measure 65 / measure 3]                                                   %! _comment_measure_numbers
@@ -920,7 +920,7 @@ E_ViolaMusicVoice = {
     c'4
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
@@ -930,7 +930,7 @@ E_ViolaMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     % [E ViolaMusicVoice measure 66 / measure 4]                                                   %! _comment_measure_numbers
     R1 * 1                                                                                         %! _make_measure_silences
@@ -944,15 +944,15 @@ E_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'2
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolaMusicVoice measure 69 / measure 7]                                                   %! _comment_measure_numbers
@@ -965,12 +965,12 @@ E_ViolaMusicVoice = {
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     % [E ViolaMusicVoice measure 70 / measure 8]                                                   %! _comment_measure_numbers
     R1 * 1/2                                                                                       %! _make_measure_silences
@@ -984,7 +984,7 @@ E_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
@@ -992,7 +992,7 @@ E_ViolaMusicVoice = {
         :32                                                                                        %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/12 {
@@ -1002,17 +1002,17 @@ E_ViolaMusicVoice = {
         c'1
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolaMusicVoice measure 74 / measure 12]                                                  %! _comment_measure_numbers
@@ -1032,10 +1032,10 @@ E_ViolaMusicVoice = {
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 7/12 {
@@ -1045,7 +1045,7 @@ E_ViolaMusicVoice = {
         c'1
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
@@ -1055,7 +1055,7 @@ E_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [E ViolaMusicVoice measure 78 / measure 16]                                                  %! _comment_measure_numbers
