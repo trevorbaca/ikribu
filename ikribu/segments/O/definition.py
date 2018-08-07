@@ -191,7 +191,7 @@ maker(
     baca.hairpin(
         'mp > p <',
         final_hairpin=False,
-        piece_selector=baca.mgroups(),
+        piece_selector=baca.cmgroups(),
         selector=baca.tleaves(),
         ),
     baca.pitch('Bb0'),

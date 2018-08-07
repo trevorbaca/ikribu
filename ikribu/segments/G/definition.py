@@ -100,7 +100,7 @@ maker(
     baca.hairpin(
         'ppp < pp >',
         final_hairpin=False,
-        piece_selector=baca.mgroups(),
+        piece_selector=baca.cmgroups(),
         selector=baca.tleaves(),
         ),
     baca.markup(
