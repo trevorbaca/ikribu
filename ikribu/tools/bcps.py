@@ -14,4 +14,4 @@ def bcps(rotation=None):
         ])
     bcps = bcps.rotate(n=rotation)
     bcps = bcps.flatten(depth=1)
-    return baca.bcps(bcps=bcps)
+    return baca.bcps(bcps)
