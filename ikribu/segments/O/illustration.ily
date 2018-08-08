@@ -586,7 +586,7 @@ O_ViolinMusicVoice = {
     R1 * 2                                                                                         %! _make_measure_silences
     
     % [O ViolinMusicVoice measure 226 / measure 9]                                                 %! _comment_measure_numbers
-    \override TextSpanner.staff-padding = #2.5                                                     %! OverrideCommand(1)
+    \override TextSpanner.staff-padding = #2.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     <e' fs'!>1..
     :32                                                                                            %! IndicatorCommand
@@ -660,7 +660,7 @@ O_ViolinMusicVoice = {
     :32                                                                                            %! IndicatorCommand
     \repeatTie
     \stopTextSpan                                                                                  %! PiecewiseIndicatorCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
     
     % [O ViolinMusicVoice measure 238 / measure 21]                                                %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -822,7 +822,7 @@ O_ViolaMusicVoice = {
     R1 * 2                                                                                         %! _make_measure_silences
     
     % [O ViolaMusicVoice measure 226 / measure 9]                                                  %! _comment_measure_numbers
-    \override TextSpanner.staff-padding = #2.5                                                     %! OverrideCommand(1)
+    \override TextSpanner.staff-padding = #2.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     <ef'! f'>1..
     :32                                                                                            %! IndicatorCommand
@@ -896,7 +896,7 @@ O_ViolaMusicVoice = {
     :32                                                                                            %! IndicatorCommand
     \repeatTie
     \stopTextSpan                                                                                  %! PiecewiseIndicatorCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
     
     % [O ViolaMusicVoice measure 238 / measure 21]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1016,7 +1016,7 @@ O_CelloMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override TextSpanner.staff-padding = #2.5                                                     %! OverrideCommand(1)
+    \override TextSpanner.staff-padding = #2.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
     \clef "bass"                                                                                   %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                                 %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
@@ -1047,7 +1047,7 @@ O_CelloMusicVoice = {
     R1 * 3/4                                                                                       %! _make_measure_silences
     
     % [O CelloMusicVoice measure 222 / measure 5]                                                  %! _comment_measure_numbers
-    \override Staff.OttavaBracket.staff-padding = #10                                              %! OverrideCommand(1)
+    \override Staff.OttavaBracket.staff-padding = #10                                              %! baca_ottava_bracket_staff_padding:OverrideCommand(1)
     \ottava #-1                                                                                    %! SpannerCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     bf,,,!2                                                                                        %! baca_make_repeat_tied_notes
@@ -1200,8 +1200,8 @@ O_CelloMusicVoice = {
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie
     \stopTextSpan                                                                                  %! PiecewiseIndicatorCommand(2)
-    \revert Staff.OttavaBracket.staff-padding                                                      %! OverrideCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
+    \revert Staff.OttavaBracket.staff-padding                                                      %! baca_ottava_bracket_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
     \ottava #0                                                                                     %! SpannerCommand
     
     % [O CelloMusicVoice measure 238 / measure 21]                                                 %! _comment_measure_numbers

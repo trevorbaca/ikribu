@@ -303,8 +303,8 @@ K_BassClarinetMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                                                %! OverrideCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                                                %! baca_bar_extent:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -357,8 +357,8 @@ K_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_130
     
     % [K BassClarinetMusicVoice measure 131 / measure 5]                                           %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -395,8 +395,8 @@ K_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_134
     
     % [K BassClarinetMusicVoice measure 135 / measure 9]                                           %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -445,8 +445,8 @@ K_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_138
     
     % [K BassClarinetMusicVoice measure 139 / measure 13]                                          %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -482,8 +482,8 @@ K_BassClarinetMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert Staff.BarLine.bar-extent                                                               %! OverrideCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert Staff.BarLine.bar-extent                                                               %! baca_bar_extent:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     \once \override Score.BarLine.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_142
     \once \override Score.SpanBar.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_142
     
@@ -623,10 +623,10 @@ K_ViolinMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'8                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -913,8 +913,8 @@ K_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
     
 }
 
@@ -1052,10 +1052,10 @@ K_ViolaMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'8                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1318,8 +1318,8 @@ K_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
     
 }
 
@@ -1457,10 +1457,10 @@ K_CelloMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override Staff.BarLine.bar-extent = #'(0 . 2)                                                 %! OverrideCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                                                   %! OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                                                 %! baca_bar_extent:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                                                   %! baca_text_script_parent_center:OverrideCommand(1)
     \clef "bass"                                                                                   %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1519,8 +1519,8 @@ K_CelloMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [K CelloMusicVoice measure 131 / measure 5]                                                  %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -1553,8 +1553,8 @@ K_CelloMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [K CelloMusicVoice measure 135 / measure 9]                                                  %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -1599,8 +1599,8 @@ K_CelloMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [K CelloMusicVoice measure 139 / measure 13]                                                 %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -1634,10 +1634,10 @@ K_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert Staff.BarLine.bar-extent                                                               %! OverrideCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert Staff.BarLine.bar-extent                                                               %! baca_bar_extent:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
 }
 

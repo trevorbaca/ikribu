@@ -242,10 +242,10 @@ H_ViolinRHMusicVoice = {
         \stopStaff                                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.line-count = 1                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \startStaff                                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-        \override DynamicLineSpanner.staff-padding = #'10                                          %! OverrideCommand(1)
-        \override Script.staff-padding = #7                                                        %! OverrideCommand(1)
-        \override TextScript.staff-padding = #8                                                    %! OverrideCommand(1)
-        \override TextSpanner.staff-padding = #4                                                   %! OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'10                                          %! baca_dls_staff_padding:OverrideCommand(1)
+        \override Script.staff-padding = #7                                                        %! baca_script_staff_padding:OverrideCommand(1)
+        \override TextScript.staff-padding = #8                                                    %! baca_script_staff_padding:OverrideCommand(1)
+        \override TextSpanner.staff-padding = #4                                                   %! baca_text_spanner_staff_padding:OverrideCommand(1)
         \clef "percussion"                                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)                                  %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override RHStaff.Clef.color = ##f                                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -697,10 +697,10 @@ H_ViolinRHMusicVoice = {
         c'4                                                                                        %! bow_rhythm
         \ppp                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert Script.staff-padding                                                               %! OverrideCommand(2)
-        \revert TextScript.staff-padding                                                           %! OverrideCommand(2)
-        \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert Script.staff-padding                                                               %! baca_script_staff_padding:OverrideCommand(2)
+        \revert TextScript.staff-padding                                                           %! baca_script_staff_padding:OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
     }                                                                                              %! bow_rhythm
     
     % [H ViolinRHMusicVoice measure 107 / measure 9]                                               %! _comment_measure_numbers
@@ -896,10 +896,10 @@ H_ViolaRHMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                                             %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #'10                                              %! OverrideCommand(1)
-    \override Script.staff-padding = #7                                                            %! OverrideCommand(1)
-    \override TextScript.staff-padding = #8                                                        %! OverrideCommand(1)
-    \override TextSpanner.staff-padding = #4                                                       %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'10                                              %! baca_dls_staff_padding:OverrideCommand(1)
+    \override Script.staff-padding = #7                                                            %! baca_script_staff_padding:OverrideCommand(1)
+    \override TextScript.staff-padding = #8                                                        %! baca_script_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #4                                                       %! baca_text_spanner_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                                      %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                                             %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1365,10 +1365,10 @@ H_ViolaRHMusicVoice = {
         c'4                                                                                        %! bow_rhythm
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert Script.staff-padding                                                               %! OverrideCommand(2)
-        \revert TextScript.staff-padding                                                           %! OverrideCommand(2)
-        \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert Script.staff-padding                                                               %! baca_script_staff_padding:OverrideCommand(2)
+        \revert TextScript.staff-padding                                                           %! baca_script_staff_padding:OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
     }                                                                                              %! bow_rhythm
     
     % [H ViolaRHMusicVoice measure 107 / measure 9]                                                %! _comment_measure_numbers

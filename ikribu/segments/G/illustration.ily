@@ -226,7 +226,7 @@ G_BassClarinetMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -253,13 +253,13 @@ G_BassClarinetMusicVoice = {
     a4                                                                                             %! baca_make_tied_reepated_durations
     \mp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [G BassClarinetMusicVoice measure 88 / measure 2]                                            %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
     
     % [G BassClarinetMusicVoice measure 89 / measure 3]                                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     af!1.                                                                                          %! baca_make_tied_reepated_durations
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -270,13 +270,13 @@ G_BassClarinetMusicVoice = {
     af!4                                                                                           %! baca_make_tied_reepated_durations
     \mf                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [G BassClarinetMusicVoice measure 90 / measure 4]                                            %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
     
     % [G BassClarinetMusicVoice measure 91 / measure 5]                                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g1.                                                                                            %! baca_make_tied_reepated_durations
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -287,13 +287,13 @@ G_BassClarinetMusicVoice = {
     g4                                                                                             %! baca_make_tied_reepated_durations
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [G BassClarinetMusicVoice measure 92 / measure 6]                                            %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
     
     % [G BassClarinetMusicVoice measure 93 / measure 7]                                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!1.                                                                                          %! baca_make_tied_reepated_durations
     \mf                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -304,13 +304,13 @@ G_BassClarinetMusicVoice = {
     fs!4                                                                                           %! baca_make_tied_reepated_durations
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [G BassClarinetMusicVoice measure 94 / measure 8]                                            %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
     
     % [G BassClarinetMusicVoice measure 95 / measure 9]                                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     f1.                                                                                            %! baca_make_tied_reepated_durations
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -321,13 +321,13 @@ G_BassClarinetMusicVoice = {
     f4                                                                                             %! baca_make_tied_reepated_durations
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [G BassClarinetMusicVoice measure 96 / measure 10]                                           %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
     
     % [G BassClarinetMusicVoice measure 97 / measure 11]                                           %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     e1.                                                                                            %! baca_make_tied_reepated_durations
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -338,7 +338,7 @@ G_BassClarinetMusicVoice = {
     e4                                                                                             %! baca_make_tied_reepated_durations
     \ffff                                                                                          %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [G BassClarinetMusicVoice measure 98 / measure 12]                                           %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
@@ -772,9 +772,9 @@ G_CelloMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #'7                                               %! OverrideCommand(1)
-    \override NoteHead.style = #'harmonic                                                          %! OverrideCommand(1)
-    \override TupletBracket.direction = #down                                                      %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'7                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override NoteHead.style = #'harmonic                                                          %! baca_note_head_style_harmonic:OverrideCommand(1)
+    \override TupletBracket.direction = #down                                                      %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -901,12 +901,12 @@ G_CelloMusicVoice = {
     g'1..                                                                                          %! baca_make_notes
     :32                                                                                            %! IndicatorCommand
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \revert NoteHead.style                                                                         %! OverrideCommand(2)
+    \revert NoteHead.style                                                                         %! baca_note_head_style_harmonic:OverrideCommand(2)
     
     % [G CelloMusicVoice measure 98 / measure 12]                                                  %! _comment_measure_numbers
     R1 * 1/6                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TupletBracket.direction                                                                %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TupletBracket.direction                                                                %! baca_tuplet_bracket_down:OverrideCommand(2)
     
 }
 
