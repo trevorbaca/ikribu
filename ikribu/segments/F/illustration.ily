@@ -304,10 +304,10 @@ F_ViolinMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #'4                                               %! OverrideCommand(1)
-    \override TextSpanner.staff-padding = #3.5                                                     %! OverrideCommand(1)
-    \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_84:SHIFTED_CLEF
-    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_84:SHIFTED_CLEF
+    \override DynamicLineSpanner.staff-padding = #'4                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_84:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_84:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "treble"                                                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -340,8 +340,8 @@ F_ViolinMusicVoice = {
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie
     \stopTextSpan                                                                                  %! PiecewiseIndicatorCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
     
     % [F ViolinMusicVoice measure 86 / measure 8]                                                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -449,12 +449,12 @@ F_ViolaMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #'4                                               %! OverrideCommand(1)
-    \override TextSpanner.staff-padding = #3.5                                                     %! OverrideCommand(1)
-    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1)
-    \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1)
-    \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_84:SHIFTED_CLEF
-    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_84:SHIFTED_CLEF
+    \override DynamicLineSpanner.staff-padding = #'4                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! baca_clef_extra_offset:OverrideCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                                      %! baca_clef_x_extent_false:OverrideCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_84:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_84:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "treble"                                                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -487,8 +487,8 @@ F_ViolaMusicVoice = {
     \>                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \repeatTie
     \stopTextSpan                                                                                  %! PiecewiseIndicatorCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
     
     % [F ViolaMusicVoice measure 86 / measure 8]                                                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -562,7 +562,7 @@ F_CelloMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override TextSpanner.staff-padding = #3.5                                                     %! OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
     \clef "bass"                                                                                   %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -609,7 +609,7 @@ F_CelloMusicVoice = {
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie
     \stopTextSpan                                                                                  %! PiecewiseIndicatorCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
     
     % [F CelloMusicVoice measure 83 / measure 5]                                                   %! _comment_measure_numbers
     R1 * 1/2                                                                                       %! _make_measure_silences
@@ -618,8 +618,8 @@ F_CelloMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                                                   %! OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                                                   %! baca_text_script_parent_center:OverrideCommand(1)
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                                   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     d4                                                                                             %! baca_make_tied_reepated_durations
     ^ \markup {                                                                                    %! IndicatorCommand
@@ -675,15 +675,15 @@ F_CelloMusicVoice = {
     
     d4                                                                                             %! baca_make_tied_reepated_durations
     \repeatTie
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
     % [F CelloMusicVoice measure 86 / measure 8]                                                   %! _comment_measure_numbers
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_86:SHIFTED_CLEF
-    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_86:SHIFTED_CLEF
+    \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_86:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_86:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "treble"                                                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)

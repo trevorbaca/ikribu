@@ -223,12 +223,12 @@ J_BassClarinetMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                                                   %! OverrideCommand(1)
-    \override Staff.BarLine.bar-extent = #'(-2 . 0)                                                %! OverrideCommand(1)
-%%% \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                                                   %! baca_text_script_parent_center:OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                                                %! baca_bar_extent:OverrideCommand(1)
+%%% \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "percussion"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -387,9 +387,9 @@ J_BassClarinetMusicVoice = {
 %%% \once \override Score.SpanBar.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_124
     
     % [J BassClarinetMusicVoice measure 125 / measure 10]                                          %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
-%%% \override TextScript.extra-offset = #'(0 . 8)                                                  %! OverrideCommand(1):+ARCH_A_PARTS_BCL
+    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
+%%% \override TextScript.extra-offset = #'(0 . 8)                                                  %! +ARCH_A_PARTS_BCL:baca_text_script_extra_offset:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -415,17 +415,17 @@ J_BassClarinetMusicVoice = {
     
     c'4                                                                                            %! baca_make_tied_reepated_durations
     \repeatTie
-%%% \revert TextScript.extra-offset                                                                %! OverrideCommand(2):+ARCH_A_PARTS_BCL
+%%% \revert TextScript.extra-offset                                                                %! +ARCH_A_PARTS_BCL:baca_text_script_extra_offset:OverrideCommand(2)
     
     % [J BassClarinetMusicVoice measure 126 / measure 11]                                          %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
-    \revert Staff.BarLine.bar-extent                                                               %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
+    \revert Staff.BarLine.bar-extent                                                               %! baca_bar_extent:OverrideCommand(2)
     \once \override Score.BarLine.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_126
     \once \override Score.SpanBar.transparent = ##t                                                %! _style_fermata_measures(4):EOL_FERMATA:MEASURE_126
     
@@ -514,11 +514,11 @@ J_ViolinMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                                                   %! OverrideCommand(1)
-%%% \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                                                   %! baca_text_script_parent_center:OverrideCommand(1)
+%%% \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "percussion"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -675,8 +675,8 @@ J_ViolinMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [J ViolinMusicVoice measure 125 / measure 10]                                                %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -708,9 +708,9 @@ J_ViolinMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
 }
 
@@ -797,11 +797,11 @@ J_ViolaMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                                                   %! OverrideCommand(1)
-%%% \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                                                   %! baca_text_script_parent_center:OverrideCommand(1)
+%%% \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "percussion"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -967,8 +967,8 @@ J_ViolaMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [J ViolaMusicVoice measure 125 / measure 10]                                                 %! _comment_measure_numbers
-    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-2 . 0)                                          %! baca_dynamic_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_dynamic_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \stopStaff                                                                                     %! _style_fermata_measures(2)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! _style_fermata_measures(2)
@@ -1000,9 +1000,9 @@ J_ViolaMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
 }
 
@@ -1089,8 +1089,8 @@ J_CelloMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-%%% \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                        %! OverrideCommand(1):MEASURE_116:SHIFTED_CLEF
+%%% \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                        %! MEASURE_116:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "bass"                                                                                   %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)                                 %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1115,7 +1115,7 @@ J_CelloMusicVoice = {
     R1 * 2                                                                                         %! _make_measure_silences
     
     % [J CelloMusicVoice measure 118 / measure 3]                                                  %! _comment_measure_numbers
-    \override Staff.OttavaBracket.staff-padding = #8                                               %! OverrideCommand(1)
+    \override Staff.OttavaBracket.staff-padding = #8                                               %! baca_ottava_bracket_staff_padding:OverrideCommand(1)
     \ottava #-1                                                                                    %! SpannerCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d,,1                                                                                           %! baca_make_repeat_tied_notes
@@ -1150,7 +1150,7 @@ J_CelloMusicVoice = {
     d,,4                                                                                           %! baca_make_tied_reepated_durations
     \mf                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \repeatTie                                                                                     %! TCC
-    \revert Staff.OttavaBracket.staff-padding                                                      %! OverrideCommand(2)
+    \revert Staff.OttavaBracket.staff-padding                                                      %! baca_ottava_bracket_staff_padding:OverrideCommand(2)
     \ottava #0                                                                                     %! SpannerCommand
     
     % [J CelloMusicVoice measure 124 / measure 9]                                                  %! _comment_measure_numbers

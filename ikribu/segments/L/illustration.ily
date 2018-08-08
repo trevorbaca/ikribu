@@ -474,8 +474,8 @@ L_BassClarinetMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 5                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-%%% \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_143:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! OverrideCommand(1):MEASURE_143:SHIFTED_CLEF
+%%% \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_143:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                         %! MEASURE_143:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "treble"                                                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -1302,10 +1302,10 @@ L_ViolinMusicVoice = {
     }                                                                                              %! clb_rhythm
     
     % [L ViolinMusicVoice measure 155 / measure 13]                                                %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
-    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! OverrideCommand(1)
-    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! OverrideCommand(1)
-    \override Hairpin.shorten-pair = #'(2.25 . 0)                                                  %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'8                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                        %! baca_hairpin_start_shift:OverrideCommand(1)
+    \once \override DynamicText.X-extent = #'(0 . 0)                                               %! baca_hairpin_start_shift:OverrideCommand(1)
+    \override Hairpin.shorten-pair = #'(2.25 . 0)                                                  %! baca_hairpin_start_shift:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'8                                                                                            %! clb_rhythm
     \baca_effort_mp                                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1512,8 +1512,8 @@ L_ViolinMusicVoice = {
         \!                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                                                %! IndicatorCommand
         ]                                                                                          %! clb_rhythm
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert Hairpin.shorten-pair                                                               %! OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert Hairpin.shorten-pair                                                               %! baca_hairpin_start_shift:OverrideCommand(2)
     }                                                                                              %! clb_rhythm
     
     % [L ViolinMusicVoice measure 159 / measure 17]                                                %! _comment_measure_numbers
@@ -1531,10 +1531,10 @@ L_ViolinMusicVoice = {
     \times 7/12 {                                                                                  %! triplet_rhythm
         
         % [L ViolinMusicVoice measure 163 / measure 21]                                            %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
-        \override TupletBracket.staff-padding = #3                                                 %! OverrideCommand(1)
-        \override TextScript.padding = #2.5                                                        %! OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                                               %! OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'8                                           %! baca_dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #3                                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TextScript.padding = #2.5                                                        %! text_script_padding:OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                                               %! baca_text_script_parent_center:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'1                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
@@ -1734,10 +1734,10 @@ L_ViolinMusicVoice = {
     c'4                                                                                            %! triplet_rhythm
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \accent                                                                                      %! IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
     % [L ViolinMusicVoice measure 175 / measure 33]                                                %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -2090,10 +2090,10 @@ L_ViolaMusicVoice = {
     \times 8/10 {                                                                                  %! clb_rhythm
         
         % [L ViolaMusicVoice measure 147 / measure 5]                                              %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
-        \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                    %! OverrideCommand(1)
-        \once \override DynamicText.X-extent = #'(0 . 0)                                           %! OverrideCommand(1)
-        \override Hairpin.shorten-pair = #'(2.25 . 0)                                              %! OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'8                                           %! baca_dls_staff_padding:OverrideCommand(1)
+        \once \override DynamicText.extra-offset = #'(-3.5 . 0)                                    %! baca_hairpin_start_shift:OverrideCommand(1)
+        \once \override DynamicText.X-extent = #'(0 . 0)                                           %! baca_hairpin_start_shift:OverrideCommand(1)
+        \override Hairpin.shorten-pair = #'(2.25 . 0)                                              %! baca_hairpin_start_shift:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d'8                                                                                        %! clb_rhythm
         \baca_effort_mp                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2241,8 +2241,8 @@ L_ViolaMusicVoice = {
         \!                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                                                %! IndicatorCommand
         ]                                                                                          %! clb_rhythm
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert Hairpin.shorten-pair                                                               %! OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert Hairpin.shorten-pair                                                               %! baca_hairpin_start_shift:OverrideCommand(2)
     }                                                                                              %! clb_rhythm
     
     % [L ViolaMusicVoice measure 151 / measure 9]                                                  %! _comment_measure_numbers
@@ -2260,10 +2260,10 @@ L_ViolaMusicVoice = {
     \times 2/3 {                                                                                   %! triplet_rhythm
         
         % [L ViolaMusicVoice measure 155 / measure 13]                                             %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
-        \override TupletBracket.staff-padding = #3                                                 %! OverrideCommand(1)
-        \override TextScript.padding = #2.5                                                        %! OverrideCommand(1)
-        \override TextScript.parent-alignment-X = #0                                               %! OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'8                                           %! baca_dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #3                                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TextScript.padding = #2.5                                                        %! text_script_padding:OverrideCommand(1)
+        \override TextScript.parent-alignment-X = #0                                               %! baca_text_script_parent_center:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4                                                                                        %! triplet_rhythm
         :32                                                                                        %! IndicatorCommand
@@ -2596,10 +2596,10 @@ L_ViolaMusicVoice = {
     c'4                                                                                            %! triplet_rhythm
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \accent                                                                                      %! IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
     % [L ViolaMusicVoice measure 175 / measure 33]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! _style_fermata_measures(1)
@@ -2752,9 +2752,9 @@ L_CelloMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 1                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override Staff.BarLine.bar-extent = #'(0 . 2)                                                 %! OverrideCommand(1)
-    \override TextScript.padding = #2.5                                                            %! OverrideCommand(1)
-    \override TextScript.parent-alignment-X = #0                                                   %! OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                                                 %! baca_bar_extent:OverrideCommand(1)
+    \override TextScript.padding = #2.5                                                            %! text_script_padding:OverrideCommand(1)
+    \override TextScript.parent-alignment-X = #0                                                   %! baca_text_script_parent_center:OverrideCommand(1)
     \clef "bass"                                                                                   %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -3307,9 +3307,9 @@ L_CelloMusicVoice = {
     \once \override Staff.StaffSymbol.line-count = 0                                               %! _style_fermata_measures(1)
     \startStaff                                                                                    %! _style_fermata_measures(1)
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \revert Staff.BarLine.bar-extent                                                               %! OverrideCommand(2)
-    \revert TextScript.padding                                                                     %! OverrideCommand(2)
-    \revert TextScript.parent-alignment-X                                                          %! OverrideCommand(2)
+    \revert Staff.BarLine.bar-extent                                                               %! baca_bar_extent:OverrideCommand(2)
+    \revert TextScript.padding                                                                     %! text_script_padding:OverrideCommand(2)
+    \revert TextScript.parent-alignment-X                                                          %! baca_text_script_parent_center:OverrideCommand(2)
     
 }
 

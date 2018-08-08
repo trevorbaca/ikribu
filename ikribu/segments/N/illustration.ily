@@ -175,7 +175,7 @@ N_BassClarinetMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-%@% \override TextScript.extra-offset = #'(0 . 7)                                                  %! OverrideCommand(1):+ARCH_A_PARTS_BCL
+%@% \override TextScript.extra-offset = #'(0 . 7)                                                  %! +ARCH_A_PARTS_BCL:baca_text_script_extra_offset:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -221,7 +221,7 @@ N_BassClarinetMusicVoice = {
     % [N BassClarinetMusicVoice measure 212 / measure 5]                                           %! _comment_measure_numbers
     c2.                                                                                            %! baca_make_repeat_tied_notes
     \repeatTie                                                                                     %! SpannerCommand
-%@% \revert TextScript.extra-offset                                                                %! OverrideCommand(2):+ARCH_A_PARTS_BCL
+%@% \revert TextScript.extra-offset                                                                %! +ARCH_A_PARTS_BCL:baca_text_script_extra_offset:OverrideCommand(2)
     
     % [N BassClarinetMusicVoice measure 213 / measure 6]                                           %! _comment_measure_numbers
     <c e''>1
@@ -258,9 +258,9 @@ N_ViolinRHMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                                             %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override Script.staff-padding = #7                                                            %! OverrideCommand(1)
-    \override TextSpanner.staff-padding = #3.5                                                     %! OverrideCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'9                                               %! OverrideCommand(1)
+    \override Script.staff-padding = #7                                                            %! baca_script_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'9                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                                      %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                                             %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -661,9 +661,9 @@ N_ViolinRHMusicVoice = {
     c'4                                                                                            %! bow_rhythm
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \bacaStopTextSpanBCP                                                                           %! BowContactPointCommand
-    \revert Script.staff-padding                                                                   %! OverrideCommand(2)
-    \revert TextSpanner.staff-padding                                                              %! OverrideCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert Script.staff-padding                                                                   %! baca_script_staff_padding:OverrideCommand(2)
+    \revert TextSpanner.staff-padding                                                              %! baca_text_spanner_staff_padding:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
 }
 
@@ -688,8 +688,8 @@ N_ViolinMusicVoice = {
         \stopStaff                                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
         \startStaff                                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    %%% \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+    %%% \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_208:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! MEASURE_208:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)         %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -849,9 +849,9 @@ N_ViolaRHMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.StaffSymbol.line-count = 1                                             %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override Script.staff-padding = #7                                                            %! OverrideCommand(1)
-    \override TextSpanner.staff-padding = #3.5                                                     %! OverrideCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'9                                               %! OverrideCommand(1)
+    \override Script.staff-padding = #7                                                            %! baca_script_staff_padding:OverrideCommand(1)
+    \override TextSpanner.staff-padding = #3.5                                                     %! baca_text_spanner_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'9                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override RHStaff.Clef.color = #(x11-color 'green4)                                      %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override RHStaff.Clef.color = ##f                                                             %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1298,9 +1298,9 @@ N_ViolaRHMusicVoice = {
         
         c'4                                                                                        %! bow_rhythm
         \bacaStopTextSpanBCP                                                                       %! BowContactPointCommand
-        \revert Script.staff-padding                                                               %! OverrideCommand(2)
-        \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
+        \revert Script.staff-padding                                                               %! baca_script_staff_padding:OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
         
     }                                                                                              %! bow_rhythm
 }
@@ -1326,8 +1326,8 @@ N_ViolaMusicVoice = {
         \stopStaff                                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
         \startStaff                                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    %%% \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+    %%% \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_208:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! MEASURE_208:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)         %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1495,9 +1495,9 @@ N_CelloRHMusicVoice = {
         \stopStaff                                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.StaffSymbol.line-count = 1                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \startStaff                                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-        \override Script.staff-padding = #7                                                        %! OverrideCommand(1)
-        \override TextSpanner.staff-padding = #3.5                                                 %! OverrideCommand(1)
-        \override DynamicLineSpanner.staff-padding = #'9                                           %! OverrideCommand(1)
+        \override Script.staff-padding = #7                                                        %! baca_script_staff_padding:OverrideCommand(1)
+        \override TextSpanner.staff-padding = #3.5                                                 %! baca_text_spanner_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'9                                           %! baca_dls_staff_padding:OverrideCommand(1)
         \clef "percussion"                                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override RHStaff.Clef.color = #(x11-color 'green4)                                  %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override RHStaff.Clef.color = ##f                                                         %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1951,9 +1951,9 @@ N_CelloRHMusicVoice = {
         - \abjad_invisible_line                                                                    %! BowContactPointCommand
         - \tweak bound-details.left.text \markup \baca-bcp-left #7 #7                              %! BowContactPointCommand
         \bacaStartTextSpanBCP                                                                      %! BowContactPointCommand
-        \revert Script.staff-padding                                                               %! OverrideCommand(2)
-        \revert TextSpanner.staff-padding                                                          %! OverrideCommand(2)
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
+        \revert Script.staff-padding                                                               %! baca_script_staff_padding:OverrideCommand(2)
+        \revert TextSpanner.staff-padding                                                          %! baca_text_spanner_staff_padding:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
         
     }                                                                                              %! bow_rhythm
 }
@@ -1977,8 +1977,8 @@ N_CelloMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-%%% \once \override Staff.Clef.X-extent = ##f                                                      %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
-%%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                        %! OverrideCommand(1):MEASURE_208:SHIFTED_CLEF
+%%% \once \override Staff.Clef.X-extent = ##f                                                      %! MEASURE_208:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                        %! MEASURE_208:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "tenor"                                                                                  %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'green4)             %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                                 %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)

@@ -166,8 +166,8 @@ i_ViolinMusicVoice = {
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \once \override Staff.StaffSymbol.line-count = 1                                               %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
     \startStaff                                                                                    %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \once \override TextScript.padding = #2.5                                                      %! OverrideCommand(1)
-    \once \override TextScript.parent-alignment-X = #0                                             %! OverrideCommand(1)
+    \once \override TextScript.padding = #2.5                                                      %! text_script_padding:OverrideCommand(1)
+    \once \override TextScript.parent-alignment-X = #0                                             %! baca_text_script_parent_center:OverrideCommand(1)
     \clef "percussion"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue)               %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -330,7 +330,7 @@ i_CelloMusicVoice = {
             #16                                                                                    %! IndicatorCommand:baca_start_markup:-PARTS
             Cello                                                                                  %! IndicatorCommand:baca_start_markup:-PARTS
         }                                                                                          %! IndicatorCommand:baca_start_markup:-PARTS
-    \once \override NoteHead.style = #'harmonic                                                    %! OverrideCommand(1)
+    \once \override NoteHead.style = #'harmonic                                                    %! baca_note_head_style_harmonic:OverrideCommand(1)
     \clef "treble"                                                                                 %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override SingleStringStaffGroup.InstrumentName.color = #(x11-color 'blue)               %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
